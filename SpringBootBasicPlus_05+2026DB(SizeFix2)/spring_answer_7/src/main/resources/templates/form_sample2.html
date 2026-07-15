@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Grid Example</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+</head>
+
+<body class="bg-light p-4">
+
+	<div class="container"> <!-- START container -->
+		<form class="row justify-content-center"> <!-- START form row -->
+			<div class="col-md-4"> <!-- START form column -->
+				<h2 class="mb-4">登録フォーム</h2>
+
+				<div class="mb-3"> <!--テキストフォーム-->
+					<label for="inputName" class="form-label">氏名</label>
+					<input type="text" class="form-control" id="inputName" placeholder="氏名を入力">
+				</div>
+				<div class="mb-3"> <!--パスワードフォーム-->
+					<label for="inputPassword" class="form-label">パスワード</label>
+					<input type="password" class="form-control" id="inputPassword" placeholder="パスワードを入力">
+				</div>
+				<div class="mb-3"> <!--ラジオボタン-->
+					<label class="form-label">性別</label><br>
+					<div class="form-check form-check-inline">
+						<input type="radio" class="form-check-input" id="genderMale" name="gender" value="male">
+						<label for="genderMale" class="form-check-label">男性</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input type="radio" class="form-check-input" id="genderFemale" name="gender" value="female">
+						<label for="genderFemale" class="form-check-label">女性</label>
+					</div>
+				</div>
+				<div class="mb-3"> <!--チェックボックス-->
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="subscribeNewsletter">
+						<label for="subscribeNewsletter" class="form-check-label">ニュースレターを購読する</label>
+					</div>
+				</div>
+				<div class="mb-3"> <!--セレクトメニュー-->
+					<label for="department" class="form-label">部署</label>
+					<select class="form-select" id="department">
+						<option value="hr">人事部</option>
+						<option value="finance">経理部</option>
+						<option value="sales">営業部</option>
+					</select>
+				</div>
+				<button type="submit" class="btn btn-primary">登録</button>
+			</div> <!-- END form column -->
+		</form> <!-- END form row -->
+	</div> <!-- END container -->
+
+
+</html>
