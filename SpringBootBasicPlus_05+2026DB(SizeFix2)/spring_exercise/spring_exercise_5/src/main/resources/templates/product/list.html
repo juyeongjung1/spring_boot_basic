@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+
+  >                                    
+<!--xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+       layout:decorate="~{layout}" をhtmlの属性に追加してください。 -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+<main layout:fragment="main_content">
+	<h1>商品一覧</h1>
+	<table>
+		<tr>
+			<th>商品番号</th>
+			<th>商品名</th>
+			<th>価格</th>
+			<th>イメージ</th>
+		</tr>
+		<tr th:each="product: ${products}">
+			<td th:text="${product.id}"></td>
+			
+			<!--問題② リンク挿入 -->
+			
+			<td>
+				<a    >
+				<!--このaタグの中に、属性値を動的生成し、リンクをかけてください。 
+			
+				属性値は、
+				"href=@{/product/findById/} + ${product.id}" th:text="${product.name}"
+				を入れてください。-->
+				</a>
+			</td>
+			
+			
+			
+		<!--問題③ 条件式挿入 -->
+			
+			<td  > <!--この<td>の中の属性は、価格が30000より大きい場合、赤色で価格を表示してください -->
+				
+				<!--属性値は
+				"${product.price > 30000}" th:text="${product.price}" style="color: red;"
+				を入れてください-->
+				
+			</td> 
+			
+			<td  > <!--この<td>の中の属性は、価格が30000より大きくない場合、色を変えないで価格を表示してください -->
+				
+				<!--属性値は
+				"${product.price > 30000}" th:text="${product.price}"
+				を入れてください-->
+				
+			</td>
+			
+			
+		<!--問題① イメージ挿入 -->
+			
+			<td><img      > 
+			<!--このimgの中に、属性値を動的生成し、イメージを挿入してください 
+			
+			属性値は、
+			"src=@{/images/product} + ${product.id} + @{.png}, alt=${product.name}, width=60, height=60"
+			を入れてください。-->
+			</td>
+		</tr>
+	</table>
+</main>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+       layout:decorate="~{layout}">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+	<link rel="stylesheet" th:href="@{/css/main_style.css}" />
+</head>
+<body>
+	<main layout:fragment="main_content">
+	<h1>社員一覧</h1>
+	<table>
+		<tr>
+			<th>社員番号</th>
+			<th>社員名</th>
+			<th th:if="${session.user.id == 1001}">給与</th>
+			<th>顔写真</th>
+		</tr>
+		<tr th:each="emp: ${empList}">
+			<td th:text="${emp.id}"></td>
+			<td th:text="${emp.name}"></td>
+			<td th:if="${session.user.id == 1001}" th:text="${emp.salary}"></td>
+			<td><img th:attr="src=@{/image/emp/} + ${emp.id} + @{.png}, 
+alt=${emp.name}, width=60, height=80" /></td>
+
+		</tr>
+	</table>
+	</main>
+</body>
+
+</html>

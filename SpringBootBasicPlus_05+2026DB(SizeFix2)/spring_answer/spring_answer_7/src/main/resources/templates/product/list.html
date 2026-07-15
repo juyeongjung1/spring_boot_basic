@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+       layout:decorate="~{layout}">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+<main layout:fragment="main_content">
+	<h1>商品一覧</h1>
+	<table>
+		<tr>
+			<th>商品番号</th>
+			<th>商品名</th>
+			<th>価格</th>
+			<th>イメージ</th>
+		</tr>
+		<tr th:each="product: ${products}">
+			<td th:text="${product.id}"></td>
+			<!-- 商品名を表示し、クリックすると商品の詳細ページに遷移するリンクを生成 -->
+			<!-- 生成されるURLは /product/findById/{product.id} の形式 -->
+			<td>
+				<a th:attr="href=@{/product/findById/} + ${product.id}" th:text="${product.name}"></a>
+			</td>
+
+			<!-- 価格が30000より大きい場合、赤色で価格を表示 -->
+			<td th:if="${product.price > 30000}" th:text="${product.price}" style="color: red;"></td>
+
+			<!-- 価格が30000以下の場合、通常のスタイルで価格を表示 -->
+			<td th:unless="${product.price > 30000}" th:text="${product.price}"></td>
+
+			<!-- 商品画像を表示 -->
+			<!-- 画像のURLは /images/product{product.id}.png の形式で生成される -->
+			<!-- 例: product.id が 1 の場合、/images/product1.png -->
+			<td><img
+					th:attr="src=@{/images/product} + ${product.id} + @{.png}, alt=${product.name}, width=60, height=60" />
+			</td>
+		</tr>
+	</table>
+</main>
+
+</body>
+
+</html>
