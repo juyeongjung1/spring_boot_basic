@@ -1,0 +1,25 @@
+{
+  "title": "第1章 Spring Boot と開発環境の概要",
+  "chapter": 1,
+  "pdf": "JAC0177G-T1-04(260715).pdf",
+  "word": "JAC0177G-T1-04(260715修正).docx",
+  "first_page": 15,
+  "last_page": 30,
+  "figures": [
+    {"page": 17, "name": "章の概要スライド", "box": [113.06, 116.92, 482.26, 392.11], "slide": "Microsoft_PowerPoint_Slide3.sldx"},
+    {"page": 18, "name": "フレームワークの説明スライド", "box": [113.06, 114.62, 482.26, 389.81], "slide": "Microsoft_PowerPoint_Slide4.sldx"},
+    {"page": 19, "name": "Spring Frameworkの説明スライド", "box": [113.06, 114.62, 482.26, 389.81], "slide": "Microsoft_PowerPoint_Slide5.sldx"},
+    {"page": 21, "name": "Spring Bootの説明スライド", "box": [113.06, 114.62, 482.26, 389.81], "slide": "Microsoft_PowerPoint_Slide6.sldx"},
+    {"page": 22, "name": "プロジェクト構成と注釈", "box": [94, 238, 548, 429]},
+    {"page": 22, "name": "Mavenの依存ライブラリ画面", "box": [95.8, 675.9, 285.6, 778.2]},
+    {"page": 24, "name": "Mavenの説明スライド", "box": [113.06, 114.62, 482.26, 389.81], "slide": "Microsoft_PowerPoint_Slide7.sldx"},
+    {"page": 25, "name": "ライブラリの検索画面", "box": [84.6, 304.3, 510.9, 478]},
+    {"page": 25, "name": "バージョンの選択画面", "box": [85, 556.2, 510.9, 730]},
+    {"page": 26, "name": "依存定義のコピー画面と注釈", "box": [84.6, 130, 511, 304.4]},
+    {"page": 26, "name": "Eclipseのプロジェクト画面", "box": [106.8, 465.3, 302.8, 625]},
+    {"page": 27, "name": "pom.xmlへの追記画面", "box": [85, 89.8, 489.4, 242.4]},
+    {"page": 27, "name": "Maven installの操作画面", "box": [85, 298, 496.7, 436.3]},
+    {"page": 27, "name": "ビルド成功の画面", "box": [96, 547.5, 493.7, 678.7]},
+    {"page": 29, "name": "章のまとめスライド", "box": [113.06, 114.62, 482.26, 389.81], "slide": "Microsoft_PowerPoint_Slide8.sldx"}
+  ]
+}

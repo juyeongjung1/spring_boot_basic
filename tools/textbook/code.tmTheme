@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+  <dict>
+    <key>name</key><string>教材のコード配色</string>
+    <key>settings</key>
+    <array>
+      <dict><key>settings</key><dict>
+        <key>foreground</key><string>#000000</string>
+        <key>background</key><string>#FFFBF0</string>
+      </dict></dict>
+      <dict><key>scope</key><string>keyword, storage.type, storage.modifier</string>
+        <key>settings</key><dict><key>foreground</key><string>#0000FF</string></dict></dict>
+      <dict><key>scope</key><string>comment</string>
+        <key>settings</key><dict><key>foreground</key><string>#008000</string></dict></dict>
+      <dict><key>scope</key><string>string</string>
+        <key>settings</key><dict><key>foreground</key><string>#800040</string></dict></dict>
+      <dict><key>scope</key><string>storage.type.annotation, entity.name, constant.numeric</string>
+        <key>settings</key><dict><key>foreground</key><string>#000000</string></dict></dict>
+    </array>
+  </dict>
+</plist>

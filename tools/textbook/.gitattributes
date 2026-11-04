@@ -1,0 +1,4 @@
+*.py text eol=lf
+*.typ text eol=lf
+*.txt text eol=lf
+*.tmTheme text eol=lf
