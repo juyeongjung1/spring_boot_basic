@@ -1,0 +1,105 @@
+{
+  "samples": [
+    {
+      "kind": "chapter",
+      "source": "text",
+      "source_page": 15,
+      "mean_absolute_rgb_error_0_255": 2.31,
+      "source_sha256": "e730cacfb87c9851f00b2bc254efb0b5e5a6dea76c73ae5dbd2f104ec2756b46"
+    },
+    {
+      "kind": "body",
+      "source": "text",
+      "source_page": 20,
+      "mean_absolute_rgb_error_0_255": 4.899,
+      "source_sha256": "e730cacfb87c9851f00b2bc254efb0b5e5a6dea76c73ae5dbd2f104ec2756b46"
+    },
+    {
+      "kind": "table",
+      "source": "text",
+      "source_page": 69,
+      "mean_absolute_rgb_error_0_255": 6.782,
+      "source_sha256": "e730cacfb87c9851f00b2bc254efb0b5e5a6dea76c73ae5dbd2f104ec2756b46"
+    },
+    {
+      "kind": "exercise",
+      "source": "exercise",
+      "source_page": 20,
+      "mean_absolute_rgb_error_0_255": 2.855,
+      "source_sha256": "957797f8197dedde19e4e80cab503849d96cd9aed185c94e0d8bcab39328a7cd"
+    }
+  ],
+  "pagination": [
+    {
+      "case": "body-original",
+      "pages": 1,
+      "overflow": [],
+      "combined_pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "case": "body-times4",
+      "pages": 3,
+      "heading_orphans": [],
+      "paragraph_count": 28,
+      "overflow": [],
+      "combined_pages": [
+        2,
+        4
+      ]
+    },
+    {
+      "case": "long-paragraph-times20",
+      "pages": 2,
+      "missing_text_ids": [],
+      "full_text_matches": true,
+      "body_lines_per_page": [
+        37,
+        24
+      ],
+      "overflow": [],
+      "combined_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "case": "table-60rows",
+      "pages": 7,
+      "missing_headers": [],
+      "missing_or_split_rows": [],
+      "overflow": [],
+      "combined_pages": [
+        7,
+        13
+      ]
+    },
+    {
+      "case": "exercise-24questions",
+      "pages": 4,
+      "split_questions": [],
+      "question_count": 24,
+      "overflow": [],
+      "combined_pages": [
+        14,
+        17
+      ]
+    },
+    {
+      "case": "figure-with-caption",
+      "pages": 2,
+      "figure_pages": [
+        2,
+        2
+      ],
+      "moved_together": true,
+      "overflow": [],
+      "combined_pages": [
+        18,
+        19
+      ]
+    }
+  ]
+}
