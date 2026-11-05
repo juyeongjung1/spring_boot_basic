@@ -1,4 +1,4 @@
-<!-- 元PDF 17〜28ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 17〜28ページ。Java 21・Spring Boot 4.0.2対応版。 -->
 
 ::: {#page-17 .source-page}
 
@@ -21,6 +21,12 @@
 ::: {#p018-b01 .heading}
 
 [演習の目標]{.s006}
+
+:::
+
+::: {#migration-ex03-environment .paragraph}
+
+本演習は、Java 21・Spring Boot 4.0.2・Pleiades 2025で進めます。作業用は `projects/enshu_exercise/enshu_exercise_3`、答え合わせ用は `projects/enshu_answer/enshu_answer_3` です。作業用には演習で実装する箇所が残っています。
 
 :::
 
@@ -124,9 +130,7 @@
 
 ::: {#p019-b02 .paragraph}
 
-[※データベースは、既に構築済みです。]{.s013}\
-[src/resources/application.properties を確認してください。]{.s014}
-
+付録の手順で演習用データベースを準備し、MySQLを起動してください。接続先は `src/main/resources/application.properties` で確認します。演習用は `spring_exercise`、本文用は `spring_sample` なので、混同しないでください。
 :::
 
 ::: {#p019-b03 .heading}

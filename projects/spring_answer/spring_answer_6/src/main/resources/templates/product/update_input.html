@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>商品情報修正</h1>
+<!--	6章のテキストの内容に、4章のth:fieldを適用した例です-->
+	<form th:action="@{/product/update}" th:object="${product}" method="POST">
+		<p> 商品番号： <input type="text" th:field="*{id}" readonly> </p>
+		<p> 商品名： <input type="text" th:field="*{name}"> </p>
+		<p> 商品価格： <input type="text" th:field="*{price}"> </p>
+		<p> カテゴリ： <select th:field="*{categoryId}" required>
+				<option value="">選択してください</option>
+				<option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}">
+				</option>
+			</select> </p> <input type="submit" value="修正">
+	</form>
+</body>
+
+</html>

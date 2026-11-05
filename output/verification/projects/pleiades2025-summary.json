@@ -1,0 +1,25 @@
+{
+  "mode": "Pleiades 2025 headless m2e/JDT",
+  "poms_imported": 32,
+  "java_projects_built": 27,
+  "error_markers": 0,
+  "java": "21.0.13",
+  "compiler_source_target_compliance": "21",
+  "class_major_versions": [
+    65
+  ],
+  "method_parameters": "generate",
+  "eclipse": "4.38.0.v20251201-0920",
+  "m2e": "2.7.600.20251121-1832",
+  "lombok": "1.18.42",
+  "jvm_max_heap": "512m",
+  "original_projects_unchanged": true,
+  "user_workspace_untouched": true,
+  "gui_menu_interaction_tested": false,
+  "headless_log_limitations": [
+    "p2のjustjアーティファクト不足ログ",
+    "UI専用m2e.core.uiのWorkbench初期化ログ"
+  ],
+  "project_verification_passed": true,
+  "class_files": 182
+}

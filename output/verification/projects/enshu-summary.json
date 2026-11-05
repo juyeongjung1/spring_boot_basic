@@ -1,0 +1,119 @@
+{
+  "projects": 13,
+  "package_passed": 13,
+  "context_tests": 13,
+  "http_assertions": 65,
+  "http_projects_passed": 13,
+  "source_files_byte_equal": 273,
+  "todo_preserved": true,
+  "test_rows_remaining": 0,
+  "employees_after": 8,
+  "contexts": [
+    {
+      "project": "projects\\enshu_answer\\enshu_answer_1",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_answer\\enshu_answer_2",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_answer\\enshu_answer_3",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_answer\\enshu_answer_4",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_answer\\enshu_answer_5",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_answer\\enshu_answer_6",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_answer\\enshu_answer_7",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_exercise\\enshu_exercise_2",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_exercise\\enshu_exercise_3",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_exercise\\enshu_exercise_4",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_exercise\\enshu_exercise_5",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_exercise\\enshu_exercise_6",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    },
+    {
+      "project": "projects\\enshu_exercise\\enshu_exercise_7",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "java": "21"
+    }
+  ],
+  "source_changes": "Java/APIとHTML本文は変更不要。POM、JDT、HELPのみ更新。",
+  "pleiades_ui": "親担当で確認"
+}

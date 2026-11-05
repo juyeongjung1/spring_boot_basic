@@ -1,0 +1,17 @@
+test_added_paragraphs_reach_the_pdf_and_paginate (test_pipeline.TextbookTests.test_added_paragraphs_reach_the_pdf_and_paginate) ... ok
+test_duplicate_ids_are_rejected (test_pipeline.TextbookTests.test_duplicate_ids_are_rejected) ... ok
+test_edited_text_cannot_reuse_old_positions (test_pipeline.TextbookTests.test_edited_text_cannot_reuse_old_positions) ... ok
+test_every_source_block_survives_markdown (test_pipeline.TextbookTests.test_every_source_block_survives_markdown) ... ok
+test_number_replacement_preserves_body_pixels_and_strokes (test_pipeline.TextbookTests.test_number_replacement_preserves_body_pixels_and_strokes) ... ok
+test_single_row_table_without_header_keeps_its_data (test_pipeline.TextbookTests.test_single_row_table_without_header_keeps_its_data) ... ok
+test_thymeleaf_and_spaces_survive_inline_markdown (test_pipeline.TextbookTests.test_thymeleaf_and_spaces_survive_inline_markdown) ... ok
+test_windows_newlines_keep_the_same_reference (test_pipeline.TextbookTests.test_windows_newlines_keep_the_same_reference) ... ok
+test_native_and_flow_symbols_use_the_monochrome_font (test_symbols.PlainSymbolTests.test_native_and_flow_symbols_use_the_monochrome_font) ... ok
+test_only_bullet_codepoints_are_normalized (test_symbols.PlainSymbolTests.test_only_bullet_codepoints_are_normalized) ... ok
+{"chapter": "01", "blocks": 104, "figures": 15, "reference_pages": null, "flow_pages": 21}
+{"chapter": "01", "blocks": 84, "figures": 15, "reference_pages": null, "flow_pages": 14}
+
+----------------------------------------------------------------------
+Ran 10 tests in 47.508s
+
+OK

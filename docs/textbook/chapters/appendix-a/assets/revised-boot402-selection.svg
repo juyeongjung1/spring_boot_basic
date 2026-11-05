@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="233" viewBox="0 0 410 233">
+<rect x=".5" y=".5" width="409" height="232" fill="white" stroke="#222"/>
+<text x="12" y="25" font-family="Meiryo" font-size="13" font-weight="bold">Spring Boot 4.0.2に固定して学習する</text>
+<path d="M10 35 H400" stroke="#E44D26" stroke-width="2"/>
+<text x="12" y="55" font-family="Meiryo" font-size="10.5">1. Javaバージョンは21を選択する</text>
+<text x="12" y="75" font-family="Meiryo" font-size="10.5">2. Spring Boot 4.0.2を選択する</text>
+<text x="12" y="95" font-family="Meiryo" font-size="10.5">3. 一覧にない場合は配布テンプレートを複製する</text>
+<text x="12" y="115" font-family="Meiryo" font-size="10.5">   projects/spring_exercise/spring_exercise_1_3</text>
+<text x="12" y="135" font-family="Meiryo" font-size="10.5">4. pom.xmlで親バージョン4.0.2とJava 21を確認する</text>
+<text x="12" y="155" font-family="Meiryo" font-size="10.5">5. Web MVCはspring-boot-starter-webmvcを使用する</text>
+<text x="12" y="175" font-family="Meiryo" font-size="10.5">6. Maven更新後に起動し、実行時のバージョンを確認する</text>
+</svg>

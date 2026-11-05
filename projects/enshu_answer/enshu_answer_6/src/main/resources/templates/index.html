@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>人事管理システム</title>
+</head>
+<body>
+    <h1>人事管理システム</h1>
+    <h2>社員検索</h2>
+    
+    <p><a th:href="@{/findAll}">全社員一覧</a></p>
+    
+    <form th:action="@{/showFindById}">
+		<h3>社員番号で検索</h3>
+		<input type = "number" name = "id">
+		<input type = "submit" value = "検索">
+	</form>
+	
+	<form th:action="@{/showFindByIdSafe}">
+		<h3>社員番号で検索2</h3>
+		<input type = "number" name = "id">
+		<input type = "submit" value = "検索">
+	</form>
+	
+	<p><a th:href="@{/showSearchForm}">詳細検索</a></p>
+	
+	<p><a th:href="@{/showInputView}">社員データ登録</a></p>
+	
+
+    
+</body>
+</html>

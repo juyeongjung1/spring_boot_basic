@@ -1,0 +1,272 @@
+[
+  {
+    "project": "enshu_answer_1",
+    "group": "enshu_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_answer_2",
+    "group": "enshu_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_answer_3",
+    "group": "enshu_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_answer_4",
+    "group": "enshu_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_answer_5",
+    "group": "enshu_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_answer_6",
+    "group": "enshu_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_answer_7",
+    "group": "enshu_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_exercise_2",
+    "group": "enshu_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_exercise_3",
+    "group": "enshu_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_exercise_4",
+    "group": "enshu_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_exercise_5",
+    "group": "enshu_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_exercise_6",
+    "group": "enshu_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "enshu_exercise_7",
+    "group": "enshu_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_answer_1_3",
+    "group": "spring_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_answer_2",
+    "group": "spring_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_answer_3",
+    "group": "spring_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_answer_4",
+    "group": "spring_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_answer_5",
+    "group": "spring_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_answer_6",
+    "group": "spring_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_answer_7",
+    "group": "spring_answer",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_exercise_1_3",
+    "group": "spring_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_exercise_2",
+    "group": "spring_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_exercise_3",
+    "group": "spring_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_exercise_4",
+    "group": "spring_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_exercise_5",
+    "group": "spring_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_exercise_6",
+    "group": "spring_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "project": "spring_exercise_7",
+    "group": "spring_exercise",
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+]

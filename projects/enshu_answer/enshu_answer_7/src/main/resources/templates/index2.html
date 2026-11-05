@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>人事管理システム</title>
+
+    <!-- Bootstrap CSS の読み込み -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+
+</head>
+<!--7.2-a -->
+
+<body class="bg-light p-4">
+    <h1 class="text-center text-primary fw-bold mb-4">人事管理システム</h1>
+    <h2 class="text-success border-bottom pb-2 mb-4">社員検索</h2>
+
+    <!-- Bootstrapにより変わるドロップダウンメニュー -->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            メニュー
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" th:href="@{/findAll}">全社員一覧</a></li>
+            <li><a class="dropdown-item" th:href="@{/showSearchForm}">詳細検索</a></li>
+            <li><a class="dropdown-item" th:href="@{/showInputView}">社員データ登録</a></li>
+        </ul>
+    </div>
+
+    <form th:action="@{/showFindById}">
+        <h3>社員番号で検索</h3>
+        <input type="number" name="id">
+        <input type="submit" value="検索" class="btn btn-primary ms-2">
+    </form>
+
+    <form th:action="@{/showFindByIdSafe}">
+        <h3>社員番号で検索2</h3>
+        <input type="number" name="id">
+        <input type="submit" value="検索" class="btn btn-primary ms-2">
+    </form>
+
+    <!-- Bootstrap JS の読み込み -->
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+
+</html>

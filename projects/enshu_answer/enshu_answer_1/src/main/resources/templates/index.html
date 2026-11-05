@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>演習問題</title>
+	<style>
+		.correct {
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="exercises">
+		<div>
+			<h3>演習1.1. フレームワークとは</h3>
+			<p>問題1: フレームワークを使用する利点は何ですか？</p>
+			<ul>
+				<li>a) システム開発の時間と労力が増える。</li>
+				<li>b) 特定の種類のシステムをより速く、効率的に作ることができる。</li>
+				<li>c) オブジェクト指向プログラミングを学ぶ必要がない。</li>
+				<li>d) エラーメッセージが一切表示されなくなる。</li>
+			</ul>
+			<button onclick="showAnswer('exercises', 1, 'b')">答えを表示</button>
+
+			<p>問題2: フレームワークを使う際の注意点はどれですか？</p>
+			<ul>
+				<li>a) フレームワークは自由度が高く、ルールに従う必要がない。</li>
+				<li>b) エラーメッセージは無視しても良い。</li>
+				<li>c) フレームワークに定められたルールや方法に従う必要がある。</li>
+				<li>d) データベースに接続する際はフレームワークを使わない方が良い。</li>
+			</ul>
+			<button onclick="showAnswer('exercises', 2, 'c')">答えを表示</button>
+			<!-- 演習1.2. Spring Framework -->
+			<div>
+				<h3>演習1.2. Spring Framework</h3>
+				<p>問題1: Spring Frameworkの特徴はどれですか？</p>
+				<ul>
+					<li>a) DI（依存性注入）を使用しない。</li>
+					<li>b) MVC（Model-View-Controller）モデルをサポートしない。</li>
+					<li>c) 他のライブラリと組み合わせて利用することが可能。</li>
+					<li>d) Struts2 や、Seasar2 などのフレームワークと競合している。</li>
+				</ul>
+				<button onclick="showAnswer('exercises', 3, 'c')">答えを表示</button>
+
+				<p>問題2: Spring FrameworkにおけるDI（依存性注入）の主な目的は何ですか？</p>
+				<ul>
+					<li>a) オブジェクト間の依存関係をハードコーディングする。</li>
+					<li>b) よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。</li>
+					<li>c) Javaの基本的な構文を変更する。</li>
+					<li>d) Webページのデザインとレイアウトを管理する。</li>
+				</ul>
+				<button onclick="showAnswer('exercises', 4, 'b')">答えを表示</button>
+			</div>
+
+			<!-- 演習1.3. Spring Bootとは -->
+			<div>
+				<h3>演習1.3. Spring Bootとは</h3>
+				<p>問題1: Spring Bootによる初期環境構築のメリットは何でしょうか？</p>
+				<ul>
+					<li>a) 設定が全く必要ない。</li>
+					<li>b) 設定を自動化して初期環境構築を簡単にする。</li>
+					<li>c) 設定がより複雑で細かい。</li>
+					<li>d) 開発者がすべての設定を手動で行う必要がある。</li>
+				</ul>
+				<button onclick="showAnswer('exercises', 5, 'b')">答えを表示</button>
+
+				<p>問題2: Spring Boot が提供する Bean に関する機能として正しいものはどれですか？</p>
+				<ul>
+					<li>a) 必要な Bean をすべて手動で登録する必要がある。</li>
+					<li>b) 開発者が用意したクラスを自動で Bean として登録してくれる。</li>
+					<li>c) Bean の登録機能は提供されていない。</li>
+					<li>d) Bean を登録するには XML ファイルが必須である。</li>
+				</ul>
+				<button onclick="showAnswer('exercises', 6, 'b')">答えを表示</button>
+			</div>
+
+			<!-- 演習1.4. Mavenでライブラリ管理 -->
+			<div>
+				<h3>演習1.4. Mavenでライブラリ管理</h3>
+				<p>問題1: Mavenを使用する主な理由は何ですか？</p>
+				<ul>
+					<li>a) プロジェクトのデザインを改善するため。</li>
+					<li>b) ソースコードの書き方を自動化するため。</li>
+					<li>c) ライブラリのダウンロードと参照関係の管理を自動化するため。</li>
+					<li>d) データベース接続を自動で設定するため。</li>
+				</ul>
+				<button onclick="showAnswer('exercises', 7, 'c')">答えを表示</button>
+
+				<p>問題2: Mavenを使用して、どのようにライブラリを管理すればいいですか？</p>
+				<ul>
+					<li>a) ライブラリを手動でダウンロードしてプロジェクトに追加する。</li>
+					<li>b) ライブラリの情報をpom.xmlファイルに記述して、Maven installを実行する。</li>
+					<li>c) すべてのライブラリを個別にインストールする。</li>
+					<li>d) ライブラリの情報をプロジェクトのREADMEファイルに記述する。</li>
+				</ul>
+				<button onclick="showAnswer('exercises', 8, 'b')">答えを表示</button>
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+	<script>
+		function showAnswer(sectionId, questionNumber, correctAnswer) {
+			const section = document.getElementById(sectionId);
+			const questions = section.getElementsByTagName('ul');
+			const correct = questions[questionNumber - 1].getElementsByTagName('li');
+
+			for (let i = 0; i < correct.length; i++) {
+				if (correct[i].textContent.startsWith(correctAnswer + ')')) {
+					correct[i].classList.add('correct');
+				}
+			}
+		}
+	</script>
+
+</body>
+
+</html>

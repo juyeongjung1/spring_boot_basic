@@ -1,4 +1,4 @@
-<!-- 元PDF 1〜14ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 1〜14ページ。Java 21・Spring Boot 4.0.2・Pleiades 2025向け改訂。 -->
 
 ::: {#page-1 .source-page}
 
@@ -305,6 +305,12 @@
 ::: {#p009-b01 .heading}
 
 [コースの目標]{.s003}
+
+:::
+
+::: {#revision-environment .paragraph}
+
+本書の実習環境はPleiades 2025、Java 21、Spring Boot 4.0.2、MySQL 8.0です。配布プロジェクトは `projects` 配下の4グループに整理しています。付録Aの手順でJDK 21とMavenを確認してから学習してください。
 
 :::
 

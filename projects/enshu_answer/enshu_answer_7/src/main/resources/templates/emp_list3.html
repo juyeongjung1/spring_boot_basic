@@ -1,0 +1,29 @@
+
+<!--7.6の正解 -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{layout/layout}">
+
+<div layout:fragment="main_content">
+    <h2 class="text-success border-bottom pb-2 mb-3">社員一覧</h2>
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>社員番号</th>
+                <th>社員名</th>
+                <th>給与</th>
+                <th>勤務地</th>
+            </tr>
+        </thead>
+        <tbody class="table-light">
+            <tr th:each="emp : ${empList}">
+                <td th:text="${emp.id}"></td>
+                <td th:text="${emp.name}"></td>
+                <td th:text="${emp.salary}"></td>
+                <td th:text="${emp.location.name}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</html>

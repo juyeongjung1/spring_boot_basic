@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="426" height="138" viewBox="0 0 426 138">
+<rect x=".5" y=".5" width="425" height="137" fill="white" stroke="#222"/>
+<text x="12" y="25" font-family="Meiryo" font-size="13" font-weight="bold">コンソールで確認する項目</text>
+<path d="M10 35 H416" stroke="#E44D26" stroke-width="2"/>
+<text x="12" y="55" font-family="Meiryo" font-size="10.5">Javaの実行バージョン：21</text>
+<text x="12" y="75" font-family="Meiryo" font-size="10.5">Spring Bootの起動バージョン：4.0.2</text>
+<text x="12" y="95" font-family="Meiryo" font-size="10.5">組込サーバー：Tomcat 11</text>
+<text x="12" y="115" font-family="Meiryo" font-size="10.5">Mavenテスト：BUILD SUCCESS（DB使用章はDB起動後）</text>
+</svg>

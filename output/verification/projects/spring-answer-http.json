@@ -1,0 +1,496 @@
+[
+  {
+    "project": "spring_answer_1_3",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18100,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/",
+        "status": 404,
+        "expected_status": 404,
+        "passed": true,
+        "expected_text": "Not Found"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 28.41,
+    "note": "第1章の開始/解答はAppクラスのみの配布状態。標準404で組込サーバー稼働を確認。",
+    "seconds": 29.38
+  },
+  {
+    "project": "spring_answer_2",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18101,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/login",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/login2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/login3",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "POST",
+        "path": "/login",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "POST",
+        "path": "/login3",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "123456"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 25.91,
+    "seconds": 29.64
+  },
+  {
+    "project": "spring_answer_3",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18102,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/product/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByPrice?price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByNameAndPrice?name=%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%86%E3%83%AC%E3%83%93&price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findById?id=1",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/insert",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/product/update/1",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "POST",
+        "path": "/product/insert",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "MIGRATION21_cb5ddd0b893947a7"
+      },
+      {
+        "method": "POST",
+        "path": "/product/update",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "MIGRATION21_cb5ddd0b893947a7_UPDATED"
+      },
+      {
+        "method": "GET",
+        "path": "/product/delete/13",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "POST",
+        "path": "/product/insert2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "MIGRATION21_82315545f70a495a"
+      },
+      {
+        "method": "POST",
+        "path": "/product/update",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "MIGRATION21_82315545f70a495a_UPDATED"
+      },
+      {
+        "method": "GET",
+        "path": "/product/delete/14",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 32.22,
+    "seconds": 42.05
+  },
+  {
+    "project": "spring_answer_4",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18103,
+    "requests": [
+      {
+        "method": "POST",
+        "path": "/login5",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "山田太郎"
+      },
+      {
+        "method": "GET",
+        "path": "/product/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByPrice?price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByNameAndPrice?name=%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%86%E3%83%AC%E3%83%93&price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/5",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "POST",
+        "path": "/login5",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "社員番号を入力してください"
+      },
+      {
+        "method": "POST",
+        "path": "/login5",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "社員番号またはパスワードが誤っています。"
+      },
+      {
+        "method": "POST",
+        "path": "/login5",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "山田太郎"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 24.58,
+    "seconds": 29.23
+  },
+  {
+    "project": "spring_answer_5",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18104,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/product/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByPrice?price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByNameAndPrice?name=%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%86%E3%83%AC%E3%83%93&price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "Traino家電商品"
+      },
+      {
+        "method": "GET",
+        "path": "/css/layout.css",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "flex"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 50.14,
+    "seconds": 72.28
+  },
+  {
+    "project": "spring_answer_6",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18105,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/product/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByPrice?price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByNameAndPrice?name=%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%86%E3%83%AC%E3%83%93&price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "テレビ・モニター"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findById?id=1",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "テレビ・モニター"
+      },
+      {
+        "method": "POST",
+        "path": "/product/insert",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "テレビ・モニター"
+      },
+      {
+        "method": "POST",
+        "path": "/product/update",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "コンピュータ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/delete/12",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 43.47,
+    "seconds": 47.39
+  },
+  {
+    "project": "spring_answer_7",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18106,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/7-2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-3",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-4",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-5",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-5-2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-6",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-6-2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 33.16,
+    "seconds": 36.36
+  }
+]

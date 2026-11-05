@@ -1,0 +1,11 @@
+{
+  "archive": "SpringBootBasic_Java21_Boot4.0.2.zip",
+  "sha256": "9309151dfdfe2f33078afe6e6ba5a54b473dea9c1d9645e84cbec982fc794ddc",
+  "files": 852,
+  "pom_files": 32,
+  "application_projects": 27,
+  "java": 21,
+  "spring_boot": "4.0.2",
+  "target_directories_included": false,
+  "class_files_included": false
+}

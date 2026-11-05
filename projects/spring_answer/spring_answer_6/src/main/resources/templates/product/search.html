@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>検索</h1>
+	<h2>ID検索</h2>
+	<form th:action="@{/product/findById}">
+		商品番号：<input type="text" name="id" />
+		<input type="submit" value="検索">
+	</form>
+	
+	<h2>商品価格検索</h2>
+	<form th:action="@{/product/findByPrice}">
+		商品価格：<input type="text" name="price" />
+		<input type="submit" value="検索">
+	</form>
+	
+	<h2>商品名+価格の検索</h2>
+	<form th:action="@{/product/findByNameAndPrice}">
+		商品名：<input type="text" name="name" />
+		商品価格：<input type="text" name="price" />
+		<input type="submit" value="検索">
+	</form>
+	
+	<h2>【参考】価格の範囲検索</h2>
+	<form th:action="@{/product/findByPriceBetween}">
+		最小値：<input type="number" name="priceMin"/>
+		最大値：<input type="number" name="priceMax" />
+		<input type="submit" value="検索">
+	</form>
+	
+	
+</body>
+
+</html>

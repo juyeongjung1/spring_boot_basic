@@ -1,0 +1,88 @@
+/* 全体のベーススタイリング */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: UD デジタル 教科書体 NP-B, sans-serif;
+}
+
+/* ヘッダーのスタイリング */
+header {
+	background-color: #E44D26;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid #C1351D;
+}
+
+/* サイドバーのスタイリング */
+nav {
+    background-color: #333; /* 黒 */
+    color: white;
+    padding: 15px;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    font-size: 1.2em; /* テキストサイズを大きくする */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* メインコンテンツのスタイリング */
+main {
+    background-color: #fff; /* 白色の背景 */
+    padding: 30px;
+    overflow-y: auto; /* 必要に応じてスクロールバーを表示 */
+    flex-grow: 1;
+}
+
+/* フッターのスタイリング */
+footer {
+    background-color: #333; /* 黒 */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* フレックスボックスのレイアウト */
+.flex-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+}
+
+/* フッターが常に画面の最下部に表示されるようにする */
+.flex-container {
+    min-height: 0; /* フレックスコンテナのmin-heightをリセット */
+}
+
+body > footer {
+    flex-shrink: 0;
+}

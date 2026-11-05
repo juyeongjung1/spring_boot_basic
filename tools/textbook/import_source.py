@@ -280,6 +280,7 @@ def import_chapter(folder, force=False):
             md += ["::: ", ""]
         md += ["::: ", ""]
     (folder / "chapter.md").write_text("\n".join(line.rstrip() for line in md).rstrip() + "\n", encoding="utf-8", newline="\n")
+    (folder/'baseline.md').write_bytes((folder/'chapter.md').read_bytes())
     layout["markdown_sha256"] = hashlib.sha256((folder / "chapter.md").read_text(encoding="utf-8").encode("utf-8")).hexdigest()
     write_json(folder / "source-layout.json", layout)
     print(json.dumps({"pages": len(layout["pages"]), "blocks": len(layout["blocks"]), "figures": len(layout["figures"]), "styles": len(styles)}, ensure_ascii=False))

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--演習5.2
+f. <html>の属性を修正してください。-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+	<link rel="stylesheet" th:href="@{/css/main_style.css}" />
+</head>
+<body>
+<!--演習5.2 g. <body>以下のコードを<main>要素で囲って、正しくlayout:fragment属性を付与してください。-->
+	<h1>社員一覧</h1>
+	<table>
+		<tr>
+			<th>社員番号</th>
+			<th>社員名</th>
+			
+<!--演習5.4 a.
+ 給与列は、ログインユーザの社員番号が1001の場合のみ表示するように修正してください。-->
+			<th>給与</th>
+			
+<!--演習5.3 a.-->
+			<!--<th>顔写真</th>-->
+		</tr>
+		<tr th:each="emp: ${empList}">
+			<td th:text="${emp.id}"></td>
+			<td th:text="${emp.name}"></td>
+			
+<!--演習5.4 b.ログインユーザの社員番号が1001の場合のみ表示するように修正してください。-->
+			<td th:text="${emp.salary}"></td>
+			
+<!--演習5.3 a.社員番号に該当するイメージを出力してください。-->
+			<!--<td>  </td>-->
+		</tr>
+	</table>
+	
+	<!--ここまで</main>で囲ってください。 -->
+</body>
+
+</html>

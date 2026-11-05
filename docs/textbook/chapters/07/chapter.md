@@ -1,4 +1,4 @@
-<!-- 元PDF 238〜281ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 238〜281ページ。Java 21・Spring Boot 4.0.2対応版。 -->
 
 ::: {#page-238 .source-page}
 
@@ -61,6 +61,12 @@
 ::: {#p240-b01 .heading}
 
 [章の概要]{.s008}
+
+:::
+
+::: {#migration-07-environment .paragraph}
+
+本章は、Java 21・Spring Boot 4.0.2・Pleiades 2025のJava Fullで進めます。作業用は `projects/spring_exercise/spring_exercise_7`、確認用は `projects/spring_answer/spring_answer_7` です。JREシステム・ライブラリーとMavenの実行JREをJDK 21に合わせます。
 
 :::
 
@@ -153,8 +159,7 @@
 
 ::: {#p241-b08 .paragraph}
 
-[本書では、]{.s009}[(2024]{.s007}[&#32;年&#32;]{.s009}[7]{.s007}[&#32;月基準]{.s009}[)]{.s007}[最新バージョンである&#32;]{.s009}[5\.3]{.s007}[&#32;バージョンを利用します。]{.s009}
-
+本書では、配布プロジェクトに同梱したBootstrap 5.3系のCSS・JavaScriptを使用します。Spring Boot 4.0.2とは別のフロントエンド用ライブラリであり、両者のバージョン番号は独立しています。
 :::
 
 :::

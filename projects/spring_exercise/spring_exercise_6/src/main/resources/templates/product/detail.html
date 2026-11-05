@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>商品詳細</h1>
+
+	<div>
+		<!--【この部分に、商品が見つからない場合に
+	     表示させたいコードを記入してください。】-->
+
+	</div>
+
+	<div> <!--【ここに、商品が見つかった場合の条件式を書いてください。】 -->
+		<table>
+			<tr>
+				<th>商品番号</th>
+				<th>商品名</th>
+				<th>価格</th>
+			</tr>
+			<tr>
+				<td th:text="${product.id}"></td>
+				<td th:text="${product.name}"></td>
+				<td th:text="${product.price}"></td>
+			</tr>
+		</table>
+		<form th:action="@{/product/update/}+${product.id}">
+			<input type="submit" value="修正">
+		</form>
+		<form th:action="@{/product/delete/}+${product.id}">
+			<input type="submit" value="削除">
+		</form>
+
+	</div> <!--商品有りの条件式の範囲は、ここまで -->
+
+</body>
+
+</html>

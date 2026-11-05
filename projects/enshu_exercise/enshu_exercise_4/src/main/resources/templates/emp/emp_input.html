@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+</head>
+<body>
+	<!--    演習4.2-->
+<!--    d. ログインユーザ名を表示してください。-->
+    <p>ログインユーザ：<span  ></span></p>
+	<h1>社員登録</h1>
+
+	<!--    演習4.4-->
+	<!--    d. 	th:object に指定する Form の変数名は、empForm2に合わせましょう-->
+	<form th:action = "@{/emp/insertEmp}" method = "post">
+		<table>
+			<tr>
+				<td>社員名</td>
+				<td><input type = "text" name = "name"></td>
+			</tr>
+			<tr>
+				<td>パスワード</td>
+				<td><input type = "password" name = "password"></td>
+			</tr>
+			<tr>
+				<td>給与</td>
+				<td><input type = "number" name = "salary"></td>
+			</tr>
+		</table>
+		<input type = "submit" value = "登録">
+	</form>
+	
+	<p><a th:href="@{/emp/}">メニューに戻る</a></p>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-<!-- 元PDF 133〜163ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 133〜163ページ。Java 21・Spring Boot 4.0.2対応版。 -->
 
 ::: {#page-133 .source-page}
 
@@ -49,6 +49,12 @@
 ::: {#p135-b01 .heading}
 
 [章の概要]{.s008}
+
+:::
+
+::: {#migration-04-environment .paragraph}
+
+本章は、Java 21・Spring Boot 4.0.2・Pleiades 2025のJava Fullで進めます。作業用は `projects/spring_exercise/spring_exercise_4`、確認用は `projects/spring_answer/spring_answer_4` です。JREシステム・ライブラリーとMavenの実行JREをJDK 21に合わせます。
 
 :::
 
@@ -1416,8 +1422,7 @@ HttpSession session, Model model) {
 userForm.getPassword());
         //DB 照会後のID&パスワードのチェック
         if (user == null) {
-        model.addAttribute("loginError", "社員番号またはパスワードが誤
-っています。"); // エラーメッセージを追加
+        model.addAttribute("loginError", "社員番号またはパスワードが誤っています。"); // エラーメッセージを追加
         return "login_input_final";
     }
 
@@ -1427,7 +1432,6 @@ userForm.getPassword());
         return "main_page_session";
 }
 ```
-
 :::
 
 ::: {#p156-b03 .paragraph}
@@ -1582,12 +1586,11 @@ userForm.getPassword());
 
 ::: {#p161-b02 .code}
 
-```java
+```properties
 typeMismatch.java.lang.Integer=整数を入力してください
 typeMismatch.java.lang.Double=小数点を入力してください
 typeMismatch.java.util.Date=正しい日付を入力してください
 ```
-
 :::
 
 ::: {#p161-b03 .paragraph}
@@ -1605,8 +1608,7 @@ typeMismatch.java.util.Date=正しい日付を入力してください
 
 ::: {#p161-b05 .paragraph}
 
-[保存後、]{.s009}[\[maven install\]をすると、修正事項が反映されるようになります。]{.s010}
-
+`messages.properties` を保存し、アプリケーションを再起動してエラーメッセージを確認します。依存を変更していなければ `install` は不要です。日本語のファイルはUTF-8で保存してください。
 :::
 
 ::: {#p161-b06 .paragraph}

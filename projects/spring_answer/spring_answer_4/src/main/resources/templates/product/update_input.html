@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<p th:text="${session.userData.empName}" style="margin-left:90%"></p>
+	<hr>
+	<h1>商品情報修正</h1>
+	<form th:action = "@{/product/update}" method = "POST">
+	<p>商品番号：<input type = "text" name = "id" th:value = "${product.id}" readonly></input></p>
+	<p>商品名　：<input type = "text" name = "name" th:value = "${product.name}"></p>
+	<p>商品価格：<input type = "text" name = "price" th:value = "${product.price}"></p>
+	<input type = "submit" value = "修正">
+	</form>
+</body>
+
+</html>

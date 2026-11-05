@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BMI計算</title>
+</head>
+<body>
+    <h1>BMI計算</h1>
+    <form th:action = "@{/bmi}" method = "POST">
+		<p>身長(cm)：<input type = "text" name = "height"></p>
+		<p>体重(kg)：<input type = "text" name = "weight"></p>
+		<input type = "submit" value = "計算">
+	</form>
+</body>
+</html>

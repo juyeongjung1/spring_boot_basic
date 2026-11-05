@@ -14,12 +14,12 @@ class TextbookTests(unittest.TestCase):
     def setUpClass(cls):
         cls.folder = ROOT / "docs/textbook/chapters/01"
         cls.layout = json.loads((cls.folder / "source-layout.json").read_text(encoding="utf-8"))
-        cls.markdown = (cls.folder / "chapter.md").read_text(encoding="utf-8")
+        cls.markdown = (cls.folder / "baseline.md").read_text(encoding="utf-8")
         cls.work = ROOT / "tmp/textbook-tests"
         cls.work.mkdir(parents=True, exist_ok=True)
 
     def test_every_source_block_survives_markdown(self):
-        nodes, figures, _ = read_markdown(self.folder / "chapter.md")
+        nodes, figures, _ = read_markdown(self.folder / "baseline.md")
         self.assertEqual(set(nodes), set(self.layout["blocks"]))
         self.assertEqual(len(figures), 15)
         for ident, block in self.layout["blocks"].items():
@@ -94,7 +94,7 @@ class TextbookTests(unittest.TestCase):
         path = self.work / "edited.md"
         path.write_text(self.markdown[:last] + "\n".join(additions) + "\n" + self.markdown[last:], encoding="utf-8")
         report = build("01", "flow", path, self.work / "edited")
-        original = json.loads((ROOT / "output/pdf/textbook/chapter-01/checks.json").read_text(encoding="utf-8"))
+        original = build("01", "flow", self.folder / "baseline.md", self.work / "unmodified")
         self.assertGreater(report["flow"]["pages"], original["flow"]["pages"])
         self.assertTrue(report["flow"]["native_text_complete"])
         headers=[m for m in report['flow']['block_positions'] if m['edge']=='table-header' and m['id']=='long-table']

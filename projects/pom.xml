@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jp.co.trainocate</groupId>
+  <artifactId>spring-boot-basic</artifactId>
+  <version>4.0.2</version>
+  <packaging>pom</packaging>
+  <name>Spring Boot入門 Java21・4.0.2版</name>
+  <modules>
+    <module>spring_answer</module>
+    <module>spring_exercise</module>
+    <module>enshu_answer</module>
+    <module>enshu_exercise</module>
+  </modules>
+</project>

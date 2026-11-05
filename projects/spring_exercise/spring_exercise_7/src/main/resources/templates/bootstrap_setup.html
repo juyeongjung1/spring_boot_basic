@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bootstrap Example</title>
+
+	<!--【ここに、BoorstrapのCSSを読み込むコードを書いてください。
+	      リンクは、/css/bootstrap.min.css　です。】 -->
+	<link rel="stylesheet" th:href="@{/css      }" />
+
+</head>
+
+<body>
+	<!-- コンテンツ -->
+	<div class="container">
+		<h1>Hello, Bootstrap!</h1>
+		<button class="btn btn-primary">ボタン</button>
+	</div>
+
+	<!--【ここに、BootstrapのJSを読み込むコードを書いてください。】
+	      リンクは、/js/bootstrap.bundle.min.js です -->
+	<script th:src="@{/js     }"></script>
+
+	
+</body>
+
+</html>

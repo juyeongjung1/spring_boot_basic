@@ -1,0 +1,152 @@
+{
+  "completed_at_utc": "2026-11-05T01:51:06.332691+00:00",
+  "java": "21.0.13",
+  "spring_boot": "4.0.2",
+  "application_projects": 14,
+  "packaging_passed": 14,
+  "bytecode_major": 65,
+  "junit": [
+    {
+      "project": "spring_answer_1_3",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_answer_2",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_answer_3",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_answer_4",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_answer_5",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_answer_6",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_answer_7",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_exercise_1_3",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_exercise_2",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_exercise_3",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_exercise_4",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_exercise_5",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_exercise_6",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "project": "spring_exercise_7",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "junit_tests_passed": 14,
+  "http_projects_passed": 14,
+  "http_requests_passed": 79,
+  "http_failures": 0,
+  "expected_initial_states": [
+    {
+      "project": "spring_answer_1_3",
+      "note": "第1章の開始/解答はAppクラスのみの配布状態。標準404で組込サーバー稼働を確認。"
+    },
+    {
+      "project": "spring_exercise_1_3",
+      "note": "第1章の開始/解答はAppクラスのみの配布状態。標準404で組込サーバー稼働を確認。"
+    },
+    {
+      "project": "spring_exercise_2",
+      "note": "IndexControllerと/loginのマッピング、/login3のModel設定は受講者の実装課題。課題の未実装を保っています。"
+    },
+    {
+      "project": "spring_exercise_3",
+      "note": "Entity/Repository/Modelへの一覧設定が受講者の実装課題。検索画面と空の一覧を確認しています。"
+    },
+    {
+      "project": "spring_exercise_4",
+      "note": "ログイン/Session/Validationが受講者の実装課題。/, /2, /3のログイン画面を確認。/4以降はth:object等の課題実装後に確認する画面です。"
+    },
+    {
+      "project": "spring_exercise_5",
+      "note": "商品名/価格/画像の動的出力とレイアウト適用が受講者の課題。空欄を保ち、検索画面・DB由来の商品番号を確認しています。"
+    }
+  ],
+  "database_counts_after_cleanup": {
+    "product": 9,
+    "category": 4,
+    "user": 3,
+    "test_rows_remaining": 0
+  },
+  "own_java_processes_remaining": 0,
+  "files": [
+    "tools/projects/smoke_spring.py",
+    "tmp/migration/spring-packages.json",
+    "tmp/migration/spring_answer-http-results.json",
+    "tmp/migration/spring_exercise-http-results.json"
+  ],
+  "source_change": "spring_answer_3のModelMapperをMVC引数で受けず、メソッド内でnewする形へ統一。開始用の課題未実装は保持。"
+}

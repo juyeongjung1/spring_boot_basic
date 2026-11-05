@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<!-- ➀以下のコードを記入することで、モバイル端末での表示を最適化できます。-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bootstrap Example</title>
+
+	<!-- ➁ Bootstrap CSSをローカルから読み込む -->
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+
+	<!-- ➁ Bootstrap CSSをCDNから読み込む -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- コンテンツ -->
+	<div class="container">
+		<h1>Hello, Bootstrap!</h1>
+		<button class="btn btn-primary">ボタン</button>
+	</div>
+
+	<!-- ➂ <body>の末尾に、BootstrapのJSをローカルから読み込む-->
+	<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+
+	<!-- ➂ <body>の末尾に、BootstrapのJSをCDNから読み込む -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

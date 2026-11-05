@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+</head>
+
+<body>
+	<h1>人事管理システム</h1>
+	<h2>ログイン</h2>
+<!--演習4.3
+d. 入力チェックが行えるように、コードを修正してください-->
+	<form th:action = "@{/login3}" method = "post" th:object = "${empForm2}">
+		
+		<table>
+			<tr>
+				<td>社員番号</td>
+				<td><input type="number" th:field = "*{id}">
+				<span th:errors="*{id}"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>パスワード</td>
+				<td><input type="password" th:field = "*{password}">
+				<span th:errors="*{password}"></span>
+				</td>
+			</tr>
+
+		</table>
+		<input type="submit" value="ログイン">
+	</form>
+
+</body>
+
+</html>

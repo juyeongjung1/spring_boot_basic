@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Style Example</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+</head>
+
+<body>
+<!--【括弧( ) の中のclass名をclass=""の中に入れて、ブラウザ上でどう変わるのかを確認してください。】
+
+	<!-- 7-3-1 配置（Alignment） -->
+	<h2 class="">配置（Alignment）</h2>
+
+	<p class="">左揃え（.text-start）</p>
+	<p class="">中央揃え（.text-center）</p>
+	<p class="">右揃え（.text-end）</p>
+
+
+	<!-- 7-3-2 色（テキスト） -->
+	<h2 class="text-center mb-4">テキストの色</h2>
+	<p class="">青いテキスト（.text-primary）</p>
+	<p class="">灰色のテキスト（.text-secondary）</p>
+	<p class="">緑のテキスト（.text-success）</p>
+	<p class="">赤いテキスト（.text-danger）</p>
+	<p class="">黄色のテキスト（.text-warning）</p>
+	<p class="">水色のテキスト（.text-info）</p>
+	<p class="bg-dark">明るい灰色のテキスト（.text-light）</p>
+	<p class="">黒いテキスト（.text-dark）</p>
+	<p class=" bg-dark">白いテキスト（.text-white）</p>
+
+	<!-- 7-3-2 色（背景） -->
+	<h2 class="text-center mb-4">背景色</h2>
+	<div class=" text-white">青い背景（.bg-primary）</div>
+	<div class=" text-white">灰色の背景（.bg-secondary）</div>
+	<div class=" text-white">緑の背景（.bg-success）</div>
+	<div class=" text-white">赤い背景（.bg-danger）</div>
+	<div class=" text-dark">黄色の背景（.bg-warning）</div>
+	<div class=" text-white">水色の背景（.bg-info）</div>
+	<div class=" text-dark">明るい灰色の背景（.bg-light）</div>
+	<div class=" text-white">黒い背景（.bg-dark）</div>
+	<div class=" text-dark">白い背景（.bg-white）</div>
+	<div class="">薄い青い背景（.bg-primary-subtle）</div>
+	<div class="">薄い灰色の背景（.bg-secondary-subtle）</div>
+	<div class="">薄い緑の背景（.bg-success-subtle）</div>
+	<div class="">薄い赤い背景（.bg-danger-subtle）</div>
+	<div class="">薄い黄色の背景（.bg-warning-subtle）</div>
+	<div class="">薄い水色の背景（.bg-info-subtle）</div>
+	<div class="">薄い明るい灰色の背景（.bg-light-subtle）</div>
+	<div class="">薄い黒い背景（.bg-dark-subtle）</div>
+
+	<!-- 7-3-3 ボタン -->
+	<h2 class="text-center mb-4">ボタン</h2>
+
+	<button class="btn ">青いボタン（.btn-primary）</button>
+	<button class="btn ">灰色のボタン（.btn-secondary）</button>
+	<button class="btn ">緑のボタン（.btn-success）</button>
+	<button class="btn ">赤いボタン（.btn-danger）</button>
+	<button class="btn ">黄色のボタン（.btn-warning）</button>
+	<button class="btn ">水色のボタン（.btn-info）</button>
+	<button class="btn ">明るい灰色のボタン（.btn-light）</button>
+	<button class="btn ">黒いボタン（.btn-dark）</button>
+	<button class="btn ">リンクスタイルのボタン（.btn-link）</button>
+
+	<br><!--ボタンのサイズ-->
+	<button class="btn btn-dark ">大きなボタン（.btn-lg）</button>
+	<button class="btn btn-dark">普通サイズボタン</button>
+	<button class="btn btn-dark ">小さなボタン（.btn-sm）</button>
+
+	<br><br><!--ボタンの無効化-->
+	<button class="btn btn-secondary  mb-2">無効化されたボタン（.disabled）</button>
+
+	<!-- 7-3-4 ボーダー(border) -->
+	<div class="mx-3">
+		<h2 class="text-center mb-4">ボーダー（Border）</h2>
+		<div class=" p-2 mb-2">全方向にボーダー（.border）</div>
+		<div class=" p-2 mb-2">下にボーダー（.border-bottom）</div>
+		<div class=" p-2 mb-2">ボーダーを削除（.border-0）</div>
+		<div class="border  p-2 mb-2">青いボーダー（.border-primary）</div>
+		<div class="border  p-2 mb-2">緑のボーダー（.border-success）</div>
+		<div class="border  p-2 mb-2">角を丸くする（.rounded）</div>
+	</div>
+
+	<!-- 7-3-5 余白(Margin) -->
+	<h2 class="text-center mb-4">マージン（Margin）</h2>
+	<hr>
+	<div class=" bg-info">マージンなし（.m-0）</div>
+	<hr>
+	<div class=" bg-info">全方向にマージン（.m-3）</div>
+	<hr>
+	<div class=" bg-info">上に大きなマージン（.mt-5）</div>
+	<hr>
+	<div class=" bg-info">上下に中程度のマージン（.my-4）</div>
+
+	<hr>
+	<div class=" bg-info">左にマージン（.ms-3）</div>
+	<hr>
+	<div class=" bg-info">右に大きなマージン（.me-5）</div>
+	<hr>
+	<div class="  bg-info">左に小さなマージン（.ms-3）と右に大きなマージン（.me-5）</div>
+	<hr>
+	<div class=" bg-info" style="width: 50%;">左右中央揃え（.mx-auto）</div>
+	<hr>
+
+	<!-- 7-3-5 余白（Padding)-->
+	<h2 class="text-center mb-4">パディング（Padding)</h2>
+	<hr>
+	<div class="bg-warning ">パディングなし（.p-0）</div>
+	<hr>
+	<div class="bg-warning ">全方向に中程度のパディング（.p-3）</div>
+	<hr>
+	<div class="bg-warning ">左に適度なパディング（.ps-4）</div>
+	<hr>
+	<div class="bg-warning ">上下に中程度のパディング（.py-4）</div>
+	<hr>
+
+	<!-- 7-3-6 高さ-->
+	<h2 class="text-center mb-4">高さの調整（親要素と子要素）</h2>
+
+	<!-- 親要素 -->
+	<div class="bg-danger" style="height: 200px;">
+		<hr>
+		<!-- 子要素 -->
+		<div class="bg-info ">高さ25%（子要素: .h-25）</div>
+		<div class="bg-warning ">高さ50%（子要素: .h-50）</div>
+
+	</div>
+
+	<!-- 7-3-6 横幅-->
+	<h2 class="text-center mb-4">横幅の調整</h2>
+	<div class="bg-info text-white ">幅25%（.w-25）</div>
+	<div class="bg-success text-white ">幅50%（.w-50）</div>
+	<div class="bg-warning text-dark ">幅75%（.w-75）</div>
+	<div class="bg-danger text-white ">幅100%（.w-100）</div>
+	<hr>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

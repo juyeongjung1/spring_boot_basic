@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+</head>
+<body>
+	<h1>社員一覧</h1>
+	<table border="1">
+		<tr>
+			<th>社員番号</th>
+			<th>社員名</th>
+			<th>給与</th>
+			<th>勤務地</th>
+		</tr>
+		<tr th:each="emp: ${empList}">
+			<td th:text="${emp.id}"></td>
+			<td th:text="${emp.name}"></td>
+			<td th:text="${emp.salary}"></td>
+			
+			 <!--演習6.2-b 正解-->
+			<td th:text="${emp.location.name}"></td>
+		</tr>
+	</table>
+	<p><a th:href="@{/}">メニューに戻る</a></p>
+
+</body>
+
+</html>

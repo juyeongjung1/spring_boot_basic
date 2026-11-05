@@ -1,0 +1,139 @@
+/* 基本的なボディスタイル設定 */
+body {
+  background-color: #f4f4f4; /* 背景色の設定 */
+  margin: 0; /* 外側の余白をなくす */
+  padding: 0; /* 内側の余白をなくす */
+}
+
+/*ヘッダー部分のスタイル設定 */
+.header {
+	background-color: #fff; /* 背景色を白に設定 */
+	padding: 10px 20px; /* 上下に10px、左右に20pxの余白を設定 */
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1); /* 箱の影を付ける（軽い影） */
+	position: fixed; /* ヘッダーを画面上部に固定 */
+	width: 100%; /* 幅を画面全体に広げる */
+	top: 0; /* 上部からの位置を0に設定 */
+	left: 0; /* 左からの位置を0に設定 */
+	z-index: 1000; /* 他の要素より前面に表示するためのz-indexの設定 */
+}
+/*ロゴイメージのスタイル設定*/
+.logo_img{
+	height: 35px;/*ロゴイメージの高さを設定*/
+	float: left; /*後ろの要素と綺麗に並ぶように、floatの設定*/
+}
+
+/* H1タグのスタイル設定 */
+h1 {
+	margin: 0; /* 外側の余白をなくす */
+	font-size: 28px; /* フォントのサイズを28ピクセルに設定 */
+	color: #777779; /* フォントの色を暗めのグレーに設定 */
+}
+
+h2 {
+	text-align: center;  /*テキストを中央揃えに*/
+}
+
+/* ログインフォーム全体を中央に配置 */
+.login-form-container {
+	display: flex; /* フレックスボックスを使用して要素を配置 */
+	justify-content: center; /* 横軸の中央に要素を配置 */
+	align-items: center; /* 縦軸の中央に要素を配置 */
+	height: 100vh; /* 高さをビューポートの100%に設定 */
+	padding-top: 60px; /* 上部に60pxの余白を設定 */
+	box-sizing: border-box; /* paddingを要素のサイズ計算に含める */
+}
+
+/* フォームのスタイル設定 */
+form {
+	background-color: #fff; /* 背景色を白に設定 */
+	padding: 40px; /* 全方向に40pxの余白を設定 */
+	border-radius: 8px; /* 角を丸くする */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/* 影をつけることで立体感を出す */
+	width: 400px; /*フォームの幅を400ピクセルに設定*/ 
+}
+/* テーブルのスタイル設定 */
+table {
+	width: 100%; /* テーブルの幅を親要素の100%に設定 */
+}
+
+/* テーブルデータセル(td)のスタイル設定 */
+td {
+	padding: 8px 0; /* 上下に8ピクセルの余白を設定 */
+	position: relative; /* 絶対位置指定された要素の基準点となる */
+}
+
+/* 入力フィールドのスタイル設定 */
+input[type="number"],
+input[type="password"] {
+  	width: calc(100% - 20px); /* 入力フィールドの幅を、親要素の幅から20px引いた値に設定（paddingやborderを含めた全体幅の計算のため） */
+  	padding: 10px; /* 入力フィールドの内側の余白を設定 */
+  	margin-bottom: 10px; /* 入力フィールドの下の余白を設定 */
+  	border: 1px solid #ccc; /* 入力フィールドの境界線を灰色で設定 */
+  	border-radius: 4px; /* 入力フィールドの角を丸くする */
+  	box-sizing: border-box; /* 要素のサイズ計算の基準を、borderとpaddingを含むように設定 */
+}
+
+span {
+  	display: block; /* エラーメッセージをブロック要素として表示 */
+  	color: red; /*エラーメッセージの色を赤に設定*/
+	margin-top: 5px; /*エラーメッセージ上部の余白を設定*/
+	word-wrap: break-word; /*長い単語が親要素を超えそうになった場合に改行*/
+	max-width: 100%; /*最大幅を親要素の100%に設定して、はみ出しを防ぐ*/
+}
+
+
+/* ログインボタンのスタイル */
+input[type="submit"] {
+	width: 100%; /*/ ボタンの幅を親要素いっぱいに設定 /*/
+	padding: 10px; /*/ ボタン内部の余白を設定 /*/
+	border: none; /*/ ボタンの境界線を無しに設定 /*/
+	border-radius: 4px; /*/ ボタンの角を丸く設定 /*/
+	background-color: #5cb85c; /*/ ボタンの背景色を設定 /*/
+	color: white;  /*ボタンの文字色を白に設定 /*/
+	font-weight: bold; /*/ ボタンのフォントを太字に設定 /*/
+	margin-top: 20px; /*/ボタンの上の余白を設定 /*/
+	cursor: pointer; /*マウスカーソルをポインターに変更（クリック可能を示す）*/
+	transition: background-color 0.3s ease; /*背景色の変化を滑らかにするトランジション効果を追加 */
+}
+
+input[type="submit"]:hover {
+	background-color: #449d44; /*ボタンの背景色を変更（マウスオーバー時）*/
+}
+
+/* レスポンシブデザインのためのメディアクエリ */
+@media (max-width: 768px) {
+  /* 画面幅が768ピクセル以下のデバイス（主にスマートフォン）向けのスタイル */
+  .login-form-container {
+    padding-top: 100px; /* ヘッダーとの重なりを避けるために、余白を100ピクセルに設定 */
+  }
+
+  form {
+    width: 90%; /* フォームの幅を画面の90%に設定し、小さい画面でも読みやすいようにする */
+    margin: 0 auto; /* フォームを画面の中央に配置するために、上下の余白を0、左右の余白を自動調整に設定 */
+  }
+
+  input[type="number"],
+  input[type="password"] {
+    width: 100%; /* 入力フィールドの幅を画面幅いっぱいに拡大して、小さい画面でも入力しやすくする */
+	}
+}
+
+/* アニメーションキーフレームの定義：点滅 */
+@keyframes blink-animation {
+	0%, 100% { opacity: 1; } /*/ アニメーションの開始と終了で要素を完全に表示 /*/
+	50% { opacity: 0; } /*アニメーションの中間点で要素を完全に非表示 */
+}
+
+/* アニメーションキーフレームの定義：Y軸を中心とした回転 */
+@keyframes rotateY-animation {
+	0% { transform: rotateY(0deg);} /* アニメーションの開始点では回転させずに元の状態を保持 */
+	50% { transform: rotateY(180deg); } /* アニメーションの中間点で180度回転させる */
+	100% { transform: rotateY(0deg); } /* アニメーションの終了点で元に戻す */
+}
+
+/* エラーメッセージに適用されるアニメーション */
+.error-message {
+	animation:
+	blink-animation 2s 3, /* 2秒間隔でゆっくりと3回点滅させる */
+	rotateY-animation 2s 3; /* 同じく2秒間隔で3回Y軸を中心に回転させる */
+}

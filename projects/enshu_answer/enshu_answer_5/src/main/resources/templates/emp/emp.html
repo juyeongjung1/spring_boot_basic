@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+       layout:decorate="~{layout}">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+	<link rel="stylesheet" th:href="@{/css/main_style.css}" />
+</head>
+
+<body>
+	<main layout:fragment="main_content">
+	<h1>社員情報</h1>
+	<table>
+		<tr>
+			<th>社員番号</th>
+			<th>社員名</th>
+			<th>給与</th>
+		</tr>
+		<tr>
+			<td th:text="${emp.id}"></td>
+			<td th:text="${emp.name}"></td>
+			<td th:text="${emp.salary}"></td>
+		</tr>
+	</table>
+
+	<hr>
+	<h3>社員削除</h3>
+
+	<form th:action="@{/emp/delete/}+${emp.id}">
+		<input type="submit" value="削除" style = "background-color: red;">
+	</form>
+
+</main>
+</body>
+
+</html>

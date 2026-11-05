@@ -1,0 +1,169 @@
+{
+  "documents": {
+    "textbook-reference": {
+      "path": "D:\\work\\Spring Boot 入門\\output\\pdf\\textbook\\textbook\\reference.pdf",
+      "pages": 296,
+      "symbols": {
+        "•": 39,
+        "■": 66,
+        "●": 56,
+        "○": 1
+      },
+      "symbol_fonts": {
+        "MS-Gothic": 162
+      },
+      "symbol_colors": {
+        "#000000": 162
+      },
+      "invalid_symbols": [],
+      "other_emoji_spans": [],
+      "pdf_sha256": "8276782673b95ffbf0f807501c2fd07d77f61791f0fe6f270212b0b873eb8a0e"
+    },
+    "textbook-flow": {
+      "path": "D:\\work\\Spring Boot 入門\\output\\pdf\\textbook\\textbook\\flow.pdf",
+      "pages": 248,
+      "symbols": {
+        "•": 39,
+        "■": 66,
+        "●": 56,
+        "○": 1
+      },
+      "symbol_fonts": {
+        "MS-Gothic": 162
+      },
+      "symbol_colors": {
+        "#000000": 162
+      },
+      "invalid_symbols": [],
+      "other_emoji_spans": [],
+      "pdf_sha256": "f95a216793b8e8789cc34775e125b9fdb3e6c9ef0abbde68c5f296478c9919bb"
+    },
+    "exercise-reference": {
+      "path": "D:\\work\\Spring Boot 入門\\output\\pdf\\textbook\\exercise\\reference.pdf",
+      "pages": 77,
+      "symbols": {
+        "•": 140,
+        "■": 79,
+        "●": 160,
+        "▪": 2
+      },
+      "symbol_fonts": {
+        "MS-Gothic": 381
+      },
+      "symbol_colors": {
+        "#000000": 377,
+        "#ff0000": 4
+      },
+      "invalid_symbols": [],
+      "other_emoji_spans": [],
+      "pdf_sha256": "0ba517a79ab453363efa18977cde04258950c6bc9e5bc8fccafb191681b1a9e3"
+    },
+    "exercise-flow": {
+      "path": "D:\\work\\Spring Boot 入門\\output\\pdf\\textbook\\exercise\\flow.pdf",
+      "pages": 58,
+      "symbols": {
+        "•": 140,
+        "■": 79,
+        "●": 160,
+        "▪": 2
+      },
+      "symbol_fonts": {
+        "MS-Gothic": 381
+      },
+      "symbol_colors": {
+        "#000000": 377,
+        "#ff0000": 4
+      },
+      "invalid_symbols": [],
+      "other_emoji_spans": [],
+      "pdf_sha256": "8b0371f5e405e421249aea8253598ff80d806b302fb2afc63cce8699655424b8"
+    }
+  },
+  "target_symbol_errors": 0,
+  "previews": [
+    {
+      "kind": "reference",
+      "source_page": 9,
+      "pdf_page": 9,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-reference-009.png"
+    },
+    {
+      "kind": "flow",
+      "source_page": 9,
+      "pdf_page": 9,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-flow-source-009-page-009.png"
+    },
+    {
+      "kind": "reference",
+      "source_page": 11,
+      "pdf_page": 11,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-reference-011.png"
+    },
+    {
+      "kind": "flow",
+      "source_page": 11,
+      "pdf_page": 11,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-flow-source-011-page-011.png"
+    },
+    {
+      "kind": "reference",
+      "source_page": 12,
+      "pdf_page": 12,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-reference-012.png"
+    },
+    {
+      "kind": "flow",
+      "source_page": 12,
+      "pdf_page": 12,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-flow-source-012-page-012.png"
+    },
+    {
+      "kind": "flow-settings",
+      "pdf_page": 238,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-flow-settings-page-238.png"
+    },
+    {
+      "kind": "flow-settings",
+      "pdf_page": 240,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-flow-settings-page-240.png"
+    },
+    {
+      "kind": "flow-settings",
+      "pdf_page": 241,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-flow-settings-page-241.png"
+    },
+    {
+      "kind": "flow-settings",
+      "pdf_page": 242,
+      "png": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pdf-symbol-qa\\textbook-flow-settings-page-242.png"
+    }
+  ],
+  "revised_setting_figure_pages": {
+    "p285-f06": 238,
+    "p285-f07": 238,
+    "p287-f10": 240,
+    "p288-f11": 241,
+    "p288-f13": 242
+  },
+  "visual_review": "passed",
+  "visual_review_details": {
+    "pages_reviewed": [
+      9,
+      11,
+      12,
+      238,
+      240,
+      241,
+      242
+    ],
+    "front_reference_and_flow_symbols": "通常の単色■●を確認",
+    "revised_setting_figures": 5,
+    "setting_figure_text_clipping": 0,
+    "setting_figure_headings_readable": true,
+    "remaining_emoji_spans": 0,
+    "red_emphasis_symbols_preserved_per_exercise_version": 4,
+    "additional_fixes_required": false
+  },
+  "total_pages_audited": 679,
+  "total_symbols_audited": 1086
+}

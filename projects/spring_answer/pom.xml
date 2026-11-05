@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jp.co.trainocate.answer</groupId>
+  <artifactId>spring_answer</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>spring_answer</name>
+  <modules>
+	  <module>spring_answer_1_3</module>
+	  <module>spring_answer_2</module>
+	  <module>spring_answer_3</module>
+	  <module>spring_answer_4</module>
+	  <module>spring_answer_5</module>
+	  <module>spring_answer_6</module>
+	  <module>spring_answer_7</module>
+  </modules>
+</project>

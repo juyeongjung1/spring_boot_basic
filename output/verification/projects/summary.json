@@ -1,0 +1,50 @@
+{
+  "application_projects": 27,
+  "java": 21,
+  "spring_boot": "4.0.2",
+  "package_passed": 27,
+  "junit_tests_passed": 27,
+  "http_checks_passed": 144,
+  "pleiades_imported_projects": 32,
+  "pleiades_java_projects": 27,
+  "pleiades_project_errors": 0,
+  "pdf_regression_tests_passed": 10,
+  "pdf_code_blocks_verified": 192,
+  "legacy_bullets_normalized": 360,
+  "final_symbol_errors": 0,
+  "flow_pages": 306,
+  "assembly_pixel_errors_outside_number_regions": 0,
+  "collections": {
+    "textbook": {
+      "source_pages": 296,
+      "reference_pages": 296,
+      "flow_pages": 248,
+      "blocks": 1874,
+      "figures": 235,
+      "tables": 14,
+      "mean_reference_rgb_error": 0.2005,
+      "toc_entries": 79
+    },
+    "exercise": {
+      "source_pages": 77,
+      "reference_pages": 77,
+      "flow_pages": 58,
+      "blocks": 738,
+      "figures": 32,
+      "tables": 18,
+      "mean_reference_rgb_error": 0.1607,
+      "toc_entries": 45
+    }
+  },
+  "distribution": {
+    "archive": "SpringBootBasic_Java21_Boot4.0.2.zip",
+    "sha256": "9309151dfdfe2f33078afe6e6ba5a54b473dea9c1d9645e84cbec982fc794ddc",
+    "files": 852,
+    "pom_files": 32,
+    "application_projects": 27,
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "target_directories_included": false,
+    "class_files_included": false
+  }
+}

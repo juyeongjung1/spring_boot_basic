@@ -5,7 +5,7 @@
     290,
     296
   ],
-  "blocks": 55,
+  "blocks": 57,
   "figures": 5,
   "source_coverage": [
     {
@@ -638,6 +638,24 @@
         "edge": "end",
         "page": 5,
         "y": 538.4307977627881
+      },
+      {
+        "id": "java21-runtime-error",
+        "edge": "heading",
+        "page": 5,
+        "y": 556.4307977627881
+      },
+      {
+        "id": "java21-runtime-error-body",
+        "edge": "start",
+        "page": 5,
+        "y": 585.8013251065381
+      },
+      {
+        "id": "java21-runtime-error-body",
+        "edge": "end",
+        "page": 5,
+        "y": 650.8413251065381
       },
       {
         "id": "__native-page-296",

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>2章 ログインサンプル1</title>
+</head>
+
+<body>
+<h1>ログイン画面</h1>
+
+<form th:action="@{/login4}" method="post"> <!--formの属性に、th:objectを入れてください。-->
+		
+<p>社員番号　：<input type = "text" th:field="*{empId}"/>
+		<!--ここに、エラーが発生したら、エラーメッセージを出力してください。-->
+			<span  >
+				
+			</span></p>
+	
+<p>パスワード：<input type="password" th:field="*{password}" />
+		<!--ここに、エラーが発生したら、エラーメッセージを出力してください。-->
+			<span  >
+				
+			</span></p>
+			
+<input type="submit" value="ログイン">
+
+</form>
+</body>
+
+</html>

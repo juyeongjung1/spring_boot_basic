@@ -1,4 +1,7 @@
 // 章に依存しない書体・ページ・本文・図版・コードの組版規則。
+// 箇条書き記号は、光沢のあるカラー絵文字へ代替されない通常の文字にする。
+#show regex("[■●•▪○]"): it => text(font: "MS Gothic", fallback: false,
+  weight: "regular", style: "normal", stroke: none, it.text)
 #let at(x, y, body) = place(top + left, dx: x * 1pt, dy: y * 1pt, body)
 #let styled(style, body) = {
   let s = styles.at(style)

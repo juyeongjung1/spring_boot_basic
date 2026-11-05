@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<!--7.3-c. 青い表見出しになるように、<thead> に クラスを追加してください。-->
+<!--7.3-d  <table>に枠線と、ホバー時の色変のクラスを適用してください。-->
+<!--7.3-e. 表本文を薄いグレーになるように、<tbody> に クラスを追加してください。-->
+	
+<body>
+	<h1>社員一覧</h1>
+	
+	<!-- 7.3-b  border="1" を削除し、Bootstrapの .table クラスを追加してください。-->
+	<table border="1">
+		
+		<!-- 7.3-b  見出しの部分(<tr>から</tr>まで)を<thead>で囲ってください。-->
+		
+		<tr>
+			<th>社員番号</th>
+			<th>社員名</th>
+			<th>給与</th>
+			<th>勤務地</th>
+		</tr>
+		
+		<!-- 7.3-b  テーブル本文(<tr>から</tr>まで)を<tbody>で囲ってください。-->
+		<tr th:each="emp: ${empList}">
+			<td th:text="${emp.id}"></td>
+			<td th:text="${emp.name}"></td>
+			<td th:text="${emp.salary}"></td>
+			<td th:text="${emp.location.name}"></td>
+		</tr>
+		
+	</table>
+	<p class="text-center"><a class="btn btn-secondary" th:href="@{/2}">メニューに戻る</a></p>
+	<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+
+</html>

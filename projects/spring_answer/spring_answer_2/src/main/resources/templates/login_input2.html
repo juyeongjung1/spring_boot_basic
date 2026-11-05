@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>2章 ログインサンプル2</title>
+</head>
+<body>
+<h1>ログイン画面</h1>
+<!--doLoginというURLにデータの送信先を指定。送信タイプはPOST-->
+<form th:action="@{/login2}" method="post">
+社員番号　：<input type = "text" name = "id"/>
+パスワード：<input type = "password" name = "password"/>
+<input type = "submit" value = "ログイン">
+</form>
+</body>
+</html>

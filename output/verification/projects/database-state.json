@@ -1,0 +1,37 @@
+{
+  "tables": [
+    {
+      "database": "spring_sample",
+      "table": "category",
+      "rows": 4,
+      "initial_values_preserved": true
+    },
+    {
+      "database": "spring_sample",
+      "table": "product",
+      "rows": 9,
+      "initial_values_preserved": true
+    },
+    {
+      "database": "spring_sample",
+      "table": "user",
+      "rows": 3,
+      "initial_values_preserved": true
+    },
+    {
+      "database": "spring_exercise",
+      "table": "location",
+      "rows": 5,
+      "initial_values_preserved": true
+    },
+    {
+      "database": "spring_exercise",
+      "table": "employee",
+      "rows": 8,
+      "initial_values_preserved": true
+    }
+  ],
+  "port": 13306,
+  "original_mysql_service_modified": false,
+  "initial_values_preserved": true
+}

@@ -1,0 +1,156 @@
+{
+  "chapters": {
+    "01": {
+      "blocks": 87,
+      "code_blocks": 3,
+      "figures": 15,
+      "added": [
+        "migration-01-environment",
+        "migration-01-pom-java21",
+        "migration-01-pom-parent"
+      ],
+      "xml_syntax_passed": [
+        "p026-b02",
+        "migration-01-pom-java21"
+      ]
+    },
+    "02": {
+      "blocks": 211,
+      "code_blocks": 15,
+      "figures": 33,
+      "added": [
+        "migration-02-environment",
+        "migration-02-servlet-comparison",
+        "migration-02-webmvc",
+        "migration-02-webmvc-dependencies"
+      ],
+      "xml_syntax_passed": [
+        "migration-02-webmvc-dependencies"
+      ]
+    },
+    "03": {
+      "blocks": 487,
+      "code_blocks": 51,
+      "figures": 69,
+      "added": [
+        "migration-03-environment",
+        "migration-03-jpa-dependencies",
+        "migration-03-jpa-pom",
+        "migration-03-url-line"
+      ],
+      "xml_syntax_passed": [
+        "migration-03-jpa-pom",
+        "p113-b04"
+      ]
+    },
+    "04": {
+      "blocks": 182,
+      "code_blocks": 23,
+      "figures": 25,
+      "added": [
+        "migration-04-environment"
+      ],
+      "xml_syntax_passed": [
+        "p149-b05"
+      ]
+    },
+    "05": {
+      "blocks": 141,
+      "code_blocks": 22,
+      "figures": 19,
+      "added": [
+        "migration-05-environment"
+      ],
+      "xml_syntax_passed": [
+        "p182-b04"
+      ]
+    },
+    "06": {
+      "blocks": 316,
+      "code_blocks": 39,
+      "figures": 19,
+      "added": [
+        "migration-06-environment",
+        "migration-06-reference-query"
+      ],
+      "xml_syntax_passed": []
+    },
+    "07": {
+      "blocks": 266,
+      "code_blocks": 33,
+      "figures": 34,
+      "added": [
+        "migration-07-environment"
+      ],
+      "xml_syntax_passed": []
+    },
+    "ex01": {
+      "blocks": 23,
+      "code_blocks": 0,
+      "figures": 0,
+      "added": [
+        "migration-ex01-environment"
+      ],
+      "xml_syntax_passed": []
+    },
+    "ex02": {
+      "blocks": 66,
+      "code_blocks": 0,
+      "figures": 2,
+      "added": [
+        "migration-ex02-environment"
+      ],
+      "xml_syntax_passed": []
+    },
+    "ex03": {
+      "blocks": 130,
+      "code_blocks": 0,
+      "figures": 6,
+      "added": [
+        "migration-ex03-environment"
+      ],
+      "xml_syntax_passed": []
+    },
+    "ex04": {
+      "blocks": 103,
+      "code_blocks": 0,
+      "figures": 5,
+      "added": [
+        "migration-ex04-environment"
+      ],
+      "xml_syntax_passed": []
+    },
+    "ex05": {
+      "blocks": 78,
+      "code_blocks": 0,
+      "figures": 9,
+      "added": [
+        "migration-ex05-environment"
+      ],
+      "xml_syntax_passed": []
+    },
+    "ex06": {
+      "blocks": 144,
+      "code_blocks": 0,
+      "figures": 4,
+      "added": [
+        "migration-ex06-environment"
+      ],
+      "xml_syntax_passed": []
+    },
+    "ex07": {
+      "blocks": 138,
+      "code_blocks": 5,
+      "figures": 6,
+      "added": [
+        "migration-ex07-environment"
+      ],
+      "xml_syntax_passed": []
+    }
+  },
+  "servlet_java21_compile": true,
+  "existing_ids_preserved": true,
+  "figure_references_preserved": true,
+  "total_code_blocks": 191,
+  "jdbc_java21_compile": true
+}

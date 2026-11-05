@@ -1,4 +1,4 @@
-<!-- 元PDF 63〜132ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 63〜132ページ。Java 21・Spring Boot 4.0.2対応版。 -->
 
 ::: {#page-63 .source-page}
 
@@ -55,6 +55,12 @@
 ::: {#p065-b01 .heading}
 
 [章の概要]{.s008}
+
+:::
+
+::: {#migration-03-environment .paragraph}
+
+本章は、Java 21・Spring Boot 4.0.2・Pleiades 2025のJava Fullで進めます。作業用は `projects/spring_exercise/spring_exercise_3`、確認用は `projects/spring_answer/spring_answer_3` です。JREシステム・ライブラリーとMavenの実行JREをJDK 21に合わせます。
 
 :::
 
@@ -346,6 +352,33 @@ try (Connection con =
 
 :::
 
+::: {#migration-03-jpa-dependencies .paragraph}
+
+本章の依存定義は次のとおりです。各バージョンはSpring Boot 4.0.2の親POMに任せます。MySQL 8以降を起動し、付録の手順で本文用の `spring_sample` を準備してから、配布設定を確認してください。
+
+:::
+
+::: {#migration-03-jpa-pom .code}
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <scope>runtime</scope>
+</dependency>
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <optional>true</optional>
+</dependency>
+```
+
+:::
+
 ![操作画面・図解](assets/p070-f06.svg){#p070-f06}
 
 :::
@@ -370,18 +403,22 @@ try (Connection con =
 
 ::: {#p071-b03 .code}
 
-```java
+```properties
 spring.thymeleaf.cache=false
 
 # MySQL のデータベース接続設定
-spring.datasource.url=
-  jdbc:mysql://localhost/spring_sample?serverTimezone=Asia/Tokyo
+spring.datasource.url=jdbc:mysql://localhost/spring_sample?serverTimezone=Asia/Tokyo
 spring.datasource.username=spring_sample_user
 spring.datasource.password=trainocate
 
 # JPA/Hibernate の追加設定（開発環境ではお勧め）
 spring.jpa.show-sql=true
 ```
+:::
+
+::: {#migration-03-url-line .paragraph}
+
+`spring.datasource.url` の値は1行で記述します。紙面で折り返されていても、ファイル内では途中に改行を入れません。MySQLのポートを3306以外に変更した場合は、`localhost:ポート番号` の形で実際の接続先に合わせます。
 
 :::
 
@@ -432,9 +469,7 @@ spring.jpa.show-sql=true
 
 ::: {#p071-b11 .paragraph}
 
-[設定完了後は、必ず\[実行\]→\[maven install\]をしないと反映されませんので、ご注意くださ]{.s011}\
-[い。]{.s011}
-
+`application.properties` を保存したら、アプリケーションを停止して再起動し、接続結果を確認します。依存定義も変更した場合は、［Maven］→［プロジェクトの更新］を実行してください。設定ファイルを変更するたびに `install` を実行する必要はありません。
 :::
 
 :::
@@ -1168,12 +1203,11 @@ public class ProductController {
 public class ProductDAO {
 
         public List<ProductBean> findByProductList(){
-                String jdbcUrl = "jdbc:mysql://localhost/spring_sample?
-                  serverTimezone=Asia/Tokyo";
+                String jdbcUrl = "jdbc:mysql://localhost/spring_sample?"
+                        + "serverTimezone=Asia/Tokyo";
                String userId = "spring_sample_user";
                String password = "trainocate";
 ```
-
 :::
 
 :::
@@ -2968,18 +3002,16 @@ Integer>{
 
 ```xml
 <dependency>
-               <groupId>org.modelmapper</groupId>
-               <artifactId>modelmapper</artifactId>
-               <version>3.0.0</version>
+    <groupId>org.modelmapper</groupId>
+    <artifactId>modelmapper</artifactId>
+    <version>3.2.6</version>
 </dependency>
 ```
-
 :::
 
 ::: {#p113-b05 .paragraph}
 
-[まず、Maven を使って、ModelMapper を導入します。]{.s009}
-
+まず、Mavenを使ってModelMapper 3.2.6を導入します。これはSpring Bootの管理対象外なので、バージョンを明記します。古い3.0.0ではなく、配布POMと同じ版を使ってください。
 :::
 
 ::: {#p113-b06 .paragraph}
@@ -2992,28 +3024,21 @@ Integer>{
 
 ```java
 @PostMapping("/insert2")
-public String insertProduct2(ProductForm productForm, ModelMapper modelMapper,
-Model model) {
-
-         Product product = modelMapper.map(productForm, Product.class);
-        product = prodRepo.save(product);
-        model.addAttribute("product", product);
-        return "/product/result";
+public String insertProduct2(ProductForm productForm, Model model) {
+    ModelMapper modelMapper = new ModelMapper();
+    Product product = modelMapper.map(productForm, Product.class);
+    product = prodRepo.save(product);
+    model.addAttribute("product", product);
+    return "product/result";
 }
 ```
-
 :::
 
 ![操作画面・図解](assets/p113-f50.svg){#p113-f50}
 
 ::: {#p113-b08 .paragraph}
 
-[ModelMapper を利用するために、メソッドに上記のようにModelMapper のインスタンスを生成し]{.s009}\
-[た後、]{.s009}\
-[modelMapper.map(Form 名, Entity 名.class)]{.s011}[&#32;を実行した結果をエンティティの変数に代入する]{.s009}\
-[と、]{.s009}[自動でForm クラス内のフィールド名と一致するエンティティ内のフィールドにコピーが行わ]{.s011}\
-[れます。]{.s011}
-
+ここではメソッド内の `new ModelMapper()` でインスタンスを生成します。`modelMapper.map(Form名, Entity名.class)` の戻り値をエンティティへ代入すると、同名フィールドの値をコピーできます。リクエストを受け取るForm引数と、変換に使うModelMapperは役割が異なります。
 :::
 
 ::: {#p113-b09 .paragraph}

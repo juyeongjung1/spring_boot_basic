@@ -1,0 +1,58 @@
+@charset "UTF-8";
+main {
+    background-color: #fff; /* 白色の背景 */
+    padding: 20px; /* 内側の余白 */
+    margin: 20px; /* 外側の余白 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ソフトな影を追加 */
+    border-radius: 10px; /* 角の丸み */
+    max-width: 800px; /* 最大幅を設定 */
+	margin: 40px auto; /* 上下の余白と自動マージンで中央寄せ */
+}
+
+h1 {
+	text-align: center; /* タイトルを中央揃え */
+	
+}
+
+/* テーブルスタイル */
+table {
+    width: 100%; /* テーブルの幅 */
+    border-collapse: collapse; /* ボーダーの重なりを避ける */
+    margin-top: 20px; /* テーブルの上の余白 */
+}
+
+table th, table td {
+    text-align: left; /* テキストを左揃えに */
+    padding: 12px 15px; /* セル内のパディング */
+    border-bottom: 1px solid #ddd; /* セルの下ボーダー */
+}
+
+table th {
+    background-color: rgb(255, 255, 255); /* ヘッダーの背景色 */
+    color: #333; /* ヘッダーのテキスト色 */
+}
+
+/* リンクスタイル */
+a {
+	color: #0056b3; /* リンクの色 */
+	text-decoration: none; /* 下線を消す */
+	transition: color 0.3s ease-in-out; /* 色変更のトランジション */
+}
+
+a:hover {
+	color: #003366; /* ホバー時のリンクの色を暗くする */
+}
+
+/* テーブルの行間隔を調整 */
+table tr:nth-child(even) {
+	background-color: #f9f9f9; /* 偶数行の背景色をわずかに異なる色に */
+}
+
+/* テーブルのヘッダー行スタイル */
+table thead th {
+	font-weight: bold; /* ヘッダーのフォントを太く */
+	border-top: 2px solid #ddd; /* 上部にボーダーを追加 */
+}
+
+
+

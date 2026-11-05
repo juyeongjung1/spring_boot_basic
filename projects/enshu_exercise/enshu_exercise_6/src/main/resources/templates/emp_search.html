@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--6.6-b 以下の画面のソースコードを確認してください。 
+	          特に、name属性に注目してください。-->
+	<h2>詳細検索</h2>
+	<h3>■給与と勤務地の複合検索</h3>
+<form th:action="@{/findHighSalary}" method="get">
+    <table>
+        <tr>
+            <td>給与（以上）</td>
+            <td>
+				<!--input type = "range"にすると、スライダー形式で範囲を設定できます -->
+                <input type="range" name="salary" min="200000" max="500000" step="50000" 
+                       oninput="document.getElementById('salaryValue').innerText = this.value">
+                <span id="salaryValue">350000</span>円以上
+            </td>
+        </tr>
+        <tr>
+            <td>勤務地</td>
+            <td>
+			<!--選択リストは、modelに格納されている勤務値データを表示しました。 -->
+                <select name="locationName" required>
+                    <option value="">選択してください</option>
+                    <option th:each="loc : ${locationList}" 
+                            th:value="${loc.name}" 
+                            th:text="${loc.name}">
+                    </option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="検索">
+</form>
+</body>
+</html>

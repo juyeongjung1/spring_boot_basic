@@ -56,7 +56,7 @@
       {
         "source_page": 2,
         "native_text_complete": true,
-        "mean_absolute_rgb_error_0_255": 0.0235
+        "mean_absolute_rgb_error_0_255": 0.0438
       },
       {
         "source_page": 3,

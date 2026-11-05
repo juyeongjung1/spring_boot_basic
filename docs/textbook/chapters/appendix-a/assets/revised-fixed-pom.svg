@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="426" height="246" viewBox="0 0 426 246">
+<rect x=".5" y=".5" width="425" height="245" fill="white" stroke="#222"/>
+<text x="12" y="25" font-family="Meiryo" font-size="13" font-weight="bold">生成後にpom.xmlを確認する</text>
+<path d="M10 35 H416" stroke="#E44D26" stroke-width="2"/>
+<text x="12" y="55" font-family="Meiryo" font-size="10.5">親：org.springframework.boot:spring-boot-starter-parent</text>
+<text x="12" y="75" font-family="Meiryo" font-size="10.5">バージョン：4.0.2</text>
+<text x="12" y="95" font-family="Meiryo" font-size="10.5">java.version：21</text>
+<text x="12" y="115" font-family="Meiryo" font-size="10.5">Web MVC：spring-boot-starter-webmvc</text>
+<text x="12" y="135" font-family="Meiryo" font-size="10.5">画面テンプレート：spring-boot-starter-thymeleaf</text>
+<text x="12" y="155" font-family="Meiryo" font-size="10.5">DB：spring-boot-starter-data-jpa / mysql-connector-j</text>
+<text x="12" y="175" font-family="Meiryo" font-size="10.5">入力チェック：spring-boot-starter-validation</text>
+<text x="12" y="195" font-family="Meiryo" font-size="10.5">Lombok：Bootが管理するバージョンを使用</text>
+<text x="12" y="215" font-family="Meiryo" font-size="10.5">新規作成後：Maven更新 → JDK 21で起動</text>
+</svg>

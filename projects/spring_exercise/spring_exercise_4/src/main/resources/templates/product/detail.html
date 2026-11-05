@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<p th:text="${session.userData.empName}" style="margin-left:90%"></p>
+	<hr>
+	<h1>商品詳細</h1>
+	<table>
+		<tr>
+			<th>商品番号</th>
+			<th>商品名</th>
+			<th>価格</th>
+		</tr>
+		<tr>
+			<td th:text="${product.id}"></td>
+			<td th:text="${product.name}"></td>
+			<td th:text="${product.price}"></td>
+		</tr>
+	</table>
+	<form th:action="@{/product/update/}+${product.id}">
+		<input type = "submit" value = "修正">
+	</form>
+	<form th:action="@{/product/delete/}+${product.id}">
+		<input type = "submit" value = "削除">
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Table Example</title>
+
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+</head>
+
+<body>
+
+	<h2 class="mb-4">テーブルのサンプル</h2>
+
+<div class="table-responsive"> 
+    <table class="table table-striped table-bordered table-hover table-sm text-nowrap">
+        <thead class="text-center table-dark"> 
+            <tr>
+                <th>ヘッダー1</th>
+                <th>ヘッダー2</th>
+                <th>ヘッダー3</th>
+            </tr>
+        </thead> 
+        <tbody> 
+            <tr class="table-info">
+                <td>データ1</td>
+                <td>データ2</td>
+                <td>データ3</td>
+            </tr>
+            <tr >
+                <td>データ4</td>
+                <td>データ5</td>
+                <td>データ6</td>
+            </tr>
+            <tr>
+                <td class = "table-active">強調したいデータ</td>
+                <td>データ8</td>
+                <td>長いデータ長いデータ長いデータ長いデータ長いデータ</td>
+            </tr>
+        </tbody> <!-- END table body -->
+    </table> <!-- END table -->
+</div> <!-- END responsive table wrapper -->
+
+
+	<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+
+</body>
+
+</html>

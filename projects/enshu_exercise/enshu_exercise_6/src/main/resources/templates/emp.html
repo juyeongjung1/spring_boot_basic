@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+</head>
+
+<body>
+	<h1>社員情報</h1>
+	<table>
+		<tr>
+			<th>社員番号</th>
+			<th>社員名</th>
+			<th>給与</th>
+			<th>勤務地</th> <!--勤務地が追加されました-->
+			
+		</tr>
+		<tr>
+			<td th:text="${emp.id}"></td>
+			<td th:text="${emp.name}"></td>
+			<td th:text="${emp.salary}"></td>
+			
+		<!-- 演習6.3-b -->
+		<!-- 勤務地名を出力してください -->
+
+		</tr>
+	</table>
+	<p><a th:href="@{/}">メニューに戻る</a></p>
+
+	<hr>
+	<h3>オプション機能</h3>
+	<!--	オプション演習-->
+
+	<form th:action="@{/delete/}+${emp.id}">
+		<input type="submit" value="削除">
+	</form>
+
+
+</body>
+
+</html>

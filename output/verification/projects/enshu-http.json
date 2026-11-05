@@ -1,0 +1,439 @@
+[
+  {
+    "project": "projects\\enshu_answer\\enshu_answer_1",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      },
+      {
+        "step": "設問と解答",
+        "path": "/",
+        "status": 200
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_answer\\enshu_answer_2",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      },
+      {
+        "step": "BMI計算",
+        "path": "/bmi",
+        "status": 200
+      },
+      {
+        "step": "BMI計算",
+        "path": "/bmi2",
+        "status": 200
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_answer\\enshu_answer_3",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      },
+      {
+        "step": "全件検索",
+        "path": "/findAll",
+        "status": 200
+      },
+      {
+        "step": "主キー検索",
+        "path": "/showFindById?id=1001",
+        "status": 200
+      },
+      {
+        "step": "給与検索",
+        "path": "/showFindBySalary?salary=230000",
+        "status": 200
+      },
+      {
+        "step": "名前検索",
+        "path": "/showFindByName?name=%E5%B1%B1%E7%94%B0%E5%A4%AA%E9%83%8E",
+        "status": 200
+      },
+      {
+        "step": "社員登録",
+        "path": "/insertEmp",
+        "status": 200
+      },
+      {
+        "step": "登録した社員の再検索",
+        "path": "/showFindById?id=1014",
+        "status": 200
+      },
+      {
+        "step": "社員削除",
+        "path": "/delete/1014",
+        "status": 302
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "modelmapper": "3.2.6",
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_answer\\enshu_answer_4",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      },
+      {
+        "step": "ログイン入力チェック",
+        "path": "/login3",
+        "status": 200
+      },
+      {
+        "step": "ログインとセッション",
+        "path": "/login2",
+        "status": 200
+      },
+      {
+        "step": "全件検索",
+        "path": "/emp/findAll",
+        "status": 200
+      },
+      {
+        "step": "主キー検索",
+        "path": "/emp/showFindById?id=1001",
+        "status": 200
+      },
+      {
+        "step": "給与検索",
+        "path": "/emp/showFindBySalary?salary=230000",
+        "status": 200
+      },
+      {
+        "step": "名前検索",
+        "path": "/emp/showFindByName?name=%E5%B1%B1%E7%94%B0%E5%A4%AA%E9%83%8E",
+        "status": 200
+      },
+      {
+        "step": "登録入力チェック",
+        "path": "/emp/insertEmp",
+        "status": 200
+      },
+      {
+        "step": "社員登録",
+        "path": "/emp/insertEmp",
+        "status": 200
+      },
+      {
+        "step": "登録した社員の再検索",
+        "path": "/emp/showFindById?id=1010",
+        "status": 200
+      },
+      {
+        "step": "社員削除",
+        "path": "/emp/delete/1010",
+        "status": 302
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_answer\\enshu_answer_5",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      },
+      {
+        "step": "ログイン入力チェック",
+        "path": "/login",
+        "status": 200
+      },
+      {
+        "step": "ログインとセッション",
+        "path": "/login",
+        "status": 302
+      },
+      {
+        "step": "全件検索",
+        "path": "/emp/findAll",
+        "status": 200
+      },
+      {
+        "step": "Thymeleaf共通レイアウト",
+        "path": "/emp/findAll",
+        "status": 200
+      },
+      {
+        "step": "一般社員ログイン",
+        "path": "/login",
+        "status": 302
+      },
+      {
+        "step": "一般社員の給与列非表示",
+        "path": "/emp/findAll",
+        "status": 200
+      },
+      {
+        "step": "管理者セッションに戻す",
+        "path": "/login",
+        "status": 302
+      },
+      {
+        "step": "主キー検索",
+        "path": "/emp/showFindById?id=1001",
+        "status": 200
+      },
+      {
+        "step": "給与検索",
+        "path": "/emp/showFindBySalary?salary=230000",
+        "status": 200
+      },
+      {
+        "step": "名前検索",
+        "path": "/emp/showFindByName?name=%E5%B1%B1%E7%94%B0%E5%A4%AA%E9%83%8E",
+        "status": 200
+      },
+      {
+        "step": "登録入力チェック",
+        "path": "/emp/insertEmp",
+        "status": 200
+      },
+      {
+        "step": "社員登録",
+        "path": "/emp/insertEmp",
+        "status": 302
+      },
+      {
+        "step": "登録した社員の再検索",
+        "path": "/emp/showFindById?id=1015",
+        "status": 200
+      },
+      {
+        "step": "社員削除",
+        "path": "/emp/delete/1015",
+        "status": 302
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_answer\\enshu_answer_6",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      },
+      {
+        "step": "全件検索",
+        "path": "/findAll",
+        "status": 200
+      },
+      {
+        "step": "主キー検索",
+        "path": "/showFindById?id=1001",
+        "status": 200
+      },
+      {
+        "step": "外部参照の表示",
+        "path": "/showFindById?id=1001",
+        "status": 200
+      },
+      {
+        "step": "存在しない社員の表示",
+        "path": "/showFindByIdSafe?id=999999",
+        "status": 200
+      },
+      {
+        "step": "勤務地選択肢",
+        "path": "/showInputView",
+        "status": 200
+      },
+      {
+        "step": "JPQL関連検索",
+        "path": "/findHighSalary?salary=0&locationName=tokyo",
+        "status": 200
+      },
+      {
+        "step": "社員登録",
+        "path": "/insertEmp",
+        "status": 200
+      },
+      {
+        "step": "登録した社員の再検索",
+        "path": "/showFindById?id=1012",
+        "status": 200
+      },
+      {
+        "step": "社員削除",
+        "path": "/delete/1012",
+        "status": 302
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_answer\\enshu_answer_7",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      },
+      {
+        "step": "全件検索",
+        "path": "/findAll",
+        "status": 200
+      },
+      {
+        "step": "主キー検索",
+        "path": "/showFindById?id=1001",
+        "status": 200
+      },
+      {
+        "step": "外部参照の表示",
+        "path": "/showFindById?id=1001",
+        "status": 200
+      },
+      {
+        "step": "存在しない社員の表示",
+        "path": "/showFindByIdSafe?id=999999",
+        "status": 200
+      },
+      {
+        "step": "勤務地選択肢",
+        "path": "/showInputView",
+        "status": 200
+      },
+      {
+        "step": "Bootstrap共通レイアウト",
+        "path": "/4",
+        "status": 200
+      },
+      {
+        "step": "Bootstrap静的CSS",
+        "path": "/css/bootstrap.min.css",
+        "status": 200
+      },
+      {
+        "step": "社員登録",
+        "path": "/insertEmp",
+        "status": 302
+      },
+      {
+        "step": "登録した社員の再検索",
+        "path": "/showFindById?id=1013",
+        "status": 200
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_exercise\\enshu_exercise_2",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "exercise_todo_preserved": true,
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_exercise\\enshu_exercise_3",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "modelmapper": "3.2.6",
+    "exercise_todo_preserved": true,
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_exercise\\enshu_exercise_4",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "exercise_todo_preserved": true,
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_exercise\\enshu_exercise_5",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "exercise_todo_preserved": true,
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_exercise\\enshu_exercise_6",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "exercise_todo_preserved": true,
+    "passed": true
+  },
+  {
+    "project": "projects\\enshu_exercise\\enshu_exercise_7",
+    "checks": [
+      {
+        "step": "初期画面",
+        "path": "/",
+        "status": 200
+      }
+    ],
+    "java_class_major": 65,
+    "spring_boot": "4.0.2",
+    "exercise_todo_preserved": true,
+    "passed": true
+  }
+]

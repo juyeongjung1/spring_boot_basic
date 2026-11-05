@@ -1,4 +1,4 @@
-<!-- 元PDF 7〜10ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 7〜10ページ。Java 21・Spring Boot 4.0.2対応版。 -->
 
 ::: {#page-7 .source-page}
 
@@ -21,6 +21,12 @@
 ::: {#p008-b01 .heading}
 
 [演習の目標]{.s006}
+
+:::
+
+::: {#migration-ex01-environment .paragraph}
+
+本演習は、Java 21・Spring Boot 4.0.2・Pleiades 2025のJava Fullを前提にします。ここでは基礎知識の設問に答えます。以降の実装演習では、付録の手順で読み込んだ配布プロジェクトを使います。
 
 :::
 

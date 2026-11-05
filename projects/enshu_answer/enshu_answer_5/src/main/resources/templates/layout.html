@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" th:href="@{/css/layout.css}" />
+<link rel="icon" type="image/png" th:href="@{/image/logo.png}" />
+<title>人事管理システム</title>
+</head>
+<body>
+   <header>
+		<h1><img class="logo_img" th:src="@{/image/logo.png}" alt="Logo">人事管理システム
+		</h1>
+		<span class="login_user_name" th:text = "${session.user.name}"></span>
+	</header>
+    </hr>
+    
+    <div class="flex-container">
+    	<!-- サイドバー -->
+		<nav>
+			<ul>
+				<li><a th:href="@{/emp/findAll}">全社員一覧</a></li>
+				<li><a th:href="@{/emp/showInputView}">社員データ登録</a></li>
+				<li><a th:href="@{/}">ログアウト</a></li>
+			</ul>
+			<form th:action="@{/emp/showFindById}">
+		<h3>社員番号で検索</h3>
+		<input type = "number" name = "id">
+		<input type = "submit" value = "検索">
+	</form>
+	<form th:action="@{/emp/showFindBySalary}">
+		<h3>給与で検索</h3>
+		<input type = "number" name = "salary">
+		<input type = "submit" value = "検索">
+	</form>
+	<form th:action="@{/emp/showFindByName}">
+		<h3>社員名で検索</h3>
+		<input type = "text" name = "name">
+		<input type = "submit" value = "検索">
+	</form>
+		</nav>
+
+		<!-- メインコンテンツ -->
+		<main layout:fragment="main_content">
+			<!-- 各ページ固有のコンテンツがここに入ります -->
+		</main>
+    </div>
+    <!-- フッター -->
+	<footer>
+		<p>Copyright © 2023 Trainocate Spring. All rights reserved.</p>
+	</footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!-- 元PDF 164〜191ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 164〜191ページ。Java 21・Spring Boot 4.0.2対応版。 -->
 
 ::: {#page-164 .source-page}
 
@@ -49,6 +49,12 @@
 ::: {#p166-b01 .heading}
 
 [章の概要]{.s008}
+
+:::
+
+::: {#migration-05-environment .paragraph}
+
+本章は、Java 21・Spring Boot 4.0.2・Pleiades 2025のJava Fullで進めます。作業用は `projects/spring_exercise/spring_exercise_5`、確認用は `projects/spring_answer/spring_answer_5` です。JREシステム・ライブラリーとMavenの実行JREをJDK 21に合わせます。
 
 :::
 
@@ -919,9 +925,7 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 ::: {#p182-b05 .paragraph}
 
-[レイアウト機能を使うためには、関連のライブラリが必要です。追加して、maven install をしてお]{.s009}\
-[きましょう。]{.s009}
-
+レイアウト機能を使うため、上記の依存を追加します。バージョンはSpring Boot 4.0.2の親POMに任せます。保存後は［Maven］→［プロジェクトの更新］を実行し、アプリケーションを再起動して画面を確認しましょう。
 :::
 
 :::
@@ -1052,21 +1056,20 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 ```xml
  1:<!DOCTYPE html>
- 2:<html xmlns:th=”http://www.thymeleaf.org”
- 3: xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”
- 4:       layout:decorate=”~{/layout}”>
+ 2:<html xmlns:th="http://www.thymeleaf.org"
+ 3: xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+ 4:       layout:decorate="~{/layout}">
  5:
- 6:       <!—省略-->
+ 6:       <!--省略-->
  7:
  8:<body>
- 9:<main layout:fragment=”main_content”>
+ 9:<main layout:fragment="main_content">
 10:
-11:<!—既存のコンテンツのソースコード-->
+11:<!--既存のコンテンツのソースコード-->
 12:
 13:</main>
 14:</body>
 ```
-
 :::
 
 ::: {#p184-b11 .paragraph}

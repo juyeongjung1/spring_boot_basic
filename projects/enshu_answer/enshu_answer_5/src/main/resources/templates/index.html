@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="icon" type="image/png" th:href="@{/image/logo.png}" />
+	<title>人事管理システム</title>
+</head>
+
+<body>
+	<div class="header">
+		
+		<h1><img class="logo_img" th:src="@{/image/logo.png}" alt="Logo">人事管理システム</h1>
+	</div>
+	
+	<div class="login-form-container">
+		
+		
+		<form th:action="@{/login}" method="post" th:object="${empForm}">
+			<h2>ログイン</h2>
+			<table>
+				<tr>
+					<td>社員番号</td>
+					<td><input type="number" th:field="*{id}">
+						<span th:errors="*{id}"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>パスワード</td>
+					<td><input type="password" th:field="*{password}">
+						<span th:errors="*{password}"></span>
+					</td>
+				</tr>
+
+			</table>
+			<input type="submit" value="ログイン">
+		</form>
+	</div>
+	<script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>

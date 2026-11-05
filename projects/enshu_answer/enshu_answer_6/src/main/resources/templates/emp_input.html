@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+</head>
+
+<body>
+	<h1>社員登録</h1>
+
+	<form th:action="@{/insertEmp}" method="post">
+		<table>
+			<tr>
+				<td>社員名</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>パスワード</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td>給与</td>
+				<td><input type="number" name="salary"></td>
+			</tr>
+			<tr>
+				<td>勤務地</td>
+				<td>
+					<select name="locationId" required>
+						<option value="">選択してください</option>
+						<option th:each="loc : ${locations}" th:value="${loc.id}" th:text="${loc.name}">
+						</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<input type="submit" value="登録">
+	</form>
+
+	<p><a th:href="@{/}">メニューに戻る</a></p>
+
+</body>
+
+</html>

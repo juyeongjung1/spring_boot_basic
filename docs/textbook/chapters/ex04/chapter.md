@@ -1,4 +1,4 @@
-<!-- 元PDF 29〜36ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 29〜36ページ。Java 21・Spring Boot 4.0.2対応版。 -->
 
 ::: {#page-29 .source-page}
 
@@ -21,6 +21,12 @@
 ::: {#p030-b01 .heading}
 
 [演習の目標]{.s006}
+
+:::
+
+::: {#migration-ex04-environment .paragraph}
+
+本演習は、Java 21・Spring Boot 4.0.2・Pleiades 2025で進めます。作業用は `projects/enshu_exercise/enshu_exercise_4`、答え合わせ用は `projects/enshu_answer/enshu_answer_4` です。作業用には演習で実装する箇所が残っています。
 
 :::
 

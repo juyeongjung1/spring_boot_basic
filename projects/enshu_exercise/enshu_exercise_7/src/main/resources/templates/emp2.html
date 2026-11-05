@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>社員詳細</title>
+</head>
+<body>
+
+<h1>社員詳細</h1>
+
+<!-- 6.3-d: nullチェックによる出し分け -->
+<div th:if="${emp == null}">
+    <p>該当する社員情報は存在しません。</p>
+    <p><a th:href="@{/}">メニューに戻る</a></p>
+</div>
+
+<div th:unless="${emp == null}">
+    <table border="1">
+        <tr>
+            <th>社員番号</th>
+            <td th:text="${emp.id}"></td>
+        </tr>
+        <tr>
+            <th>社員名</th>
+            <td th:text="${emp.name}"></td>
+        </tr>
+        <tr>
+            <th>給与</th>
+            <td th:text="${emp.salary}"></td>
+        </tr>
+        <tr>
+            <th>勤務地</th>
+            <td th:text="${emp.location.name}"></td>
+        </tr>
+    </table>
+</div>
+	
+
+
+</body>
+
+</html>

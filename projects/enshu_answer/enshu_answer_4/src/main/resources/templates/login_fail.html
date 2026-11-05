@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+</head>
+
+<body>
+	<h1>人事管理システム</h1>
+	<h2>ログイン</h2>
+<!--演習4.1-->
+<!--f. 	既存のログインページ(index.html)の<form>要素と同じコードが書かれていることを確認してください。
+	action属性が同じですので、同じメソッドを呼び出します。-->
+	<p style="color:red;">社員番号又はパスワードに誤りがあります。</p>
+	<form th:action = "@{/login}" method = "post">
+		<table>
+			<tr>
+				<td>社員番号</td>
+				<td><input type="number" name="id"></td>
+			</tr>
+			<tr>
+				<td>パスワード</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+
+		</table>
+		<input type="submit" value="ログイン">
+	</form>
+
+</body>
+
+</html>

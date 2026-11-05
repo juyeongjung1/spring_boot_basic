@@ -1,0 +1,45 @@
+<!--7.6の正解 -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+  <title>人事管理システム</title>
+</head>
+
+<body class="bg-light p-4">
+  <div class="container">
+    <h1 class="text-primary fw-bold mb-4 border-bottom">人事管理システム</h1>
+    <div class="row">
+      
+      <!-- サイドメニュー -->
+      <div class="col-md-3">
+        <h4 class="text-secondary">メニュー</h4>
+        <ul class="mb-4 ps-0" style="list-style: none;">
+          <li><a th:href="@{/findAll}" class="btn btn-outline-primary w-100 mb-2">全社員一覧</a></li>
+          <li><a th:href="@{/showSearchForm}" class="btn btn-outline-primary w-100 mb-2">詳細検索</a></li>
+          <li><a th:href="@{/showInputView2}" class="btn btn-outline-primary w-100">社員データ登録</a></li>
+        </ul>
+
+        <h5>社員番号で検索</h5>
+        <form th:action="@{/showFindById}" method="get">
+          <div class="input-group mb-3">
+            <input type="number" name="id" placeholder="社員番号" class="form-control" />
+            <button class="btn btn-primary" type="submit">検索</button>
+          </div>
+        </form>
+      </div><!-- END col-md-3 -->
+
+      <!-- メイン表示エリア -->
+      <div class="col-md-9" layout:fragment="main_content">
+        <!-- ここに各画面固有のコンテンツが表示されます -->
+      </div>
+
+    </div><!-- END row -->
+  </div><!-- END container -->
+
+  <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>

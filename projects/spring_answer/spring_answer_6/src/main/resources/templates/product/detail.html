@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>商品詳細</h1>
+	<div th:if="${product == null}">
+		<p>商品情報がありません。</p>
+		<a href="/product/">検索メニューに戻る</a>
+	</div>
+	<div th:unless="${product == null}">
+		<table>
+			<tr>
+				<th>商品番号</th>
+				<th>商品名</th>
+				<th>価格</th>
+				<th>カテゴリ</th>
+			</tr>
+			<tr>
+				<td th:text="${product.id}"></td>
+				<td th:text="${product.name}"></td>
+				<td th:text="${product.price}"></td>
+				<td th:if="${product.category != null}" th:text="${product.category.name}"></td>
+				<td th:unless="${product.category != null}">未設定</td>
+			</tr>
+		</table>
+		<form th:action="@{/product/update/}+${product.id}">
+			<input type="submit" value="修正">
+		</form>
+		<form th:action="@{/product/delete/}+${product.id}">
+			<input type="submit" value="削除">
+		</form>
+	</div>
+
+</body>
+
+</html>

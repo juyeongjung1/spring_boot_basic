@@ -1,0 +1,311 @@
+[
+  {
+    "project": "spring_exercise_1_3",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18107,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/",
+        "status": 404,
+        "expected_status": 404,
+        "passed": true,
+        "expected_text": "Not Found"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 23.06,
+    "note": "第1章の開始/解答はAppクラスのみの配布状態。標準404で組込サーバー稼働を確認。",
+    "seconds": 24.11
+  },
+  {
+    "project": "spring_exercise_2",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18108,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/login",
+        "status": 404,
+        "expected_status": 404,
+        "passed": true,
+        "expected_text": "Not Found"
+      },
+      {
+        "method": "GET",
+        "path": "/login2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/login3",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "POST",
+        "path": "/login2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 16.48,
+    "note": "IndexControllerと/loginのマッピング、/login3のModel設定は受講者の実装課題。課題の未実装を保っています。",
+    "seconds": 19.14
+  },
+  {
+    "project": "spring_exercise_3",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18109,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/product/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "商品一覧"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByPrice?price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "商品一覧"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 48.03,
+    "note": "Entity/Repository/Modelへの一覧設定が受講者の実装課題。検索画面と空の一覧を確認しています。",
+    "seconds": 53.08
+  },
+  {
+    "project": "spring_exercise_4",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18110,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/3",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 49.05,
+    "expected_incomplete": [
+      "POST /login",
+      "POST /login2",
+      "GET /4",
+      "POST /login4",
+      "GET /5"
+    ],
+    "note": "ログイン/Session/Validationが受講者の実装課題。/, /2, /3のログイン画面を確認。/4以降はth:object等の課題実装後に確認する画面です。",
+    "seconds": 53.26
+  },
+  {
+    "project": "spring_exercise_5",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18111,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/product/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "商品一覧"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByPrice?price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<td>1</td>"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByNameAndPrice?name=%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%86%E3%83%AC%E3%83%93&price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<td>1</td>"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 102.88,
+    "expected_incomplete": [
+      "商品名/価格/画像の動的表示",
+      "共通レイアウト適用"
+    ],
+    "note": "商品名/価格/画像の動的出力とレイアウト適用が受講者の課題。空欄を保ち、検索画面・DB由来の商品番号を確認しています。",
+    "seconds": 117.59
+  },
+  {
+    "project": "spring_exercise_6",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18112,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/product/",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<form"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findAll",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByPrice?price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      },
+      {
+        "method": "GET",
+        "path": "/product/findByNameAndPrice?name=%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%86%E3%83%AC%E3%83%93&price=30000",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "スマートテレビ"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 63.25,
+    "seconds": 73.58
+  },
+  {
+    "project": "spring_exercise_7",
+    "java": "21",
+    "spring_boot": "4.0.2",
+    "port": 18113,
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/7-2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-3",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-4",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-5",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-5-2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-6",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      },
+      {
+        "method": "GET",
+        "path": "/7-6-2",
+        "status": 200,
+        "expected_status": 200,
+        "passed": true,
+        "expected_text": "<html"
+      }
+    ],
+    "passed": true,
+    "startup_seconds": 87.94,
+    "seconds": 99.42
+  }
+]

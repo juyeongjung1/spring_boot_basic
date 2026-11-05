@@ -1,4 +1,4 @@
-<!-- 元PDF 192〜237ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 192〜237ページ。Java 21・Spring Boot 4.0.2対応版。 -->
 
 ::: {#page-192 .source-page}
 
@@ -61,6 +61,12 @@
 ::: {#p194-b01 .heading}
 
 [章の概要]{.s008}
+
+:::
+
+::: {#migration-06-environment .paragraph}
+
+本章は、Java 21・Spring Boot 4.0.2・Pleiades 2025のJava Fullで進めます。作業用は `projects/spring_exercise/spring_exercise_6`、確認用は `projects/spring_answer/spring_answer_6` です。JREシステム・ライブラリーとMavenの実行JREをJDK 21に合わせます。
 
 :::
 
@@ -2278,7 +2284,7 @@ pstm.setInt(1, id);
 
 ```java
 String sql = "SELECT * FROM product WHERE name LIKE ? AND price = ?";
-PreparedStatement pstmt = conn.prepareStatement(sql));
+PreparedStatement pstmt = conn.prepareStatement(sql);
 pstmt.setString(1, "%" + name + "%"); // 名前の部分一致
 pstmt.setInt(2, price); // 価格の条件
 ```
@@ -2396,6 +2402,12 @@ public String showProductListByNameAndPrice(String name, int price, Model model)
 ::: {#p232-b01 .heading}
 
 [【参考】 6.4.1 の例題をJPQL で作成する例]{.s011}
+
+:::
+
+::: {#migration-06-reference-query .paragraph}
+
+以下の複雑な検索は参考例です。`description`・`brand`・`sku` のフィールドや集計結果用DTOは、例題に合わせて別途定義する必要があります。配布モデルのまま確認する場合は、ここまでに扱った全件検索・主キー検索・商品名と価格の検索を使用してください。
 
 :::
 
@@ -2596,31 +2608,29 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 
 ```java
     /* 1. カテゴリごとの商品の合計価格を取得 */
-    @Query("SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name,
-SUM(p.price)) FROM Product p GROUP BY p.category.name")
+    @Query("SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name, "
+            + "SUM(p.price)) FROM Product p GROUP BY p.category.name")
     List<CategorySalesDTO> findTotalSalesByCategory();
 
     /*  2. カテゴリごとの商品数を取得 */
-    @Query("SELECT new
-jp.co.example.dto.CategoryProductCountDTO(p.category.name, COUNT(p)) " +
+    @Query("SELECT new "
+            + "jp.co.example.dto.CategoryProductCountDTO(p.category.name, COUNT(p)) " +
            "FROM Product p GROUP BY p.category.name")
     List<CategoryProductCountDTO> findProductCountByCategory();
 ```
-
 :::
 
 ::: {#p235-b04 .code}
 
 ```java
     /*  3. 指定した価格以上の商品があるカテゴリを取得（HAVING を使用） */
-    @Query("SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name,
-SUM(p.price)) " +
+    @Query("SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name, "
+            + "SUM(p.price)) " +
      "FROM Product p GROUP BY p.category.name HAVING SUM(p.price) >= :minSales")
     List<CategorySalesDTO> findCategoriesByMinSales(@Param("minSales") Long
 minSales);
 }
 ```
-
 :::
 
 ::: {#p235-b05 .paragraph}

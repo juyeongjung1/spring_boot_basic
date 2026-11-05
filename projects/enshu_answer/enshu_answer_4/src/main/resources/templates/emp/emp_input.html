@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+</head>
+<body>
+	 <p>ログインユーザ：<span th:text = "${session.user.name}"></span></p>
+    </hr>
+	<h1>社員登録</h1>
+
+	<form th:action = "@{/emp/insertEmp}" method = "post" th:object = "${empForm3}">
+		<table>
+			<tr>
+				<td>社員名</td>
+				<td><input type = "text" name = "name">
+				<span th:errors="*{name}"></span></td>
+			</tr>
+			<tr>
+				<td>パスワード</td>
+				<td><input type = "password" name = "password">
+				<span th:errors="*{password}"></span></td>
+			</tr>
+			<tr>
+				<td>給与</td>
+				<td><input type = "number" name = "salary">
+				<span th:errors="*{salary}"></span></td></td>
+			</tr>
+		</table>
+		<input type = "submit" value = "登録">
+	</form>
+	
+	<p><a th:href="@{/emp/}">メニューに戻る</a></p>
+
+</body>
+
+</html>

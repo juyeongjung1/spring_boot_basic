@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>人事管理システム</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+</head>
+
+<body>
+    <h2 class="text-center mt-3">社員一覧</h2>
+    <table class="table table-bordered table-hover">
+        <thead class="table-primary">
+            <tr>
+                <th>社員番号</th>
+                <th>社員名</th>
+                <th>給与</th>
+                <th>勤務地</th>
+            </tr>
+        </thead>
+        <tbody class="table-light">
+            <tr th:each="emp: ${empList}">
+                <td th:text="${emp.id}"></td>
+                <td th:text="${emp.name}"></td>
+                <td th:text="${emp.salary}"></td>
+                <td th:text="${emp.location.name}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="text-center"><a class="btn btn-secondary" th:href="@{/2}">メニューに戻る</a></p>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+
+</html>

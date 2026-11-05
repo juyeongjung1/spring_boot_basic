@@ -7,6 +7,7 @@ import json
 import re
 import shutil
 import subprocess
+import xml.etree.ElementTree as ET
 
 import pymupdf as fitz
 import typst
@@ -15,14 +16,20 @@ from PIL import Image, ImageChops, ImageStat
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
 FONT_FILES = ["msgothic.ttc", "msmincho.ttc", "meiryo.ttc", "meiryob.ttc", "arial.ttf", "arialbd.ttf", "ariblk.ttf", "segoeui.ttf", "segoeuib.ttf", "times.ttf", "timesbd.ttf", "timesi.ttf", "cour.ttf", "courbd.ttf", "courbi.ttf", "calibri.ttf", "calibrib.ttf", "cambria.ttc", "seguisym.ttf", "seguiemj.ttf", "YuGothR.ttc", "YuMincho.ttc", "HGRGE.TTC", "symbol.ttf", "wingding.ttf"]
+PLAIN_SYMBOLS = str.maketrans({'◼': '■', '⚫': '●', '\uf09f': '•'})
 
 
 def q(value):
     return json.dumps(value, ensure_ascii=False)
 
 
+def plain_symbols(value):
+    """Wingdingsの箇条書きを通常の単色文字にし、絵文字への代替を防ぐ。"""
+    return value.translate(PLAIN_SYMBOLS)
+
+
 def normalized(value):
-    return re.sub(r"\s+|\u200b", "", value).replace('\uf09f','•')
+    return re.sub(r"\s+|\u200b", "", plain_symbols(value))
 
 
 def font_style(style):
@@ -126,7 +133,7 @@ def native_runs(runs):
     for run in runs:
         for char, x in zip(run["text"], run["positions"]):
             if not char.isspace():
-                commands.append(f'#glyph({x}, {run["y"]}, {q(char)}, {q(run["style"])})')
+                commands.append(f'#glyph({x}, {run["y"]}, {q(plain_symbols(char))}, {q(run["style"])})')
     return commands
 
 
@@ -165,6 +172,7 @@ def inline(parts):
             result.append("#parbreak()")
             continue
         fields = (style or "").split(":")
+        value=plain_symbols(value)
         content = f'#styled({q(fields[-1])}, {q(value)})' if fields[-1] else f'#text({q(value)})'
         for modifier in reversed(fields[:-1]):
             content = f'#{modifier}[{content}]'
@@ -230,7 +238,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             info=layout.get('tables',{}).get(ident,{})
             xs=info.get('xs',list(range(len(node['rows'][0])+1)))
             widths=[max(1,xs[i+1]-xs[i]) for i in range(len(xs)-1)]
-            rows='('+','.join('('+','.join(q(c) for c in row)+',)' for row in node['rows'])+',)'
+            rows='('+','.join('('+','.join(q(plain_symbols(c)) for c in row)+',)' for row in node['rows'])+',)'
             return f'#table-panel({q(ident)},{rows},({",".join(str(w)+"fr" for w in widths)},),{str(node["has_header"]).lower()})'
         if node["kind"] == "code":
             values = ",".join(q(l) for l in node["text"].split("\n"))
@@ -293,12 +301,15 @@ def build(chapter="01", mode="all", markdown=None, output=None):
     font_paths = [str(font_dir)]
     config = json.loads((folder / "source.json").read_text(encoding="utf-8"))
     layout = json.loads((folder / "source-layout.json").read_text(encoding="utf-8"))
+    explicit_markdown=markdown is not None
     markdown = Path(markdown) if markdown else folder / "chapter.md"
     nodes, figures, order = read_markdown(markdown)
+    reference_markdown=folder/'baseline.md' if not explicit_markdown and (folder/'baseline.md').exists() else markdown
+    ref_nodes,ref_figures,_=read_markdown(reference_markdown) if reference_markdown!=markdown else (nodes,figures,order)
     expected_ids = set(layout["blocks"]) | set(layout.get('tables',{}))
     if mode in ("all", "reference"):
-        assert set(nodes) == expected_ids, "元位置版のブロックIDが元データと一致しません"
-        assert set(figures) == {f["id"] for f in layout["figures"]}, "元位置版の図版IDが一致しません"
+        assert set(ref_nodes) == expected_ids, "元位置版のブロックIDが元データと一致しません"
+        assert set(ref_figures) == {f["id"] for f in layout["figures"]}, "元位置版の図版IDが一致しません"
     for path in figures.values():
         assert (folder / path).is_file(), path
     header = style_header(layout["styles"])
@@ -311,13 +322,13 @@ def build(chapter="01", mode="all", markdown=None, output=None):
     if mode in ("all", "reference"):
         original = fitz.open(ROOT / config["pdf"])
         assert hashlib.sha256(Path(original.name).read_bytes()).hexdigest() == layout["source_sha256"], "元PDFが取り込み時から変わっています"
-        pdf, _ = compile_pdf(work, "reference-layout", header + source_layout(folder, layout, nodes, figures, markdown), font_paths)
+        pdf, _ = compile_pdf(work, "reference-layout", header + source_layout(folder, layout, ref_nodes, ref_figures, reference_markdown), font_paths)
         assert len(pdf) == config["last_page"] - config["first_page"] + 1
         pdf.save(out / "chapter-reference.pdf", garbage=4, deflate=True)
         comparisons = fitz.open()
         pages = []
         for index, info in enumerate(layout["pages"]):
-            expected = "".join(r["text"] for r in info["furniture"]) + "".join(nodes[ident]["text"] for ident in info["entries"] if ident in nodes)
+            expected = "".join(r["text"] for r in info["furniture"]) + "".join(ref_nodes[ident]["text"] for ident in info["entries"] if ident in ref_nodes)
             actual = pdf[index].get_text()
             matches = Counter(normalized(expected)) == Counter(normalized(actual))
             if not matches:
@@ -388,13 +399,16 @@ def build(chapter="01", mode="all", markdown=None, output=None):
                         continue
                     if x0 < 78 or x1 > 545 or y1 > 778:
                         overflow.append({"page": index + 1, "bbox": list(line["bbox"])})
-        expected = Counter(normalized("".join(n["text"] for n in nodes.values())).replace("◼", "■"))
+        expected = Counter(normalized("".join(n["text"] for n in nodes.values())))
+        # 新しい設定図のSVGには、輪郭ではなく文字として残したラベルもある。
+        svg_text=''.join(''.join(node.itertext()) for path in figures.values() if Path(path).suffix.lower()=='.svg' for node in ET.parse(folder/path).iter('{http://www.w3.org/2000/svg}text'))
+        expected += Counter(normalized(svg_text))
         expected += Counter(normalized(''.join(r['text'] for p in layout['pages'] if p['source_page'] in config.get('native_pages',[]) for r in p['furniture'])))
         for ident,node in nodes.items():
             if node['kind']=='table' and node['has_header']:
                 repeats=max(0,sum(m['id']==ident and m['edge']=='table-header' for m in marks)-1)
                 expected += Counter(normalized(''.join(node['rows'][0]))*repeats)
-        actual = Counter(normalized("".join(actual_body)).replace("◼", "■"))
+        actual = Counter(normalized("".join(actual_body)))
         complete = expected == actual
         if not complete:
             raise AssertionError(f"自動組版の文字差: 不足{dict(expected-actual)} 余分{dict(actual-expected)}")

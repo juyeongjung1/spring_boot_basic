@@ -1,0 +1,537 @@
+{
+  "java_version": "21.0.13",
+  "java_home": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+  "eclipse_build": "4.38.0.v20251201-0920",
+  "m2e_version": "2.7.600.20251121-1832",
+  "vm_arguments": [
+    "-Dfile.encoding=UTF-8",
+    "-XX:CompileCommand=quiet",
+    "-XX:CompileCommand=exclude org.eclipse.jdt.internal.core.dom.rewrite.ASTRewriteAnalyzer::getExtendedRange",
+    "-Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclientjava",
+    "-Dosgi.requiredJavaVersion=21",
+    "-Dosgi.dataAreaRequiresExplicitInit=true",
+    "-Dorg.eclipse.swt.graphics.Resource.reportNonDisposed=true",
+    "-Declipse.e4.inject.javax.warning=false",
+    "-Djava.security.manager=allow",
+    "-Declipse.platform.mergeTrust=true",
+    "--add-modules=ALL-SYSTEM",
+    "--add-opens=java.base/java.lang=ALL-UNNAMED",
+    "--add-opens=java.base/java.io=ALL-UNNAMED",
+    "--add-opens=java.base/java.net=ALL-UNNAMED",
+    "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED",
+    "--add-opens=java.base/sun.security.ssl=ALL-UNNAMED",
+    "--add-opens=java.desktop/java.beans=ALL-UNNAMED",
+    "-XX:+UseParallelGC",
+    "-XX:InitialRAMPercentage=5",
+    "-XX:MaxRAMPercentage=25",
+    "-XX:TieredStopAtLevel=1",
+    "-javaagent:dropins/MergeDoc/eclipse/plugins/jp.sourceforge.mergedoc.pleiades/pleiades.jar",
+    "-javaagent:lombok.jar",
+    "-Xverify:none",
+    "-Xms128m",
+    "-Xmx512m",
+    "-XX:ActiveProcessorCount=2",
+    "-Dprobe.jdk=D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+    "-Dprobe.projects=D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects",
+    "-Dprobe.report=D:\\work\\Spring Boot 入門\\tmp\\migration\\pleiades2025-report.json"
+  ],
+  "workspace": "D:\\work\\Spring Boot 入門\\tmp\\migration\\pleiades-workspace",
+  "project_copy": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects",
+  "pom_count": 32,
+  "import_results": 32,
+  "project_count": 32,
+  "java_project_count": 27,
+  "error_count": 0,
+  "projects": [
+    {
+      "name": "enshu_answer",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_answer",
+      "java_project": false,
+      "errors": 0
+    },
+    {
+      "name": "enshu_answer_1",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_answer\\enshu_answer_1",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 87,
+      "class_files": 2,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_answer_2",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_answer\\enshu_answer_2",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 87,
+      "class_files": 3,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_answer_3",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_answer\\enshu_answer_3",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 125,
+      "class_files": 8,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_answer_4",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_answer\\enshu_answer_4",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 128,
+      "class_files": 8,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_answer_5",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_answer\\enshu_answer_5",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 134,
+      "class_files": 7,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_answer_6",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_answer\\enshu_answer_6",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 126,
+      "class_files": 7,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_answer_7",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_answer\\enshu_answer_7",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 132,
+      "class_files": 7,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_exercise",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_exercise",
+      "java_project": false,
+      "errors": 0
+    },
+    {
+      "name": "enshu_exercise_2",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_exercise\\enshu_exercise_2",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 87,
+      "class_files": 3,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_exercise_3",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_exercise\\enshu_exercise_3",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 125,
+      "class_files": 6,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_exercise_4",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_exercise\\enshu_exercise_4",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 128,
+      "class_files": 6,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_exercise_5",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_exercise\\enshu_exercise_5",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 134,
+      "class_files": 7,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_exercise_6",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_exercise\\enshu_exercise_6",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 126,
+      "class_files": 10,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "enshu_exercise_7",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\enshu_exercise\\enshu_exercise_7",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 132,
+      "class_files": 10,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring-boot-basic",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects",
+      "java_project": false,
+      "errors": 0
+    },
+    {
+      "name": "spring_answer",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_answer",
+      "java_project": false,
+      "errors": 0
+    },
+    {
+      "name": "spring_answer_1_3",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_answer\\spring_answer_1_3",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 88,
+      "class_files": 1,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_answer_2",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_answer\\spring_answer_2",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 87,
+      "class_files": 6,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_answer_3",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_answer\\spring_answer_3",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 120,
+      "class_files": 8,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_answer_4",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_answer\\spring_answer_4",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 124,
+      "class_files": 9,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_answer_5",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_answer\\spring_answer_5",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 129,
+      "class_files": 11,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_answer_6",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_answer\\spring_answer_6",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 122,
+      "class_files": 7,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_answer_7",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_answer\\spring_answer_7",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 122,
+      "class_files": 13,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_exercise",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_exercise",
+      "java_project": false,
+      "errors": 0
+    },
+    {
+      "name": "spring_exercise_1_3",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_exercise\\spring_exercise_1_3",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 78,
+      "class_files": 1,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_exercise_2",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_exercise\\spring_exercise_2",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 84,
+      "class_files": 6,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_exercise_3",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_exercise\\spring_exercise_3",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 119,
+      "class_files": 8,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_exercise_4",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_exercise\\spring_exercise_4",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 123,
+      "class_files": 9,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_exercise_5",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_exercise\\spring_exercise_5",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 129,
+      "class_files": 11,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_exercise_6",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_exercise\\spring_exercise_6",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 118,
+      "class_files": 6,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    },
+    {
+      "name": "spring_exercise_7",
+      "location": "D:\\work\\Spring Boot 入門\\tmp\\migration\\ide-projects\\spring_exercise\\spring_exercise_7",
+      "java_project": true,
+      "source": "21",
+      "target": "21",
+      "compliance": "21",
+      "release": "enabled",
+      "method_parameters": "generate",
+      "jre": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+      "resolved_classpath_entries": 121,
+      "class_files": 2,
+      "class_major_versions": [
+        65
+      ],
+      "errors": 0
+    }
+  ],
+  "errors": []
+}

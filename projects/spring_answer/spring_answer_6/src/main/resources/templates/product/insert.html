@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>商品登録</h1>
+	<form th:action = "@{/product/insert}" method = "POST">
+	<p>商品番号：(自動割り当て)</p>
+	<p>商品名　：<input type = "text" name = "name"></p>
+	<p>商品価格：<input type = "number" name = "price"></p>
+	
+	<p>カテゴリ：<select name="categoryId" required>
+        <option value="">選択してください</option>
+        <option th:each="category : ${categories}" 
+                th:text="${category.name}"
+                th:value="${category.id}" >
+        </option>
+    </select>
+    </p>
+    
+	<!--この書き方は、お勧めしない
+	<p>カテゴリ：
+		<select name="categoryId" required>
+			<option value = "">選択してください</option>
+			<option value = "1">テレビ・モニター</option>
+			<option value = "2">コンピュータ</option>
+			<option value = "3">冷蔵庫</option>
+			<option value = "4">洗濯機</option>
+		</select>
+	</p>-->
+	<input type = "submit" value = "登録">
+	</form>
+	
+</body>
+
+</html>

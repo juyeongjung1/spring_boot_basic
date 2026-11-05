@@ -1,4 +1,4 @@
-<!-- 元PDF 31〜62ページ。本文の改訂はまだ行っていません。 -->
+<!-- 元PDF 31〜62ページ。Java 21・Spring Boot 4.0.2対応版。 -->
 
 ::: {#page-31 .source-page}
 
@@ -61,6 +61,12 @@
 ::: {#p033-b01 .heading}
 
 [章の概要]{.s008}
+
+:::
+
+::: {#migration-02-environment .paragraph}
+
+本章は、Java 21・Spring Boot 4.0.2・Pleiades 2025のJava Fullで進めます。作業用は `projects/spring_exercise/spring_exercise_2`、確認用は `projects/spring_answer/spring_answer_2` です。JREシステム・ライブラリーとMavenの実行JREをJDK 21に合わせます。
 
 :::
 
@@ -241,12 +247,12 @@
 ```java
  1:import java.io.IOException;
  2:
- 3:import javax.servlet.RequestDispatcher;
- 4:import javax.servlet.ServletException;
- 5:import javax.servlet.annotation.WebServlet;
- 6:import javax.servlet.http.HttpServlet;
- 7:import javax.servlet.http.HttpServletRequest;
- 8:import javax.servlet.http.HttpServletResponse;
+ 3:import jakarta.servlet.RequestDispatcher;
+ 4:import jakarta.servlet.ServletException;
+ 5:import jakarta.servlet.annotation.WebServlet;
+ 6:import jakarta.servlet.http.HttpServlet;
+ 7:import jakarta.servlet.http.HttpServletRequest;
+ 8:import jakarta.servlet.http.HttpServletResponse;
  9:
 10:@WebServlet(urlPatterns = "/index") //URL マッピング
 11:public class Sample1 extends HttpServlet { //HttpServlet の継承必要
@@ -264,6 +270,11 @@
 22: }
 23:}
 ```
+:::
+
+::: {#migration-02-servlet-comparison .paragraph}
+
+このコードはサーブレットとSpring MVCの役割を比較する例です。Spring Boot 4.0.2ではServletの型は `jakarta.servlet` を使います。本章の配布アプリは、以降の `@Controller` とThymeleafで画面を作成します。
 
 :::
 
@@ -355,6 +366,28 @@
 ::: {#p039-b01 .heading}
 
 [2\.2.&#32;]{.s004}[Controller の基本]{.s004}
+
+:::
+
+::: {#migration-02-webmvc .paragraph}
+
+Spring Boot 4.0.2では、Web MVC用に `spring-boot-starter-webmvc`、MVCテスト用に `spring-boot-starter-webmvc-test` を使用します。配布POMは設定済みです。以降の `@Controller`・`@GetMapping`・`Model` の基本的な使い方は同じです。
+
+:::
+
+::: {#migration-02-webmvc-dependencies .code}
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-webmvc</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-webmvc-test</artifactId>
+    <scope>test</scope>
+</dependency>
+```
 
 :::
 
@@ -718,22 +751,19 @@ initial-scale=1.0" />
 
 ::: {#p045-b04 .step}
 
-[2\.&#32;]{.s009}[Eclipse の上段メニューから、緑の「]{.s009}[⏻]{.s019}[」ボタンをクリックします。]{.s009}
-
+2\. `SpringExercise2Application.java` のような `main` メソッドを持つ起動クラスを選択し、右クリックして［実行］→［Spring Bootアプリケーション］を選びます。
 :::
 
 ![操作画面・図解](assets/p045-f15.svg){#p045-f15}
 
 ::: {#p045-b05 .step}
 
-[3\.&#32;]{.s009}[local の部分をダブルクリックし、展開します。]{.s009}
-
+3\. 実行構成の［JRE］がJDK 21であることを確認します。Bootダッシュボードを使う場合は、`local` の配下から対象プロジェクトを選んでも起動できます。
 :::
 
 ::: {#p045-b06 .step}
 
-[4\.&#32;]{.s009}[\[spring\_exercise\_2\]プロジェクトを右クリックし、]{.s009}[\[(再)起動\]を選択]{.s012}[します。]{.s009}
-
+4\. コンソールに起動完了のログが表示されるまで待ちます。再実行する場合は、先に動いている同じアプリケーションを停止してください。
 :::
 
 ![操作画面・図解](assets/p045-f16.svg){#p045-f16}

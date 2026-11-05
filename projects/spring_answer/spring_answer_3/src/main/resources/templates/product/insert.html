@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>商品登録</h1>
+	<form th:action = "@{/product/insert}" method = "POST">
+	<p>商品番号：(自動割り当て)</p>
+	<p>商品名　：<input type = "text" name = "name"></p>
+	<p>商品価格：<input type = "text" name = "price"></p>
+	<input type = "submit" value = "登録">
+	</form>
+</body>
+
+</html>

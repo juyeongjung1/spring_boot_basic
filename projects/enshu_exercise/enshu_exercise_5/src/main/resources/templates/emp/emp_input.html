@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--演習5.2
+f. <html>の属性を修正してください。-->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+	<link rel="stylesheet" th:href="@{/css/main_style.css}" />
+</head>
+<body>
+<!--演習5.2 g. <body>以下のコードを<main>要素で囲って、layout:fragment属性を付与してください。-->
+
+	<h1>社員登録</h1>
+
+	<form th:action = "@{/emp/insertEmp}" method = "post" th:object = "${empForm2}">
+		<table>
+			<tr>
+				<td>社員名</td>
+				<td><input type = "text" name = "name">
+				<span th:errors="*{name}"></span></td>
+			</tr>
+			<tr>
+				<td>パスワード</td>
+				<td><input type = "password" name = "password">
+				<span th:errors="*{password}"></span></td>
+			</tr>
+			<tr>
+				<td>給与</td>
+				<td><input type = "number" name = "salary">
+				<span th:errors="*{salary}"></span></td></td>
+			</tr>
+		</table>
+		<input type = "submit" value = "登録">
+	</form>
+	
+<!--ここまで</main>で囲ってください。 -->
+
+</body>
+
+</html>

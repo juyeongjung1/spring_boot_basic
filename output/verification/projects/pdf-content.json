@@ -1,0 +1,317 @@
+{
+  "sequential_code_blocks": true,
+  "collections": {
+    "textbook": {
+      "pages": 248,
+      "code_blocks_checked": 187,
+      "chapters": {
+        "front": {
+          "pages": [
+            1,
+            14
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {}
+        },
+        "01": {
+          "pages": [
+            15,
+            28
+          ],
+          "code_blocks": 3,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true,
+            "runtime Connector XML": true
+          }
+        },
+        "02": {
+          "pages": [
+            29,
+            56
+          ],
+          "code_blocks": 15,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "03": {
+          "pages": [
+            57,
+            115
+          ],
+          "code_blocks": 51,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true,
+            "ModelMapper 3.2.6": true
+          }
+        },
+        "04": {
+          "pages": [
+            116,
+            140
+          ],
+          "code_blocks": 23,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "05": {
+          "pages": [
+            141,
+            162
+          ],
+          "code_blocks": 22,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "06": {
+          "pages": [
+            163,
+            198
+          ],
+          "code_blocks": 39,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "07": {
+          "pages": [
+            199,
+            233
+          ],
+          "code_blocks": 33,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "appendix-a": {
+          "pages": [
+            234,
+            242
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true,
+            "固定4.0.2不在時の代替": true,
+            "アプリ単独起動": true,
+            "Maven/JRE21": true,
+            "Web MVC指定": true
+          }
+        },
+        "appendix-b": {
+          "pages": [
+            243,
+            248
+          ],
+          "code_blocks": 1,
+          "code_ordered_text_complete": true,
+          "premises": {}
+        }
+      },
+      "key_points": {},
+      "appendix_preview_pages": [
+        240,
+        241,
+        242
+      ],
+      "sha256": "f95a216793b8e8789cc34775e125b9fdb3e6c9ef0abbde68c5f296478c9919bb"
+    },
+    "exercise": {
+      "pages": 58,
+      "code_blocks_checked": 5,
+      "chapters": {
+        "ex-front": {
+          "pages": [
+            1,
+            6
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {}
+        },
+        "ex01": {
+          "pages": [
+            7,
+            9
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "ex02": {
+          "pages": [
+            10,
+            13
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "ex03": {
+          "pages": [
+            14,
+            21
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "ex04": {
+          "pages": [
+            22,
+            28
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "ex05": {
+          "pages": [
+            29,
+            36
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "ex06": {
+          "pages": [
+            37,
+            46
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "ex07": {
+          "pages": [
+            47,
+            57
+          ],
+          "code_blocks": 5,
+          "code_ordered_text_complete": true,
+          "premises": {
+            "Java21": true,
+            "SpringBoot4.0.2": true,
+            "Pleiades2025": true
+          }
+        },
+        "ex-back": {
+          "pages": [
+            58,
+            58
+          ],
+          "code_blocks": 0,
+          "code_ordered_text_complete": true,
+          "premises": {}
+        }
+      },
+      "key_points": {},
+      "appendix_preview_pages": [],
+      "sha256": "8b0371f5e405e421249aea8253598ff80d806b302fb2afc63cce8699655424b8"
+    }
+  },
+  "source": "chapter.md current → merged flow.pdf",
+  "reference_examined": false,
+  "errors": [],
+  "project_facts": {
+    "package_projects": 27,
+    "junit_tests": 27,
+    "http_requests": 144,
+    "ide_java_projects": 27,
+    "ide_all_projects": 32,
+    "ide_errors": 0,
+    "ide_java": "21.0.13",
+    "eclipse_build": "4.38.0.v20251201-0920"
+  },
+  "visual_review": {
+    "passed": true,
+    "pdf_pages": [
+      240,
+      241,
+      242
+    ],
+    "figure_ids": [
+      "p287-f10",
+      "p288-f11",
+      "p288-f13"
+    ],
+    "observations": [
+      "Java21/Boot4.0.2の新設定図が読み取れる",
+      "固定版が候補にない場合の配布POM代替手順が明示されている",
+      "枠外への文字切れ・図のはみ出しは見当たらない"
+    ]
+  },
+  "code_scope": {
+    "main_and_exercises": 191,
+    "appendix_b": 1,
+    "all": 192,
+    "whole_block_order_and_occurrence_checked": true
+  },
+  "verification_markdown_review": {
+    "file": "docs/textbook/verification.md",
+    "update_required_at_review": true,
+    "outdated_claims": [
+      "内容の改訂は行っていません",
+      "自動版244/57ページ",
+      "合冊301ページ",
+      "Java21/Boot4.0.2への更新は次工程"
+    ],
+    "actual_flow_pages": [
+      248,
+      58
+    ],
+    "actual_combined_flow_pages": 306,
+    "root_notified": true
+  }
+}

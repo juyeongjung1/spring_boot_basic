@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>人事管理システム</title>
+</head>
+
+<body>
+	<h1>社員情報</h1>
+	
+	<!-- 演習6.4-b -->
+
+<!-- empがnullなら、メッセージ表示。nullでなければテーブル表示 -->
+<div th:if="${emp == null}">
+   
+   
+    <p><a th:href="@{/}">メニューに戻る</a></p>
+</div>
+
+<div th:unless="${emp == null}">
+    <!-- ここに既存の社員情報テーブル（id, name, salary, location）をそのまま表示 -->
+
+
+	<table>
+		<tr>
+			<th>社員番号</th>
+			<th>社員名</th>
+			<th>給与</th>
+			<th>勤務地</th>
+			
+		</tr>
+		<tr>
+			<td th:text="${emp.id}"></td>
+			<td th:text="${emp.name}"></td>
+			<td th:text="${emp.salary}"></td>
+			
+		<!-- 演習6.4-b -->
+		<!-- 勤務地名を出力してください -->
+
+		</tr>
+	</table>
+</div>
+
+
+</body>
+
+</html>

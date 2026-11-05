@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>jp.co.trainocate.enshu</groupId>
+	<artifactId>enshu_exercise</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>enshu_exercise</name>
+	<modules>
+		<module>enshu_exercise_2</module>
+		<module>enshu_exercise_3</module>
+		<module>enshu_exercise_4</module>
+		<module>enshu_exercise_5</module>
+		<module>enshu_exercise_6</module>
+		<module>enshu_exercise_7</module>
+	</modules>
+</project>
