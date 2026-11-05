@@ -37,7 +37,7 @@
 
 [落丁本、乱丁本はお取り替えいたします。]{.s002}\
 [JAC0177G-L1-04]{.s002}\
-[© 2024 Trainocate Japan, Ltd.]{.s002}
+[© 2027 Trainocate Japan, Ltd.]{.s002}
 
 :::
 

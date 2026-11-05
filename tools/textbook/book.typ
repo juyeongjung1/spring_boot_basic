@@ -3,15 +3,35 @@
 #show regex("[■●•▪○]"): it => text(font: "MS Gothic", fallback: false,
   weight: "regular", style: "normal", stroke: none, it.text)
 #let at(x, y, body) = place(top + left, dx: x * 1pt, dy: y * 1pt, body)
-#let styled(style, body) = {
+#let styled(style, body, emphasis: false) = {
   let s = styles.at(style)
-  text(font: s.font, size: s.size * 1pt, weight: s.weight, style: s.slant,
-    fill: rgb(s.color), stroke: if s.stroke > 0 {s.stroke * 1pt + rgb(s.color)} else {none}, body)
+  let outline = if emphasis {calc.max(s.stroke, s.size / 35)} else {s.stroke}
+  text(font: if emphasis {"MS PGothic"} else {s.font}, size: s.size * 1pt,
+    weight: s.weight, style: s.slant, fill: rgb(s.color),
+    stroke: if outline > 0 {outline * 1pt + rgb(s.color)} else {none}, body)
+}
+// 比例書体の括弧を全角の字幅で組み、文字が詰まることを防ぐ。
+// 原本座標の一字配置には適用せず、本文の自動組版だけで使用する。
+#let flowing(body) = {
+  show regex("[「」『』【】（）]"): it => context {
+    let gothic = repr(text.font).contains("Gothic") or repr(text.font).contains("Meiryo")
+    text(font: if gothic {"MS Gothic"} else {"MS Mincho"}, fallback: false,
+      features: (halt: 0, palt: 0), it.text)
+  }
+  body
 }
 #let glyph(x, y, value, style) = at(x, y, text(top-edge: 0pt, bottom-edge: 0pt)[#styled(style, value)])
 #let mark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), y: here().position().y / 1pt)) <book-check>]
-#let paragraph(id, body) = block(above: 0pt, below: 6pt)[
-  #mark(id, "start")#h(11.04pt)#body#mark(id, "end")
+#let paragraph(id, body, indent: 11.04pt) = block(above: 0pt, below: 6pt)[
+  #mark(id, "start")#h(indent)#body#mark(id, "end")
+]
+#let bullet-paragraph(id, marker, body, continuing: false) = block(
+  above: 12.96pt, below: if continuing {6.96pt} else {12.96pt}, inset: (left: 11.04pt))[
+  #mark(id, "start")#grid(columns: (12pt, 1fr), column-gutter: 6pt, marker, body)#mark(id, "end")
+]
+#let list-continuation(id, body, continuing: false) = block(
+  above: 0pt, below: if continuing {6.96pt} else {12.96pt}, inset: (left: 29.04pt))[
+  #mark(id, "start")#body#mark(id, "end")
 ]
 #let section-heading(id, body, above: 18pt) = block(sticky: true, above: above, below: 12pt)[
   #mark(id, "heading")#body
@@ -19,13 +39,13 @@
 #let step(id, body) = block(sticky: true, above: 8pt, below: 6pt)[
   #mark(id, "heading")#body
 ]
-#let list-item(id, body) = block(above: 6pt, below: 6pt)[
+#let list-item(id, body) = block(above: 12.96pt, below: 12.96pt, inset: (left: 11.04pt))[
   #mark(id, "start")#body#mark(id, "end")
 ]
 #let code-label(id, body) = block(sticky: true, above: 6pt, below: 4pt)[
   #mark(id, "heading")#body
 ]
-#let instruction(id, body) = block(breakable: false, above: 0pt, below: 0pt)[
+#let instruction(id, body) = block(breakable: false, above: 0pt, below: 12pt)[
   #mark(id, "start")#body#mark(id, "end")
 ]
 #let slide-header(height, body) = block(width: 100%, height: height * 1pt,
@@ -64,7 +84,7 @@
 #let cover(number, title, goal_title, goals) = at(-85.104, -86,
   box(width: 595.32pt, height: 841.92pt)[#cover-content(number, title, goal_title, goals)])
 #let native-cover(body) = at(-85.104, -86, box(width: 595.32pt, height: 841.92pt)[#body])
-#let table-panel(id, rows, widths, has_header) = layout(size => {
+#let table-panel(id, rows, widths, has_header) = block(above: 8pt, below: 12pt, breakable: true)[#layout(size => {
  let grid = [
   #set text(font: "MS PGothic", size: if widths.len() > 4 {8.5pt} else {9.5pt})
   #set par(leading: 4pt, spacing: 0pt)
@@ -74,11 +94,11 @@
     if i == 0 and has_header {cells.push(table.header(repeat: true, ..current))}
     else {cells += current}
   }
-  #table(columns: widths, inset: 3pt, stroke: 0.5pt + rgb("C8CBD5"), ..cells)
+  #flowing[#table(columns: widths, inset: 3pt, stroke: 0.65pt + rgb("404040"), ..cells)]
  ]
  let short = measure(block(width: size.width, grid)).height <= 600pt
- block(above: 8pt, below: 12pt, breakable: not short)[
+ block(above: 0pt, below: 0pt, breakable: not short)[
    #mark(id, if short {"short-table"} else {"long-table"})
    #mark(id, "start")#grid#mark(id, "end")
  ]
-})
+})]

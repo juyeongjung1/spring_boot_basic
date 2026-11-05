@@ -1,10 +1,13 @@
 {
   "collection": "textbook",
-  "flow_pages": 308,
+  "flow_pages": 309,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
-  "verification": "output/verification/layout/page-boundaries.json",
-  "scope": "現在の合冊の文字・ページ境界。画素比較はスライド65点と付録15pで別記。"
+  "uri_annotations_verified": 63,
+  "maximum_uri_coordinate_delta_pt": 0,
+  "pdf_sha256": "4c659e4d0766e281d0207b0814a4492de6e4c1a75b5ae3ebcf2d2e77b94644f5",
+  "verification": "output/verification/remaining/",
+  "scope": "今回の合冊の本文/ヘッダー/ページ境界/URI。画像の表示はfinal-images-qaに別記。"
 }

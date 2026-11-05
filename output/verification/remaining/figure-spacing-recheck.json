@@ -1,0 +1,1248 @@
+{
+  "generated_utc": "2026-11-05T04:13:56.062928+00:00",
+  "source_edited": false,
+  "target": {
+    "figure_id": "p073-f11",
+    "next_id": "p073-b02",
+    "figure_end_page": 12,
+    "paragraph_page": 12,
+    "figure_end_y_pt": 185.09997919897378,
+    "paragraph_start_y_pt": 197.09997919897378,
+    "same_page": true,
+    "gap_pt": 12.0
+  },
+  "target_gap_12pt": true,
+  "all_figure_following_paragraphs_03": [
+    {
+      "figure_id": "p065-f01",
+      "next_id": "p065-b02",
+      "figure_end_page": 3,
+      "paragraph_page": 3,
+      "figure_end_y_pt": 393.39997558593757,
+      "paragraph_start_y_pt": 439.026611328125,
+      "same_page": true,
+      "gap_pt": 45.626636
+    },
+    {
+      "figure_id": "p071-f08",
+      "next_id": "p071-b04",
+      "figure_end_page": 10,
+      "paragraph_page": 10,
+      "figure_end_y_pt": 557.6800016329942,
+      "paragraph_start_y_pt": 569.680001632994,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p073-f11",
+      "next_id": "p073-b02",
+      "figure_end_page": 12,
+      "paragraph_page": 12,
+      "figure_end_y_pt": 185.09997919897378,
+      "paragraph_start_y_pt": 197.09997919897378,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p082-f17",
+      "next_id": "p082-b02",
+      "figure_end_page": 21,
+      "paragraph_page": 21,
+      "figure_end_y_pt": 391.3599975585938,
+      "paragraph_start_y_pt": 437.10662841796875,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "figure_id": "p086-f19",
+      "next_id": "p086-b08",
+      "figure_end_page": 25,
+      "paragraph_page": 25,
+      "figure_end_y_pt": 386.0399892858198,
+      "paragraph_start_y_pt": 398.0399892858198,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p087-f20",
+      "next_id": "p087-b02",
+      "figure_end_page": 26,
+      "paragraph_page": 26,
+      "figure_end_y_pt": 199.50000430808058,
+      "paragraph_start_y_pt": 211.50000430808058,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p088-f21",
+      "next_id": "p088-b05",
+      "figure_end_page": 27,
+      "paragraph_page": 27,
+      "figure_end_y_pt": 577.2299312344412,
+      "paragraph_start_y_pt": 589.2299312344412,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p089-f22",
+      "next_id": "p089-b04",
+      "figure_end_page": 28,
+      "paragraph_page": 28,
+      "figure_end_y_pt": 491.04001117348355,
+      "paragraph_start_y_pt": 503.04001117348355,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p090-f23",
+      "next_id": "p090-b02",
+      "figure_end_page": 29,
+      "paragraph_page": 29,
+      "figure_end_y_pt": 391.3599975585938,
+      "paragraph_start_y_pt": 436.75335693359375,
+      "same_page": true,
+      "gap_pt": 45.393359
+    },
+    {
+      "figure_id": "p093-f26",
+      "next_id": "p093-b07",
+      "figure_end_page": 32,
+      "paragraph_page": 32,
+      "figure_end_y_pt": 357.72156419856293,
+      "paragraph_start_y_pt": 369.72156419856293,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p093-f27",
+      "next_id": "p093-b10",
+      "figure_end_page": 32,
+      "paragraph_page": 32,
+      "figure_end_y_pt": 535.3015908114606,
+      "paragraph_start_y_pt": 547.3015908114606,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p094-f28",
+      "next_id": "p094-b07",
+      "figure_end_page": 33,
+      "paragraph_page": 33,
+      "figure_end_y_pt": 559.6600109060826,
+      "paragraph_start_y_pt": 571.6600109060826,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p094-f29",
+      "next_id": "p094-b08",
+      "figure_end_page": 33,
+      "paragraph_page": 33,
+      "figure_end_y_pt": 685.050017734484,
+      "paragraph_start_y_pt": 697.050017734484,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p098-f32",
+      "next_id": "p098-b03",
+      "figure_end_page": 37,
+      "paragraph_page": 37,
+      "figure_end_y_pt": 248.93996337890627,
+      "paragraph_start_y_pt": 260.93996337890627,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p098-f33",
+      "next_id": "p098-b04",
+      "figure_end_page": 37,
+      "paragraph_page": 37,
+      "figure_end_y_pt": 430.34993505253215,
+      "paragraph_start_y_pt": 442.34993505253215,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p102-f36",
+      "next_id": "p102-b03",
+      "figure_end_page": 41,
+      "paragraph_page": 41,
+      "figure_end_y_pt": 263.76283921256424,
+      "paragraph_start_y_pt": 275.7628392125642,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p102-f37",
+      "next_id": "p102-b04",
+      "figure_end_page": 41,
+      "paragraph_page": 41,
+      "figure_end_y_pt": 427.1220059175769,
+      "paragraph_start_y_pt": 439.1220059175769,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p103-f38",
+      "next_id": "p103-b02",
+      "figure_end_page": 42,
+      "paragraph_page": 42,
+      "figure_end_y_pt": 391.3599975585938,
+      "paragraph_start_y_pt": 418.75335693359375,
+      "same_page": true,
+      "gap_pt": 27.393359
+    },
+    {
+      "figure_id": "p110-f45",
+      "next_id": "p110-b04",
+      "figure_end_page": 49,
+      "paragraph_page": 49,
+      "figure_end_y_pt": 480.47999960683285,
+      "paragraph_start_y_pt": 493.4399996068328,
+      "same_page": true,
+      "gap_pt": 12.96
+    },
+    {
+      "figure_id": "p111-f46",
+      "next_id": "p111-b06",
+      "figure_end_page": 50,
+      "paragraph_page": 50,
+      "figure_end_y_pt": 647.0199855345365,
+      "paragraph_start_y_pt": 659.0199855345365,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p112-f47",
+      "next_id": "p112-b01",
+      "figure_end_page": 51,
+      "paragraph_page": 51,
+      "figure_end_y_pt": 189.8999680281374,
+      "paragraph_start_y_pt": 201.8999680281374,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p112-f48",
+      "next_id": "p112-b02",
+      "figure_end_page": 51,
+      "paragraph_page": 51,
+      "figure_end_y_pt": 448.129941835131,
+      "paragraph_start_y_pt": 460.129941835131,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p113-f50",
+      "next_id": "p113-b08",
+      "figure_end_page": 52,
+      "paragraph_page": 52,
+      "figure_end_y_pt": 567.9600023030544,
+      "paragraph_start_y_pt": 579.9600023030544,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p115-f52",
+      "next_id": "p115-b03",
+      "figure_end_page": 54,
+      "paragraph_page": 54,
+      "figure_end_y_pt": 512.9873765766465,
+      "paragraph_start_y_pt": 524.9873765766465,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p118-f54",
+      "next_id": "p118-b02",
+      "figure_end_page": 57,
+      "paragraph_page": 57,
+      "figure_end_y_pt": 336.29996456931104,
+      "paragraph_start_y_pt": 348.29996456931104,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p120-f55",
+      "next_id": "p120-b03",
+      "figure_end_page": 59,
+      "paragraph_page": 59,
+      "figure_end_y_pt": 232.93995945224964,
+      "paragraph_start_y_pt": 244.9399594522496,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p120-f56",
+      "next_id": "p120-b04",
+      "figure_end_page": 59,
+      "paragraph_page": 59,
+      "figure_end_y_pt": 432.6799769650001,
+      "paragraph_start_y_pt": 444.6799769650001,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p120-f57",
+      "next_id": "p120-b05",
+      "figure_end_page": 59,
+      "paragraph_page": 59,
+      "figure_end_y_pt": 670.2799909178349,
+      "paragraph_start_y_pt": 682.2799909178349,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p121-f58",
+      "next_id": "p121-b01",
+      "figure_end_page": 60,
+      "paragraph_page": 60,
+      "figure_end_y_pt": 247.5000063281691,
+      "paragraph_start_y_pt": 259.5000063281691,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p122-f59",
+      "next_id": "p122-b02",
+      "figure_end_page": 61,
+      "paragraph_page": 61,
+      "figure_end_y_pt": 391.3599975585938,
+      "paragraph_start_y_pt": 437.10662841796875,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "figure_id": "p124-f61",
+      "next_id": "p124-b05",
+      "figure_end_page": 63,
+      "paragraph_page": 63,
+      "figure_end_y_pt": 324.71998107265057,
+      "paragraph_start_y_pt": 336.71998107265057,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p124-f62",
+      "next_id": "p124-b06",
+      "figure_end_page": 63,
+      "paragraph_page": 63,
+      "figure_end_y_pt": 488.45996914625863,
+      "paragraph_start_y_pt": 500.45996914625863,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p124-f63",
+      "next_id": "p124-b07",
+      "figure_end_page": 63,
+      "paragraph_page": 63,
+      "figure_end_y_pt": 608.999996423832,
+      "paragraph_start_y_pt": 620.999996423832,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p125-f64",
+      "next_id": "p125-b02",
+      "figure_end_page": 64,
+      "paragraph_page": 64,
+      "figure_end_y_pt": 391.3599975585938,
+      "paragraph_start_y_pt": 437.10662841796875,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "figure_id": "p127-f65",
+      "next_id": "p127-b02",
+      "figure_end_page": 66,
+      "paragraph_page": 66,
+      "figure_end_y_pt": 199.49999565075964,
+      "paragraph_start_y_pt": 211.49999565075964,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p128-f66",
+      "next_id": "p128-b02",
+      "figure_end_page": 67,
+      "paragraph_page": 67,
+      "figure_end_y_pt": 199.49995634397206,
+      "paragraph_start_y_pt": 211.49995634397206,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p130-f67",
+      "next_id": "p130-b02",
+      "figure_end_page": 69,
+      "paragraph_page": 69,
+      "figure_end_y_pt": 170.7000094182962,
+      "paragraph_start_y_pt": 182.7000094182962,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p131-f68",
+      "next_id": "p131-b03",
+      "figure_end_page": 70,
+      "paragraph_page": 70,
+      "figure_end_y_pt": 337.57996364459217,
+      "paragraph_start_y_pt": 349.57996364459217,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "figure_id": "p132-f69",
+      "next_id": "p132-b02",
+      "figure_end_page": 71,
+      "paragraph_page": 71,
+      "figure_end_y_pt": 391.3599975585938,
+      "paragraph_start_y_pt": 436.75335693359375,
+      "same_page": true,
+      "gap_pt": 45.393359
+    }
+  ],
+  "short_gaps": [],
+  "latest_recheck_utc": "2026-11-05T04:14:34.197234+00:00",
+  "builds": {
+    "02": {
+      "pages": 33,
+      "native_text_complete": true,
+      "heading_orphans": 0,
+      "split_figures": 0,
+      "split_short_code": 0,
+      "split_short_tables": 0,
+      "split_instructions": 0,
+      "overflow": 0
+    },
+    "03": {
+      "pages": 71,
+      "native_text_complete": true,
+      "heading_orphans": 0,
+      "split_figures": 0,
+      "split_short_code": 0,
+      "split_short_tables": 0,
+      "split_instructions": 0,
+      "overflow": 0
+    },
+    "04": {
+      "pages": 32,
+      "native_text_complete": true,
+      "heading_orphans": 0,
+      "split_figures": 0,
+      "split_short_code": 0,
+      "split_short_tables": 0,
+      "split_instructions": 0,
+      "overflow": 0
+    },
+    "05": {
+      "pages": 31,
+      "native_text_complete": true,
+      "heading_orphans": 0,
+      "split_figures": 0,
+      "split_short_code": 0,
+      "split_short_tables": 0,
+      "split_instructions": 0,
+      "overflow": 0
+    }
+  },
+  "all_chapter_figure_paragraph_pairs": [
+    {
+      "chapter": "02",
+      "figure_id": "p033-f01",
+      "paragraph_id": "p033-b02",
+      "figure_page": 3,
+      "paragraph_page": 3,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p036-f04",
+      "paragraph_id": "p036-b03",
+      "figure_page": 6,
+      "paragraph_page": 6,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p041-f09",
+      "paragraph_id": "p041-b07",
+      "figure_page": 12,
+      "paragraph_page": 12,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p042-f10",
+      "paragraph_id": "p042-b06",
+      "figure_page": 13,
+      "paragraph_page": 13,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p043-f12",
+      "paragraph_id": "p043-b05",
+      "figure_page": 14,
+      "paragraph_page": 14,
+      "same_page": true,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p043-f13",
+      "paragraph_id": "p043-b07",
+      "figure_page": 14,
+      "paragraph_page": 14,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p043-f14",
+      "paragraph_id": "p043-b09",
+      "figure_page": 14,
+      "paragraph_page": 14,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p045-f16",
+      "paragraph_id": "p045-b07",
+      "figure_page": 16,
+      "paragraph_page": 16,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p046-f19",
+      "paragraph_id": "p046-b02",
+      "figure_page": 17,
+      "paragraph_page": 17,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p047-f21",
+      "paragraph_id": "p047-b04",
+      "figure_page": 18,
+      "paragraph_page": 18,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p048-f22",
+      "paragraph_id": "p048-b03",
+      "figure_page": 19,
+      "paragraph_page": 19,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p052-f23",
+      "paragraph_id": "p052-b02",
+      "figure_page": 23,
+      "paragraph_page": 23,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p052-f24",
+      "paragraph_id": "p052-b08",
+      "figure_page": 23,
+      "paragraph_page": 23,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p054-f27",
+      "paragraph_id": "p054-b02",
+      "figure_page": 25,
+      "paragraph_page": 25,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p055-f28",
+      "paragraph_id": "p055-b04",
+      "figure_page": 26,
+      "paragraph_page": 26,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p057-f31",
+      "paragraph_id": "p057-b02",
+      "figure_page": 28,
+      "paragraph_page": 28,
+      "same_page": true,
+      "gap_pt": 25.946643
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p061-f32",
+      "paragraph_id": "p061-b03",
+      "figure_page": 32,
+      "paragraph_page": 32,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p062-f33",
+      "paragraph_id": "p062-b02",
+      "figure_page": 33,
+      "paragraph_page": 33,
+      "same_page": true,
+      "gap_pt": 45.393359
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p065-f01",
+      "paragraph_id": "p065-b02",
+      "figure_page": 3,
+      "paragraph_page": 3,
+      "same_page": true,
+      "gap_pt": 45.626636
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p071-f08",
+      "paragraph_id": "p071-b04",
+      "figure_page": 10,
+      "paragraph_page": 10,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p073-f11",
+      "paragraph_id": "p073-b02",
+      "figure_page": 12,
+      "paragraph_page": 12,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p082-f17",
+      "paragraph_id": "p082-b02",
+      "figure_page": 21,
+      "paragraph_page": 21,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p086-f19",
+      "paragraph_id": "p086-b08",
+      "figure_page": 25,
+      "paragraph_page": 25,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p087-f20",
+      "paragraph_id": "p087-b02",
+      "figure_page": 26,
+      "paragraph_page": 26,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p088-f21",
+      "paragraph_id": "p088-b05",
+      "figure_page": 27,
+      "paragraph_page": 27,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p089-f22",
+      "paragraph_id": "p089-b04",
+      "figure_page": 28,
+      "paragraph_page": 28,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p090-f23",
+      "paragraph_id": "p090-b02",
+      "figure_page": 29,
+      "paragraph_page": 29,
+      "same_page": true,
+      "gap_pt": 45.393359
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p093-f26",
+      "paragraph_id": "p093-b07",
+      "figure_page": 32,
+      "paragraph_page": 32,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p093-f27",
+      "paragraph_id": "p093-b10",
+      "figure_page": 32,
+      "paragraph_page": 32,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p094-f28",
+      "paragraph_id": "p094-b07",
+      "figure_page": 33,
+      "paragraph_page": 33,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p094-f29",
+      "paragraph_id": "p094-b08",
+      "figure_page": 33,
+      "paragraph_page": 33,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p098-f32",
+      "paragraph_id": "p098-b03",
+      "figure_page": 37,
+      "paragraph_page": 37,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p098-f33",
+      "paragraph_id": "p098-b04",
+      "figure_page": 37,
+      "paragraph_page": 37,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p102-f36",
+      "paragraph_id": "p102-b03",
+      "figure_page": 41,
+      "paragraph_page": 41,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p102-f37",
+      "paragraph_id": "p102-b04",
+      "figure_page": 41,
+      "paragraph_page": 41,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p103-f38",
+      "paragraph_id": "p103-b02",
+      "figure_page": 42,
+      "paragraph_page": 42,
+      "same_page": true,
+      "gap_pt": 27.393359
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p110-f45",
+      "paragraph_id": "p110-b04",
+      "figure_page": 49,
+      "paragraph_page": 49,
+      "same_page": true,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p111-f46",
+      "paragraph_id": "p111-b06",
+      "figure_page": 50,
+      "paragraph_page": 50,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p112-f47",
+      "paragraph_id": "p112-b01",
+      "figure_page": 51,
+      "paragraph_page": 51,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p112-f48",
+      "paragraph_id": "p112-b02",
+      "figure_page": 51,
+      "paragraph_page": 51,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p113-f50",
+      "paragraph_id": "p113-b08",
+      "figure_page": 52,
+      "paragraph_page": 52,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p115-f52",
+      "paragraph_id": "p115-b03",
+      "figure_page": 54,
+      "paragraph_page": 54,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p118-f54",
+      "paragraph_id": "p118-b02",
+      "figure_page": 57,
+      "paragraph_page": 57,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p120-f55",
+      "paragraph_id": "p120-b03",
+      "figure_page": 59,
+      "paragraph_page": 59,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p120-f56",
+      "paragraph_id": "p120-b04",
+      "figure_page": 59,
+      "paragraph_page": 59,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p120-f57",
+      "paragraph_id": "p120-b05",
+      "figure_page": 59,
+      "paragraph_page": 59,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p121-f58",
+      "paragraph_id": "p121-b01",
+      "figure_page": 60,
+      "paragraph_page": 60,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p122-f59",
+      "paragraph_id": "p122-b02",
+      "figure_page": 61,
+      "paragraph_page": 61,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p124-f61",
+      "paragraph_id": "p124-b05",
+      "figure_page": 63,
+      "paragraph_page": 63,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p124-f62",
+      "paragraph_id": "p124-b06",
+      "figure_page": 63,
+      "paragraph_page": 63,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p124-f63",
+      "paragraph_id": "p124-b07",
+      "figure_page": 63,
+      "paragraph_page": 63,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p125-f64",
+      "paragraph_id": "p125-b02",
+      "figure_page": 64,
+      "paragraph_page": 64,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p127-f65",
+      "paragraph_id": "p127-b02",
+      "figure_page": 66,
+      "paragraph_page": 66,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p128-f66",
+      "paragraph_id": "p128-b02",
+      "figure_page": 67,
+      "paragraph_page": 67,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p130-f67",
+      "paragraph_id": "p130-b02",
+      "figure_page": 69,
+      "paragraph_page": 69,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p131-f68",
+      "paragraph_id": "p131-b03",
+      "figure_page": 70,
+      "paragraph_page": 70,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p132-f69",
+      "paragraph_id": "p132-b02",
+      "figure_page": 71,
+      "paragraph_page": 71,
+      "same_page": true,
+      "gap_pt": 45.393359
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p135-f01",
+      "paragraph_id": "p135-b02",
+      "figure_page": 3,
+      "paragraph_page": 3,
+      "same_page": true,
+      "gap_pt": 45.626636
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p136-f02",
+      "paragraph_id": "p136-b02",
+      "figure_page": 4,
+      "paragraph_page": 4,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p141-f04",
+      "paragraph_id": "p141-b03",
+      "figure_page": 9,
+      "paragraph_page": 9,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p141-f05",
+      "paragraph_id": "p141-b05",
+      "figure_page": 9,
+      "paragraph_page": 9,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p141-f06",
+      "paragraph_id": "p141-b06",
+      "figure_page": 9,
+      "paragraph_page": 9,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p142-f07",
+      "paragraph_id": "p142-b02",
+      "figure_page": 10,
+      "paragraph_page": 10,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p143-f08",
+      "paragraph_id": "p143-b02",
+      "figure_page": 11,
+      "paragraph_page": 11,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p146-f09",
+      "paragraph_id": "p146-b03",
+      "figure_page": 14,
+      "paragraph_page": 14,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p146-f10",
+      "paragraph_id": "p146-b05",
+      "figure_page": 14,
+      "paragraph_page": 14,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p146-f11",
+      "paragraph_id": "p146-b07",
+      "figure_page": 14,
+      "paragraph_page": 14,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p148-f12",
+      "paragraph_id": "p148-b02",
+      "figure_page": 16,
+      "paragraph_page": 16,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p153-f14",
+      "paragraph_id": "p153-b10",
+      "figure_page": 21,
+      "paragraph_page": 21,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p154-f16",
+      "paragraph_id": "p154-b02",
+      "figure_page": 22,
+      "paragraph_page": 22,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p154-f17",
+      "paragraph_id": "p154-b03",
+      "figure_page": 22,
+      "paragraph_page": 22,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p157-f18",
+      "paragraph_id": "p157-b02",
+      "figure_page": 26,
+      "paragraph_page": 26,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p159-f19",
+      "paragraph_id": "p159-b02",
+      "figure_page": 28,
+      "paragraph_page": 28,
+      "same_page": true,
+      "gap_pt": 45.746631
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p159-f20",
+      "paragraph_id": "p159-b04",
+      "figure_page": 28,
+      "paragraph_page": 28,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p160-f21",
+      "paragraph_id": "p160-b03",
+      "figure_page": 29,
+      "paragraph_page": 29,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p160-f22",
+      "paragraph_id": "p160-b04",
+      "figure_page": 29,
+      "paragraph_page": 29,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p161-f23",
+      "paragraph_id": "p161-b07",
+      "figure_page": 30,
+      "paragraph_page": 30,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p162-f25",
+      "paragraph_id": "p162-b02",
+      "figure_page": 31,
+      "paragraph_page": 31,
+      "same_page": true,
+      "gap_pt": 45.626636
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p166-f01",
+      "paragraph_id": "p166-b02",
+      "figure_page": 3,
+      "paragraph_page": 3,
+      "same_page": true,
+      "gap_pt": 46.376636
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p170-f03",
+      "paragraph_id": "p170-b02",
+      "figure_page": 7,
+      "paragraph_page": 7,
+      "same_page": true,
+      "gap_pt": 46.496631
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p171-f05",
+      "paragraph_id": "p171-b03",
+      "figure_page": 8,
+      "paragraph_page": 8,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p173-f07",
+      "paragraph_id": "p173-b03",
+      "figure_page": 10,
+      "paragraph_page": 10,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p178-f10",
+      "paragraph_id": "p178-b02",
+      "figure_page": 15,
+      "paragraph_page": 15,
+      "same_page": true,
+      "gap_pt": 46.496631
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p178-f11",
+      "paragraph_id": "p178-b04",
+      "figure_page": 15,
+      "paragraph_page": 15,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p180-f12",
+      "paragraph_id": "p180-b03",
+      "figure_page": 17,
+      "paragraph_page": 17,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p182-f14",
+      "paragraph_id": "p182-b02",
+      "figure_page": 19,
+      "paragraph_page": 19,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p185-f16",
+      "paragraph_id": "p185-b08",
+      "figure_page": 23,
+      "paragraph_page": 23,
+      "same_page": true,
+      "gap_pt": 12.0
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p190-f19",
+      "paragraph_id": "p190-b02",
+      "figure_page": 30,
+      "paragraph_page": 30,
+      "same_page": true,
+      "gap_pt": 46.376636
+    }
+  ],
+  "all_chapter_short_gaps": [],
+  "status": "pass",
+  "visual_review": "p073の実PDFをPNG化し、Entity図と直後本文が離れ、表・次段落・コード枠も紙面内へ収まることを確認。"
+}

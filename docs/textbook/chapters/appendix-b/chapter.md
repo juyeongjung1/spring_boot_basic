@@ -411,7 +411,7 @@
 
 [落丁本、乱丁本はお取り替えいたします。]{.s019}\
 [JAC0177G-T1-04]{.s019}\
-[© 2024 Trainocate Japan, Ltd.]{.s019}
+[© 2027 Trainocate Japan, Ltd.]{.s019}
 
 :::
 

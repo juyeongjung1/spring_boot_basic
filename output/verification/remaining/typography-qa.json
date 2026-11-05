@@ -1,0 +1,546 @@
+{
+  "status": "pass",
+  "scope": "実章PDFの本文括弧・表枠・前付箇条書き余白。native原本座標の括弧には一律の幅判定をしない。source編集なし。",
+  "targets": [
+    {
+      "chapter": "01",
+      "block_id": "p023-b02",
+      "pdf_page": 9,
+      "brackets": [
+        {
+          "character": "「",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            355.6702575683594,
+            109.04002380371094,
+            366.71026611328125,
+            120.08002471923828
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "」",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            390.0408630371094,
+            109.04002380371094,
+            401.08087158203125,
+            120.08002471923828
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "（",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            299.3489990234375,
+            127.04002380371094,
+            310.3890075683594,
+            138.0800323486328
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "）",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            376.0683898925781,
+            127.04002380371094,
+            387.1083984375,
+            138.0800323486328
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "「",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            428.4652404785156,
+            127.04002380371094,
+            439.5052490234375,
+            138.0800323486328
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "（",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            483.1477355957031,
+            127.04002380371094,
+            494.187744140625,
+            138.0800323486328
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "）",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            124.08899688720703,
+            145.04002380371094,
+            135.12899780273438,
+            156.0800323486328
+          ],
+          "bbox_width_pt": 11.040000915527344
+        },
+        {
+          "character": "」",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            280.93463134765625,
+            145.04002380371094,
+            291.9746398925781,
+            156.0800323486328
+          ],
+          "bbox_width_pt": 11.040008544921875
+        }
+      ],
+      "visual_review": "括弧と内側文字の不自然な詰まり・重なり・過大な内側空白なし。",
+      "image": "tmp/remaining-review/typography/01-pdfpage-9.png"
+    },
+    {
+      "chapter": "01",
+      "block_id": "p025-b01",
+      "pdf_page": 11,
+      "brackets": [
+        {
+          "character": "「",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            96.14399719238281,
+            85.99998474121094,
+            107.18399810791016,
+            97.03998565673828
+          ],
+          "bbox_width_pt": 11.040000915527344
+        },
+        {
+          "character": "」",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            137.02650451660156,
+            85.99998474121094,
+            148.06649780273438,
+            97.03998565673828
+          ],
+          "bbox_width_pt": 11.039993286132812
+        },
+        {
+          "character": "「",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            159.10650634765625,
+            85.99998474121094,
+            170.14649963378906,
+            97.03998565673828
+          ],
+          "bbox_width_pt": 11.039993286132812
+        },
+        {
+          "character": "」",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            200.46337890625,
+            85.99998474121094,
+            211.5033721923828,
+            97.03998565673828
+          ],
+          "bbox_width_pt": 11.039993286132812
+        }
+      ],
+      "visual_review": "括弧と内側文字の不自然な詰まり・重なり・過大な内側空白なし。",
+      "image": "tmp/remaining-review/typography/01-pdfpage-11.png"
+    },
+    {
+      "chapter": "01",
+      "block_id": "p028-b02",
+      "pdf_page": 15,
+      "brackets": [
+        {
+          "character": "「",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            79.58399963378906,
+            128.83018493652344,
+            90.6240005493164,
+            139.8701934814453
+          ],
+          "bbox_width_pt": 11.040000915527344
+        },
+        {
+          "character": "」",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            355.8427429199219,
+            128.83018493652344,
+            366.88275146484375,
+            139.8701934814453
+          ],
+          "bbox_width_pt": 11.040008544921875
+        }
+      ],
+      "visual_review": "括弧と内側文字の不自然な詰まり・重なり・過大な内側空白なし。",
+      "image": "tmp/remaining-review/typography/01-pdfpage-15.png"
+    },
+    {
+      "chapter": "02",
+      "block_id": "p044-b03",
+      "pdf_page": 15,
+      "brackets": [
+        {
+          "character": "【",
+          "font": "MS-Mincho",
+          "font_size": 12.0,
+          "bbox": [
+            79.10399627685547,
+            168.08001708984375,
+            91.10399627685547,
+            180.08001708984375
+          ],
+          "bbox_width_pt": 12.0
+        },
+        {
+          "character": "】",
+          "font": "MS-Mincho",
+          "font_size": 12.0,
+          "bbox": [
+            151.10400390625,
+            168.08001708984375,
+            163.10400390625,
+            180.08001708984375
+          ],
+          "bbox_width_pt": 12.0
+        }
+      ],
+      "visual_review": "括弧と内側文字の不自然な詰まり・重なり・過大な内側空白なし。",
+      "image": "tmp/remaining-review/typography/02-pdfpage-15.png"
+    },
+    {
+      "chapter": "02",
+      "block_id": "p044-b04",
+      "pdf_page": 15,
+      "brackets": [
+        {
+          "character": "「",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            414.1908874511719,
+            192.0800018310547,
+            425.23089599609375,
+            203.12001037597656
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "」",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            483.01837158203125,
+            192.0800018310547,
+            494.0583801269531,
+            203.12001037597656
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "「",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            316.3402404785156,
+            228.0800018310547,
+            327.3802490234375,
+            239.12001037597656
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "（",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            373.7396240234375,
+            228.0800018310547,
+            384.7796325683594,
+            239.12001037597656
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "）",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            438.64276123046875,
+            228.0800018310547,
+            449.6827697753906,
+            239.12001037597656
+          ],
+          "bbox_width_pt": 11.040008544921875
+        },
+        {
+          "character": "」",
+          "font": "MS-Mincho",
+          "font_size": 11.039999961853027,
+          "bbox": [
+            449.6827392578125,
+            228.0800018310547,
+            460.7227478027344,
+            239.12001037597656
+          ],
+          "bbox_width_pt": 11.040008544921875
+        }
+      ],
+      "visual_review": "括弧と内側文字の不自然な詰まり・重なり・過大な内側空白なし。",
+      "image": "tmp/remaining-review/typography/02-pdfpage-15.png"
+    },
+    {
+      "chapter": "03",
+      "block_id": "p073-table01",
+      "pdf_page": 12,
+      "visual_review": "外枠・列境界が明瞭。列内の文字欠落や重なりなし。下罫線と次段落の余白は要検討。",
+      "image": "tmp/remaining-review/typography/03-pdfpage-12.png",
+      "outer_frame_pdf_drawings": [
+        {
+          "width_pt": 0.6499999761581421,
+          "color_rgb": [
+            0.2509651184082031,
+            0.2509956657886505,
+            0.2509193420410156
+          ],
+          "bbox": [
+            85.10399627685547,
+            274.51531982421875,
+            85.10399627685547,
+            345.6653137207031
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "front",
+      "source_page": 9,
+      "pdf_page": 9,
+      "visual_review": "最終PDFで項目間24pt・同一項目続き18pt、字下げと本文内の収まりを確認。前回の行間差は解消。",
+      "image": "tmp/remaining-review/typography/final-front-9.png"
+    },
+    {
+      "chapter": "front",
+      "source_page": 10,
+      "pdf_page": 10,
+      "visual_review": "最終PDFで項目間24pt・同一項目続き18pt、字下げと本文内の収まりを確認。前回の行間差は解消。",
+      "image": "tmp/remaining-review/typography/final-front-10.png"
+    },
+    {
+      "chapter": "front",
+      "source_page": 11,
+      "pdf_page": 11,
+      "visual_review": "最終PDFで項目間24pt・同一項目続き18pt、字下げと本文内の収まりを確認。前回の行間差は解消。",
+      "image": "tmp/remaining-review/typography/final-front-11.png"
+    },
+    {
+      "chapter": "03",
+      "block_id": "p067-table01",
+      "pdf_page": 5,
+      "image": "tmp/remaining-review/typography/03-table-p067-table02-pdfpage-5.png",
+      "visual_review": "外枠と列境界を視認、セル内の文字欠落や重なりなし。表下の本文との余白は共通の指摘事項へ記録。",
+      "outer_frame_pdf_drawings": [
+        {
+          "width_pt": 0.6499999761581421,
+          "color_rgb": [
+            0.2509651184082031,
+            0.2509956657886505,
+            0.2509193420410156
+          ],
+          "bbox": [
+            85.10399627685547,
+            126.71502685546875,
+            85.10399627685547,
+            189.36502075195312
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "block_id": "p067-table02",
+      "pdf_page": 5,
+      "image": "tmp/remaining-review/typography/03-table-p067-table02-pdfpage-5.png",
+      "visual_review": "外枠と列境界を視認、セル内の文字欠落や重なりなし。表下の本文との余白は共通の指摘事項へ記録。",
+      "outer_frame_pdf_drawings": [
+        {
+          "width_pt": 0.6499999761581421,
+          "color_rgb": [
+            0.2509651184082031,
+            0.2509956657886505,
+            0.2509193420410156
+          ],
+          "bbox": [
+            85.10399627685547,
+            241.7550048828125,
+            85.10399627685547,
+            312.9049987792969
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "block_id": "p067-table03",
+      "pdf_page": 5,
+      "image": "tmp/remaining-review/typography/03-table-p067-table02-pdfpage-5.png",
+      "visual_review": "外枠と列境界を視認、セル内の文字欠落や重なりなし。表下の本文との余白は共通の指摘事項へ記録。",
+      "outer_frame_pdf_drawings": [
+        {
+          "width_pt": 0.6499999761581421,
+          "color_rgb": [
+            0.2509651184082031,
+            0.2509956657886505,
+            0.2509193420410156
+          ],
+          "bbox": [
+            85.10399627685547,
+            329.29498291015625,
+            85.10399627685547,
+            484.9449768066406
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "block_id": "p069-table01",
+      "pdf_page": 7,
+      "image": "tmp/remaining-review/typography/03-table-p069-table01-pdfpage-7.png",
+      "visual_review": "外枠と列境界を視認、セル内の文字欠落や重なりなし。表下の本文との余白は共通の指摘事項へ記録。",
+      "outer_frame_pdf_drawings": [
+        {
+          "width_pt": 0.6499999761581421,
+          "color_rgb": [
+            0.2509651184082031,
+            0.2509956657886505,
+            0.2509193420410156
+          ],
+          "bbox": [
+            85.10399627685547,
+            85.67498779296875,
+            85.10399627685547,
+            341.3249816894531
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "priority": "P2",
+      "chapter": "03",
+      "block_ids": [
+        "p073-table01",
+        "p073-b05"
+      ],
+      "pdf_page": 12,
+      "table_end_y_pt": 345.3402916989738,
+      "next_paragraph_start_y_pt": 345.3402916989738,
+      "gap_pt": 0,
+      "note": "表直後の本文上端が下罫線へ近接。表下に6pt程度の余白を設けると読みやすい。",
+      "sent_to_root": true,
+      "resolution": {
+        "resolved": true,
+        "new_gap_pt": 12.0,
+        "evidence": "tmp/remaining-review/table-spacing-recheck.json",
+        "visual_rechecked": true
+      }
+    },
+    {
+      "priority": "原本との差分",
+      "chapter": "front",
+      "source_pages": [
+        9,
+        10,
+        11
+      ],
+      "block_ids": [
+        "p009-b03",
+        "p009-b04",
+        "p009-b05",
+        "p009-b06",
+        "p009-b07",
+        "p010-b03",
+        "p010-b10",
+        "p011-b04",
+        "p011-b12"
+      ],
+      "original_item_baseline_interval_pt": 24,
+      "current_item_baseline_interval_pt": 17.04,
+      "example_original_last_item_baseline_pt": 567.8199462890625,
+      "example_current_last_item_baseline_pt": 532.994140625,
+      "note": "字下げと続き行は揃い、原本の各ページ単位は維持されているが、原本より項目間隔が狭い。原本の余白も保持するなら調整対象。",
+      "sent_to_root": true,
+      "resolution": {
+        "resolved": true,
+        "single_line_item_interval_pt": 24,
+        "same_item_continuation_interval_pt": 18,
+        "evidence": "tmp/remaining-review/front-spacing-final-recheck.json",
+        "visual_rechecked": true,
+        "page_fit": true
+      }
+    }
+  ],
+  "source_content_scan": {
+    "environment_ids": {
+      "hits": [],
+      "absent": true
+    },
+    "unpublished_di": {
+      "hits": [],
+      "absent": true
+    },
+    "unpublished_messages": {
+      "hits": [],
+      "absent": true
+    },
+    "unpublished_appendix_error": {
+      "hits": [],
+      "absent": true
+    },
+    "chapters_scanned": 19,
+    "new_unpublished_explanations_absent": true
+  },
+  "final_recheck_utc": "2026-11-05T04:06:00.778266+00:00",
+  "open_findings": [],
+  "final_front_recheck": {
+    "evidence": "tmp/remaining-review/front-spacing-final-recheck.json",
+    "status": "pass",
+    "all_24pt_item_spacing_pass": true,
+    "all_body_fits": true,
+    "max_body_bottom_pt": 682.3865966796875
+  },
+  "final_instruction_spacing_recheck": {
+    "status": "pass",
+    "figure_id": "p073-f11",
+    "next_id": "p073-b02",
+    "gap_pt": 12,
+    "evidence": "tmp/remaining-review/figure-spacing-recheck.json",
+    "image": "tmp/remaining-review/typography/final-p073-figure-gap.png",
+    "pairs_scanned": 88,
+    "short_gaps": 0
+  }
+}

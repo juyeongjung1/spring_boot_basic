@@ -1581,14 +1581,16 @@ public String insertProduct(ProductForm productForm) {
 
 [@ManyToOne のcategory フィールドと@Column のcategoryId が同じカラムを参照して]{.s009}\
 [いると、]{.s009}[登録や更新時にどちらを優先するかHibernate が判断できず]{.s010}[、以下のようなエ]{.s009}\
-[ラーが発生します]{.s009}
+[ラーが発生します。]{.s009}
 
 :::
 
-::: {#p220-b11 .paragraph}
+::: {#p220-b11 .code}
 
-[Repeated column in mapping for entity: Product column: category\_id (should be]{.s012}\
-[mapped with insert="false" update="false")]{.s012}
+```text
+Repeated column in mapping for entity: Product column: category_id
+(should be mapped with insert="false" update="false")
+```
 
 :::
 

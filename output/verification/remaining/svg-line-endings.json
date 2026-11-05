@@ -1,0 +1,59 @@
+{
+  "scope": "GitのLF指定へ統一。XML構文の同一性を確認し、図の内容・配置は不変。",
+  "files": [
+    {
+      "path": "docs/textbook/chapters/03/assets/p071-f08-revised.svg",
+      "before_sha256": "786dd301a9a0bc34d349aff812bd84df9099af8316db50e7794ed02597ba1733",
+      "sha256": "07d65c29048377c5cfb8ecac0a736a8d50e257b10c01c20f583f77bc7f4d5683",
+      "xml_equivalent": true
+    },
+    {
+      "path": "docs/textbook/chapters/03/assets/p108-f42-revised.svg",
+      "before_sha256": "603b365cf9e926ab727bf22ba33a05d45a4366be845a8700defcca35180c08af",
+      "sha256": "08aa26f24362c7412b60d275bca54f00c76e59d5e09878e274c72e4e6e4d9745",
+      "xml_equivalent": true
+    },
+    {
+      "path": "docs/textbook/chapters/03/assets/p109-f44-revised.svg",
+      "before_sha256": "dd6727b769ab0c7307fc370b7407bf81f18aa40d4f62fa27833dbc0658d074bc",
+      "sha256": "beb507dcde6a1e69b6a1a22d68e89ef0ac1ca3ed9e034c48cbb292dea0332d9a",
+      "xml_equivalent": true
+    },
+    {
+      "path": "docs/textbook/chapters/05/assets/p182-f14-revised.svg",
+      "before_sha256": "ea16d23a26b87d42a4ce9b7acd3591972fff6cccd3a5a9cfdffffb8148df20ab",
+      "sha256": "6628d23615371b48a3029b3e856a25236dcc4213b5598906b58934e3f49ac8c3",
+      "xml_equivalent": true
+    },
+    {
+      "path": "docs/textbook/chapters/05/assets/p186-f17-revised.svg",
+      "before_sha256": "b63eb091120804c5c16cdca2fad2ca08ed0f3a0ee9b90d2e813f21ffaf37c388",
+      "sha256": "1d78efd997e7978dde69ac47f357f20812c84d182dd08a3fd421c793b7a830e5",
+      "xml_equivalent": true
+    },
+    {
+      "path": "docs/textbook/chapters/05/assets/p186-f18-revised.svg",
+      "before_sha256": "c3346e01e089818081efc5500ea2ae8b8cd3ecd26be7b4057d95c529491a0456",
+      "sha256": "d3ca0043eff4ab060e9353c3e2220cf71e692c4fc31da35354d038b123a63f20",
+      "xml_equivalent": true
+    },
+    {
+      "path": "docs/textbook/chapters/07/assets/p245-f05-revised.svg",
+      "before_sha256": "5ceeb765b183aa065eab9e4dc5d7289757718146a57ce55ef61026de4925b080",
+      "sha256": "dde00b83fcc667f777eafed1b4da7c891cfbbccd76f091e0ac08d9de8143db16",
+      "xml_equivalent": true
+    },
+    {
+      "path": "docs/textbook/chapters/ex05/assets/p041-f04-revised.svg",
+      "before_sha256": "dd5d54e70f10e4807f1529dd0980758b951620293f64ec04662e934cad95624f",
+      "sha256": "22a7b7a33456a1073df905cf09f1cbf397eea8a165091327d8e7d0821c559483",
+      "xml_equivalent": true
+    },
+    {
+      "path": "docs/textbook/chapters/ex05/assets/p041-f05-revised.svg",
+      "before_sha256": "47ca257f2271d048174b13135294c1529afee63eb919f292f26e71e4737a71c5",
+      "sha256": "9b9bc22ef03ccb2ef857575b4ad729eeaa368e2c216cc2609f924014eedbf5d3",
+      "xml_equivalent": true
+    }
+  ]
+}

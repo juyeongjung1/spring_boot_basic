@@ -1,11 +1,17 @@
 {
   "archive": "SpringBootBasic_Java21_Boot4.0.2.zip",
-  "sha256": "9309151dfdfe2f33078afe6e6ba5a54b473dea9c1d9645e84cbec982fc794ddc",
+  "sha256": "8dff9ef63b0dc5f24a147e9a19e6624045bcde3b1ff86428c9010a23432c1202",
   "files": 852,
   "pom_files": 32,
   "application_projects": 27,
   "java": 21,
   "spring_boot": "4.0.2",
   "target_directories_included": false,
-  "class_files_included": false
+  "class_files_included": false,
+  "ide_workspace_metadata_included": false,
+  "bootstrap": "5.3.8",
+  "crc_check_passed": true,
+  "all_entries_match_current_projects": true,
+  "old_bootstrap_5_3_0_in_sample_html": false,
+  "old_year_2023_in_sample_html": false
 }

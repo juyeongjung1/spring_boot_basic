@@ -1,0 +1,491 @@
+{
+  "status": "pass",
+  "generated_utc": "2026-11-05T03:41:45.178985+00:00",
+  "scope": "残件の本文表示修正と画面図の版名表示の最小更新。全PDFビルド・Java再検証は実施していない。",
+  "source_changes": [
+    {
+      "chapter": "03",
+      "block_id": "p108-b06",
+      "change": "s014の@Data説明3箇所をStrongで明示し、文言は保持。"
+    },
+    {
+      "chapter": "03",
+      "block_ids": [
+        "p117-b03",
+        "p128-b06",
+        "p129-b08"
+      ],
+      "change": "prodRepo..findByIdをprodRepo.findByIdへ3箇所修正。"
+    },
+    {
+      "chapter": "03",
+      "block_id": "p128-b06",
+      "change": "Javaの行コメントは変更不要。共通コードテーマのcomment=#008000で緑を確認。"
+    },
+    {
+      "chapter": "06",
+      "block_id": "p220-b10",
+      "change": "「発生します」の末尾へ句点を補完。"
+    },
+    {
+      "chapter": "06",
+      "block_id": "p220-b11",
+      "change": "原文のエラーメッセージをtext codeパネルへ。category_idの後で2行に折り返し、左揃えと本文幅内の収まりを確認。"
+    },
+    {
+      "chapter": "appendix-a",
+      "figure_id": "p285-f07",
+      "change": "原画像の例示年のみ2024→2027へ更新。月日・時刻・ログ本文は保持。実検証ログ日時ではない。"
+    }
+  ],
+  "checks": {
+    "strong_s014_all_explicit": true,
+    "double_dot_findById_absent": true,
+    "period_added": true,
+    "error_text_preserved_except_whitespace": true,
+    "error_block_is_code": true,
+    "error_lines_fit_414pt_interior": true,
+    "actual_comment_green": true,
+    "03/baseline.md_preserved": true,
+    "03/source-layout.json_preserved": true,
+    "06/baseline.md_preserved": true,
+    "06/source-layout.json_preserved": true,
+    "appendix-a/baseline.md_preserved": true,
+    "appendix-a/source-layout.json_preserved": true
+  },
+  "figures": [
+    {
+      "chapter": "03",
+      "figure_id": "p070-f06",
+      "source": "docs/textbook/chapters/03/assets/p070-f06.svg",
+      "target": "docs/textbook/chapters/03/assets/p070-f06-versions-2025.svg",
+      "original_dimensions": {
+        "width": "349.45",
+        "height": "291",
+        "viewBox": "0 0 349.45 291"
+      },
+      "overlays": [
+        {
+          "x": 85.5,
+          "y": 53.5,
+          "width": 22,
+          "height": 10.5,
+          "text": "4.0.2",
+          "font_size": 7.7,
+          "fill": "#000000",
+          "background": "#e1e1e1"
+        }
+      ],
+      "native_replacements": [],
+      "provenance": "原画面の版名表示を更新した図。実際のPleiades 2025撮影ではない。",
+      "checks": {
+        "original_asset_bytes_preserved": true,
+        "dimensions_preserved": true,
+        "embedded_original_images_unchanged": true,
+        "only_declared_regions_changed": true
+      },
+      "changed_pixels": 690,
+      "changed_pixels_outside_declared_regions": 0,
+      "declared_change_regions_pt": [
+        [
+          84.5,
+          52.5,
+          108.5,
+          65.0
+        ]
+      ],
+      "source_sha256": "9aab70dc3997b02393ebd911474b1295585b84cc0e41439f7df0ac18be0c2e79",
+      "revised_sha256": "018dc9633b605911d433252246c881b4909f6d6041a9852b2d60ca8b072008d8",
+      "visual_review": "TypstとMuPDFで版名・枠内の収まりを目視。図の位置とサイズは保持。"
+    },
+    {
+      "chapter": "appendix-a",
+      "figure_id": "p287-f09",
+      "source": "docs/textbook/chapters/appendix-a/assets/p287-f09.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p287-f09-versions-2025.svg",
+      "original_dimensions": {
+        "width": "429.27003",
+        "height": "82.71997",
+        "viewBox": "0 0 429.27003 82.71997"
+      },
+      "overlays": [
+        {
+          "x": 12.8,
+          "y": 2.5,
+          "width": 144,
+          "height": 9.3,
+          "text": "C:\\pleiades\\2025-12\\workspace - Eclipse IDE",
+          "font_size": 7.0,
+          "fill": "#000000",
+          "background": "#ffffff"
+        }
+      ],
+      "native_replacements": [],
+      "provenance": "原画面の版名表示を更新した図。実際のPleiades 2025撮影ではない。",
+      "checks": {
+        "original_asset_bytes_preserved": true,
+        "dimensions_preserved": true,
+        "embedded_original_images_unchanged": true,
+        "only_declared_regions_changed": true
+      },
+      "changed_pixels": 5804,
+      "changed_pixels_outside_declared_regions": 0,
+      "declared_change_regions_pt": [
+        [
+          11.8,
+          1.5,
+          157.8,
+          12.8
+        ]
+      ],
+      "source_sha256": "426d8f032672c66b2b59e9857856950123fd925977faf35b7e8728c1f10f405f",
+      "revised_sha256": "c346b412ce7e144404a91f3ccbb771888f172611245c9709b2635705c48e68c3",
+      "visual_review": "TypstとMuPDFで版名・枠内の収まりを目視。図の位置とサイズは保持。"
+    },
+    {
+      "chapter": "appendix-a",
+      "figure_id": "p287-f10",
+      "source": "docs/textbook/chapters/appendix-a/assets/p287-f10.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p287-f10-versions-2025.svg",
+      "original_dimensions": {
+        "width": "188.95",
+        "height": "224.79999",
+        "viewBox": "0 0 188.95 224.79999"
+      },
+      "overlays": [
+        {
+          "x": 41.0,
+          "y": 70.0,
+          "width": 129.8,
+          "height": 6.2,
+          "text": "C:\\pleiades\\2025-12\\workspace\\sample",
+          "font_size": 4.1,
+          "fill": "#838383",
+          "background": "#f0f0f0"
+        },
+        {
+          "x": 41.8,
+          "y": 90.9,
+          "width": 8.5,
+          "height": 5.8,
+          "text": "21",
+          "font_size": 4.0,
+          "fill": "#000000",
+          "background": "#e1e1e1"
+        }
+      ],
+      "native_replacements": [],
+      "provenance": "原画面の版名表示を更新した図。実際のPleiades 2025撮影ではない。",
+      "checks": {
+        "original_asset_bytes_preserved": true,
+        "dimensions_preserved": true,
+        "embedded_original_images_unchanged": true,
+        "only_declared_regions_changed": true
+      },
+      "changed_pixels": 2480,
+      "changed_pixels_outside_declared_regions": 0,
+      "declared_change_regions_pt": [
+        [
+          40.0,
+          69.0,
+          171.8,
+          77.2
+        ],
+        [
+          40.8,
+          89.9,
+          51.3,
+          97.7
+        ]
+      ],
+      "source_sha256": "546832e25b9812b48da0639ee8f84ae11f9a7f1b5c791e3ff2ff1f3b34392a0e",
+      "revised_sha256": "2645813089831b29c46ae29f3aa3af624b0890d9952b5b0e2bc5e2f29e447cc0",
+      "visual_review": "TypstとMuPDFで版名・枠内の収まりを目視。図の位置とサイズは保持。"
+    },
+    {
+      "chapter": "appendix-a",
+      "figure_id": "p288-f11",
+      "source": "docs/textbook/chapters/appendix-a/assets/p288-f11.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p288-f11-versions-2025.svg",
+      "original_dimensions": {
+        "width": "409.9",
+        "height": "233.29999",
+        "viewBox": "0 0 409.9 233.29999"
+      },
+      "overlays": [
+        {
+          "x": 45.9,
+          "y": 39.2,
+          "width": 10.6,
+          "height": 5.8,
+          "text": "4.0.2",
+          "font_size": 4.0,
+          "fill": "#000000",
+          "background": "#e1e1e1"
+        }
+      ],
+      "native_replacements": [
+        {
+          "old": "3.1.5",
+          "new": "4.0.2",
+          "x": 170.75,
+          "baseline_y": 37.039979
+        },
+        {
+          "old": "3.1.5",
+          "new": "4.0.2",
+          "x": 233.77002,
+          "baseline_y": 55.039979
+        }
+      ],
+      "provenance": "原画面の版名表示を更新した図。実際のPleiades 2025撮影ではない。",
+      "checks": {
+        "original_asset_bytes_preserved": true,
+        "dimensions_preserved": true,
+        "embedded_original_images_unchanged": true,
+        "only_declared_regions_changed": true
+      },
+      "changed_pixels": 1345,
+      "changed_pixels_outside_declared_regions": 0,
+      "declared_change_regions_pt": [
+        [
+          44.9,
+          38.2,
+          57.5,
+          46.0
+        ],
+        [
+          169.75,
+          28.039979000000002,
+          189.75,
+          39.039979
+        ],
+        [
+          232.77002,
+          46.039979,
+          252.77002,
+          57.039979
+        ]
+      ],
+      "source_sha256": "b9099a6c4c4ed4dfc001fd0717d40f32b883ada176324c8756bd1697cd3e8734",
+      "revised_sha256": "30f063708c39b9943b90079cf070417a1bc6c95e6b2d15cd813f8e1c2c9b8586",
+      "visual_review": "TypstとMuPDFで版名・枠内の収まりを目視。図の位置とサイズは保持。"
+    },
+    {
+      "chapter": "appendix-a",
+      "figure_id": "p288-f13",
+      "source": "docs/textbook/chapters/appendix-a/assets/p288-f13.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p288-f13-versions-2025.svg",
+      "original_dimensions": {
+        "width": "426.64997",
+        "height": "246.39998",
+        "viewBox": "0 0 426.64997 246.39998"
+      },
+      "overlays": [
+        {
+          "x": 80.9,
+          "y": 74.6,
+          "width": 14,
+          "height": 5.7,
+          "text": "4.0.2",
+          "font_size": 4.1,
+          "fill": "#6db33f",
+          "background": "#ffffff",
+          "baseline_offset": -1.0
+        },
+        {
+          "x": 84.6,
+          "y": 176.4,
+          "width": 6.5,
+          "height": 5.7,
+          "text": "17",
+          "font_size": 4.1,
+          "fill": "#000000",
+          "background": "#ffffff",
+          "baseline_offset": -0.7
+        },
+        {
+          "x": 104.0,
+          "y": 176.4,
+          "width": 6.5,
+          "height": 5.7,
+          "text": "21",
+          "font_size": 4.1,
+          "fill": "#6db33f",
+          "background": "#ffffff",
+          "baseline_offset": -0.7
+        }
+      ],
+      "native_replacements": [],
+      "provenance": "原画面の版名表示を更新した図。実際のPleiades 2025撮影ではない。",
+      "checks": {
+        "original_asset_bytes_preserved": true,
+        "dimensions_preserved": true,
+        "embedded_original_images_unchanged": true,
+        "only_declared_regions_changed": true
+      },
+      "changed_pixels": 423,
+      "changed_pixels_outside_declared_regions": 0,
+      "declared_change_regions_pt": [
+        [
+          79.9,
+          73.6,
+          95.9,
+          81.3
+        ],
+        [
+          83.6,
+          175.4,
+          92.1,
+          183.1
+        ],
+        [
+          103.0,
+          175.4,
+          111.5,
+          183.1
+        ]
+      ],
+      "source_sha256": "ced64cd965b8366d44cb6c644c0a9f1c72b065b25f19e331755181104c29ccad",
+      "revised_sha256": "9d1689615c753d764fcf408b84b0fe427b3f67f9cad143e0120b3b241d137856",
+      "visual_review": "TypstとMuPDFで版名・枠内の収まりを目視。図の位置とサイズは保持。"
+    },
+    {
+      "chapter": "appendix-a",
+      "figure_id": "p285-f07",
+      "source": "docs/textbook/chapters/appendix-a/assets/p285-f07.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p285-f07-example-year-2027.svg",
+      "original_dimensions": {
+        "width": "426.5",
+        "height": "138.3",
+        "viewBox": "0 0 426.5 138.3"
+      },
+      "overlays": [
+        {
+          "x": 126.7,
+          "y": 123.0,
+          "width": 25.4,
+          "height": 11.2,
+          "text": "2027",
+          "font_size": 12.0,
+          "fill": "#000000",
+          "background": "#ffffff"
+        }
+      ],
+      "native_replacements": [],
+      "provenance": "原画像の例示年のみ更新。実際の検証ログの日時ではない。",
+      "checks": {
+        "original_asset_bytes_preserved": true,
+        "dimensions_preserved": true,
+        "embedded_original_images_unchanged": true,
+        "only_declared_regions_changed": true
+      },
+      "changed_pixels": 1403,
+      "changed_pixels_outside_declared_regions": 0,
+      "declared_change_regions_pt": [
+        [
+          125.7,
+          122.0,
+          153.1,
+          135.2
+        ]
+      ],
+      "source_sha256": "14d66d8b5520ebdddda178eb34e46c0649d3ffa8b074dd817ef740889131b83b",
+      "revised_sha256": "72baa76e15c834c91e0afc134f08a44ebdd914fe6a8ce53a0ac38d37838cd4b3",
+      "visual_review": "Typstで例示年2027が1行に収まり、前後の日時と重ならないことを目視。",
+      "example_datetime_original": "2024-01-23T21:27:55+09:00",
+      "example_datetime_revised": "2027-01-23T21:27:55+09:00",
+      "not_a_runtime_verification_timestamp": true
+    }
+  ],
+  "limitations": [
+    "この子セッションにcomputer-use必須のnode_replが提供されず、実Pleiades2025画面の撮影は実施できなかった。",
+    "原画面の版名表示を更新した図であり、実際のPleiades2025撮影ではない。",
+    "p288-f13の未選択Boot候補3.4.1(SNAPSHOT)/3.3.7(SNAPSHOT)/3.3.6やJava23/17は原画面の選択肢として保持。対象の選択済み表示を4.0.2/21へ更新。",
+    "全体PDF内のページ構成・新しい図の最終配置はrootによる本生成後の確認対象。",
+    "p285-f07の2027年表示はユーザー指定による原画像の例示年のみの更新であり、実検証ログの日時ではない。"
+  ],
+  "violations": [],
+  "comment_color": {
+    "theme": "tools/textbook/code.tmTheme",
+    "configured_color": "#008000",
+    "actual_typst_png_green_pixels": 636,
+    "only_comment_in_preview": " 9: //@Autowired は不要"
+  },
+  "allowed_figure_id_changes": [
+    "p070-f06",
+    "p285-f07",
+    "p287-f09",
+    "p287-f10",
+    "p288-f11",
+    "p288-f13"
+  ],
+  "viewport_comparison": [
+    {
+      "figure_id": "p070-f06",
+      "source": "docs/textbook/chapters/03/assets/p070-f06.svg",
+      "target": "docs/textbook/chapters/03/assets/p070-f06-versions-2025.svg",
+      "dimensions": {
+        "width": "349.45",
+        "height": "291",
+        "viewBox": "0 0 349.45 291"
+      },
+      "same": true
+    },
+    {
+      "figure_id": "p287-f09",
+      "source": "docs/textbook/chapters/appendix-a/assets/p287-f09.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p287-f09-versions-2025.svg",
+      "dimensions": {
+        "width": "429.27003",
+        "height": "82.71997",
+        "viewBox": "0 0 429.27003 82.71997"
+      },
+      "same": true
+    },
+    {
+      "figure_id": "p287-f10",
+      "source": "docs/textbook/chapters/appendix-a/assets/p287-f10.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p287-f10-versions-2025.svg",
+      "dimensions": {
+        "width": "188.95",
+        "height": "224.79999",
+        "viewBox": "0 0 188.95 224.79999"
+      },
+      "same": true
+    },
+    {
+      "figure_id": "p288-f11",
+      "source": "docs/textbook/chapters/appendix-a/assets/p288-f11.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p288-f11-versions-2025.svg",
+      "dimensions": {
+        "width": "409.9",
+        "height": "233.29999",
+        "viewBox": "0 0 409.9 233.29999"
+      },
+      "same": true
+    },
+    {
+      "figure_id": "p288-f13",
+      "source": "docs/textbook/chapters/appendix-a/assets/p288-f13.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p288-f13-versions-2025.svg",
+      "dimensions": {
+        "width": "426.64997",
+        "height": "246.39998",
+        "viewBox": "0 0 426.64997 246.39998"
+      },
+      "same": true
+    },
+    {
+      "figure_id": "p285-f07",
+      "source": "docs/textbook/chapters/appendix-a/assets/p285-f07.svg",
+      "target": "docs/textbook/chapters/appendix-a/assets/p285-f07-example-year-2027.svg",
+      "dimensions": {
+        "width": "426.5",
+        "height": "138.3",
+        "viewBox": "0 0 426.5 138.3"
+      },
+      "same": true
+    }
+  ]
+}

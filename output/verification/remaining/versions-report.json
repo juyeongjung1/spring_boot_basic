@@ -1,0 +1,2445 @@
+{
+  "generated_at_utc": "2026-11-05T03:39:10.695498+00:00",
+  "as_of": "2026-11-05",
+  "base_head": "18e89c0",
+  "scope": "年表記とBootstrap版/CDN/SRI/local資材のみ。新規解説なし。baseline/source-layoutは未編集。",
+  "bootstrap": {
+    "stable_version": "5.3.8",
+    "official_blog_release_date": "2025-08-25",
+    "github_release_published_at_utc": "2025-08-26T02:04:48Z",
+    "prerelease": false,
+    "alpha_excluded": "6.0.0-alpha.1",
+    "sources": [
+      "https://getbootstrap.com/docs/versions/",
+      "https://blog.getbootstrap.com/2025/08/25/bootstrap-5-3-8/",
+      "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
+      "https://api.github.com/repos/twbs/bootstrap/releases/tags/v5.3.8"
+    ],
+    "official_archive_url": "https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-dist.zip",
+    "official_sha256": "3258c873cbcb1e2d81f4374afea2ea6437d9eee9077041073fd81dd579c5ba6b",
+    "downloaded_sha256": "3258c873cbcb1e2d81f4374afea2ea6437d9eee9077041073fd81dd579c5ba6b",
+    "official_digest_verified": true,
+    "sri": {
+      "css/bootstrap.min.css": "sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB",
+      "js/bootstrap.bundle.min.js": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    }
+  },
+  "summary": {
+    "bootstrap_local_files_updated": 88,
+    "source_html_files_updated": 18,
+    "source_html_year_updates": 9,
+    "source_html_cdn_tags_updated": 10,
+    "chapter_files_updated": 4,
+    "total_source_files_updated": 110,
+    "cdn_tags_validated": 14,
+    "resource_hash_checks_passed": 88,
+    "revision_history_unchanged": true,
+    "pending_figure_updates_reported": 7,
+    "distribution_zip_rebuild_required": false,
+    "chapter7_package_success_count": 4,
+    "jar_bootstrap_resources_verified": 88,
+    "jar_updated_html_templates_verified": 12,
+    "distribution_zip_regenerated": true,
+    "distribution_archive_files": 852
+  },
+  "verification": {
+    "official_archive_digest_matches": true,
+    "all_copied_assets_equal_official_release": true,
+    "all_cdn_tags_have_matching_sri_and_crossorigin": true,
+    "no_2023_or_2024_year_or_old_bootstrap_cdn_in_project_source_html": true,
+    "initial_publication_and_revision_history_dates_preserved": true,
+    "third_party_copyright_preserved": "Bootstrap配布物のCopyright 2011-2025等は公式ファイルのまま保持。",
+    "target_output_note": "内容修正時に検索へ含まれたtarget/classes15 HTMLは元SHAへ復元済み。その後、今回の明示的な追加検証により第7章4アプリのtargetをMavenで再生成した（target削除/cleanなし）。",
+    "build_not_run": "PDF全体buildはroot担当。追加検証で第7章4アプリのpackage/JAR照合、および配布ZIP再生成・全件照合を完了。",
+    "distribution_zip_all_entry_bytes_match_current_projects": true,
+    "css_js_eol_lf_protection_included": true
+  },
+  "changed_files": [
+    {
+      "path": "docs/textbook/chapters/05/chapter.md",
+      "kind": "chapter-version-or-year",
+      "owned_block_ids": [
+        "p183-b03"
+      ],
+      "before_sha256": "36ecabdc29fa1993519fb5e69ce638495bee24ae76c9c6ed4d002cfdd1211a82",
+      "after_sha256": "1977502b0c2a3a28cfe8e1e918877bbe3ec37ab0833324f52c614f3a688e61d8"
+    },
+    {
+      "path": "docs/textbook/chapters/07/chapter.md",
+      "kind": "chapter-version-or-year",
+      "owned_block_ids": [
+        "p241-b08",
+        "p246-b07",
+        "p246-b10",
+        "p248-b02"
+      ],
+      "before_sha256": "26f5365f34423bbf88292298867a2c1eeb9ccfc60cf750fcee6f2d06a3cf5d7f",
+      "after_sha256": "f95a194f70dc8b7366def8e8d5d1a12e1fa503b9ba2ce426217e73d47a80e758"
+    },
+    {
+      "path": "docs/textbook/chapters/appendix-b/chapter.md",
+      "kind": "chapter-version-or-year",
+      "owned_block_ids": [
+        "p296-b04"
+      ],
+      "before_sha256": "a5e62059a32a490133ed4e6c84f2266f2b9662daa308a49a056a6b901b889581",
+      "after_sha256": "0333a8031402361ca8dae9751aa9d2501bd5fb12b2a5377099a991455bb3b04d"
+    },
+    {
+      "path": "docs/textbook/chapters/ex-back/chapter.md",
+      "kind": "chapter-version-or-year",
+      "owned_block_ids": [
+        "p077-b04"
+      ],
+      "before_sha256": "6862ae61d3c9df64797d4be4f8d5191afea6352cb747854ada0ae0d671e86edf",
+      "after_sha256": "d5bb1243ca35bcc7489d06a8dc436c94e13b9d08b889c2d5ba996211341cca61"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "f99895bdc9156683ddd08b53f216b1546ac776bc72e9bd78c974aa9195571229",
+      "after_sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "5200aaa3d0b0941b18a57fe19dda5da78bc0b6dd3db0a71caecbba6b52cc354c",
+      "after_sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "cec8359dceb524bef54e6a7e874210e851cd6badb629e4059e0146c09aa42ce3",
+      "after_sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9b93c4da58a1577cfaf4de0d0d75be2d34edcec7a45b6a9a361763bf41f19ffd",
+      "after_sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "cee8fa909ced519f9ec5cb4a3acdbb7dcfa139ddd6fe776b5a3b0389618a7b8b",
+      "after_sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9d4c4e6bc42ca51eeb5be3605f9ee9ef81debb0ea8da3ee37369530ab006624c",
+      "after_sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "099b1769c431a36d2f8bafff90f0059037e974767ae74a923b00007afecb4ce3",
+      "after_sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "abc801aa0ac7f4784a8dee31a012b14d0789f64eb7bc52b41ae91c9bf774f672",
+      "after_sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "0e5da72011b44b182872b57698627acfdb071eddfac80e87200b748caa910e69",
+      "after_sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "4aff6571341cea3c9ae97e9fd58d8e414e87a841a0854175a7500ede80857311",
+      "after_sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "1395873717384868030d2cd0d038e72f06f5a804c70af01e814bd265cf48f89e",
+      "after_sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "0b158b8c5eabf30021afd645cd22bd2f364a8951f1de5c899e2a232a805fa605",
+      "after_sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "772b45f1238807aa50b883c392b4bf8a7359c0a04662eaa33d7f9ebf6882034e",
+      "after_sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "7f1d37f0d90b6385354c2ac10e2bb91563c46bd7a266ed351222ebcac8496c2a",
+      "after_sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9d3e7c977b21ee44bb8d4412a64f662e63fbbae6f31b479eb9cb50d0fe9e393d",
+      "after_sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "61ef1e6300ead679b00ee4a9a1d77ef110a851de50e58bfeb0bfb66a7ba4e7b9",
+      "after_sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.bundle.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "73297157552bbaa9af43039aa656e567b37e6f12c22581febc7481865cf9905e",
+      "after_sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.bundle.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "aa53d582f97eb594c2a5cc5824574707f9ba9837bce3046bfa5f3556860f4e04",
+      "after_sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.esm.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "90295b56b3ce33ec5278e3c9cb558e88a7e44606538675f3cb27225e87a76784",
+      "after_sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.esm.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.esm.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "f819640a70473796696a135360fc2dfcc1e503b920c4ab5b56dfffb96d149363",
+      "after_sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.esm.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "d772518742933ff9acf9aff32cfa645da53449e90c44c6cf78d3b7f40f731a07",
+      "after_sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "59e2e3c3c25802d3547328ea96e1eb91560dd5fa4bed3b5a930461691814c7cb",
+      "after_sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "f99895bdc9156683ddd08b53f216b1546ac776bc72e9bd78c974aa9195571229",
+      "after_sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "5200aaa3d0b0941b18a57fe19dda5da78bc0b6dd3db0a71caecbba6b52cc354c",
+      "after_sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "cec8359dceb524bef54e6a7e874210e851cd6badb629e4059e0146c09aa42ce3",
+      "after_sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9b93c4da58a1577cfaf4de0d0d75be2d34edcec7a45b6a9a361763bf41f19ffd",
+      "after_sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "cee8fa909ced519f9ec5cb4a3acdbb7dcfa139ddd6fe776b5a3b0389618a7b8b",
+      "after_sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9d4c4e6bc42ca51eeb5be3605f9ee9ef81debb0ea8da3ee37369530ab006624c",
+      "after_sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "099b1769c431a36d2f8bafff90f0059037e974767ae74a923b00007afecb4ce3",
+      "after_sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "abc801aa0ac7f4784a8dee31a012b14d0789f64eb7bc52b41ae91c9bf774f672",
+      "after_sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "0e5da72011b44b182872b57698627acfdb071eddfac80e87200b748caa910e69",
+      "after_sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "4aff6571341cea3c9ae97e9fd58d8e414e87a841a0854175a7500ede80857311",
+      "after_sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "1395873717384868030d2cd0d038e72f06f5a804c70af01e814bd265cf48f89e",
+      "after_sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "0b158b8c5eabf30021afd645cd22bd2f364a8951f1de5c899e2a232a805fa605",
+      "after_sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "772b45f1238807aa50b883c392b4bf8a7359c0a04662eaa33d7f9ebf6882034e",
+      "after_sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "7f1d37f0d90b6385354c2ac10e2bb91563c46bd7a266ed351222ebcac8496c2a",
+      "after_sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9d3e7c977b21ee44bb8d4412a64f662e63fbbae6f31b479eb9cb50d0fe9e393d",
+      "after_sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "61ef1e6300ead679b00ee4a9a1d77ef110a851de50e58bfeb0bfb66a7ba4e7b9",
+      "after_sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.bundle.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "73297157552bbaa9af43039aa656e567b37e6f12c22581febc7481865cf9905e",
+      "after_sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.bundle.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "aa53d582f97eb594c2a5cc5824574707f9ba9837bce3046bfa5f3556860f4e04",
+      "after_sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.esm.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "90295b56b3ce33ec5278e3c9cb558e88a7e44606538675f3cb27225e87a76784",
+      "after_sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.esm.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.esm.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "f819640a70473796696a135360fc2dfcc1e503b920c4ab5b56dfffb96d149363",
+      "after_sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.esm.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "d772518742933ff9acf9aff32cfa645da53449e90c44c6cf78d3b7f40f731a07",
+      "after_sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "59e2e3c3c25802d3547328ea96e1eb91560dd5fa4bed3b5a930461691814c7cb",
+      "after_sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "f99895bdc9156683ddd08b53f216b1546ac776bc72e9bd78c974aa9195571229",
+      "after_sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "5200aaa3d0b0941b18a57fe19dda5da78bc0b6dd3db0a71caecbba6b52cc354c",
+      "after_sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "cec8359dceb524bef54e6a7e874210e851cd6badb629e4059e0146c09aa42ce3",
+      "after_sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9b93c4da58a1577cfaf4de0d0d75be2d34edcec7a45b6a9a361763bf41f19ffd",
+      "after_sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "cee8fa909ced519f9ec5cb4a3acdbb7dcfa139ddd6fe776b5a3b0389618a7b8b",
+      "after_sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9d4c4e6bc42ca51eeb5be3605f9ee9ef81debb0ea8da3ee37369530ab006624c",
+      "after_sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "099b1769c431a36d2f8bafff90f0059037e974767ae74a923b00007afecb4ce3",
+      "after_sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "abc801aa0ac7f4784a8dee31a012b14d0789f64eb7bc52b41ae91c9bf774f672",
+      "after_sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "0e5da72011b44b182872b57698627acfdb071eddfac80e87200b748caa910e69",
+      "after_sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "4aff6571341cea3c9ae97e9fd58d8e414e87a841a0854175a7500ede80857311",
+      "after_sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "1395873717384868030d2cd0d038e72f06f5a804c70af01e814bd265cf48f89e",
+      "after_sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "0b158b8c5eabf30021afd645cd22bd2f364a8951f1de5c899e2a232a805fa605",
+      "after_sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "772b45f1238807aa50b883c392b4bf8a7359c0a04662eaa33d7f9ebf6882034e",
+      "after_sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "7f1d37f0d90b6385354c2ac10e2bb91563c46bd7a266ed351222ebcac8496c2a",
+      "after_sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9d3e7c977b21ee44bb8d4412a64f662e63fbbae6f31b479eb9cb50d0fe9e393d",
+      "after_sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "61ef1e6300ead679b00ee4a9a1d77ef110a851de50e58bfeb0bfb66a7ba4e7b9",
+      "after_sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.bundle.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "73297157552bbaa9af43039aa656e567b37e6f12c22581febc7481865cf9905e",
+      "after_sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.bundle.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "aa53d582f97eb594c2a5cc5824574707f9ba9837bce3046bfa5f3556860f4e04",
+      "after_sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.esm.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "90295b56b3ce33ec5278e3c9cb558e88a7e44606538675f3cb27225e87a76784",
+      "after_sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.esm.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.esm.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "f819640a70473796696a135360fc2dfcc1e503b920c4ab5b56dfffb96d149363",
+      "after_sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.esm.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "d772518742933ff9acf9aff32cfa645da53449e90c44c6cf78d3b7f40f731a07",
+      "after_sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "59e2e3c3c25802d3547328ea96e1eb91560dd5fa4bed3b5a930461691814c7cb",
+      "after_sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "f99895bdc9156683ddd08b53f216b1546ac776bc72e9bd78c974aa9195571229",
+      "after_sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "5200aaa3d0b0941b18a57fe19dda5da78bc0b6dd3db0a71caecbba6b52cc354c",
+      "after_sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "cec8359dceb524bef54e6a7e874210e851cd6badb629e4059e0146c09aa42ce3",
+      "after_sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9b93c4da58a1577cfaf4de0d0d75be2d34edcec7a45b6a9a361763bf41f19ffd",
+      "after_sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-grid.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "cee8fa909ced519f9ec5cb4a3acdbb7dcfa139ddd6fe776b5a3b0389618a7b8b",
+      "after_sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9d4c4e6bc42ca51eeb5be3605f9ee9ef81debb0ea8da3ee37369530ab006624c",
+      "after_sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "099b1769c431a36d2f8bafff90f0059037e974767ae74a923b00007afecb4ce3",
+      "after_sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "abc801aa0ac7f4784a8dee31a012b14d0789f64eb7bc52b41ae91c9bf774f672",
+      "after_sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-reboot.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "0e5da72011b44b182872b57698627acfdb071eddfac80e87200b748caa910e69",
+      "after_sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "4aff6571341cea3c9ae97e9fd58d8e414e87a841a0854175a7500ede80857311",
+      "after_sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "1395873717384868030d2cd0d038e72f06f5a804c70af01e814bd265cf48f89e",
+      "after_sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "0b158b8c5eabf30021afd645cd22bd2f364a8951f1de5c899e2a232a805fa605",
+      "after_sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap-utilities.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "772b45f1238807aa50b883c392b4bf8a7359c0a04662eaa33d7f9ebf6882034e",
+      "after_sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "7f1d37f0d90b6385354c2ac10e2bb91563c46bd7a266ed351222ebcac8496c2a",
+      "after_sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.rtl.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "9d3e7c977b21ee44bb8d4412a64f662e63fbbae6f31b479eb9cb50d0fe9e393d",
+      "after_sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.rtl.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+      "kind": "bootstrap-local",
+      "before_sha256": "61ef1e6300ead679b00ee4a9a1d77ef110a851de50e58bfeb0bfb66a7ba4e7b9",
+      "after_sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+      "official_zip_member": "bootstrap-5.3.8-dist/css/bootstrap.rtl.min.css",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.bundle.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "73297157552bbaa9af43039aa656e567b37e6f12c22581febc7481865cf9905e",
+      "after_sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.bundle.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "aa53d582f97eb594c2a5cc5824574707f9ba9837bce3046bfa5f3556860f4e04",
+      "after_sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.esm.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "90295b56b3ce33ec5278e3c9cb558e88a7e44606538675f3cb27225e87a76784",
+      "after_sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.esm.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.esm.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "f819640a70473796696a135360fc2dfcc1e503b920c4ab5b56dfffb96d149363",
+      "after_sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.esm.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "d772518742933ff9acf9aff32cfa645da53449e90c44c6cf78d3b7f40f731a07",
+      "after_sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.min.js",
+      "kind": "bootstrap-local",
+      "before_sha256": "59e2e3c3c25802d3547328ea96e1eb91560dd5fa4bed3b5a930461691814c7cb",
+      "after_sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+      "official_zip_member": "bootstrap-5.3.8-dist/js/bootstrap.min.js",
+      "matches_official_distribution": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_5/src/main/resources/templates/layout.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "6e787a26798b2b15d6c82d17ee4507b67e2a1ec565a22a344f4af4b9363a8157",
+      "after_sha256": "fdca7e6ad4b15950f63e08106ab79909a1cd2c8c7036f476f7fb345398de6a40"
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_5/src/main/resources/templates/layout.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "b0b94e2cc5d90692a6608e3113207771825b73fa661a182e05a6ca94c86a6e72",
+      "after_sha256": "c24210557decff3322009298910c75b66115d270434603e2932d9a676ca88edc"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_5/src/main/resources/templates/layout.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "eaabcd949427cbced8151539edf948a61839fcf6e010cde4c7dafa09d79ecbfb",
+      "after_sha256": "ba51804d652187e110f1a15cc1387cd6107f30a69f6f95309f01aa933f22ca2b"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/bootstrap_setup.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "5e231fb8c8c52354b47b8058177da52d267368428ab5980ffdf016cbf07d9979",
+      "after_sha256": "bdcf59a3c9ce9f7fc86d517ccd96815f653a69bf07e562e64c1278b82d026d41"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/form_sample.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "ff4721fe5be47d4234eeaa1b6a37e247cb398a1fc9f0cdc140a806bdb6285aa7",
+      "after_sha256": "4776244cda76502fabe6347c3a017009d3c0fba88729c03302eb5732d188967c"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/grid_sample.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "58411ac3f0b40fc4535b3b7de00c975c9c70487e038a723217456c7cdc2e5b7e",
+      "after_sha256": "3e3801c6bc159c787005dcb2b80f676c4ef13a8d6101218269cdd0a5bedfa752"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/grid_sample2.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "b50c8efefa459ff8b7885564a634861f77c5e30cee24f6f6ac9d8a5edb8a82f6",
+      "after_sha256": "d89cbdd425418fcf92bc5701ffa562fa80a691a0e7d2ade67724eef94660c11d"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/layout.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "eaabcd949427cbced8151539edf948a61839fcf6e010cde4c7dafa09d79ecbfb",
+      "after_sha256": "ba51804d652187e110f1a15cc1387cd6107f30a69f6f95309f01aa933f22ca2b"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/product/product_search.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "61d199d2b644f35657a64ad3fe0a72d0b79a814e05acef6b6ded3df3b3abdfe4",
+      "after_sha256": "4d92f4c947da5fe2d618b07423e237df08a8308c5d3ba468c11c61447ae20d05"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/style_sample.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "34d6e7d60343493adba0bd804e705fed81749646670c2b5404ea021cc9c6a9a9",
+      "after_sha256": "7d0cfc4eb9366519e4d7fe49b43cf5df69f41ca2222b0b62514299c466c72e33"
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_5/src/main/resources/templates/layout.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "eaabcd949427cbced8151539edf948a61839fcf6e010cde4c7dafa09d79ecbfb",
+      "after_sha256": "ba51804d652187e110f1a15cc1387cd6107f30a69f6f95309f01aa933f22ca2b"
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/form_sample.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "6bbf750d9bae053412a0fa1150f37b16f13f6a6468885445a935e65f517052b1",
+      "after_sha256": "aa9bac7788a3f11b73cca44a004f1c93b1e514022c79ebda3d2eca26f587f355"
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/grid_sample.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "92258103ffb5db0fa19d6f52399ed90974ab1e2cebe22d60a8f5e3032a2cf25a",
+      "after_sha256": "d01b06509280332b41ecb084ad64e8c229935bdbde5d4a57d02a0e420d6dc4c7"
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/grid_sample2.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "b50c8efefa459ff8b7885564a634861f77c5e30cee24f6f6ac9d8a5edb8a82f6",
+      "after_sha256": "d89cbdd425418fcf92bc5701ffa562fa80a691a0e7d2ade67724eef94660c11d"
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/style_sample.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "bb98abe4ebc82f7e5072dcb8738473edc218bddd146f2e32e07c28fd1702febd",
+      "after_sha256": "3d0ef0d414792856acf3301db351c0381bd936bb55d7da40a9072c690b316557"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_5/src/main/resources/templates/product/layout.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "f85d95b19842e5a4f6dc5709fd3ac64a96e4d27ead067c898c5cf87a1530d3f4",
+      "after_sha256": "e7c39c66058d468576a6c1a56e55b6528831029ca26e47675f6d6e219d5fcbf2"
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/product/layout.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "f85d95b19842e5a4f6dc5709fd3ac64a96e4d27ead067c898c5cf87a1530d3f4",
+      "after_sha256": "e7c39c66058d468576a6c1a56e55b6528831029ca26e47675f6d6e219d5fcbf2"
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_5/src/main/resources/templates/product/layout.html",
+      "kind": "html-year-or-cdn",
+      "before_sha256": "f85d95b19842e5a4f6dc5709fd3ac64a96e4d27ead067c898c5cf87a1530d3f4",
+      "after_sha256": "e7c39c66058d468576a6c1a56e55b6528831029ca26e47675f6d6e219d5fcbf2"
+    }
+  ],
+  "resource_hash_checks": [
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.css",
+      "sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.min.css",
+      "sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+      "sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+      "sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.css",
+      "sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+      "sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+      "sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+      "sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.css",
+      "sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+      "sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+      "sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+      "sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.css",
+      "sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.min.css",
+      "sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.rtl.css",
+      "sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+      "sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.bundle.js",
+      "sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+      "sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.esm.js",
+      "sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.esm.min.js",
+      "sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.js",
+      "sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.min.js",
+      "sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.css",
+      "sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.min.css",
+      "sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+      "sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+      "sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.css",
+      "sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+      "sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+      "sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+      "sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.css",
+      "sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+      "sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+      "sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+      "sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.css",
+      "sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.min.css",
+      "sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.rtl.css",
+      "sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+      "sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.bundle.js",
+      "sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+      "sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.esm.js",
+      "sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.esm.min.js",
+      "sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.js",
+      "sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.min.js",
+      "sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.css",
+      "sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.min.css",
+      "sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+      "sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+      "sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.css",
+      "sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+      "sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+      "sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+      "sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.css",
+      "sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+      "sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+      "sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+      "sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.css",
+      "sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.min.css",
+      "sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.rtl.css",
+      "sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+      "sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.bundle.js",
+      "sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+      "sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.esm.js",
+      "sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.esm.min.js",
+      "sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.js",
+      "sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.min.js",
+      "sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.css",
+      "sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.min.css",
+      "sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+      "sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+      "sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.css",
+      "sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+      "sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+      "sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+      "sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.css",
+      "sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+      "sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+      "sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+      "sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.css",
+      "sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.min.css",
+      "sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.rtl.css",
+      "sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+      "sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.bundle.js",
+      "sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+      "sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.esm.js",
+      "sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.esm.min.js",
+      "sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.js",
+      "sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+      "matches_official_zip": true
+    },
+    {
+      "path": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.min.js",
+      "sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+      "matches_official_zip": true
+    }
+  ],
+  "cdn_checks": [
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/bootstrap_setup.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+      "integrity": "sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/bootstrap_setup.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/form_sample.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/grid_sample.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/grid_sample2.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "projects/spring_answer/spring_answer_7/src/main/resources/templates/style_sample.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/form_sample.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/grid_sample.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/grid_sample2.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/style_sample.html",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "docs/textbook/chapters/07/chapter.md",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+      "integrity": "sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "docs/textbook/chapters/07/chapter.md",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "docs/textbook/chapters/07/chapter.md",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+      "integrity": "sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB",
+      "crossorigin": "anonymous",
+      "passed": true
+    },
+    {
+      "path": "docs/textbook/chapters/07/chapter.md",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "integrity": "sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI",
+      "crossorigin": "anonymous",
+      "passed": true
+    }
+  ],
+  "pending_figure_updates": [
+    {
+      "part": "05",
+      "id": "p182-f14",
+      "source_page": 182,
+      "target_text": "Copyright © 2023 Trainocate Spring. All rights reserved.",
+      "requested_change": "copyright年のみ2027へ",
+      "asset_path": "docs/textbook/chapters/05/assets/p182-f14.svg",
+      "status": "rootへ報告済み。本担当は原図未変更"
+    },
+    {
+      "part": "05",
+      "id": "p186-f17",
+      "source_page": 186,
+      "target_text": "Copyright © 2023 Trainocate Spring. All rights reserved.",
+      "requested_change": "copyright年のみ2027へ",
+      "asset_path": "docs/textbook/chapters/05/assets/p186-f17.svg",
+      "status": "rootへ報告済み。本担当は原図未変更"
+    },
+    {
+      "part": "05",
+      "id": "p186-f18",
+      "source_page": 186,
+      "target_text": "Copyright © 2023 Trainocate Spring. All rights reserved.",
+      "requested_change": "copyright年のみ2027へ",
+      "asset_path": "docs/textbook/chapters/05/assets/p186-f18.svg",
+      "status": "rootへ報告済み。本担当は原図未変更"
+    },
+    {
+      "part": "ex05",
+      "id": "p041-f04",
+      "source_page": 41,
+      "target_text": "Copyright © 2023 Trainocate Spring. All rights reserved.",
+      "requested_change": "copyright年のみ2027へ",
+      "asset_path": "docs/textbook/chapters/ex05/assets/p041-f04.svg",
+      "status": "rootへ報告済み。本担当は原図未変更"
+    },
+    {
+      "part": "ex05",
+      "id": "p041-f05",
+      "source_page": 41,
+      "target_text": "Copyright © 2023 Trainocate Spring. All rights reserved.",
+      "requested_change": "copyright年のみ2027へ",
+      "asset_path": "docs/textbook/chapters/ex05/assets/p041-f05.svg",
+      "status": "rootへ報告済み。本担当は原図未変更"
+    },
+    {
+      "part": "appendix-a",
+      "id": "p285-f07",
+      "source_page": 285,
+      "target_text": "Finished at: 2024-01-23T21:27:55+09:00",
+      "requested_change": "ユーザー指摘の2024→2027。元画像は本担当では変更せずroot判断へ",
+      "asset_path": "docs/textbook/chapters/appendix-a/assets/p285-f07.svg",
+      "status": "rootへ報告済み。本担当は原図未変更"
+    },
+    {
+      "part": "07",
+      "id": "p245-f05",
+      "source_page": 245,
+      "target_text": "bootstrap@5.3.0（CSSとJSのCDN各1か所）",
+      "requested_change": "5.3.8へ。CDN/SRIも本文と整合",
+      "asset_path": "docs/textbook/chapters/07/assets/p245-f05.svg",
+      "status": "rootへ報告済み。本担当は原図未変更"
+    }
+  ],
+  "native_update_ids": [
+    "p296-b04",
+    "p077-b04"
+  ],
+  "packaging_verification": {
+    "verified_at_utc": "2026-11-05T03:51:02.443962+00:00",
+    "scope": "Bootstrap更新を含む第7章4アプリだけを順次package。DB起動/接続確認、HTTP起動、全27アプリJUnitの再実行は実施していない。Javaコード変更なし。",
+    "command": "mvn -B -ntp -DskipTests package",
+    "maven_version": "3.9.9",
+    "java_version": "Temurin 21.0.13+9",
+    "maven_opts": "-Xmx384m -Dfile.encoding=UTF-8",
+    "execution": "同じMavenキャッシュで1アプリずつ順次実行。clean/target削除なし。",
+    "resolved_stale_generated_html": "既存target/classesの復元時刻がsrcより新しくなり、一部HTMLのコピーが省略された。src HTML12件は内容/SHAを維持して更新時刻のみ更新し、spring側2本を再package後、最終JARとsrcの一致を確認した。",
+    "resource_timestamp_refresh_record": "tmp/remaining-review/bootstrap-html-timestamp-refresh.json",
+    "repackaged_project_count_after_timestamp_refresh": 2,
+    "tests_skipped": true,
+    "database_verification_run": false,
+    "http_verification_run": false,
+    "passed": true,
+    "package_success_count": 4,
+    "jar_bootstrap_resources_verified": 88,
+    "jar_updated_html_templates_verified": 12,
+    "projects": [
+      {
+        "project": "spring_answer_7",
+        "group": "spring_answer",
+        "command": "mvn -B -ntp -DskipTests package",
+        "exit_code": 0,
+        "started": "2026-11-05T12:50:06.8896771+09:00",
+        "finished": "2026-11-05T12:50:27.9154388+09:00",
+        "elapsed_seconds": 21.03,
+        "log": "tmp/remaining-review/spring_answer_7-package.log",
+        "initial_attempt": {
+          "project": "spring_answer_7",
+          "group": "spring_answer",
+          "command": "mvn -B -ntp -DskipTests package",
+          "exit_code": 0,
+          "started": "2026-11-05T12:46:36.382063+09:00",
+          "finished": "2026-11-05T12:47:26.4935756+09:00",
+          "elapsed_seconds": 50.11,
+          "log": "tmp/remaining-review/spring_answer_7-package-initial.log"
+        },
+        "rerun_reason": "src内容不変でHTML更新時刻を新しくし、既存target時刻によるコピー省略を解消",
+        "jar": "projects/spring_answer/spring_answer_7/target/spring_answer_7-0.0.1-SNAPSHOT.jar",
+        "jar_sha256": "1d32e526baf9b89a87500899e2fb9a826b12edf524740ded5f62b2598dc1fedd",
+        "build_jdk_spec": "21",
+        "spring_boot_version": "4.0.2",
+        "resource_count": 22,
+        "updated_html_template_count": 8,
+        "resources": [
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.css",
+            "sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.min.css",
+            "sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.rtl.css",
+            "sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.rtl.min.css",
+            "sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.css",
+            "sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.min.css",
+            "sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.rtl.css",
+            "sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.rtl.min.css",
+            "sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.css",
+            "sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.min.css",
+            "sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.rtl.css",
+            "sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.rtl.min.css",
+            "sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.css",
+            "sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.min.css",
+            "sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.rtl.css",
+            "sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.rtl.min.css",
+            "sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.bundle.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.bundle.js",
+            "sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.bundle.min.js",
+            "sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.esm.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.esm.js",
+            "sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.esm.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.esm.min.js",
+            "sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.js",
+            "sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/static/js/bootstrap.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.min.js",
+            "sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          }
+        ],
+        "updated_html_templates": [
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/templates/bootstrap_setup.html",
+            "jar_entry": "BOOT-INF/classes/templates/bootstrap_setup.html",
+            "sha256": "bdcf59a3c9ce9f7fc86d517ccd96815f653a69bf07e562e64c1278b82d026d41",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/templates/form_sample.html",
+            "jar_entry": "BOOT-INF/classes/templates/form_sample.html",
+            "sha256": "4776244cda76502fabe6347c3a017009d3c0fba88729c03302eb5732d188967c",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/templates/grid_sample.html",
+            "jar_entry": "BOOT-INF/classes/templates/grid_sample.html",
+            "sha256": "3e3801c6bc159c787005dcb2b80f676c4ef13a8d6101218269cdd0a5bedfa752",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/templates/grid_sample2.html",
+            "jar_entry": "BOOT-INF/classes/templates/grid_sample2.html",
+            "sha256": "d89cbdd425418fcf92bc5701ffa562fa80a691a0e7d2ade67724eef94660c11d",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/templates/layout.html",
+            "jar_entry": "BOOT-INF/classes/templates/layout.html",
+            "sha256": "ba51804d652187e110f1a15cc1387cd6107f30a69f6f95309f01aa933f22ca2b",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/templates/product/product_search.html",
+            "jar_entry": "BOOT-INF/classes/templates/product/product_search.html",
+            "sha256": "4d92f4c947da5fe2d618b07423e237df08a8308c5d3ba468c11c61447ae20d05",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/templates/style_sample.html",
+            "jar_entry": "BOOT-INF/classes/templates/style_sample.html",
+            "sha256": "7d0cfc4eb9366519e4d7fe49b43cf5df69f41ca2222b0b62514299c466c72e33",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_answer/spring_answer_7/src/main/resources/templates/product/layout.html",
+            "jar_entry": "BOOT-INF/classes/templates/product/layout.html",
+            "sha256": "e7c39c66058d468576a6c1a56e55b6528831029ca26e47675f6d6e219d5fcbf2",
+            "matches_source": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "spring_exercise_7",
+        "group": "spring_exercise",
+        "command": "mvn -B -ntp -DskipTests package",
+        "exit_code": 0,
+        "started": "2026-11-05T12:50:28.3294160+09:00",
+        "finished": "2026-11-05T12:50:48.0968441+09:00",
+        "elapsed_seconds": 19.77,
+        "log": "tmp/remaining-review/spring_exercise_7-package.log",
+        "initial_attempt": {
+          "project": "spring_exercise_7",
+          "group": "spring_exercise",
+          "command": "mvn -B -ntp -DskipTests package",
+          "exit_code": 0,
+          "started": "2026-11-05T12:47:44.3788825+09:00",
+          "finished": "2026-11-05T12:47:56.0177567+09:00",
+          "elapsed_seconds": 11.64,
+          "log": "tmp/remaining-review/spring_exercise_7-package-initial.log"
+        },
+        "rerun_reason": "src内容不変でHTML更新時刻を新しくし、既存target時刻によるコピー省略を解消",
+        "jar": "projects/spring_exercise/spring_exercise_7/target/spring_exercise_7-0.0.1-SNAPSHOT.jar",
+        "jar_sha256": "4dcc30f3f87b5e695a75e0dd62127632a9d5e5452ea79dd2445dbf1e8a7ecaf4",
+        "build_jdk_spec": "21",
+        "spring_boot_version": "4.0.2",
+        "resource_count": 22,
+        "updated_html_template_count": 4,
+        "resources": [
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.css",
+            "sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.min.css",
+            "sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.rtl.css",
+            "sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.rtl.min.css",
+            "sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.css",
+            "sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.min.css",
+            "sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.rtl.css",
+            "sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.rtl.min.css",
+            "sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.css",
+            "sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.min.css",
+            "sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.rtl.css",
+            "sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.rtl.min.css",
+            "sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.css",
+            "sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.min.css",
+            "sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.rtl.css",
+            "sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.rtl.min.css",
+            "sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.bundle.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.bundle.js",
+            "sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.bundle.min.js",
+            "sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.esm.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.esm.js",
+            "sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.esm.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.esm.min.js",
+            "sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.js",
+            "sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/static/js/bootstrap.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.min.js",
+            "sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          }
+        ],
+        "updated_html_templates": [
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/form_sample.html",
+            "jar_entry": "BOOT-INF/classes/templates/form_sample.html",
+            "sha256": "aa9bac7788a3f11b73cca44a004f1c93b1e514022c79ebda3d2eca26f587f355",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/grid_sample.html",
+            "jar_entry": "BOOT-INF/classes/templates/grid_sample.html",
+            "sha256": "d01b06509280332b41ecb084ad64e8c229935bdbde5d4a57d02a0e420d6dc4c7",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/grid_sample2.html",
+            "jar_entry": "BOOT-INF/classes/templates/grid_sample2.html",
+            "sha256": "d89cbdd425418fcf92bc5701ffa562fa80a691a0e7d2ade67724eef94660c11d",
+            "matches_source": true
+          },
+          {
+            "source": "projects/spring_exercise/spring_exercise_7/src/main/resources/templates/style_sample.html",
+            "jar_entry": "BOOT-INF/classes/templates/style_sample.html",
+            "sha256": "3d0ef0d414792856acf3301db351c0381bd936bb55d7da40a9072c690b316557",
+            "matches_source": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "project": "enshu_answer_7",
+        "group": "enshu_answer",
+        "command": "mvn -B -ntp -DskipTests package",
+        "exit_code": 0,
+        "started": "2026-11-05T12:47:56.2369969+09:00",
+        "finished": "2026-11-05T12:48:09.4477162+09:00",
+        "elapsed_seconds": 13.21,
+        "log": "tmp/remaining-review/enshu_answer_7-package.log",
+        "jar": "projects/enshu_answer/enshu_answer_7/target/enshu_answer_7-0.0.1-SNAPSHOT.jar",
+        "jar_sha256": "6e3ff6e885e585606dfe234174ba85f1e16b855bff3f53dac275e6cc2b5df960",
+        "build_jdk_spec": "21",
+        "spring_boot_version": "4.0.2",
+        "resource_count": 22,
+        "updated_html_template_count": 0,
+        "resources": [
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.css",
+            "sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.min.css",
+            "sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.rtl.css",
+            "sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.rtl.min.css",
+            "sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.css",
+            "sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.min.css",
+            "sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.rtl.css",
+            "sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.rtl.min.css",
+            "sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.css",
+            "sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.min.css",
+            "sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.rtl.css",
+            "sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.rtl.min.css",
+            "sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.css",
+            "sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.min.css",
+            "sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.rtl.css",
+            "sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.rtl.min.css",
+            "sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.bundle.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.bundle.js",
+            "sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.bundle.min.js",
+            "sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.esm.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.esm.js",
+            "sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.esm.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.esm.min.js",
+            "sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.js",
+            "sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_answer/enshu_answer_7/src/main/resources/static/js/bootstrap.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.min.js",
+            "sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          }
+        ],
+        "updated_html_templates": [],
+        "passed": true
+      },
+      {
+        "project": "enshu_exercise_7",
+        "group": "enshu_exercise",
+        "command": "mvn -B -ntp -DskipTests package",
+        "exit_code": 0,
+        "started": "2026-11-05T12:48:09.5009187+09:00",
+        "finished": "2026-11-05T12:48:20.5975880+09:00",
+        "elapsed_seconds": 11.1,
+        "log": "tmp/remaining-review/enshu_exercise_7-package.log",
+        "jar": "projects/enshu_exercise/enshu_exercise_7/target/enshu_exercise_7-0.0.1-SNAPSHOT.jar",
+        "jar_sha256": "faf61758120f540a9c921c1c564235ea3ee0c09e65df9fafeda8ea221252cdc1",
+        "build_jdk_spec": "21",
+        "spring_boot_version": "4.0.2",
+        "resource_count": 22,
+        "updated_html_template_count": 0,
+        "resources": [
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.css",
+            "sha256": "debef2607bc18da92921bd9559ec954a397ba5439d295e4face3e76f98dab9f3",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.min.css",
+            "sha256": "8d09c629f0198c538a1f46908e742b247d2b1398e95669c4a820ab3d65c92ffc",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.rtl.css",
+            "sha256": "76a8a1d40131b5b25964ea91c691cb86f272c528e99b497201c7ce0bf8412d99",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-grid.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-grid.rtl.min.css",
+            "sha256": "0cf051030566300dbe5c37316e51741de3f1070c99d69b6ab451454c88740fd1",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.css",
+            "sha256": "aab39007c15ae7165880653e69a970e48d561049f8633ac31bba21aea46c412e",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.min.css",
+            "sha256": "0b56cde507cfa4d5d219f71df2e2d0a9b14bd6f589583818b874fb026f0f47f7",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.rtl.css",
+            "sha256": "7fc078a56fb233e9a0cdf681cbd0efab514c121ef958818afc293b6f5e920492",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-reboot.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-reboot.rtl.min.css",
+            "sha256": "34dd5626c71e17acb8a2b1912d99b83d4d2a1b8e8bffab35942c7af43d4a06b4",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.css",
+            "sha256": "390f9de7afef4c3a68368f96899fa0ef6a08c3afb1599c7ea288d97ac89a23ff",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.min.css",
+            "sha256": "ed4cbc75169db612c3c73279698890dcdadc514094798686cae1cadda536bced",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.rtl.css",
+            "sha256": "2ea67a2d49c828015ef5f5f0988e2f9815625a13db312b459ea4c07602c8e2da",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap-utilities.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap-utilities.rtl.min.css",
+            "sha256": "1bc8db7e861d1eb6a6ed461dd1a4e081f30a5714b980129d1d54589f21bc822a",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.css",
+            "sha256": "4a50207b956a4ab943640ee993118b554a34e96a23261cfe58b9aa1807a7849b",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.min.css",
+            "sha256": "d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.rtl.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.rtl.css",
+            "sha256": "39911412c957c60512a4b23a0ea1903ed5f3a0f9f7bb7446c55a99bb2e5f7463",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/css/bootstrap.rtl.min.css",
+            "jar_entry": "BOOT-INF/classes/static/css/bootstrap.rtl.min.css",
+            "sha256": "b9048c83571ab73da54395b6b307219f9eb9c5447f4f8edb17a069eb0f19465a",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.bundle.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.bundle.js",
+            "sha256": "69566344cf5722be51acbc90fdb26c24eb01cc1c153f738b16b2fa87ccd3b510",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.bundle.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.bundle.min.js",
+            "sha256": "e4fd49181388c48ec5040bd3fe66f57c29c8e67fcd8502b3354b96ec7ab47cc7",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.esm.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.esm.js",
+            "sha256": "3c36e18ebe2539579edf7e440f3e02bcc46c2ad9efbc55b219b732af355d0aab",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.esm.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.esm.min.js",
+            "sha256": "f9280841ae00ff8c36baa9e829833dd9fc893c70d67b63c552f601a88fdfbc81",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.js",
+            "sha256": "1b6e856e8a636bcdde4588e63a1061ced96edbb468127b25243629634d402079",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          },
+          {
+            "source": "projects/enshu_exercise/enshu_exercise_7/src/main/resources/static/js/bootstrap.min.js",
+            "jar_entry": "BOOT-INF/classes/static/js/bootstrap.min.js",
+            "sha256": "7b0f14895d69247fd88e93840489cfd47c55bd3fd27eb0a6c12a14cc5f492207",
+            "matches_source": true,
+            "matches_official_5_3_8": true,
+            "version_header_5_3_8": true
+          }
+        ],
+        "updated_html_templates": [],
+        "passed": true
+      }
+    ]
+  },
+  "distribution": {
+    "archive": "SpringBootBasic_Java21_Boot4.0.2.zip",
+    "sha256": "8dff9ef63b0dc5f24a147e9a19e6624045bcde3b1ff86428c9010a23432c1202",
+    "files": 852,
+    "pom_files": 32,
+    "application_projects": 27,
+    "java": 21,
+    "spring_boot": "4.0.2",
+    "target_directories_included": false,
+    "class_files_included": false,
+    "ide_workspace_metadata_included": false,
+    "bootstrap": "5.3.8",
+    "crc_check_passed": true,
+    "all_entries_match_current_projects": true,
+    "old_bootstrap_5_3_0_in_sample_html": false,
+    "old_year_2023_in_sample_html": false
+  },
+  "distribution_source_line_ending_policy": {
+    "gitattributes_included": true,
+    "css": "text eol=lf",
+    "js": "text eol=lf",
+    "scope": "公式Bootstrap資材のbytesをcheckout後も維持する2行を収録。資材内容の変更やJAR再packageなし。"
+  }
+}

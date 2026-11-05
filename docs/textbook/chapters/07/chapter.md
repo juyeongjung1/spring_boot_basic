@@ -153,7 +153,7 @@
 
 ::: {#p241-b08 .paragraph}
 
-本書では、配布プロジェクトに同梱したBootstrap 5.3系のCSS・JavaScriptを使用します。Spring Boot 4.0.2とは別のフロントエンド用ライブラリであり、両者のバージョン番号は独立しています。
+[本書では、]{.s009}[(2026]{.s007}[&#32;年&#32;]{.s009}[11]{.s007}[&#32;月&#32;]{.s009}[5]{.s007}[&#32;日基準]{.s009}[)]{.s007}[最新安定版である&#32;]{.s009}[5\.3\.8]{.s007}[&#32;を利用します。]{.s009}
 :::
 
 :::
@@ -420,7 +420,7 @@
 
 :::
 
-![スライド](assets/p245-f05.svg){#p245-f05}
+![スライド](assets/p245-f05-revised.svg){#p245-f05}
 
 ::: {#p245-b02 .paragraph}
 
@@ -501,8 +501,10 @@
 ::: {#p246-b07 .code}
 
 ```xml
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+crossorigin="anonymous">
 ```
 
 :::
@@ -523,7 +525,9 @@ rel="stylesheet">
 
 ```xml
 <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+crossorigin="anonymous">
 </script>
 ```
 
@@ -648,8 +652,10 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 
 <!-- ➁ Bootstrap CSS をCDN から読み込む -->
 <link href=
-"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
+"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+crossorigin="anonymous">
 </head>
 
 <body>
@@ -664,7 +670,9 @@ rel="stylesheet">
 
 <!-- ➂ <body>の末尾に、Bootstrap のJS をCDN から読み込む -->
 <script src=
-"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+crossorigin="anonymous">
 </script>
 </body>
 </html>

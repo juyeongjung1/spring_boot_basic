@@ -889,7 +889,7 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 :::
 
-![操作画面・図解](assets/p182-f14.svg){#p182-f14}
+![操作画面・図解](assets/p182-f14-revised.svg){#p182-f14}
 
 ::: {#p182-b02 .paragraph}
 
@@ -973,7 +973,7 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 30:</div>
 31:<!-- フッター -->
 32:<footer>
-33:<p>Copyright © 2023 Trainocate Spring. All rights reserved.</p>
+33:<p>Copyright © 2027 Trainocate Spring. All rights reserved.</p>
 34:</footer>
 35:</body>
 36:</html>
@@ -1138,9 +1138,9 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 ::: {#page-186 .source-page}
 
-![操作画面・図解](assets/p186-f17.svg){#p186-f17}
+![操作画面・図解](assets/p186-f17-revised.svg){#p186-f17}
 
-![操作画面・図解](assets/p186-f18.svg){#p186-f18}
+![操作画面・図解](assets/p186-f18-revised.svg){#p186-f18}
 
 :::
 

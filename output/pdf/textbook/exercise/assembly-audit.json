@@ -1,10 +1,13 @@
 {
   "collection": "exercise",
-  "flow_pages": 77,
+  "flow_pages": 78,
   "source_pages": 77,
   "toc_entries": 45,
   "source_page_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
-  "verification": "output/verification/layout/page-boundaries.json",
-  "scope": "現在の合冊の文字・ページ境界。画素比較はスライド65点と付録15pで別記。"
+  "uri_annotations_verified": 19,
+  "maximum_uri_coordinate_delta_pt": 0,
+  "pdf_sha256": "a40f85b2065105d14f06ff920a04c20d11ae9cf6906fb701368406c0c92c93bb",
+  "verification": "output/verification/remaining/",
+  "scope": "今回の合冊の本文/ヘッダー/ページ境界/URI。画像の表示はfinal-images-qaに別記。"
 }

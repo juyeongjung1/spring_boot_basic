@@ -373,7 +373,7 @@ try (Connection con =
 
 :::
 
-![操作画面・図解](assets/p070-f06.svg){#p070-f06}
+![操作画面・図解](assets/p070-f06-versions-2025.svg){#p070-f06}
 
 :::
 
@@ -416,7 +416,7 @@ spring.jpa.show-sql=true
 
 :::
 
-![操作画面・図解](assets/p071-f08.svg){#p071-f08}
+![操作画面・図解](assets/p071-f08-revised.svg){#p071-f08}
 
 ::: {#p071-b04 .paragraph}
 
@@ -2714,7 +2714,7 @@ Integer>{
 
 :::
 
-![操作画面・図解](assets/p108-f42.svg){#p108-f42}
+![操作画面・図解](assets/p108-f42-revised.svg){#p108-f42}
 
 ::: {#p108-b03 .paragraph}
 
@@ -2748,9 +2748,9 @@ Integer>{
 
 ::: {#p108-b06 .paragraph}
 
-[5 行の@Data ですが、エンティティの定義の際にご説明しました通り、]{.s009}[@Data アノテーションをつ]{.s014}\
-[けると、Getter&Setter メソッドは勿論、equals やtoString、hashCode メソッドが自動生成され]{.s014}\
-[ますので、とても便利です。]{.s014}
+[5 行の@Data ですが、エンティティの定義の際にご説明しました通り、]{.s009}**[@Data アノテーションをつ]{.s014}**\
+**[けると、Getter&Setter メソッドは勿論、equals やtoString、hashCode メソッドが自動生成され]{.s014}**\
+**[ますので、とても便利です。]{.s014}**
 
 :::
 
@@ -2816,7 +2816,7 @@ Integer>{
 
 :::
 
-![操作画面・図解](assets/p109-f44.svg){#p109-f44}
+![操作画面・図解](assets/p109-f44-revised.svg){#p109-f44}
 
 :::
 
@@ -3221,7 +3221,7 @@ public String insertProduct2(ProductForm productForm, Model model) {
 2:
 3:@GetMapping("update/{id}")
 4:public String showUpdateInputView(@PathVariable int id, Model model) {
-5: Product product = prodRepo..findById(id).orElse(null);
+5: Product product = prodRepo.findById(id).orElse(null);
 6: model.addAttribute("product", product);
 7: return "product/update_input";
 8:}
@@ -3929,7 +3929,7 @@ public interface ProductService {
 11:
 12: @Override
 13: public Product findProductById(int id) {
-14: return prodRepo..findById(id).orElse(null);
+14: return prodRepo.findById(id).orElse(null);
 15: }
 16:}
 ```
@@ -3989,7 +3989,7 @@ public interface ProductService {
 
 ::: {#p129-b08 .paragraph}
 
-[・13 行-14 行目： return prodRepo..findById(id).orElse(null);]{.s011}
+[・13 行-14 行目： return prodRepo.findById(id).orElse(null);]{.s011}
 
 :::
 

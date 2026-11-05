@@ -8,10 +8,12 @@ import re
 import shutil
 import subprocess
 import xml.etree.ElementTree as ET
+from urllib.parse import quote, unquote
 
 import pymupdf as fitz
 import typst
 from PIL import Image, ImageChops, ImageStat
+from links import add_url_links
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -62,7 +64,7 @@ def flatten(nodes, style=None):
         elif kind in ("Strong", "Emph", "Underline"):
             result += flatten(value, kind.lower() + ":" + (style or ""))
         elif kind == "Link":
-            result += flatten(value[1], style)
+            result += flatten(value[1], 'link%' + quote(value[2][0], safe='') + ':' + (style or ''))
         elif kind == "Code":
             result.append((value[1], style))
         else:
@@ -138,6 +140,24 @@ def native_runs(runs):
     return commands
 
 
+def updated_native_block(group, node):
+    """年など同じ文字数の変更は元の字位置を保持し、版名一行だけ幅を組み直す。"""
+    lines = node['text'].split('\n')
+    if len(lines) == len(group['lines']) and all(len(value) == len(old['text']) for value, old in zip(lines, group['lines'])):
+        commands = []
+        for value, old in zip(lines, group['lines']):
+            offset = 0
+            for run in old['runs']:
+                end = offset + len(run['text'])
+                commands += native_runs([dict(run, text=value[offset:end])])
+                offset = end
+        return commands
+    if len(group['lines']) != 1 or len(lines) != 1:
+        raise ValueError('固定配置の変更が元の行に収まりません')
+    line = group['lines'][0]
+    return [f'#at({line["x"]}, {line["y"]}, text(top-edge: 0pt, bottom-edge: 0pt)[{inline(node["parts"], typography=False)}])']
+
+
 def source_layout(folder, layout, nodes, figures, markdown):
     if hashlib.sha256(markdown.read_text(encoding="utf-8").encode("utf-8")).hexdigest() != layout["markdown_sha256"]:
         raise ValueError("Markdownの変更を検出しました。編集後は--mode flowを使用してください。元位置版の座標を無断で流用しません。")
@@ -164,8 +184,26 @@ def source_layout(folder, layout, nodes, figures, markdown):
     return "\n".join(commands)
 
 
-def inline(parts):
+def typographic_parts(parts):
+    """括弧内側と段落端の手動空白だけを除き、書式の境界は保持する。"""
+    parts = [(value, style) for value, style in parts if value != '\n']
+    text = ''.join(value for value, _ in parts)
+    remove = set()
+    for match in re.finditer(r'(?<=[「『【（])[ \t\u3000]+|[ \t\u3000]+(?=[」』】）])|\A[ \t\u3000]+|[ \t\u3000]+\Z', text):
+        remove.update(range(match.start(), match.end()))
+    result, offset = [], 0
+    for value, style in parts:
+        cleaned = ''.join(c for i, c in enumerate(value, offset) if i not in remove)
+        if cleaned:
+            result.append((cleaned, style))
+        offset += len(value)
+    return result
+
+
+def inline(parts, typography=True):
     result = []
+    if typography:
+        parts = typographic_parts(parts)
     for value, style in parts:
         if value == "\n":
             continue
@@ -174,11 +212,16 @@ def inline(parts):
             continue
         fields = (style or "").split(":")
         value=plain_symbols(value)
-        content = f'#styled({q(fields[-1])}, {q(value)})' if fields[-1] else f'#text({q(value)})'
+        emphasis = ', emphasis: true' if 'strong' in fields[:-1] else ''
+        content = f'#styled({q(fields[-1])}, {q(value)}{emphasis})' if fields[-1] else f'#text({q(value)})'
         for modifier in reversed(fields[:-1]):
-            content = f'#{modifier}[{content}]'
+            if modifier.startswith('link%'):
+                content = f'#link({q(unquote(modifier[5:]))})[{content}]'
+            else:
+                content = f'#{modifier}[{content}]'
         result.append(content)
-    return "".join(result)
+    content = ''.join(result)
+    return '#flowing[' + content + ']' if typography else content
 
 
 def flow_layout(folder, config, layout, nodes, figures, order):
@@ -226,11 +269,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 if ident in layout['blocks']:
                     group=layout['blocks'][ident]
                     if nodes[ident]['text']!='\n'.join(l['text'] for l in group['lines']):
-                        if ident not in config.get('native_text_updates', []) or len(group['lines']) != 1:
+                        if ident not in config.get('native_text_updates', []):
                             raise ValueError('固定ページの編集は再配置確認が必要: '+ident)
-                        # 確認済みの版名更新は、元の開始位置から一行の文字幅を組み直す。
-                        line = group['lines'][0]
-                        body.append(f'#at({line["x"]}, {line["y"]}, text(top-edge: 0pt, bottom-edge: 0pt)[{inline(nodes[ident]["parts"])}])')
+                        body += updated_native_block(group, nodes[ident])
                     else:
                         for line in group['lines']:body+=native_runs(line['runs'])
                 elif ident in layout.get('tables',{}):body+=native_runs(layout['tables'][ident]['runs'])
@@ -285,6 +326,24 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 body.append(f'#at({min(xs)}, {min(ys)}, rect(width: {max(xs)-min(xs)}pt, height: {max(ys)-min(ys)}pt, fill: black, stroke: none))')
         slide_headers[page['id']] = f'#slide-header({body_top-86})[#at(-85.104, -86, box(width: 595.32pt, height: 841.92pt)['+ '\n'.join(body) + '])]'
         slide_consumed.update(preceding + [fig['id']])
+    list_continuations = set()
+    list_with_continuation = set()
+    for page in order:
+        in_list = False
+        previous = None
+        for ident in page['entries']:
+            node = nodes.get(ident)
+            if not node or node['kind'] != 'paragraph':
+                in_list = False
+                continue
+            if re.match(r'^[■●•▪○・]', plain_symbols(node['text']).lstrip()):
+                in_list = True
+            elif in_list and ident in layout['blocks'] and layout['blocks'][ident]['lines'][0]['x'] >= 113:
+                list_continuations.add(ident)
+                list_with_continuation.add(previous)
+            else:
+                in_list = False
+            previous = ident
     def render(ident):
         if ident in figures:
             fig = figure_map.get(ident, {"box": [0, 0, 426.672, 0]})
@@ -292,6 +351,17 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             width=min(fig['box'][2]-fig['box'][0],426.672,600*(fig['box'][2]-fig['box'][0])/(fig['box'][3]-fig['box'][1]))
             return f'#illustration({q(ident)}, {q(path)}, {width})'
         node = nodes[ident]
+        if node['kind'] == 'paragraph':
+            parts = typographic_parts(node['parts'])
+            if parts and parts[0][0][0] in '■●•▪○・◼⚫\uf09f':
+                value, style = parts[0]
+                marker = inline([(value[0], style)])
+                parts[0] = (value[1:], style)
+                return f'#bullet-paragraph({q(ident)}, [{marker}], [{inline(parts)}], continuing: {str(ident in list_with_continuation).lower()})'
+            if ident in list_continuations:
+                return f'#list-continuation({q(ident)}, [{inline(parts)}], continuing: {str(ident in list_with_continuation).lower()})'
+            if node['text'].lstrip().startswith(('※', 'http://', 'https://')):
+                return f'#paragraph({q(ident)}, [{inline(parts)}], indent: 0pt)'
         if node['kind'] == 'step' and config['chapter'] == 'front':
             return f'#list-item({q(ident)}, [{inline(node["parts"])}])'
         if node['kind']=='table':
@@ -432,6 +502,7 @@ def build(chapter="01", mode="all", markdown=None, output=None):
         report["reference"] = {"pages": len(pdf), "page_checks": pages}
     if mode in ("all", "flow"):
         pdf, source = compile_pdf(work, "flow", header + flow_layout(folder, config, layout, nodes, figures, order), font_paths)
+        url_links = add_url_links(pdf, nodes)
         pdf.save(out / "chapter-flow.pdf", garbage=4, deflate=True)
         marks = json.loads(typst.query(str(source), "<book-check>", field="value", format="json", root=str(ROOT), font_paths=font_paths, ignore_system_fonts=True))
         orphan = []
@@ -502,6 +573,7 @@ def build(chapter="01", mode="all", markdown=None, output=None):
         if not complete:
             raise AssertionError(f"自動組版の文字差: 不足{dict(expected-actual)} 余分{dict(actual-expected)}")
         report["flow"] = {"pages": len(pdf), "native_text_complete": complete, "heading_orphans": orphan, "split_figures": split_figures, "split_short_code": split_short_code, "split_short_tables":split_short_tables, "split_instructions": split_instructions, "instruction_groups": len(instruction_ids), "fixed_pages":sorted(native_page_positions), "overflow": overflow, "block_positions": marks}
+        report['flow']['url_links'] = url_links
         assert not orphan and not split_figures and not split_short_code and not split_short_tables and not split_instructions and not overflow, report["flow"]
     (out / "checks.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({"chapter": chapter, "blocks": len(nodes), "figures": len(figures), "reference_pages": report.get("reference", {}).get("pages"), "flow_pages": report.get("flow", {}).get("pages")}, ensure_ascii=False))

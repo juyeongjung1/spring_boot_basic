@@ -16,6 +16,7 @@
 - Pleiades 2025のJava版（Full Editionには開発用JDKが同梱）
 - アプリのコンパイル・実行・Maven実行にJDK 21
 - Spring Boot 4.0.2（各アプリの親POMで固定）
+- Bootstrap 5.3.8（第7章のCSS・JavaScriptを同梱）
 - MySQL 8.0、通常ポート3306
 - Maven Wrapper、またはMaven 3.6.3以降
 

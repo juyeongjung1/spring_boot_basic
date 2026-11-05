@@ -1,6 +1,7 @@
 """原本の教材単位を、改訂後も前ページへ繰り上げないことを検証する。"""
 import json
 import unittest
+import xml.etree.ElementTree as ET
 
 import pymupdf as fitz
 
@@ -99,9 +100,19 @@ class PaginationTests(unittest.TestCase):
             before, original_figures, _ = read_markdown(folder / 'baseline.md')
             after, current_figures, _ = read_markdown(folder / 'chapter.md')
             self.assertEqual(set(before), set(after), chapter)
-            self.assertEqual(original_figures, current_figures, chapter)
+            self.assertEqual(set(original_figures), set(current_figures), chapter)
+            allowed = {'p285-f07', 'p287-f09', 'p287-f10', 'p288-f11', 'p288-f13'}
+            for ident, old_path in original_figures.items():
+                new_path = current_figures[ident]
+                if old_path != new_path:
+                    self.assertIn(ident, allowed)
+                    old = ET.parse(folder / old_path).getroot()
+                    new = ET.parse(folder / new_path).getroot()
+                    for attribute in ('width', 'height', 'viewBox'):
+                        self.assertEqual(old.get(attribute), new.get(attribute), ident)
             for ident, node in before.items():
                 text = node['text'].replace('Eclipse 2022(pleiades)', 'Pleiades 2025').replace('Java 17', 'Java 21').replace('Java17', 'Java21').replace('3.1.5', '4.0.2')
+                text = text.replace('© 2024 Trainocate Japan, Ltd.', '© 2027 Trainocate Japan, Ltd.')
                 self.assertEqual(text, after[ident]['text'], ident)
 
 

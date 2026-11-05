@@ -1,0 +1,284 @@
+{
+  "reviewed_utc": "2026-11-05T03:47:31.399414+00:00",
+  "modified_figures": [
+    {
+      "chapter": "03",
+      "id": "p071-f08",
+      "change": "吹き出し背景を薄黄色へ統一し、上端へ混入していた元コード断片を除去",
+      "source": "docs\\textbook\\chapters\\03\\assets\\p071-f08.svg",
+      "revised": "docs\\textbook\\chapters\\03\\assets\\p071-f08-revised.svg",
+      "source_sha256": "9ff228336e9580e23d7c29bdab7f64f6e82ade21b8b8c23c1d178d573243e10a",
+      "revised_sha256": "07d65c29048377c5cfb8ecac0a736a8d50e257b10c01c20f583f77bc7f4d5683",
+      "dimensions_unchanged": true,
+      "raster_payloads_unchanged": false,
+      "before_png": "tmp\\remaining-review\\images\\p071-f08-before.png",
+      "after_png": "tmp\\remaining-review\\images\\p071-f08-after.png",
+      "difference_bbox_at_scale3": [
+        0,
+        0,
+        352,
+        309
+      ],
+      "visual_review": "合格"
+    },
+    {
+      "chapter": "03",
+      "id": "p108-f42",
+      "change": "赤枠をformパッケージとProductForm.javaだけへ合わせる",
+      "source": "docs\\textbook\\chapters\\03\\assets\\p108-f42.svg",
+      "revised": "docs\\textbook\\chapters\\03\\assets\\p108-f42-revised.svg",
+      "source_sha256": "1d5cf57b12d04e7e8b4596fcfc632e9e0298de0f7634bd16131fc3ab45923b67",
+      "revised_sha256": "08aa26f24362c7412b60d275bca54f00c76e59d5e09878e274c72e4e6e4d9745",
+      "dimensions_unchanged": true,
+      "raster_payloads_unchanged": true,
+      "before_png": "tmp\\remaining-review\\images\\p108-f42-before.png",
+      "after_png": "tmp\\remaining-review\\images\\p108-f42-after.png",
+      "difference_bbox_at_scale3": [
+        109,
+        135,
+        488,
+        290
+      ],
+      "visual_review": "合格"
+    },
+    {
+      "chapter": "03",
+      "id": "p109-f44",
+      "change": "Product productの校正波線だけを白背景へ戻し、pのディセンダーを保持",
+      "source": "docs\\textbook\\chapters\\03\\assets\\p109-f44.svg",
+      "revised": "docs\\textbook\\chapters\\03\\assets\\p109-f44-revised.svg",
+      "source_sha256": "ecbecabec8ed06846b2b27958f99b6ce7df0b7d248e73a48223c0d2cdb1dfac4",
+      "revised_sha256": "beb507dcde6a1e69b6a1a22d68e89ef0ac1ca3ed9e034c48cbb292dea0332d9a",
+      "dimensions_unchanged": true,
+      "raster_payloads_unchanged": true,
+      "before_png": "tmp\\remaining-review\\images\\p109-f44-before.png",
+      "after_png": "tmp\\remaining-review\\images\\p109-f44-after.png",
+      "difference_bbox_at_scale3": [
+        620,
+        752,
+        752,
+        759
+      ],
+      "visual_review": "合格"
+    },
+    {
+      "chapter": "05",
+      "id": "p182-f14",
+      "change": "Copyright ©2023→2027、末尾1字だけ",
+      "source": "docs\\textbook\\chapters\\05\\assets\\p182-f14.svg",
+      "revised": "docs\\textbook\\chapters\\05\\assets\\p182-f14-revised.svg",
+      "source_sha256": "eda22ad152b61c2cb2822ebccc5f5d0b475ba2fefc61bf07c77780df5de37ac9",
+      "revised_sha256": "6628d23615371b48a3029b3e856a25236dcc4213b5598906b58934e3f49ac8c3",
+      "dimensions_unchanged": true,
+      "raster_payloads_unchanged": true,
+      "before_png": "tmp\\remaining-review\\images\\p182-f14-05-before.png",
+      "after_png": "tmp\\remaining-review\\images\\p182-f14-05-after.png",
+      "difference_bbox_at_scale3": [
+        603,
+        653,
+        613,
+        667
+      ],
+      "visual_review": "合格"
+    },
+    {
+      "chapter": "05",
+      "id": "p186-f17",
+      "change": "Copyright ©2023→2027、末尾1字だけ",
+      "source": "docs\\textbook\\chapters\\05\\assets\\p186-f17.svg",
+      "revised": "docs\\textbook\\chapters\\05\\assets\\p186-f17-revised.svg",
+      "source_sha256": "846d7ca7a597b159705fd2bc77c2312d670d1dbd9874163ab562b74a4401fb85",
+      "revised_sha256": "1d78efd997e7978dde69ac47f357f20812c84d182dd08a3fd421c793b7a830e5",
+      "dimensions_unchanged": true,
+      "raster_payloads_unchanged": true,
+      "before_png": "tmp\\remaining-review\\images\\p186-f17-05-before.png",
+      "after_png": "tmp\\remaining-review\\images\\p186-f17-05-after.png",
+      "difference_bbox_at_scale3": [
+        504,
+        727,
+        519,
+        748
+      ],
+      "visual_review": "合格"
+    },
+    {
+      "chapter": "05",
+      "id": "p186-f18",
+      "change": "Copyright ©2023→2027、末尾1字だけ",
+      "source": "docs\\textbook\\chapters\\05\\assets\\p186-f18.svg",
+      "revised": "docs\\textbook\\chapters\\05\\assets\\p186-f18-revised.svg",
+      "source_sha256": "0735062786df0cc814d108f1a5bb54816c7b5f57dd91cde94ab8c77ffe3240fd",
+      "revised_sha256": "d3ca0043eff4ab060e9353c3e2220cf71e692c4fc31da35354d038b123a63f20",
+      "dimensions_unchanged": true,
+      "raster_payloads_unchanged": true,
+      "before_png": "tmp\\remaining-review\\images\\p186-f18-05-before.png",
+      "after_png": "tmp\\remaining-review\\images\\p186-f18-05-after.png",
+      "difference_bbox_at_scale3": [
+        505,
+        721,
+        520,
+        742
+      ],
+      "visual_review": "合格"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p041-f04",
+      "change": "Copyright ©2023→2027、末尾1字だけ",
+      "source": "docs\\textbook\\chapters\\ex05\\assets\\p041-f04.svg",
+      "revised": "docs\\textbook\\chapters\\ex05\\assets\\p041-f04-revised.svg",
+      "source_sha256": "36c410cfe28d803562bd1579613dea8645f4793237db99fddb30d472009d04d9",
+      "revised_sha256": "22a7b7a33456a1073df905cf09f1cbf397eea8a165091327d8e7d0821c559483",
+      "dimensions_unchanged": true,
+      "raster_payloads_unchanged": true,
+      "before_png": "tmp\\remaining-review\\images\\p041-f04-ex05-before.png",
+      "after_png": "tmp\\remaining-review\\images\\p041-f04-ex05-after.png",
+      "difference_bbox_at_scale3": [
+        586,
+        845,
+        595,
+        857
+      ],
+      "visual_review": "合格"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p041-f05",
+      "change": "Copyright ©2023→2027、末尾1字だけ",
+      "source": "docs\\textbook\\chapters\\ex05\\assets\\p041-f05.svg",
+      "revised": "docs\\textbook\\chapters\\ex05\\assets\\p041-f05-revised.svg",
+      "source_sha256": "574d813a9e2ecfbec60061fab02ecf2563bd1aca1ab78e5e438502464449eeb0",
+      "revised_sha256": "9b9bc22ef03ccb2ef857575b4ad729eeaa368e2c216cc2609f924014eedbf5d3",
+      "dimensions_unchanged": true,
+      "raster_payloads_unchanged": true,
+      "before_png": "tmp\\remaining-review\\images\\p041-f05-ex05-before.png",
+      "after_png": "tmp\\remaining-review\\images\\p041-f05-ex05-after.png",
+      "difference_bbox_at_scale3": [
+        551,
+        863,
+        560,
+        875
+      ],
+      "visual_review": "合格"
+    },
+    {
+      "chapter": "07",
+      "id": "p245-f05",
+      "change": "CDNのCSS/JS2箇所の5.3.0→5.3.8、字位置/書体/サイズは維持",
+      "source": "docs\\textbook\\chapters\\07\\assets\\p245-f05.svg",
+      "revised": "docs\\textbook\\chapters\\07\\assets\\p245-f05-revised.svg",
+      "source_sha256": "073faffac9cb05ce9bdfab22c6193f348a80b745fb3e88a8be5637fbe81aa159",
+      "revised_sha256": "dde00b83fcc667f777eafed1b4da7c891cfbbccd76f091e0ac08d9de8143db16",
+      "dimensions_unchanged": true,
+      "raster_payloads_unchanged": true,
+      "before_png": "tmp\\remaining-review\\images\\p245-f05-07-before.png",
+      "after_png": "tmp\\remaining-review\\images\\p245-f05-07-after.png",
+      "difference_bbox_at_scale3": [
+        653,
+        342,
+        680,
+        609
+      ],
+      "visual_review": "合格"
+    }
+  ],
+  "protected_source_files": {
+    "count": 17,
+    "sha256_mismatches": []
+  },
+  "wave_audit": {
+    "figures_scanned": 267,
+    "before_candidates": 4,
+    "after_candidates": 3,
+    "unnecessary_wave_remaining_in_candidates": 0,
+    "remaining_candidates": [
+      {
+        "chapter": "02",
+        "id": "p034-f02",
+        "page": 34,
+        "color": "blue",
+        "box_px": [
+          80,
+          311,
+          163,
+          330
+        ],
+        "turns": 12,
+        "file": "02-p034-f02-blue-1.png",
+        "judgment": "ブラウザー写真内の色境界"
+      },
+      {
+        "chapter": "03",
+        "id": "p105-f39",
+        "page": 105,
+        "color": "red_or_orange",
+        "box_px": [
+          133,
+          136,
+          186,
+          148
+        ],
+        "turns": 6,
+        "file": "03-p105-f39-red_or_orange-1.png",
+        "judgment": "表の赤い商品名「洗濯乾燥機」の文字輪郭"
+      },
+      {
+        "chapter": "03",
+        "id": "p110-f45",
+        "page": 110,
+        "color": "red_or_orange",
+        "box_px": [
+          96,
+          336,
+          168,
+          350
+        ],
+        "turns": 8,
+        "file": "03-p110-f45-red_or_orange-1.png",
+        "judgment": "表の赤い商品名「洗濯乾燥機」の文字輪郭"
+      }
+    ],
+    "method": "全active図版を2倍で描画し、赤/橙/黄/青/緑の周期的な下縁を候補抽出して目視判定。修正前後に実行。",
+    "limitations": "検出候補の目視と既知指摘の再確認であり、全ピクセルについて意味分類を数学的に保証するものではない。"
+  },
+  "blue_line_review": {
+    "id": "p254-f12",
+    "modified": false,
+    "judgment": "画像内の「リンクスタイルのボタン(.btn-link)」の下線は正規のBootstrapリンクデザインであり保持。図外の不要な青線は候補範囲で確認されなかった。原本209ページには図版がない。"
+  },
+  "slide_right_edge_reviews": [
+    {
+      "id": "p018-f02",
+      "chapter_pdf_sha256": "6b9ce8cd9b5d2af83c10b93bb5a5672a71f4c81f8bb10095da504be9a5757f20",
+      "start_y_difference_pt": 0.0,
+      "end_y_difference_pt": 0.0,
+      "visual_review": "原本にある右端文字と表の最終列を保持、切出しによる右切れなし",
+      "png": "tmp/remaining-review/images/p018-f02-current-pdf.png"
+    },
+    {
+      "id": "p057-f31",
+      "chapter_pdf_sha256": "14e7f30c4752fb36f451a52166fa7e6a4ff05b395511b0b327cfc3ab5272bc29",
+      "start_y_difference_pt": 0.0,
+      "end_y_difference_pt": 5.684341886080802e-14,
+      "visual_review": "原本にある右端文字と表の最終列を保持、切出しによる右切れなし",
+      "png": "tmp/remaining-review/images/p057-f31-current-pdf.png"
+    },
+    {
+      "id": "p103-f38",
+      "chapter_pdf_sha256": "a39e426b65445378a4f84776f98dce308fe1980af3ee0b0b6d43e7531cd61bf4",
+      "start_y_difference_pt": 0.0,
+      "end_y_difference_pt": 5.684341886080802e-14,
+      "visual_review": "原本にある右端文字と表の最終列を保持、切出しによる右切れなし",
+      "png": "tmp/remaining-review/images/p103-f38-current-pdf.png"
+    }
+  ],
+  "layout_contract": {
+    "all_revised_svg_dimensions_unchanged": true,
+    "figure_ids_unchanged": true,
+    "source_layout_unchanged": true,
+    "baseline_unchanged": true,
+    "markdown_edits": "03/05/07/ex05章の画像参照9行だけ。本文・解説の追記なし。",
+    "appendix_edited": false,
+    "whole_pdf_build": "親が実施、当担当では未実行"
+  }
+}

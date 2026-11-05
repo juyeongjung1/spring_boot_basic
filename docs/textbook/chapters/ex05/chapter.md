@@ -213,9 +213,9 @@
 
 :::
 
-![操作画面・図解](assets/p041-f04.svg){#p041-f04}
+![操作画面・図解](assets/p041-f04-revised.svg){#p041-f04}
 
-![操作画面・図解](assets/p041-f05.svg){#p041-f05}
+![操作画面・図解](assets/p041-f05-revised.svg){#p041-f05}
 
 :::
 

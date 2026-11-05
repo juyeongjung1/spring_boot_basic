@@ -2,7 +2,7 @@
   "title": "Spring Boot入門 演習ガイド",
   "source_pages": 77,
   "reference_pages": 77,
-  "flow_pages": 77,
+  "flow_pages": 78,
   "comparison_pages": 77,
   "complete_source_coverage": true,
   "continuous_footer_numbers": true,
@@ -225,12 +225,12 @@
     {
       "title": "演習7.5. フォームの改善",
       "source_page": 74,
-      "flow_page": 74
+      "flow_page": 75
     },
     {
       "title": "演習7.6. 【オプション】 共通レイアウト画面に変更",
       "source_page": 76,
-      "flow_page": 76
+      "flow_page": 77
     }
   ],
   "chapters": [
@@ -380,7 +380,7 @@
       ],
       "flow_pages": [
         63,
-        76
+        77
       ],
       "blocks": 137,
       "figures": 6,
@@ -398,8 +398,8 @@
         77
       ],
       "flow_pages": [
-        77,
-        77
+        78,
+        78
       ],
       "blocks": 4,
       "figures": 0,
