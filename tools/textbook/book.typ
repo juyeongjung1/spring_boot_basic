@@ -13,11 +13,14 @@
 #let paragraph(id, body) = block(above: 0pt, below: 6pt)[
   #mark(id, "start")#h(11.04pt)#body#mark(id, "end")
 ]
-#let section-heading(id, body) = block(sticky: true, above: 18pt, below: 12pt)[
+#let section-heading(id, body, above: 18pt) = block(sticky: true, above: above, below: 12pt)[
   #mark(id, "heading")#body
 ]
 #let step(id, body) = block(sticky: true, above: 8pt, below: 6pt)[
   #mark(id, "heading")#body
+]
+#let list-item(id, body) = block(above: 6pt, below: 6pt)[
+  #mark(id, "start")#body#mark(id, "end")
 ]
 #let code-label(id, body) = block(sticky: true, above: 6pt, below: 4pt)[
   #mark(id, "heading")#body
@@ -25,7 +28,9 @@
 #let instruction(id, body) = block(breakable: false, above: 0pt, below: 0pt)[
   #mark(id, "start")#body#mark(id, "end")
 ]
-#let illustration(id, path, width) = block(breakable: false, above: 8pt, below: 12pt)[
+#let slide-header(height, body) = block(width: 100%, height: height * 1pt,
+  breakable: false, above: 0pt, below: 0pt)[#body]
+#let illustration(id, path, width) = block(width: 100%, breakable: false, above: 8pt, below: 12pt)[
   #mark(id, "start")
   #align(center, image(path, width: calc.min(width * 1pt, 426.672pt)))
   #mark(id, "end")

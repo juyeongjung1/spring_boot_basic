@@ -308,12 +308,6 @@
 
 :::
 
-::: {#revision-environment .paragraph}
-
-本書の実習環境はPleiades 2025、Java 21、Spring Boot 4.0.2、MySQL 8.0です。配布プロジェクトは `projects` 配下の4グループに整理しています。付録Aの手順でJDK 21とMavenを確認してから学習してください。
-
-:::
-
 ![スライド](assets/p009-f01.svg){#p009-f01}
 
 ::: {#p009-b02 .paragraph}

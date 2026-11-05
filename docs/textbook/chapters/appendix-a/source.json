@@ -139,5 +139,17 @@
     }
   ],
   "cover_mode": "native",
-  "tables": []
+  "tables": [],
+  "native_pages": [
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289
+  ],
+  "native_text_updates": [
+    "p287-b03"
+  ]
 }

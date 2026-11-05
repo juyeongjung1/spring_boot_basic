@@ -1,4 +1,4 @@
-<!-- 元PDF 290〜296ページ。Java 21・Spring Boot 4.0.2・Pleiades 2025向け改訂。 -->
+<!-- 元PDF 290〜296ページ。本文は原本の内容を保持し、バージョン表記のみ更新。 -->
 
 ::: {#page-290 .source-page}
 
@@ -369,18 +369,6 @@
 [ートする前に、講師の方から研修中に使用するライブラリが入っているrepository フォルダを]{.s017}\
 [まとめて配布しますので、こちらのrepository フォルダにコピーを行ってからインポートを行っ]{.s017}\
 [てください。]{.s017}
-
-:::
-
-::: {#java21-runtime-error .heading}
-
-[Java 21のアプリを実行できない場合]{.s005}
-
-:::
-
-::: {#java21-runtime-error-body .paragraph}
-
-UnsupportedClassVersionErrorでclass file version 65と表示された場合は、実行JREがJava 21より古い可能性があります。Pleiadesのインストール済みJRE、JavaSE-21の対応、Mavenの実行構成、Spring Bootの実行構成をそれぞれ確認してください。ターミナルではjava -versionとMavenのバージョン表示にJava 21が出ることを確認します。
 
 :::
 

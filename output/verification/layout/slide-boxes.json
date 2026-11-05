@@ -1,0 +1,2401 @@
+{
+  "scope": "source.jsonでslide指定がある全図版",
+  "count": 65,
+  "tolerance_pt": 1.5,
+  "figures": [
+    {
+      "chapter": "01",
+      "page": 17,
+      "id": "p017-f01",
+      "slide": "Microsoft_PowerPoint_Slide3.sldx",
+      "box": [
+        113.06,
+        116.92,
+        482.26,
+        392.11
+      ],
+      "asset_box": [
+        112.26,
+        116.12,
+        483.06,
+        392.91
+      ],
+      "asset_path": "docs\\textbook\\chapters\\01\\assets\\p017-f01.svg",
+      "asset_sha256": "3f11f208e5ee42bf37c853bd660129bf2a6b7d9a299ec0c9d3e56e163913ab9a",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 8,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 11
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        116.54998779296875,
+        482.260009765625,
+        391.0099792480469
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "01",
+      "page": 18,
+      "id": "p018-f02",
+      "slide": "Microsoft_PowerPoint_Slide4.sldx",
+      "box": [
+        113.06,
+        114.62,
+        482.26,
+        389.81
+      ],
+      "asset_box": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "asset_path": "docs\\textbook\\chapters\\01\\assets\\p018-f02.svg",
+      "asset_sha256": "0d33c1f91d9e2831b467782dff17c29cdf66f8a4fd055d406d5b84272b3912cd",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 16,
+        "fill-image": 13,
+        "stroke-path": 7,
+        "fill-text": 25
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.50994873046875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "01",
+      "page": 19,
+      "id": "p019-f03",
+      "slide": "Microsoft_PowerPoint_Slide5.sldx",
+      "box": [
+        113.06,
+        114.62,
+        484.5,
+        389.81
+      ],
+      "asset_box": [
+        112.26,
+        113.82000000000001,
+        485.3,
+        390.61
+      ],
+      "asset_path": "docs\\textbook\\chapters\\01\\assets\\p019-f03.svg",
+      "asset_sha256": "11de9b8b1a1019f0bafb3a90df16c938e10aa1fe971bdedf8b9daacad48f34ba",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 8,
+        "fill-image": 3,
+        "stroke-path": 1,
+        "fill-text": 27
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.50994873046875,
+        484.42095947265625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "01",
+      "page": 21,
+      "id": "p021-f04",
+      "slide": "Microsoft_PowerPoint_Slide6.sldx",
+      "box": [
+        113.06,
+        114.62,
+        482.26,
+        389.81
+      ],
+      "asset_box": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "asset_path": "docs\\textbook\\chapters\\01\\assets\\p021-f04.svg",
+      "asset_sha256": "9eda93d912be3eebca58ba66a29279ceff6a72d959d062e1531201bf2cba681d",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 8,
+        "fill-image": 3,
+        "stroke-path": 1,
+        "fill-text": 33
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.50994873046875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "01",
+      "page": 24,
+      "id": "p024-f07",
+      "slide": "Microsoft_PowerPoint_Slide7.sldx",
+      "box": [
+        113.06,
+        114.62,
+        482.26,
+        389.81
+      ],
+      "asset_box": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "asset_path": "docs\\textbook\\chapters\\01\\assets\\p024-f07.svg",
+      "asset_sha256": "b402b5969904dba5dae29dccf327d23ccb6162b48d00217e76f9acf2d183a0a5",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 8,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 22
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.50994873046875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "01",
+      "page": 29,
+      "id": "p029-f15",
+      "slide": "Microsoft_PowerPoint_Slide8.sldx",
+      "box": [
+        113.06,
+        114.62,
+        482.26,
+        389.81
+      ],
+      "asset_box": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "asset_path": "docs\\textbook\\chapters\\01\\assets\\p029-f15.svg",
+      "asset_sha256": "8201e4d5b55fa98f10684d8b50d72675005d9585fe400a714a23fc460b666342",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 8,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 11
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.50994873046875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "front",
+      "page": 9,
+      "id": "p009-f01",
+      "slide": "Microsoft_PowerPoint_Slide.sldx",
+      "box": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "asset_box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "asset_path": "docs\\textbook\\chapters\\front\\assets\\p009-f01.svg",
+      "asset_sha256": "86b1a6e82f5ab206336e079f38ba4767f91017770d3bafe06a94327b892d81ae",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 24
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "front",
+      "page": 10,
+      "id": "p010-f02",
+      "slide": "Microsoft_PowerPoint_Slide1.sldx",
+      "box": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "asset_box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "asset_path": "docs\\textbook\\chapters\\front\\assets\\p010-f02.svg",
+      "asset_sha256": "7050b2ad304690b81a363e86320d88f554cb91f47cfcfdd0dadcb1208185035e",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 48
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "front",
+      "page": 11,
+      "id": "p011-f03",
+      "slide": "Microsoft_PowerPoint_Slide2.sldx",
+      "box": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "asset_box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "asset_path": "docs\\textbook\\chapters\\front\\assets\\p011-f03.svg",
+      "asset_sha256": "ea203475ffdb635246abee70a7e28dd7d68b3c009c87e75638e158cb769072e3",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 9,
+        "fill-image": 2,
+        "stroke-path": 6,
+        "fill-text": 22,
+        "fill-shade": 6
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": [
+        103,
+        107,
+        116,
+        120,
+        125,
+        130
+      ]
+    },
+    {
+      "chapter": "05",
+      "page": 166,
+      "id": "p166-f01",
+      "slide": "Microsoft_PowerPoint_Slide41.sldx",
+      "box": [
+        113.77999877929688,
+        116.5400390625,
+        481.5299987792969,
+        391.8499755859375
+      ],
+      "asset_box": [
+        112.97999877929688,
+        115.7400390625,
+        482.3299987792969,
+        392.6499755859375
+      ],
+      "asset_path": "docs\\textbook\\chapters\\05\\assets\\p166-f01.svg",
+      "asset_sha256": "603f037eae634b75427d257b848d524640619fb9d9ebbaad6a3a80e043df5f89",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 11
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        116.5400390625,
+        481.5299987792969,
+        391.8499755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "05",
+      "page": 167,
+      "id": "p167-f02",
+      "slide": "Microsoft_PowerPoint_Slide42.sldx",
+      "box": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "asset_box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\05\\assets\\p167-f02.svg",
+      "asset_sha256": "168939f015985cc813748c8c4253f8bfa6c2606295a307a7193e90f3ef9bf52c",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 4,
+        "fill-image": 2,
+        "stroke-path": 2,
+        "fill-text": 34
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "05",
+      "page": 170,
+      "id": "p170-f03",
+      "slide": "Microsoft_PowerPoint_Slide43.sldx",
+      "box": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "asset_box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\05\\assets\\p170-f03.svg",
+      "asset_sha256": "456d0ecb86a2ebeb90e739ce18a1c9d05dfc8655d6383d250a49b7a3b26d7969",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 7,
+        "fill-image": 3,
+        "stroke-path": 7,
+        "fill-text": 55
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "05",
+      "page": 175,
+      "id": "p175-f09",
+      "slide": "Microsoft_PowerPoint_Slide44.sldx",
+      "box": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "asset_box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\05\\assets\\p175-f09.svg",
+      "asset_sha256": "6fde8dde231bded730575643bf6a51a75b6781c1a5ef8ddb2a52cbfca5428ea5",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 19,
+        "fill-image": 3,
+        "stroke-path": 6,
+        "fill-text": 59
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "05",
+      "page": 178,
+      "id": "p178-f10",
+      "slide": "Microsoft_PowerPoint_Slide45.sldx",
+      "box": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "asset_box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\05\\assets\\p178-f10.svg",
+      "asset_sha256": "ed15b503efd696754f458f7cd7f507ca6f0a79ddbf37b587753afe308cf7e04a",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 5,
+        "fill-image": 3,
+        "stroke-path": 4,
+        "fill-text": 38
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "05",
+      "page": 181,
+      "id": "p181-f13",
+      "slide": "Microsoft_PowerPoint_Slide46.sldx",
+      "box": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "asset_box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\05\\assets\\p181-f13.svg",
+      "asset_sha256": "baa13591aff860248f6ba26d545fb8487280d176017c9d6b2877964ba3984c79",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 8,
+        "fill-image": 2,
+        "stroke-path": 5,
+        "fill-text": 62
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        114.6199951171875,
+        481.5299987792969,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "05",
+      "page": 190,
+      "id": "p190-f19",
+      "slide": "Microsoft_PowerPoint_Slide47.sldx",
+      "box": [
+        113.77999877929688,
+        116.5400390625,
+        481.5299987792969,
+        391.8499755859375
+      ],
+      "asset_box": [
+        112.97999877929688,
+        115.7400390625,
+        482.3299987792969,
+        392.6499755859375
+      ],
+      "asset_path": "docs\\textbook\\chapters\\05\\assets\\p190-f19.svg",
+      "asset_sha256": "5c31a43d9aa4592444077171e151fe2511d3ccae2681fdf3fe295b72e9f1967e",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 11
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        116.5400390625,
+        481.5299987792969,
+        391.8499755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "06",
+      "page": 194,
+      "id": "p194-f01",
+      "slide": "Microsoft_PowerPoint_Slide48.sldx",
+      "box": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "asset_box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "asset_path": "docs\\textbook\\chapters\\06\\assets\\p194-f01.svg",
+      "asset_sha256": "214b2ffc7808743de5642898d5013de9e3a5c4e06f71fbfd4cdc080642770ed4",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 11
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "06",
+      "page": 195,
+      "id": "p195-f02",
+      "slide": "Microsoft_PowerPoint_Slide49.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\06\\assets\\p195-f02.svg",
+      "asset_sha256": "1ccb4c0190a3a0482cff0e2a59ed40e8c235fa0253c9d9579b3230f375854adf",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 9,
+        "fill-image": 2,
+        "stroke-path": 7,
+        "fill-text": 63,
+        "stroke-text": 19
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "06",
+      "page": 203,
+      "id": "p203-f04",
+      "slide": "Microsoft_PowerPoint_Slide50.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\06\\assets\\p203-f04.svg",
+      "asset_sha256": "9e0dd5d37384a17ce0e5e7cfe861dd29e978f93029638f72764d4826de908019",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 24,
+        "fill-image": 2,
+        "stroke-path": 23,
+        "fill-text": 66,
+        "stroke-text": 15
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "06",
+      "page": 208,
+      "id": "p208-f06",
+      "slide": "Microsoft_PowerPoint_Slide51.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\06\\assets\\p208-f06.svg",
+      "asset_sha256": "8eb1671fd40790112e6518b8902ee3263519f3b6812085fd03dcce8b73cc3350",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 6,
+        "fill-image": 2,
+        "stroke-path": 3,
+        "fill-text": 80,
+        "stroke-text": 65
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "06",
+      "page": 213,
+      "id": "p213-f10",
+      "slide": "Microsoft_PowerPoint_Slide52.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\06\\assets\\p213-f10.svg",
+      "asset_sha256": "c37bf7b1bcd26bb2cd57ae4c860ce9c8029ed32e4d41068222dc9c76a83687b2",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 7,
+        "fill-image": 2,
+        "stroke-path": 4,
+        "fill-text": 75,
+        "stroke-text": 66
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "06",
+      "page": 222,
+      "id": "p222-f15",
+      "slide": "Microsoft_PowerPoint_Slide53.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\06\\assets\\p222-f15.svg",
+      "asset_sha256": "4bb134502d25ef9d32608651c774934b1effd46299294c17e2877e4abbbf1828",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 5,
+        "stroke-path": 5,
+        "fill-text": 14
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "06",
+      "page": 225,
+      "id": "p225-f16",
+      "slide": "Microsoft_PowerPoint_Slide54.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\06\\assets\\p225-f16.svg",
+      "asset_sha256": "c0293ceeefa749ac8cb81c9fdb199b6c4bc31a0591ca1a6dc7f913d608e78b9e",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 6,
+        "fill-image": 2,
+        "stroke-path": 3,
+        "fill-text": 49,
+        "stroke-text": 24
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "06",
+      "page": 236,
+      "id": "p236-f19",
+      "slide": "Microsoft_PowerPoint_Slide55.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\06\\assets\\p236-f19.svg",
+      "asset_sha256": "855c73c28b2246bffe31e85cf39e383c77fa31dad6446c68a058f0c6ea5705fd",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 11
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "07",
+      "page": 240,
+      "id": "p240-f01",
+      "slide": "Microsoft_PowerPoint_Slide56.sldx",
+      "box": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "asset_box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "asset_path": "docs\\textbook\\chapters\\07\\assets\\p240-f01.svg",
+      "asset_sha256": "8d5fd916f08d528e09cfd551a404df847007b0ee34d784aa1f949f15f132cbe5",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 16
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "07",
+      "page": 241,
+      "id": "p241-f02",
+      "slide": "Microsoft_PowerPoint_Slide57.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\07\\assets\\p241-f02.svg",
+      "asset_sha256": "9f6013f355c8aa5bffd2829fa715c14ed9e25cdbb980c996862fec251aee214f",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 3,
+        "stroke-path": 1,
+        "fill-text": 17
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "07",
+      "page": 245,
+      "id": "p245-f05",
+      "slide": "Microsoft_PowerPoint_Slide58.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\07\\assets\\p245-f05.svg",
+      "asset_sha256": "073faffac9cb05ce9bdfab22c6193f348a80b745fb3e88a8be5637fbe81aa159",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 5,
+        "fill-image": 2,
+        "stroke-path": 3,
+        "fill-text": 98,
+        "stroke-text": 84
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "07",
+      "page": 250,
+      "id": "p250-f08",
+      "slide": "Microsoft_PowerPoint_Slide59.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\07\\assets\\p250-f08.svg",
+      "asset_sha256": "bfd67153433a8c3e11981ffd03ebc8f913c58700631fa80935df01bb0b3ecab5",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 3,
+        "stroke-path": 1,
+        "fill-text": 11
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "07",
+      "page": 262,
+      "id": "p262-f20",
+      "slide": "Microsoft_PowerPoint_Slide60.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\07\\assets\\p262-f20.svg",
+      "asset_sha256": "e45d168398ca277dfb42bc19aff2d1734e3850ccf22115e99dfd32c32053062c",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 4,
+        "fill-image": 3,
+        "stroke-path": 3,
+        "fill-text": 46,
+        "stroke-text": 36
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "07",
+      "page": 265,
+      "id": "p265-f22",
+      "slide": "Microsoft_PowerPoint_Slide61.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\07\\assets\\p265-f22.svg",
+      "asset_sha256": "078164be64c4cd9716794ce8d5a7d81686d33ee44923b46949b53ba998cfe554",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 4,
+        "fill-image": 3,
+        "stroke-path": 2,
+        "fill-text": 68
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "07",
+      "page": 272,
+      "id": "p272-f27",
+      "slide": "Microsoft_PowerPoint_Slide62.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\07\\assets\\p272-f27.svg",
+      "asset_sha256": "bdcbdb965d579f8b3a044aceaed737a4b85875f76034fe8bd91873699494fcce",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 5,
+        "fill-image": 2,
+        "stroke-path": 10,
+        "fill-text": 56,
+        "stroke-text": 43
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "07",
+      "page": 280,
+      "id": "p280-f34",
+      "slide": "Microsoft_PowerPoint_Slide63.sldx",
+      "box": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\07\\assets\\p280-f34.svg",
+      "asset_sha256": "ab7367ebae9db430729c0742b3ba7bf2fd8f92495824c68ff41df194b3d10ae7",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 16
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        113.780029296875,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "appendix-a",
+      "page": 286,
+      "id": "p286-f08",
+      "slide": "Microsoft_PowerPoint_Slide64.sldx",
+      "box": [
+        113.77999877929688,
+        114.5,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "asset_box": [
+        112.97999877929688,
+        113.7,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\appendix-a\\assets\\p286-f08.svg",
+      "asset_sha256": "5f699941d08afbcedd861e0379e9e333b6720ee21f83ce043f8b53154c47b1de",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 3,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 21
+      },
+      "finite_content_bounds": [
+        113.77999877929688,
+        114.5,
+        481.5299987792969,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "02",
+      "page": 33,
+      "id": "p033-f01",
+      "slide": "Microsoft_PowerPoint_Slide9.sldx",
+      "box": [
+        113.02999877929688,
+        115.07000732421875,
+        482.2799987792969,
+        391.7599792480469
+      ],
+      "asset_box": [
+        112.22999877929688,
+        114.27000732421875,
+        483.0799987792969,
+        392.5599792480469
+      ],
+      "asset_path": "docs\\textbook\\chapters\\02\\assets\\p033-f01.svg",
+      "asset_sha256": "ca3f36cd22b62572ea27accca4bbea8de0f20f90266f33496d8d20b9b53dc9df",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 13,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 17
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        115.82000732421875,
+        482.260009765625,
+        391.0099792480469
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "02",
+      "page": 34,
+      "id": "p034-f02",
+      "slide": "Microsoft_PowerPoint_Slide10.sldx",
+      "box": [
+        113.02999877929688,
+        113.030029296875,
+        482.2799987792969,
+        389.719970703125
+      ],
+      "asset_box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\02\\assets\\p034-f02.svg",
+      "asset_sha256": "99a2ad4434ff74a0a0920a927c8634d2f95c5c082150d40fbac4b9a2c2647c2e",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 397,
+        "fill-image": 7,
+        "stroke-path": 10,
+        "fill-text": 30,
+        "fill-shade": 1
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        113.780029296875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": [
+        124
+      ]
+    },
+    {
+      "chapter": "02",
+      "page": 36,
+      "id": "p036-f03",
+      "slide": "Microsoft_PowerPoint_Slide11.sldx",
+      "box": [
+        113.02999877929688,
+        113.030029296875,
+        482.2799987792969,
+        389.719970703125
+      ],
+      "asset_box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\02\\assets\\p036-f03.svg",
+      "asset_sha256": "8240cc78a7380a76954de862ec6cb9339df23a6a1f1c2e38b9101c6507c58dff",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 13,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 28
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        113.780029296875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "02",
+      "page": 38,
+      "id": "p038-f05",
+      "slide": "Microsoft_PowerPoint_Slide12.sldx",
+      "box": [
+        113.02999877929688,
+        113.030029296875,
+        482.2799987792969,
+        389.719970703125
+      ],
+      "asset_box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\02\\assets\\p038-f05.svg",
+      "asset_sha256": "e3b93a408619fc4f1afa8678839f707fd4398d3c53d8c396ec0185770e3e5884",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 151,
+        "fill-image": 8,
+        "stroke-path": 9,
+        "fill-text": 56,
+        "fill-shade": 24
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        113.780029296875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": [
+        206,
+        208,
+        210,
+        212,
+        228,
+        320,
+        323,
+        325,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        337,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359
+      ]
+    },
+    {
+      "chapter": "02",
+      "page": 39,
+      "id": "p039-f06",
+      "slide": "Microsoft_PowerPoint_Slide13.sldx",
+      "box": [
+        113.02999877929688,
+        113.030029296875,
+        482.2799987792969,
+        389.719970703125
+      ],
+      "asset_box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\02\\assets\\p039-f06.svg",
+      "asset_sha256": "ab788b7b09a6cebca3839c31e5e82a947215aeb77c0044d1530246a767c5cf9a",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 14,
+        "fill-image": 2,
+        "stroke-path": 2,
+        "fill-text": 34
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        113.780029296875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "02",
+      "page": 47,
+      "id": "p047-f20",
+      "slide": "Microsoft_PowerPoint_Slide14.sldx",
+      "box": [
+        113.02999877929688,
+        113.030029296875,
+        482.2799987792969,
+        389.719970703125
+      ],
+      "asset_box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\02\\assets\\p047-f20.svg",
+      "asset_sha256": "49eaa9563cac0a87fd8f74d3e4df7f34360be71bf7a4a5be5a94d1330e15bd99",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 14,
+        "fill-image": 2,
+        "stroke-path": 2,
+        "fill-text": 53
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        113.780029296875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "02",
+      "page": 53,
+      "id": "p053-f25",
+      "slide": "Microsoft_PowerPoint_Slide15.sldx",
+      "box": [
+        113.02999877929688,
+        113.030029296875,
+        482.2799987792969,
+        389.719970703125
+      ],
+      "asset_box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\02\\assets\\p053-f25.svg",
+      "asset_sha256": "f9341b0410b1d5c9f5b58a801f5747427c5543bf07a64eb22162c746bc174120",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 17,
+        "fill-image": 2,
+        "stroke-path": 3,
+        "fill-text": 43
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        113.780029296875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "02",
+      "page": 57,
+      "id": "p057-f31",
+      "slide": "Microsoft_PowerPoint_Slide16.sldx",
+      "box": [
+        113.02999877929688,
+        113.030029296875,
+        482.2799987792969,
+        389.719970703125
+      ],
+      "asset_box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\02\\assets\\p057-f31.svg",
+      "asset_sha256": "9c40901cd1f636810b6dc18b9363ab5f6334299fcf53cf2f800562f4585228ce",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 20,
+        "fill-image": 2,
+        "stroke-path": 3,
+        "fill-text": 69
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        113.780029296875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "02",
+      "page": 62,
+      "id": "p062-f33",
+      "slide": "Microsoft_PowerPoint_Slide17.sldx",
+      "box": [
+        113.02999877929688,
+        113.030029296875,
+        482.2799987792969,
+        389.719970703125
+      ],
+      "asset_box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "asset_path": "docs\\textbook\\chapters\\02\\assets\\p062-f33.svg",
+      "asset_sha256": "1de8ef666e0ff6d596de1749e23289d0299a561f85f48b6aafc78d7d33cd1f5a",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 13,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 17
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        113.780029296875,
+        482.260009765625,
+        388.969970703125
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 65,
+      "id": "p065-f01",
+      "slide": "Microsoft_PowerPoint_Slide18.sldx",
+      "box": [
+        113.02999877929688,
+        115.7900390625,
+        482.2799987792969,
+        392.5999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        114.9900390625,
+        483.0799987792969,
+        393.3999755859375
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p065-f01.svg",
+      "asset_sha256": "44e073259b1dc55a3ecd7847a2b296b15286fd077884a9d4d9b6ac28ebe19ce2",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 13,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 24
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        116.5400390625,
+        482.260009765625,
+        391.8499755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 66,
+      "id": "p066-f02",
+      "slide": "Microsoft_PowerPoint_Slide19.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p066-f02.svg",
+      "asset_sha256": "9144fc324a82ab9776a1fda8c2045d9e2a6696976a877d4c6c4804e12827a7cf",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 14,
+        "fill-image": 2,
+        "stroke-path": 2,
+        "fill-text": 35
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 72,
+      "id": "p072-f09",
+      "slide": "Microsoft_PowerPoint_Slide20.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p072-f09.svg",
+      "asset_sha256": "1fb667d6aa893d70d282a250d5e63b651f7774951eb33fdf5ecce9b37b1e299b",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 31,
+        "fill-image": 2,
+        "stroke-path": 14,
+        "fill-text": 61
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 77,
+      "id": "p077-f13",
+      "slide": "Microsoft_PowerPoint_Slide21.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p077-f13.svg",
+      "asset_sha256": "505d42d0868e53eae7e9a4cde3faceba025fb2509cfd200d84d7d0f0f51e83d4",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 22,
+        "fill-image": 4,
+        "stroke-path": 3,
+        "fill-text": 42
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 79,
+      "id": "p079-f15",
+      "slide": "Microsoft_PowerPoint_Slide22.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p079-f15.svg",
+      "asset_sha256": "1395721a2a165552cc20f5def689cdb10adb2afe7de0f27ab2427a08e272ce1b",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 14,
+        "fill-image": 2,
+        "stroke-path": 2,
+        "fill-text": 32
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 82,
+      "id": "p082-f17",
+      "slide": "Microsoft_PowerPoint_Slide23.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p082-f17.svg",
+      "asset_sha256": "03752e9c4f4326d5a4a3c598b2b0557e0429074ee10d573880a6ef35c7527a95",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 17,
+        "fill-image": 2,
+        "stroke-path": 4,
+        "fill-text": 51
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 85,
+      "id": "p085-f18",
+      "slide": "Microsoft_PowerPoint_Slide24.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p085-f18.svg",
+      "asset_sha256": "d5ebbcd9274f796bbda3a604a9fb80c3d517bafd27adb62b39aab886e3555048",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 30,
+        "fill-image": 2,
+        "stroke-path": 25,
+        "fill-text": 55
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 90,
+      "id": "p090-f23",
+      "slide": "Microsoft_PowerPoint_Slide25.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p090-f23.svg",
+      "asset_sha256": "4f89da286625468a121c09c22519b5bc7697c1918ce12e3067b37f17d484a2f3",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 36,
+        "fill-image": 2,
+        "stroke-path": 13,
+        "fill-text": 86
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 95,
+      "id": "p095-f30",
+      "slide": "Microsoft_PowerPoint_Slide26.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p095-f30.svg",
+      "asset_sha256": "d7b5f078c5af494dadbed2ae37361356701e55851e68146b0d372c5066dd8de0",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 23,
+        "fill-image": 4,
+        "stroke-path": 3,
+        "fill-text": 65
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 99,
+      "id": "p099-f34",
+      "slide": "Microsoft_PowerPoint_Slide27.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p099-f34.svg",
+      "asset_sha256": "045230bf2e47fe94dd42b00a888aa2131ccce215943502b22fda1b05364c127a",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 24,
+        "fill-image": 4,
+        "stroke-path": 5,
+        "fill-text": 83
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 103,
+      "id": "p103-f38",
+      "slide": "Microsoft_PowerPoint_Slide28.sldx",
+      "box": [
+        113.02999877929688,
+        114.59002685546875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.79002685546875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p103-f38.svg",
+      "asset_sha256": "8aeb4bf0016b7ba793fe0c8de6d9b6df8fde682b691a1d8122eae0b4c4ebbaaa",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 21,
+        "fill-image": 2,
+        "stroke-path": 17,
+        "fill-text": 132
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        115.34002685546875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 105,
+      "id": "p105-f39",
+      "slide": "Microsoft_PowerPoint_Slide29.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p105-f39.svg",
+      "asset_sha256": "030df3b96787cc386d61299a4e8fcfcc7141e416276e449073c99cbb276e88bd",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 15,
+        "fill-image": 3,
+        "stroke-path": 2,
+        "fill-text": 64,
+        "stroke-text": 46
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 114,
+      "id": "p114-f51",
+      "slide": "Microsoft_PowerPoint_Slide30.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p114-f51.svg",
+      "asset_sha256": "3736f920a1fb1d918bed21cc250770e443f004d4aa91d6efda3b61738b8535fe",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 16,
+        "fill-image": 2,
+        "stroke-path": 3,
+        "fill-text": 71,
+        "stroke-text": 52
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 122,
+      "id": "p122-f59",
+      "slide": "Microsoft_PowerPoint_Slide31.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p122-f59.svg",
+      "asset_sha256": "03c90df3c1ceb5063a602d2ea87f692242337ddcb9fd551a94c145850954df09",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 15,
+        "fill-image": 2,
+        "stroke-path": 3,
+        "fill-text": 45
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 125,
+      "id": "p125-f64",
+      "slide": "Microsoft_PowerPoint_Slide32.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p125-f64.svg",
+      "asset_sha256": "7876b1f1413f34bb5523c704d55d88cf73225f3c0a7675acb5644aef1d93281f",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 37,
+        "fill-image": 25,
+        "stroke-path": 24,
+        "fill-text": 42
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "03",
+      "page": 132,
+      "id": "p132-f69",
+      "slide": "Microsoft_PowerPoint_Slide33.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\03\\assets\\p132-f69.svg",
+      "asset_sha256": "e22e57091715d4f4129bc68c4ac938ad9ebbc6feccb418d6894f48ce58eb16d0",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 13,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 24
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "04",
+      "page": 135,
+      "id": "p135-f01",
+      "slide": "Microsoft_PowerPoint_Slide34.sldx",
+      "box": [
+        113.02999877929688,
+        115.7900390625,
+        482.2799987792969,
+        392.5999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        114.9900390625,
+        483.0799987792969,
+        393.3999755859375
+      ],
+      "asset_path": "docs\\textbook\\chapters\\04\\assets\\p135-f01.svg",
+      "asset_sha256": "43ce25e988815f3bac68d014bfa7d7e7312bacf51e030db839454c3f0733e6ca",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 13,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 7
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        116.5400390625,
+        482.260009765625,
+        391.8499755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "04",
+      "page": 136,
+      "id": "p136-f02",
+      "slide": "Microsoft_PowerPoint_Slide35.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\04\\assets\\p136-f02.svg",
+      "asset_sha256": "0239afa5b392f18b656f5a2686f7d1af0d3397ceeec14ab1bb531b3f2ad210cc",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 44,
+        "fill-image": 2,
+        "stroke-path": 18,
+        "fill-text": 109
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "04",
+      "page": 142,
+      "id": "p142-f07",
+      "slide": "Microsoft_PowerPoint_Slide36.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\04\\assets\\p142-f07.svg",
+      "asset_sha256": "8dad514f3caec747e2a735d4d338c7d1d62aa03b7381465fd27821a7f41f503c",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 21,
+        "fill-image": 3,
+        "stroke-path": 8,
+        "fill-text": 61
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "04",
+      "page": 148,
+      "id": "p148-f12",
+      "slide": "Microsoft_PowerPoint_Slide37.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\04\\assets\\p148-f12.svg",
+      "asset_sha256": "1f24d4305d375124a19a1a5f4e087308f8657f714cfe4c440b999ca049d745a0",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 14,
+        "fill-image": 3,
+        "stroke-path": 6,
+        "fill-text": 44
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "04",
+      "page": 157,
+      "id": "p157-f18",
+      "slide": "Microsoft_PowerPoint_Slide38.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\04\\assets\\p157-f18.svg",
+      "asset_sha256": "4c13876a461b11f70b3f148a6f81d65f3a03f1389626d2ba61f1adb0e28866f6",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 17,
+        "fill-image": 2,
+        "stroke-path": 18,
+        "fill-text": 89
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "04",
+      "page": 159,
+      "id": "p159-f19",
+      "slide": "Microsoft_PowerPoint_Slide39.sldx",
+      "box": [
+        113.02999877929688,
+        113.8699951171875,
+        482.2799987792969,
+        390.55999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "asset_path": "docs\\textbook\\chapters\\04\\assets\\p159-f19.svg",
+      "asset_sha256": "85ba5378bceaecbc3d0fc9fcfe381b3a0f06fac1940685adf5dd1bc8771531e9",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 14,
+        "fill-image": 3,
+        "stroke-path": 4,
+        "fill-text": 24
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        114.6199951171875,
+        482.260009765625,
+        389.80999755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    },
+    {
+      "chapter": "04",
+      "page": 162,
+      "id": "p162-f25",
+      "slide": "Microsoft_PowerPoint_Slide40.sldx",
+      "box": [
+        113.02999877929688,
+        115.7900390625,
+        482.2799987792969,
+        392.5999755859375
+      ],
+      "asset_box": [
+        112.22999877929688,
+        114.9900390625,
+        483.0799987792969,
+        393.3999755859375
+      ],
+      "asset_path": "docs\\textbook\\chapters\\04\\assets\\p162-f25.svg",
+      "asset_sha256": "ac86002fc7a9b007b67c703f133024883a53162eed5ef4fa255bd3b8cb789da9",
+      "crossing": [],
+      "object_counts": {
+        "fill-path": 13,
+        "fill-image": 2,
+        "stroke-path": 1,
+        "fill-text": 7
+      },
+      "finite_content_bounds": [
+        113.05999755859375,
+        116.5400390625,
+        482.260009765625,
+        391.8499755859375
+      ],
+      "finite_crossing_asset_box": [],
+      "max_overflow_asset_box_pt": 0,
+      "unbounded_shading_seqnos": []
+    }
+  ],
+  "summary": {
+    "slide_figures": 65,
+    "finite_crossing_configured_box_1_5pt": 0,
+    "finite_crossing_exported_asset_box_0_05pt": 0,
+    "unbounded_gradient_objects": 31,
+    "limitations": "PDFグラデーション31要素はPyMuPDFが無限大の境界を返すため、有限境界の包含検査から除外して別途記録。原本PDF内の包含は確認できるが、PDFへ書き出す前にPPT内部で文字が切れていないことまでは、境界検査だけでは証明できない。"
+  }
+}

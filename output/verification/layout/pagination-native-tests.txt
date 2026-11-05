@@ -1,0 +1,8 @@
+test_every_source_page_starts_after_the_previous_content (test_pagination.PaginationTests.test_every_source_page_starts_after_the_previous_content) ... ok
+test_slide_positions_keep_the_original_upper_area (test_pagination.PaginationTests.test_slide_positions_keep_the_original_upper_area) ... ok
+test_appendix_contents_are_original_with_version_changes_only (test_pagination.PaginationTests.test_appendix_contents_are_original_with_version_changes_only) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 7.977s
+
+OK

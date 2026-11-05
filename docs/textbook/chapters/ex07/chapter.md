@@ -24,12 +24,6 @@
 
 :::
 
-::: {#migration-ex07-environment .paragraph}
-
-本演習は、Java 21・Spring Boot 4.0.2・Pleiades 2025で進めます。作業用は `projects/enshu_exercise/enshu_exercise_7`、答え合わせ用は `projects/enshu_answer/enshu_answer_7` です。作業用には演習で実装する箇所が残っています。
-
-:::
-
 ::: {#p064-b02 .paragraph}
 
 [◼&#32;]{.s007}[Bootstrap の導入方法（CSS・JS の読み込み）を理解し、導入前]{.s008}

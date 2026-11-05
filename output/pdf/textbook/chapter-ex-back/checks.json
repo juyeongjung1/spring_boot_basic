@@ -40,6 +40,12 @@
     "overflow": [],
     "block_positions": [
       {
+        "id": "__source-page-77",
+        "edge": "source-page",
+        "page": 1,
+        "y": 0.0
+      },
+      {
         "id": "__native-page-77",
         "edge": "native-page",
         "page": 1,

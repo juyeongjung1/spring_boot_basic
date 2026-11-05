@@ -1,0 +1,940 @@
+{
+  "generated_utc": "2026-11-05T03:18:53.175851+00:00",
+  "status": "pass",
+  "original_pdf": "JAC0177G-T1-04(260715).pdf",
+  "render_scale": 1.5,
+  "pixel_change_threshold": 16,
+  "scope": "付録A/B15ページの原本と改訂章PDFの画素・配置比較。版名更新行と通常単色記号差は除外を明記。",
+  "chapters": {
+    "appendix-a": {
+      "pdf": "output/pdf/textbook/chapter-appendix-a/chapter-flow.pdf",
+      "pages": 8,
+      "expected_pages": 8,
+      "page_count_matches": true,
+      "sha256": "4a7a23a9c70910db323014dd680cf8537e85e2c8ade2ee20a19493d116800cb8"
+    },
+    "appendix-b": {
+      "pdf": "output/pdf/textbook/chapter-appendix-b/chapter-flow.pdf",
+      "pages": 7,
+      "expected_pages": 7,
+      "page_count_matches": true,
+      "sha256": "504d8018ce9a199c2bf77e20bc500d2708997a60709b9a4a35354a9becbdb88f"
+    }
+  },
+  "pages": [
+    {
+      "source_page": 282,
+      "chapter": "appendix-a",
+      "chapter_page_index": 1,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 1,
+        "considered_pixels": 1127859,
+        "changed_fraction": 8.866356521515544e-07,
+        "mean_rgb_absolute_difference": 0.013026451001410637,
+        "rgb_rmse": 0.11736849058525596
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 1,
+        "considered_pixels": 1127859,
+        "changed_fraction": 8.866356521515544e-07,
+        "mean_rgb_absolute_difference": 0.013026451001410637,
+        "rgb_rmse": 0.11736849058525596
+      },
+      "excluded_regions": [],
+      "figures": [],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 283,
+      "chapter": "appendix-a",
+      "chapter_page_index": 2,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 440,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0003901196869466839,
+        "mean_rgb_absolute_difference": 0.04386482116411124,
+        "rgb_rmse": 1.8274333346905969
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 440,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0003901196869466839,
+        "mean_rgb_absolute_difference": 0.04386482116411124,
+        "rgb_rmse": 1.8274333346905969
+      },
+      "excluded_regions": [],
+      "figures": [
+        {
+          "id": "p283-f01",
+          "bbox_pt": [
+            84.75000305175782,
+            183.99998779296874,
+            244.90000610351564,
+            380.09998779296876
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 70800,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.004209039548022599,
+            "rgb_rmse": 0.06531107657330296
+          }
+        },
+        {
+          "id": "p283-f02",
+          "bbox_pt": [
+            258.90001220703124,
+            184.09999389648436,
+            505.15000610351564,
+            380.09998779296876
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 108486,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.006194347657762292,
+            "rgb_rmse": 0.07998211550915608
+          }
+        },
+        {
+          "id": "p283-f03",
+          "bbox_pt": [
+            84.75000305175782,
+            415.59996337890624,
+            346.3,
+            568.3999755859375
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 89768,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.006995811425006684,
+            "rgb_rmse": 0.08509340527575633
+          }
+        }
+      ],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 284,
+      "chapter": "appendix-a",
+      "chapter_page_index": 3,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.012224636826648249,
+        "rgb_rmse": 0.11329007968630138
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.012224636826648249,
+        "rgb_rmse": 0.11329007968630138
+      },
+      "excluded_regions": [],
+      "figures": [
+        {
+          "id": "p284-f04",
+          "bbox_pt": [
+            106.7,
+            111.04999084472657,
+            360.4499938964844,
+            365.34998779296876
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 145160,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.0026453568476164234,
+            "rgb_rmse": 0.05170021903350534
+          }
+        },
+        {
+          "id": "p284-f05",
+          "bbox_pt": [
+            331.84999389648436,
+            468.7499572753906,
+            518.7000244140625,
+            730.749951171875
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 110433,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 1.81105285557759e-05,
+            "rgb_rmse": 0.00425564666716774
+          }
+        }
+      ],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 285,
+      "chapter": "appendix-a",
+      "chapter_page_index": 4,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 37,
+        "considered_pixels": 1127859,
+        "changed_fraction": 3.2805519129607515e-05,
+        "mean_rgb_absolute_difference": 0.016882133907400364,
+        "rgb_rmse": 0.7254179922923834
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 37,
+        "considered_pixels": 1127859,
+        "changed_fraction": 3.2805519129607515e-05,
+        "mean_rgb_absolute_difference": 0.016882133907400364,
+        "rgb_rmse": 0.7254179922923834
+      },
+      "excluded_regions": [],
+      "figures": [
+        {
+          "id": "p285-f06",
+          "bbox_pt": [
+            95.7999984741211,
+            194.19998474121093,
+            521.8499877929687,
+            390.09998779296876
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 187866,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.003433298201909872,
+            "rgb_rmse": 0.0592268469799941
+          }
+        },
+        {
+          "id": "p285-f07",
+          "bbox_pt": [
+            95.7999984741211,
+            465.99998779296874,
+            522.3,
+            604.3
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 133120,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.004807692307692308,
+            "rgb_rmse": 0.06944577990168911
+          }
+        }
+      ],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 286,
+      "chapter": "appendix-a",
+      "chapter_page_index": 5,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 12008,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.010646720911035865,
+        "mean_rgb_absolute_difference": 0.46290508535789193,
+        "rgb_rmse": 4.979875548068998
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 12008,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.010646720911035865,
+        "mean_rgb_absolute_difference": 0.46290508535789193,
+        "rgb_rmse": 4.979875548068998
+      },
+      "excluded_regions": [],
+      "figures": [
+        {
+          "id": "p286-f08",
+          "bbox_pt": [
+            112.97999877929688,
+            113.7,
+            482.3299987792969,
+            389.769970703125
+          ],
+          "metrics": {
+            "changed_pixels": 11846,
+            "considered_pixels": 229356,
+            "changed_fraction": 0.05164896492788503,
+            "mean_rgb_absolute_difference": 2.212458652342501,
+            "rgb_rmse": 10.708390976392755
+          }
+        }
+      ],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 287,
+      "chapter": "appendix-a",
+      "chapter_page_index": 6,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 1722,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0015267865930049767,
+        "mean_rgb_absolute_difference": 0.16843890356270894,
+        "rgb_rmse": 4.474114063870803
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 43,
+        "considered_pixels": 1117863,
+        "changed_fraction": 3.846625212570771e-05,
+        "mean_rgb_absolute_difference": 0.018121481195221,
+        "rgb_rmse": 0.6961713151228301
+      },
+      "excluded_regions": [
+        {
+          "kind": "allowed_version_text_update",
+          "block_id": "p287-b03",
+          "bbox_pt": [
+            105,
+            157,
+            342,
+            175
+          ],
+          "reason": "Eclipse 2022(pleiades)→Pleiades 2025のみ"
+        }
+      ],
+      "figures": [
+        {
+          "id": "p287-f09",
+          "bbox_pt": [
+            95.7999984741211,
+            209.70001525878905,
+            525.07001953125,
+            292.4199951171875
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 79856,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.00011270286515728311,
+            "rgb_rmse": 0.01459051711700222
+          }
+        },
+        {
+          "id": "p287-f10",
+          "bbox_pt": [
+            106.7,
+            347.7999755859375,
+            295.65000610351564,
+            572.5999877929687
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 95371,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.0035545396399324744,
+            "rgb_rmse": 0.0603193383691152
+          }
+        }
+      ],
+      "version_line_spans": [
+        {
+          "text": "※本書では、Pleiades 2025を使用します。",
+          "bbox": [
+            107.05999755859375,
+            160.57249450683594,
+            298.70062255859375,
+            171.6125030517578
+          ]
+        }
+      ],
+      "reference_comparison": {
+        "changed_pixels": 1682,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 2012,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。",
+      "version_line_checks": {
+        "updated_phrase_occurs_once": true,
+        "old_phrase_absent": true,
+        "bbox_left_matches_original_pt": 107.05999755859375,
+        "bbox_right_pt": 298.70062255859375,
+        "original_line_right_pt": 339.67718505859375,
+        "fits_within_original_line_width": true,
+        "no_overlap_observed": true
+      }
+    },
+    {
+      "source_page": 288,
+      "chapter": "appendix-a",
+      "chapter_page_index": 7,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 3206,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0028425539007978836,
+        "mean_rgb_absolute_difference": 0.14733047304671948,
+        "rgb_rmse": 1.9841253295797259
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 3206,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0028425539007978836,
+        "mean_rgb_absolute_difference": 0.14733047304671948,
+        "rgb_rmse": 1.9841253295797259
+      },
+      "excluded_regions": [],
+      "figures": [
+        {
+          "id": "p288-f11",
+          "bbox_pt": [
+            105.9,
+            85.5,
+            515.8,
+            318.8
+          ],
+          "metrics": {
+            "changed_pixels": 3206,
+            "considered_pixels": 215250,
+            "changed_fraction": 0.014894308943089431,
+            "mean_rgb_absolute_difference": 0.7221385985288424,
+            "rgb_rmse": 4.536247440779644
+          }
+        },
+        {
+          "id": "p288-f12",
+          "bbox_pt": [
+            106.7,
+            373.49998779296874,
+            533.0999877929687,
+            432.6999938964844
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 56871,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.012941569516977018,
+            "rgb_rmse": 0.1152963251872213
+          }
+        },
+        {
+          "id": "p288-f13",
+          "bbox_pt": [
+            95.7999984741211,
+            533.9000122070313,
+            522.4499633789062,
+            780.3
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 236800,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 8.445945945945946e-06,
+            "rgb_rmse": 0.002906190968595482
+          }
+        }
+      ],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 289,
+      "chapter": "appendix-a",
+      "chapter_page_index": 8,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 93,
+        "considered_pixels": 1127859,
+        "changed_fraction": 8.245711565009456e-05,
+        "mean_rgb_absolute_difference": 0.013765018499652882,
+        "rgb_rmse": 0.9639182047293968
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 93,
+        "considered_pixels": 1127859,
+        "changed_fraction": 8.245711565009456e-05,
+        "mean_rgb_absolute_difference": 0.013765018499652882,
+        "rgb_rmse": 0.9639182047293968
+      },
+      "excluded_regions": [],
+      "figures": [],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 290,
+      "chapter": "appendix-b",
+      "chapter_page_index": 1,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.012063269137956665,
+        "rgb_rmse": 0.10985174905753681
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.012063269137956665,
+        "rgb_rmse": 0.10985174905753681
+      },
+      "excluded_regions": [],
+      "figures": [],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 291,
+      "chapter": "appendix-b",
+      "chapter_page_index": 2,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 1537,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0013627589973569392,
+        "mean_rgb_absolute_difference": 0.14256746632336134,
+        "rgb_rmse": 3.1046594881848257
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 1537,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0013627589973569392,
+        "mean_rgb_absolute_difference": 0.14256746632336134,
+        "rgb_rmse": 3.1046594881848257
+      },
+      "excluded_regions": [],
+      "figures": [],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 292,
+      "chapter": "appendix-b",
+      "chapter_page_index": 3,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 1009,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0008946153730209184,
+        "mean_rgb_absolute_difference": 0.22936732339769422,
+        "rgb_rmse": 2.5344758277361583
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 1009,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0008946153730209184,
+        "mean_rgb_absolute_difference": 0.22936732339769422,
+        "rgb_rmse": 2.5344758277361583
+      },
+      "excluded_regions": [],
+      "figures": [
+        {
+          "id": "p292-f01",
+          "bbox_pt": [
+            95.7999984741211,
+            214.84999389648436,
+            450.1000183105469,
+            302.84998779296876
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 70224,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.007604237867395762,
+            "rgb_rmse": 0.0873654288550909
+          }
+        }
+      ],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 293,
+      "chapter": "appendix-b",
+      "chapter_page_index": 4,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.019544996316028865,
+        "rgb_rmse": 0.1445982086646925
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.019544996316028865,
+        "rgb_rmse": 0.1445982086646925
+      },
+      "excluded_regions": [],
+      "figures": [
+        {
+          "id": "p293-f02",
+          "bbox_pt": [
+            95.2999984741211,
+            86.7999984741211,
+            413.6000183105469,
+            210.8
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 88908,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.0,
+            "rgb_rmse": 0.0
+          }
+        },
+        {
+          "id": "p293-f03",
+          "bbox_pt": [
+            84.2999984741211,
+            361.4999572753906,
+            510.8,
+            406.2999694824219
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 42880,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.003435945273631841,
+            "rgb_rmse": 0.05861693674725626
+          }
+        },
+        {
+          "id": "p293-f04",
+          "bbox_pt": [
+            95.2999984741211,
+            555.0499755859375,
+            384.8,
+            592.6499755859375
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 24360,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.0,
+            "rgb_rmse": 0.0
+          }
+        }
+      ],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 294,
+      "chapter": "appendix-b",
+      "chapter_page_index": 5,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.07299228006337671,
+        "rgb_rmse": 0.2709398599864058
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.07299228006337671,
+        "rgb_rmse": 0.2709398599864058
+      },
+      "excluded_regions": [],
+      "figures": [
+        {
+          "id": "p294-f05",
+          "bbox_pt": [
+            95.7999984741211,
+            520.8500244140625,
+            378.1000183105469,
+            752.850048828125
+          ],
+          "metrics": {
+            "changed_pixels": 0,
+            "considered_pixels": 147552,
+            "changed_fraction": 0.0,
+            "mean_rgb_absolute_difference": 0.0028938950336152677,
+            "rgb_rmse": 0.054296530345383676
+          }
+        }
+      ],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 295,
+      "chapter": "appendix-b",
+      "chapter_page_index": 6,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.008996691962381823,
+        "rgb_rmse": 0.09486335606608536
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.008996691962381823,
+        "rgb_rmse": 0.09486335606608536
+      },
+      "excluded_regions": [],
+      "figures": [],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    },
+    {
+      "source_page": 296,
+      "chapter": "appendix-b",
+      "chapter_page_index": 7,
+      "page_size_pt": [
+        595.3200073242188,
+        841.9199829101562
+      ],
+      "render_size_px": [
+        893,
+        1263
+      ],
+      "raw": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.011942095598829286,
+        "rgb_rmse": 0.10956349800220827
+      },
+      "excluding_declared_changes": {
+        "changed_pixels": 0,
+        "considered_pixels": 1127859,
+        "changed_fraction": 0.0,
+        "mean_rgb_absolute_difference": 0.011942095598829286,
+        "rgb_rmse": 0.10956349800220827
+      },
+      "excluded_regions": [],
+      "figures": [],
+      "reference_comparison": {
+        "changed_pixels": 0,
+        "excluding_declared_changes_changed_pixels": 0,
+        "excluding_declared_changes_changed_fraction": 0.0,
+        "any_channel_nonzero_pixels": 0,
+        "excluding_declared_changes_any_channel_nonzero_pixels": 0
+      },
+      "visual_review": "合格：ページ単位と図版・説明・罫線の配置が原本と対応。目視で重なり・欠落・図の縦積み化なし。"
+    }
+  ],
+  "visual_review": {
+    "all_15_pages_reviewed": true,
+    "screenshots_side_by_side_restored": true,
+    "p287_version_line": "元位置から1行で収まり、前後の行・次のスクリーンショットと重ならないことを3倍表示で確認。",
+    "contact_sheets": [
+      "tmp/editorial/appendix-layout-restore/contact-282-285.png",
+      "tmp/editorial/appendix-layout-restore/contact-286-289.png",
+      "tmp/editorial/appendix-layout-restore/contact-290-293.png",
+      "tmp/editorial/appendix-layout-restore/contact-294-296.png"
+    ],
+    "detailed_pages": [
+      283,
+      286,
+      287,
+      288,
+      291,
+      292
+    ],
+    "unresolved_findings": []
+  },
+  "summary": {
+    "all_reference_pixels_match_outside_allowed_version_line": true,
+    "total_reference_changed_pixels_outside_exclusions": 0,
+    "actual_original_max_changed_percent_excluding_declared_changes": 1.0646720911035865,
+    "screenshot_figure_count": 18,
+    "all_pages_restored": true,
+    "version_line_overlapping": false,
+    "source_files_edited": false
+  },
+  "baseline_rendering_difference_note": "実原本との画素差は元位置再現版にも同じ差として存在する。特にp286のスライド、p288上段の図はSVG/文字描画による再現差を含む。これらを今回の版名更新の除外には混ぜていない。flowとreferenceは版名行以外でRGB全チャンネル完全一致。通常単色記号のために今回追加した除外領域は0。"
+}

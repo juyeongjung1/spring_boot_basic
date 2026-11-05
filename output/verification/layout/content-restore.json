@@ -1,0 +1,347 @@
+{
+  "status": "pass",
+  "audit_scope": "原稿の復元と未公開追記の不混入。PDF生成物・組版・実Javaは再検証していない。",
+  "generated_utc": "2026-11-05T03:12:36.040518+00:00",
+  "chapters_checked": 19,
+  "appendices": {
+    "appendix-a": {
+      "checks": {
+        "same_id_set": true,
+        "same_id_order": true,
+        "no_duplicate_ids": true,
+        "same_figure_references": true,
+        "all_referenced_figures_exist": true,
+        "same_body_except_allowed_version_change": true
+      },
+      "source_page_count": 8,
+      "id_count": 62,
+      "figure_count": 13,
+      "allowed_version_changes": [
+        {
+          "from": "Eclipse 2022(pleiades)",
+          "to": "Pleiades 2025",
+          "block_id": "p287-b03"
+        }
+      ],
+      "baseline_sha256": "ee4fa034f7898cb1bb8e59fe501f79576438a4b541f9d3b6d9ac68061435bfbe",
+      "current_sha256": "c7207fb5c48f06ce534c15fc20e417f57cc22146f9f08e6c9d155d37d3555165",
+      "diff": [
+        "--- baseline",
+        "+++ current",
+        "@@ -1,4 +1,4 @@",
+        "-<!-- 元PDF 282〜289ページ。本文の改訂はまだ行っていません。 -->",
+        "+<!-- 元PDF 282〜289ページ。本文は原本の内容を保持し、バージョン表記のみ更新。 -->",
+        " ",
+        " ::: {#page-282 .source-page}",
+        " ",
+        "@@ -217,7 +217,7 @@",
+        " ",
+        " ::: {#p287-b03 .paragraph}",
+        " ",
+        "-[※本書では、Eclipse 2022(pleiades)を使用します。]{.s008}",
+        "+[※本書では、Pleiades 2025を使用します。]{.s008}",
+        " ",
+        " :::",
+        " "
+      ]
+    },
+    "appendix-b": {
+      "checks": {
+        "same_id_set": true,
+        "same_id_order": true,
+        "no_duplicate_ids": true,
+        "same_figure_references": true,
+        "all_referenced_figures_exist": true,
+        "same_body_except_allowed_version_change": true
+      },
+      "source_page_count": 7,
+      "id_count": 67,
+      "figure_count": 5,
+      "allowed_version_changes": [],
+      "baseline_sha256": "e30821b2a87de902f6f90189fe7ecdc414d9065e7a6ee90ab86d503b6d6818d1",
+      "current_sha256": "a5e62059a32a490133ed4e6c84f2266f2b9662daa308a49a056a6b901b889581",
+      "diff": [
+        "--- baseline",
+        "+++ current",
+        "@@ -1,4 +1,4 @@",
+        "-<!-- 元PDF 290〜296ページ。本文の改訂はまだ行っていません。 -->",
+        "+<!-- 元PDF 290〜296ページ。本文は原本の内容を保持し、バージョン表記のみ更新。 -->",
+        " ",
+        " ::: {#page-290 .source-page}",
+        " "
+      ]
+    }
+  },
+  "environment_paragraphs": {
+    "previous_count": 15,
+    "expected_previous_count": 15,
+    "remaining": [],
+    "removed": [
+      {
+        "chapter": "01",
+        "id": "migration-01-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "02",
+        "id": "migration-02-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "03",
+        "id": "migration-03-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "04",
+        "id": "migration-04-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "05",
+        "id": "migration-05-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "06",
+        "id": "migration-06-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "07",
+        "id": "migration-07-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "ex01",
+        "id": "migration-ex01-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "ex02",
+        "id": "migration-ex02-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "ex03",
+        "id": "migration-ex03-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "ex04",
+        "id": "migration-ex04-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "ex05",
+        "id": "migration-ex05-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "ex06",
+        "id": "migration-ex06-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "ex07",
+        "id": "migration-ex07-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      },
+      {
+        "chapter": "front",
+        "id": "revision-environment",
+        "id_removed": true,
+        "old_paragraph_body_removed": true
+      }
+    ],
+    "all_15_removed": true
+  },
+  "unpublished_content": {
+    "DI新図IDまたは参照": {
+      "remaining": [],
+      "absent": true
+    },
+    "DI新説明ID": {
+      "remaining": [],
+      "absent": true
+    },
+    "メッセージ参考欄ID": {
+      "remaining": [],
+      "absent": true
+    },
+    "参考欄属性": {
+      "remaining": [],
+      "absent": true
+    },
+    "新メッセージ例": {
+      "remaining": [],
+      "absent": true
+    },
+    "付録B新実行環境解説": {
+      "remaining": [],
+      "absent": true
+    },
+    "付録A新設定図": {
+      "remaining": [],
+      "absent": true
+    }
+  },
+  "retained_migration_blocks": [
+    {
+      "chapter": "01",
+      "id": "migration-01-pom-parent",
+      "source_page": 26,
+      "text": "`pom.xml` の該当部分が次の設定になっていることを確認します。配布プロジェクトには設定済みです。親POMが管理する依存はバージョンを省略でき、管理対象外のライブラリは対応版を個別に指定します。",
+      "reason": "前回依頼のJava21/Spring Boot4.0.2対応に必要な既存変更として親担当が維持を確認。今回の未公開DI・メッセージ追記とは別。"
+    },
+    {
+      "chapter": "01",
+      "id": "migration-01-pom-java21",
+      "source_page": 26,
+      "text": "```xml\n<parent>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-parent</artifactId>\n    <version>4.0.2</version>\n    <relativePath/>\n</parent>\n<properties>\n    <java.version>21</java.version>\n</properties>\n```",
+      "reason": "前回依頼のJava21/Spring Boot4.0.2対応に必要な既存変更として親担当が維持を確認。今回の未公開DI・メッセージ追記とは別。"
+    },
+    {
+      "chapter": "02",
+      "id": "migration-02-servlet-comparison",
+      "source_page": 37,
+      "text": "このコードはサーブレットとSpring MVCの役割を比較する例です。Spring Boot 4.0.2ではServletの型は `jakarta.servlet` を使います。本章の配布アプリは、以降の `@Controller` とThymeleafで画面を作成します。",
+      "reason": "前回依頼のJava21/Spring Boot4.0.2対応に必要な既存変更として親担当が維持を確認。今回の未公開DI・メッセージ追記とは別。"
+    },
+    {
+      "chapter": "02",
+      "id": "migration-02-webmvc",
+      "source_page": 39,
+      "text": "Spring Boot 4.0.2では、Web MVC用に `spring-boot-starter-webmvc`、MVCテスト用に `spring-boot-starter-webmvc-test` を使用します。配布POMは設定済みです。以降の `@Controller`・`@GetMapping`・`Model` の基本的な使い方は同じです。",
+      "reason": "前回依頼のJava21/Spring Boot4.0.2対応に必要な既存変更として親担当が維持を確認。今回の未公開DI・メッセージ追記とは別。"
+    },
+    {
+      "chapter": "02",
+      "id": "migration-02-webmvc-dependencies",
+      "source_page": 39,
+      "text": "```xml\n<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-webmvc</artifactId>\n</dependency>\n<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-webmvc-test</artifactId>\n    <scope>test</scope>\n</dependency>\n```",
+      "reason": "前回依頼のJava21/Spring Boot4.0.2対応に必要な既存変更として親担当が維持を確認。今回の未公開DI・メッセージ追記とは別。"
+    },
+    {
+      "chapter": "03",
+      "id": "migration-03-jpa-dependencies",
+      "source_page": 70,
+      "text": "本章の依存定義は次のとおりです。各バージョンはSpring Boot 4.0.2の親POMに任せます。MySQL 8以降を起動し、付録の手順で本文用の `spring_sample` を準備してから、配布設定を確認してください。",
+      "reason": "前回依頼のJava21/Spring Boot4.0.2対応に必要な既存変更として親担当が維持を確認。今回の未公開DI・メッセージ追記とは別。"
+    },
+    {
+      "chapter": "03",
+      "id": "migration-03-jpa-pom",
+      "source_page": 70,
+      "text": "```xml\n<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-data-jpa</artifactId>\n</dependency>\n<dependency>\n    <groupId>com.mysql</groupId>\n    <artifactId>mysql-connector-j</artifactId>\n    <scope>runtime</scope>\n</dependency>\n<dependency>\n    <groupId>org.projectlombok</groupId>\n    <artifactId>lombok</artifactId>\n    <optional>true</optional>\n</dependency>\n```",
+      "reason": "前回依頼のJava21/Spring Boot4.0.2対応に必要な既存変更として親担当が維持を確認。今回の未公開DI・メッセージ追記とは別。"
+    },
+    {
+      "chapter": "03",
+      "id": "migration-03-url-line",
+      "source_page": 71,
+      "text": "`spring.datasource.url` の値は1行で記述します。紙面で折り返されていても、ファイル内では途中に改行を入れません。MySQLのポートを3306以外に変更した場合は、`localhost:ポート番号` の形で実際の接続先に合わせます。",
+      "reason": "前回依頼のJava21/Spring Boot4.0.2対応に必要な既存変更として親担当が維持を確認。今回の未公開DI・メッセージ追記とは別。"
+    },
+    {
+      "chapter": "06",
+      "id": "migration-06-reference-query",
+      "source_page": 232,
+      "text": "以下の複雑な検索は参考例です。`description`・`brand`・`sku` のフィールドや集計結果用DTOは、例題に合わせて別途定義する必要があります。配布モデルのまま確認する場合は、ここまでに扱った全件検索・主キー検索・商品名と価格の検索を使用してください。",
+      "reason": "前回依頼のJava21/Spring Boot4.0.2対応に必要な既存変更として親担当が維持を確認。今回の未公開DI・メッセージ追記とは別。"
+    }
+  ],
+  "violations": [],
+  "source_snapshots": {
+    "01": {
+      "path": "docs/textbook/chapters/01/chapter.md",
+      "sha256": "7221a48c577f45e2fec615dff9d5a79b0d5eeebc174a3f23166f3e5d3c5f450a"
+    },
+    "02": {
+      "path": "docs/textbook/chapters/02/chapter.md",
+      "sha256": "d5fcfb335b788c2541f77282f8305fe14ca225405e3eb2342f549a0d89a96e53"
+    },
+    "03": {
+      "path": "docs/textbook/chapters/03/chapter.md",
+      "sha256": "e74312ccc784dfa18321d1e7eaaad9308e02e57534b4a56e767423e51cf512f5"
+    },
+    "04": {
+      "path": "docs/textbook/chapters/04/chapter.md",
+      "sha256": "761fb1198546b492b522452537c8494383cbb0af4f4fbbcd05edffc91dd10de5"
+    },
+    "05": {
+      "path": "docs/textbook/chapters/05/chapter.md",
+      "sha256": "36ecabdc29fa1993519fb5e69ce638495bee24ae76c9c6ed4d002cfdd1211a82"
+    },
+    "06": {
+      "path": "docs/textbook/chapters/06/chapter.md",
+      "sha256": "4ce5de2b476b52e90f686fb1660eaa5519d304f624e49525cfc5714e37824153"
+    },
+    "07": {
+      "path": "docs/textbook/chapters/07/chapter.md",
+      "sha256": "26f5365f34423bbf88292298867a2c1eeb9ccfc60cf750fcee6f2d06a3cf5d7f"
+    },
+    "appendix-a": {
+      "path": "docs/textbook/chapters/appendix-a/chapter.md",
+      "sha256": "c7207fb5c48f06ce534c15fc20e417f57cc22146f9f08e6c9d155d37d3555165"
+    },
+    "appendix-b": {
+      "path": "docs/textbook/chapters/appendix-b/chapter.md",
+      "sha256": "a5e62059a32a490133ed4e6c84f2266f2b9662daa308a49a056a6b901b889581"
+    },
+    "ex-back": {
+      "path": "docs/textbook/chapters/ex-back/chapter.md",
+      "sha256": "6862ae61d3c9df64797d4be4f8d5191afea6352cb747854ada0ae0d671e86edf"
+    },
+    "ex-front": {
+      "path": "docs/textbook/chapters/ex-front/chapter.md",
+      "sha256": "fd90186dd47bf383a30f93474f8a8941212da96d7c866f6a44db0e01e3b0c5cd"
+    },
+    "ex01": {
+      "path": "docs/textbook/chapters/ex01/chapter.md",
+      "sha256": "7417fb62c3e201d7f0134659f25ff7bc3d003d33bcf4607e15fc474acb5361c9"
+    },
+    "ex02": {
+      "path": "docs/textbook/chapters/ex02/chapter.md",
+      "sha256": "cc71f5ba540ed79cb68b6fbf0340306e582ec58ccee797577f31f75173afbcb0"
+    },
+    "ex03": {
+      "path": "docs/textbook/chapters/ex03/chapter.md",
+      "sha256": "b24b76228dfcd28006bdb5bc132e893b18902c9b3a269669ada272102749ad79"
+    },
+    "ex04": {
+      "path": "docs/textbook/chapters/ex04/chapter.md",
+      "sha256": "6a8a5ceebe4d2e4ad495e147a018240dd63f2c30a9f1f281a84a5c2fcdb1761a"
+    },
+    "ex05": {
+      "path": "docs/textbook/chapters/ex05/chapter.md",
+      "sha256": "87ac88f66b70499bab192630e6b0abab8443d7741cdeb7698fbf46e14448d7de"
+    },
+    "ex06": {
+      "path": "docs/textbook/chapters/ex06/chapter.md",
+      "sha256": "fb464b7998a2d7deacf159097066424a2c615128e525d62210e7ed757ede0d9f"
+    },
+    "ex07": {
+      "path": "docs/textbook/chapters/ex07/chapter.md",
+      "sha256": "8ca99be3f61046b9d4e7cbaf8b941df467c96fb2bcf671181a6f247dca4ce7f9"
+    },
+    "front": {
+      "path": "docs/textbook/chapters/front/chapter.md",
+      "sha256": "17fac8300d0c041bbc221c88593019dcf53a8532c023b6cb16513e5fa3a9a3ec"
+    }
+  }
+}

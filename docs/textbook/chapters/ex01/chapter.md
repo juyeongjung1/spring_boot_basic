@@ -24,12 +24,6 @@
 
 :::
 
-::: {#migration-ex01-environment .paragraph}
-
-本演習は、Java 21・Spring Boot 4.0.2・Pleiades 2025のJava Fullを前提にします。ここでは基礎知識の設問に答えます。以降の実装演習では、付録の手順で読み込んだ配布プロジェクトを使います。
-
-:::
-
 ::: {#p008-b02 .paragraph}
 
 [◼&#32;]{.s007}[Spring Framework の特徴について理解できる]{.s008}

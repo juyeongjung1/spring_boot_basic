@@ -1,0 +1,25 @@
+{
+  "source_pages": 373,
+  "flow_pages": 385,
+  "baseline_sha256_verified": 19,
+  "slides_preserved": 65,
+  "source_page_boundaries_verified": 373,
+  "source_page_mixing_errors": 0,
+  "unrequested_environment_paragraphs_removed": 15,
+  "appendix_original_layout_pages_restored": 15,
+  "appendix_version_text_updates": 1,
+  "new_setting_figures_in_use": 0,
+  "regression_tests_passed": 17,
+  "related_tests_repeated_after_appendix_restore": 3,
+  "verification": "output/verification/layout/",
+  "collections": {
+    "textbook": {
+      "source_pages": 296,
+      "flow_pages": 308
+    },
+    "exercise": {
+      "source_pages": 77,
+      "flow_pages": 77
+    }
+  }
+}

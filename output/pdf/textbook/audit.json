@@ -1,36 +1,25 @@
 {
   "source_pages": 373,
+  "flow_pages": 385,
   "baseline_sha256_verified": 19,
-  "flow_pages": 306,
-  "ppt_sources_preserved": 65,
-  "revised_setting_figures": 5,
-  "regression_tests_passed": 10,
-  "code_blocks_verified": 192,
-  "legacy_symbols_normalized": 360,
-  "symbols_checked_in_reference_and_flow": 1086,
-  "emoji_font_errors": 0,
-  "assembly_pixel_errors_outside_number_regions": 0,
-  "contents_entries_verified": 124,
+  "slides_preserved": 65,
+  "source_page_boundaries_verified": 373,
+  "source_page_mixing_errors": 0,
+  "unrequested_environment_paragraphs_removed": 15,
+  "appendix_original_layout_pages_restored": 15,
+  "appendix_version_text_updates": 1,
+  "new_setting_figures_in_use": 0,
+  "regression_tests_passed": 17,
+  "related_tests_repeated_after_appendix_restore": 3,
+  "verification": "output/verification/layout/",
   "collections": {
     "textbook": {
       "source_pages": 296,
-      "reference_pages": 296,
-      "flow_pages": 248,
-      "blocks": 1874,
-      "figures": 235,
-      "tables": 14,
-      "mean_reference_rgb_error": 0.2005,
-      "toc_entries": 79
+      "flow_pages": 308
     },
     "exercise": {
       "source_pages": 77,
-      "reference_pages": 77,
-      "flow_pages": 58,
-      "blocks": 738,
-      "figures": 32,
-      "tables": 18,
-      "mean_reference_rgb_error": 0.1607,
-      "toc_entries": 45
+      "flow_pages": 77
     }
   }
 }

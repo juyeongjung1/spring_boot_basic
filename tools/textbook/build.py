@@ -116,7 +116,8 @@ def read_markdown(path):
                 entries.append(image[0][0])
             else:
                 raise ValueError(f"未対応のページ要素: {block['t']}")
-        order.append({"id": page["c"][0][0], "entries": entries})
+        page_id = page["c"][0][0]
+        order.append({"id": page_id, "source_page": int(page_id[5:]) if re.fullmatch(r'page-\d+', page_id) else None, "entries": entries})
     return nodes, figures, order
 
 
@@ -183,8 +184,12 @@ def inline(parts):
 def flow_layout(folder, config, layout, nodes, figures, order):
     has_cover=config.get('cover_mode','classic')!='none'
     furniture_condition='here().page() > 1' if has_cover else 'true'
+    running_title = next((''.join(run['text'] for run in page['furniture'] if run['bbox'][1] < 80).strip()
+                          for page in layout['pages'] if page['entries'] and page['source_page'] not in config.get('native_pages', [])
+                          and (not has_cover or page['source_page'] != config['first_page'])
+                          and any(run['bbox'][1] < 80 and run['text'].strip() for run in page['furniture'])), '')
     commands = [f'''#set page(width: 595.32pt, height: 841.92pt, margin: (left: 85.104pt, right: 83.664pt, top: 86pt, bottom: 68pt),
-header: context if {furniture_condition} {{stack(spacing: 3pt, align(center, text(font: "Meiryo UI", size: 9.96pt, {q(config["title"])})), line(length: 100%, stroke: 0.48pt))}},
+header: context if {furniture_condition} {{stack(spacing: 3pt, align(center, text(font: "Meiryo UI", size: 9.96pt, {q(running_title)})), line(length: 100%, stroke: 0.48pt))}},
 footer: context if {furniture_condition} {{align(center, text(font: "Times New Roman", size: 11.04pt, counter(page).display()))}})
 #set text(font: "MS PMincho", size: 11.04pt, lang: "ja", cjk-latin-spacing: none, kerning: false, overhang: false, top-edge: "ascender", bottom-edge: "descender")
 #set par(leading: 6.96pt, spacing: 6pt)
@@ -197,7 +202,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         title = next(value for _, value in cover_nodes if value.startswith("第"))
         goal_title = next(value for _, value in cover_nodes if "目標" in value)
         goals = [value.lstrip("◼■ ") for _, value in cover_nodes if value.startswith("◼")]
-        commands += [f'#cover({q(number)}, {q(title)}, {q(goal_title)}, ({", ".join(q(v) for v in goals)},))', '#pagebreak(to: "odd")']
+        commands += [f'#cover({q(number)}, {q(title)}, {q(goal_title)}, ({", ".join(q(v) for v in goals)},))', '#pagebreak()']
     elif has_cover:
         p=layout['pages'][0]
         body=[f'#at(0,0,image({q("/"+(folder/p["decoration"]).relative_to(ROOT).as_posix())},width:595.32pt,height:841.92pt))']
@@ -214,19 +219,72 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
     figure_map = {f["id"]: f for f in layout["figures"]}
     native_page_map={}
     for page in layout['pages']:
-        if page['source_page'] in config.get('native_pages',[]):
+        current_entries = next((p['entries'] for p in order if p['source_page'] == page['source_page']), [])
+        if page['source_page'] in config.get('native_pages',[]) or (not page['entries'] and not current_entries):
             body=[f'#at(0,0,image({q("/"+(folder/page["decoration"]).relative_to(ROOT).as_posix())},width:595.32pt,height:841.92pt))']
             for ident in page['entries']:
                 if ident in layout['blocks']:
                     group=layout['blocks'][ident]
-                    if nodes[ident]['text']!='\n'.join(l['text'] for l in group['lines']):raise ValueError('固定ページの編集は再配置確認が必要: '+ident)
-                    for line in group['lines']:body+=native_runs(line['runs'])
+                    if nodes[ident]['text']!='\n'.join(l['text'] for l in group['lines']):
+                        if ident not in config.get('native_text_updates', []) or len(group['lines']) != 1:
+                            raise ValueError('固定ページの編集は再配置確認が必要: '+ident)
+                        # 確認済みの版名更新は、元の開始位置から一行の文字幅を組み直す。
+                        line = group['lines'][0]
+                        body.append(f'#at({line["x"]}, {line["y"]}, text(top-edge: 0pt, bottom-edge: 0pt)[{inline(nodes[ident]["parts"])}])')
+                    else:
+                        for line in group['lines']:body+=native_runs(line['runs'])
                 elif ident in layout.get('tables',{}):body+=native_runs(layout['tables'][ident]['runs'])
                 elif ident in figures:
                     fig=figure_map[ident];x0,y0,x1,y1=fig['box']
-                    body.append(f'#at({x0},{y0},image({q("/"+(folder/figures[ident]).relative_to(ROOT).as_posix())},width:{x1-x0}pt,height:{y1-y0}pt))')
+                    body.append(f'#at({x0},{y0},[#mark({q(ident)}, "start")#image({q("/"+(folder/figures[ident]).relative_to(ROOT).as_posix())},width:{x1-x0}pt,height:{y1-y0}pt)#mark({q(ident)}, "end")])')
             body += native_runs(page['furniture'])
             native_page_map['page-'+str(page['source_page'])]='\n'.join(body)
+    # スライドの上段は原本の座標を保持し、下段の説明だけを組み直す。
+    # 追記を図より前へ置いても、元の図を押し下げない。
+    slide_headers = {}
+    slide_consumed = set()
+    slide_body_first = set()
+    for page in order[1:] if has_cover else order:
+        source = next((p for p in layout['pages'] if p['source_page'] == page['source_page']), None)
+        slides = [f for f in layout['figures'] if f.get('slide') and f['page'] == page['source_page']]
+        if not source or len(slides) != 1 or page['id'] in native_page_map:
+            continue
+        fig = slides[0]
+        if fig['id'] not in page['entries']:
+            continue
+        original_index = source['entries'].index(fig['id'])
+        preceding = source['entries'][:original_index]
+        following = source['entries'][original_index + 1:]
+        # 元から図の前に本文がある特殊ページは通常のフローで処理する。
+        if any(ident not in nodes or nodes[ident]['kind'] != 'heading' for ident in preceding):
+            continue
+        body_lines = [line for ident in following if ident in layout['blocks'] for line in layout['blocks'][ident]['lines']]
+        if not body_lines:
+            continue
+        body_top = min(run['bbox'][1] for run in body_lines[0]['runs'])
+        slide_body_first.add(following[0])
+        x0, y0, x1, y1 = fig['box']
+        body = []
+        for ident in preceding:
+            group = layout['blocks'][ident]
+            if nodes[ident]['text'] != '\n'.join(line['text'] for line in group['lines']):
+                raise ValueError('スライド上の見出し変更には再配置確認が必要です: ' + ident)
+            body += [f'#mark({q(ident)}, "start")'] + [cmd for line in group['lines'] for cmd in native_runs(line['runs'])] + [f'#mark({q(ident)}, "end")']
+        path = '/' + (folder / figures[fig['id']]).relative_to(ROOT).as_posix()
+        body += [f'#at({x0}, {y0}, [#mark({q(fig["id"])}, "start")#image({q(path)}, width: {x1-x0}pt, height: {y1-y0}pt)#mark({q(fig["id"])}, "end")])']
+        # 元の横罫線だけを復元する。本文用の枠などは流用しない。
+        decoration = ET.parse(folder / source['decoration']).getroot()
+        for shape in decoration:
+            if not shape.tag.endswith('path'):
+                continue
+            coordinates = [float(v) for v in re.findall(r'-?\d+(?:\.\d+)?', shape.get('d', ''))]
+            if len(coordinates) != 8:
+                continue
+            xs, ys = coordinates[::2], coordinates[1::2]
+            if max(xs)-min(xs) > 300 and max(ys)-min(ys) < 2 and y1 < min(ys) < body_top:
+                body.append(f'#at({min(xs)}, {min(ys)}, rect(width: {max(xs)-min(xs)}pt, height: {max(ys)-min(ys)}pt, fill: black, stroke: none))')
+        slide_headers[page['id']] = f'#slide-header({body_top-86})[#at(-85.104, -86, box(width: 595.32pt, height: 841.92pt)['+ '\n'.join(body) + '])]'
+        slide_consumed.update(preceding + [fig['id']])
     def render(ident):
         if ident in figures:
             fig = figure_map.get(ident, {"box": [0, 0, 426.672, 0]})
@@ -234,6 +292,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             width=min(fig['box'][2]-fig['box'][0],426.672,600*(fig['box'][2]-fig['box'][0])/(fig['box'][3]-fig['box'][1]))
             return f'#illustration({q(ident)}, {q(path)}, {width})'
         node = nodes[ident]
+        if node['kind'] == 'step' and config['chapter'] == 'front':
+            return f'#list-item({q(ident)}, [{inline(node["parts"])}])'
         if node['kind']=='table':
             info=layout.get('tables',{}).get(ident,{})
             xs=info.get('xs',list(range(len(node['rows'][0])+1)))
@@ -246,12 +306,34 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         method = {"heading": "section-heading", "step": "step", "paragraph": "paragraph"}.get(node["kind"])
         if method is None:
             raise ValueError(f'未対応のブロック種類: {node["kind"]}')
-        return f'#{method}({q(ident)}, [{inline(node["parts"])}])'
+        options = ', above: 0pt' if method == 'section-heading' and ident in slide_body_first else ''
+        return f'#{method}({q(ident)}, [{inline(node["parts"])}]{options})'
 
-    entries = [ident for page in (order[1:] if has_cover else order) for ident in (['__native-'+page['id']] if page['id'] in native_page_map else page['entries'])]
+    entries = []
+    for page in order[1:] if has_cover else order:
+        entries.append('__source-' + page['id'])
+        if page['id'] in native_page_map:
+            entries.append('__native-' + page['id'])
+            continue
+        if page['id'] in slide_headers:
+            entries.append('__slide-' + page['id'])
+        originals = next((p['entries'] for p in layout['pages'] if p['source_page'] == page['source_page']), [])
+        # 追加された要素は原本の説明の後へ置き、既存のスライドを押し下げない。
+        additions = [ident for ident in page['entries'] if ident not in originals]
+        entries.extend(ident for ident in page['entries'] if ident not in slide_consumed and (page['id'] not in slide_headers or ident not in additions))
+        if page['id'] in slide_headers:
+            entries.extend(additions)
     i = 0
     while i < len(entries):
         ident = entries[i]
+        if ident.startswith('__source-'):
+            commands += ['#pagebreak(weak: true)', f'#mark({q(ident)}, "source-page")']
+            i += 1
+            continue
+        if ident.startswith('__slide-'):
+            commands.append(slide_headers[ident[len('__slide-'):]])
+            i += 1
+            continue
         if ident.startswith('__native-'):
             commands += ['#pagebreak(weak: true)','#[#set page(header: none, footer: none)\n#mark('+q(ident)+',"native-page")\n#native-cover['+native_page_map[ident[len('__native-'):]]+']\n#pagebreak(weak: true)]']
             i+=1
@@ -359,7 +441,13 @@ def build(chapter="01", mode="all", markdown=None, output=None):
         split_instructions = []
         for i, m in enumerate(marks):
             if m["edge"] == "heading":
-                following = next((n for n in marks[i + 1:] if n["edge"] in ("start", "heading")), None)
+                following = None
+                for candidate in marks[i + 1:]:
+                    if candidate['edge'] == 'source-page':
+                        break
+                    if candidate['edge'] in ('start', 'heading'):
+                        following = candidate
+                        break
                 if following and following["page"] != m["page"]:
                     orphan.append(m)
         for ident in figures:
@@ -403,7 +491,8 @@ def build(chapter="01", mode="all", markdown=None, output=None):
         # 新しい設定図のSVGには、輪郭ではなく文字として残したラベルもある。
         svg_text=''.join(''.join(node.itertext()) for path in figures.values() if Path(path).suffix.lower()=='.svg' for node in ET.parse(folder/path).iter('{http://www.w3.org/2000/svg}text'))
         expected += Counter(normalized(svg_text))
-        expected += Counter(normalized(''.join(r['text'] for p in layout['pages'] if p['source_page'] in config.get('native_pages',[]) for r in p['furniture'])))
+        native_sources = {int(m['id'].rsplit('-', 1)[1]) for m in marks if m['edge'] == 'native-page'}
+        expected += Counter(normalized(''.join(r['text'] for p in layout['pages'] if p['source_page'] in native_sources for r in p['furniture'])))
         for ident,node in nodes.items():
             if node['kind']=='table' and node['has_header']:
                 repeats=max(0,sum(m['id']==ident and m['edge']=='table-header' for m in marks)-1)

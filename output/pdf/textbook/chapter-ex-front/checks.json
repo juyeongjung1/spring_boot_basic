@@ -99,10 +99,22 @@
     "overflow": [],
     "block_positions": [
       {
+        "id": "__source-page-2",
+        "edge": "source-page",
+        "page": 2,
+        "y": 0.0
+      },
+      {
         "id": "__native-page-2",
         "edge": "native-page",
         "page": 2,
         "y": 86.0
+      },
+      {
+        "id": "__source-page-3",
+        "edge": "source-page",
+        "page": 3,
+        "y": 0.0
       },
       {
         "id": "__native-page-3",
@@ -111,16 +123,34 @@
         "y": 86.0
       },
       {
+        "id": "__source-page-4",
+        "edge": "source-page",
+        "page": 4,
+        "y": 0.0
+      },
+      {
         "id": "__native-page-4",
         "edge": "native-page",
         "page": 4,
         "y": 86.0
       },
       {
+        "id": "__source-page-5",
+        "edge": "source-page",
+        "page": 5,
+        "y": 0.0
+      },
+      {
         "id": "__native-page-5",
         "edge": "native-page",
         "page": 5,
         "y": 86.0
+      },
+      {
+        "id": "__source-page-6",
+        "edge": "source-page",
+        "page": 6,
+        "y": 0.0
       },
       {
         "id": "__native-page-6",

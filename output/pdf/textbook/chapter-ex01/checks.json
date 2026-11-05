@@ -5,7 +5,7 @@
     7,
     10
   ],
-  "blocks": 23,
+  "blocks": 22,
   "figures": 0,
   "source_coverage": [
     {
@@ -59,7 +59,7 @@
     ]
   },
   "flow": {
-    "pages": 3,
+    "pages": 4,
     "native_text_complete": true,
     "heading_orphans": [],
     "split_figures": [],
@@ -71,213 +71,219 @@
     "overflow": [],
     "block_positions": [
       {
+        "id": "__source-page-8",
+        "edge": "source-page",
+        "page": 2,
+        "y": 86.0
+      },
+      {
         "id": "p008-b01",
         "edge": "heading",
         "page": 2,
         "y": 86.0
       },
       {
-        "id": "migration-ex01-environment",
+        "id": "p008-b02",
         "edge": "start",
         "page": 2,
         "y": 113.96
       },
       {
-        "id": "migration-ex01-environment",
-        "edge": "end",
-        "page": 2,
-        "y": 161.0
-      },
-      {
-        "id": "p008-b02",
-        "edge": "start",
-        "page": 2,
-        "y": 167.0
-      },
-      {
         "id": "p008-b02",
         "edge": "end",
         "page": 2,
-        "y": 181.04000000000002
+        "y": 128.0
       },
       {
         "id": "p008-b03",
         "edge": "start",
         "page": 2,
-        "y": 187.04000000000002
+        "y": 134.0
       },
       {
         "id": "p008-b03",
         "edge": "end",
         "page": 2,
-        "y": 201.08000000000004
+        "y": 148.04000000000002
       },
       {
         "id": "p008-b04",
         "edge": "start",
         "page": 2,
-        "y": 207.08
+        "y": 154.04000000000002
       },
       {
         "id": "p008-b04",
         "edge": "end",
         "page": 2,
-        "y": 221.11999999999998
+        "y": 168.08000000000004
       },
       {
         "id": "p008-b05",
         "edge": "heading",
         "page": 2,
-        "y": 239.11999999999998
+        "y": 186.08
       },
       {
         "id": "p008-b06",
         "edge": "start",
         "page": 2,
-        "y": 267.08
+        "y": 214.04000000000002
       },
       {
         "id": "p008-b06",
         "edge": "end",
         "page": 2,
-        "y": 281.12
+        "y": 228.08000000000004
       },
       {
         "id": "p008-b07",
         "edge": "heading",
         "page": 2,
-        "y": 299.12
+        "y": 246.08
       },
       {
         "id": "p008-b08",
         "edge": "start",
         "page": 2,
-        "y": 327.08
+        "y": 274.04
       },
       {
         "id": "p008-b08",
         "edge": "end",
         "page": 2,
-        "y": 341.12
+        "y": 288.08000000000004
+      },
+      {
+        "id": "__source-page-9",
+        "edge": "source-page",
+        "page": 3,
+        "y": 86.0
       },
       {
         "id": "p009-b01",
-        "edge": "heading",
-        "page": 2,
-        "y": 359.12
-      },
-      {
-        "id": "p009-b02",
-        "edge": "start",
-        "page": 2,
-        "y": 388.19439453125
-      },
-      {
-        "id": "p009-b02",
-        "edge": "end",
-        "page": 2,
-        "y": 437.72486328124995
-      },
-      {
-        "id": "p009-b03",
-        "edge": "start",
-        "page": 2,
-        "y": 443.72486328124995
-      },
-      {
-        "id": "p009-b03",
-        "edge": "end",
-        "page": 2,
-        "y": 511.25533203124996
-      },
-      {
-        "id": "p009-b04",
-        "edge": "heading",
-        "page": 2,
-        "y": 529.2553320312498
-      },
-      {
-        "id": "p009-b05",
-        "edge": "start",
-        "page": 2,
-        "y": 558.3297265625
-      },
-      {
-        "id": "p009-b05",
-        "edge": "end",
-        "page": 2,
-        "y": 625.8601953125001
-      },
-      {
-        "id": "p009-b06",
-        "edge": "start",
-        "page": 2,
-        "y": 631.8601953125
-      },
-      {
-        "id": "p009-b06",
-        "edge": "end",
-        "page": 2,
-        "y": 699.3906640625
-      },
-      {
-        "id": "p010-b01",
         "edge": "heading",
         "page": 3,
         "y": 86.0
       },
       {
-        "id": "p010-b02",
+        "id": "p009-b02",
         "edge": "start",
         "page": 3,
         "y": 115.07439453125
       },
       {
-        "id": "p010-b02",
+        "id": "p009-b02",
         "edge": "end",
         "page": 3,
+        "y": 164.60486328124998
+      },
+      {
+        "id": "p009-b03",
+        "edge": "start",
+        "page": 3,
+        "y": 170.60486328125
+      },
+      {
+        "id": "p009-b03",
+        "edge": "end",
+        "page": 3,
+        "y": 238.13533203125002
+      },
+      {
+        "id": "p009-b04",
+        "edge": "heading",
+        "page": 3,
+        "y": 256.13533203125
+      },
+      {
+        "id": "p009-b05",
+        "edge": "start",
+        "page": 3,
+        "y": 285.2097265625
+      },
+      {
+        "id": "p009-b05",
+        "edge": "end",
+        "page": 3,
+        "y": 352.7401953125
+      },
+      {
+        "id": "p009-b06",
+        "edge": "start",
+        "page": 3,
+        "y": 358.7401953125
+      },
+      {
+        "id": "p009-b06",
+        "edge": "end",
+        "page": 3,
+        "y": 426.2706640625
+      },
+      {
+        "id": "__source-page-10",
+        "edge": "source-page",
+        "page": 4,
+        "y": 86.0
+      },
+      {
+        "id": "p010-b01",
+        "edge": "heading",
+        "page": 4,
+        "y": 86.0
+      },
+      {
+        "id": "p010-b02",
+        "edge": "start",
+        "page": 4,
+        "y": 115.07439453125
+      },
+      {
+        "id": "p010-b02",
+        "edge": "end",
+        "page": 4,
         "y": 162.11439453125
       },
       {
         "id": "p010-b03",
         "edge": "start",
-        "page": 3,
+        "page": 4,
         "y": 168.11439453125
       },
       {
         "id": "p010-b03",
         "edge": "end",
-        "page": 3,
+        "page": 4,
         "y": 235.64486328125
       },
       {
         "id": "p010-b04",
         "edge": "heading",
-        "page": 3,
+        "page": 4,
         "y": 253.64486328125
       },
       {
         "id": "p010-b05",
         "edge": "start",
-        "page": 3,
+        "page": 4,
         "y": 282.7192578125
       },
       {
         "id": "p010-b05",
         "edge": "end",
-        "page": 3,
+        "page": 4,
         "y": 332.2497265625
       },
       {
         "id": "p010-b06",
         "edge": "start",
-        "page": 3,
+        "page": 4,
         "y": 338.2497265625
       },
       {
         "id": "p010-b06",
         "edge": "end",
-        "page": 3,
+        "page": 4,
         "y": 406.6103515625
       }
     ]

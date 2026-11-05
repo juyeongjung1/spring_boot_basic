@@ -64,12 +64,6 @@
 
 :::
 
-::: {#migration-02-environment .paragraph}
-
-本章は、Java 21・Spring Boot 4.0.2・Pleiades 2025のJava Fullで進めます。作業用は `projects/spring_exercise/spring_exercise_2`、確認用は `projects/spring_answer/spring_answer_2` です。JREシステム・ライブラリーとMavenの実行JREをJDK 21に合わせます。
-
-:::
-
 ![スライド](assets/p033-f01.svg){#p033-f01}
 
 ::: {#p033-b02 .paragraph}
