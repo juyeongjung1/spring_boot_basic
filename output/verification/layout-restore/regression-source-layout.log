@@ -1,0 +1,12 @@
+test_all_figures_keep_the_source_left_edge_and_one_page (__main__.SourceLayoutTests.test_all_figures_keep_the_source_left_edge_and_one_page) ... ok
+test_all_seven_operation_checks_are_pdf_headings (__main__.SourceLayoutTests.test_all_seven_operation_checks_are_pdf_headings) ... ok
+test_code_frames_and_all_attached_captions_keep_their_geometry (__main__.SourceLayoutTests.test_code_frames_and_all_attached_captions_keep_their_geometry) ... ok
+test_controller_path_uses_its_original_upper_right_position_inside_red_frame (__main__.SourceLayoutTests.test_controller_path_uses_its_original_upper_right_position_inside_red_frame) ... ok
+test_jdbc_comparison_preserves_source_fonts_colors_centering_and_table_lines (__main__.SourceLayoutTests.test_jdbc_comparison_preserves_source_fonts_colors_centering_and_table_lines) ... ok
+test_long_repository_method_uses_the_source_font_size_without_extra_wrapping (__main__.SourceLayoutTests.test_long_repository_method_uses_the_source_font_size_without_extra_wrapping) ... ok
+test_only_the_permitted_intro_dependency_code_is_added (__main__.SourceLayoutTests.test_only_the_permitted_intro_dependency_code_is_added) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 74.229s
+
+OK

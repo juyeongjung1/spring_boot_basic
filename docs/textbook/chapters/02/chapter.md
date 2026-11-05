@@ -266,12 +266,6 @@
 ```
 :::
 
-::: {#migration-02-servlet-comparison .paragraph}
-
-このコードはサーブレットとSpring MVCの役割を比較する例です。Spring Boot 4.0.2ではServletの型は `jakarta.servlet` を使います。本章の配布アプリは、以降の `@Controller` とThymeleafで画面を作成します。
-
-:::
-
 ::: {#p037-b03 .paragraph}
 
 [サーブレットの開発では、リクエストの処理やレスポンスの生成のために、比較的冗長なコー]{.s009}\
@@ -360,28 +354,6 @@
 ::: {#p039-b01 .heading}
 
 [2\.2.&#32;]{.s004}[Controller の基本]{.s004}
-
-:::
-
-::: {#migration-02-webmvc .paragraph}
-
-Spring Boot 4.0.2では、Web MVC用に `spring-boot-starter-webmvc`、MVCテスト用に `spring-boot-starter-webmvc-test` を使用します。配布POMは設定済みです。以降の `@Controller`・`@GetMapping`・`Model` の基本的な使い方は同じです。
-
-:::
-
-::: {#migration-02-webmvc-dependencies .code}
-
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-webmvc</artifactId>
-</dependency>
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-webmvc-test</artifactId>
-    <scope>test</scope>
-</dependency>
-```
 
 :::
 
@@ -745,19 +717,22 @@ initial-scale=1.0" />
 
 ::: {#p045-b04 .step}
 
-2\. `SpringExercise2Application.java` のような `main` メソッドを持つ起動クラスを選択し、右クリックして［実行］→［Spring Bootアプリケーション］を選びます。
+[2\.&#32;]{.s009}[Eclipse の上段メニューから、緑の「]{.s009}[⏻]{.s019}[」ボタンをクリックします。]{.s009}
+
 :::
 
 ![操作画面・図解](assets/p045-f15.svg){#p045-f15}
 
 ::: {#p045-b05 .step}
 
-3\. 実行構成の［JRE］がJDK 21であることを確認します。Bootダッシュボードを使う場合は、`local` の配下から対象プロジェクトを選んでも起動できます。
+[3\.&#32;]{.s009}[local の部分をダブルクリックし、展開します。]{.s009}
+
 :::
 
 ::: {#p045-b06 .step}
 
-4\. コンソールに起動完了のログが表示されるまで待ちます。再実行する場合は、先に動いている同じアプリケーションを停止してください。
+[4\.&#32;]{.s009}[\[spring\_exercise\_2\]プロジェクトを右クリックし、]{.s009}[\[(再)起動\]を選択]{.s012}[します。]{.s009}
+
 :::
 
 ![操作画面・図解](assets/p045-f16.svg){#p045-f16}
@@ -1764,7 +1739,7 @@ request.setAttribute("password", password);
 
 ::: {#page-61 .source-page}
 
-::: {#p061-b01 .paragraph}
+::: {#p061-b01 .heading}
 
 [動作確認]{.s012}
 

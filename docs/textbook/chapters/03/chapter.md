@@ -346,12 +346,6 @@ try (Connection con =
 
 :::
 
-::: {#migration-03-jpa-dependencies .paragraph}
-
-本章の依存定義は次のとおりです。各バージョンはSpring Boot 4.0.2の親POMに任せます。MySQL 8以降を起動し、付録の手順で本文用の `spring_sample` を準備してから、配布設定を確認してください。
-
-:::
-
 ::: {#migration-03-jpa-pom .code}
 
 ```xml
@@ -410,12 +404,6 @@ spring.jpa.show-sql=true
 ```
 :::
 
-::: {#migration-03-url-line .paragraph}
-
-`spring.datasource.url` の値は1行で記述します。紙面で折り返されていても、ファイル内では途中に改行を入れません。MySQLのポートを3306以外に変更した場合は、`localhost:ポート番号` の形で実際の接続先に合わせます。
-
-:::
-
 ![操作画面・図解](assets/p071-f08-revised.svg){#p071-f08}
 
 ::: {#p071-b04 .paragraph}
@@ -463,7 +451,9 @@ spring.jpa.show-sql=true
 
 ::: {#p071-b11 .paragraph}
 
-`application.properties` を保存したら、アプリケーションを停止して再起動し、接続結果を確認します。依存定義も変更した場合は、［Maven］→［プロジェクトの更新］を実行してください。設定ファイルを変更するたびに `install` を実行する必要はありません。
+[設定完了後は、必ず\[実行\]→\[maven install\]をしないと反映されませんので、ご注意くださ]{.s011}\
+[い。]{.s011}
+
 :::
 
 :::
@@ -3005,7 +2995,8 @@ Integer>{
 
 ::: {#p113-b05 .paragraph}
 
-まず、Mavenを使ってModelMapper 3.2.6を導入します。これはSpring Bootの管理対象外なので、バージョンを明記します。古い3.0.0ではなく、配布POMと同じ版を使ってください。
+[まず、Maven を使って、ModelMapper を導入します。]{.s009}
+
 :::
 
 ::: {#p113-b06 .paragraph}
@@ -3032,7 +3023,12 @@ public String insertProduct2(ProductForm productForm, Model model) {
 
 ::: {#p113-b08 .paragraph}
 
-ここではメソッド内の `new ModelMapper()` でインスタンスを生成します。`modelMapper.map(Form名, Entity名.class)` の戻り値をエンティティへ代入すると、同名フィールドの値をコピーできます。リクエストを受け取るForm引数と、変換に使うModelMapperは役割が異なります。
+[ModelMapper を利用するために、メソッドに上記のようにModelMapper のインスタンスを生成し]{.s009}\
+[た後、]{.s009}\
+[modelMapper.map(Form 名, Entity 名.class)]{.s011}[&#32;を実行した結果をエンティティの変数に代入する]{.s009}\
+[と、]{.s009}[自動でForm クラス内のフィールド名と一致するエンティティ内のフィールドにコピーが行わ]{.s011}\
+[れます。]{.s011}
+
 :::
 
 ::: {#p113-b09 .paragraph}

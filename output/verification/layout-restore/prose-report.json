@@ -1,0 +1,3875 @@
+{
+  "generated_utc": "2026-11-05T06:10:12.894453+00:00",
+  "stage": "after_restore",
+  "chapters": {
+    "01": {
+      "baseline_blocks": 84,
+      "current_blocks": 84,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 2,
+      "figure_reference_changes": [
+        {
+          "id": "p018-f02",
+          "before": "assets/p018-f02.svg",
+          "after": "assets/p018-f02-canvas-fit.svg"
+        }
+      ]
+    },
+    "02": {
+      "baseline_blocks": 207,
+      "current_blocks": 207,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 3,
+      "figure_reference_changes": [
+        {
+          "id": "p057-f31",
+          "before": "assets/p057-f31.svg",
+          "after": "assets/p057-f31-canvas-fit.svg"
+        }
+      ]
+    },
+    "03": {
+      "baseline_blocks": 483,
+      "current_blocks": 484,
+      "added_ids": [
+        "migration-03-jpa-pom"
+      ],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 15,
+      "figure_reference_changes": [
+        {
+          "id": "p070-f06",
+          "before": "assets/p070-f06.svg",
+          "after": "assets/p070-f06-versions-2025.svg"
+        },
+        {
+          "id": "p071-f08",
+          "before": "assets/p071-f08.svg",
+          "after": "assets/p071-f08-revised.svg"
+        },
+        {
+          "id": "p103-f38",
+          "before": "assets/p103-f38.svg",
+          "after": "assets/p103-f38-canvas-fit.svg"
+        },
+        {
+          "id": "p108-f42",
+          "before": "assets/p108-f42.svg",
+          "after": "assets/p108-f42-revised.svg"
+        },
+        {
+          "id": "p109-f44",
+          "before": "assets/p109-f44.svg",
+          "after": "assets/p109-f44-revised.svg"
+        }
+      ]
+    },
+    "04": {
+      "baseline_blocks": 181,
+      "current_blocks": 181,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 0,
+      "figure_reference_changes": []
+    },
+    "05": {
+      "baseline_blocks": 140,
+      "current_blocks": 140,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 2,
+      "figure_reference_changes": [
+        {
+          "id": "p182-f14",
+          "before": "assets/p182-f14.svg",
+          "after": "assets/p182-f14-revised.svg"
+        },
+        {
+          "id": "p186-f17",
+          "before": "assets/p186-f17.svg",
+          "after": "assets/p186-f17-revised.svg"
+        },
+        {
+          "id": "p186-f18",
+          "before": "assets/p186-f18.svg",
+          "after": "assets/p186-f18-revised.svg"
+        }
+      ]
+    },
+    "06": {
+      "baseline_blocks": 314,
+      "current_blocks": 314,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 4,
+      "figure_reference_changes": []
+    },
+    "07": {
+      "baseline_blocks": 265,
+      "current_blocks": 265,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 8,
+      "figure_reference_changes": [
+        {
+          "id": "p245-f05",
+          "before": "assets/p245-f05.svg",
+          "after": "assets/p245-f05-revised.svg"
+        }
+      ]
+    },
+    "appendix-a": {
+      "baseline_blocks": 41,
+      "current_blocks": 41,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 2,
+      "figure_reference_changes": [
+        {
+          "id": "p285-f07",
+          "before": "assets/p285-f07.svg",
+          "after": "assets/p285-f07-example-year-2027.svg"
+        },
+        {
+          "id": "p287-f09",
+          "before": "assets/p287-f09.svg",
+          "after": "assets/p287-f09-versions-2025.svg"
+        },
+        {
+          "id": "p287-f10",
+          "before": "assets/p287-f10.svg",
+          "after": "assets/p287-f10-versions-2025.svg"
+        },
+        {
+          "id": "p288-f11",
+          "before": "assets/p288-f11.svg",
+          "after": "assets/p288-f11-versions-2025.svg"
+        },
+        {
+          "id": "p288-f13",
+          "before": "assets/p288-f13.svg",
+          "after": "assets/p288-f13-versions-2025.svg"
+        }
+      ]
+    },
+    "appendix-b": {
+      "baseline_blocks": 55,
+      "current_blocks": 55,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 1,
+      "figure_reference_changes": []
+    },
+    "ex-back": {
+      "baseline_blocks": 4,
+      "current_blocks": 4,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 1,
+      "figure_reference_changes": []
+    },
+    "ex-front": {
+      "baseline_blocks": 52,
+      "current_blocks": 52,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 0,
+      "figure_reference_changes": []
+    },
+    "ex01": {
+      "baseline_blocks": 22,
+      "current_blocks": 22,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 0,
+      "figure_reference_changes": []
+    },
+    "ex02": {
+      "baseline_blocks": 65,
+      "current_blocks": 65,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 2,
+      "figure_reference_changes": []
+    },
+    "ex03": {
+      "baseline_blocks": 129,
+      "current_blocks": 129,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 4,
+      "figure_reference_changes": []
+    },
+    "ex04": {
+      "baseline_blocks": 102,
+      "current_blocks": 102,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 1,
+      "figure_reference_changes": []
+    },
+    "ex05": {
+      "baseline_blocks": 77,
+      "current_blocks": 77,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 0,
+      "figure_reference_changes": [
+        {
+          "id": "p041-f04",
+          "before": "assets/p041-f04.svg",
+          "after": "assets/p041-f04-revised.svg"
+        },
+        {
+          "id": "p041-f05",
+          "before": "assets/p041-f05.svg",
+          "after": "assets/p041-f05-revised.svg"
+        }
+      ]
+    },
+    "ex06": {
+      "baseline_blocks": 143,
+      "current_blocks": 143,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 7,
+      "figure_reference_changes": []
+    },
+    "ex07": {
+      "baseline_blocks": 137,
+      "current_blocks": 137,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 3,
+      "figure_reference_changes": []
+    },
+    "front": {
+      "baseline_blocks": 85,
+      "current_blocks": 85,
+      "added_ids": [],
+      "removed_ids": [],
+      "remaining_nonwhitespace_changes": 1,
+      "figure_reference_changes": []
+    }
+  },
+  "remaining_text_changes": [
+    {
+      "chapter": "01",
+      "id": "p020-b10",
+      "source_page": 20,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "本書では、Spring Framework 6.0(2022 年11 月リリース)を利用します。",
+      "final_text": "本書では、Spring Framework 7.0.3を利用します。",
+      "baseline_nonwhitespace": "本書では、SpringFramework6.0(2022年11月リリース)を利用します。",
+      "final_nonwhitespace": "本書では、SpringFramework7.0.3を利用します。",
+      "classification": "保全：Framework管理版の最小訂正・旧日付注記除去",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            20,
+            21
+          ],
+          "after_offset": [
+            20,
+            21
+          ],
+          "before": "6",
+          "after": "7"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            23,
+            37
+          ],
+          "after_offset": [
+            23,
+            25
+          ],
+          "before": "(2022年11月リリース)",
+          "after": ".3"
+        }
+      ]
+    },
+    {
+      "chapter": "01",
+      "id": "p022-b08",
+      "source_page": 22,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "以下の画像は、Maven により必要なライブラリが自動導入されている様子です。開発者はバ\nージョンの相性に悩まされることなく、スムーズに開発を始めることができます",
+      "final_text": "以下の画像は、Maven により必要なライブラリが自動導入されている様子です。開発者はバ\nージョンの相性に悩まされることなく、スムーズに開発を始めることができます。",
+      "baseline_nonwhitespace": "以下の画像は、Mavenにより必要なライブラリが自動導入されている様子です。開発者はバージョンの相性に悩まされることなく、スムーズに開発を始めることができます",
+      "final_nonwhitespace": "以下の画像は、Mavenにより必要なライブラリが自動導入されている様子です。開発者はバージョンの相性に悩まされることなく、スムーズに開発を始めることができます。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            79,
+            79
+          ],
+          "after_offset": [
+            79,
+            80
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p037-b02",
+      "source_page": 37,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": " 1:import java.io.IOException;\n 2:\n 3:import javax.servlet.RequestDispatcher;\n 4:import javax.servlet.ServletException;\n 5:import javax.servlet.annotation.WebServlet;\n 6:import javax.servlet.http.HttpServlet;\n 7:import javax.servlet.http.HttpServletRequest;\n 8:import javax.servlet.http.HttpServletResponse;\n 9:\n10:@WebServlet(urlPatterns = \"/index\") //URL マッピング\n11:public class Sample1 extends HttpServlet { //HttpServlet の継承必要\n12:\n13: //メソッド単位のURL マッピング不可\n14: protected void doGet(HttpServletRequest request,\n15: HttpServletResponse response)\n16: throws ServletException, IOException {\n17:\n18: //index.jsp へ遷移のための長いコード\n19: RequestDispatcher dispatcher =\n20:\n        request.getRequestDispatcher(\"/index.jsp\");\n21: dispatcher.forward(request, response);\n22: }\n23:}",
+      "final_text": " 1:import java.io.IOException;\n 2:\n 3:import jakarta.servlet.RequestDispatcher;\n 4:import jakarta.servlet.ServletException;\n 5:import jakarta.servlet.annotation.WebServlet;\n 6:import jakarta.servlet.http.HttpServlet;\n 7:import jakarta.servlet.http.HttpServletRequest;\n 8:import jakarta.servlet.http.HttpServletResponse;\n 9:\n10:@WebServlet(urlPatterns = \"/index\") //URL マッピング\n11:public class Sample1 extends HttpServlet { //HttpServlet の継承必要\n12:\n13: //メソッド単位のURL マッピング不可\n14: protected void doGet(HttpServletRequest request,\n15: HttpServletResponse response)\n16: throws ServletException, IOException {\n17:\n18: //index.jsp へ遷移のための長いコード\n19: RequestDispatcher dispatcher =\n20:\n        request.getRequestDispatcher(\"/index.jsp\");\n21: dispatcher.forward(request, response);\n22: }\n23:}",
+      "baseline_nonwhitespace": "1:importjava.io.IOException;2:3:importjavax.servlet.RequestDispatcher;4:importjavax.servlet.ServletException;5:importjavax.servlet.annotation.WebServlet;6:importjavax.servlet.http.HttpServlet;7:importjavax.servlet.http.HttpServletRequest;8:importjavax.servlet.http.HttpServletResponse;9:10:@WebServlet(urlPatterns=\"/index\")//URLマッピング11:publicclassSample1extendsHttpServlet{//HttpServletの継承必要12:13://メソッド単位のURLマッピング不可14:protectedvoiddoGet(HttpServletRequestrequest,15:HttpServletResponseresponse)16:throwsServletException,IOException{17:18://index.jspへ遷移のための長いコード19:RequestDispatcherdispatcher=20:request.getRequestDispatcher(\"/index.jsp\");21:dispatcher.forward(request,response);22:}23:}",
+      "final_nonwhitespace": "1:importjava.io.IOException;2:3:importjakarta.servlet.RequestDispatcher;4:importjakarta.servlet.ServletException;5:importjakarta.servlet.annotation.WebServlet;6:importjakarta.servlet.http.HttpServlet;7:importjakarta.servlet.http.HttpServletRequest;8:importjakarta.servlet.http.HttpServletResponse;9:10:@WebServlet(urlPatterns=\"/index\")//URLマッピング11:publicclassSample1extendsHttpServlet{//HttpServletの継承必要12:13://メソッド単位のURLマッピング不可14:protectedvoiddoGet(HttpServletRequestrequest,15:HttpServletResponseresponse)16:throwsServletException,IOException{17:18://index.jspへ遷移のための長いコード19:RequestDispatcherdispatcher=20:request.getRequestDispatcher(\"/index.jsp\");21:dispatcher.forward(request,response);22:}23:}",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            40,
+            41
+          ],
+          "after_offset": [
+            40,
+            41
+          ],
+          "before": "v",
+          "after": "k"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            42,
+            43
+          ],
+          "after_offset": [
+            42,
+            45
+          ],
+          "before": "x",
+          "after": "rta"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            80,
+            81
+          ],
+          "after_offset": [
+            82,
+            83
+          ],
+          "before": "v",
+          "after": "k"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            82,
+            83
+          ],
+          "after_offset": [
+            84,
+            87
+          ],
+          "before": "x",
+          "after": "rta"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            119,
+            120
+          ],
+          "after_offset": [
+            123,
+            124
+          ],
+          "before": "v",
+          "after": "k"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            121,
+            122
+          ],
+          "after_offset": [
+            125,
+            128
+          ],
+          "before": "x",
+          "after": "rta"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            163,
+            164
+          ],
+          "after_offset": [
+            169,
+            170
+          ],
+          "before": "v",
+          "after": "k"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            165,
+            166
+          ],
+          "after_offset": [
+            171,
+            174
+          ],
+          "before": "x",
+          "after": "rta"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            202,
+            203
+          ],
+          "after_offset": [
+            210,
+            211
+          ],
+          "before": "v",
+          "after": "k"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            204,
+            205
+          ],
+          "after_offset": [
+            212,
+            215
+          ],
+          "before": "x",
+          "after": "rta"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            248,
+            249
+          ],
+          "after_offset": [
+            258,
+            259
+          ],
+          "before": "v",
+          "after": "k"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            250,
+            251
+          ],
+          "after_offset": [
+            260,
+            263
+          ],
+          "before": "x",
+          "after": "rta"
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p040-b03",
+      "source_page": 40,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "作成された[controller]パッケージを右クリック→[新規]→[クラス]→[名前]に\n「IndexController」と入力し、[完了]をクリック",
+      "final_text": "作成された[controller]パッケージを右クリック→[新規]→[クラス]→[名前]に\n「IndexController」と入力し、[完了]をクリック。",
+      "baseline_nonwhitespace": "作成された[controller]パッケージを右クリック→[新規]→[クラス]→[名前]に「IndexController」と入力し、[完了]をクリック",
+      "final_nonwhitespace": "作成された[controller]パッケージを右クリック→[新規]→[クラス]→[名前]に「IndexController」と入力し、[完了]をクリック。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            76,
+            76
+          ],
+          "after_offset": [
+            76,
+            77
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p045-b08",
+      "source_page": 45,
+      "before_kind": "step",
+      "after_kind": "step",
+      "baseline_text": "5. 任意のブラウザ（Chrome、Edge など）のアドレスバーに以下のURL を入力します\nhttp://localhost:8080/index",
+      "final_text": "5. 任意のブラウザ（Chrome、Edge など）のアドレスバーに以下のURL を入力します。\nhttp://localhost:8080/index",
+      "baseline_nonwhitespace": "5.任意のブラウザ（Chrome、Edgeなど）のアドレスバーに以下のURLを入力しますhttp://localhost:8080/index",
+      "final_nonwhitespace": "5.任意のブラウザ（Chrome、Edgeなど）のアドレスバーに以下のURLを入力します。http://localhost:8080/index",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            44,
+            44
+          ],
+          "after_offset": [
+            44,
+            45
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "migration-03-jpa-pom",
+      "source_page": 70,
+      "before_kind": null,
+      "after_kind": "code",
+      "baseline_text": "",
+      "final_text": "<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-data-jpa</artifactId>\n</dependency>\n<dependency>\n    <groupId>com.mysql</groupId>\n    <artifactId>mysql-connector-j</artifactId>\n    <scope>runtime</scope>\n</dependency>\n<dependency>\n    <groupId>org.projectlombok</groupId>\n    <artifactId>lombok</artifactId>\n    <optional>true</optional>\n</dependency>",
+      "baseline_nonwhitespace": "",
+      "final_nonwhitespace": "<dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-data-jpa</artifactId></dependency><dependency><groupId>com.mysql</groupId><artifactId>mysql-connector-j</artifactId><scope>runtime</scope></dependency><dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><optional>true</optional></dependency>",
+      "classification": "保全：導入位置の依存コード（親担当が維持を明示）",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            0,
+            0
+          ],
+          "after_offset": [
+            0,
+            355
+          ],
+          "before": "",
+          "after": "<dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-data-jpa</artifactId></dependency><dependency><groupId>com.mysql</groupId><artifactId>mysql-connector-j</artifactId><scope>runtime</scope></dependency><dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><optional>true</optional></dependency>"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p082-b06",
+      "source_page": 82,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "public class ProductDAO {\n\n        public List<ProductBean> findByProductList(){\n                String jdbcUrl = \"jdbc:mysql://localhost/spring_sample?\n                  serverTimezone=Asia/Tokyo\";\n               String userId = \"spring_sample_user\";\n               String password = \"trainocate\";",
+      "final_text": "public class ProductDAO {\n\n        public List<ProductBean> findByProductList(){\n                String jdbcUrl = \"jdbc:mysql://localhost/spring_sample?\"\n                        + \"serverTimezone=Asia/Tokyo\";\n               String userId = \"spring_sample_user\";\n               String password = \"trainocate\";",
+      "baseline_nonwhitespace": "publicclassProductDAO{publicList<ProductBean>findByProductList(){StringjdbcUrl=\"jdbc:mysql://localhost/spring_sample?serverTimezone=Asia/Tokyo\";StringuserId=\"spring_sample_user\";Stringpassword=\"trainocate\";",
+      "final_nonwhitespace": "publicclassProductDAO{publicList<ProductBean>findByProductList(){StringjdbcUrl=\"jdbc:mysql://localhost/spring_sample?\"+\"serverTimezone=Asia/Tokyo\";StringuserId=\"spring_sample_user\";Stringpassword=\"trainocate\";",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            117,
+            117
+          ],
+          "after_offset": [
+            117,
+            120
+          ],
+          "before": "",
+          "after": "\"+\""
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p084-b04",
+      "source_page": 84,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "② DAO クラスに定義されているデータベース操作用のメソッドを実行し、データを取得する",
+      "final_text": "② DAO クラスに定義されているデータベース操作用のメソッドを実行し、データを取得する。",
+      "baseline_nonwhitespace": "②DAOクラスに定義されているデータベース操作用のメソッドを実行し、データを取得する",
+      "final_nonwhitespace": "②DAOクラスに定義されているデータベース操作用のメソッドを実行し、データを取得する。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            42,
+            42
+          ],
+          "after_offset": [
+            42,
+            43
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p084-b05",
+      "source_page": 84,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "③ 取得したデータを、スコープに格納",
+      "final_text": "③ 取得したデータを、スコープに格納。",
+      "baseline_nonwhitespace": "③取得したデータを、スコープに格納",
+      "final_nonwhitespace": "③取得したデータを、スコープに格納。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            17,
+            17
+          ],
+          "after_offset": [
+            17,
+            18
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p084-b06",
+      "source_page": 84,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "④ JSP へ遷移",
+      "final_text": "④ JSP へ遷移。",
+      "baseline_nonwhitespace": "④JSPへ遷移",
+      "final_nonwhitespace": "④JSPへ遷移。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            7,
+            7
+          ],
+          "after_offset": [
+            7,
+            8
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p094-b06",
+      "source_page": 94,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "baseline_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください",
+      "final_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            53,
+            53
+          ],
+          "after_offset": [
+            53,
+            54
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p098-b02",
+      "source_page": 98,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "baseline_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください",
+      "final_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            53,
+            53
+          ],
+          "after_offset": [
+            53,
+            54
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p102-b02",
+      "source_page": 102,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "baseline_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください",
+      "final_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            53,
+            53
+          ],
+          "after_offset": [
+            53,
+            54
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b04",
+      "source_page": 113,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "<dependency>\n               <groupId>org.modelmapper</groupId>\n               <artifactId>modelmapper</artifactId>\n               <version>3.0.0</version>\n</dependency>",
+      "final_text": "<dependency>\n    <groupId>org.modelmapper</groupId>\n    <artifactId>modelmapper</artifactId>\n    <version>3.2.6</version>\n</dependency>",
+      "baseline_nonwhitespace": "<dependency><groupId>org.modelmapper</groupId><artifactId>modelmapper</artifactId><version>3.0.0</version></dependency>",
+      "final_nonwhitespace": "<dependency><groupId>org.modelmapper</groupId><artifactId>modelmapper</artifactId><version>3.2.6</version></dependency>",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            93,
+            94
+          ],
+          "after_offset": [
+            93,
+            94
+          ],
+          "before": "0",
+          "after": "2"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            95,
+            96
+          ],
+          "after_offset": [
+            95,
+            96
+          ],
+          "before": "0",
+          "after": "6"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b07",
+      "source_page": 113,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "@PostMapping(\"/insert2\")\npublic String insertProduct2(ProductForm productForm, ModelMapper modelMapper,\nModel model) {\n\n         Product product = modelMapper.map(productForm, Product.class);\n        product = prodRepo.save(product);\n        model.addAttribute(\"product\", product);\n        return \"/product/result\";\n}",
+      "final_text": "@PostMapping(\"/insert2\")\npublic String insertProduct2(ProductForm productForm, Model model) {\n    ModelMapper modelMapper = new ModelMapper();\n    Product product = modelMapper.map(productForm, Product.class);\n    product = prodRepo.save(product);\n    model.addAttribute(\"product\", product);\n    return \"product/result\";\n}",
+      "baseline_nonwhitespace": "@PostMapping(\"/insert2\")publicStringinsertProduct2(ProductFormproductForm,ModelMappermodelMapper,Modelmodel){Productproduct=modelMapper.map(productForm,Product.class);product=prodRepo.save(product);model.addAttribute(\"product\",product);return\"/product/result\";}",
+      "final_nonwhitespace": "@PostMapping(\"/insert2\")publicStringinsertProduct2(ProductFormproductForm,Modelmodel){ModelMappermodelMapper=newModelMapper();Productproduct=modelMapper.map(productForm,Product.class);product=prodRepo.save(product);model.addAttribute(\"product\",product);return\"product/result\";}",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            79,
+            79
+          ],
+          "after_offset": [
+            79,
+            91
+          ],
+          "before": "",
+          "after": "model){Model"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            96,
+            97
+          ],
+          "after_offset": [
+            108,
+            112
+          ],
+          "before": ",",
+          "after": "=new"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            102,
+            105
+          ],
+          "after_offset": [
+            117,
+            121
+          ],
+          "before": "mod",
+          "after": "Mapp"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            106,
+            107
+          ],
+          "after_offset": [
+            122,
+            124
+          ],
+          "before": "l",
+          "after": "r("
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            108,
+            109
+          ],
+          "after_offset": [
+            125,
+            126
+          ],
+          "before": "{",
+          "after": ";"
+        },
+        {
+          "operation": "delete",
+          "before_offset": [
+            243,
+            244
+          ],
+          "after_offset": [
+            260,
+            260
+          ],
+          "before": "/",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p117-b03",
+      "source_page": 117,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "1://insertProduct メソッドの下に追加\n2:\n3:@GetMapping(\"update/{id}\")\n4:public String showUpdateInputView(@PathVariable int id, Model model) {\n5: Product product = prodRepo..findById(id).orElse(null);\n6: model.addAttribute(\"product\", product);\n7: return \"product/update_input\";\n8:}",
+      "final_text": "1://insertProduct メソッドの下に追加\n2:\n3:@GetMapping(\"update/{id}\")\n4:public String showUpdateInputView(@PathVariable int id, Model model) {\n5: Product product = prodRepo.findById(id).orElse(null);\n6: model.addAttribute(\"product\", product);\n7: return \"product/update_input\";\n8:}",
+      "baseline_nonwhitespace": "1://insertProductメソッドの下に追加2:3:@GetMapping(\"update/{id}\")4:publicStringshowUpdateInputView(@PathVariableintid,Modelmodel){5:Productproduct=prodRepo..findById(id).orElse(null);6:model.addAttribute(\"product\",product);7:return\"product/update_input\";8:}",
+      "final_nonwhitespace": "1://insertProductメソッドの下に追加2:3:@GetMapping(\"update/{id}\")4:publicStringshowUpdateInputView(@PathVariableintid,Modelmodel){5:Productproduct=prodRepo.findById(id).orElse(null);6:model.addAttribute(\"product\",product);7:return\"product/update_input\";8:}",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "delete",
+          "before_offset": [
+            147,
+            148
+          ],
+          "after_offset": [
+            147,
+            147
+          ],
+          "before": ".",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p120-b02",
+      "source_page": 120,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "baseline_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください",
+      "final_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            53,
+            53
+          ],
+          "after_offset": [
+            53,
+            54
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p124-b04",
+      "source_page": 124,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "baseline_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください",
+      "final_nonwhitespace": "http://localhost:8080/product/productの後ろに必ず/を付けてください。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            53,
+            53
+          ],
+          "after_offset": [
+            53,
+            54
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p128-b06",
+      "source_page": 128,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": " 1:import jp.co.trainocate.answer.entity.Product;\n 2:import jp.co.trainocate.answer.repository.ProductRepository;\n 3:import lombok.RequiredArgsConstructor;\n 4:\n 5:@Service\n 6:@RequiredArgsConstructor\n 7:public class ProductServiceImpl implements ProductService{\n 8:\n 9: //@Autowired は不要\n10: private final ProductRepository prodRepo;\n11:\n12: @Override\n13: public Product findProductById(int id) {\n14: return prodRepo..findById(id).orElse(null);\n15: }\n16:}",
+      "final_text": " 1:import jp.co.trainocate.answer.entity.Product;\n 2:import jp.co.trainocate.answer.repository.ProductRepository;\n 3:import lombok.RequiredArgsConstructor;\n 4:\n 5:@Service\n 6:@RequiredArgsConstructor\n 7:public class ProductServiceImpl implements ProductService{\n 8:\n 9: //@Autowired は不要\n10: private final ProductRepository prodRepo;\n11:\n12: @Override\n13: public Product findProductById(int id) {\n14: return prodRepo.findById(id).orElse(null);\n15: }\n16:}",
+      "baseline_nonwhitespace": "1:importjp.co.trainocate.answer.entity.Product;2:importjp.co.trainocate.answer.repository.ProductRepository;3:importlombok.RequiredArgsConstructor;4:5:@Service6:@RequiredArgsConstructor7:publicclassProductServiceImplimplementsProductService{8:9://@Autowiredは不要10:privatefinalProductRepositoryprodRepo;11:12:@Override13:publicProductfindProductById(intid){14:returnprodRepo..findById(id).orElse(null);15:}16:}",
+      "final_nonwhitespace": "1:importjp.co.trainocate.answer.entity.Product;2:importjp.co.trainocate.answer.repository.ProductRepository;3:importlombok.RequiredArgsConstructor;4:5:@Service6:@RequiredArgsConstructor7:publicclassProductServiceImplimplementsProductService{8:9://@Autowiredは不要10:privatefinalProductRepositoryprodRepo;11:12:@Override13:publicProductfindProductById(intid){14:returnprodRepo.findById(id).orElse(null);15:}16:}",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "delete",
+          "before_offset": [
+            373,
+            374
+          ],
+          "after_offset": [
+            373,
+            373
+          ],
+          "before": ".",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b08",
+      "source_page": 129,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "・13 行-14 行目： return prodRepo..findById(id).orElse(null);",
+      "final_text": "・13 行-14 行目： return prodRepo.findById(id).orElse(null);",
+      "baseline_nonwhitespace": "・13行-14行目：returnprodRepo..findById(id).orElse(null);",
+      "final_nonwhitespace": "・13行-14行目：returnprodRepo.findById(id).orElse(null);",
+      "classification": "保全：本文内のコード引用の二重ドット誤字修正",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "delete",
+          "before_offset": [
+            24,
+            25
+          ],
+          "after_offset": [
+            24,
+            24
+          ],
+          "before": ".",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p183-b03",
+      "source_page": 183,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=\"http://www.thymeleaf.org\"\n 3: xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">\n 4:\n 5:<head>\n 6:<meta charset=\"UTF-8\" />\n 7:<title>Traino 商品</title>\n 8:<link rel=\"stylesheet\" th:href=\"@{/css/layout.css}\" />\n 9:</head>\n10:<body>\n11:<!-- ヘッダー -->\n12:<header>\n13:<h1>Traino 家電商品</h1>\n14:</header>\n15:<div class=\"flex-container\">\n16:<!-- サイドバー -->\n17:<nav>\n18: <ul>\n19: <li><a th:href=\"@{/product/findAll}\">全商品一覧</a></li>\n20: <li><a th:href=\"@{/product/}\">商品検索</a></li>\n21: <li><a th:href=\"@{/product/insert}\">商品登録</a></li>\n22: <li><a th:href=\"@{/5}\">ログアウト</a></li>\n23: </ul>\n24:</nav>\n25:\n26:<!-- メインコンテンツ -->\n27:<main layout:fragment=\"main_content\">\n28: <!-- 各ページ固有のコンテンツがここに入ります -->\n29:</main>\n30:</div>\n31:<!-- フッター -->\n32:<footer>\n33:<p>Copyright © 2023 Trainocate Spring. All rights reserved.</p>\n34:</footer>\n35:</body>\n36:</html>",
+      "final_text": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=\"http://www.thymeleaf.org\"\n 3: xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">\n 4:\n 5:<head>\n 6:<meta charset=\"UTF-8\" />\n 7:<title>Traino 商品</title>\n 8:<link rel=\"stylesheet\" th:href=\"@{/css/layout.css}\" />\n 9:</head>\n10:<body>\n11:<!-- ヘッダー -->\n12:<header>\n13:<h1>Traino 家電商品</h1>\n14:</header>\n15:<div class=\"flex-container\">\n16:<!-- サイドバー -->\n17:<nav>\n18: <ul>\n19: <li><a th:href=\"@{/product/findAll}\">全商品一覧</a></li>\n20: <li><a th:href=\"@{/product/}\">商品検索</a></li>\n21: <li><a th:href=\"@{/product/insert}\">商品登録</a></li>\n22: <li><a th:href=\"@{/5}\">ログアウト</a></li>\n23: </ul>\n24:</nav>\n25:\n26:<!-- メインコンテンツ -->\n27:<main layout:fragment=\"main_content\">\n28: <!-- 各ページ固有のコンテンツがここに入ります -->\n29:</main>\n30:</div>\n31:<!-- フッター -->\n32:<footer>\n33:<p>Copyright © 2027 Trainocate Spring. All rights reserved.</p>\n34:</footer>\n35:</body>\n36:</html>",
+      "baseline_nonwhitespace": "1:<!DOCTYPEhtml>2:<htmlxmlns:th=\"http://www.thymeleaf.org\"3:xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">4:5:<head>6:<metacharset=\"UTF-8\"/>7:<title>Traino商品</title>8:<linkrel=\"stylesheet\"th:href=\"@{/css/layout.css}\"/>9:</head>10:<body>11:<!--ヘッダー-->12:<header>13:<h1>Traino家電商品</h1>14:</header>15:<divclass=\"flex-container\">16:<!--サイドバー-->17:<nav>18:<ul>19:<li><ath:href=\"@{/product/findAll}\">全商品一覧</a></li>20:<li><ath:href=\"@{/product/}\">商品検索</a></li>21:<li><ath:href=\"@{/product/insert}\">商品登録</a></li>22:<li><ath:href=\"@{/5}\">ログアウト</a></li>23:</ul>24:</nav>25:26:<!--メインコンテンツ-->27:<mainlayout:fragment=\"main_content\">28:<!--各ページ固有のコンテンツがここに入ります-->29:</main>30:</div>31:<!--フッター-->32:<footer>33:<p>Copyright©2023TrainocateSpring.Allrightsreserved.</p>34:</footer>35:</body>36:</html>",
+      "final_nonwhitespace": "1:<!DOCTYPEhtml>2:<htmlxmlns:th=\"http://www.thymeleaf.org\"3:xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">4:5:<head>6:<metacharset=\"UTF-8\"/>7:<title>Traino商品</title>8:<linkrel=\"stylesheet\"th:href=\"@{/css/layout.css}\"/>9:</head>10:<body>11:<!--ヘッダー-->12:<header>13:<h1>Traino家電商品</h1>14:</header>15:<divclass=\"flex-container\">16:<!--サイドバー-->17:<nav>18:<ul>19:<li><ath:href=\"@{/product/findAll}\">全商品一覧</a></li>20:<li><ath:href=\"@{/product/}\">商品検索</a></li>21:<li><ath:href=\"@{/product/insert}\">商品登録</a></li>22:<li><ath:href=\"@{/5}\">ログアウト</a></li>23:</ul>24:</nav>25:26:<!--メインコンテンツ-->27:<mainlayout:fragment=\"main_content\">28:<!--各ページ固有のコンテンツがここに入ります-->29:</main>30:</div>31:<!--フッター-->32:<footer>33:<p>Copyright©2027TrainocateSpring.Allrightsreserved.</p>34:</footer>35:</body>36:</html>",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            724,
+            725
+          ],
+          "after_offset": [
+            724,
+            725
+          ],
+          "before": "3",
+          "after": "7"
+        }
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p184-b10",
+      "source_page": 184,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=”http://www.thymeleaf.org”\n 3: xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”\n 4:       layout:decorate=”~{/layout}”>\n 5:\n 6:       <!—省略-->\n 7:\n 8:<body>\n 9:<main layout:fragment=”main_content”>\n10:\n11:<!—既存のコンテンツのソースコード-->\n12:\n13:</main>\n14:</body>",
+      "final_text": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=\"http://www.thymeleaf.org\"\n 3: xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\"\n 4:       layout:decorate=\"~{/layout}\">\n 5:\n 6:       <!--省略-->\n 7:\n 8:<body>\n 9:<main layout:fragment=\"main_content\">\n10:\n11:<!--既存のコンテンツのソースコード-->\n12:\n13:</main>\n14:</body>",
+      "baseline_nonwhitespace": "1:<!DOCTYPEhtml>2:<htmlxmlns:th=”http://www.thymeleaf.org”3:xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”4:layout:decorate=”~{/layout}”>5:6:<!—省略-->7:8:<body>9:<mainlayout:fragment=”main_content”>10:11:<!—既存のコンテンツのソースコード-->12:13:</main>14:</body>",
+      "final_nonwhitespace": "1:<!DOCTYPEhtml>2:<htmlxmlns:th=\"http://www.thymeleaf.org\"3:xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\"4:layout:decorate=\"~{/layout}\">5:6:<!--省略-->7:8:<body>9:<mainlayout:fragment=\"main_content\">10:11:<!--既存のコンテンツのソースコード-->12:13:</main>14:</body>",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            32,
+            33
+          ],
+          "after_offset": [
+            32,
+            33
+          ],
+          "before": "”",
+          "after": "\""
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            57,
+            58
+          ],
+          "after_offset": [
+            57,
+            58
+          ],
+          "before": "”",
+          "after": "\""
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            73,
+            74
+          ],
+          "after_offset": [
+            73,
+            74
+          ],
+          "before": "”",
+          "after": "\""
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            115,
+            116
+          ],
+          "after_offset": [
+            115,
+            116
+          ],
+          "before": "”",
+          "after": "\""
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            134,
+            135
+          ],
+          "after_offset": [
+            134,
+            135
+          ],
+          "before": "”",
+          "after": "\""
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            145,
+            146
+          ],
+          "after_offset": [
+            145,
+            146
+          ],
+          "before": "”",
+          "after": "\""
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            153,
+            154
+          ],
+          "after_offset": [
+            153,
+            155
+          ],
+          "before": "—",
+          "after": "--"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            192,
+            193
+          ],
+          "after_offset": [
+            193,
+            194
+          ],
+          "before": "”",
+          "after": "\""
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            205,
+            206
+          ],
+          "after_offset": [
+            206,
+            207
+          ],
+          "before": "”",
+          "after": "\""
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            215,
+            216
+          ],
+          "after_offset": [
+            216,
+            218
+          ],
+          "before": "—",
+          "after": "--"
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p220-b10",
+      "source_page": 220,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "@ManyToOne のcategory フィールドと@Column のcategoryId が同じカラムを参照して\nいると、登録や更新時にどちらを優先するかHibernate が判断できず、以下のようなエ\nラーが発生します",
+      "final_text": "@ManyToOne のcategory フィールドと@Column のcategoryId が同じカラムを参照して\nいると、登録や更新時にどちらを優先するかHibernate が判断できず、以下のようなエ\nラーが発生します。",
+      "baseline_nonwhitespace": "@ManyToOneのcategoryフィールドと@ColumnのcategoryIdが同じカラムを参照していると、登録や更新時にどちらを優先するかHibernateが判断できず、以下のようなエラーが発生します",
+      "final_nonwhitespace": "@ManyToOneのcategoryフィールドと@ColumnのcategoryIdが同じカラムを参照していると、登録や更新時にどちらを優先するかHibernateが判断できず、以下のようなエラーが発生します。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            105,
+            105
+          ],
+          "after_offset": [
+            105,
+            106
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p230-b03",
+      "source_page": 230,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "String sql = \"SELECT * FROM product WHERE name LIKE ? AND price = ?\";\nPreparedStatement pstmt = conn.prepareStatement(sql));\npstmt.setString(1, \"%\" + name + \"%\"); // 名前の部分一致\npstmt.setInt(2, price); // 価格の条件",
+      "final_text": "String sql = \"SELECT * FROM product WHERE name LIKE ? AND price = ?\";\nPreparedStatement pstmt = conn.prepareStatement(sql);\npstmt.setString(1, \"%\" + name + \"%\"); // 名前の部分一致\npstmt.setInt(2, price); // 価格の条件",
+      "baseline_nonwhitespace": "Stringsql=\"SELECT*FROMproductWHEREnameLIKE?ANDprice=?\";PreparedStatementpstmt=conn.prepareStatement(sql));pstmt.setString(1,\"%\"+name+\"%\");//名前の部分一致pstmt.setInt(2,price);//価格の条件",
+      "final_nonwhitespace": "Stringsql=\"SELECT*FROMproductWHEREnameLIKE?ANDprice=?\";PreparedStatementpstmt=conn.prepareStatement(sql);pstmt.setString(1,\"%\"+name+\"%\");//名前の部分一致pstmt.setInt(2,price);//価格の条件",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "delete",
+          "before_offset": [
+            104,
+            105
+          ],
+          "after_offset": [
+            104,
+            104
+          ],
+          "before": ")",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p235-b03",
+      "source_page": 235,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "    /* 1. カテゴリごとの商品の合計価格を取得 */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name,\nSUM(p.price)) FROM Product p GROUP BY p.category.name\")\n    List<CategorySalesDTO> findTotalSalesByCategory();\n\n    /*  2. カテゴリごとの商品数を取得 */\n    @Query(\"SELECT new\njp.co.example.dto.CategoryProductCountDTO(p.category.name, COUNT(p)) \" +\n           \"FROM Product p GROUP BY p.category.name\")\n    List<CategoryProductCountDTO> findProductCountByCategory();",
+      "final_text": "    /* 1. カテゴリごとの商品の合計価格を取得 */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name, \"\n            + \"SUM(p.price)) FROM Product p GROUP BY p.category.name\")\n    List<CategorySalesDTO> findTotalSalesByCategory();\n\n    /*  2. カテゴリごとの商品数を取得 */\n    @Query(\"SELECT new \"\n            + \"jp.co.example.dto.CategoryProductCountDTO(p.category.name, COUNT(p)) \" +\n           \"FROM Product p GROUP BY p.category.name\")\n    List<CategoryProductCountDTO> findProductCountByCategory();",
+      "baseline_nonwhitespace": "/*1.カテゴリごとの商品の合計価格を取得*/@Query(\"SELECTnewjp.co.example.dto.CategorySalesDTO(p.category.name,SUM(p.price))FROMProductpGROUPBYp.category.name\")List<CategorySalesDTO>findTotalSalesByCategory();/*2.カテゴリごとの商品数を取得*/@Query(\"SELECTnewjp.co.example.dto.CategoryProductCountDTO(p.category.name,COUNT(p))\"+\"FROMProductpGROUPBYp.category.name\")List<CategoryProductCountDTO>findProductCountByCategory();",
+      "final_nonwhitespace": "/*1.カテゴリごとの商品の合計価格を取得*/@Query(\"SELECTnewjp.co.example.dto.CategorySalesDTO(p.category.name,\"+\"SUM(p.price))FROMProductpGROUPBYp.category.name\")List<CategorySalesDTO>findTotalSalesByCategory();/*2.カテゴリごとの商品数を取得*/@Query(\"SELECTnew\"+\"jp.co.example.dto.CategoryProductCountDTO(p.category.name,COUNT(p))\"+\"FROMProductpGROUPBYp.category.name\")List<CategoryProductCountDTO>findProductCountByCategory();",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            91,
+            91
+          ],
+          "after_offset": [
+            91,
+            94
+          ],
+          "before": "",
+          "after": "\"+\""
+        },
+        {
+          "operation": "insert",
+          "before_offset": [
+            225,
+            225
+          ],
+          "after_offset": [
+            228,
+            231
+          ],
+          "before": "",
+          "after": "\"+\""
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p235-b04",
+      "source_page": 235,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "    /*  3. 指定した価格以上の商品があるカテゴリを取得（HAVING を使用） */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name,\nSUM(p.price)) \" +\n     \"FROM Product p GROUP BY p.category.name HAVING SUM(p.price) >= :minSales\")\n    List<CategorySalesDTO> findCategoriesByMinSales(@Param(\"minSales\") Long\nminSales);\n}",
+      "final_text": "    /*  3. 指定した価格以上の商品があるカテゴリを取得（HAVING を使用） */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name, \"\n            + \"SUM(p.price)) \" +\n     \"FROM Product p GROUP BY p.category.name HAVING SUM(p.price) >= :minSales\")\n    List<CategorySalesDTO> findCategoriesByMinSales(@Param(\"minSales\") Long\nminSales);\n}",
+      "baseline_nonwhitespace": "/*3.指定した価格以上の商品があるカテゴリを取得（HAVINGを使用）*/@Query(\"SELECTnewjp.co.example.dto.CategorySalesDTO(p.category.name,SUM(p.price))\"+\"FROMProductpGROUPBYp.category.nameHAVINGSUM(p.price)>=:minSales\")List<CategorySalesDTO>findCategoriesByMinSales(@Param(\"minSales\")LongminSales);}",
+      "final_nonwhitespace": "/*3.指定した価格以上の商品があるカテゴリを取得（HAVINGを使用）*/@Query(\"SELECTnewjp.co.example.dto.CategorySalesDTO(p.category.name,\"+\"SUM(p.price))\"+\"FROMProductpGROUPBYp.category.nameHAVINGSUM(p.price)>=:minSales\")List<CategorySalesDTO>findCategoriesByMinSales(@Param(\"minSales\")LongminSales);}",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            106,
+            106
+          ],
+          "after_offset": [
+            106,
+            109
+          ],
+          "before": "",
+          "after": "\"+\""
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p241-b08",
+      "source_page": 241,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "本書では、(2024 年 7 月基準)最新バージョンである 5.3 バージョンを利用します。",
+      "final_text": "本書では、(2026 年 11 月 5 日基準)最新バージョンである 5.3.8 バージョンを利用します。",
+      "baseline_nonwhitespace": "本書では、(2024年7月基準)最新バージョンである5.3バージョンを利用します。",
+      "final_nonwhitespace": "本書では、(2026年11月5日基準)最新バージョンである5.3.8バージョンを利用します。",
+      "classification": "保全：Bootstrapの版名・日付だけ（原文の文型保持）",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            9,
+            10
+          ],
+          "after_offset": [
+            9,
+            10
+          ],
+          "before": "4",
+          "after": "6"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            11,
+            12
+          ],
+          "after_offset": [
+            11,
+            13
+          ],
+          "before": "7",
+          "after": "11"
+        },
+        {
+          "operation": "insert",
+          "before_offset": [
+            13,
+            13
+          ],
+          "after_offset": [
+            14,
+            16
+          ],
+          "before": "",
+          "after": "5日"
+        },
+        {
+          "operation": "insert",
+          "before_offset": [
+            29,
+            29
+          ],
+          "after_offset": [
+            32,
+            34
+          ],
+          "before": "",
+          "after": ".8"
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b07",
+      "source_page": 246,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\">",
+      "final_text": "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\"\nintegrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"\ncrossorigin=\"anonymous\">",
+      "baseline_nonwhitespace": "<linkhref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\"rel=\"stylesheet\">",
+      "final_nonwhitespace": "<linkhref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\"rel=\"stylesheet\"integrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"crossorigin=\"anonymous\">",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            54,
+            55
+          ],
+          "after_offset": [
+            54,
+            55
+          ],
+          "before": "0",
+          "after": "8"
+        },
+        {
+          "operation": "insert",
+          "before_offset": [
+            99,
+            99
+          ],
+          "after_offset": [
+            99,
+            205
+          ],
+          "before": "",
+          "after": "integrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"crossorigin=\"anonymous\""
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b10",
+      "source_page": 246,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "<script\nsrc=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\">\n</script>",
+      "final_text": "<script\nsrc=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"\nintegrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"\ncrossorigin=\"anonymous\">\n</script>",
+      "baseline_nonwhitespace": "<scriptsrc=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>",
+      "final_nonwhitespace": "<scriptsrc=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"integrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"crossorigin=\"anonymous\"></script>",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            55,
+            56
+          ],
+          "after_offset": [
+            55,
+            56
+          ],
+          "before": "0",
+          "after": "8"
+        },
+        {
+          "operation": "insert",
+          "before_offset": [
+            89,
+            89
+          ],
+          "after_offset": [
+            89,
+            195
+          ],
+          "before": "",
+          "after": "integrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"crossorigin=\"anonymous\""
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p248-b02",
+      "source_page": 248,
+      "before_kind": "code",
+      "after_kind": "code",
+      "baseline_text": "<!DOCTYPE html>\n<html xmlns:th=\"http://www.thymeleaf.org\">\n\n<head>\n<meta charset=\"UTF-8\" />\n<!-- ➀以下のコードを記入することで、モバイル端末での表示を最適化できます。-->\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<title>Bootstrap Example</title>\n\n<!-- ➁ Bootstrap CSS をローカルから読み込む -->\n<link rel=\"stylesheet\" th:href=\"@{/css/bootstrap.min.css}\" />\n\n<!-- ➁ Bootstrap CSS をCDN から読み込む -->\n<link href=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\">\n</head>\n\n<body>\n<!-- コンテンツ -->\n<div class=\"container\">\n    <h1>Hello, Bootstrap!</h1>\n    <button class=\"btn btn-primary\">ボタン</button>\n</div>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をローカルから読み込む-->\n<script th:src=\"@{/js/bootstrap.bundle.min.js}\"></script>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をCDN から読み込む -->\n<script src=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\">\n</script>\n</body>\n</html>",
+      "final_text": "<!DOCTYPE html>\n<html xmlns:th=\"http://www.thymeleaf.org\">\n\n<head>\n<meta charset=\"UTF-8\" />\n<!-- ➀以下のコードを記入することで、モバイル端末での表示を最適化できます。-->\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<title>Bootstrap Example</title>\n\n<!-- ➁ Bootstrap CSS をローカルから読み込む -->\n<link rel=\"stylesheet\" th:href=\"@{/css/bootstrap.min.css}\" />\n\n<!-- ➁ Bootstrap CSS をCDN から読み込む -->\n<link href=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\"\nintegrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"\ncrossorigin=\"anonymous\">\n</head>\n\n<body>\n<!-- コンテンツ -->\n<div class=\"container\">\n    <h1>Hello, Bootstrap!</h1>\n    <button class=\"btn btn-primary\">ボタン</button>\n</div>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をローカルから読み込む-->\n<script th:src=\"@{/js/bootstrap.bundle.min.js}\"></script>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をCDN から読み込む -->\n<script src=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"\nintegrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"\ncrossorigin=\"anonymous\">\n</script>\n</body>\n</html>",
+      "baseline_nonwhitespace": "<!DOCTYPEhtml><htmlxmlns:th=\"http://www.thymeleaf.org\"><head><metacharset=\"UTF-8\"/><!--➀以下のコードを記入することで、モバイル端末での表示を最適化できます。--><metaname=\"viewport\"content=\"width=device-width,initial-scale=1.0\"/><title>BootstrapExample</title><!--➁BootstrapCSSをローカルから読み込む--><linkrel=\"stylesheet\"th:href=\"@{/css/bootstrap.min.css}\"/><!--➁BootstrapCSSをCDNから読み込む--><linkhref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\"rel=\"stylesheet\"></head><body><!--コンテンツ--><divclass=\"container\"><h1>Hello,Bootstrap!</h1><buttonclass=\"btnbtn-primary\">ボタン</button></div><!--➂<body>の末尾に、BootstrapのJSをローカルから読み込む--><scriptth:src=\"@{/js/bootstrap.bundle.min.js}\"></script><!--➂<body>の末尾に、BootstrapのJSをCDNから読み込む--><scriptsrc=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script></body></html>",
+      "final_nonwhitespace": "<!DOCTYPEhtml><htmlxmlns:th=\"http://www.thymeleaf.org\"><head><metacharset=\"UTF-8\"/><!--➀以下のコードを記入することで、モバイル端末での表示を最適化できます。--><metaname=\"viewport\"content=\"width=device-width,initial-scale=1.0\"/><title>BootstrapExample</title><!--➁BootstrapCSSをローカルから読み込む--><linkrel=\"stylesheet\"th:href=\"@{/css/bootstrap.min.css}\"/><!--➁BootstrapCSSをCDNから読み込む--><linkhref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\"rel=\"stylesheet\"integrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"crossorigin=\"anonymous\"></head><body><!--コンテンツ--><divclass=\"container\"><h1>Hello,Bootstrap!</h1><buttonclass=\"btnbtn-primary\">ボタン</button></div><!--➂<body>の末尾に、BootstrapのJSをローカルから読み込む--><scriptth:src=\"@{/js/bootstrap.bundle.min.js}\"></script><!--➂<body>の末尾に、BootstrapのJSをCDNから読み込む--><scriptsrc=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"integrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"crossorigin=\"anonymous\"></script></body></html>",
+      "classification": "保全：既存コードのAPI・構文・依存版更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            397,
+            398
+          ],
+          "after_offset": [
+            397,
+            398
+          ],
+          "before": "0",
+          "after": "8"
+        },
+        {
+          "operation": "insert",
+          "before_offset": [
+            441,
+            441
+          ],
+          "after_offset": [
+            441,
+            547
+          ],
+          "before": "",
+          "after": "\"integrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"crossorigin=\"anonymous"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            757,
+            758
+          ],
+          "after_offset": [
+            863,
+            864
+          ],
+          "before": "0",
+          "after": "8"
+        },
+        {
+          "operation": "insert",
+          "before_offset": [
+            791,
+            791
+          ],
+          "after_offset": [
+            897,
+            1003
+          ],
+          "before": "",
+          "after": "integrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"crossorigin=\"anonymous\""
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p256-b04",
+      "source_page": 256,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "※p や mb のクラスは、次のページで説明します",
+      "final_text": "※p や mb のクラスは、次のページで説明します。",
+      "baseline_nonwhitespace": "※pやmbのクラスは、次のページで説明します",
+      "final_nonwhitespace": "※pやmbのクラスは、次のページで説明します。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            22,
+            22
+          ],
+          "after_offset": [
+            22,
+            23
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p258-b02",
+      "source_page": 258,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "➀ 「F12」で「開発者ツール」を開きます\n➁ 以下の赤枠のボタンをクリックします。（又は Ctrl+Shift+C）\n➂ 「要素」タブの調べたい HTML コードにマウスを当てます。\n※ マウスを<div class = “my-4 bg-info”>上下に中程度のマージン(.my-4)</div>に当てたの\nで、余白の範囲が表示されました。",
+      "final_text": "➀ 「F12」で「開発者ツール」を開きます。\n➁ 以下の赤枠のボタンをクリックします。（又は Ctrl+Shift+C）\n➂ 「要素」タブの調べたい HTML コードにマウスを当てます。\n※ マウスを<div class = “my-4 bg-info”>上下に中程度のマージン(.my-4)</div>に当てたの\nで、余白の範囲が表示されました。",
+      "baseline_nonwhitespace": "➀「F12」で「開発者ツール」を開きます➁以下の赤枠のボタンをクリックします。（又はCtrl+Shift+C）➂「要素」タブの調べたいHTMLコードにマウスを当てます。※マウスを<divclass=“my-4bg-info”>上下に中程度のマージン(.my-4)</div>に当てたので、余白の範囲が表示されました。",
+      "final_nonwhitespace": "➀「F12」で「開発者ツール」を開きます。➁以下の赤枠のボタンをクリックします。（又はCtrl+Shift+C）➂「要素」タブの調べたいHTMLコードにマウスを当てます。※マウスを<divclass=“my-4bg-info”>上下に中程度のマージン(.my-4)</div>に当てたので、余白の範囲が表示されました。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            20,
+            20
+          ],
+          "after_offset": [
+            20,
+            21
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p268-b04",
+      "source_page": 268,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/grid/ を参照",
+      "final_text": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/grid/ を参照。",
+      "baseline_nonwhitespace": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/grid/を参照",
+      "final_nonwhitespace": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/grid/を参照。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            58,
+            58
+          ],
+          "after_offset": [
+            58,
+            59
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p271-b03",
+      "source_page": 271,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。\n※より詳しい構文は、 https://getbootstrap.jp/docs/5.3/layout/columns/ を参照",
+      "final_text": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。\n\n※より詳しい構文は、 https://getbootstrap.jp/docs/5.3/layout/columns/ を参照。",
+      "baseline_nonwhitespace": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/columns/を参照",
+      "final_nonwhitespace": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/columns/を参照。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            103,
+            103
+          ],
+          "after_offset": [
+            103,
+            104
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p285-b03",
+      "source_page": 285,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": " 例）[spring_exercise_2]プロジェクトを実行したいなら、まず親プロジェクトである、\n[spring_exercise]プロジェクトを右クリック→[Maven install]をクリック",
+      "final_text": " 例）[spring_exercise_2]プロジェクトを実行したいなら、まず親プロジェクトである、\n[spring_exercise]プロジェクトを右クリック→[Maven install]をクリック。",
+      "baseline_nonwhitespace": "例）[spring_exercise_2]プロジェクトを実行したいなら、まず親プロジェクトである、[spring_exercise]プロジェクトを右クリック→[Maveninstall]をクリック",
+      "final_nonwhitespace": "例）[spring_exercise_2]プロジェクトを実行したいなら、まず親プロジェクトである、[spring_exercise]プロジェクトを右クリック→[Maveninstall]をクリック。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            98,
+            98
+          ],
+          "after_offset": [
+            98,
+            99
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p287-b03",
+      "source_page": 287,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "※本書では、Eclipse 2022(pleiades)を使用します。",
+      "final_text": "※本書では、Pleiades 2025を使用します。",
+      "baseline_nonwhitespace": "※本書では、Eclipse2022(pleiades)を使用します。",
+      "final_nonwhitespace": "※本書では、Pleiades2025を使用します。",
+      "classification": "保全：Pleiades版名だけの更新",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            6,
+            19
+          ],
+          "after_offset": [
+            6,
+            7
+          ],
+          "before": "Eclipse2022(p",
+          "after": "P"
+        },
+        {
+          "operation": "replace",
+          "before_offset": [
+            26,
+            27
+          ],
+          "after_offset": [
+            14,
+            18
+          ],
+          "before": ")",
+          "after": "2025"
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p296-b04",
+      "source_page": 296,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-T1-04\n© 2024 Trainocate Japan, Ltd.",
+      "final_text": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-T1-04\n© 2027 Trainocate Japan, Ltd.",
+      "baseline_nonwhitespace": "落丁本、乱丁本はお取り替えいたします。JAC0177G-T1-04©2024TrainocateJapan,Ltd.",
+      "final_nonwhitespace": "落丁本、乱丁本はお取り替えいたします。JAC0177G-T1-04©2027TrainocateJapan,Ltd.",
+      "classification": "保全：指定された年表示のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            37,
+            38
+          ],
+          "after_offset": [
+            37,
+            38
+          ],
+          "before": "4",
+          "after": "7"
+        }
+      ]
+    },
+    {
+      "chapter": "ex-back",
+      "id": "p077-b04",
+      "source_page": 77,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-L1-04\n© 2024 Trainocate Japan, Ltd.",
+      "final_text": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-L1-04\n© 2027 Trainocate Japan, Ltd.",
+      "baseline_nonwhitespace": "落丁本、乱丁本はお取り替えいたします。JAC0177G-L1-04©2024TrainocateJapan,Ltd.",
+      "final_nonwhitespace": "落丁本、乱丁本はお取り替えいたします。JAC0177G-L1-04©2027TrainocateJapan,Ltd.",
+      "classification": "保全：指定された年表示のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "replace",
+          "before_offset": [
+            37,
+            38
+          ],
+          "after_offset": [
+            37,
+            38
+          ],
+          "before": "4",
+          "after": "7"
+        }
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-b15",
+      "source_page": 15,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認",
+      "final_text": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認。",
+      "baseline_nonwhitespace": "⚫身長と体重を入力し、正しくBMI値が出力されるかを確認",
+      "final_nonwhitespace": "⚫身長と体重を入力し、正しくBMI値が出力されるかを確認。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            28,
+            28
+          ],
+          "after_offset": [
+            28,
+            29
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p016-b13",
+      "source_page": 16,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認",
+      "final_text": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認。",
+      "baseline_nonwhitespace": "⚫身長と体重を入力し、正しくBMI値が出力されるかを確認",
+      "final_nonwhitespace": "⚫身長と体重を入力し、正しくBMI値が出力されるかを確認。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            28,
+            28
+          ],
+          "after_offset": [
+            28,
+            29
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p019-b02",
+      "source_page": 19,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "※データベースは、既に構築済みです。\nsrc/resources/application.properties を確認してください。",
+      "final_text": "※データベースは、既に構築済みです。\nsrc/main/resources/application.properties を確認してください。",
+      "baseline_nonwhitespace": "※データベースは、既に構築済みです。src/resources/application.propertiesを確認してください。",
+      "final_nonwhitespace": "※データベースは、既に構築済みです。src/main/resources/application.propertiesを確認してください。",
+      "classification": "保全：原文説明を復元・実ファイルのパス訂正のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            21,
+            21
+          ],
+          "after_offset": [
+            21,
+            26
+          ],
+          "before": "",
+          "after": "/main"
+        }
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b12",
+      "source_page": 27,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "⚫ [社員データ登録]リンクをクリック",
+      "final_text": "⚫ [社員データ登録]リンクをクリック。",
+      "baseline_nonwhitespace": "⚫[社員データ登録]リンクをクリック",
+      "final_nonwhitespace": "⚫[社員データ登録]リンクをクリック。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            18,
+            18
+          ],
+          "after_offset": [
+            18,
+            19
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b13",
+      "source_page": 27,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "⚫ 登録する社員データを入力し、[登録]ボタンをクリック",
+      "final_text": "⚫ 登録する社員データを入力し、[登録]ボタンをクリック。",
+      "baseline_nonwhitespace": "⚫登録する社員データを入力し、[登録]ボタンをクリック",
+      "final_nonwhitespace": "⚫登録する社員データを入力し、[登録]ボタンをクリック。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            27,
+            27
+          ],
+          "after_offset": [
+            27,
+            28
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b14",
+      "source_page": 27,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "⚫ 入力したデータ通りに、新規データが登録されているかを確認",
+      "final_text": "⚫ 入力したデータ通りに、新規データが登録されているかを確認。",
+      "baseline_nonwhitespace": "⚫入力したデータ通りに、新規データが登録されているかを確認",
+      "final_nonwhitespace": "⚫入力したデータ通りに、新規データが登録されているかを確認。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            29,
+            29
+          ],
+          "after_offset": [
+            29,
+            30
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-b03",
+      "source_page": 31,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "⚫ 入力値に誤りがない場合は検索画面へ遷移",
+      "final_text": "⚫ 入力値に誤りがない場合は検索画面へ遷移。",
+      "baseline_nonwhitespace": "⚫入力値に誤りがない場合は検索画面へ遷移",
+      "final_nonwhitespace": "⚫入力値に誤りがない場合は検索画面へ遷移。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            20,
+            20
+          ],
+          "after_offset": [
+            20,
+            21
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p049-b09",
+      "source_page": 49,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "※データベースは、既に構築済みです。\nsrc/resources/application.properties を確認してください。",
+      "final_text": "※データベースは、既に構築済みです。\nsrc/main/resources/application.properties を確認してください。",
+      "baseline_nonwhitespace": "※データベースは、既に構築済みです。src/resources/application.propertiesを確認してください。",
+      "final_nonwhitespace": "※データベースは、既に構築済みです。src/main/resources/application.propertiesを確認してください。",
+      "classification": "保全：原文説明を復元・実ファイルのパス訂正のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            21,
+            21
+          ],
+          "after_offset": [
+            21,
+            26
+          ],
+          "before": "",
+          "after": "/main"
+        }
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b05",
+      "source_page": 51,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "o クラスに@Entity、@Table アノテーションを付けること",
+      "final_text": "o クラスに@Entity、@Table アノテーションを付けること。",
+      "baseline_nonwhitespace": "oクラスに@Entity、@Tableアノテーションを付けること",
+      "final_nonwhitespace": "oクラスに@Entity、@Tableアノテーションを付けること。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            32,
+            32
+          ],
+          "after_offset": [
+            32,
+            33
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b06",
+      "source_page": 51,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "o id フィールドを主キー（@Id）に設定し、自動採番（@GeneratedValue）にするこ\nと",
+      "final_text": "o id フィールドを主キー（@Id）に設定し、自動採番（@GeneratedValue）にするこ\nと。",
+      "baseline_nonwhitespace": "oidフィールドを主キー（@Id）に設定し、自動採番（@GeneratedValue）にすること",
+      "final_nonwhitespace": "oidフィールドを主キー（@Id）に設定し、自動採番（@GeneratedValue）にすること。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            48,
+            48
+          ],
+          "after_offset": [
+            48,
+            49
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b11",
+      "source_page": 51,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "• jp.co.trainocate.enshu.entity パッケージに、Employee.java はすでに作成済みです。\n• 以下の内容を追記してください。\no Location 型のlocation フィールドを追加すること\no @ManyToOne と @JoinColumn を使い、location_id カラムと外部参照の関連\n付けを行うこと\n▪ @JoinColumn(name = \"location_id\")と指定してください。",
+      "final_text": "• jp.co.trainocate.enshu.entity パッケージに、Employee.java はすでに作成済みです。\n• 以下の内容を追記してください。\no Location 型のlocation フィールドを追加すること。\no @ManyToOne と @JoinColumn を使い、location_id カラムと外部参照の関連\n付けを行うこと。\n▪ @JoinColumn(name = \"location_id\")と指定してください。",
+      "baseline_nonwhitespace": "•jp.co.trainocate.enshu.entityパッケージに、Employee.javaはすでに作成済みです。•以下の内容を追記してください。oLocation型のlocationフィールドを追加することo@ManyToOneと@JoinColumnを使い、location_idカラムと外部参照の関連付けを行うこと▪@JoinColumn(name=\"location_id\")と指定してください。",
+      "final_nonwhitespace": "•jp.co.trainocate.enshu.entityパッケージに、Employee.javaはすでに作成済みです。•以下の内容を追記してください。oLocation型のlocationフィールドを追加すること。o@ManyToOneと@JoinColumnを使い、location_idカラムと外部参照の関連付けを行うこと。▪@JoinColumn(name=\"location_id\")と指定してください。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            108,
+            108
+          ],
+          "after_offset": [
+            108,
+            109
+          ],
+          "before": "",
+          "after": "。"
+        },
+        {
+          "operation": "insert",
+          "before_offset": [
+            164,
+            164
+          ],
+          "after_offset": [
+            165,
+            166
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b15",
+      "source_page": 51,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "• jp.co.trainocate.enshu.entity パッケージの Location.java を修正してください。\n• 以下の内容を追記してください。\no Employee エンティティを格納するリストフィールドを作成すること\no @OneToMany(mappedBy = \"location\") アノテーションを付けること\n▪ mappedBy には、Employee エンティティ側で定義したフィールド名\n（\"location\"）を指定してください。",
+      "final_text": "• jp.co.trainocate.enshu.entity パッケージの Location.java を修正してください。\n• 以下の内容を追記してください。\no Employee エンティティを格納するリストフィールドを作成すること。\no @OneToMany(mappedBy = \"location\") アノテーションを付けること。\n▪ mappedBy には、Employee エンティティ側で定義したフィールド名\n（\"location\"）を指定してください。",
+      "baseline_nonwhitespace": "•jp.co.trainocate.enshu.entityパッケージのLocation.javaを修正してください。•以下の内容を追記してください。oEmployeeエンティティを格納するリストフィールドを作成することo@OneToMany(mappedBy=\"location\")アノテーションを付けること▪mappedByには、Employeeエンティティ側で定義したフィールド名（\"location\"）を指定してください。",
+      "final_nonwhitespace": "•jp.co.trainocate.enshu.entityパッケージのLocation.javaを修正してください。•以下の内容を追記してください。oEmployeeエンティティを格納するリストフィールドを作成すること。o@OneToMany(mappedBy=\"location\")アノテーションを付けること。▪mappedByには、Employeeエンティティ側で定義したフィールド名（\"location\"）を指定してください。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            110,
+            110
+          ],
+          "after_offset": [
+            110,
+            111
+          ],
+          "before": "",
+          "after": "。"
+        },
+        {
+          "operation": "insert",
+          "before_offset": [
+            155,
+            155
+          ],
+          "after_offset": [
+            156,
+            157
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p058-b02",
+      "source_page": 58,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "• LocationRepository から findAll() を使って、Location のリストを取得できます",
+      "final_text": "• LocationRepository から findAll() を使って、Location のリストを取得できます。",
+      "baseline_nonwhitespace": "•LocationRepositoryからfindAll()を使って、Locationのリストを取得できます",
+      "final_nonwhitespace": "•LocationRepositoryからfindAll()を使って、Locationのリストを取得できます。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            54,
+            54
+          ],
+          "after_offset": [
+            54,
+            55
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p061-b04",
+      "source_page": 61,
+      "before_kind": "step",
+      "after_kind": "step",
+      "baseline_text": "1. 「/showSearchForm」でアクセスすると検索入力画面が表示される",
+      "final_text": "1. 「/showSearchForm」でアクセスすると検索入力画面が表示される。",
+      "baseline_nonwhitespace": "1.「/showSearchForm」でアクセスすると検索入力画面が表示される",
+      "final_nonwhitespace": "1.「/showSearchForm」でアクセスすると検索入力画面が表示される。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            39,
+            39
+          ],
+          "after_offset": [
+            39,
+            40
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p070-b02",
+      "source_page": 70,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "■ Bootstrap のクラスを使って、社員一覧テーブルを見やすく整える方法を学びます。\n■ ブラウザから、「localhost:8080/findAll」を開いて、メニュー修正していく演習です",
+      "final_text": "■ Bootstrap のクラスを使って、社員一覧テーブルを見やすく整える方法を学びます。\n■ ブラウザから、「localhost:8080/findAll」を開いて、メニュー修正していく演習です。",
+      "baseline_nonwhitespace": "■Bootstrapのクラスを使って、社員一覧テーブルを見やすく整える方法を学びます。■ブラウザから、「localhost:8080/findAll」を開いて、メニュー修正していく演習です",
+      "final_nonwhitespace": "■Bootstrapのクラスを使って、社員一覧テーブルを見やすく整える方法を学びます。■ブラウザから、「localhost:8080/findAll」を開いて、メニュー修正していく演習です。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            94,
+            94
+          ],
+          "after_offset": [
+            94,
+            95
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p075-b06",
+      "source_page": 75,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "• form-control は入力欄に付ける",
+      "final_text": "• form-control は入力欄に付ける。",
+      "baseline_nonwhitespace": "•form-controlは入力欄に付ける",
+      "final_nonwhitespace": "•form-controlは入力欄に付ける。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            21,
+            21
+          ],
+          "after_offset": [
+            21,
+            22
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p075-b07",
+      "source_page": 75,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "• 親要素に input-group を付けることで横並びになる",
+      "final_text": "• 親要素に input-group を付けることで横並びになる。",
+      "baseline_nonwhitespace": "•親要素にinput-groupを付けることで横並びになる",
+      "final_nonwhitespace": "•親要素にinput-groupを付けることで横並びになる。",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            29,
+            29
+          ],
+          "after_offset": [
+            29,
+            30
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p012-b05",
+      "source_page": 12,
+      "before_kind": "paragraph",
+      "after_kind": "paragraph",
+      "baseline_text": "画面に表示される文字 [プロパティ]を選択します\nキーボードキー [Ctrl]・[Tab]・[Caps Lock]・[↑]・[→]",
+      "final_text": "画面に表示される文字 [プロパティ]を選択します。\nキーボードキー [Ctrl]・[Tab]・[Caps Lock]・[↑]・[→]",
+      "baseline_nonwhitespace": "画面に表示される文字[プロパティ]を選択しますキーボードキー[Ctrl]・[Tab]・[CapsLock]・[↑]・[→]",
+      "final_nonwhitespace": "画面に表示される文字[プロパティ]を選択します。キーボードキー[Ctrl]・[Tab]・[CapsLock]・[↑]・[→]",
+      "classification": "保全：句点補完のみ",
+      "nonwhitespace_diff_operations": [
+        {
+          "operation": "insert",
+          "before_offset": [
+            23,
+            23
+          ],
+          "after_offset": [
+            23,
+            24
+          ],
+          "before": "",
+          "after": "。"
+        }
+      ]
+    }
+  ],
+  "unclassified_prose_changes": [],
+  "format_kind_changes": [
+    {
+      "chapter": "02",
+      "id": "p061-b01",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": true
+    },
+    {
+      "chapter": "03",
+      "id": "p080-b06",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": false
+    },
+    {
+      "chapter": "03",
+      "id": "p080-b10",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": false
+    },
+    {
+      "chapter": "05",
+      "id": "p174-b04",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": true
+    },
+    {
+      "chapter": "05",
+      "id": "p180-b01",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": true
+    },
+    {
+      "chapter": "06",
+      "id": "p220-b11",
+      "before": "paragraph",
+      "after": "code",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": false
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b03",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": false
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b09",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": false
+    },
+    {
+      "chapter": "07",
+      "id": "p247-b05",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": false
+    },
+    {
+      "chapter": "07",
+      "id": "p249-b02",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": true
+    },
+    {
+      "chapter": "07",
+      "id": "p261-b05",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": true
+    },
+    {
+      "chapter": "07",
+      "id": "p268-b01",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": true
+    },
+    {
+      "chapter": "07",
+      "id": "p271-b01",
+      "before": "paragraph",
+      "after": "heading",
+      "note": "表示補正として保全。非空白テキスト差と分けて記録。",
+      "latest_root_instruction": true
+    }
+  ],
+  "operations": [
+    {
+      "chapter": "02",
+      "id": "p045-b04",
+      "operation": "restore_original_prose",
+      "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+    },
+    {
+      "chapter": "02",
+      "id": "p045-b05",
+      "operation": "restore_original_prose",
+      "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+    },
+    {
+      "chapter": "02",
+      "id": "p045-b06",
+      "operation": "restore_original_prose",
+      "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+    },
+    {
+      "chapter": "02",
+      "id": "migration-02-servlet-comparison",
+      "operation": "remove_unrequested_addition"
+    },
+    {
+      "chapter": "02",
+      "id": "migration-02-webmvc",
+      "operation": "remove_unrequested_addition"
+    },
+    {
+      "chapter": "02",
+      "id": "migration-02-webmvc-dependencies",
+      "operation": "remove_unrequested_addition"
+    },
+    {
+      "chapter": "03",
+      "id": "p071-b11",
+      "operation": "restore_original_prose",
+      "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b05",
+      "operation": "restore_original_prose",
+      "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b08",
+      "operation": "restore_original_prose",
+      "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+    },
+    {
+      "chapter": "03",
+      "id": "migration-03-jpa-dependencies",
+      "operation": "remove_unrequested_addition"
+    },
+    {
+      "chapter": "03",
+      "id": "migration-03-url-line",
+      "operation": "remove_unrequested_addition"
+    },
+    {
+      "chapter": "04",
+      "id": "p161-b05",
+      "operation": "restore_original_prose",
+      "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+    },
+    {
+      "chapter": "05",
+      "id": "p182-b05",
+      "operation": "restore_original_prose",
+      "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+    },
+    {
+      "chapter": "06",
+      "id": "migration-06-reference-query",
+      "operation": "remove_unrequested_addition"
+    },
+    {
+      "chapter": "07",
+      "id": "p241-b08",
+      "operation": "restore_original_prose",
+      "reason": "原文の文型へ復元し、既存の版名・日付更新だけ維持。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p019-b02",
+      "operation": "restore_original_prose",
+      "reason": "原文『既に構築済み』へ復元し、実ファイルのパス訂正だけ維持。"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p049-b09",
+      "operation": "restore_original_prose",
+      "reason": "原文『既に構築済み』へ復元し、実ファイルのパス訂正だけ維持。"
+    }
+  ],
+  "preservation_checks": {
+    "changed_files": [
+      {
+        "chapter": "02",
+        "checks": {
+          "untargeted_node_texts_exactly_preserved": true,
+          "figure_references_exactly_preserved": true,
+          "no_new_source_page": true,
+          "existing_code_exactly_preserved": true
+        }
+      },
+      {
+        "chapter": "03",
+        "checks": {
+          "untargeted_node_texts_exactly_preserved": true,
+          "figure_references_exactly_preserved": true,
+          "no_new_source_page": true,
+          "existing_code_exactly_preserved": true
+        }
+      },
+      {
+        "chapter": "04",
+        "checks": {
+          "untargeted_node_texts_exactly_preserved": true,
+          "figure_references_exactly_preserved": true,
+          "no_new_source_page": true,
+          "existing_code_exactly_preserved": true
+        }
+      },
+      {
+        "chapter": "05",
+        "checks": {
+          "untargeted_node_texts_exactly_preserved": true,
+          "figure_references_exactly_preserved": true,
+          "no_new_source_page": true,
+          "existing_code_exactly_preserved": true
+        }
+      },
+      {
+        "chapter": "06",
+        "checks": {
+          "untargeted_node_texts_exactly_preserved": true,
+          "figure_references_exactly_preserved": true,
+          "no_new_source_page": true,
+          "existing_code_exactly_preserved": true
+        }
+      },
+      {
+        "chapter": "07",
+        "checks": {
+          "untargeted_node_texts_exactly_preserved": true,
+          "figure_references_exactly_preserved": true,
+          "no_new_source_page": true,
+          "existing_code_exactly_preserved": true
+        }
+      },
+      {
+        "chapter": "ex03",
+        "checks": {
+          "untargeted_node_texts_exactly_preserved": true,
+          "figure_references_exactly_preserved": true,
+          "no_new_source_page": true,
+          "existing_code_exactly_preserved": true
+        }
+      },
+      {
+        "chapter": "ex06",
+        "checks": {
+          "untargeted_node_texts_exactly_preserved": true,
+          "figure_references_exactly_preserved": true,
+          "no_new_source_page": true,
+          "existing_code_exactly_preserved": true
+        }
+      }
+    ],
+    "word_paragraph_blocks_in_changed_files": [
+      {
+        "chapter": "04",
+        "id": "p137-b04",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "04",
+        "id": "p138-b08",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "04",
+        "id": "p139-b08",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "04",
+        "id": "p140-b04",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "04",
+        "id": "p140-b05",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "04",
+        "id": "p140-b06",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "06",
+        "id": "p199-b02",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "06",
+        "id": "p228-b03",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "07",
+        "id": "p253-b02",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "07",
+        "id": "p254-b06",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "07",
+        "id": "p266-b11",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "07",
+        "id": "p267-b01",
+        "exact_text_with_paragraphs_preserved": true
+      },
+      {
+        "chapter": "07",
+        "id": "p271-b03",
+        "exact_text_with_paragraphs_preserved": true
+      }
+    ],
+    "other_word_files_not_edited": true,
+    "bootstrap_version_and_date_preserved_with_original_sentence": true,
+    "retained_intro_dependency_code": true,
+    "removed_additions_absent": true
+  },
+  "nonrendered_comment_differences": [
+    {
+      "chapter": "01",
+      "baseline": "<!-- 元PDF 15〜30ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 15〜30ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "02",
+      "baseline": "<!-- 元PDF 31〜62ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 31〜62ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "03",
+      "baseline": "<!-- 元PDF 63〜132ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 63〜132ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "04",
+      "baseline": "<!-- 元PDF 133〜163ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 133〜163ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "05",
+      "baseline": "<!-- 元PDF 164〜191ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 164〜191ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "06",
+      "baseline": "<!-- 元PDF 192〜237ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 192〜237ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "07",
+      "baseline": "<!-- 元PDF 238〜281ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 238〜281ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "appendix-a",
+      "baseline": "<!-- 元PDF 282〜289ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 282〜289ページ。本文は原本の内容を保持し、バージョン表記のみ更新。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "appendix-b",
+      "baseline": "<!-- 元PDF 290〜296ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 290〜296ページ。本文は原本の内容を保持し、バージョン表記のみ更新。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "ex01",
+      "baseline": "<!-- 元PDF 7〜10ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 7〜10ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "ex02",
+      "baseline": "<!-- 元PDF 11〜16ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 11〜16ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "ex03",
+      "baseline": "<!-- 元PDF 17〜28ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 17〜28ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "ex04",
+      "baseline": "<!-- 元PDF 29〜36ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 29〜36ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "ex05",
+      "baseline": "<!-- 元PDF 37〜46ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 37〜46ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "ex06",
+      "baseline": "<!-- 元PDF 47〜62ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 47〜62ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "ex07",
+      "baseline": "<!-- 元PDF 63〜76ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 63〜76ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    },
+    {
+      "chapter": "front",
+      "baseline": "<!-- 元PDF 1〜14ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 1〜14ページ。Java 21・Spring Boot 4.0.2・Pleiades 2025向け改訂。 -->",
+      "classification": "本文に出ない版管理コメントとして保全"
+    }
+  ],
+  "final_source_sha256": {
+    "01": "9fe360e6fea5994f40727cb9af410fe1779fc8ee7d74f29637472d0e662bd7bc",
+    "02": "0e82fd447b8e269904dfd0010a911f77776d25d6694aff2a4b85e8b071ad4812",
+    "03": "ee10d4701efe0c895b2249780f07b7b366cd4eed28d34d0bee8b944ba2bfc497",
+    "04": "7ce459bdb4bccdf877ba9a6329b6ccf0796b46650da3e097a7770996e3e4dda3",
+    "05": "a183fca03375425987403a658fda89b5ccfdf2f12f7370ac2e3a536602021345",
+    "06": "945a3fe06cf71d9ff5d73f4eabf9350be0d8df6c36dd47e6ca7ae647a7fd8c7f",
+    "07": "32f0a683f9ec793768806f6eb84a71140922d2fee20e7616b950088ad4691583",
+    "appendix-a": "d70e5383134d479fada9ff833e0195fb2ba0d419a13e2660c7ea0cf12fd11310",
+    "appendix-b": "0333a8031402361ca8dae9751aa9d2501bd5fb12b2a5377099a991455bb3b04d",
+    "ex-back": "d5bb1243ca35bcc7489d06a8dc436c94e13b9d08b889c2d5ba996211341cca61",
+    "ex-front": "fd90186dd47bf383a30f93474f8a8941212da96d7c866f6a44db0e01e3b0c5cd",
+    "ex01": "97835a61d42bae53c771372592b375a19a2c460d9b79564b5905a480a007ac03",
+    "ex02": "0e8f94c3fca9d5144a20a553388a5f361b15e88703c1bf004a4c90f83236594e",
+    "ex03": "9342baebdc02d7fef51ad2ae3518ec5e382c127ad23a30fab04b6debbfe8699b",
+    "ex04": "4ad5ca6c9000ed431406e0fc2025ec62c6867a437ee72c28e47fd0f34f6bd960",
+    "ex05": "a5745ee144b57476d109ddb31a508e8249677a2753c9b0ebfe613e0246e65f16",
+    "ex06": "f95fcc8fa462ca234a7f2d4ec86c627cb6b3ff4a852a9e5c2a44ead72e5338f0",
+    "ex07": "e8d7c4ceb761c934a4f81cee2c04235e0fa92634ab3ba1c3358b0fbe3b31db57",
+    "front": "7685292312cbd0b5b9157b1030fd59250318e7ef731e9fb3f3db1640f8be08e9"
+  },
+  "initial_changes_and_outcomes": [
+    {
+      "chapter": "01",
+      "id": "p022-b08",
+      "source_page": 22,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "以下の画像は、Maven により必要なライブラリが自動導入されている様子です。開発者はバ\nージョンの相性に悩まされることなく、スムーズに開発を始めることができます",
+      "after": "以下の画像は、Maven により必要なライブラリが自動導入されている様子です。開発者はバ\nージョンの相性に悩まされることなく、スムーズに開発を始めることができます。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "以下の画像は、Maven により必要なライブラリが自動導入されている様子です。開発者はバ\nージョンの相性に悩まされることなく、スムーズに開発を始めることができます。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "01",
+      "id": "p020-b10",
+      "source_page": 20,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "本書では、Spring Framework 6.0(2022 年11 月リリース)を利用します。",
+      "after": "本書では、Spring Framework 7.0.3を利用します。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "本書では、Spring Framework 7.0.3を利用します。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "02",
+      "id": "p040-b03",
+      "source_page": 40,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "作成された[controller]パッケージを右クリック→[新規]→[クラス]→[名前]に\n「IndexController」と入力し、[完了]をクリック",
+      "after": "作成された[controller]パッケージを右クリック→[新規]→[クラス]→[名前]に\n「IndexController」と入力し、[完了]をクリック。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "作成された[controller]パッケージを右クリック→[新規]→[クラス]→[名前]に\n「IndexController」と入力し、[完了]をクリック。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "02",
+      "id": "migration-02-webmvc-dependencies",
+      "source_page": 39,
+      "type": "added",
+      "current_kind": "code",
+      "before": "",
+      "after": "<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-webmvc</artifactId>\n</dependency>\n<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-webmvc-test</artifactId>\n    <scope>test</scope>\n</dependency>",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": null,
+      "action": {
+        "chapter": "02",
+        "id": "migration-02-webmvc-dependencies",
+        "operation": "remove_unrequested_addition"
+      }
+    },
+    {
+      "chapter": "02",
+      "id": "p045-b04",
+      "source_page": 45,
+      "type": "text_changed",
+      "baseline_kind": "step",
+      "current_kind": "step",
+      "before": "2. Eclipse の上段メニューから、緑の「⏻」ボタンをクリックします。",
+      "after": "2. SpringExercise2Application.java のような main メソッドを持つ起動クラスを選択し、右クリックして［実行］→［Spring Bootアプリケーション］を選びます。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "2. Eclipse の上段メニューから、緑の「⏻」ボタンをクリックします。",
+      "action": {
+        "chapter": "02",
+        "id": "p045-b04",
+        "operation": "restore_original_prose",
+        "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+      }
+    },
+    {
+      "chapter": "02",
+      "id": "p037-b02",
+      "source_page": 37,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": " 1:import java.io.IOException;\n 2:\n 3:import javax.servlet.RequestDispatcher;\n 4:import javax.servlet.ServletException;\n 5:import javax.servlet.annotation.WebServlet;\n 6:import javax.servlet.http.HttpServlet;\n 7:import javax.servlet.http.HttpServletRequest;\n 8:import javax.servlet.http.HttpServletResponse;\n 9:\n10:@WebServlet(urlPatterns = \"/index\") //URL マッピング\n11:public class Sample1 extends HttpServlet { //HttpServlet の継承必要\n12:\n13: //メソッド単位のURL マッピング不可\n14: protected void doGet(HttpServletRequest request,\n15: HttpServletResponse response)\n16: throws ServletException, IOException {\n17:\n18: //index.jsp へ遷移のための長いコード\n19: RequestDispatcher dispatcher =\n20:\n        request.getRequestDispatcher(\"/index.jsp\");\n21: dispatcher.forward(request, response);\n22: }\n23:}",
+      "after": " 1:import java.io.IOException;\n 2:\n 3:import jakarta.servlet.RequestDispatcher;\n 4:import jakarta.servlet.ServletException;\n 5:import jakarta.servlet.annotation.WebServlet;\n 6:import jakarta.servlet.http.HttpServlet;\n 7:import jakarta.servlet.http.HttpServletRequest;\n 8:import jakarta.servlet.http.HttpServletResponse;\n 9:\n10:@WebServlet(urlPatterns = \"/index\") //URL マッピング\n11:public class Sample1 extends HttpServlet { //HttpServlet の継承必要\n12:\n13: //メソッド単位のURL マッピング不可\n14: protected void doGet(HttpServletRequest request,\n15: HttpServletResponse response)\n16: throws ServletException, IOException {\n17:\n18: //index.jsp へ遷移のための長いコード\n19: RequestDispatcher dispatcher =\n20:\n        request.getRequestDispatcher(\"/index.jsp\");\n21: dispatcher.forward(request, response);\n22: }\n23:}",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": " 1:import java.io.IOException;\n 2:\n 3:import jakarta.servlet.RequestDispatcher;\n 4:import jakarta.servlet.ServletException;\n 5:import jakarta.servlet.annotation.WebServlet;\n 6:import jakarta.servlet.http.HttpServlet;\n 7:import jakarta.servlet.http.HttpServletRequest;\n 8:import jakarta.servlet.http.HttpServletResponse;\n 9:\n10:@WebServlet(urlPatterns = \"/index\") //URL マッピング\n11:public class Sample1 extends HttpServlet { //HttpServlet の継承必要\n12:\n13: //メソッド単位のURL マッピング不可\n14: protected void doGet(HttpServletRequest request,\n15: HttpServletResponse response)\n16: throws ServletException, IOException {\n17:\n18: //index.jsp へ遷移のための長いコード\n19: RequestDispatcher dispatcher =\n20:\n        request.getRequestDispatcher(\"/index.jsp\");\n21: dispatcher.forward(request, response);\n22: }\n23:}",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "02",
+      "id": "p045-b06",
+      "source_page": 45,
+      "type": "text_changed",
+      "baseline_kind": "step",
+      "current_kind": "step",
+      "before": "4. [spring_exercise_2]プロジェクトを右クリックし、[(再)起動]を選択します。",
+      "after": "4. コンソールに起動完了のログが表示されるまで待ちます。再実行する場合は、先に動いている同じアプリケーションを停止してください。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "4. [spring_exercise_2]プロジェクトを右クリックし、[(再)起動]を選択します。",
+      "action": {
+        "chapter": "02",
+        "id": "p045-b06",
+        "operation": "restore_original_prose",
+        "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+      }
+    },
+    {
+      "chapter": "02",
+      "id": "migration-02-servlet-comparison",
+      "source_page": 37,
+      "type": "added",
+      "current_kind": "paragraph",
+      "before": "",
+      "after": "このコードはサーブレットとSpring MVCの役割を比較する例です。Spring Boot 4.0.2ではServletの型は jakarta.servlet を使います。本章の配布アプリは、以降の @Controller とThymeleafで画面を作成します。",
+      "initial_classification": "新規説明候補（撤去対象）",
+      "final_text": null,
+      "action": {
+        "chapter": "02",
+        "id": "migration-02-servlet-comparison",
+        "operation": "remove_unrequested_addition"
+      }
+    },
+    {
+      "chapter": "02",
+      "id": "p045-b08",
+      "source_page": 45,
+      "type": "text_changed",
+      "baseline_kind": "step",
+      "current_kind": "step",
+      "before": "5. 任意のブラウザ（Chrome、Edge など）のアドレスバーに以下のURL を入力します\nhttp://localhost:8080/index",
+      "after": "5. 任意のブラウザ（Chrome、Edge など）のアドレスバーに以下のURL を入力します。\nhttp://localhost:8080/index",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "5. 任意のブラウザ（Chrome、Edge など）のアドレスバーに以下のURL を入力します。\nhttp://localhost:8080/index",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "02",
+      "id": "p045-b05",
+      "source_page": 45,
+      "type": "text_changed",
+      "baseline_kind": "step",
+      "current_kind": "step",
+      "before": "3. local の部分をダブルクリックし、展開します。",
+      "after": "3. 実行構成の［JRE］がJDK 21であることを確認します。Bootダッシュボードを使う場合は、local の配下から対象プロジェクトを選んでも起動できます。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "3. local の部分をダブルクリックし、展開します。",
+      "action": {
+        "chapter": "02",
+        "id": "p045-b05",
+        "operation": "restore_original_prose",
+        "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+      }
+    },
+    {
+      "chapter": "02",
+      "id": "migration-02-webmvc",
+      "source_page": 39,
+      "type": "added",
+      "current_kind": "paragraph",
+      "before": "",
+      "after": "Spring Boot 4.0.2では、Web MVC用に spring-boot-starter-webmvc、MVCテスト用に spring-boot-starter-webmvc-test を使用します。配布POMは設定済みです。以降の @Controller・@GetMapping・Model の基本的な使い方は同じです。",
+      "initial_classification": "新規説明候補（撤去対象）",
+      "final_text": null,
+      "action": {
+        "chapter": "02",
+        "id": "migration-02-webmvc",
+        "operation": "remove_unrequested_addition"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b08",
+      "source_page": 129,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "・13 行-14 行目： return prodRepo..findById(id).orElse(null);",
+      "after": "・13 行-14 行目： return prodRepo.findById(id).orElse(null);",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "・13 行-14 行目： return prodRepo.findById(id).orElse(null);",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p102-b02",
+      "source_page": 102,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "migration-03-jpa-dependencies",
+      "source_page": 70,
+      "type": "added",
+      "current_kind": "paragraph",
+      "before": "",
+      "after": "本章の依存定義は次のとおりです。各バージョンはSpring Boot 4.0.2の親POMに任せます。MySQL 8以降を起動し、付録の手順で本文用の spring_sample を準備してから、配布設定を確認してください。",
+      "initial_classification": "新規説明候補（撤去対象）",
+      "final_text": null,
+      "action": {
+        "chapter": "03",
+        "id": "migration-03-jpa-dependencies",
+        "operation": "remove_unrequested_addition"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p084-b06",
+      "source_page": 84,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "④ JSP へ遷移",
+      "after": "④ JSP へ遷移。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "④ JSP へ遷移。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p094-b06",
+      "source_page": 94,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b07",
+      "source_page": 113,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "@PostMapping(\"/insert2\")\npublic String insertProduct2(ProductForm productForm, ModelMapper modelMapper,\nModel model) {\n\n         Product product = modelMapper.map(productForm, Product.class);\n        product = prodRepo.save(product);\n        model.addAttribute(\"product\", product);\n        return \"/product/result\";\n}",
+      "after": "@PostMapping(\"/insert2\")\npublic String insertProduct2(ProductForm productForm, Model model) {\n    ModelMapper modelMapper = new ModelMapper();\n    Product product = modelMapper.map(productForm, Product.class);\n    product = prodRepo.save(product);\n    model.addAttribute(\"product\", product);\n    return \"product/result\";\n}",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "@PostMapping(\"/insert2\")\npublic String insertProduct2(ProductForm productForm, Model model) {\n    ModelMapper modelMapper = new ModelMapper();\n    Product product = modelMapper.map(productForm, Product.class);\n    product = prodRepo.save(product);\n    model.addAttribute(\"product\", product);\n    return \"product/result\";\n}",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "migration-03-jpa-pom",
+      "source_page": 70,
+      "type": "added",
+      "current_kind": "code",
+      "before": "",
+      "after": "<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-data-jpa</artifactId>\n</dependency>\n<dependency>\n    <groupId>com.mysql</groupId>\n    <artifactId>mysql-connector-j</artifactId>\n    <scope>runtime</scope>\n</dependency>\n<dependency>\n    <groupId>org.projectlombok</groupId>\n    <artifactId>lombok</artifactId>\n    <optional>true</optional>\n</dependency>",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-data-jpa</artifactId>\n</dependency>\n<dependency>\n    <groupId>com.mysql</groupId>\n    <artifactId>mysql-connector-j</artifactId>\n    <scope>runtime</scope>\n</dependency>\n<dependency>\n    <groupId>org.projectlombok</groupId>\n    <artifactId>lombok</artifactId>\n    <optional>true</optional>\n</dependency>",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "migration-03-url-line",
+      "source_page": 71,
+      "type": "added",
+      "current_kind": "paragraph",
+      "before": "",
+      "after": "spring.datasource.url の値は1行で記述します。紙面で折り返されていても、ファイル内では途中に改行を入れません。MySQLのポートを3306以外に変更した場合は、localhost:ポート番号 の形で実際の接続先に合わせます。",
+      "initial_classification": "新規説明候補（撤去対象）",
+      "final_text": null,
+      "action": {
+        "chapter": "03",
+        "id": "migration-03-url-line",
+        "operation": "remove_unrequested_addition"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p098-b02",
+      "source_page": 98,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p117-b03",
+      "source_page": 117,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "1://insertProduct メソッドの下に追加\n2:\n3:@GetMapping(\"update/{id}\")\n4:public String showUpdateInputView(@PathVariable int id, Model model) {\n5: Product product = prodRepo..findById(id).orElse(null);\n6: model.addAttribute(\"product\", product);\n7: return \"product/update_input\";\n8:}",
+      "after": "1://insertProduct メソッドの下に追加\n2:\n3:@GetMapping(\"update/{id}\")\n4:public String showUpdateInputView(@PathVariable int id, Model model) {\n5: Product product = prodRepo.findById(id).orElse(null);\n6: model.addAttribute(\"product\", product);\n7: return \"product/update_input\";\n8:}",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "1://insertProduct メソッドの下に追加\n2:\n3:@GetMapping(\"update/{id}\")\n4:public String showUpdateInputView(@PathVariable int id, Model model) {\n5: Product product = prodRepo.findById(id).orElse(null);\n6: model.addAttribute(\"product\", product);\n7: return \"product/update_input\";\n8:}",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p128-b06",
+      "source_page": 128,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": " 1:import jp.co.trainocate.answer.entity.Product;\n 2:import jp.co.trainocate.answer.repository.ProductRepository;\n 3:import lombok.RequiredArgsConstructor;\n 4:\n 5:@Service\n 6:@RequiredArgsConstructor\n 7:public class ProductServiceImpl implements ProductService{\n 8:\n 9: //@Autowired は不要\n10: private final ProductRepository prodRepo;\n11:\n12: @Override\n13: public Product findProductById(int id) {\n14: return prodRepo..findById(id).orElse(null);\n15: }\n16:}",
+      "after": " 1:import jp.co.trainocate.answer.entity.Product;\n 2:import jp.co.trainocate.answer.repository.ProductRepository;\n 3:import lombok.RequiredArgsConstructor;\n 4:\n 5:@Service\n 6:@RequiredArgsConstructor\n 7:public class ProductServiceImpl implements ProductService{\n 8:\n 9: //@Autowired は不要\n10: private final ProductRepository prodRepo;\n11:\n12: @Override\n13: public Product findProductById(int id) {\n14: return prodRepo.findById(id).orElse(null);\n15: }\n16:}",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": " 1:import jp.co.trainocate.answer.entity.Product;\n 2:import jp.co.trainocate.answer.repository.ProductRepository;\n 3:import lombok.RequiredArgsConstructor;\n 4:\n 5:@Service\n 6:@RequiredArgsConstructor\n 7:public class ProductServiceImpl implements ProductService{\n 8:\n 9: //@Autowired は不要\n10: private final ProductRepository prodRepo;\n11:\n12: @Override\n13: public Product findProductById(int id) {\n14: return prodRepo.findById(id).orElse(null);\n15: }\n16:}",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p082-b06",
+      "source_page": 82,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "public class ProductDAO {\n\n        public List<ProductBean> findByProductList(){\n                String jdbcUrl = \"jdbc:mysql://localhost/spring_sample?\n                  serverTimezone=Asia/Tokyo\";\n               String userId = \"spring_sample_user\";\n               String password = \"trainocate\";",
+      "after": "public class ProductDAO {\n\n        public List<ProductBean> findByProductList(){\n                String jdbcUrl = \"jdbc:mysql://localhost/spring_sample?\"\n                        + \"serverTimezone=Asia/Tokyo\";\n               String userId = \"spring_sample_user\";\n               String password = \"trainocate\";",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "public class ProductDAO {\n\n        public List<ProductBean> findByProductList(){\n                String jdbcUrl = \"jdbc:mysql://localhost/spring_sample?\"\n                        + \"serverTimezone=Asia/Tokyo\";\n               String userId = \"spring_sample_user\";\n               String password = \"trainocate\";",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p084-b05",
+      "source_page": 84,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "③ 取得したデータを、スコープに格納",
+      "after": "③ 取得したデータを、スコープに格納。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "③ 取得したデータを、スコープに格納。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b05",
+      "source_page": 113,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "まず、Maven を使って、ModelMapper を導入します。",
+      "after": "まず、Mavenを使ってModelMapper 3.2.6を導入します。これはSpring Bootの管理対象外なので、バージョンを明記します。古い3.0.0ではなく、配布POMと同じ版を使ってください。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "まず、Maven を使って、ModelMapper を導入します。",
+      "action": {
+        "chapter": "03",
+        "id": "p113-b05",
+        "operation": "restore_original_prose",
+        "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b08",
+      "source_page": 113,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "ModelMapper を利用するために、メソッドに上記のようにModelMapper のインスタンスを生成し\nた後、\nmodelMapper.map(Form 名, Entity 名.class) を実行した結果をエンティティの変数に代入する\nと、自動でForm クラス内のフィールド名と一致するエンティティ内のフィールドにコピーが行わ\nれます。",
+      "after": "ここではメソッド内の new ModelMapper() でインスタンスを生成します。modelMapper.map(Form名, Entity名.class) の戻り値をエンティティへ代入すると、同名フィールドの値をコピーできます。リクエストを受け取るForm引数と、変換に使うModelMapperは役割が異なります。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "ModelMapper を利用するために、メソッドに上記のようにModelMapper のインスタンスを生成し\nた後、\nmodelMapper.map(Form 名, Entity 名.class) を実行した結果をエンティティの変数に代入する\nと、自動でForm クラス内のフィールド名と一致するエンティティ内のフィールドにコピーが行わ\nれます。",
+      "action": {
+        "chapter": "03",
+        "id": "p113-b08",
+        "operation": "restore_original_prose",
+        "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p120-b02",
+      "source_page": 120,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p124-b04",
+      "source_page": 124,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p084-b04",
+      "source_page": 84,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "② DAO クラスに定義されているデータベース操作用のメソッドを実行し、データを取得する",
+      "after": "② DAO クラスに定義されているデータベース操作用のメソッドを実行し、データを取得する。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "② DAO クラスに定義されているデータベース操作用のメソッドを実行し、データを取得する。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p071-b11",
+      "source_page": 71,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "設定完了後は、必ず[実行]→[maven install]をしないと反映されませんので、ご注意くださ\nい。",
+      "after": "application.properties を保存したら、アプリケーションを停止して再起動し、接続結果を確認します。依存定義も変更した場合は、［Maven］→［プロジェクトの更新］を実行してください。設定ファイルを変更するたびに install を実行する必要はありません。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "設定完了後は、必ず[実行]→[maven install]をしないと反映されませんので、ご注意くださ\nい。",
+      "action": {
+        "chapter": "03",
+        "id": "p071-b11",
+        "operation": "restore_original_prose",
+        "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+      }
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b04",
+      "source_page": 113,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "<dependency>\n               <groupId>org.modelmapper</groupId>\n               <artifactId>modelmapper</artifactId>\n               <version>3.0.0</version>\n</dependency>",
+      "after": "<dependency>\n    <groupId>org.modelmapper</groupId>\n    <artifactId>modelmapper</artifactId>\n    <version>3.2.6</version>\n</dependency>",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "<dependency>\n    <groupId>org.modelmapper</groupId>\n    <artifactId>modelmapper</artifactId>\n    <version>3.2.6</version>\n</dependency>",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "04",
+      "id": "p161-b05",
+      "source_page": 161,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "保存後、[maven install]をすると、修正事項が反映されるようになります。",
+      "after": "messages.properties を保存し、アプリケーションを再起動してエラーメッセージを確認します。依存を変更していなければ install は不要です。日本語のファイルはUTF-8で保存してください。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "保存後、[maven install]をすると、修正事項が反映されるようになります。",
+      "action": {
+        "chapter": "04",
+        "id": "p161-b05",
+        "operation": "restore_original_prose",
+        "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+      }
+    },
+    {
+      "chapter": "05",
+      "id": "p184-b10",
+      "source_page": 184,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=”http://www.thymeleaf.org”\n 3: xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”\n 4:       layout:decorate=”~{/layout}”>\n 5:\n 6:       <!—省略-->\n 7:\n 8:<body>\n 9:<main layout:fragment=”main_content”>\n10:\n11:<!—既存のコンテンツのソースコード-->\n12:\n13:</main>\n14:</body>",
+      "after": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=\"http://www.thymeleaf.org\"\n 3: xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\"\n 4:       layout:decorate=\"~{/layout}\">\n 5:\n 6:       <!--省略-->\n 7:\n 8:<body>\n 9:<main layout:fragment=\"main_content\">\n10:\n11:<!--既存のコンテンツのソースコード-->\n12:\n13:</main>\n14:</body>",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=\"http://www.thymeleaf.org\"\n 3: xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\"\n 4:       layout:decorate=\"~{/layout}\">\n 5:\n 6:       <!--省略-->\n 7:\n 8:<body>\n 9:<main layout:fragment=\"main_content\">\n10:\n11:<!--既存のコンテンツのソースコード-->\n12:\n13:</main>\n14:</body>",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "05",
+      "id": "p182-b05",
+      "source_page": 182,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "レイアウト機能を使うためには、関連のライブラリが必要です。追加して、maven install をしてお\nきましょう。",
+      "after": "レイアウト機能を使うため、上記の依存を追加します。バージョンはSpring Boot 4.0.2の親POMに任せます。保存後は［Maven］→［プロジェクトの更新］を実行し、アプリケーションを再起動して画面を確認しましょう。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "レイアウト機能を使うためには、関連のライブラリが必要です。追加して、maven install をしてお\nきましょう。",
+      "action": {
+        "chapter": "05",
+        "id": "p182-b05",
+        "operation": "restore_original_prose",
+        "reason": "説明・手順の本文を原文へ復元。現在のDiv属性と図版参照は保持。"
+      }
+    },
+    {
+      "chapter": "05",
+      "id": "p183-b03",
+      "source_page": 183,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=\"http://www.thymeleaf.org\"\n 3: xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">\n 4:\n 5:<head>\n 6:<meta charset=\"UTF-8\" />\n 7:<title>Traino 商品</title>\n 8:<link rel=\"stylesheet\" th:href=\"@{/css/layout.css}\" />\n 9:</head>\n10:<body>\n11:<!-- ヘッダー -->\n12:<header>\n13:<h1>Traino 家電商品</h1>\n14:</header>\n15:<div class=\"flex-container\">\n16:<!-- サイドバー -->\n17:<nav>\n18: <ul>\n19: <li><a th:href=\"@{/product/findAll}\">全商品一覧</a></li>\n20: <li><a th:href=\"@{/product/}\">商品検索</a></li>\n21: <li><a th:href=\"@{/product/insert}\">商品登録</a></li>\n22: <li><a th:href=\"@{/5}\">ログアウト</a></li>\n23: </ul>\n24:</nav>\n25:\n26:<!-- メインコンテンツ -->\n27:<main layout:fragment=\"main_content\">\n28: <!-- 各ページ固有のコンテンツがここに入ります -->\n29:</main>\n30:</div>\n31:<!-- フッター -->\n32:<footer>\n33:<p>Copyright © 2023 Trainocate Spring. All rights reserved.</p>\n34:</footer>\n35:</body>\n36:</html>",
+      "after": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=\"http://www.thymeleaf.org\"\n 3: xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">\n 4:\n 5:<head>\n 6:<meta charset=\"UTF-8\" />\n 7:<title>Traino 商品</title>\n 8:<link rel=\"stylesheet\" th:href=\"@{/css/layout.css}\" />\n 9:</head>\n10:<body>\n11:<!-- ヘッダー -->\n12:<header>\n13:<h1>Traino 家電商品</h1>\n14:</header>\n15:<div class=\"flex-container\">\n16:<!-- サイドバー -->\n17:<nav>\n18: <ul>\n19: <li><a th:href=\"@{/product/findAll}\">全商品一覧</a></li>\n20: <li><a th:href=\"@{/product/}\">商品検索</a></li>\n21: <li><a th:href=\"@{/product/insert}\">商品登録</a></li>\n22: <li><a th:href=\"@{/5}\">ログアウト</a></li>\n23: </ul>\n24:</nav>\n25:\n26:<!-- メインコンテンツ -->\n27:<main layout:fragment=\"main_content\">\n28: <!-- 各ページ固有のコンテンツがここに入ります -->\n29:</main>\n30:</div>\n31:<!-- フッター -->\n32:<footer>\n33:<p>Copyright © 2027 Trainocate Spring. All rights reserved.</p>\n34:</footer>\n35:</body>\n36:</html>",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": " 1:<!DOCTYPE html>\n 2:<html xmlns:th=\"http://www.thymeleaf.org\"\n 3: xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">\n 4:\n 5:<head>\n 6:<meta charset=\"UTF-8\" />\n 7:<title>Traino 商品</title>\n 8:<link rel=\"stylesheet\" th:href=\"@{/css/layout.css}\" />\n 9:</head>\n10:<body>\n11:<!-- ヘッダー -->\n12:<header>\n13:<h1>Traino 家電商品</h1>\n14:</header>\n15:<div class=\"flex-container\">\n16:<!-- サイドバー -->\n17:<nav>\n18: <ul>\n19: <li><a th:href=\"@{/product/findAll}\">全商品一覧</a></li>\n20: <li><a th:href=\"@{/product/}\">商品検索</a></li>\n21: <li><a th:href=\"@{/product/insert}\">商品登録</a></li>\n22: <li><a th:href=\"@{/5}\">ログアウト</a></li>\n23: </ul>\n24:</nav>\n25:\n26:<!-- メインコンテンツ -->\n27:<main layout:fragment=\"main_content\">\n28: <!-- 各ページ固有のコンテンツがここに入ります -->\n29:</main>\n30:</div>\n31:<!-- フッター -->\n32:<footer>\n33:<p>Copyright © 2027 Trainocate Spring. All rights reserved.</p>\n34:</footer>\n35:</body>\n36:</html>",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "06",
+      "id": "p235-b03",
+      "source_page": 235,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "    /* 1. カテゴリごとの商品の合計価格を取得 */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name,\nSUM(p.price)) FROM Product p GROUP BY p.category.name\")\n    List<CategorySalesDTO> findTotalSalesByCategory();\n\n    /*  2. カテゴリごとの商品数を取得 */\n    @Query(\"SELECT new\njp.co.example.dto.CategoryProductCountDTO(p.category.name, COUNT(p)) \" +\n           \"FROM Product p GROUP BY p.category.name\")\n    List<CategoryProductCountDTO> findProductCountByCategory();",
+      "after": "    /* 1. カテゴリごとの商品の合計価格を取得 */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name, \"\n            + \"SUM(p.price)) FROM Product p GROUP BY p.category.name\")\n    List<CategorySalesDTO> findTotalSalesByCategory();\n\n    /*  2. カテゴリごとの商品数を取得 */\n    @Query(\"SELECT new \"\n            + \"jp.co.example.dto.CategoryProductCountDTO(p.category.name, COUNT(p)) \" +\n           \"FROM Product p GROUP BY p.category.name\")\n    List<CategoryProductCountDTO> findProductCountByCategory();",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "    /* 1. カテゴリごとの商品の合計価格を取得 */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name, \"\n            + \"SUM(p.price)) FROM Product p GROUP BY p.category.name\")\n    List<CategorySalesDTO> findTotalSalesByCategory();\n\n    /*  2. カテゴリごとの商品数を取得 */\n    @Query(\"SELECT new \"\n            + \"jp.co.example.dto.CategoryProductCountDTO(p.category.name, COUNT(p)) \" +\n           \"FROM Product p GROUP BY p.category.name\")\n    List<CategoryProductCountDTO> findProductCountByCategory();",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "06",
+      "id": "migration-06-reference-query",
+      "source_page": 232,
+      "type": "added",
+      "current_kind": "paragraph",
+      "before": "",
+      "after": "以下の複雑な検索は参考例です。description・brand・sku のフィールドや集計結果用DTOは、例題に合わせて別途定義する必要があります。配布モデルのまま確認する場合は、ここまでに扱った全件検索・主キー検索・商品名と価格の検索を使用してください。",
+      "initial_classification": "新規説明候補（撤去対象）",
+      "final_text": null,
+      "action": {
+        "chapter": "06",
+        "id": "migration-06-reference-query",
+        "operation": "remove_unrequested_addition"
+      }
+    },
+    {
+      "chapter": "06",
+      "id": "p220-b10",
+      "source_page": 220,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "@ManyToOne のcategory フィールドと@Column のcategoryId が同じカラムを参照して\nいると、登録や更新時にどちらを優先するかHibernate が判断できず、以下のようなエ\nラーが発生します",
+      "after": "@ManyToOne のcategory フィールドと@Column のcategoryId が同じカラムを参照して\nいると、登録や更新時にどちらを優先するかHibernate が判断できず、以下のようなエ\nラーが発生します。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "@ManyToOne のcategory フィールドと@Column のcategoryId が同じカラムを参照して\nいると、登録や更新時にどちらを優先するかHibernate が判断できず、以下のようなエ\nラーが発生します。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "06",
+      "id": "p230-b03",
+      "source_page": 230,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "String sql = \"SELECT * FROM product WHERE name LIKE ? AND price = ?\";\nPreparedStatement pstmt = conn.prepareStatement(sql));\npstmt.setString(1, \"%\" + name + \"%\"); // 名前の部分一致\npstmt.setInt(2, price); // 価格の条件",
+      "after": "String sql = \"SELECT * FROM product WHERE name LIKE ? AND price = ?\";\nPreparedStatement pstmt = conn.prepareStatement(sql);\npstmt.setString(1, \"%\" + name + \"%\"); // 名前の部分一致\npstmt.setInt(2, price); // 価格の条件",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "String sql = \"SELECT * FROM product WHERE name LIKE ? AND price = ?\";\nPreparedStatement pstmt = conn.prepareStatement(sql);\npstmt.setString(1, \"%\" + name + \"%\"); // 名前の部分一致\npstmt.setInt(2, price); // 価格の条件",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "06",
+      "id": "p235-b04",
+      "source_page": 235,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "    /*  3. 指定した価格以上の商品があるカテゴリを取得（HAVING を使用） */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name,\nSUM(p.price)) \" +\n     \"FROM Product p GROUP BY p.category.name HAVING SUM(p.price) >= :minSales\")\n    List<CategorySalesDTO> findCategoriesByMinSales(@Param(\"minSales\") Long\nminSales);\n}",
+      "after": "    /*  3. 指定した価格以上の商品があるカテゴリを取得（HAVING を使用） */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name, \"\n            + \"SUM(p.price)) \" +\n     \"FROM Product p GROUP BY p.category.name HAVING SUM(p.price) >= :minSales\")\n    List<CategorySalesDTO> findCategoriesByMinSales(@Param(\"minSales\") Long\nminSales);\n}",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "    /*  3. 指定した価格以上の商品があるカテゴリを取得（HAVING を使用） */\n    @Query(\"SELECT new jp.co.example.dto.CategorySalesDTO(p.category.name, \"\n            + \"SUM(p.price)) \" +\n     \"FROM Product p GROUP BY p.category.name HAVING SUM(p.price) >= :minSales\")\n    List<CategorySalesDTO> findCategoriesByMinSales(@Param(\"minSales\") Long\nminSales);\n}",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b07",
+      "source_page": 246,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\">",
+      "after": "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\"\nintegrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"\ncrossorigin=\"anonymous\">",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\"\nintegrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"\ncrossorigin=\"anonymous\">",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "07",
+      "id": "p271-b03",
+      "source_page": 271,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。\n※より詳しい構文は、 https://getbootstrap.jp/docs/5.3/layout/columns/ を参照",
+      "after": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。\n\n※より詳しい構文は、 https://getbootstrap.jp/docs/5.3/layout/columns/ を参照。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。\n\n※より詳しい構文は、 https://getbootstrap.jp/docs/5.3/layout/columns/ を参照。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "07",
+      "id": "p248-b02",
+      "source_page": 248,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "<!DOCTYPE html>\n<html xmlns:th=\"http://www.thymeleaf.org\">\n\n<head>\n<meta charset=\"UTF-8\" />\n<!-- ➀以下のコードを記入することで、モバイル端末での表示を最適化できます。-->\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<title>Bootstrap Example</title>\n\n<!-- ➁ Bootstrap CSS をローカルから読み込む -->\n<link rel=\"stylesheet\" th:href=\"@{/css/bootstrap.min.css}\" />\n\n<!-- ➁ Bootstrap CSS をCDN から読み込む -->\n<link href=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\">\n</head>\n\n<body>\n<!-- コンテンツ -->\n<div class=\"container\">\n    <h1>Hello, Bootstrap!</h1>\n    <button class=\"btn btn-primary\">ボタン</button>\n</div>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をローカルから読み込む-->\n<script th:src=\"@{/js/bootstrap.bundle.min.js}\"></script>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をCDN から読み込む -->\n<script src=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\">\n</script>\n</body>\n</html>",
+      "after": "<!DOCTYPE html>\n<html xmlns:th=\"http://www.thymeleaf.org\">\n\n<head>\n<meta charset=\"UTF-8\" />\n<!-- ➀以下のコードを記入することで、モバイル端末での表示を最適化できます。-->\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<title>Bootstrap Example</title>\n\n<!-- ➁ Bootstrap CSS をローカルから読み込む -->\n<link rel=\"stylesheet\" th:href=\"@{/css/bootstrap.min.css}\" />\n\n<!-- ➁ Bootstrap CSS をCDN から読み込む -->\n<link href=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\"\nintegrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"\ncrossorigin=\"anonymous\">\n</head>\n\n<body>\n<!-- コンテンツ -->\n<div class=\"container\">\n    <h1>Hello, Bootstrap!</h1>\n    <button class=\"btn btn-primary\">ボタン</button>\n</div>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をローカルから読み込む-->\n<script th:src=\"@{/js/bootstrap.bundle.min.js}\"></script>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をCDN から読み込む -->\n<script src=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"\nintegrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"\ncrossorigin=\"anonymous\">\n</script>\n</body>\n</html>",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "<!DOCTYPE html>\n<html xmlns:th=\"http://www.thymeleaf.org\">\n\n<head>\n<meta charset=\"UTF-8\" />\n<!-- ➀以下のコードを記入することで、モバイル端末での表示を最適化できます。-->\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<title>Bootstrap Example</title>\n\n<!-- ➁ Bootstrap CSS をローカルから読み込む -->\n<link rel=\"stylesheet\" th:href=\"@{/css/bootstrap.min.css}\" />\n\n<!-- ➁ Bootstrap CSS をCDN から読み込む -->\n<link href=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\"\nrel=\"stylesheet\"\nintegrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\"\ncrossorigin=\"anonymous\">\n</head>\n\n<body>\n<!-- コンテンツ -->\n<div class=\"container\">\n    <h1>Hello, Bootstrap!</h1>\n    <button class=\"btn btn-primary\">ボタン</button>\n</div>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をローカルから読み込む-->\n<script th:src=\"@{/js/bootstrap.bundle.min.js}\"></script>\n\n<!-- ➂ <body>の末尾に、Bootstrap のJS をCDN から読み込む -->\n<script src=\n\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"\nintegrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"\ncrossorigin=\"anonymous\">\n</script>\n</body>\n</html>",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "07",
+      "id": "p241-b08",
+      "source_page": 241,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "本書では、(2024 年 7 月基準)最新バージョンである 5.3 バージョンを利用します。",
+      "after": "本書では、(2026 年 11 月 5 日基準)最新安定版である 5.3.8 を利用します。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "本書では、(2026 年 11 月 5 日基準)最新バージョンである 5.3.8 バージョンを利用します。",
+      "action": {
+        "chapter": "07",
+        "id": "p241-b08",
+        "operation": "restore_original_prose",
+        "reason": "原文の文型へ復元し、既存の版名・日付更新だけ維持。"
+      }
+    },
+    {
+      "chapter": "07",
+      "id": "p256-b04",
+      "source_page": 256,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "※p や mb のクラスは、次のページで説明します",
+      "after": "※p や mb のクラスは、次のページで説明します。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "※p や mb のクラスは、次のページで説明します。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "07",
+      "id": "p258-b02",
+      "source_page": 258,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "➀ 「F12」で「開発者ツール」を開きます\n➁ 以下の赤枠のボタンをクリックします。（又は Ctrl+Shift+C）\n➂ 「要素」タブの調べたい HTML コードにマウスを当てます。\n※ マウスを<div class = “my-4 bg-info”>上下に中程度のマージン(.my-4)</div>に当てたの\nで、余白の範囲が表示されました。",
+      "after": "➀ 「F12」で「開発者ツール」を開きます。\n➁ 以下の赤枠のボタンをクリックします。（又は Ctrl+Shift+C）\n➂ 「要素」タブの調べたい HTML コードにマウスを当てます。\n※ マウスを<div class = “my-4 bg-info”>上下に中程度のマージン(.my-4)</div>に当てたの\nで、余白の範囲が表示されました。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "➀ 「F12」で「開発者ツール」を開きます。\n➁ 以下の赤枠のボタンをクリックします。（又は Ctrl+Shift+C）\n➂ 「要素」タブの調べたい HTML コードにマウスを当てます。\n※ マウスを<div class = “my-4 bg-info”>上下に中程度のマージン(.my-4)</div>に当てたの\nで、余白の範囲が表示されました。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b10",
+      "source_page": 246,
+      "type": "text_changed",
+      "baseline_kind": "code",
+      "current_kind": "code",
+      "before": "<script\nsrc=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\">\n</script>",
+      "after": "<script\nsrc=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"\nintegrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"\ncrossorigin=\"anonymous\">\n</script>",
+      "initial_classification": "コード差分（保全/配置撤去を個別判断）",
+      "final_text": "<script\nsrc=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\"\nintegrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\"\ncrossorigin=\"anonymous\">\n</script>",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "07",
+      "id": "p268-b04",
+      "source_page": 268,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/grid/ を参照",
+      "after": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/grid/ を参照。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/grid/ を参照。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p285-b03",
+      "source_page": 285,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": " 例）[spring_exercise_2]プロジェクトを実行したいなら、まず親プロジェクトである、\n[spring_exercise]プロジェクトを右クリック→[Maven install]をクリック",
+      "after": " 例）[spring_exercise_2]プロジェクトを実行したいなら、まず親プロジェクトである、\n[spring_exercise]プロジェクトを右クリック→[Maven install]をクリック。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": " 例）[spring_exercise_2]プロジェクトを実行したいなら、まず親プロジェクトである、\n[spring_exercise]プロジェクトを右クリック→[Maven install]をクリック。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p287-b03",
+      "source_page": 287,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "※本書では、Eclipse 2022(pleiades)を使用します。",
+      "after": "※本書では、Pleiades 2025を使用します。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "※本書では、Pleiades 2025を使用します。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p296-b04",
+      "source_page": 296,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-T1-04\n© 2024 Trainocate Japan, Ltd.",
+      "after": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-T1-04\n© 2027 Trainocate Japan, Ltd.",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-T1-04\n© 2027 Trainocate Japan, Ltd.",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex-back",
+      "id": "p077-b04",
+      "source_page": 77,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-L1-04\n© 2024 Trainocate Japan, Ltd.",
+      "after": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-L1-04\n© 2027 Trainocate Japan, Ltd.",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "落丁本、乱丁本はお取り替えいたします。\nJAC0177G-L1-04\n© 2027 Trainocate Japan, Ltd.",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-b15",
+      "source_page": 15,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認",
+      "after": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex02",
+      "id": "p016-b13",
+      "source_page": 16,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認",
+      "after": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b13",
+      "source_page": 27,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "⚫ 登録する社員データを入力し、[登録]ボタンをクリック",
+      "after": "⚫ 登録する社員データを入力し、[登録]ボタンをクリック。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "⚫ 登録する社員データを入力し、[登録]ボタンをクリック。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b14",
+      "source_page": 27,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "⚫ 入力したデータ通りに、新規データが登録されているかを確認",
+      "after": "⚫ 入力したデータ通りに、新規データが登録されているかを確認。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "⚫ 入力したデータ通りに、新規データが登録されているかを確認。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b12",
+      "source_page": 27,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "⚫ [社員データ登録]リンクをクリック",
+      "after": "⚫ [社員データ登録]リンクをクリック。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "⚫ [社員データ登録]リンクをクリック。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex03",
+      "id": "p019-b02",
+      "source_page": 19,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "※データベースは、既に構築済みです。\nsrc/resources/application.properties を確認してください。",
+      "after": "付録の手順で演習用データベースを準備し、MySQLを起動してください。接続先は src/main/resources/application.properties で確認します。演習用は spring_exercise、本文用は spring_sample なので、混同しないでください。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "※データベースは、既に構築済みです。\nsrc/main/resources/application.properties を確認してください。",
+      "action": {
+        "chapter": "ex03",
+        "id": "p019-b02",
+        "operation": "restore_original_prose",
+        "reason": "原文『既に構築済み』へ復元し、実ファイルのパス訂正だけ維持。"
+      }
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-b03",
+      "source_page": 31,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "⚫ 入力値に誤りがない場合は検索画面へ遷移",
+      "after": "⚫ 入力値に誤りがない場合は検索画面へ遷移。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "⚫ 入力値に誤りがない場合は検索画面へ遷移。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b11",
+      "source_page": 51,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "• jp.co.trainocate.enshu.entity パッケージに、Employee.java はすでに作成済みです。\n• 以下の内容を追記してください。\no Location 型のlocation フィールドを追加すること\no @ManyToOne と @JoinColumn を使い、location_id カラムと外部参照の関連\n付けを行うこと\n▪ @JoinColumn(name = \"location_id\")と指定してください。",
+      "after": "• jp.co.trainocate.enshu.entity パッケージに、Employee.java はすでに作成済みです。\n• 以下の内容を追記してください。\no Location 型のlocation フィールドを追加すること。\no @ManyToOne と @JoinColumn を使い、location_id カラムと外部参照の関連\n付けを行うこと。\n▪ @JoinColumn(name = \"location_id\")と指定してください。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "• jp.co.trainocate.enshu.entity パッケージに、Employee.java はすでに作成済みです。\n• 以下の内容を追記してください。\no Location 型のlocation フィールドを追加すること。\no @ManyToOne と @JoinColumn を使い、location_id カラムと外部参照の関連\n付けを行うこと。\n▪ @JoinColumn(name = \"location_id\")と指定してください。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex06",
+      "id": "p058-b02",
+      "source_page": 58,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "• LocationRepository から findAll() を使って、Location のリストを取得できます",
+      "after": "• LocationRepository から findAll() を使って、Location のリストを取得できます。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "• LocationRepository から findAll() を使って、Location のリストを取得できます。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b05",
+      "source_page": 51,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "o クラスに@Entity、@Table アノテーションを付けること",
+      "after": "o クラスに@Entity、@Table アノテーションを付けること。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "o クラスに@Entity、@Table アノテーションを付けること。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex06",
+      "id": "p061-b04",
+      "source_page": 61,
+      "type": "text_changed",
+      "baseline_kind": "step",
+      "current_kind": "step",
+      "before": "1. 「/showSearchForm」でアクセスすると検索入力画面が表示される",
+      "after": "1. 「/showSearchForm」でアクセスすると検索入力画面が表示される。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "1. 「/showSearchForm」でアクセスすると検索入力画面が表示される。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b15",
+      "source_page": 51,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "• jp.co.trainocate.enshu.entity パッケージの Location.java を修正してください。\n• 以下の内容を追記してください。\no Employee エンティティを格納するリストフィールドを作成すること\no @OneToMany(mappedBy = \"location\") アノテーションを付けること\n▪ mappedBy には、Employee エンティティ側で定義したフィールド名\n（\"location\"）を指定してください。",
+      "after": "• jp.co.trainocate.enshu.entity パッケージの Location.java を修正してください。\n• 以下の内容を追記してください。\no Employee エンティティを格納するリストフィールドを作成すること。\no @OneToMany(mappedBy = \"location\") アノテーションを付けること。\n▪ mappedBy には、Employee エンティティ側で定義したフィールド名\n（\"location\"）を指定してください。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "• jp.co.trainocate.enshu.entity パッケージの Location.java を修正してください。\n• 以下の内容を追記してください。\no Employee エンティティを格納するリストフィールドを作成すること。\no @OneToMany(mappedBy = \"location\") アノテーションを付けること。\n▪ mappedBy には、Employee エンティティ側で定義したフィールド名\n（\"location\"）を指定してください。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b06",
+      "source_page": 51,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "o id フィールドを主キー（@Id）に設定し、自動採番（@GeneratedValue）にするこ\nと",
+      "after": "o id フィールドを主キー（@Id）に設定し、自動採番（@GeneratedValue）にするこ\nと。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "o id フィールドを主キー（@Id）に設定し、自動採番（@GeneratedValue）にするこ\nと。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex06",
+      "id": "p049-b09",
+      "source_page": 49,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "※データベースは、既に構築済みです。\nsrc/resources/application.properties を確認してください。",
+      "after": "付録の手順で演習用データベースを準備し、MySQLを起動してください。接続先は src/main/resources/application.properties で確認します。演習用は spring_exercise、本文用は spring_sample なので、混同しないでください。",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "※データベースは、既に構築済みです。\nsrc/main/resources/application.properties を確認してください。",
+      "action": {
+        "chapter": "ex06",
+        "id": "p049-b09",
+        "operation": "restore_original_prose",
+        "reason": "原文『既に構築済み』へ復元し、実ファイルのパス訂正だけ維持。"
+      }
+    },
+    {
+      "chapter": "ex07",
+      "id": "p070-b02",
+      "source_page": 70,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "■ Bootstrap のクラスを使って、社員一覧テーブルを見やすく整える方法を学びます。\n■ ブラウザから、「localhost:8080/findAll」を開いて、メニュー修正していく演習です",
+      "after": "■ Bootstrap のクラスを使って、社員一覧テーブルを見やすく整える方法を学びます。\n■ ブラウザから、「localhost:8080/findAll」を開いて、メニュー修正していく演習です。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "■ Bootstrap のクラスを使って、社員一覧テーブルを見やすく整える方法を学びます。\n■ ブラウザから、「localhost:8080/findAll」を開いて、メニュー修正していく演習です。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex07",
+      "id": "p075-b06",
+      "source_page": 75,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "• form-control は入力欄に付ける",
+      "after": "• form-control は入力欄に付ける。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "• form-control は入力欄に付ける。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "ex07",
+      "id": "p075-b07",
+      "source_page": 75,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "• 親要素に input-group を付けることで横並びになる",
+      "after": "• 親要素に input-group を付けることで横並びになる。",
+      "initial_classification": "句点のみ（保全）",
+      "final_text": "• 親要素に input-group を付けることで横並びになる。",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    },
+    {
+      "chapter": "front",
+      "id": "p012-b05",
+      "source_page": 12,
+      "type": "text_changed",
+      "baseline_kind": "paragraph",
+      "current_kind": "paragraph",
+      "before": "画面に表示される文字 [プロパティ]を選択します\nキーボードキー [Ctrl]・[Tab]・[Caps Lock]・[↑]・[→]",
+      "after": "画面に表示される文字 [プロパティ]を選択します。\nキーボードキー [Ctrl]・[Tab]・[Caps Lock]・[↑]・[→]",
+      "initial_classification": "本文改稿候補（版名/年/必要トークンのみか個別判断）",
+      "final_text": "画面に表示される文字 [プロパティ]を選択します。\nキーボードキー [Ctrl]・[Tab]・[Caps Lock]・[↑]・[→]",
+      "action": {
+        "operation": "preserve_allowed_change"
+      }
+    }
+  ],
+  "allowed_root_kind_changes": [
+    "p061-b01",
+    "p174-b04",
+    "p180-b01",
+    "p249-b02",
+    "p261-b05",
+    "p268-b01",
+    "p271-b01"
+  ],
+  "counts": {
+    "chapters": 19,
+    "initial_nonwhitespace_changes": 70,
+    "removed_additions": 6,
+    "restored_prose_blocks": 11,
+    "remaining_nonwhitespace_changes": 56,
+    "remaining_added_explanation_nodes": 0,
+    "classifications": {
+      "保全：Framework管理版の最小訂正・旧日付注記除去": 1,
+      "保全：句点補完のみ": 33,
+      "保全：既存コードのAPI・構文・依存版更新": 14,
+      "保全：導入位置の依存コード（親担当が維持を明示）": 1,
+      "保全：本文内のコード引用の二重ドット誤字修正": 1,
+      "保全：Bootstrapの版名・日付だけ（原文の文型保持）": 1,
+      "保全：Pleiades版名だけの更新": 1,
+      "保全：指定された年表示のみ": 2,
+      "保全：原文説明を復元・実ファイルのパス訂正のみ": 2
+    }
+  },
+  "text_comparison_scope": "Pandoc本文ノードの空白/U+200B除去後の文字列。非表示コメント・図版パス・kind差は別欄へ列挙。Word段落復元の空白差は保全検査で確認。",
+  "status": "pass"
+}

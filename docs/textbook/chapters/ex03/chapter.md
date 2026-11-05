@@ -124,7 +124,9 @@
 
 ::: {#p019-b02 .paragraph}
 
-付録の手順で演習用データベースを準備し、MySQLを起動してください。接続先は `src/main/resources/application.properties` で確認します。演習用は `spring_exercise`、本文用は `spring_sample` なので、混同しないでください。
+[※データベースは、既に構築済みです。]{.s013}\
+[src/main/resources/application.properties を確認してください。]{.s014}
+
 :::
 
 ::: {#p019-b03 .heading}

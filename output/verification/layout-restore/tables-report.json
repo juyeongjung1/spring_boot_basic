@@ -1,0 +1,798 @@
+{
+  "scope": "source-layoutに登録されたネイティブMarkdown表。スライドSVG内の表は既存図版の配色を維持するため対象外。",
+  "tables": 32,
+  "cells": 587,
+  "chapters": {
+    "06": 7,
+    "ex03": 3,
+    "ex04": 2,
+    "ex06": 10,
+    "ex07": 3,
+    "03": 5,
+    "04": 2
+  },
+  "colored_tables": 23,
+  "originally_monochrome_tables": 9,
+  "tests": {
+    "svg_vs_original_pdf_paint_exact_tables": 32,
+    "original_pdf_open_disabled": true,
+    "edited_cell_fallback_passed_tables": 32,
+    "source_text_mismatch_cells": 0,
+    "target_header_centered": true
+  },
+  "target": {
+    "chapter": "03",
+    "id": "p069-table01",
+    "source_page": 69,
+    "comparison_original": "tmp/layout-restore/table69-original.png",
+    "comparison_before": "tmp/layout-restore/table69-before.png",
+    "comparison_after": "tmp/layout-restore/table69-after.png",
+    "comparison_triptych": "tmp/layout-restore/table69-color-comparison.png",
+    "actual_after_pdf": "output\\pdf\\textbook\\chapter-03\\chapter-flow.pdf",
+    "actual_after_pdf_sha256": "0964f3372d96fb2384db0c5bc890646bf0800cf8b1c726b1622cf458158546ce",
+    "actual_after_local_page": 7,
+    "backgrounds": {
+      "#ffffff": 18
+    },
+    "text_colors": {
+      "#374151": 34,
+      "#ff0000": 14
+    },
+    "underline_spans": 9,
+    "observed_grid_rules_0_65pt": 11,
+    "grid_colors": [
+      [
+        0.2509651184082031,
+        0.2509956657886505,
+        0.2509193420410156
+      ]
+    ],
+    "geometry": {
+      "chapter": "03",
+      "id": "p069-table01",
+      "cells": [
+        [
+          {
+            "align": "center",
+            "valign": "horizon"
+          },
+          {
+            "align": "center",
+            "valign": "horizon"
+          },
+          {
+            "align": "center",
+            "valign": "horizon"
+          }
+        ],
+        [
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          }
+        ],
+        [
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          }
+        ],
+        [
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          }
+        ],
+        [
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          }
+        ],
+        [
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          },
+          {
+            "align": "left",
+            "valign": "horizon"
+          }
+        ]
+      ],
+      "row_heights": [
+        22.260009765625,
+        76.07998657226562,
+        75.99002075195312,
+        57.95996856689453,
+        58.079994201660156,
+        57.920021057128906
+      ],
+      "pitch": 18.0,
+      "font_size": 10.56,
+      "inset": 2.039989471435547
+    },
+    "visual_result": "灰色・赤字・赤い下線を復元。欠字・セル外への文字欠落なし。中央揃え・元最小行高はroot側へ統合中。"
+  },
+  "word_crosscheck": {
+    "tables_uniquely_matched": 29,
+    "tables_accounted_for": 32,
+    "exact_text_unique_matches": 27,
+    "structural_exceptions": [
+      {
+        "chapter": "ex03",
+        "id": "p019-table01",
+        "word": "JAC0177G-L1-04(260715修正).docx",
+        "matches": [
+          1,
+          6
+        ],
+        "match_method": "同一本文の表がWord内に重複"
+      },
+      {
+        "chapter": "ex04",
+        "id": "p036-table01",
+        "word": "JAC0177G-L1-04(260715修正).docx",
+        "matches": [
+          5
+        ],
+        "match_method": "縦結合セルの読取順が異なるが全文字・字数一致"
+      },
+      {
+        "chapter": "ex06",
+        "id": "p049-table01",
+        "word": "JAC0177G-L1-04(260715修正).docx",
+        "matches": [
+          1,
+          6
+        ],
+        "match_method": "同一本文の表がWord内に重複"
+      },
+      {
+        "chapter": "ex06",
+        "id": "p049-table02",
+        "word": "JAC0177G-L1-04(260715修正).docx",
+        "matches": [
+          2,
+          7
+        ],
+        "match_method": "Wordの1表がPDFでは改ページで分割、本文連続範囲一致"
+      },
+      {
+        "chapter": "ex06",
+        "id": "p050-table01",
+        "word": "JAC0177G-L1-04(260715修正).docx",
+        "matches": [
+          7
+        ],
+        "match_method": "Wordの1表がPDFでは改ページで分割、本文連続範囲一致"
+      }
+    ],
+    "pdf_color_priority_exception": [
+      {
+        "chapter": "06",
+        "id": "p197-table02",
+        "word": "JAC0177G-T1-04(260715修正).docx",
+        "matches": [
+          119
+        ],
+        "direct_cell_shd": [
+          [
+            "FFFFFF",
+            "FFFFFF",
+            "FFFFFF",
+            "FFFFFF"
+          ],
+          [
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5"
+          ],
+          [
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5"
+          ],
+          [
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5"
+          ],
+          [
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5"
+          ],
+          [
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5",
+            "FBE4D5"
+          ],
+          [
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "explicit_fill_count": 24,
+        "fill_mismatches": [
+          {
+            "row": 1,
+            "column": 0,
+            "word": "FBE4D5",
+            "svg": "#ffffff"
+          }
+        ],
+        "match_method": "全文一致"
+      }
+    ]
+  },
+  "protected_source_files_sha256": {
+    "docs\\textbook\\chapters\\03\\source-layout.json": "de8a827094f31158d21c133f13a8079066fdfef59c35a246d015675e37877595",
+    "docs\\textbook\\chapters\\03\\baseline.md": "70c6f38a697b746133c129751b1a6ca70c5d9ce2ee0200ce87551918c21e9a8f",
+    "docs\\textbook\\chapters\\04\\source-layout.json": "0ac59da89a6abe001cb8696a838030aa786776baf9ee9614ed65fd294532b4ab",
+    "docs\\textbook\\chapters\\04\\baseline.md": "474179ee6c1d56c6aed3425aefe9068a5079d2482d34ee434268705392cbb616",
+    "docs\\textbook\\chapters\\06\\source-layout.json": "b7680404b894cb36729a7f7291ad45d4ecccff4ab1b7a5a6aa2e7eb6f9f4586e",
+    "docs\\textbook\\chapters\\06\\baseline.md": "c504d865d011a8b2e7c41d35719d6d56d72c2aeaeb1bbe0da950c5e14181532d",
+    "docs\\textbook\\chapters\\ex03\\source-layout.json": "c303647b2b2fc70a307742a4c51624a209bffd9196bbbbeadb0b7177d6e1f567",
+    "docs\\textbook\\chapters\\ex03\\baseline.md": "844b513e8154f85ac4e0ddb0cd46b48b955440a51a883637afed11f995f582ee",
+    "docs\\textbook\\chapters\\ex04\\source-layout.json": "2800e405c1e73ee1a469dc02ba425493a2fa9794a0ce88518314b2c7d7afebe9",
+    "docs\\textbook\\chapters\\ex04\\baseline.md": "5aedfb10a997d014302abdc8c160795de213e47d7a114b5d122405a4b013eaec",
+    "docs\\textbook\\chapters\\ex06\\source-layout.json": "5edc95b8aea20a59907b868fb0601960ae28e3022c5a4ce0010cfe06993985a6",
+    "docs\\textbook\\chapters\\ex06\\baseline.md": "33d98acf7ba186c438a08742080a5020865d59e62f9340fb453aa8fbe390c829",
+    "docs\\textbook\\chapters\\ex07\\source-layout.json": "7597ee3dd4a0e1fbe8723b370136f0edd1aafade3ca823db22fa0d5230b4960c",
+    "docs\\textbook\\chapters\\ex07\\baseline.md": "d794c30233e2fb6f0f28e66c00739dcac459bb3daf218f4196d7336ed042cf2a"
+  },
+  "source_helper_sha256": "466501a0097115a1e77f809b5fb2c3829cce91e22631626d8a73ef6d9e282b9a",
+  "palette_details": [
+    {
+      "chapter": "06",
+      "id": "p196-table01",
+      "page": 196,
+      "rows": 3,
+      "columns": 6,
+      "backgrounds": {
+        "#31849b": 6,
+        "#ffffff": 12
+      },
+      "text_colors": {
+        "#ffffff": 6,
+        "#000000": 12
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "06",
+      "id": "p196-table02",
+      "page": 196,
+      "rows": 5,
+      "columns": 2,
+      "backgrounds": {
+        "#ffffff": 6,
+        "#fbe4d5": 4
+      },
+      "text_colors": {
+        "#000000": 10
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "06",
+      "id": "p197-table01",
+      "page": 197,
+      "rows": 5,
+      "columns": 7,
+      "backgrounds": {
+        "#ed7d31": 7,
+        "#ffffff": 28
+      },
+      "text_colors": {
+        "#ffffff": 7,
+        "#000000": 27
+      },
+      "underline_spans": 6
+    },
+    {
+      "chapter": "06",
+      "id": "p197-table02",
+      "page": 197,
+      "rows": 10,
+      "columns": 4,
+      "backgrounds": {
+        "#ffffff": 21,
+        "#fbe4d5": 19
+      },
+      "text_colors": {
+        "#000000": 40
+      },
+      "underline_spans": 9
+    },
+    {
+      "chapter": "06",
+      "id": "p200-table01",
+      "page": 200,
+      "rows": 1,
+      "columns": 7,
+      "backgrounds": {
+        "#ffffff": 7
+      },
+      "text_colors": {
+        "#000000": 6
+      },
+      "underline_spans": 6
+    },
+    {
+      "chapter": "06",
+      "id": "p223-table01",
+      "page": 223,
+      "rows": 9,
+      "columns": 2,
+      "backgrounds": {
+        "#fff2cc": 2,
+        "#ffffff": 16
+      },
+      "text_colors": {
+        "#000000": 8,
+        "#ff0000": 10
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "06",
+      "id": "p235-table01",
+      "page": 235,
+      "rows": 4,
+      "columns": 3,
+      "backgrounds": {
+        "#fff2cc": 3,
+        "#ffffff": 9
+      },
+      "text_colors": {
+        "#000000": 12
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex03",
+      "id": "p019-table01",
+      "page": 19,
+      "rows": 4,
+      "columns": 2,
+      "backgrounds": {
+        "#fff2cc": 8
+      },
+      "text_colors": {
+        "#000000": 8
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex03",
+      "id": "p019-table02",
+      "page": 19,
+      "rows": 5,
+      "columns": 7,
+      "backgrounds": {
+        "#ed7d31": 7,
+        "#ffffff": 28
+      },
+      "text_colors": {
+        "#ffffff": 7,
+        "#000000": 27
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex03",
+      "id": "p019-table03",
+      "page": 19,
+      "rows": 9,
+      "columns": 4,
+      "backgrounds": {
+        "#ed7d31": 4,
+        "#fbe4d5": 16,
+        "#ffffff": 16
+      },
+      "text_colors": {
+        "#ffffff": 4,
+        "#000000": 32
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex04",
+      "id": "p034-table01",
+      "page": 34,
+      "rows": 3,
+      "columns": 3,
+      "backgrounds": {
+        "#ffff00": 3,
+        "#ffffff": 6
+      },
+      "text_colors": {
+        "#000000": 9
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex04",
+      "id": "p036-table01",
+      "page": 36,
+      "rows": 7,
+      "columns": 3,
+      "backgrounds": {
+        "#ffff00": 3,
+        "#ffffff": 18
+      },
+      "text_colors": {
+        "#000000": 12,
+        "#ff0000": 7
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p049-table01",
+      "page": 49,
+      "rows": 4,
+      "columns": 2,
+      "backgrounds": {
+        "#fff2cc": 8
+      },
+      "text_colors": {
+        "#000000": 8
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p049-table02",
+      "page": 49,
+      "rows": 4,
+      "columns": 7,
+      "backgrounds": {
+        "#ed7d31": 7,
+        "#ffffff": 21
+      },
+      "text_colors": {
+        "#ffffff": 7,
+        "#000000": 21
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p050-table01",
+      "page": 50,
+      "rows": 2,
+      "columns": 7,
+      "backgrounds": {
+        "#ffffff": 14
+      },
+      "text_colors": {
+        "#000000": 12
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p050-table02",
+      "page": 50,
+      "rows": 9,
+      "columns": 5,
+      "backgrounds": {
+        "#ed7d31": 5,
+        "#fbe4d5": 20,
+        "#ffffff": 20
+      },
+      "text_colors": {
+        "#ffffff": 5,
+        "#000000": 40
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p050-table03",
+      "page": 50,
+      "rows": 3,
+      "columns": 7,
+      "backgrounds": {
+        "#ed7d31": 7,
+        "#ffffff": 14
+      },
+      "text_colors": {
+        "#ffffff": 7,
+        "#000000": 14
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p050-table04",
+      "page": 50,
+      "rows": 6,
+      "columns": 2,
+      "backgrounds": {
+        "#ed7d31": 2,
+        "#ffffff": 10
+      },
+      "text_colors": {
+        "#ffffff": 2,
+        "#000000": 10
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p057-table01",
+      "page": 57,
+      "rows": 6,
+      "columns": 2,
+      "backgrounds": {
+        "#ffffff": 12
+      },
+      "text_colors": {
+        "#000000": 12
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p059-table01",
+      "page": 59,
+      "rows": 4,
+      "columns": 2,
+      "backgrounds": {
+        "#ffffff": 8
+      },
+      "text_colors": {
+        "#000000": 8
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p061-table01",
+      "page": 61,
+      "rows": 3,
+      "columns": 2,
+      "backgrounds": {
+        "#ffffff": 6
+      },
+      "text_colors": {
+        "#000000": 6
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p062-table01",
+      "page": 62,
+      "rows": 7,
+      "columns": 2,
+      "backgrounds": {
+        "#ffffff": 14
+      },
+      "text_colors": {
+        "#000000": 14
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex07",
+      "id": "p066-table01",
+      "page": 66,
+      "rows": 3,
+      "columns": 2,
+      "backgrounds": {
+        "#ffffff": 6
+      },
+      "text_colors": {
+        "#000000": 6
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex07",
+      "id": "p070-table01",
+      "page": 70,
+      "rows": 4,
+      "columns": 2,
+      "backgrounds": {
+        "#ffffff": 8
+      },
+      "text_colors": {
+        "#000000": 8
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "ex07",
+      "id": "p071-table01",
+      "page": 71,
+      "rows": 4,
+      "columns": 2,
+      "backgrounds": {
+        "#ffffff": 8
+      },
+      "text_colors": {
+        "#000000": 8
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "03",
+      "id": "p067-table01",
+      "page": 67,
+      "rows": 4,
+      "columns": 2,
+      "backgrounds": {
+        "#fff2cc": 8
+      },
+      "text_colors": {
+        "#000000": 8
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "03",
+      "id": "p067-table02",
+      "page": 67,
+      "rows": 4,
+      "columns": 7,
+      "backgrounds": {
+        "#ed7d31": 7,
+        "#ffffff": 21
+      },
+      "text_colors": {
+        "#ffffff": 7,
+        "#000000": 21
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "03",
+      "id": "p067-table03",
+      "page": 67,
+      "rows": 10,
+      "columns": 3,
+      "backgrounds": {
+        "#ffffff": 15,
+        "#fbe4d5": 15
+      },
+      "text_colors": {
+        "#000000": 30
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "03",
+      "id": "p069-table01",
+      "page": 69,
+      "rows": 6,
+      "columns": 3,
+      "backgrounds": {
+        "#ffffff": 18
+      },
+      "text_colors": {
+        "#374151": 34,
+        "#ff0000": 14
+      },
+      "underline_spans": 9
+    },
+    {
+      "chapter": "03",
+      "id": "p073-table01",
+      "page": 73,
+      "rows": 4,
+      "columns": 7,
+      "backgrounds": {
+        "#ed7d31": 7,
+        "#ffffff": 21
+      },
+      "text_colors": {
+        "#ffffff": 7,
+        "#000000": 21
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "04",
+      "id": "p136-table01",
+      "page": 136,
+      "rows": 4,
+      "columns": 6,
+      "backgrounds": {
+        "#31849b": 6,
+        "#ffffff": 18
+      },
+      "text_colors": {
+        "#ffffff": 6,
+        "#000000": 18
+      },
+      "underline_spans": 0
+    },
+    {
+      "chapter": "04",
+      "id": "p136-table02",
+      "page": 136,
+      "rows": 4,
+      "columns": 3,
+      "backgrounds": {
+        "#ffc000": 3,
+        "#ffffff": 9
+      },
+      "text_colors": {
+        "#000000": 12
+      },
+      "underline_spans": 0
+    }
+  ]
+}

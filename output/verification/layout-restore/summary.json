@@ -1,0 +1,33 @@
+{
+  "source_pages": 373,
+  "flow_pages": 384,
+  "source_page_boundaries_verified": 373,
+  "blank_pages_preserved": 17,
+  "content_ids_verified": 2854,
+  "original_content_ids_preserved": 2853,
+  "new_explanation_blocks": 0,
+  "permitted_new_dependency_code_blocks": 1,
+  "removed_added_blocks": 6,
+  "restored_prose_blocks": 11,
+  "figures_source_geometry_verified": 267,
+  "source_code_ids": 189,
+  "same_frame_groups_combined": 6,
+  "source_table_styles_verified": 32,
+  "source_table_cells_verified": 587,
+  "operation_headings_corrected": 7,
+  "header_mismatches": 0,
+  "uri_annotations_verified": 78,
+  "maximum_uri_coordinate_delta_pt": 0,
+  "regression_tests_passed": 40,
+  "verification": "output/verification/layout-restore/",
+  "collections": {
+    "textbook": {
+      "source_pages": 296,
+      "flow_pages": 305
+    },
+    "exercise": {
+      "source_pages": 77,
+      "flow_pages": 79
+    }
+  }
+}

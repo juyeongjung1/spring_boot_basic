@@ -14,6 +14,8 @@ import pymupdf as fitz
 import typst
 from PIL import Image, ImageChops, ImageStat
 from links import add_url_links
+from code_geometry import code_geometries
+from table_styles import table_paint, table_geometry
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -272,6 +274,20 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 body.append(f'#at({x0},{y0},image({q("/"+(folder/figures[ident]).relative_to(ROOT).as_posix())},width:{x1-x0}pt,height:{y1-y0}pt))')
         commands += ['#native-cover['+'\n'.join(body)+']','#pagebreak()']
     figure_map = {f["id"]: f for f in layout["figures"]}
+    code_boxes = code_geometries(folder, layout, nodes)
+    code_groups, frame_owners = {}, {}
+    for code_id, geometry in code_boxes.items():
+        key = (geometry['source_page'], tuple(geometry['frame']))
+        owner = frame_owners.setdefault(key, code_id)
+        code_groups.setdefault(owner, []).append(code_id)
+    code_members = {}
+    for owner, group in code_groups.items():
+        for code_id in group:
+            geometry = code_boxes[code_id]
+            for member in [code_id, *geometry.get('caption_ids', []), *geometry.get('figure_ids', [])]:
+                if member in code_members and code_members[member] != owner:
+                    raise ValueError('コード枠の付属要素が重複しています: ' + member)
+                code_members[member] = owner
     native_page_map={}
     for page in layout['pages']:
         current_entries = next((p['entries'] for p in order if p['source_page'] == page['source_page']), [])
@@ -356,12 +372,103 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             else:
                 in_list = False
             previous = ident
+    def rect_source(shape, origin):
+        x0, y0, x1, y1 = shape['rect']
+        fill = f'rgb({q(shape["fill"])})' if shape.get('fill') not in (None, 'none') else 'none'
+        stroke = f'{shape.get("stroke_width", 0)}pt + rgb({q(shape["stroke"])})' if shape.get('stroke') not in (None, 'none') else 'none'
+        return f'#at({x0-origin[0]}, {y0-origin[1]}, rect(width: {x1-x0}pt, height: {y1-y0}pt, fill: {fill}, stroke: {stroke}))'
+
+    def render_code(ident):
+        node, geometry = nodes[ident], dict(code_boxes[ident])
+        code_ids = code_groups[ident]
+        if len(code_ids) > 1:
+            for key in ('caption_ids', 'figure_ids'):
+                geometry[key] = list(dict.fromkeys(member for code_id in code_ids for member in code_boxes[code_id][key]))
+            for key in ('caption_shapes', 'underlay_shapes'):
+                unique = {q(shape): shape for code_id in code_ids for shape in code_boxes[code_id][key]}
+                geometry[key] = list(unique.values())
+            geometry['text_x'] = min(code_boxes[code_id]['text_x'] for code_id in code_ids)
+            geometry['text_bottom'] = max(code_boxes[code_id]['text_bottom'] for code_id in code_ids)
+        x0, y0, x1, y1 = geometry['frame']
+        caption_ids = geometry.get('caption_ids', [])
+        outside = {member for member in caption_ids if min(run['bbox'][1] for line in layout['blocks'][member]['lines'] for run in line['runs']) < y0}
+        caption_shapes = geometry.get('caption_shapes', [])
+        caption_top = min([y0] + [run['bbox'][1] for member in outside for line in layout['blocks'][member]['lines'] for run in line['runs']]
+                          + [shape['rect'][1] for shape in caption_shapes if shape['rect'][1] < y0])
+        caption = [rect_source(shape, (x0, caption_top)) for shape in caption_shapes if shape['rect'][1] < y0]
+        overlay = [rect_source(shape, (x0, y0)) for shape in caption_shapes if shape['rect'][1] >= y0]
+        for member in caption_ids:
+            group = layout['blocks'][member]
+            target = caption if member in outside else overlay
+            origin_y = caption_top if member in outside else y0
+            target.append(f'#at(0, 0, mark({q(member)}, "heading"))')
+            if nodes[member]['text'] == '\n'.join(line['text'] for line in group['lines']):
+                for line in group['lines']:
+                    shifted = [dict(run, y=run['y']-origin_y, positions=[x-x0 for x in run['positions']]) for run in line['runs']]
+                    target += native_runs(shifted)
+            else:
+                line = group['lines'][0]
+                target.append(f'#at({line["x"]-x0}, {line["y"]-origin_y}, text(top-edge: 0pt, bottom-edge: 0pt)[{inline(nodes[member]["parts"], typography=False)}])')
+        tail = 0
+        for member in geometry.get('figure_ids', []):
+            fig = figure_map[member]
+            fx0, fy0, fx1, fy1 = fig['box']
+            path = '/' + (folder / figures[member]).relative_to(ROOT).as_posix()
+            overlay.append(f'#at({fx0-x0}, {fy0-y0}, [#mark({q(member)}, "start")#image({q(path)}, width: {fx1-fx0}pt, height: {fy1-fy0}pt)#mark({q(member)}, "end")])')
+            tail = max(tail, fy1-y1)
+        underlay = [rect_source(shape, (x0, y0)) for shape in geometry.get('underlay_shapes', [])]
+        header_height = max(0, geometry.get('background', geometry['frame'])[1]-y0)
+        above = 18 if any(nodes[member]['kind'] == 'heading' for member in caption_ids) else 8
+        original_lines = layout['blocks'][ident]['lines']
+        sizes = Counter()
+        for line in original_lines:
+            for run in line.get('runs', []):
+                sizes[layout['styles'][run['style']]['size']] += len(run['text'])
+        font_size = sizes.most_common(1)[0][0]
+        pitches = Counter(round(b['y']-a['y'], 2) for a,b in zip(original_lines,original_lines[1:]) if 0 < b['y']-a['y'] < 40)
+        pitch = pitches.most_common(1)[0][0] if pitches else font_size+6
+        original_code = '\n'.join(line['text'] for line in layout['blocks'][ident]['lines'])
+        # 接続URLの1行定義は保ち、紙面では原本の折り返し位置を使う。
+        display_code = original_code if ident == 'p071-b03' and normalized(original_code) == normalized(node['text']) else node['text']
+        values = ','.join(q(line) for line in display_code.split('\n'))
+        content_option = ''
+        if len(code_ids) > 1:
+            fragments = []
+            for index, code_id in enumerate(code_ids):
+                box = code_boxes[code_id]
+                if index:
+                    gap = max(0, box['text_top']-code_boxes[code_ids[index-1]]['text_bottom'])
+                    fragments.append(f'#v({gap}pt)')
+                source_lines = layout['blocks'][code_id]['lines']
+                sizes = Counter()
+                for line in source_lines:
+                    for run in line.get('runs', []):
+                        sizes[layout['styles'][run['style']]['size']] += len(run['text'])
+                size = sizes.most_common(1)[0][0]
+                pitches = Counter(round(b['y']-a['y'], 2) for a,b in zip(source_lines,source_lines[1:]) if 0 < b['y']-a['y'] < 40)
+                pitch = pitches.most_common(1)[0][0] if pitches else size+6
+                lines = ','.join(q(line) for line in nodes[code_id]['text'].split('\n'))
+                fragment = f'#code-fragment(({lines},), {q(nodes[code_id]["language"])}, font-size: {size}pt, leading: {max(0,pitch-size)}pt)'
+                if index:
+                    fragment = f'#mark({q(code_id)}, "start")' + fragment + f'#mark({q(code_id)}, "end")'
+                fragments.append(f'#block(above: 0pt, below: 0pt, inset: (left: {box["text_x"]-geometry["text_x"]}pt))[{fragment}]')
+            content_option = ', content: [' + '\n'.join(fragments) + ']'
+        return (f'#code-panel({q(ident)}, ({values},), {q(node["language"])}, '
+                f'width: {x1-x0}pt, offset: {x0-85.104}pt, left: {geometry["text_x"]-x0}pt, right: 0pt, '
+                f'top: {geometry["text_top"]-y0}pt, bottom: {max(0,y1-geometry["text_bottom"])}pt, '
+                f'source-height: {y1-y0}pt, framed: {str(geometry["framed"]).lower()}, filled: {str(geometry["has_background"]).lower()}, '
+                f'caption: [{chr(10).join(caption)}], caption-height: {y0-caption_top}pt, '
+                f'header-height: {header_height}pt, underlay: [{chr(10).join(underlay)}], '
+                f'overlay: [{chr(10).join(overlay)}], tail: {tail}pt, above: {above}pt, '
+                f'font-size: {font_size}pt, leading: {max(0,pitch-font_size)}pt{content_option})')
+
     def render(ident):
         if ident in figures:
             fig = figure_map.get(ident, {"box": [0, 0, 426.672, 0]})
             path = "/" + (folder / figures[ident]).relative_to(ROOT).as_posix()
-            width=min(fig['box'][2]-fig['box'][0],426.672,600*(fig['box'][2]-fig['box'][0])/(fig['box'][3]-fig['box'][1]))
-            return f'#illustration({q(ident)}, {q(path)}, {width})'
+            width = fig['box'][2] - fig['box'][0]
+            offset = fig['box'][0] - 85.104
+            return f'#illustration({q(ident)}, {q(path)}, {width}, offset: {offset}pt)'
         node = nodes[ident]
         if node['kind'] == 'paragraph':
             parts = typographic_parts(node['parts'])
@@ -381,7 +488,31 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             xs=info.get('xs',list(range(len(node['rows'][0])+1)))
             widths=[max(1,xs[i+1]-xs[i]) for i in range(len(xs)-1)]
             rows='('+','.join('('+','.join(q(plain_symbols(c)) for c in row)+',)' for row in node['rows'])+',)'
-            return f'#table-panel({q(ident)},{rows},({",".join(str(w)+"fr" for w in widths)},),{str(node["has_header"]).lower()})'
+            options = ''
+            if info:
+                paint = table_paint(folder, layout, info, node['rows'])
+                geometry = table_geometry(layout, info)
+                painted_rows = []
+                for row in paint:
+                    cells = []
+                    for cell in row:
+                        pieces = []
+                        for value, style, underline in cell['parts']:
+                            value = '\u200b'.join(plain_symbols(value).replace('\n', ' '))
+                            piece = f'#styled({q(style)}, {q(value)})'
+                            pieces.append(f'#underline[{piece}]' if underline else piece)
+                        cells.append(f'(fill: {q(cell["fill"])}, align: {cell["align"]} + {cell["valign"]}, body: [{"".join(pieces)}])')
+                    painted_rows.append('(' + ','.join(cells) + ',)')
+                options = (f', paint: ({",".join(painted_rows)},), width: {xs[-1]-xs[0]}pt, '
+                           f'offset: {xs[0]-85.104}pt, source-widths: ({",".join(str(w)+"pt" for w in widths)},), '
+                           f'source-heights: ({",".join(str(h)+"pt" for h in geometry["row_heights"])},)')
+                if geometry['font_size']:
+                    options += f', font-size: {geometry["font_size"]}pt'
+                    if geometry['pitch']:
+                        options += f', leading: {max(0,geometry["pitch"]-geometry["font_size"])}pt'
+                if geometry['inset'] is not None:
+                    options += f', inset: {geometry["inset"]}pt'
+            return f'#table-panel({q(ident)},{rows},({",".join(str(w)+"fr" for w in widths)},),{str(node["has_header"]).lower()}{options})'
         if node["kind"] == "code":
             values = ",".join(q(l) for l in node["text"].split("\n"))
             return f'#code-panel({q(ident)}, ({values},), {q(node["language"])})'
@@ -406,6 +537,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if page['id'] in slide_headers:
             entries.extend(additions)
     i = 0
+    rendered_codes = set()
     while i < len(entries):
         ident = entries[i]
         if ident.startswith('__source-'):
@@ -420,11 +552,18 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             commands += ['#pagebreak(weak: true)','#[#set page(header: none, footer: none)\n#mark('+q(ident)+',"native-page")\n#native-cover['+native_page_map[ident[len('__native-'):]]+']\n#pagebreak(weak: true)]']
             i+=1
             continue
+        if ident in code_members:
+            code_id = code_members[ident]
+            if code_id not in rendered_codes:
+                commands.append(render_code(code_id))
+                rendered_codes.add(code_id)
+            i += 1
+            continue
         if ident in nodes and nodes[ident]["kind"] in ('step','heading'):
             end = i + 1
-            while end < len(entries) and entries[end] in nodes and nodes[entries[end]]["kind"] == "paragraph":
+            while end < len(entries) and entries[end] not in code_members and entries[end] in nodes and nodes[entries[end]]["kind"] == "paragraph":
                 end += 1
-            if end < len(entries) and entries[end] in figures:
+            if end < len(entries) and entries[end] in figures and entries[end] not in code_members:
                 body = "\n".join(render(e) for e in entries[i:end + 1])
                 # 枠の先頭にある子見出しの上余白は相殺されるため、外側で確保する。
                 above = 0 if ident in slide_body_first else (18 if nodes[ident]['kind'] == 'heading' else 8)
@@ -555,6 +694,9 @@ def build(chapter="01", mode="all", markdown=None, output=None):
             if len(places) != 2 or places[0]["page"] != places[1]["page"] or places[-1]["y"] > 778:
                 split_instructions.append(ident)
         overflow = []
+        original_runs = [r for block in layout['blocks'].values() for line in block['lines'] for r in line.get('runs', [])]
+        right_limit = min(595.32, max([545] + [r['bbox'][2]+0.5 for r in original_runs]))
+        left_limit = max(0, min([78] + [r['bbox'][0]-0.5 for r in original_runs]))
         actual_body = []
         native_page_positions={m['page'] for m in marks if m['edge']=='native-page'}
         for index, page in enumerate(pdf):
@@ -570,7 +712,7 @@ def build(chapter="01", mode="all", markdown=None, output=None):
                     if index+1 in native_page_positions:
                         if x0<0 or y0<0 or x1>595.32 or y1>841.92:overflow.append({'page':index+1,'bbox':list(line['bbox'])})
                         continue
-                    if x0 < 78 or x1 > 545 or y1 > 778:
+                    if x0 < left_limit or x1 > right_limit or y1 > 778:
                         overflow.append({"page": index + 1, "bbox": list(line["bbox"])})
         expected = Counter(normalized("".join(n["text"] for n in nodes.values())))
         # 新しい設定図のSVGには、輪郭ではなく文字として残したラベルもある。

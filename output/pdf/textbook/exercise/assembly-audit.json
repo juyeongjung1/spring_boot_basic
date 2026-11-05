@@ -1,13 +1,12 @@
 {
   "collection": "exercise",
-  "flow_pages": 78,
+  "flow_pages": 79,
   "source_pages": 77,
   "toc_entries": 45,
   "source_page_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 19,
-  "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "d24efe203c99423cb4e2531c594e87b9c3790a24b978e832b4ce453069a5fdf2",
-  "verification": "output/verification/fidelity/",
-  "scope": "今回の合冊の本文・原本ヘッダー・ページ境界・URI。PPT/段落の画像比較を別記。"
+  "maximum_uri_coordinate_delta_pt": 0,
+  "pdf_sha256": "b946bded2b45842b705336ae91ec3d70c5d0413993cd146d0ff453538c0c60db",
+  "verification": "output/verification/layout-restore/"
 }

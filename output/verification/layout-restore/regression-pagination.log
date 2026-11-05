@@ -1,0 +1,14 @@
+最新PDFの改ページ回帰テスト 2026-11-05T15:42:05.889658
+test_appendix_contents_are_original_with_version_changes_only (__main__.PaginationTests.test_appendix_contents_are_original_with_version_changes_only) ... ok
+test_bean_section_starts_on_its_own_page (__main__.PaginationTests.test_bean_section_starts_on_its_own_page) ... ok
+test_course_outline_does_not_spill_into_the_next_page (__main__.PaginationTests.test_course_outline_does_not_spill_into_the_next_page) ... ok
+test_every_source_page_starts_after_the_previous_content (__main__.PaginationTests.test_every_source_page_starts_after_the_previous_content) ... ok
+test_no_environment_paragraph_is_added_to_the_goals (__main__.PaginationTests.test_no_environment_paragraph_is_added_to_the_goals) ... ok
+test_running_headers_follow_the_original (__main__.PaginationTests.test_running_headers_follow_the_original) ... ok
+test_slide_positions_keep_the_original_upper_area (__main__.PaginationTests.test_slide_positions_keep_the_original_upper_area) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 55.104s
+
+OK
+最終結果: {"test": "test_pagination.py", "exit_code": 0, "elapsed_seconds": 56.22, "status": "pass"}

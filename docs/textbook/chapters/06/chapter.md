@@ -2403,12 +2403,6 @@ public String showProductListByNameAndPrice(String name, int price, Model model)
 
 :::
 
-::: {#migration-06-reference-query .paragraph}
-
-以下の複雑な検索は参考例です。`description`・`brand`・`sku` のフィールドや集計結果用DTOは、例題に合わせて別途定義する必要があります。配布モデルのまま確認する場合は、ここまでに扱った全件検索・主キー検索・商品名と価格の検索を使用してください。
-
-:::
-
 ::: {#p232-b02 .paragraph}
 
 […/repository/ProductRepository.java]{.s010}

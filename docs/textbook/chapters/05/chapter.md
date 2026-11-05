@@ -415,7 +415,7 @@ public String showProductById(@PathVariable int id, Model model) {
 
 :::
 
-::: {#p174-b04 .paragraph}
+::: {#p174-b04 .heading}
 
 [動作確認]{.s014}
 
@@ -810,7 +810,7 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 ::: {#page-180 .source-page}
 
-::: {#p180-b01 .paragraph}
+::: {#p180-b01 .heading}
 
 [動作確認]{.s014}
 
@@ -919,7 +919,9 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 ::: {#p182-b05 .paragraph}
 
-レイアウト機能を使うため、上記の依存を追加します。バージョンはSpring Boot 4.0.2の親POMに任せます。保存後は［Maven］→［プロジェクトの更新］を実行し、アプリケーションを再起動して画面を確認しましょう。
+[レイアウト機能を使うためには、関連のライブラリが必要です。追加して、maven install をしてお]{.s009}\
+[きましょう。]{.s009}
+
 :::
 
 :::

@@ -1,0 +1,65 @@
+既存回帰テスト逐次実行 2026-11-05T15:40:42.939809
+対象: test_pipeline.py, test_remaining.py, test_symbols.py, test_fidelity.py
+
+実行開始: test_pipeline.py
+test_added_paragraphs_reach_the_pdf_and_paginate (__main__.TextbookTests.test_added_paragraphs_reach_the_pdf_and_paginate) ... ok
+test_duplicate_ids_are_rejected (__main__.TextbookTests.test_duplicate_ids_are_rejected) ... ok
+test_edited_text_cannot_reuse_old_positions (__main__.TextbookTests.test_edited_text_cannot_reuse_old_positions) ... ok
+test_every_source_block_survives_markdown (__main__.TextbookTests.test_every_source_block_survives_markdown) ... ok
+test_number_replacement_preserves_body_pixels_and_strokes (__main__.TextbookTests.test_number_replacement_preserves_body_pixels_and_strokes) ... ok
+test_single_row_table_without_header_keeps_its_data (__main__.TextbookTests.test_single_row_table_without_header_keeps_its_data) ... ok
+test_thymeleaf_and_spaces_survive_inline_markdown (__main__.TextbookTests.test_thymeleaf_and_spaces_survive_inline_markdown) ... ok
+test_windows_newlines_keep_the_same_reference (__main__.TextbookTests.test_windows_newlines_keep_the_same_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 21.684s
+
+OK
+{"chapter": "01", "blocks": 104, "figures": 15, "reference_pages": null, "flow_pages": 22}
+{"chapter": "01", "blocks": 84, "figures": 15, "reference_pages": null, "flow_pages": 16}
+実行結果: {"test": "test_pipeline.py", "exit_code": 0, "elapsed_seconds": 22.5}
+
+実行開始: test_remaining.py
+test_brackets_have_full_width_in_regular_and_emphasized_text (__main__.RemainingReviewTests.test_brackets_have_full_width_in_regular_and_emphasized_text) ... ok
+test_explicit_emphasis_and_comments_are_visible (__main__.RemainingReviewTests.test_explicit_emphasis_and_comments_are_visible) ... ok
+test_first_code_line_has_the_same_pale_background (__main__.RemainingReviewTests.test_first_code_line_has_the_same_pale_background) ... ok
+test_instruction_picture_has_space_before_the_following_paragraph (__main__.RemainingReviewTests.test_instruction_picture_has_space_before_the_following_paragraph) ... ok
+test_manual_bracket_padding_is_removed_across_style_boundaries (__main__.RemainingReviewTests.test_manual_bracket_padding_is_removed_across_style_boundaries) ... ok
+test_named_markdown_link_and_wrapped_url_keep_their_destinations (__main__.RemainingReviewTests.test_named_markdown_link_and_wrapped_url_keep_their_destinations) ... ok
+test_table_has_space_before_the_following_paragraph (__main__.RemainingReviewTests.test_table_has_space_before_the_following_paragraph) ... ok
+test_table_lines_have_consistent_width_and_contrast (__main__.RemainingReviewTests.test_table_lines_have_consistent_width_and_contrast) ... ok
+test_url_does_not_include_surrounding_punctuation (__main__.RemainingReviewTests.test_url_does_not_include_surrounding_punctuation) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 7.149s
+
+OK
+実行結果: {"test": "test_remaining.py", "exit_code": 0, "elapsed_seconds": 7.98}
+
+実行開始: test_symbols.py
+test_native_and_flow_symbols_use_the_monochrome_font (__main__.PlainSymbolTests.test_native_and_flow_symbols_use_the_monochrome_font) ... ok
+test_only_bullet_codepoints_are_normalized (__main__.PlainSymbolTests.test_only_bullet_codepoints_are_normalized) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.233s
+
+OK
+実行結果: {"test": "test_symbols.py", "exit_code": 0, "elapsed_seconds": 1.09}
+
+実行開始: test_fidelity.py
+test_chapter_one_has_no_added_explanation_or_command_line_steps (__main__.FidelityTests.test_chapter_one_has_no_added_explanation_or_command_line_steps) ... ok
+test_grouped_heading_keeps_its_outer_space (__main__.FidelityTests.test_grouped_heading_keeps_its_outer_space) ... ok
+test_multiple_paragraphs_inside_one_element_have_the_same_spacing (__main__.FidelityTests.test_multiple_paragraphs_inside_one_element_have_the_same_spacing) ... ok
+test_native_punctuation_preserves_every_original_character_position (__main__.FidelityTests.test_native_punctuation_preserves_every_original_character_position) ... ok
+test_paragraph_boundary_is_wider_than_a_line_break (__main__.FidelityTests.test_paragraph_boundary_is_wider_than_a_line_break) ... ok
+test_parallel_subheadings_are_all_classified_as_headings (__main__.FidelityTests.test_parallel_subheadings_are_all_classified_as_headings) ... ok
+test_word_paragraphs_and_answer_choices_are_not_concatenated (__main__.FidelityTests.test_word_paragraphs_and_answer_choices_are_not_concatenated) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 16.078s
+
+OK
+実行結果: {"test": "test_fidelity.py", "exit_code": 0, "elapsed_seconds": 17.22}
+
+原本・章原稿・図版のハッシュ変化: []
+最終結果: {"tests": [{"test": "test_pipeline.py", "exit_code": 0, "elapsed_seconds": 22.5}, {"test": "test_remaining.py", "exit_code": 0, "elapsed_seconds": 7.98}, {"test": "test_symbols.py", "exit_code": 0, "elapsed_seconds": 1.09}, {"test": "test_fidelity.py", "exit_code": 0, "elapsed_seconds": 17.22}], "source_files_checked": 751, "changed_source_files": [], "status": "pass"}

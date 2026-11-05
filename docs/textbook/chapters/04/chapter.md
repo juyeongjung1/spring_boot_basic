@@ -1612,7 +1612,8 @@ typeMismatch.java.util.Date=正しい日付を入力してください
 
 ::: {#p161-b05 .paragraph}
 
-`messages.properties` を保存し、アプリケーションを再起動してエラーメッセージを確認します。依存を変更していなければ `install` は不要です。日本語のファイルはUTF-8で保存してください。
+[保存後、]{.s009}[\[maven install\]をすると、修正事項が反映されるようになります。]{.s010}
+
 :::
 
 ::: {#p161-b06 .paragraph}
