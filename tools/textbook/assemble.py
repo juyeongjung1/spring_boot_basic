@@ -1,0 +1,165 @@
+"""章ごとの照合済みPDFを統合し、出典の全ページと連番を検証する。"""
+from pathlib import Path
+from collections import Counter
+import json
+import re
+
+import pymupdf as fitz
+from build import normalized,read_markdown
+
+ROOT=Path(__file__).resolve().parents[2]
+MARKED=re.compile(rb'(/(?:Span|Artifact)\s*<<(.*?)>>\s*BDC)(.*?)(EMC)',re.S)
+TEXT_OBJECT=re.compile(rb'\bBT\b.*?\bET\b',re.S)
+
+
+def marked_key(match):
+    number=re.search(rb'/MCID\s+(\d+)',match[2])
+    if number:return ('mcid',int(number[1]))
+    if re.search(rb'/Subtype\s*/Footer\b',match[2]):return ('footer',0)
+
+
+def remove_number_text(page,rectangles,expected):
+    """一時コピーで番号を特定し、元の描画命令を再解釈せず文字だけ除く。
+
+    apply_redactionsを実ページへ適用するとTypstの線幅命令が消えるため、
+    消えたMCID/フッターのテキストオブジェクトだけ元ストリームから除く。
+    """
+    doc=page.parent
+    original_text=Counter(normalized(page.get_text()))
+    def marked(p):
+        return {marked_key(m):m[3] for m in MARKED.finditer(p.read_contents()) if marked_key(m) is not None}
+    before=marked(page)
+    temp=fitz.open();temp.insert_pdf(doc,from_page=page.number,to_page=page.number)
+    for rect in rectangles:temp[0].add_redact_annot(rect,fill=(1,1,1))
+    temp[0].apply_redactions(images=0,graphics=0,text=0)
+    after=marked(temp[0])
+    removed={key for key,body in before.items() if TEXT_OBJECT.search(body) and not TEXT_OBJECT.search(after.get(key,b''))}
+    assert removed,'番号のテキスト要素を特定できません'
+    changed=set()
+    def replace(match):
+        key=marked_key(match)
+        if key not in removed:return match[0]
+        changed.add(key)
+        return match[1]+TEXT_OBJECT.sub(b'',match[3])+match[4]
+    for xref in page.get_contents():
+        raw=doc.xref_stream(xref);new=MARKED.sub(replace,raw)
+        if new!=raw:doc.update_stream(xref,new)
+    assert changed==removed
+    page=doc.reload_page(page)
+    remaining=Counter(normalized(page.get_text()))
+    assert original_text-remaining==Counter(normalized(expected)) and not remaining-original_text,'番号以外の文字に変化があります'
+    return page
+
+
+def update_contents(original,flow,collection,page_map,heading_map):
+    """目次の体裁を保ち、組版後の見出し位置へ番号とリンクを更新する。"""
+    updates=[]
+    for source_page in collection['toc_pages']:
+        page=flow[page_map[source_page]-1]
+        changes=[]
+        for block in original[source_page-1].get_text('rawdict')['blocks']:
+            for line in block.get('lines',[]):
+                chars=[dict(c,size=s['size']) for s in line['spans'] for c in s['chars']]
+                text=''.join(c['c'] for c in chars)
+                match=re.search(r'^(.*?)\.{2,}\s*(\d+)\s*$',text)
+                if not match:continue
+                label=match[1].strip();old=int(match[2])
+                key=normalized(label).rstrip('：:')
+                target=heading_map.get((old,key),page_map[old])
+                digits=chars[match.start(2):match.end(2)]
+                rect=fitz.Rect(digits[0]['bbox'])
+                for c in digits[1:]:rect|=fitz.Rect(c['bbox'])
+                changes.append((label,old,target,rect,digits[0]['origin'][1],digits[0]['size'],line['bbox']))
+        page=remove_number_text(page,[r+(-0.1,0,0.1,0) for _,_,_,r,_,_,_ in changes],''.join(str(c[1]) for c in changes))
+        font=fitz.Font(fontfile='C:/Windows/Fonts/msgothic.ttc')
+        page.insert_font(fontname='contents-number',fontbuffer=font.buffer)
+        for label,old,target,rect,baseline,size,bbox in changes:
+            value=str(target);width=font.text_length(value,fontsize=size)
+            page.insert_text((rect.x1-width,baseline),value,fontname='contents-number',fontsize=size)
+            page.insert_link({'kind':fitz.LINK_GOTO,'from':fitz.Rect(bbox),'page':target-1})
+            actual=page.get_textbox(rect+(-0.3,-3,0.3,3)).strip()
+            assert actual==value,(label,target,actual)
+            updates.append({'title':label,'source_page':old,'flow_page':target})
+    assert updates,'目次項目がありません'
+    return updates
+
+
+def assemble(name, collection):
+    out=ROOT/'output/pdf/textbook'/name
+    out.mkdir(parents=True,exist_ok=True)
+    reference=fitz.open();flow=fitz.open();comparison=fitz.open()
+    original=fitz.open(ROOT/collection['pdf'])
+    coverage=[];chapters=[];footer_pages=[];page_map={};heading_map={}
+    for chapter in collection['parts']:
+        folder=ROOT/'docs/textbook/chapters'/chapter
+        config=json.loads((folder/'source.json').read_text(encoding='utf-8'))
+        layout=json.loads((folder/'source-layout.json').read_text(encoding='utf-8'))
+        generated=ROOT/'output/pdf/textbook'/f'chapter-{chapter}'
+        checks=json.loads((generated/'checks.json').read_text(encoding='utf-8'))
+        expected=list(range(config['first_page'],config['last_page']+1))
+        assert [p['source_page'] for p in checks['reference']['page_checks']]==expected,chapter
+        assert all(p['native_text_complete'] for p in checks['reference']['page_checks']),chapter
+        assert checks['flow']['native_text_complete'],chapter
+        for key in ['heading_orphans','split_figures','split_short_code','split_short_tables','split_instructions','overflow']:
+            assert not checks['flow'].get(key), (chapter,key)
+        part_ref=fitz.open(generated/'chapter-reference.pdf')
+        part_flow=fitz.open(generated/'chapter-flow.pdf')
+        part_comparison=fitz.open(generated/'comparison.pdf')
+        assert len(part_ref)==len(expected)==len(part_comparison),chapter
+        coverage+=expected
+        ref_start=len(reference)+1;flow_start=len(flow)+1
+        reference.insert_pdf(part_ref);comparison.insert_pdf(part_comparison)
+        flow.insert_pdf(part_flow)
+        nodes,_,_=read_markdown(folder/'chapter.md')
+        local_positions={}
+        for mark in checks['flow']['block_positions']:
+            match=re.match(r'p(\d+)-',mark['id']) or re.match(r'__native-page-(\d+)',mark['id'])
+            if match:
+                p=int(match[1]);actual=flow_start+mark['page']-1
+                local_positions[p]=min(local_positions.get(p,actual),actual)
+                if mark['id'] in nodes and mark['edge'] in ('start','heading'):
+                    key=normalized(nodes[mark['id']]['text']).rstrip('：:')
+                    heading_map.setdefault((p,key),actual)
+        if config.get('cover_mode','classic')!='none':local_positions[expected[0]]=flow_start
+        for p in reversed(expected):
+            page_map[p]=local_positions.get(p,page_map.get(p+1,len(flow)))
+        # 全体版では各章の元ページ開始番号を残さず、物理ページに連番を付ける。
+        for i in range(len(part_flow)):
+            if i==0 and config.get('cover_mode','classic')!='none':continue
+            fixed=next((m for m in checks['flow']['block_positions'] if m['edge']=='native-page' and m['page']==i+1),None)
+            if fixed:
+                source_number=int(fixed['id'].rsplit('-',1)[1])
+                source_info=next(p for p in layout['pages'] if p['source_page']==source_number)
+                if not any(r['text'].strip().isdigit() and r['bbox'][1]>784 for r in source_info['furniture']):continue
+            footer_pages.append(flow_start+i)
+        chapters.append({'chapter':chapter,'title':config['title'],'source_pages':[expected[0],expected[-1]],'reference_pages':[ref_start,len(reference)],'flow_pages':[flow_start,len(flow)],'blocks':checks['blocks'],'figures':checks['figures'],'table_count':len(layout.get('tables',{}))})
+    assert coverage==list(range(1,len(original)+1)),f'{name}: 出典ページの欠落または重複'
+    contents=update_contents(original,flow,collection,page_map,heading_map)
+    for n in footer_pages:
+        page=flow[n-1]
+        footer=fitz.Rect(240,786,355,817)
+        old=page.get_textbox(footer).strip()
+        assert old.isdigit(),(n,old)
+        page=remove_number_text(page,[footer],old)
+        font=page.insert_font(fontname='book-footer',fontfile='C:/Windows/Fonts/times.ttf')
+        width=fitz.get_text_length(str(n),fontname='tiro',fontsize=11.04)
+        page.insert_text((297.66-width/2,797.04),str(n),fontname='book-footer',fontsize=11.04)
+        value=page.get_textbox(fitz.Rect(240,786,355,817)).strip()
+        assert value==str(n),(n,value)
+    reference.set_metadata({'title':collection['title']+' 元位置再現版'})
+    flow.set_metadata({'title':collection['title']+' 自動組版版'})
+    comparison.set_metadata({'title':collection['title']+' 元PDFとの比較'})
+    flow.set_toc([[1,c['title'],c['flow_pages'][0]] for c in chapters])
+    flow.subset_fonts()
+    reference.save(out/'reference.pdf',garbage=4,deflate=True)
+    flow.save(out/'flow.pdf',garbage=4,deflate=True)
+    comparison.save(out/'comparison.pdf',garbage=4,deflate=True)
+    report={'title':collection['title'],'source_pages':len(original),'reference_pages':len(reference),'flow_pages':len(flow),'comparison_pages':len(comparison),'complete_source_coverage':True,'continuous_footer_numbers':True,'contents':contents,'chapters':chapters}
+    (out/'checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+    print(json.dumps({k:v for k,v in report.items() if k!='chapters'},ensure_ascii=False))
+    return report
+
+
+if __name__=='__main__':
+    collections=json.loads((ROOT/'docs/textbook/collections.json').read_text(encoding='utf-8'))
+    for name,collection in collections.items():assemble(name,collection)

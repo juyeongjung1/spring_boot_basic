@@ -1,0 +1,755 @@
+{
+  "chapter": "appendix-a",
+  "source_sha256": "e730cacfb87c9851f00b2bc254efb0b5e5a6dea76c73ae5dbd2f104ec2756b46",
+  "source_pages": [
+    282,
+    289
+  ],
+  "blocks": 41,
+  "figures": 13,
+  "source_coverage": [
+    {
+      "body": 10,
+      "figure": 0,
+      "furniture": 0,
+      "table": 0
+    },
+    {
+      "body": 167,
+      "figure": 0,
+      "furniture": 12,
+      "table": 0
+    },
+    {
+      "body": 235,
+      "figure": 0,
+      "furniture": 12,
+      "table": 0
+    },
+    {
+      "body": 228,
+      "figure": 0,
+      "furniture": 12,
+      "table": 0
+    },
+    {
+      "body": 555,
+      "figure": 179,
+      "furniture": 12,
+      "table": 0
+    },
+    {
+      "body": 427,
+      "figure": 0,
+      "furniture": 12,
+      "table": 0
+    },
+    {
+      "body": 188,
+      "figure": 86,
+      "furniture": 12,
+      "table": 0
+    },
+    {
+      "body": 168,
+      "figure": 0,
+      "furniture": 12,
+      "table": 0
+    }
+  ],
+  "reference": {
+    "pages": 8,
+    "page_checks": [
+      {
+        "source_page": 282,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.013
+      },
+      {
+        "source_page": 283,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0439
+      },
+      {
+        "source_page": 284,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0122
+      },
+      {
+        "source_page": 285,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0169
+      },
+      {
+        "source_page": 286,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.4629
+      },
+      {
+        "source_page": 287,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0192
+      },
+      {
+        "source_page": 288,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.1473
+      },
+      {
+        "source_page": 289,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0138
+      }
+    ]
+  },
+  "flow": {
+    "pages": 7,
+    "native_text_complete": true,
+    "heading_orphans": [],
+    "split_figures": [],
+    "split_short_code": [],
+    "split_short_tables": [],
+    "split_instructions": [],
+    "instruction_groups": 12,
+    "fixed_pages": [],
+    "overflow": [],
+    "block_positions": [
+      {
+        "id": "p283-b01",
+        "edge": "heading",
+        "page": 2,
+        "y": 86.0
+      },
+      {
+        "id": "p283-b02",
+        "edge": "heading",
+        "page": 2,
+        "y": 115.07439453125
+      },
+      {
+        "id": "p283-b03",
+        "edge": "heading",
+        "page": 2,
+        "y": 134.11439453125
+      },
+      {
+        "id": "instruction-p283-b04",
+        "edge": "start",
+        "page": 2,
+        "y": 151.15439453125
+      },
+      {
+        "id": "p283-b04",
+        "edge": "heading",
+        "page": 2,
+        "y": 151.15439453125
+      },
+      {
+        "id": "p283-f01",
+        "edge": "start",
+        "page": 2,
+        "y": 170.19439453124997
+      },
+      {
+        "id": "p283-f01",
+        "edge": "end",
+        "page": 2,
+        "y": 366.29436264357406
+      },
+      {
+        "id": "instruction-p283-b04",
+        "edge": "end",
+        "page": 2,
+        "y": 366.2943626435741
+      },
+      {
+        "id": "p283-f02",
+        "edge": "start",
+        "page": 2,
+        "y": 374.2943626435741
+      },
+      {
+        "id": "p283-f02",
+        "edge": "end",
+        "page": 2,
+        "y": 570.2943820756831
+      },
+      {
+        "id": "instruction-p283-b05",
+        "edge": "start",
+        "page": 2,
+        "y": 582.2943820756831
+      },
+      {
+        "id": "p283-b05",
+        "edge": "heading",
+        "page": 2,
+        "y": 582.2943820756831
+      },
+      {
+        "id": "p283-f03",
+        "edge": "start",
+        "page": 2,
+        "y": 601.3343820756832
+      },
+      {
+        "id": "p283-f03",
+        "edge": "end",
+        "page": 2,
+        "y": 754.1343752172497
+      },
+      {
+        "id": "instruction-p283-b05",
+        "edge": "end",
+        "page": 2,
+        "y": 754.1343752172497
+      },
+      {
+        "id": "instruction-p284-b01",
+        "edge": "start",
+        "page": 3,
+        "y": 86.0
+      },
+      {
+        "id": "p284-b01",
+        "edge": "heading",
+        "page": 3,
+        "y": 86.0
+      },
+      {
+        "id": "p284-f04",
+        "edge": "start",
+        "page": 3,
+        "y": 105.04
+      },
+      {
+        "id": "p284-f04",
+        "edge": "end",
+        "page": 3,
+        "y": 359.33999696808627
+      },
+      {
+        "id": "instruction-p284-b01",
+        "edge": "end",
+        "page": 3,
+        "y": 359.33999696808627
+      },
+      {
+        "id": "p284-b02",
+        "edge": "heading",
+        "page": 3,
+        "y": 367.33999696808627
+      },
+      {
+        "id": "instruction-p284-b03",
+        "edge": "start",
+        "page": 3,
+        "y": 384.3799969680863
+      },
+      {
+        "id": "p284-b03",
+        "edge": "heading",
+        "page": 3,
+        "y": 384.3799969680863
+      },
+      {
+        "id": "p284-f05",
+        "edge": "start",
+        "page": 3,
+        "y": 421.4199969680863
+      },
+      {
+        "id": "p284-f05",
+        "edge": "end",
+        "page": 3,
+        "y": 683.4200312013438
+      },
+      {
+        "id": "instruction-p284-b03",
+        "edge": "end",
+        "page": 3,
+        "y": 683.4200312013438
+      },
+      {
+        "id": "p284-b04",
+        "edge": "heading",
+        "page": 4,
+        "y": 86.0
+      },
+      {
+        "id": "p284-b05",
+        "edge": "heading",
+        "page": 4,
+        "y": 116.0
+      },
+      {
+        "id": "p284-b06",
+        "edge": "heading",
+        "page": 4,
+        "y": 146.0
+      },
+      {
+        "id": "p284-b07",
+        "edge": "heading",
+        "page": 4,
+        "y": 176.0
+      },
+      {
+        "id": "instruction-p285-b01",
+        "edge": "start",
+        "page": 4,
+        "y": 200.0
+      },
+      {
+        "id": "p285-b01",
+        "edge": "heading",
+        "page": 4,
+        "y": 200.0
+      },
+      {
+        "id": "p285-b02",
+        "edge": "start",
+        "page": 4,
+        "y": 223.04000000000002
+      },
+      {
+        "id": "p285-b02",
+        "edge": "end",
+        "page": 4,
+        "y": 234.08000000000004
+      },
+      {
+        "id": "p285-b03",
+        "edge": "start",
+        "page": 4,
+        "y": 240.08
+      },
+      {
+        "id": "p285-b03",
+        "edge": "end",
+        "page": 4,
+        "y": 269.12
+      },
+      {
+        "id": "p285-f06",
+        "edge": "start",
+        "page": 4,
+        "y": 277.12
+      },
+      {
+        "id": "p285-f06",
+        "edge": "end",
+        "page": 4,
+        "y": 473.01996408051315
+      },
+      {
+        "id": "instruction-p285-b01",
+        "edge": "end",
+        "page": 4,
+        "y": 473.0199640805132
+      },
+      {
+        "id": "instruction-p285-b04",
+        "edge": "start",
+        "page": 4,
+        "y": 473.0199640805132
+      },
+      {
+        "id": "p285-b04",
+        "edge": "heading",
+        "page": 4,
+        "y": 473.0199640805132
+      },
+      {
+        "id": "p285-f07",
+        "edge": "start",
+        "page": 4,
+        "y": 510.0599640805132
+      },
+      {
+        "id": "p285-f07",
+        "edge": "end",
+        "page": 4,
+        "y": 648.3599676270637
+      },
+      {
+        "id": "instruction-p285-b04",
+        "edge": "end",
+        "page": 4,
+        "y": 648.3599676270637
+      },
+      {
+        "id": "instruction-p286-b01",
+        "edge": "start",
+        "page": 5,
+        "y": 86.0
+      },
+      {
+        "id": "p286-b01",
+        "edge": "heading",
+        "page": 5,
+        "y": 86.0
+      },
+      {
+        "id": "p286-f08",
+        "edge": "start",
+        "page": 5,
+        "y": 113.96
+      },
+      {
+        "id": "p286-f08",
+        "edge": "end",
+        "page": 5,
+        "y": 390.0299645373077
+      },
+      {
+        "id": "instruction-p286-b01",
+        "edge": "end",
+        "page": 5,
+        "y": 390.0299645373077
+      },
+      {
+        "id": "p286-b02",
+        "edge": "heading",
+        "page": 5,
+        "y": 408.0299645373077
+      },
+      {
+        "id": "p286-b03",
+        "edge": "start",
+        "page": 5,
+        "y": 432.0299645373077
+      },
+      {
+        "id": "p286-b03",
+        "edge": "end",
+        "page": 5,
+        "y": 461.0699645373077
+      },
+      {
+        "id": "p286-b04",
+        "edge": "start",
+        "page": 5,
+        "y": 467.0699645373077
+      },
+      {
+        "id": "p286-b04",
+        "edge": "end",
+        "page": 5,
+        "y": 514.1099645373077
+      },
+      {
+        "id": "p286-b05",
+        "edge": "start",
+        "page": 5,
+        "y": 520.1099645373077
+      },
+      {
+        "id": "p286-b05",
+        "edge": "end",
+        "page": 5,
+        "y": 567.1499645373078
+      },
+      {
+        "id": "p286-b06",
+        "edge": "start",
+        "page": 5,
+        "y": 573.1499645373077
+      },
+      {
+        "id": "p286-b06",
+        "edge": "end",
+        "page": 5,
+        "y": 602.1899645373077
+      },
+      {
+        "id": "p286-b07",
+        "edge": "start",
+        "page": 5,
+        "y": 608.1899645373077
+      },
+      {
+        "id": "p286-b07",
+        "edge": "end",
+        "page": 5,
+        "y": 673.2299645373078
+      },
+      {
+        "id": "p287-b01",
+        "edge": "start",
+        "page": 5,
+        "y": 679.2299645373078
+      },
+      {
+        "id": "p287-b01",
+        "edge": "end",
+        "page": 5,
+        "y": 690.2699645373077
+      },
+      {
+        "id": "p287-b02",
+        "edge": "heading",
+        "page": 5,
+        "y": 698.2699645373077
+      },
+      {
+        "id": "p287-b03",
+        "edge": "start",
+        "page": 5,
+        "y": 715.3099645373078
+      },
+      {
+        "id": "p287-b03",
+        "edge": "end",
+        "page": 5,
+        "y": 726.3499645373078
+      },
+      {
+        "id": "instruction-p287-b04",
+        "edge": "start",
+        "page": 6,
+        "y": 86.0
+      },
+      {
+        "id": "p287-b04",
+        "edge": "heading",
+        "page": 6,
+        "y": 86.0
+      },
+      {
+        "id": "p287-f09",
+        "edge": "start",
+        "page": 6,
+        "y": 105.04
+      },
+      {
+        "id": "p287-f09",
+        "edge": "end",
+        "page": 6,
+        "y": 187.25933453070883
+      },
+      {
+        "id": "instruction-p287-b04",
+        "edge": "end",
+        "page": 6,
+        "y": 187.25933453070883
+      },
+      {
+        "id": "instruction-p287-b05",
+        "edge": "start",
+        "page": 6,
+        "y": 187.25933453070883
+      },
+      {
+        "id": "p287-b05",
+        "edge": "heading",
+        "page": 6,
+        "y": 187.25933453070883
+      },
+      {
+        "id": "p287-f10",
+        "edge": "start",
+        "page": 6,
+        "y": 224.29933453070882
+      },
+      {
+        "id": "p287-f10",
+        "edge": "end",
+        "page": 6,
+        "y": 449.09933321600573
+      },
+      {
+        "id": "instruction-p287-b05",
+        "edge": "end",
+        "page": 6,
+        "y": 449.0993332160057
+      },
+      {
+        "id": "instruction-p287-b06",
+        "edge": "start",
+        "page": 6,
+        "y": 449.0993332160057
+      },
+      {
+        "id": "p287-b06",
+        "edge": "heading",
+        "page": 6,
+        "y": 449.0993332160057
+      },
+      {
+        "id": "p287-b07",
+        "edge": "start",
+        "page": 6,
+        "y": 466.1393332160057
+      },
+      {
+        "id": "p287-b07",
+        "edge": "end",
+        "page": 6,
+        "y": 495.1793332160057
+      },
+      {
+        "id": "p287-b08",
+        "edge": "start",
+        "page": 6,
+        "y": 501.17933321600566
+      },
+      {
+        "id": "p287-b08",
+        "edge": "end",
+        "page": 6,
+        "y": 512.2193332160057
+      },
+      {
+        "id": "p288-f11",
+        "edge": "start",
+        "page": 6,
+        "y": 520.2193332160057
+      },
+      {
+        "id": "p288-f11",
+        "edge": "end",
+        "page": 6,
+        "y": 753.5193244828707
+      },
+      {
+        "id": "instruction-p287-b06",
+        "edge": "end",
+        "page": 6,
+        "y": 753.5193244828707
+      },
+      {
+        "id": "instruction-p288-b01",
+        "edge": "start",
+        "page": 7,
+        "y": 86.0
+      },
+      {
+        "id": "p288-b01",
+        "edge": "heading",
+        "page": 7,
+        "y": 86.0
+      },
+      {
+        "id": "p288-f12",
+        "edge": "start",
+        "page": 7,
+        "y": 123.04
+      },
+      {
+        "id": "p288-f12",
+        "edge": "end",
+        "page": 7,
+        "y": 182.239985079022
+      },
+      {
+        "id": "instruction-p288-b01",
+        "edge": "end",
+        "page": 7,
+        "y": 182.239985079022
+      },
+      {
+        "id": "instruction-p288-b02",
+        "edge": "start",
+        "page": 7,
+        "y": 182.239985079022
+      },
+      {
+        "id": "p288-b02",
+        "edge": "heading",
+        "page": 7,
+        "y": 182.239985079022
+      },
+      {
+        "id": "p288-b03",
+        "edge": "start",
+        "page": 7,
+        "y": 208.279985079022
+      },
+      {
+        "id": "p288-b03",
+        "edge": "end",
+        "page": 7,
+        "y": 237.31998507902202
+      },
+      {
+        "id": "p288-f13",
+        "edge": "start",
+        "page": 7,
+        "y": 245.31998507902202
+      },
+      {
+        "id": "p288-f13",
+        "edge": "end",
+        "page": 7,
+        "y": 491.7199645979468
+      },
+      {
+        "id": "instruction-p288-b02",
+        "edge": "end",
+        "page": 7,
+        "y": 491.7199645979468
+      },
+      {
+        "id": "p289-b01",
+        "edge": "start",
+        "page": 7,
+        "y": 491.7199645979468
+      },
+      {
+        "id": "p289-b01",
+        "edge": "end",
+        "page": 7,
+        "y": 502.7599645979468
+      },
+      {
+        "id": "p289-b02",
+        "edge": "start",
+        "page": 7,
+        "y": 508.7599645979468
+      },
+      {
+        "id": "p289-b02",
+        "edge": "end",
+        "page": 7,
+        "y": 519.7999645979468
+      },
+      {
+        "id": "p289-b03",
+        "edge": "start",
+        "page": 7,
+        "y": 525.7999645979468
+      },
+      {
+        "id": "p289-b03",
+        "edge": "end",
+        "page": 7,
+        "y": 536.8399645979468
+      },
+      {
+        "id": "p289-b04",
+        "edge": "start",
+        "page": 7,
+        "y": 542.8399645979468
+      },
+      {
+        "id": "p289-b04",
+        "edge": "end",
+        "page": 7,
+        "y": 553.8799645979468
+      },
+      {
+        "id": "p289-b05",
+        "edge": "start",
+        "page": 7,
+        "y": 559.8799645979468
+      },
+      {
+        "id": "p289-b05",
+        "edge": "end",
+        "page": 7,
+        "y": 570.9199645979469
+      }
+    ]
+  }
+}

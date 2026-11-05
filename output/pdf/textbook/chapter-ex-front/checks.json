@@ -1,0 +1,133 @@
+{
+  "chapter": "ex-front",
+  "source_sha256": "957797f8197dedde19e4e80cab503849d96cd9aed185c94e0d8bcab39328a7cd",
+  "source_pages": [
+    1,
+    6
+  ],
+  "blocks": 52,
+  "figures": 0,
+  "source_coverage": [
+    {
+      "body": 53,
+      "figure": 0,
+      "furniture": 0,
+      "table": 0
+    },
+    {
+      "body": 727,
+      "figure": 0,
+      "furniture": 0,
+      "table": 0
+    },
+    {
+      "body": 1987,
+      "figure": 0,
+      "furniture": 1,
+      "table": 0
+    },
+    {
+      "body": 2056,
+      "figure": 0,
+      "furniture": 3,
+      "table": 0
+    },
+    {
+      "body": 510,
+      "figure": 0,
+      "furniture": 3,
+      "table": 0
+    },
+    {
+      "body": 0,
+      "figure": 0,
+      "furniture": 3,
+      "table": 0
+    }
+  ],
+  "reference": {
+    "pages": 6,
+    "page_checks": [
+      {
+        "source_page": 1,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0025
+      },
+      {
+        "source_page": 2,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0235
+      },
+      {
+        "source_page": 3,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.353
+      },
+      {
+        "source_page": 4,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.3197
+      },
+      {
+        "source_page": 5,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.1067
+      },
+      {
+        "source_page": 6,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0007
+      }
+    ]
+  },
+  "flow": {
+    "pages": 6,
+    "native_text_complete": true,
+    "heading_orphans": [],
+    "split_figures": [],
+    "split_short_code": [],
+    "split_short_tables": [],
+    "split_instructions": [],
+    "instruction_groups": 0,
+    "fixed_pages": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "overflow": [],
+    "block_positions": [
+      {
+        "id": "__native-page-2",
+        "edge": "native-page",
+        "page": 2,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-3",
+        "edge": "native-page",
+        "page": 3,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-4",
+        "edge": "native-page",
+        "page": 4,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-5",
+        "edge": "native-page",
+        "page": 5,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-6",
+        "edge": "native-page",
+        "page": 6,
+        "y": 86.0
+      }
+    ]
+  }
+}

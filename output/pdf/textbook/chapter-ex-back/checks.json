@@ -1,0 +1,50 @@
+{
+  "chapter": "ex-back",
+  "source_sha256": "957797f8197dedde19e4e80cab503849d96cd9aed185c94e0d8bcab39328a7cd",
+  "source_pages": [
+    77,
+    77
+  ],
+  "blocks": 4,
+  "figures": 0,
+  "source_coverage": [
+    {
+      "body": 321,
+      "figure": 0,
+      "furniture": 0,
+      "table": 0
+    }
+  ],
+  "reference": {
+    "pages": 1,
+    "page_checks": [
+      {
+        "source_page": 77,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.012
+      }
+    ]
+  },
+  "flow": {
+    "pages": 1,
+    "native_text_complete": true,
+    "heading_orphans": [],
+    "split_figures": [],
+    "split_short_code": [],
+    "split_short_tables": [],
+    "split_instructions": [],
+    "instruction_groups": 0,
+    "fixed_pages": [
+      1
+    ],
+    "overflow": [],
+    "block_positions": [
+      {
+        "id": "__native-page-77",
+        "edge": "native-page",
+        "page": 1,
+        "y": 86.0
+      }
+    ]
+  }
+}

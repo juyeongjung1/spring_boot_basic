@@ -1,0 +1,57 @@
+{
+  "title": "前付とはじめに",
+  "chapter": "front",
+  "pdf": "JAC0177G-T1-04(260715).pdf",
+  "word": "JAC0177G-T1-04(260715修正).docx",
+  "first_page": 1,
+  "last_page": 14,
+  "figures": [
+    {
+      "name": "スライド",
+      "box": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "page": 9,
+      "slide": "Microsoft_PowerPoint_Slide.sldx"
+    },
+    {
+      "name": "スライド",
+      "box": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "page": 10,
+      "slide": "Microsoft_PowerPoint_Slide1.sldx"
+    },
+    {
+      "name": "スライド",
+      "box": [
+        113.77999877929688,
+        115.82000732421875,
+        481.5299987792969,
+        391.0099792480469
+      ],
+      "page": 11,
+      "slide": "Microsoft_PowerPoint_Slide2.sldx"
+    }
+  ],
+  "cover_mode": "native",
+  "tables": [],
+  "native_pages": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    12,
+    13,
+    14
+  ]
+}

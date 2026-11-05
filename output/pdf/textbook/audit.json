@@ -1,0 +1,35 @@
+{
+  "image_placements": 468,
+  "uncovered_images": [],
+  "cut_figure_characters": [],
+  "preserved_ppt_sources": 65,
+  "collections": {
+    "textbook": {
+      "source_pages": 296,
+      "flow_pages": 244,
+      "blocks": 1855,
+      "figures": 235,
+      "tables": 14,
+      "ppt_sources": 65,
+      "mean_rgb_error": 0.205,
+      "max_rgb_error": 0.8073
+    },
+    "exercise": {
+      "source_pages": 77,
+      "flow_pages": 57,
+      "blocks": 731,
+      "figures": 32,
+      "tables": 18,
+      "ppt_sources": 0,
+      "mean_rgb_error": 0.197,
+      "max_rgb_error": 0.5343
+    }
+  },
+  "regression_tests_passed": 8,
+  "assembly_review": {
+    "flow_pages": 301,
+    "pixel_errors_outside_number_regions": 0,
+    "text_errors_outside_number_regions": 0,
+    "contents_entries_verified": 124
+  }
+}

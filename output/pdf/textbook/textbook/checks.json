@@ -1,0 +1,598 @@
+{
+  "title": "Spring Boot入門 本文教材",
+  "source_pages": 296,
+  "reference_pages": 296,
+  "flow_pages": 244,
+  "comparison_pages": 296,
+  "complete_source_coverage": true,
+  "continuous_footer_numbers": true,
+  "contents": [
+    {
+      "title": "はじめに",
+      "source_page": 7,
+      "flow_page": 7
+    },
+    {
+      "title": "Spring Boot と開発環境の概要",
+      "source_page": 15,
+      "flow_page": 15
+    },
+    {
+      "title": "1.1. フレームワークとは",
+      "source_page": 18,
+      "flow_page": 18
+    },
+    {
+      "title": "1.2. Spring Framework",
+      "source_page": 19,
+      "flow_page": 19
+    },
+    {
+      "title": "1.3. Spring Boot とは",
+      "source_page": 21,
+      "flow_page": 21
+    },
+    {
+      "title": "1.4. Maven でライブラリ管理",
+      "source_page": 24,
+      "flow_page": 23
+    },
+    {
+      "title": "章のまとめ",
+      "source_page": 29,
+      "flow_page": 28
+    },
+    {
+      "title": "Spring Web アプリケーション",
+      "source_page": 31,
+      "flow_page": 29
+    },
+    {
+      "title": "2.1. Web アプリケーションの概要",
+      "source_page": 34,
+      "flow_page": 31
+    },
+    {
+      "title": "2.1.1. 【参考】サーブレットについて",
+      "source_page": 36,
+      "flow_page": 32
+    },
+    {
+      "title": "2.1.2. 【参考】MVC パターンとSpring アプリケーションの流れ",
+      "source_page": 38,
+      "flow_page": 35
+    },
+    {
+      "title": "2.2. Controller の基本",
+      "source_page": 39,
+      "flow_page": 36
+    },
+    {
+      "title": "2.3. データ送信とパラメータの取得",
+      "source_page": 47,
+      "flow_page": 43
+    },
+    {
+      "title": "2.4. Form クラスでパラメータ取得",
+      "source_page": 53,
+      "flow_page": 48
+    },
+    {
+      "title": "2.5. Controller からView へのデータ処理",
+      "source_page": 57,
+      "flow_page": 51
+    },
+    {
+      "title": "章のまとめ",
+      "source_page": 62,
+      "flow_page": 55
+    },
+    {
+      "title": "Spring Data JPA",
+      "source_page": 63,
+      "flow_page": 56
+    },
+    {
+      "title": "3.1. Spring Data JPA の利用",
+      "source_page": 66,
+      "flow_page": 58
+    },
+    {
+      "title": "3.2. エンティティの定義",
+      "source_page": 72,
+      "flow_page": 63
+    },
+    {
+      "title": "3.3. リポジトリの定義",
+      "source_page": 77,
+      "flow_page": 68
+    },
+    {
+      "title": "3.3.1. 依存性の注入",
+      "source_page": 79,
+      "flow_page": 70
+    },
+    {
+      "title": "3.3.2. コントローラーの基本URL 設定",
+      "source_page": 81,
+      "flow_page": 71
+    },
+    {
+      "title": "【参考】既存の全件検索方法",
+      "source_page": 82,
+      "flow_page": 73
+    },
+    {
+      "title": "3.4. 全件検索",
+      "source_page": 85,
+      "flow_page": 75
+    },
+    {
+      "title": "3.5. 主キーによる条件検索",
+      "source_page": 90,
+      "flow_page": 80
+    },
+    {
+      "title": "3.5.1. 主キーではない列による条件検索",
+      "source_page": 95,
+      "flow_page": 84
+    },
+    {
+      "title": "3.5.2. 複数の列による条件検索",
+      "source_page": 99,
+      "flow_page": 87
+    },
+    {
+      "title": "3.5.3. その他の条件検索",
+      "source_page": 103,
+      "flow_page": 90
+    },
+    {
+      "title": "3.6. 登録処理",
+      "source_page": 105,
+      "flow_page": 92
+    },
+    {
+      "title": "3.7. 更新処理",
+      "source_page": 114,
+      "flow_page": 100
+    },
+    {
+      "title": "3.8. 削除処理",
+      "source_page": 122,
+      "flow_page": 107
+    },
+    {
+      "title": "3.9. 【参考】 Service クラスでビジネスロジックを分離",
+      "source_page": 125,
+      "flow_page": 109
+    },
+    {
+      "title": "章のまとめ",
+      "source_page": 132,
+      "flow_page": 114
+    },
+    {
+      "title": "セッションと入力チェック",
+      "source_page": 133,
+      "flow_page": 115
+    },
+    {
+      "title": "4.1. 基礎的なログイン機能の実装",
+      "source_page": 136,
+      "flow_page": 116
+    },
+    {
+      "title": "4.2. セッションによるユーザ情報の保持",
+      "source_page": 142,
+      "flow_page": 122
+    },
+    {
+      "title": "4.3. ログイン時の入力チェック",
+      "source_page": 148,
+      "flow_page": 128
+    },
+    {
+      "title": "4.3.1. 【参考】その他のValidation アノテーション",
+      "source_page": 157,
+      "flow_page": 136
+    },
+    {
+      "title": "4.3.2. 【参考】メッセージのカスタマイズ",
+      "source_page": 159,
+      "flow_page": 137
+    },
+    {
+      "title": "Thymeleaf とWeb ページデザイン",
+      "source_page": 164,
+      "flow_page": 140
+    },
+    {
+      "title": "5.1. Thymeleaf の基本構文",
+      "source_page": 167,
+      "flow_page": 141
+    },
+    {
+      "title": "5.1.1. 動的にイメージとリンク生成(th:attr)",
+      "source_page": 170,
+      "flow_page": 143
+    },
+    {
+      "title": "5.1.2. 条件式による表示制御(th:if)",
+      "source_page": 175,
+      "flow_page": 148
+    },
+    {
+      "title": "5.2. CSS とJavaScript の利用",
+      "source_page": 178,
+      "flow_page": 150
+    },
+    {
+      "title": "5.3. レイアウト機能",
+      "source_page": 181,
+      "flow_page": 152
+    },
+    {
+      "title": "外部参照と複雑なSQL 操作",
+      "source_page": 192,
+      "flow_page": 161
+    },
+    {
+      "title": "6.1. 外部参照を持つエンティティの定義",
+      "source_page": 195,
+      "flow_page": 162
+    },
+    {
+      "title": "6.2. 外部参照を用いた検索",
+      "source_page": 203,
+      "flow_page": 169
+    },
+    {
+      "title": "6.2.1. 【参考】 検索結果のエラーハンドリング",
+      "source_page": 208,
+      "flow_page": 174
+    },
+    {
+      "title": "6.3. 外部参照付きのデータ登録",
+      "source_page": 213,
+      "flow_page": 177
+    },
+    {
+      "title": "6.4. 複雑なSQL 文の操作方法",
+      "source_page": 222,
+      "flow_page": 185
+    },
+    {
+      "title": "6.4.1. 複雑な検索をメソッド名で定義する際のデメリット",
+      "source_page": 223,
+      "flow_page": 185
+    },
+    {
+      "title": "6.4.2. JPQL の基本構文",
+      "source_page": 225,
+      "flow_page": 187
+    },
+    {
+      "title": "章のまとめ",
+      "source_page": 236,
+      "flow_page": 196
+    },
+    {
+      "title": "Bootstrap",
+      "source_page": 238,
+      "flow_page": 197
+    },
+    {
+      "title": "7.1. Bootstrap とは",
+      "source_page": 241,
+      "flow_page": 199
+    },
+    {
+      "title": "7.2. Bootstrap の導入方法",
+      "source_page": 245,
+      "flow_page": 202
+    },
+    {
+      "title": "7.3. Bootstrap を使ったスタイルの適用",
+      "source_page": 250,
+      "flow_page": 206
+    },
+    {
+      "title": "7.3.1. テキスト",
+      "source_page": 251,
+      "flow_page": 206
+    },
+    {
+      "title": "7.3.2. 色",
+      "source_page": 252,
+      "flow_page": 207
+    },
+    {
+      "title": "7.3.3. ボタン",
+      "source_page": 254,
+      "flow_page": 209
+    },
+    {
+      "title": "7.3.4. ボーダー(Border)",
+      "source_page": 256,
+      "flow_page": 210
+    },
+    {
+      "title": "7.3.5. 余白",
+      "source_page": 257,
+      "flow_page": 211
+    },
+    {
+      "title": "7.3.6. ブロック要素の幅の調整(高さと横幅)",
+      "source_page": 260,
+      "flow_page": 214
+    },
+    {
+      "title": "7.4. テーブル",
+      "source_page": 262,
+      "flow_page": 216
+    },
+    {
+      "title": "7.5. グリッドシステムを使ったレスポンシブデザイン",
+      "source_page": 265,
+      "flow_page": 219
+    },
+    {
+      "title": "7.6. フォーム",
+      "source_page": 272,
+      "flow_page": 224
+    },
+    {
+      "title": "章のまとめ",
+      "source_page": 280,
+      "flow_page": 230
+    },
+    {
+      "title": "付録A 環境構築手順",
+      "source_page": 282,
+      "flow_page": 232
+    },
+    {
+      "title": "Import 手順",
+      "source_page": 283,
+      "flow_page": 233
+    },
+    {
+      "title": "新規プロジェクト作成方法",
+      "source_page": 286,
+      "flow_page": 236
+    },
+    {
+      "title": "セキュリティ問題で、Eclipse 上で新規プロジェクト作成ができない場合",
+      "source_page": 288,
+      "flow_page": 238
+    },
+    {
+      "title": "付録B よく起きるエラーまとめ",
+      "source_page": 290,
+      "flow_page": 239
+    },
+    {
+      "title": "404 エラーが出る場合：",
+      "source_page": 291,
+      "flow_page": 240
+    },
+    {
+      "title": "500 Thymeleaf エラー",
+      "source_page": 291,
+      "flow_page": 240
+    },
+    {
+      "title": "8080 ポート衝突エラー",
+      "source_page": 292,
+      "flow_page": 241
+    },
+    {
+      "title": "Eclipse 上で赤線が発生したり、呼び出したいメソッドが候補から出ない",
+      "source_page": 293,
+      "flow_page": 242
+    },
+    {
+      "title": "設定ファイル・イメージ・CSS・JavaScript などを修正しても反映されない",
+      "source_page": 294,
+      "flow_page": 242
+    },
+    {
+      "title": "インポート時にエラーが発生する時",
+      "source_page": 294,
+      "flow_page": 243
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": "front",
+      "title": "前付とはじめに",
+      "source_pages": [
+        1,
+        14
+      ],
+      "reference_pages": [
+        1,
+        14
+      ],
+      "flow_pages": [
+        1,
+        14
+      ],
+      "blocks": 85,
+      "figures": 3,
+      "table_count": 0
+    },
+    {
+      "chapter": "01",
+      "title": "第1章 Spring Boot と開発環境の概要",
+      "source_pages": [
+        15,
+        30
+      ],
+      "reference_pages": [
+        15,
+        30
+      ],
+      "flow_pages": [
+        15,
+        28
+      ],
+      "blocks": 84,
+      "figures": 15,
+      "table_count": 0
+    },
+    {
+      "chapter": "02",
+      "title": "第2章 Spring Web アプリケーション",
+      "source_pages": [
+        31,
+        62
+      ],
+      "reference_pages": [
+        31,
+        62
+      ],
+      "flow_pages": [
+        29,
+        55
+      ],
+      "blocks": 207,
+      "figures": 33,
+      "table_count": 0
+    },
+    {
+      "chapter": "03",
+      "title": "第3章 Spring Data JPA",
+      "source_pages": [
+        63,
+        132
+      ],
+      "reference_pages": [
+        63,
+        132
+      ],
+      "flow_pages": [
+        56,
+        114
+      ],
+      "blocks": 483,
+      "figures": 69,
+      "table_count": 5
+    },
+    {
+      "chapter": "04",
+      "title": "第4章 セッションと入力チェック",
+      "source_pages": [
+        133,
+        163
+      ],
+      "reference_pages": [
+        133,
+        163
+      ],
+      "flow_pages": [
+        115,
+        139
+      ],
+      "blocks": 181,
+      "figures": 25,
+      "table_count": 2
+    },
+    {
+      "chapter": "05",
+      "title": "第5章 Thymeleaf とWeb ページデザイン",
+      "source_pages": [
+        164,
+        191
+      ],
+      "reference_pages": [
+        164,
+        191
+      ],
+      "flow_pages": [
+        140,
+        160
+      ],
+      "blocks": 140,
+      "figures": 19,
+      "table_count": 0
+    },
+    {
+      "chapter": "06",
+      "title": "第6章 外部参照と複雑なSQL 操作",
+      "source_pages": [
+        192,
+        237
+      ],
+      "reference_pages": [
+        192,
+        237
+      ],
+      "flow_pages": [
+        161,
+        196
+      ],
+      "blocks": 314,
+      "figures": 19,
+      "table_count": 7
+    },
+    {
+      "chapter": "07",
+      "title": "第7章 Bootstrap",
+      "source_pages": [
+        238,
+        281
+      ],
+      "reference_pages": [
+        238,
+        281
+      ],
+      "flow_pages": [
+        197,
+        231
+      ],
+      "blocks": 265,
+      "figures": 34,
+      "table_count": 0
+    },
+    {
+      "chapter": "appendix-a",
+      "title": "付録A 環境構築手順",
+      "source_pages": [
+        282,
+        289
+      ],
+      "reference_pages": [
+        282,
+        289
+      ],
+      "flow_pages": [
+        232,
+        238
+      ],
+      "blocks": 41,
+      "figures": 13,
+      "table_count": 0
+    },
+    {
+      "chapter": "appendix-b",
+      "title": "付録B よく起きるエラーまとめ",
+      "source_pages": [
+        290,
+        296
+      ],
+      "reference_pages": [
+        290,
+        296
+      ],
+      "flow_pages": [
+        239,
+        244
+      ],
+      "blocks": 55,
+      "figures": 5,
+      "table_count": 0
+    }
+  ]
+}

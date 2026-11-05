@@ -1,3 +1,4 @@
 PyMuPDF==2.1
 typst==0.15.0
 Pillow>=11,<13
+fonttools>=4,<5

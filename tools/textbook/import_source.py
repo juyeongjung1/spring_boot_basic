@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import json
 import re
+from bisect import bisect_right
 
 import pymupdf as fitz
 
@@ -20,6 +21,7 @@ def escape(text):
     text = re.sub(r"^(\d+)\.", r"\1\\.", text)
     text = re.sub(r"^ +", lambda m: "&#32;" * len(m[0]), text)
     text = re.sub(r" +$", lambda m: "&#32;" * len(m[0]), text)
+    text = re.sub(r" {2,}", lambda m: "&#32;" * len(m[0]), text)
     return text
 
 
@@ -72,7 +74,7 @@ def import_chapter(folder, force=False):
     pdf = fitz.open(source)
     styles = {}
     style_ids = {}
-    layout = {"source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "styles": styles, "pages": [], "blocks": {}, "figures": []}
+    layout = {"source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "styles": styles, "pages": [], "blocks": {}, "figures": [], "tables": {}}
     md = [f'<!-- 元PDF {config["first_page"]}〜{config["last_page"]}ページ。本文の改訂はまだ行っていません。 -->', ""]
     figure_count = 0
 
@@ -86,12 +88,25 @@ def import_chapter(folder, force=False):
 
     for number in range(config["first_page"], config["last_page"] + 1):
         page = pdf[number - 1]
+        # Wordが行ごとに分けたベージュの塗りを、元のコード枠へまとめる。
+        code_frames=[]
+        bands=sorted((d['rect'] for d in page.get_drawings() if d.get('fill') and all(abs(a-b)<0.003 for a,b in zip(d['fill'],(1,0.984,0.941))) and d['rect'].width>300),key=lambda r:(r.y0,r.x0))
+        bands=[b for b in bands if not any(o!=b and o.contains(b) for o in bands)]
+        for band in bands:
+            if code_frames and abs(code_frames[-1].x0-band.x0)<2 and abs(code_frames[-1].x1-band.x1)<2 and band.y0-code_frames[-1].y1<1:
+                code_frames[-1]|=band
+            else:code_frames.append(fitz.Rect(band))
         strokes = {}
         for trace in page.get_texttrace():
             if trace["type"] == 1:
                 for char in trace["chars"]:
                     strokes[(round(char[2][0], 2), round(char[2][1], 2), trace["font"])] = trace["linewidth"]
         figures = []
+        tables = []
+        for index, spec in enumerate([s for s in config.get('tables', []) if s['page'] == number], 1):
+            table = dict(spec, id=f'p{number:03d}-table{index:02d}', role='table', source_page=number, runs=[])
+            table['glyphs'] = [[[] for _ in spec['xs'][:-1]] for _ in spec['ys'][:-1]]
+            tables.append(table)
         for spec in [s for s in config["figures"] if s["page"] == number]:
             figure_count += 1
             ident = f"p{number:03d}-f{figure_count:02d}"
@@ -100,6 +115,10 @@ def import_chapter(folder, force=False):
             roi = fitz.Rect(x0 - 0.8, y0 - 0.8, x1 + 0.8, y1 + 0.8)
             cropped = fitz.open()
             cropped.insert_pdf(pdf, from_page=number - 1, to_page=number - 1)
+            for box in spec.get('remove_text_boxes',[]):
+                cropped[0].add_redact_annot(fitz.Rect(box),fill=False)
+            if spec.get('remove_text_boxes'):
+                cropped[0].apply_redactions(images=0,graphics=1 if spec.get('remove_contained_graphics') else 0,text=0)
             cropped[0].set_cropbox(roi)
             (folder / path).write_text(cropped[0].get_svg_image(text_as_path=True), encoding="utf-8", newline="\n")
             transcript = page.get_textbox(roi)
@@ -115,7 +134,7 @@ def import_chapter(folder, force=False):
         (folder / decoration).write_text(decorations(page, figures), encoding="utf-8", newline="\n")
         furniture = []
         lines = []
-        covered = {"body": 0, "figure": 0, "furniture": 0}
+        covered = {"body": 0, "figure": 0, "furniture": 0, "table": 0}
         for block in page.get_text("rawdict")["blocks"]:
             for line in block.get("lines", []):
                 spans = []
@@ -126,13 +145,22 @@ def import_chapter(folder, force=False):
                         continue
                     bbox = fitz.Rect(span["bbox"])
                     center = (bbox.tl + bbox.br) / 2
-                    category = "figure" if any(fitz.Rect(f["box"]).contains(center) for f in figures) else "furniture" if (number != config["first_page"] and (bbox.y1 < 80 or bbox.y0 > 784)) else "body"
+                    tab = next((t for t in tables if fitz.Rect(t['box']).contains(center)), None)
+                    first_is_cover = config.get('cover_mode', 'classic') != 'none'
+                    category = "figure" if any(fitz.Rect(f["box"]).contains(center) for f in figures) else "table" if tab else "furniture" if ((number != config["first_page"] or not first_is_cover) and (bbox.y1 < 80 or bbox.y0 > 784)) else "body"
                     covered[category] += len(re.sub(r"\s", "", value))
                     if category == "figure":
                         continue
                     key = (round(chars[0]["origin"][0], 2), round(chars[0]["origin"][1], 2), span["font"])
                     record = {"text": value, "x": chars[0]["origin"][0], "y": chars[0]["origin"][1], "style": style(span, strokes.get(key, 0)), "bbox": list(bbox), "positions": [round(c["origin"][0], 4) for c in chars]}
-                    if category == "furniture":
+                    if category == 'table':
+                        tab['runs'].append(record)
+                        for char in chars:
+                            cb=fitz.Rect(char['bbox']); cx=(cb.x0+cb.x1)/2; cy=(cb.y0+cb.y1)/2
+                            col=max(0,min(len(tab['xs'])-2,bisect_right(tab['xs'],cx)-1))
+                            row=max(0,min(len(tab['ys'])-2,bisect_right(tab['ys'],cy)-1))
+                            tab['glyphs'][row][col].append((char['origin'][1],char['origin'][0],char['c']))
+                    elif category == "furniture":
                         furniture.append(record)
                     else:
                         spans.append(record)
@@ -148,16 +176,26 @@ def import_chapter(folder, force=False):
             else:
                 merged.append(line)
         groups = []
+        overview='演習の目標' in page.get_text() or '予想所要時間' in page.get_text()
+        overview_section=None
         for line in merged:
             mono = all("MS-Gothic" in styles[r["style"]]["font"] for r in line["runs"])
+            frame=next((i for i,r in enumerate(code_frames) if r.contains(fitz.Point(line['x'],line['y']-5))),None)
+            line['code_frame']=frame
             max_size = max(styles[r["style"]]["size"] for r in line["runs"])
             value = "".join(r["text"] for r in line["runs"]).strip()
             numbered = re.match(r"^\d+\.", value)
             bold = styles[line["runs"][0]["style"]]["stroke"] > 0
             caption = re.match(r"^[＜<].*[＞>]$|^【(?:参考|作業手順|補足|注意)", value)
-            role = "code" if mono else "heading" if max_size >= 14 or caption or (max_size >= 12 and all("Gothic" in styles[r["style"]]["font"] for r in line["runs"])) or (numbered and bold) else "step" if numbered else "paragraph"
+            role = "code" if mono or frame is not None else "heading" if max_size >= 14 or caption or (max_size >= 12 and all("Gothic" in styles[r["style"]]["font"] for r in line["runs"])) or (numbered and bold) else "step" if numbered else "paragraph"
+            if overview:
+                if value in ('演習の目標','演習の概要','予想所要時間'):overview_section=value
+                elif role=='heading':
+                    if overview_section in ('演習の目標','演習の概要') or re.match(r'^演習\d+\.\d+.*分',value):role='paragraph'
+                    else:overview_section=None
             continuation = groups and groups[-1]["role"] == "step" and role == "paragraph" and line["x"] > 100
-            if groups and (role == groups[-1]["role"] or continuation) and role != "heading" and 0 < line["y"] - groups[-1]["lines"][-1]["y"] <= 19:
+            same_frame=groups and role=='code' and groups[-1]['role']=='code' and frame is not None and frame==groups[-1]['lines'][-1].get('code_frame')
+            if groups and (role == groups[-1]["role"] or continuation) and role != "heading" and (same_frame or 0 < line["y"] - groups[-1]["lines"][-1]["y"] <= 19):
                 groups[-1]["lines"].append(line)
             else:
                 groups.append({"role": role, "lines": [line]})
@@ -184,10 +222,32 @@ def import_chapter(folder, force=False):
                     pitch = styles[line["runs"][0]["style"]]["size"] / 2
                     indent = max(0, round((start - base) / pitch))
                     line["text"] = " " * indent + line["text"].lstrip()
+                spaced=[]
+                for line in group['lines']:
+                    if spaced and line.get('code_frame') is not None:
+                        gap=round((line['y']-spaced[-1]['y'])/18)-1
+                        for _ in range(max(0,gap)):
+                            spaced.append({'text':'','runs':[],'y':spaced[-1]['y']+18,'x':base})
+                    spaced.append(line)
+                group['lines']=spaced
             layout["blocks"][ident] = group
             entries.append((group["lines"][0]["y"], "text", ident))
         for figure in figures:
-            entries.append((figure["box"][1], "figure", figure["id"]))
+            entries.append((figure.get('order_y',figure["box"][1]), "figure", figure["id"]))
+        for table in tables:
+            rows=[]
+            for row in table.pop('glyphs'):
+                cells=[]
+                for glyphs in row:
+                    lines=[];last=None
+                    for y,x,c in sorted(glyphs,key=lambda g:(round(g[0],1),g[1])):
+                        if last is None or abs(y-last)>2:lines.append('');last=y
+                        lines[-1]+=c
+                    cells.append('\n'.join(v.strip() for v in lines).strip())
+                rows.append(cells)
+            table['rows']=rows
+            layout['tables'][table['id']]=table
+            entries.append((table['box'][1],'table',table['id']))
         entries.sort()
         page_data = {"source_page": number, "decoration": decoration, "furniture": furniture, "entries": [entry[2] for entry in entries], "coverage": covered}
         layout["pages"].append(page_data)
@@ -197,11 +257,21 @@ def import_chapter(folder, force=False):
                 fig = next(f for f in figures if f["id"] == ident)
                 md += [f'![{fig["name"]}]({fig["path"]}){{#{ident}}}', ""]
                 continue
+            if kind == 'table':
+                table=layout['tables'][ident]; rows=table['rows']; has_header=table.get('has_header',True)
+                md += [f'::: {{#{ident} .table has-header="{str(has_header).lower()}"}}','']
+                escaped=[[escape(c).replace('|','\\|').replace('\n','<br>') for c in row] for row in rows]
+                header=escaped[0] if has_header else ['']*len(escaped[0])
+                md += ['| '+' | '.join(header)+' |','| '+' | '.join(['---']*len(header))+' |']
+                md += ['| '+' | '.join(row)+' |' for row in (escaped[1:] if has_header else escaped)]
+                md += ['', ':::','']
+                continue
             group = layout["blocks"][ident]
             md += [f'::: {{#{ident} .{group["role"]}}}', ""]
             if group["role"] == "code":
                 code = "\n".join(l["text"] for l in group["lines"])
-                md += ["```" + ("xml" if code.lstrip().startswith("<") else "java"), code, "```", ""]
+                language='xml' if re.match(r'\s*(?:\d+:)?\s*<',code) else 'css' if re.search(r'(?:color|margin|padding|font-size|background)\s*:',code) else 'java'
+                md += ["```" + language, code, "```", ""]
             else:
                 for i, line in enumerate(group["lines"]):
                     value = "".join(f'[{escape(r["text"])}]{{.{r["style"]}}}' for r in line["runs"] if r["text"])

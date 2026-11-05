@@ -5,6 +5,8 @@ import unittest
 import pymupdf as fitz
 
 from build import ROOT, build, normalized, read_markdown, source_layout
+from import_source import escape
+from assemble import remove_number_text
 
 
 class TextbookTests(unittest.TestCase):
@@ -30,6 +32,19 @@ class TextbookTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "重複"):
             read_markdown(path)
 
+    def test_thymeleaf_and_spaces_survive_inline_markdown(self):
+        text='例：${emp == null}  と ${product.id} を保持します。'
+        path=self.work/'thymeleaf.md'
+        path.write_text('::: {.source-page}\n\n::: {#expression .paragraph}\n\n'+escape(text)+'\n\n:::\n\n:::\n',encoding='utf-8')
+        nodes,_,_=read_markdown(path)
+        self.assertEqual(nodes['expression']['text'],text)
+
+    def test_single_row_table_without_header_keeps_its_data(self):
+        path=self.work/'headerless.md'
+        path.write_text('::: {.source-page}\n\n::: {#data .table has-header="false"}\n\n| | |\n| --- | --- |\n| category | ID |\n\n:::\n\n:::\n',encoding='utf-8')
+        nodes,_,_=read_markdown(path)
+        self.assertEqual(nodes['data']['rows'],[['category','ID']])
+
     def test_edited_text_cannot_reuse_old_positions(self):
         path = self.work / "changed.md"
         path.write_text(self.markdown.replace("章の概要", "章の概要を編集", 1), encoding="utf-8")
@@ -44,11 +59,37 @@ class TextbookTests(unittest.TestCase):
         content = source_layout(self.folder, self.layout, nodes, figures, path)
         self.assertIn("#glyph(", content)
 
+    def test_number_replacement_preserves_body_pixels_and_strokes(self):
+        pdf=fitz.open(ROOT/'output/pdf/textbook/chapter-01/chapter-flow.pdf')
+        index=next(i for i,p in enumerate(pdf) if i>0 and any(t['type']==1 for t in p.get_texttrace()))
+        page=pdf[index]
+        body=fitz.Rect(0,0,595.32,784)
+        footer=fitz.Rect(240,786,355,817)
+        before=page.get_pixmap(clip=body).samples
+        widths=[t['linewidth'] for t in page.get_texttrace() if t['type']==1]
+        self.assertTrue(widths)
+        old=page.get_textbox(footer).strip()
+        page=remove_number_text(page,[footer],old)
+        self.assertEqual(page.get_textbox(footer).strip(),'')
+        page.insert_text((290,797.04),'999',fontname='tiro',fontsize=11.04)
+        pdf.subset_fonts()
+        target=self.work/'renumbered.pdf'
+        pdf.save(target,garbage=4,deflate=True)
+        actual=fitz.open(target)[index]
+        self.assertEqual(actual.get_pixmap(clip=body).samples,before)
+        self.assertEqual([t['linewidth'] for t in actual.get_texttrace() if t['type']==1],widths)
+        self.assertEqual(actual.get_textbox(footer).strip(),'999')
+
     def test_added_paragraphs_reach_the_pdf_and_paginate(self):
         additions = []
         for i in range(1, 19):
             value = f"追加検証{i:03d}：**編集したMarkdown**からも本文を生成します。" + "元の位置情報に依存せず、文章の量に合わせて改ページします。" * 5
             additions.append(f'::: {{#addition-{i:03d} .paragraph}}\n\n{value}\n\n:::\n')
+        identifier='productRepository.findByNameLikeOrCategoryNameLikeOrDescriptionLikeOrBrandLikeOrSkuLike('
+        code='\n'.join(f'{identifier}{i});' for i in range(40))
+        additions.append(f'::: {{#long-code .code}}\n\n```java\n{code}\n```\n\n:::\n')
+        rows='\n'.join(f'| 項目{i:03d} | 表の改ページも文字を失わず継続します。 |' for i in range(80))
+        additions.append('::: {#long-table .table has-header="true"}\n\n| 列名 | 内容 |\n| --- | --- |\n'+rows+'\n\n:::\n')
         last = self.markdown.rfind(":::")
         path = self.work / "edited.md"
         path.write_text(self.markdown[:last] + "\n".join(additions) + "\n" + self.markdown[last:], encoding="utf-8")
@@ -56,6 +97,9 @@ class TextbookTests(unittest.TestCase):
         original = json.loads((ROOT / "output/pdf/textbook/chapter-01/checks.json").read_text(encoding="utf-8"))
         self.assertGreater(report["flow"]["pages"], original["flow"]["pages"])
         self.assertTrue(report["flow"]["native_text_complete"])
+        headers=[m for m in report['flow']['block_positions'] if m['edge']=='table-header' and m['id']=='long-table']
+        self.assertGreater(len(headers),1)
+        self.assertTrue(any(m['edge']=='long-code' and m['id']=='long-code' for m in report['flow']['block_positions']))
         pdf = fitz.open(self.work / "edited/chapter-flow.pdf")
         content = normalized("".join(p.get_text() for p in pdf))
         for i in range(1, 19):

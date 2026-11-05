@@ -1,0 +1,616 @@
+{
+  "chapter": "front",
+  "source_sha256": "e730cacfb87c9851f00b2bc254efb0b5e5a6dea76c73ae5dbd2f104ec2756b46",
+  "source_pages": [
+    1,
+    14
+  ],
+  "blocks": 85,
+  "figures": 3,
+  "source_coverage": [
+    {
+      "body": 48,
+      "figure": 0,
+      "furniture": 0,
+      "table": 0
+    },
+    {
+      "body": 727,
+      "figure": 0,
+      "furniture": 0,
+      "table": 0
+    },
+    {
+      "body": 3043,
+      "figure": 0,
+      "furniture": 1,
+      "table": 0
+    },
+    {
+      "body": 3394,
+      "figure": 0,
+      "furniture": 3,
+      "table": 0
+    },
+    {
+      "body": 2373,
+      "figure": 0,
+      "furniture": 3,
+      "table": 0
+    },
+    {
+      "body": 0,
+      "figure": 0,
+      "furniture": 3,
+      "table": 0
+    },
+    {
+      "body": 4,
+      "figure": 0,
+      "furniture": 0,
+      "table": 0
+    },
+    {
+      "body": 0,
+      "figure": 0,
+      "furniture": 5,
+      "table": 0
+    },
+    {
+      "body": 196,
+      "figure": 170,
+      "furniture": 5,
+      "table": 0
+    },
+    {
+      "body": 173,
+      "figure": 162,
+      "furniture": 6,
+      "table": 0
+    },
+    {
+      "body": 403,
+      "figure": 147,
+      "furniture": 6,
+      "table": 0
+    },
+    {
+      "body": 492,
+      "figure": 0,
+      "furniture": 6,
+      "table": 0
+    },
+    {
+      "body": 168,
+      "figure": 0,
+      "furniture": 6,
+      "table": 0
+    },
+    {
+      "body": 0,
+      "figure": 0,
+      "furniture": 6,
+      "table": 0
+    }
+  ],
+  "reference": {
+    "pages": 14,
+    "page_checks": [
+      {
+        "source_page": 1,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0022
+      },
+      {
+        "source_page": 2,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0226
+      },
+      {
+        "source_page": 3,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0681
+      },
+      {
+        "source_page": 4,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0883
+      },
+      {
+        "source_page": 5,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0965
+      },
+      {
+        "source_page": 6,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0001
+      },
+      {
+        "source_page": 7,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.012
+      },
+      {
+        "source_page": 8,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0002
+      },
+      {
+        "source_page": 9,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.5754
+      },
+      {
+        "source_page": 10,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.5093
+      },
+      {
+        "source_page": 11,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.4669
+      },
+      {
+        "source_page": 12,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.5205
+      },
+      {
+        "source_page": 13,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.2409
+      },
+      {
+        "source_page": 14,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0002
+      }
+    ]
+  },
+  "flow": {
+    "pages": 14,
+    "native_text_complete": true,
+    "heading_orphans": [],
+    "split_figures": [],
+    "split_short_code": [],
+    "split_short_tables": [],
+    "split_instructions": [],
+    "instruction_groups": 3,
+    "fixed_pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12,
+      13,
+      14
+    ],
+    "overflow": [],
+    "block_positions": [
+      {
+        "id": "__native-page-2",
+        "edge": "native-page",
+        "page": 2,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-3",
+        "edge": "native-page",
+        "page": 3,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-4",
+        "edge": "native-page",
+        "page": 4,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-5",
+        "edge": "native-page",
+        "page": 5,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-6",
+        "edge": "native-page",
+        "page": 6,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-7",
+        "edge": "native-page",
+        "page": 7,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-8",
+        "edge": "native-page",
+        "page": 8,
+        "y": 86.0
+      },
+      {
+        "id": "instruction-p009-b01",
+        "edge": "start",
+        "page": 9,
+        "y": 86.0
+      },
+      {
+        "id": "p009-b01",
+        "edge": "heading",
+        "page": 9,
+        "y": 86.0
+      },
+      {
+        "id": "p009-f01",
+        "edge": "start",
+        "page": 9,
+        "y": 113.96
+      },
+      {
+        "id": "p009-f01",
+        "edge": "end",
+        "page": 9,
+        "y": 390.749965805603
+      },
+      {
+        "id": "instruction-p009-b01",
+        "edge": "end",
+        "page": 9,
+        "y": 390.749965805603
+      },
+      {
+        "id": "p009-b02",
+        "edge": "start",
+        "page": 9,
+        "y": 390.749965805603
+      },
+      {
+        "id": "p009-b02",
+        "edge": "end",
+        "page": 9,
+        "y": 401.789965805603
+      },
+      {
+        "id": "p009-b03",
+        "edge": "start",
+        "page": 9,
+        "y": 407.789965805603
+      },
+      {
+        "id": "p009-b03",
+        "edge": "end",
+        "page": 9,
+        "y": 419.600825180603
+      },
+      {
+        "id": "p009-b04",
+        "edge": "start",
+        "page": 9,
+        "y": 425.600825180603
+      },
+      {
+        "id": "p009-b04",
+        "edge": "end",
+        "page": 9,
+        "y": 437.411684555603
+      },
+      {
+        "id": "p009-b05",
+        "edge": "start",
+        "page": 9,
+        "y": 443.411684555603
+      },
+      {
+        "id": "p009-b05",
+        "edge": "end",
+        "page": 9,
+        "y": 455.222543930603
+      },
+      {
+        "id": "p009-b06",
+        "edge": "start",
+        "page": 9,
+        "y": 461.222543930603
+      },
+      {
+        "id": "p009-b06",
+        "edge": "end",
+        "page": 9,
+        "y": 473.03340330560303
+      },
+      {
+        "id": "p009-b07",
+        "edge": "start",
+        "page": 9,
+        "y": 479.03340330560303
+      },
+      {
+        "id": "p009-b07",
+        "edge": "end",
+        "page": 9,
+        "y": 490.84426268060304
+      },
+      {
+        "id": "instruction-p010-b01",
+        "edge": "start",
+        "page": 10,
+        "y": 86.0
+      },
+      {
+        "id": "p010-b01",
+        "edge": "heading",
+        "page": 10,
+        "y": 86.0
+      },
+      {
+        "id": "p010-f02",
+        "edge": "start",
+        "page": 10,
+        "y": 113.96
+      },
+      {
+        "id": "p010-f02",
+        "edge": "end",
+        "page": 10,
+        "y": 390.749965805603
+      },
+      {
+        "id": "instruction-p010-b01",
+        "edge": "end",
+        "page": 10,
+        "y": 390.749965805603
+      },
+      {
+        "id": "p010-b02",
+        "edge": "start",
+        "page": 10,
+        "y": 390.749965805603
+      },
+      {
+        "id": "p010-b02",
+        "edge": "end",
+        "page": 10,
+        "y": 401.789965805603
+      },
+      {
+        "id": "p010-b03",
+        "edge": "heading",
+        "page": 10,
+        "y": 409.789965805603
+      },
+      {
+        "id": "p010-b04",
+        "edge": "heading",
+        "page": 10,
+        "y": 428.829965805603
+      },
+      {
+        "id": "p010-b05",
+        "edge": "heading",
+        "page": 10,
+        "y": 447.86996580560304
+      },
+      {
+        "id": "p010-b06",
+        "edge": "heading",
+        "page": 10,
+        "y": 466.909965805603
+      },
+      {
+        "id": "p010-b07",
+        "edge": "heading",
+        "page": 10,
+        "y": 485.94996580560303
+      },
+      {
+        "id": "p010-b08",
+        "edge": "start",
+        "page": 10,
+        "y": 502.98996580560305
+      },
+      {
+        "id": "p010-b08",
+        "edge": "end",
+        "page": 10,
+        "y": 514.0299658056031
+      },
+      {
+        "id": "p010-b09",
+        "edge": "heading",
+        "page": 11,
+        "y": 86.0
+      },
+      {
+        "id": "p010-b10",
+        "edge": "heading",
+        "page": 11,
+        "y": 105.04
+      },
+      {
+        "id": "instruction-p011-b01",
+        "edge": "start",
+        "page": 11,
+        "y": 122.08
+      },
+      {
+        "id": "p011-b01",
+        "edge": "heading",
+        "page": 11,
+        "y": 122.08
+      },
+      {
+        "id": "p011-f03",
+        "edge": "start",
+        "page": 11,
+        "y": 150.04000000000002
+      },
+      {
+        "id": "p011-f03",
+        "edge": "end",
+        "page": 11,
+        "y": 426.829965805603
+      },
+      {
+        "id": "instruction-p011-b01",
+        "edge": "end",
+        "page": 11,
+        "y": 426.829965805603
+      },
+      {
+        "id": "p011-b02",
+        "edge": "start",
+        "page": 11,
+        "y": 426.829965805603
+      },
+      {
+        "id": "p011-b02",
+        "edge": "end",
+        "page": 11,
+        "y": 455.86996580560304
+      },
+      {
+        "id": "p011-b03",
+        "edge": "start",
+        "page": 11,
+        "y": 461.86996580560304
+      },
+      {
+        "id": "p011-b03",
+        "edge": "end",
+        "page": 11,
+        "y": 472.909965805603
+      },
+      {
+        "id": "p011-b04",
+        "edge": "start",
+        "page": 11,
+        "y": 478.909965805603
+      },
+      {
+        "id": "p011-b04",
+        "edge": "end",
+        "page": 11,
+        "y": 490.720825180603
+      },
+      {
+        "id": "p011-b05",
+        "edge": "start",
+        "page": 11,
+        "y": 496.720825180603
+      },
+      {
+        "id": "p011-b05",
+        "edge": "end",
+        "page": 11,
+        "y": 508.531684555603
+      },
+      {
+        "id": "p011-b06",
+        "edge": "start",
+        "page": 11,
+        "y": 514.5316845556031
+      },
+      {
+        "id": "p011-b06",
+        "edge": "end",
+        "page": 11,
+        "y": 525.571684555603
+      },
+      {
+        "id": "p011-b07",
+        "edge": "start",
+        "page": 11,
+        "y": 531.571684555603
+      },
+      {
+        "id": "p011-b07",
+        "edge": "end",
+        "page": 11,
+        "y": 543.3825439306031
+      },
+      {
+        "id": "p011-b08",
+        "edge": "start",
+        "page": 11,
+        "y": 549.3825439306031
+      },
+      {
+        "id": "p011-b08",
+        "edge": "end",
+        "page": 11,
+        "y": 561.193403305603
+      },
+      {
+        "id": "p011-b09",
+        "edge": "start",
+        "page": 11,
+        "y": 567.193403305603
+      },
+      {
+        "id": "p011-b09",
+        "edge": "end",
+        "page": 11,
+        "y": 578.233403305603
+      },
+      {
+        "id": "p011-b10",
+        "edge": "start",
+        "page": 11,
+        "y": 584.233403305603
+      },
+      {
+        "id": "p011-b10",
+        "edge": "end",
+        "page": 11,
+        "y": 596.0442626806031
+      },
+      {
+        "id": "p011-b11",
+        "edge": "start",
+        "page": 11,
+        "y": 602.0442626806031
+      },
+      {
+        "id": "p011-b11",
+        "edge": "end",
+        "page": 11,
+        "y": 613.084262680603
+      },
+      {
+        "id": "p011-b12",
+        "edge": "start",
+        "page": 11,
+        "y": 619.084262680603
+      },
+      {
+        "id": "p011-b12",
+        "edge": "end",
+        "page": 11,
+        "y": 630.8951220556031
+      },
+      {
+        "id": "__native-page-12",
+        "edge": "native-page",
+        "page": 12,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-13",
+        "edge": "native-page",
+        "page": 13,
+        "y": 86.0
+      },
+      {
+        "id": "__native-page-14",
+        "edge": "native-page",
+        "page": 14,
+        "y": 86.0
+      }
+    ]
+  }
+}

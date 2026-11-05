@@ -1,0 +1,2241 @@
+{
+  "chapter": "05",
+  "source_sha256": "e730cacfb87c9851f00b2bc254efb0b5e5a6dea76c73ae5dbd2f104ec2756b46",
+  "source_pages": [
+    164,
+    191
+  ],
+  "blocks": 140,
+  "figures": 19,
+  "source_coverage": [
+    {
+      "body": 101,
+      "figure": 0,
+      "furniture": 0,
+      "table": 0
+    },
+    {
+      "body": 0,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 138,
+      "figure": 45,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 484,
+      "figure": 243,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 919,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 303,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 194,
+      "figure": 365,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 273,
+      "figure": 27,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 675,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 453,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 441,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 468,
+      "figure": 311,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 762,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 444,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 222,
+      "figure": 221,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 579,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 201,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 332,
+      "figure": 415,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 246,
+      "figure": 33,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 848,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 922,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 679,
+      "figure": 269,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 0,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 469,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 481,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 131,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 156,
+      "figure": 46,
+      "furniture": 26,
+      "table": 0
+    },
+    {
+      "body": 0,
+      "figure": 0,
+      "furniture": 26,
+      "table": 0
+    }
+  ],
+  "reference": {
+    "pages": 28,
+    "page_checks": [
+      {
+        "source_page": 164,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.146
+      },
+      {
+        "source_page": 165,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0007
+      },
+      {
+        "source_page": 166,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.1092
+      },
+      {
+        "source_page": 167,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.5465
+      },
+      {
+        "source_page": 168,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.1291
+      },
+      {
+        "source_page": 169,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0266
+      },
+      {
+        "source_page": 170,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.3909
+      },
+      {
+        "source_page": 171,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.4139
+      },
+      {
+        "source_page": 172,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.106
+      },
+      {
+        "source_page": 173,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.125
+      },
+      {
+        "source_page": 174,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0743
+      },
+      {
+        "source_page": 175,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.4564
+      },
+      {
+        "source_page": 176,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.1514
+      },
+      {
+        "source_page": 177,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0729
+      },
+      {
+        "source_page": 178,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.3052
+      },
+      {
+        "source_page": 179,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.1146
+      },
+      {
+        "source_page": 180,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0099
+      },
+      {
+        "source_page": 181,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.6224
+      },
+      {
+        "source_page": 182,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.1489
+      },
+      {
+        "source_page": 183,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.3828
+      },
+      {
+        "source_page": 184,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.2587
+      },
+      {
+        "source_page": 185,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.6282
+      },
+      {
+        "source_page": 186,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0027
+      },
+      {
+        "source_page": 187,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.3962
+      },
+      {
+        "source_page": 188,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.3875
+      },
+      {
+        "source_page": 189,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.143
+      },
+      {
+        "source_page": 190,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.1141
+      },
+      {
+        "source_page": 191,
+        "native_text_complete": true,
+        "mean_absolute_rgb_error_0_255": 0.0007
+      }
+    ]
+  },
+  "flow": {
+    "pages": 21,
+    "native_text_complete": true,
+    "heading_orphans": [],
+    "split_figures": [],
+    "split_short_code": [],
+    "split_short_tables": [],
+    "split_instructions": [],
+    "instruction_groups": 11,
+    "fixed_pages": [],
+    "overflow": [],
+    "block_positions": [
+      {
+        "id": "instruction-p166-b01",
+        "edge": "start",
+        "page": 2,
+        "y": 86.0
+      },
+      {
+        "id": "p166-b01",
+        "edge": "heading",
+        "page": 2,
+        "y": 86.0
+      },
+      {
+        "id": "p166-f01",
+        "edge": "start",
+        "page": 2,
+        "y": 113.96
+      },
+      {
+        "id": "p166-f01",
+        "edge": "end",
+        "page": 2,
+        "y": 390.8699304131421
+      },
+      {
+        "id": "instruction-p166-b01",
+        "edge": "end",
+        "page": 2,
+        "y": 390.8699304131421
+      },
+      {
+        "id": "p166-b02",
+        "edge": "start",
+        "page": 2,
+        "y": 390.8699304131421
+      },
+      {
+        "id": "p166-b02",
+        "edge": "end",
+        "page": 2,
+        "y": 437.9099304131421
+      },
+      {
+        "id": "instruction-p167-b01",
+        "edge": "start",
+        "page": 2,
+        "y": 443.9099304131421
+      },
+      {
+        "id": "p167-b01",
+        "edge": "heading",
+        "page": 2,
+        "y": 443.9099304131421
+      },
+      {
+        "id": "p167-f02",
+        "edge": "start",
+        "page": 2,
+        "y": 469.94993041314206
+      },
+      {
+        "id": "p167-f02",
+        "edge": "end",
+        "page": 2,
+        "y": 746.7399267363252
+      },
+      {
+        "id": "instruction-p167-b01",
+        "edge": "end",
+        "page": 2,
+        "y": 746.7399267363252
+      },
+      {
+        "id": "p167-b02",
+        "edge": "heading",
+        "page": 3,
+        "y": 86.0
+      },
+      {
+        "id": "p167-b03",
+        "edge": "start",
+        "page": 3,
+        "y": 110.0
+      },
+      {
+        "id": "p167-b03",
+        "edge": "end",
+        "page": 3,
+        "y": 175.04000000000002
+      },
+      {
+        "id": "p167-b04",
+        "edge": "start",
+        "page": 3,
+        "y": 181.04000000000002
+      },
+      {
+        "id": "p167-b04",
+        "edge": "end",
+        "page": 3,
+        "y": 210.08000000000004
+      },
+      {
+        "id": "p167-b05",
+        "edge": "start",
+        "page": 3,
+        "y": 216.08
+      },
+      {
+        "id": "p167-b05",
+        "edge": "end",
+        "page": 3,
+        "y": 227.11999999999998
+      },
+      {
+        "id": "p167-b06",
+        "edge": "start",
+        "page": 3,
+        "y": 233.11999999999998
+      },
+      {
+        "id": "p167-b06",
+        "edge": "end",
+        "page": 3,
+        "y": 298.16
+      },
+      {
+        "id": "p168-b01",
+        "edge": "heading",
+        "page": 3,
+        "y": 316.16
+      },
+      {
+        "id": "p168-b02",
+        "edge": "start",
+        "page": 3,
+        "y": 340.16
+      },
+      {
+        "id": "p168-b02",
+        "edge": "end",
+        "page": 3,
+        "y": 369.2
+      },
+      {
+        "id": "p168-b03",
+        "edge": "short-code",
+        "page": 3,
+        "y": 383.2
+      },
+      {
+        "id": "p168-b03",
+        "edge": "start",
+        "page": 3,
+        "y": 383.2
+      },
+      {
+        "id": "p168-b03",
+        "edge": "end",
+        "page": 3,
+        "y": 503.2
+      },
+      {
+        "id": "p168-b04",
+        "edge": "start",
+        "page": 3,
+        "y": 521.1999999999999
+      },
+      {
+        "id": "p168-b04",
+        "edge": "end",
+        "page": 3,
+        "y": 532.24
+      },
+      {
+        "id": "p168-b05",
+        "edge": "start",
+        "page": 3,
+        "y": 538.2400000000001
+      },
+      {
+        "id": "p168-b05",
+        "edge": "end",
+        "page": 3,
+        "y": 585.2800000000001
+      },
+      {
+        "id": "p168-b06",
+        "edge": "start",
+        "page": 3,
+        "y": 591.28
+      },
+      {
+        "id": "p168-b06",
+        "edge": "end",
+        "page": 3,
+        "y": 602.32
+      },
+      {
+        "id": "p168-b07",
+        "edge": "start",
+        "page": 3,
+        "y": 608.32
+      },
+      {
+        "id": "p168-b07",
+        "edge": "end",
+        "page": 3,
+        "y": 655.36
+      },
+      {
+        "id": "p168-b08",
+        "edge": "heading",
+        "page": 4,
+        "y": 86.0
+      },
+      {
+        "id": "p168-b09",
+        "edge": "short-code",
+        "page": 4,
+        "y": 116.0
+      },
+      {
+        "id": "p168-b09",
+        "edge": "start",
+        "page": 4,
+        "y": 116.0
+      },
+      {
+        "id": "p168-b09",
+        "edge": "end",
+        "page": 4,
+        "y": 182.0
+      },
+      {
+        "id": "p168-b10",
+        "edge": "start",
+        "page": 4,
+        "y": 200.0
+      },
+      {
+        "id": "p168-b10",
+        "edge": "end",
+        "page": 4,
+        "y": 265.04
+      },
+      {
+        "id": "p169-b01",
+        "edge": "start",
+        "page": 4,
+        "y": 271.04
+      },
+      {
+        "id": "p169-b01",
+        "edge": "end",
+        "page": 4,
+        "y": 336.08000000000004
+      },
+      {
+        "id": "p169-b02",
+        "edge": "start",
+        "page": 4,
+        "y": 342.08000000000004
+      },
+      {
+        "id": "p169-b02",
+        "edge": "end",
+        "page": 4,
+        "y": 389.12000000000006
+      },
+      {
+        "id": "instruction-p170-b01",
+        "edge": "start",
+        "page": 4,
+        "y": 395.12000000000006
+      },
+      {
+        "id": "p170-b01",
+        "edge": "heading",
+        "page": 4,
+        "y": 395.12000000000006
+      },
+      {
+        "id": "p170-f03",
+        "edge": "start",
+        "page": 4,
+        "y": 421.1600000000001
+      },
+      {
+        "id": "p170-f03",
+        "edge": "end",
+        "page": 4,
+        "y": 697.9499963231831
+      },
+      {
+        "id": "instruction-p170-b01",
+        "edge": "end",
+        "page": 4,
+        "y": 697.9499963231831
+      },
+      {
+        "id": "p170-b02",
+        "edge": "start",
+        "page": 4,
+        "y": 697.9499963231831
+      },
+      {
+        "id": "p170-b02",
+        "edge": "end",
+        "page": 4,
+        "y": 762.9899963231832
+      },
+      {
+        "id": "instruction-p171-b01",
+        "edge": "start",
+        "page": 5,
+        "y": 86.0
+      },
+      {
+        "id": "p171-b01",
+        "edge": "heading",
+        "page": 5,
+        "y": 86.0
+      },
+      {
+        "id": "p171-b02",
+        "edge": "start",
+        "page": 5,
+        "y": 110.0
+      },
+      {
+        "id": "p171-b02",
+        "edge": "end",
+        "page": 5,
+        "y": 121.04
+      },
+      {
+        "id": "p171-f04",
+        "edge": "start",
+        "page": 5,
+        "y": 129.04000000000002
+      },
+      {
+        "id": "p171-f04",
+        "edge": "end",
+        "page": 5,
+        "y": 326.31642064796887
+      },
+      {
+        "id": "instruction-p171-b01",
+        "edge": "end",
+        "page": 5,
+        "y": 326.31642064796887
+      },
+      {
+        "id": "p171-f05",
+        "edge": "start",
+        "page": 5,
+        "y": 334.31642064796887
+      },
+      {
+        "id": "p171-f05",
+        "edge": "end",
+        "page": 5,
+        "y": 479.91638906719976
+      },
+      {
+        "id": "p171-b03",
+        "edge": "start",
+        "page": 5,
+        "y": 491.91638906719976
+      },
+      {
+        "id": "p171-b03",
+        "edge": "end",
+        "page": 5,
+        "y": 538.9563890671998
+      },
+      {
+        "id": "p171-b04",
+        "edge": "heading",
+        "page": 5,
+        "y": 544.9563890671998
+      },
+      {
+        "id": "p171-b05",
+        "edge": "short-code",
+        "page": 5,
+        "y": 569.9963890671997
+      },
+      {
+        "id": "p171-b05",
+        "edge": "start",
+        "page": 5,
+        "y": 569.9963890671997
+      },
+      {
+        "id": "p171-b05",
+        "edge": "end",
+        "page": 5,
+        "y": 671.9963890671997
+      },
+      {
+        "id": "p172-b01",
+        "edge": "short-code",
+        "page": 6,
+        "y": 92.0
+      },
+      {
+        "id": "p172-b01",
+        "edge": "start",
+        "page": 6,
+        "y": 92.0
+      },
+      {
+        "id": "p172-b01",
+        "edge": "end",
+        "page": 6,
+        "y": 266.0
+      },
+      {
+        "id": "p172-b02",
+        "edge": "start",
+        "page": 6,
+        "y": 284.0
+      },
+      {
+        "id": "p172-b02",
+        "edge": "end",
+        "page": 6,
+        "y": 295.04
+      },
+      {
+        "id": "p172-b03",
+        "edge": "start",
+        "page": 6,
+        "y": 301.04
+      },
+      {
+        "id": "p172-b03",
+        "edge": "end",
+        "page": 6,
+        "y": 366.08000000000004
+      },
+      {
+        "id": "p172-b04",
+        "edge": "start",
+        "page": 6,
+        "y": 372.08000000000004
+      },
+      {
+        "id": "p172-b04",
+        "edge": "end",
+        "page": 6,
+        "y": 437.12000000000006
+      },
+      {
+        "id": "p172-b05",
+        "edge": "start",
+        "page": 6,
+        "y": 443.12000000000006
+      },
+      {
+        "id": "p172-b05",
+        "edge": "end",
+        "page": 6,
+        "y": 454.1600000000001
+      },
+      {
+        "id": "p172-f06",
+        "edge": "start",
+        "page": 6,
+        "y": 462.1600000000001
+      },
+      {
+        "id": "p172-f06",
+        "edge": "end",
+        "page": 6,
+        "y": 665.2599952065282
+      },
+      {
+        "id": "instruction-p173-b01",
+        "edge": "start",
+        "page": 7,
+        "y": 86.0
+      },
+      {
+        "id": "p173-b01",
+        "edge": "heading",
+        "page": 7,
+        "y": 86.0
+      },
+      {
+        "id": "p173-b02",
+        "edge": "start",
+        "page": 7,
+        "y": 110.0
+      },
+      {
+        "id": "p173-b02",
+        "edge": "end",
+        "page": 7,
+        "y": 121.04
+      },
+      {
+        "id": "p173-f07",
+        "edge": "start",
+        "page": 7,
+        "y": 129.04000000000002
+      },
+      {
+        "id": "p173-f07",
+        "edge": "end",
+        "page": 7,
+        "y": 433.7400005836483
+      },
+      {
+        "id": "instruction-p173-b01",
+        "edge": "end",
+        "page": 7,
+        "y": 433.7400005836483
+      },
+      {
+        "id": "p173-b03",
+        "edge": "start",
+        "page": 7,
+        "y": 433.7400005836483
+      },
+      {
+        "id": "p173-b03",
+        "edge": "end",
+        "page": 7,
+        "y": 462.7800005836483
+      },
+      {
+        "id": "p173-b04",
+        "edge": "heading",
+        "page": 7,
+        "y": 468.7800005836483
+      },
+      {
+        "id": "p173-b05",
+        "edge": "short-code",
+        "page": 7,
+        "y": 493.8200005836483
+      },
+      {
+        "id": "p173-b05",
+        "edge": "start",
+        "page": 7,
+        "y": 493.8200005836483
+      },
+      {
+        "id": "p173-b05",
+        "edge": "end",
+        "page": 7,
+        "y": 703.8200005836484
+      },
+      {
+        "id": "p174-b01",
+        "edge": "heading",
+        "page": 8,
+        "y": 86.0
+      },
+      {
+        "id": "p174-b02",
+        "edge": "short-code",
+        "page": 8,
+        "y": 111.04
+      },
+      {
+        "id": "p174-b02",
+        "edge": "start",
+        "page": 8,
+        "y": 111.04
+      },
+      {
+        "id": "p174-b02",
+        "edge": "end",
+        "page": 8,
+        "y": 213.04000000000002
+      },
+      {
+        "id": "p174-b03",
+        "edge": "start",
+        "page": 8,
+        "y": 231.04000000000002
+      },
+      {
+        "id": "p174-b03",
+        "edge": "end",
+        "page": 8,
+        "y": 278.08000000000004
+      },
+      {
+        "id": "p174-b04",
+        "edge": "start",
+        "page": 8,
+        "y": 284.08000000000004
+      },
+      {
+        "id": "p174-b04",
+        "edge": "end",
+        "page": 8,
+        "y": 295.12000000000006
+      },
+      {
+        "id": "p174-b05",
+        "edge": "start",
+        "page": 8,
+        "y": 301.12000000000006
+      },
+      {
+        "id": "p174-b05",
+        "edge": "end",
+        "page": 8,
+        "y": 312.1600000000001
+      },
+      {
+        "id": "p174-b06",
+        "edge": "start",
+        "page": 8,
+        "y": 318.1600000000001
+      },
+      {
+        "id": "p174-b06",
+        "edge": "end",
+        "page": 8,
+        "y": 329.20000000000005
+      },
+      {
+        "id": "p174-f08",
+        "edge": "start",
+        "page": 8,
+        "y": 337.20000000000005
+      },
+      {
+        "id": "p174-f08",
+        "edge": "end",
+        "page": 8,
+        "y": 612.0853384352065
+      },
+      {
+        "id": "instruction-p175-b01",
+        "edge": "start",
+        "page": 9,
+        "y": 86.0
+      },
+      {
+        "id": "p175-b01",
+        "edge": "heading",
+        "page": 9,
+        "y": 86.0
+      },
+      {
+        "id": "p175-f09",
+        "edge": "start",
+        "page": 9,
+        "y": 112.04
+      },
+      {
+        "id": "p175-f09",
+        "edge": "end",
+        "page": 9,
+        "y": 388.82999632318314
+      },
+      {
+        "id": "instruction-p175-b01",
+        "edge": "end",
+        "page": 9,
+        "y": 388.82999632318314
+      },
+      {
+        "id": "p175-b02",
+        "edge": "heading",
+        "page": 9,
+        "y": 406.82999632318314
+      },
+      {
+        "id": "p175-b03",
+        "edge": "start",
+        "page": 9,
+        "y": 430.82999632318314
+      },
+      {
+        "id": "p175-b03",
+        "edge": "end",
+        "page": 9,
+        "y": 477.86999632318316
+      },
+      {
+        "id": "p175-b04",
+        "edge": "start",
+        "page": 9,
+        "y": 483.86999632318316
+      },
+      {
+        "id": "p175-b04",
+        "edge": "end",
+        "page": 9,
+        "y": 494.9099963231832
+      },
+      {
+        "id": "p175-b05",
+        "edge": "heading",
+        "page": 9,
+        "y": 500.9099963231832
+      },
+      {
+        "id": "p175-b06",
+        "edge": "short-code",
+        "page": 9,
+        "y": 525.9499963231831
+      },
+      {
+        "id": "p175-b06",
+        "edge": "start",
+        "page": 9,
+        "y": 525.9499963231831
+      },
+      {
+        "id": "p175-b06",
+        "edge": "end",
+        "page": 9,
+        "y": 699.9499963231831
+      },
+      {
+        "id": "p176-b01",
+        "edge": "start",
+        "page": 9,
+        "y": 717.9499963231831
+      },
+      {
+        "id": "p176-b01",
+        "edge": "end",
+        "page": 9,
+        "y": 764.9899963231832
+      },
+      {
+        "id": "p176-b02",
+        "edge": "heading",
+        "page": 10,
+        "y": 86.0
+      },
+      {
+        "id": "p176-b03",
+        "edge": "start",
+        "page": 10,
+        "y": 110.0
+      },
+      {
+        "id": "p176-b03",
+        "edge": "end",
+        "page": 10,
+        "y": 139.04000000000002
+      },
+      {
+        "id": "p176-b04",
+        "edge": "start",
+        "page": 10,
+        "y": 145.04000000000002
+      },
+      {
+        "id": "p176-b04",
+        "edge": "end",
+        "page": 10,
+        "y": 156.08000000000004
+      },
+      {
+        "id": "p176-b05",
+        "edge": "start",
+        "page": 10,
+        "y": 162.08
+      },
+      {
+        "id": "p176-b05",
+        "edge": "end",
+        "page": 10,
+        "y": 191.11999999999998
+      },
+      {
+        "id": "p176-b06",
+        "edge": "short-code",
+        "page": 10,
+        "y": 205.11999999999998
+      },
+      {
+        "id": "p176-b06",
+        "edge": "start",
+        "page": 10,
+        "y": 205.11999999999998
+      },
+      {
+        "id": "p176-b06",
+        "edge": "end",
+        "page": 10,
+        "y": 253.11999999999998
+      },
+      {
+        "id": "p176-b07",
+        "edge": "start",
+        "page": 10,
+        "y": 271.12
+      },
+      {
+        "id": "p176-b07",
+        "edge": "end",
+        "page": 10,
+        "y": 282.16
+      },
+      {
+        "id": "p176-b08",
+        "edge": "start",
+        "page": 10,
+        "y": 288.16
+      },
+      {
+        "id": "p176-b08",
+        "edge": "end",
+        "page": 10,
+        "y": 299.2
+      },
+      {
+        "id": "p176-b09",
+        "edge": "start",
+        "page": 10,
+        "y": 305.2
+      },
+      {
+        "id": "p176-b09",
+        "edge": "end",
+        "page": 10,
+        "y": 316.24
+      },
+      {
+        "id": "p176-b10",
+        "edge": "short-code",
+        "page": 10,
+        "y": 330.24
+      },
+      {
+        "id": "p176-b10",
+        "edge": "start",
+        "page": 10,
+        "y": 330.24
+      },
+      {
+        "id": "p176-b10",
+        "edge": "end",
+        "page": 10,
+        "y": 378.24
+      },
+      {
+        "id": "p176-b11",
+        "edge": "start",
+        "page": 10,
+        "y": 396.24
+      },
+      {
+        "id": "p176-b11",
+        "edge": "end",
+        "page": 10,
+        "y": 407.28000000000003
+      },
+      {
+        "id": "p176-b12",
+        "edge": "start",
+        "page": 10,
+        "y": 413.28000000000003
+      },
+      {
+        "id": "p176-b12",
+        "edge": "end",
+        "page": 10,
+        "y": 424.32000000000005
+      },
+      {
+        "id": "p176-b13",
+        "edge": "start",
+        "page": 10,
+        "y": 430.32000000000005
+      },
+      {
+        "id": "p176-b13",
+        "edge": "end",
+        "page": 10,
+        "y": 459.36000000000007
+      },
+      {
+        "id": "p176-b14",
+        "edge": "short-code",
+        "page": 10,
+        "y": 473.36000000000007
+      },
+      {
+        "id": "p176-b14",
+        "edge": "start",
+        "page": 10,
+        "y": 473.36000000000007
+      },
+      {
+        "id": "p176-b14",
+        "edge": "end",
+        "page": 10,
+        "y": 575.36
+      },
+      {
+        "id": "p177-b01",
+        "edge": "start",
+        "page": 10,
+        "y": 593.36
+      },
+      {
+        "id": "p177-b01",
+        "edge": "end",
+        "page": 10,
+        "y": 604.4
+      },
+      {
+        "id": "p177-b02",
+        "edge": "start",
+        "page": 10,
+        "y": 610.4
+      },
+      {
+        "id": "p177-b02",
+        "edge": "end",
+        "page": 10,
+        "y": 621.44
+      },
+      {
+        "id": "p177-b03",
+        "edge": "start",
+        "page": 10,
+        "y": 627.44
+      },
+      {
+        "id": "p177-b03",
+        "edge": "end",
+        "page": 10,
+        "y": 656.48
+      },
+      {
+        "id": "p177-b04",
+        "edge": "short-code",
+        "page": 10,
+        "y": 670.48
+      },
+      {
+        "id": "p177-b04",
+        "edge": "start",
+        "page": 10,
+        "y": 670.48
+      },
+      {
+        "id": "p177-b04",
+        "edge": "end",
+        "page": 10,
+        "y": 718.48
+      },
+      {
+        "id": "p177-b05",
+        "edge": "start",
+        "page": 10,
+        "y": 736.48
+      },
+      {
+        "id": "p177-b05",
+        "edge": "end",
+        "page": 10,
+        "y": 747.5200000000001
+      },
+      {
+        "id": "p177-b06",
+        "edge": "start",
+        "page": 10,
+        "y": 753.5200000000001
+      },
+      {
+        "id": "p177-b06",
+        "edge": "end",
+        "page": 10,
+        "y": 764.5600000000001
+      },
+      {
+        "id": "p177-b07",
+        "edge": "start",
+        "page": 11,
+        "y": 86.0
+      },
+      {
+        "id": "p177-b07",
+        "edge": "end",
+        "page": 11,
+        "y": 97.04
+      },
+      {
+        "id": "p177-b08",
+        "edge": "start",
+        "page": 11,
+        "y": 103.04
+      },
+      {
+        "id": "p177-b08",
+        "edge": "end",
+        "page": 11,
+        "y": 114.08
+      },
+      {
+        "id": "p177-b09",
+        "edge": "short-code",
+        "page": 11,
+        "y": 128.08
+      },
+      {
+        "id": "p177-b09",
+        "edge": "start",
+        "page": 11,
+        "y": 128.08
+      },
+      {
+        "id": "p177-b09",
+        "edge": "end",
+        "page": 11,
+        "y": 194.08
+      },
+      {
+        "id": "instruction-p178-b01",
+        "edge": "start",
+        "page": 11,
+        "y": 212.08
+      },
+      {
+        "id": "p178-b01",
+        "edge": "heading",
+        "page": 11,
+        "y": 212.08
+      },
+      {
+        "id": "p178-f10",
+        "edge": "start",
+        "page": 11,
+        "y": 238.11999999999998
+      },
+      {
+        "id": "p178-f10",
+        "edge": "end",
+        "page": 11,
+        "y": 514.9099963231831
+      },
+      {
+        "id": "instruction-p178-b01",
+        "edge": "end",
+        "page": 11,
+        "y": 514.9099963231831
+      },
+      {
+        "id": "p178-b02",
+        "edge": "start",
+        "page": 11,
+        "y": 514.9099963231831
+      },
+      {
+        "id": "p178-b02",
+        "edge": "end",
+        "page": 11,
+        "y": 543.9499963231831
+      },
+      {
+        "id": "p178-b03",
+        "edge": "start",
+        "page": 11,
+        "y": 549.9499963231831
+      },
+      {
+        "id": "p178-b03",
+        "edge": "end",
+        "page": 11,
+        "y": 560.9899963231832
+      },
+      {
+        "id": "p178-f11",
+        "edge": "start",
+        "page": 11,
+        "y": 568.9899963231832
+      },
+      {
+        "id": "p178-f11",
+        "edge": "end",
+        "page": 11,
+        "y": 700.1899569678575
+      },
+      {
+        "id": "p178-b04",
+        "edge": "start",
+        "page": 11,
+        "y": 712.1899569678575
+      },
+      {
+        "id": "p178-b04",
+        "edge": "end",
+        "page": 11,
+        "y": 741.2299569678574
+      },
+      {
+        "id": "p179-b01",
+        "edge": "heading",
+        "page": 12,
+        "y": 86.0
+      },
+      {
+        "id": "p179-b02",
+        "edge": "heading",
+        "page": 12,
+        "y": 110.0
+      },
+      {
+        "id": "p179-b03",
+        "edge": "short-code",
+        "page": 12,
+        "y": 135.04000000000002
+      },
+      {
+        "id": "p179-b03",
+        "edge": "start",
+        "page": 12,
+        "y": 135.04000000000002
+      },
+      {
+        "id": "p179-b03",
+        "edge": "end",
+        "page": 12,
+        "y": 165.04000000000002
+      },
+      {
+        "id": "p179-b04",
+        "edge": "start",
+        "page": 12,
+        "y": 183.04000000000002
+      },
+      {
+        "id": "p179-b04",
+        "edge": "end",
+        "page": 12,
+        "y": 212.08000000000004
+      },
+      {
+        "id": "p179-b05",
+        "edge": "heading",
+        "page": 12,
+        "y": 230.08
+      },
+      {
+        "id": "p179-b06",
+        "edge": "heading",
+        "page": 12,
+        "y": 254.08
+      },
+      {
+        "id": "p179-b07",
+        "edge": "short-code",
+        "page": 12,
+        "y": 279.12
+      },
+      {
+        "id": "p179-b07",
+        "edge": "start",
+        "page": 12,
+        "y": 279.12
+      },
+      {
+        "id": "p179-b07",
+        "edge": "end",
+        "page": 12,
+        "y": 309.12
+      },
+      {
+        "id": "p179-b08",
+        "edge": "start",
+        "page": 12,
+        "y": 327.12
+      },
+      {
+        "id": "p179-b08",
+        "edge": "end",
+        "page": 12,
+        "y": 356.16
+      },
+      {
+        "id": "p179-b09",
+        "edge": "heading",
+        "page": 12,
+        "y": 374.16
+      },
+      {
+        "id": "p179-b10",
+        "edge": "heading",
+        "page": 12,
+        "y": 398.16
+      },
+      {
+        "id": "p179-b11",
+        "edge": "short-code",
+        "page": 12,
+        "y": 423.2
+      },
+      {
+        "id": "p179-b11",
+        "edge": "start",
+        "page": 12,
+        "y": 423.2
+      },
+      {
+        "id": "p179-b11",
+        "edge": "end",
+        "page": 12,
+        "y": 489.2
+      },
+      {
+        "id": "p179-b12",
+        "edge": "start",
+        "page": 12,
+        "y": 507.2
+      },
+      {
+        "id": "p179-b12",
+        "edge": "end",
+        "page": 12,
+        "y": 518.24
+      },
+      {
+        "id": "p179-b13",
+        "edge": "start",
+        "page": 12,
+        "y": 524.2400000000001
+      },
+      {
+        "id": "p179-b13",
+        "edge": "end",
+        "page": 12,
+        "y": 535.2800000000001
+      },
+      {
+        "id": "p179-b14",
+        "edge": "short-code",
+        "page": 12,
+        "y": 549.28
+      },
+      {
+        "id": "p179-b14",
+        "edge": "start",
+        "page": 12,
+        "y": 549.28
+      },
+      {
+        "id": "p179-b14",
+        "edge": "end",
+        "page": 12,
+        "y": 561.28
+      },
+      {
+        "id": "p179-b15",
+        "edge": "start",
+        "page": 12,
+        "y": 579.28
+      },
+      {
+        "id": "p179-b15",
+        "edge": "end",
+        "page": 12,
+        "y": 590.32
+      },
+      {
+        "id": "p180-b01",
+        "edge": "start",
+        "page": 12,
+        "y": 596.3200000000002
+      },
+      {
+        "id": "p180-b01",
+        "edge": "end",
+        "page": 12,
+        "y": 607.3600000000001
+      },
+      {
+        "id": "p180-b02",
+        "edge": "start",
+        "page": 12,
+        "y": 613.36
+      },
+      {
+        "id": "p180-b02",
+        "edge": "end",
+        "page": 12,
+        "y": 624.4
+      },
+      {
+        "id": "p180-f12",
+        "edge": "start",
+        "page": 13,
+        "y": 86.0
+      },
+      {
+        "id": "p180-f12",
+        "edge": "end",
+        "page": 13,
+        "y": 269.1999885746994
+      },
+      {
+        "id": "p180-b03",
+        "edge": "start",
+        "page": 13,
+        "y": 281.1999885746994
+      },
+      {
+        "id": "p180-b03",
+        "edge": "end",
+        "page": 13,
+        "y": 292.2399885746994
+      },
+      {
+        "id": "p180-b04",
+        "edge": "start",
+        "page": 13,
+        "y": 298.2399885746994
+      },
+      {
+        "id": "p180-b04",
+        "edge": "end",
+        "page": 13,
+        "y": 345.2799885746994
+      },
+      {
+        "id": "instruction-p181-b01",
+        "edge": "start",
+        "page": 13,
+        "y": 351.2799885746994
+      },
+      {
+        "id": "p181-b01",
+        "edge": "heading",
+        "page": 13,
+        "y": 351.2799885746994
+      },
+      {
+        "id": "p181-f13",
+        "edge": "start",
+        "page": 13,
+        "y": 377.31998857469944
+      },
+      {
+        "id": "p181-f13",
+        "edge": "end",
+        "page": 13,
+        "y": 654.1099848978826
+      },
+      {
+        "id": "instruction-p181-b01",
+        "edge": "end",
+        "page": 13,
+        "y": 654.1099848978826
+      },
+      {
+        "id": "p181-b02",
+        "edge": "heading",
+        "page": 13,
+        "y": 672.1099848978826
+      },
+      {
+        "id": "p181-b03",
+        "edge": "start",
+        "page": 13,
+        "y": 696.1099848978826
+      },
+      {
+        "id": "p181-b03",
+        "edge": "end",
+        "page": 13,
+        "y": 761.1499848978826
+      },
+      {
+        "id": "p181-b04",
+        "edge": "start",
+        "page": 14,
+        "y": 86.0
+      },
+      {
+        "id": "p181-b04",
+        "edge": "end",
+        "page": 14,
+        "y": 133.04000000000002
+      },
+      {
+        "id": "p181-b05",
+        "edge": "start",
+        "page": 14,
+        "y": 139.04000000000002
+      },
+      {
+        "id": "p181-b05",
+        "edge": "end",
+        "page": 14,
+        "y": 150.08000000000004
+      },
+      {
+        "id": "instruction-p182-b01",
+        "edge": "start",
+        "page": 14,
+        "y": 156.08
+      },
+      {
+        "id": "p182-b01",
+        "edge": "heading",
+        "page": 14,
+        "y": 156.08
+      },
+      {
+        "id": "p182-f14",
+        "edge": "start",
+        "page": 14,
+        "y": 180.08
+      },
+      {
+        "id": "p182-f14",
+        "edge": "end",
+        "page": 14,
+        "y": 412.17998057054643
+      },
+      {
+        "id": "instruction-p182-b01",
+        "edge": "end",
+        "page": 14,
+        "y": 412.17998057054643
+      },
+      {
+        "id": "p182-b02",
+        "edge": "start",
+        "page": 14,
+        "y": 412.17998057054643
+      },
+      {
+        "id": "p182-b02",
+        "edge": "end",
+        "page": 14,
+        "y": 441.21998057054645
+      },
+      {
+        "id": "instruction-p182-b03",
+        "edge": "start",
+        "page": 14,
+        "y": 447.21998057054645
+      },
+      {
+        "id": "p182-b03",
+        "edge": "heading",
+        "page": 14,
+        "y": 447.21998057054645
+      },
+      {
+        "id": "p182-f15",
+        "edge": "start",
+        "page": 14,
+        "y": 471.21998057054645
+      },
+      {
+        "id": "p182-f15",
+        "edge": "end",
+        "page": 14,
+        "y": 490.1699686634049
+      },
+      {
+        "id": "instruction-p182-b03",
+        "edge": "end",
+        "page": 14,
+        "y": 490.1699686634049
+      },
+      {
+        "id": "p182-b04",
+        "edge": "short-code",
+        "page": 14,
+        "y": 504.1699686634049
+      },
+      {
+        "id": "p182-b04",
+        "edge": "start",
+        "page": 14,
+        "y": 504.1699686634049
+      },
+      {
+        "id": "p182-b04",
+        "edge": "end",
+        "page": 14,
+        "y": 570.169968663405
+      },
+      {
+        "id": "p182-b05",
+        "edge": "start",
+        "page": 14,
+        "y": 588.169968663405
+      },
+      {
+        "id": "p182-b05",
+        "edge": "end",
+        "page": 14,
+        "y": 617.209968663405
+      },
+      {
+        "id": "p183-b01",
+        "edge": "heading",
+        "page": 14,
+        "y": 635.2099686634049
+      },
+      {
+        "id": "p183-b02",
+        "edge": "heading",
+        "page": 14,
+        "y": 658.249968663405
+      },
+      {
+        "id": "p183-b03",
+        "edge": "long-code",
+        "page": 14,
+        "y": 683.2899686634049
+      },
+      {
+        "id": "p183-b03",
+        "edge": "start",
+        "page": 14,
+        "y": 683.2899686634049
+      },
+      {
+        "id": "p183-b03",
+        "edge": "end",
+        "page": 15,
+        "y": 644.0
+      },
+      {
+        "id": "p184-b01",
+        "edge": "start",
+        "page": 15,
+        "y": 662.0
+      },
+      {
+        "id": "p184-b01",
+        "edge": "end",
+        "page": 15,
+        "y": 691.04
+      },
+      {
+        "id": "p184-b02",
+        "edge": "start",
+        "page": 15,
+        "y": 697.04
+      },
+      {
+        "id": "p184-b02",
+        "edge": "end",
+        "page": 15,
+        "y": 708.08
+      },
+      {
+        "id": "p184-b03",
+        "edge": "start",
+        "page": 15,
+        "y": 714.08
+      },
+      {
+        "id": "p184-b03",
+        "edge": "end",
+        "page": 15,
+        "y": 761.12
+      },
+      {
+        "id": "p184-b04",
+        "edge": "start",
+        "page": 16,
+        "y": 86.0
+      },
+      {
+        "id": "p184-b04",
+        "edge": "end",
+        "page": 16,
+        "y": 97.04
+      },
+      {
+        "id": "p184-b05",
+        "edge": "start",
+        "page": 16,
+        "y": 103.04
+      },
+      {
+        "id": "p184-b05",
+        "edge": "end",
+        "page": 16,
+        "y": 132.08
+      },
+      {
+        "id": "p184-b06",
+        "edge": "start",
+        "page": 16,
+        "y": 138.08
+      },
+      {
+        "id": "p184-b06",
+        "edge": "end",
+        "page": 16,
+        "y": 149.11999999999998
+      },
+      {
+        "id": "p184-b07",
+        "edge": "start",
+        "page": 16,
+        "y": 155.11999999999998
+      },
+      {
+        "id": "p184-b07",
+        "edge": "end",
+        "page": 16,
+        "y": 202.16
+      },
+      {
+        "id": "p184-b08",
+        "edge": "heading",
+        "page": 16,
+        "y": 220.16
+      },
+      {
+        "id": "p184-b09",
+        "edge": "heading",
+        "page": 16,
+        "y": 244.16
+      },
+      {
+        "id": "p184-b10",
+        "edge": "short-code",
+        "page": 16,
+        "y": 269.2
+      },
+      {
+        "id": "p184-b10",
+        "edge": "start",
+        "page": 16,
+        "y": 269.2
+      },
+      {
+        "id": "p184-b10",
+        "edge": "end",
+        "page": 16,
+        "y": 515.2
+      },
+      {
+        "id": "p184-b11",
+        "edge": "start",
+        "page": 16,
+        "y": 533.1999999999999
+      },
+      {
+        "id": "p184-b11",
+        "edge": "end",
+        "page": 16,
+        "y": 544.24
+      },
+      {
+        "id": "p185-b01",
+        "edge": "start",
+        "page": 16,
+        "y": 550.2400000000001
+      },
+      {
+        "id": "p185-b01",
+        "edge": "end",
+        "page": 16,
+        "y": 561.2800000000001
+      },
+      {
+        "id": "p185-b02",
+        "edge": "start",
+        "page": 16,
+        "y": 567.28
+      },
+      {
+        "id": "p185-b02",
+        "edge": "end",
+        "page": 16,
+        "y": 596.32
+      },
+      {
+        "id": "p185-b03",
+        "edge": "start",
+        "page": 16,
+        "y": 602.3200000000002
+      },
+      {
+        "id": "p185-b03",
+        "edge": "end",
+        "page": 16,
+        "y": 613.3600000000001
+      },
+      {
+        "id": "p185-b04",
+        "edge": "start",
+        "page": 16,
+        "y": 619.3600000000001
+      },
+      {
+        "id": "p185-b04",
+        "edge": "end",
+        "page": 16,
+        "y": 648.4000000000001
+      },
+      {
+        "id": "p185-b05",
+        "edge": "start",
+        "page": 16,
+        "y": 654.4000000000001
+      },
+      {
+        "id": "p185-b05",
+        "edge": "end",
+        "page": 16,
+        "y": 683.4400000000002
+      },
+      {
+        "id": "p185-b06",
+        "edge": "start",
+        "page": 16,
+        "y": 689.4400000000002
+      },
+      {
+        "id": "p185-b06",
+        "edge": "end",
+        "page": 16,
+        "y": 700.4800000000001
+      },
+      {
+        "id": "p185-b07",
+        "edge": "start",
+        "page": 16,
+        "y": 706.4800000000001
+      },
+      {
+        "id": "p185-b07",
+        "edge": "end",
+        "page": 17,
+        "y": 115.04
+      },
+      {
+        "id": "p185-f16",
+        "edge": "start",
+        "page": 17,
+        "y": 123.04
+      },
+      {
+        "id": "p185-f16",
+        "edge": "end",
+        "page": 17,
+        "y": 389.6399922922744
+      },
+      {
+        "id": "p185-b08",
+        "edge": "start",
+        "page": 17,
+        "y": 401.6399922922744
+      },
+      {
+        "id": "p185-b08",
+        "edge": "end",
+        "page": 17,
+        "y": 430.67999229227445
+      },
+      {
+        "id": "p186-f17",
+        "edge": "start",
+        "page": 17,
+        "y": 438.67999229227445
+      },
+      {
+        "id": "p186-f17",
+        "edge": "end",
+        "page": 17,
+        "y": 699.4800162024828
+      },
+      {
+        "id": "p186-f18",
+        "edge": "start",
+        "page": 18,
+        "y": 86.0
+      },
+      {
+        "id": "p186-f18",
+        "edge": "end",
+        "page": 18,
+        "y": 346.7000178157258
+      },
+      {
+        "id": "p187-b01",
+        "edge": "heading",
+        "page": 18,
+        "y": 364.7000178157258
+      },
+      {
+        "id": "p187-b02",
+        "edge": "heading",
+        "page": 18,
+        "y": 388.7000178157258
+      },
+      {
+        "id": "p187-b03",
+        "edge": "long-code",
+        "page": 18,
+        "y": 413.7400178157258
+      },
+      {
+        "id": "p187-b03",
+        "edge": "start",
+        "page": 18,
+        "y": 413.7400178157258
+      },
+      {
+        "id": "p187-b03",
+        "edge": "end",
+        "page": 19,
+        "y": 374.0
+      },
+      {
+        "id": "p188-b01",
+        "edge": "long-code",
+        "page": 19,
+        "y": 398.0
+      },
+      {
+        "id": "p188-b01",
+        "edge": "start",
+        "page": 19,
+        "y": 398.0
+      },
+      {
+        "id": "p188-b01",
+        "edge": "end",
+        "page": 20,
+        "y": 410.0
+      },
+      {
+        "id": "p189-b01",
+        "edge": "short-code",
+        "page": 20,
+        "y": 434.0
+      },
+      {
+        "id": "p189-b01",
+        "edge": "start",
+        "page": 20,
+        "y": 434.0
+      },
+      {
+        "id": "p189-b01",
+        "edge": "end",
+        "page": 20,
+        "y": 662.0
+      },
+      {
+        "id": "instruction-p190-b01",
+        "edge": "start",
+        "page": 21,
+        "y": 86.0
+      },
+      {
+        "id": "p190-b01",
+        "edge": "heading",
+        "page": 21,
+        "y": 86.0
+      },
+      {
+        "id": "p190-f19",
+        "edge": "start",
+        "page": 21,
+        "y": 113.96
+      },
+      {
+        "id": "p190-f19",
+        "edge": "end",
+        "page": 21,
+        "y": 390.8699304131421
+      },
+      {
+        "id": "instruction-p190-b01",
+        "edge": "end",
+        "page": 21,
+        "y": 390.8699304131421
+      },
+      {
+        "id": "p190-b02",
+        "edge": "start",
+        "page": 21,
+        "y": 390.8699304131421
+      },
+      {
+        "id": "p190-b02",
+        "edge": "end",
+        "page": 21,
+        "y": 455.9099304131421
+      }
+    ]
+  }
+}

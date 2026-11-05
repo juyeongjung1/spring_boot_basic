@@ -1,0 +1,14 @@
+{
+  "textbook": {
+    "title": "Spring Boot入門 本文教材",
+    "pdf": "JAC0177G-T1-04(260715).pdf",
+    "toc_pages": [3, 4, 5],
+    "parts": ["front", "01", "02", "03", "04", "05", "06", "07", "appendix-a", "appendix-b"]
+  },
+  "exercise": {
+    "title": "Spring Boot入門 演習ガイド",
+    "pdf": "JAC0177G-L1-04(260715).pdf",
+    "toc_pages": [3, 4, 5],
+    "parts": ["ex-front", "ex01", "ex02", "ex03", "ex04", "ex05", "ex06", "ex07", "ex-back"]
+  }
+}
