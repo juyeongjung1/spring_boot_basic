@@ -1,0 +1,14 @@
+[
+  {
+    "collection": "textbook",
+    "before_unique_destinations": 29,
+    "after_unique_destinations": 29,
+    "lost_destinations": []
+  },
+  {
+    "collection": "exercise",
+    "before_unique_destinations": 3,
+    "after_unique_destinations": 3,
+    "lost_destinations": []
+  }
+]

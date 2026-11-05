@@ -1,0 +1,32 @@
+[
+  {
+    "chapter": "03",
+    "code_id": "p071-b03",
+    "figure_id": "p071-f07",
+    "text": "application.properties"
+  },
+  {
+    "chapter": "03",
+    "code_id": "p113-b04",
+    "figure_id": "p113-f49",
+    "text": "pom.xml"
+  },
+  {
+    "chapter": "04",
+    "code_id": "p149-b05",
+    "figure_id": "p149-f13",
+    "text": "pom.xml"
+  },
+  {
+    "chapter": "04",
+    "code_id": "p161-b02",
+    "figure_id": "p161-f24",
+    "text": "/resources/messages.properties"
+  },
+  {
+    "chapter": "05",
+    "code_id": "p182-b04",
+    "figure_id": "p182-f15",
+    "text": "pom.xml"
+  }
+]

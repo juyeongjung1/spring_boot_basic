@@ -97,13 +97,23 @@ class TextbookTests(unittest.TestCase):
         original = build("01", "flow", self.folder / "baseline.md", self.work / "unmodified")
         self.assertGreater(report["flow"]["pages"], original["flow"]["pages"])
         self.assertTrue(report["flow"]["native_text_complete"])
-        headers=[m for m in report['flow']['block_positions'] if m['edge']=='table-header' and m['id']=='long-table']
-        self.assertGreater(len(headers),1)
+        table = next(c for c in report['flow']['html_components']
+                     if c['kind'] == 'table' and 'long-table' in c['consume_ids'])
+        self.assertGreater(len(table['parts']), 1)
         self.assertTrue(any(m['edge']=='long-code' and m['id']=='long-code' for m in report['flow']['block_positions']))
         pdf = fitz.open(self.work / "edited/chapter-flow.pdf")
+        for part in table['parts']:
+            position = next(m for m in report['flow']['block_positions']
+                            if m['id'] == part['token'] and m['edge'] == 'html-component')
+            area = fitz.Rect(position['x'], position['y'], position['x'] + part['width'], position['y'] + part['height'])
+            repeated_header = normalized(pdf[position['page'] - 1].get_textbox(area))
+            self.assertIn('列名', repeated_header)
+            self.assertIn('内容', repeated_header)
         content = normalized("".join(p.get_text() for p in pdf))
         for i in range(1, 19):
             self.assertEqual(content.count(f"追加検証{i:03d}"), 1)
+        for i in range(80):
+            self.assertEqual(content.count(f'項目{i:03d}'), 1)
 
 
 if __name__ == "__main__":

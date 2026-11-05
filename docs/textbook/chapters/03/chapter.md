@@ -985,6 +985,14 @@ ProductRepository prodRepo;
 
 :::
 
+![リポジトリをリモコンとして受け取るイメージ](assets/revision-di-remote.png){#revision-di-remote}
+
+::: {#revision-di-caption .paragraph}
+
+**左のDIコンテナ**が用意した**リポジトリ（リモコン）**を、**中央のController**が受け取って使い、**右のDB**を操作するイメージです。テレビの操作に似た図で、依存性の注入と利用の関係を表しています。
+
+:::
+
 ::: {#p080-b03 .heading}
 
 [【参考】 その他の依存性の注入方法]{.s011}

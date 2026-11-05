@@ -1,0 +1,1308 @@
+{
+  "generated_at": "2026-11-05T07:08:28.929537+00:00",
+  "target": "tools/textbook/code_explanations.json",
+  "target_sha256": "f904a1c619b4fdd8d0f85a5af41cce00d0036805af1e676d980d598d19ad31e6",
+  "chapters_checked": [
+    "front",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "appendix-a",
+    "appendix-b",
+    "ex-front",
+    "ex01",
+    "ex02",
+    "ex03",
+    "ex04",
+    "ex05",
+    "ex06",
+    "ex07",
+    "ex-back"
+  ],
+  "source_explanation_count": 83,
+  "group_count": 46,
+  "row_count": 84,
+  "rows_by_chapter": {
+    "02": 18,
+    "03": 34,
+    "04": 15,
+    "05": 8,
+    "07": 9
+  },
+  "consumed_node_count": 163,
+  "duplicate_consume_ids": [],
+  "consumed_figures": [],
+  "exact_source_fragment_roundtrip": true,
+  "meaning_from_source_only": true,
+  "code_exactly_from_numbered_markdown_lines": true,
+  "all_markdown_unchanged_during_extraction": true,
+  "deferred": [],
+  "cross_page_groups": [],
+  "continuation_cards": [
+    {
+      "chapter": "07",
+      "anchor_id": "p274-b01",
+      "continued_from": "p273-b10",
+      "line_label": "10 行目"
+    }
+  ],
+  "all_line_mentions": [
+    {
+      "chapter": "02",
+      "id": "p043-b05",
+      "text": "・9 行 public String index()\npublic は、このメソッドが外部からアクセス可能であることを意味します。String は、メソッド\nが文字列を返すことを示しています。index() はメソッド名で、このメソッドが何をするのかを\n表します。Controller の中のメソッドは、通常は戻り値をString にします。",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p043-b06",
+      "text": "・10 行 return “index”;\nreturn には文字列を指定します。通常、この文字列は表示させたいhtml ファイル名を指定\nします。",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p044-b09",
+      "text": "このビューの特徴として、2 行目に注目してください。ここでは、Spring Boot と相性が良いテ\nンプレートエンジン「Thymeleaf」を使用するという宣言をしています。\nxmlns:th を記載することで、HTML ファイル内でThymeleaf の機能が利用可能になります。",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p044-b10",
+      "text": "[トップページ]と表示される部分（10 行目）からは、ユーザに見える画面の内容が入ります。\n今後、さまざまな情報やデザイン要素を追加していくことになります。",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p049-b05",
+      "text": "・10 行目 <form th:action = “@{/login}” method = “POST”>",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p050-b01",
+      "text": "・11 行・12 行目 <input type = “text” name = “パラメータ名”>",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p050-b03",
+      "text": "・13 行目 <input type = \"submit\" value = \"ログイン\">",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p051-b06",
+      "text": "・10 行目 @PostMapping(\"/login\")",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p051-b07",
+      "text": "@PostMapping は、POST リクエストが送られた際に、このメソッドが実行されることを示してい\nます。3 行でも同じ/login というURL を待ち受けていますが、普通のGet 方式での呼び出しが\nあった場合は、showLoginView()メソッドが実行され、Post 方式の呼び出しがあった場合は、こ\nちらのdoLogin メソッドが実行されます。",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p051-b08",
+      "text": "・11 行目 仮引数 int id, String password",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p052-b03",
+      "text": "・13 行、14 行目の出力",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p056-b05",
+      "text": "・4 行目 doLogin(UserForm userForm)",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p056-b07",
+      "text": "・7-8 行目",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p058-b06",
+      "text": "・13 行目 doLogin(UserForm userForm, Model model)",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p059-b01",
+      "text": "・14-15 行目 model.addAttribute(\"user\", userForm);",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p059-b07",
+      "text": "・17 行 return \"login_success\";",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p060-b04",
+      "text": "・2 行目 <html xmlns:th=\"http://www.thymeleaf.org\">",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p060-b05",
+      "text": "10 行と、11 行には、th:text というthymeleaf 固有の属性が登場していますが、そのためには、\n予め宣言をする必要があります。",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p060-b06",
+      "text": "・10 行目 <span th:text = \"${user.id}\"></span>",
+      "consumed": true
+    },
+    {
+      "chapter": "02",
+      "id": "p060-b12",
+      "text": "・11 行目",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p066-b07",
+      "text": "通常、データベースに命令を出すためには、SQL という特別な言語を使う必要があります\nが、Spring Data JPA を使うと、予めデータベース情報をJava のオブジェクトに変換すること\nで、テーブルの1 行のデータをJava の1 つのインスタンスとして扱うことができます。",
+      "consumed": false
+    },
+    {
+      "chapter": "03",
+      "id": "p067-b05",
+      "text": "[product]テーブルには、9 行のデータが格納されています。",
+      "consumed": false
+    },
+    {
+      "chapter": "03",
+      "id": "p071-b09",
+      "text": "最後の1 行は、本番環境では使うべきではありませんが、開発時は役に立つ設定です。",
+      "consumed": false
+    },
+    {
+      "chapter": "03",
+      "id": "p072-b03",
+      "text": "Spring Data JPA を使用する際には、データベース内の各テーブルをJava のクラスで表現\nすることが重要です。このクラスを「エンティティ」と呼びます。エンティティは実質的にデータベ\nースのテーブルの各行をオブジェクトとして扱うためのものです。つまり、テーブルの1 行がエ\nンティティの1 インスタンス（オブジェクト）に対応します。",
+      "consumed": false
+    },
+    {
+      "chapter": "03",
+      "id": "p086-b03",
+      "text": "5-6 行目",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p086-b05",
+      "text": "全件検索をするためには、ProductRepository から利用できる「findAll」メソッドを呼び出さない\nといけません。ProductRepository のメソッドを簡単に利用できるように、ProductRepository の\nフィールドを宣言して、@Autowired で依存性の注入をしておきましょう。\n この2 行のコードを書いておけば、 [prodRepo]を使って、findAll メソッドを呼び出せます。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p086-b06",
+      "text": "10 行目 List<Product> list = prodRepo.findAll();",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p086-b09",
+      "text": "12-13 行目",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p087-b05",
+      "text": "8 行目 <tr th:each=\"product: ${products}\">",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p088-b01",
+      "text": "9-11 行目 <td th:text=\"${product.id}\">、<td th:text=\"${product.name}\">～～",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p088-b02",
+      "text": " product 変数に1 行～9 行までのデータが順番に格納されていますので、「product.フィー\nルド名」でデータを出力することができます。つまり、各product オブジェクトの id、name、\nprice を<td>の中に9 回出力するソースコードが生成されます。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p089-b04",
+      "text": "th:each により、<tr>全体が繰り返しされるため、findAll メソッドで取得してView に送られてきた\nリストを1 行ずつ出力することができます。",
+      "consumed": false
+    },
+    {
+      "chapter": "03",
+      "id": "p092-b09",
+      "text": "4 行目 showProductById(int id, Model model)",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p093-b01",
+      "text": "5 行目 Product product = prodRepo.findById(id).orElse(null);",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p093-b02",
+      "text": "findById メソッドは、findAll と同じく、継承したJpaRepository の親に定義されているメソッドで\nす。引数には主キーを入れて、後ろに.orElse(null)を付けることで、主キー検索による、1 行の\n結果を取得することができます。\n.findById メソッドの戻り値は「Optional」という特殊な戻り値ですので、.orElse(null)をつけない\nとデータを取得できません。ご注意ください。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p093-b04",
+      "text": "findAll は、全件検索だったため、複数行が取得されることの前提でした。よって\nList<Product>型で受け取りました。\n主キー検索は、必ず1 行のみ取得できるので、List での取得よりは、エンティティ単位での\n[Product product]で受け取るのが一般的です。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p093-b05",
+      "text": "6 行目 System.out.println(product);",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p093-b06",
+      "text": "検索する商品番号に「1」を入れて実行させてみると、以下のように1 行のデータを取得できて\nいるのがわかります。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p093-b07",
+      "text": "7 行目 model.addAttribute(\"product\", product);",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p093-b08",
+      "text": "取得した1 行のデータは、Product エンティティの中に格納されているので、Viewに出力させる\nため、model に格納します。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p097-b10",
+      "text": "5 行では、リクエストパラメータprice の値を取得し、prodRepo.findByPrice メソッドを実行しま\nした。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p097-b11",
+      "text": "findAll メソッドを実行した時と、出力結果は同じくList になるメソッドですので、6 行以降は\nshowProductList メソッドと全く同じです。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p101-b06",
+      "text": "5 行では、リクエストパラメータname とprice の値を取得し、prodRepo. findByNameAndPrice メ\nソッドを実行しました。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p101-b08",
+      "text": "6 行以降はshowProductList メソッドと全く同じです。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p108-b06",
+      "text": "5 行の@Data ですが、エンティティの定義の際にご説明しました通り、@Data アノテーションをつ\nけると、Getter&Setter メソッドは勿論、equals やtoString、hashCode メソッドが自動生成され\nますので、とても便利です。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p109-b04",
+      "text": "・4 行目: public String insertProduct(ProductForm productForm) {",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p109-b06",
+      "text": "・5 行目: Product product = new Product();",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p110-b01",
+      "text": "・8 行目: product = prodRepo.save(product);",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p110-b03",
+      "text": "しかし、エンティティのインスタンスであるproduct は、5 行でオブジェクト生成はしたものの、\nデータを入れないと、空っぽの状態のままになってしまいます。ユーザからのデータを受け取\nっているのは、product ではなく、4 行のProductForm の方ですので、データをコピーする必要\nがあります。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p110-b04",
+      "text": "・6～7 行目: product.setName(productForm.getName());\nproduct.setPrice(productForm.getPrice());",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p110-b07",
+      "text": "・8-9 行目: product = prodRepo.save(product);\nmodel.addAttribute(\"product\", product);",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p110-b09",
+      "text": "・10 行目: return \"/product/result\";\n本当に登録が完了したのか確認するために、商品データを出力する結果画面を表示させま\nす。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p111-b03",
+      "text": "9 行目のproduct.id に注目してください。save メソッドの戻り値には、自動採番により割り当てさ\nれたID 番号も含まれているので、表示できます。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b02",
+      "text": "今回の例では、入力値が2 つのみでしたので、コピー作業も2 行で終わりましたが、\n例えば、会員登録ページとかなら、10 個以上の値を扱います。\nその結果、10 行以上コードを書くことになり、冗長なコードになってしまいます。",
+      "consumed": false
+    },
+    {
+      "chapter": "03",
+      "id": "p117-b04",
+      "text": "・3 行目: @GetMapping(\"update/{id}\")\nView から動的URL が送られる場合、同じく動的パラメータを指定する必要があります。\n書き方は、{ パラメータ名 } で記載します。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p117-b05",
+      "text": "・4 行目: public String showUpdateInputView(@PathVariable int id, Model model) {",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p117-b06",
+      "text": "3 行で指定した動的URLの文字列と一致する引数名に@PathVariable アノテーションをつけ\nると、動的URL の値を取得することができます。動的URL は、{id}なので、int id で合わせま\nす。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p117-b07",
+      "text": "5 行からは、更新対象の既存の値をfindById メソッドで取得+Model に格納し、\nupdate_input.html へ遷移させています。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p119-b04",
+      "text": "・4 行目：product.setId(productForm.getId());",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p119-b06",
+      "text": "・7 行目：product = prodRepo.save(product);",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b01",
+      "text": "・5 行目： @Service\nサービス実装クラスには、@Service アノテーションを付けます。忘れがちですので、注意して\nください。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b02",
+      "text": "・6 行目： @RequiredArgsConstructor",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b04",
+      "text": "9-10 行目のコードと連携します。\n単体テストのしやすさのために、サービス実装クラスではこの方法が推奨されます。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b05",
+      "text": "・7 行目： implements ProductService\n前の手順で作成たサービスインターフェースと繋げるために、implements します。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b06",
+      "text": "・9 行-10 行目： private final ProductRepository prodRepo;",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b07",
+      "text": "DB 処理のためProductRepository を利用したいので、依存性の注入を行います。\n6 行目と合わせて記載することで、コンストラクタを自動生成できます。",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b08",
+      "text": "・13 行-14 行目： return prodRepo.findById(id).orElse(null);",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p130-b05",
+      "text": "・2 行目: @RequestMapping(\"product2\")",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p130-b07",
+      "text": "・7 行目： private ProductService prodService;",
+      "consumed": true
+    },
+    {
+      "chapter": "03",
+      "id": "p130-b09",
+      "text": "・13 行目： Product product = prodService.findProductById(id);",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p137-b04",
+      "text": "User テーブルを利用しますので、User エンティティも新しく定義する必要があります。\n\nエンティティの定義については、前の章のProduct とほぼ同じですが、12 行のname 属性を見\nてください。テーブル内の列名は[emp_name]ですが、Java では通常、変数名の単語ごとの区\n切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメル\nケース」を使います。\n\nよって、テーブル内の列名と変数名に違いが発生したら、明示的にname 属性をつける必要\nがあります。",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p139-b08",
+      "text": "login_input.html で送信した社員ID とパスワードが正しいかどうか判定するために、empId と\npassword のAnd 検索メソッドを定義します。\n\n主キー検索を含むため、1 行しか取得できないメソッドです。よって、戻り値はエンティティ名の\nUser にします。\n\n引数として、empId とpassword を入れるように定義します。",
+      "consumed": false
+    },
+    {
+      "chapter": "04",
+      "id": "p140-b04",
+      "text": "・3 行目：\n\nUserRepository に予め定義しておいたメソッドを実装しました。login_input.html からのリクエ\nストパラメータは、userForm 内に自動格納されているため、getメソッドで取得し、引数に入れま\nした。検索結果は、最大1 件ですので、User エンティティで受け取ります。",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p140-b05",
+      "text": "・5 行のif 文:\n\n社員ID とパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何\nも取得できないので、user 変数は、null のままになります。\nこのif 文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促\nすコードです。\n\n5 行のif 文内でreturn されると、即遷移するため、7 行以降が実行されることはありません。",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p140-b06",
+      "text": "・8 行目 return “main_page”：\n\nデータを取得できたなら、ログイン成功ですので、main_page.html へ遷移させます。\n\nmain_page.html は、下記のように、簡単なhtml ファイルです。",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p144-b05",
+      "text": "・7 行目 (HttpSession session)：",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p144-b07",
+      "text": "・13 行目 session.setAttribute(\"userData\", user)：",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p150-b04",
+      "text": "・3-5 行目：",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p150-b06",
+      "text": "・11 行目 @NotNull：",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p150-b08",
+      "text": "・14-15 行 ＠NotBlank、@Size(max = 15):\n ＠NotNull と似ていますが、こちらは文字列の入力有無チェックに特化されています。未入力\nはもちろん、空文字(“”)まで検知することができます。\n @Size は、文字列の文字数制限を設定できます。Max で最大文字数、min で最小文字数の\n設定ができます。",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p151-b08",
+      "text": "・3 行目 @Valid：",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p151-b10",
+      "text": "・3 行目 BindingResult:",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p152-b01",
+      "text": "・4 行目 bdResult.hasErrors()：",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p152-b06",
+      "text": "・4 行目 th:object=\"${userForm}\":",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p153-b01",
+      "text": "・6 行目 th:field=\"*{empId}\":",
+      "consumed": true
+    },
+    {
+      "chapter": "04",
+      "id": "p153-b05",
+      "text": "・7 行目 <span th:errors=\"*{empId}\"></span>:",
+      "consumed": true
+    },
+    {
+      "chapter": "05",
+      "id": "p168-b04",
+      "text": "・2 行 <html xmlns:th=\"http://www.thymeleaf.org\">:",
+      "consumed": true
+    },
+    {
+      "chapter": "05",
+      "id": "p168-b06",
+      "text": "・6 行 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />：",
+      "consumed": true
+    },
+    {
+      "chapter": "05",
+      "id": "p176-b01",
+      "text": "この例では、product.price の値が30000 を超えるかどうかで、スタイルが適用された価格と、\n通常スタイルの価格を切り替えて表示しています。HTML コードは2行ですが、条件に合うコー\nドだけが表示されるようになっています。",
+      "consumed": false
+    },
+    {
+      "chapter": "05",
+      "id": "p184-b02",
+      "text": "・3 行目 xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”>",
+      "consumed": true
+    },
+    {
+      "chapter": "05",
+      "id": "p184-b04",
+      "text": "・8 行目 <link rel=”stylesheet” th:href=”@{/css/layout.css}” />",
+      "consumed": true
+    },
+    {
+      "chapter": "05",
+      "id": "p184-b06",
+      "text": "・27-29 行 <main layout:fragment=”main_content”>  </main>",
+      "consumed": true
+    },
+    {
+      "chapter": "05",
+      "id": "p185-b01",
+      "text": "・3 行目 xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”",
+      "consumed": true
+    },
+    {
+      "chapter": "05",
+      "id": "p185-b03",
+      "text": "・4 行目 layout:decorate=”~{/layout}”>",
+      "consumed": true
+    },
+    {
+      "chapter": "05",
+      "id": "p185-b06",
+      "text": "・9-13 行目 <main layout:fragment=”main_content”>",
+      "consumed": true
+    },
+    {
+      "chapter": "05",
+      "id": "p185-b07",
+      "text": "既存の<body>内に書いていたソースコードを、全てこの要素で囲みます。先ほどの\nlayout.html のfragment 識別名が“main_content”でしたので、同じ値を入れます。そうすること\nで、9-13 行内の全てのHTML コードが、layout.html の28 行にコピーされ、レイアウト+コンテ\nンツの新しいHTML が生成されます。insert.html へreturn して一覧画面を開くと、自動で\nlayout.html の共通部分まで生成された画面が表示されます。",
+      "consumed": true
+    },
+    {
+      "chapter": "06",
+      "id": "p206-b11",
+      "text": "②  条件式を1 行で記述する方法（三項演算子）",
+      "consumed": false
+    },
+    {
+      "chapter": "06",
+      "id": "p206-b12",
+      "text": "上記のように複数行で条件を記述する代わりに、条件式を使って1 行で記述する方法\nもあります。",
+      "consumed": false
+    },
+    {
+      "chapter": "06",
+      "id": "p221-b05",
+      "text": " ※この節では、登録処理のみ説明しましたが、更新処理も同様にcategoryId を受け取り、エ\nンティティにコピーする1 行さえ追記すれば、実装できますので参考にしてください。",
+      "consumed": false
+    },
+    {
+      "chapter": "07",
+      "id": "p265-b04",
+      "text": "Bootstrap のグリッドシステムは、12 列のシステムを採用しています。\n1 行（row）が最大で12 の列（column）に分割できるということです。このシステムを使って、柔軟\nでレスポンシブなレイアウトを作成できます。",
+      "consumed": false
+    },
+    {
+      "chapter": "07",
+      "id": "p266-b08",
+      "text": "<div class=\"col-6\">のように、カラム（列）は、コンテンツを配置するための垂直のレイアウ\nト要素です。カラムは、グリッドシステムの基礎となり、1 行を最大12 のカラムに分割すること\nができます。以下に具体的な例を示します。",
+      "consumed": false
+    },
+    {
+      "chapter": "07",
+      "id": "p266-b11",
+      "text": "・1 行目 <div class=\"container\">\n\n今回のサンプルでは、外側を container でコンテナを作っています。画面の中央にコンテン\nツが配置されます。もし、container-fluid にすると、横幅いっぱいに変わります。",
+      "consumed": true
+    },
+    {
+      "chapter": "07",
+      "id": "p267-b01",
+      "text": "・2 行目 <div class=\"row\">\n\n コンテナの中に、row をclass 属性として持つdiv 要素を入れます。後述のカラムを配置する\nためにも、必ずrow が必要です。まるでtable 要素に、<tr>がないと、<td>も書けないのと同じ\nです。",
+      "consumed": true
+    },
+    {
+      "chapter": "07",
+      "id": "p267-b02",
+      "text": "・3 行目～5 行目 <div class=\"col-6～",
+      "consumed": true
+    },
+    {
+      "chapter": "07",
+      "id": "p267-b09",
+      "text": "・6 行目～7 行目 </div> <!--コメント-->",
+      "consumed": true
+    },
+    {
+      "chapter": "07",
+      "id": "p273-b04",
+      "text": "・5 行目 <div class=\"col-md-3\">",
+      "consumed": true
+    },
+    {
+      "chapter": "07",
+      "id": "p273-b06",
+      "text": "・8 行目 <form class=\"row\">",
+      "consumed": true
+    },
+    {
+      "chapter": "07",
+      "id": "p273-b08",
+      "text": "・9 行目・13 行目 <div class=\"col-8\"> <div class=\"col-4\">",
+      "consumed": true
+    },
+    {
+      "chapter": "07",
+      "id": "p273-b10",
+      "text": "・10 行目 <input type=\"text\" class=\"form-control\"～",
+      "consumed": true
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "revision-errors-trace-read",
+      "text": "この例は、products テーブルが存在しないことが原因で、商品の検索処理が失敗しています。先頭の IllegalStateException だけで判断せず、テーブル名や接続先のデータベースを確認します。at で始まる行から自分のパッケージ名を探すと、ProductService.java:26 は、そのファイルの26行目を表します。Pleiades では、コンソールに表示されたファイル名と行番号をクリックして該当箇所を確認できます。",
+      "consumed": false
+    },
+    {
+      "chapter": "ex03",
+      "id": "p023-b12",
+      "text": "⚫ 1 行のデータを取得するため、戻り値型はエンティティ名のEmployee です。",
+      "consumed": false
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-b11",
+      "text": "⚫ 主キーとのAND 検索ですので、必ず1 行のデータを取得します。よって、戻り値型\nはエンティティのEmployee です。",
+      "consumed": false
+    },
+    {
+      "chapter": "ex07",
+      "id": "p073-b03",
+      "text": "• Bootstrap のグリッドシステムでは、1 行（row）を 12 のカラム（列）に分割できます。",
+      "consumed": false
+    }
+  ],
+  "markdown_snapshot": {
+    "front": "7685292312cbd0b5b9157b1030fd59250318e7ef731e9fb3f3db1640f8be08e9",
+    "01": "9fe360e6fea5994f40727cb9af410fe1779fc8ee7d74f29637472d0e662bd7bc",
+    "02": "692fafd886ebb889805616e3ad69b482023820f84ec0cc89b01a9935a38b626c",
+    "03": "ee10d4701efe0c895b2249780f07b7b366cd4eed28d34d0bee8b944ba2bfc497",
+    "04": "b7699d0afdd05d87ac0998b2896b1b15e15d0e92b54319a31a5244bc11fa4793",
+    "05": "a183fca03375425987403a658fda89b5ccfdf2f12f7370ac2e3a536602021345",
+    "06": "8a9524b9f82f803410ba478083c2d83e1a125f20415969fbb6ff2d9e312feea9",
+    "07": "32f0a683f9ec793768806f6eb84a71140922d2fee20e7616b950088ad4691583",
+    "appendix-a": "d70e5383134d479fada9ff833e0195fb2ba0d419a13e2660c7ea0cf12fd11310",
+    "appendix-b": "dfbffbc67f893f77733a7e25708c7aaddb4fa492b7648b49e40157707bfeac70",
+    "ex-front": "fd90186dd47bf383a30f93474f8a8941212da96d7c866f6a44db0e01e3b0c5cd",
+    "ex01": "97835a61d42bae53c771372592b375a19a2c460d9b79564b5905a480a007ac03",
+    "ex02": "0e8f94c3fca9d5144a20a553388a5f361b15e88703c1bf004a4c90f83236594e",
+    "ex03": "9342baebdc02d7fef51ad2ae3518ec5e382c127ad23a30fab04b6debbfe8699b",
+    "ex04": "4ad5ca6c9000ed431406e0fc2025ec62c6867a437ee72c28e47fd0f34f6bd960",
+    "ex05": "a5745ee144b57476d109ddb31a508e8249677a2753c9b0ebfe613e0246e65f16",
+    "ex06": "f95fcc8fa462ca234a7f2d4ec86c627cb6b3ff4a852a9e5c2a44ead72e5338f0",
+    "ex07": "e8d7c4ceb761c934a4f81cee2c04235e0fa92634ab3ba1c3358b0fbe3b31db57",
+    "ex-back": "d5bb1243ca35bcc7489d06a8dc436c94e13b9d08b889c2d5ba996211341cca61"
+  },
+  "excluded_line_mentions": [
+    {
+      "chapter": "03",
+      "id": "p066-b07",
+      "text": "通常、データベースに命令を出すためには、SQL という特別な言語を使う必要があります\nが、Spring Data JPA を使うと、予めデータベース情報をJava のオブジェクトに変換すること\nで、テーブルの1 行のデータをJava の1 つのインスタンスとして扱うことができます。",
+      "consumed": false,
+      "reason": "テーブルの行を指し、コード行番号ではない。"
+    },
+    {
+      "chapter": "03",
+      "id": "p067-b05",
+      "text": "[product]テーブルには、9 行のデータが格納されています。",
+      "consumed": false,
+      "reason": "テーブルのデータ件数を指し、コード行番号ではない。"
+    },
+    {
+      "chapter": "03",
+      "id": "p071-b09",
+      "text": "最後の1 行は、本番環境では使うべきではありませんが、開発時は役に立つ設定です。",
+      "consumed": false,
+      "reason": "最後の1行という相対指定。元コードは無番号のため確定した行番号として構造化しない。本文はそのまま残す。"
+    },
+    {
+      "chapter": "03",
+      "id": "p072-b03",
+      "text": "Spring Data JPA を使用する際には、データベース内の各テーブルをJava のクラスで表現\nすることが重要です。このクラスを「エンティティ」と呼びます。エンティティは実質的にデータベ\nースのテーブルの各行をオブジェクトとして扱うためのものです。つまり、テーブルの1 行がエ\nンティティの1 インスタンス（オブジェクト）に対応します。",
+      "consumed": false,
+      "reason": "テーブル行とエンティティの対応を指し、コード行番号ではない。"
+    },
+    {
+      "chapter": "03",
+      "id": "p089-b04",
+      "text": "th:each により、<tr>全体が繰り返しされるため、findAll メソッドで取得してView に送られてきた\nリストを1 行ずつ出力することができます。",
+      "consumed": false,
+      "reason": "リストのデータを1行ずつ出力する説明で、コード行番号ではない。"
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b02",
+      "text": "今回の例では、入力値が2 つのみでしたので、コピー作業も2 行で終わりましたが、\n例えば、会員登録ページとかなら、10 個以上の値を扱います。\nその結果、10 行以上コードを書くことになり、冗長なコードになってしまいます。",
+      "consumed": false,
+      "reason": "コードの量・行数の説明で、特定のコード位置を指す番号ではない。"
+    },
+    {
+      "chapter": "04",
+      "id": "p139-b08",
+      "text": "login_input.html で送信した社員ID とパスワードが正しいかどうか判定するために、empId と\npassword のAnd 検索メソッドを定義します。\n\n主キー検索を含むため、1 行しか取得できないメソッドです。よって、戻り値はエンティティ名の\nUser にします。\n\n引数として、empId とpassword を入れるように定義します。",
+      "consumed": false,
+      "reason": "主キー検索の結果件数を指し、コード行番号ではない。"
+    },
+    {
+      "chapter": "05",
+      "id": "p176-b01",
+      "text": "この例では、product.price の値が30000 を超えるかどうかで、スタイルが適用された価格と、\n通常スタイルの価格を切り替えて表示しています。HTML コードは2行ですが、条件に合うコー\nドだけが表示されるようになっています。",
+      "consumed": false,
+      "reason": "コード量が2行という説明で、特定のコード位置を指す番号ではない。"
+    },
+    {
+      "chapter": "06",
+      "id": "p206-b11",
+      "text": "②  条件式を1 行で記述する方法（三項演算子）",
+      "consumed": false,
+      "reason": "三項演算子を1行で記述するというコード量の説明。"
+    },
+    {
+      "chapter": "06",
+      "id": "p206-b12",
+      "text": "上記のように複数行で条件を記述する代わりに、条件式を使って1 行で記述する方法\nもあります。",
+      "consumed": false,
+      "reason": "三項演算子を1行で記述するというコード量の説明。"
+    },
+    {
+      "chapter": "06",
+      "id": "p221-b05",
+      "text": " ※この節では、登録処理のみ説明しましたが、更新処理も同様にcategoryId を受け取り、エ\nンティティにコピーする1 行さえ追記すれば、実装できますので参考にしてください。",
+      "consumed": false,
+      "reason": "追記量が1行という説明で、特定のコード位置を指す番号ではない。"
+    },
+    {
+      "chapter": "07",
+      "id": "p265-b04",
+      "text": "Bootstrap のグリッドシステムは、12 列のシステムを採用しています。\n1 行（row）が最大で12 の列（column）に分割できるということです。このシステムを使って、柔軟\nでレスポンシブなレイアウトを作成できます。",
+      "consumed": false,
+      "reason": "グリッドのrowを指し、コード行番号ではない。"
+    },
+    {
+      "chapter": "07",
+      "id": "p266-b08",
+      "text": "<div class=\"col-6\">のように、カラム（列）は、コンテンツを配置するための垂直のレイアウ\nト要素です。カラムは、グリッドシステムの基礎となり、1 行を最大12 のカラムに分割すること\nができます。以下に具体的な例を示します。",
+      "consumed": false,
+      "reason": "グリッドのrowを指し、コード行番号ではない。"
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "revision-errors-trace-read",
+      "text": "この例は、products テーブルが存在しないことが原因で、商品の検索処理が失敗しています。先頭の IllegalStateException だけで判断せず、テーブル名や接続先のデータベースを確認します。at で始まる行から自分のパッケージ名を探すと、ProductService.java:26 は、そのファイルの26行目を表します。Pleiades では、コンソールに表示されたファイル名と行番号をクリックして該当箇所を確認できます。",
+      "consumed": false,
+      "reason": "スタックトレースのファイル参照ProductService.java:26の読み方。対応ソースコード本体を示した構文解説ではない。補足本文のまま保持。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p023-b12",
+      "text": "⚫ 1 行のデータを取得するため、戻り値型はエンティティ名のEmployee です。",
+      "consumed": false,
+      "reason": "検索の結果件数を指し、コード行番号ではない。"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-b11",
+      "text": "⚫ 主キーとのAND 検索ですので、必ず1 行のデータを取得します。よって、戻り値型\nはエンティティのEmployee です。",
+      "consumed": false,
+      "reason": "検索の結果件数を指し、コード行番号ではない。"
+    },
+    {
+      "chapter": "ex07",
+      "id": "p073-b03",
+      "text": "• Bootstrap のグリッドシステムでは、1 行（row）を 12 のカラム（列）に分割できます。",
+      "consumed": false,
+      "reason": "グリッドのrowを指し、コード行番号ではない。"
+    }
+  ],
+  "all_line_mentions_classified": true,
+  "new_absolute_line_labels_unprocessed": [],
+  "final_current_markdown_hashes_match": true,
+  "changed_chapters_after_extraction": [],
+  "source_page_scoped_consume": true,
+  "independent_json_validation_passed": true,
+  "row_source_ids_correction": {
+    "changed_rows": 27,
+    "source_ids_only_changed": true,
+    "consume_ids_source_texts_meaning_code_unchanged": true,
+    "details": [
+      {
+        "chapter": "02",
+        "anchor_id": "p043-b05",
+        "row": 0,
+        "old_ids": [
+          "p043-b05",
+          "p043-b06"
+        ],
+        "source_ids": [
+          "p043-b05"
+        ]
+      },
+      {
+        "chapter": "02",
+        "anchor_id": "p044-b09",
+        "row": 0,
+        "old_ids": [
+          "p044-b09",
+          "p044-b10"
+        ],
+        "source_ids": [
+          "p044-b09"
+        ]
+      },
+      {
+        "chapter": "02",
+        "anchor_id": "p050-b01",
+        "row": 0,
+        "old_ids": [
+          "p050-b01",
+          "p050-b02",
+          "p050-b03",
+          "p050-b04"
+        ],
+        "source_ids": [
+          "p050-b01",
+          "p050-b02"
+        ]
+      },
+      {
+        "chapter": "02",
+        "anchor_id": "p051-b06",
+        "row": 0,
+        "old_ids": [
+          "p051-b06",
+          "p051-b07",
+          "p051-b08",
+          "p051-b09"
+        ],
+        "source_ids": [
+          "p051-b06",
+          "p051-b07"
+        ]
+      },
+      {
+        "chapter": "02",
+        "anchor_id": "p056-b05",
+        "row": 0,
+        "old_ids": [
+          "p056-b05",
+          "p056-b06",
+          "p056-b07",
+          "p056-b08"
+        ],
+        "source_ids": [
+          "p056-b05",
+          "p056-b06"
+        ]
+      },
+      {
+        "chapter": "02",
+        "anchor_id": "p060-b04",
+        "row": 0,
+        "old_ids": [
+          "p060-b04",
+          "p060-b05",
+          "p060-b06",
+          "p060-b07",
+          "p060-b08"
+        ],
+        "source_ids": [
+          "p060-b04",
+          "p060-b05"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p086-b03",
+        "row": 0,
+        "old_ids": [
+          "p086-b03",
+          "p086-b04",
+          "p086-b05",
+          "p086-b06",
+          "p086-b07"
+        ],
+        "source_ids": [
+          "p086-b03",
+          "p086-b05",
+          "p086-b04"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p086-b09",
+        "row": 0,
+        "old_ids": [
+          "p086-b09",
+          "p086-b10",
+          "p086-b11"
+        ],
+        "source_ids": [
+          "p086-b09",
+          "p086-b11",
+          "p086-b10"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p093-b01",
+        "row": 0,
+        "old_ids": [
+          "p093-b01",
+          "p093-b02",
+          "p093-b03",
+          "p093-b04",
+          "p093-b05",
+          "p093-b06"
+        ],
+        "source_ids": [
+          "p093-b01",
+          "p093-b02",
+          "p093-b03",
+          "p093-b04"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p097-b10",
+        "row": 0,
+        "old_ids": [
+          "p097-b10",
+          "p097-b11"
+        ],
+        "source_ids": [
+          "p097-b10"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p101-b06",
+        "row": 0,
+        "old_ids": [
+          "p101-b06",
+          "p101-b07",
+          "p101-b08"
+        ],
+        "source_ids": [
+          "p101-b06",
+          "p101-b07"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p109-b04",
+        "row": 0,
+        "old_ids": [
+          "p109-b04",
+          "p109-b05",
+          "p109-b06",
+          "p109-b07"
+        ],
+        "source_ids": [
+          "p109-b04",
+          "p109-b05"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p110-b04",
+        "row": 0,
+        "old_ids": [
+          "p110-b04",
+          "p110-b05",
+          "p110-b06",
+          "p110-b07",
+          "p110-b08",
+          "p110-b09"
+        ],
+        "source_ids": [
+          "p110-b04",
+          "p110-b05",
+          "p110-b06"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p117-b04",
+        "row": 0,
+        "old_ids": [
+          "p117-b04",
+          "p117-b05",
+          "p117-b06",
+          "p117-b07"
+        ],
+        "source_ids": [
+          "p117-b04"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p119-b04",
+        "row": 0,
+        "old_ids": [
+          "p119-b04",
+          "p119-b05",
+          "p119-b06",
+          "p119-b07"
+        ],
+        "source_ids": [
+          "p119-b04",
+          "p119-b05"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p129-b01",
+        "row": 0,
+        "old_ids": [
+          "p129-b01",
+          "p129-b02",
+          "p129-b03",
+          "p129-b04",
+          "p129-b05",
+          "p129-b06",
+          "p129-b07",
+          "p129-b08",
+          "p129-b09"
+        ],
+        "source_ids": [
+          "p129-b01"
+        ]
+      },
+      {
+        "chapter": "03",
+        "anchor_id": "p130-b05",
+        "row": 0,
+        "old_ids": [
+          "p130-b05",
+          "p130-b06",
+          "p130-b07",
+          "p130-b08",
+          "p130-b09",
+          "p130-b10"
+        ],
+        "source_ids": [
+          "p130-b05",
+          "p130-b06"
+        ]
+      },
+      {
+        "chapter": "04",
+        "anchor_id": "p140-b04",
+        "row": 0,
+        "old_ids": [
+          "p140-b04",
+          "p140-b05",
+          "p140-b06"
+        ],
+        "source_ids": [
+          "p140-b04"
+        ]
+      },
+      {
+        "chapter": "04",
+        "anchor_id": "p144-b05",
+        "row": 0,
+        "old_ids": [
+          "p144-b05",
+          "p144-b06",
+          "p144-b07",
+          "p144-b08"
+        ],
+        "source_ids": [
+          "p144-b05",
+          "p144-b06"
+        ]
+      },
+      {
+        "chapter": "04",
+        "anchor_id": "p150-b04",
+        "row": 0,
+        "old_ids": [
+          "p150-b04",
+          "p150-b05",
+          "p150-b06",
+          "p150-b07",
+          "p150-b08"
+        ],
+        "source_ids": [
+          "p150-b04",
+          "p150-b05"
+        ]
+      },
+      {
+        "chapter": "04",
+        "anchor_id": "p151-b08",
+        "row": 0,
+        "old_ids": [
+          "p151-b08",
+          "p151-b09",
+          "p151-b10",
+          "p151-b11"
+        ],
+        "source_ids": [
+          "p151-b08",
+          "p151-b09"
+        ]
+      },
+      {
+        "chapter": "04",
+        "anchor_id": "p153-b01",
+        "row": 0,
+        "old_ids": [
+          "p153-b01",
+          "p153-b02",
+          "p153-b03",
+          "p153-b04",
+          "p153-b05",
+          "p153-b06",
+          "p153-b07"
+        ],
+        "source_ids": [
+          "p153-b01",
+          "p153-b02",
+          "p153-b03",
+          "p153-b04"
+        ]
+      },
+      {
+        "chapter": "05",
+        "anchor_id": "p168-b04",
+        "row": 0,
+        "old_ids": [
+          "p168-b04",
+          "p168-b05",
+          "p168-b06",
+          "p168-b07"
+        ],
+        "source_ids": [
+          "p168-b04",
+          "p168-b05"
+        ]
+      },
+      {
+        "chapter": "05",
+        "anchor_id": "p184-b02",
+        "row": 0,
+        "old_ids": [
+          "p184-b02",
+          "p184-b03",
+          "p184-b04",
+          "p184-b05",
+          "p184-b06",
+          "p184-b07"
+        ],
+        "source_ids": [
+          "p184-b02",
+          "p184-b03"
+        ]
+      },
+      {
+        "chapter": "05",
+        "anchor_id": "p185-b01",
+        "row": 0,
+        "old_ids": [
+          "p185-b01",
+          "p185-b02",
+          "p185-b03",
+          "p185-b04",
+          "p185-b05",
+          "p185-b06",
+          "p185-b07"
+        ],
+        "source_ids": [
+          "p185-b01",
+          "p185-b02"
+        ]
+      },
+      {
+        "chapter": "07",
+        "anchor_id": "p267-b01",
+        "row": 0,
+        "old_ids": [
+          "p267-b01",
+          "p267-b02",
+          "p267-b03"
+        ],
+        "source_ids": [
+          "p267-b01"
+        ]
+      },
+      {
+        "chapter": "07",
+        "anchor_id": "p273-b04",
+        "row": 0,
+        "old_ids": [
+          "p273-b04",
+          "p273-b05",
+          "p273-b06",
+          "p273-b07",
+          "p273-b08",
+          "p273-b09",
+          "p273-b10"
+        ],
+        "source_ids": [
+          "p273-b04",
+          "p273-b05"
+        ]
+      }
+    ]
+  }
+}

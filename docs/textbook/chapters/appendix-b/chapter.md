@@ -51,9 +51,7 @@
 
 ::: {#p291-b06 .step}
 
-[5\.&#32;]{.s007}[Controller のクラスファイルを一回以上実行していますか？Eclipse で実行をしないと、そ]{.s007}\
-[もそもクラスファイルがコンパイルされませんので、Java が認識できず、404 エラーになりま]{.s007}\
-[す。]{.s007}
+[5\.&#32;]{.s007}[修正したファイルを保存し、ビルドが正常に完了していますか？Pleiades のコンソールでアプリケーションの起動完了を確認し、正しいポート番号へアクセスしてください。]{.s007}
 
 :::
 
@@ -61,8 +59,7 @@
 
 [6\.&#32;]{.s007}[テンプレートファイルの配置は正しいですか？]{.s007}\
 [Thymeleaf テンプレートファイルは、通常src/main/resources/templates ディレクトリに配]{.s007}\
-[置されるべきです。誤ったディレクトリにファイルがあると、Spring Boot はテンプレートを見]{.s007}\
-[つけることができず、404 エラーを引き起こします。]{.s007}
+[置します。Controller が返した名前のテンプレートが見つからない場合は、通常500 エラーになります。404 と区別して確認してください。]{.s007}
 
 :::
 
@@ -70,7 +67,7 @@
 
 [7\.&#32;]{.s007}[テンプレートファイルの拡張子は正しいですか？]{.s007}\
 [Thymeleaf テンプレートのファイル名は.html で終わる必要があります。間違った拡張子を]{.s007}\
-[使用していると、Spring Boot がテンプレートを認識できずに404 エラーが発生します。]{.s007}
+[使用していると、テンプレートが見つからず、通常500 エラーになります。]{.s007}
 
 :::
 
@@ -84,6 +81,69 @@
 
 [500 エラーは、基本的にエラーメッセージの中に、どの行で問題発生したかの情報が表示さ]{.s008}\
 [れますので、慌てずエラーメッセージを確認しましょう。]{.s008}
+
+:::
+
+::: {#revision-errors-title .heading}
+
+[【参考】コンソールからエラーの原因を読み取る]{.s013}
+
+:::
+
+::: {#revision-errors-console .paragraph}
+
+[ブラウザーに500 と表示されたら、Pleiades の［コンソール］で、実行しているアプリケーションのログを確認しましょう。操作を一度行い、その時刻のエラーを探します。起動時に停止した場合も、起動ログのエラーを同じ手順で読みます。]{.s007}
+
+:::
+
+::: {#revision-errors-name .paragraph}
+
+[まず、例外名と、その後ろのメッセージを読みます。例外名はエラーの種類を、メッセージは対象のファイルやデータなどを示します。長いログでは Caused by:（原因は～）を探し、さらに原因が続いていれば、まず最も深い原因の例外名とメッセージを確認してください。そこから外側の例外へ戻ると、「何が失敗し、その結果どの処理が止まったか」を追いやすくなります。]{.s007}
+
+[Caused by: がない場合は、表示されている例外と、その直後の at の行を確認します。原因の例外だけが直接表示される場合もあります。]{.s007}
+
+:::
+
+::: {#revision-errors-trace-intro .paragraph}
+
+[次は、読み方を示すために短くしたログの例です。ファイル名や行番号は説明用です。]{.s007}
+
+:::
+
+::: {#revision-errors-trace .code filename="コンソールの表示例"}
+
+```text
+java.lang.IllegalStateException: 商品の検索に失敗しました
+    at com.example.ProductService.find(ProductService.java:28)
+    at com.example.ProductController.list(ProductController.java:35)
+Caused by: java.sql.SQLSyntaxErrorException:
+    Table 'spring_sample.products' doesn't exist
+    at com.example.ProductService.find(ProductService.java:26)
+```
+
+:::
+
+::: {#revision-errors-trace-read .paragraph}
+
+[この例は、products テーブルが存在しないことが原因で、商品の検索処理が失敗しています。先頭の IllegalStateException だけで判断せず、テーブル名や接続先のデータベースを確認します。at で始まる行から自分のパッケージ名を探すと、ProductService.java:26 は、そのファイルの26行目を表します。Pleiades では、コンソールに表示されたファイル名と行番号をクリックして該当箇所を確認できます。]{.s007}
+
+:::
+
+::: {#revision-errors-template .paragraph}
+
+[TemplateInputException なら、まず続くメッセージを確認します。Error resolving template なら、Controller の戻り値と templates 配下のファイル名・配置を照合します。テンプレートの解析中のエラーなら、ログ中のテンプレート名・行・列と、さらに続く Caused by: を確認します。名前だけで原因を決めつけないことが大切です。]{.s007}
+
+:::
+
+::: {#revision-errors-sql .paragraph}
+
+[データベース関連では、Access denied は接続ユーザー・パスワード・接続元への権限を、Communications link failure は接続先・ポート番号・MySQL の起動状態や通信経路を確認する手掛かりです。エラー文にテーブル名や列名があれば、実際の定義と照合します。上位の例外だけを見て、すぐにコードを書き換えないようにしましょう。]{.s007}
+
+:::
+
+::: {#revision-errors-status .paragraph}
+
+[404 は、まず URL と Controller の対応を確認します。クラスの @RequestMapping は任意ですが、指定した場合はメソッド側の URL とつながります。GET と POST の不一致は通常405、テンプレートが解決できない場合は通常500 です。500 は Thymeleaf 以外の例外でも起こるため、画面の番号とコンソールの原因を組み合わせて判断してください。]{.s007}
 
 :::
 

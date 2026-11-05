@@ -1,0 +1,621 @@
+{
+  "chapter": "03",
+  "cards": 18,
+  "parts": [
+    {
+      "id": "03-explanation-1",
+      "token": "03-explanation-1-part1",
+      "local_page": 30,
+      "box_pt": [
+        85.104,
+        127.04,
+        511.776,
+        424.31
+      ],
+      "file": "03-explanation-1-part1.png",
+      "consume_ids": [
+        "p086-b03",
+        "p086-b04",
+        "p086-b05",
+        "p086-b06",
+        "p086-b07"
+      ],
+      "source_pages": [
+        86
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5-6 行目",
+          "code": "    @Autowired\n private ProductRepository prodRepo;",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": " List<Product> list = prodRepo.findAll();",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-2",
+      "token": "03-explanation-2-part1",
+      "local_page": 30,
+      "box_pt": [
+        85.104,
+        594.1099892858198,
+        511.776,
+        768.3799892858198
+      ],
+      "file": "03-explanation-2-part1.png",
+      "consume_ids": [
+        "p086-b09",
+        "p086-b10",
+        "p086-b11"
+      ],
+      "source_pages": [
+        86
+      ],
+      "expected_rows": [
+        {
+          "line_label": "12-13 行目",
+          "code": " model.addAttribute(\"products\", list);\n return \"product/list\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-3",
+      "token": "03-explanation-3-part1",
+      "local_page": 32,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        375.512
+      ],
+      "file": "03-explanation-3-part1.png",
+      "consume_ids": [
+        "p087-b05",
+        "p087-b06",
+        "p087-b07"
+      ],
+      "source_pages": [
+        87
+      ],
+      "expected_rows": [
+        {
+          "line_label": "8 行目",
+          "code": " <tr th:each=\"product: ${products}\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-4",
+      "token": "03-explanation-4-part1",
+      "local_page": 33,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        296.235
+      ],
+      "file": "03-explanation-4-part1.png",
+      "consume_ids": [
+        "p088-b01",
+        "p088-b02"
+      ],
+      "source_pages": [
+        88
+      ],
+      "expected_rows": [
+        {
+          "line_label": "9-11 行目",
+          "code": " <td th:text=\"${product.id}\"></td>\n <td th:text=\"${product.name}\"></td>\n <td th:text=\"${product.price}\"></td>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-5",
+      "token": "03-explanation-5-part1",
+      "local_page": 39,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        213.01999999999998
+      ],
+      "file": "03-explanation-5-part1.png",
+      "consume_ids": [
+        "p092-b09",
+        "p092-b10"
+      ],
+      "source_pages": [
+        92
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " public String showProductById(int id, Model model) {",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-6",
+      "token": "03-explanation-6-part1",
+      "local_page": 40,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        535.004
+      ],
+      "file": "03-explanation-6-part1.png",
+      "consume_ids": [
+        "p093-b01",
+        "p093-b02",
+        "p093-b03",
+        "p093-b04",
+        "p093-b05",
+        "p093-b06"
+      ],
+      "source_pages": [
+        93
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行目",
+          "code": " Product product = prodRepo.findById(id).orElse(null);",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行目",
+          "code": " System.out.println(product);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-7",
+      "token": "03-explanation-7-part1",
+      "local_page": 40,
+      "box_pt": [
+        85.104,
+        601.1639747763569,
+        511.776,
+        728.1839747763569
+      ],
+      "file": "03-explanation-7-part1.png",
+      "consume_ids": [
+        "p093-b07",
+        "p093-b08"
+      ],
+      "source_pages": [
+        93
+      ],
+      "expected_rows": [
+        {
+          "line_label": "7 行目",
+          "code": " model.addAttribute(\"product\", product);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-8",
+      "token": "03-explanation-8-part1",
+      "local_page": 45,
+      "box_pt": [
+        85.104,
+        554.49578125,
+        511.776,
+        766.74578125
+      ],
+      "file": "03-explanation-8-part1.png",
+      "consume_ids": [
+        "p097-b10",
+        "p097-b11"
+      ],
+      "source_pages": [
+        97
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行",
+          "code": " List<Product> list = prodRepo.findByPrice(price);",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行以降",
+          "code": " System.out.println(list);\n model.addAttribute(\"products\", list);\n return \"product/list\";\n }",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-9",
+      "token": "03-explanation-9-part1",
+      "local_page": 49,
+      "box_pt": [
+        85.104,
+        433.0133125,
+        511.776,
+        697.5063124999999
+      ],
+      "file": "03-explanation-9-part1.png",
+      "consume_ids": [
+        "p101-b06",
+        "p101-b07",
+        "p101-b08"
+      ],
+      "source_pages": [
+        101
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行",
+          "code": " List<Product> list = prodRepo.findByNameAndPrice(name, price);",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行以降",
+          "code": " System.out.println(list);\n model.addAttribute(\"products\", list);\n return \"product/list\";\n }",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-10",
+      "token": "03-explanation-10-part1",
+      "local_page": 57,
+      "box_pt": [
+        85.104,
+        551.9089811411029,
+        511.776,
+        726.1789811411029
+      ],
+      "file": "03-explanation-10-part1.png",
+      "consume_ids": [
+        "p108-b06"
+      ],
+      "source_pages": [
+        108
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行",
+          "code": "@Data",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-11",
+      "token": "03-explanation-11-part1",
+      "local_page": 59,
+      "box_pt": [
+        85.104,
+        357.81700000000006,
+        511.776,
+        576.3370000000001
+      ],
+      "file": "03-explanation-11-part1.png",
+      "consume_ids": [
+        "p109-b04",
+        "p109-b05",
+        "p109-b06",
+        "p109-b07"
+      ],
+      "source_pages": [
+        109
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " public String insertProduct(ProductForm productForm, Model model) {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "5 行目",
+          "code": " Product product = new Product();",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-12",
+      "token": "03-explanation-12-part1",
+      "local_page": 61,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        344.012
+      ],
+      "file": "03-explanation-12-part1.png",
+      "consume_ids": [
+        "p110-b01",
+        "p110-b02",
+        "p110-b03"
+      ],
+      "source_pages": [
+        110
+      ],
+      "expected_rows": [
+        {
+          "line_label": "8 行目",
+          "code": " product = prodRepo.save(product);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-13",
+      "token": "03-explanation-13-part1",
+      "local_page": 62,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        401.012
+      ],
+      "file": "03-explanation-13-part1.png",
+      "consume_ids": [
+        "p110-b04",
+        "p110-b05",
+        "p110-b06",
+        "p110-b07",
+        "p110-b08",
+        "p110-b09"
+      ],
+      "source_pages": [
+        110
+      ],
+      "expected_rows": [
+        {
+          "line_label": "6～7 行目",
+          "code": " product.setName(productForm.getName());\n product.setPrice(productForm.getPrice());",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "8-9 行目",
+          "code": " product = prodRepo.save(product);\n             model.addAttribute(\"product\", product);",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": " return \"/product/result\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-14",
+      "token": "03-explanation-14-part1",
+      "local_page": 63,
+      "box_pt": [
+        85.104,
+        380.329,
+        511.776,
+        523.099
+      ],
+      "file": "03-explanation-14-part1.png",
+      "consume_ids": [
+        "p111-b03"
+      ],
+      "source_pages": [
+        111
+      ],
+      "expected_rows": [
+        {
+          "line_label": "9 行目",
+          "code": " <td th:text=\"${product.id}\"></td>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-15",
+      "token": "03-explanation-15-part1",
+      "local_page": 70,
+      "box_pt": [
+        85.104,
+        311.305,
+        511.776,
+        688.79
+      ],
+      "file": "03-explanation-15-part1.png",
+      "consume_ids": [
+        "p117-b04",
+        "p117-b05",
+        "p117-b06",
+        "p117-b07"
+      ],
+      "source_pages": [
+        117
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": "@GetMapping(\"update/{id}\")",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "4 行目",
+          "code": "public String showUpdateInputView(@PathVariable int id, Model model) {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "5 行から",
+          "code": " Product product = prodRepo.findById(id).orElse(null);\n model.addAttribute(\"product\", product);\n return \"product/update_input\";\n}",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-16",
+      "token": "03-explanation-16-part1",
+      "local_page": 73,
+      "box_pt": [
+        85.104,
+        342.31300000000005,
+        511.776,
+        560.8330000000001
+      ],
+      "file": "03-explanation-16-part1.png",
+      "consume_ids": [
+        "p119-b04",
+        "p119-b05",
+        "p119-b06",
+        "p119-b07"
+      ],
+      "source_pages": [
+        119
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " product.setId(productForm.getId());",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7 行目",
+          "code": " product = prodRepo.save(product);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-17",
+      "token": "03-explanation-17-part1",
+      "local_page": 83,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        580.25
+      ],
+      "file": "03-explanation-17-part1.png",
+      "consume_ids": [
+        "p129-b01",
+        "p129-b02",
+        "p129-b03",
+        "p129-b04",
+        "p129-b05",
+        "p129-b06",
+        "p129-b07",
+        "p129-b08",
+        "p129-b09"
+      ],
+      "source_pages": [
+        129
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行目",
+          "code": "@Service",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行目",
+          "code": "@RequiredArgsConstructor",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7 行目",
+          "code": "public class ProductServiceImpl implements ProductService{",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "9 行-10 行目",
+          "code": " //@Autowired は不要\n private final ProductRepository prodRepo;",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "13 行-14 行目",
+          "code": " public Product findProductById(int id) {\n return prodRepo.findById(id).orElse(null);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "03-explanation-18",
+      "token": "03-explanation-18-part1",
+      "local_page": 85,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        380.27
+      ],
+      "file": "03-explanation-18-part1.png",
+      "consume_ids": [
+        "p130-b05",
+        "p130-b06",
+        "p130-b07",
+        "p130-b08",
+        "p130-b09",
+        "p130-b10"
+      ],
+      "source_pages": [
+        130
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行目",
+          "code": "@RequestMapping(\"product2\")",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7 行目",
+          "code": " private ProductService prodService;",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "13 行目",
+          "code": " Product product = prodService.findProductById(id);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    }
+  ],
+  "pdf_sha256": "ab1018e70735818c57f24abb688c8c550fe66961bdf66620a671b32daf385b91",
+  "checks_sha256": "316b9f68ec8621df22c406ee3d910af63e2758ff02ffd9ddbec6138eb47d6dde",
+  "sheets": 5
+}

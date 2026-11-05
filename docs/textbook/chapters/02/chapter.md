@@ -1138,7 +1138,7 @@ initial-scale=1.0"/>
 
 :::
 
-![操作画面・図解](assets/p052-f23.svg){#p052-f23}
+![操作画面・図解](assets/p052-f23-clean.svg){#p052-f23}
 
 ::: {#p052-b02 .paragraph}
 
@@ -1214,7 +1214,7 @@ initial-scale=1.0"/>
 
 :::
 
-![スライド](assets/p053-f25.svg){#p053-f25}
+![スライド](assets/p053-f25-clean.svg){#p053-f25}
 
 ::: {#p053-b02 .heading}
 

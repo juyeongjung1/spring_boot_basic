@@ -16,6 +16,7 @@ from PIL import Image, ImageChops, ImageStat
 from links import add_url_links
 from code_geometry import code_geometries
 from table_styles import table_paint, table_geometry
+import html_components
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -109,7 +110,7 @@ def read_markdown(path):
                         parts += flatten(child["c"])
                     else:
                         raise ValueError(f"未対応のブロック: {child['t']}")
-                nodes[attrs[0]] = {"kind": attrs[1][0], "parts": parts, "text": "".join(p[0] for p in parts), "language": language}
+                nodes[attrs[0]] = {"kind": attrs[1][0], "parts": parts, "text": "".join(p[0] for p in parts), "language": language, "attrs": dict(attrs[2])}
                 if attrs[1][0]=='table':nodes[attrs[0]].update(rows=rows,has_header=has_header)
                 entries.append(attrs[0])
             elif block["t"] == "Para" and len(block["c"]) == 1 and block["c"][0]["t"] == "Image":
@@ -238,7 +239,7 @@ def inline(parts, typography=True):
     return '#flowing[' + content + ']' if typography else content
 
 
-def flow_layout(folder, config, layout, nodes, figures, order):
+def flow_layout(folder, config, layout, nodes, figures, order, modern=None):
     has_cover=config.get('cover_mode','classic')!='none'
     furniture_condition='here().page() > 1' if has_cover else 'true'
     running_title = next((''.join(run['text'] for run in page['furniture'] if run['bbox'][1] < 80).strip()
@@ -464,7 +465,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
 
     def render(ident):
         if ident in figures:
-            fig = figure_map.get(ident, {"box": [0, 0, 426.672, 0]})
+            fig = figure_map.get(ident, {"box": [85.104, 0, 511.776, 0]})
             path = "/" + (folder / figures[ident]).relative_to(ROOT).as_posix()
             width = fig['box'][2] - fig['box'][0]
             offset = fig['box'][0] - 85.104
@@ -538,8 +539,23 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             entries.extend(additions)
     i = 0
     rendered_codes = set()
+    reference_open = False
+    def modern_panel(ident):
+        panels = []
+        for token in modern['anchors'][ident]:
+            part = modern['parts'][token]
+            events = '\n'.join(f'#at({event["x"]}, {event["y"]}, mark({q(event["id"])}, {q(event["edge"])}))' for event in part['events'])
+            panels.append(f'#html-panel({q(token)}, {part["width"]}, {part["height"]}, offset: {part["offset"]}pt)[{events}]')
+        return '\n'.join(panels)
     while i < len(entries):
         ident = entries[i]
+        is_reference = nodes.get(ident, {}).get('attrs', {}).get('reference-group') == 'messages'
+        if reference_open and not is_reference:
+            commands.append(']')
+            reference_open = False
+        if is_reference and not reference_open:
+            commands += ['#pagebreak(weak: true)', '#reference-panel[']
+            reference_open = True
         if ident.startswith('__source-'):
             commands += ['#pagebreak(weak: true)', f'#mark({q(ident)}, "source-page")']
             i += 1
@@ -552,7 +568,14 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             commands += ['#pagebreak(weak: true)','#[#set page(header: none, footer: none)\n#mark('+q(ident)+',"native-page")\n#native-cover['+native_page_map[ident[len('__native-'):]]+']\n#pagebreak(weak: true)]']
             i+=1
             continue
-        if ident in code_members:
+        if modern and ident in modern['anchors']:
+            commands.append(modern_panel(ident))
+            i += 1
+            continue
+        if modern and ident in modern['consume']:
+            i += 1
+            continue
+        if not modern and ident in code_members:
             code_id = code_members[ident]
             if code_id not in rendered_codes:
                 commands.append(render_code(code_id))
@@ -561,9 +584,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             continue
         if ident in nodes and nodes[ident]["kind"] in ('step','heading'):
             end = i + 1
-            while end < len(entries) and entries[end] not in code_members and entries[end] in nodes and nodes[entries[end]]["kind"] == "paragraph":
+            while end < len(entries) and entries[end] not in code_members and (not modern or entries[end] not in modern['consume']) and entries[end] in nodes and nodes[entries[end]]["kind"] == "paragraph":
                 end += 1
-            if end < len(entries) and entries[end] in figures and entries[end] not in code_members:
+            if end < len(entries) and entries[end] in figures and entries[end] not in code_members and (not modern or entries[end] not in modern['consume']):
                 body = "\n".join(render(e) for e in entries[i:end + 1])
                 # 枠の先頭にある子見出しの上余白は相殺されるため、外側で確保する。
                 above = 0 if ident in slide_body_first else (18 if nodes[ident]['kind'] == 'heading' else 8)
@@ -576,6 +599,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             continue
         commands.append(render(ident))
         i += 1
+    if reference_open:
+        commands.append(']')
     return "\n".join(commands)
 
 
@@ -654,10 +679,12 @@ def build(chapter="01", mode="all", markdown=None, output=None):
         comparisons.save(out / "comparison.pdf", garbage=4, deflate=True)
         report["reference"] = {"pages": len(pdf), "page_checks": pages}
     if mode in ("all", "flow"):
-        pdf, source = compile_pdf(work, "flow", header + flow_layout(folder, config, layout, nodes, figures, order), font_paths)
+        modern = html_components.prepare(folder, config, layout, nodes, figures, order)
+        pdf, source = compile_pdf(work, "flow", header + flow_layout(folder, config, layout, nodes, figures, order, modern=modern), font_paths)
+        marks = json.loads(typst.query(str(source), "<book-check>", field="value", format="json", root=str(ROOT), font_paths=font_paths, ignore_system_fonts=True))
+        html_components.embed(pdf, modern, marks)
         url_links = add_url_links(pdf, nodes)
         pdf.save(out / "chapter-flow.pdf", garbage=4, deflate=True)
-        marks = json.loads(typst.query(str(source), "<book-check>", field="value", format="json", root=str(ROOT), font_paths=font_paths, ignore_system_fonts=True))
         orphan = []
         split_figures = []
         split_short_code = []
@@ -714,14 +741,14 @@ def build(chapter="01", mode="all", markdown=None, output=None):
                         continue
                     if x0 < left_limit or x1 > right_limit or y1 > 778:
                         overflow.append({"page": index + 1, "bbox": list(line["bbox"])})
-        expected = Counter(normalized("".join(n["text"] for n in nodes.values())))
+        expected = Counter(normalized("".join(n["text"] for ident,n in nodes.items() if ident not in modern['consume']) + modern['expected_text']))
         # 新しい設定図のSVGには、輪郭ではなく文字として残したラベルもある。
-        svg_text=''.join(''.join(node.itertext()) for path in figures.values() if Path(path).suffix.lower()=='.svg' for node in ET.parse(folder/path).iter('{http://www.w3.org/2000/svg}text'))
+        svg_text=''.join(''.join(node.itertext()) for ident,path in figures.items() if ident not in modern['consume'] and Path(path).suffix.lower()=='.svg' for node in ET.parse(folder/path).iter('{http://www.w3.org/2000/svg}text'))
         expected += Counter(normalized(svg_text))
         native_sources = {int(m['id'].rsplit('-', 1)[1]) for m in marks if m['edge'] == 'native-page'}
         expected += Counter(normalized(''.join(r['text'] for p in layout['pages'] if p['source_page'] in native_sources for r in p['furniture'])))
         for ident,node in nodes.items():
-            if node['kind']=='table' and node['has_header']:
+            if node['kind']=='table' and node['has_header'] and ident not in modern['consume']:
                 repeats=max(0,sum(m['id']==ident and m['edge']=='table-header' for m in marks)-1)
                 expected += Counter(normalized(''.join(node['rows'][0]))*repeats)
         actual = Counter(normalized("".join(actual_body)))
@@ -730,6 +757,7 @@ def build(chapter="01", mode="all", markdown=None, output=None):
             raise AssertionError(f"自動組版の文字差: 不足{dict(expected-actual)} 余分{dict(actual-expected)}")
         report["flow"] = {"pages": len(pdf), "native_text_complete": complete, "heading_orphans": orphan, "split_figures": split_figures, "split_short_code": split_short_code, "split_short_tables":split_short_tables, "split_instructions": split_instructions, "instruction_groups": len(instruction_ids), "fixed_pages":sorted(native_page_positions), "overflow": overflow, "block_positions": marks}
         report['flow']['url_links'] = url_links
+        report['flow']['html_components'] = [{'id':spec['id'], 'kind':spec['kind'], 'consume_ids':spec['consume'], 'parts':[{'token':token, 'width':modern['parts'][token]['width'], 'height':modern['parts'][token]['height']} for token in modern['anchors'][spec['anchor']]]} for spec in modern['specs']]
         assert not orphan and not split_figures and not split_short_code and not split_short_tables and not split_instructions and not overflow, report["flow"]
     (out / "checks.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({"chapter": chapter, "blocks": len(nodes), "figures": len(figures), "reference_pages": report.get("reference", {}).get("pages"), "flow_pages": report.get("flow", {}).get("pages")}, ensure_ascii=False))

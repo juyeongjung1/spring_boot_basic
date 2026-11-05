@@ -1,0 +1,172 @@
+{
+  "chapter": "07",
+  "cards": 5,
+  "parts": [
+    {
+      "id": "07-explanation-1",
+      "token": "07-explanation-1-part1",
+      "local_page": 32,
+      "box_pt": [
+        85.104,
+        592.297,
+        511.776,
+        735.067
+      ],
+      "file": "07-explanation-1-part1.png",
+      "consume_ids": [
+        "p266-b11"
+      ],
+      "source_pages": [
+        266
+      ],
+      "expected_rows": [
+        {
+          "line_label": "1 行目",
+          "code": "<div class=\"container\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "07-explanation-2",
+      "token": "07-explanation-2-part1",
+      "local_page": 33,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        387.735
+      ],
+      "file": "07-explanation-2-part1.png",
+      "consume_ids": [
+        "p267-b01",
+        "p267-b02",
+        "p267-b03"
+      ],
+      "source_pages": [
+        267
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行目",
+          "code": "    <div class=\"row\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "3 行目～5 行目",
+          "code": "        <div class=\"col-6 bg-primary-subtle\">Column 1</div>\n        <div class=\"col-3 bg-danger-subtle\">Column 2</div>\n        <div class=\"col-3 bg-success-subtle\">Column 3</div>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "07-explanation-3",
+      "token": "07-explanation-3-part1",
+      "local_page": 34,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        307.52
+      ],
+      "file": "07-explanation-3-part1.png",
+      "consume_ids": [
+        "p267-b09",
+        "p267-b10"
+      ],
+      "source_pages": [
+        267
+      ],
+      "expected_rows": [
+        {
+          "line_label": "6 行目～7 行目",
+          "code": "    </div> <!-- END row1-->\n</div><!-- END container-->",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "07-explanation-4",
+      "token": "07-explanation-4-part1",
+      "local_page": 42,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        406.262
+      ],
+      "file": "07-explanation-4-part1.png",
+      "consume_ids": [
+        "p273-b04",
+        "p273-b05",
+        "p273-b06",
+        "p273-b07",
+        "p273-b08",
+        "p273-b09",
+        "p273-b10"
+      ],
+      "source_pages": [
+        273
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行目",
+          "code": "        <div class=\"col-md-3\"> <!-- START sidebar -->",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "8 行目",
+          "code": "            <form class=\"row\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "9 行目・13 行目",
+          "code": "                <div class=\"col-8\">\n                <div class=\"col-4\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": "                    <input type=\"text\" class=\"form-control\"",
+          "meaning_empty": true,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "07-explanation-5",
+      "token": "07-explanation-5-part1",
+      "local_page": 43,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        244.52
+      ],
+      "file": "07-explanation-5-part1.png",
+      "consume_ids": [
+        "p274-b01"
+      ],
+      "source_pages": [
+        274
+      ],
+      "expected_rows": [
+        {
+          "line_label": "10 行目",
+          "code": "                    <input type=\"text\" class=\"form-control\"",
+          "meaning_empty": false,
+          "continuation": true
+        }
+      ]
+    }
+  ],
+  "pdf_sha256": "c2a7c5fa0de5bba681a5fa58e2b0e2641939cb20ed14b91d6ce5e2f302729ea6",
+  "checks_sha256": "ce10831b19b02d83d16f4d0108b1576261e930fb0e04db75338d91f6a85623c3",
+  "sheets": 2
+}

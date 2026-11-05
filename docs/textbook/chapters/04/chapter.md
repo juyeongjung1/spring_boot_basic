@@ -72,7 +72,7 @@
 
 :::
 
-![スライド](assets/p136-f02.svg){#p136-f02}
+![スライド](assets/p136-f02-clean.svg){#p136-f02}
 
 ::: {#p136-b02 .paragraph}
 
@@ -1027,7 +1027,7 @@ public String validate() {
 
 ::: {#p150-b06 .paragraph}
 
-[・10 行目 @NotNull：]{.s010}
+[・11 行目 @NotNull：]{.s010}
 
 :::
 
@@ -1628,6 +1628,101 @@ typeMismatch.java.util.Date=正しい日付を入力してください
 ::: {#p161-b07 .paragraph}
 
 [エラーメッセージが修正されたことを確認できます。]{.s009}
+
+:::
+
+::: {#revision-messages-title .heading reference-group="messages"}
+
+[【参考】画面の文言をまとめて管理する]{.s013}
+
+:::
+
+::: {#revision-messages-purpose .paragraph reference-group="messages"}
+
+[見出しやボタン名をキーで集約すると、表記を統一でき、修正も一か所で済みます。]{.s009}
+
+:::
+
+::: {#revision-messages-files .paragraph reference-group="messages"}
+
+[次のファイルを src/main/resources へ UTF-8 で保存します。Spring Boot 4.0.2 の読み込みも既定で UTF-8 です。]{.s009}
+
+:::
+
+::: {#revision-messages-bundles .code reference-group="messages" filename="messages.properties"}
+
+```properties
+screen.login=ログイン
+button.save=保存
+```
+
+:::
+
+::: {#revision-messages-ja .code reference-group="messages" filename="messages_ja.properties"}
+
+```properties
+screen.login=ログイン
+button.save=保存
+```
+
+:::
+
+::: {#revision-messages-en .code reference-group="messages" filename="messages_en.properties"}
+
+```properties
+screen.login=Log in
+button.save=Save
+```
+
+:::
+
+::: {#revision-messages-fallback .paragraph reference-group="messages"}
+
+[標準の messages.properties は、自動設定にも必要です。]{.s009}
+
+:::
+
+::: {#revision-messages-settings .paragraph reference-group="messages"}
+
+[日本語は ja（jp ではありません）、英語は en です。]{.s009}
+
+:::
+
+::: {#revision-messages-settings-note .paragraph reference-group="messages"}
+
+[韓国語は messages_ko.properties（ko）へ、同じキーを定義します。]{.s009}
+
+:::
+
+::: {#revision-messages-thymeleaf .paragraph reference-group="messages"}
+
+[Thymeleaf では、同じキーを \#{キー} で参照します。]{.s009}
+
+:::
+
+::: {#revision-messages-html .code reference-group="messages" filename="message.html"}
+
+```html
+<button type="submit" th:text="#{screen.login}">ログイン</button>
+```
+
+:::
+
+::: {#revision-messages-java .paragraph reference-group="messages"}
+
+[Java では、DI した MessageSource の getMessage(キー, null, locale) で取得します。null は、文言へ埋め込む値がない場合です。]{.s009}
+
+:::
+
+::: {#revision-messages-controller .paragraph reference-group="messages"}
+
+[Locale は言語や地域の情報です。言語別にないキーは、標準ファイルから取得します。]{.s009}
+
+:::
+
+::: {#revision-messages-locale .paragraph reference-group="messages"}
+
+[標準では、ブラウザーの Accept-Language に従って切り替わります。未対応言語でサーバーの言語へ戻さない場合は、application.properties に spring.messages.fallback-to-system-locale=false を指定します。]{.s009}
 
 :::
 

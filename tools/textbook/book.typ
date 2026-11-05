@@ -50,6 +50,16 @@
 #let instruction(id, body, above: 0pt) = block(breakable: false, above: above, below: 12pt)[
   #mark(id, "start")#body#mark(id, "end")
 ]
+#let html-panel(id, width, height, offset: 0pt, body) = block(width: 100%,
+  breakable: false, above: 8pt, below: 12pt)[
+  #block(width: width * 1pt, height: height * 1pt, inset: 0pt, above: 0pt, below: 0pt)[
+    #at(offset / 1pt, 0, [#mark(id, "html-component")#body])
+  ]
+]
+#let reference-panel(body) = block(width: 100%, breakable: true, above: 18pt,
+  below: 12pt, inset: 8pt, fill: rgb("F5F8FC"), stroke: 0.65pt + rgb("A6B8CE"), radius: 4pt)[
+  #body
+]
 #let slide-header(height, body) = block(width: 100%, height: height * 1pt,
   breakable: false, above: 0pt, below: 0pt)[#body]
 #let illustration(id, path, width, offset: 0pt) = block(width: 100%, breakable: false,

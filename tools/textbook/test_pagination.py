@@ -99,7 +99,10 @@ class PaginationTests(unittest.TestCase):
             folder = ROOT / 'docs/textbook/chapters' / chapter
             before, original_figures, _ = read_markdown(folder / 'baseline.md')
             after, current_figures, _ = read_markdown(folder / 'chapter.md')
-            self.assertEqual(set(before), set(after), chapter)
+            allowed_additions = {'revision-errors-' + suffix for suffix in (
+                'title', 'console', 'name', 'trace-intro', 'trace', 'trace-read', 'template', 'sql', 'status')}
+            self.assertFalse(set(before) - set(after), chapter)
+            self.assertEqual(set(after) - set(before), allowed_additions if chapter == 'appendix-b' else set(), chapter)
             self.assertEqual(set(original_figures), set(current_figures), chapter)
             allowed = {'p285-f07', 'p287-f09', 'p287-f10', 'p288-f11', 'p288-f13'}
             for ident, old_path in original_figures.items():
@@ -115,7 +118,14 @@ class PaginationTests(unittest.TestCase):
                 text = text.replace('© 2024 Trainocate Japan, Ltd.', '© 2027 Trainocate Japan, Ltd.')
                 if ident == 'p285-b03':
                     text += '。'
-                self.assertEqual(text, after[ident]['text'], ident)
+                corrected = {
+                    'p291-b06': '5. 修正したファイルを保存し、ビルドが正常に完了していますか？Pleiades のコンソールでアプリケーションの起動完了を確認し、正しいポート番号へアクセスしてください。',
+                    'p291-b07': '6. テンプレートファイルの配置は正しいですか？Thymeleaf テンプレートファイルは、通常src/main/resources/templates ディレクトリに配置します。Controller が返した名前のテンプレートが見つからない場合は、通常500 エラーになります。404 と区別して確認してください。',
+                    'p291-b08': '7. テンプレートファイルの拡張子は正しいですか？Thymeleaf テンプレートのファイル名は.html で終わる必要があります。間違った拡張子を使用していると、テンプレートが見つからず、通常500 エラーになります。'}
+                if chapter == 'appendix-b' and ident in corrected:
+                    self.assertEqual(normalized(corrected[ident]), normalized(after[ident]['text']), ident)
+                else:
+                    self.assertEqual(text, after[ident]['text'], ident)
 
 
 if __name__ == '__main__':

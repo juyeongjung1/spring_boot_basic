@@ -1,0 +1,37 @@
+[
+  {
+    "log": "regression-pipeline.log",
+    "tests": 8,
+    "passed": true
+  },
+  {
+    "log": "regression-pagination.log",
+    "tests": 7,
+    "passed": true
+  },
+  {
+    "log": "test_symbols.log",
+    "tests": 2,
+    "passed": true
+  },
+  {
+    "log": "test_remaining.log",
+    "tests": 9,
+    "passed": true
+  },
+  {
+    "log": "test_fidelity.log",
+    "tests": 7,
+    "passed": true
+  },
+  {
+    "log": "regression-source-layout.log",
+    "tests": 7,
+    "passed": true
+  },
+  {
+    "log": "regression-html-components.log",
+    "tests": 9,
+    "passed": true
+  }
+]

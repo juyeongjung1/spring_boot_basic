@@ -19,15 +19,18 @@ class SourceLayoutTests(unittest.TestCase):
                 continue
             config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
             layout = json.loads((folder / 'source-layout.json').read_text(encoding='utf-8'))
-            original, _, _ = read_markdown(folder / 'baseline.md')
-            current, _, _ = read_markdown(folder / 'chapter.md')
+            original, original_figures, _ = read_markdown(folder / 'baseline.md')
+            current, current_figures, _ = read_markdown(folder / 'chapter.md')
             output = ROOT / 'output/pdf/textbook' / ('chapter-' + folder.name)
             checks = json.loads((output / 'checks.json').read_text(encoding='utf-8'))
             pdf = fitz.open(output / 'chapter-flow.pdf')
             cls.addClassCleanup(pdf.close)
+            modern = {ident: component for component in checks['flow'].get('html_components', [])
+                      for ident in component['consume_ids']}
             cls.chapters[folder.name] = dict(config=config, layout=layout, original=original,
                 current=current, marks=checks['flow']['block_positions'], pdf=pdf,
-                codes=code_geometries(folder, layout, current))
+                codes=code_geometries(folder, layout, current), modern=modern,
+                original_figures=original_figures, current_figures=current_figures)
 
     def mark(self, chapter, ident, edge):
         matches = [m for m in chapter['marks'] if m['id'] == ident and m['edge'] == edge]
@@ -46,6 +49,12 @@ class SourceLayoutTests(unittest.TestCase):
             self.drawings[key] = [{k: d.get(k) for k in ('rect', 'fill', 'color', 'width')}
                 for d in self.chapters[name]['pdf'][page - 1].get_drawings()]
         return self.drawings[key]
+
+    def component_parts(self, chapter, ident):
+        for part in chapter['modern'][ident]['parts']:
+            position = self.mark(chapter, part['token'], 'html-component')
+            yield part, position, fitz.Rect(position['x'], position['y'],
+                position['x'] + part['width'], position['y'] + part['height'])
 
     @staticmethod
     def color_is(actual, expected):
@@ -71,14 +80,30 @@ class SourceLayoutTests(unittest.TestCase):
             result |= fitz.Rect(character['bbox'])
         return result
 
-    def test_only_the_permitted_intro_dependency_code_is_added(self):
-        added = []
+    def test_only_explicitly_authorized_content_is_added(self):
+        added = set()
+        added_figures = set()
         self.assertEqual(len(self.chapters), 19)
         for name, chapter in self.chapters.items():
             self.assertFalse(chapter['original'].keys() - chapter['current'].keys(), name)
+            self.assertFalse(chapter['original_figures'].keys() - chapter['current_figures'].keys(), name)
+            added_figures.update((name, ident) for ident in
+                chapter['current_figures'].keys() - chapter['original_figures'].keys())
             for ident in chapter['current'].keys() - chapter['original'].keys():
-                added.append((name, ident, chapter['current'][ident]['kind']))
-        self.assertEqual(added, [('03', 'migration-03-jpa-pom', 'code')])
+                added.add((name, ident))
+        messages = ('title', 'purpose', 'files', 'bundles', 'ja', 'en', 'fallback', 'settings',
+                    'settings-note', 'thymeleaf', 'html', 'java', 'controller', 'locale')
+        errors = ('title', 'console', 'name', 'trace-intro', 'trace', 'trace-read', 'template', 'sql', 'status')
+        expected = {('03', 'migration-03-jpa-pom'), ('03', 'revision-di-caption')}
+        expected.update(('04', 'revision-messages-' + name) for name in messages)
+        expected.update(('appendix-b', 'revision-errors-' + name) for name in errors)
+        self.assertEqual(added, expected)
+        self.assertEqual(added_figures, {('03', 'revision-di-remote')})
+        start = self.mark(self.chapters['03'], 'revision-di-remote', 'start')
+        end = self.mark(self.chapters['03'], 'revision-di-remote', 'end')
+        self.assertEqual(start['page'], end['page'])
+        self.assertGreater(end['y'], start['y'])
+        self.assertAlmostEqual(start['x'], 85.104, delta=.02)
 
     def test_all_figures_keep_the_source_left_edge_and_one_page(self):
         modes = Counter()
@@ -87,6 +112,19 @@ class SourceLayoutTests(unittest.TestCase):
                 ident, box = figure['id'], figure['box']
                 with self.subTest(chapter=name, figure=ident):
                     start, end = self.mark(chapter, ident, 'start'), self.mark(chapter, ident, 'end')
+                    if ident in chapter['modern']:
+                        if ident in {'p243-f03', 'p243-f04'}:
+                            # コード実行結果の元画像を、同じカードのfooterへ保持する。
+                            self.assertEqual(chapter['original_figures'][ident], chapter['current_figures'][ident])
+                            self.assertEqual(chapter['modern'][ident]['kind'], 'code')
+                        else:
+                            # 明示許可された画像内ファイル名とコード付属の2注記だけを文字へ変換する。
+                            self.assertIn(ident, {'p071-f07', 'p113-f49', 'p149-f13', 'p161-f24',
+                                                 'p182-f15', 'p071-f08', 'p113-f50'})
+                        self.assertEqual(start['page'], end['page'])
+                        self.assertIn(start['page'], {position['page']
+                            for _, position, _ in self.component_parts(chapter, ident)})
+                        continue
                     mode = 'native' if self.fixed(chapter, figure['page']) else 'slide' if figure.get('slide') else 'flow'
                     modes[mode] += 1
                     self.assertEqual(start['page'], end['page'])
@@ -104,6 +142,18 @@ class SourceLayoutTests(unittest.TestCase):
                 if self.fixed(chapter, geometry['source_page']):
                     continue
                 with self.subTest(chapter=name, code=ident):
+                    if ident in chapter['modern']:
+                        component = chapter['modern'][ident]
+                        if component['kind'] == 'code':
+                            checked += 1
+                            for part, position, rect in self.component_parts(chapter, ident):
+                                self.assertAlmostEqual(rect.x0, geometry['frame'][0], delta=.02)
+                                self.assertAlmostEqual(part['width'], geometry['frame'][2] - geometry['frame'][0], delta=.02)
+                                self.assertLessEqual(part['height'], 620.75)
+                                self.assertLessEqual(rect.y1, 784.02)
+                        else:
+                            self.assertEqual(component['kind'], 'explanation')
+                        continue
                     start, end = self.mark(chapter, ident, 'start'), self.mark(chapter, ident, 'end')
                     owner = next(i for i,g in chapter['codes'].items()
                                  if g['source_page'] == geometry['source_page'] and g['frame'] == geometry['frame'])
@@ -141,13 +191,20 @@ class SourceLayoutTests(unittest.TestCase):
                                 self.assertAlmostEqual(drawing['width'], .48, delta=.02)
         self.assertGreater(checked, 0)
 
-    def test_controller_path_uses_its_original_upper_right_position_inside_red_frame(self):
+    def test_controller_filename_is_visible_in_the_upper_right_header(self):
         chapter = self.chapters['02']
         ident = 'p041-b01'
         owner, geometry = next((i, g) for i, g in chapter['codes'].items() if ident in g['caption_ids'])
         start = self.mark(chapter, owner, 'start')
         page = chapter['pdf'][start['page'] - 1]
         label = self.text_box(self.text_hit(self.text_characters(page), chapter['current'][ident]['text']))
+        if ident in chapter['modern']:
+            _, position, rect = next(self.component_parts(chapter, ident))
+            self.assertEqual(position['page'], start['page'])
+            self.assertTrue(rect.contains(label))
+            self.assertLess(label.y1, start['y'])
+            self.assertLessEqual(rect.x1 - label.x1, 16)
+            return
         original = chapter['layout']['blocks'][ident]['lines'][0]['runs'][0]['bbox']
         frame = geometry['frame']
         self.assertAlmostEqual(label.x0 - start['x'], original[0] - frame[0], delta=.02)
@@ -158,10 +215,29 @@ class SourceLayoutTests(unittest.TestCase):
                and d['rect'].contains(label)]
         self.assertTrue(red, '実PDFの赤枠にファイル名が収まっていない')
 
-    def test_jdbc_comparison_preserves_source_fonts_colors_centering_and_table_lines(self):
+    def test_jdbc_comparison_preserves_colors_emphasis_and_column_centering(self):
         chapter = self.chapters['03']
         ident = 'p069-table01'
         table = chapter['layout']['tables'][ident]
+        if ident in chapter['modern']:
+            parts = list(self.component_parts(chapter, ident))
+            characters = []
+            for part, position, area in parts:
+                self.assertAlmostEqual(part['width'], 426.672, delta=.02)
+                characters += self.text_characters(chapter['pdf'][position['page'] - 1], area)
+            for text in ('要素', 'JDBC', 'ドライバー', 'mysql-connector-j.jar',
+                         '手動でプロジェクトに追加する', 'application.properties'):
+                style = chapter['layout']['styles'][next(r for r in table['runs'] if text in r['text'])['style']]
+                self.assertTrue(all(c['color'] == int(style['color'].lstrip('#'), 16)
+                                    for c in self.text_hit(characters, text)), text)
+            jdbc = self.text_box(self.text_hit(characters, 'JDBC'))
+            _, _, area = parts[0]
+            ratio = ((table['xs'][1] + table['xs'][2]) / 2 - table['xs'][0]) / (table['xs'][-1] - table['xs'][0])
+            self.assertAlmostEqual((jdbc.x0 + jdbc.x1) / 2, area.x0 + area.width * ratio, delta=1)
+            border = (215 / 255, 221 / 255, 229 / 255)
+            self.assertTrue(any(self.color_is(d['fill'], border) or self.color_is(d['color'], border)
+                                for d in self.page_drawings('03', parts[0][1]['page'])))
+            return
         start, end = self.mark(chapter, ident, 'start'), self.mark(chapter, ident, 'end')
         self.assertEqual(start['page'], end['page'])
         area = fitz.Rect(table['xs'][0] - 1, start['y'] - 1, table['xs'][-1] + 1, end['y'] + 1)
@@ -196,8 +272,15 @@ class SourceLayoutTests(unittest.TestCase):
                     self.assertEqual(normalized(node['text']).lstrip('■'), '動作確認')
                     self.mark(chapter, ident, 'heading')
 
-    def test_long_repository_method_uses_the_source_font_size_without_extra_wrapping(self):
+    def test_long_repository_method_keeps_its_identifier_and_readable_code_font(self):
         chapter = self.chapters['06']
+        ident = 'p224-b08'
+        if ident in chapter['modern']:
+            chars = [char for _, position, area in self.component_parts(chapter, ident)
+                     for char in self.text_characters(chapter['pdf'][position['page'] - 1], area)]
+            method = self.text_hit(chars, 'findByNameLikeOrCategoryNameLikeOrDescriptionLikeOrBrandLikeOrSkuLike')
+            self.assertTrue(all(abs(c['size'] - 10.5) < .02 and c['font'] == 'Consolas' for c in method))
+            return
         start = self.mark(chapter, 'p224-b08', 'start')
         end = self.mark(chapter, 'p224-b08', 'end')
         self.assertEqual(start['page'], end['page'])

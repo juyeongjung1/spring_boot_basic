@@ -1,0 +1,1810 @@
+{
+  "active_figures": 268,
+  "source_slides": 65,
+  "active_files": [
+    {
+      "chapter": "01",
+      "id": "p017-f01",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p017-f01.svg",
+      "sha256": "3f11f208e5ee42bf37c853bd660129bf2a6b7d9a299ec0c9d3e56e163913ab9a"
+    },
+    {
+      "chapter": "01",
+      "id": "p018-f02",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p018-f02-canvas-fit.svg",
+      "sha256": "b696dece80450684b7456137098945f96579d4597db03a189e6989563b3529b3"
+    },
+    {
+      "chapter": "01",
+      "id": "p019-f03",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p019-f03.svg",
+      "sha256": "11de9b8b1a1019f0bafb3a90df16c938e10aa1fe971bdedf8b9daacad48f34ba"
+    },
+    {
+      "chapter": "01",
+      "id": "p021-f04",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p021-f04.svg",
+      "sha256": "9eda93d912be3eebca58ba66a29279ceff6a72d959d062e1531201bf2cba681d"
+    },
+    {
+      "chapter": "01",
+      "id": "p022-f05",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p022-f05.svg",
+      "sha256": "7ebb1130da29bbf05bb44040f3e18c70681199fb514e369a955968446f4e39db"
+    },
+    {
+      "chapter": "01",
+      "id": "p022-f06",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p022-f06.svg",
+      "sha256": "dcf78865d772ca815eda3c985eb292dcc5a5e25e0fa9ebf84daca9a058c08e60"
+    },
+    {
+      "chapter": "01",
+      "id": "p024-f07",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p024-f07.svg",
+      "sha256": "b402b5969904dba5dae29dccf327d23ccb6162b48d00217e76f9acf2d183a0a5"
+    },
+    {
+      "chapter": "01",
+      "id": "p025-f08",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p025-f08.svg",
+      "sha256": "d21f6af1611a1be975dc3ecdc7af563216fd1e1fb0ce9d8f7c3e4eb5a8a65b1b"
+    },
+    {
+      "chapter": "01",
+      "id": "p025-f09",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p025-f09.svg",
+      "sha256": "3f5799bde487436326b6cf4b08bbd92e649affb76517233c30fadea74b86d527"
+    },
+    {
+      "chapter": "01",
+      "id": "p026-f10",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p026-f10.svg",
+      "sha256": "8ce1e924c73bf3d41817383e1edf4d0288cc1f8f7d02c5b0d5f112fc2f439342"
+    },
+    {
+      "chapter": "01",
+      "id": "p026-f11",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p026-f11.svg",
+      "sha256": "6cd29d0793833e41af914c6d79f275cdd15b24c83897f37b15feaa61bb740b60"
+    },
+    {
+      "chapter": "01",
+      "id": "p027-f12",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p027-f12.svg",
+      "sha256": "a0da4b0a083a2c32e64f378d45d7d501edd3ad25d32a9532c041f35356cec63d"
+    },
+    {
+      "chapter": "01",
+      "id": "p027-f13",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p027-f13.svg",
+      "sha256": "2126c194f2c04825c1d4f8f34b93ebbd40f53bba973ee551450d6665ce9bfbd4"
+    },
+    {
+      "chapter": "01",
+      "id": "p027-f14",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p027-f14.svg",
+      "sha256": "85a43749ddcc1503bd0764712e8b40cf019e4bee9ae03ce982f46987e21ef979"
+    },
+    {
+      "chapter": "01",
+      "id": "p029-f15",
+      "path": "docs\\textbook\\chapters\\01\\assets\\p029-f15.svg",
+      "sha256": "8201e4d5b55fa98f10684d8b50d72675005d9585fe400a714a23fc460b666342"
+    },
+    {
+      "chapter": "02",
+      "id": "p033-f01",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p033-f01.svg",
+      "sha256": "ca3f36cd22b62572ea27accca4bbea8de0f20f90266f33496d8d20b9b53dc9df"
+    },
+    {
+      "chapter": "02",
+      "id": "p034-f02",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p034-f02.svg",
+      "sha256": "99a2ad4434ff74a0a0920a927c8634d2f95c5c082150d40fbac4b9a2c2647c2e"
+    },
+    {
+      "chapter": "02",
+      "id": "p036-f03",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p036-f03.svg",
+      "sha256": "8240cc78a7380a76954de862ec6cb9339df23a6a1f1c2e38b9101c6507c58dff"
+    },
+    {
+      "chapter": "02",
+      "id": "p036-f04",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p036-f04.svg",
+      "sha256": "0ba19104e9040995f67212468b87a62c69e00cced9ca3546e6e1f33f1071a405"
+    },
+    {
+      "chapter": "02",
+      "id": "p038-f05",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p038-f05.svg",
+      "sha256": "e3b93a408619fc4f1afa8678839f707fd4398d3c53d8c396ec0185770e3e5884"
+    },
+    {
+      "chapter": "02",
+      "id": "p039-f06",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p039-f06.svg",
+      "sha256": "ab788b7b09a6cebca3839c31e5e82a947215aeb77c0044d1530246a767c5cf9a"
+    },
+    {
+      "chapter": "02",
+      "id": "p039-f07",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p039-f07.svg",
+      "sha256": "76bff2ced019644266f99e010e10d43db42b2b923e6d75ecf5ad6d46e4c5ecf4"
+    },
+    {
+      "chapter": "02",
+      "id": "p040-f08",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p040-f08.svg",
+      "sha256": "46bd9e1329a601ebb0570bc16e09a0dabee3a2f4f3bb987d88bc3cc27f6e8248"
+    },
+    {
+      "chapter": "02",
+      "id": "p041-f09",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p041-f09.svg",
+      "sha256": "7a2e6023631e757addfa41dbfb36cc5300034c588000b5de5ffd16e6c5c5714c"
+    },
+    {
+      "chapter": "02",
+      "id": "p042-f10",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p042-f10.svg",
+      "sha256": "afcbd9289f6a583897826a2da564c71daa6fbee3b281c21036c063ca41ac2c1b"
+    },
+    {
+      "chapter": "02",
+      "id": "p042-f11",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p042-f11.svg",
+      "sha256": "d9d063cb4bac40463060cffd7f86dd4e54f01f13a0e0754c67187b84170c5609"
+    },
+    {
+      "chapter": "02",
+      "id": "p043-f12",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p043-f12.svg",
+      "sha256": "7e992add102022636b338b3899b57d5e22df1ded296ae46d590525f3d4367892"
+    },
+    {
+      "chapter": "02",
+      "id": "p043-f13",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p043-f13.svg",
+      "sha256": "0bf35323488c0c7b971ce3b7f0494674d367fc465864f807783952e485f2a91d"
+    },
+    {
+      "chapter": "02",
+      "id": "p043-f14",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p043-f14.svg",
+      "sha256": "030e81f7c52717545c4627b0f36aa0a6c7b948d209e176ebf928a9be3fb612f8"
+    },
+    {
+      "chapter": "02",
+      "id": "p045-f15",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p045-f15.svg",
+      "sha256": "c8bb93d53933c6fe153d2fc153acd5bcbc623c7d1ee777a40f3da225ad638c75"
+    },
+    {
+      "chapter": "02",
+      "id": "p045-f16",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p045-f16.svg",
+      "sha256": "f92e17e2cb9a12c4f6199079f42eb5bf7a7b8ee45ab8363143de1637200f71eb"
+    },
+    {
+      "chapter": "02",
+      "id": "p045-f17",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p045-f17.svg",
+      "sha256": "89148541b1b008cc0605a6c3dfa5c6be7f088ec057b92928c81e630ef78050fb"
+    },
+    {
+      "chapter": "02",
+      "id": "p046-f18",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p046-f18.svg",
+      "sha256": "f3a47d65d2ee2f54eb1b185ef7411e54b2a984050863f6f21655ddda656aeb5b"
+    },
+    {
+      "chapter": "02",
+      "id": "p046-f19",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p046-f19.svg",
+      "sha256": "5e54990686796374a1bafefd2281b8b024d5d1ee2d839e87dfd2afb0dfeffcb1"
+    },
+    {
+      "chapter": "02",
+      "id": "p047-f20",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p047-f20.svg",
+      "sha256": "49eaa9563cac0a87fd8f74d3e4df7f34360be71bf7a4a5be5a94d1330e15bd99"
+    },
+    {
+      "chapter": "02",
+      "id": "p047-f21",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p047-f21.svg",
+      "sha256": "fd390c6a62c527b6be0f774a10ef90eee583e37a753c7bc391a640046469e42c"
+    },
+    {
+      "chapter": "02",
+      "id": "p048-f22",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p048-f22.svg",
+      "sha256": "e8df89f3236b763aa252ca68e2945349eee98dafdc79dd1cb3c0ab24792511b3"
+    },
+    {
+      "chapter": "02",
+      "id": "p052-f23",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p052-f23-clean.svg",
+      "sha256": "953b46546883f9e6034c1bf174ee3452681ed844e2652acced7fd688a075a8b2"
+    },
+    {
+      "chapter": "02",
+      "id": "p052-f24",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p052-f24.svg",
+      "sha256": "af9ea00b76255f5fdb27cd4be427c89451b80513164c9c32d825bfd25e3d5b67"
+    },
+    {
+      "chapter": "02",
+      "id": "p053-f25",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p053-f25-clean.svg",
+      "sha256": "a56978c873728996307e2341525221cd90786092ff9936e532b85b06b6b28699"
+    },
+    {
+      "chapter": "02",
+      "id": "p053-f26",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p053-f26.svg",
+      "sha256": "258462243fc0f96a474f41bdc7d4419f9fe2e27fc35f0a15158495e3ebe43387"
+    },
+    {
+      "chapter": "02",
+      "id": "p054-f27",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p054-f27.svg",
+      "sha256": "9ffdbe72e6ffa0404fdb747f2d07252461e76ea88eee276d8529cb1d57ac67f7"
+    },
+    {
+      "chapter": "02",
+      "id": "p055-f28",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p055-f28.svg",
+      "sha256": "8f0bb6b873fbe1b36f4c052c1aed38f392c7c297960bc896e7f07cfff97465fe"
+    },
+    {
+      "chapter": "02",
+      "id": "p055-f29",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p055-f29.svg",
+      "sha256": "89cbbff16ee8cc0c876d4bc260dc92ebf7b4e15f7cea90d99796d112355e3ae0"
+    },
+    {
+      "chapter": "02",
+      "id": "p056-f30",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p056-f30.svg",
+      "sha256": "7e5251c4ba262a2706dbab82d7184a9e2376c4364cf08c80d7347fa024a48485"
+    },
+    {
+      "chapter": "02",
+      "id": "p057-f31",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p057-f31-canvas-fit.svg",
+      "sha256": "50c168d503190bc3fa85f16cd91a65d17837e560675bcfb22b8dcd99fe12b908"
+    },
+    {
+      "chapter": "02",
+      "id": "p061-f32",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p061-f32.svg",
+      "sha256": "daf7cacb2321f5bc3b4945eb05109eff7493351248b7aba736c768ac67a0e8dc"
+    },
+    {
+      "chapter": "02",
+      "id": "p062-f33",
+      "path": "docs\\textbook\\chapters\\02\\assets\\p062-f33.svg",
+      "sha256": "1de8ef666e0ff6d596de1749e23289d0299a561f85f48b6aafc78d7d33cd1f5a"
+    },
+    {
+      "chapter": "03",
+      "id": "p065-f01",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p065-f01.svg",
+      "sha256": "44e073259b1dc55a3ecd7847a2b296b15286fd077884a9d4d9b6ac28ebe19ce2"
+    },
+    {
+      "chapter": "03",
+      "id": "p066-f02",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p066-f02.svg",
+      "sha256": "9144fc324a82ab9776a1fda8c2045d9e2a6696976a877d4c6c4804e12827a7cf"
+    },
+    {
+      "chapter": "03",
+      "id": "p068-f03",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p068-f03.svg",
+      "sha256": "b5de9053158df7ad4a54244d6a464908322585b5e8f56d448a5b593bdd031025"
+    },
+    {
+      "chapter": "03",
+      "id": "p068-f04",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p068-f04.svg",
+      "sha256": "c3ffe7f58559f2c16a03a5f9d2d7978f97a71b758fdfe7821cfb81a8544fd963"
+    },
+    {
+      "chapter": "03",
+      "id": "p068-f05",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p068-f05.svg",
+      "sha256": "d1bab25d4351eeb37132496515c5178650fa4071779d951c3eca42a38fe99128"
+    },
+    {
+      "chapter": "03",
+      "id": "p070-f06",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p070-f06-versions-2025.svg",
+      "sha256": "018dc9633b605911d433252246c881b4909f6d6041a9852b2d60ca8b072008d8"
+    },
+    {
+      "chapter": "03",
+      "id": "p071-f07",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p071-f07.svg",
+      "sha256": "85ac921d83444800482bf97d62fd8e1ffeacf7037e81b397036eca6aa60b6791"
+    },
+    {
+      "chapter": "03",
+      "id": "p071-f08",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p071-f08-revised.svg",
+      "sha256": "07d65c29048377c5cfb8ecac0a736a8d50e257b10c01c20f583f77bc7f4d5683"
+    },
+    {
+      "chapter": "03",
+      "id": "p072-f09",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p072-f09.svg",
+      "sha256": "1fb667d6aa893d70d282a250d5e63b651f7774951eb33fdf5ecce9b37b1e299b"
+    },
+    {
+      "chapter": "03",
+      "id": "p072-f10",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p072-f10.svg",
+      "sha256": "82c5fb8dbce5034bd52e4a679a167c38833c9dcf41126b49731eb80ed3ea6d18"
+    },
+    {
+      "chapter": "03",
+      "id": "p073-f11",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p073-f11.svg",
+      "sha256": "4f64db5f014a2a82512d6b2452933b94f2642a10f57fb334e976273fc6d00474"
+    },
+    {
+      "chapter": "03",
+      "id": "p074-f12",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p074-f12.svg",
+      "sha256": "11f55b05f661397e1f94b89d794bb98cd2baa58fe1a8076659e007231d05707e"
+    },
+    {
+      "chapter": "03",
+      "id": "p077-f13",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p077-f13.svg",
+      "sha256": "505d42d0868e53eae7e9a4cde3faceba025fb2509cfd200d84d7d0f0f51e83d4"
+    },
+    {
+      "chapter": "03",
+      "id": "p078-f14",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p078-f14.svg",
+      "sha256": "e5b9e9e8268fd61f3863f14e964c0d3697babd1fc069e9f16e022c452a9d34a2"
+    },
+    {
+      "chapter": "03",
+      "id": "p079-f15",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p079-f15.svg",
+      "sha256": "1395721a2a165552cc20f5def689cdb10adb2afe7de0f27ab2427a08e272ce1b"
+    },
+    {
+      "chapter": "03",
+      "id": "revision-di-remote",
+      "path": "docs\\textbook\\chapters\\03\\assets\\revision-di-remote.png",
+      "sha256": "5eb730c40743a0968ad164f49c61fd00e4d2e76ecba57de2ce8f7bc23515e734"
+    },
+    {
+      "chapter": "03",
+      "id": "p081-f16",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p081-f16.svg",
+      "sha256": "87af980c74a83a4745a30da1c17c634d23fc2aebc2642abb83d1a1435033b052"
+    },
+    {
+      "chapter": "03",
+      "id": "p082-f17",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p082-f17.svg",
+      "sha256": "03752e9c4f4326d5a4a3c598b2b0557e0429074ee10d573880a6ef35c7527a95"
+    },
+    {
+      "chapter": "03",
+      "id": "p085-f18",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p085-f18.svg",
+      "sha256": "d5ebbcd9274f796bbda3a604a9fb80c3d517bafd27adb62b39aab886e3555048"
+    },
+    {
+      "chapter": "03",
+      "id": "p086-f19",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p086-f19.svg",
+      "sha256": "7d0747a078380f0fc2dba00fec3039809c98a099d55f7af87530a9edc32b11b6"
+    },
+    {
+      "chapter": "03",
+      "id": "p087-f20",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p087-f20.svg",
+      "sha256": "b0a1559c66e3aac804833d15ef042ff7e7657b1936ebcfafdf5215e38de02e16"
+    },
+    {
+      "chapter": "03",
+      "id": "p088-f21",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p088-f21.svg",
+      "sha256": "fd2e5c928d02ca3d8cdffa35074a6464fac800204a5e391610d08995c2a84689"
+    },
+    {
+      "chapter": "03",
+      "id": "p089-f22",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p089-f22.svg",
+      "sha256": "bdb72c65157d3dd0e2958d7d89fff44bb9a71608ad87171809d08e56300d4e8a"
+    },
+    {
+      "chapter": "03",
+      "id": "p090-f23",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p090-f23.svg",
+      "sha256": "4f89da286625468a121c09c22519b5bc7697c1918ce12e3067b37f17d484a2f3"
+    },
+    {
+      "chapter": "03",
+      "id": "p091-f24",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p091-f24.svg",
+      "sha256": "f066452ca85419fe284627e7d9c9f20b145bd0a2ec48fc2babc9870c2f3a9f1f"
+    },
+    {
+      "chapter": "03",
+      "id": "p092-f25",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p092-f25.svg",
+      "sha256": "c8f12831b78b036e742fd19e62a3de093635c45fdb53cbf9395930331ac68684"
+    },
+    {
+      "chapter": "03",
+      "id": "p093-f26",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p093-f26.svg",
+      "sha256": "c5cfe07b1b14be5fb48eff714ea04ec0a910e4ac2ecf718e6079e64523ae54b2"
+    },
+    {
+      "chapter": "03",
+      "id": "p093-f27",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p093-f27.svg",
+      "sha256": "2a9ac8935a9cb0177acddf66a2899c4c3bb5a25cd88e65b81bc885d9e600e6c0"
+    },
+    {
+      "chapter": "03",
+      "id": "p094-f28",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p094-f28.svg",
+      "sha256": "1287029168d45cd34c4d128ab361b08da6b3b46a26b7b22de91b72f49d20c39b"
+    },
+    {
+      "chapter": "03",
+      "id": "p094-f29",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p094-f29.svg",
+      "sha256": "de42fdcd83284d65ed0d3e74525d5f8b32d13a70962a472136cc7cbd256384a7"
+    },
+    {
+      "chapter": "03",
+      "id": "p095-f30",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p095-f30.svg",
+      "sha256": "d7b5f078c5af494dadbed2ae37361356701e55851e68146b0d372c5066dd8de0"
+    },
+    {
+      "chapter": "03",
+      "id": "p096-f31",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p096-f31.svg",
+      "sha256": "695d59808ebdf4771783201cbe259b4166236780b8ce75b79ed7457d56f68b3c"
+    },
+    {
+      "chapter": "03",
+      "id": "p098-f32",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p098-f32.svg",
+      "sha256": "bd09a5ea61e29a427e43856d7cebae3ce158bba67dd5f581abeaa31656ef785a"
+    },
+    {
+      "chapter": "03",
+      "id": "p098-f33",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p098-f33.svg",
+      "sha256": "054bd3fe818c4a9d2f5209827b5721b216973f5db8c65ff06498523802b4989e"
+    },
+    {
+      "chapter": "03",
+      "id": "p099-f34",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p099-f34.svg",
+      "sha256": "045230bf2e47fe94dd42b00a888aa2131ccce215943502b22fda1b05364c127a"
+    },
+    {
+      "chapter": "03",
+      "id": "p100-f35",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p100-f35.svg",
+      "sha256": "258715e73cdd659f28511e6c6d18053244422838fd53ca5f9b22e14e778493f7"
+    },
+    {
+      "chapter": "03",
+      "id": "p102-f36",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p102-f36.svg",
+      "sha256": "aecc546d949bad7f1a10bb536438003f2a5af1d593b870066fc510814d3dff63"
+    },
+    {
+      "chapter": "03",
+      "id": "p102-f37",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p102-f37.svg",
+      "sha256": "9ce72dc75e82b21bf760d12ed8e5c91dcedf4c298d6b253e1d59bf7a43f97dc7"
+    },
+    {
+      "chapter": "03",
+      "id": "p103-f38",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p103-f38-canvas-fit.svg",
+      "sha256": "6b78387c01bc2fd86462bea01a627a5782533efa9546f099054a7c93c0da644a"
+    },
+    {
+      "chapter": "03",
+      "id": "p105-f39",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p105-f39.svg",
+      "sha256": "030df3b96787cc386d61299a4e8fcfcc7141e416276e449073c99cbb276e88bd"
+    },
+    {
+      "chapter": "03",
+      "id": "p106-f40",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p106-f40.svg",
+      "sha256": "672b64fc4db97a9200dc2f84311040b6234a957b03b6b0811cfe357064543355"
+    },
+    {
+      "chapter": "03",
+      "id": "p107-f41",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p107-f41.svg",
+      "sha256": "8c9916d630850a2a9b34afaebe19f4b3fc52aff1ec34cd6d37a2fcdedfb273f4"
+    },
+    {
+      "chapter": "03",
+      "id": "p108-f42",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p108-f42-revised.svg",
+      "sha256": "08aa26f24362c7412b60d275bca54f00c76e59d5e09878e274c72e4e6e4d9745"
+    },
+    {
+      "chapter": "03",
+      "id": "p108-f43",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p108-f43.svg",
+      "sha256": "8dc1d8d16a14293eb339d647d7b73824ce153743cb0d336ee84920cf226da979"
+    },
+    {
+      "chapter": "03",
+      "id": "p109-f44",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p109-f44-revised.svg",
+      "sha256": "beb507dcde6a1e69b6a1a22d68e89ef0ac1ca3ed9e034c48cbb292dea0332d9a"
+    },
+    {
+      "chapter": "03",
+      "id": "p110-f45",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p110-f45.svg",
+      "sha256": "41985fc18a31816c060dd22fc4880d0c9ac6cf12a56dd5c73fc44773918116fd"
+    },
+    {
+      "chapter": "03",
+      "id": "p111-f46",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p111-f46.svg",
+      "sha256": "0dbf8d64bdef6fbdbbfcea8560029ab5cfb276e46d3aaa3b2f9ba4770ee60314"
+    },
+    {
+      "chapter": "03",
+      "id": "p112-f47",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p112-f47.svg",
+      "sha256": "ce16287ce48bf63236933c5b29fd83ff303eacec414f3a451600fc606dd1d7a1"
+    },
+    {
+      "chapter": "03",
+      "id": "p112-f48",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p112-f48.svg",
+      "sha256": "7a63fcc688c99fdc5dac08a044df0d96e861d2405d1322e5f57835ee5dc64d8f"
+    },
+    {
+      "chapter": "03",
+      "id": "p113-f49",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p113-f49.svg",
+      "sha256": "1933062e18851bfbc63cebb1272e3820fe07dd76ca3eaa89cbd2cc0007ccb750"
+    },
+    {
+      "chapter": "03",
+      "id": "p113-f50",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p113-f50.svg",
+      "sha256": "cec3bc7c6ecab1a27e26b434f04a2d338fb2e27c0117352d0f78b0090ca6992b"
+    },
+    {
+      "chapter": "03",
+      "id": "p114-f51",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p114-f51.svg",
+      "sha256": "3736f920a1fb1d918bed21cc250770e443f004d4aa91d6efda3b61738b8535fe"
+    },
+    {
+      "chapter": "03",
+      "id": "p115-f52",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p115-f52.svg",
+      "sha256": "861e0a78b9c838cea367e6ffda3c1a9eef9282879334f6d768e74ce3ea5504af"
+    },
+    {
+      "chapter": "03",
+      "id": "p116-f53",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p116-f53.svg",
+      "sha256": "a11e63926c8547ab0c509271c1543e752f13e469d35f55cddccb47e7b87388b0"
+    },
+    {
+      "chapter": "03",
+      "id": "p118-f54",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p118-f54.svg",
+      "sha256": "3cc203ec2c281b6e4100168e41f97710232e35a9ebceae6781fa64006d0451a9"
+    },
+    {
+      "chapter": "03",
+      "id": "p120-f55",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p120-f55.svg",
+      "sha256": "cd52bf96fb8edc35bcea85c49276dd7e4005f8622adae5373de13ee70ac030dc"
+    },
+    {
+      "chapter": "03",
+      "id": "p120-f56",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p120-f56.svg",
+      "sha256": "df962eadd305408ce08512f2c372dfc0b346eed1bd20f84452404d41f74ae0da"
+    },
+    {
+      "chapter": "03",
+      "id": "p120-f57",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p120-f57.svg",
+      "sha256": "1759d47635c81ff0392f5d5c1b9e8c49f7187ce1cbd35b03dcbfb3525e0a8481"
+    },
+    {
+      "chapter": "03",
+      "id": "p121-f58",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p121-f58.svg",
+      "sha256": "b5bd5848cc9feb0ed0c1ce7089a73259f42fe8d62ea5b106051a2afe2a4b7bac"
+    },
+    {
+      "chapter": "03",
+      "id": "p122-f59",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p122-f59.svg",
+      "sha256": "03c90df3c1ceb5063a602d2ea87f692242337ddcb9fd551a94c145850954df09"
+    },
+    {
+      "chapter": "03",
+      "id": "p123-f60",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p123-f60.svg",
+      "sha256": "9ba76f4162836aa80461770424c94ddd5c3055d6e16a639ca43df6b96318b97e"
+    },
+    {
+      "chapter": "03",
+      "id": "p124-f61",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p124-f61.svg",
+      "sha256": "ce8851ac0412984696d37c08ee30fffec59fe44c75a53d020b824d9e640329aa"
+    },
+    {
+      "chapter": "03",
+      "id": "p124-f62",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p124-f62.svg",
+      "sha256": "2e80d6443c128e35000702d7b38b15f706f599a6212c2f6dd22d30ddd5e11506"
+    },
+    {
+      "chapter": "03",
+      "id": "p124-f63",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p124-f63.svg",
+      "sha256": "c83077c6c0d3f946e04dca956cc4a78a0f87a8ae1a95055c78cdd36c3ac8848b"
+    },
+    {
+      "chapter": "03",
+      "id": "p125-f64",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p125-f64.svg",
+      "sha256": "7876b1f1413f34bb5523c704d55d88cf73225f3c0a7675acb5644aef1d93281f"
+    },
+    {
+      "chapter": "03",
+      "id": "p127-f65",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p127-f65.svg",
+      "sha256": "0dbe308e76edd2aa611ef260ec89bfd717f724e8dc7cc81b4534a7e398c34db8"
+    },
+    {
+      "chapter": "03",
+      "id": "p128-f66",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p128-f66.svg",
+      "sha256": "73b54dcea63b2b31daa266284e0ab513c8b6a5d2e61d457c7b4bdb96d8e753c7"
+    },
+    {
+      "chapter": "03",
+      "id": "p130-f67",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p130-f67.svg",
+      "sha256": "675d1d1037b0b37273b5c6fd3bce3b880b2535e69cc455e13aedca66e60b9231"
+    },
+    {
+      "chapter": "03",
+      "id": "p131-f68",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p131-f68.svg",
+      "sha256": "ae56fc5470fdd12cdd6829e3dd002b78913b498918ea591b5432c197c58bbfc7"
+    },
+    {
+      "chapter": "03",
+      "id": "p132-f69",
+      "path": "docs\\textbook\\chapters\\03\\assets\\p132-f69.svg",
+      "sha256": "e22e57091715d4f4129bc68c4ac938ad9ebbc6feccb418d6894f48ce58eb16d0"
+    },
+    {
+      "chapter": "04",
+      "id": "p135-f01",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p135-f01.svg",
+      "sha256": "43ce25e988815f3bac68d014bfa7d7e7312bacf51e030db839454c3f0733e6ca"
+    },
+    {
+      "chapter": "04",
+      "id": "p136-f02",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p136-f02-clean.svg",
+      "sha256": "d737b74fb06b4a56f4847d74284e8a6a33abd4db756466cd4f5db4a27938f403"
+    },
+    {
+      "chapter": "04",
+      "id": "p139-f03",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p139-f03.svg",
+      "sha256": "d6e149b05b2d965e39fb892e92b0ad12b508250afc24a17b4b7e69ce87f2a4e8"
+    },
+    {
+      "chapter": "04",
+      "id": "p141-f04",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p141-f04.svg",
+      "sha256": "a0ad936c30f4634938d6f433643f578a787728861c2a43901d3ed0655a89b705"
+    },
+    {
+      "chapter": "04",
+      "id": "p141-f05",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p141-f05.svg",
+      "sha256": "378bd50f3c632014f7feb451bf830b6db03b0d635ff4bae2d9439ea6a2f5477b"
+    },
+    {
+      "chapter": "04",
+      "id": "p141-f06",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p141-f06.svg",
+      "sha256": "5455ee8697865b14a4feeed38111b12a69943f141c362982ebf8814948d4d965"
+    },
+    {
+      "chapter": "04",
+      "id": "p142-f07",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p142-f07.svg",
+      "sha256": "8dad514f3caec747e2a735d4d338c7d1d62aa03b7381465fd27821a7f41f503c"
+    },
+    {
+      "chapter": "04",
+      "id": "p143-f08",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p143-f08.svg",
+      "sha256": "ddf34ffd84ec6ff4c4b45a5776cceae77f904064934a9d0130cf138b922bf47a"
+    },
+    {
+      "chapter": "04",
+      "id": "p146-f09",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p146-f09.svg",
+      "sha256": "cd9d1834ec1a410c6db7884154ed3418f2032aac6e18c97bdd22de0ec93b7214"
+    },
+    {
+      "chapter": "04",
+      "id": "p146-f10",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p146-f10.svg",
+      "sha256": "cc48c2c6bbedb5c2ed2ebd57fa7d6207d7d1914b33d82eb0607f1d2967dbcfcd"
+    },
+    {
+      "chapter": "04",
+      "id": "p146-f11",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p146-f11.svg",
+      "sha256": "9d055706e77484960bf4651f7c8b0e20be7435dd377074e9457bfcb8524175e4"
+    },
+    {
+      "chapter": "04",
+      "id": "p148-f12",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p148-f12.svg",
+      "sha256": "1f24d4305d375124a19a1a5f4e087308f8657f714cfe4c440b999ca049d745a0"
+    },
+    {
+      "chapter": "04",
+      "id": "p149-f13",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p149-f13.svg",
+      "sha256": "b93d8fd28f23fb0dc1a5ad73cc607bba7f42ef1bcaecd2ecf4c723fe7e860580"
+    },
+    {
+      "chapter": "04",
+      "id": "p153-f14",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p153-f14.svg",
+      "sha256": "a712ac261799cf9ecc48d445fb4b67e145798b9f32fbbf8e9934c06de061696a"
+    },
+    {
+      "chapter": "04",
+      "id": "p153-f15",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p153-f15.svg",
+      "sha256": "a8413b4784c9a467ff43b35dce4e5a06c9440a6bed34f72892a3d7f9298869b6"
+    },
+    {
+      "chapter": "04",
+      "id": "p154-f16",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p154-f16.svg",
+      "sha256": "7c086a73022431ea0415fea37f146ff3681b910e8c2122379cdac1c28402878f"
+    },
+    {
+      "chapter": "04",
+      "id": "p154-f17",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p154-f17.svg",
+      "sha256": "b012be5731ab828652626920ad67d577ae9cdd7b5f9f9a924bd2cdfd527b306c"
+    },
+    {
+      "chapter": "04",
+      "id": "p157-f18",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p157-f18.svg",
+      "sha256": "4c13876a461b11f70b3f148a6f81d65f3a03f1389626d2ba61f1adb0e28866f6"
+    },
+    {
+      "chapter": "04",
+      "id": "p159-f19",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p159-f19.svg",
+      "sha256": "85ba5378bceaecbc3d0fc9fcfe381b3a0f06fac1940685adf5dd1bc8771531e9"
+    },
+    {
+      "chapter": "04",
+      "id": "p159-f20",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p159-f20.svg",
+      "sha256": "d88aa17a52c2de083c306dfdf5ab1414af651ef3763aa8596b271516ed15e93f"
+    },
+    {
+      "chapter": "04",
+      "id": "p160-f21",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p160-f21.svg",
+      "sha256": "884ebf41c73c6b8d76225e1bf1db6bcc3da1d47b0047473d63a059bf17fa2ce8"
+    },
+    {
+      "chapter": "04",
+      "id": "p160-f22",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p160-f22.svg",
+      "sha256": "84604a4454b884fb6677fc266152e616291fceb2421f168985ad80c0554d1c22"
+    },
+    {
+      "chapter": "04",
+      "id": "p161-f24",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p161-f24.svg",
+      "sha256": "e4b1e9be59026faf0653ced9d2c49a3f15922e1cd621aee0ee9c9f7de1d1d771"
+    },
+    {
+      "chapter": "04",
+      "id": "p161-f23",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p161-f23.svg",
+      "sha256": "073541acbf8944b2c9fd30e25aba49f79ca419bd5911f1469ce6b2b68d273cd5"
+    },
+    {
+      "chapter": "04",
+      "id": "p162-f25",
+      "path": "docs\\textbook\\chapters\\04\\assets\\p162-f25.svg",
+      "sha256": "ac86002fc7a9b007b67c703f133024883a53162eed5ef4fa255bd3b8cb789da9"
+    },
+    {
+      "chapter": "05",
+      "id": "p166-f01",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p166-f01.svg",
+      "sha256": "603f037eae634b75427d257b848d524640619fb9d9ebbaad6a3a80e043df5f89"
+    },
+    {
+      "chapter": "05",
+      "id": "p167-f02",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p167-f02.svg",
+      "sha256": "168939f015985cc813748c8c4253f8bfa6c2606295a307a7193e90f3ef9bf52c"
+    },
+    {
+      "chapter": "05",
+      "id": "p170-f03",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p170-f03.svg",
+      "sha256": "456d0ecb86a2ebeb90e739ce18a1c9d05dfc8655d6383d250a49b7a3b26d7969"
+    },
+    {
+      "chapter": "05",
+      "id": "p171-f04",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p171-f04.svg",
+      "sha256": "91ffdacffefb3e1b9eb815783ffb51a31979c00c9d004d0f25baa1a15d4366dd"
+    },
+    {
+      "chapter": "05",
+      "id": "p171-f05",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p171-f05.svg",
+      "sha256": "d8164692d272f9ad29d6b55df85680409d9f4df71776ac2dfe0e0c0719585a37"
+    },
+    {
+      "chapter": "05",
+      "id": "p172-f06",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p172-f06.svg",
+      "sha256": "bb3b462b20de5a542206f1ad08c848f423b74aefbf00b703ae4e25d8c1fdaaa9"
+    },
+    {
+      "chapter": "05",
+      "id": "p173-f07",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p173-f07.svg",
+      "sha256": "a51925099ae398803c147e5db94bfcc48efa36593b79818800952f86c5610a1f"
+    },
+    {
+      "chapter": "05",
+      "id": "p174-f08",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p174-f08.svg",
+      "sha256": "ff672609e540db589b4acf956cbe8b870282deb502719bc6e7b6436ef0e96263"
+    },
+    {
+      "chapter": "05",
+      "id": "p175-f09",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p175-f09.svg",
+      "sha256": "6fde8dde231bded730575643bf6a51a75b6781c1a5ef8ddb2a52cbfca5428ea5"
+    },
+    {
+      "chapter": "05",
+      "id": "p178-f10",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p178-f10.svg",
+      "sha256": "ed15b503efd696754f458f7cd7f507ca6f0a79ddbf37b587753afe308cf7e04a"
+    },
+    {
+      "chapter": "05",
+      "id": "p178-f11",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p178-f11.svg",
+      "sha256": "cb233e222bf1b2745feaf072d7cc16148adb364d3a01748c4c4d1b40e4834f87"
+    },
+    {
+      "chapter": "05",
+      "id": "p180-f12",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p180-f12.svg",
+      "sha256": "27cea9ac4d0aebff95882c67680ad9555bf2d5daa6e594f4e6f9fbc5c7acaec3"
+    },
+    {
+      "chapter": "05",
+      "id": "p181-f13",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p181-f13.svg",
+      "sha256": "baa13591aff860248f6ba26d545fb8487280d176017c9d6b2877964ba3984c79"
+    },
+    {
+      "chapter": "05",
+      "id": "p182-f14",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p182-f14-revised.svg",
+      "sha256": "6628d23615371b48a3029b3e856a25236dcc4213b5598906b58934e3f49ac8c3"
+    },
+    {
+      "chapter": "05",
+      "id": "p182-f15",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p182-f15.svg",
+      "sha256": "0829e27068418e56e4abf6a73b9da573b089678c16f2bc0203cafa2c578fe226"
+    },
+    {
+      "chapter": "05",
+      "id": "p185-f16",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p185-f16.svg",
+      "sha256": "c24f190339c23dfcb7dc2e8b878d3407dc6b74a4066eb53fb29e1a9228965290"
+    },
+    {
+      "chapter": "05",
+      "id": "p186-f17",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p186-f17-revised.svg",
+      "sha256": "1d78efd997e7978dde69ac47f357f20812c84d182dd08a3fd421c793b7a830e5"
+    },
+    {
+      "chapter": "05",
+      "id": "p186-f18",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p186-f18-revised.svg",
+      "sha256": "d3ca0043eff4ab060e9353c3e2220cf71e692c4fc31da35354d038b123a63f20"
+    },
+    {
+      "chapter": "05",
+      "id": "p190-f19",
+      "path": "docs\\textbook\\chapters\\05\\assets\\p190-f19.svg",
+      "sha256": "5c31a43d9aa4592444077171e151fe2511d3ccae2681fdf3fe295b72e9f1967e"
+    },
+    {
+      "chapter": "06",
+      "id": "p194-f01",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p194-f01.svg",
+      "sha256": "214b2ffc7808743de5642898d5013de9e3a5c4e06f71fbfd4cdc080642770ed4"
+    },
+    {
+      "chapter": "06",
+      "id": "p195-f02",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p195-f02.svg",
+      "sha256": "1ccb4c0190a3a0482cff0e2a59ed40e8c235fa0253c9d9579b3230f375854adf"
+    },
+    {
+      "chapter": "06",
+      "id": "p198-f03",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p198-f03.svg",
+      "sha256": "8d384fa9b364219c5ff4acf2d0ee4ac76cd0cd343e9e7a38dc93ea272dffe633"
+    },
+    {
+      "chapter": "06",
+      "id": "p203-f04",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p203-f04.svg",
+      "sha256": "9e0dd5d37384a17ce0e5e7cfe861dd29e978f93029638f72764d4826de908019"
+    },
+    {
+      "chapter": "06",
+      "id": "p207-f05",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p207-f05.svg",
+      "sha256": "36e18a903eee172d336dd5d65356a72367bc00369cd7e3cf990ef4c544ca61ea"
+    },
+    {
+      "chapter": "06",
+      "id": "p208-f06",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p208-f06.svg",
+      "sha256": "8eb1671fd40790112e6518b8902ee3263519f3b6812085fd03dcce8b73cc3350"
+    },
+    {
+      "chapter": "06",
+      "id": "p212-f07",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p212-f07.svg",
+      "sha256": "85fb3da39f506eea9c00551fd287a595d72f8d4d912ed8ccc2516e291bc929fa"
+    },
+    {
+      "chapter": "06",
+      "id": "p212-f08",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p212-f08.svg",
+      "sha256": "090ee24d0d846866f0926a9788f4881fb3996540c0b54ac6a53691a734d98b71"
+    },
+    {
+      "chapter": "06",
+      "id": "p212-f09",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p212-f09.svg",
+      "sha256": "4c6e5b8bcb2a429754adeb0737bfd0838ff4798f848b0c156c561c24abdf748e"
+    },
+    {
+      "chapter": "06",
+      "id": "p213-f10",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p213-f10-clean.svg",
+      "sha256": "80cd68bb4525d69c6a0e43dea612076d8821ba4b7f576e0f0d070f06d8a3a18c"
+    },
+    {
+      "chapter": "06",
+      "id": "p214-f11",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p214-f11.svg",
+      "sha256": "d1d5579bfd6edcadfe80acab606a4c8ef87f0e0bbbb83ed2a3136e77c6b7c30c"
+    },
+    {
+      "chapter": "06",
+      "id": "p219-f12",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p219-f12-clean.svg",
+      "sha256": "b89405a971344c917284e4ca8c020ae1c24d7978dc9b76b70b3b15e6d3d56877"
+    },
+    {
+      "chapter": "06",
+      "id": "p221-f13",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p221-f13.svg",
+      "sha256": "252407185b6dd7a38774ee2b7b4a528fbf654e28dff66c835e7ec2a1c0532bf7"
+    },
+    {
+      "chapter": "06",
+      "id": "p221-f14",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p221-f14.svg",
+      "sha256": "1fb9c527ff4fb1ec0fe1dcc5eaea827effecea1ed44dfb068f01e3924b2ea397"
+    },
+    {
+      "chapter": "06",
+      "id": "p222-f15",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p222-f15.svg",
+      "sha256": "4bb134502d25ef9d32608651c774934b1effd46299294c17e2877e4abbbf1828"
+    },
+    {
+      "chapter": "06",
+      "id": "p225-f16",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p225-f16.svg",
+      "sha256": "c0293ceeefa749ac8cb81c9fdb199b6c4bc31a0591ca1a6dc7f913d608e78b9e"
+    },
+    {
+      "chapter": "06",
+      "id": "p231-f17",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p231-f17.svg",
+      "sha256": "43c950a8b6d48e36a4e222be81219fbda79587eb7e9b861b31ca9dfd5a178740"
+    },
+    {
+      "chapter": "06",
+      "id": "p231-f18",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p231-f18.svg",
+      "sha256": "4baa51c61d3a457cd4272a27f031c66c2d0c7c0336df5da14ee7669575abaecf"
+    },
+    {
+      "chapter": "06",
+      "id": "p236-f19",
+      "path": "docs\\textbook\\chapters\\06\\assets\\p236-f19.svg",
+      "sha256": "855c73c28b2246bffe31e85cf39e383c77fa31dad6446c68a058f0c6ea5705fd"
+    },
+    {
+      "chapter": "07",
+      "id": "p240-f01",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p240-f01.svg",
+      "sha256": "8d5fd916f08d528e09cfd551a404df847007b0ee34d784aa1f949f15f132cbe5"
+    },
+    {
+      "chapter": "07",
+      "id": "p241-f02",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p241-f02.svg",
+      "sha256": "9f6013f355c8aa5bffd2829fa715c14ed9e25cdbb980c996862fec251aee214f"
+    },
+    {
+      "chapter": "07",
+      "id": "p243-f03",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p243-f03.svg",
+      "sha256": "a35bc4e3fe0dade0f42b0c2a04051fd65a068bf8737bdc92a9c886fcc7acf9c3"
+    },
+    {
+      "chapter": "07",
+      "id": "p243-f04",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p243-f04.svg",
+      "sha256": "5a71a23db6940696f2d572157a13e244685e68b06174c43ae47f046d8c71a2de"
+    },
+    {
+      "chapter": "07",
+      "id": "p245-f05",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p245-f05-revised.svg",
+      "sha256": "dde00b83fcc667f777eafed1b4da7c891cfbbccd76f091e0ac08d9de8143db16"
+    },
+    {
+      "chapter": "07",
+      "id": "p247-f06",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p247-f06.svg",
+      "sha256": "a092aa8826d567f195a34e7bafffbf90fe234db4faaa0409dd68289422cda41c"
+    },
+    {
+      "chapter": "07",
+      "id": "p249-f07",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p249-f07.svg",
+      "sha256": "f91c8a494bfc9118668d1b455638546f78608d4c3ac7a4462a4044d54ef36419"
+    },
+    {
+      "chapter": "07",
+      "id": "p250-f08",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p250-f08.svg",
+      "sha256": "bfd67153433a8c3e11981ffd03ebc8f913c58700631fa80935df01bb0b3ecab5"
+    },
+    {
+      "chapter": "07",
+      "id": "p251-f09",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p251-f09.svg",
+      "sha256": "8fdebd7618aefdb783fa45e49c214cc1148c11184d013c8246acfc229201274f"
+    },
+    {
+      "chapter": "07",
+      "id": "p252-f10",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p252-f10.svg",
+      "sha256": "88effdb12580c1e45d17a7cc19fc24af0dd0e4ccdaf0a7a118378093f0eb94e0"
+    },
+    {
+      "chapter": "07",
+      "id": "p253-f11",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p253-f11.svg",
+      "sha256": "fc5ec0568a1cb80ec3ae86970f59478a7c48ff726c4ea7c4932a16083fa28db8"
+    },
+    {
+      "chapter": "07",
+      "id": "p254-f12",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p254-f12.svg",
+      "sha256": "caaee948f7d2149c8bb432d88b650d051568b71ef8fd751bc062784144c13da7"
+    },
+    {
+      "chapter": "07",
+      "id": "p255-f13",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p255-f13.svg",
+      "sha256": "d360e1956e4ae960f7e73a08e8cd09dee02076e608e1b6c10d3e00981c3852a4"
+    },
+    {
+      "chapter": "07",
+      "id": "p255-f14",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p255-f14.svg",
+      "sha256": "c3a5a0c00d2ad5f3f3cdb296ce0fc9a9248240563394b0750d6e688bc7b34943"
+    },
+    {
+      "chapter": "07",
+      "id": "p256-f15",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p256-f15.svg",
+      "sha256": "b0a61bc9d215b7a5e17e343a07f1920e96e60fc360d092d78f4f1c1527367469"
+    },
+    {
+      "chapter": "07",
+      "id": "p258-f16",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p258-f16-clean.svg",
+      "sha256": "ce5a09a56dc74b3616514b0792ed28b0ef4b9df03593acaf924472feb3f38bf8"
+    },
+    {
+      "chapter": "07",
+      "id": "p259-f17",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p259-f17.svg",
+      "sha256": "702be02b28f026496f6cbe27ef3a34d23dabc0613b350cc067fffb6112947648"
+    },
+    {
+      "chapter": "07",
+      "id": "p260-f18",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p260-f18.svg",
+      "sha256": "a807c0b95655073e6f00bac38b67195dbff9ee2f56c3e22a8c95d3a6e796fe98"
+    },
+    {
+      "chapter": "07",
+      "id": "p261-f19",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p261-f19.svg",
+      "sha256": "077e11570d3969bdeb58d32582c9a7b3924157e3de4955ed81618fcffced6540"
+    },
+    {
+      "chapter": "07",
+      "id": "p262-f20",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p262-f20.svg",
+      "sha256": "e45d168398ca277dfb42bc19aff2d1734e3850ccf22115e99dfd32c32053062c"
+    },
+    {
+      "chapter": "07",
+      "id": "p263-f21",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p263-f21.svg",
+      "sha256": "970294a062c852edc48fe48fda1fd23efe1006bdbab0ef474d84b4c000c55e9d"
+    },
+    {
+      "chapter": "07",
+      "id": "p265-f22",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p265-f22.svg",
+      "sha256": "078164be64c4cd9716794ce8d5a7d81686d33ee44923b46949b53ba998cfe554"
+    },
+    {
+      "chapter": "07",
+      "id": "p267-f23",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p267-f23.svg",
+      "sha256": "4b36adf01564ecb31ce4f9cdc02d369aa80a8752b907447b0c85a2689e1d547c"
+    },
+    {
+      "chapter": "07",
+      "id": "p268-f24",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p268-f24.svg",
+      "sha256": "53aa8716c3b4ff6dc052e377894d90820ac05b7212d6e1ea35a7d900d0d4da82"
+    },
+    {
+      "chapter": "07",
+      "id": "p269-f25",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p269-f25.svg",
+      "sha256": "5cb6d559208a2ba517e83d7f50aec3bd5b88ce5bbf7be230b39f0b936afe3a89"
+    },
+    {
+      "chapter": "07",
+      "id": "p271-f26",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p271-f26.svg",
+      "sha256": "e6d5dbc0f4a42924c7c0b878cb24ae83671916bef6353e607192c1e1729c1daa"
+    },
+    {
+      "chapter": "07",
+      "id": "p272-f27",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p272-f27.svg",
+      "sha256": "bdcbdb965d579f8b3a044aceaed737a4b85875f76034fe8bd91873699494fcce"
+    },
+    {
+      "chapter": "07",
+      "id": "p272-f28",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p272-f28.svg",
+      "sha256": "4b32a0224fde5372633bf1211f04f92ac17f3b90d40523ff5e0c458e6c627a6b"
+    },
+    {
+      "chapter": "07",
+      "id": "p274-f29",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p274-f29.svg",
+      "sha256": "f65f8ec25b711948c87271e06b28a8b2d41a3b2b816022a4c5b172a7fc3473b7"
+    },
+    {
+      "chapter": "07",
+      "id": "p275-f30",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p275-f30.svg",
+      "sha256": "b85fde0bb7845b1fd744af59741b651a8c236215bd8965bbc88f7596c8c43d29"
+    },
+    {
+      "chapter": "07",
+      "id": "p276-f31",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p276-f31.svg",
+      "sha256": "f4cce4b12ee839fea5a147c1d1690eaf75308ffaa1545e81feb969fb618de339"
+    },
+    {
+      "chapter": "07",
+      "id": "p277-f32",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p277-f32.svg",
+      "sha256": "cfacb8a01417f71b915f7f1d12a1f357e663c29ed3e9bce0745b6b7ebe6c56b7"
+    },
+    {
+      "chapter": "07",
+      "id": "p279-f33",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p279-f33.svg",
+      "sha256": "81d356a88102033025ecd21c6d75a8de567400644c9318bbf7fb9671ed33a23f"
+    },
+    {
+      "chapter": "07",
+      "id": "p280-f34",
+      "path": "docs\\textbook\\chapters\\07\\assets\\p280-f34.svg",
+      "sha256": "ab7367ebae9db430729c0742b3ba7bf2fd8f92495824c68ff41df194b3d10ae7"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p283-f01",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p283-f01.svg",
+      "sha256": "f10611e18f35f27ef0ee769cc2ec98b443f638f904349d688cb91222467d2365"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p283-f02",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p283-f02.svg",
+      "sha256": "f46f5566934b78cd3f8bb3259365bc776e73686c5ec4f2c4a8bf6719e7884170"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p283-f03",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p283-f03.svg",
+      "sha256": "6be5777ef44297bb54b566a7a117028cf247353ed31060378b28f6d020738fb1"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p284-f04",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p284-f04.svg",
+      "sha256": "7431d21bef66c1c2f715b45f73f1586749aff20abd21b3fdfa629ee14a19bfa3"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p284-f05",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p284-f05.svg",
+      "sha256": "244e813153a8042ba9a582077dced6b0615939550d5876da70c6737f37b0ba36"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p285-f06",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p285-f06.svg",
+      "sha256": "24ad6118d711866a834ca2bdfe7581c1554ce63c7d04a26c879ee8bbfe7c8dd6"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p285-f07",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p285-f07-example-year-2027.svg",
+      "sha256": "72baa76e15c834c91e0afc134f08a44ebdd914fe6a8ce53a0ac38d37838cd4b3"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p286-f08",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p286-f08.svg",
+      "sha256": "5f699941d08afbcedd861e0379e9e333b6720ee21f83ce043f8b53154c47b1de"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p287-f09",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p287-f09-versions-2025.svg",
+      "sha256": "c346b412ce7e144404a91f3ccbb771888f172611245c9709b2635705c48e68c3"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p287-f10",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p287-f10-versions-2025.svg",
+      "sha256": "2645813089831b29c46ae29f3aa3af624b0890d9952b5b0e2bc5e2f29e447cc0"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p288-f11",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p288-f11-versions-2025.svg",
+      "sha256": "30f063708c39b9943b90079cf070417a1bc6c95e6b2d15cd813f8e1c2c9b8586"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p288-f12",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p288-f12.svg",
+      "sha256": "36c6ae62c953f151ff60e3a8596607257d374e2754470f4112edc034fc835eda"
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p288-f13",
+      "path": "docs\\textbook\\chapters\\appendix-a\\assets\\p288-f13-versions-2025.svg",
+      "sha256": "9d1689615c753d764fcf408b84b0fe427b3f67f9cad143e0120b3b241d137856"
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p292-f01",
+      "path": "docs\\textbook\\chapters\\appendix-b\\assets\\p292-f01.svg",
+      "sha256": "7934ffc89f4c53c69c42106d71695f57faa4b0dc16e05d32b872eb6d21c99e55"
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p293-f02",
+      "path": "docs\\textbook\\chapters\\appendix-b\\assets\\p293-f02.svg",
+      "sha256": "ebb687636a1a30ded02132c780cb80d6f12dc2a42f64d668b49e4a5cf4f6d638"
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p293-f03",
+      "path": "docs\\textbook\\chapters\\appendix-b\\assets\\p293-f03.svg",
+      "sha256": "80646e84cebf7bb1c830d8e307e7e12005cd6b374e30714ec86ffbf6e2cda5a7"
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p293-f04",
+      "path": "docs\\textbook\\chapters\\appendix-b\\assets\\p293-f04.svg",
+      "sha256": "e6e68e09495969bac1319253e1c0f8a1e02eacc0232b25f0e71b2ab2fd9613c2"
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p294-f05",
+      "path": "docs\\textbook\\chapters\\appendix-b\\assets\\p294-f05.svg",
+      "sha256": "895645faf49ecd066c77ffd22cb7c1c32f27afb41a4e37fbdf2de6f44559abbe"
+    },
+    {
+      "chapter": "ex02",
+      "id": "p013-f01",
+      "path": "docs\\textbook\\chapters\\ex02\\assets\\p013-f01.svg",
+      "sha256": "75c98e86483de2b619733504180f923612d70126af876b304a6543c0f1498a37"
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-f02",
+      "path": "docs\\textbook\\chapters\\ex02\\assets\\p015-f02.svg",
+      "sha256": "5d296c9585705cc50a6d8919f5d0cc9a2f2dac11008bdc3ad505e6cae071cfc4"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p021-f01",
+      "path": "docs\\textbook\\chapters\\ex03\\assets\\p021-f01.svg",
+      "sha256": "4328d81f919b8be995a2760c77979dd320401180d0cd62a2c74af819e7dd35aa"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p023-f02",
+      "path": "docs\\textbook\\chapters\\ex03\\assets\\p023-f02.svg",
+      "sha256": "ccabb41b3203a5820bf92701be390fe40df1f9b3f1a1087b7af836fe0d5af780"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p024-f03",
+      "path": "docs\\textbook\\chapters\\ex03\\assets\\p024-f03.svg",
+      "sha256": "53cecbee77c440a94c756ca45f27ed1862cd4c68810e67bf5f6df0f3d1291f0b"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p026-f04",
+      "path": "docs\\textbook\\chapters\\ex03\\assets\\p026-f04.svg",
+      "sha256": "907528db7600f48be839d10b3c3eac14823f85d4770163a7aedb51ae2377d5fa"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p026-f05",
+      "path": "docs\\textbook\\chapters\\ex03\\assets\\p026-f05.svg",
+      "sha256": "c6de498b9a92c7e96567275356a5e9307940c30725cc90bb7d89a659bada631a"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p028-f06",
+      "path": "docs\\textbook\\chapters\\ex03\\assets\\p028-f06.svg",
+      "sha256": "2d02c962b2175a0a8c3f5946f2c6ef3a827981012124ccbd4c0f2c65c7f73114"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-f01",
+      "path": "docs\\textbook\\chapters\\ex04\\assets\\p031-f01.svg",
+      "sha256": "c87e8a15ff848b2ed9f5f4597f9aa0194a2e16abbcb05642d70b10415fbddcd3"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p033-f02",
+      "path": "docs\\textbook\\chapters\\ex04\\assets\\p033-f02.svg",
+      "sha256": "0f367379e71533bf2d80d8a926510315e370f740ba06a09c9533a4a73469f250"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p034-f03",
+      "path": "docs\\textbook\\chapters\\ex04\\assets\\p034-f03.svg",
+      "sha256": "5bfd73948c568d365c5d950d79109fb3c1bd917821c8b7a895447e3d5c2f3a73"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p034-f04",
+      "path": "docs\\textbook\\chapters\\ex04\\assets\\p034-f04.svg",
+      "sha256": "1aa0034bb740b76b832042fc7f5c38e3fe094f1063a5d5bf69df579fe03c8a90"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p036-f05",
+      "path": "docs\\textbook\\chapters\\ex04\\assets\\p036-f05.svg",
+      "sha256": "42b63c56e53a554628b6c001cdd941d12a496bc6adc7fc8886504f5f74d5f5b7"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p039-f01",
+      "path": "docs\\textbook\\chapters\\ex05\\assets\\p039-f01.svg",
+      "sha256": "1e3048f8a558c882bd0e09e6c031ff77cc0dc03628b274bcb5320acaefbba090"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p039-f02",
+      "path": "docs\\textbook\\chapters\\ex05\\assets\\p039-f02.svg",
+      "sha256": "9a421ce56557bbd9a22054c826633aca6f127bc78143ad177b30836e33e77a74"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p040-f03",
+      "path": "docs\\textbook\\chapters\\ex05\\assets\\p040-f03.svg",
+      "sha256": "b21bd8d0c1772ff638ad286f1bc41dd07812abd1d00911e611c8fd2275205bdf"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p041-f04",
+      "path": "docs\\textbook\\chapters\\ex05\\assets\\p041-f04-revised.svg",
+      "sha256": "22a7b7a33456a1073df905cf09f1cbf397eea8a165091327d8e7d0821c559483"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p041-f05",
+      "path": "docs\\textbook\\chapters\\ex05\\assets\\p041-f05-revised.svg",
+      "sha256": "9b9bc22ef03ccb2ef857575b4ad729eeaa368e2c216cc2609f924014eedbf5d3"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p044-f06",
+      "path": "docs\\textbook\\chapters\\ex05\\assets\\p044-f06.svg",
+      "sha256": "a80a7bd9a7b6d18438e543a014fd1b2c44140b7adba84dfcf5cfe5c95ae606bf"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p044-f07",
+      "path": "docs\\textbook\\chapters\\ex05\\assets\\p044-f07.svg",
+      "sha256": "4df915459d15e86a16a0fbdddc23ebf22a47997ff22c3c8635a20311dcd486dc"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p045-f08",
+      "path": "docs\\textbook\\chapters\\ex05\\assets\\p045-f08.svg",
+      "sha256": "46901e14dba205f00edb3d6dbdb83bdbfe00d7ea78708cd36b7a9bcf01970acb"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p045-f09",
+      "path": "docs\\textbook\\chapters\\ex05\\assets\\p045-f09.svg",
+      "sha256": "bbb9ed114253a092d5dadb8733d7b83749495ee2c8b25baa1098a6507c0b3b8e"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p053-f01",
+      "path": "docs\\textbook\\chapters\\ex06\\assets\\p053-f01.svg",
+      "sha256": "72f875359136e655e0064f681a3ca6064f1151236dc7517291f6bffa825cfefa"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p055-f02",
+      "path": "docs\\textbook\\chapters\\ex06\\assets\\p055-f02.svg",
+      "sha256": "1dea5857b98fa254fb523293104aeee4347cc02c8e8036fcf4cba6405ac23563"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p057-f03",
+      "path": "docs\\textbook\\chapters\\ex06\\assets\\p057-f03.svg",
+      "sha256": "8cafca40116fa4c345484381d32057b95eadd5a82a9b6f5854781d46c6a9e575"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p060-f04",
+      "path": "docs\\textbook\\chapters\\ex06\\assets\\p060-f04.svg",
+      "sha256": "dee6cff41cf92cac4874567e9e0ed1d5987fcb528f3e0a6d429c236a62637af0"
+    },
+    {
+      "chapter": "ex07",
+      "id": "p066-f01",
+      "path": "docs\\textbook\\chapters\\ex07\\assets\\p066-f01.svg",
+      "sha256": "030c553608389a2df163e1419bf231a986b175541b6d7e12283f3c3491cb19da"
+    },
+    {
+      "chapter": "ex07",
+      "id": "p067-f02",
+      "path": "docs\\textbook\\chapters\\ex07\\assets\\p067-f02.svg",
+      "sha256": "68c5cca91ed8a94fc34671bbbf140b99f480becae368deb1105f12c8bdc6ff49"
+    },
+    {
+      "chapter": "ex07",
+      "id": "p068-f03",
+      "path": "docs\\textbook\\chapters\\ex07\\assets\\p068-f03.svg",
+      "sha256": "72176c9674f5fac3279d09e37ac33fcf4ce3b6a14be4cc860da21319fa32f761"
+    },
+    {
+      "chapter": "ex07",
+      "id": "p070-f04",
+      "path": "docs\\textbook\\chapters\\ex07\\assets\\p070-f04.svg",
+      "sha256": "88fcf606b704b08981502798af9837625e64e0081902d3acc85d51332924477c"
+    },
+    {
+      "chapter": "ex07",
+      "id": "p072-f05",
+      "path": "docs\\textbook\\chapters\\ex07\\assets\\p072-f05.svg",
+      "sha256": "a54a976425dd4a53efa3aae828673102e1ee5d7c23f2ac7a77432b71971def2a"
+    },
+    {
+      "chapter": "ex07",
+      "id": "p074-f06",
+      "path": "docs\\textbook\\chapters\\ex07\\assets\\p074-f06.svg",
+      "sha256": "4ded66a28f0c57f941fcbfa0a7679fda1d5f524f8e0960d08fd4edea69a56fcf"
+    },
+    {
+      "chapter": "front",
+      "id": "p009-f01",
+      "path": "docs\\textbook\\chapters\\front\\assets\\p009-f01.svg",
+      "sha256": "86b1a6e82f5ab206336e079f38ba4767f91017770d3bafe06a94327b892d81ae"
+    },
+    {
+      "chapter": "front",
+      "id": "p010-f02",
+      "path": "docs\\textbook\\chapters\\front\\assets\\p010-f02.svg",
+      "sha256": "7050b2ad304690b81a363e86320d88f554cb91f47cfcfdd0dadcb1208185035e"
+    },
+    {
+      "chapter": "front",
+      "id": "p011-f03",
+      "path": "docs\\textbook\\chapters\\front\\assets\\p011-f03.svg",
+      "sha256": "ea203475ffdb635246abee70a7e28dd7d68b3c009c87e75638e158cb769072e3"
+    }
+  ],
+  "page_mapping": {
+    "current_pdf_pages": 305,
+    "reported_current116_source_page": 113,
+    "current116_main_code_id": "p113-b07",
+    "current116_direct_visual": "current116-wave-zoom.png",
+    "current116_observation": "Product product周辺に橙色/赤色校正波線は現305p版から再現しない。矢印SVGには元文字の断片が残るがrootのカード化で図を重ねない。",
+    "reported_old128_current_physical_page": 132,
+    "old128_code_id": "p128-b06",
+    "old128_comment": "//@Autowired は不要",
+    "old128_before": "source128-current132-before.png"
+  },
+  "wave_audit": {
+    "orange_figures_rendered": 267,
+    "orange_candidates_reviewed": 210,
+    "orange_manual_additional_figure": "03/revision-di-remote",
+    "red_figures_rendered": 268,
+    "red_active_candidates_reviewed": 35,
+    "known_wave_positive_control_detected": true,
+    "positive_control_original_svg": "docs/textbook/chapters/03/assets/p109-f44.svg",
+    "positive_control_wave_crop": "p109-f44-wave-proof.png",
+    "existing_revised_wave_crop": "p109-f44-revised-wave-proof.png",
+    "new_active_wave_findings": [],
+    "new_wave_removals": 0,
+    "visual_result": "橙細帯210件、赤系35件をすべて画像で確認。正規罫線、意図した下線、赤文字、ボタン、ロゴの輪郭、表示のアンチエイリアスであり、新たな校正波線はなし。既存p109除去済み箇所はpの下端も保全。"
+  },
+  "comment_corrections": [
+    {
+      "chapter": "02",
+      "id": "p053-f25",
+      "source": "docs\\textbook\\chapters\\02\\assets\\p053-f25.svg",
+      "clean": "docs\\textbook\\chapters\\02\\assets\\p053-f25-clean.svg",
+      "old_comment_color": "#00b050",
+      "new_comment_color": "#008000",
+      "glyph_fills_changed": 23,
+      "source_sha256": "f9341b0410b1d5c9f5b58a801f5747427c5543bf07a64eb22162c746bc174120",
+      "clean_sha256": "a56978c873728996307e2341525221cd90786092ff9936e532b85b06b6b28699"
+    },
+    {
+      "chapter": "04",
+      "id": "p136-f02",
+      "source": "docs\\textbook\\chapters\\04\\assets\\p136-f02.svg",
+      "clean": "docs\\textbook\\chapters\\04\\assets\\p136-f02-clean.svg",
+      "old_comment_color": "#3f7f5f",
+      "new_comment_color": "#008000",
+      "glyph_fills_changed": 45,
+      "source_sha256": "0239afa5b392f18b656f5a2686f7d1af0d3397ceeec14ab1bb531b3f2ad210cc",
+      "clean_sha256": "d737b74fb06b4a56f4847d74284e8a6a33abd4db756466cd4f5db4a27938f403"
+    },
+    {
+      "chapter": "06",
+      "id": "p213-f10",
+      "source": "docs\\textbook\\chapters\\06\\assets\\p213-f10.svg",
+      "clean": "docs\\textbook\\chapters\\06\\assets\\p213-f10-clean.svg",
+      "old_comment_color": "#3f7f5f",
+      "new_comment_color": "#008000",
+      "glyph_fills_changed": 22,
+      "source_sha256": "c37bf7b1bcd26bb2cd57ae4c860ce9c8029ed32e4d41068222dc9c76a83687b2",
+      "clean_sha256": "80cd68bb4525d69c6a0e43dea612076d8821ba4b7f576e0f0d070f06d8a3a18c"
+    },
+    {
+      "chapter": "02",
+      "id": "p052-f23",
+      "source": "docs\\textbook\\chapters\\02\\assets\\p052-f23.svg",
+      "clean": "docs\\textbook\\chapters\\02\\assets\\p052-f23-clean.svg",
+      "image_id": "image_21",
+      "comment_pixels_corrected": 8242,
+      "overlay_path_colors": 5254,
+      "embedded_image_unchanged": true,
+      "source_sha256": "02e1d41c8b5b00f012d1bb29aa0ea442e7e5d12ac8b5cda47121fd602916dbc5",
+      "clean_sha256": "953b46546883f9e6034c1bf174ee3452681ed844e2652acced7fd688a075a8b2"
+    },
+    {
+      "chapter": "06",
+      "id": "p219-f12",
+      "source": "docs\\textbook\\chapters\\06\\assets\\p219-f12.svg",
+      "clean": "docs\\textbook\\chapters\\06\\assets\\p219-f12-clean.svg",
+      "image_id": "image_135",
+      "comment_pixels_corrected": 632,
+      "overlay_path_colors": 29,
+      "embedded_image_unchanged": true,
+      "source_sha256": "3efc4b527c01c79bfcdc07e10d6663a24157a2d05af5fccb0785d1f7bd2adbf3",
+      "clean_sha256": "b89405a971344c917284e4ca8c020ae1c24d7978dc9b76b70b3b15e6d3d56877"
+    },
+    {
+      "chapter": "07",
+      "id": "p258-f16",
+      "source": "docs\\textbook\\chapters\\07\\assets\\p258-f16.svg",
+      "clean": "docs\\textbook\\chapters\\07\\assets\\p258-f16-clean.svg",
+      "image_id": "image_67",
+      "comment_pixels_corrected": 4076,
+      "overlay_path_colors": 212,
+      "embedded_image_unchanged": true,
+      "source_sha256": "dd8a8b99a457db908c4270ee011c984381115721cdffa94daae78c6e38278f8c",
+      "clean_sha256": "ce5a09a56dc74b3616514b0792ed28b0ef4b9df03593acaf924472feb3f38bf8"
+    }
+  ],
+  "comment_geometry_checks": [
+    {
+      "chapter": "02",
+      "id": "p053-f25",
+      "canvas_unchanged": true,
+      "all_original_elements_preserved": true,
+      "original_images_unchanged": true,
+      "allowed_native_fill_changes": 23
+    },
+    {
+      "chapter": "04",
+      "id": "p136-f02",
+      "canvas_unchanged": true,
+      "all_original_elements_preserved": true,
+      "original_images_unchanged": true,
+      "allowed_native_fill_changes": 45
+    },
+    {
+      "chapter": "06",
+      "id": "p213-f10",
+      "canvas_unchanged": true,
+      "all_original_elements_preserved": true,
+      "original_images_unchanged": true,
+      "allowed_native_fill_changes": 22
+    },
+    {
+      "chapter": "02",
+      "id": "p052-f23",
+      "canvas_unchanged": true,
+      "all_original_elements_preserved": true,
+      "original_images_unchanged": true,
+      "allowed_native_fill_changes": 0
+    },
+    {
+      "chapter": "06",
+      "id": "p219-f12",
+      "canvas_unchanged": true,
+      "all_original_elements_preserved": true,
+      "original_images_unchanged": true,
+      "allowed_native_fill_changes": 0
+    },
+    {
+      "chapter": "07",
+      "id": "p258-f16",
+      "canvas_unchanged": true,
+      "all_original_elements_preserved": true,
+      "original_images_unchanged": true,
+      "allowed_native_fill_changes": 0
+    }
+  ],
+  "comment_reference_color": "#008000",
+  "antialiasing_policy": "既存字形/位置/埋込画像を保持。画像内コメントは元の文字被覆率から指定色と背景の中間色を再計算したSVGパスで局所補正。非コメントの緑色UI/アイコン/コード省略表現/Bootstrapの色例は変更しない。",
+  "filename_labels": [
+    {
+      "chapter": "03",
+      "code_id": "p071-b03",
+      "figure_id": "p071-f07",
+      "text": "application.properties"
+    },
+    {
+      "chapter": "03",
+      "code_id": "p113-b04",
+      "figure_id": "p113-f49",
+      "text": "pom.xml"
+    },
+    {
+      "chapter": "04",
+      "code_id": "p149-b05",
+      "figure_id": "p149-f13",
+      "text": "pom.xml"
+    },
+    {
+      "chapter": "04",
+      "code_id": "p161-b02",
+      "figure_id": "p161-f24",
+      "text": "/resources/messages.properties"
+    },
+    {
+      "chapter": "05",
+      "code_id": "p182-b04",
+      "figure_id": "p182-f15",
+      "text": "pom.xml"
+    }
+  ],
+  "filename_label_evidence": "small-figures-1.pngを拡大目視して転記。code本文のXML/properties内容と対応を確認。画像中文字を補作・推測していない。既存のnative caption_idsのラベルは重複登録しない。",
+  "filename_labels_validation": true,
+  "protected_sources": "source-layout.json/baseline.mdのgit差分なし。元SVG6件のSHA256一致、元画像バイナリと全元SVG要素も保持。共通build.py/book.typは編集していない。",
+  "final_pdf_qa": "rootが新HTMLコードカードを含む全体PDFを再生成して最終確認する。今回の修正図6件はSVGをPNGへ描画して前後目視済み。",
+  "typst_svg_render_checks": {
+    "passed": 6,
+    "png_files": [
+      "02-p053-f25-typst-after.png",
+      "04-p136-f02-typst-after.png",
+      "06-p213-f10-typst-after.png",
+      "02-p052-f23-typst-after.png",
+      "06-p219-f12-typst-after.png",
+      "07-p258-f16-typst-after.png"
+    ],
+    "visual_result": "実際の組版と同じTypst SVGエンジンでも6図をPNG生成。画像内コメント3図も目視し、緑色・文字下端・枠・正当な配色が保持されることを確認。"
+  }
+}

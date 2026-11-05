@@ -1142,7 +1142,7 @@ crossorigin="anonymous">
 
 :::
 
-![操作画面・図解](assets/p258-f16.svg){#p258-f16}
+![操作画面・図解](assets/p258-f16-clean.svg){#p258-f16}
 
 :::
 

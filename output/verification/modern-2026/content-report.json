@@ -1,0 +1,272 @@
+{
+  "generated_utc": "2026-11-05T07:39:23.843354+00:00",
+  "chapters": {
+    "04": {
+      "added_ids": [
+        "revision-messages-bundles",
+        "revision-messages-controller",
+        "revision-messages-en",
+        "revision-messages-fallback",
+        "revision-messages-files",
+        "revision-messages-html",
+        "revision-messages-ja",
+        "revision-messages-java",
+        "revision-messages-locale",
+        "revision-messages-purpose",
+        "revision-messages-settings",
+        "revision-messages-settings-note",
+        "revision-messages-thymeleaf",
+        "revision-messages-title"
+      ],
+      "existing_text_changes": [
+        {
+          "id": "p150-b06",
+          "before": "・10 行目 @NotNull：",
+          "after": "・11 行目 @NotNull："
+        }
+      ],
+      "authorized_parallel_figure_changes": [
+        {
+          "id": "p136-f02",
+          "before": "assets/p136-f02.svg",
+          "after": "assets/p136-f02-clean.svg"
+        }
+      ],
+      "checks": {
+        "only_authorized_existing_text_changed": true,
+        "existing_ids_preserved": true,
+        "added_ids_have_authorized_prefix": true,
+        "figure_ids_preserved": true,
+        "figure_references_preserved_except_authorized_parallel_clean_svg": true,
+        "existing_source_order_preserved": true,
+        "baseline_and_source_layout_preserved": true
+      },
+      "stable_files": {
+        "baseline.md": true,
+        "source-layout.json": true
+      },
+      "chapter_sha256": "a5e3a7e152e45351eee7a6505e1b5864cb6baba64760a6c06e9ca7defcb8f47e"
+    },
+    "appendix-b": {
+      "added_ids": [
+        "revision-errors-console",
+        "revision-errors-name",
+        "revision-errors-sql",
+        "revision-errors-status",
+        "revision-errors-template",
+        "revision-errors-title",
+        "revision-errors-trace",
+        "revision-errors-trace-intro",
+        "revision-errors-trace-read"
+      ],
+      "existing_text_changes": [
+        {
+          "id": "p291-b06",
+          "before": "5. Controller のクラスファイルを一回以上実行していますか？Eclipse で実行をしないと、そ\nもそもクラスファイルがコンパイルされませんので、Java が認識できず、404 エラーになりま\nす。",
+          "after": "5. 修正したファイルを保存し、ビルドが正常に完了していますか？Pleiades のコンソールでアプリケーションの起動完了を確認し、正しいポート番号へアクセスしてください。"
+        },
+        {
+          "id": "p291-b08",
+          "before": "7. テンプレートファイルの拡張子は正しいですか？\nThymeleaf テンプレートのファイル名は.html で終わる必要があります。間違った拡張子を\n使用していると、Spring Boot がテンプレートを認識できずに404 エラーが発生します。",
+          "after": "7. テンプレートファイルの拡張子は正しいですか？\nThymeleaf テンプレートのファイル名は.html で終わる必要があります。間違った拡張子を\n使用していると、テンプレートが見つからず、通常500 エラーになります。"
+        },
+        {
+          "id": "p291-b07",
+          "before": "6. テンプレートファイルの配置は正しいですか？\nThymeleaf テンプレートファイルは、通常src/main/resources/templates ディレクトリに配\n置されるべきです。誤ったディレクトリにファイルがあると、Spring Boot はテンプレートを見\nつけることができず、404 エラーを引き起こします。",
+          "after": "6. テンプレートファイルの配置は正しいですか？\nThymeleaf テンプレートファイルは、通常src/main/resources/templates ディレクトリに配\n置します。Controller が返した名前のテンプレートが見つからない場合は、通常500 エラーになります。404 と区別して確認してください。"
+        }
+      ],
+      "authorized_parallel_figure_changes": [],
+      "checks": {
+        "only_authorized_existing_text_changed": true,
+        "existing_ids_preserved": true,
+        "added_ids_have_authorized_prefix": true,
+        "figure_ids_preserved": true,
+        "figure_references_preserved_except_authorized_parallel_clean_svg": true,
+        "existing_source_order_preserved": true,
+        "baseline_and_source_layout_preserved": true
+      },
+      "stable_files": {
+        "baseline.md": true,
+        "source-layout.json": true
+      },
+      "chapter_sha256": "dfbffbc67f893f77733a7e25708c7aaddb4fa492b7648b49e40157707bfeac70"
+    }
+  },
+  "scope": "04メッセージ参考欄・p150-b06の数字、付録B page291のエラー解説のみ",
+  "runtime": {
+    "status": "pass",
+    "checks": [
+      {
+        "check": "MessageSource/Locale",
+        "locale": "ja",
+        "status": 200,
+        "body": "ログイン"
+      },
+      {
+        "check": "Thymeleaf/key fallback",
+        "locale": "ja",
+        "status": 200
+      },
+      {
+        "check": "MessageSource/Locale",
+        "locale": "en",
+        "status": 200,
+        "body": "Log in"
+      },
+      {
+        "check": "Thymeleaf/key fallback",
+        "locale": "en",
+        "status": 200
+      },
+      {
+        "check": "MessageSource/Locale",
+        "locale": "ko",
+        "status": 200,
+        "body": "로그인"
+      },
+      {
+        "check": "Thymeleaf/key fallback",
+        "locale": "ko",
+        "status": 200
+      },
+      {
+        "check": "MessageSource/Locale",
+        "locale": "fr",
+        "status": 200,
+        "body": "ログイン"
+      },
+      {
+        "check": "Thymeleaf/key fallback",
+        "locale": "fr",
+        "status": 200
+      },
+      {
+        "check": "error distinction",
+        "path": "/unknown",
+        "method": "GET",
+        "status": 404
+      },
+      {
+        "check": "error distinction",
+        "path": "/message",
+        "method": "POST",
+        "status": 405
+      },
+      {
+        "check": "error distinction",
+        "path": "/missing-template",
+        "method": "GET",
+        "status": 500
+      },
+      {
+        "check": "error distinction",
+        "path": "/sql-example",
+        "method": "GET",
+        "status": 500
+      },
+      {
+        "check": "console exception chain",
+        "status": "pass"
+      }
+    ],
+    "java_home": "D:\\work\\Spring Boot 入門\\tmp\\migration\\runtime\\jdk-21.0.13+9",
+    "boot_version": "4.0.2",
+    "library_source": "projects\\spring_answer\\spring_answer_2\\target\\spring_answer_2-0.0.1-SNAPSHOT.jar",
+    "source_jar_sha256": "f1567a9cf4568df0137f4c3f566a64991cde59700cf50df8019ec051b69575b1",
+    "note": "配布プロジェクト未編集。SQL例は例外を意図的に作った読み方の検証で、実DBの障害ログではない。",
+    "java_stopped": true
+  },
+  "notnull_line_evidence": {
+    "code_id": "p150-b03",
+    "line_10": "10:",
+    "line_11": "11: @NotNull(message = \"社員番号を入力してください\")",
+    "label": "・11 行目 @NotNull：",
+    "correct": true
+  },
+  "sources": [
+    {
+      "title": "Spring Boot 4.0.2 MessageSourceProperties",
+      "url": "https://github.com/spring-projects/spring-boot/blob/v4.0.2/core/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/context/MessageSourceProperties.java",
+      "supports": "basename=messages、encoding=UTF-8、既定のシステムLocale fallbackとfalse指定の意味。"
+    },
+    {
+      "title": "Spring Boot 4.0.2 MessageSourceAutoConfiguration",
+      "url": "https://github.com/spring-projects/spring-boot/blob/v4.0.2/core/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/context/MessageSourceAutoConfiguration.java",
+      "supports": "標準messages.propertiesの存在による自動設定、ResourceBundleMessageSourceへの設定適用。"
+    },
+    {
+      "title": "Spring Boot 4.0 Internationalization",
+      "url": "https://docs.spring.io/spring-boot/4.0/reference/features/internationalization.html",
+      "supports": "言語別ファイルのみでは自動設定されず標準ファイルが必要。表示時点の4.0系最新版のため、固定版仕様は上記v4.0.2ソースで照合。"
+    },
+    {
+      "title": "Java SE 21 Locale",
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Locale.html",
+      "supports": "言語コードja/enとLocaleの役割。韓国語Locale.KOREANはko。"
+    },
+    {
+      "title": "Thymeleaf 3.1 / Spring integration",
+      "url": "https://www.thymeleaf.org/doc/tutorials/3.1/thymeleafspring.html#listing-seed-starter-data",
+      "supports": "Spring MessageSourceを使った#{key}による文言取得。"
+    },
+    {
+      "title": "Spring Framework MessageSource API",
+      "url": "https://docs.spring.io/spring-framework/docs/7.0.3/javadoc-api/org/springframework/context/MessageSource.html",
+      "supports": "getMessage(code,args,locale)の引数。"
+    },
+    {
+      "title": "Spring Boot 4.0.2 WebProperties / WebMvcAutoConfiguration",
+      "url": "https://github.com/spring-projects/spring-boot/blob/v4.0.2/core/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/WebProperties.java",
+      "supports": "Locale解決の既定はaccept-header。WebMvcAutoConfigurationでもAcceptHeaderLocaleResolverを生成することを確認。"
+    },
+    {
+      "title": "Spring MVC method arguments",
+      "url": "https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/arguments.html",
+      "supports": "ControllerのLocale引数は現在のリクエストLocale。"
+    },
+    {
+      "title": "Java SE 21 Throwable",
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Throwable.html#printStackTrace()",
+      "supports": "例外名・メッセージ・at行・Caused byの原因連鎖の形式。"
+    },
+    {
+      "title": "Thymeleaf TemplateInputException API",
+      "url": "https://www.thymeleaf.org/apidocs/thymeleaf/3.1.3.RELEASE/org/thymeleaf/exceptions/TemplateInputException.html",
+      "supports": "テンプレート名、行、列、causeを保持できること。未解決時の500は実HTTPでも確認。"
+    },
+    {
+      "title": "Spring Framework 7.0.3 HttpRequestMethodNotSupportedException",
+      "url": "https://github.com/spring-projects/spring-framework/blob/v7.0.3/spring-web/src/main/java/org/springframework/web/HttpRequestMethodNotSupportedException.java",
+      "supports": "メソッド不一致時の405。404/405/500は実HTTPでも確認。"
+    },
+    {
+      "title": "MySQL 8.0 接続障害の切り分け",
+      "url": "https://dev.mysql.com/doc/refman/8.0/en/problems-connecting.html",
+      "supports": "Access deniedに対するユーザー・パスワード・接続元/権限の確認。"
+    },
+    {
+      "title": "MySQL Connector/J troubleshooting",
+      "url": "https://dev.mysql.com/doc/connector-j/en/connector-j-usagenotes-troubleshooting.html",
+      "supports": "Communications link failureを接続/通信状態の確認の手掛かりとする。"
+    },
+    {
+      "title": "Eclipse JDT Stacktrace Console",
+      "url": "https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/reference/views/console/ref-stacktrace_console.htm",
+      "supports": "スタックトレースのリンクからソース位置へ移動する機能。"
+    }
+  ],
+  "layout_hand_off": {
+    "04": "revision-messages-*14IDを保持して短縮。settings/controllerはparagraphへ変更し、標準/ja/en各2行＋HTML1行の4カードだけを残した。root目視で最新38頁の1ページ枠内に全14IDが収まった。",
+    "appendix-b": "元291頁だけnative対象から外す設定はrootが担当。292〜296頁の固定配置と291末尾→292冒頭の既存継続文はそのまま。",
+    "pdf_visual_qa": "rootが最終PDF生成・目視を担当。04参考欄は1ページ内に収まったとの確認を受領。"
+  },
+  "limitations": [
+    "コンソール例は読み方を示すための省略例で、行番号は説明用。",
+    "最終参考欄は1ページを目指して短縮し、新しいエンドポイントのJavaコードや設定カードは掲載していない。13件のHTTP検証は文言解決・Locale・エラー状態の根拠となる独立アプリの結果。",
+    "SQL例のruntime検証は意図的な例外生成であり、実DBの障害再現ではない。",
+    "標準Tomcatログではroot causeだけが直接表示される場合も実測し、Caused byがない場合の読み方を補足した。",
+    "紙面の翻訳コード例は標準/ja/en。messages_ko.propertiesとkoの関係は本文で説明し、実検証ではkoのUTF-8韓国語も表示確認。"
+  ],
+  "status": "pass"
+}

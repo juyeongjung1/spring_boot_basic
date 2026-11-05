@@ -5,7 +5,7 @@
     290,
     296
   ],
-  "blocks": 55,
+  "blocks": 64,
   "figures": 5,
   "source_coverage": [
     {
@@ -92,7 +92,7 @@
     ]
   },
   "flow": {
-    "pages": 7,
+    "pages": 8,
     "native_text_complete": true,
     "heading_orphans": [],
     "split_figures": [],
@@ -101,12 +101,11 @@
     "split_instructions": [],
     "instruction_groups": 0,
     "fixed_pages": [
-      2,
-      3,
       4,
       5,
       6,
-      7
+      7,
+      8
     ],
     "overflow": [],
     "block_positions": [
@@ -114,166 +113,420 @@
         "id": "__source-page-291",
         "edge": "source-page",
         "page": 2,
-        "x": 0.0,
-        "y": 0.0
+        "x": 85.104,
+        "y": 86.0
       },
       {
-        "id": "__native-page-291",
-        "edge": "native-page",
+        "id": "p291-b01",
+        "edge": "heading",
         "page": 2,
         "x": 85.104,
         "y": 86.0
       },
       {
+        "id": "p291-b02",
+        "edge": "heading",
+        "page": 2,
+        "x": 85.104,
+        "y": 115.07439453125
+      },
+      {
+        "id": "p291-b03",
+        "edge": "heading",
+        "page": 2,
+        "x": 85.104,
+        "y": 134.11439453125
+      },
+      {
+        "id": "p291-b04",
+        "edge": "heading",
+        "page": 2,
+        "x": 85.104,
+        "y": 153.15439453125
+      },
+      {
+        "id": "p291-b05",
+        "edge": "heading",
+        "page": 2,
+        "x": 85.104,
+        "y": 172.19439453124997
+      },
+      {
+        "id": "p291-b06",
+        "edge": "heading",
+        "page": 2,
+        "x": 85.104,
+        "y": 209.23439453125
+      },
+      {
+        "id": "p291-b07",
+        "edge": "heading",
+        "page": 2,
+        "x": 85.104,
+        "y": 246.27439453125
+      },
+      {
+        "id": "p291-b08",
+        "edge": "heading",
+        "page": 2,
+        "x": 85.104,
+        "y": 301.31439453125
+      },
+      {
+        "id": "p291-b09",
+        "edge": "heading",
+        "page": 2,
+        "x": 85.104,
+        "y": 366.35439453125
+      },
+      {
+        "id": "p291-b10",
+        "edge": "start",
+        "page": 2,
+        "x": 85.104,
+        "y": 395.4287890625
+      },
+      {
+        "id": "p291-b10",
+        "edge": "end",
+        "page": 2,
+        "x": 85.104,
+        "y": 424.46878906250004
+      },
+      {
+        "id": "revision-errors-title",
+        "edge": "heading",
+        "page": 2,
+        "x": 85.104,
+        "y": 442.46878906250004
+      },
+      {
+        "id": "revision-errors-console",
+        "edge": "start",
+        "page": 2,
+        "x": 85.104,
+        "y": 468.769296875
+      },
+      {
+        "id": "revision-errors-console",
+        "edge": "end",
+        "page": 2,
+        "x": 85.104,
+        "y": 515.8092968750001
+      },
+      {
+        "id": "revision-errors-name",
+        "edge": "start",
+        "page": 2,
+        "x": 85.104,
+        "y": 528.7692968750001
+      },
+      {
+        "id": "revision-errors-name",
+        "edge": "end",
+        "page": 2,
+        "x": 85.104,
+        "y": 653.8092968750001
+      },
+      {
+        "id": "revision-errors-trace-intro",
+        "edge": "start",
+        "page": 2,
+        "x": 85.104,
+        "y": 666.769296875
+      },
+      {
+        "id": "revision-errors-trace-intro",
+        "edge": "end",
+        "page": 2,
+        "x": 85.104,
+        "y": 677.809296875
+      },
+      {
+        "id": "appendix-b-revision-errors-trace-part1",
+        "edge": "html-component",
+        "page": 3,
+        "x": 85.104,
+        "y": 86.0
+      },
+      {
+        "id": "revision-errors-trace",
+        "edge": "short-code",
+        "page": 3,
+        "x": 85.854,
+        "y": 128.269531
+      },
+      {
+        "id": "revision-errors-trace",
+        "edge": "start",
+        "page": 3,
+        "x": 85.854,
+        "y": 128.269531
+      },
+      {
+        "id": "revision-errors-trace",
+        "edge": "end",
+        "page": 3,
+        "x": 511.021969,
+        "y": 236.796875
+      },
+      {
+        "id": "revision-errors-trace-read",
+        "edge": "start",
+        "page": 3,
+        "x": 85.104,
+        "y": 256.297
+      },
+      {
+        "id": "revision-errors-trace-read",
+        "edge": "end",
+        "page": 3,
+        "x": 85.104,
+        "y": 339.337
+      },
+      {
+        "id": "revision-errors-template",
+        "edge": "start",
+        "page": 3,
+        "x": 85.104,
+        "y": 352.29699999999997
+      },
+      {
+        "id": "revision-errors-template",
+        "edge": "end",
+        "page": 3,
+        "x": 85.104,
+        "y": 417.337
+      },
+      {
+        "id": "revision-errors-sql",
+        "edge": "start",
+        "page": 3,
+        "x": 85.104,
+        "y": 430.29699999999997
+      },
+      {
+        "id": "revision-errors-sql",
+        "edge": "end",
+        "page": 3,
+        "x": 85.104,
+        "y": 495.337
+      },
+      {
+        "id": "revision-errors-status",
+        "edge": "start",
+        "page": 3,
+        "x": 85.104,
+        "y": 508.29699999999997
+      },
+      {
+        "id": "revision-errors-status",
+        "edge": "end",
+        "page": 3,
+        "x": 85.104,
+        "y": 573.337
+      },
+      {
+        "id": "p291-b11",
+        "edge": "heading",
+        "page": 3,
+        "x": 85.104,
+        "y": 586.297
+      },
+      {
+        "id": "p291-b12",
+        "edge": "heading",
+        "page": 3,
+        "x": 85.104,
+        "y": 605.337
+      },
+      {
+        "id": "p291-b13",
+        "edge": "heading",
+        "page": 3,
+        "x": 85.104,
+        "y": 624.377
+      },
+      {
+        "id": "p291-b14",
+        "edge": "heading",
+        "page": 3,
+        "x": 85.104,
+        "y": 661.417
+      },
+      {
+        "id": "p291-b15",
+        "edge": "heading",
+        "page": 3,
+        "x": 85.104,
+        "y": 716.457
+      },
+      {
         "id": "__source-page-292",
         "edge": "source-page",
-        "page": 3,
+        "page": 4,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-292",
         "edge": "native-page",
-        "page": 3,
+        "page": 4,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p292-f01",
         "edge": "start",
-        "page": 3,
+        "page": 4,
         "x": 95.7999984741211,
         "y": 214.84999389648436
       },
       {
         "id": "p292-f01",
         "edge": "end",
-        "page": 3,
+        "page": 4,
         "x": 95.7999984741211,
         "y": 302.84998779296876
       },
       {
         "id": "__source-page-293",
         "edge": "source-page",
-        "page": 4,
+        "page": 5,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-293",
         "edge": "native-page",
-        "page": 4,
+        "page": 5,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p293-f02",
         "edge": "start",
-        "page": 4,
+        "page": 5,
         "x": 95.2999984741211,
         "y": 86.7999984741211
       },
       {
         "id": "p293-f02",
         "edge": "end",
-        "page": 4,
+        "page": 5,
         "x": 95.2999984741211,
         "y": 210.79999999999998
       },
       {
         "id": "p293-f03",
         "edge": "start",
-        "page": 4,
+        "page": 5,
         "x": 84.2999984741211,
         "y": 361.4999572753906
       },
       {
         "id": "p293-f03",
         "edge": "end",
-        "page": 4,
+        "page": 5,
         "x": 84.2999984741211,
         "y": 406.29996948242194
       },
       {
         "id": "p293-f04",
         "edge": "start",
-        "page": 4,
+        "page": 5,
         "x": 95.2999984741211,
         "y": 555.0499755859375
       },
       {
         "id": "p293-f04",
         "edge": "end",
-        "page": 4,
+        "page": 5,
         "x": 95.2999984741211,
         "y": 592.6499755859375
       },
       {
         "id": "__source-page-294",
         "edge": "source-page",
-        "page": 5,
+        "page": 6,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-294",
         "edge": "native-page",
-        "page": 5,
+        "page": 6,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p294-f05",
         "edge": "start",
-        "page": 5,
+        "page": 6,
         "x": 95.7999984741211,
         "y": 520.8500244140625
       },
       {
         "id": "p294-f05",
         "edge": "end",
-        "page": 5,
+        "page": 6,
         "x": 95.7999984741211,
         "y": 752.8500488281251
       },
       {
         "id": "__source-page-295",
         "edge": "source-page",
-        "page": 6,
+        "page": 7,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-295",
         "edge": "native-page",
-        "page": 6,
+        "page": 7,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "__source-page-296",
         "edge": "source-page",
-        "page": 7,
+        "page": 8,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-296",
         "edge": "native-page",
-        "page": 7,
+        "page": 8,
         "x": 85.104,
         "y": 86.0
       }
     ],
     "url_links": [
       {
-        "page": 7,
+        "page": 8,
         "uri": "http://www.trainocate.co.jp/",
         "rect": [
           336.7900085449219,
           689.3986206054688,
           464.81500244140625,
           698.3986206054688
+        ]
+      }
+    ],
+    "html_components": [
+      {
+        "id": "appendix-b-revision-errors-trace",
+        "kind": "code",
+        "consume_ids": [
+          "revision-errors-trace"
+        ],
+        "parts": [
+          {
+            "token": "appendix-b-revision-errors-trace-part1",
+            "width": 426.672,
+            "height": 158.297
+          }
         ]
       }
     ]

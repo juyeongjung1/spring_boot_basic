@@ -1,0 +1,16 @@
+最終回帰検証 2026-11-05T16:42:37.195976 tools/textbook/test_html_components.py
+test_actual_component_pdfs_are_single_page_and_keep_all_dom_text_and_anchors (__main__.BrowserComponentTests.test_actual_component_pdfs_are_single_page_and_keep_all_dom_text_and_anchors) ... ok
+test_oversized_rows_and_overflowing_cells_fail_with_card_and_original_id (__main__.BrowserComponentTests.test_oversized_rows_and_overflowing_cells_fail_with_card_and_original_id) ... ok
+test_rows_are_not_lost_or_duplicated_and_headers_and_footer_repeat_correctly (__main__.BrowserComponentTests.test_rows_are_not_lost_or_duplicated_and_headers_and_footer_repeat_correctly) ... ok
+test_syntax_comments_are_green_and_original_table_colors_and_emphasis_survive (__main__.BrowserComponentTests.test_syntax_comments_are_green_and_original_table_colors_and_emphasis_survive) ... ok
+test_explanation_fragments_reconstruct_every_original_character (__main__.ComponentSourceTests.test_explanation_fragments_reconstruct_every_original_character) ... ok
+test_explanations_consume_each_id_once_and_reference_real_code_lines (__main__.ComponentSourceTests.test_explanations_consume_each_id_once_and_reference_real_code_lines) ... ok
+test_highlighting_keeps_leading_trailing_blank_lines_and_multiline_comments (__main__.ComponentSourceTests.test_highlighting_keeps_leading_trailing_blank_lines_and_multiline_comments) ... ok
+test_markdown_attributes_and_reference_file_languages_survive (__main__.ComponentSourceTests.test_markdown_attributes_and_reference_file_languages_survive) ... ok
+test_plan_has_no_duplicate_consumption_and_preserves_five_filename_labels (__main__.ComponentSourceTests.test_plan_has_no_duplicate_consumption_and_preserves_five_filename_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 34.955s
+
+OK
+{"test": "tools/textbook/test_html_components.py", "exit_code": 0, "seconds": 35.95}

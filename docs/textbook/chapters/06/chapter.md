@@ -1083,7 +1083,7 @@ public class ProductController {
 
 :::
 
-![スライド](assets/p213-f10.svg){#p213-f10}
+![スライド](assets/p213-f10-clean.svg){#p213-f10}
 
 ::: {#p213-b02 .paragraph}
 
@@ -1501,7 +1501,7 @@ public String insertProduct(ProductForm productForm) {
 
 :::
 
-![操作画面・図解](assets/p219-f12.svg){#p219-f12}
+![操作画面・図解](assets/p219-f12-clean.svg){#p219-f12}
 
 :::
 

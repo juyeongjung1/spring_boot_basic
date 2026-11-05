@@ -1,0 +1,119 @@
+{
+  "audit": {
+    "passed": true,
+    "chapters": 19,
+    "original_pages": 373,
+    "mapped_source_pages": 373,
+    "physical_pages": 430,
+    "blank_pages": 17,
+    "original_ids": 2853,
+    "base_ids": 2854,
+    "authorized_added_ids": 25,
+    "current_ids": 2879,
+    "explanation_cards": 46,
+    "explanation_rows": 84,
+    "header_checks": 430,
+    "uri_links": 89,
+    "login3_real_links": 1,
+    "problems": 0,
+    "problem_counts": {}
+  },
+  "components": {
+    "code": 186,
+    "code-parts": 190,
+    "explanation": 46,
+    "explanation-parts": 46,
+    "table": 32,
+    "table-parts": 32
+  },
+  "comparisons": [
+    {
+      "name": "code",
+      "chapter": "02",
+      "id": "p041-b03",
+      "source_page": 41,
+      "flow_page": 41,
+      "image": "code-comparison.png"
+    },
+    {
+      "name": "explanation",
+      "chapter": "02",
+      "id": "p059-b02",
+      "source_page": 59,
+      "flow_page": 65,
+      "image": "explanation-comparison.png"
+    },
+    {
+      "name": "table",
+      "chapter": "03",
+      "id": "p067-table03",
+      "source_page": 67,
+      "flow_page": 76,
+      "image": "table-comparison.png"
+    },
+    {
+      "name": "table-color",
+      "chapter": "03",
+      "id": "p069-table01",
+      "source_page": 69,
+      "flow_page": 79,
+      "image": "table-color-comparison.png"
+    },
+    {
+      "name": "properties",
+      "chapter": "03",
+      "id": "p071-b03",
+      "source_page": 71,
+      "flow_page": 82,
+      "image": "properties-comparison.png"
+    },
+    {
+      "name": "di",
+      "chapter": "03",
+      "id": "revision-di-remote",
+      "source_page": 80,
+      "flow_page": 93,
+      "image": "di-comparison.png"
+    },
+    {
+      "name": "modelmapper",
+      "chapter": "03",
+      "id": "p113-b04",
+      "source_page": 113,
+      "flow_page": 136,
+      "image": "modelmapper-comparison.png"
+    },
+    {
+      "name": "comment",
+      "chapter": "03",
+      "id": "p128-b06",
+      "source_page": 128,
+      "flow_page": 152,
+      "image": "comment-comparison.png"
+    },
+    {
+      "name": "messages",
+      "chapter": "04",
+      "id": "revision-messages-title",
+      "source_page": 161,
+      "flow_page": 195,
+      "image": "messages-comparison.png"
+    },
+    {
+      "name": "continuation",
+      "chapter": "07",
+      "id": "p274-b01",
+      "source_page": 274,
+      "flow_page": 323,
+      "image": "continuation-comparison.png"
+    },
+    {
+      "name": "errors",
+      "chapter": "appendix-b",
+      "id": "revision-errors-title",
+      "source_page": 291,
+      "flow_page": 342,
+      "image": "errors-comparison.png"
+    }
+  ]
+}

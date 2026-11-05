@@ -1,0 +1,1765 @@
+{
+  "cards_reviewed": 46,
+  "rendered_parts_reviewed": 46,
+  "extra_split_parts": 0,
+  "rows": 84,
+  "source_nodes": 163,
+  "chapters": [
+    {
+      "chapter": "02",
+      "cards": 12,
+      "pdf_sha256": "e5bc19943f4e4fb8cf42b70695f0b51f5bf9a4b30d9d67d7e5d63fa8b121cbd8",
+      "checks_sha256": "13a42f1d8fe2e66b6c4e6318bb6a76ba74ae0d5a0524042834d343cc0f10fd63",
+      "sheets": 3
+    },
+    {
+      "chapter": "04",
+      "cards": 8,
+      "pdf_sha256": "886783c9f3a7ccde1368f5c57da75d3b776bb5c969174db9371f215e3dbc4bd5",
+      "checks_sha256": "278d50dd27432787a7f34b6b4358263a0fbd3e56a320225247f22bde1d0ff771",
+      "sheets": 2
+    },
+    {
+      "chapter": "05",
+      "cards": 3,
+      "pdf_sha256": "1606350731fcb7f431d6e5d6cfb06ec777451f78c14eb21c28bfa29fcdc0df39",
+      "checks_sha256": "e34546eb717970f58168a45ece71dc96b14c550ae04f483ca508ff8cb5947798",
+      "sheets": 1
+    },
+    {
+      "chapter": "06",
+      "cards": 0,
+      "pdf_sha256": "a539fa0269af68ac9861411bb0f74f3011196d5432eddf25c4389b673748fcea",
+      "checks_sha256": "2efaa5f2f1b14fcd69ffaa46e61e53cacc11e6239138d53bf1f4824ef93deac2",
+      "sheets": 0
+    },
+    {
+      "chapter": "07",
+      "cards": 5,
+      "pdf_sha256": "c2a7c5fa0de5bba681a5fa58e2b0e2641939cb20ed14b91d6ce5e2f302729ea6",
+      "checks_sha256": "ce10831b19b02d83d16f4d0108b1576261e930fb0e04db75338d91f6a85623c3",
+      "sheets": 2
+    },
+    {
+      "chapter": "03",
+      "cards": 18,
+      "pdf_sha256": "ab1018e70735818c57f24abb688c8c550fe66961bdf66620a671b32daf385b91",
+      "checks_sha256": "316b9f68ec8621df22c406ee3d910af63e2758ff02ffd9ddbec6138eb47d6dde",
+      "sheets": 5
+    }
+  ],
+  "parts": [
+    {
+      "id": "02-explanation-1",
+      "token": "02-explanation-1-part1",
+      "local_page": 13,
+      "box_pt": [
+        85.104,
+        416.16602053919723,
+        511.776,
+        650.4360205391972
+      ],
+      "file": "02-explanation-1-part1.png",
+      "consume_ids": [
+        "p043-b05",
+        "p043-b06"
+      ],
+      "source_pages": [
+        43
+      ],
+      "expected_rows": [
+        {
+          "line_label": "9 行",
+          "code": " public String index() {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行",
+          "code": " return \"index\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "83c9cefa0332b214100710698022c2ea2ade924d5ae1633fe05b05ffb8f1f2cd"
+    },
+    {
+      "id": "02-explanation-2",
+      "token": "02-explanation-2-part1",
+      "local_page": 16,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        336.02
+      ],
+      "file": "02-explanation-2-part1.png",
+      "consume_ids": [
+        "p044-b09",
+        "p044-b10"
+      ],
+      "source_pages": [
+        44
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行目",
+          "code": "<html xmlns:th=\"http://www.thymeleaf.org\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": " <div>トップページ</div>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "41b531bfeb4686b8e57430f8ab439b5ea9461fd0160438a06700b59e6fce682d"
+    },
+    {
+      "id": "02-explanation-3",
+      "token": "02-explanation-3-part1",
+      "local_page": 22,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        465.02
+      ],
+      "file": "02-explanation-3-part1.png",
+      "consume_ids": [
+        "p049-b05",
+        "p049-b06"
+      ],
+      "source_pages": [
+        49
+      ],
+      "expected_rows": [
+        {
+          "line_label": "10 行目",
+          "code": " <form th:action = \"@{/login}\" method=\"POST\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "d170321e818c9581f4ef1b990d627713a960ae883812a492757e875a00214b45"
+    },
+    {
+      "id": "02-explanation-4",
+      "token": "02-explanation-4-part1",
+      "local_page": 23,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        414.77
+      ],
+      "file": "02-explanation-4-part1.png",
+      "consume_ids": [
+        "p050-b01",
+        "p050-b02",
+        "p050-b03",
+        "p050-b04"
+      ],
+      "source_pages": [
+        50
+      ],
+      "expected_rows": [
+        {
+          "line_label": "11 行・12 行目",
+          "code": "<p>社員番号 ：<input type = \"text\" name = \"id\"/></p>\n<p>パスワード：<input type = \"password\" name = \"password\"/></p>",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "13 行目",
+          "code": "<input type = \"submit\" value = \"ログイン\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "e4388390b245cde6eb2f7b34ee79595088b53a88259cf388b6e648504886907f"
+    },
+    {
+      "id": "02-explanation-5",
+      "token": "02-explanation-5-part1",
+      "local_page": 25,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        446.27
+      ],
+      "file": "02-explanation-5-part1.png",
+      "consume_ids": [
+        "p051-b06",
+        "p051-b07",
+        "p051-b08",
+        "p051-b09"
+      ],
+      "source_pages": [
+        51
+      ],
+      "expected_rows": [
+        {
+          "line_label": "10 行目",
+          "code": "@PostMapping(\"/login\")",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "11 行目",
+          "code": "public String doLogin(int id, String password) {",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "7b242d5f66c01703cd41b399c1bfd71a4dad35d0756d48f5dfbb765efbe1a8d6"
+    },
+    {
+      "id": "02-explanation-6",
+      "token": "02-explanation-6-part1",
+      "local_page": 26,
+      "box_pt": [
+        85.104,
+        223.74001390519842,
+        511.776,
+        382.26001390519843
+      ],
+      "file": "02-explanation-6-part1.png",
+      "consume_ids": [
+        "p052-b03",
+        "p052-b04"
+      ],
+      "source_pages": [
+        52
+      ],
+      "expected_rows": [
+        {
+          "line_label": "13 行、14 行目",
+          "code": " System.out.println(id);\n System.out.println(password);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "3a7973ac762ef492ac5b942fc0f2bfd3f94f92000c9f3af90561c49717e3d2ee"
+    },
+    {
+      "id": "02-explanation-7",
+      "token": "02-explanation-7-part1",
+      "local_page": 30,
+      "box_pt": [
+        85.104,
+        370.46931249999994,
+        511.776,
+        667.7393124999999
+      ],
+      "file": "02-explanation-7-part1.png",
+      "consume_ids": [
+        "p056-b05",
+        "p056-b06",
+        "p056-b07",
+        "p056-b08"
+      ],
+      "source_pages": [
+        56
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " public String doLogin(UserForm userForm) {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7-8 行目",
+          "code": " System.out.println(userForm.getId());\n System.out.println(userForm.getPassword());",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "215ad010b88393ac82166bc211f211b24a9bb84d02d338359af8f2fa6a8a15e1"
+    },
+    {
+      "id": "02-explanation-8",
+      "token": "02-explanation-8-part1",
+      "local_page": 34,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        296.762
+      ],
+      "file": "02-explanation-8-part1.png",
+      "consume_ids": [
+        "p058-b06",
+        "p058-b07",
+        "p058-b08"
+      ],
+      "source_pages": [
+        58
+      ],
+      "expected_rows": [
+        {
+          "line_label": "13 行目",
+          "code": " public String doLogin(UserForm userForm, Model model) {",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "7efcde195e0958ffceae3e90973c0ca9030623391ee38d7b4f20be1052382ea7"
+    },
+    {
+      "id": "02-explanation-9",
+      "token": "02-explanation-9-part1",
+      "local_page": 35,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        306.747
+      ],
+      "file": "02-explanation-9-part1.png",
+      "consume_ids": [
+        "p059-b01",
+        "p059-b02",
+        "p059-b03"
+      ],
+      "source_pages": [
+        59
+      ],
+      "expected_rows": [
+        {
+          "line_label": "14-15 行目",
+          "code": " //リクエストスコープに、userForm のデータを格納\n model.addAttribute(\"user\", userForm);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "bcbb98f2b7d31341113062190cb612bd092d29eb41a06170e185a51e8d1ac85f"
+    },
+    {
+      "id": "02-explanation-10",
+      "token": "02-explanation-10-part1",
+      "local_page": 35,
+      "box_pt": [
+        85.104,
+        464.56500000000005,
+        511.776,
+        659.577
+      ],
+      "file": "02-explanation-10-part1.png",
+      "consume_ids": [
+        "p059-b07",
+        "p059-b08",
+        "p059-b09"
+      ],
+      "source_pages": [
+        59
+      ],
+      "expected_rows": [
+        {
+          "line_label": "17 行",
+          "code": " return \"login_success\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "d8c717de5ac89e7015b78ac36b7b88181142a6b6e050de5519cd485add195c76"
+    },
+    {
+      "id": "02-explanation-11",
+      "token": "02-explanation-11-part1",
+      "local_page": 37,
+      "box_pt": [
+        85.104,
+        327.29,
+        511.776,
+        613.802
+      ],
+      "file": "02-explanation-11-part1.png",
+      "consume_ids": [
+        "p060-b04",
+        "p060-b05",
+        "p060-b06",
+        "p060-b07",
+        "p060-b08"
+      ],
+      "source_pages": [
+        60
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行目",
+          "code": "<html xmlns:th=\"http://www.thymeleaf.org\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": "    社員番号 ：<span th:text = \"${user.id}\"></span><br>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "0482713e6b658a35410102a967710b0bebb4e0f66640f0b1878c61d192b7ea2b"
+    },
+    {
+      "id": "02-explanation-12",
+      "token": "02-explanation-12-part1",
+      "local_page": 38,
+      "box_pt": [
+        85.104,
+        321.337,
+        511.776,
+        464.10699999999997
+      ],
+      "file": "02-explanation-12-part1.png",
+      "consume_ids": [
+        "p060-b12",
+        "p060-b13"
+      ],
+      "source_pages": [
+        60
+      ],
+      "expected_rows": [
+        {
+          "line_label": "11 行目",
+          "code": "    パスワード：<span th:text = \"${user.password}\"></span>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "02",
+      "visual_review": "完了",
+      "png_sha256": "843f7248c05c080965c5b9ccc4f825b03fea6782de42f1edf54be8c132db3c25"
+    },
+    {
+      "id": "04-explanation-1",
+      "token": "04-explanation-1-part1",
+      "local_page": 6,
+      "box_pt": [
+        85.104,
+        388.825,
+        511.776,
+        683.329
+      ],
+      "file": "04-explanation-1-part1.png",
+      "consume_ids": [
+        "p137-b04"
+      ],
+      "source_pages": [
+        137
+      ],
+      "expected_rows": [
+        {
+          "line_label": "12 行",
+          "code": "    @Column(name = \"emp_name\", length = 30, nullable = false)",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "04",
+      "visual_review": "完了",
+      "png_sha256": "cc8ea5890521493093180ddd126f142c075b2a874a518a81d6b1adaf562c75e0"
+    },
+    {
+      "id": "04-explanation-2",
+      "token": "04-explanation-2-part1",
+      "local_page": 10,
+      "box_pt": [
+        85.104,
+        326.809,
+        511.776,
+        772.8130000000001
+      ],
+      "file": "04-explanation-2-part1.png",
+      "consume_ids": [
+        "p140-b04",
+        "p140-b05",
+        "p140-b06"
+      ],
+      "source_pages": [
+        140
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": " User user = userRepo.findByEmpIdAndPassword(userForm.getEmpId(),\n                   userForm.getPassword());",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "5 行",
+          "code": " if (user == null) { //結果がnull なら、再度ログイン画面へ",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "8 行目",
+          "code": " return \"main_page\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "04",
+      "visual_review": "完了",
+      "png_sha256": "53d59c19b577c492e3dc08352cdc21907a340c68b3ce50e4a179e8d373703be7"
+    },
+    {
+      "id": "04-explanation-3",
+      "token": "04-explanation-3-part1",
+      "local_page": 16,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        477.77
+      ],
+      "file": "04-explanation-3-part1.png",
+      "consume_ids": [
+        "p144-b05",
+        "p144-b06",
+        "p144-b07",
+        "p144-b08"
+      ],
+      "source_pages": [
+        144
+      ],
+      "expected_rows": [
+        {
+          "line_label": "7 行目",
+          "code": "public String loginSession(UserForm userForm, HttpSession session) {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "13 行目",
+          "code": " session.setAttribute(\"userData\", user);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "04",
+      "visual_review": "完了",
+      "png_sha256": "ef8f53230ea2c7b8868ff0b6b06e24c2f2a5475967269bb5a25e9b756c4b5ff7"
+    },
+    {
+      "id": "04-explanation-4",
+      "token": "04-explanation-4-part1",
+      "local_page": 23,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        510.735
+      ],
+      "file": "04-explanation-4-part1.png",
+      "consume_ids": [
+        "p150-b04",
+        "p150-b05",
+        "p150-b06",
+        "p150-b07",
+        "p150-b08"
+      ],
+      "source_pages": [
+        150
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3-5 行目",
+          "code": "import jakarta.validation.constraints.NotBlank;\nimport jakarta.validation.constraints.NotNull;\nimport jakarta.validation.constraints.Size;",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "11 行目",
+          "code": " @NotNull(message = \"社員番号を入力してください\")",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "14-15 行",
+          "code": " @NotBlank(message = \"パスワードを入力してください\")\n @Size(max = 15, message = \"15 文字以内で入力してください\")",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "04",
+      "visual_review": "完了",
+      "png_sha256": "e1ec752d47a1cb6cd97ad4751ab603c7ab1eadd77e8c1e2fe01f3864a785a4ce"
+    },
+    {
+      "id": "04-explanation-5",
+      "token": "04-explanation-5-part1",
+      "local_page": 25,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        383.27
+      ],
+      "file": "04-explanation-5-part1.png",
+      "consume_ids": [
+        "p151-b08",
+        "p151-b09",
+        "p151-b10",
+        "p151-b11"
+      ],
+      "source_pages": [
+        151
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "3 行目",
+          "code": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "04",
+      "visual_review": "完了",
+      "png_sha256": "cc432da4cceb8b0237797f97ec66ffebfb87d9aeed640fa5a689f24fa29d7a59"
+    },
+    {
+      "id": "04-explanation-6",
+      "token": "04-explanation-6-part1",
+      "local_page": 26,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        291.77
+      ],
+      "file": "04-explanation-6-part1.png",
+      "consume_ids": [
+        "p152-b01",
+        "p152-b02"
+      ],
+      "source_pages": [
+        152
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " if (bdResult.hasErrors()) {",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "04",
+      "visual_review": "完了",
+      "png_sha256": "34c4ce9fa66218ca361365d608e1e1bc13b2f576bcedac3e4a0d12adbfb99e7d"
+    },
+    {
+      "id": "04-explanation-7",
+      "token": "04-explanation-7-part1",
+      "local_page": 27,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        443.504
+      ],
+      "file": "04-explanation-7-part1.png",
+      "consume_ids": [
+        "p152-b06",
+        "p152-b07",
+        "p152-b08",
+        "p152-b09"
+      ],
+      "source_pages": [
+        152
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": "<form th:action=\"@{/login4}\" method=\"post\" th:object=\"${userForm}\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "04",
+      "visual_review": "完了",
+      "png_sha256": "065884e89e0cb1024f327e82b6b0154e6f4b23d43d1bb5ed7883a1d85c28a22b"
+    },
+    {
+      "id": "04-explanation-8",
+      "token": "04-explanation-8-part1",
+      "local_page": 28,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        508.497
+      ],
+      "file": "04-explanation-8-part1.png",
+      "consume_ids": [
+        "p153-b01",
+        "p153-b02",
+        "p153-b03",
+        "p153-b04",
+        "p153-b05",
+        "p153-b06",
+        "p153-b07"
+      ],
+      "source_pages": [
+        153
+      ],
+      "expected_rows": [
+        {
+          "line_label": "6 行目",
+          "code": "<p>社員番号 ：<input type = \"text\" th:field=\"*{empId}\"/>",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7 行目",
+          "code": " <span th:errors=\"*{empId}\"></span></p>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "04",
+      "visual_review": "完了",
+      "png_sha256": "7ef73b44bfdd87988ae4b7b14dfda420f0a6b9a089e4cec1d3a9c0d1503f2db4"
+    },
+    {
+      "id": "05-explanation-1",
+      "token": "05-explanation-1-part1",
+      "local_page": 5,
+      "box_pt": [
+        85.104,
+        322.29699999999997,
+        511.776,
+        603.817
+      ],
+      "file": "05-explanation-1-part1.png",
+      "consume_ids": [
+        "p168-b04",
+        "p168-b05",
+        "p168-b06",
+        "p168-b07"
+      ],
+      "source_pages": [
+        168
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行",
+          "code": "<html xmlns:th=\"http://www.thymeleaf.org\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行",
+          "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "05",
+      "visual_review": "完了",
+      "png_sha256": "ebb4185e391f2afcb9fdf7e089e5d180f0511eb8c2cfff15909d6c41a07c21df"
+    },
+    {
+      "id": "05-explanation-2",
+      "token": "05-explanation-2-part1",
+      "local_page": 23,
+      "box_pt": [
+        85.104,
+        128.0,
+        511.776,
+        485.27
+      ],
+      "file": "05-explanation-2-part1.png",
+      "consume_ids": [
+        "p184-b02",
+        "p184-b03",
+        "p184-b04",
+        "p184-b05",
+        "p184-b06",
+        "p184-b07"
+      ],
+      "source_pages": [
+        184
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": " xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "8 行目",
+          "code": "<link rel=\"stylesheet\" th:href=\"@{/css/layout.css}\" />",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "27-29 行",
+          "code": "<main layout:fragment=\"main_content\">\n <!-- 各ページ固有のコンテンツがここに入ります -->\n</main>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "05",
+      "visual_review": "完了",
+      "png_sha256": "066e7bcbb3bdbb8f098325205b5d331a9c113dce364bee23224256ef7567ea29"
+    },
+    {
+      "id": "05-explanation-3",
+      "token": "05-explanation-3-part1",
+      "local_page": 25,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        527.012
+      ],
+      "file": "05-explanation-3-part1.png",
+      "consume_ids": [
+        "p185-b01",
+        "p185-b02",
+        "p185-b03",
+        "p185-b04",
+        "p185-b05",
+        "p185-b06",
+        "p185-b07"
+      ],
+      "source_pages": [
+        185
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": " xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\"",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "4 行目",
+          "code": "       layout:decorate=\"~{/layout}\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "9-13 行目",
+          "code": "<main layout:fragment=\"main_content\">\n\n<!--既存のコンテンツのソースコード-->\n\n</main>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "05",
+      "visual_review": "完了",
+      "png_sha256": "0f214021a7886ec4bf41f47a544f9edba20ce431aa118fb25e232f4b3e7c4a6f"
+    },
+    {
+      "id": "07-explanation-1",
+      "token": "07-explanation-1-part1",
+      "local_page": 32,
+      "box_pt": [
+        85.104,
+        592.297,
+        511.776,
+        735.067
+      ],
+      "file": "07-explanation-1-part1.png",
+      "consume_ids": [
+        "p266-b11"
+      ],
+      "source_pages": [
+        266
+      ],
+      "expected_rows": [
+        {
+          "line_label": "1 行目",
+          "code": "<div class=\"container\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "07",
+      "visual_review": "完了",
+      "png_sha256": "2cad006aad171d0962f46083e843a5f15674b8f7b3f2eac35ee6838bec45f1cd"
+    },
+    {
+      "id": "07-explanation-2",
+      "token": "07-explanation-2-part1",
+      "local_page": 33,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        387.735
+      ],
+      "file": "07-explanation-2-part1.png",
+      "consume_ids": [
+        "p267-b01",
+        "p267-b02",
+        "p267-b03"
+      ],
+      "source_pages": [
+        267
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行目",
+          "code": "    <div class=\"row\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "3 行目～5 行目",
+          "code": "        <div class=\"col-6 bg-primary-subtle\">Column 1</div>\n        <div class=\"col-3 bg-danger-subtle\">Column 2</div>\n        <div class=\"col-3 bg-success-subtle\">Column 3</div>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "07",
+      "visual_review": "完了",
+      "png_sha256": "dbafe03856c9817d5f22d717f11efa7c310f479826115c2c8cf1a7955d79ffa7"
+    },
+    {
+      "id": "07-explanation-3",
+      "token": "07-explanation-3-part1",
+      "local_page": 34,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        307.52
+      ],
+      "file": "07-explanation-3-part1.png",
+      "consume_ids": [
+        "p267-b09",
+        "p267-b10"
+      ],
+      "source_pages": [
+        267
+      ],
+      "expected_rows": [
+        {
+          "line_label": "6 行目～7 行目",
+          "code": "    </div> <!-- END row1-->\n</div><!-- END container-->",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "07",
+      "visual_review": "完了",
+      "png_sha256": "7b6b72e1a30be587ab2cd856ab5285ab0e22c575de5b3f6221008c063baf01ae"
+    },
+    {
+      "id": "07-explanation-4",
+      "token": "07-explanation-4-part1",
+      "local_page": 42,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        406.262
+      ],
+      "file": "07-explanation-4-part1.png",
+      "consume_ids": [
+        "p273-b04",
+        "p273-b05",
+        "p273-b06",
+        "p273-b07",
+        "p273-b08",
+        "p273-b09",
+        "p273-b10"
+      ],
+      "source_pages": [
+        273
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行目",
+          "code": "        <div class=\"col-md-3\"> <!-- START sidebar -->",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "8 行目",
+          "code": "            <form class=\"row\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "9 行目・13 行目",
+          "code": "                <div class=\"col-8\">\n                <div class=\"col-4\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": "                    <input type=\"text\" class=\"form-control\"",
+          "meaning_empty": true,
+          "continuation": false
+        }
+      ],
+      "chapter": "07",
+      "visual_review": "完了",
+      "png_sha256": "9cb4918af5595788b2402c84bb9126a3d72b6424d48bf2f5b4e80e195bb05fb7"
+    },
+    {
+      "id": "07-explanation-5",
+      "token": "07-explanation-5-part1",
+      "local_page": 43,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        244.52
+      ],
+      "file": "07-explanation-5-part1.png",
+      "consume_ids": [
+        "p274-b01"
+      ],
+      "source_pages": [
+        274
+      ],
+      "expected_rows": [
+        {
+          "line_label": "10 行目",
+          "code": "                    <input type=\"text\" class=\"form-control\"",
+          "meaning_empty": false,
+          "continuation": true
+        }
+      ],
+      "chapter": "07",
+      "visual_review": "完了",
+      "png_sha256": "fe1f1da459d038ee6d5c94c4e4c9d4853a3f7e396ef0cd9c03150c88c5febd43"
+    },
+    {
+      "id": "03-explanation-1",
+      "token": "03-explanation-1-part1",
+      "local_page": 30,
+      "box_pt": [
+        85.104,
+        127.04,
+        511.776,
+        424.31
+      ],
+      "file": "03-explanation-1-part1.png",
+      "consume_ids": [
+        "p086-b03",
+        "p086-b04",
+        "p086-b05",
+        "p086-b06",
+        "p086-b07"
+      ],
+      "source_pages": [
+        86
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5-6 行目",
+          "code": "    @Autowired\n private ProductRepository prodRepo;",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": " List<Product> list = prodRepo.findAll();",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "fc086a524d1442cd85bff6095a4650a8abbb99928057c03b97c31091a0d3fbcb"
+    },
+    {
+      "id": "03-explanation-2",
+      "token": "03-explanation-2-part1",
+      "local_page": 30,
+      "box_pt": [
+        85.104,
+        594.1099892858198,
+        511.776,
+        768.3799892858198
+      ],
+      "file": "03-explanation-2-part1.png",
+      "consume_ids": [
+        "p086-b09",
+        "p086-b10",
+        "p086-b11"
+      ],
+      "source_pages": [
+        86
+      ],
+      "expected_rows": [
+        {
+          "line_label": "12-13 行目",
+          "code": " model.addAttribute(\"products\", list);\n return \"product/list\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "7878f70f17adf182afff8425d574b58d24d1b6e786a3f4b4ec152ea4040f4a37"
+    },
+    {
+      "id": "03-explanation-3",
+      "token": "03-explanation-3-part1",
+      "local_page": 32,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        375.512
+      ],
+      "file": "03-explanation-3-part1.png",
+      "consume_ids": [
+        "p087-b05",
+        "p087-b06",
+        "p087-b07"
+      ],
+      "source_pages": [
+        87
+      ],
+      "expected_rows": [
+        {
+          "line_label": "8 行目",
+          "code": " <tr th:each=\"product: ${products}\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "71aa2291acfce0829d110c118695d34b92445fd822a2535b9604de75b1b21366"
+    },
+    {
+      "id": "03-explanation-4",
+      "token": "03-explanation-4-part1",
+      "local_page": 33,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        296.235
+      ],
+      "file": "03-explanation-4-part1.png",
+      "consume_ids": [
+        "p088-b01",
+        "p088-b02"
+      ],
+      "source_pages": [
+        88
+      ],
+      "expected_rows": [
+        {
+          "line_label": "9-11 行目",
+          "code": " <td th:text=\"${product.id}\"></td>\n <td th:text=\"${product.name}\"></td>\n <td th:text=\"${product.price}\"></td>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "1c7c7b9587c03715f13974f0f2c6baf16cda3111a11ecc03a310d14814b6b5bc"
+    },
+    {
+      "id": "03-explanation-5",
+      "token": "03-explanation-5-part1",
+      "local_page": 39,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        213.01999999999998
+      ],
+      "file": "03-explanation-5-part1.png",
+      "consume_ids": [
+        "p092-b09",
+        "p092-b10"
+      ],
+      "source_pages": [
+        92
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " public String showProductById(int id, Model model) {",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "72355afdcc6002d3a7c4b4fa3d17176196c38e46925552ccff30f85aea90aa0c"
+    },
+    {
+      "id": "03-explanation-6",
+      "token": "03-explanation-6-part1",
+      "local_page": 40,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        535.004
+      ],
+      "file": "03-explanation-6-part1.png",
+      "consume_ids": [
+        "p093-b01",
+        "p093-b02",
+        "p093-b03",
+        "p093-b04",
+        "p093-b05",
+        "p093-b06"
+      ],
+      "source_pages": [
+        93
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行目",
+          "code": " Product product = prodRepo.findById(id).orElse(null);",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行目",
+          "code": " System.out.println(product);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "8a717411863f320227e23847475d88a41448ef9d038f06b29a4113882993a519"
+    },
+    {
+      "id": "03-explanation-7",
+      "token": "03-explanation-7-part1",
+      "local_page": 40,
+      "box_pt": [
+        85.104,
+        601.1639747763569,
+        511.776,
+        728.1839747763569
+      ],
+      "file": "03-explanation-7-part1.png",
+      "consume_ids": [
+        "p093-b07",
+        "p093-b08"
+      ],
+      "source_pages": [
+        93
+      ],
+      "expected_rows": [
+        {
+          "line_label": "7 行目",
+          "code": " model.addAttribute(\"product\", product);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "3b85adecab424a46b09d625178edbd79c69f5b35354a47714b035bfb9ada2578"
+    },
+    {
+      "id": "03-explanation-8",
+      "token": "03-explanation-8-part1",
+      "local_page": 45,
+      "box_pt": [
+        85.104,
+        554.49578125,
+        511.776,
+        766.74578125
+      ],
+      "file": "03-explanation-8-part1.png",
+      "consume_ids": [
+        "p097-b10",
+        "p097-b11"
+      ],
+      "source_pages": [
+        97
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行",
+          "code": " List<Product> list = prodRepo.findByPrice(price);",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行以降",
+          "code": " System.out.println(list);\n model.addAttribute(\"products\", list);\n return \"product/list\";\n }",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "c606f7a66ebe3b1d799468572e24111463a4587e2b8a9af794cfcbaef485efa8"
+    },
+    {
+      "id": "03-explanation-9",
+      "token": "03-explanation-9-part1",
+      "local_page": 49,
+      "box_pt": [
+        85.104,
+        433.0133125,
+        511.776,
+        697.5063124999999
+      ],
+      "file": "03-explanation-9-part1.png",
+      "consume_ids": [
+        "p101-b06",
+        "p101-b07",
+        "p101-b08"
+      ],
+      "source_pages": [
+        101
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行",
+          "code": " List<Product> list = prodRepo.findByNameAndPrice(name, price);",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行以降",
+          "code": " System.out.println(list);\n model.addAttribute(\"products\", list);\n return \"product/list\";\n }",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "0bd7f6ca6ab175e23ecb803f53e5bcce923225377a2d9b3aa5af98eb62127ad7"
+    },
+    {
+      "id": "03-explanation-10",
+      "token": "03-explanation-10-part1",
+      "local_page": 57,
+      "box_pt": [
+        85.104,
+        551.9089811411029,
+        511.776,
+        726.1789811411029
+      ],
+      "file": "03-explanation-10-part1.png",
+      "consume_ids": [
+        "p108-b06"
+      ],
+      "source_pages": [
+        108
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行",
+          "code": "@Data",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "44f4b67ce91463a0eef7ffc67d5e9cd4a205cc55d5a201d773447f16acdba9d5"
+    },
+    {
+      "id": "03-explanation-11",
+      "token": "03-explanation-11-part1",
+      "local_page": 59,
+      "box_pt": [
+        85.104,
+        357.81700000000006,
+        511.776,
+        576.3370000000001
+      ],
+      "file": "03-explanation-11-part1.png",
+      "consume_ids": [
+        "p109-b04",
+        "p109-b05",
+        "p109-b06",
+        "p109-b07"
+      ],
+      "source_pages": [
+        109
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " public String insertProduct(ProductForm productForm, Model model) {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "5 行目",
+          "code": " Product product = new Product();",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "74d3273d55a37ed653ea424789e1aec6466e4083cf9f7d29233cebf54fabcbfc"
+    },
+    {
+      "id": "03-explanation-12",
+      "token": "03-explanation-12-part1",
+      "local_page": 61,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        344.012
+      ],
+      "file": "03-explanation-12-part1.png",
+      "consume_ids": [
+        "p110-b01",
+        "p110-b02",
+        "p110-b03"
+      ],
+      "source_pages": [
+        110
+      ],
+      "expected_rows": [
+        {
+          "line_label": "8 行目",
+          "code": " product = prodRepo.save(product);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "b6eb6bb7358589704863fa13e6b7f8e6a046000c4ac9088113d3dd7ef8ecb51f"
+    },
+    {
+      "id": "03-explanation-13",
+      "token": "03-explanation-13-part1",
+      "local_page": 62,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        401.012
+      ],
+      "file": "03-explanation-13-part1.png",
+      "consume_ids": [
+        "p110-b04",
+        "p110-b05",
+        "p110-b06",
+        "p110-b07",
+        "p110-b08",
+        "p110-b09"
+      ],
+      "source_pages": [
+        110
+      ],
+      "expected_rows": [
+        {
+          "line_label": "6～7 行目",
+          "code": " product.setName(productForm.getName());\n product.setPrice(productForm.getPrice());",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "8-9 行目",
+          "code": " product = prodRepo.save(product);\n             model.addAttribute(\"product\", product);",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": " return \"/product/result\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "80100c2610079388357c8dbf90769c4e329abc6dd523ccda18f08a3d37bfed42"
+    },
+    {
+      "id": "03-explanation-14",
+      "token": "03-explanation-14-part1",
+      "local_page": 63,
+      "box_pt": [
+        85.104,
+        380.329,
+        511.776,
+        523.099
+      ],
+      "file": "03-explanation-14-part1.png",
+      "consume_ids": [
+        "p111-b03"
+      ],
+      "source_pages": [
+        111
+      ],
+      "expected_rows": [
+        {
+          "line_label": "9 行目",
+          "code": " <td th:text=\"${product.id}\"></td>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "8d37718ca592d900932431c554693e780bd632c05a735d91912f130c16cabbf1"
+    },
+    {
+      "id": "03-explanation-15",
+      "token": "03-explanation-15-part1",
+      "local_page": 70,
+      "box_pt": [
+        85.104,
+        311.305,
+        511.776,
+        688.79
+      ],
+      "file": "03-explanation-15-part1.png",
+      "consume_ids": [
+        "p117-b04",
+        "p117-b05",
+        "p117-b06",
+        "p117-b07"
+      ],
+      "source_pages": [
+        117
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": "@GetMapping(\"update/{id}\")",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "4 行目",
+          "code": "public String showUpdateInputView(@PathVariable int id, Model model) {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "5 行から",
+          "code": " Product product = prodRepo.findById(id).orElse(null);\n model.addAttribute(\"product\", product);\n return \"product/update_input\";\n}",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "9f0009e203d8bd814bfd251fe00b331b4be6879be679a5a1e230eed1b19c271b"
+    },
+    {
+      "id": "03-explanation-16",
+      "token": "03-explanation-16-part1",
+      "local_page": 73,
+      "box_pt": [
+        85.104,
+        342.31300000000005,
+        511.776,
+        560.8330000000001
+      ],
+      "file": "03-explanation-16-part1.png",
+      "consume_ids": [
+        "p119-b04",
+        "p119-b05",
+        "p119-b06",
+        "p119-b07"
+      ],
+      "source_pages": [
+        119
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " product.setId(productForm.getId());",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7 行目",
+          "code": " product = prodRepo.save(product);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "682a580de19d449cc18fd42686707ee43e1edd77979275ba2653bfbf893c552f"
+    },
+    {
+      "id": "03-explanation-17",
+      "token": "03-explanation-17-part1",
+      "local_page": 83,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        580.25
+      ],
+      "file": "03-explanation-17-part1.png",
+      "consume_ids": [
+        "p129-b01",
+        "p129-b02",
+        "p129-b03",
+        "p129-b04",
+        "p129-b05",
+        "p129-b06",
+        "p129-b07",
+        "p129-b08",
+        "p129-b09"
+      ],
+      "source_pages": [
+        129
+      ],
+      "expected_rows": [
+        {
+          "line_label": "5 行目",
+          "code": "@Service",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行目",
+          "code": "@RequiredArgsConstructor",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7 行目",
+          "code": "public class ProductServiceImpl implements ProductService{",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "9 行-10 行目",
+          "code": " //@Autowired は不要\n private final ProductRepository prodRepo;",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "13 行-14 行目",
+          "code": " public Product findProductById(int id) {\n return prodRepo.findById(id).orElse(null);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "44f0c69957968a06809712e7670c4b0b1ec9f449713886c405ba365e883a0c7b"
+    },
+    {
+      "id": "03-explanation-18",
+      "token": "03-explanation-18-part1",
+      "local_page": 85,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        380.27
+      ],
+      "file": "03-explanation-18-part1.png",
+      "consume_ids": [
+        "p130-b05",
+        "p130-b06",
+        "p130-b07",
+        "p130-b08",
+        "p130-b09",
+        "p130-b10"
+      ],
+      "source_pages": [
+        130
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行目",
+          "code": "@RequestMapping(\"product2\")",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7 行目",
+          "code": " private ProductService prodService;",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "13 行目",
+          "code": " Product product = prodService.findProductById(id);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ],
+      "chapter": "03",
+      "visual_review": "完了",
+      "png_sha256": "08bb789f2f2eba1d8c6df6b6dc565dd7d82aef5ffe525a04d32e9321034304ca"
+    }
+  ],
+  "clipped_text_findings": [],
+  "merged_adjacent_rows_findings": [],
+  "missing_meaning_findings": [],
+  "unintended_empty_cells_findings": [],
+  "resolved_initial_findings": [
+    "コード列幅/専用padding/font調整で細切れの折返しを改善",
+    "02/p059-b02の第1/第2引数が独立段落として表示",
+    "07/source273の空意味欄に次ページへ続く案内",
+    "行番号の行目だけが孤立する折返しを解消",
+    "03のコードに共通の外側dedentを適用し可読性を改善",
+    "括弧/ドット後のwbrでpasswordの識別子途中の折返しを解消",
+    "07の継続smallを独立行・nowrapへ変更し続きのきの孤立を解消"
+  ],
+  "pending_minor_rechecks": [],
+  "maximum_part_height_pt": 494.25,
+  "status": "pass",
+  "final_target_rechecks": [
+    {
+      "token": "02-explanation-6-part1",
+      "file": "02-explanation-6-part1.png",
+      "result": "pass",
+      "observed": "System.out.println( の後で折り返し、password); を同一行で保持。"
+    },
+    {
+      "token": "07-explanation-5-part1",
+      "file": "07-explanation-5-part1.png",
+      "result": "pass",
+      "observed": "10行目の下で続きが一つの行として表示され、1字だけの孤立なし。"
+    }
+  ],
+  "visual_review_sequence": "幅/専用余白/文字サイズ/dedent/列挙改行/行番号/継続案内を含む19章版で全46カードを目視。その後の解説限定wbrと継続nowrapの小修正はroot指定の2対象を実PDFで再確認。03の18カードは先行全件目視を保持し、最後のwbrのみの変更後の全件再目視はroot指示で不要。",
+  "remaining_findings": [],
+  "source_edited_by_reviewer": false
+}

@@ -1,0 +1,281 @@
+{
+  "chapter": "04",
+  "cards": 8,
+  "parts": [
+    {
+      "id": "04-explanation-1",
+      "token": "04-explanation-1-part1",
+      "local_page": 6,
+      "box_pt": [
+        85.104,
+        388.825,
+        511.776,
+        683.329
+      ],
+      "file": "04-explanation-1-part1.png",
+      "consume_ids": [
+        "p137-b04"
+      ],
+      "source_pages": [
+        137
+      ],
+      "expected_rows": [
+        {
+          "line_label": "12 行",
+          "code": "    @Column(name = \"emp_name\", length = 30, nullable = false)",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "04-explanation-2",
+      "token": "04-explanation-2-part1",
+      "local_page": 10,
+      "box_pt": [
+        85.104,
+        326.809,
+        511.776,
+        772.8130000000001
+      ],
+      "file": "04-explanation-2-part1.png",
+      "consume_ids": [
+        "p140-b04",
+        "p140-b05",
+        "p140-b06"
+      ],
+      "source_pages": [
+        140
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": " User user = userRepo.findByEmpIdAndPassword(userForm.getEmpId(),\n                   userForm.getPassword());",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "5 行",
+          "code": " if (user == null) { //結果がnull なら、再度ログイン画面へ",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "8 行目",
+          "code": " return \"main_page\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "04-explanation-3",
+      "token": "04-explanation-3-part1",
+      "local_page": 16,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        477.77
+      ],
+      "file": "04-explanation-3-part1.png",
+      "consume_ids": [
+        "p144-b05",
+        "p144-b06",
+        "p144-b07",
+        "p144-b08"
+      ],
+      "source_pages": [
+        144
+      ],
+      "expected_rows": [
+        {
+          "line_label": "7 行目",
+          "code": "public String loginSession(UserForm userForm, HttpSession session) {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "13 行目",
+          "code": " session.setAttribute(\"userData\", user);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "04-explanation-4",
+      "token": "04-explanation-4-part1",
+      "local_page": 23,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        510.735
+      ],
+      "file": "04-explanation-4-part1.png",
+      "consume_ids": [
+        "p150-b04",
+        "p150-b05",
+        "p150-b06",
+        "p150-b07",
+        "p150-b08"
+      ],
+      "source_pages": [
+        150
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3-5 行目",
+          "code": "import jakarta.validation.constraints.NotBlank;\nimport jakarta.validation.constraints.NotNull;\nimport jakarta.validation.constraints.Size;",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "11 行目",
+          "code": " @NotNull(message = \"社員番号を入力してください\")",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "14-15 行",
+          "code": " @NotBlank(message = \"パスワードを入力してください\")\n @Size(max = 15, message = \"15 文字以内で入力してください\")",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "04-explanation-5",
+      "token": "04-explanation-5-part1",
+      "local_page": 25,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        383.27
+      ],
+      "file": "04-explanation-5-part1.png",
+      "consume_ids": [
+        "p151-b08",
+        "p151-b09",
+        "p151-b10",
+        "p151-b11"
+      ],
+      "source_pages": [
+        151
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "3 行目",
+          "code": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "04-explanation-6",
+      "token": "04-explanation-6-part1",
+      "local_page": 26,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        291.77
+      ],
+      "file": "04-explanation-6-part1.png",
+      "consume_ids": [
+        "p152-b01",
+        "p152-b02"
+      ],
+      "source_pages": [
+        152
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " if (bdResult.hasErrors()) {",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "04-explanation-7",
+      "token": "04-explanation-7-part1",
+      "local_page": 27,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        443.504
+      ],
+      "file": "04-explanation-7-part1.png",
+      "consume_ids": [
+        "p152-b06",
+        "p152-b07",
+        "p152-b08",
+        "p152-b09"
+      ],
+      "source_pages": [
+        152
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": "<form th:action=\"@{/login4}\" method=\"post\" th:object=\"${userForm}\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "04-explanation-8",
+      "token": "04-explanation-8-part1",
+      "local_page": 28,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        508.497
+      ],
+      "file": "04-explanation-8-part1.png",
+      "consume_ids": [
+        "p153-b01",
+        "p153-b02",
+        "p153-b03",
+        "p153-b04",
+        "p153-b05",
+        "p153-b06",
+        "p153-b07"
+      ],
+      "source_pages": [
+        153
+      ],
+      "expected_rows": [
+        {
+          "line_label": "6 行目",
+          "code": "<p>社員番号 ：<input type = \"text\" th:field=\"*{empId}\"/>",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7 行目",
+          "code": " <span th:errors=\"*{empId}\"></span></p>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    }
+  ],
+  "pdf_sha256": "886783c9f3a7ccde1368f5c57da75d3b776bb5c969174db9371f215e3dbc4bd5",
+  "checks_sha256": "278d50dd27432787a7f34b6b4358263a0fbd3e56a320225247f22bde1d0ff771",
+  "sheets": 2
+}

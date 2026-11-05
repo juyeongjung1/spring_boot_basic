@@ -1,0 +1,205 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><title>ex06 教材部品プレビュー</title><style>/* HTMLプレビューと印刷PDFで共通の教材カード。 */
+@page { margin: 0; }
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #202833;
+  font: 10.5pt/1.5 "MS PGothic", "Meiryo", sans-serif;
+  font-variant-ligatures: none;
+  font-kerning: none;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.card {
+  width: 100%;
+  margin: 0;
+  border: 0.6pt solid #d7dde5;
+  border-radius: 6pt;
+  background: #fff;
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 6pt;
+  padding: 8pt 10pt;
+  border-bottom: 0.6pt solid #d7dde5;
+  background: #f2f5f8;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.card-header .badge,
+.card-header .language-badge {
+  flex: 0 1 auto;
+  max-width: 40%;
+  padding: 2pt 5pt;
+  border: 0.6pt solid #d7dde5;
+  border-radius: 3pt;
+  background: #fff;
+  color: #374151;
+  font-size: 9.5pt;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.card-header .filename {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: right;
+  font-size: 10.5pt;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.card-header .continuation {
+  flex: 0 0 auto;
+  color: #4b5563;
+  font-size: 9.5pt;
+  font-weight: 700;
+}
+
+.continuation:empty,
+.card-footer:empty {
+  display: none;
+}
+
+.card-content {
+  min-width: 0;
+  padding: 8pt 10pt;
+}
+
+.code-card .card-content {
+  padding: 6pt 0;
+}
+
+.code-row {
+  display: grid;
+  grid-template-columns: 34pt minmax(0, 1fr);
+  align-items: start;
+  break-inside: avoid;
+}
+
+.line-number {
+  padding: 0 7pt 0 4pt;
+  border-right: 0.6pt solid #e5e9ef;
+  color: #6b7280;
+  font: 9.5pt/15.5pt Consolas, "MS Gothic", monospace;
+  text-align: right;
+  white-space: nowrap;
+}
+
+pre.source-code {
+  min-width: 0;
+  margin: 0;
+  padding: 0 9pt;
+  color: #202833;
+  font: 10.5pt/15.5pt Consolas, "MS Gothic", monospace;
+  tab-size: 4;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.source-code .keyword { color: #6333a6; font-weight: 700; }
+.source-code .string { color: #a33124; }
+.source-code .number { color: #18568b; }
+.source-code .type { color: #176a69; }
+.source-code .function { color: #245b9d; }
+.source-code .operator,
+.source-code .punctuation { color: #374151; }
+
+.code-card .comment,
+.code-card .comment *,
+.explanation-card .comment,
+.explanation-card .comment * {
+  color: #008000 !important;
+  opacity: 1 !important;
+  font-style: normal !important;
+}
+
+.table-card .card-content,
+.explanation-card .card-content {
+  padding: 0;
+}
+
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 10.5pt;
+  line-height: 1.5;
+}
+
+.card thead { display: table-header-group; }
+.card tbody { display: table-row-group; }
+.card tr { break-inside: avoid; }
+
+.card th,
+.card td {
+  padding: 6pt 7pt;
+  border: 0.6pt solid #d7dde5;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.card th {
+  background: #edf2f7;
+  font-weight: 700;
+}
+
+.table-card table { font-size: 9.5pt; }
+.table-card th,
+.table-card td { padding: 5pt; }
+
+.card tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.explanation-table th:nth-child(1) { width: 14%; }
+.explanation-table th:nth-child(2) { width: 36%; }
+.explanation-table th:nth-child(3) { width: 50%; }
+.explanation-table pre.source-code { padding: 0; font-size: 9.5pt; line-height: 14.5pt; }
+.explanation-table .line-label { font-size: 9.5pt; }
+
+.card td p,
+.card th p {
+  margin: 0 0 5pt;
+}
+
+.card td p:last-child,
+.card th p:last-child { margin-bottom: 0; }
+
+/* .source-style の色・書体・強調は原稿側の指定をそのまま使う。 */
+.card-footer {
+  padding: 7pt 10pt;
+  border-top: 0.6pt solid #d7dde5;
+  background: #fff;
+  color: #374151;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+@media print {
+  .card {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
+body{padding:24px;background:#eef2f6}article{margin:0 auto 28px;width:max-content;max-width:100%}.preview-id{font:12px sans-serif;color:#475569}</style><body><article><p class="preview-id">ex06-p049-table01</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:44.06284%"><col style="width:55.93716%"></colgroup><tbody><tr data-break-row data-source-ids="p049-table01"><td style="background:#fff2cc;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">RDBMS 名</span></td><td style="background:#fff2cc;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">MySQL8.0</span></td></tr><tr data-break-row data-source-ids="p049-table01"><td style="background:#fff2cc;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">データベース名</span></td><td style="background:#fff2cc;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">spring_exercise</span></td></tr><tr data-break-row data-source-ids="p049-table01"><td style="background:#fff2cc;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">ユーザ名</span></td><td style="background:#fff2cc;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">spring_exercise_user</span></td></tr><tr data-break-row data-source-ids="p049-table01"><td style="background:#fff2cc;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">パスワード</span></td><td style="background:#fff2cc;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td></tr></tbody></table></div></section></div></article>
+<article><p class="preview-id">ex06-p049-table02</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:7.05217%"><col style="width:17.47450%"><col style="width:13.96952%"><col style="width:14.42294%"><col style="width:8.29582%"><col style="width:24.18217%"><col style="width:14.60287%"></colgroup><thead><tr><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">No</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">論理名称</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">物理名称</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">データ型</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">桁数</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">制約</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">備考</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p049-table02"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">社員番号</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">id</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">INT</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">PRIMARY KEY<br>AUTO_INCREMENT</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">自動採番</span></td></tr><tr data-break-row data-source-ids="p049-table02"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">2</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">パスワード</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">VARCHAR</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td></tr><tr data-break-row data-source-ids="p049-table02"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">3</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">社員名</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">name</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">VARCHAR</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td></tr></tbody></table></div></section></div></article>
+<article><p class="preview-id">ex06-p050-table01</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:7.05217%"><col style="width:17.47450%"><col style="width:13.96952%"><col style="width:14.42294%"><col style="width:8.29582%"><col style="width:24.18217%"><col style="width:14.60287%"></colgroup><tbody><tr data-break-row data-source-ids="p050-table01"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">4</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">給与</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">salary</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">INT</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:left"></td></tr><tr data-break-row data-source-ids="p050-table01"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">5</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">勤務地番号</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">location_id</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">INT</span></td><td style="background:#ffffff;text-align:left"></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">FOREIGN KEY</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">外部キー</span></td></tr></tbody></table></div></section></div></article>
+<article><p class="preview-id">ex06-p050-table02</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:20.00113%"><col style="width:20.00914%"><col style="width:19.97853%"><col style="width:20.00207%"><col style="width:20.00913%"></colgroup><thead><tr><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">ID</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">password</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">name</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">salary</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">location_id</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p050-table02"><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1001</span></td><td style="background:#fbe4d5;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td><td style="background:#fbe4d5;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">山田太郎</span></td><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">230000</span></td><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1</span></td></tr><tr data-break-row data-source-ids="p050-table02"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1002</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">鈴木一郎</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">230000</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">2</span></td></tr><tr data-break-row data-source-ids="p050-table02"><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1003</span></td><td style="background:#fbe4d5;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td><td style="background:#fbe4d5;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">田中花子</span></td><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">300000</span></td><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">3</span></td></tr><tr data-break-row data-source-ids="p050-table02"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1004</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">山田次郎</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">400000</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1</span></td></tr><tr data-break-row data-source-ids="p050-table02"><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1005</span></td><td style="background:#fbe4d5;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td><td style="background:#fbe4d5;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">高橋美智子</span></td><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">500000</span></td><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1</span></td></tr><tr data-break-row data-source-ids="p050-table02"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1006</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">平恵</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">270000</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">5</span></td></tr><tr data-break-row data-source-ids="p050-table02"><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1007</span></td><td style="background:#fbe4d5;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td><td style="background:#fbe4d5;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">佐々木舞</span></td><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">330000</span></td><td style="background:#fbe4d5;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">4</span></td></tr><tr data-break-row data-source-ids="p050-table02"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1008</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">password</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">中村翔</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">350000</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">3</span></td></tr></tbody></table></div></section></div></article>
+<article><p class="preview-id">ex06-p050-table03</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:7.22490%"><col style="width:18.74118%"><col style="width:11.29221%"><col style="width:14.42294%"><col style="width:10.36859%"><col style="width:24.21096%"><col style="width:13.73922%"></colgroup><thead><tr><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">No</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">論理名称</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">物理名<br>称</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">データ型</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">桁数</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">制約</span></th><th style="background:#ed7d31;text-align:center"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">備考</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p050-table03"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">1</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">勤務地番号</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">id</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">INT</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">PRIMARY KEY<br>AUTO_INCREMENT</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">自動採番</span></td></tr><tr data-break-row data-source-ids="p050-table03"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">2</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">勤務地名</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">name</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">VARCHAR</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">-</span></td></tr></tbody></table></div></section></div></article>
+<article><p class="preview-id">ex06-p050-table04</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:33.07002%"><col style="width:66.92998%"></colgroup><thead><tr><th style="background:#ed7d31;text-align:left"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">id</span></th><th style="background:#ed7d31;text-align:left"><span class="source-style" style="color:#ffffff;font-weight:700;text-decoration:none">name</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p050-table04"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">1</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">tokyo</span></td></tr><tr data-break-row data-source-ids="p050-table04"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">2</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">osaka</span></td></tr><tr data-break-row data-source-ids="p050-table04"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">3</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">fukuoka</span></td></tr><tr data-break-row data-source-ids="p050-table04"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">4</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">sapporo</span></td></tr><tr data-break-row data-source-ids="p050-table04"><td style="background:#ffffff;text-align:left;white-space:nowrap"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">5</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">okinawa</span></td></tr></tbody></table></div></section></div></article>
+<article><p class="preview-id">ex06-p057-table01</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:10.41151%"><col style="width:89.58849%"></colgroup><thead><tr><th style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">小問</span></th><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">内容</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p057-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">a</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">入力画面へ遷移するController メソッドの作成</span></td></tr><tr data-break-row data-source-ids="p057-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">b</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">location テーブルのリストを使って、&lt;select&gt; メニューを表示</span></td></tr><tr data-break-row data-source-ids="p057-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">c</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">EmpForm にlocationId を追加</span></td></tr><tr data-break-row data-source-ids="p057-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">d</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">登録処理の実装（save 処理）</span></td></tr><tr data-break-row data-source-ids="p057-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">e</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">外部キーの登録時に必要なエンティティ側の設定を確認</span></td></tr></tbody></table></div></section></div></article>
+<article><p class="preview-id">ex06-p059-table01</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:41.67711%"><col style="width:58.32289%"></colgroup><thead><tr><th style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">フィールド</span></th><th style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">説明</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p059-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">location（Location 型）</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">外部テーブルと結びつけるためのオブジェクト。<br>SELECT では自動でJOIN してくれるが、登録・<br>更新には使わない。</span></td></tr><tr data-break-row data-source-ids="p059-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">locationId（Integer 型）</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">フォームから渡された実際の整数値を使って登録・<br>更新を行うためのフィールド。DB のカラムに直<br>接反映される。</span></td></tr><tr data-break-row data-source-ids="p059-table01"><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">insertable = false, updatable = false</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">location（参照オブジェクト）を登録や更新に使わな<br>いようにHibernate に明示するための設定。</span></td></tr></tbody></table></div></section></div></article>
+<article><p class="preview-id">ex06-p061-table01</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:19.97288%"><col style="width:80.02712%"></colgroup><thead><tr><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">入力項目</span></th><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">内容</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p061-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">給与</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">type=&quot;range&quot; で、給与を 200,000～500,000 の範囲から選べるよう<br>にしている</span></td></tr><tr data-break-row data-source-ids="p061-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">勤務地</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">DB のLocation テーブルから name を取得し、セレクトメニューに表<br>示している</span></td></tr></tbody></table></div></section></div></article>
+<article><p class="preview-id">ex06-p062-table01</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:33.16250%"><col style="width:66.83750%"></colgroup><thead><tr><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">内容</span></th><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">詳細</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p062-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">URL</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">/findHighSalary</span></td></tr><tr data-break-row data-source-ids="p062-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">HTTP メソッド</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">GET</span></td></tr><tr data-break-row data-source-ids="p062-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">引数</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">int salary, String locationName, Model model</span></td></tr><tr data-break-row data-source-ids="p062-table01"><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">使用するリポジトリメソッド</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">findHighSalaryByLocation()（演習6.6.c で実装済み）</span></td></tr><tr data-break-row data-source-ids="p062-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">HTML ファイル</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">検索結果は emp_list.html に表示</span></td></tr><tr data-break-row data-source-ids="p062-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">Model への追加</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">取得したリストを &quot;empList&quot; のキー名で格納</span></td></tr></tbody></table></div></section></div></article></body></html>

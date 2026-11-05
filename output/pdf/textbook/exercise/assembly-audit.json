@@ -1,12 +1,12 @@
 {
   "collection": "exercise",
-  "flow_pages": 79,
+  "flow_pages": 82,
   "source_pages": 77,
   "toc_entries": 45,
   "source_page_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 19,
-  "maximum_uri_coordinate_delta_pt": 0,
-  "pdf_sha256": "b946bded2b45842b705336ae91ec3d70c5d0413993cd146d0ff453538c0c60db",
-  "verification": "output/verification/layout-restore/"
+  "maximum_uri_coordinate_delta_pt": 0.0,
+  "pdf_sha256": "c46433c040fb5fbb24fc12184d0e8791768b125c10dd5998aa45da734a68a669",
+  "verification": "output/verification/modern-2026/"
 }

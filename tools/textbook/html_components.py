@@ -1,0 +1,341 @@
+"""Markdownのコード・表・構文解説をHTML/CSSから文字付きPDF部品へ変換する。"""
+from collections import Counter, defaultdict
+from hashlib import sha256
+from html import escape
+from pathlib import Path
+import json
+import os
+import re
+import subprocess
+import textwrap
+
+import pymupdf as fitz
+from pygments import lex
+from pygments.lexers import get_lexer_by_name
+from pygments.token import Token
+
+from code_geometry import FILE_LABEL, code_geometries
+from table_styles import table_paint
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
+RUNTIME = Path('C:/Users/jungj/.cache/codex-runtimes/codex-primary-runtime/dependencies')
+SYMBOLS = str.maketrans({'◼': '■', '⚫': '●', '\uf09f': '•'})
+LABELS = {'java': 'Java', 'html': 'HTML', 'xml': 'XML', 'css': 'CSS',
+          'properties': 'Properties', 'sql': 'SQL', 'text': 'コンソール'}
+
+
+def normalized(value):
+    return re.sub(r'\s+|\u200b', '', value.translate(SYMBOLS))
+
+
+def ids_attr(ids):
+    return ' data-source-ids="' + escape(','.join(ids), quote=True) + '"' if ids else ''
+
+
+def language(node, filename=''):
+    name = filename.lower()
+    for suffix, lang in (('.java', 'java'), ('.html', 'html'), ('.jsp', 'html'),
+                         ('.xml', 'xml'), ('.css', 'css'), ('.properties', 'properties'), ('.sql', 'sql')):
+        if name.endswith(suffix):
+            return lang
+    text = re.sub(r'^\s*\d+:', '', node['text'], flags=re.M).lstrip()
+    if text.startswith(('spring.', '# MySQL', 'jakarta.validation.')):
+        return 'properties'
+    if re.match(r'<(?:\?xml|project|dependencies|dependency)\b', text):
+        return 'xml'
+    if text.startswith(('<', '<!')):
+        return 'html'
+    if text.startswith(('org.springframework.', 'java.lang.', 'Caused by:', 'Error ', 'Exception ')):
+        return 'text'
+    return node.get('language') if node.get('language') in LABELS else 'text'
+
+
+def canonical(value):
+    # Word由来の引用符を、コピーして使えるコードの引用符へ揃える。
+    return value.translate(str.maketrans({'“': '"', '”': '"', '‘': "'", '’': "'"}))
+
+
+def highlighted(value, lang, soft_breaks=False):
+    output = []
+    # JavaLexerは行末コメントの終端に改行を必要とする。補った1字だけ最後に除く。
+    for token, text in lex(value+'\n', get_lexer_by_name(lang, stripnl=False, ensurenl=False)):
+        kind = next((name for family, name in ((Token.Comment, 'comment'), (Token.Keyword, 'keyword'),
+            (Token.Literal.String, 'string'), (Token.Literal.Number, 'number'), (Token.Name.Class, 'type'),
+            (Token.Name.Function, 'function'), (Token.Operator, 'operator'), (Token.Punctuation, 'punctuation'))
+            if token in family), '')
+        fragments = text.split('\n')
+        for i, fragment in enumerate(fragments):
+            if fragment:
+                safe = escape(fragment)
+                if soft_breaks and token in Token.Punctuation:
+                    safe = re.sub(r'([.,(])', r'\1<wbr>', safe)
+                output.append(f'<span class="{kind}">{safe}</span>' if kind else safe)
+            if i < len(fragments)-1:
+                output.append('\n')
+    return ''.join(output).removesuffix('\n')
+
+
+def header(label, filenames=()):
+    names = ''.join('<span class="file-item"' + ids_attr(ids) + '>' + escape(text) + '</span>'
+                    for text, ids in filenames)
+    return (f'<header class="card-header"><span class="language-badge">{escape(label)}</span>'
+            f'<span class="filename">{names}</span><span class="continuation"></span></header>')
+
+
+def source_rows(node, owner, start=1):
+    lines = canonical(node['text']).split('\n')
+    numbered = any(re.match(r'^\s*\d+:', line) for line in lines)
+    rows = []
+    for line in lines:
+        match = re.match(r'^\s*(\d+):(.*)$', line)
+        if match:
+            rows.append({'number': int(match[1]), 'code': match[2], 'ids': [owner]})
+        elif numbered and rows:
+            rows[-1]['code'] += '\n' + line
+        else:
+            rows.append({'number': start+len(rows), 'code': line, 'ids': [owner]})
+    return rows
+
+
+def code_html(rows, lang, filenames, footer=''):
+    source = '\n'.join(row['code'] for row in rows)
+    tokens = highlighted(source, lang).split('\n')
+    cursor, pieces = 0, []
+    for row in rows:
+        count = row['code'].count('\n')+1
+        content = '\n'.join(tokens[cursor:cursor+count])
+        cursor += count
+        pieces.append('<div class="code-row" data-break-row' + ids_attr(row['ids']) + '>'
+            + f'<div class="line-number">{row["number"]}</div><pre class="source-code" spellcheck="false">{content}</pre></div>')
+    return '<section class="card code-card">'+header(LABELS[lang], filenames)+'<div class="card-content">'+''.join(pieces)+'</div><footer class="card-footer">'+footer+'</footer></section>'
+
+
+def table_html(folder, layout, ident, node):
+    info = layout.get('tables', {}).get(ident)
+    paint = table_paint(folder, layout, info, node['rows']) if info else None
+    rows = []
+    for i, row in enumerate(node['rows']):
+        cells = []
+        for j, value in enumerate(row):
+            tag = 'th' if i == 0 and node['has_header'] else 'td'
+            cell = paint[i][j] if paint else None
+            body = ''
+            if cell:
+                for text, style_id, underline in cell['parts']:
+                    style = layout['styles'][style_id]
+                    weight = 700 if style.get('stroke', 0) or 'Bold' in style['font'] or style.get('flags',0)&16 else 400
+                    safe = escape(text.translate(SYMBOLS)).replace('\n','<br>')
+                    body += f'<span class="source-style" style="color:{style["color"]};font-weight:{weight};text-decoration:{"underline" if underline else "none"}">{safe}</span>'
+            else:
+                body = escape(value.translate(SYMBOLS)).replace('\n','<br>')
+            numeric = bool(re.fullmatch(r'[\d.,+%\s-]+', value.strip()))
+            declarations = [f'background:{cell["fill"]}', f'text-align:{cell["align"]}'] if cell else []
+            if numeric:
+                declarations.append('white-space:nowrap')
+            style = ' style="'+';'.join(declarations)+'"' if declarations else ''
+            cells.append(f'<{tag}{style}>{body}</{tag}>')
+        rows.append('<tr'+('' if i == 0 and node['has_header'] else ' data-break-row'+ids_attr([ident]))+'>'+''.join(cells)+'</tr>')
+    if node['has_header']:
+        content = '<thead>'+rows[0]+'</thead><tbody>'+''.join(rows[1:])+'</tbody>'
+    else:
+        content = '<tbody>'+''.join(rows)+'</tbody>'
+    widths = [b-a for a,b in zip(info['xs'],info['xs'][1:])] if info else [1]*len(node['rows'][0])
+    columns = '<colgroup>'+''.join(f'<col style="width:{100*w/sum(widths):.5f}%">' for w in widths)+'</colgroup>'
+    return '<section class="card table-card">'+header('表')+'<div class="card-content"><table>'+columns+content+'</table></div></section>'
+
+
+def explanation_html(record, nodes):
+    lang = next((language(nodes[i]) for i in record['owner_code_ids'] if i in nodes), 'java')
+    output = []
+    for row in record['rows']:
+        meaning = row['meaning'].translate(SYMBOLS)
+        meaning = re.sub(r'\n(?=第\s*\d+\s*引数\s*[：:])', '\n\n', meaning)
+        paragraphs = [p.replace('\n','') for p in meaning.split('\n\n') if p.strip()]
+        prose = []
+        for index, paragraph in enumerate(paragraphs):
+            end = paragraph.find('。')+1
+            if index == 0 and end:
+                prose.append('<p><strong class="meaning-summary">'+escape(paragraph[:end])+'</strong>'+escape(paragraph[end:])+'</p>')
+            else:
+                prose.append('<p>'+escape(paragraph)+'</p>')
+        continuation = '<small style="display:block;white-space:nowrap">続き</small>' if row.get('continuation') else ''
+        if not prose:
+            prose = ['<p>説明は次ページへ続きます。</p>']
+        label = ''.join(escape(piece) if piece in ('・','、','～','-') else '<span style="white-space:nowrap">'+escape(piece)+'</span>' for piece in re.split(r'([・、～-])',row['line_label']) if piece)
+        source_ids = list(dict.fromkeys(fragment['source_id'] for fragment in row['source_fragments']))
+        output.append('<tr data-break-row'+ids_attr(source_ids)+'><td class="line-label">'+label+continuation+'</td><td><pre class="source-code" spellcheck="false">'+highlighted(canonical(textwrap.dedent(row['code'])),lang,soft_breaks=True)+'</pre></td><td>'+''.join(prose)+'</td></tr>')
+    return '<section class="card explanation-card">'+header('コードの読み方')+'<div class="card-content"><table class="explanation-table"><thead><tr><th>行番号</th><th>該当コード</th><th>意味・補足</th></tr></thead><tbody>'+''.join(output)+'</tbody></table></div></section>'
+
+
+def prepare(folder, config, layout, nodes, figures, order):
+    chapter = folder.name
+    fixed = set(config.get('native_pages',[]))
+    pages = {ident:page['source_page'] for page in order for ident in page['entries']}
+    explanations = [r for r in json.loads((HERE/'code_explanations.json').read_text(encoding='utf-8')) if r['chapter']==chapter and pages[r['anchor_id']] not in fixed]
+    for record in explanations:
+        for ident, original in record['source_texts'].items():
+            if ident not in nodes or nodes[ident]['text'] != original:
+                raise ValueError('構文解説の対応データをMarkdownに合わせて更新してください: '+ident)
+        for row in record['rows']:
+            for line in row['code_line_sources']:
+                source = {part['number']:part['code'] for part in source_rows(nodes[line['code_id']], line['code_id'])}
+                if source.get(line['line_number']) != canonical(line['text']):
+                    raise ValueError('構文解説の行番号をコードに合わせて更新してください: '+line['code_id'])
+    explanation_ids = {i for r in explanations for i in r['consume_ids']}
+    filenames = [r for r in json.loads((HERE/'filename_labels.json').read_text(encoding='utf-8')) if r['chapter']==chapter]
+    geometries = code_geometries(folder,layout,nodes)
+    groups = defaultdict(list)
+    for ident,node in nodes.items():
+        if node['kind']!='code' or ident in explanation_ids or pages[ident] in fixed:
+            continue
+        geometry = geometries.get(ident)
+        key = (pages[ident],tuple(geometry['frame'])) if geometry else (pages[ident],ident)
+        groups[key].append(ident)
+    specs = []
+    def add(ident, anchor, consume, html, width=426.672, offset=0, kind='code'):
+        specs.append({'id':chapter+'-'+ident, 'anchor':anchor, 'consume':list(dict.fromkeys(consume)),
+            'html':html, 'width':width, 'offset':offset, 'kind':kind})
+    for group in groups.values():
+        ident = group[0]
+        geo = geometries.get(ident)
+        width = geo['frame'][2]-geo['frame'][0] if geo else (410.672 if ident.startswith('revision-messages-') else 426.672)
+        offset = geo['frame'][0]-85.104 if geo else 0
+        caption_ids = list(dict.fromkeys(i for g in group for i in geometries.get(g,{}).get('caption_ids',[]) if FILE_LABEL.fullmatch(nodes[i]['text'].strip())))
+        names = [(nodes[i]['text'].strip(),[i]) for i in caption_ids]
+        if nodes[ident].get('attrs',{}).get('filename'):
+            names = [(nodes[ident]['attrs']['filename'],[])]
+        label_figures = [r for r in filenames if r['code_id'] in group]
+        for label in label_figures:
+            if not names:
+                names.append((label['text'],[label['figure_id']]))
+            else:
+                names[0][1].append(label['figure_id'])
+        lang = language(nodes[ident], names[0][0] if names else '')
+        rows = []
+        for g in group:
+            if rows:
+                rows.append({'number':rows[-1]['number']+1,'code':'','ids':[]})
+            rows += source_rows(nodes[g],g,rows[-1]['number']+1 if rows else 1)
+        attached = list(dict.fromkeys(i for g in group for i in geometries.get(g,{}).get('figure_ids',[])))
+        footer = ''
+        if 'p071-f08' in attached:
+            footer = '<div'+ids_attr(['p071-f08'])+'>接続URL：<code>jdbc:mysql://[サーバーURL]/[データベース名]?[その他設定]</code></div>'
+        for image_id in attached:
+            if image_id in {r['figure_id'] for r in label_figures} or image_id=='p071-f08':
+                continue
+            if image_id=='p113-f50':
+                footer += '<div class="conversion-note"'+ids_attr([image_id])+'>ProductForm → Product</div>'
+            else:
+                import base64
+                data=base64.b64encode((folder/figures[image_id]).read_bytes()).decode()
+                f=next(f for f in layout['figures'] if f['id']==image_id)
+                footer += '<div'+ids_attr([image_id])+'><img alt="実行結果の例" style="max-width:100%;width:'+str(f['box'][2]-f['box'][0])+'pt" src="data:image/svg+xml;base64,'+data+'"></div>'
+        consume = group+caption_ids+attached+[r['figure_id'] for r in label_figures]
+        add(ident,ident,consume,code_html(rows,lang,names,footer),width,offset)
+    for ident,node in nodes.items():
+        if node['kind']=='table' and pages[ident] not in fixed:
+            info=layout.get('tables',{}).get(ident)
+            # 表は共通の本文幅へ揃え、数値や短い列名の不自然な折り返しを避ける。
+            width=426.672
+            offset=0
+            add(ident,ident,[ident],table_html(folder,layout,ident,node),width,offset,'table')
+    for index,record in enumerate(explanations):
+        add('explanation-'+str(index+1),record['anchor_id'],record['consume_ids'],explanation_html(record,nodes),kind='explanation')
+    consume = {}
+    for spec in specs:
+        for ident in spec['consume']:
+            if ident in consume:
+                raise ValueError('HTML部品の二重取り込み: '+ident)
+            consume[ident]=spec['id']
+    _render(specs,chapter)
+    parts, anchors, expected = {}, {}, []
+    for spec in specs:
+        rendered = spec['result']['parts']
+        occurrences=defaultdict(list)
+        for index,part in enumerate(rendered):
+            for ident in part['anchors']:
+                occurrences[ident].append(index)
+        missing=set(spec['consume'])-set(occurrences)
+        # 画像の文字ラベル化などで残るIDは、カードの末尾へ所属させる。
+        for ident in missing:
+            rendered[-1]['anchors'][ident]={'x0':0,'y0':rendered[-1]['height']-1,'x1':1,'y1':rendered[-1]['height']}
+            occurrences[ident]=[len(rendered)-1]
+        tokens=[]
+        for index,part in enumerate(rendered):
+            token=spec['id']+'-part'+str(index+1)
+            events=[]
+            for ident,box in part['anchors'].items():
+                first,last=occurrences[ident][0],occurrences[ident][-1]
+                kind=nodes.get(ident,{}).get('kind')
+                if ident in figures:
+                    # 繰り返されるファイル名ヘッダーの図版IDは、最初の出現に所属させる。
+                    if index==first:
+                        events += [{'id':ident,'edge':'start','x':box['x0'],'y':box['y0']},
+                                   {'id':ident,'edge':'end','x':box['x1'],'y':box['y1']}]
+                    continue
+                if kind=='heading' or ident in [i for i in spec['consume'] if i in nodes and FILE_LABEL.fullmatch(nodes[i]['text'].strip())]:
+                    if index==first:events.append({'id':ident,'edge':'heading','x':box['x0'],'y':box['y0']})
+                else:
+                    if index==first:
+                        if kind in ('code','table'):events.append({'id':ident,'edge':('short-' if first==last else 'long-')+('code' if kind=='code' else 'table'),'x':box['x0'],'y':box['y0']})
+                        events.append({'id':ident,'edge':'start','x':box['x0'],'y':box['y0']})
+                    if index==last:events.append({'id':ident,'edge':'end','x':box['x1'],'y':box['y1']})
+            parts[token]={**part,'events':events,'offset':spec['offset'],'kind':spec['kind']}
+            expected.append(part['pdf_text'])
+            tokens.append(token)
+        anchors[spec['anchor']]=tokens
+    return {'parts':parts,'anchors':anchors,'consume':set(consume),'expected_text':''.join(expected),'specs':specs}
+
+
+def _render(specs, chapter):
+    cache=ROOT/'tmp/html-components'
+    cache.mkdir(parents=True,exist_ok=True)
+    version=(HERE/'components.css').read_bytes()+(HERE/'render_components.cjs').read_bytes()
+    pending=[]
+    for spec in specs:
+        key=sha256(version+json.dumps({k:spec[k] for k in ('id','width','html')},ensure_ascii=False).encode()).hexdigest()
+        spec['cache_key']=key
+        path=cache/(key+'.json')
+        if path.exists():
+            spec['result']=json.loads(path.read_text(encoding='utf-8'))
+        else:pending.append(spec)
+    if pending:
+        out=cache/('render-'+chapter)
+        request=cache/('request-'+chapter+'.json')
+        request.write_text(json.dumps({'output_dir':str(out),'cards':[{k:s[k] for k in ('id','width','html')} for s in pending]},ensure_ascii=False),encoding='utf-8')
+        env=dict(os.environ)
+        if not env.get('NODE_PATH'):env['NODE_PATH']=str(RUNTIME/'node/node_modules')
+        process = subprocess.run(['node',str(HERE/'render_components.cjs'),str(request)],env=env,capture_output=True,text=True,encoding='utf-8')
+        if process.returncode:
+            raise RuntimeError(process.stderr or process.stdout)
+        results=json.loads((out/'results.json').read_text(encoding='utf-8'))
+        for spec,result in zip(pending,results['cards']):
+            for index,part in enumerate(result['parts']):
+                target=cache/(spec['cache_key']+'-'+str(index+1)+'.pdf')
+                target.write_bytes(Path(part['pdf']).read_bytes())
+                part['pdf']=str(target)
+                doc=fitz.open(target)
+                if len(doc)!=1:raise ValueError('HTML部品が単頁ではありません: '+spec['id'])
+                # Chromeの紙寸法の丸めを除き、DOMと同じpt座標で合成する。
+                part['pdf_text']=doc[0].get_text()
+                if Counter(normalized(part['text']))!=Counter(normalized(part['pdf_text'])):
+                    raise ValueError('HTML/PDFの文字差: '+spec['id']+' '+str(Counter(normalized(part['text']))-Counter(normalized(part['pdf_text']))))
+            spec['result']=result
+            (cache/(spec['cache_key']+'.json')).write_text(json.dumps(result,ensure_ascii=False),encoding='utf-8')
+    preview=ROOT/'output/html/textbook'
+    preview.mkdir(parents=True,exist_ok=True)
+    css=(HERE/'components.css').read_text(encoding='utf-8')
+    body='\n'.join('<article><p class="preview-id">'+escape(spec['id'])+'</p><div style="width:'+str(spec['width'])+'pt">'+spec['html']+'</div></article>' for spec in specs)
+    (preview/(chapter+'.html')).write_text('<!doctype html><html lang="ja"><meta charset="utf-8"><title>'+escape(chapter)+' 教材部品プレビュー</title><style>'+css+'body{padding:24px;background:#eef2f6}article{margin:0 auto 28px;width:max-content;max-width:100%}.preview-id{font:12px sans-serif;color:#475569}</style><body>'+body+'</body></html>',encoding='utf-8')
+
+
+def embed(pdf, modern, marks):
+    positioned={m['id']:m for m in marks if m['edge']=='html-component'}
+    for token,part in modern['parts'].items():
+        mark=positioned[token]
+        page=pdf[mark['page']-1]
+        rect=fitz.Rect(mark['x'],mark['y'],mark['x']+part['width'],mark['y']+part['height'])
+        with fitz.open(part['pdf']) as component:
+            clip=fitz.Rect(0,0,part['width'],part['height'])&component[0].rect
+            page.show_pdf_page(rect,component,clip=clip,keep_proportion=False)

@@ -1,0 +1,4224 @@
+[
+  {
+    "chapter": "02",
+    "anchor_id": "p043-b05",
+    "consume_ids": [
+      "p043-b05",
+      "p043-b06"
+    ],
+    "owner_code_ids": [
+      "p041-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "9 行",
+        "code": " public String index() {",
+        "meaning": "public は、このメソッドが外部からアクセス可能であることを意味します。String は、メソッド\nが文字列を返すことを示しています。index() はメソッド名で、このメソッドが何をするのかを\n表します。Controller の中のメソッドは、通常は戻り値をString にします。",
+        "source_ids": [
+          "p043-b05"
+        ],
+        "original_label": "・9 行 public String index()",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p041-b03",
+            "line_number": 9,
+            "text": " public String index() {"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p043-b05",
+            "start": 0,
+            "end": 26,
+            "role": "label",
+            "text": "・9 行 public String index()"
+          },
+          {
+            "source_id": "p043-b05",
+            "start": 26,
+            "end": 27,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p043-b05",
+            "start": 27,
+            "end": 171,
+            "role": "meaning",
+            "text": "public は、このメソッドが外部からアクセス可能であることを意味します。String は、メソッド\nが文字列を返すことを示しています。index() はメソッド名で、このメソッドが何をするのかを\n表します。Controller の中のメソッドは、通常は戻り値をString にします。"
+          }
+        ]
+      },
+      {
+        "line_label": "10 行",
+        "code": " return \"index\";",
+        "meaning": "return には文字列を指定します。通常、この文字列は表示させたいhtml ファイル名を指定\nします。",
+        "source_ids": [
+          "p043-b06"
+        ],
+        "original_label": "・10 行 return “index”;",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p041-b03",
+            "line_number": 10,
+            "text": " return \"index\";"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p043-b06",
+            "start": 0,
+            "end": 21,
+            "role": "label",
+            "text": "・10 行 return “index”;"
+          },
+          {
+            "source_id": "p043-b06",
+            "start": 21,
+            "end": 22,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p043-b06",
+            "start": 22,
+            "end": 74,
+            "role": "meaning",
+            "text": "return には文字列を指定します。通常、この文字列は表示させたいhtml ファイル名を指定\nします。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p043-b05": "・9 行 public String index()\npublic は、このメソッドが外部からアクセス可能であることを意味します。String は、メソッド\nが文字列を返すことを示しています。index() はメソッド名で、このメソッドが何をするのかを\n表します。Controller の中のメソッドは、通常は戻り値をString にします。",
+      "p043-b06": "・10 行 return “index”;\nreturn には文字列を指定します。通常、この文字列は表示させたいhtml ファイル名を指定\nします。"
+    },
+    "source_pages": [
+      43
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p044-b09",
+    "consume_ids": [
+      "p044-b09",
+      "p044-b10"
+    ],
+    "owner_code_ids": [
+      "p044-b08"
+    ],
+    "rows": [
+      {
+        "line_label": "2 行目",
+        "code": "<html xmlns:th=\"http://www.thymeleaf.org\">",
+        "meaning": "このビューの特徴として、2 行目に注目してください。ここでは、Spring Boot と相性が良いテ\nンプレートエンジン「Thymeleaf」を使用するという宣言をしています。\nxmlns:th を記載することで、HTML ファイル内でThymeleaf の機能が利用可能になります。",
+        "source_ids": [
+          "p044-b09"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p044-b08",
+            "line_number": 2,
+            "text": "<html xmlns:th=\"http://www.thymeleaf.org\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p044-b09",
+            "start": 0,
+            "end": 142,
+            "role": "meaning",
+            "text": "このビューの特徴として、2 行目に注目してください。ここでは、Spring Boot と相性が良いテ\nンプレートエンジン「Thymeleaf」を使用するという宣言をしています。\nxmlns:th を記載することで、HTML ファイル内でThymeleaf の機能が利用可能になります。"
+          }
+        ]
+      },
+      {
+        "line_label": "10 行目",
+        "code": " <div>トップページ</div>",
+        "meaning": "[トップページ]と表示される部分（10 行目）からは、ユーザに見える画面の内容が入ります。\n今後、さまざまな情報やデザイン要素を追加していくことになります。",
+        "source_ids": [
+          "p044-b10"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p044-b08",
+            "line_number": 10,
+            "text": " <div>トップページ</div>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p044-b10",
+            "start": 0,
+            "end": 78,
+            "role": "meaning",
+            "text": "[トップページ]と表示される部分（10 行目）からは、ユーザに見える画面の内容が入ります。\n今後、さまざまな情報やデザイン要素を追加していくことになります。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p044-b09": "このビューの特徴として、2 行目に注目してください。ここでは、Spring Boot と相性が良いテ\nンプレートエンジン「Thymeleaf」を使用するという宣言をしています。\nxmlns:th を記載することで、HTML ファイル内でThymeleaf の機能が利用可能になります。",
+      "p044-b10": "[トップページ]と表示される部分（10 行目）からは、ユーザに見える画面の内容が入ります。\n今後、さまざまな情報やデザイン要素を追加していくことになります。"
+    },
+    "source_pages": [
+      44
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p049-b05",
+    "consume_ids": [
+      "p049-b05",
+      "p049-b06"
+    ],
+    "owner_code_ids": [
+      "p049-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "10 行目",
+        "code": " <form th:action = \"@{/login}\" method=\"POST\">",
+        "meaning": "<form>要素を用いてデータ送信のためのフォームを作成します。この要素のth:action 属性\nは、フォームデータが送信されるサーバー上のURL を指定できます。Thymeleaf では、ただの\naction ではなく、th:action を使うことで、実行環境に変化があってもURL を正しく解決できま\nす。「@」は、アプリケーションのコンテキストパス(基本URL）を、自動生成してくれます。URL\nが異なるサーバーで実行しても、影響がなくなる効果があります。\n ここでは/login がそのURL として指定されています。通常、th:action 属性のURL 先は、\n@Controller のメソッドを指定します。そして、method という属性がありますが、この属性は一般\n的なGET 方式の送信ではなく、POST 方式の送信をするという意味です。POST 方式にする\nと、パスワードがURL に表示されないなどのメリットがあり、隠したいデータを送信する時によく\n使われます。",
+        "source_ids": [
+          "p049-b05",
+          "p049-b06"
+        ],
+        "original_label": "・10 行目 <form th:action = “@{/login}” method = “POST”>",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p049-b04",
+            "line_number": 10,
+            "text": " <form th:action = \"@{/login}\" method=\"POST\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p049-b05",
+            "start": 0,
+            "end": 53,
+            "role": "label",
+            "text": "・10 行目 <form th:action = “@{/login}” method = “POST”>"
+          },
+          {
+            "source_id": "p049-b06",
+            "start": 0,
+            "end": 445,
+            "role": "meaning",
+            "text": "<form>要素を用いてデータ送信のためのフォームを作成します。この要素のth:action 属性\nは、フォームデータが送信されるサーバー上のURL を指定できます。Thymeleaf では、ただの\naction ではなく、th:action を使うことで、実行環境に変化があってもURL を正しく解決できま\nす。「@」は、アプリケーションのコンテキストパス(基本URL）を、自動生成してくれます。URL\nが異なるサーバーで実行しても、影響がなくなる効果があります。\n ここでは/login がそのURL として指定されています。通常、th:action 属性のURL 先は、\n@Controller のメソッドを指定します。そして、method という属性がありますが、この属性は一般\n的なGET 方式の送信ではなく、POST 方式の送信をするという意味です。POST 方式にする\nと、パスワードがURL に表示されないなどのメリットがあり、隠したいデータを送信する時によく\n使われます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p049-b05": "・10 行目 <form th:action = “@{/login}” method = “POST”>",
+      "p049-b06": "<form>要素を用いてデータ送信のためのフォームを作成します。この要素のth:action 属性\nは、フォームデータが送信されるサーバー上のURL を指定できます。Thymeleaf では、ただの\naction ではなく、th:action を使うことで、実行環境に変化があってもURL を正しく解決できま\nす。「@」は、アプリケーションのコンテキストパス(基本URL）を、自動生成してくれます。URL\nが異なるサーバーで実行しても、影響がなくなる効果があります。\n ここでは/login がそのURL として指定されています。通常、th:action 属性のURL 先は、\n@Controller のメソッドを指定します。そして、method という属性がありますが、この属性は一般\n的なGET 方式の送信ではなく、POST 方式の送信をするという意味です。POST 方式にする\nと、パスワードがURL に表示されないなどのメリットがあり、隠したいデータを送信する時によく\n使われます。"
+    },
+    "source_pages": [
+      49
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p050-b01",
+    "consume_ids": [
+      "p050-b01",
+      "p050-b02",
+      "p050-b03",
+      "p050-b04"
+    ],
+    "owner_code_ids": [
+      "p049-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "11 行・12 行目",
+        "code": "<p>社員番号 ：<input type = \"text\" name = \"id\"/></p>\n<p>パスワード：<input type = \"password\" name = \"password\"/></p>",
+        "meaning": "<input>要素はユーザがデータを入力するためのフィールドを提供します。type=\"text\"を指\n定することでテキスト入力フィールドが、type=\"password\"を指定することでパスワード入力フィ\nールドがそれぞれ生成されます。ここで、このフォームのデータは、社員番号という日本語で認\n識されるのではなく、name 属性の値で認識されます。今回は、「id」と「password」というname\nでデータが送られるということを覚えてください。",
+        "source_ids": [
+          "p050-b01",
+          "p050-b02"
+        ],
+        "original_label": "・11 行・12 行目 <input type = “text” name = “パラメータ名”>",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p049-b04",
+            "line_number": 11,
+            "text": "<p>社員番号 ：<input type = \"text\" name = \"id\"/></p>"
+          },
+          {
+            "code_id": "p049-b04",
+            "line_number": 12,
+            "text": "<p>パスワード：<input type = \"password\" name = \"password\"/></p>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p050-b01",
+            "start": 0,
+            "end": 49,
+            "role": "label",
+            "text": "・11 行・12 行目 <input type = “text” name = “パラメータ名”>"
+          },
+          {
+            "source_id": "p050-b02",
+            "start": 0,
+            "end": 224,
+            "role": "meaning",
+            "text": "<input>要素はユーザがデータを入力するためのフィールドを提供します。type=\"text\"を指\n定することでテキスト入力フィールドが、type=\"password\"を指定することでパスワード入力フィ\nールドがそれぞれ生成されます。ここで、このフォームのデータは、社員番号という日本語で認\n識されるのではなく、name 属性の値で認識されます。今回は、「id」と「password」というname\nでデータが送られるということを覚えてください。"
+          }
+        ]
+      },
+      {
+        "line_label": "13 行目",
+        "code": "<input type = \"submit\" value = \"ログイン\">",
+        "meaning": "<input type=\"submit\">は送信ボタンを表します。このボタンをクリックすると、フォーム内のデ\nータがth:action 属性で指定されたURL に送信されます。value 属性はボタン上に表示される\nテキストを定義します。",
+        "source_ids": [
+          "p050-b03",
+          "p050-b04"
+        ],
+        "original_label": "・13 行目 <input type = \"submit\" value = \"ログイン\">",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p049-b04",
+            "line_number": 13,
+            "text": "<input type = \"submit\" value = \"ログイン\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p050-b03",
+            "start": 0,
+            "end": 45,
+            "role": "label",
+            "text": "・13 行目 <input type = \"submit\" value = \"ログイン\">"
+          },
+          {
+            "source_id": "p050-b04",
+            "start": 0,
+            "end": 119,
+            "role": "meaning",
+            "text": "<input type=\"submit\">は送信ボタンを表します。このボタンをクリックすると、フォーム内のデ\nータがth:action 属性で指定されたURL に送信されます。value 属性はボタン上に表示される\nテキストを定義します。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p050-b01": "・11 行・12 行目 <input type = “text” name = “パラメータ名”>",
+      "p050-b02": "<input>要素はユーザがデータを入力するためのフィールドを提供します。type=\"text\"を指\n定することでテキスト入力フィールドが、type=\"password\"を指定することでパスワード入力フィ\nールドがそれぞれ生成されます。ここで、このフォームのデータは、社員番号という日本語で認\n識されるのではなく、name 属性の値で認識されます。今回は、「id」と「password」というname\nでデータが送られるということを覚えてください。",
+      "p050-b03": "・13 行目 <input type = \"submit\" value = \"ログイン\">",
+      "p050-b04": "<input type=\"submit\">は送信ボタンを表します。このボタンをクリックすると、フォーム内のデ\nータがth:action 属性で指定されたURL に送信されます。value 属性はボタン上に表示される\nテキストを定義します。"
+    },
+    "source_pages": [
+      50
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p051-b06",
+    "consume_ids": [
+      "p051-b06",
+      "p051-b07",
+      "p051-b08",
+      "p051-b09"
+    ],
+    "owner_code_ids": [
+      "p051-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "10 行目",
+        "code": "@PostMapping(\"/login\")",
+        "meaning": "@PostMapping は、POST リクエストが送られた際に、このメソッドが実行されることを示してい\nます。3 行でも同じ/login というURL を待ち受けていますが、普通のGet 方式での呼び出しが\nあった場合は、showLoginView()メソッドが実行され、Post 方式の呼び出しがあった場合は、こ\nちらのdoLogin メソッドが実行されます。",
+        "source_ids": [
+          "p051-b06",
+          "p051-b07"
+        ],
+        "original_label": "・10 行目 @PostMapping(\"/login\")",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p051-b04",
+            "line_number": 10,
+            "text": "@PostMapping(\"/login\")"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p051-b06",
+            "start": 0,
+            "end": 29,
+            "role": "label",
+            "text": "・10 行目 @PostMapping(\"/login\")"
+          },
+          {
+            "source_id": "p051-b07",
+            "start": 0,
+            "end": 182,
+            "role": "meaning",
+            "text": "@PostMapping は、POST リクエストが送られた際に、このメソッドが実行されることを示してい\nます。3 行でも同じ/login というURL を待ち受けていますが、普通のGet 方式での呼び出しが\nあった場合は、showLoginView()メソッドが実行され、Post 方式の呼び出しがあった場合は、こ\nちらのdoLogin メソッドが実行されます。"
+          }
+        ]
+      },
+      {
+        "line_label": "11 行目",
+        "code": "public String doLogin(int id, String password) {",
+        "meaning": "login_input.html から送信したデータのname 属性に対応する値を受け取るために使用され\nています。Spring では、Controller のメソッドの仮引数をhtml のname 属性の値と合わせるだ\nけで、パラメータを受け取ることができます。login_input.html では、「id」と「password」のデータ\nが送られるので、引数名も、int id, String password に合わせます。",
+        "source_ids": [
+          "p051-b08",
+          "p051-b09"
+        ],
+        "original_label": "・11 行目 仮引数 int id, String password",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p051-b04",
+            "line_number": 11,
+            "text": "public String doLogin(int id, String password) {"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p051-b08",
+            "start": 0,
+            "end": 34,
+            "role": "label",
+            "text": "・11 行目 仮引数 int id, String password"
+          },
+          {
+            "source_id": "p051-b09",
+            "start": 0,
+            "end": 216,
+            "role": "meaning",
+            "text": "login_input.html から送信したデータのname 属性に対応する値を受け取るために使用され\nています。Spring では、Controller のメソッドの仮引数をhtml のname 属性の値と合わせるだ\nけで、パラメータを受け取ることができます。login_input.html では、「id」と「password」のデータ\nが送られるので、引数名も、int id, String password に合わせます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p051-b06": "・10 行目 @PostMapping(\"/login\")",
+      "p051-b07": "@PostMapping は、POST リクエストが送られた際に、このメソッドが実行されることを示してい\nます。3 行でも同じ/login というURL を待ち受けていますが、普通のGet 方式での呼び出しが\nあった場合は、showLoginView()メソッドが実行され、Post 方式の呼び出しがあった場合は、こ\nちらのdoLogin メソッドが実行されます。",
+      "p051-b08": "・11 行目 仮引数 int id, String password",
+      "p051-b09": "login_input.html から送信したデータのname 属性に対応する値を受け取るために使用され\nています。Spring では、Controller のメソッドの仮引数をhtml のname 属性の値と合わせるだ\nけで、パラメータを受け取ることができます。login_input.html では、「id」と「password」のデータ\nが送られるので、引数名も、int id, String password に合わせます。"
+    },
+    "source_pages": [
+      51
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p052-b03",
+    "consume_ids": [
+      "p052-b03",
+      "p052-b04"
+    ],
+    "owner_code_ids": [
+      "p051-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "13 行、14 行目",
+        "code": " System.out.println(id);\n System.out.println(password);",
+        "meaning": "本当にid とpassword のデータを取得できたのか、コンソールに出力することで、検証をして\nいます。結果は、以下の画像のように、入力した値を問題なく取得できているのがわかります。",
+        "source_ids": [
+          "p052-b03",
+          "p052-b04"
+        ],
+        "original_label": "・13 行、14 行目の出力",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p051-b04",
+            "line_number": 13,
+            "text": " System.out.println(id);"
+          },
+          {
+            "code_id": "p051-b04",
+            "line_number": 14,
+            "text": " System.out.println(password);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p052-b03",
+            "start": 0,
+            "end": 14,
+            "role": "label",
+            "text": "・13 行、14 行目の出力"
+          },
+          {
+            "source_id": "p052-b04",
+            "start": 0,
+            "end": 92,
+            "role": "meaning",
+            "text": "本当にid とpassword のデータを取得できたのか、コンソールに出力することで、検証をして\nいます。結果は、以下の画像のように、入力した値を問題なく取得できているのがわかります。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p052-b03": "・13 行、14 行目の出力",
+      "p052-b04": "本当にid とpassword のデータを取得できたのか、コンソールに出力することで、検証をして\nいます。結果は、以下の画像のように、入力した値を問題なく取得できているのがわかります。"
+    },
+    "source_pages": [
+      52
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p056-b05",
+    "consume_ids": [
+      "p056-b05",
+      "p056-b06",
+      "p056-b07",
+      "p056-b08"
+    ],
+    "owner_code_ids": [
+      "p056-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "4 行目",
+        "code": " public String doLogin(UserForm userForm) {",
+        "meaning": "doLogin メソッドの仮引数に、UserForm のオブジェクトを入れています。Spring では、仮引数\nにForm クラスのオブジェクトを入れるだけで、リクエストパラメータがUserForm オブジェクト\nの対応するフィールド(id, password)に自動的にセットされます。\nよって、各リクエストパラメータを個別に取得するためのコードを書く必要がなくなります。",
+        "source_ids": [
+          "p056-b05",
+          "p056-b06"
+        ],
+        "original_label": "・4 行目 doLogin(UserForm userForm)",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p056-b04",
+            "line_number": 4,
+            "text": " public String doLogin(UserForm userForm) {"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p056-b05",
+            "start": 0,
+            "end": 32,
+            "role": "label",
+            "text": "・4 行目 doLogin(UserForm userForm)"
+          },
+          {
+            "source_id": "p056-b06",
+            "start": 0,
+            "end": 187,
+            "role": "meaning",
+            "text": "doLogin メソッドの仮引数に、UserForm のオブジェクトを入れています。Spring では、仮引数\nにForm クラスのオブジェクトを入れるだけで、リクエストパラメータがUserForm オブジェクト\nの対応するフィールド(id, password)に自動的にセットされます。\nよって、各リクエストパラメータを個別に取得するためのコードを書く必要がなくなります。"
+          }
+        ]
+      },
+      {
+        "line_label": "7-8 行目",
+        "code": " System.out.println(userForm.getId());\n System.out.println(userForm.getPassword());",
+        "meaning": "UserForm クラスに予め作成しておいた、getId()とgetPassword()メソッドを呼び出すことで、\nuserForm オブジェクトにバインドされたID とパスワードを取得し、コンソールに出力します。",
+        "source_ids": [
+          "p056-b07",
+          "p056-b08"
+        ],
+        "original_label": "・7-8 行目",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p056-b04",
+            "line_number": 7,
+            "text": " System.out.println(userForm.getId());"
+          },
+          {
+            "code_id": "p056-b04",
+            "line_number": 8,
+            "text": " System.out.println(userForm.getPassword());"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p056-b07",
+            "start": 0,
+            "end": 7,
+            "role": "label",
+            "text": "・7-8 行目"
+          },
+          {
+            "source_id": "p056-b08",
+            "start": 0,
+            "end": 107,
+            "role": "meaning",
+            "text": "UserForm クラスに予め作成しておいた、getId()とgetPassword()メソッドを呼び出すことで、\nuserForm オブジェクトにバインドされたID とパスワードを取得し、コンソールに出力します。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p056-b05": "・4 行目 doLogin(UserForm userForm)",
+      "p056-b06": "doLogin メソッドの仮引数に、UserForm のオブジェクトを入れています。Spring では、仮引数\nにForm クラスのオブジェクトを入れるだけで、リクエストパラメータがUserForm オブジェクト\nの対応するフィールド(id, password)に自動的にセットされます。\nよって、各リクエストパラメータを個別に取得するためのコードを書く必要がなくなります。",
+      "p056-b07": "・7-8 行目",
+      "p056-b08": "UserForm クラスに予め作成しておいた、getId()とgetPassword()メソッドを呼び出すことで、\nuserForm オブジェクトにバインドされたID とパスワードを取得し、コンソールに出力します。"
+    },
+    "source_pages": [
+      56
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p058-b06",
+    "consume_ids": [
+      "p058-b06",
+      "p058-b07",
+      "p058-b08"
+    ],
+    "owner_code_ids": [
+      "p058-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "13 行目",
+        "code": " public String doLogin(UserForm userForm, Model model) {",
+        "meaning": "UserForm オブジェクトは、フォームから送信されたデータを受け取り、\nリクエストスコープのオブジェクト(データ一時保管用の箱)を生み出すため、Model オブジェ\nクトをメソッドの仮引数に入れます。\n\nUserForm の時と同様に、Spring ではメソッドの仮引数にオブジェクト名を書くと、オブジェク\nトを生成しなくても、使うことができます。",
+        "source_ids": [
+          "p058-b06",
+          "p058-b07",
+          "p058-b08"
+        ],
+        "original_label": "・13 行目 doLogin(UserForm userForm, Model model)",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p058-b04",
+            "line_number": 13,
+            "text": " public String doLogin(UserForm userForm, Model model) {"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p058-b06",
+            "start": 0,
+            "end": 46,
+            "role": "label",
+            "text": "・13 行目 doLogin(UserForm userForm, Model model)"
+          },
+          {
+            "source_id": "p058-b07",
+            "start": 0,
+            "end": 102,
+            "role": "meaning",
+            "text": "UserForm オブジェクトは、フォームから送信されたデータを受け取り、\nリクエストスコープのオブジェクト(データ一時保管用の箱)を生み出すため、Model オブジェ\nクトをメソッドの仮引数に入れます。"
+          },
+          {
+            "source_id": "p058-b08",
+            "start": 0,
+            "end": 72,
+            "role": "meaning",
+            "text": "UserForm の時と同様に、Spring ではメソッドの仮引数にオブジェクト名を書くと、オブジェク\nトを生成しなくても、使うことができます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p058-b06": "・13 行目 doLogin(UserForm userForm, Model model)",
+      "p058-b07": "UserForm オブジェクトは、フォームから送信されたデータを受け取り、\nリクエストスコープのオブジェクト(データ一時保管用の箱)を生み出すため、Model オブジェ\nクトをメソッドの仮引数に入れます。",
+      "p058-b08": "UserForm の時と同様に、Spring ではメソッドの仮引数にオブジェクト名を書くと、オブジェク\nトを生成しなくても、使うことができます。"
+    },
+    "source_pages": [
+      58
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p059-b01",
+    "consume_ids": [
+      "p059-b01",
+      "p059-b02",
+      "p059-b03"
+    ],
+    "owner_code_ids": [
+      "p058-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "14-15 行目",
+        "code": " //リクエストスコープに、userForm のデータを格納\n model.addAttribute(\"user\", userForm);",
+        "meaning": "この行は、UserForm オブジェクトを\"user\"というキーでモデルに追加しています。\n第1 引数：キー名\n第2 引数：格納したい変数\n\nこれにより、return で呼び出すlogin_success.html でも、userForm オブジェクトのデータが使\n用可能になります。",
+        "source_ids": [
+          "p059-b01",
+          "p059-b02",
+          "p059-b03"
+        ],
+        "original_label": "・14-15 行目 model.addAttribute(\"user\", userForm);",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p058-b04",
+            "line_number": 14,
+            "text": " //リクエストスコープに、userForm のデータを格納"
+          },
+          {
+            "code_id": "p058-b04",
+            "line_number": 15,
+            "text": " model.addAttribute(\"user\", userForm);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p059-b01",
+            "start": 0,
+            "end": 47,
+            "role": "label",
+            "text": "・14-15 行目 model.addAttribute(\"user\", userForm);"
+          },
+          {
+            "source_id": "p059-b02",
+            "start": 0,
+            "end": 69,
+            "role": "meaning",
+            "text": "この行は、UserForm オブジェクトを\"user\"というキーでモデルに追加しています。\n第1 引数：キー名\n第2 引数：格納したい変数"
+          },
+          {
+            "source_id": "p059-b03",
+            "start": 0,
+            "end": 71,
+            "role": "meaning",
+            "text": "これにより、return で呼び出すlogin_success.html でも、userForm オブジェクトのデータが使\n用可能になります。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p059-b01": "・14-15 行目 model.addAttribute(\"user\", userForm);",
+      "p059-b02": "この行は、UserForm オブジェクトを\"user\"というキーでモデルに追加しています。\n第1 引数：キー名\n第2 引数：格納したい変数",
+      "p059-b03": "これにより、return で呼び出すlogin_success.html でも、userForm オブジェクトのデータが使\n用可能になります。"
+    },
+    "source_pages": [
+      59
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p059-b07",
+    "consume_ids": [
+      "p059-b07",
+      "p059-b08",
+      "p059-b09"
+    ],
+    "owner_code_ids": [
+      "p058-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "17 行",
+        "code": " return \"login_success\";",
+        "meaning": "モデルに格納されたデータと共に、login_success.html を呼び出します。\n\nこのようにModel オブジェクトを使うと、Controller からView へデータを「一時的に入れておく\n箱」としてリクエストスコープを利用することができ、Spring のMVC パターンに沿った方法でデ\nータを渡すことができます。",
+        "source_ids": [
+          "p059-b07",
+          "p059-b08",
+          "p059-b09"
+        ],
+        "original_label": "・17 行 return \"login_success\";",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p058-b04",
+            "line_number": 17,
+            "text": " return \"login_success\";"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p059-b07",
+            "start": 0,
+            "end": 29,
+            "role": "label",
+            "text": "・17 行 return \"login_success\";"
+          },
+          {
+            "source_id": "p059-b08",
+            "start": 0,
+            "end": 43,
+            "role": "meaning",
+            "text": "モデルに格納されたデータと共に、login_success.html を呼び出します。"
+          },
+          {
+            "source_id": "p059-b09",
+            "start": 0,
+            "end": 119,
+            "role": "meaning",
+            "text": "このようにModel オブジェクトを使うと、Controller からView へデータを「一時的に入れておく\n箱」としてリクエストスコープを利用することができ、Spring のMVC パターンに沿った方法でデ\nータを渡すことができます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p059-b07": "・17 行 return \"login_success\";",
+      "p059-b08": "モデルに格納されたデータと共に、login_success.html を呼び出します。",
+      "p059-b09": "このようにModel オブジェクトを使うと、Controller からView へデータを「一時的に入れておく\n箱」としてリクエストスコープを利用することができ、Spring のMVC パターンに沿った方法でデ\nータを渡すことができます。"
+    },
+    "source_pages": [
+      59
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p060-b04",
+    "consume_ids": [
+      "p060-b04",
+      "p060-b05",
+      "p060-b06",
+      "p060-b07",
+      "p060-b08"
+    ],
+    "owner_code_ids": [
+      "p059-b13",
+      "p060-b01"
+    ],
+    "rows": [
+      {
+        "line_label": "2 行目",
+        "code": "<html xmlns:th=\"http://www.thymeleaf.org\">",
+        "meaning": "10 行と、11 行には、th:text というthymeleaf 固有の属性が登場していますが、そのためには、\n予め宣言をする必要があります。",
+        "source_ids": [
+          "p060-b04",
+          "p060-b05"
+        ],
+        "original_label": "・2 行目 <html xmlns:th=\"http://www.thymeleaf.org\">",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p059-b13",
+            "line_number": 2,
+            "text": "<html xmlns:th=\"http://www.thymeleaf.org\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p060-b04",
+            "start": 0,
+            "end": 48,
+            "role": "label",
+            "text": "・2 行目 <html xmlns:th=\"http://www.thymeleaf.org\">"
+          },
+          {
+            "source_id": "p060-b05",
+            "start": 0,
+            "end": 72,
+            "role": "meaning",
+            "text": "10 行と、11 行には、th:text というthymeleaf 固有の属性が登場していますが、そのためには、\n予め宣言をする必要があります。"
+          }
+        ]
+      },
+      {
+        "line_label": "10 行目",
+        "code": "    社員番号 ：<span th:text = \"${user.id}\"></span><br>",
+        "meaning": "この部分はThymeleaf 独自のスクレプト文法の一つの、th:text 属性を使用しています。\n\nController からModel に格納した「user」というキーの後ろに、「.フィールド名」を記載すること\nで、id の値を出力できます。\n例えば、user.id が1234 であれば、出力は<span>1234</span>となります。",
+        "source_ids": [
+          "p060-b06",
+          "p060-b07",
+          "p060-b08"
+        ],
+        "original_label": "・10 行目 <span th:text = \"${user.id}\"></span>",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p060-b01",
+            "line_number": 10,
+            "text": "    社員番号 ：<span th:text = \"${user.id}\"></span><br>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p060-b06",
+            "start": 0,
+            "end": 43,
+            "role": "label",
+            "text": "・10 行目 <span th:text = \"${user.id}\"></span>"
+          },
+          {
+            "source_id": "p060-b07",
+            "start": 0,
+            "end": 49,
+            "role": "meaning",
+            "text": "この部分はThymeleaf 独自のスクレプト文法の一つの、th:text 属性を使用しています。"
+          },
+          {
+            "source_id": "p060-b08",
+            "start": 0,
+            "end": 122,
+            "role": "meaning",
+            "text": "Controller からModel に格納した「user」というキーの後ろに、「.フィールド名」を記載すること\nで、id の値を出力できます。\n例えば、user.id が1234 であれば、出力は<span>1234</span>となります。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p060-b04": "・2 行目 <html xmlns:th=\"http://www.thymeleaf.org\">",
+      "p060-b05": "10 行と、11 行には、th:text というthymeleaf 固有の属性が登場していますが、そのためには、\n予め宣言をする必要があります。",
+      "p060-b06": "・10 行目 <span th:text = \"${user.id}\"></span>",
+      "p060-b07": "この部分はThymeleaf 独自のスクレプト文法の一つの、th:text 属性を使用しています。",
+      "p060-b08": "Controller からModel に格納した「user」というキーの後ろに、「.フィールド名」を記載すること\nで、id の値を出力できます。\n例えば、user.id が1234 であれば、出力は<span>1234</span>となります。"
+    },
+    "source_pages": [
+      60
+    ]
+  },
+  {
+    "chapter": "02",
+    "anchor_id": "p060-b12",
+    "consume_ids": [
+      "p060-b12",
+      "p060-b13"
+    ],
+    "owner_code_ids": [
+      "p059-b13",
+      "p060-b01"
+    ],
+    "rows": [
+      {
+        "line_label": "11 行目",
+        "code": "    パスワード：<span th:text = \"${user.password}\"></span>",
+        "meaning": "ここでもth:text属性を使い、userオブジェクトのpasswordフィールドの値を表示しています。\n変数式を使用することで、動的に内容をWeb ページに埋め込むことができます。",
+        "source_ids": [
+          "p060-b12",
+          "p060-b13"
+        ],
+        "original_label": "・11 行目",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p060-b01",
+            "line_number": 11,
+            "text": "    パスワード：<span th:text = \"${user.password}\"></span>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p060-b12",
+            "start": 0,
+            "end": 6,
+            "role": "label",
+            "text": "・11 行目"
+          },
+          {
+            "source_id": "p060-b13",
+            "start": 0,
+            "end": 91,
+            "role": "meaning",
+            "text": "ここでもth:text属性を使い、userオブジェクトのpasswordフィールドの値を表示しています。\n変数式を使用することで、動的に内容をWeb ページに埋め込むことができます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p060-b12": "・11 行目",
+      "p060-b13": "ここでもth:text属性を使い、userオブジェクトのpasswordフィールドの値を表示しています。\n変数式を使用することで、動的に内容をWeb ページに埋め込むことができます。"
+    },
+    "source_pages": [
+      60
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p086-b03",
+    "consume_ids": [
+      "p086-b03",
+      "p086-b04",
+      "p086-b05",
+      "p086-b06",
+      "p086-b07"
+    ],
+    "owner_code_ids": [
+      "p085-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "5-6 行目",
+        "code": "    @Autowired\n private ProductRepository prodRepo;",
+        "meaning": "全件検索をするためには、ProductRepository から利用できる「findAll」メソッドを呼び出さない\nといけません。ProductRepository のメソッドを簡単に利用できるように、ProductRepository の\nフィールドを宣言して、@Autowired で依存性の注入をしておきましょう。\n この2 行のコードを書いておけば、 [prodRepo]を使って、findAll メソッドを呼び出せます。",
+        "source_ids": [
+          "p086-b03",
+          "p086-b05",
+          "p086-b04"
+        ],
+        "original_label": "5-6 行目",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p086-b04",
+            "line_number": 5,
+            "text": "    @Autowired"
+          },
+          {
+            "code_id": "p086-b04",
+            "line_number": 6,
+            "text": " private ProductRepository prodRepo;"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p086-b03",
+            "start": 0,
+            "end": 6,
+            "role": "label",
+            "text": "5-6 行目"
+          },
+          {
+            "source_id": "p086-b05",
+            "start": 0,
+            "end": 215,
+            "role": "meaning",
+            "text": "全件検索をするためには、ProductRepository から利用できる「findAll」メソッドを呼び出さない\nといけません。ProductRepository のメソッドを簡単に利用できるように、ProductRepository の\nフィールドを宣言して、@Autowired で依存性の注入をしておきましょう。\n この2 行のコードを書いておけば、 [prodRepo]を使って、findAll メソッドを呼び出せます。"
+          },
+          {
+            "source_id": "p086-b04",
+            "start": 0,
+            "end": 55,
+            "role": "code",
+            "text": "5:    @Autowired\n6: private ProductRepository prodRepo;"
+          }
+        ]
+      },
+      {
+        "line_label": "10 行目",
+        "code": " List<Product> list = prodRepo.findAll();",
+        "meaning": "findAll メソッドを実行すると、Product テーブル内の全データを、List<Product>の形で取得でき\nます。List のImport 先は「java.util」ですので、ご注意ください。",
+        "source_ids": [
+          "p086-b06",
+          "p086-b07"
+        ],
+        "original_label": "10 行目 List<Product> list = prodRepo.findAll();",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p085-b04",
+            "line_number": 10,
+            "text": " List<Product> list = prodRepo.findAll();"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p086-b06",
+            "start": 0,
+            "end": 46,
+            "role": "label",
+            "text": "10 行目 List<Product> list = prodRepo.findAll();"
+          },
+          {
+            "source_id": "p086-b07",
+            "start": 0,
+            "end": 102,
+            "role": "meaning",
+            "text": "findAll メソッドを実行すると、Product テーブル内の全データを、List<Product>の形で取得でき\nます。List のImport 先は「java.util」ですので、ご注意ください。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p086-b03": "5-6 行目",
+      "p086-b04": "5:    @Autowired\n6: private ProductRepository prodRepo;",
+      "p086-b05": "全件検索をするためには、ProductRepository から利用できる「findAll」メソッドを呼び出さない\nといけません。ProductRepository のメソッドを簡単に利用できるように、ProductRepository の\nフィールドを宣言して、@Autowired で依存性の注入をしておきましょう。\n この2 行のコードを書いておけば、 [prodRepo]を使って、findAll メソッドを呼び出せます。",
+      "p086-b06": "10 行目 List<Product> list = prodRepo.findAll();",
+      "p086-b07": "findAll メソッドを実行すると、Product テーブル内の全データを、List<Product>の形で取得でき\nます。List のImport 先は「java.util」ですので、ご注意ください。"
+    },
+    "source_pages": [
+      86
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p086-b09",
+    "consume_ids": [
+      "p086-b09",
+      "p086-b10",
+      "p086-b11"
+    ],
+    "owner_code_ids": [
+      "p085-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "12-13 行目",
+        "code": " model.addAttribute(\"products\", list);\n return \"product/list\";",
+        "meaning": "最後は、データの塊である、list をView へ出力させるために、model に格納します。\nこのリストは、product が複数入っているので、キーは[products]にしました。\n遷移先は、product フォルダの、list.html を指しています。",
+        "source_ids": [
+          "p086-b09",
+          "p086-b11",
+          "p086-b10"
+        ],
+        "original_label": "12-13 行目",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p086-b10",
+            "line_number": 12,
+            "text": " model.addAttribute(\"products\", list);"
+          },
+          {
+            "code_id": "p086-b10",
+            "line_number": 13,
+            "text": " return \"product/list\";"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p086-b09",
+            "start": 0,
+            "end": 8,
+            "role": "label",
+            "text": "12-13 行目"
+          },
+          {
+            "source_id": "p086-b11",
+            "start": 0,
+            "end": 131,
+            "role": "meaning",
+            "text": "最後は、データの塊である、list をView へ出力させるために、model に格納します。\nこのリストは、product が複数入っているので、キーは[products]にしました。\n遷移先は、product フォルダの、list.html を指しています。"
+          },
+          {
+            "source_id": "p086-b10",
+            "start": 0,
+            "end": 68,
+            "role": "code",
+            "text": "12: model.addAttribute(\"products\", list);\n13: return \"product/list\";"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p086-b09": "12-13 行目",
+      "p086-b10": "12: model.addAttribute(\"products\", list);\n13: return \"product/list\";",
+      "p086-b11": "最後は、データの塊である、list をView へ出力させるために、model に格納します。\nこのリストは、product が複数入っているので、キーは[products]にしました。\n遷移先は、product フォルダの、list.html を指しています。"
+    },
+    "source_pages": [
+      86
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p087-b05",
+    "consume_ids": [
+      "p087-b05",
+      "p087-b06",
+      "p087-b07"
+    ],
+    "owner_code_ids": [
+      "p087-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "8 行目",
+        "code": " <tr th:each=\"product: ${products}\">",
+        "meaning": "th:each は、Java の拡張for 文と似た使い方をします。指定されたコレクション（ここでは\nproducts リスト）の各要素に対して、<tr> タグ（テーブルの行）を繰り返し生成します。\n\n今回は、全部で9 個のデータがproducts リストの中に入っているので、products リストの要\n素が product 変数に9 回代入されます。:を中心にして、右はController のmodel で格納した\nキー名、左はリストの中に格納されているものを意味する変数名を使います。\n今回は、リストの中に、複数のproduct インスタンスが格納されているため、「product」としまし\nた。",
+        "source_ids": [
+          "p087-b05",
+          "p087-b06",
+          "p087-b07"
+        ],
+        "original_label": "8 行目 <tr th:each=\"product: ${products}\">",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p087-b04",
+            "line_number": 8,
+            "text": " <tr th:each=\"product: ${products}\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p087-b05",
+            "start": 0,
+            "end": 40,
+            "role": "label",
+            "text": "8 行目 <tr th:each=\"product: ${products}\">"
+          },
+          {
+            "source_id": "p087-b06",
+            "start": 0,
+            "end": 99,
+            "role": "meaning",
+            "text": "th:each は、Java の拡張for 文と似た使い方をします。指定されたコレクション（ここでは\nproducts リスト）の各要素に対して、<tr> タグ（テーブルの行）を繰り返し生成します。"
+          },
+          {
+            "source_id": "p087-b07",
+            "start": 0,
+            "end": 202,
+            "role": "meaning",
+            "text": "今回は、全部で9 個のデータがproducts リストの中に入っているので、products リストの要\n素が product 変数に9 回代入されます。:を中心にして、右はController のmodel で格納した\nキー名、左はリストの中に格納されているものを意味する変数名を使います。\n今回は、リストの中に、複数のproduct インスタンスが格納されているため、「product」としまし\nた。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p087-b05": "8 行目 <tr th:each=\"product: ${products}\">",
+      "p087-b06": "th:each は、Java の拡張for 文と似た使い方をします。指定されたコレクション（ここでは\nproducts リスト）の各要素に対して、<tr> タグ（テーブルの行）を繰り返し生成します。",
+      "p087-b07": "今回は、全部で9 個のデータがproducts リストの中に入っているので、products リストの要\n素が product 変数に9 回代入されます。:を中心にして、右はController のmodel で格納した\nキー名、左はリストの中に格納されているものを意味する変数名を使います。\n今回は、リストの中に、複数のproduct インスタンスが格納されているため、「product」としまし\nた。"
+    },
+    "source_pages": [
+      87
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p088-b01",
+    "consume_ids": [
+      "p088-b01",
+      "p088-b02"
+    ],
+    "owner_code_ids": [
+      "p087-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "9-11 行目",
+        "code": " <td th:text=\"${product.id}\"></td>\n <td th:text=\"${product.name}\"></td>\n <td th:text=\"${product.price}\"></td>",
+        "meaning": " product 変数に1 行～9 行までのデータが順番に格納されていますので、「product.フィー\nルド名」でデータを出力することができます。つまり、各product オブジェクトの id、name、\nprice を<td>の中に9 回出力するソースコードが生成されます。",
+        "source_ids": [
+          "p088-b01",
+          "p088-b02"
+        ],
+        "original_label": "9-11 行目 <td th:text=\"${product.id}\">、<td th:text=\"${product.name}\">～～",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p087-b04",
+            "line_number": 9,
+            "text": " <td th:text=\"${product.id}\"></td>"
+          },
+          {
+            "code_id": "p087-b04",
+            "line_number": 10,
+            "text": " <td th:text=\"${product.name}\"></td>"
+          },
+          {
+            "code_id": "p087-b04",
+            "line_number": 11,
+            "text": " <td th:text=\"${product.price}\"></td>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p088-b01",
+            "start": 0,
+            "end": 69,
+            "role": "label",
+            "text": "9-11 行目 <td th:text=\"${product.id}\">、<td th:text=\"${product.name}\">～～"
+          },
+          {
+            "source_id": "p088-b02",
+            "start": 0,
+            "end": 139,
+            "role": "meaning",
+            "text": " product 変数に1 行～9 行までのデータが順番に格納されていますので、「product.フィー\nルド名」でデータを出力することができます。つまり、各product オブジェクトの id、name、\nprice を<td>の中に9 回出力するソースコードが生成されます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p088-b01": "9-11 行目 <td th:text=\"${product.id}\">、<td th:text=\"${product.name}\">～～",
+      "p088-b02": " product 変数に1 行～9 行までのデータが順番に格納されていますので、「product.フィー\nルド名」でデータを出力することができます。つまり、各product オブジェクトの id、name、\nprice を<td>の中に9 回出力するソースコードが生成されます。"
+    },
+    "source_pages": [
+      88
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p092-b09",
+    "consume_ids": [
+      "p092-b09",
+      "p092-b10"
+    ],
+    "owner_code_ids": [
+      "p092-b08"
+    ],
+    "rows": [
+      {
+        "line_label": "4 行目",
+        "code": " public String showProductById(int id, Model model) {",
+        "meaning": "View から送信される主キーのname 属性が「id」ですので、引数名を一致させることで、リクエス\nトパラメータを取得します。",
+        "source_ids": [
+          "p092-b09",
+          "p092-b10"
+        ],
+        "original_label": "4 行目 showProductById(int id, Model model)",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p092-b08",
+            "line_number": 4,
+            "text": " public String showProductById(int id, Model model) {"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p092-b09",
+            "start": 0,
+            "end": 41,
+            "role": "label",
+            "text": "4 行目 showProductById(int id, Model model)"
+          },
+          {
+            "source_id": "p092-b10",
+            "start": 0,
+            "end": 64,
+            "role": "meaning",
+            "text": "View から送信される主キーのname 属性が「id」ですので、引数名を一致させることで、リクエス\nトパラメータを取得します。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p092-b09": "4 行目 showProductById(int id, Model model)",
+      "p092-b10": "View から送信される主キーのname 属性が「id」ですので、引数名を一致させることで、リクエス\nトパラメータを取得します。"
+    },
+    "source_pages": [
+      92
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p093-b01",
+    "consume_ids": [
+      "p093-b01",
+      "p093-b02",
+      "p093-b03",
+      "p093-b04",
+      "p093-b05",
+      "p093-b06"
+    ],
+    "owner_code_ids": [
+      "p092-b08"
+    ],
+    "rows": [
+      {
+        "line_label": "5 行目",
+        "code": " Product product = prodRepo.findById(id).orElse(null);",
+        "meaning": "findById メソッドは、findAll と同じく、継承したJpaRepository の親に定義されているメソッドで\nす。引数には主キーを入れて、後ろに.orElse(null)を付けることで、主キー検索による、1 行の\n結果を取得することができます。\n.findById メソッドの戻り値は「Optional」という特殊な戻り値ですので、.orElse(null)をつけない\nとデータを取得できません。ご注意ください。\n\n※.orElse(null)の代わりに、.get() というメソッドもありますが、検索結果がない場合はnull で\nはなく、例外を出してアプリケーションを強制終了されてしまうので、お勧めしません。\n\nfindAll は、全件検索だったため、複数行が取得されることの前提でした。よって\nList<Product>型で受け取りました。\n主キー検索は、必ず1 行のみ取得できるので、List での取得よりは、エンティティ単位での\n[Product product]で受け取るのが一般的です。",
+        "source_ids": [
+          "p093-b01",
+          "p093-b02",
+          "p093-b03",
+          "p093-b04"
+        ],
+        "original_label": "5 行目 Product product = prodRepo.findById(id).orElse(null);",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p092-b08",
+            "line_number": 5,
+            "text": " Product product = prodRepo.findById(id).orElse(null);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p093-b01",
+            "start": 0,
+            "end": 58,
+            "role": "label",
+            "text": "5 行目 Product product = prodRepo.findById(id).orElse(null);"
+          },
+          {
+            "source_id": "p093-b02",
+            "start": 0,
+            "end": 213,
+            "role": "meaning",
+            "text": "findById メソッドは、findAll と同じく、継承したJpaRepository の親に定義されているメソッドで\nす。引数には主キーを入れて、後ろに.orElse(null)を付けることで、主キー検索による、1 行の\n結果を取得することができます。\n.findById メソッドの戻り値は「Optional」という特殊な戻り値ですので、.orElse(null)をつけない\nとデータを取得できません。ご注意ください。"
+          },
+          {
+            "source_id": "p093-b03",
+            "start": 0,
+            "end": 98,
+            "role": "meaning",
+            "text": "※.orElse(null)の代わりに、.get() というメソッドもありますが、検索結果がない場合はnull で\nはなく、例外を出してアプリケーションを強制終了されてしまうので、お勧めしません。"
+          },
+          {
+            "source_id": "p093-b04",
+            "start": 0,
+            "end": 142,
+            "role": "meaning",
+            "text": "findAll は、全件検索だったため、複数行が取得されることの前提でした。よって\nList<Product>型で受け取りました。\n主キー検索は、必ず1 行のみ取得できるので、List での取得よりは、エンティティ単位での\n[Product product]で受け取るのが一般的です。"
+          }
+        ]
+      },
+      {
+        "line_label": "6 行目",
+        "code": " System.out.println(product);",
+        "meaning": "検索する商品番号に「1」を入れて実行させてみると、以下のように1 行のデータを取得できて\nいるのがわかります。",
+        "source_ids": [
+          "p093-b05",
+          "p093-b06"
+        ],
+        "original_label": "6 行目 System.out.println(product);",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p092-b08",
+            "line_number": 6,
+            "text": " System.out.println(product);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p093-b05",
+            "start": 0,
+            "end": 33,
+            "role": "label",
+            "text": "6 行目 System.out.println(product);"
+          },
+          {
+            "source_id": "p093-b06",
+            "start": 0,
+            "end": 55,
+            "role": "meaning",
+            "text": "検索する商品番号に「1」を入れて実行させてみると、以下のように1 行のデータを取得できて\nいるのがわかります。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p093-b01": "5 行目 Product product = prodRepo.findById(id).orElse(null);",
+      "p093-b02": "findById メソッドは、findAll と同じく、継承したJpaRepository の親に定義されているメソッドで\nす。引数には主キーを入れて、後ろに.orElse(null)を付けることで、主キー検索による、1 行の\n結果を取得することができます。\n.findById メソッドの戻り値は「Optional」という特殊な戻り値ですので、.orElse(null)をつけない\nとデータを取得できません。ご注意ください。",
+      "p093-b03": "※.orElse(null)の代わりに、.get() というメソッドもありますが、検索結果がない場合はnull で\nはなく、例外を出してアプリケーションを強制終了されてしまうので、お勧めしません。",
+      "p093-b04": "findAll は、全件検索だったため、複数行が取得されることの前提でした。よって\nList<Product>型で受け取りました。\n主キー検索は、必ず1 行のみ取得できるので、List での取得よりは、エンティティ単位での\n[Product product]で受け取るのが一般的です。",
+      "p093-b05": "6 行目 System.out.println(product);",
+      "p093-b06": "検索する商品番号に「1」を入れて実行させてみると、以下のように1 行のデータを取得できて\nいるのがわかります。"
+    },
+    "source_pages": [
+      93
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p093-b07",
+    "consume_ids": [
+      "p093-b07",
+      "p093-b08"
+    ],
+    "owner_code_ids": [
+      "p092-b08"
+    ],
+    "rows": [
+      {
+        "line_label": "7 行目",
+        "code": " model.addAttribute(\"product\", product);",
+        "meaning": "取得した1 行のデータは、Product エンティティの中に格納されているので、Viewに出力させる\nため、model に格納します。",
+        "source_ids": [
+          "p093-b07",
+          "p093-b08"
+        ],
+        "original_label": "7 行目 model.addAttribute(\"product\", product);",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p092-b08",
+            "line_number": 7,
+            "text": " model.addAttribute(\"product\", product);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p093-b07",
+            "start": 0,
+            "end": 44,
+            "role": "label",
+            "text": "7 行目 model.addAttribute(\"product\", product);"
+          },
+          {
+            "source_id": "p093-b08",
+            "start": 0,
+            "end": 67,
+            "role": "meaning",
+            "text": "取得した1 行のデータは、Product エンティティの中に格納されているので、Viewに出力させる\nため、model に格納します。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p093-b07": "7 行目 model.addAttribute(\"product\", product);",
+      "p093-b08": "取得した1 行のデータは、Product エンティティの中に格納されているので、Viewに出力させる\nため、model に格納します。"
+    },
+    "source_pages": [
+      93
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p097-b10",
+    "consume_ids": [
+      "p097-b10",
+      "p097-b11"
+    ],
+    "owner_code_ids": [
+      "p097-b09"
+    ],
+    "rows": [
+      {
+        "line_label": "5 行",
+        "code": " List<Product> list = prodRepo.findByPrice(price);",
+        "meaning": "5 行では、リクエストパラメータprice の値を取得し、prodRepo.findByPrice メソッドを実行しま\nした。",
+        "source_ids": [
+          "p097-b10"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p097-b09",
+            "line_number": 5,
+            "text": " List<Product> list = prodRepo.findByPrice(price);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p097-b10",
+            "start": 0,
+            "end": 63,
+            "role": "meaning",
+            "text": "5 行では、リクエストパラメータprice の値を取得し、prodRepo.findByPrice メソッドを実行しま\nした。"
+          }
+        ]
+      },
+      {
+        "line_label": "6 行以降",
+        "code": " System.out.println(list);\n model.addAttribute(\"products\", list);\n return \"product/list\";\n }",
+        "meaning": "findAll メソッドを実行した時と、出力結果は同じくList になるメソッドですので、6 行以降は\nshowProductList メソッドと全く同じです。",
+        "source_ids": [
+          "p097-b11"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p097-b09",
+            "line_number": 6,
+            "text": " System.out.println(list);"
+          },
+          {
+            "code_id": "p097-b09",
+            "line_number": 7,
+            "text": " model.addAttribute(\"products\", list);"
+          },
+          {
+            "code_id": "p097-b09",
+            "line_number": 8,
+            "text": " return \"product/list\";"
+          },
+          {
+            "code_id": "p097-b09",
+            "line_number": 9,
+            "text": " }"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p097-b11",
+            "start": 0,
+            "end": 80,
+            "role": "meaning",
+            "text": "findAll メソッドを実行した時と、出力結果は同じくList になるメソッドですので、6 行以降は\nshowProductList メソッドと全く同じです。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p097-b10": "5 行では、リクエストパラメータprice の値を取得し、prodRepo.findByPrice メソッドを実行しま\nした。",
+      "p097-b11": "findAll メソッドを実行した時と、出力結果は同じくList になるメソッドですので、6 行以降は\nshowProductList メソッドと全く同じです。"
+    },
+    "source_pages": [
+      97
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p101-b06",
+    "consume_ids": [
+      "p101-b06",
+      "p101-b07",
+      "p101-b08"
+    ],
+    "owner_code_ids": [
+      "p101-b05"
+    ],
+    "rows": [
+      {
+        "line_label": "5 行",
+        "code": " List<Product> list = prodRepo.findByNameAndPrice(name, price);",
+        "meaning": "5 行では、リクエストパラメータname とprice の値を取得し、prodRepo. findByNameAndPrice メ\nソッドを実行しました。\n\nもし、入力値が更に増えるなら、Form クラスを使ってパラメータ取得しても良いでしょう。",
+        "source_ids": [
+          "p101-b06",
+          "p101-b07"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p101-b05",
+            "line_number": 5,
+            "text": " List<Product> list = prodRepo.findByNameAndPrice(name, price);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p101-b06",
+            "start": 0,
+            "end": 77,
+            "role": "meaning",
+            "text": "5 行では、リクエストパラメータname とprice の値を取得し、prodRepo. findByNameAndPrice メ\nソッドを実行しました。"
+          },
+          {
+            "source_id": "p101-b07",
+            "start": 0,
+            "end": 44,
+            "role": "meaning",
+            "text": "もし、入力値が更に増えるなら、Form クラスを使ってパラメータ取得しても良いでしょう。"
+          }
+        ]
+      },
+      {
+        "line_label": "6 行以降",
+        "code": " System.out.println(list);\n model.addAttribute(\"products\", list);\n return \"product/list\";\n }",
+        "meaning": "6 行以降はshowProductList メソッドと全く同じです。",
+        "source_ids": [
+          "p101-b08"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p101-b05",
+            "line_number": 6,
+            "text": " System.out.println(list);"
+          },
+          {
+            "code_id": "p101-b05",
+            "line_number": 7,
+            "text": " model.addAttribute(\"products\", list);"
+          },
+          {
+            "code_id": "p101-b05",
+            "line_number": 8,
+            "text": " return \"product/list\";"
+          },
+          {
+            "code_id": "p101-b05",
+            "line_number": 9,
+            "text": " }"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p101-b08",
+            "start": 0,
+            "end": 34,
+            "role": "meaning",
+            "text": "6 行以降はshowProductList メソッドと全く同じです。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p101-b06": "5 行では、リクエストパラメータname とprice の値を取得し、prodRepo. findByNameAndPrice メ\nソッドを実行しました。",
+      "p101-b07": "もし、入力値が更に増えるなら、Form クラスを使ってパラメータ取得しても良いでしょう。",
+      "p101-b08": "6 行以降はshowProductList メソッドと全く同じです。"
+    },
+    "source_pages": [
+      101
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p108-b06",
+    "consume_ids": [
+      "p108-b06"
+    ],
+    "owner_code_ids": [
+      "p108-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "5 行",
+        "code": "@Data",
+        "meaning": "5 行の@Data ですが、エンティティの定義の際にご説明しました通り、@Data アノテーションをつ\nけると、Getter&Setter メソッドは勿論、equals やtoString、hashCode メソッドが自動生成され\nますので、とても便利です。",
+        "source_ids": [
+          "p108-b06"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p108-b04",
+            "line_number": 5,
+            "text": "@Data"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p108-b06",
+            "start": 0,
+            "end": 129,
+            "role": "meaning",
+            "text": "5 行の@Data ですが、エンティティの定義の際にご説明しました通り、@Data アノテーションをつ\nけると、Getter&Setter メソッドは勿論、equals やtoString、hashCode メソッドが自動生成され\nますので、とても便利です。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p108-b06": "5 行の@Data ですが、エンティティの定義の際にご説明しました通り、@Data アノテーションをつ\nけると、Getter&Setter メソッドは勿論、equals やtoString、hashCode メソッドが自動生成され\nますので、とても便利です。"
+    },
+    "source_pages": [
+      108
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p109-b04",
+    "consume_ids": [
+      "p109-b04",
+      "p109-b05",
+      "p109-b06",
+      "p109-b07"
+    ],
+    "owner_code_ids": [
+      "p109-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "4 行目",
+        "code": " public String insertProduct(ProductForm productForm, Model model) {",
+        "meaning": "ユーザからの複数の入力値を受け取るために、productForm クラスをメソッドの引数に入れ\nます。リクエストデータは、Form クラスのフィールドに自動でセットされます。",
+        "source_ids": [
+          "p109-b04",
+          "p109-b05"
+        ],
+        "original_label": "・4 行目: public String insertProduct(ProductForm productForm) {",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p109-b03",
+            "line_number": 4,
+            "text": " public String insertProduct(ProductForm productForm, Model model) {"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p109-b04",
+            "start": 0,
+            "end": 61,
+            "role": "label",
+            "text": "・4 行目: public String insertProduct(ProductForm productForm) {"
+          },
+          {
+            "source_id": "p109-b05",
+            "start": 0,
+            "end": 87,
+            "role": "meaning",
+            "text": "ユーザからの複数の入力値を受け取るために、productForm クラスをメソッドの引数に入れ\nます。リクエストデータは、Form クラスのフィールドに自動でセットされます。"
+          }
+        ]
+      },
+      {
+        "line_label": "5 行目",
+        "code": " Product product = new Product();",
+        "meaning": " 商品の登録をするためには、予め商品1 個分をを表す、エンティティのインスタンスを生成\nする必要がありますので、new でProduct のオブジェクトを生成します。",
+        "source_ids": [
+          "p109-b06",
+          "p109-b07"
+        ],
+        "original_label": "・5 行目: Product product = new Product();",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p109-b03",
+            "line_number": 5,
+            "text": " Product product = new Product();"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p109-b06",
+            "start": 0,
+            "end": 39,
+            "role": "label",
+            "text": "・5 行目: Product product = new Product();"
+          },
+          {
+            "source_id": "p109-b07",
+            "start": 0,
+            "end": 83,
+            "role": "meaning",
+            "text": " 商品の登録をするためには、予め商品1 個分をを表す、エンティティのインスタンスを生成\nする必要がありますので、new でProduct のオブジェクトを生成します。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p109-b04": "・4 行目: public String insertProduct(ProductForm productForm) {",
+      "p109-b05": "ユーザからの複数の入力値を受け取るために、productForm クラスをメソッドの引数に入れ\nます。リクエストデータは、Form クラスのフィールドに自動でセットされます。",
+      "p109-b06": "・5 行目: Product product = new Product();",
+      "p109-b07": " 商品の登録をするためには、予め商品1 個分をを表す、エンティティのインスタンスを生成\nする必要がありますので、new でProduct のオブジェクトを生成します。"
+    },
+    "source_pages": [
+      109
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p110-b01",
+    "consume_ids": [
+      "p110-b01",
+      "p110-b02",
+      "p110-b03"
+    ],
+    "owner_code_ids": [
+      "p109-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "8 行目",
+        "code": " product = prodRepo.save(product);",
+        "meaning": " 先に説明します。Insert のSQL 文を実行させるためには、findAll と同じく、既にリポジトリに定\n義されている、[save]メソッドを実行すれば、登録処理が完了します。\n\nしかし、エンティティのインスタンスであるproduct は、5 行でオブジェクト生成はしたものの、\nデータを入れないと、空っぽの状態のままになってしまいます。ユーザからのデータを受け取\nっているのは、product ではなく、4 行のProductForm の方ですので、データをコピーする必要\nがあります。",
+        "source_ids": [
+          "p110-b01",
+          "p110-b02",
+          "p110-b03"
+        ],
+        "original_label": "・8 行目: product = prodRepo.save(product);",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p109-b03",
+            "line_number": 8,
+            "text": " product = prodRepo.save(product);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p110-b01",
+            "start": 0,
+            "end": 40,
+            "role": "label",
+            "text": "・8 行目: product = prodRepo.save(product);"
+          },
+          {
+            "source_id": "p110-b02",
+            "start": 0,
+            "end": 91,
+            "role": "meaning",
+            "text": " 先に説明します。Insert のSQL 文を実行させるためには、findAll と同じく、既にリポジトリに定\n義されている、[save]メソッドを実行すれば、登録処理が完了します。"
+          },
+          {
+            "source_id": "p110-b03",
+            "start": 0,
+            "end": 154,
+            "role": "meaning",
+            "text": "しかし、エンティティのインスタンスであるproduct は、5 行でオブジェクト生成はしたものの、\nデータを入れないと、空っぽの状態のままになってしまいます。ユーザからのデータを受け取\nっているのは、product ではなく、4 行のProductForm の方ですので、データをコピーする必要\nがあります。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p110-b01": "・8 行目: product = prodRepo.save(product);",
+      "p110-b02": " 先に説明します。Insert のSQL 文を実行させるためには、findAll と同じく、既にリポジトリに定\n義されている、[save]メソッドを実行すれば、登録処理が完了します。",
+      "p110-b03": "しかし、エンティティのインスタンスであるproduct は、5 行でオブジェクト生成はしたものの、\nデータを入れないと、空っぽの状態のままになってしまいます。ユーザからのデータを受け取\nっているのは、product ではなく、4 行のProductForm の方ですので、データをコピーする必要\nがあります。"
+    },
+    "source_pages": [
+      110
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p110-b04",
+    "consume_ids": [
+      "p110-b04",
+      "p110-b05",
+      "p110-b06",
+      "p110-b07",
+      "p110-b08",
+      "p110-b09"
+    ],
+    "owner_code_ids": [
+      "p109-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "6～7 行目",
+        "code": " product.setName(productForm.getName());\n product.setPrice(productForm.getPrice());",
+        "meaning": "save メソッドの実行前に、Form インスタンス内のデータを、product へコピーさせます。\n\nこの作業により、空っぽだったproduct にも、ユーザからのデータが格納されました。",
+        "source_ids": [
+          "p110-b04",
+          "p110-b05",
+          "p110-b06"
+        ],
+        "original_label": "・6～7 行目: product.setName(productForm.getName());\nproduct.setPrice(productForm.getPrice());",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p109-b03",
+            "line_number": 6,
+            "text": " product.setName(productForm.getName());"
+          },
+          {
+            "code_id": "p109-b03",
+            "line_number": 7,
+            "text": " product.setPrice(productForm.getPrice());"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p110-b04",
+            "start": 0,
+            "end": 90,
+            "role": "label",
+            "text": "・6～7 行目: product.setName(productForm.getName());\nproduct.setPrice(productForm.getPrice());"
+          },
+          {
+            "source_id": "p110-b05",
+            "start": 0,
+            "end": 50,
+            "role": "meaning",
+            "text": "save メソッドの実行前に、Form インスタンス内のデータを、product へコピーさせます。"
+          },
+          {
+            "source_id": "p110-b06",
+            "start": 0,
+            "end": 43,
+            "role": "meaning",
+            "text": "この作業により、空っぽだったproduct にも、ユーザからのデータが格納されました。"
+          }
+        ]
+      },
+      {
+        "line_label": "8-9 行目",
+        "code": " product = prodRepo.save(product);\n             model.addAttribute(\"product\", product);",
+        "meaning": "戻り値としては、登録完了した商品情報をエンティティのインスタンスとして取得できます。ここ\nには、自動割り当てされたid も含まれます。結果画面へ表示するため、model に格納します。",
+        "source_ids": [
+          "p110-b07",
+          "p110-b08"
+        ],
+        "original_label": "・8-9 行目: product = prodRepo.save(product);\nmodel.addAttribute(\"product\", product);",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p109-b03",
+            "line_number": 8,
+            "text": " product = prodRepo.save(product);"
+          },
+          {
+            "code_id": "p109-b03",
+            "line_number": 9,
+            "text": "             model.addAttribute(\"product\", product);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p110-b07",
+            "start": 0,
+            "end": 82,
+            "role": "label",
+            "text": "・8-9 行目: product = prodRepo.save(product);\nmodel.addAttribute(\"product\", product);"
+          },
+          {
+            "source_id": "p110-b08",
+            "start": 0,
+            "end": 92,
+            "role": "meaning",
+            "text": "戻り値としては、登録完了した商品情報をエンティティのインスタンスとして取得できます。ここ\nには、自動割り当てされたid も含まれます。結果画面へ表示するため、model に格納します。"
+          }
+        ]
+      },
+      {
+        "line_label": "10 行目",
+        "code": " return \"/product/result\";",
+        "meaning": "本当に登録が完了したのか確認するために、商品データを出力する結果画面を表示させま\nす。",
+        "source_ids": [
+          "p110-b09"
+        ],
+        "original_label": "・10 行目: return \"/product/result\";",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p109-b03",
+            "line_number": 10,
+            "text": " return \"/product/result\";"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p110-b09",
+            "start": 0,
+            "end": 33,
+            "role": "label",
+            "text": "・10 行目: return \"/product/result\";"
+          },
+          {
+            "source_id": "p110-b09",
+            "start": 33,
+            "end": 34,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p110-b09",
+            "start": 34,
+            "end": 77,
+            "role": "meaning",
+            "text": "本当に登録が完了したのか確認するために、商品データを出力する結果画面を表示させま\nす。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p110-b04": "・6～7 行目: product.setName(productForm.getName());\nproduct.setPrice(productForm.getPrice());",
+      "p110-b05": "save メソッドの実行前に、Form インスタンス内のデータを、product へコピーさせます。",
+      "p110-b06": "この作業により、空っぽだったproduct にも、ユーザからのデータが格納されました。",
+      "p110-b07": "・8-9 行目: product = prodRepo.save(product);\nmodel.addAttribute(\"product\", product);",
+      "p110-b08": "戻り値としては、登録完了した商品情報をエンティティのインスタンスとして取得できます。ここ\nには、自動割り当てされたid も含まれます。結果画面へ表示するため、model に格納します。",
+      "p110-b09": "・10 行目: return \"/product/result\";\n本当に登録が完了したのか確認するために、商品データを出力する結果画面を表示させま\nす。"
+    },
+    "source_pages": [
+      110
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p111-b03",
+    "consume_ids": [
+      "p111-b03"
+    ],
+    "owner_code_ids": [
+      "p111-b02"
+    ],
+    "rows": [
+      {
+        "line_label": "9 行目",
+        "code": " <td th:text=\"${product.id}\"></td>",
+        "meaning": "9 行目のproduct.id に注目してください。save メソッドの戻り値には、自動採番により割り当てさ\nれたID 番号も含まれているので、表示できます。",
+        "source_ids": [
+          "p111-b03"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p111-b02",
+            "line_number": 9,
+            "text": " <td th:text=\"${product.id}\"></td>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p111-b03",
+            "start": 0,
+            "end": 79,
+            "role": "meaning",
+            "text": "9 行目のproduct.id に注目してください。save メソッドの戻り値には、自動採番により割り当てさ\nれたID 番号も含まれているので、表示できます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p111-b03": "9 行目のproduct.id に注目してください。save メソッドの戻り値には、自動採番により割り当てさ\nれたID 番号も含まれているので、表示できます。"
+    },
+    "source_pages": [
+      111
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p117-b04",
+    "consume_ids": [
+      "p117-b04",
+      "p117-b05",
+      "p117-b06",
+      "p117-b07"
+    ],
+    "owner_code_ids": [
+      "p117-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "3 行目",
+        "code": "@GetMapping(\"update/{id}\")",
+        "meaning": "View から動的URL が送られる場合、同じく動的パラメータを指定する必要があります。\n書き方は、{ パラメータ名 } で記載します。",
+        "source_ids": [
+          "p117-b04"
+        ],
+        "original_label": "・3 行目: @GetMapping(\"update/{id}\")",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p117-b03",
+            "line_number": 3,
+            "text": "@GetMapping(\"update/{id}\")"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p117-b04",
+            "start": 0,
+            "end": 33,
+            "role": "label",
+            "text": "・3 行目: @GetMapping(\"update/{id}\")"
+          },
+          {
+            "source_id": "p117-b04",
+            "start": 33,
+            "end": 34,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p117-b04",
+            "start": 34,
+            "end": 102,
+            "role": "meaning",
+            "text": "View から動的URL が送られる場合、同じく動的パラメータを指定する必要があります。\n書き方は、{ パラメータ名 } で記載します。"
+          }
+        ]
+      },
+      {
+        "line_label": "4 行目",
+        "code": "public String showUpdateInputView(@PathVariable int id, Model model) {",
+        "meaning": "3 行で指定した動的URLの文字列と一致する引数名に@PathVariable アノテーションをつけ\nると、動的URL の値を取得することができます。動的URL は、{id}なので、int id で合わせま\nす。",
+        "source_ids": [
+          "p117-b05",
+          "p117-b06"
+        ],
+        "original_label": "・4 行目: public String showUpdateInputView(@PathVariable int id, Model model) {",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p117-b03",
+            "line_number": 4,
+            "text": "public String showUpdateInputView(@PathVariable int id, Model model) {"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p117-b05",
+            "start": 0,
+            "end": 77,
+            "role": "label",
+            "text": "・4 行目: public String showUpdateInputView(@PathVariable int id, Model model) {"
+          },
+          {
+            "source_id": "p117-b06",
+            "start": 0,
+            "end": 106,
+            "role": "meaning",
+            "text": "3 行で指定した動的URLの文字列と一致する引数名に@PathVariable アノテーションをつけ\nると、動的URL の値を取得することができます。動的URL は、{id}なので、int id で合わせま\nす。"
+          }
+        ]
+      },
+      {
+        "line_label": "5 行から",
+        "code": " Product product = prodRepo.findById(id).orElse(null);\n model.addAttribute(\"product\", product);\n return \"product/update_input\";\n}",
+        "meaning": "5 行からは、更新対象の既存の値をfindById メソッドで取得+Model に格納し、\nupdate_input.html へ遷移させています。",
+        "source_ids": [
+          "p117-b07"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p117-b03",
+            "line_number": 5,
+            "text": " Product product = prodRepo.findById(id).orElse(null);"
+          },
+          {
+            "code_id": "p117-b03",
+            "line_number": 6,
+            "text": " model.addAttribute(\"product\", product);"
+          },
+          {
+            "code_id": "p117-b03",
+            "line_number": 7,
+            "text": " return \"product/update_input\";"
+          },
+          {
+            "code_id": "p117-b03",
+            "line_number": 8,
+            "text": "}"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p117-b07",
+            "start": 0,
+            "end": 74,
+            "role": "meaning",
+            "text": "5 行からは、更新対象の既存の値をfindById メソッドで取得+Model に格納し、\nupdate_input.html へ遷移させています。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p117-b04": "・3 行目: @GetMapping(\"update/{id}\")\nView から動的URL が送られる場合、同じく動的パラメータを指定する必要があります。\n書き方は、{ パラメータ名 } で記載します。",
+      "p117-b05": "・4 行目: public String showUpdateInputView(@PathVariable int id, Model model) {",
+      "p117-b06": "3 行で指定した動的URLの文字列と一致する引数名に@PathVariable アノテーションをつけ\nると、動的URL の値を取得することができます。動的URL は、{id}なので、int id で合わせま\nす。",
+      "p117-b07": "5 行からは、更新対象の既存の値をfindById メソッドで取得+Model に格納し、\nupdate_input.html へ遷移させています。"
+    },
+    "source_pages": [
+      117
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p119-b04",
+    "consume_ids": [
+      "p119-b04",
+      "p119-b05",
+      "p119-b06",
+      "p119-b07"
+    ],
+    "owner_code_ids": [
+      "p119-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "4 行目",
+        "code": " product.setId(productForm.getId());",
+        "meaning": " 登録の際は、主キーである「id」をProductエンティティ内にセットしていませんでしたが、更新\n処理の際は、必ず主キーのフィールドをセットさせます。",
+        "source_ids": [
+          "p119-b04",
+          "p119-b05"
+        ],
+        "original_label": "・4 行目：product.setId(productForm.getId());",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p119-b03",
+            "line_number": 4,
+            "text": " product.setId(productForm.getId());"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p119-b04",
+            "start": 0,
+            "end": 41,
+            "role": "label",
+            "text": "・4 行目：product.setId(productForm.getId());"
+          },
+          {
+            "source_id": "p119-b05",
+            "start": 0,
+            "end": 76,
+            "role": "meaning",
+            "text": " 登録の際は、主キーである「id」をProductエンティティ内にセットしていませんでしたが、更新\n処理の際は、必ず主キーのフィールドをセットさせます。"
+          }
+        ]
+      },
+      {
+        "line_label": "7 行目",
+        "code": " product = prodRepo.save(product);",
+        "meaning": " save メソッドの引数に入れたエンティティのフィールドに、主キー(id)の値があったら、新しい\n値に上書きされる更新処理が実行されます。",
+        "source_ids": [
+          "p119-b06",
+          "p119-b07"
+        ],
+        "original_label": "・7 行目：product = prodRepo.save(product);",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p119-b03",
+            "line_number": 7,
+            "text": " product = prodRepo.save(product);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p119-b06",
+            "start": 0,
+            "end": 39,
+            "role": "label",
+            "text": "・7 行目：product = prodRepo.save(product);"
+          },
+          {
+            "source_id": "p119-b07",
+            "start": 0,
+            "end": 70,
+            "role": "meaning",
+            "text": " save メソッドの引数に入れたエンティティのフィールドに、主キー(id)の値があったら、新しい\n値に上書きされる更新処理が実行されます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p119-b04": "・4 行目：product.setId(productForm.getId());",
+      "p119-b05": " 登録の際は、主キーである「id」をProductエンティティ内にセットしていませんでしたが、更新\n処理の際は、必ず主キーのフィールドをセットさせます。",
+      "p119-b06": "・7 行目：product = prodRepo.save(product);",
+      "p119-b07": " save メソッドの引数に入れたエンティティのフィールドに、主キー(id)の値があったら、新しい\n値に上書きされる更新処理が実行されます。"
+    },
+    "source_pages": [
+      119
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p129-b01",
+    "consume_ids": [
+      "p129-b01",
+      "p129-b02",
+      "p129-b03",
+      "p129-b04",
+      "p129-b05",
+      "p129-b06",
+      "p129-b07",
+      "p129-b08",
+      "p129-b09"
+    ],
+    "owner_code_ids": [
+      "p128-b06"
+    ],
+    "rows": [
+      {
+        "line_label": "5 行目",
+        "code": "@Service",
+        "meaning": "サービス実装クラスには、@Service アノテーションを付けます。忘れがちですので、注意して\nください。",
+        "source_ids": [
+          "p129-b01"
+        ],
+        "original_label": "・5 行目： @Service",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p128-b06",
+            "line_number": 5,
+            "text": "@Service"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p129-b01",
+            "start": 0,
+            "end": 15,
+            "role": "label",
+            "text": "・5 行目： @Service"
+          },
+          {
+            "source_id": "p129-b01",
+            "start": 15,
+            "end": 16,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p129-b01",
+            "start": 16,
+            "end": 69,
+            "role": "meaning",
+            "text": "サービス実装クラスには、@Service アノテーションを付けます。忘れがちですので、注意して\nください。"
+          }
+        ]
+      },
+      {
+        "line_label": "6 行目",
+        "code": "@RequiredArgsConstructor",
+        "meaning": "3.3.1「依存性の注入」の【依存性の注入方法③】でご紹介した書き方です。\n\n9-10 行目のコードと連携します。\n単体テストのしやすさのために、サービス実装クラスではこの方法が推奨されます。",
+        "source_ids": [
+          "p129-b02",
+          "p129-b03",
+          "p129-b04"
+        ],
+        "original_label": "・6 行目： @RequiredArgsConstructor",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p128-b06",
+            "line_number": 6,
+            "text": "@RequiredArgsConstructor"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p129-b02",
+            "start": 0,
+            "end": 31,
+            "role": "label",
+            "text": "・6 行目： @RequiredArgsConstructor"
+          },
+          {
+            "source_id": "p129-b03",
+            "start": 0,
+            "end": 37,
+            "role": "meaning",
+            "text": "3.3.1「依存性の注入」の【依存性の注入方法③】でご紹介した書き方です。"
+          },
+          {
+            "source_id": "p129-b04",
+            "start": 0,
+            "end": 57,
+            "role": "meaning",
+            "text": "9-10 行目のコードと連携します。\n単体テストのしやすさのために、サービス実装クラスではこの方法が推奨されます。"
+          }
+        ]
+      },
+      {
+        "line_label": "7 行目",
+        "code": "public class ProductServiceImpl implements ProductService{",
+        "meaning": "前の手順で作成たサービスインターフェースと繋げるために、implements します。",
+        "source_ids": [
+          "p129-b05"
+        ],
+        "original_label": "・7 行目： implements ProductService",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p128-b06",
+            "line_number": 7,
+            "text": "public class ProductServiceImpl implements ProductService{"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p129-b05",
+            "start": 0,
+            "end": 32,
+            "role": "label",
+            "text": "・7 行目： implements ProductService"
+          },
+          {
+            "source_id": "p129-b05",
+            "start": 32,
+            "end": 33,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p129-b05",
+            "start": 33,
+            "end": 76,
+            "role": "meaning",
+            "text": "前の手順で作成たサービスインターフェースと繋げるために、implements します。"
+          }
+        ]
+      },
+      {
+        "line_label": "9 行-10 行目",
+        "code": " //@Autowired は不要\n private final ProductRepository prodRepo;",
+        "meaning": "DB 処理のためProductRepository を利用したいので、依存性の注入を行います。\n6 行目と合わせて記載することで、コンストラクタを自動生成できます。",
+        "source_ids": [
+          "p129-b06",
+          "p129-b07"
+        ],
+        "original_label": "・9 行-10 行目： private final ProductRepository prodRepo;",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p128-b06",
+            "line_number": 9,
+            "text": " //@Autowired は不要"
+          },
+          {
+            "code_id": "p128-b06",
+            "line_number": 10,
+            "text": " private final ProductRepository prodRepo;"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p129-b06",
+            "start": 0,
+            "end": 53,
+            "role": "label",
+            "text": "・9 行-10 行目： private final ProductRepository prodRepo;"
+          },
+          {
+            "source_id": "p129-b07",
+            "start": 0,
+            "end": 82,
+            "role": "meaning",
+            "text": "DB 処理のためProductRepository を利用したいので、依存性の注入を行います。\n6 行目と合わせて記載することで、コンストラクタを自動生成できます。"
+          }
+        ]
+      },
+      {
+        "line_label": "13 行-14 行目",
+        "code": " public Product findProductById(int id) {\n return prodRepo.findById(id).orElse(null);",
+        "meaning": "Controller に記載していたDB 処理部分だけ分離させ、DB から取得した商品データをその\nままreturn しています。ProductService インターフェースで定義した抽象メソッドと同じ呼び\n方をするように、オーバーライドする必要があります。\n(リモコンのボタンを押したら、このメソッドの処理が行われるイメージ)",
+        "source_ids": [
+          "p129-b08",
+          "p129-b09"
+        ],
+        "original_label": "・13 行-14 行目： return prodRepo.findById(id).orElse(null);",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p128-b06",
+            "line_number": 13,
+            "text": " public Product findProductById(int id) {"
+          },
+          {
+            "code_id": "p128-b06",
+            "line_number": 14,
+            "text": " return prodRepo.findById(id).orElse(null);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p129-b08",
+            "start": 0,
+            "end": 55,
+            "role": "label",
+            "text": "・13 行-14 行目： return prodRepo.findById(id).orElse(null);"
+          },
+          {
+            "source_id": "p129-b09",
+            "start": 0,
+            "end": 165,
+            "role": "meaning",
+            "text": "Controller に記載していたDB 処理部分だけ分離させ、DB から取得した商品データをその\nままreturn しています。ProductService インターフェースで定義した抽象メソッドと同じ呼び\n方をするように、オーバーライドする必要があります。\n(リモコンのボタンを押したら、このメソッドの処理が行われるイメージ)"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p129-b01": "・5 行目： @Service\nサービス実装クラスには、@Service アノテーションを付けます。忘れがちですので、注意して\nください。",
+      "p129-b02": "・6 行目： @RequiredArgsConstructor",
+      "p129-b03": "3.3.1「依存性の注入」の【依存性の注入方法③】でご紹介した書き方です。",
+      "p129-b04": "9-10 行目のコードと連携します。\n単体テストのしやすさのために、サービス実装クラスではこの方法が推奨されます。",
+      "p129-b05": "・7 行目： implements ProductService\n前の手順で作成たサービスインターフェースと繋げるために、implements します。",
+      "p129-b06": "・9 行-10 行目： private final ProductRepository prodRepo;",
+      "p129-b07": "DB 処理のためProductRepository を利用したいので、依存性の注入を行います。\n6 行目と合わせて記載することで、コンストラクタを自動生成できます。",
+      "p129-b08": "・13 行-14 行目： return prodRepo.findById(id).orElse(null);",
+      "p129-b09": "Controller に記載していたDB 処理部分だけ分離させ、DB から取得した商品データをその\nままreturn しています。ProductService インターフェースで定義した抽象メソッドと同じ呼び\n方をするように、オーバーライドする必要があります。\n(リモコンのボタンを押したら、このメソッドの処理が行われるイメージ)"
+    },
+    "source_pages": [
+      129
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p130-b05",
+    "consume_ids": [
+      "p130-b05",
+      "p130-b06",
+      "p130-b07",
+      "p130-b08",
+      "p130-b09",
+      "p130-b10"
+    ],
+    "owner_code_ids": [
+      "p130-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "2 行目",
+        "code": "@RequestMapping(\"product2\")",
+        "meaning": "  Controller が変わったので、異なる基本URL を設定します。",
+        "source_ids": [
+          "p130-b05",
+          "p130-b06"
+        ],
+        "original_label": "・2 行目: @RequestMapping(\"product2\")",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p130-b04",
+            "line_number": 2,
+            "text": "@RequestMapping(\"product2\")"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p130-b05",
+            "start": 0,
+            "end": 34,
+            "role": "label",
+            "text": "・2 行目: @RequestMapping(\"product2\")"
+          },
+          {
+            "source_id": "p130-b06",
+            "start": 0,
+            "end": 37,
+            "role": "meaning",
+            "text": "  Controller が変わったので、異なる基本URL を設定します。"
+          }
+        ]
+      },
+      {
+        "line_label": "7 行目",
+        "code": " private ProductService prodService;",
+        "meaning": "DB処理は、ProductServiceの方で担当するので、このクラスで利用できるように、依存性の\n注入を行います。既存のProductRepository の依存性の注入は不要になります。",
+        "source_ids": [
+          "p130-b07",
+          "p130-b08"
+        ],
+        "original_label": "・7 行目： private ProductService prodService;",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p130-b04",
+            "line_number": 7,
+            "text": " private ProductService prodService;"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p130-b07",
+            "start": 0,
+            "end": 42,
+            "role": "label",
+            "text": "・7 行目： private ProductService prodService;"
+          },
+          {
+            "source_id": "p130-b08",
+            "start": 0,
+            "end": 95,
+            "role": "meaning",
+            "text": "DB処理は、ProductServiceの方で担当するので、このクラスで利用できるように、依存性の\n注入を行います。既存のProductRepository の依存性の注入は不要になります。"
+          }
+        ]
+      },
+      {
+        "line_label": "13 行目",
+        "code": " Product product = prodService.findProductById(id);",
+        "meaning": " ここが一番大事です。今までは、Controller のメソッドの中で直接「prodRepo.メソッド」を実\n行する書き方でしたが、今回はServiceクラスに定義されているメソッドを実行させて、その戻\nり値を利用する書き方になりました。",
+        "source_ids": [
+          "p130-b09",
+          "p130-b10"
+        ],
+        "original_label": "・13 行目： Product product = prodService.findProductById(id);",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p130-b04",
+            "line_number": 13,
+            "text": " Product product = prodService.findProductById(id);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p130-b09",
+            "start": 0,
+            "end": 58,
+            "role": "label",
+            "text": "・13 行目： Product product = prodService.findProductById(id);"
+          },
+          {
+            "source_id": "p130-b10",
+            "start": 0,
+            "end": 119,
+            "role": "meaning",
+            "text": " ここが一番大事です。今までは、Controller のメソッドの中で直接「prodRepo.メソッド」を実\n行する書き方でしたが、今回はServiceクラスに定義されているメソッドを実行させて、その戻\nり値を利用する書き方になりました。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p130-b05": "・2 行目: @RequestMapping(\"product2\")",
+      "p130-b06": "  Controller が変わったので、異なる基本URL を設定します。",
+      "p130-b07": "・7 行目： private ProductService prodService;",
+      "p130-b08": "DB処理は、ProductServiceの方で担当するので、このクラスで利用できるように、依存性の\n注入を行います。既存のProductRepository の依存性の注入は不要になります。",
+      "p130-b09": "・13 行目： Product product = prodService.findProductById(id);",
+      "p130-b10": " ここが一番大事です。今までは、Controller のメソッドの中で直接「prodRepo.メソッド」を実\n行する書き方でしたが、今回はServiceクラスに定義されているメソッドを実行させて、その戻\nり値を利用する書き方になりました。"
+    },
+    "source_pages": [
+      130
+    ]
+  },
+  {
+    "chapter": "04",
+    "anchor_id": "p137-b04",
+    "consume_ids": [
+      "p137-b04"
+    ],
+    "owner_code_ids": [
+      "p137-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "12 行",
+        "code": "    @Column(name = \"emp_name\", length = 30, nullable = false)",
+        "meaning": "User テーブルを利用しますので、User エンティティも新しく定義する必要があります。\n\nエンティティの定義については、前の章のProduct とほぼ同じですが、12 行のname 属性を見\nてください。テーブル内の列名は[emp_name]ですが、Java では通常、変数名の単語ごとの区\n切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメル\nケース」を使います。\n\nよって、テーブル内の列名と変数名に違いが発生したら、明示的にname 属性をつける必要\nがあります。",
+        "source_ids": [
+          "p137-b04"
+        ],
+        "original_label": "",
+        "reference_kind": "prose",
+        "code_line_sources": [
+          {
+            "code_id": "p137-b03",
+            "line_number": 12,
+            "text": "    @Column(name = \"emp_name\", length = 30, nullable = false)"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p137-b04",
+            "start": 0,
+            "end": 257,
+            "role": "meaning",
+            "text": "User テーブルを利用しますので、User エンティティも新しく定義する必要があります。\n\nエンティティの定義については、前の章のProduct とほぼ同じですが、12 行のname 属性を見\nてください。テーブル内の列名は[emp_name]ですが、Java では通常、変数名の単語ごとの区\n切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメル\nケース」を使います。\n\nよって、テーブル内の列名と変数名に違いが発生したら、明示的にname 属性をつける必要\nがあります。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p137-b04": "User テーブルを利用しますので、User エンティティも新しく定義する必要があります。\n\nエンティティの定義については、前の章のProduct とほぼ同じですが、12 行のname 属性を見\nてください。テーブル内の列名は[emp_name]ですが、Java では通常、変数名の単語ごとの区\n切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメル\nケース」を使います。\n\nよって、テーブル内の列名と変数名に違いが発生したら、明示的にname 属性をつける必要\nがあります。"
+    },
+    "source_pages": [
+      137
+    ]
+  },
+  {
+    "chapter": "04",
+    "anchor_id": "p140-b04",
+    "consume_ids": [
+      "p140-b04",
+      "p140-b05",
+      "p140-b06"
+    ],
+    "owner_code_ids": [
+      "p140-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "3 行目",
+        "code": " User user = userRepo.findByEmpIdAndPassword(userForm.getEmpId(),\n                   userForm.getPassword());",
+        "meaning": "\nUserRepository に予め定義しておいたメソッドを実装しました。login_input.html からのリクエ\nストパラメータは、userForm 内に自動格納されているため、getメソッドで取得し、引数に入れま\nした。検索結果は、最大1 件ですので、User エンティティで受け取ります。",
+        "source_ids": [
+          "p140-b04"
+        ],
+        "original_label": "・3 行目：",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p140-b03",
+            "line_number": 3,
+            "text": " User user = userRepo.findByEmpIdAndPassword(userForm.getEmpId(),\n                   userForm.getPassword());"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p140-b04",
+            "start": 0,
+            "end": 6,
+            "role": "label",
+            "text": "・3 行目："
+          },
+          {
+            "source_id": "p140-b04",
+            "start": 6,
+            "end": 7,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p140-b04",
+            "start": 7,
+            "end": 158,
+            "role": "meaning",
+            "text": "\nUserRepository に予め定義しておいたメソッドを実装しました。login_input.html からのリクエ\nストパラメータは、userForm 内に自動格納されているため、getメソッドで取得し、引数に入れま\nした。検索結果は、最大1 件ですので、User エンティティで受け取ります。"
+          }
+        ]
+      },
+      {
+        "line_label": "5 行",
+        "code": " if (user == null) { //結果がnull なら、再度ログイン画面へ",
+        "meaning": "\n社員ID とパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何\nも取得できないので、user 変数は、null のままになります。\nこのif 文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促\nすコードです。\n\n5 行のif 文内でreturn されると、即遷移するため、7 行以降が実行されることはありません。",
+        "source_ids": [
+          "p140-b05"
+        ],
+        "original_label": "・5 行のif 文:",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p140-b03",
+            "line_number": 5,
+            "text": " if (user == null) { //結果がnull なら、再度ログイン画面へ"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p140-b05",
+            "start": 0,
+            "end": 10,
+            "role": "label",
+            "text": "・5 行のif 文:"
+          },
+          {
+            "source_id": "p140-b05",
+            "start": 10,
+            "end": 11,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p140-b05",
+            "start": 11,
+            "end": 194,
+            "role": "meaning",
+            "text": "\n社員ID とパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何\nも取得できないので、user 変数は、null のままになります。\nこのif 文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促\nすコードです。\n\n5 行のif 文内でreturn されると、即遷移するため、7 行以降が実行されることはありません。"
+          }
+        ]
+      },
+      {
+        "line_label": "8 行目",
+        "code": " return \"main_page\";",
+        "meaning": "\nデータを取得できたなら、ログイン成功ですので、main_page.html へ遷移させます。\n\nmain_page.html は、下記のように、簡単なhtml ファイルです。",
+        "source_ids": [
+          "p140-b06"
+        ],
+        "original_label": "・8 行目 return “main_page”：",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p140-b03",
+            "line_number": 8,
+            "text": " return \"main_page\";"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p140-b06",
+            "start": 0,
+            "end": 25,
+            "role": "label",
+            "text": "・8 行目 return “main_page”："
+          },
+          {
+            "source_id": "p140-b06",
+            "start": 25,
+            "end": 26,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p140-b06",
+            "start": 26,
+            "end": 114,
+            "role": "meaning",
+            "text": "\nデータを取得できたなら、ログイン成功ですので、main_page.html へ遷移させます。\n\nmain_page.html は、下記のように、簡単なhtml ファイルです。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p140-b04": "・3 行目：\n\nUserRepository に予め定義しておいたメソッドを実装しました。login_input.html からのリクエ\nストパラメータは、userForm 内に自動格納されているため、getメソッドで取得し、引数に入れま\nした。検索結果は、最大1 件ですので、User エンティティで受け取ります。",
+      "p140-b05": "・5 行のif 文:\n\n社員ID とパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何\nも取得できないので、user 変数は、null のままになります。\nこのif 文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促\nすコードです。\n\n5 行のif 文内でreturn されると、即遷移するため、7 行以降が実行されることはありません。",
+      "p140-b06": "・8 行目 return “main_page”：\n\nデータを取得できたなら、ログイン成功ですので、main_page.html へ遷移させます。\n\nmain_page.html は、下記のように、簡単なhtml ファイルです。"
+    },
+    "source_pages": [
+      140
+    ]
+  },
+  {
+    "chapter": "04",
+    "anchor_id": "p144-b05",
+    "consume_ids": [
+      "p144-b05",
+      "p144-b06",
+      "p144-b07",
+      "p144-b08"
+    ],
+    "owner_code_ids": [
+      "p144-b04"
+    ],
+    "rows": [
+      {
+        "line_label": "7 行目",
+        "code": "public String loginSession(UserForm userForm, HttpSession session) {",
+        "meaning": " セッションは、HttpSession のインスタンスを利用することで、データをセッションスコープに格\n納できたり、セッション情報を消したりできます。 Spring のController にURL がマッピングされ\nたメソッドのことを、改めて「ハンドラメソッド」といいます。このハンドラメソッドの引数に\nHttpSession を指定するだけで、裏でフレームワークが HttpSession のインスタンス生成\nと、セッション情報の取得を自動で行ってくれます。",
+        "source_ids": [
+          "p144-b05",
+          "p144-b06"
+        ],
+        "original_label": "・7 行目 (HttpSession session)：",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p144-b04",
+            "line_number": 7,
+            "text": "public String loginSession(UserForm userForm, HttpSession session) {"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p144-b05",
+            "start": 0,
+            "end": 28,
+            "role": "label",
+            "text": "・7 行目 (HttpSession session)："
+          },
+          {
+            "source_id": "p144-b06",
+            "start": 0,
+            "end": 231,
+            "role": "meaning",
+            "text": " セッションは、HttpSession のインスタンスを利用することで、データをセッションスコープに格\n納できたり、セッション情報を消したりできます。 Spring のController にURL がマッピングされ\nたメソッドのことを、改めて「ハンドラメソッド」といいます。このハンドラメソッドの引数に\nHttpSession を指定するだけで、裏でフレームワークが HttpSession のインスタンス生成\nと、セッション情報の取得を自動で行ってくれます。"
+          }
+        ]
+      },
+      {
+        "line_label": "13 行目",
+        "code": " session.setAttribute(\"userData\", user);",
+        "meaning": " session.setAttribute メソッドは、model.addAttribute と同じような書き方をします。第一引数に\nは、キーワードを記載して、第二引数には、データを指定します。このコードが実行されると、\nセッションスコープの中に、\"userData\"という名前でログインユーザの全情報を保持できるよう\nになります。このデータは、画面が変わっても、システム全域で呼び出すことができます。",
+        "source_ids": [
+          "p144-b07",
+          "p144-b08"
+        ],
+        "original_label": "・13 行目 session.setAttribute(\"userData\", user)：",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p144-b04",
+            "line_number": 13,
+            "text": " session.setAttribute(\"userData\", user);"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p144-b07",
+            "start": 0,
+            "end": 46,
+            "role": "label",
+            "text": "・13 行目 session.setAttribute(\"userData\", user)："
+          },
+          {
+            "source_id": "p144-b08",
+            "start": 0,
+            "end": 201,
+            "role": "meaning",
+            "text": " session.setAttribute メソッドは、model.addAttribute と同じような書き方をします。第一引数に\nは、キーワードを記載して、第二引数には、データを指定します。このコードが実行されると、\nセッションスコープの中に、\"userData\"という名前でログインユーザの全情報を保持できるよう\nになります。このデータは、画面が変わっても、システム全域で呼び出すことができます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p144-b05": "・7 行目 (HttpSession session)：",
+      "p144-b06": " セッションは、HttpSession のインスタンスを利用することで、データをセッションスコープに格\n納できたり、セッション情報を消したりできます。 Spring のController にURL がマッピングされ\nたメソッドのことを、改めて「ハンドラメソッド」といいます。このハンドラメソッドの引数に\nHttpSession を指定するだけで、裏でフレームワークが HttpSession のインスタンス生成\nと、セッション情報の取得を自動で行ってくれます。",
+      "p144-b07": "・13 行目 session.setAttribute(\"userData\", user)：",
+      "p144-b08": " session.setAttribute メソッドは、model.addAttribute と同じような書き方をします。第一引数に\nは、キーワードを記載して、第二引数には、データを指定します。このコードが実行されると、\nセッションスコープの中に、\"userData\"という名前でログインユーザの全情報を保持できるよう\nになります。このデータは、画面が変わっても、システム全域で呼び出すことができます。"
+    },
+    "source_pages": [
+      144
+    ]
+  },
+  {
+    "chapter": "04",
+    "anchor_id": "p150-b04",
+    "consume_ids": [
+      "p150-b04",
+      "p150-b05",
+      "p150-b06",
+      "p150-b07",
+      "p150-b08"
+    ],
+    "owner_code_ids": [
+      "p150-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "3-5 行目",
+        "code": "import jakarta.validation.constraints.NotBlank;\nimport jakarta.validation.constraints.NotNull;\nimport jakarta.validation.constraints.Size;",
+        "meaning": " Validationのバージョンによりますが、最新のValidation API は、jakarta.validation.constraints\nパッケージの方を利用することが推奨されています。",
+        "source_ids": [
+          "p150-b04",
+          "p150-b05"
+        ],
+        "original_label": "・3-5 行目：",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p150-b03",
+            "line_number": 3,
+            "text": "import jakarta.validation.constraints.NotBlank;"
+          },
+          {
+            "code_id": "p150-b03",
+            "line_number": 4,
+            "text": "import jakarta.validation.constraints.NotNull;"
+          },
+          {
+            "code_id": "p150-b03",
+            "line_number": 5,
+            "text": "import jakarta.validation.constraints.Size;"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p150-b04",
+            "start": 0,
+            "end": 8,
+            "role": "label",
+            "text": "・3-5 行目："
+          },
+          {
+            "source_id": "p150-b05",
+            "start": 0,
+            "end": 99,
+            "role": "meaning",
+            "text": " Validationのバージョンによりますが、最新のValidation API は、jakarta.validation.constraints\nパッケージの方を利用することが推奨されています。"
+          }
+        ]
+      },
+      {
+        "line_label": "11 行目",
+        "code": " @NotNull(message = \"社員番号を入力してください\")",
+        "meaning": " このアノテーションを付与したフィールドに、入力値がない場合は、入力エラーだと検知して\nくれます。Integerのフィールドは、@NotNullを付与します。message属性は、出力するメッセー\nジをカスタマイズすることができます。",
+        "source_ids": [
+          "p150-b06",
+          "p150-b07"
+        ],
+        "original_label": "・11 行目 @NotNull：",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p150-b03",
+            "line_number": 11,
+            "text": " @NotNull(message = \"社員番号を入力してください\")"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p150-b06",
+            "start": 0,
+            "end": 16,
+            "role": "label",
+            "text": "・11 行目 @NotNull："
+          },
+          {
+            "source_id": "p150-b07",
+            "start": 0,
+            "end": 117,
+            "role": "meaning",
+            "text": " このアノテーションを付与したフィールドに、入力値がない場合は、入力エラーだと検知して\nくれます。Integerのフィールドは、@NotNullを付与します。message属性は、出力するメッセー\nジをカスタマイズすることができます。"
+          }
+        ]
+      },
+      {
+        "line_label": "14-15 行",
+        "code": " @NotBlank(message = \"パスワードを入力してください\")\n @Size(max = 15, message = \"15 文字以内で入力してください\")",
+        "meaning": " ＠NotNull と似ていますが、こちらは文字列の入力有無チェックに特化されています。未入力\nはもちろん、空文字(“”)まで検知することができます。\n @Size は、文字列の文字数制限を設定できます。Max で最大文字数、min で最小文字数の\n設定ができます。",
+        "source_ids": [
+          "p150-b08"
+        ],
+        "original_label": "・14-15 行 ＠NotBlank、@Size(max = 15):",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p150-b03",
+            "line_number": 14,
+            "text": " @NotBlank(message = \"パスワードを入力してください\")"
+          },
+          {
+            "code_id": "p150-b03",
+            "line_number": 15,
+            "text": " @Size(max = 15, message = \"15 文字以内で入力してください\")"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p150-b08",
+            "start": 0,
+            "end": 35,
+            "role": "label",
+            "text": "・14-15 行 ＠NotBlank、@Size(max = 15):"
+          },
+          {
+            "source_id": "p150-b08",
+            "start": 35,
+            "end": 36,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p150-b08",
+            "start": 36,
+            "end": 169,
+            "role": "meaning",
+            "text": " ＠NotNull と似ていますが、こちらは文字列の入力有無チェックに特化されています。未入力\nはもちろん、空文字(“”)まで検知することができます。\n @Size は、文字列の文字数制限を設定できます。Max で最大文字数、min で最小文字数の\n設定ができます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p150-b04": "・3-5 行目：",
+      "p150-b05": " Validationのバージョンによりますが、最新のValidation API は、jakarta.validation.constraints\nパッケージの方を利用することが推奨されています。",
+      "p150-b06": "・11 行目 @NotNull：",
+      "p150-b07": " このアノテーションを付与したフィールドに、入力値がない場合は、入力エラーだと検知して\nくれます。Integerのフィールドは、@NotNullを付与します。message属性は、出力するメッセー\nジをカスタマイズすることができます。",
+      "p150-b08": "・14-15 行 ＠NotBlank、@Size(max = 15):\n ＠NotNull と似ていますが、こちらは文字列の入力有無チェックに特化されています。未入力\nはもちろん、空文字(“”)まで検知することができます。\n @Size は、文字列の文字数制限を設定できます。Max で最大文字数、min で最小文字数の\n設定ができます。"
+    },
+    "source_pages": [
+      150
+    ]
+  },
+  {
+    "chapter": "04",
+    "anchor_id": "p151-b08",
+    "consume_ids": [
+      "p151-b08",
+      "p151-b09",
+      "p151-b10",
+      "p151-b11"
+    ],
+    "owner_code_ids": [
+      "p151-b07"
+    ],
+    "rows": [
+      {
+        "line_label": "3 行目",
+        "code": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n",
+        "meaning": " @Valid アノテーションは、対象のオブジェクト（この場合は UserForm）が持つValidation アノ\nテーション（例えば @Size、@NotNull など）に基づいて入力チェックを実行するために使用さ\nれます。",
+        "source_ids": [
+          "p151-b08",
+          "p151-b09"
+        ],
+        "original_label": "・3 行目 @Valid：",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p151-b07",
+            "line_number": 3,
+            "text": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p151-b08",
+            "start": 0,
+            "end": 13,
+            "role": "label",
+            "text": "・3 行目 @Valid："
+          },
+          {
+            "source_id": "p151-b09",
+            "start": 0,
+            "end": 114,
+            "role": "meaning",
+            "text": " @Valid アノテーションは、対象のオブジェクト（この場合は UserForm）が持つValidation アノ\nテーション（例えば @Size、@NotNull など）に基づいて入力チェックを実行するために使用さ\nれます。"
+          }
+        ]
+      },
+      {
+        "line_label": "3 行目",
+        "code": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n",
+        "meaning": "BindingResult は、@Valid アノテーションによる入力チェックの結果を保持するオブジェクトで\nす。入力チェックエラーの詳細を取得するために使用されます。通常、メソッドの引数として渡\nされます。必ず、@Valid をつけた直後(ここでは、第2 引数)に記載しないといけないルールが\nありますので、ご注意ください。",
+        "source_ids": [
+          "p151-b10",
+          "p151-b11"
+        ],
+        "original_label": "・3 行目 BindingResult:",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p151-b07",
+            "line_number": 3,
+            "text": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p151-b10",
+            "start": 0,
+            "end": 20,
+            "role": "label",
+            "text": "・3 行目 BindingResult:"
+          },
+          {
+            "source_id": "p151-b11",
+            "start": 0,
+            "end": 163,
+            "role": "meaning",
+            "text": "BindingResult は、@Valid アノテーションによる入力チェックの結果を保持するオブジェクトで\nす。入力チェックエラーの詳細を取得するために使用されます。通常、メソッドの引数として渡\nされます。必ず、@Valid をつけた直後(ここでは、第2 引数)に記載しないといけないルールが\nありますので、ご注意ください。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p151-b08": "・3 行目 @Valid：",
+      "p151-b09": " @Valid アノテーションは、対象のオブジェクト（この場合は UserForm）が持つValidation アノ\nテーション（例えば @Size、@NotNull など）に基づいて入力チェックを実行するために使用さ\nれます。",
+      "p151-b10": "・3 行目 BindingResult:",
+      "p151-b11": "BindingResult は、@Valid アノテーションによる入力チェックの結果を保持するオブジェクトで\nす。入力チェックエラーの詳細を取得するために使用されます。通常、メソッドの引数として渡\nされます。必ず、@Valid をつけた直後(ここでは、第2 引数)に記載しないといけないルールが\nありますので、ご注意ください。"
+    },
+    "source_pages": [
+      151
+    ]
+  },
+  {
+    "chapter": "04",
+    "anchor_id": "p152-b01",
+    "consume_ids": [
+      "p152-b01",
+      "p152-b02"
+    ],
+    "owner_code_ids": [
+      "p151-b07"
+    ],
+    "rows": [
+      {
+        "line_label": "4 行目",
+        "code": " if (bdResult.hasErrors()) {",
+        "meaning": " BindingResult の hasErrors メソッドは、入力チェック中にエラーが発生したかどうかを確認\nするために使用されます。エラーが存在する場合は true を、そうでない場合は false を返\nします。このメソッドを利用して条件分岐を行い、エラーがある場合は入力フォームに戻り、エ\nラーメッセージをユーザに表示します。",
+        "source_ids": [
+          "p152-b01",
+          "p152-b02"
+        ],
+        "original_label": "・4 行目 bdResult.hasErrors()：",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p151-b07",
+            "line_number": 4,
+            "text": " if (bdResult.hasErrors()) {"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p152-b01",
+            "start": 0,
+            "end": 27,
+            "role": "label",
+            "text": "・4 行目 bdResult.hasErrors()："
+          },
+          {
+            "source_id": "p152-b02",
+            "start": 0,
+            "end": 168,
+            "role": "meaning",
+            "text": " BindingResult の hasErrors メソッドは、入力チェック中にエラーが発生したかどうかを確認\nするために使用されます。エラーが存在する場合は true を、そうでない場合は false を返\nします。このメソッドを利用して条件分岐を行い、エラーがある場合は入力フォームに戻り、エ\nラーメッセージをユーザに表示します。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p152-b01": "・4 行目 bdResult.hasErrors()：",
+      "p152-b02": " BindingResult の hasErrors メソッドは、入力チェック中にエラーが発生したかどうかを確認\nするために使用されます。エラーが存在する場合は true を、そうでない場合は false を返\nします。このメソッドを利用して条件分岐を行い、エラーがある場合は入力フォームに戻り、エ\nラーメッセージをユーザに表示します。"
+    },
+    "source_pages": [
+      152
+    ]
+  },
+  {
+    "chapter": "04",
+    "anchor_id": "p152-b06",
+    "consume_ids": [
+      "p152-b06",
+      "p152-b07",
+      "p152-b08",
+      "p152-b09"
+    ],
+    "owner_code_ids": [
+      "p152-b05"
+    ],
+    "rows": [
+      {
+        "line_label": "4 行目",
+        "code": "<form th:action=\"@{/login4}\" method=\"post\" th:object=\"${userForm}\">",
+        "meaning": "th:object 属性は、「選択対象オブジェクト」と呼ばれ、フォームのデータをController のオブ\nジェクト（この場合は UserForm オブジェクト）にバインド（結びつけ）するために使用されま\nす。\n\nformタグに記述することで、フォームの入力フィールドの値が、UserForm オブジェクトの対応\nするプロパティに自動的に格納されます。\nつまり、Controller のメソッド内でModel にデータを格納しなくても、Form タグの中で、\nThymeleaf 上でデータを受け取れるということです。\n\nフォーム内では、*{...}という選択式を使用して、userForm オブジェクトのプロパティに簡潔にア\nクセスできます。userForm.empId ではなく、*{empId}だけでアクセスできるようになります。",
+        "source_ids": [
+          "p152-b06",
+          "p152-b07",
+          "p152-b08",
+          "p152-b09"
+        ],
+        "original_label": "・4 行目 th:object=\"${userForm}\":",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p152-b05",
+            "line_number": 4,
+            "text": "<form th:action=\"@{/login4}\" method=\"post\" th:object=\"${userForm}\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p152-b06",
+            "start": 0,
+            "end": 30,
+            "role": "label",
+            "text": "・4 行目 th:object=\"${userForm}\":"
+          },
+          {
+            "source_id": "p152-b07",
+            "start": 0,
+            "end": 106,
+            "role": "meaning",
+            "text": "th:object 属性は、「選択対象オブジェクト」と呼ばれ、フォームのデータをController のオブ\nジェクト（この場合は UserForm オブジェクト）にバインド（結びつけ）するために使用されま\nす。"
+          },
+          {
+            "source_id": "p152-b08",
+            "start": 0,
+            "end": 152,
+            "role": "meaning",
+            "text": "formタグに記述することで、フォームの入力フィールドの値が、UserForm オブジェクトの対応\nするプロパティに自動的に格納されます。\nつまり、Controller のメソッド内でModel にデータを格納しなくても、Form タグの中で、\nThymeleaf 上でデータを受け取れるということです。"
+          },
+          {
+            "source_id": "p152-b09",
+            "start": 0,
+            "end": 107,
+            "role": "meaning",
+            "text": "フォーム内では、*{...}という選択式を使用して、userForm オブジェクトのプロパティに簡潔にア\nクセスできます。userForm.empId ではなく、*{empId}だけでアクセスできるようになります。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p152-b06": "・4 行目 th:object=\"${userForm}\":",
+      "p152-b07": "th:object 属性は、「選択対象オブジェクト」と呼ばれ、フォームのデータをController のオブ\nジェクト（この場合は UserForm オブジェクト）にバインド（結びつけ）するために使用されま\nす。",
+      "p152-b08": "formタグに記述することで、フォームの入力フィールドの値が、UserForm オブジェクトの対応\nするプロパティに自動的に格納されます。\nつまり、Controller のメソッド内でModel にデータを格納しなくても、Form タグの中で、\nThymeleaf 上でデータを受け取れるということです。",
+      "p152-b09": "フォーム内では、*{...}という選択式を使用して、userForm オブジェクトのプロパティに簡潔にア\nクセスできます。userForm.empId ではなく、*{empId}だけでアクセスできるようになります。"
+    },
+    "source_pages": [
+      152
+    ]
+  },
+  {
+    "chapter": "04",
+    "anchor_id": "p153-b01",
+    "consume_ids": [
+      "p153-b01",
+      "p153-b02",
+      "p153-b03",
+      "p153-b04",
+      "p153-b05",
+      "p153-b06",
+      "p153-b07"
+    ],
+    "owner_code_ids": [
+      "p152-b05"
+    ],
+    "rows": [
+      {
+        "line_label": "6 行目",
+        "code": "<p>社員番号 ：<input type = \"text\" th:field=\"*{empId}\"/>",
+        "meaning": "th:field 属性は、対応するフィールドの name, id, および value 属性を自動的に生成しま\nす。ですので、name、id、value を省略できます。\n\n自動生成されるvalue 属性により、フォーム送信後に入力チェックエラーが発生した場合でも、\nユーザが入力した値がフィールドに保持されます。これにより、ユーザは入力値を再度入力す\nる手間を省くことができます。\n\nなお、*{empId}は、userForm オブジェクトのempId プロパティを参照しています。",
+        "source_ids": [
+          "p153-b01",
+          "p153-b02",
+          "p153-b03",
+          "p153-b04"
+        ],
+        "original_label": "・6 行目 th:field=\"*{empId}\":",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p152-b05",
+            "line_number": 6,
+            "text": "<p>社員番号 ：<input type = \"text\" th:field=\"*{empId}\"/>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p153-b01",
+            "start": 0,
+            "end": 26,
+            "role": "label",
+            "text": "・6 行目 th:field=\"*{empId}\":"
+          },
+          {
+            "source_id": "p153-b02",
+            "start": 0,
+            "end": 85,
+            "role": "meaning",
+            "text": "th:field 属性は、対応するフィールドの name, id, および value 属性を自動的に生成しま\nす。ですので、name、id、value を省略できます。"
+          },
+          {
+            "source_id": "p153-b03",
+            "start": 0,
+            "end": 104,
+            "role": "meaning",
+            "text": "自動生成されるvalue 属性により、フォーム送信後に入力チェックエラーが発生した場合でも、\nユーザが入力した値がフィールドに保持されます。これにより、ユーザは入力値を再度入力す\nる手間を省くことができます。"
+          },
+          {
+            "source_id": "p153-b04",
+            "start": 0,
+            "end": 49,
+            "role": "meaning",
+            "text": "なお、*{empId}は、userForm オブジェクトのempId プロパティを参照しています。"
+          }
+        ]
+      },
+      {
+        "line_label": "7 行目",
+        "code": " <span th:errors=\"*{empId}\"></span></p>",
+        "meaning": " このコードは、empId フィールドに関連する入力チェックエラーがある場合にエラーメッセ\nージを表示するために使われます。エラーがない場合は、何も表示されません。\n\nフォームを送信したとき、もし empId フィールドの値が入力チェックのルールに違反していれ\nば（例えば、必須フィールドが空である、など）、 <span> タグの中に入力チェックごとのエラー\nメッセージが表示されます。",
+        "source_ids": [
+          "p153-b05",
+          "p153-b06",
+          "p153-b07"
+        ],
+        "original_label": "・7 行目 <span th:errors=\"*{empId}\"></span>:",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p152-b05",
+            "line_number": 7,
+            "text": " <span th:errors=\"*{empId}\"></span></p>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p153-b05",
+            "start": 0,
+            "end": 41,
+            "role": "label",
+            "text": "・7 行目 <span th:errors=\"*{empId}\"></span>:"
+          },
+          {
+            "source_id": "p153-b06",
+            "start": 0,
+            "end": 82,
+            "role": "meaning",
+            "text": " このコードは、empId フィールドに関連する入力チェックエラーがある場合にエラーメッセ\nージを表示するために使われます。エラーがない場合は、何も表示されません。"
+          },
+          {
+            "source_id": "p153-b07",
+            "start": 0,
+            "end": 109,
+            "role": "meaning",
+            "text": "フォームを送信したとき、もし empId フィールドの値が入力チェックのルールに違反していれ\nば（例えば、必須フィールドが空である、など）、 <span> タグの中に入力チェックごとのエラー\nメッセージが表示されます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p153-b01": "・6 行目 th:field=\"*{empId}\":",
+      "p153-b02": "th:field 属性は、対応するフィールドの name, id, および value 属性を自動的に生成しま\nす。ですので、name、id、value を省略できます。",
+      "p153-b03": "自動生成されるvalue 属性により、フォーム送信後に入力チェックエラーが発生した場合でも、\nユーザが入力した値がフィールドに保持されます。これにより、ユーザは入力値を再度入力す\nる手間を省くことができます。",
+      "p153-b04": "なお、*{empId}は、userForm オブジェクトのempId プロパティを参照しています。",
+      "p153-b05": "・7 行目 <span th:errors=\"*{empId}\"></span>:",
+      "p153-b06": " このコードは、empId フィールドに関連する入力チェックエラーがある場合にエラーメッセ\nージを表示するために使われます。エラーがない場合は、何も表示されません。",
+      "p153-b07": "フォームを送信したとき、もし empId フィールドの値が入力チェックのルールに違反していれ\nば（例えば、必須フィールドが空である、など）、 <span> タグの中に入力チェックごとのエラー\nメッセージが表示されます。"
+    },
+    "source_pages": [
+      153
+    ]
+  },
+  {
+    "chapter": "05",
+    "anchor_id": "p168-b04",
+    "consume_ids": [
+      "p168-b04",
+      "p168-b05",
+      "p168-b06",
+      "p168-b07"
+    ],
+    "owner_code_ids": [
+      "p168-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "2 行",
+        "code": "<html xmlns:th=\"http://www.thymeleaf.org\">",
+        "meaning": "Thymeleaf テンプレートで使われる HTML の宣言です。この宣言により、Thymeleaf のル\nールが HTML ページに追加されます。それによって、Thymeleaf の特有の属性や構文が\nHTML タグ内で認識され、正しく処理されます。",
+        "source_ids": [
+          "p168-b04",
+          "p168-b05"
+        ],
+        "original_label": "・2 行 <html xmlns:th=\"http://www.thymeleaf.org\">:",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p168-b03",
+            "line_number": 2,
+            "text": "<html xmlns:th=\"http://www.thymeleaf.org\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p168-b04",
+            "start": 0,
+            "end": 48,
+            "role": "label",
+            "text": "・2 行 <html xmlns:th=\"http://www.thymeleaf.org\">:"
+          },
+          {
+            "source_id": "p168-b05",
+            "start": 0,
+            "end": 126,
+            "role": "meaning",
+            "text": "Thymeleaf テンプレートで使われる HTML の宣言です。この宣言により、Thymeleaf のル\nールが HTML ページに追加されます。それによって、Thymeleaf の特有の属性や構文が\nHTML タグ内で認識され、正しく処理されます。"
+          }
+        ]
+      },
+      {
+        "line_label": "6 行",
+        "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+        "meaning": " この宣言は、Thymeleaf の構文ではありませんが、Web ページがモバイルデバイスで表示さ\nれる際のビューポート（表示領域）の設定に使われます。デバイスがどのような画面サイズを持\nっていても、Web ページはそれに適応するように表示されます。",
+        "source_ids": [
+          "p168-b06",
+          "p168-b07"
+        ],
+        "original_label": "・6 行 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />：",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p168-b03",
+            "line_number": 6,
+            "text": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p168-b06",
+            "start": 0,
+            "end": 78,
+            "role": "label",
+            "text": "・6 行 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />："
+          },
+          {
+            "source_id": "p168-b07",
+            "start": 0,
+            "end": 125,
+            "role": "meaning",
+            "text": " この宣言は、Thymeleaf の構文ではありませんが、Web ページがモバイルデバイスで表示さ\nれる際のビューポート（表示領域）の設定に使われます。デバイスがどのような画面サイズを持\nっていても、Web ページはそれに適応するように表示されます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p168-b04": "・2 行 <html xmlns:th=\"http://www.thymeleaf.org\">:",
+      "p168-b05": "Thymeleaf テンプレートで使われる HTML の宣言です。この宣言により、Thymeleaf のル\nールが HTML ページに追加されます。それによって、Thymeleaf の特有の属性や構文が\nHTML タグ内で認識され、正しく処理されます。",
+      "p168-b06": "・6 行 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />：",
+      "p168-b07": " この宣言は、Thymeleaf の構文ではありませんが、Web ページがモバイルデバイスで表示さ\nれる際のビューポート（表示領域）の設定に使われます。デバイスがどのような画面サイズを持\nっていても、Web ページはそれに適応するように表示されます。"
+    },
+    "source_pages": [
+      168
+    ]
+  },
+  {
+    "chapter": "05",
+    "anchor_id": "p184-b02",
+    "consume_ids": [
+      "p184-b02",
+      "p184-b03",
+      "p184-b04",
+      "p184-b05",
+      "p184-b06",
+      "p184-b07"
+    ],
+    "owner_code_ids": [
+      "p183-b03"
+    ],
+    "rows": [
+      {
+        "line_label": "3 行目",
+        "code": " xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">",
+        "meaning": "レイアウトファイルを定義するためには、既存のhtml 属性に、xmlns:layout 属性を追記する\n必要があります。html 要素を2 回書いたわけではなく、html 要素に2 つの属性を追加している\nことに気をつけてください。",
+        "source_ids": [
+          "p184-b02",
+          "p184-b03"
+        ],
+        "original_label": "・3 行目 xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”>",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p183-b03",
+            "line_number": 3,
+            "text": " xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p184-b02",
+            "start": 0,
+            "end": 63,
+            "role": "label",
+            "text": "・3 行目 xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”>"
+          },
+          {
+            "source_id": "p184-b03",
+            "start": 0,
+            "end": 116,
+            "role": "meaning",
+            "text": "レイアウトファイルを定義するためには、既存のhtml 属性に、xmlns:layout 属性を追記する\n必要があります。html 要素を2 回書いたわけではなく、html 要素に2 つの属性を追加している\nことに気をつけてください。"
+          }
+        ]
+      },
+      {
+        "line_label": "8 行目",
+        "code": "<link rel=\"stylesheet\" th:href=\"@{/css/layout.css}\" />",
+        "meaning": " レイアウト専用のcss ファイルを別途作成し、読み込ませました。css ファイルの詳細は、デザ\nインの領域ですので、章末の【参考】の部分をご覧ください。",
+        "source_ids": [
+          "p184-b04",
+          "p184-b05"
+        ],
+        "original_label": "・8 行目 <link rel=”stylesheet” th:href=”@{/css/layout.css}” />",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p183-b03",
+            "line_number": 8,
+            "text": "<link rel=\"stylesheet\" th:href=\"@{/css/layout.css}\" />"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p184-b04",
+            "start": 0,
+            "end": 60,
+            "role": "label",
+            "text": "・8 行目 <link rel=”stylesheet” th:href=”@{/css/layout.css}” />"
+          },
+          {
+            "source_id": "p184-b05",
+            "start": 0,
+            "end": 77,
+            "role": "meaning",
+            "text": " レイアウト専用のcss ファイルを別途作成し、読み込ませました。css ファイルの詳細は、デザ\nインの領域ですので、章末の【参考】の部分をご覧ください。"
+          }
+        ]
+      },
+      {
+        "line_label": "27-29 行",
+        "code": "<main layout:fragment=\"main_content\">\n <!-- 各ページ固有のコンテンツがここに入ります -->\n</main>",
+        "meaning": " この部分のコードは、中身がありません。その理由は、ここはメインコンテンツが配置される\n場所だからです。\n「layout:fragment=“識別名”」の属性をつけると、この部分に別のhtml ファイル(コンテンツ)の\nfragment 識別名が一致しているコードがコピーされ、置き換えられます。",
+        "source_ids": [
+          "p184-b06",
+          "p184-b07"
+        ],
+        "original_label": "・27-29 行 <main layout:fragment=”main_content”>  </main>",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p183-b03",
+            "line_number": 27,
+            "text": "<main layout:fragment=\"main_content\">"
+          },
+          {
+            "code_id": "p183-b03",
+            "line_number": 28,
+            "text": " <!-- 各ページ固有のコンテンツがここに入ります -->"
+          },
+          {
+            "code_id": "p183-b03",
+            "line_number": 29,
+            "text": "</main>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p184-b06",
+            "start": 0,
+            "end": 55,
+            "role": "label",
+            "text": "・27-29 行 <main layout:fragment=”main_content”>  </main>"
+          },
+          {
+            "source_id": "p184-b07",
+            "start": 0,
+            "end": 148,
+            "role": "meaning",
+            "text": " この部分のコードは、中身がありません。その理由は、ここはメインコンテンツが配置される\n場所だからです。\n「layout:fragment=“識別名”」の属性をつけると、この部分に別のhtml ファイル(コンテンツ)の\nfragment 識別名が一致しているコードがコピーされ、置き換えられます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p184-b02": "・3 行目 xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”>",
+      "p184-b03": "レイアウトファイルを定義するためには、既存のhtml 属性に、xmlns:layout 属性を追記する\n必要があります。html 要素を2 回書いたわけではなく、html 要素に2 つの属性を追加している\nことに気をつけてください。",
+      "p184-b04": "・8 行目 <link rel=”stylesheet” th:href=”@{/css/layout.css}” />",
+      "p184-b05": " レイアウト専用のcss ファイルを別途作成し、読み込ませました。css ファイルの詳細は、デザ\nインの領域ですので、章末の【参考】の部分をご覧ください。",
+      "p184-b06": "・27-29 行 <main layout:fragment=”main_content”>  </main>",
+      "p184-b07": " この部分のコードは、中身がありません。その理由は、ここはメインコンテンツが配置される\n場所だからです。\n「layout:fragment=“識別名”」の属性をつけると、この部分に別のhtml ファイル(コンテンツ)の\nfragment 識別名が一致しているコードがコピーされ、置き換えられます。"
+    },
+    "source_pages": [
+      184
+    ]
+  },
+  {
+    "chapter": "05",
+    "anchor_id": "p185-b01",
+    "consume_ids": [
+      "p185-b01",
+      "p185-b02",
+      "p185-b03",
+      "p185-b04",
+      "p185-b05",
+      "p185-b06",
+      "p185-b07"
+    ],
+    "owner_code_ids": [
+      "p184-b10"
+    ],
+    "rows": [
+      {
+        "line_label": "3 行目",
+        "code": " xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\"",
+        "meaning": " レイアウトにコピーするコンテンツ側のHTML にも、同じくレイアウト関連のルールを宣言して\nおきます。",
+        "source_ids": [
+          "p185-b01",
+          "p185-b02"
+        ],
+        "original_label": "・3 行目 xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p184-b10",
+            "line_number": 3,
+            "text": " xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\""
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p185-b01",
+            "start": 0,
+            "end": 62,
+            "role": "label",
+            "text": "・3 行目 xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”"
+          },
+          {
+            "source_id": "p185-b02",
+            "start": 0,
+            "end": 52,
+            "role": "meaning",
+            "text": " レイアウトにコピーするコンテンツ側のHTML にも、同じくレイアウト関連のルールを宣言して\nおきます。"
+          }
+        ]
+      },
+      {
+        "line_label": "4 行目",
+        "code": "       layout:decorate=\"~{/layout}\">",
+        "meaning": " <html>の属性の中にlayout:decorate 属性も追記します。この部分の属性値は、layout.html\nの場所をURL で指定すればOK です。\n\n例えば、layout がproduct フォルダ内にあるなら、”~{/product/layout}” のように記述すれば\nOK です。URL を間違えると、レイアウト機能が使えませんので、ご注意ください。",
+        "source_ids": [
+          "p185-b03",
+          "p185-b04",
+          "p185-b05"
+        ],
+        "original_label": "・4 行目 layout:decorate=”~{/layout}”>",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p184-b10",
+            "line_number": 4,
+            "text": "       layout:decorate=\"~{/layout}\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p185-b03",
+            "start": 0,
+            "end": 35,
+            "role": "label",
+            "text": "・4 行目 layout:decorate=”~{/layout}”>"
+          },
+          {
+            "source_id": "p185-b04",
+            "start": 0,
+            "end": 80,
+            "role": "meaning",
+            "text": " <html>の属性の中にlayout:decorate 属性も追記します。この部分の属性値は、layout.html\nの場所をURL で指定すればOK です。"
+          },
+          {
+            "source_id": "p185-b05",
+            "start": 0,
+            "end": 103,
+            "role": "meaning",
+            "text": "例えば、layout がproduct フォルダ内にあるなら、”~{/product/layout}” のように記述すれば\nOK です。URL を間違えると、レイアウト機能が使えませんので、ご注意ください。"
+          }
+        ]
+      },
+      {
+        "line_label": "9-13 行目",
+        "code": "<main layout:fragment=\"main_content\">\n\n<!--既存のコンテンツのソースコード-->\n\n</main>",
+        "meaning": "既存の<body>内に書いていたソースコードを、全てこの要素で囲みます。先ほどの\nlayout.html のfragment 識別名が“main_content”でしたので、同じ値を入れます。そうすること\nで、9-13 行内の全てのHTML コードが、layout.html の28 行にコピーされ、レイアウト+コンテ\nンツの新しいHTML が生成されます。insert.html へreturn して一覧画面を開くと、自動で\nlayout.html の共通部分まで生成された画面が表示されます。",
+        "source_ids": [
+          "p185-b06",
+          "p185-b07"
+        ],
+        "original_label": "・9-13 行目 <main layout:fragment=”main_content”>",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p184-b10",
+            "line_number": 9,
+            "text": "<main layout:fragment=\"main_content\">"
+          },
+          {
+            "code_id": "p184-b10",
+            "line_number": 10,
+            "text": ""
+          },
+          {
+            "code_id": "p184-b10",
+            "line_number": 11,
+            "text": "<!--既存のコンテンツのソースコード-->"
+          },
+          {
+            "code_id": "p184-b10",
+            "line_number": 12,
+            "text": ""
+          },
+          {
+            "code_id": "p184-b10",
+            "line_number": 13,
+            "text": "</main>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p185-b06",
+            "start": 0,
+            "end": 46,
+            "role": "label",
+            "text": "・9-13 行目 <main layout:fragment=”main_content”>"
+          },
+          {
+            "source_id": "p185-b07",
+            "start": 0,
+            "end": 248,
+            "role": "meaning",
+            "text": "既存の<body>内に書いていたソースコードを、全てこの要素で囲みます。先ほどの\nlayout.html のfragment 識別名が“main_content”でしたので、同じ値を入れます。そうすること\nで、9-13 行内の全てのHTML コードが、layout.html の28 行にコピーされ、レイアウト+コンテ\nンツの新しいHTML が生成されます。insert.html へreturn して一覧画面を開くと、自動で\nlayout.html の共通部分まで生成された画面が表示されます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p185-b01": "・3 行目 xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”",
+      "p185-b02": " レイアウトにコピーするコンテンツ側のHTML にも、同じくレイアウト関連のルールを宣言して\nおきます。",
+      "p185-b03": "・4 行目 layout:decorate=”~{/layout}”>",
+      "p185-b04": " <html>の属性の中にlayout:decorate 属性も追記します。この部分の属性値は、layout.html\nの場所をURL で指定すればOK です。",
+      "p185-b05": "例えば、layout がproduct フォルダ内にあるなら、”~{/product/layout}” のように記述すれば\nOK です。URL を間違えると、レイアウト機能が使えませんので、ご注意ください。",
+      "p185-b06": "・9-13 行目 <main layout:fragment=”main_content”>",
+      "p185-b07": "既存の<body>内に書いていたソースコードを、全てこの要素で囲みます。先ほどの\nlayout.html のfragment 識別名が“main_content”でしたので、同じ値を入れます。そうすること\nで、9-13 行内の全てのHTML コードが、layout.html の28 行にコピーされ、レイアウト+コンテ\nンツの新しいHTML が生成されます。insert.html へreturn して一覧画面を開くと、自動で\nlayout.html の共通部分まで生成された画面が表示されます。"
+    },
+    "source_pages": [
+      185
+    ]
+  },
+  {
+    "chapter": "07",
+    "anchor_id": "p266-b11",
+    "consume_ids": [
+      "p266-b11"
+    ],
+    "owner_code_ids": [
+      "p266-b10"
+    ],
+    "rows": [
+      {
+        "line_label": "1 行目",
+        "code": "<div class=\"container\">",
+        "meaning": "\n今回のサンプルでは、外側を container でコンテナを作っています。画面の中央にコンテン\nツが配置されます。もし、container-fluid にすると、横幅いっぱいに変わります。",
+        "source_ids": [
+          "p266-b11"
+        ],
+        "original_label": "・1 行目 <div class=\"container\">",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p266-b10",
+            "line_number": 1,
+            "text": "<div class=\"container\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p266-b11",
+            "start": 0,
+            "end": 29,
+            "role": "label",
+            "text": "・1 行目 <div class=\"container\">"
+          },
+          {
+            "source_id": "p266-b11",
+            "start": 29,
+            "end": 30,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p266-b11",
+            "start": 30,
+            "end": 125,
+            "role": "meaning",
+            "text": "\n今回のサンプルでは、外側を container でコンテナを作っています。画面の中央にコンテン\nツが配置されます。もし、container-fluid にすると、横幅いっぱいに変わります。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p266-b11": "・1 行目 <div class=\"container\">\n\n今回のサンプルでは、外側を container でコンテナを作っています。画面の中央にコンテン\nツが配置されます。もし、container-fluid にすると、横幅いっぱいに変わります。"
+    },
+    "source_pages": [
+      266
+    ]
+  },
+  {
+    "chapter": "07",
+    "anchor_id": "p267-b01",
+    "consume_ids": [
+      "p267-b01",
+      "p267-b02",
+      "p267-b03"
+    ],
+    "owner_code_ids": [
+      "p266-b10"
+    ],
+    "rows": [
+      {
+        "line_label": "2 行目",
+        "code": "    <div class=\"row\">",
+        "meaning": "\n コンテナの中に、row をclass 属性として持つdiv 要素を入れます。後述のカラムを配置する\nためにも、必ずrow が必要です。まるでtable 要素に、<tr>がないと、<td>も書けないのと同じ\nです。",
+        "source_ids": [
+          "p267-b01"
+        ],
+        "original_label": "・2 行目 <div class=\"row\">",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p266-b10",
+            "line_number": 2,
+            "text": "    <div class=\"row\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p267-b01",
+            "start": 0,
+            "end": 23,
+            "role": "label",
+            "text": "・2 行目 <div class=\"row\">"
+          },
+          {
+            "source_id": "p267-b01",
+            "start": 23,
+            "end": 24,
+            "role": "separator",
+            "text": "\n"
+          },
+          {
+            "source_id": "p267-b01",
+            "start": 24,
+            "end": 132,
+            "role": "meaning",
+            "text": "\n コンテナの中に、row をclass 属性として持つdiv 要素を入れます。後述のカラムを配置する\nためにも、必ずrow が必要です。まるでtable 要素に、<tr>がないと、<td>も書けないのと同じ\nです。"
+          }
+        ]
+      },
+      {
+        "line_label": "3 行目～5 行目",
+        "code": "        <div class=\"col-6 bg-primary-subtle\">Column 1</div>\n        <div class=\"col-3 bg-danger-subtle\">Column 2</div>\n        <div class=\"col-3 bg-success-subtle\">Column 3</div>",
+        "meaning": "1 つのrow の中に、複数のカラムを配置できます。このサンプル通りだと、以下のように表示\nされます。",
+        "source_ids": [
+          "p267-b02",
+          "p267-b03"
+        ],
+        "original_label": "・3 行目～5 行目 <div class=\"col-6～",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p266-b10",
+            "line_number": 3,
+            "text": "        <div class=\"col-6 bg-primary-subtle\">Column 1</div>"
+          },
+          {
+            "code_id": "p266-b10",
+            "line_number": 4,
+            "text": "        <div class=\"col-3 bg-danger-subtle\">Column 2</div>"
+          },
+          {
+            "code_id": "p266-b10",
+            "line_number": 5,
+            "text": "        <div class=\"col-3 bg-success-subtle\">Column 3</div>"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p267-b02",
+            "start": 0,
+            "end": 29,
+            "role": "label",
+            "text": "・3 行目～5 行目 <div class=\"col-6～"
+          },
+          {
+            "source_id": "p267-b03",
+            "start": 0,
+            "end": 51,
+            "role": "meaning",
+            "text": "1 つのrow の中に、複数のカラムを配置できます。このサンプル通りだと、以下のように表示\nされます。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p267-b01": "・2 行目 <div class=\"row\">\n\n コンテナの中に、row をclass 属性として持つdiv 要素を入れます。後述のカラムを配置する\nためにも、必ずrow が必要です。まるでtable 要素に、<tr>がないと、<td>も書けないのと同じ\nです。",
+      "p267-b02": "・3 行目～5 行目 <div class=\"col-6～",
+      "p267-b03": "1 つのrow の中に、複数のカラムを配置できます。このサンプル通りだと、以下のように表示\nされます。"
+    },
+    "source_pages": [
+      267
+    ]
+  },
+  {
+    "chapter": "07",
+    "anchor_id": "p267-b09",
+    "consume_ids": [
+      "p267-b09",
+      "p267-b10"
+    ],
+    "owner_code_ids": [
+      "p266-b10"
+    ],
+    "rows": [
+      {
+        "line_label": "6 行目～7 行目",
+        "code": "    </div> <!-- END row1-->\n</div><!-- END container-->",
+        "meaning": "グリッドシステムでは、<div>要素を使うことが多いので、閉じタグだけでは、どの要素の閉じ\nタグなのか、区別がつきません。そのため、どの要素の閉じタグなのかを明確にするため、コ\nメントを記載することが多いです。特に、row が複数ある場合は「END row1」や、「END row2」と\nかでコメントを残すことで実際の範囲も読みやすくなるので、重要です。",
+        "source_ids": [
+          "p267-b09",
+          "p267-b10"
+        ],
+        "original_label": "・6 行目～7 行目 </div> <!--コメント-->",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p266-b10",
+            "line_number": 6,
+            "text": "    </div> <!-- END row1-->"
+          },
+          {
+            "code_id": "p266-b10",
+            "line_number": 7,
+            "text": "</div><!-- END container-->"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p267-b09",
+            "start": 0,
+            "end": 29,
+            "role": "label",
+            "text": "・6 行目～7 行目 </div> <!--コメント-->"
+          },
+          {
+            "source_id": "p267-b10",
+            "start": 0,
+            "end": 177,
+            "role": "meaning",
+            "text": "グリッドシステムでは、<div>要素を使うことが多いので、閉じタグだけでは、どの要素の閉じ\nタグなのか、区別がつきません。そのため、どの要素の閉じタグなのかを明確にするため、コ\nメントを記載することが多いです。特に、row が複数ある場合は「END row1」や、「END row2」と\nかでコメントを残すことで実際の範囲も読みやすくなるので、重要です。"
+          }
+        ]
+      }
+    ],
+    "source_texts": {
+      "p267-b09": "・6 行目～7 行目 </div> <!--コメント-->",
+      "p267-b10": "グリッドシステムでは、<div>要素を使うことが多いので、閉じタグだけでは、どの要素の閉じ\nタグなのか、区別がつきません。そのため、どの要素の閉じタグなのかを明確にするため、コ\nメントを記載することが多いです。特に、row が複数ある場合は「END row1」や、「END row2」と\nかでコメントを残すことで実際の範囲も読みやすくなるので、重要です。"
+    },
+    "source_pages": [
+      267
+    ]
+  },
+  {
+    "chapter": "07",
+    "anchor_id": "p273-b04",
+    "consume_ids": [
+      "p273-b04",
+      "p273-b05",
+      "p273-b06",
+      "p273-b07",
+      "p273-b08",
+      "p273-b09",
+      "p273-b10"
+    ],
+    "owner_code_ids": [
+      "p273-b02"
+    ],
+    "rows": [
+      {
+        "line_label": "5 行目",
+        "code": "        <div class=\"col-md-3\"> <!-- START sidebar -->",
+        "meaning": " フォームとは直接関係がないコードですが、横幅の3 割のみ占めるように、限定をさせること\nで、左サイドバーのようなレイアウトを作ることができます。検索バーは、サイドバーに配置させ\nることが多いので、予めカラムを生成しました。",
+        "source_ids": [
+          "p273-b04",
+          "p273-b05"
+        ],
+        "original_label": "・5 行目 <div class=\"col-md-3\">",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p273-b02",
+            "line_number": 5,
+            "text": "        <div class=\"col-md-3\"> <!-- START sidebar -->"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p273-b04",
+            "start": 0,
+            "end": 28,
+            "role": "label",
+            "text": "・5 行目 <div class=\"col-md-3\">"
+          },
+          {
+            "source_id": "p273-b05",
+            "start": 0,
+            "end": 112,
+            "role": "meaning",
+            "text": " フォームとは直接関係がないコードですが、横幅の3 割のみ占めるように、限定をさせること\nで、左サイドバーのようなレイアウトを作ることができます。検索バーは、サイドバーに配置させ\nることが多いので、予めカラムを生成しました。"
+          }
+        ]
+      },
+      {
+        "line_label": "8 行目",
+        "code": "            <form class=\"row\">",
+        "meaning": "<div>ではなく、<form>要素をrow として生成すると、フォームを別途の行として扱えることが\nできます。",
+        "source_ids": [
+          "p273-b06",
+          "p273-b07"
+        ],
+        "original_label": "・8 行目 <form class=\"row\">",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p273-b02",
+            "line_number": 8,
+            "text": "            <form class=\"row\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p273-b06",
+            "start": 0,
+            "end": 24,
+            "role": "label",
+            "text": "・8 行目 <form class=\"row\">"
+          },
+          {
+            "source_id": "p273-b07",
+            "start": 0,
+            "end": 56,
+            "role": "meaning",
+            "text": "<div>ではなく、<form>要素をrow として生成すると、フォームを別途の行として扱えることが\nできます。"
+          }
+        ]
+      },
+      {
+        "line_label": "9 行目・13 行目",
+        "code": "                <div class=\"col-8\">\n                <div class=\"col-4\">",
+        "meaning": "入力フォームに8、ボタンに4 の割合でカラムを生成しています。",
+        "source_ids": [
+          "p273-b08",
+          "p273-b09"
+        ],
+        "original_label": "・9 行目・13 行目 <div class=\"col-8\"> <div class=\"col-4\">",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p273-b02",
+            "line_number": 9,
+            "text": "                <div class=\"col-8\">"
+          },
+          {
+            "code_id": "p273-b02",
+            "line_number": 13,
+            "text": "                <div class=\"col-4\">"
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p273-b08",
+            "start": 0,
+            "end": 51,
+            "role": "label",
+            "text": "・9 行目・13 行目 <div class=\"col-8\"> <div class=\"col-4\">"
+          },
+          {
+            "source_id": "p273-b09",
+            "start": 0,
+            "end": 31,
+            "role": "meaning",
+            "text": "入力フォームに8、ボタンに4 の割合でカラムを生成しています。"
+          }
+        ]
+      },
+      {
+        "line_label": "10 行目",
+        "code": "                    <input type=\"text\" class=\"form-control\"",
+        "meaning": "",
+        "source_ids": [
+          "p273-b10"
+        ],
+        "original_label": "・10 行目 <input type=\"text\" class=\"form-control\"～",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p273-b02",
+            "line_number": 10,
+            "text": "                    <input type=\"text\" class=\"form-control\""
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p273-b10",
+            "start": 0,
+            "end": 47,
+            "role": "label",
+            "text": "・10 行目 <input type=\"text\" class=\"form-control\"～"
+          }
+        ],
+        "continuation": false,
+        "continued_from": null
+      }
+    ],
+    "source_texts": {
+      "p273-b04": "・5 行目 <div class=\"col-md-3\">",
+      "p273-b05": " フォームとは直接関係がないコードですが、横幅の3 割のみ占めるように、限定をさせること\nで、左サイドバーのようなレイアウトを作ることができます。検索バーは、サイドバーに配置させ\nることが多いので、予めカラムを生成しました。",
+      "p273-b06": "・8 行目 <form class=\"row\">",
+      "p273-b07": "<div>ではなく、<form>要素をrow として生成すると、フォームを別途の行として扱えることが\nできます。",
+      "p273-b08": "・9 行目・13 行目 <div class=\"col-8\"> <div class=\"col-4\">",
+      "p273-b09": "入力フォームに8、ボタンに4 の割合でカラムを生成しています。",
+      "p273-b10": "・10 行目 <input type=\"text\" class=\"form-control\"～"
+    },
+    "source_pages": [
+      273
+    ]
+  },
+  {
+    "chapter": "07",
+    "anchor_id": "p274-b01",
+    "consume_ids": [
+      "p274-b01"
+    ],
+    "owner_code_ids": [
+      "p273-b02"
+    ],
+    "rows": [
+      {
+        "line_label": "10 行目",
+        "code": "                    <input type=\"text\" class=\"form-control\"",
+        "meaning": "  Bootstrap のフォーム関連クラスの中で、一番大事なクラスです。テキストフォームにこのクラ\nスを付与することで、Bootstrap 式のテキストフォームのデザインを適用することができます。",
+        "source_ids": [
+          "p274-b01"
+        ],
+        "original_label": "",
+        "reference_kind": "label",
+        "code_line_sources": [
+          {
+            "code_id": "p273-b02",
+            "line_number": 10,
+            "text": "                    <input type=\"text\" class=\"form-control\""
+          }
+        ],
+        "source_fragments": [
+          {
+            "source_id": "p274-b01",
+            "start": 0,
+            "end": 99,
+            "role": "meaning",
+            "text": "  Bootstrap のフォーム関連クラスの中で、一番大事なクラスです。テキストフォームにこのクラ\nスを付与することで、Bootstrap 式のテキストフォームのデザインを適用することができます。"
+          }
+        ],
+        "continuation": true,
+        "continued_from": "p273-b10"
+      }
+    ],
+    "source_texts": {
+      "p274-b01": "  Bootstrap のフォーム関連クラスの中で、一番大事なクラスです。テキストフォームにこのクラ\nスを付与することで、Bootstrap 式のテキストフォームのデザインを適用することができます。"
+    },
+    "source_pages": [
+      274
+    ]
+  }
+]

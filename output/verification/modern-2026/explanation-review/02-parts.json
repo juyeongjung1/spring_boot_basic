@@ -1,0 +1,381 @@
+{
+  "chapter": "02",
+  "cards": 12,
+  "parts": [
+    {
+      "id": "02-explanation-1",
+      "token": "02-explanation-1-part1",
+      "local_page": 13,
+      "box_pt": [
+        85.104,
+        416.16602053919723,
+        511.776,
+        650.4360205391972
+      ],
+      "file": "02-explanation-1-part1.png",
+      "consume_ids": [
+        "p043-b05",
+        "p043-b06"
+      ],
+      "source_pages": [
+        43
+      ],
+      "expected_rows": [
+        {
+          "line_label": "9 行",
+          "code": " public String index() {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行",
+          "code": " return \"index\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-2",
+      "token": "02-explanation-2-part1",
+      "local_page": 16,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        336.02
+      ],
+      "file": "02-explanation-2-part1.png",
+      "consume_ids": [
+        "p044-b09",
+        "p044-b10"
+      ],
+      "source_pages": [
+        44
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行目",
+          "code": "<html xmlns:th=\"http://www.thymeleaf.org\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": " <div>トップページ</div>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-3",
+      "token": "02-explanation-3-part1",
+      "local_page": 22,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        465.02
+      ],
+      "file": "02-explanation-3-part1.png",
+      "consume_ids": [
+        "p049-b05",
+        "p049-b06"
+      ],
+      "source_pages": [
+        49
+      ],
+      "expected_rows": [
+        {
+          "line_label": "10 行目",
+          "code": " <form th:action = \"@{/login}\" method=\"POST\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-4",
+      "token": "02-explanation-4-part1",
+      "local_page": 23,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        414.77
+      ],
+      "file": "02-explanation-4-part1.png",
+      "consume_ids": [
+        "p050-b01",
+        "p050-b02",
+        "p050-b03",
+        "p050-b04"
+      ],
+      "source_pages": [
+        50
+      ],
+      "expected_rows": [
+        {
+          "line_label": "11 行・12 行目",
+          "code": "<p>社員番号 ：<input type = \"text\" name = \"id\"/></p>\n<p>パスワード：<input type = \"password\" name = \"password\"/></p>",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "13 行目",
+          "code": "<input type = \"submit\" value = \"ログイン\">",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-5",
+      "token": "02-explanation-5-part1",
+      "local_page": 25,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        446.27
+      ],
+      "file": "02-explanation-5-part1.png",
+      "consume_ids": [
+        "p051-b06",
+        "p051-b07",
+        "p051-b08",
+        "p051-b09"
+      ],
+      "source_pages": [
+        51
+      ],
+      "expected_rows": [
+        {
+          "line_label": "10 行目",
+          "code": "@PostMapping(\"/login\")",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "11 行目",
+          "code": "public String doLogin(int id, String password) {",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-6",
+      "token": "02-explanation-6-part1",
+      "local_page": 26,
+      "box_pt": [
+        85.104,
+        223.74001390519842,
+        511.776,
+        382.26001390519843
+      ],
+      "file": "02-explanation-6-part1.png",
+      "consume_ids": [
+        "p052-b03",
+        "p052-b04"
+      ],
+      "source_pages": [
+        52
+      ],
+      "expected_rows": [
+        {
+          "line_label": "13 行、14 行目",
+          "code": " System.out.println(id);\n System.out.println(password);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-7",
+      "token": "02-explanation-7-part1",
+      "local_page": 30,
+      "box_pt": [
+        85.104,
+        370.46931249999994,
+        511.776,
+        667.7393124999999
+      ],
+      "file": "02-explanation-7-part1.png",
+      "consume_ids": [
+        "p056-b05",
+        "p056-b06",
+        "p056-b07",
+        "p056-b08"
+      ],
+      "source_pages": [
+        56
+      ],
+      "expected_rows": [
+        {
+          "line_label": "4 行目",
+          "code": " public String doLogin(UserForm userForm) {",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "7-8 行目",
+          "code": " System.out.println(userForm.getId());\n System.out.println(userForm.getPassword());",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-8",
+      "token": "02-explanation-8-part1",
+      "local_page": 34,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        296.762
+      ],
+      "file": "02-explanation-8-part1.png",
+      "consume_ids": [
+        "p058-b06",
+        "p058-b07",
+        "p058-b08"
+      ],
+      "source_pages": [
+        58
+      ],
+      "expected_rows": [
+        {
+          "line_label": "13 行目",
+          "code": " public String doLogin(UserForm userForm, Model model) {",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-9",
+      "token": "02-explanation-9-part1",
+      "local_page": 35,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        306.747
+      ],
+      "file": "02-explanation-9-part1.png",
+      "consume_ids": [
+        "p059-b01",
+        "p059-b02",
+        "p059-b03"
+      ],
+      "source_pages": [
+        59
+      ],
+      "expected_rows": [
+        {
+          "line_label": "14-15 行目",
+          "code": " //リクエストスコープに、userForm のデータを格納\n model.addAttribute(\"user\", userForm);",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-10",
+      "token": "02-explanation-10-part1",
+      "local_page": 35,
+      "box_pt": [
+        85.104,
+        464.56500000000005,
+        511.776,
+        659.577
+      ],
+      "file": "02-explanation-10-part1.png",
+      "consume_ids": [
+        "p059-b07",
+        "p059-b08",
+        "p059-b09"
+      ],
+      "source_pages": [
+        59
+      ],
+      "expected_rows": [
+        {
+          "line_label": "17 行",
+          "code": " return \"login_success\";",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-11",
+      "token": "02-explanation-11-part1",
+      "local_page": 37,
+      "box_pt": [
+        85.104,
+        327.29,
+        511.776,
+        613.802
+      ],
+      "file": "02-explanation-11-part1.png",
+      "consume_ids": [
+        "p060-b04",
+        "p060-b05",
+        "p060-b06",
+        "p060-b07",
+        "p060-b08"
+      ],
+      "source_pages": [
+        60
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行目",
+          "code": "<html xmlns:th=\"http://www.thymeleaf.org\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "10 行目",
+          "code": "    社員番号 ：<span th:text = \"${user.id}\"></span><br>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "02-explanation-12",
+      "token": "02-explanation-12-part1",
+      "local_page": 38,
+      "box_pt": [
+        85.104,
+        321.337,
+        511.776,
+        464.10699999999997
+      ],
+      "file": "02-explanation-12-part1.png",
+      "consume_ids": [
+        "p060-b12",
+        "p060-b13"
+      ],
+      "source_pages": [
+        60
+      ],
+      "expected_rows": [
+        {
+          "line_label": "11 行目",
+          "code": "    パスワード：<span th:text = \"${user.password}\"></span>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    }
+  ],
+  "pdf_sha256": "e5bc19943f4e4fb8cf42b70695f0b51f5bf9a4b30d9d67d7e5d63fa8b121cbd8",
+  "checks_sha256": "13a42f1d8fe2e66b6c4e6318bb6a76ba74ae0d5a0524042834d343cc0f10fd63",
+  "sheets": 3
+}

@@ -1,0 +1,131 @@
+{
+  "chapter": "05",
+  "cards": 3,
+  "parts": [
+    {
+      "id": "05-explanation-1",
+      "token": "05-explanation-1-part1",
+      "local_page": 5,
+      "box_pt": [
+        85.104,
+        322.29699999999997,
+        511.776,
+        603.817
+      ],
+      "file": "05-explanation-1-part1.png",
+      "consume_ids": [
+        "p168-b04",
+        "p168-b05",
+        "p168-b06",
+        "p168-b07"
+      ],
+      "source_pages": [
+        168
+      ],
+      "expected_rows": [
+        {
+          "line_label": "2 行",
+          "code": "<html xmlns:th=\"http://www.thymeleaf.org\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "6 行",
+          "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "05-explanation-2",
+      "token": "05-explanation-2-part1",
+      "local_page": 23,
+      "box_pt": [
+        85.104,
+        128.0,
+        511.776,
+        485.27
+      ],
+      "file": "05-explanation-2-part1.png",
+      "consume_ids": [
+        "p184-b02",
+        "p184-b03",
+        "p184-b04",
+        "p184-b05",
+        "p184-b06",
+        "p184-b07"
+      ],
+      "source_pages": [
+        184
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": " xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "8 行目",
+          "code": "<link rel=\"stylesheet\" th:href=\"@{/css/layout.css}\" />",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "27-29 行",
+          "code": "<main layout:fragment=\"main_content\">\n <!-- 各ページ固有のコンテンツがここに入ります -->\n</main>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    },
+    {
+      "id": "05-explanation-3",
+      "token": "05-explanation-3-part1",
+      "local_page": 25,
+      "box_pt": [
+        85.104,
+        86.0,
+        511.776,
+        527.012
+      ],
+      "file": "05-explanation-3-part1.png",
+      "consume_ids": [
+        "p185-b01",
+        "p185-b02",
+        "p185-b03",
+        "p185-b04",
+        "p185-b05",
+        "p185-b06",
+        "p185-b07"
+      ],
+      "source_pages": [
+        185
+      ],
+      "expected_rows": [
+        {
+          "line_label": "3 行目",
+          "code": " xmlns:layout=\"http://www.ultraq.net.nz/thymeleaf/layout\"",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "4 行目",
+          "code": "       layout:decorate=\"~{/layout}\">",
+          "meaning_empty": false,
+          "continuation": false
+        },
+        {
+          "line_label": "9-13 行目",
+          "code": "<main layout:fragment=\"main_content\">\n\n<!--既存のコンテンツのソースコード-->\n\n</main>",
+          "meaning_empty": false,
+          "continuation": false
+        }
+      ]
+    }
+  ],
+  "pdf_sha256": "1606350731fcb7f431d6e5d6cfb06ec777451f78c14eb21c28bfa29fcdc0df39",
+  "checks_sha256": "e34546eb717970f58168a45ece71dc96b14c550ae04f483ca508ff8cb5947798",
+  "sheets": 1
+}
