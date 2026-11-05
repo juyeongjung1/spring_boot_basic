@@ -1,0 +1,38 @@
+{
+  "source_pages": 373,
+  "flow_pages": 391,
+  "source_page_boundaries_verified": 373,
+  "blank_pages_preserved": 17,
+  "content_ids_verified": 2860,
+  "original_content_ids_preserved": 2853,
+  "header_mismatches": 0,
+  "uri_annotations_verified": 81,
+  "login3_links": 1,
+  "slides_checked": 65,
+  "slide_canvas_repairs": [
+    "p018-f02",
+    "p057-f31",
+    "p103-f38"
+  ],
+  "paragraph_pairs_verified": 885,
+  "subheading_pairs_verified": 180,
+  "word_paragraph_boundaries_restored": 50,
+  "punctuation_added": 34,
+  "regression_tests_passed": 33,
+  "spring_framework": "7.0.3",
+  "chapter_one_maven_gui_restored": true,
+  "chapter_one_unapproved_blocks_removed": 2,
+  "new_explanations_added_in_this_revision": false,
+  "verification": "output/verification/fidelity/",
+  "previous_verification": "output/verification/remaining/",
+  "collections": {
+    "textbook": {
+      "source_pages": 296,
+      "flow_pages": 313
+    },
+    "exercise": {
+      "source_pages": 77,
+      "flow_pages": 78
+    }
+  }
+}

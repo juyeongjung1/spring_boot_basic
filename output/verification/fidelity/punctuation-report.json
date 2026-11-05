@@ -1,0 +1,731 @@
+{
+  "generated_at_utc": "2026-11-05T05:14:21.835113+00:00",
+  "base_commit": "a5cfe59",
+  "scope": "全文を推敲せず、完結した叙述/指示の句点のみ補完。01はboot4担当として未編集。",
+  "summary": {
+    "passed": true,
+    "chapters_scanned": 19,
+    "paragraph_step_blocks_scanned": 1839,
+    "review_candidates": 600,
+    "chapters_directly_verified_excluding_01": 18,
+    "chapter_files_with_period_changes": 10,
+    "changed_content_blocks": 31,
+    "periods_added_by_this_agent": 33,
+    "delegated_chapter01_periods_added": 1,
+    "non_period_body_characters_identical_in_all_18_chapters": true,
+    "protected_baseline_and_source_layout_hashes_unchanged": 38,
+    "code_tables_urls_paths_page_ids_unchanged": true,
+    "new_explanations_added": false,
+    "heading_candidates_corrected_by_root": 5
+  },
+  "verification_method": "補完前の18章を退避し、句点を除いた原文/書式/改行の一致を比較。rootの既知heading分類5件のみMarkdownメタデータ差として許容。Pandocで全ブロックを再解析し、本文の非句点文字・コード・表・図版パス・頁順/IDの不変と、指定行の末尾に。1字だけが増えたことを検査。",
+  "changes": [
+    {
+      "part": "front",
+      "id": "p012-b05",
+      "source_page": 12,
+      "kind": "paragraph",
+      "native": true,
+      "line_index": 0,
+      "before_plain_line": "画面に表示される文字 [プロパティ]を選択します",
+      "after_plain_line": "画面に表示される文字 [プロパティ]を選択します。"
+    },
+    {
+      "part": "02",
+      "id": "p040-b03",
+      "source_page": 40,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 1,
+      "before_plain_line": "「IndexController」と入力し、[完了]をクリック",
+      "after_plain_line": "「IndexController」と入力し、[完了]をクリック。"
+    },
+    {
+      "part": "02",
+      "id": "p045-b08",
+      "source_page": 45,
+      "kind": "step",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "5. 任意のブラウザ（Chrome、Edge など）のアドレスバーに以下のURL を入力します",
+      "after_plain_line": "5. 任意のブラウザ（Chrome、Edge など）のアドレスバーに以下のURL を入力します。"
+    },
+    {
+      "part": "03",
+      "id": "p084-b04",
+      "source_page": 84,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "② DAO クラスに定義されているデータベース操作用のメソッドを実行し、データを取得する",
+      "after_plain_line": "② DAO クラスに定義されているデータベース操作用のメソッドを実行し、データを取得する。"
+    },
+    {
+      "part": "03",
+      "id": "p084-b05",
+      "source_page": 84,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "③ 取得したデータを、スコープに格納",
+      "after_plain_line": "③ 取得したデータを、スコープに格納。"
+    },
+    {
+      "part": "03",
+      "id": "p084-b06",
+      "source_page": 84,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "④ JSP へ遷移",
+      "after_plain_line": "④ JSP へ遷移。"
+    },
+    {
+      "part": "03",
+      "id": "p094-b06",
+      "source_page": 94,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。"
+    },
+    {
+      "part": "03",
+      "id": "p098-b02",
+      "source_page": 98,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。"
+    },
+    {
+      "part": "03",
+      "id": "p102-b02",
+      "source_page": 102,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。"
+    },
+    {
+      "part": "03",
+      "id": "p120-b02",
+      "source_page": 120,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。"
+    },
+    {
+      "part": "03",
+      "id": "p124-b04",
+      "source_page": 124,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください",
+      "after_plain_line": "http://localhost:8080/product/  product の後ろに必ず/を付けてください。"
+    },
+    {
+      "part": "07",
+      "id": "p256-b04",
+      "source_page": 256,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "※p や mb のクラスは、次のページで説明します",
+      "after_plain_line": "※p や mb のクラスは、次のページで説明します。"
+    },
+    {
+      "part": "07",
+      "id": "p258-b02",
+      "source_page": 258,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "➀ 「F12」で「開発者ツール」を開きます",
+      "after_plain_line": "➀ 「F12」で「開発者ツール」を開きます。"
+    },
+    {
+      "part": "07",
+      "id": "p268-b04",
+      "source_page": 268,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/grid/ を参照",
+      "after_plain_line": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/grid/ を参照。"
+    },
+    {
+      "part": "07",
+      "id": "p271-b03",
+      "source_page": 271,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 1,
+      "before_plain_line": "※より詳しい構文は、 https://getbootstrap.jp/docs/5.3/layout/columns/ を参照",
+      "after_plain_line": "※より詳しい構文は、 https://getbootstrap.jp/docs/5.3/layout/columns/ を参照。"
+    },
+    {
+      "part": "appendix-a",
+      "id": "p285-b03",
+      "source_page": 285,
+      "kind": "paragraph",
+      "native": true,
+      "line_index": 1,
+      "before_plain_line": "[spring_exercise]プロジェクトを右クリック→[Maven install]をクリック",
+      "after_plain_line": "[spring_exercise]プロジェクトを右クリック→[Maven install]をクリック。"
+    },
+    {
+      "part": "ex02",
+      "id": "p015-b15",
+      "source_page": 15,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認",
+      "after_plain_line": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認。"
+    },
+    {
+      "part": "ex02",
+      "id": "p016-b13",
+      "source_page": 16,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認",
+      "after_plain_line": "⚫ 身長と体重を入力し、正しくBMI 値が出力されるかを確認。"
+    },
+    {
+      "part": "ex03",
+      "id": "p027-b12",
+      "source_page": 27,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "⚫ [社員データ登録]リンクをクリック",
+      "after_plain_line": "⚫ [社員データ登録]リンクをクリック。"
+    },
+    {
+      "part": "ex03",
+      "id": "p027-b13",
+      "source_page": 27,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "⚫ 登録する社員データを入力し、[登録]ボタンをクリック",
+      "after_plain_line": "⚫ 登録する社員データを入力し、[登録]ボタンをクリック。"
+    },
+    {
+      "part": "ex03",
+      "id": "p027-b14",
+      "source_page": 27,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "⚫ 入力したデータ通りに、新規データが登録されているかを確認",
+      "after_plain_line": "⚫ 入力したデータ通りに、新規データが登録されているかを確認。"
+    },
+    {
+      "part": "ex04",
+      "id": "p031-b03",
+      "source_page": 31,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "⚫ 入力値に誤りがない場合は検索画面へ遷移",
+      "after_plain_line": "⚫ 入力値に誤りがない場合は検索画面へ遷移。"
+    },
+    {
+      "part": "ex06",
+      "id": "p051-b05",
+      "source_page": 51,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "o クラスに@Entity、@Table アノテーションを付けること",
+      "after_plain_line": "o クラスに@Entity、@Table アノテーションを付けること。"
+    },
+    {
+      "part": "ex06",
+      "id": "p051-b06",
+      "source_page": 51,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 1,
+      "before_plain_line": "と",
+      "after_plain_line": "と。"
+    },
+    {
+      "part": "ex06",
+      "id": "p051-b11",
+      "source_page": 51,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 2,
+      "before_plain_line": "o Location 型のlocation フィールドを追加すること",
+      "after_plain_line": "o Location 型のlocation フィールドを追加すること。"
+    },
+    {
+      "part": "ex06",
+      "id": "p051-b11",
+      "source_page": 51,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 4,
+      "before_plain_line": "付けを行うこと",
+      "after_plain_line": "付けを行うこと。"
+    },
+    {
+      "part": "ex06",
+      "id": "p051-b15",
+      "source_page": 51,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 2,
+      "before_plain_line": "o Employee エンティティを格納するリストフィールドを作成すること",
+      "after_plain_line": "o Employee エンティティを格納するリストフィールドを作成すること。"
+    },
+    {
+      "part": "ex06",
+      "id": "p051-b15",
+      "source_page": 51,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 3,
+      "before_plain_line": "o @OneToMany(mappedBy = \"location\") アノテーションを付けること",
+      "after_plain_line": "o @OneToMany(mappedBy = \"location\") アノテーションを付けること。"
+    },
+    {
+      "part": "ex06",
+      "id": "p058-b02",
+      "source_page": 58,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "• LocationRepository から findAll() を使って、Location のリストを取得できます",
+      "after_plain_line": "• LocationRepository から findAll() を使って、Location のリストを取得できます。"
+    },
+    {
+      "part": "ex06",
+      "id": "p061-b04",
+      "source_page": 61,
+      "kind": "step",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "1. 「/showSearchForm」でアクセスすると検索入力画面が表示される",
+      "after_plain_line": "1. 「/showSearchForm」でアクセスすると検索入力画面が表示される。"
+    },
+    {
+      "part": "ex07",
+      "id": "p070-b02",
+      "source_page": 70,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 1,
+      "before_plain_line": "■ ブラウザから、「localhost:8080/findAll」を開いて、メニュー修正していく演習です",
+      "after_plain_line": "■ ブラウザから、「localhost:8080/findAll」を開いて、メニュー修正していく演習です。"
+    },
+    {
+      "part": "ex07",
+      "id": "p075-b06",
+      "source_page": 75,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "• form-control は入力欄に付ける",
+      "after_plain_line": "• form-control は入力欄に付ける。"
+    },
+    {
+      "part": "ex07",
+      "id": "p075-b07",
+      "source_page": 75,
+      "kind": "paragraph",
+      "native": false,
+      "line_index": 0,
+      "before_plain_line": "• 親要素に input-group を付けることで横並びになる",
+      "after_plain_line": "• 親要素に input-group を付けることで横並びになる。"
+    }
+  ],
+  "chapter_checks": [
+    {
+      "part": "02",
+      "chapter_path": "docs/textbook/chapters/02/chapter.md",
+      "periods_added": 2,
+      "changed_content_ids": [
+        "p040-b03",
+        "p045-b08"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "d5fcfb335b788c2541f77282f8305fe14ca225405e3eb2342f549a0d89a96e53",
+      "after_sha256": "85d64647b049974ab32ea111fb7ceb3bf2a48fb9ffd353391b459b1f79c51557",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "03",
+      "chapter_path": "docs/textbook/chapters/03/chapter.md",
+      "periods_added": 8,
+      "changed_content_ids": [
+        "p084-b04",
+        "p084-b05",
+        "p084-b06",
+        "p094-b06",
+        "p098-b02",
+        "p102-b02",
+        "p120-b02",
+        "p124-b04"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "5d802a3a67db8a851daca48be50ad4c3547022200c8b55ee668d9ba131e091cd",
+      "after_sha256": "4560d377966eba0a452609aaef18a0d25be05bff844490f7cd9c9ef735c4968f",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "04",
+      "chapter_path": "docs/textbook/chapters/04/chapter.md",
+      "periods_added": 0,
+      "changed_content_ids": [],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "761fb1198546b492b522452537c8494383cbb0af4f4fbbcd05edffc91dd10de5",
+      "after_sha256": "761fb1198546b492b522452537c8494383cbb0af4f4fbbcd05edffc91dd10de5",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "05",
+      "chapter_path": "docs/textbook/chapters/05/chapter.md",
+      "periods_added": 0,
+      "changed_content_ids": [],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "349e7c7887e8be1c57109817df14822f140d37b8c2997173f943efa85e04f232",
+      "after_sha256": "349e7c7887e8be1c57109817df14822f140d37b8c2997173f943efa85e04f232",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "06",
+      "chapter_path": "docs/textbook/chapters/06/chapter.md",
+      "periods_added": 0,
+      "changed_content_ids": [],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "3eebc1f6fd584bcd3ec17a244bb80f90e125113a16e17cc24439dc70d75a22d0",
+      "after_sha256": "3eebc1f6fd584bcd3ec17a244bb80f90e125113a16e17cc24439dc70d75a22d0",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "07",
+      "chapter_path": "docs/textbook/chapters/07/chapter.md",
+      "periods_added": 4,
+      "changed_content_ids": [
+        "p256-b04",
+        "p258-b02",
+        "p268-b04",
+        "p271-b03"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "864548ad395bea98e2a6286aac7a9130406a60ecb3e0bcd88778c3be618cd081",
+      "after_sha256": "8e79361c06418dd3dd221e841e69da0c712d3111ed67f2e1295078faa2502498",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "appendix-a",
+      "chapter_path": "docs/textbook/chapters/appendix-a/chapter.md",
+      "periods_added": 1,
+      "changed_content_ids": [
+        "p285-b03"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "6f32731113c57551073aea0f68620644e070ec876e43d60d066183dcd7d5544f",
+      "after_sha256": "d70e5383134d479fada9ff833e0195fb2ba0d419a13e2660c7ea0cf12fd11310",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "appendix-b",
+      "chapter_path": "docs/textbook/chapters/appendix-b/chapter.md",
+      "periods_added": 0,
+      "changed_content_ids": [],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "0333a8031402361ca8dae9751aa9d2501bd5fb12b2a5377099a991455bb3b04d",
+      "after_sha256": "0333a8031402361ca8dae9751aa9d2501bd5fb12b2a5377099a991455bb3b04d",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "ex-back",
+      "chapter_path": "docs/textbook/chapters/ex-back/chapter.md",
+      "periods_added": 0,
+      "changed_content_ids": [],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "d5bb1243ca35bcc7489d06a8dc436c94e13b9d08b889c2d5ba996211341cca61",
+      "after_sha256": "d5bb1243ca35bcc7489d06a8dc436c94e13b9d08b889c2d5ba996211341cca61",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "ex-front",
+      "chapter_path": "docs/textbook/chapters/ex-front/chapter.md",
+      "periods_added": 0,
+      "changed_content_ids": [],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "fd90186dd47bf383a30f93474f8a8941212da96d7c866f6a44db0e01e3b0c5cd",
+      "after_sha256": "fd90186dd47bf383a30f93474f8a8941212da96d7c866f6a44db0e01e3b0c5cd",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "ex01",
+      "chapter_path": "docs/textbook/chapters/ex01/chapter.md",
+      "periods_added": 0,
+      "changed_content_ids": [],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "7417fb62c3e201d7f0134659f25ff7bc3d003d33bcf4607e15fc474acb5361c9",
+      "after_sha256": "7417fb62c3e201d7f0134659f25ff7bc3d003d33bcf4607e15fc474acb5361c9",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "ex02",
+      "chapter_path": "docs/textbook/chapters/ex02/chapter.md",
+      "periods_added": 2,
+      "changed_content_ids": [
+        "p015-b15",
+        "p016-b13"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "cc71f5ba540ed79cb68b6fbf0340306e582ec58ccee797577f31f75173afbcb0",
+      "after_sha256": "0e8f94c3fca9d5144a20a553388a5f361b15e88703c1bf004a4c90f83236594e",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "ex03",
+      "chapter_path": "docs/textbook/chapters/ex03/chapter.md",
+      "periods_added": 3,
+      "changed_content_ids": [
+        "p027-b12",
+        "p027-b13",
+        "p027-b14"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "b24b76228dfcd28006bdb5bc132e893b18902c9b3a269669ada272102749ad79",
+      "after_sha256": "78b8c73ae4032e74a18b6f591ad7b49fd7e9f518a1a0c9484c28fed1d3fa1ee1",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "ex04",
+      "chapter_path": "docs/textbook/chapters/ex04/chapter.md",
+      "periods_added": 1,
+      "changed_content_ids": [
+        "p031-b03"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "6a8a5ceebe4d2e4ad495e147a018240dd63f2c30a9f1f281a84a5c2fcdb1761a",
+      "after_sha256": "4ad5ca6c9000ed431406e0fc2025ec62c6867a437ee72c28e47fd0f34f6bd960",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "ex05",
+      "chapter_path": "docs/textbook/chapters/ex05/chapter.md",
+      "periods_added": 0,
+      "changed_content_ids": [],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "a5745ee144b57476d109ddb31a508e8249677a2753c9b0ebfe613e0246e65f16",
+      "after_sha256": "a5745ee144b57476d109ddb31a508e8249677a2753c9b0ebfe613e0246e65f16",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "ex06",
+      "chapter_path": "docs/textbook/chapters/ex06/chapter.md",
+      "periods_added": 8,
+      "changed_content_ids": [
+        "p051-b05",
+        "p051-b06",
+        "p051-b11",
+        "p051-b15",
+        "p058-b02",
+        "p061-b04"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "fb464b7998a2d7deacf159097066424a2c615128e525d62210e7ed757ede0d9f",
+      "after_sha256": "43e6da475f79852e5451f8ae1b46f7ca213867ec26b825fd2e837034db917a06",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "ex07",
+      "chapter_path": "docs/textbook/chapters/ex07/chapter.md",
+      "periods_added": 3,
+      "changed_content_ids": [
+        "p070-b02",
+        "p075-b06",
+        "p075-b07"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "8ca99be3f61046b9d4e7cbaf8b941df467c96fb2bcf671181a6f247dca4ce7f9",
+      "after_sha256": "992a61709d43402652a25667cfe0efdcb676497ecc4c90bfbfaf1e2091834e4f",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    },
+    {
+      "part": "front",
+      "chapter_path": "docs/textbook/chapters/front/chapter.md",
+      "periods_added": 1,
+      "changed_content_ids": [
+        "p012-b05"
+      ],
+      "plain_non_period_characters_identical": true,
+      "raw_markup_except_period_and_authorized_kind_identical": true,
+      "root_heading_kind_changes_since_snapshot": [],
+      "before_sha256": "17fac8300d0c041bbc221c88593019dcf53a8532c023b6cb16513e5fa3a9a3ec",
+      "after_sha256": "7685292312cbd0b5b9157b1030fd59250318e7ef731e9fb3f3db1640f8be08e9",
+      "code_tables_figures_paths_and_page_ids_unchanged": true
+    }
+  ],
+  "native_page_configuration_updates": [
+    {
+      "part": "front",
+      "id": "p012-b05",
+      "native_text_updates_before": [],
+      "native_text_updates_after": [
+        "p012-b05"
+      ],
+      "all_other_source_json_values_unchanged": true
+    },
+    {
+      "part": "appendix-a",
+      "id": "p285-b03",
+      "native_text_updates_before": [
+        "p287-b03"
+      ],
+      "native_text_updates_after": [
+        "p287-b03",
+        "p285-b03"
+      ],
+      "all_other_source_json_values_unchanged": true
+    }
+  ],
+  "chapter01_delegation": {
+    "owner": "boot4_research",
+    "this_agent_edited": false,
+    "confirmed_id": "p022-b08",
+    "confirmed_text_ends": "できます。",
+    "preserved_optional_parenthetical_note_id": "p025-b06"
+  },
+  "heading_classification_candidates": [
+    {
+      "part": "03",
+      "id": "p080-b06",
+      "text": "依存性の注入方法②",
+      "status": "rootへ共有し、rootがheadingへ局所補正済み。本担当は句点を追加せず。"
+    },
+    {
+      "part": "03",
+      "id": "p080-b10",
+      "text": "依存性の注入方法③",
+      "status": "rootへ共有し、rootがheadingへ局所補正済み。本担当は句点を追加せず。"
+    },
+    {
+      "part": "07",
+      "id": "p246-b03",
+      "text": "➀ <head>要素内に、<meta name=\"viewport\">を記載",
+      "status": "rootへ共有し、rootがheadingへ局所補正済み。本担当は句点を追加せず。"
+    },
+    {
+      "part": "07",
+      "id": "p246-b09",
+      "text": "➂ Bootstrap のｊｓファイルを読み込む",
+      "status": "rootへ共有し、rootがheadingへ局所補正済み。本担当は句点を追加せず。"
+    },
+    {
+      "part": "07",
+      "id": "p247-b05",
+      "text": "② 以下のコードを<body>の末尾に記入",
+      "status": "rootへ共有し、rootがheadingへ局所補正済み。本担当は句点を追加せず。"
+    }
+  ],
+  "preserved_categories": [
+    "見出し、目標/前提の項目ラベル、演習時間、目次、発行履歴",
+    "クラス/属性の定義一覧、名詞で列挙した仕様項目",
+    "コード、URLそのもの、パス、表セル、画像内文字",
+    "括弧内の補助注記（主文に句点があるもの）",
+    "次Div/次頁へ続く文の断片を結合せず保持"
+  ],
+  "continuation_examples_preserved": [
+    "02/p048-b07→p049-b01",
+    "03/p086-b01（として、でコードへ続く）",
+    "appendix-b/p291-b15→p292-b01",
+    "ex06/p048-b02→p048-b03",
+    "ex07/p064-b02→p064-b03"
+  ],
+  "protected_file_hashes": {
+    "docs/textbook/chapters/front/baseline.md": "e76e1d7761ddc45da9211688345c372a34399566db6bfd0b8b3e2b8a8ea3626e",
+    "docs/textbook/chapters/front/source-layout.json": "bf1cb7740920b186ebfc60cb34dd0d2884c2422d99064e4a9895f0d63ab36180",
+    "docs/textbook/chapters/01/baseline.md": "6dc74e72c752c2b04de5e6322cb2c5b7d957ca2cd621636b4ebd09d8c520dd59",
+    "docs/textbook/chapters/01/source-layout.json": "5ce6828b7182fc445bc8c1ab3a5d8eb03711f413ed5a42b8e750ba66bb8ab483",
+    "docs/textbook/chapters/02/baseline.md": "c8abd28ef0365fe54ae593c8329df2b72b23dcdc9201f9e2c97c79a1cec3960d",
+    "docs/textbook/chapters/02/source-layout.json": "f33d59c0b23bc628a29ca13f3fc54babdf25bea7eb1f6bc9107f50d07b32d0cb",
+    "docs/textbook/chapters/03/baseline.md": "70c6f38a697b746133c129751b1a6ca70c5d9ce2ee0200ce87551918c21e9a8f",
+    "docs/textbook/chapters/03/source-layout.json": "de8a827094f31158d21c133f13a8079066fdfef59c35a246d015675e37877595",
+    "docs/textbook/chapters/04/baseline.md": "474179ee6c1d56c6aed3425aefe9068a5079d2482d34ee434268705392cbb616",
+    "docs/textbook/chapters/04/source-layout.json": "0ac59da89a6abe001cb8696a838030aa786776baf9ee9614ed65fd294532b4ab",
+    "docs/textbook/chapters/05/baseline.md": "8ce02101cf1395bc3ffd36a9e202a7a24fe8b58e12b521e2946a83eb18ef24ae",
+    "docs/textbook/chapters/05/source-layout.json": "eac0143c3966abbd088c22f6994837d6e5bcaa51a4ea99694a701327d6685882",
+    "docs/textbook/chapters/06/baseline.md": "c504d865d011a8b2e7c41d35719d6d56d72c2aeaeb1bbe0da950c5e14181532d",
+    "docs/textbook/chapters/06/source-layout.json": "b7680404b894cb36729a7f7291ad45d4ecccff4ab1b7a5a6aa2e7eb6f9f4586e",
+    "docs/textbook/chapters/07/baseline.md": "888323ec0e1a62bf980a75905bffae1ca9cfdceb9aef655882c7003485a2a1a9",
+    "docs/textbook/chapters/07/source-layout.json": "36b1e6669f9ed121594a51e5cbb1d0553f2a04e6001f065df904cec7b6d638a3",
+    "docs/textbook/chapters/appendix-a/baseline.md": "ee4fa034f7898cb1bb8e59fe501f79576438a4b541f9d3b6d9ac68061435bfbe",
+    "docs/textbook/chapters/appendix-a/source-layout.json": "7df7c44551907d90d9759c21c00b84ff65279db9da0a05fcbe6caadb2e70d047",
+    "docs/textbook/chapters/appendix-b/baseline.md": "e30821b2a87de902f6f90189fe7ecdc414d9065e7a6ee90ab86d503b6d6818d1",
+    "docs/textbook/chapters/appendix-b/source-layout.json": "0bdd2d39f2cc6e2b280809b95afa1465bb1370316b4a29464b96803c0253c128",
+    "docs/textbook/chapters/ex-front/baseline.md": "fd90186dd47bf383a30f93474f8a8941212da96d7c866f6a44db0e01e3b0c5cd",
+    "docs/textbook/chapters/ex-front/source-layout.json": "98ca9358876677944f156c0aac87fdddc06e1220fc514c62a6eea4255041798c",
+    "docs/textbook/chapters/ex01/baseline.md": "73ea305b7b9cbf950a4b1e887ab99c56607ab3172b3f3c8bffd79058ddacffc5",
+    "docs/textbook/chapters/ex01/source-layout.json": "49b11fa0302397069b9b049d51604a3c5e8fa07baa13f5869a64ceabecf56ad7",
+    "docs/textbook/chapters/ex02/baseline.md": "330f9fc81769115e30306184e691c16f171005ce2e530900af3b4881cd8d1945",
+    "docs/textbook/chapters/ex02/source-layout.json": "9b0fa43f92ee1d23ae4df1e2754f03a29ebf588dbec37c2da1f966af797c30e4",
+    "docs/textbook/chapters/ex03/baseline.md": "844b513e8154f85ac4e0ddb0cd46b48b955440a51a883637afed11f995f582ee",
+    "docs/textbook/chapters/ex03/source-layout.json": "c303647b2b2fc70a307742a4c51624a209bffd9196bbbbeadb0b7177d6e1f567",
+    "docs/textbook/chapters/ex04/baseline.md": "5aedfb10a997d014302abdc8c160795de213e47d7a114b5d122405a4b013eaec",
+    "docs/textbook/chapters/ex04/source-layout.json": "2800e405c1e73ee1a469dc02ba425493a2fa9794a0ce88518314b2c7d7afebe9",
+    "docs/textbook/chapters/ex05/baseline.md": "e6cd648f1c2f96538921a84951d7caf10aa54cc665eaa900c84da264ab1ca464",
+    "docs/textbook/chapters/ex05/source-layout.json": "478e820b349db6505269d63cbf0625059a222edba1f0907ec955b1ab4d2780e8",
+    "docs/textbook/chapters/ex06/baseline.md": "33d98acf7ba186c438a08742080a5020865d59e62f9340fb453aa8fbe390c829",
+    "docs/textbook/chapters/ex06/source-layout.json": "5edc95b8aea20a59907b868fb0601960ae28e3022c5a4ce0010cfe06993985a6",
+    "docs/textbook/chapters/ex07/baseline.md": "d794c30233e2fb6f0f28e66c00739dcac459bb3daf218f4196d7336ed042cf2a",
+    "docs/textbook/chapters/ex07/source-layout.json": "7597ee3dd4a0e1fbe8723b370136f0edd1aafade3ca823db22fa0d5230b4960c",
+    "docs/textbook/chapters/ex-back/baseline.md": "6862ae61d3c9df64797d4be4f8d5191afea6352cb747854ada0ae0d671e86edf",
+    "docs/textbook/chapters/ex-back/source-layout.json": "0f00298ff41db2eddb9f600d2e2c94a0118aa97d714a2555db6fc07ea750445d"
+  },
+  "figure_files_written_by_this_task": 0,
+  "pdf_build_and_layout_verification": "root担当。本文と固定頁の句点生成はrootの対応を使用。"
+}

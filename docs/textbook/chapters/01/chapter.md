@@ -86,7 +86,7 @@
 
 :::
 
-![フレームワークの説明スライド](assets/p018-f02.svg){#p018-f02}
+![フレームワークの説明スライド](assets/p018-f02-canvas-fit.svg){#p018-f02}
 
 ::: {#p018-b02 .heading}
 
@@ -258,7 +258,7 @@
 
 ::: {#p020-b10 .paragraph}
 
-[本書では、Spring Framework 6.0(2022 年11 月リリース)を利用します。]{.s011}
+[本書では、Spring Framework 7.0.3を利用します。]{.s011}
 
 :::
 
@@ -360,7 +360,7 @@
 ::: {#p022-b08 .paragraph}
 
 [以下の画像は、Maven により必要なライブラリが自動導入されている様子です。開発者はバ]{.s009}\
-[ージョンの相性に悩まされることなく、スムーズに開発を始めることができます]{.s009}
+[ージョンの相性に悩まされることなく、スムーズに開発を始めることができます。]{.s009}
 
 :::
 
@@ -535,7 +535,9 @@ public class AppConfig {
 
 ::: {#p025-b06 .step}
 
-2\. 利用するライブラリがSpring Boot 4.0.2の管理対象か確認します。MySQL Connector/Jは管理対象なので、個別のバージョン指定は省略します。画面例の旧バージョンや利用数を基準に選び直す必要はありません。
+[2\.&#32;]{.s007}[導入したいバージョン名をクリックする。]{.s009}\
+[（よくわからない場合は、]{.s009}[Usages]{.s007}[&#32;が一番多い方を選ぶ）]{.s009}
+
 :::
 
 ![バージョンの選択画面](assets/p025-f09.svg){#p025-f09}
@@ -546,7 +548,9 @@ public class AppConfig {
 
 ::: {#p026-b01 .step}
 
-3\. Maven用の依存定義を確認します。この実習では次のコードを使います。画面例は取得方法を示す旧版の参考であり、入力する定義は下記を優先してください。
+[3\.&#32;]{.s007}[利用するビルドツールに合わせて、タブを切り替えする。表示されたテキストをコピーして]{.s009}\
+[おく。]{.s009}
+
 :::
 
 ![依存定義のコピー画面と注釈](assets/p026-f10.svg){#p026-f10}
@@ -557,37 +561,17 @@ public class AppConfig {
 <dependency>
     <groupId>com.mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
-    <scope>runtime</scope>
+    <version>8.3.0</version>
+    <scope>compile</scope>
 </dependency>
 ```
+
 :::
 
 ::: {#p026-b03 .step}
 
 [4\.&#32;]{.s009}[Eclipse 上の\[spring\_exercise\_1\_3\]プロジェクトをダブルクリックし、\[pom.xml\]ファイルをダブ]{.s009}\
 [ルクリックする。]{.s009}
-
-:::
-
-::: {#migration-01-pom-parent .paragraph}
-
-`pom.xml` の該当部分が次の設定になっていることを確認します。配布プロジェクトには設定済みです。親POMが管理する依存はバージョンを省略でき、管理対象外のライブラリは対応版を個別に指定します。
-
-:::
-
-::: {#migration-01-pom-java21 .code}
-
-```xml
-<parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>4.0.2</version>
-    <relativePath/>
-</parent>
-<properties>
-    <java.version>21</java.version>
-</properties>
-```
 
 :::
 
@@ -608,14 +592,17 @@ public class AppConfig {
 
 ::: {#p027-b01 .step}
 
-6\. `pom.xml` を保存し、プロジェクトを右クリックして［Maven］→［プロジェクトの更新］を実行します。続いて、ビルドの確認は［実行］→［Mavenビルド］でゴールに `verify` を指定します。JREはJDK 21を選んでください。
+[6\.&#32;]{.s007}[pom.xml]{.s007}[&#32;の任意の場所を]{.s009}[右クリック→]{.s018}[\[]{.s019}[実行]{.s018}[\]]{.s019}[→]{.s018}[\[Maven install\]]{.s019}[をクリックすると、ライブラリ]{.s009}\
+[の導入が完了する。]{.s009}
+
 :::
 
 ![Maven installの操作画面](assets/p027-f13.svg){#p027-f13}
 
 ::: {#p027-b02 .step}
 
-7\. コンソールで、依存の解決とビルドのログを確認します。コマンドで実行する場合は、各プロジェクトのフォルダーで `.\mvnw.cmd verify` を実行します。
+[7\.&#32;]{.s007}[コンソール上で、ダウンロードとインストールのログが流れる。]{.s009}
+
 :::
 
 ::: {#p027-b03 .paragraph}
@@ -659,7 +646,10 @@ public class AppConfig {
 
 ::: {#p028-b04 .paragraph}
 
-受け取った人は、同じJDK 21を選び、配布プロジェクトのフォルダーで `.\mvnw.cmd verify` を実行します。Mavenは `pom.xml` と親POMの管理情報に従って依存を解決し、コンパイルとテストを実行します。
+[プロジェクトを受け取った人が]{.s009}[&#32;maven install&#32;]{.s007}[を実行すると、リストに書かれた「全く同じ]{.s009}\
+[バージョンのライブラリ」がインターネットから自動的にダウンロードされ、インストールされ]{.s009}\
+[ます。]{.s009}
+
 :::
 
 ::: {#p028-b05 .paragraph}

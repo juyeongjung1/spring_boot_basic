@@ -1,13 +1,13 @@
 {
   "collection": "textbook",
-  "flow_pages": 309,
+  "flow_pages": 313,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
-  "uri_annotations_verified": 63,
-  "maximum_uri_coordinate_delta_pt": 0,
-  "pdf_sha256": "4c659e4d0766e281d0207b0814a4492de6e4c1a75b5ae3ebcf2d2e77b94644f5",
-  "verification": "output/verification/remaining/",
-  "scope": "今回の合冊の本文/ヘッダー/ページ境界/URI。画像の表示はfinal-images-qaに別記。"
+  "uri_annotations_verified": 62,
+  "maximum_uri_coordinate_delta_pt": 0.0,
+  "pdf_sha256": "49321f70c47f627abb94e0f5a6f458f7e9a8aae546b61ed085fe5f8c5f761b06",
+  "verification": "output/verification/fidelity/",
+  "scope": "今回の合冊の本文・原本ヘッダー・ページ境界・URI。PPT/段落の画像比較を別記。"
 }

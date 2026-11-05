@@ -141,8 +141,20 @@ def native_runs(runs):
 
 
 def updated_native_block(group, node):
-    """年など同じ文字数の変更は元の字位置を保持し、版名一行だけ幅を組み直す。"""
+    """年の置換・句点補完は元の字位置を保持し、版名一行だけ幅を組み直す。"""
     lines = node['text'].split('\n')
+    if len(lines) == len(group['lines']) and all(value in (old['text'], old['text'] + '。') for value, old in zip(lines, group['lines'])):
+        commands = []
+        for value, old in zip(lines, group['lines']):
+            runs = [dict(run) for run in old['runs']]
+            if value != old['text']:
+                # 最後の一字の位置はそのままに、句点だけを続けて組む。
+                last = runs[-1]
+                index = len(last['text'].rstrip()) - 1
+                commands.append(f'#glyph({last["positions"][index]}, {last["y"]}, {q(last["text"][index] + "。")}, {q(last["style"])})')
+                last['text'] = last['text'][:index] + ' ' + last['text'][index + 1:]
+            commands += native_runs(runs)
+        return commands
     if len(lines) == len(group['lines']) and all(len(value) == len(old['text']) for value, old in zip(lines, group['lines'])):
         commands = []
         for value, old in zip(lines, group['lines']):
@@ -235,7 +247,7 @@ def flow_layout(folder, config, layout, nodes, figures, order):
 header: context if {furniture_condition} {{stack(spacing: 3pt, align(center, text(font: "Meiryo UI", size: 9.96pt, {q(running_title)})), line(length: 100%, stroke: 0.48pt))}},
 footer: context if {furniture_condition} {{align(center, text(font: "Times New Roman", size: 11.04pt, counter(page).display()))}})
 #set text(font: "MS PMincho", size: 11.04pt, lang: "ja", cjk-latin-spacing: none, kerning: false, overhang: false, top-edge: "ascender", bottom-edge: "descender")
-#set par(leading: 6.96pt, spacing: 6pt)
+#set par(leading: 6.96pt, spacing: 12.96pt)
 #show strong: it => text(font: "MS PGothic", stroke: 0.31543pt, it.body)
 #counter(page).update({config["first_page"]})''']
     cover_page = order[0]
@@ -414,7 +426,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 end += 1
             if end < len(entries) and entries[end] in figures:
                 body = "\n".join(render(e) for e in entries[i:end + 1])
-                commands.append(f'#instruction({q("instruction-" + ident)})[{body}]')
+                # 枠の先頭にある子見出しの上余白は相殺されるため、外側で確保する。
+                above = 0 if ident in slide_body_first else (18 if nodes[ident]['kind'] == 'heading' else 8)
+                commands.append(f'#instruction({q("instruction-" + ident)}, above: {above}pt)[{body}]')
                 i = end + 1
                 continue
         if ident in nodes and i+1<len(entries) and entries[i+1] in nodes and nodes[entries[i+1]]['kind']=='code' and re.search(r'[/\\].*\.(?:java|html|css|xml|properties|yml|yaml)\s*$',nodes[ident]['text']):

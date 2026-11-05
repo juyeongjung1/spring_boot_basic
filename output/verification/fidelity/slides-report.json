@@ -1,0 +1,2282 @@
+{
+  "slides": [
+    {
+      "chapter": "01",
+      "id": "p017-f01",
+      "source_page": 17,
+      "canvas": [
+        5.485048522949214,
+        2.5697563196717823,
+        365.47419189453126,
+        272.5616138483583
+      ],
+      "source_crop": [
+        112.26,
+        116.12,
+        483.06,
+        392.91
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 57,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5199987792968699,
+        0.41997802734374545,
+        369.2699987792969,
+        274.16997802734375
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862716256755673,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "01",
+      "id": "p018-f02",
+      "source_page": 18,
+      "canvas": [
+        5.485048522949214,
+        2.566181422366242,
+        293.0118200683594,
+        218.21126008142386
+      ],
+      "source_crop": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "master_scale": 0.3993427382575141,
+      "glyphs": 147,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5199987792968699,
+        0.6799999999999926,
+        369.2699987792969,
+        274.4299694824219
+      ],
+      "canvas_width_coverage": 0.7818538995116524,
+      "canvas_height_coverage": 0.7877446673940349,
+      "same_cause_small_canvas": true,
+      "revised_svg": "docs\\textbook\\chapters\\01\\assets\\p018-f02-canvas-fit.svg",
+      "fit_scale": 1.269446866975481,
+      "lettering_changed": false,
+      "outer_dimensions_unchanged": true,
+      "right_edge_content_checks": [
+        {
+          "text": "注意点：フレームワークのルールに慣れることが重要",
+          "source_box": [
+            27.89097023010254,
+            57.50869369506836,
+            252.60658264160156,
+            67.7864761352539
+          ],
+          "after_box": [
+            31.338146237192674,
+            70.42660006834362,
+            316.6026763734466,
+            83.47369878649278
+          ],
+          "right_margin_inside_frame_pt": 52.66732240585026
+        },
+        {
+          "text": "に慣れることが重要",
+          "source_box": [
+            168.9537811279297,
+            57.50869369506836,
+            252.60658264160156,
+            67.7864761352539
+          ],
+          "after_box": [
+            210.40988957819408,
+            70.42660006834362,
+            316.6026763734466,
+            83.47369878649278
+          ],
+          "right_margin_inside_frame_pt": 52.66732240585026
+        },
+        {
+          "text": "手動",
+          "source_box": [
+            240.43209838867188,
+            108.39952087402344,
+            264.4867858886719,
+            119.63542938232422
+          ],
+          "after_box": [
+            301.14781548152274,
+            135.0298011884588,
+            331.683963164472,
+            149.29319004194437
+          ],
+          "right_margin_inside_frame_pt": 37.58603561482488
+        },
+        {
+          "text": "自動",
+          "source_box": [
+            241.27059936523438,
+            181.69287109375,
+            264.4867858886719,
+            193.33250427246094
+          ],
+          "after_box": [
+            302.21224791917587,
+            228.07181499502735,
+            331.683963164472,
+            242.8477108664858
+          ],
+          "right_margin_inside_frame_pt": 37.58603561482488
+        }
+      ],
+      "after_canvas_width_coverage": 0.9925219831676296,
+      "after_canvas_height_coverage": 1.0,
+      "native_glyph_nodes_unchanged": true,
+      "embedded_image_payloads_unchanged": true,
+      "changed_pixels_outside_frame_interior_plus_1px": 0,
+      "before_png": "tmp/fidelity-review/p018-f02-before.png",
+      "after_png": "tmp/fidelity-review/p018-f02-after.png",
+      "comparison_png": "tmp/fidelity-review/p018-f02-three-columns.png",
+      "right_edge_zoom_png": "tmp/fidelity-review/p018-f02-right-edge-zoom.png",
+      "visual_review": "合格",
+      "source_sha256": "0d33c1f91d9e2831b467782dff17c29cdf66f8a4fd055d406d5b84272b3912cd",
+      "revised_sha256": "b696dece80450684b7456137098945f96579d4597db03a189e6989563b3529b3",
+      "newline_normalized_without_xml_change": true
+    },
+    {
+      "chapter": "01",
+      "id": "p019-f03",
+      "source_page": 19,
+      "canvas": [
+        5.485048522949214,
+        2.5697380091249045,
+        365.47419189453126,
+        272.5615955378114
+      ],
+      "source_crop": [
+        112.26,
+        113.82000000000001,
+        485.3,
+        390.61
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 246,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5199987792968699,
+        0.6799999999999926,
+        369.2699987792969,
+        274.4299694824219
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "01",
+      "id": "p021-f04",
+      "source_page": 21,
+      "canvas": [
+        5.485048522949214,
+        2.5697380091249045,
+        365.47419189453126,
+        272.5615955378114
+      ],
+      "source_crop": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 200,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5199987792968699,
+        0.6799999999999926,
+        369.2699987792969,
+        274.4299694824219
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "01",
+      "id": "p024-f07",
+      "source_page": 24,
+      "canvas": [
+        5.485048522949214,
+        2.5697380091249045,
+        365.47419189453126,
+        272.5615955378114
+      ],
+      "source_crop": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 190,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5199987792968699,
+        0.6799999999999926,
+        369.2699987792969,
+        274.4299694824219
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "01",
+      "id": "p029-f15",
+      "source_page": 29,
+      "canvas": [
+        5.485048522949214,
+        2.5697380091249045,
+        365.47419189453126,
+        272.5615955378114
+      ],
+      "source_crop": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 58,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5199987792968699,
+        0.6799999999999926,
+        369.2699987792969,
+        274.4299694824219
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "02",
+      "id": "p033-f01",
+      "source_page": 33,
+      "canvas": [
+        5.515049743652341,
+        4.419748995453034,
+        365.5041931152344,
+        274.41160652413953
+      ],
+      "source_crop": [
+        112.22999877929688,
+        114.27000732421875,
+        483.0799987792969,
+        392.5599792480469
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 93,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.019970703125
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862716256755673,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "02",
+      "id": "p034-f02",
+      "source_page": 34,
+      "canvas": [
+        5.515049743652341,
+        4.159708712249909,
+        365.5041931152344,
+        274.1515662409364
+      ],
+      "source_crop": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 208,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.0199401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "02",
+      "id": "p036-f03",
+      "source_page": 36,
+      "canvas": [
+        5.515049743652341,
+        4.159708712249909,
+        365.5041931152344,
+        274.1515662409364
+      ],
+      "source_crop": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 158,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.0199401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "02",
+      "id": "p038-f05",
+      "source_page": 38,
+      "canvas": [
+        5.515049743652341,
+        4.159708712249909,
+        365.5041931152344,
+        274.1515662409364
+      ],
+      "source_crop": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 303,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.0199401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "02",
+      "id": "p039-f06",
+      "source_page": 39,
+      "canvas": [
+        5.515049743652341,
+        4.159708712249909,
+        365.5041931152344,
+        274.1515662409364
+      ],
+      "source_crop": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 317,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.0199401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "02",
+      "id": "p047-f20",
+      "source_page": 47,
+      "canvas": [
+        5.515049743652341,
+        4.159708712249909,
+        365.5041931152344,
+        274.1515662409364
+      ],
+      "source_crop": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 337,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.0199401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "02",
+      "id": "p053-f25",
+      "source_page": 53,
+      "canvas": [
+        5.515049743652341,
+        4.159708712249909,
+        365.5041931152344,
+        274.1515662409364
+      ],
+      "source_crop": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 369,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.0199401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "02",
+      "id": "p057-f31",
+      "source_page": 57,
+      "canvas": [
+        5.515049743652341,
+        4.161045712618687,
+        296.51185302734376,
+        222.40864817538724
+      ],
+      "source_crop": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "master_scale": 0.40416222678290475,
+      "glyphs": 441,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.0199401855469
+      ],
+      "canvas_width_coverage": 0.7912897438033757,
+      "canvas_height_coverage": 0.7972516047231295,
+      "same_cause_small_canvas": true,
+      "revised_svg": "docs\\textbook\\chapters\\02\\assets\\p057-f31-canvas-fit.svg",
+      "fit_scale": 1.254309171754231,
+      "lettering_changed": false,
+      "outer_dimensions_unchanged": true,
+      "arrow_repair": {
+        "horizontal_scale": 0.35,
+        "right_edge_held_at": 284.95693317,
+        "new_left_edge": 260.548201669,
+        "html_rightmost_glyph": 252.403297808,
+        "glyph_clearance_source_pt": 8.144903861,
+        "colors_unchanged": true
+      },
+      "right_edge_content_checks": [
+        {
+          "text": "取得して表示できる",
+          "source_box": [
+            185.48687744140625,
+            200.44931030273438,
+            254.67965698242188,
+            208.4315948486328
+          ],
+          "after_box": [
+            228.66533448371695,
+            248.47614128622834,
+            315.45447248118137,
+            258.4883940037008
+          ],
+          "right_margin_inside_frame_pt": 53.84552751881864
+        },
+        {
+          "text": "社員番号：<spanth:text=\"${user.id}\"></span><br>",
+          "source_box": [
+            26.2132625579834,
+            138.0307159423828,
+            242.87940979003906,
+            145.65451049804688
+          ],
+          "after_box": [
+            28.88697851698849,
+            170.18392589203245,
+            300.65331419880846,
+            179.74652132677187
+          ],
+          "right_margin_inside_frame_pt": 68.64668580119155
+        },
+        {
+          "text": "パスワード：<spanth:text=\"${user.password}\"></span>",
+          "source_box": [
+            26.148927688598633,
+            146.48126220703125,
+            252.40330505371094,
+            154.29449462890625
+          ],
+          "after_box": [
+            28.80628270025557,
+            180.78352357811445,
+            312.59922337885877,
+            190.5837326659198
+          ],
+          "right_margin_inside_frame_pt": 56.700776621141245
+        }
+      ],
+      "after_canvas_width_coverage": 0.9925219831676296,
+      "after_canvas_height_coverage": 1.0,
+      "native_glyph_nodes_unchanged": true,
+      "embedded_image_payloads_unchanged": true,
+      "changed_pixels_outside_frame_interior_plus_1px": 0,
+      "before_png": "tmp/fidelity-review/p057-f31-before.png",
+      "after_png": "tmp/fidelity-review/p057-f31-after.png",
+      "comparison_png": "tmp/fidelity-review/p057-f31-three-columns.png",
+      "right_edge_zoom_png": "tmp/fidelity-review/p057-f31-right-edge-zoom.png",
+      "visual_review": "合格",
+      "source_sha256": "9c40901cd1f636810b6dc18b9363ab5f6334299fcf53cf2f800562f4585228ce",
+      "revised_sha256": "50c168d503190bc3fa85f16cd91a65d17837e560675bcfb22b8dcd99fe12b908",
+      "newline_normalized_without_xml_change": true
+    },
+    {
+      "chapter": "02",
+      "id": "p062-f33",
+      "source_page": 62,
+      "canvas": [
+        5.515049743652341,
+        4.159708712249909,
+        365.5041931152344,
+        274.1515662409364
+      ],
+      "source_crop": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 94,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.0199401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p065-f01",
+      "source_page": 65,
+      "canvas": [
+        5.515019226074216,
+        7.962317937265226,
+        365.38901977539064,
+        277.8678183492525
+      ],
+      "source_crop": [
+        112.22999877929688,
+        114.9900390625,
+        483.0799987792969,
+        393.3999755859375
+      ],
+      "master_scale": 0.49982500076293945,
+      "glyphs": 92,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.1399353027344
+      ],
+      "canvas_width_coverage": 0.9785832781762512,
+      "canvas_height_coverage": 0.9855242826886182,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p066-f02",
+      "source_page": 66,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 267,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p072-f09",
+      "source_page": 72,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 325,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p077-f13",
+      "source_page": 77,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 346,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p079-f15",
+      "source_page": 79,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 262,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p082-f17",
+      "source_page": 82,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 344,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p085-f18",
+      "source_page": 85,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 313,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p090-f23",
+      "source_page": 90,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 464,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p095-f30",
+      "source_page": 95,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 430,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p099-f34",
+      "source_page": 99,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 516,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p103-f38",
+      "source_page": 103,
+      "canvas": [
+        5.515049743652341,
+        2.6010481540249373,
+        296.51185302734376,
+        220.8486506167935
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.79002685546875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.40416222678290475,
+      "glyphs": 809,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        275.2999694824219
+      ],
+      "canvas_width_coverage": 0.7912897438033757,
+      "canvas_height_coverage": 0.7993539297459707,
+      "same_cause_small_canvas": true,
+      "revised_svg": "docs\\textbook\\chapters\\03\\assets\\p103-f38-canvas-fit.svg",
+      "fit_scale": 1.2510103006784405,
+      "lettering_changed": false,
+      "outer_dimensions_unchanged": true,
+      "right_edge_content_checks": [
+        {
+          "text": "メソッド定義の例",
+          "source_box": [
+            226.40695190429688,
+            24.1710205078125,
+            264.3307800292969,
+            28.54913902282715
+          ],
+          "after_box": [
+            279.7430457532227,
+            29.254228303062426,
+            327.18614537875646,
+            34.73129966293675
+          ],
+          "right_margin_inside_frame_pt": 42.11385462124355
+        },
+        {
+          "text": "List<Product>findByIdOrPrice(intid,intprice);",
+          "source_box": [
+            204.17652893066406,
+            31.585567474365234,
+            274.1026306152344,
+            50.628570556640625
+          ],
+          "after_box": [
+            251.93255762476937,
+            38.52990293308398,
+            339.4108311184549,
+            62.35289594486179
+          ],
+          "right_margin_inside_frame_pt": 29.889168881545118
+        },
+        {
+          "text": "List<Product>findByNameContaining(Stringname);",
+          "source_box": [
+            204.17652893066406,
+            52.92555236816406,
+            266.4866027832031,
+            71.99884796142578
+          ],
+          "after_box": [
+            251.93255762476937,
+            65.22644385154862,
+            329.88310185033015,
+            89.08733310660375
+          ],
+          "right_margin_inside_frame_pt": 39.41689814966986
+        },
+        {
+          "text": "List<Product>findByPriceIsNull();",
+          "source_box": [
+            204.17652893066406,
+            74.26551818847656,
+            257.01385498046875,
+            86.58851623535156
+          ],
+          "after_box": [
+            251.93255762476937,
+            91.92296090888541,
+            318.03259677338036,
+            107.33915840076634
+          ],
+          "right_margin_inside_frame_pt": 51.26740322661965
+        },
+        {
+          "text": "List<Product>findByPriceIsNotNull();",
+          "source_box": [
+            204.17652893066406,
+            88.80548858642578,
+            266.7337646484375,
+            101.12850952148438
+          ],
+          "after_box": [
+            251.93255762476937,
+            110.11261364827949,
+            330.1923038896732,
+            125.52883977351385
+          ],
+          "right_margin_inside_frame_pt": 39.1076961103268
+        },
+        {
+          "text": "List<Product>findByNameOrderByPriceDesc(Stringname);",
+          "source_box": [
+            204.17652893066406,
+            104.35546875,
+            286.3758239746094,
+            123.43074798583984
+          ],
+          "after_box": [
+            251.93255762476937,
+            129.56579900825628,
+            354.7647224332513,
+            153.4291698206095
+          ],
+          "right_margin_inside_frame_pt": 14.535277566748732
+        },
+        {
+          "text": "List<Product>findByPriceGreaterThan(intprice);",
+          "source_box": [
+            204.17652893066406,
+            126.67744445800781,
+            278.5832214355469,
+            145.7444305419922
+          ],
+          "after_box": [
+            251.93255762476937,
+            157.49082055046796,
+            345.0160963877911,
+            181.3438165444249
+          ],
+          "right_margin_inside_frame_pt": 24.283903612208917
+        },
+        {
+          "text": "List<Product>findByPriceLessThan(intprice);",
+          "source_box": [
+            204.17652893066406,
+            147.9949493408203,
+            269.9433288574219,
+            167.0803985595703
+          ],
+          "after_box": [
+            251.93255762476937,
+            184.15923874362937,
+            334.2075017758015,
+            208.0353323093609
+          ],
+          "right_margin_inside_frame_pt": 35.09249822419849
+        },
+        {
+          "text": "List<Product>findByPriceBetween(intstart,intend);",
+          "source_box": [
+            204.17652893066406,
+            169.3733673095703,
+            284.3851623535156,
+            188.41636657714844
+          ],
+          "after_box": [
+            251.93255762476937,
+            210.90385983474468,
+            352.27438424009773,
+            234.7268480742969
+          ],
+          "right_margin_inside_frame_pt": 17.02561575990228
+        },
+        {
+          "text": "intcountByPriceLessThan(intprice);",
+          "source_box": [
+            204.46844482421875,
+            192.34133911132812,
+            283.8631286621094,
+            204.66433715820312
+          ],
+          "after_box": [
+            252.29774741453804,
+            239.63702914443567,
+            351.62131471484736,
+            255.0532266363166
+          ],
+          "right_margin_inside_frame_pt": 17.678685285152653
+        }
+      ],
+      "after_canvas_width_coverage": 0.9899116203192272,
+      "after_canvas_height_coverage": 1.0,
+      "native_glyph_nodes_unchanged": true,
+      "embedded_image_payloads_unchanged": true,
+      "changed_pixels_outside_frame_interior_plus_1px": 0,
+      "before_png": "tmp/fidelity-review/p103-f38-before.png",
+      "after_png": "tmp/fidelity-review/p103-f38-after.png",
+      "comparison_png": "tmp/fidelity-review/p103-f38-three-columns.png",
+      "right_edge_zoom_png": "tmp/fidelity-review/p103-f38-right-edge-zoom.png",
+      "visual_review": "合格",
+      "source_sha256": "8aeb4bf0016b7ba793fe0c8de6d9b6df8fde682b691a1d8122eae0b4c4ebbaaa",
+      "revised_sha256": "6b78387c01bc2fd86462bea01a627a5782533efa9546f099054a7c93c0da644a",
+      "newline_normalized_without_xml_change": true
+    },
+    {
+      "chapter": "03",
+      "id": "p105-f39",
+      "source_page": 105,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 415,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p114-f51",
+      "source_page": 114,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 468,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p122-f59",
+      "source_page": 122,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 272,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p125-f64",
+      "source_page": 125,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 258,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "03",
+      "id": "p132-f69",
+      "source_page": 132,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 93,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "04",
+      "id": "p135-f01",
+      "source_page": 135,
+      "canvas": [
+        5.515019226074216,
+        6.022651189218351,
+        365.38901977539064,
+        275.9281516012056
+      ],
+      "source_crop": [
+        112.22999877929688,
+        114.9900390625,
+        483.0799987792969,
+        393.3999755859375
+      ],
+      "master_scale": 0.49982500076293945,
+      "glyphs": 48,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.1399353027344
+      ],
+      "canvas_width_coverage": 0.9785832781762512,
+      "canvas_height_coverage": 0.9855242826886182,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "04",
+      "id": "p136-f02",
+      "source_page": 136,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 545,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "04",
+      "id": "p142-f07",
+      "source_page": 142,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 443,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "04",
+      "id": "p148-f12",
+      "source_page": 148,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 267,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "04",
+      "id": "p157-f18",
+      "source_page": 157,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 694,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "04",
+      "id": "p159-f19",
+      "source_page": 159,
+      "canvas": [
+        5.515049743652341,
+        3.319742891937409,
+        365.5041931152344,
+        273.3116004206239
+      ],
+      "source_crop": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 233,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.02000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "04",
+      "id": "p162-f25",
+      "source_page": 162,
+      "canvas": [
+        5.515019226074216,
+        5.127913945566007,
+        365.38901977539064,
+        275.0334143575533
+      ],
+      "source_crop": [
+        112.22999877929688,
+        114.9900390625,
+        483.0799987792969,
+        393.3999755859375
+      ],
+      "master_scale": 0.49982500076293945,
+      "glyphs": 49,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        1.5499999999999972,
+        2.269970703124997,
+        369.3,
+        276.1399353027344
+      ],
+      "canvas_width_coverage": 0.9785832781762512,
+      "canvas_height_coverage": 0.9855242826886182,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "05",
+      "id": "p166-f01",
+      "source_page": 166,
+      "canvas": [
+        4.765049743652341,
+        2.949717257171784,
+        364.7541931152344,
+        272.9415747858583
+      ],
+      "source_crop": [
+        112.97999877929688,
+        115.7400390625,
+        482.3299987792969,
+        392.6499755859375
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 45,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.3899353027344
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9858396042932545,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "05",
+      "id": "p167-f02",
+      "source_page": 167,
+      "canvas": [
+        4.765049743652341,
+        2.569742891937409,
+        364.7541931152344,
+        272.5616004206239
+      ],
+      "source_crop": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 243,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.27000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "05",
+      "id": "p170-f03",
+      "source_page": 170,
+      "canvas": [
+        4.765049743652341,
+        2.569742891937409,
+        364.7541931152344,
+        272.5616004206239
+      ],
+      "source_crop": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 365,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.27000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "05",
+      "id": "p175-f09",
+      "source_page": 175,
+      "canvas": [
+        4.765049743652341,
+        2.569742891937409,
+        364.7541931152344,
+        272.5616004206239
+      ],
+      "source_crop": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 311,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.27000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "05",
+      "id": "p178-f10",
+      "source_page": 178,
+      "canvas": [
+        4.765049743652341,
+        2.569742891937409,
+        364.7541931152344,
+        272.5616004206239
+      ],
+      "source_crop": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 221,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.27000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "05",
+      "id": "p181-f13",
+      "source_page": 181,
+      "canvas": [
+        4.765049743652341,
+        2.569742891937409,
+        364.7541931152344,
+        272.5616004206239
+      ],
+      "source_crop": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 415,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.27000122070314
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862715157262776,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "05",
+      "id": "p190-f19",
+      "source_page": 190,
+      "canvas": [
+        4.765019226074216,
+        3.0824580129488197,
+        364.63901977539064,
+        272.9879584249361
+      ],
+      "source_crop": [
+        112.97999877929688,
+        115.7400390625,
+        482.3299987792969,
+        392.6499755859375
+      ],
+      "master_scale": 0.49982500076293945,
+      "glyphs": 46,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.3899353027344
+      ],
+      "canvas_width_coverage": 0.9785832781762512,
+      "canvas_height_coverage": 0.9855242826886182,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "06",
+      "id": "p194-f01",
+      "source_page": 194,
+      "canvas": [
+        4.765019226074216,
+        5.53625439966757,
+        364.63901977539064,
+        275.44175481165485
+      ],
+      "source_crop": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "master_scale": 0.49982500076293945,
+      "glyphs": 58,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.269970703125
+      ],
+      "canvas_width_coverage": 0.9785832781762512,
+      "canvas_height_coverage": 0.9859561658885381,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "06",
+      "id": "p195-f02",
+      "source_page": 195,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 351,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "06",
+      "id": "p203-f04",
+      "source_page": 203,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 278,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "06",
+      "id": "p208-f06",
+      "source_page": 208,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 357,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "06",
+      "id": "p213-f10",
+      "source_page": 213,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 517,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "06",
+      "id": "p222-f15",
+      "source_page": 222,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 105,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "06",
+      "id": "p225-f16",
+      "source_page": 225,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 415,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "06",
+      "id": "p236-f19",
+      "source_page": 236,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 59,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "07",
+      "id": "p240-f01",
+      "source_page": 240,
+      "canvas": [
+        4.765019226074216,
+        4.598609441171476,
+        364.63901977539064,
+        274.50410985315875
+      ],
+      "source_crop": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "master_scale": 0.49982500076293945,
+      "glyphs": 85,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.269970703125
+      ],
+      "canvas_width_coverage": 0.9785832781762512,
+      "canvas_height_coverage": 0.9859561658885381,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "07",
+      "id": "p241-f02",
+      "source_page": 241,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 142,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "07",
+      "id": "p245-f05",
+      "source_page": 245,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 531,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "07",
+      "id": "p250-f08",
+      "source_page": 250,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 109,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "07",
+      "id": "p262-f20",
+      "source_page": 262,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 207,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "07",
+      "id": "p265-f22",
+      "source_page": 265,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 288,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "07",
+      "id": "p272-f27",
+      "source_page": 272,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 296,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "07",
+      "id": "p280-f34",
+      "source_page": 280,
+      "canvas": [
+        4.765049743652341,
+        3.409708712249909,
+        364.7541931152344,
+        273.4015662409364
+      ],
+      "source_crop": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 86,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.2699401855469
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862717356248814,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p286-f08",
+      "source_page": 286,
+      "canvas": [
+        4.765049743652341,
+        2.689738009124909,
+        364.7541931152344,
+        272.6815955378114
+      ],
+      "source_crop": [
+        112.97999877929688,
+        113.7,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 179,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        274.5499694824219
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9888725002227091,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "front",
+      "id": "p009-f01",
+      "source_page": 9,
+      "canvas": [
+        4.765049743652341,
+        3.669748995453034,
+        364.7541931152344,
+        273.66160652413953
+      ],
+      "source_crop": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 170,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.269970703125
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862716256755673,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "front",
+      "id": "p010-f02",
+      "source_page": 10,
+      "canvas": [
+        4.765049743652341,
+        3.669748995453034,
+        364.7541931152344,
+        273.66160652413953
+      ],
+      "source_crop": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 162,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.269970703125
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862716256755673,
+      "same_cause_small_canvas": false
+    },
+    {
+      "chapter": "front",
+      "id": "p011-f03",
+      "source_page": 11,
+      "canvas": [
+        4.765049743652341,
+        3.669748995453034,
+        364.7541931152344,
+        273.66160652413953
+      ],
+      "source_crop": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "master_scale": 0.49998492134941946,
+      "glyphs": 147,
+      "clipped_glyphs": [],
+      "frame_interior": [
+        0.7999999999999972,
+        1.5199707031249972,
+        368.55,
+        275.269970703125
+      ],
+      "canvas_width_coverage": 0.9788963789845875,
+      "canvas_height_coverage": 0.9862716256755673,
+      "same_cause_small_canvas": false
+    }
+  ],
+  "summary": {
+    "count": 65,
+    "same_cause": [
+      "p018-f02",
+      "p057-f31",
+      "p103-f38"
+    ],
+    "repaired": [
+      "p018-f02",
+      "p057-f31",
+      "p103-f38"
+    ],
+    "additional_same_cause_ids": []
+  },
+  "protected_sha256": {
+    "docs\\textbook\\chapters\\01\\assets\\p018-f02.svg": "0d33c1f91d9e2831b467782dff17c29cdf66f8a4fd055d406d5b84272b3912cd",
+    "docs\\textbook\\chapters\\01\\baseline.md": "6dc74e72c752c2b04de5e6322cb2c5b7d957ca2cd621636b4ebd09d8c520dd59",
+    "docs\\textbook\\chapters\\01\\source-layout.json": "5ce6828b7182fc445bc8c1ab3a5d8eb03711f413ed5a42b8e750ba66bb8ab483",
+    "docs\\textbook\\chapters\\02\\assets\\p057-f31.svg": "9c40901cd1f636810b6dc18b9363ab5f6334299fcf53cf2f800562f4585228ce",
+    "docs\\textbook\\chapters\\02\\baseline.md": "c8abd28ef0365fe54ae593c8329df2b72b23dcdc9201f9e2c97c79a1cec3960d",
+    "docs\\textbook\\chapters\\02\\source-layout.json": "f33d59c0b23bc628a29ca13f3fc54babdf25bea7eb1f6bc9107f50d07b32d0cb",
+    "docs\\textbook\\chapters\\03\\assets\\p103-f38.svg": "8aeb4bf0016b7ba793fe0c8de6d9b6df8fde682b691a1d8122eae0b4c4ebbaaa",
+    "docs\\textbook\\chapters\\03\\baseline.md": "70c6f38a697b746133c129751b1a6ca70c5d9ce2ee0200ce87551918c21e9a8f",
+    "docs\\textbook\\chapters\\03\\source-layout.json": "de8a827094f31158d21c133f13a8079066fdfef59c35a246d015675e37877595"
+  },
+  "protected_sha256_mismatches": [],
+  "regression_conditions": {
+    "original_ppt_canvas_pt": [
+      720,
+      540
+    ],
+    "all_65_masters_share_line_logo_coordinates": true,
+    "detect_small_canvas_if_either_coverage_below": 0.9,
+    "expected_same_cause_ids": [
+      "p018-f02",
+      "p057-f31",
+      "p103-f38"
+    ],
+    "revised_canvas_coverage_minimum": 0.95,
+    "outer_svg_width_height_viewbox_must_match_source": true,
+    "native_glyph_nodes_must_be_identical": true,
+    "embedded_image_payloads_must_be_identical": true,
+    "critical_endings_must_be_inside_frame": true,
+    "p057_html_glyph_max_right_source_pt": 252.403297808,
+    "p057_arrow_min_left_source_pt": 260.548201669,
+    "p057_arrow_clearance_source_pt": 8.144903861,
+    "outer_frame_changed_pixels_allowed": 0
+  },
+  "logo_source_evidence": {
+    "file": "tmp/fidelity-review/ppt-source/image2.png",
+    "size_px": [
+      69,
+      69
+    ],
+    "content": "元マスター画像は丸と山形のシンボル。ブランド文字は含まれない。元画像をそのまま保持。"
+  }
+}

@@ -113,6 +113,8 @@ class PaginationTests(unittest.TestCase):
             for ident, node in before.items():
                 text = node['text'].replace('Eclipse 2022(pleiades)', 'Pleiades 2025').replace('Java 17', 'Java 21').replace('Java17', 'Java21').replace('3.1.5', '4.0.2')
                 text = text.replace('© 2024 Trainocate Japan, Ltd.', '© 2027 Trainocate Japan, Ltd.')
+                if ident == 'p285-b03':
+                    text += '。'
                 self.assertEqual(text, after[ident]['text'], ident)
 
 

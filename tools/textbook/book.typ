@@ -22,8 +22,10 @@
 }
 #let glyph(x, y, value, style) = at(x, y, text(top-edge: 0pt, bottom-edge: 0pt)[#styled(style, value)])
 #let mark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), y: here().position().y / 1pt)) <book-check>]
-#let paragraph(id, body, indent: 11.04pt) = block(above: 0pt, below: 6pt)[
-  #mark(id, "start")#h(indent)#body#mark(id, "end")
+// 本文の行送り18ptに対し、段落境界は24ptにする。
+#let paragraph(id, body, indent: 11.04pt) = block(above: 0pt, below: 12.96pt)[
+  #set par(first-line-indent: (amount: indent, all: true))
+  #mark(id, "start")#body#mark(id, "end")
 ]
 #let bullet-paragraph(id, marker, body, continuing: false) = block(
   above: 12.96pt, below: if continuing {6.96pt} else {12.96pt}, inset: (left: 11.04pt))[
@@ -45,7 +47,7 @@
 #let code-label(id, body) = block(sticky: true, above: 6pt, below: 4pt)[
   #mark(id, "heading")#body
 ]
-#let instruction(id, body) = block(breakable: false, above: 0pt, below: 12pt)[
+#let instruction(id, body, above: 0pt) = block(breakable: false, above: above, below: 12pt)[
   #mark(id, "start")#body#mark(id, "end")
 ]
 #let slide-header(height, body) = block(width: 100%, height: height * 1pt,

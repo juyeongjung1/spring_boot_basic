@@ -1,0 +1,7783 @@
+{
+  "passed": true,
+  "paragraph_pair_count": 885,
+  "heading_pair_count": 180,
+  "list_continuation_pair_count": 45,
+  "issues": [],
+  "paragraph_pairs": [
+    {
+      "chapter": "01",
+      "previous": "p017-b02",
+      "current": "p017-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p017-b03",
+      "current": "p017-b04",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p018-b03",
+      "current": "p018-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p018-b04",
+      "current": "p018-b05",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p019-b03",
+      "current": "p019-b04",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p019-b04",
+      "current": "p019-b05",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p019-b05",
+      "current": "p019-b06",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p020-b03",
+      "current": "p020-b04",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p020-b08",
+      "current": "p020-b09",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p020-b09",
+      "current": "p020-b10",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p021-b03",
+      "current": "p021-b04",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p021-b04",
+      "current": "p021-b05",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p022-b06",
+      "current": "p022-b07",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p022-b07",
+      "current": "p022-b08",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p023-b02",
+      "current": "p023-b03",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p023-b05",
+      "current": "p023-b06",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p023-b06",
+      "current": "p023-b07",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p024-b03",
+      "current": "p024-b04",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p024-b06",
+      "current": "p024-b07",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p024-b07",
+      "current": "p024-b08",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p024-b08",
+      "current": "p024-b09",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p025-b04",
+      "current": "p025-b05",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p027-b03",
+      "current": "p027-b04",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p028-b02",
+      "current": "p028-b03",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p028-b03",
+      "current": "p028-b04",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p028-b04",
+      "current": "p028-b05",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "01",
+      "previous": "p029-b02",
+      "current": "p029-b03",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p009-b02",
+      "current": "p009-b03",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p009-b03",
+      "current": "p009-b04",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p009-b04",
+      "current": "p009-b05",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p009-b05",
+      "current": "p009-b06",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p009-b06",
+      "current": "p009-b07",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p011-b02",
+      "current": "p011-b03",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p011-b03",
+      "current": "p011-b04",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p011-b04",
+      "current": "p011-b05",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p011-b06",
+      "current": "p011-b07",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p011-b07",
+      "current": "p011-b08",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p011-b09",
+      "current": "p011-b10",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p011-b11",
+      "current": "p011-b12",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p167-b03",
+      "current": "p167-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p167-b04",
+      "current": "p167-b05",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p167-b05",
+      "current": "p167-b06",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p168-b04",
+      "current": "p168-b05",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p168-b05",
+      "current": "p168-b06",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p168-b06",
+      "current": "p168-b07",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p169-b01",
+      "current": "p169-b02",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p172-b02",
+      "current": "p172-b03",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p172-b03",
+      "current": "p172-b04",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p172-b04",
+      "current": "p172-b05",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p174-b03",
+      "current": "p174-b04",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p174-b04",
+      "current": "p174-b05",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p174-b05",
+      "current": "p174-b06",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p175-b03",
+      "current": "p175-b04",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p176-b03",
+      "current": "p176-b04",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p176-b04",
+      "current": "p176-b05",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p176-b07",
+      "current": "p176-b08",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p176-b08",
+      "current": "p176-b09",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p176-b11",
+      "current": "p176-b12",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p176-b12",
+      "current": "p176-b13",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p177-b01",
+      "current": "p177-b02",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p177-b02",
+      "current": "p177-b03",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p177-b05",
+      "current": "p177-b06",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p177-b06",
+      "current": "p177-b07",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p177-b07",
+      "current": "p177-b08",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p178-b02",
+      "current": "p178-b03",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p179-b12",
+      "current": "p179-b13",
+      "chapter_physical_page": 16,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p180-b01",
+      "current": "p180-b02",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p180-b03",
+      "current": "p180-b04",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p181-b03",
+      "current": "p181-b04",
+      "chapter_physical_page": 18,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p181-b04",
+      "current": "p181-b05",
+      "chapter_physical_page": 18,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p184-b01",
+      "current": "p184-b02",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p184-b02",
+      "current": "p184-b03",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p184-b03",
+      "current": "p184-b04",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p184-b04",
+      "current": "p184-b05",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p184-b05",
+      "current": "p184-b06",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p184-b06",
+      "current": "p184-b07",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p185-b01",
+      "current": "p185-b02",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p185-b02",
+      "current": "p185-b03",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p185-b03",
+      "current": "p185-b04",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p185-b04",
+      "current": "p185-b05",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p185-b05",
+      "current": "p185-b06",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "05",
+      "previous": "p185-b06",
+      "current": "p185-b07",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p196-b02",
+      "current": "p196-b03",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p198-b02",
+      "current": "p198-b03",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p198-b03",
+      "current": "p198-b04",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p198-b04",
+      "current": "p198-b05",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p198-b05",
+      "current": "p198-b06",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p198-b06",
+      "current": "p198-b07",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p198-b07",
+      "current": "p198-b08",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p198-b09",
+      "current": "p198-b10",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p199-b05",
+      "current": "p199-b06",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p199-b06",
+      "current": "p199-b07",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p199-b07",
+      "current": "p199-b08",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p201-b03",
+      "current": "p201-b04",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p201-b04",
+      "current": "p201-b05",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p201-b05",
+      "current": "p201-b06",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p201-b06",
+      "current": "p201-b07",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p201-b07",
+      "current": "p201-b08",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p202-b04",
+      "current": "p202-b05",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p204-b05",
+      "current": "p204-b06",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p204-b06",
+      "current": "p204-b07",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p205-b05",
+      "current": "p205-b06",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p205-b06",
+      "current": "p205-b07",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p205-b07",
+      "current": "p205-b08",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b02",
+      "current": "p206-b03",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b03",
+      "current": "p206-b04",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b04",
+      "current": "p206-b05",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b10",
+      "current": "p206-b11",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b11",
+      "current": "p206-b12",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b14",
+      "current": "p206-b15",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b15",
+      "current": "p206-b16",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b16",
+      "current": "p206-b17",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b17",
+      "current": "p206-b18",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b18",
+      "current": "p206-b19",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p209-b04",
+      "current": "p209-b05",
+      "chapter_physical_page": 18,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p210-b04",
+      "current": "p210-b05",
+      "chapter_physical_page": 19,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p213-b02",
+      "current": "p213-b03",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p214-b02",
+      "current": "p214-b03",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p215-b01",
+      "current": "p215-b02",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p215-b02",
+      "current": "p215-b03",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p215-b03",
+      "current": "p215-b04",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p215-b06",
+      "current": "p215-b07",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p215-b07",
+      "current": "p215-b08",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p215-b08",
+      "current": "p215-b09",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p215-b09",
+      "current": "p215-b10",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p216-b04",
+      "current": "p216-b05",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p216-b05",
+      "current": "p216-b06",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p216-b06",
+      "current": "p216-b07",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p216-b08",
+      "current": "p216-b09",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p217-b02",
+      "current": "p217-b03",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p217-b04",
+      "current": "p217-b05",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p218-b03",
+      "current": "p218-b04",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p218-b04",
+      "current": "p218-b05",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p218-b05",
+      "current": "p218-b06",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p218-b06",
+      "current": "p218-b07",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p218-b07",
+      "current": "p218-b08",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p218-b08",
+      "current": "p218-b09",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p219-b05",
+      "current": "p219-b06",
+      "chapter_physical_page": 28,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p220-b06",
+      "current": "p220-b07",
+      "chapter_physical_page": 29,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p220-b08",
+      "current": "p220-b09",
+      "chapter_physical_page": 29,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p220-b12",
+      "current": "p220-b13",
+      "chapter_physical_page": 29,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p222-b02",
+      "current": "p222-b03",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p222-b03",
+      "current": "p222-b04",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p223-b02",
+      "current": "p223-b03",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p223-b06",
+      "current": "p223-b07",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p223-b08",
+      "current": "p223-b09",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p224-b09",
+      "current": "p224-b10",
+      "chapter_physical_page": 33,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p225-b03",
+      "current": "p225-b04",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p225-b04",
+      "current": "p225-b05",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p225-b05",
+      "current": "p225-b06",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p225-b06",
+      "current": "p225-b07",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p225-b07",
+      "current": "p225-b08",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p226-b06",
+      "current": "p226-b07",
+      "chapter_physical_page": 35,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p226-b07",
+      "current": "p226-b08",
+      "chapter_physical_page": 35,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p226-b08",
+      "current": "p226-b09",
+      "chapter_physical_page": 35,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p227-b04",
+      "current": "p227-b05",
+      "chapter_physical_page": 36,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p227-b07",
+      "current": "p227-b08",
+      "chapter_physical_page": 36,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p228-b02",
+      "current": "p228-b03",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p228-b07",
+      "current": "p228-b08",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p228-b08",
+      "current": "p228-b09",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p228-b09",
+      "current": "p228-b10",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p228-b10",
+      "current": "p228-b11",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p228-b11",
+      "current": "p228-b12",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p228-b15",
+      "current": "p228-b16",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p229-b03",
+      "current": "p229-b04",
+      "chapter_physical_page": 38,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p231-b04",
+      "current": "p231-b05",
+      "chapter_physical_page": 40,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p231-b05",
+      "current": "p231-b06",
+      "chapter_physical_page": 40,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p232-b05",
+      "current": "p232-b06",
+      "chapter_physical_page": 41,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p232-b06",
+      "current": "p232-b07",
+      "chapter_physical_page": 41,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p233-b02",
+      "current": "p233-b03",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p233-b08",
+      "current": "p233-b09",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p240-b02",
+      "current": "p240-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p240-b03",
+      "current": "p240-b04",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p240-b04",
+      "current": "p240-b05",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p240-b05",
+      "current": "p240-b06",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p241-b03",
+      "current": "p241-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p241-b04",
+      "current": "p241-b05",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p241-b05",
+      "current": "p241-b06",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p241-b06",
+      "current": "p241-b07",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p241-b07",
+      "current": "p241-b08",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p242-b02",
+      "current": "p242-b03",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p242-b03",
+      "current": "p242-b04",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p243-b01",
+      "current": "p243-b02",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p243-b05",
+      "current": "p243-b06",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p243-b06",
+      "current": "p243-b07",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p245-b05",
+      "current": "p245-b06",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p246-b11",
+      "current": "p246-b12",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p249-b01",
+      "current": "p249-b02",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p249-b02",
+      "current": "p249-b03",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p249-b04",
+      "current": "p249-b05",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p250-b02",
+      "current": "p250-b03",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p250-b03",
+      "current": "p250-b04",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p250-b04",
+      "current": "p250-b05",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p252-b02",
+      "current": "p252-b03",
+      "chapter_physical_page": 16,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p253-b01",
+      "current": "p253-b02",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p254-b02",
+      "current": "p254-b03",
+      "chapter_physical_page": 19,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p256-b04",
+      "current": "p256-b05",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p257-b02",
+      "current": "p257-b03",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p258-b01",
+      "current": "p258-b02",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p259-b01",
+      "current": "p259-b02",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p259-b02",
+      "current": "p259-b03",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p260-b02",
+      "current": "p260-b03",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p260-b03",
+      "current": "p260-b04",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p260-b04",
+      "current": "p260-b05",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p261-b01",
+      "current": "p261-b02",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p261-b02",
+      "current": "p261-b03",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p261-b05",
+      "current": "p261-b06",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p261-b06",
+      "current": "p261-b07",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p261-b07",
+      "current": "p261-b08",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p262-b03",
+      "current": "p262-b04",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p262-b04",
+      "current": "p262-b05",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p264-b03",
+      "current": "p264-b04",
+      "chapter_physical_page": 29,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p265-b03",
+      "current": "p265-b04",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p265-b04",
+      "current": "p265-b05",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p265-b05",
+      "current": "p265-b06",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p265-b06",
+      "current": "p265-b07",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p265-b07",
+      "current": "p265-b08",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p265-b08",
+      "current": "p265-b09",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p265-b09",
+      "current": "p265-b10",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p266-b02",
+      "current": "p266-b03",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p266-b03",
+      "current": "p266-b04",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p266-b04",
+      "current": "p266-b05",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p266-b05",
+      "current": "p266-b06",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p266-b06",
+      "current": "p266-b07",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p266-b07",
+      "current": "p266-b08",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b01",
+      "current": "p267-b02",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b02",
+      "current": "p267-b03",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b04",
+      "current": "p267-b05",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b05",
+      "current": "p267-b06",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b06",
+      "current": "p267-b07",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b07",
+      "current": "p267-b08",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b08",
+      "current": "p267-b09",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b09",
+      "current": "p267-b10",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b12",
+      "current": "p267-b13",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b13",
+      "current": "p267-b14",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b14",
+      "current": "p267-b15",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p268-b01",
+      "current": "p268-b02",
+      "chapter_physical_page": 33,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p268-b03",
+      "current": "p268-b04",
+      "chapter_physical_page": 33,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p269-b02",
+      "current": "p269-b03",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p271-b01",
+      "current": "p271-b02",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p273-b03",
+      "current": "p273-b04",
+      "chapter_physical_page": 39,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p273-b04",
+      "current": "p273-b05",
+      "chapter_physical_page": 39,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p273-b05",
+      "current": "p273-b06",
+      "chapter_physical_page": 39,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p273-b06",
+      "current": "p273-b07",
+      "chapter_physical_page": 39,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p273-b07",
+      "current": "p273-b08",
+      "chapter_physical_page": 39,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p273-b08",
+      "current": "p273-b09",
+      "chapter_physical_page": 39,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p273-b09",
+      "current": "p273-b10",
+      "chapter_physical_page": 39,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p274-b02",
+      "current": "p274-b03",
+      "chapter_physical_page": 40,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p275-b05",
+      "current": "p275-b06",
+      "chapter_physical_page": 41,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p275-b06",
+      "current": "p275-b07",
+      "chapter_physical_page": 41,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p275-b07",
+      "current": "p275-b08",
+      "chapter_physical_page": 41,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p276-b03",
+      "current": "p276-b04",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p276-b04",
+      "current": "p276-b05",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p276-b05",
+      "current": "p276-b06",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p276-b06",
+      "current": "p276-b07",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p276-b07",
+      "current": "p276-b08",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p279-b02",
+      "current": "p279-b03",
+      "chapter_physical_page": 47,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "07",
+      "previous": "p279-b03",
+      "current": "p279-b04",
+      "chapter_physical_page": 47,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p008-b02",
+      "current": "p008-b03",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p008-b03",
+      "current": "p008-b04",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p009-b02",
+      "current": "p009-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p009-b05",
+      "current": "p009-b06",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p010-b02",
+      "current": "p010-b03",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p010-b05",
+      "current": "p010-b06",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b02",
+      "current": "p012-b03",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b03",
+      "current": "p012-b04",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b04",
+      "current": "p012-b05",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b05",
+      "current": "p012-b06",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b08",
+      "current": "p012-b09",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b09",
+      "current": "p012-b10",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b10",
+      "current": "p012-b11",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b11",
+      "current": "p012-b12",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b14",
+      "current": "p012-b15",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b15",
+      "current": "p012-b16",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p013-b02",
+      "current": "p013-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p013-b05",
+      "current": "p013-b06",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p013-b06",
+      "current": "p013-b07",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p014-b02",
+      "current": "p014-b03",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p014-b03",
+      "current": "p014-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p014-b04",
+      "current": "p014-b05",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p014-b05",
+      "current": "p014-b06",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p014-b06",
+      "current": "p014-b07",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p014-b07",
+      "current": "p014-b08",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p014-b08",
+      "current": "p014-b09",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p014-b09",
+      "current": "p014-b10",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p014-b10",
+      "current": "p014-b11",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b02",
+      "current": "p015-b03",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b04",
+      "current": "p015-b05",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b05",
+      "current": "p015-b06",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b06",
+      "current": "p015-b07",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b07",
+      "current": "p015-b08",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b08",
+      "current": "p015-b09",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b09",
+      "current": "p015-b10",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b10",
+      "current": "p015-b11",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b13",
+      "current": "p015-b14",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b14",
+      "current": "p015-b15",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b02",
+      "current": "p016-b03",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b03",
+      "current": "p016-b04",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b04",
+      "current": "p016-b05",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b05",
+      "current": "p016-b06",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b06",
+      "current": "p016-b07",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b07",
+      "current": "p016-b08",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b08",
+      "current": "p016-b09",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b09",
+      "current": "p016-b10",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b10",
+      "current": "p016-b11",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b11",
+      "current": "p016-b12",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p016-b12",
+      "current": "p016-b13",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b02",
+      "current": "p018-b03",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b03",
+      "current": "p018-b04",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b04",
+      "current": "p018-b05",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b05",
+      "current": "p018-b06",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b08",
+      "current": "p018-b09",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b11",
+      "current": "p018-b12",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b12",
+      "current": "p018-b13",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b13",
+      "current": "p018-b14",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b14",
+      "current": "p018-b15",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p020-b02",
+      "current": "p020-b03",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p020-b03",
+      "current": "p020-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p020-b04",
+      "current": "p020-b05",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p020-b05",
+      "current": "p020-b06",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p020-b06",
+      "current": "p020-b07",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p020-b07",
+      "current": "p020-b08",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p020-b08",
+      "current": "p020-b09",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p020-b09",
+      "current": "p020-b10",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p020-b10",
+      "current": "p020-b11",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b02",
+      "current": "p021-b03",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b03",
+      "current": "p021-b04",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b04",
+      "current": "p021-b05",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b05",
+      "current": "p021-b06",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b06",
+      "current": "p021-b07",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b07",
+      "current": "p021-b08",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b08",
+      "current": "p021-b09",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b09",
+      "current": "p021-b10",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b10",
+      "current": "p021-b11",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b11",
+      "current": "p021-b12",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p021-b12",
+      "current": "p021-b13",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p022-b01",
+      "current": "p022-b02",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p022-b02",
+      "current": "p022-b03",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p022-b03",
+      "current": "p022-b04",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p022-b04",
+      "current": "p022-b05",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p022-b05",
+      "current": "p022-b06",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b02",
+      "current": "p023-b03",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b03",
+      "current": "p023-b04",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b04",
+      "current": "p023-b05",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b05",
+      "current": "p023-b06",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b06",
+      "current": "p023-b07",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b07",
+      "current": "p023-b08",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b08",
+      "current": "p023-b09",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b09",
+      "current": "p023-b10",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b11",
+      "current": "p023-b12",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b12",
+      "current": "p023-b13",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b13",
+      "current": "p023-b14",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b14",
+      "current": "p023-b15",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b01",
+      "current": "p024-b02",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b02",
+      "current": "p024-b03",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b03",
+      "current": "p024-b04",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b04",
+      "current": "p024-b05",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b07",
+      "current": "p024-b08",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b08",
+      "current": "p024-b09",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b09",
+      "current": "p024-b10",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b10",
+      "current": "p024-b11",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b11",
+      "current": "p024-b12",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b01",
+      "current": "p025-b02",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b02",
+      "current": "p025-b03",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b03",
+      "current": "p025-b04",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b04",
+      "current": "p025-b05",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b05",
+      "current": "p025-b06",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b06",
+      "current": "p025-b07",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b07",
+      "current": "p025-b08",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b08",
+      "current": "p025-b09",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b09",
+      "current": "p025-b10",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b10",
+      "current": "p025-b11",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p025-b11",
+      "current": "p025-b12",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p026-b02",
+      "current": "p026-b03",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p026-b04",
+      "current": "p026-b05",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p026-b05",
+      "current": "p026-b06",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p026-b06",
+      "current": "p026-b07",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p026-b09",
+      "current": "p026-b10",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p026-b10",
+      "current": "p026-b11",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p026-b11",
+      "current": "p026-b12",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b01",
+      "current": "p027-b02",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b02",
+      "current": "p027-b03",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b03",
+      "current": "p027-b04",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b04",
+      "current": "p027-b05",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b05",
+      "current": "p027-b06",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b06",
+      "current": "p027-b07",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b07",
+      "current": "p027-b08",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b08",
+      "current": "p027-b09",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b09",
+      "current": "p027-b10",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b10",
+      "current": "p027-b11",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b11",
+      "current": "p027-b12",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b12",
+      "current": "p027-b13",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p027-b13",
+      "current": "p027-b14",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p028-b02",
+      "current": "p028-b03",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p028-b03",
+      "current": "p028-b04",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p028-b04",
+      "current": "p028-b05",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p028-b05",
+      "current": "p028-b06",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p028-b08",
+      "current": "p028-b09",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p030-b02",
+      "current": "p030-b03",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p030-b03",
+      "current": "p030-b04",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p030-b06",
+      "current": "p030-b07",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p030-b09",
+      "current": "p030-b10",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p030-b10",
+      "current": "p030-b11",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b02",
+      "current": "p031-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b03",
+      "current": "p031-b04",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b04",
+      "current": "p031-b05",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b05",
+      "current": "p031-b06",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b06",
+      "current": "p031-b07",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b07",
+      "current": "p031-b08",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b08",
+      "current": "p031-b09",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b09",
+      "current": "p031-b10",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b10",
+      "current": "p031-b11",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p031-b11",
+      "current": "p031-b12",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b01",
+      "current": "p032-b02",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b02",
+      "current": "p032-b03",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b03",
+      "current": "p032-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b04",
+      "current": "p032-b05",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b05",
+      "current": "p032-b06",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b06",
+      "current": "p032-b07",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b07",
+      "current": "p032-b08",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b08",
+      "current": "p032-b09",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b09",
+      "current": "p032-b10",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b10",
+      "current": "p032-b11",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b11",
+      "current": "p032-b12",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b12",
+      "current": "p032-b13",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b13",
+      "current": "p032-b14",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b14",
+      "current": "p032-b15",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b17",
+      "current": "p032-b18",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b02",
+      "current": "p033-b03",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b04",
+      "current": "p033-b05",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b05",
+      "current": "p033-b06",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b06",
+      "current": "p033-b07",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b07",
+      "current": "p033-b08",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b08",
+      "current": "p033-b09",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b09",
+      "current": "p033-b10",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b10",
+      "current": "p033-b11",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b11",
+      "current": "p033-b12",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b12",
+      "current": "p033-b13",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b13",
+      "current": "p033-b14",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b14",
+      "current": "p033-b15",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b15",
+      "current": "p033-b16",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b16",
+      "current": "p033-b17",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p033-b17",
+      "current": "p033-b18",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p034-b04",
+      "current": "p034-b05",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p034-b05",
+      "current": "p034-b06",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p034-b06",
+      "current": "p034-b07",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p034-b07",
+      "current": "p034-b08",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p034-b08",
+      "current": "p034-b09",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b01",
+      "current": "p035-b02",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b02",
+      "current": "p035-b03",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b03",
+      "current": "p035-b04",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b04",
+      "current": "p035-b05",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b05",
+      "current": "p035-b06",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b06",
+      "current": "p035-b07",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b07",
+      "current": "p035-b08",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b08",
+      "current": "p035-b09",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b09",
+      "current": "p035-b10",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b10",
+      "current": "p035-b11",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b11",
+      "current": "p035-b12",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b12",
+      "current": "p035-b13",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b13",
+      "current": "p035-b14",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b15",
+      "current": "p035-b16",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b17",
+      "current": "p035-b18",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p036-b03",
+      "current": "p036-b04",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p036-b04",
+      "current": "p036-b05",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p036-b05",
+      "current": "p036-b06",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p036-b06",
+      "current": "p036-b07",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p036-b07",
+      "current": "p036-b08",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p036-b08",
+      "current": "p036-b09",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p036-b09",
+      "current": "p036-b10",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p038-b02",
+      "current": "p038-b03",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p038-b03",
+      "current": "p038-b04",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p038-b06",
+      "current": "p038-b07",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p038-b09",
+      "current": "p038-b10",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p038-b10",
+      "current": "p038-b11",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p039-b02",
+      "current": "p039-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p039-b03",
+      "current": "p039-b04",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p040-b02",
+      "current": "p040-b03",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p040-b03",
+      "current": "p040-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p040-b04",
+      "current": "p040-b05",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p040-b05",
+      "current": "p040-b06",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p040-b06",
+      "current": "p040-b07",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p040-b07",
+      "current": "p040-b08",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p040-b08",
+      "current": "p040-b09",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p040-b09",
+      "current": "p040-b10",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b01",
+      "current": "p042-b02",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b02",
+      "current": "p042-b03",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b03",
+      "current": "p042-b04",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b04",
+      "current": "p042-b05",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b05",
+      "current": "p042-b06",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b06",
+      "current": "p042-b07",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b07",
+      "current": "p042-b08",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b08",
+      "current": "p042-b09",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b09",
+      "current": "p042-b10",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b10",
+      "current": "p042-b11",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b11",
+      "current": "p042-b12",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b12",
+      "current": "p042-b13",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b13",
+      "current": "p042-b14",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b14",
+      "current": "p042-b15",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b15",
+      "current": "p042-b16",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b16",
+      "current": "p042-b17",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p042-b17",
+      "current": "p042-b18",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p043-b01",
+      "current": "p043-b02",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p043-b02",
+      "current": "p043-b03",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p043-b03",
+      "current": "p043-b04",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p043-b04",
+      "current": "p043-b05",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p043-b07",
+      "current": "p043-b08",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p043-b08",
+      "current": "p043-b09",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p044-b03",
+      "current": "p044-b04",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p044-b04",
+      "current": "p044-b05",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p044-b05",
+      "current": "p044-b06",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p044-b06",
+      "current": "p044-b07",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p044-b07",
+      "current": "p044-b08",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p046-b01",
+      "current": "p046-b02",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p046-b02",
+      "current": "p046-b03",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p046-b03",
+      "current": "p046-b04",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b03",
+      "current": "p048-b04",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b05",
+      "current": "p048-b06",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b09",
+      "current": "p048-b10",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b10",
+      "current": "p048-b11",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b12",
+      "current": "p048-b13",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b14",
+      "current": "p048-b15",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b15",
+      "current": "p048-b16",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p049-b02",
+      "current": "p049-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p049-b03",
+      "current": "p049-b04",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p049-b04",
+      "current": "p049-b05",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p049-b05",
+      "current": "p049-b06",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p049-b06",
+      "current": "p049-b07",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b03",
+      "current": "p051-b04",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b06",
+      "current": "p051-b07",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b07",
+      "current": "p051-b08",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b08",
+      "current": "p051-b09",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b11",
+      "current": "p051-b12",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b12",
+      "current": "p051-b13",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p052-b01",
+      "current": "p052-b02",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p052-b02",
+      "current": "p052-b03",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p052-b05",
+      "current": "p052-b06",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p052-b06",
+      "current": "p052-b07",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p053-b02",
+      "current": "p053-b03",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p053-b03",
+      "current": "p053-b04",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p053-b06",
+      "current": "p053-b07",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p053-b07",
+      "current": "p053-b08",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b01",
+      "current": "p054-b02",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b02",
+      "current": "p054-b03",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b05",
+      "current": "p054-b06",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b08",
+      "current": "p054-b09",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b09",
+      "current": "p054-b10",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b12",
+      "current": "p054-b13",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b13",
+      "current": "p054-b14",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b14",
+      "current": "p054-b15",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p055-b02",
+      "current": "p055-b03",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p055-b06",
+      "current": "p055-b07",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p055-b07",
+      "current": "p055-b08",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p056-b02",
+      "current": "p056-b03",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p056-b03",
+      "current": "p056-b04",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p056-b04",
+      "current": "p056-b05",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p058-b01",
+      "current": "p058-b02",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p058-b04",
+      "current": "p058-b05",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p058-b05",
+      "current": "p058-b06",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p058-b06",
+      "current": "p058-b07",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p058-b09",
+      "current": "p058-b10",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p058-b10",
+      "current": "p058-b11",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p059-b02",
+      "current": "p059-b03",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p059-b03",
+      "current": "p059-b04",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p060-b02",
+      "current": "p060-b03",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p061-b01",
+      "current": "p061-b02",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p061-b02",
+      "current": "p061-b03",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p061-b06",
+      "current": "p061-b07",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p061-b07",
+      "current": "p061-b08",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p061-b08",
+      "current": "p061-b09",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p061-b12",
+      "current": "p061-b13",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p061-b13",
+      "current": "p061-b14",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b03",
+      "current": "p064-b04",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b05",
+      "current": "p064-b06",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b07",
+      "current": "p064-b08",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b11",
+      "current": "p064-b12",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b12",
+      "current": "p064-b13",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b14",
+      "current": "p064-b15",
+      "chapter_physical_page": 2,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p065-b07",
+      "current": "p065-b08",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p065-b08",
+      "current": "p065-b09",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p065-b09",
+      "current": "p065-b10",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p065-b10",
+      "current": "p065-b11",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p065-b11",
+      "current": "p065-b12",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p067-b09",
+      "current": "p067-b10",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p068-b08",
+      "current": "p068-b09",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p068-b09",
+      "current": "p068-b10",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p068-b10",
+      "current": "p068-b11",
+      "chapter_physical_page": 6,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p070-b04",
+      "current": "p070-b05",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p070-b08",
+      "current": "p070-b09",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p070-b09",
+      "current": "p070-b10",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p071-b03",
+      "current": "p071-b04",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b01",
+      "current": "p073-b02",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b02",
+      "current": "p073-b03",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b03",
+      "current": "p073-b04",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b07",
+      "current": "p073-b08",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b08",
+      "current": "p073-b09",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b12",
+      "current": "p073-b13",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b13",
+      "current": "p073-b14",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b14",
+      "current": "p073-b15",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b15",
+      "current": "p073-b16",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p074-b02",
+      "current": "p074-b03",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p075-b05",
+      "current": "p075-b06",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p075-b06",
+      "current": "p075-b07",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p075-b10",
+      "current": "p075-b11",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p075-b11",
+      "current": "p075-b12",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p033-b02",
+      "current": "p033-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p033-b03",
+      "current": "p033-b04",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p034-b03",
+      "current": "p034-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p034-b06",
+      "current": "p034-b07",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p035-b01",
+      "current": "p035-b02",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p035-b02",
+      "current": "p035-b03",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p035-b05",
+      "current": "p035-b06",
+      "chapter_physical_page": 5,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "migration-02-servlet-comparison",
+      "current": "p037-b03",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p037-b03",
+      "current": "p037-b04",
+      "chapter_physical_page": 7,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p038-b03",
+      "current": "p038-b04",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p038-b04",
+      "current": "p038-b05",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p038-b07",
+      "current": "p038-b08",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p038-b08",
+      "current": "p038-b09",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p039-b03",
+      "current": "p039-b04",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p040-b02",
+      "current": "p040-b03",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p042-b02",
+      "current": "p042-b03",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p042-b03",
+      "current": "p042-b04",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p042-b04",
+      "current": "p042-b05",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p043-b05",
+      "current": "p043-b06",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p044-b01",
+      "current": "p044-b02",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p044-b04",
+      "current": "p044-b05",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p044-b05",
+      "current": "p044-b06",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p044-b09",
+      "current": "p044-b10",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p046-b02",
+      "current": "p046-b03",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p046-b03",
+      "current": "p046-b04",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p046-b04",
+      "current": "p046-b05",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p046-b05",
+      "current": "p046-b06",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p046-b06",
+      "current": "p046-b07",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p046-b07",
+      "current": "p046-b08",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p048-b06",
+      "current": "p048-b07",
+      "chapter_physical_page": 19,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p049-b05",
+      "current": "p049-b06",
+      "chapter_physical_page": 20,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p050-b01",
+      "current": "p050-b02",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p050-b02",
+      "current": "p050-b03",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p050-b03",
+      "current": "p050-b04",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p050-b04",
+      "current": "p050-b05",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p051-b05",
+      "current": "p051-b06",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p051-b06",
+      "current": "p051-b07",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p051-b07",
+      "current": "p051-b08",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p051-b08",
+      "current": "p051-b09",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p052-b02",
+      "current": "p052-b03",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p052-b03",
+      "current": "p052-b04",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p052-b06",
+      "current": "p052-b07",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p052-b08",
+      "current": "p052-b09",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p052-b09",
+      "current": "p052-b10",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p054-b02",
+      "current": "p054-b03",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p055-b02",
+      "current": "p055-b03",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p056-b05",
+      "current": "p056-b06",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p056-b06",
+      "current": "p056-b07",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p056-b07",
+      "current": "p056-b08",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p056-b10",
+      "current": "p056-b11",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p057-b02",
+      "current": "p057-b03",
+      "chapter_physical_page": 28,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p058-b05",
+      "current": "p058-b06",
+      "chapter_physical_page": 29,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p058-b06",
+      "current": "p058-b07",
+      "chapter_physical_page": 29,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p058-b07",
+      "current": "p058-b08",
+      "chapter_physical_page": 29,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p059-b01",
+      "current": "p059-b02",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p059-b02",
+      "current": "p059-b03",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p059-b06",
+      "current": "p059-b07",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p059-b07",
+      "current": "p059-b08",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p059-b08",
+      "current": "p059-b09",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p060-b02",
+      "current": "p060-b03",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p060-b03",
+      "current": "p060-b04",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p060-b04",
+      "current": "p060-b05",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p060-b05",
+      "current": "p060-b06",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p060-b06",
+      "current": "p060-b07",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p060-b07",
+      "current": "p060-b08",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p060-b11",
+      "current": "p060-b12",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p060-b12",
+      "current": "p060-b13",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p061-b01",
+      "current": "p061-b02",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p061-b03",
+      "current": "p061-b04",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "02",
+      "previous": "p061-b04",
+      "current": "p061-b05",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p065-b02",
+      "current": "p065-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p066-b03",
+      "current": "p066-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p066-b04",
+      "current": "p066-b05",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p066-b05",
+      "current": "p066-b06",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p066-b06",
+      "current": "p066-b07",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p066-b07",
+      "current": "p066-b08",
+      "chapter_physical_page": 4,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p070-b02",
+      "current": "p070-b03",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p070-b03",
+      "current": "p070-b04",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p070-b04",
+      "current": "p070-b05",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p070-b05",
+      "current": "migration-03-jpa-dependencies",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p071-b04",
+      "current": "p071-b05",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p071-b05",
+      "current": "p071-b06",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p071-b06",
+      "current": "p071-b07",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p071-b07",
+      "current": "p071-b08",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p071-b08",
+      "current": "p071-b09",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p071-b09",
+      "current": "p071-b10",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p072-b03",
+      "current": "p072-b04",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p073-b02",
+      "current": "p073-b03",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p074-b01",
+      "current": "p074-b02",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p074-b02",
+      "current": "p074-b03",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p074-b03",
+      "current": "p074-b04",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p075-b05",
+      "current": "p075-b06",
+      "chapter_physical_page": 16,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p075-b06",
+      "current": "p075-b07",
+      "chapter_physical_page": 16,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p075-b07",
+      "current": "p075-b08",
+      "chapter_physical_page": 16,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p076-b02",
+      "current": "p076-b03",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p076-b03",
+      "current": "p076-b04",
+      "chapter_physical_page": 17,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p077-b03",
+      "current": "p077-b04",
+      "chapter_physical_page": 18,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p078-b05",
+      "current": "p078-b06",
+      "chapter_physical_page": 19,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p078-b06",
+      "current": "p078-b07",
+      "chapter_physical_page": 19,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p078-b07",
+      "current": "p078-b08",
+      "chapter_physical_page": 19,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p079-b03",
+      "current": "p079-b04",
+      "chapter_physical_page": 20,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p079-b04",
+      "current": "p079-b05",
+      "chapter_physical_page": 20,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p079-b05",
+      "current": "p079-b06",
+      "chapter_physical_page": 20,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p079-b06",
+      "current": "p079-b07",
+      "chapter_physical_page": 20,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p080-b01",
+      "current": "p080-b02",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p080-b04",
+      "current": "p080-b05",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p080-b08",
+      "current": "p080-b09",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p081-b02",
+      "current": "p081-b03",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p081-b03",
+      "current": "p081-b04",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p081-b09",
+      "current": "p081-b10",
+      "chapter_physical_page": 22,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p082-b02",
+      "current": "p082-b03",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p083-b02",
+      "current": "p083-b03",
+      "chapter_physical_page": 24,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p084-b02",
+      "current": "p084-b03",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p084-b03",
+      "current": "p084-b04",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p084-b04",
+      "current": "p084-b05",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p084-b05",
+      "current": "p084-b06",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p084-b06",
+      "current": "p084-b07",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p084-b07",
+      "current": "p084-b08",
+      "chapter_physical_page": 25,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p086-b02",
+      "current": "p086-b03",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p086-b05",
+      "current": "p086-b06",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p086-b06",
+      "current": "p086-b07",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p086-b08",
+      "current": "p086-b09",
+      "chapter_physical_page": 27,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p087-b05",
+      "current": "p087-b06",
+      "chapter_physical_page": 28,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p087-b06",
+      "current": "p087-b07",
+      "chapter_physical_page": 28,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p088-b01",
+      "current": "p088-b02",
+      "chapter_physical_page": 29,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p090-b02",
+      "current": "p090-b03",
+      "chapter_physical_page": 31,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p091-b02",
+      "current": "p091-b03",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p091-b07",
+      "current": "p091-b08",
+      "chapter_physical_page": 32,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p092-b04",
+      "current": "p092-b05",
+      "chapter_physical_page": 33,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p092-b09",
+      "current": "p092-b10",
+      "chapter_physical_page": 33,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p093-b01",
+      "current": "p093-b02",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p093-b02",
+      "current": "p093-b03",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p093-b03",
+      "current": "p093-b04",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p093-b04",
+      "current": "p093-b05",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p093-b05",
+      "current": "p093-b06",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p093-b07",
+      "current": "p093-b08",
+      "chapter_physical_page": 34,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p094-b03",
+      "current": "p094-b04",
+      "chapter_physical_page": 35,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p095-b03",
+      "current": "p095-b04",
+      "chapter_physical_page": 36,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p095-b04",
+      "current": "p095-b05",
+      "chapter_physical_page": 36,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p096-b04",
+      "current": "p096-b05",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p096-b09",
+      "current": "p096-b10",
+      "chapter_physical_page": 37,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p097-b01",
+      "current": "p097-b02",
+      "chapter_physical_page": 38,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p097-b02",
+      "current": "p097-b03",
+      "chapter_physical_page": 38,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p097-b03",
+      "current": "p097-b04",
+      "chapter_physical_page": 38,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p097-b04",
+      "current": "p097-b05",
+      "chapter_physical_page": 38,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p097-b05",
+      "current": "p097-b06",
+      "chapter_physical_page": 38,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p097-b10",
+      "current": "p097-b11",
+      "chapter_physical_page": 38,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p099-b03",
+      "current": "p099-b04",
+      "chapter_physical_page": 40,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p099-b04",
+      "current": "p099-b05",
+      "chapter_physical_page": 40,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p100-b04",
+      "current": "p100-b05",
+      "chapter_physical_page": 41,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p100-b09",
+      "current": "p100-b10",
+      "chapter_physical_page": 41,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p100-b10",
+      "current": "p100-b11",
+      "chapter_physical_page": 41,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p100-b11",
+      "current": "p100-b12",
+      "chapter_physical_page": 41,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p101-b06",
+      "current": "p101-b07",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p101-b07",
+      "current": "p101-b08",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p101-b08",
+      "current": "p101-b09",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p101-b09",
+      "current": "p101-b10",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p101-b10",
+      "current": "p101-b11",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p101-b11",
+      "current": "p101-b12",
+      "chapter_physical_page": 42,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p103-b02",
+      "current": "p103-b03",
+      "chapter_physical_page": 44,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p103-b03",
+      "current": "p103-b04",
+      "chapter_physical_page": 44,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p103-b04",
+      "current": "p103-b05",
+      "chapter_physical_page": 44,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p103-b05",
+      "current": "p103-b06",
+      "chapter_physical_page": 44,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p103-b06",
+      "current": "p103-b07",
+      "chapter_physical_page": 44,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p103-b07",
+      "current": "p103-b08",
+      "chapter_physical_page": 44,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p103-b08",
+      "current": "p103-b09",
+      "chapter_physical_page": 44,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p105-b03",
+      "current": "p105-b04",
+      "chapter_physical_page": 47,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p107-b04",
+      "current": "p107-b05",
+      "chapter_physical_page": 49,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p108-b05",
+      "current": "p108-b06",
+      "chapter_physical_page": 50,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p109-b04",
+      "current": "p109-b05",
+      "chapter_physical_page": 51,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p109-b05",
+      "current": "p109-b06",
+      "chapter_physical_page": 51,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p109-b06",
+      "current": "p109-b07",
+      "chapter_physical_page": 51,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p110-b01",
+      "current": "p110-b02",
+      "chapter_physical_page": 53,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p110-b02",
+      "current": "p110-b03",
+      "chapter_physical_page": 53,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p110-b04",
+      "current": "p110-b05",
+      "chapter_physical_page": 53,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p110-b05",
+      "current": "p110-b06",
+      "chapter_physical_page": 53,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p110-b06",
+      "current": "p110-b07",
+      "chapter_physical_page": 53,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p110-b07",
+      "current": "p110-b08",
+      "chapter_physical_page": 53,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p110-b08",
+      "current": "p110-b09",
+      "chapter_physical_page": 53,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p113-b02",
+      "current": "p113-b03",
+      "chapter_physical_page": 56,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p113-b08",
+      "current": "p113-b09",
+      "chapter_physical_page": 56,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p114-b03",
+      "current": "p114-b04",
+      "chapter_physical_page": 57,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p114-b04",
+      "current": "p114-b05",
+      "chapter_physical_page": 57,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p114-b05",
+      "current": "p114-b06",
+      "chapter_physical_page": 57,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p115-b01",
+      "current": "p115-b02",
+      "chapter_physical_page": 58,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p116-b05",
+      "current": "p116-b06",
+      "chapter_physical_page": 59,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p116-b06",
+      "current": "p116-b07",
+      "chapter_physical_page": 59,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p116-b07",
+      "current": "p116-b08",
+      "chapter_physical_page": 59,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p117-b04",
+      "current": "p117-b05",
+      "chapter_physical_page": 60,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p117-b05",
+      "current": "p117-b06",
+      "chapter_physical_page": 60,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p117-b06",
+      "current": "p117-b07",
+      "chapter_physical_page": 60,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p118-b05",
+      "current": "p118-b06",
+      "chapter_physical_page": 61,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p118-b06",
+      "current": "p118-b07",
+      "chapter_physical_page": 61,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p119-b04",
+      "current": "p119-b05",
+      "chapter_physical_page": 63,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p119-b05",
+      "current": "p119-b06",
+      "chapter_physical_page": 63,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p119-b06",
+      "current": "p119-b07",
+      "chapter_physical_page": 63,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p119-b07",
+      "current": "p119-b08",
+      "chapter_physical_page": 63,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p123-b08",
+      "current": "p123-b09",
+      "chapter_physical_page": 67,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p123-b09",
+      "current": "p123-b10",
+      "chapter_physical_page": 67,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p123-b10",
+      "current": "p123-b11",
+      "chapter_physical_page": 67,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p124-b01",
+      "current": "p124-b02",
+      "chapter_physical_page": 68,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p125-b02",
+      "current": "p125-b03",
+      "chapter_physical_page": 69,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b02",
+      "current": "p126-b03",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b03",
+      "current": "p126-b04",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b06",
+      "current": "p126-b07",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b09",
+      "current": "p126-b10",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b10",
+      "current": "p126-b11",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b11",
+      "current": "p126-b12",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b12",
+      "current": "p126-b13",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b13",
+      "current": "p126-b14",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b14",
+      "current": "p126-b15",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b15",
+      "current": "p126-b16",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b16",
+      "current": "p126-b17",
+      "chapter_physical_page": 70,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p127-b05",
+      "current": "p127-b06",
+      "chapter_physical_page": 71,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p127-b06",
+      "current": "p127-b07",
+      "chapter_physical_page": 71,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p127-b07",
+      "current": "p127-b08",
+      "chapter_physical_page": 71,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p127-b08",
+      "current": "p127-b09",
+      "chapter_physical_page": 71,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p128-b02",
+      "current": "p128-b03",
+      "chapter_physical_page": 72,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p128-b03",
+      "current": "p128-b04",
+      "chapter_physical_page": 72,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p129-b01",
+      "current": "p129-b02",
+      "chapter_physical_page": 73,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p129-b04",
+      "current": "p129-b05",
+      "chapter_physical_page": 73,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p129-b05",
+      "current": "p129-b06",
+      "chapter_physical_page": 73,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p129-b06",
+      "current": "p129-b07",
+      "chapter_physical_page": 73,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p129-b07",
+      "current": "p129-b08",
+      "chapter_physical_page": 73,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p129-b08",
+      "current": "p129-b09",
+      "chapter_physical_page": 73,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p130-b05",
+      "current": "p130-b06",
+      "chapter_physical_page": 74,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p130-b06",
+      "current": "p130-b07",
+      "chapter_physical_page": 74,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p130-b07",
+      "current": "p130-b08",
+      "chapter_physical_page": 74,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p130-b08",
+      "current": "p130-b09",
+      "chapter_physical_page": 74,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p130-b09",
+      "current": "p130-b10",
+      "chapter_physical_page": 74,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p131-b01",
+      "current": "p131-b02",
+      "chapter_physical_page": 75,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p131-b03",
+      "current": "p131-b04",
+      "chapter_physical_page": 75,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p140-b04",
+      "current": "p140-b05",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p140-b05",
+      "current": "p140-b06",
+      "chapter_physical_page": 8,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p141-b03",
+      "current": "p141-b04",
+      "chapter_physical_page": 9,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p142-b02",
+      "current": "p142-b03",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p142-b03",
+      "current": "p142-b04",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p142-b04",
+      "current": "p142-b05",
+      "chapter_physical_page": 10,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p143-b02",
+      "current": "p143-b03",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p143-b05",
+      "current": "p143-b06",
+      "chapter_physical_page": 11,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p144-b05",
+      "current": "p144-b06",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p144-b06",
+      "current": "p144-b07",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p144-b07",
+      "current": "p144-b08",
+      "chapter_physical_page": 12,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p145-b02",
+      "current": "p145-b03",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p145-b03",
+      "current": "p145-b04",
+      "chapter_physical_page": 13,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p146-b03",
+      "current": "p146-b04",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p146-b05",
+      "current": "p146-b06",
+      "chapter_physical_page": 14,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p147-b05",
+      "current": "p147-b06",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p147-b06",
+      "current": "p147-b07",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p147-b07",
+      "current": "p147-b08",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p147-b08",
+      "current": "p147-b09",
+      "chapter_physical_page": 15,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p150-b04",
+      "current": "p150-b05",
+      "chapter_physical_page": 18,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p150-b05",
+      "current": "p150-b06",
+      "chapter_physical_page": 18,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p150-b06",
+      "current": "p150-b07",
+      "chapter_physical_page": 18,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p150-b07",
+      "current": "p150-b08",
+      "chapter_physical_page": 18,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p151-b08",
+      "current": "p151-b09",
+      "chapter_physical_page": 19,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p151-b09",
+      "current": "p151-b10",
+      "chapter_physical_page": 19,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p151-b10",
+      "current": "p151-b11",
+      "chapter_physical_page": 19,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p152-b01",
+      "current": "p152-b02",
+      "chapter_physical_page": 20,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p152-b06",
+      "current": "p152-b07",
+      "chapter_physical_page": 20,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p152-b07",
+      "current": "p152-b08",
+      "chapter_physical_page": 20,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p152-b08",
+      "current": "p152-b09",
+      "chapter_physical_page": 20,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p153-b01",
+      "current": "p153-b02",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p153-b02",
+      "current": "p153-b03",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p153-b03",
+      "current": "p153-b04",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p153-b04",
+      "current": "p153-b05",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p153-b05",
+      "current": "p153-b06",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p153-b06",
+      "current": "p153-b07",
+      "chapter_physical_page": 21,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p155-b02",
+      "current": "p155-b03",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p155-b03",
+      "current": "p155-b04",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p155-b04",
+      "current": "p155-b05",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p155-b05",
+      "current": "p155-b06",
+      "chapter_physical_page": 23,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p157-b02",
+      "current": "p157-b03",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p157-b03",
+      "current": "p157-b04",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p157-b04",
+      "current": "p157-b05",
+      "chapter_physical_page": 26,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p159-b02",
+      "current": "p159-b03",
+      "chapter_physical_page": 28,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p159-b04",
+      "current": "p159-b05",
+      "chapter_physical_page": 28,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p161-b03",
+      "current": "p161-b04",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p161-b04",
+      "current": "p161-b05",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    },
+    {
+      "chapter": "04",
+      "previous": "p161-b05",
+      "current": "p161-b06",
+      "chapter_physical_page": 30,
+      "gap_pt": 12.96
+    }
+  ],
+  "heading_pairs": [
+    {
+      "chapter": "01",
+      "previous": "p018-f02",
+      "current": "p018-b02",
+      "chapter_physical_page": 4,
+      "gap_pt": 45.192
+    },
+    {
+      "chapter": "01",
+      "previous": "p018-b05",
+      "current": "p018-b06",
+      "chapter_physical_page": 4,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "01",
+      "previous": "p019-f03",
+      "current": "p019-b02",
+      "chapter_physical_page": 5,
+      "gap_pt": 45.192
+    },
+    {
+      "chapter": "01",
+      "previous": "p020-b04",
+      "current": "p020-b05",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "01",
+      "previous": "p020-b06",
+      "current": "p020-b07",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "01",
+      "previous": "p021-f04",
+      "current": "p021-b02",
+      "chapter_physical_page": 7,
+      "gap_pt": 45.192
+    },
+    {
+      "chapter": "01",
+      "previous": "p022-b02",
+      "current": "p022-b03",
+      "chapter_physical_page": 8,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "01",
+      "previous": "p022-b04",
+      "current": "p022-b05",
+      "chapter_physical_page": 8,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "01",
+      "previous": "p024-f07",
+      "current": "p024-b02",
+      "chapter_physical_page": 10,
+      "gap_pt": 45.192
+    },
+    {
+      "chapter": "01",
+      "previous": "p024-b04",
+      "current": "p024-b05",
+      "chapter_physical_page": 10,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "01",
+      "previous": "p025-b01",
+      "current": "p025-b02",
+      "chapter_physical_page": 11,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "05",
+      "previous": "p167-f02",
+      "current": "p167-b02",
+      "chapter_physical_page": 4,
+      "gap_pt": 46.032
+    },
+    {
+      "chapter": "05",
+      "previous": "p168-b07",
+      "current": "p168-b08",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "05",
+      "previous": "p175-f09",
+      "current": "p175-b02",
+      "chapter_physical_page": 12,
+      "gap_pt": 46.032
+    },
+    {
+      "chapter": "05",
+      "previous": "p176-b01",
+      "current": "p176-b02",
+      "chapter_physical_page": 13,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "05",
+      "previous": "p179-b04",
+      "current": "p179-b05",
+      "chapter_physical_page": 16,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "05",
+      "previous": "p179-b08",
+      "current": "p179-b09",
+      "chapter_physical_page": 16,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "05",
+      "previous": "p181-f13",
+      "current": "p181-b02",
+      "chapter_physical_page": 18,
+      "gap_pt": 46.032
+    },
+    {
+      "chapter": "05",
+      "previous": "p182-b02",
+      "current": "p182-b03",
+      "chapter_physical_page": 19,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "05",
+      "previous": "p184-b07",
+      "current": "p184-b08",
+      "chapter_physical_page": 22,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p196-b03",
+      "current": "p196-b04",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p196-table01",
+      "current": "p196-b05",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b06",
+      "current": "p206-b07",
+      "chapter_physical_page": 15,
+      "gap_pt": 24.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p206-b08",
+      "current": "p206-b09",
+      "chapter_physical_page": 15,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p212-f07",
+      "current": "p212-b04",
+      "chapter_physical_page": 21,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p215-b04",
+      "current": "p215-b05",
+      "chapter_physical_page": 24,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p223-b03",
+      "current": "p223-b04",
+      "chapter_physical_page": 32,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p224-b02",
+      "current": "p224-b03",
+      "chapter_physical_page": 33,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p224-b06",
+      "current": "p224-b07",
+      "chapter_physical_page": 33,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "06",
+      "previous": "p225-f16",
+      "current": "p225-b02",
+      "chapter_physical_page": 34,
+      "gap_pt": 46.032
+    },
+    {
+      "chapter": "06",
+      "previous": "p227-b05",
+      "current": "p227-b06",
+      "chapter_physical_page": 36,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p241-f02",
+      "current": "p241-b02",
+      "chapter_physical_page": 4,
+      "gap_pt": 46.032
+    },
+    {
+      "chapter": "07",
+      "previous": "p243-b02",
+      "current": "p243-b03",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p244-b01",
+      "current": "p244-b02",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p244-b03",
+      "current": "p244-b04",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p244-b05",
+      "current": "p244-b06",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p244-b07",
+      "current": "p244-b08",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p244-b09",
+      "current": "p244-b10",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p246-b02",
+      "current": "p246-b03",
+      "chapter_physical_page": 9,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p246-b05",
+      "current": "p246-b06",
+      "chapter_physical_page": 9,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p246-b08",
+      "current": "p246-b09",
+      "chapter_physical_page": 9,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p247-f06",
+      "current": "p247-b03",
+      "chapter_physical_page": 10,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p247-b04",
+      "current": "p247-b05",
+      "chapter_physical_page": 10,
+      "gap_pt": 24.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p262-f20",
+      "current": "p262-b02",
+      "chapter_physical_page": 27,
+      "gap_pt": 46.032
+    },
+    {
+      "chapter": "07",
+      "previous": "p264-b01",
+      "current": "p264-b02",
+      "chapter_physical_page": 29,
+      "gap_pt": 24.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p265-f22",
+      "current": "p265-b02",
+      "chapter_physical_page": 30,
+      "gap_pt": 46.032
+    },
+    {
+      "chapter": "07",
+      "previous": "p267-b10",
+      "current": "p267-b11",
+      "chapter_physical_page": 32,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p272-b02",
+      "current": "p272-b03",
+      "chapter_physical_page": 38,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p272-b04",
+      "current": "p272-b05",
+      "chapter_physical_page": 38,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "07",
+      "previous": "p275-b02",
+      "current": "p275-b03",
+      "chapter_physical_page": 41,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p008-b04",
+      "current": "p008-b05",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p008-b06",
+      "current": "p008-b07",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p009-b03",
+      "current": "p009-b04",
+      "chapter_physical_page": 3,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex01",
+      "previous": "p010-b03",
+      "current": "p010-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b06",
+      "current": "p012-b07",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p012-b12",
+      "current": "p012-b13",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p013-b03",
+      "current": "p013-b04",
+      "chapter_physical_page": 3,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b06",
+      "current": "p018-b07",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p018-b09",
+      "current": "p018-b10",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p019-b02",
+      "current": "p019-b03",
+      "chapter_physical_page": 3,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p019-table01",
+      "current": "p019-b04",
+      "chapter_physical_page": 3,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p019-table02",
+      "current": "p019-b05",
+      "chapter_physical_page": 3,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p024-b05",
+      "current": "p024-b06",
+      "chapter_physical_page": 8,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p026-b07",
+      "current": "p026-b08",
+      "chapter_physical_page": 10,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p028-b06",
+      "current": "p028-b07",
+      "chapter_physical_page": 12,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p030-b04",
+      "current": "p030-b05",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p030-b07",
+      "current": "p030-b08",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p038-b04",
+      "current": "p038-b05",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p038-b07",
+      "current": "p038-b08",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p046-b04",
+      "current": "p046-b05",
+      "chapter_physical_page": 10,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p046-b06",
+      "current": "p046-b07",
+      "chapter_physical_page": 10,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b07",
+      "current": "p048-b08",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p049-b07",
+      "current": "p049-b08",
+      "chapter_physical_page": 3,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p049-b09",
+      "current": "p049-b10",
+      "chapter_physical_page": 3,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p049-table01",
+      "current": "p049-b11",
+      "chapter_physical_page": 3,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p050-table01",
+      "current": "p050-b01",
+      "chapter_physical_page": 4,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p050-table02",
+      "current": "p050-b02",
+      "chapter_physical_page": 4,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p050-table03",
+      "current": "p050-b03",
+      "chapter_physical_page": 4,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b09",
+      "current": "p051-b10",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b13",
+      "current": "p051-b14",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p052-b03",
+      "current": "p052-b04",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p053-f01",
+      "current": "p053-b05",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p053-b08",
+      "current": "p053-b09",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b03",
+      "current": "p054-b04",
+      "chapter_physical_page": 8,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b06",
+      "current": "p054-b07",
+      "chapter_physical_page": 8,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p054-b10",
+      "current": "p054-b11",
+      "chapter_physical_page": 8,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p055-b03",
+      "current": "p055-b04",
+      "chapter_physical_page": 9,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p057-f03",
+      "current": "p057-b02",
+      "chapter_physical_page": 11,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p057-table01",
+      "current": "p057-b03",
+      "chapter_physical_page": 11,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p058-b02",
+      "current": "p058-b03",
+      "chapter_physical_page": 12,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p058-b07",
+      "current": "p058-b08",
+      "chapter_physical_page": 12,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p061-b09",
+      "current": "p061-b10",
+      "chapter_physical_page": 15,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p062-b01",
+      "current": "p062-b02",
+      "chapter_physical_page": 16,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b09",
+      "current": "p064-b10",
+      "chapter_physical_page": 2,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p065-b05",
+      "current": "p065-b06",
+      "chapter_physical_page": 3,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p067-b02",
+      "current": "p067-b03",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p067-b04",
+      "current": "p067-b05",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p067-b06",
+      "current": "p067-b07",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p067-b10",
+      "current": "p067-b11",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p068-f03",
+      "current": "p068-b02",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p068-b05",
+      "current": "p068-b06",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p068-b11",
+      "current": "p068-b12",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p069-b03",
+      "current": "p069-b04",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p069-b06",
+      "current": "p069-b07",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p070-b02",
+      "current": "p070-b03",
+      "chapter_physical_page": 8,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p070-b05",
+      "current": "p070-b06",
+      "chapter_physical_page": 8,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p071-b01",
+      "current": "p071-b02",
+      "chapter_physical_page": 9,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p071-b04",
+      "current": "p071-b05",
+      "chapter_physical_page": 9,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p071-table01",
+      "current": "p071-b06",
+      "chapter_physical_page": 9,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b04",
+      "current": "p073-b05",
+      "chapter_physical_page": 12,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p073-b09",
+      "current": "p073-b10",
+      "chapter_physical_page": 12,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p075-b02",
+      "current": "p075-b03",
+      "chapter_physical_page": 14,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p075-b07",
+      "current": "p075-b08",
+      "chapter_physical_page": 14,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p076-b02",
+      "current": "p076-b03",
+      "chapter_physical_page": 15,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p076-b07",
+      "current": "p076-b08",
+      "chapter_physical_page": 15,
+      "gap_pt": 24.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p034-f02",
+      "current": "p034-b02",
+      "chapter_physical_page": 4,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "02",
+      "previous": "p034-b04",
+      "current": "p034-b05",
+      "chapter_physical_page": 4,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p035-b03",
+      "current": "p035-b04",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p036-f03",
+      "current": "p036-b02",
+      "chapter_physical_page": 6,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "02",
+      "previous": "p038-f05",
+      "current": "p038-b02",
+      "chapter_physical_page": 8,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "02",
+      "previous": "p038-b05",
+      "current": "p038-b06",
+      "chapter_physical_page": 8,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p039-f06",
+      "current": "p039-b02",
+      "chapter_physical_page": 9,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "02",
+      "previous": "p041-b01",
+      "current": "p041-b02",
+      "chapter_physical_page": 12,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p041-b04",
+      "current": "p041-b05",
+      "chapter_physical_page": 12,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p043-b03",
+      "current": "p043-b04",
+      "chapter_physical_page": 14,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p043-b07",
+      "current": "p043-b08",
+      "chapter_physical_page": 14,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p044-b02",
+      "current": "p044-b03",
+      "chapter_physical_page": 15,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p047-f20",
+      "current": "p047-b02",
+      "chapter_physical_page": 18,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "02",
+      "previous": "p049-b01",
+      "current": "p049-b02",
+      "chapter_physical_page": 20,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p052-b04",
+      "current": "p052-b05",
+      "chapter_physical_page": 23,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p053-f25",
+      "current": "p053-b02",
+      "chapter_physical_page": 24,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "02",
+      "previous": "p053-b03",
+      "current": "p053-b04",
+      "chapter_physical_page": 24,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p056-b08",
+      "current": "p056-b09",
+      "chapter_physical_page": 27,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p059-b03",
+      "current": "p059-b04",
+      "chapter_physical_page": 30,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p059-b09",
+      "current": "p059-b10",
+      "chapter_physical_page": 30,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "02",
+      "previous": "p060-b08",
+      "current": "p060-b09",
+      "chapter_physical_page": 31,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p066-f02",
+      "current": "p066-b02",
+      "chapter_physical_page": 4,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "03",
+      "previous": "p067-b03",
+      "current": "p067-b04",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p068-b02",
+      "current": "p068-b03",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p068-f05",
+      "current": "p068-b04",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p068-b05",
+      "current": "p068-b06",
+      "chapter_physical_page": 6,
+      "gap_pt": 24.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p073-b03",
+      "current": "p073-b04",
+      "chapter_physical_page": 14,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p073-b05",
+      "current": "p073-b06",
+      "chapter_physical_page": 14,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p074-b04",
+      "current": "p074-b05",
+      "chapter_physical_page": 15,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p077-f13",
+      "current": "p077-b02",
+      "chapter_physical_page": 18,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "03",
+      "previous": "p079-f15",
+      "current": "p079-b02",
+      "chapter_physical_page": 20,
+      "gap_pt": 25.482
+    },
+    {
+      "chapter": "03",
+      "previous": "p080-b02",
+      "current": "p080-b03",
+      "chapter_physical_page": 21,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p080-b05",
+      "current": "p080-b06",
+      "chapter_physical_page": 21,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p080-b09",
+      "current": "p080-b10",
+      "chapter_physical_page": 21,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p081-b04",
+      "current": "p081-b05",
+      "chapter_physical_page": 22,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p082-b03",
+      "current": "p082-b04",
+      "chapter_physical_page": 23,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p085-f18",
+      "current": "p085-b02",
+      "chapter_physical_page": 26,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "03",
+      "previous": "p091-f24",
+      "current": "p091-b04",
+      "chapter_physical_page": 32,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p092-b05",
+      "current": "p092-b06",
+      "chapter_physical_page": 33,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p093-b08",
+      "current": "p093-b09",
+      "chapter_physical_page": 34,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p094-b04",
+      "current": "p094-b05",
+      "chapter_physical_page": 35,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p095-f30",
+      "current": "p095-b02",
+      "chapter_physical_page": 36,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "03",
+      "previous": "p096-b05",
+      "current": "p096-b06",
+      "chapter_physical_page": 37,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p097-b06",
+      "current": "p097-b07",
+      "chapter_physical_page": 38,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p099-f34",
+      "current": "p099-b02",
+      "chapter_physical_page": 40,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "03",
+      "previous": "p100-b05",
+      "current": "p100-b06",
+      "chapter_physical_page": 41,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p101-b01",
+      "current": "p101-b02",
+      "chapter_physical_page": 42,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p105-f39",
+      "current": "p105-b02",
+      "chapter_physical_page": 47,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "03",
+      "previous": "p106-f40",
+      "current": "p106-b03",
+      "chapter_physical_page": 48,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p111-b03",
+      "current": "p111-b04",
+      "chapter_physical_page": 54,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p114-f51",
+      "current": "p114-b02",
+      "chapter_physical_page": 57,
+      "gap_pt": 45.282
+    },
+    {
+      "chapter": "03",
+      "previous": "p115-b03",
+      "current": "p115-b04",
+      "chapter_physical_page": 58,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p121-b01",
+      "current": "p121-b02",
+      "chapter_physical_page": 65,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p123-b04",
+      "current": "p123-b05",
+      "chapter_physical_page": 67,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p124-b02",
+      "current": "p124-b03",
+      "chapter_physical_page": 68,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "03",
+      "previous": "p125-b03",
+      "current": "p125-b04",
+      "chapter_physical_page": 69,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "04",
+      "previous": "p136-b02",
+      "current": "p136-b03",
+      "chapter_physical_page": 4,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "04",
+      "previous": "p136-table01",
+      "current": "p136-b04",
+      "chapter_physical_page": 4,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "04",
+      "previous": "p137-b04",
+      "current": "p137-b05",
+      "chapter_physical_page": 5,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "04",
+      "previous": "p138-b04",
+      "current": "p138-b05",
+      "chapter_physical_page": 6,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "04",
+      "previous": "p139-b04",
+      "current": "p139-b05",
+      "chapter_physical_page": 7,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "04",
+      "previous": "p149-b03",
+      "current": "p149-b04",
+      "chapter_physical_page": 17,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "04",
+      "previous": "p151-b04",
+      "current": "p151-b05",
+      "chapter_physical_page": 19,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "04",
+      "previous": "p152-b02",
+      "current": "p152-b03",
+      "chapter_physical_page": 20,
+      "gap_pt": 18.0
+    },
+    {
+      "chapter": "04",
+      "previous": "p153-b07",
+      "current": "p153-b08",
+      "chapter_physical_page": 21,
+      "gap_pt": 18.0
+    }
+  ],
+  "list_continuation_pairs": [
+    {
+      "chapter": "front",
+      "previous": "p011-b05",
+      "current": "p011-b06",
+      "chapter_physical_page": 11,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p011-b08",
+      "current": "p011-b09",
+      "chapter_physical_page": 11,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "front",
+      "previous": "p011-b10",
+      "current": "p011-b11",
+      "chapter_physical_page": 11,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p216-b07",
+      "current": "p216-b08",
+      "chapter_physical_page": 25,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p216-b09",
+      "current": "p216-b10",
+      "chapter_physical_page": 25,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p217-b01",
+      "current": "p217-b02",
+      "chapter_physical_page": 26,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p217-b03",
+      "current": "p217-b04",
+      "chapter_physical_page": 26,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p220-b07",
+      "current": "p220-b08",
+      "chapter_physical_page": 29,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p220-b09",
+      "current": "p220-b10",
+      "chapter_physical_page": 29,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p223-b07",
+      "current": "p223-b08",
+      "chapter_physical_page": 32,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p223-b09",
+      "current": "p223-b10",
+      "chapter_physical_page": 32,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p228-b14",
+      "current": "p228-b15",
+      "chapter_physical_page": 37,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "06",
+      "previous": "p228-b16",
+      "current": "p228-b17",
+      "chapter_physical_page": 37,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p013-b07",
+      "current": "p013-b08",
+      "chapter_physical_page": 3,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b03",
+      "current": "p015-b04",
+      "chapter_physical_page": 5,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b11",
+      "current": "p015-b12",
+      "chapter_physical_page": 5,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex02",
+      "previous": "p015-b12",
+      "current": "p015-b13",
+      "chapter_physical_page": 5,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex03",
+      "previous": "p023-b10",
+      "current": "p023-b11",
+      "chapter_physical_page": 7,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b15",
+      "current": "p032-b16",
+      "chapter_physical_page": 4,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b16",
+      "current": "p032-b17",
+      "chapter_physical_page": 4,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p032-b18",
+      "current": "p032-b19",
+      "chapter_physical_page": 4,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b14",
+      "current": "p035-b15",
+      "chapter_physical_page": 7,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b16",
+      "current": "p035-b17",
+      "chapter_physical_page": 7,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex04",
+      "previous": "p035-b18",
+      "current": "p035-b19",
+      "chapter_physical_page": 7,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p040-b10",
+      "current": "p040-b11",
+      "chapter_physical_page": 4,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p043-b05",
+      "current": "p043-b06",
+      "chapter_physical_page": 7,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex05",
+      "previous": "p043-b06",
+      "current": "p043-b07",
+      "chapter_physical_page": 7,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b02",
+      "current": "p048-b03",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b04",
+      "current": "p048-b05",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b06",
+      "current": "p048-b07",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b11",
+      "current": "p048-b12",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p048-b13",
+      "current": "p048-b14",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b04",
+      "current": "p051-b05",
+      "chapter_physical_page": 5,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex06",
+      "previous": "p051-b05",
+      "current": "p051-b06",
+      "chapter_physical_page": 5,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b02",
+      "current": "p064-b03",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b04",
+      "current": "p064-b05",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b06",
+      "current": "p064-b07",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b08",
+      "current": "p064-b09",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b13",
+      "current": "p064-b14",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p064-b15",
+      "current": "p064-b16",
+      "chapter_physical_page": 2,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "ex07",
+      "previous": "p075-b04",
+      "current": "p075-b05",
+      "chapter_physical_page": 14,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b04",
+      "current": "p126-b05",
+      "chapter_physical_page": 70,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b05",
+      "current": "p126-b06",
+      "chapter_physical_page": 70,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b07",
+      "current": "p126-b08",
+      "chapter_physical_page": 70,
+      "gap_pt": 6.96
+    },
+    {
+      "chapter": "03",
+      "previous": "p126-b08",
+      "current": "p126-b09",
+      "chapter_physical_page": 70,
+      "gap_pt": 6.96
+    }
+  ]
+}

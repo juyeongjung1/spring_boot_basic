@@ -1014,7 +1014,7 @@ ProductRepository prodRepo;
 
 :::
 
-::: {#p080-b06 .paragraph}
+::: {#p080-b06 .heading}
 
 [依存性の注入方法②]{.s011}
 
@@ -1049,7 +1049,7 @@ public class ProductController {
 
 :::
 
-::: {#p080-b10 .paragraph}
+::: {#p080-b10 .heading}
 
 [依存性の注入方法③]{.s011}
 
@@ -1299,19 +1299,19 @@ public class Sample5 extends HttpServlet {
 
 ::: {#p084-b04 .paragraph}
 
-[② DAO クラスに定義されている]{.s009}[データベース操作用のメソッド]{.s011}[を実行し、データを取得する]{.s009}
+[② DAO クラスに定義されている]{.s009}[データベース操作用のメソッド]{.s011}[を実行し、データを取得する。]{.s009}
 
 :::
 
 ::: {#p084-b05 .paragraph}
 
-[③ 取得したデータを、スコープに格納]{.s009}
+[③ 取得したデータを、スコープに格納。]{.s009}
 
 :::
 
 ::: {#p084-b06 .paragraph}
 
-[④ JSP へ遷移]{.s009}
+[④ JSP へ遷移。]{.s009}
 
 :::
 
@@ -1916,7 +1916,7 @@ public class Sample5 extends HttpServlet {
 
 ::: {#p094-b06 .paragraph}
 
-[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください]{.s031}
+[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください。]{.s031}
 
 :::
 
@@ -2158,7 +2158,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{
 
 ::: {#p098-b02 .paragraph}
 
-[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください]{.s031}
+[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください。]{.s031}
 
 :::
 
@@ -2415,7 +2415,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{
 
 ::: {#p102-b02 .paragraph}
 
-[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください]{.s031}
+[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください。]{.s031}
 
 :::
 
@@ -2446,7 +2446,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{
 
 :::
 
-![スライド](assets/p103-f38.svg){#p103-f38}
+![スライド](assets/p103-f38-canvas-fit.svg){#p103-f38}
 
 ::: {#p103-b02 .paragraph}
 
@@ -3405,7 +3405,7 @@ public String insertProduct2(ProductForm productForm, Model model) {
 
 ::: {#p120-b02 .paragraph}
 
-[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください]{.s031}
+[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください。]{.s031}
 
 :::
 
@@ -3612,7 +3612,7 @@ public String insertProduct2(ProductForm productForm, Model model) {
 
 ::: {#p124-b04 .paragraph}
 
-[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください]{.s031}
+[http://localhost:8080/product/&#32;&#32;]{.s033}[]{.s034}[product の後ろに必ず/を付けてください。]{.s031}
 
 :::
 

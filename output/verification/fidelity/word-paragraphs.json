@@ -1,0 +1,2394 @@
+{
+  "generated_utc": "2026-11-05T05:13:54.822572+00:00",
+  "scope": "コード・表・見出し・固定配置を除くbaseline本文Divに含まれる元Word w:p境界の読み取り監査。原稿編集なし。",
+  "normalization": "Unicode NFKCの後に空白・改行・タブ・U+200B/U+FEFF/U+00ADを除去。元Word本文の連結文字列中で完全一致が1か所だけのDivに限定。",
+  "statistics": {
+    "paragraph_nodes_considered": 1619,
+    "unique_word_text_match": 953,
+    "single_word_paragraph": 930,
+    "no_exact_word_text_match": 426,
+    "ambiguous_word_text_match": 21
+  },
+  "exclusions": {
+    "not_paragraph": 806,
+    "too_short_for_strict_match": 219,
+    "fixed_or_cover": 129
+  },
+  "word_documents": {
+    "JAC0177G-T1-04(260715修正).docx": {
+      "document_xml_sha256": "41d32545246b994936c4008c9e09d83514ff0c4eb4e315c258c4b6f718e35fe4",
+      "nonempty_body_paragraphs_outside_tables_and_textboxes": 1627
+    },
+    "JAC0177G-L1-04(260715修正).docx": {
+      "document_xml_sha256": "5768db77eb7ea5e7f3b78271e083e67aeb0eda5c7e16f67a338739844f946431",
+      "nonempty_body_paragraphs_outside_tables_and_textboxes": 757
+    }
+  },
+  "candidate_count": 23,
+  "boundary_count": 52,
+  "candidates": [
+    {
+      "chapter": "04",
+      "block_id": "p137-b04",
+      "source_page": 137,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "User テーブルを利用しますので、User エンティティも新しく定義する必要があります。\nエンティティの定義については、前の章のProduct とほぼ同じですが、12 行のname 属性を見\nてください。テーブル内の列名は[emp_name]ですが、Java では通常、変数名の単語ごとの区\n切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメル\nケース」を使います。\nよって、テーブル内の列名と変数名に違いが発生したら、明示的にname 属性をつける必要\nがあります。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 3,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 43,
+          "baseline_previous_character_end": 45,
+          "baseline_next_character_start": 46,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "User テーブルを利用しますので、User エンティティも新しく定義する必要があります。",
+          "after_context": "エンティティの定義については、前の章のProduct とほぼ同じですが、12 行のname 属性を見\nてください。テーブル内の列名は[emp_name",
+          "word_left": {
+            "xml_paragraph_index": 2260,
+            "para_id": "60486CA1",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "Userテーブルを利用しますので、Userエンティティも新しく定義する必要があります。",
+            "normalized": "Userテーブルを利用しますので、Userエンティティも新しく定義する必要があります。",
+            "stream_start": 43305,
+            "stream_end": 43348
+          },
+          "word_right": {
+            "xml_paragraph_index": 2261,
+            "para_id": "3435E07A",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "エンティティの定義については、前の章のProductとほぼ同じですが、12行のname属性を見てください。テーブル内の列名は[emp_name]ですが、Javaでは通常、変数名の単語ごとの区切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメルケース」を使います。",
+            "normalized": "エンティティの定義については、前の章のProductとほぼ同じですが、12行のname属性を見てください。テーブル内の列名は[emp_name]ですが、Javaでは通常、変数名の単語ごとの区切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメルケース」を使います。",
+            "stream_start": 43348,
+            "stream_end": 43499
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 194,
+          "baseline_previous_character_end": 204,
+          "baseline_next_character_start": 205,
+          "baseline_line_before": 5,
+          "baseline_line_after": 6,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "a では通常、変数名の単語ごとの区\n切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメル\nケース」を使います。",
+          "after_context": "よって、テーブル内の列名と変数名に違いが発生したら、明示的にname 属性をつける必要\nがあります。",
+          "word_left": {
+            "xml_paragraph_index": 2261,
+            "para_id": "3435E07A",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "エンティティの定義については、前の章のProductとほぼ同じですが、12行のname属性を見てください。テーブル内の列名は[emp_name]ですが、Javaでは通常、変数名の単語ごとの区切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメルケース」を使います。",
+            "normalized": "エンティティの定義については、前の章のProductとほぼ同じですが、12行のname属性を見てください。テーブル内の列名は[emp_name]ですが、Javaでは通常、変数名の単語ごとの区切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメルケース」を使います。",
+            "stream_start": 43348,
+            "stream_end": 43499
+          },
+          "word_right": {
+            "xml_paragraph_index": 2262,
+            "para_id": "095727F0",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "よって、テーブル内の列名と変数名に違いが発生したら、明示的にname属性をつける必要があります。",
+            "normalized": "よって、テーブル内の列名と変数名に違いが発生したら、明示的にname属性をつける必要があります。",
+            "stream_start": 43499,
+            "stream_end": 43547
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "block_id": "p138-b08",
+      "source_page": 138,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "これから、データベースとやり取りをする予定ですので、user テーブルを操作できるように、\nUserRepository の依存性の注入をしました。\nlocalhost:8080/ をブラウザに入力すると、ログイン画面へ遷移します。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 71,
+          "baseline_previous_character_end": 74,
+          "baseline_next_character_start": 75,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "これから、データベースとやり取りをする予定ですので、user テーブルを操作できるように、\nUserRepository の依存性の注入をしました。",
+          "after_context": "localhost:8080/ をブラウザに入力すると、ログイン画面へ遷移します。",
+          "word_left": {
+            "xml_paragraph_index": 2312,
+            "para_id": "5A9F46D6",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "これから、データベースとやり取りをする予定ですので、userテーブルを操作できるように、UserRepositoryの依存性の注入をしました。",
+            "normalized": "これから、データベースとやり取りをする予定ですので、userテーブルを操作できるように、UserRepositoryの依存性の注入をしました。",
+            "stream_start": 43795,
+            "stream_end": 43866
+          },
+          "word_right": {
+            "xml_paragraph_index": 2313,
+            "para_id": "07E88FFA",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "localhost:8080/ をブラウザに入力すると、ログイン画面へ遷移します。",
+            "normalized": "localhost:8080/をブラウザに入力すると、ログイン画面へ遷移します。",
+            "stream_start": 43866,
+            "stream_end": 43906
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "block_id": "p139-b08",
+      "source_page": 139,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "login_input.html で送信した社員ID とパスワードが正しいかどうか判定するために、empId と\npassword のAnd 検索メソッドを定義します。\n主キー検索を含むため、1 行しか取得できないメソッドです。よって、戻り値はエンティティ名の\nUser にします。\n引数として、empId とpassword を入れるように定義します。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 3,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 78,
+          "baseline_previous_character_end": 84,
+          "baseline_next_character_start": 85,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "ut.html で送信した社員ID とパスワードが正しいかどうか判定するために、empId と\npassword のAnd 検索メソッドを定義します。",
+          "after_context": "主キー検索を含むため、1 行しか取得できないメソッドです。よって、戻り値はエンティティ名の\nUser にします。\n引数として、empId とpassw",
+          "word_left": {
+            "xml_paragraph_index": 2343,
+            "para_id": "1D3BF49C",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "login_input.htmlで送信した社員IDとパスワードが正しいかどうか判定するために、empIdとpasswordのAnd検索メソッドを定義します。",
+            "normalized": "login_input.htmlで送信した社員IDとパスワードが正しいかどうか判定するために、empIdとpasswordのAnd検索メソッドを定義します。",
+            "stream_start": 44024,
+            "stream_end": 44102
+          },
+          "word_right": {
+            "xml_paragraph_index": 2344,
+            "para_id": "733E0A4E",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "主キー検索を含むため、1行しか取得できないメソッドです。よって、戻り値はエンティティ名のUserにします。",
+            "normalized": "主キー検索を含むため、1行しか取得できないメソッドです。よって、戻り値はエンティティ名のUserにします。",
+            "stream_start": 44102,
+            "stream_end": 44155
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 131,
+          "baseline_previous_character_end": 141,
+          "baseline_next_character_start": 142,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "のAnd 検索メソッドを定義します。\n主キー検索を含むため、1 行しか取得できないメソッドです。よって、戻り値はエンティティ名の\nUser にします。",
+          "after_context": "引数として、empId とpassword を入れるように定義します。",
+          "word_left": {
+            "xml_paragraph_index": 2344,
+            "para_id": "733E0A4E",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "主キー検索を含むため、1行しか取得できないメソッドです。よって、戻り値はエンティティ名のUserにします。",
+            "normalized": "主キー検索を含むため、1行しか取得できないメソッドです。よって、戻り値はエンティティ名のUserにします。",
+            "stream_start": 44102,
+            "stream_end": 44155
+          },
+          "word_right": {
+            "xml_paragraph_index": 2345,
+            "para_id": "53897FD8",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "引数として、empIdとpasswordを入れるように定義します。",
+            "normalized": "引数として、empIdとpasswordを入れるように定義します。",
+            "stream_start": 44155,
+            "stream_end": 44188
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "block_id": "p140-b04",
+      "source_page": 140,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "・3 行目：\nUserRepository に予め定義しておいたメソッドを実装しました。login_input.html からのリクエ\nストパラメータは、userForm 内に自動格納されているため、getメソッドで取得し、引数に入れま\nした。検索結果は、最大1 件ですので、User エンティティで受け取ります。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 5,
+          "baseline_previous_character_end": 6,
+          "baseline_next_character_start": 7,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "・3 行目：",
+          "after_context": "UserRepository に予め定義しておいたメソッドを実装しました。login_input.html からのリクエ\nストパラメータは、userF",
+          "word_left": {
+            "xml_paragraph_index": 2360,
+            "para_id": "787E0D43",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "・3行目：",
+            "normalized": "・3行目:",
+            "stream_start": 44208,
+            "stream_end": 44213
+          },
+          "word_right": {
+            "xml_paragraph_index": 2361,
+            "para_id": "422AE97E",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "UserRepositoryに予め定義しておいたメソッドを実装しました。login_input.htmlからのリクエストパラメータは、userForm内に自動格納されているため、getメソッドで取得し、引数に入れました。検索結果は、最大1件ですので、Userエンティティで受け取ります。",
+            "normalized": "UserRepositoryに予め定義しておいたメソッドを実装しました。login_input.htmlからのリクエストパラメータは、userForm内に自動格納されているため、getメソッドで取得し、引数に入れました。検索結果は、最大1件ですので、Userエンティティで受け取ります。",
+            "stream_start": 44213,
+            "stream_end": 44356
+          },
+          "classification": "説明ラベルと説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "block_id": "p140-b05",
+      "source_page": 140,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "・5 行のif 文:\n社員ID とパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何\nも取得できないので、user 変数は、null のままになります。\nこのif 文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促\nすコードです。\n5 行のif 文内でreturn されると、即遷移するため、7 行以降が実行されることはありません。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 3,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 8,
+          "baseline_previous_character_end": 10,
+          "baseline_next_character_start": 11,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "・5 行のif 文:",
+          "after_context": "社員ID とパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何\nも取得できないので、user 変数は、null のままになりま",
+          "word_left": {
+            "xml_paragraph_index": 2363,
+            "para_id": "3E166B7A",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "・5行のif文:",
+            "normalized": "・5行のif文:",
+            "stream_start": 44356,
+            "stream_end": 44364
+          },
+          "word_right": {
+            "xml_paragraph_index": 2364,
+            "para_id": "51C23CA3",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "社員IDとパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何も取得できないので、user変数は、nullのままになります。\nこのif文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促すコードです。",
+            "normalized": "社員IDとパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何も取得できないので、user変数は、nullのままになります。このif文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促すコードです。",
+            "stream_start": 44364,
+            "stream_end": 44487
+          },
+          "classification": "説明ラベルと説明文",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 131,
+          "baseline_previous_character_end": 141,
+          "baseline_next_character_start": 142,
+          "baseline_line_before": 5,
+          "baseline_line_after": 6,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "ser 変数は、null のままになります。\nこのif 文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促\nすコードです。",
+          "after_context": "5 行のif 文内でreturn されると、即遷移するため、7 行以降が実行されることはありません。",
+          "word_left": {
+            "xml_paragraph_index": 2364,
+            "para_id": "51C23CA3",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "社員IDとパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何も取得できないので、user変数は、nullのままになります。\nこのif文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促すコードです。",
+            "normalized": "社員IDとパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何も取得できないので、user変数は、nullのままになります。このif文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促すコードです。",
+            "stream_start": 44364,
+            "stream_end": 44487
+          },
+          "word_right": {
+            "xml_paragraph_index": 2365,
+            "para_id": "3409EBF7",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "5行のif文内でreturnされると、即遷移するため、7行以降が実行されることはありません。",
+            "normalized": "5行のif文内でreturnされると、即遷移するため、7行以降が実行されることはありません。",
+            "stream_start": 44487,
+            "stream_end": 44533
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "block_id": "p140-b06",
+      "source_page": 140,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "・8 行目 return “main_page”：\nデータを取得できたなら、ログイン成功ですので、main_page.html へ遷移させます。\nmain_page.html は、下記のように、簡単なhtml ファイルです。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 3,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 22,
+          "baseline_previous_character_end": 25,
+          "baseline_next_character_start": 26,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "・8 行目 return “main_page”：",
+          "after_context": "データを取得できたなら、ログイン成功ですので、main_page.html へ遷移させます。\nmain_page.html は、下記のように、簡単なh",
+          "word_left": {
+            "xml_paragraph_index": 2367,
+            "para_id": "50E8A32E",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "・8行目 return “main_page”：",
+            "normalized": "・8行目return“main_page”:",
+            "stream_start": 44533,
+            "stream_end": 44555
+          },
+          "word_right": {
+            "xml_paragraph_index": 2368,
+            "para_id": "26504E95",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "データを取得できたなら、ログイン成功ですので、main_page.htmlへ遷移させます。",
+            "normalized": "データを取得できたなら、ログイン成功ですので、main_page.htmlへ遷移させます。",
+            "stream_start": 44555,
+            "stream_end": 44600
+          },
+          "classification": "説明ラベルと説明文",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 67,
+          "baseline_previous_character_end": 72,
+          "baseline_next_character_start": 73,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "・8 行目 return “main_page”：\nデータを取得できたなら、ログイン成功ですので、main_page.html へ遷移させます。",
+          "after_context": "main_page.html は、下記のように、簡単なhtml ファイルです。",
+          "word_left": {
+            "xml_paragraph_index": 2368,
+            "para_id": "26504E95",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "データを取得できたなら、ログイン成功ですので、main_page.htmlへ遷移させます。",
+            "normalized": "データを取得できたなら、ログイン成功ですので、main_page.htmlへ遷移させます。",
+            "stream_start": 44555,
+            "stream_end": 44600
+          },
+          "word_right": {
+            "xml_paragraph_index": 2369,
+            "para_id": "283C4FE3",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "main_page.htmlは、下記のように、簡単なhtmlファイルです。",
+            "normalized": "main_page.htmlは、下記のように、簡単なhtmlファイルです。",
+            "stream_start": 44600,
+            "stream_end": 44637
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "block_id": "p199-b02",
+      "source_page": 199,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "では、テーブルとの関係性を、Java の世界にエンティティとして、忠実に再現しましょう。\nまずは、category テーブルに対応するエンティティ Category を作成します。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 43,
+          "baseline_previous_character_end": 44,
+          "baseline_next_character_start": 45,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "では、テーブルとの関係性を、Java の世界にエンティティとして、忠実に再現しましょう。",
+          "after_context": "まずは、category テーブルに対応するエンティティ Category を作成します。",
+          "word_left": {
+            "xml_paragraph_index": 3430,
+            "para_id": "145B488B",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "では、テーブルとの関係性を、Javaの世界にエンティティとして、忠実に再現しましょう。",
+            "normalized": "では、テーブルとの関係性を、Javaの世界にエンティティとして、忠実に再現しましょう。",
+            "stream_start": 58364,
+            "stream_end": 58407
+          },
+          "word_right": {
+            "xml_paragraph_index": 3431,
+            "para_id": "25C5AB24",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "まずは、category テーブルに対応するエンティティ Category を作成します。",
+            "normalized": "まずは、categoryテーブルに対応するエンティティCategoryを作成します。",
+            "stream_start": 58407,
+            "stream_end": 58449
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "block_id": "p228-b03",
+      "source_page": 228,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "JPQL を使用した場合も同じように、検索条件を引数で渡してデータを検索できます。違いと\nしては、@Query を使用してWHERE 文を直接記述する点です。\n以下は、指定された主キー（id）に一致する商品データを検索するJPQL の例です。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 75,
+          "baseline_previous_character_end": 79,
+          "baseline_next_character_start": 80,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": " を使用した場合も同じように、検索条件を引数で渡してデータを検索できます。違いと\nしては、@Query を使用してWHERE 文を直接記述する点です。",
+          "after_context": "以下は、指定された主キー（id）に一致する商品データを検索するJPQL の例です。",
+          "word_left": {
+            "xml_paragraph_index": 3974,
+            "para_id": "574AF5BC",
+            "style_id": "a7",
+            "outline_level": null,
+            "spacing": {},
+            "text": "JPQLを使用した場合も同じように、検索条件を引数で渡してデータを検索できます。違いとしては、@Queryを使用してWHERE文を直接記述する点です。",
+            "normalized": "JPQLを使用した場合も同じように、検索条件を引数で渡してデータを検索できます。違いとしては、@Queryを使用してWHERE文を直接記述する点です。",
+            "stream_start": 67558,
+            "stream_end": 67633
+          },
+          "word_right": {
+            "xml_paragraph_index": 3975,
+            "para_id": "00D2C8D9",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "以下は、指定された主キー（id）に一致する商品データを検索するJPQLの例です。",
+            "normalized": "以下は、指定された主キー(id)に一致する商品データを検索するJPQLの例です。",
+            "stream_start": 67633,
+            "stream_end": 67673
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "block_id": "p253-b02",
+      "source_page": 253,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "背景色のクラスは、テキストの色クラスと同じ命名ルールです。text-がbg-に変わるだけです。\n薄い色は、「-subtle」を追記することで表現できます。（Bootstrap 5.3 以降の機能）",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 47,
+          "baseline_previous_character_end": 47,
+          "baseline_next_character_start": 48,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "背景色のクラスは、テキストの色クラスと同じ命名ルールです。text-がbg-に変わるだけです。",
+          "after_context": "薄い色は、「-subtle」を追記することで表現できます。（Bootstrap 5.3 以降の機能）",
+          "word_left": {
+            "xml_paragraph_index": 4406,
+            "para_id": "2C12FA05",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "背景色のクラスは、テキストの色クラスと同じ命名ルールです。text-がbg-に変わるだけです。",
+            "normalized": "背景色のクラスは、テキストの色クラスと同じ命名ルールです。text-がbg-に変わるだけです。",
+            "stream_start": 72158,
+            "stream_end": 72205
+          },
+          "word_right": {
+            "xml_paragraph_index": 4407,
+            "para_id": "18186DDC",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "薄い色は、「-subtle」を追記することで表現できます。（Bootstrap 5.3以降の機能）",
+            "normalized": "薄い色は、「-subtle」を追記することで表現できます。(Bootstrap5.3以降の機能)",
+            "stream_start": 72205,
+            "stream_end": 72253
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "block_id": "p254-b06",
+      "source_page": 254,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "※btn-link は見た目がリンクのようになります。\n※<button>だけでなく、<input>や<a>タグにも適用可能です。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 26,
+          "baseline_previous_character_end": 27,
+          "baseline_next_character_start": 28,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "※btn-link は見た目がリンクのようになります。",
+          "after_context": "※<button>だけでなく、<input>や<a>タグにも適用可能です。",
+          "word_left": {
+            "xml_paragraph_index": 4450,
+            "para_id": "27E33884",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "※btn-linkは見た目がリンクのようになります。",
+            "normalized": "※btn-linkは見た目がリンクのようになります。",
+            "stream_start": 72411,
+            "stream_end": 72437
+          },
+          "word_right": {
+            "xml_paragraph_index": 4451,
+            "para_id": "165E934D",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "※<button>だけでなく、<input>や<a>タグにも適用可能です。",
+            "normalized": "※<button>だけでなく、<input>や<a>タグにも適用可能です。",
+            "stream_start": 72437,
+            "stream_end": 72474
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "block_id": "p266-b11",
+      "source_page": 266,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "・1 行目 <div class=\"container\">\n今回のサンプルでは、外側を container でコンテナを作っています。画面の中央にコンテン\nツが配置されます。もし、container-fluid にすると、横幅いっぱいに変わります。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 26,
+          "baseline_previous_character_end": 29,
+          "baseline_next_character_start": 30,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "・1 行目 <div class=\"container\">",
+          "after_context": "今回のサンプルでは、外側を container でコンテナを作っています。画面の中央にコンテン\nツが配置されます。もし、container-fluid",
+          "word_left": {
+            "xml_paragraph_index": 4683,
+            "para_id": "1514A068",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "・1行目　<div class=\"container\">",
+            "normalized": "・1行目<divclass=\"container\">",
+            "stream_start": 75820,
+            "stream_end": 75846
+          },
+          "word_right": {
+            "xml_paragraph_index": 4684,
+            "para_id": "535A7B04",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "今回のサンプルでは、外側をcontainerでコンテナを作っています。画面の中央にコンテンツが配置されます。もし、container-fluidにすると、横幅いっぱいに変わります。",
+            "normalized": "今回のサンプルでは、外側をcontainerでコンテナを作っています。画面の中央にコンテンツが配置されます。もし、container-fluidにすると、横幅いっぱいに変わります。",
+            "stream_start": 75846,
+            "stream_end": 75936
+          },
+          "classification": "説明ラベルと説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "block_id": "p267-b01",
+      "source_page": 267,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "・2 行目 <div class=\"row\">\n コンテナの中に、row をclass 属性として持つdiv 要素を入れます。後述のカラムを配置する\nためにも、必ずrow が必要です。まるでtable 要素に、<tr>がないと、<td>も書けないのと同じ\nです。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 20,
+          "baseline_previous_character_end": 23,
+          "baseline_next_character_start": 25,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n ",
+          "at_existing_line_break": true,
+          "before_context": "・2 行目 <div class=\"row\">",
+          "after_context": "コンテナの中に、row をclass 属性として持つdiv 要素を入れます。後述のカラムを配置する\nためにも、必ずrow が必要です。まるでtable",
+          "word_left": {
+            "xml_paragraph_index": 4687,
+            "para_id": "003919F3",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "・2行目　<div class=\"row\">",
+            "normalized": "・2行目<divclass=\"row\">",
+            "stream_start": 75936,
+            "stream_end": 75956
+          },
+          "word_right": {
+            "xml_paragraph_index": 4688,
+            "para_id": "29A52E1C",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "　コンテナの中に、rowをclass属性として持つdiv要素を入れます。後述のカラムを配置するためにも、必ずrowが必要です。まるでtable要素に、<tr>がないと、<td>も書けないのと同じです。",
+            "normalized": "コンテナの中に、rowをclass属性として持つdiv要素を入れます。後述のカラムを配置するためにも、必ずrowが必要です。まるでtable要素に、<tr>がないと、<td>も書けないのと同じです。",
+            "stream_start": 75956,
+            "stream_end": 76055
+          },
+          "classification": "説明ラベルと説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "block_id": "p271-b03",
+      "source_page": 271,
+      "word_file": "JAC0177G-T1-04(260715修正).docx",
+      "baseline_text": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。\n※より詳しい構文は、 https://getbootstrap.jp/docs/5.3/layout/columns/ を参照",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 42,
+          "baseline_previous_character_end": 42,
+          "baseline_next_character_start": 43,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。",
+          "after_context": "※より詳しい構文は、 https://getbootstrap.jp/docs/5.3/layout/columns/ を参照",
+          "word_left": {
+            "xml_paragraph_index": 4775,
+            "para_id": "5716AEDA",
+            "style_id": "a7",
+            "outline_level": null,
+            "spacing": {},
+            "text": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。",
+            "normalized": "※画面の横幅を調整しても、同じ割合で要素のサイズが調整されることを確認してください。",
+            "stream_start": 77326,
+            "stream_end": 77368
+          },
+          "word_right": {
+            "xml_paragraph_index": 4776,
+            "para_id": "5B28869E",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "※より詳しい構文は、　https://getbootstrap.jp/docs/5.3/layout/columns/ を参照",
+            "normalized": "※より詳しい構文は、https://getbootstrap.jp/docs/5.3/layout/columns/を参照",
+            "stream_start": 77368,
+            "stream_end": 77429
+          },
+          "classification": "通常の説明文",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "block_id": "p009-b02",
+      "source_page": 9,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "問題1:フレームワークを使用する利点は何ですか？\na) システム開発の時間と労力が増える。\nb) 特定の種類のシステムをより速く、効率的に作ることができる。\nc) オブジェクト指向プログラミングを学ぶ必要がない。\nd) エラーメッセージが一切表示されなくなる。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 5,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 24,
+          "baseline_previous_character_end": 24,
+          "baseline_next_character_start": 25,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題1:フレームワークを使用する利点は何ですか？",
+          "after_context": "a) システム開発の時間と労力が増える。\nb) 特定の種類のシステムをより速く、効率的に作ることができる。\nc) オブジェクト指向プログラミングを学ぶ",
+          "word_left": {
+            "xml_paragraph_index": 93,
+            "para_id": "3BBA94B0",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "問題1:フレームワークを使用する利点は何ですか？",
+            "normalized": "問題1:フレームワークを使用する利点は何ですか?",
+            "stream_start": 1227,
+            "stream_end": 1251
+          },
+          "word_right": {
+            "xml_paragraph_index": 94,
+            "para_id": "7FE6F648",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) システム開発の時間と労力が増える。",
+            "normalized": "a)システム開発の時間と労力が増える。",
+            "stream_start": 1251,
+            "stream_end": 1270
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 43,
+          "baseline_previous_character_end": 45,
+          "baseline_next_character_start": 46,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題1:フレームワークを使用する利点は何ですか？\na) システム開発の時間と労力が増える。",
+          "after_context": "b) 特定の種類のシステムをより速く、効率的に作ることができる。\nc) オブジェクト指向プログラミングを学ぶ必要がない。\nd) エラーメッセージが一切",
+          "word_left": {
+            "xml_paragraph_index": 94,
+            "para_id": "7FE6F648",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) システム開発の時間と労力が増える。",
+            "normalized": "a)システム開発の時間と労力が増える。",
+            "stream_start": 1251,
+            "stream_end": 1270
+          },
+          "word_right": {
+            "xml_paragraph_index": 95,
+            "para_id": "5A8319E5",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) 特定の種類のシステムをより速く、効率的に作ることができる。",
+            "normalized": "b)特定の種類のシステムをより速く、効率的に作ることができる。",
+            "stream_start": 1270,
+            "stream_end": 1301
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 74,
+          "baseline_previous_character_end": 78,
+          "baseline_next_character_start": 79,
+          "baseline_line_before": 3,
+          "baseline_line_after": 4,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": ":フレームワークを使用する利点は何ですか？\na) システム開発の時間と労力が増える。\nb) 特定の種類のシステムをより速く、効率的に作ることができる。",
+          "after_context": "c) オブジェクト指向プログラミングを学ぶ必要がない。\nd) エラーメッセージが一切表示されなくなる。",
+          "word_left": {
+            "xml_paragraph_index": 95,
+            "para_id": "5A8319E5",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) 特定の種類のシステムをより速く、効率的に作ることができる。",
+            "normalized": "b)特定の種類のシステムをより速く、効率的に作ることができる。",
+            "stream_start": 1270,
+            "stream_end": 1301
+          },
+          "word_right": {
+            "xml_paragraph_index": 96,
+            "para_id": "72855C33",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) オブジェクト指向プログラミングを学ぶ必要がない。",
+            "normalized": "c)オブジェクト指向プログラミングを学ぶ必要がない。",
+            "stream_start": 1301,
+            "stream_end": 1327
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 100,
+          "baseline_previous_character_end": 106,
+          "baseline_next_character_start": 107,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "ム開発の時間と労力が増える。\nb) 特定の種類のシステムをより速く、効率的に作ることができる。\nc) オブジェクト指向プログラミングを学ぶ必要がない。",
+          "after_context": "d) エラーメッセージが一切表示されなくなる。",
+          "word_left": {
+            "xml_paragraph_index": 96,
+            "para_id": "72855C33",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) オブジェクト指向プログラミングを学ぶ必要がない。",
+            "normalized": "c)オブジェクト指向プログラミングを学ぶ必要がない。",
+            "stream_start": 1301,
+            "stream_end": 1327
+          },
+          "word_right": {
+            "xml_paragraph_index": 97,
+            "para_id": "25140757",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "d) エラーメッセージが一切表示されなくなる。",
+            "normalized": "d)エラーメッセージが一切表示されなくなる。",
+            "stream_start": 1327,
+            "stream_end": 1349
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "block_id": "p009-b03",
+      "source_page": 9,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "問題2:フレームワークを使う際の注意点はどれですか？\na) フレームワークは自由度が高く、ルールに従う必要がない。\nb) エラーメッセージは無視しても良い。\nc) フレームワークに定められたルールや方法に従う必要がある。\nd) データベースに接続する際はフレームワークを使わない方が良い。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 5,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 26,
+          "baseline_previous_character_end": 26,
+          "baseline_next_character_start": 27,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題2:フレームワークを使う際の注意点はどれですか？",
+          "after_context": "a) フレームワークは自由度が高く、ルールに従う必要がない。\nb) エラーメッセージは無視しても良い。\nc) フレームワークに定められたルールや方法に",
+          "word_left": {
+            "xml_paragraph_index": 99,
+            "para_id": "0461A330",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "問題2:フレームワークを使う際の注意点はどれですか？",
+            "normalized": "問題2:フレームワークを使う際の注意点はどれですか?",
+            "stream_start": 1349,
+            "stream_end": 1375
+          },
+          "word_right": {
+            "xml_paragraph_index": 100,
+            "para_id": "30BE1612",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) フレームワークは自由度が高く、ルールに従う必要がない。",
+            "normalized": "a)フレームワークは自由度が高く、ルールに従う必要がない。",
+            "stream_start": 1375,
+            "stream_end": 1404
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 55,
+          "baseline_previous_character_end": 57,
+          "baseline_next_character_start": 58,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題2:フレームワークを使う際の注意点はどれですか？\na) フレームワークは自由度が高く、ルールに従う必要がない。",
+          "after_context": "b) エラーメッセージは無視しても良い。\nc) フレームワークに定められたルールや方法に従う必要がある。\nd) データベースに接続する際はフレームワー",
+          "word_left": {
+            "xml_paragraph_index": 100,
+            "para_id": "30BE1612",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) フレームワークは自由度が高く、ルールに従う必要がない。",
+            "normalized": "a)フレームワークは自由度が高く、ルールに従う必要がない。",
+            "stream_start": 1375,
+            "stream_end": 1404
+          },
+          "word_right": {
+            "xml_paragraph_index": 101,
+            "para_id": "07617BC5",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) エラーメッセージは無視しても良い。",
+            "normalized": "b)エラーメッセージは無視しても良い。",
+            "stream_start": 1404,
+            "stream_end": 1423
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 74,
+          "baseline_previous_character_end": 78,
+          "baseline_next_character_start": 79,
+          "baseline_line_before": 3,
+          "baseline_line_after": 4,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": ":フレームワークを使う際の注意点はどれですか？\na) フレームワークは自由度が高く、ルールに従う必要がない。\nb) エラーメッセージは無視しても良い。",
+          "after_context": "c) フレームワークに定められたルールや方法に従う必要がある。\nd) データベースに接続する際はフレームワークを使わない方が良い。",
+          "word_left": {
+            "xml_paragraph_index": 101,
+            "para_id": "07617BC5",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) エラーメッセージは無視しても良い。",
+            "normalized": "b)エラーメッセージは無視しても良い。",
+            "stream_start": 1404,
+            "stream_end": 1423
+          },
+          "word_right": {
+            "xml_paragraph_index": 102,
+            "para_id": "41D5F621",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) フレームワークに定められたルールや方法に従う必要がある。",
+            "normalized": "c)フレームワークに定められたルールや方法に従う必要がある。",
+            "stream_start": 1423,
+            "stream_end": 1453
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 104,
+          "baseline_previous_character_end": 110,
+          "baseline_next_character_start": 111,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "ークは自由度が高く、ルールに従う必要がない。\nb) エラーメッセージは無視しても良い。\nc) フレームワークに定められたルールや方法に従う必要がある。",
+          "after_context": "d) データベースに接続する際はフレームワークを使わない方が良い。",
+          "word_left": {
+            "xml_paragraph_index": 102,
+            "para_id": "41D5F621",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) フレームワークに定められたルールや方法に従う必要がある。",
+            "normalized": "c)フレームワークに定められたルールや方法に従う必要がある。",
+            "stream_start": 1423,
+            "stream_end": 1453
+          },
+          "word_right": {
+            "xml_paragraph_index": 103,
+            "para_id": "0376CF10",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "d) データベースに接続する際はフレームワークを使わない方が良い。",
+            "normalized": "d)データベースに接続する際はフレームワークを使わない方が良い。",
+            "stream_start": 1453,
+            "stream_end": 1485
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "block_id": "p009-b05",
+      "source_page": 9,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "問題1: Spring Framework の特徴はどれですか？\na) DI（依存性注入）を使用しない。\nb) MVC（Model-View-Controller）モデルをサポートしない。\nc) 他のフレームワークやライブラリと組み合わせて利用することが可能。\nd) Struts2 や、Seasar2 などのフレームワークと競合している。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 5,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 29,
+          "baseline_previous_character_end": 32,
+          "baseline_next_character_start": 33,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題1: Spring Framework の特徴はどれですか？",
+          "after_context": "a) DI（依存性注入）を使用しない。\nb) MVC（Model-View-Controller）モデルをサポートしない。\nc) 他のフレームワークや",
+          "word_left": {
+            "xml_paragraph_index": 108,
+            "para_id": "7BE77B32",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "問題1: Spring Frameworkの特徴はどれですか？",
+            "normalized": "問題1:SpringFrameworkの特徴はどれですか?",
+            "stream_start": 1500,
+            "stream_end": 1529
+          },
+          "word_right": {
+            "xml_paragraph_index": 109,
+            "para_id": "7A6E207A",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) DI（依存性注入）を使用しない。",
+            "normalized": "a)DI(依存性注入)を使用しない。",
+            "stream_start": 1529,
+            "stream_end": 1547
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 47,
+          "baseline_previous_character_end": 52,
+          "baseline_next_character_start": 53,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題1: Spring Framework の特徴はどれですか？\na) DI（依存性注入）を使用しない。",
+          "after_context": "b) MVC（Model-View-Controller）モデルをサポートしない。\nc) 他のフレームワークやライブラリと組み合わせて利用することが可",
+          "word_left": {
+            "xml_paragraph_index": 109,
+            "para_id": "7A6E207A",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) DI（依存性注入）を使用しない。",
+            "normalized": "a)DI(依存性注入)を使用しない。",
+            "stream_start": 1529,
+            "stream_end": 1547
+          },
+          "word_right": {
+            "xml_paragraph_index": 110,
+            "para_id": "6DE0D723",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) MVC（Model-View-Controller）モデルをサポートしない。",
+            "normalized": "b)MVC(Model-View-Controller)モデルをサポートしない。",
+            "stream_start": 1547,
+            "stream_end": 1587
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 87,
+          "baseline_previous_character_end": 94,
+          "baseline_next_character_start": 95,
+          "baseline_line_before": 3,
+          "baseline_line_after": 4,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "rk の特徴はどれですか？\na) DI（依存性注入）を使用しない。\nb) MVC（Model-View-Controller）モデルをサポートしない。",
+          "after_context": "c) 他のフレームワークやライブラリと組み合わせて利用することが可能。\nd) Struts2 や、Seasar2 などのフレームワークと競合している。",
+          "word_left": {
+            "xml_paragraph_index": 110,
+            "para_id": "6DE0D723",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) MVC（Model-View-Controller）モデルをサポートしない。",
+            "normalized": "b)MVC(Model-View-Controller)モデルをサポートしない。",
+            "stream_start": 1547,
+            "stream_end": 1587
+          },
+          "word_right": {
+            "xml_paragraph_index": 111,
+            "para_id": "65AA4C6E",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) 他のフレームワークやライブラリと組み合わせて利用することが可能。",
+            "normalized": "c)他のフレームワークやライブラリと組み合わせて利用することが可能。",
+            "stream_start": 1587,
+            "stream_end": 1621
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 121,
+          "baseline_previous_character_end": 130,
+          "baseline_next_character_start": 131,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": " MVC（Model-View-Controller）モデルをサポートしない。\nc) 他のフレームワークやライブラリと組み合わせて利用することが可能。",
+          "after_context": "d) Struts2 や、Seasar2 などのフレームワークと競合している。",
+          "word_left": {
+            "xml_paragraph_index": 111,
+            "para_id": "65AA4C6E",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) 他のフレームワークやライブラリと組み合わせて利用することが可能。",
+            "normalized": "c)他のフレームワークやライブラリと組み合わせて利用することが可能。",
+            "stream_start": 1587,
+            "stream_end": 1621
+          },
+          "word_right": {
+            "xml_paragraph_index": 112,
+            "para_id": "1BE9DF77",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "d) Struts2や、Seasar2などのフレームワークと競合している。",
+            "normalized": "d)Struts2や、Seasar2などのフレームワークと競合している。",
+            "stream_start": 1621,
+            "stream_end": 1657
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "block_id": "p009-b06",
+      "source_page": 9,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "問題2: Spring Framework におけるDI（依存性注入）の主な目的は何ですか？\na) オブジェクト間の依存関係をハードコーディングする。\nb) よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。\nc) Java の基本的な構文を変更する。\nd) Web ページのデザインとレイアウトを管理する。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 5,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 43,
+          "baseline_previous_character_end": 46,
+          "baseline_next_character_start": 47,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題2: Spring Framework におけるDI（依存性注入）の主な目的は何ですか？",
+          "after_context": "a) オブジェクト間の依存関係をハードコーディングする。\nb) よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。\nc) Ja",
+          "word_left": {
+            "xml_paragraph_index": 114,
+            "para_id": "3B8024E4",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "問題2: Spring FrameworkにおけるDI（依存性注入）の主な目的は何ですか？",
+            "normalized": "問題2:SpringFrameworkにおけるDI(依存性注入)の主な目的は何ですか?",
+            "stream_start": 1657,
+            "stream_end": 1700
+          },
+          "word_right": {
+            "xml_paragraph_index": 115,
+            "para_id": "3E1407CF",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) オブジェクト間の依存関係をハードコーディングする。",
+            "normalized": "a)オブジェクト間の依存関係をハードコーディングする。",
+            "stream_start": 1700,
+            "stream_end": 1727
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 70,
+          "baseline_previous_character_end": 75,
+          "baseline_next_character_start": 76,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題2: Spring Framework におけるDI（依存性注入）の主な目的は何ですか？\na) オブジェクト間の依存関係をハードコーディングする。",
+          "after_context": "b) よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。\nc) Java の基本的な構文を変更する。\nd) Web ページのデ",
+          "word_left": {
+            "xml_paragraph_index": 115,
+            "para_id": "3E1407CF",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) オブジェクト間の依存関係をハードコーディングする。",
+            "normalized": "a)オブジェクト間の依存関係をハードコーディングする。",
+            "stream_start": 1700,
+            "stream_end": 1727
+          },
+          "word_right": {
+            "xml_paragraph_index": 116,
+            "para_id": "217C66E5",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。",
+            "normalized": "b)よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。",
+            "stream_start": 1727,
+            "stream_end": 1766
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 109,
+          "baseline_previous_character_end": 116,
+          "baseline_next_character_start": 117,
+          "baseline_line_before": 3,
+          "baseline_line_after": 4,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "何ですか？\na) オブジェクト間の依存関係をハードコーディングする。\nb) よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。",
+          "after_context": "c) Java の基本的な構文を変更する。\nd) Web ページのデザインとレイアウトを管理する。",
+          "word_left": {
+            "xml_paragraph_index": 116,
+            "para_id": "217C66E5",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。",
+            "normalized": "b)よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。",
+            "stream_start": 1727,
+            "stream_end": 1766
+          },
+          "word_right": {
+            "xml_paragraph_index": 117,
+            "para_id": "3C8418BD",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) Javaの基本的な構文を変更する。",
+            "normalized": "c)Javaの基本的な構文を変更する。",
+            "stream_start": 1766,
+            "stream_end": 1785
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 128,
+          "baseline_previous_character_end": 138,
+          "baseline_next_character_start": 139,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "ハードコーディングする。\nb) よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利用性を高める。\nc) Java の基本的な構文を変更する。",
+          "after_context": "d) Web ページのデザインとレイアウトを管理する。",
+          "word_left": {
+            "xml_paragraph_index": 117,
+            "para_id": "3C8418BD",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) Javaの基本的な構文を変更する。",
+            "normalized": "c)Javaの基本的な構文を変更する。",
+            "stream_start": 1766,
+            "stream_end": 1785
+          },
+          "word_right": {
+            "xml_paragraph_index": 118,
+            "para_id": "38B53241",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "d) Webページのデザインとレイアウトを管理する。",
+            "normalized": "d)Webページのデザインとレイアウトを管理する。",
+            "stream_start": 1785,
+            "stream_end": 1810
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "block_id": "p010-b02",
+      "source_page": 10,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "問題1:Spring Boot による初期環境構築のメリットは何でしょうか？\na) 設定が全く必要ない。\nb) 設定を自動化して初期環境構築を簡単にする。\nc) 設定がより複雑で細かい。\nd) 開発者がすべての設定を手動で行う必要がある。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 5,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 36,
+          "baseline_previous_character_end": 38,
+          "baseline_next_character_start": 39,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題1:Spring Boot による初期環境構築のメリットは何でしょうか？",
+          "after_context": "a) 設定が全く必要ない。\nb) 設定を自動化して初期環境構築を簡単にする。\nc) 設定がより複雑で細かい。\nd) 開発者がすべての設定を手動で行う必",
+          "word_left": {
+            "xml_paragraph_index": 128,
+            "para_id": "7A2CD5DE",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "問題1:Spring Bootによる初期環境構築のメリットは何でしょうか？",
+            "normalized": "問題1:SpringBootによる初期環境構築のメリットは何でしょうか?",
+            "stream_start": 1822,
+            "stream_end": 1858
+          },
+          "word_right": {
+            "xml_paragraph_index": 129,
+            "para_id": "25158EDA",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) 設定が全く必要ない。",
+            "normalized": "a)設定が全く必要ない。",
+            "stream_start": 1858,
+            "stream_end": 1870
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 48,
+          "baseline_previous_character_end": 52,
+          "baseline_next_character_start": 53,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題1:Spring Boot による初期環境構築のメリットは何でしょうか？\na) 設定が全く必要ない。",
+          "after_context": "b) 設定を自動化して初期環境構築を簡単にする。\nc) 設定がより複雑で細かい。\nd) 開発者がすべての設定を手動で行う必要がある。",
+          "word_left": {
+            "xml_paragraph_index": 129,
+            "para_id": "25158EDA",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) 設定が全く必要ない。",
+            "normalized": "a)設定が全く必要ない。",
+            "stream_start": 1858,
+            "stream_end": 1870
+          },
+          "word_right": {
+            "xml_paragraph_index": 130,
+            "para_id": "4715F592",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) 設定を自動化して初期環境構築を簡単にする。",
+            "normalized": "b)設定を自動化して初期環境構築を簡単にする。",
+            "stream_start": 1870,
+            "stream_end": 1893
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 71,
+          "baseline_previous_character_end": 77,
+          "baseline_next_character_start": 78,
+          "baseline_line_before": 3,
+          "baseline_line_after": 4,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "1:Spring Boot による初期環境構築のメリットは何でしょうか？\na) 設定が全く必要ない。\nb) 設定を自動化して初期環境構築を簡単にする。",
+          "after_context": "c) 設定がより複雑で細かい。\nd) 開発者がすべての設定を手動で行う必要がある。",
+          "word_left": {
+            "xml_paragraph_index": 130,
+            "para_id": "4715F592",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) 設定を自動化して初期環境構築を簡単にする。",
+            "normalized": "b)設定を自動化して初期環境構築を簡単にする。",
+            "stream_start": 1870,
+            "stream_end": 1893
+          },
+          "word_right": {
+            "xml_paragraph_index": 131,
+            "para_id": "307ABA9B",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) 設定がより複雑で細かい。",
+            "normalized": "c)設定がより複雑で細かい。",
+            "stream_start": 1893,
+            "stream_end": 1907
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 85,
+          "baseline_previous_character_end": 93,
+          "baseline_next_character_start": 94,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "る初期環境構築のメリットは何でしょうか？\na) 設定が全く必要ない。\nb) 設定を自動化して初期環境構築を簡単にする。\nc) 設定がより複雑で細かい。",
+          "after_context": "d) 開発者がすべての設定を手動で行う必要がある。",
+          "word_left": {
+            "xml_paragraph_index": 131,
+            "para_id": "307ABA9B",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) 設定がより複雑で細かい。",
+            "normalized": "c)設定がより複雑で細かい。",
+            "stream_start": 1893,
+            "stream_end": 1907
+          },
+          "word_right": {
+            "xml_paragraph_index": 132,
+            "para_id": "79E1CB8B",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "d) 開発者がすべての設定を手動で行う必要がある。",
+            "normalized": "d)開発者がすべての設定を手動で行う必要がある。",
+            "stream_start": 1907,
+            "stream_end": 1931
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "block_id": "p010-b03",
+      "source_page": 10,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "問題2: Spring Boot が提供するBean に関する機能として正しいものはどれですか？\na) 必要な Bean をすべて手動で登録する必要がある。\nb) 開発者が用意したクラスを自動で Bean として登録してくれる。\nc) Bean の登録機能は提供されていない。\nd) Bean を登録するには XML ファイルが必須である。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 5,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 44,
+          "baseline_previous_character_end": 48,
+          "baseline_next_character_start": 49,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題2: Spring Boot が提供するBean に関する機能として正しいものはどれですか？",
+          "after_context": "a) 必要な Bean をすべて手動で登録する必要がある。\nb) 開発者が用意したクラスを自動で Bean として登録してくれる。\nc) Bean の",
+          "word_left": {
+            "xml_paragraph_index": 134,
+            "para_id": "646DEB56",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "問題2: Spring Bootが提供するBeanに関する機能として正しいものはどれですか？",
+            "normalized": "問題2:SpringBootが提供するBeanに関する機能として正しいものはどれですか?",
+            "stream_start": 1931,
+            "stream_end": 1975
+          },
+          "word_right": {
+            "xml_paragraph_index": 135,
+            "para_id": "59BF3EC1",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) 必要なBeanをすべて手動で登録する必要がある。",
+            "normalized": "a)必要なBeanをすべて手動で登録する必要がある。",
+            "stream_start": 1975,
+            "stream_end": 2001
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 70,
+          "baseline_previous_character_end": 78,
+          "baseline_next_character_start": 79,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": ": Spring Boot が提供するBean に関する機能として正しいものはどれですか？\na) 必要な Bean をすべて手動で登録する必要がある。",
+          "after_context": "b) 開発者が用意したクラスを自動で Bean として登録してくれる。\nc) Bean の登録機能は提供されていない。\nd) Bean を登録するには",
+          "word_left": {
+            "xml_paragraph_index": 135,
+            "para_id": "59BF3EC1",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) 必要なBeanをすべて手動で登録する必要がある。",
+            "normalized": "a)必要なBeanをすべて手動で登録する必要がある。",
+            "stream_start": 1975,
+            "stream_end": 2001
+          },
+          "word_right": {
+            "xml_paragraph_index": 136,
+            "para_id": "1DAE2780",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) 開発者が用意したクラスを自動でBeanとして登録してくれる。",
+            "normalized": "b)開発者が用意したクラスを自動でBeanとして登録してくれる。",
+            "stream_start": 2001,
+            "stream_end": 2033
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 102,
+          "baseline_previous_character_end": 114,
+          "baseline_next_character_start": 115,
+          "baseline_line_before": 3,
+          "baseline_line_after": 4,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "ものはどれですか？\na) 必要な Bean をすべて手動で登録する必要がある。\nb) 開発者が用意したクラスを自動で Bean として登録してくれる。",
+          "after_context": "c) Bean の登録機能は提供されていない。\nd) Bean を登録するには XML ファイルが必須である。",
+          "word_left": {
+            "xml_paragraph_index": 136,
+            "para_id": "1DAE2780",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) 開発者が用意したクラスを自動でBeanとして登録してくれる。",
+            "normalized": "b)開発者が用意したクラスを自動でBeanとして登録してくれる。",
+            "stream_start": 2001,
+            "stream_end": 2033
+          },
+          "word_right": {
+            "xml_paragraph_index": 137,
+            "para_id": "3D2E08DB",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) Beanの登録機能は提供されていない。",
+            "normalized": "c)Beanの登録機能は提供されていない。",
+            "stream_start": 2033,
+            "stream_end": 2054
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 123,
+          "baseline_previous_character_end": 138,
+          "baseline_next_character_start": 139,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "べて手動で登録する必要がある。\nb) 開発者が用意したクラスを自動で Bean として登録してくれる。\nc) Bean の登録機能は提供されていない。",
+          "after_context": "d) Bean を登録するには XML ファイルが必須である。",
+          "word_left": {
+            "xml_paragraph_index": 137,
+            "para_id": "3D2E08DB",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) Beanの登録機能は提供されていない。",
+            "normalized": "c)Beanの登録機能は提供されていない。",
+            "stream_start": 2033,
+            "stream_end": 2054
+          },
+          "word_right": {
+            "xml_paragraph_index": 138,
+            "para_id": "3019F3A5",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "d) Beanを登録するにはXMLファイルが必須である。",
+            "normalized": "d)Beanを登録するにはXMLファイルが必須である。",
+            "stream_start": 2054,
+            "stream_end": 2081
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "block_id": "p010-b05",
+      "source_page": 10,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "問題1: Maven を使用する主な理由は何ですか？\na) プロジェクトのデザインを改善するため。\nb) ソースコードの書き方を自動化するため。\nc) ライブラリのダウンロードと参照関係の管理を自動化するため。\nd) データベース接続を自動で設定するため。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 5,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 24,
+          "baseline_previous_character_end": 26,
+          "baseline_next_character_start": 27,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題1: Maven を使用する主な理由は何ですか？",
+          "after_context": "a) プロジェクトのデザインを改善するため。\nb) ソースコードの書き方を自動化するため。\nc) ライブラリのダウンロードと参照関係の管理を自動化する",
+          "word_left": {
+            "xml_paragraph_index": 143,
+            "para_id": "52682BCE",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "問題1: Mavenを使用する主な理由は何ですか？",
+            "normalized": "問題1:Mavenを使用する主な理由は何ですか?",
+            "stream_start": 2094,
+            "stream_end": 2118
+          },
+          "word_right": {
+            "xml_paragraph_index": 144,
+            "para_id": "01654E3D",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) プロジェクトのデザインを改善するため。",
+            "normalized": "a)プロジェクトのデザインを改善するため。",
+            "stream_start": 2118,
+            "stream_end": 2139
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 45,
+          "baseline_previous_character_end": 49,
+          "baseline_next_character_start": 50,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題1: Maven を使用する主な理由は何ですか？\na) プロジェクトのデザインを改善するため。",
+          "after_context": "b) ソースコードの書き方を自動化するため。\nc) ライブラリのダウンロードと参照関係の管理を自動化するため。\nd) データベース接続を自動で設定する",
+          "word_left": {
+            "xml_paragraph_index": 144,
+            "para_id": "01654E3D",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) プロジェクトのデザインを改善するため。",
+            "normalized": "a)プロジェクトのデザインを改善するため。",
+            "stream_start": 2118,
+            "stream_end": 2139
+          },
+          "word_right": {
+            "xml_paragraph_index": 145,
+            "para_id": "267729D1",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) ソースコードの書き方を自動化するため。",
+            "normalized": "b)ソースコードの書き方を自動化するため。",
+            "stream_start": 2139,
+            "stream_end": 2160
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 66,
+          "baseline_previous_character_end": 72,
+          "baseline_next_character_start": 73,
+          "baseline_line_before": 3,
+          "baseline_line_after": 4,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題1: Maven を使用する主な理由は何ですか？\na) プロジェクトのデザインを改善するため。\nb) ソースコードの書き方を自動化するため。",
+          "after_context": "c) ライブラリのダウンロードと参照関係の管理を自動化するため。\nd) データベース接続を自動で設定するため。",
+          "word_left": {
+            "xml_paragraph_index": 145,
+            "para_id": "267729D1",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) ソースコードの書き方を自動化するため。",
+            "normalized": "b)ソースコードの書き方を自動化するため。",
+            "stream_start": 2139,
+            "stream_end": 2160
+          },
+          "word_right": {
+            "xml_paragraph_index": 146,
+            "para_id": "448BFE7C",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) ライブラリのダウンロードと参照関係の管理を自動化するため。",
+            "normalized": "c)ライブラリのダウンロードと参照関係の管理を自動化するため。",
+            "stream_start": 2160,
+            "stream_end": 2191
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 97,
+          "baseline_previous_character_end": 105,
+          "baseline_next_character_start": 106,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "プロジェクトのデザインを改善するため。\nb) ソースコードの書き方を自動化するため。\nc) ライブラリのダウンロードと参照関係の管理を自動化するため。",
+          "after_context": "d) データベース接続を自動で設定するため。",
+          "word_left": {
+            "xml_paragraph_index": 146,
+            "para_id": "448BFE7C",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) ライブラリのダウンロードと参照関係の管理を自動化するため。",
+            "normalized": "c)ライブラリのダウンロードと参照関係の管理を自動化するため。",
+            "stream_start": 2160,
+            "stream_end": 2191
+          },
+          "word_right": {
+            "xml_paragraph_index": 147,
+            "para_id": "64A065E1",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "d) データベース接続を自動で設定するため。",
+            "normalized": "d)データベース接続を自動で設定するため。",
+            "stream_start": 2191,
+            "stream_end": 2212
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "block_id": "p010-b06",
+      "source_page": 10,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "問題2: Maven を使用して、どのようにライブラリを管理すればいいですか？\na) ライブラリを手動でダウンロードしてプロジェクトに追加する。\nb) ライブラリの情報を pom.xml ファイルに記述して、Maven install を実行する。\nc) すべてのライブラリを個別にインストールする。\nd) ライブラリの情報をプロジェクトの README ファイルに記述する。",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 5,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 37,
+          "baseline_previous_character_end": 39,
+          "baseline_next_character_start": 40,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題2: Maven を使用して、どのようにライブラリを管理すればいいですか？",
+          "after_context": "a) ライブラリを手動でダウンロードしてプロジェクトに追加する。\nb) ライブラリの情報を pom.xml ファイルに記述して、Maven insta",
+          "word_left": {
+            "xml_paragraph_index": 149,
+            "para_id": "2E1D7F01",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "問題2: Mavenを使用して、どのようにライブラリを管理すればいいですか？",
+            "normalized": "問題2:Mavenを使用して、どのようにライブラリを管理すればいいですか?",
+            "stream_start": 2212,
+            "stream_end": 2249
+          },
+          "word_right": {
+            "xml_paragraph_index": 150,
+            "para_id": "3C9E0C80",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) ライブラリを手動でダウンロードしてプロジェクトに追加する。",
+            "normalized": "a)ライブラリを手動でダウンロードしてプロジェクトに追加する。",
+            "stream_start": 2249,
+            "stream_end": 2280
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 68,
+          "baseline_previous_character_end": 72,
+          "baseline_next_character_start": 73,
+          "baseline_line_before": 2,
+          "baseline_line_after": 3,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "問題2: Maven を使用して、どのようにライブラリを管理すればいいですか？\na) ライブラリを手動でダウンロードしてプロジェクトに追加する。",
+          "after_context": "b) ライブラリの情報を pom.xml ファイルに記述して、Maven install を実行する。\nc) すべてのライブラリを個別にインストールす",
+          "word_left": {
+            "xml_paragraph_index": 150,
+            "para_id": "3C9E0C80",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "a) ライブラリを手動でダウンロードしてプロジェクトに追加する。",
+            "normalized": "a)ライブラリを手動でダウンロードしてプロジェクトに追加する。",
+            "stream_start": 2249,
+            "stream_end": 2280
+          },
+          "word_right": {
+            "xml_paragraph_index": 151,
+            "para_id": "16525AC0",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) ライブラリの情報をpom.xmlファイルに記述して、Maven installを実行する。",
+            "normalized": "b)ライブラリの情報をpom.xmlファイルに記述して、Maveninstallを実行する。",
+            "stream_start": 2280,
+            "stream_end": 2326
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 114,
+          "baseline_previous_character_end": 124,
+          "baseline_next_character_start": 125,
+          "baseline_line_before": 3,
+          "baseline_line_after": 4,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "手動でダウンロードしてプロジェクトに追加する。\nb) ライブラリの情報を pom.xml ファイルに記述して、Maven install を実行する。",
+          "after_context": "c) すべてのライブラリを個別にインストールする。\nd) ライブラリの情報をプロジェクトの README ファイルに記述する。",
+          "word_left": {
+            "xml_paragraph_index": 151,
+            "para_id": "16525AC0",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "b) ライブラリの情報をpom.xmlファイルに記述して、Maven installを実行する。",
+            "normalized": "b)ライブラリの情報をpom.xmlファイルに記述して、Maveninstallを実行する。",
+            "stream_start": 2280,
+            "stream_end": 2326
+          },
+          "word_right": {
+            "xml_paragraph_index": 152,
+            "para_id": "70703FD4",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) すべてのライブラリを個別にインストールする。",
+            "normalized": "c)すべてのライブラリを個別にインストールする。",
+            "stream_start": 2326,
+            "stream_end": 2350
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        },
+        {
+          "normalized_boundary_offset": 138,
+          "baseline_previous_character_end": 150,
+          "baseline_next_character_start": 151,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": " ライブラリの情報を pom.xml ファイルに記述して、Maven install を実行する。\nc) すべてのライブラリを個別にインストールする。",
+          "after_context": "d) ライブラリの情報をプロジェクトの README ファイルに記述する。",
+          "word_left": {
+            "xml_paragraph_index": 152,
+            "para_id": "70703FD4",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "c) すべてのライブラリを個別にインストールする。",
+            "normalized": "c)すべてのライブラリを個別にインストールする。",
+            "stream_start": 2326,
+            "stream_end": 2350
+          },
+          "word_right": {
+            "xml_paragraph_index": 153,
+            "para_id": "3497A61C",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "d) ライブラリの情報をプロジェクトのREADMEファイルに記述する。",
+            "normalized": "d)ライブラリの情報をプロジェクトのREADMEファイルに記述する。",
+            "stream_start": 2350,
+            "stream_end": 2384
+          },
+          "classification": "問題文・選択肢",
+          "applied_as_paragraph": true
+        }
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "block_id": "p060-b02",
+      "source_page": 60,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "給与と勤務地の AND 検索は、SQL 文にすると以下のようになります。\n「SELECT *\nFROM employee e JOIN location l\nON e.location_id = l.id\nWHERE e.salary >= ? AND l.name = ?」",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 3,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 33,
+          "baseline_previous_character_end": 36,
+          "baseline_next_character_start": 37,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "給与と勤務地の AND 検索は、SQL 文にすると以下のようになります。",
+          "after_context": "「SELECT *\nFROM employee e JOIN location l\nON e.location_id = l.id\nWHERE e.s",
+          "word_left": {
+            "xml_paragraph_index": 1341,
+            "para_id": "100AC624",
+            "style_id": "a7",
+            "outline_level": null,
+            "spacing": {},
+            "text": "給与と勤務地のAND検索は、SQL文にすると以下のようになります。",
+            "normalized": "給与と勤務地のAND検索は、SQL文にすると以下のようになります。",
+            "stream_start": 20009,
+            "stream_end": 20042
+          },
+          "word_right": {
+            "xml_paragraph_index": 1342,
+            "para_id": "7B4F1184",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "「SELECT * \nFROM employee e　JOIN location l\nON e.location_id = l.id",
+            "normalized": "「SELECT*FROMemployeeeJOINlocationlONe.location_id=l.id",
+            "stream_start": 20042,
+            "stream_end": 20096
+          },
+          "classification": "SQLの行区切り",
+          "applied_as_paragraph": false
+        },
+        {
+          "normalized_boundary_offset": 87,
+          "baseline_previous_character_end": 102,
+          "baseline_next_character_start": 103,
+          "baseline_line_before": 4,
+          "baseline_line_after": 5,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "のようになります。\n「SELECT *\nFROM employee e JOIN location l\nON e.location_id = l.id",
+          "after_context": "WHERE e.salary >= ? AND l.name = ?」",
+          "word_left": {
+            "xml_paragraph_index": 1342,
+            "para_id": "7B4F1184",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "「SELECT * \nFROM employee e　JOIN location l\nON e.location_id = l.id",
+            "normalized": "「SELECT*FROMemployeeeJOINlocationlONe.location_id=l.id",
+            "stream_start": 20042,
+            "stream_end": 20096
+          },
+          "word_right": {
+            "xml_paragraph_index": 1343,
+            "para_id": "2A0C2027",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "WHERE e.salary >= ? AND l.name = ?」",
+            "normalized": "WHEREe.salary>=?ANDl.name=?」",
+            "stream_start": 20096,
+            "stream_end": 20124
+          },
+          "classification": "SQLの行区切り",
+          "applied_as_paragraph": false
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "block_id": "p076-b12",
+      "source_page": 76,
+      "word_file": "JAC0177G-L1-04(260715修正).docx",
+      "baseline_text": "■動作確認\nhttp://localhost:8080/4",
+      "unique_normalized_match": true,
+      "match_starts_inside_word_paragraph": false,
+      "match_ends_inside_word_paragraph": false,
+      "word_paragraph_count": 2,
+      "boundaries": [
+        {
+          "normalized_boundary_offset": 5,
+          "baseline_previous_character_end": 5,
+          "baseline_next_character_start": 6,
+          "baseline_line_before": 1,
+          "baseline_line_after": 2,
+          "existing_separator": "\n",
+          "at_existing_line_break": true,
+          "before_context": "■動作確認",
+          "after_context": "http://localhost:8080/4",
+          "word_left": {
+            "xml_paragraph_index": 1625,
+            "para_id": "07E8152B",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "■動作確認",
+            "normalized": "■動作確認",
+            "stream_start": 25140,
+            "stream_end": 25145
+          },
+          "word_right": {
+            "xml_paragraph_index": 1626,
+            "para_id": "3947DD89",
+            "style_id": null,
+            "outline_level": null,
+            "spacing": {},
+            "text": "http://localhost:8080/4",
+            "normalized": "http://localhost:8080/4",
+            "stream_start": 25145,
+            "stream_end": 25168
+          },
+          "classification": "動作確認見出しとURL",
+          "applied_as_paragraph": true
+        }
+      ]
+    }
+  ],
+  "confirmed_non_candidate_example": {
+    "chapter": "03",
+    "block_id": "p080-b02",
+    "word_file": "JAC0177G-T1-04(260715修正).docx",
+    "xml_paragraph_index": 1243,
+    "word_paragraph_text": "インターフェースのフィールドを記載し、その上に[@Autowired]アノテーションを付けるだけで依存性の注入が完了し、そのインターフェースに紐づいているメソッドが使えるようになります。　イメージとしては、クラスに「ProductRepository型」の「prodRepo」という名前のリモコンを持たせてあげた状態です。",
+    "manual_break_count": 1,
+    "classification": "同じw:p内のw:br。Word段落境界ではないため今回の50境界には含めず、変更しない。",
+    "xml_evidence_fragments": [
+      "<ns0:r xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" ns0:rsidR=\"00AF5BB3\" ns0:rsidRPr=\"751D81AB\"><ns0:rPr><ns0:rFonts ns0:ascii=\"ＭＳ Ｐ明朝\" ns0:hAnsi=\"ＭＳ Ｐ明朝\" /></ns0:rPr><ns0:t>使えるようになります。</ns0:t></ns0:r>",
+      "<ns0:r xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" ns0:rsidR=\"00364C1F\"><ns0:rPr><ns0:rFonts ns0:ascii=\"ＭＳ Ｐ明朝\" ns0:hAnsi=\"ＭＳ Ｐ明朝\" /></ns0:rPr><ns0:br /></ns0:r>",
+      "<ns0:r xmlns:ns0=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" ns0:rsidR=\"00AC0632\" ns0:rsidRPr=\"00AC0632\"><ns0:rPr><ns0:rFonts ns0:ascii=\"ＭＳ Ｐ明朝\" ns0:hAnsi=\"ＭＳ Ｐ明朝\" /></ns0:rPr><ns0:t>イメージとしては、</ns0:t></ns0:r>"
+    ]
+  },
+  "classification_counts_by_boundary": {
+    "通常の説明文": 12,
+    "説明ラベルと説明文": 5,
+    "問題文・選択肢": 32,
+    "SQLの行区切り": 2,
+    "動作確認見出しとURL": 1
+  },
+  "application": {
+    "status": "pass",
+    "applied_utc": "2026-11-05T05:19:06.067254+00:00",
+    "changed_blocks": 22,
+    "applied_boundaries": 50,
+    "sql_boundaries_excluded": 2,
+    "source_change": "既存の行末バックスラッシュ＋改行だけを空行へ置換。本文文字・書式Span・ID・図版参照を保持。",
+    "files": [
+      {
+        "path": "docs/textbook/chapters/04/chapter.md",
+        "checks": {
+          "expected_after_sha256_matches": true,
+          "same_node_ids": true,
+          "same_figure_references": true,
+          "same_source_order": true,
+          "same_kinds_languages_tables": true,
+          "all_visible_nonwhitespace_characters_identical": true,
+          "all_markup_except_linebreak_markers_identical": true
+        },
+        "changed_blocks": [
+          {
+            "block_id": "p137-b04",
+            "added_paragraph_boundaries": 2
+          },
+          {
+            "block_id": "p138-b08",
+            "added_paragraph_boundaries": 1
+          },
+          {
+            "block_id": "p139-b08",
+            "added_paragraph_boundaries": 2
+          },
+          {
+            "block_id": "p140-b04",
+            "added_paragraph_boundaries": 1
+          },
+          {
+            "block_id": "p140-b05",
+            "added_paragraph_boundaries": 2
+          },
+          {
+            "block_id": "p140-b06",
+            "added_paragraph_boundaries": 2
+          }
+        ],
+        "added_paragraph_boundaries": 10
+      },
+      {
+        "path": "docs/textbook/chapters/06/chapter.md",
+        "checks": {
+          "expected_after_sha256_matches": true,
+          "same_node_ids": true,
+          "same_figure_references": true,
+          "same_source_order": true,
+          "same_kinds_languages_tables": true,
+          "all_visible_nonwhitespace_characters_identical": true,
+          "all_markup_except_linebreak_markers_identical": true
+        },
+        "changed_blocks": [
+          {
+            "block_id": "p199-b02",
+            "added_paragraph_boundaries": 1
+          },
+          {
+            "block_id": "p228-b03",
+            "added_paragraph_boundaries": 1
+          }
+        ],
+        "added_paragraph_boundaries": 2
+      },
+      {
+        "path": "docs/textbook/chapters/07/chapter.md",
+        "checks": {
+          "expected_after_sha256_matches": true,
+          "same_node_ids": true,
+          "same_figure_references": true,
+          "same_source_order": true,
+          "same_kinds_languages_tables": true,
+          "all_visible_nonwhitespace_characters_identical": true,
+          "all_markup_except_linebreak_markers_identical": true
+        },
+        "changed_blocks": [
+          {
+            "block_id": "p253-b02",
+            "added_paragraph_boundaries": 1
+          },
+          {
+            "block_id": "p254-b06",
+            "added_paragraph_boundaries": 1
+          },
+          {
+            "block_id": "p266-b11",
+            "added_paragraph_boundaries": 1
+          },
+          {
+            "block_id": "p267-b01",
+            "added_paragraph_boundaries": 1
+          },
+          {
+            "block_id": "p271-b03",
+            "added_paragraph_boundaries": 1
+          }
+        ],
+        "added_paragraph_boundaries": 5
+      },
+      {
+        "path": "docs/textbook/chapters/ex01/chapter.md",
+        "checks": {
+          "expected_after_sha256_matches": true,
+          "same_node_ids": true,
+          "same_figure_references": true,
+          "same_source_order": true,
+          "same_kinds_languages_tables": true,
+          "all_visible_nonwhitespace_characters_identical": true,
+          "all_markup_except_linebreak_markers_identical": true
+        },
+        "changed_blocks": [
+          {
+            "block_id": "p009-b02",
+            "added_paragraph_boundaries": 4
+          },
+          {
+            "block_id": "p009-b03",
+            "added_paragraph_boundaries": 4
+          },
+          {
+            "block_id": "p009-b05",
+            "added_paragraph_boundaries": 4
+          },
+          {
+            "block_id": "p009-b06",
+            "added_paragraph_boundaries": 4
+          },
+          {
+            "block_id": "p010-b02",
+            "added_paragraph_boundaries": 4
+          },
+          {
+            "block_id": "p010-b03",
+            "added_paragraph_boundaries": 4
+          },
+          {
+            "block_id": "p010-b05",
+            "added_paragraph_boundaries": 4
+          },
+          {
+            "block_id": "p010-b06",
+            "added_paragraph_boundaries": 4
+          }
+        ],
+        "added_paragraph_boundaries": 32
+      },
+      {
+        "path": "docs/textbook/chapters/ex07/chapter.md",
+        "checks": {
+          "expected_after_sha256_matches": true,
+          "same_node_ids": true,
+          "same_figure_references": true,
+          "same_source_order": true,
+          "same_kinds_languages_tables": true,
+          "all_visible_nonwhitespace_characters_identical": true,
+          "all_markup_except_linebreak_markers_identical": true
+        },
+        "changed_blocks": [
+          {
+            "block_id": "p076-b12",
+            "added_paragraph_boundaries": 1
+          }
+        ],
+        "added_paragraph_boundaries": 1
+      }
+    ],
+    "plan": "tmp/fidelity-review/word-paragraph-application-plan.json",
+    "pdf_verification": "04/05/06/07のflow生成・文字照合・全レイアウト検査は合格。演習の選択肢の改ページは親担当が確認。"
+  },
+  "pdf_generation": {
+    "status": "pass",
+    "completed_utc": "2026-11-05T05:21:03.020781+00:00",
+    "chapters": {
+      "04": {
+        "native_text_complete": true,
+        "pages": 32,
+        "overflow": 0,
+        "heading_orphans": 0,
+        "split_figures": 0,
+        "split_short_code": 0,
+        "split_short_tables": 0,
+        "split_instructions": 0
+      },
+      "05": {
+        "native_text_complete": true,
+        "pages": 31,
+        "overflow": 0,
+        "heading_orphans": 0,
+        "split_figures": 0,
+        "split_short_code": 0,
+        "split_short_tables": 0,
+        "split_instructions": 0
+      },
+      "06": {
+        "native_text_complete": true,
+        "pages": 47,
+        "overflow": 0,
+        "heading_orphans": 0,
+        "split_figures": 0,
+        "split_short_code": 0,
+        "split_short_tables": 0,
+        "split_instructions": 0
+      },
+      "07": {
+        "native_text_complete": true,
+        "pages": 49,
+        "overflow": 0,
+        "heading_orphans": 0,
+        "split_figures": 0,
+        "split_short_code": 0,
+        "split_short_tables": 0,
+        "split_instructions": 0
+      }
+    },
+    "log": "tmp/fidelity-review/word-paragraph-build.log",
+    "exercise_choice_pagination": "親担当がex01/ex07の生成後に確認。"
+  }
+}

@@ -1,0 +1,2142 @@
+{
+  "generated_at_utc": "2026-11-05T05:25:27.323232+00:00",
+  "summary": {
+    "passed": true,
+    "chapter_parts": 19,
+    "physical_pages": 391,
+    "chapter_uri_links": 81,
+    "merged_uri_links": 81,
+    "verified_uri_link_records": 81,
+    "login3_uri_links": 1,
+    "maximum_coordinate_delta_pt": 0.0,
+    "problem_count": 0
+  },
+  "method": "各章の物理頁を合冊checksの章範囲へ対応付け、全LINK_URI注釈の宛先別件数と矩形4座標を比較。同じURIが複数ある場合は矩形差が最小の未対応注釈へ一対一対応させる。",
+  "coordinate_tolerance_pt": 0.01,
+  "scope": "PDFのURIリンク注釈のみ。HTTPサーバー起動・ネットワーク疎通・URLの実行結果は検証しない。目次の内部GOTOリンクは対象外。",
+  "image_text_limit": "既存UI元画像内の文字はSVG画像/図形であり、本文文字照合・URI注釈の存在とは別。画像に青い下線があっても実リンクとして数えない。",
+  "collections": [
+    {
+      "collection": "textbook",
+      "physical_pages": 313,
+      "chapter_uri_links": 62,
+      "merged_uri_links": 62,
+      "merged_pdf_sha256": "49321f70c47f627abb94e0f5a6f458f7e9a8aae546b61ed085fe5f8c5f761b06",
+      "parts": [
+        {
+          "part": "front",
+          "chapter_pages": 14,
+          "merged_pages": [
+            1,
+            14
+          ],
+          "chapter_uri_links": 0,
+          "merged_uri_links": 0,
+          "maximum_coordinate_delta_pt": 0
+        },
+        {
+          "part": "01",
+          "chapter_pages": 16,
+          "merged_pages": [
+            15,
+            30
+          ],
+          "chapter_uri_links": 1,
+          "merged_uri_links": 1,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "02",
+          "chapter_pages": 33,
+          "merged_pages": [
+            31,
+            63
+          ],
+          "chapter_uri_links": 8,
+          "merged_uri_links": 8,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "03",
+          "chapter_pages": 76,
+          "merged_pages": [
+            64,
+            139
+          ],
+          "chapter_uri_links": 8,
+          "merged_uri_links": 8,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "04",
+          "chapter_pages": 32,
+          "merged_pages": [
+            140,
+            171
+          ],
+          "chapter_uri_links": 4,
+          "merged_uri_links": 4,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "05",
+          "chapter_pages": 31,
+          "merged_pages": [
+            172,
+            202
+          ],
+          "chapter_uri_links": 10,
+          "merged_uri_links": 10,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "06",
+          "chapter_pages": 47,
+          "merged_pages": [
+            203,
+            249
+          ],
+          "chapter_uri_links": 7,
+          "merged_uri_links": 7,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "07",
+          "chapter_pages": 49,
+          "merged_pages": [
+            250,
+            298
+          ],
+          "chapter_uri_links": 21,
+          "merged_uri_links": 21,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "appendix-a",
+          "chapter_pages": 8,
+          "merged_pages": [
+            299,
+            306
+          ],
+          "chapter_uri_links": 2,
+          "merged_uri_links": 2,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "appendix-b",
+          "chapter_pages": 7,
+          "merged_pages": [
+            307,
+            313
+          ],
+          "chapter_uri_links": 1,
+          "merged_uri_links": 1,
+          "maximum_coordinate_delta_pt": 0.0
+        }
+      ]
+    },
+    {
+      "collection": "exercise",
+      "physical_pages": 78,
+      "chapter_uri_links": 19,
+      "merged_uri_links": 19,
+      "merged_pdf_sha256": "d24efe203c99423cb4e2531c594e87b9c3790a24b978e832b4ce453069a5fdf2",
+      "parts": [
+        {
+          "part": "ex-front",
+          "chapter_pages": 6,
+          "merged_pages": [
+            1,
+            6
+          ],
+          "chapter_uri_links": 0,
+          "merged_uri_links": 0,
+          "maximum_coordinate_delta_pt": 0
+        },
+        {
+          "part": "ex01",
+          "chapter_pages": 4,
+          "merged_pages": [
+            7,
+            10
+          ],
+          "chapter_uri_links": 0,
+          "merged_uri_links": 0,
+          "maximum_coordinate_delta_pt": 0
+        },
+        {
+          "part": "ex02",
+          "chapter_pages": 6,
+          "merged_pages": [
+            11,
+            16
+          ],
+          "chapter_uri_links": 2,
+          "merged_uri_links": 2,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "ex03",
+          "chapter_pages": 12,
+          "merged_pages": [
+            17,
+            28
+          ],
+          "chapter_uri_links": 4,
+          "merged_uri_links": 4,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "ex04",
+          "chapter_pages": 8,
+          "merged_pages": [
+            29,
+            36
+          ],
+          "chapter_uri_links": 3,
+          "merged_uri_links": 3,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "ex05",
+          "chapter_pages": 10,
+          "merged_pages": [
+            37,
+            46
+          ],
+          "chapter_uri_links": 2,
+          "merged_uri_links": 2,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "ex06",
+          "chapter_pages": 16,
+          "merged_pages": [
+            47,
+            62
+          ],
+          "chapter_uri_links": 6,
+          "merged_uri_links": 6,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "ex07",
+          "chapter_pages": 15,
+          "merged_pages": [
+            63,
+            77
+          ],
+          "chapter_uri_links": 1,
+          "merged_uri_links": 1,
+          "maximum_coordinate_delta_pt": 0.0
+        },
+        {
+          "part": "ex-back",
+          "chapter_pages": 1,
+          "merged_pages": [
+            78,
+            78
+          ],
+          "chapter_uri_links": 1,
+          "merged_uri_links": 1,
+          "maximum_coordinate_delta_pt": 0.0
+        }
+      ]
+    }
+  ],
+  "localhost_login3": {
+    "uri": "http://localhost:8080/login3",
+    "real_uri_annotation_present": true,
+    "records": [
+      {
+        "collection": "textbook",
+        "part": "02",
+        "chapter_page": 32,
+        "merged_page": 62,
+        "uri": "http://localhost:8080/login3",
+        "chapter_rect": [
+          85.10399627685547,
+          110.0,
+          214.5479736328125,
+          121.03997802734375
+        ],
+        "merged_rect": [
+          85.10399627685547,
+          110.0,
+          214.5479736328125,
+          121.03997802734375
+        ],
+        "maximum_coordinate_delta_pt": 0.0,
+        "chapter_visible_text": "http://localhost:8080/login3社",
+        "merged_visible_text": "http://localhost:8080/login3社",
+        "passed": true
+      }
+    ]
+  },
+  "problems": [],
+  "uri_link_matches": [
+    {
+      "collection": "textbook",
+      "part": "01",
+      "chapter_page": 11,
+      "merged_page": 25,
+      "uri": "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j",
+      "chapter_rect": [
+        88.78040313720703,
+        234.97564697265625,
+        375.8094482421875,
+        246.01568603515625
+      ],
+      "merged_rect": [
+        88.78040313720703,
+        234.97564697265625,
+        375.8094482421875,
+        246.01568603515625
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j)",
+      "merged_visible_text": "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j)",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "02",
+      "chapter_page": 15,
+      "merged_page": 45,
+      "uri": "http://www.thymeleaf.org",
+      "chapter_rect": [
+        205.10400390625,
+        404.0799865722656,
+        349.10400390625,
+        416.0799865722656
+      ],
+      "merged_rect": [
+        205.10400390625,
+        404.0799865722656,
+        349.10400390625,
+        416.0799865722656
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.thymeleaf.org",
+      "merged_visible_text": "http://www.thymeleaf.org",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "02",
+      "chapter_page": 16,
+      "merged_page": 46,
+      "uri": "http://localhost:8080/index",
+      "chapter_rect": [
+        85.10399627685547,
+        613.5599975585938,
+        213.87973022460938,
+        624.5999755859375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        613.5599975585938,
+        213.87973022460938,
+        624.5999755859375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/index",
+      "merged_visible_text": "http://localhost:8080/index",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "02",
+      "chapter_page": 20,
+      "merged_page": 50,
+      "uri": "http://www.thymeleaf.org",
+      "chapter_rect": [
+        205.10400390625,
+        200.08001708984375,
+        349.10400390625,
+        212.08001708984375
+      ],
+      "merged_rect": [
+        205.10400390625,
+        200.08001708984375,
+        349.10400390625,
+        212.08001708984375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.thymeleaf.org",
+      "merged_visible_text": "http://www.thymeleaf.org",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "02",
+      "chapter_page": 23,
+      "merged_page": 53,
+      "uri": "http://localhost:8080/login",
+      "chapter_rect": [
+        85.10399627685547,
+        318.780029296875,
+        209.0062713623047,
+        329.82000732421875
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        318.780029296875,
+        209.0062713623047,
+        329.82000732421875
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/login",
+      "merged_visible_text": "http://localhost:8080/login",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "02",
+      "chapter_page": 27,
+      "merged_page": 57,
+      "uri": "http://localhost:8080/login2",
+      "chapter_rect": [
+        85.10399627685547,
+        610.7003173828125,
+        214.5479736328125,
+        621.7402954101562
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        610.7003173828125,
+        214.5479736328125,
+        621.7402954101562
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/login2",
+      "merged_visible_text": "http://localhost:8080/login2",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "02",
+      "chapter_page": 30,
+      "merged_page": 60,
+      "uri": "http://www.thymeleaf.org",
+      "chapter_rect": [
+        199.10400390625,
+        540.1599731445312,
+        343.10400390625,
+        552.1599731445312
+      ],
+      "merged_rect": [
+        199.10400390625,
+        540.1599731445312,
+        343.10400390625,
+        552.1599731445312
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.thymeleaf.org",
+      "merged_visible_text": "http://www.thymeleaf.org",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "02",
+      "chapter_page": 31,
+      "merged_page": 61,
+      "uri": "http://www.thymeleaf.org",
+      "chapter_rect": [
+        226.01162719726562,
+        296.0,
+        343.32269287109375,
+        307.03997802734375
+      ],
+      "merged_rect": [
+        226.01162719726562,
+        296.0,
+        343.32269287109375,
+        307.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "\"http://www.thymeleaf.org",
+      "merged_visible_text": "\"http://www.thymeleaf.org",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "02",
+      "chapter_page": 32,
+      "merged_page": 62,
+      "uri": "http://localhost:8080/login3",
+      "chapter_rect": [
+        85.10399627685547,
+        110.0,
+        214.5479736328125,
+        121.03997802734375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        110.0,
+        214.5479736328125,
+        121.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/login3社",
+      "merged_visible_text": "http://localhost:8080/login3社",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "03",
+      "chapter_page": 30,
+      "merged_page": 93,
+      "uri": "http://localhost:8080/product/findAll",
+      "chapter_rect": [
+        85.10399627685547,
+        116.0,
+        272.2766418457031,
+        128.0
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        116.0,
+        272.2766418457031,
+        128.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/findAll",
+      "merged_visible_text": "http://localhost:8080/product/findAll",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "03",
+      "chapter_page": 35,
+      "merged_page": 98,
+      "uri": "http://localhost:8080/product/",
+      "chapter_rect": [
+        85.10399627685547,
+        470.08001708984375,
+        228.9738311767578,
+        481.1199951171875
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        470.08001708984375,
+        228.9738311767578,
+        481.1199951171875
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/",
+      "merged_visible_text": "http://localhost:8080/product/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "03",
+      "chapter_page": 39,
+      "merged_page": 102,
+      "uri": "http://localhost:8080/product/",
+      "chapter_rect": [
+        85.10399627685547,
+        110.0,
+        228.9738311767578,
+        121.03997802734375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        110.0,
+        228.9738311767578,
+        121.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/",
+      "merged_visible_text": "http://localhost:8080/product/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "03",
+      "chapter_page": 43,
+      "merged_page": 106,
+      "uri": "http://localhost:8080/product/",
+      "chapter_rect": [
+        85.10399627685547,
+        110.0,
+        228.9738311767578,
+        121.03997802734375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        110.0,
+        228.9738311767578,
+        121.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/",
+      "merged_visible_text": "http://localhost:8080/product/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "03",
+      "chapter_page": 54,
+      "merged_page": 117,
+      "uri": "http://localhost:8080/product/insert",
+      "chapter_rect": [
+        85.10399627685547,
+        464.08001708984375,
+        255.15451049804688,
+        475.1199951171875
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        464.08001708984375,
+        255.15451049804688,
+        475.1199951171875
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/insert",
+      "merged_visible_text": "http://localhost:8080/product/insert",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "03",
+      "chapter_page": 59,
+      "merged_page": 122,
+      "uri": "http://localhost:8080/product/update/1",
+      "chapter_rect": [
+        85.10399627685547,
+        536.5400390625,
+        271.1452331542969,
+        547.5800170898438
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        536.5400390625,
+        271.1452331542969,
+        547.5800170898438
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/update/1",
+      "merged_visible_text": "http://localhost:8080/product/update/1",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "03",
+      "chapter_page": 64,
+      "merged_page": 127,
+      "uri": "http://localhost:8080/product/",
+      "chapter_rect": [
+        85.10399627685547,
+        110.0,
+        228.9738311767578,
+        121.03997802734375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        110.0,
+        228.9738311767578,
+        121.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/",
+      "merged_visible_text": "http://localhost:8080/product/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "03",
+      "chapter_page": 68,
+      "merged_page": 131,
+      "uri": "http://localhost:8080/product/",
+      "chapter_rect": [
+        85.10399627685547,
+        163.0400390625,
+        228.9738311767578,
+        174.08001708984375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        163.0400390625,
+        228.9738311767578,
+        174.08001708984375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/",
+      "merged_visible_text": "http://localhost:8080/product/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "04",
+      "chapter_page": 9,
+      "merged_page": 148,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        85.10399627685547,
+        116.0,
+        197.08837890625,
+        128.0
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        116.0,
+        197.08837890625,
+        128.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "04",
+      "chapter_page": 14,
+      "merged_page": 153,
+      "uri": "http://localhost:8080/product/findAll",
+      "chapter_rect": [
+        99.50775146484375,
+        484.18511962890625,
+        271.7072448730469,
+        495.22509765625
+      ],
+      "merged_rect": [
+        99.50775146484375,
+        484.18511962890625,
+        271.7072448730469,
+        495.22509765625
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/findAll",
+      "merged_visible_text": "http://localhost:8080/product/findAll",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "04",
+      "chapter_page": 14,
+      "merged_page": 153,
+      "uri": "http://localhost:8080/2",
+      "chapter_rect": [
+        85.10399627685547,
+        116.0,
+        203.08837890625,
+        128.0
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        116.0,
+        203.08837890625,
+        128.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/2",
+      "merged_visible_text": "http://localhost:8080/2",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "04",
+      "chapter_page": 21,
+      "merged_page": 160,
+      "uri": "http://localhost:8080/4",
+      "chapter_rect": [
+        85.10399627685547,
+        391.0400085449219,
+        193.6496124267578,
+        402.0799865722656
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        391.0400085449219,
+        193.6496124267578,
+        402.0799865722656
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/4",
+      "merged_visible_text": "http://localhost:8080/4",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 5,
+      "merged_page": 176,
+      "uri": "http://www.thymeleaf.org",
+      "chapter_rect": [
+        199.10400390625,
+        176.0,
+        343.10400390625,
+        188.0
+      ],
+      "merged_rect": [
+        199.10400390625,
+        176.0,
+        343.10400390625,
+        188.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.thymeleaf.org",
+      "merged_visible_text": "http://www.thymeleaf.org",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 5,
+      "merged_page": 176,
+      "uri": "http://www.thymeleaf.org",
+      "chapter_rect": [
+        214.9716339111328,
+        296.96002197265625,
+        332.2826843261719,
+        308.0
+      ],
+      "merged_rect": [
+        214.9716339111328,
+        296.96002197265625,
+        332.2826843261719,
+        308.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.thymeleaf.org",
+      "merged_visible_text": "http://www.thymeleaf.org",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 11,
+      "merged_page": 182,
+      "uri": "http://localhost:8080/product/findAll",
+      "chapter_rect": [
+        85.10399627685547,
+        315.0400390625,
+        259.6463928222656,
+        326.08001708984375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        315.0400390625,
+        259.6463928222656,
+        326.08001708984375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/findAll",
+      "merged_visible_text": "http://localhost:8080/product/findAll",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 17,
+      "merged_page": 188,
+      "uri": "http://localhost:8080/product2/findAll",
+      "chapter_rect": [
+        85.10399627685547,
+        110.0,
+        262.8590393066406,
+        121.03997802734375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        110.0,
+        262.8590393066406,
+        121.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product2/findAll",
+      "merged_visible_text": "http://localhost:8080/product2/findAll",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 20,
+      "merged_page": 191,
+      "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "chapter_rect": [
+        199.10400390625,
+        170.08001708984375,
+        445.10400390625,
+        182.08001708984375
+      ],
+      "merged_rect": [
+        199.10400390625,
+        170.08001708984375,
+        445.10400390625,
+        182.08001708984375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "merged_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 20,
+      "merged_page": 191,
+      "uri": "http://www.thymeleaf.org",
+      "chapter_rect": [
+        205.10400390625,
+        152.08001708984375,
+        349.10400390625,
+        164.08001708984375
+      ],
+      "merged_rect": [
+        205.10400390625,
+        152.08001708984375,
+        349.10400390625,
+        164.08001708984375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.thymeleaf.org",
+      "merged_visible_text": "http://www.thymeleaf.org",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 22,
+      "merged_page": 193,
+      "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "chapter_rect": [
+        215.7602996826172,
+        128.0,
+        411.49951171875,
+        139.03997802734375
+      ],
+      "merged_rect": [
+        215.7602996826172,
+        128.0,
+        411.49951171875,
+        139.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "merged_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 22,
+      "merged_page": 193,
+      "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "chapter_rect": [
+        199.10400390625,
+        452.0799865722656,
+        445.10400390625,
+        464.0799865722656
+      ],
+      "merged_rect": [
+        199.10400390625,
+        452.0799865722656,
+        445.10400390625,
+        464.0799865722656
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "merged_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 22,
+      "merged_page": 193,
+      "uri": "http://www.thymeleaf.org",
+      "chapter_rect": [
+        205.10400390625,
+        434.0799865722656,
+        349.10400390625,
+        446.0799865722656
+      ],
+      "merged_rect": [
+        205.10400390625,
+        434.0799865722656,
+        349.10400390625,
+        446.0799865722656
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.thymeleaf.org",
+      "merged_visible_text": "http://www.thymeleaf.org",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "05",
+      "chapter_page": 23,
+      "merged_page": 194,
+      "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "chapter_rect": [
+        215.7602996826172,
+        86.0,
+        411.49951171875,
+        97.03997802734375
+      ],
+      "merged_rect": [
+        215.7602996826172,
+        86.0,
+        411.49951171875,
+        97.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "merged_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "06",
+      "chapter_page": 16,
+      "merged_page": 218,
+      "uri": "http://localhost:8080/product/findAll",
+      "chapter_rect": [
+        85.10399627685547,
+        116.0,
+        272.2773742675781,
+        128.0
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        116.0,
+        272.2773742675781,
+        128.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/findAll",
+      "merged_visible_text": "http://localhost:8080/product/findAll",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "06",
+      "chapter_page": 21,
+      "merged_page": 223,
+      "uri": "http://localhost:8080/product/",
+      "chapter_rect": [
+        85.10399627685547,
+        116.0,
+        241.489501953125,
+        128.0
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        116.0,
+        241.489501953125,
+        128.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/",
+      "merged_visible_text": "http://localhost:8080/product/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "06",
+      "chapter_page": 30,
+      "merged_page": 232,
+      "uri": "http://localhost:8080/product/insert",
+      "chapter_rect": [
+        85.10399627685547,
+        116.0,
+        269.9422302246094,
+        128.0
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        116.0,
+        269.9422302246094,
+        128.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/insert",
+      "merged_visible_text": "http://localhost:8080/product/insert",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "06",
+      "chapter_page": 36,
+      "merged_page": 238,
+      "uri": "http://localhost:8080/product/findAll",
+      "chapter_rect": [
+        85.10399627685547,
+        273.0400390625,
+        259.6463928222656,
+        284.08001708984375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        273.0400390625,
+        259.6463928222656,
+        284.08001708984375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/findAll",
+      "merged_visible_text": "http://localhost:8080/product/findAll",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "06",
+      "chapter_page": 38,
+      "merged_page": 240,
+      "uri": "http://localhost:8080/product/",
+      "chapter_rect": [
+        85.10399627685547,
+        291.0400390625,
+        230.4566192626953,
+        302.08001708984375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        291.0400390625,
+        230.4566192626953,
+        302.08001708984375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/",
+      "merged_visible_text": "http://localhost:8080/product/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "06",
+      "chapter_page": 40,
+      "merged_page": 242,
+      "uri": "http://localhost:8080/product/insert",
+      "chapter_rect": [
+        85.10399627685547,
+        116.0,
+        269.9422302246094,
+        128.0
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        116.0,
+        269.9422302246094,
+        128.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/insert",
+      "merged_visible_text": "http://localhost:8080/product/insert",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "06",
+      "chapter_page": 40,
+      "merged_page": 242,
+      "uri": "http://localhost:8080/product/",
+      "chapter_rect": [
+        85.10399627685547,
+        431.8000183105469,
+        230.4566192626953,
+        442.8399963378906
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        431.8000183105469,
+        230.4566192626953,
+        442.8399963378906
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/product/",
+      "merged_visible_text": "http://localhost:8080/product/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 8,
+      "merged_page": 257,
+      "uri": "https://getbootstrap.jp/",
+      "chapter_rect": [
+        85.10399627685547,
+        537.5819702148438,
+        184.78416442871094,
+        548.6219482421875
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        537.5819702148438,
+        184.78416442871094,
+        548.6219482421875
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://getbootstrap.jp/",
+      "merged_visible_text": "https://getbootstrap.jp/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 9,
+      "merged_page": 258,
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "chapter_rect": [
+        121.10399627685547,
+        525.2000122070312,
+        499.10400390625,
+        537.2000122070312
+      ],
+      "merged_rect": [
+        121.10399627685547,
+        525.2000122070312,
+        499.10400390625,
+        537.2000122070312
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.",
+      "merged_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 9,
+      "merged_page": 258,
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "chapter_rect": [
+        91.10399627685547,
+        543.2000122070312,
+        169.10400390625,
+        555.2000122070312
+      ],
+      "merged_rect": [
+        91.10399627685547,
+        543.2000122070312,
+        169.10400390625,
+        555.2000122070312
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "bundle.min.js",
+      "merged_visible_text": "bundle.min.js",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 9,
+      "merged_page": 258,
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+      "chapter_rect": [
+        163.10400390625,
+        329.1199951171875,
+        487.10400390625,
+        341.1199951171875
+      ],
+      "merged_rect": [
+        163.10400390625,
+        329.1199951171875,
+        487.10400390625,
+        341.1199951171875
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/",
+      "merged_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 9,
+      "merged_page": 258,
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+      "chapter_rect": [
+        91.10399627685547,
+        347.1199951171875,
+        193.10400390625,
+        359.1199951171875
+      ],
+      "merged_rect": [
+        91.10399627685547,
+        347.1199951171875,
+        193.10400390625,
+        359.1199951171875
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "bootstrap.min.css",
+      "merged_visible_text": "bootstrap.min.css",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 11,
+      "merged_page": 260,
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+      "chapter_rect": [
+        97.10399627685547,
+        399.0400085449219,
+        505.10400390625,
+        411.0400085449219
+      ],
+      "merged_rect": [
+        97.10399627685547,
+        399.0400085449219,
+        505.10400390625,
+        411.0400085449219
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.",
+      "merged_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 11,
+      "merged_page": 260,
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+      "chapter_rect": [
+        91.10399627685547,
+        417.0400085449219,
+        109.10399627685547,
+        429.0400085449219
+      ],
+      "merged_rect": [
+        91.10399627685547,
+        417.0400085449219,
+        109.10399627685547,
+        429.0400085449219
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "css",
+      "merged_visible_text": "css",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 11,
+      "merged_page": 260,
+      "uri": "http://www.thymeleaf.org",
+      "chapter_rect": [
+        187.10400390625,
+        129.03997802734375,
+        331.10400390625,
+        141.03997802734375
+      ],
+      "merged_rect": [
+        187.10400390625,
+        129.03997802734375,
+        331.10400390625,
+        141.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.thymeleaf.org",
+      "merged_visible_text": "http://www.thymeleaf.org",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 12,
+      "merged_page": 261,
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "chapter_rect": [
+        97.10399627685547,
+        92.0,
+        475.10400390625,
+        104.0
+      ],
+      "merged_rect": [
+        97.10399627685547,
+        92.0,
+        475.10400390625,
+        104.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.",
+      "merged_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 12,
+      "merged_page": 261,
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "chapter_rect": [
+        91.10399627685547,
+        110.0,
+        169.10400390625,
+        122.0
+      ],
+      "merged_rect": [
+        91.10399627685547,
+        110.0,
+        169.10400390625,
+        122.0
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "bundle.min.js",
+      "merged_visible_text": "bundle.min.js",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 13,
+      "merged_page": 262,
+      "uri": "http://localhost:8080/7-2",
+      "chapter_rect": [
+        85.10399627685547,
+        152.0,
+        204.71133422851562,
+        163.03997802734375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        152.0,
+        204.71133422851562,
+        163.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/7-2",
+      "merged_visible_text": "http://localhost:8080/7-2",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 13,
+      "merged_page": 262,
+      "uri": "https://getbootstrap.jp/",
+      "chapter_rect": [
+        198.69525146484375,
+        321.60003662109375,
+        311.3694763183594,
+        332.6399841308594
+      ],
+      "merged_rect": [
+        198.69525146484375,
+        321.60003662109375,
+        311.3694763183594,
+        332.6399841308594
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://getbootstrap.jp/）",
+      "merged_visible_text": "https://getbootstrap.jp/）",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 14,
+      "merged_page": 263,
+      "uri": "https://www.tohoho-web.com/bootstrap5/index.html",
+      "chapter_rect": [
+        235.75650024414062,
+        544.2666015625,
+        480.380859375,
+        555.3065795898438
+      ],
+      "merged_rect": [
+        235.75650024414062,
+        544.2666015625,
+        480.380859375,
+        555.3065795898438
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "(https://www.tohoho-web.com/bootstrap5/index.html)",
+      "merged_visible_text": "(https://www.tohoho-web.com/bootstrap5/index.html)",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 14,
+      "merged_page": 263,
+      "uri": "https://getbootstrap.jp/",
+      "chapter_rect": [
+        213.37808227539062,
+        520.2666015625,
+        326.05230712890625,
+        531.3065795898438
+      ],
+      "merged_rect": [
+        213.37808227539062,
+        520.2666015625,
+        326.05230712890625,
+        531.3065795898438
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://getbootstrap.jp/",
+      "merged_visible_text": "https://getbootstrap.jp/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 26,
+      "merged_page": 275,
+      "uri": "http://localhost:8080/7-3",
+      "chapter_rect": [
+        85.10399627685547,
+        382.79998779296875,
+        204.71133422851562,
+        393.8399658203125
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        382.79998779296875,
+        204.71133422851562,
+        393.8399658203125
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/7-3",
+      "merged_visible_text": "http://localhost:8080/7-3",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 29,
+      "merged_page": 278,
+      "uri": "http://localhost:8080/7-4",
+      "chapter_rect": [
+        85.10399627685547,
+        314.0,
+        204.71133422851562,
+        325.03997802734375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        314.0,
+        204.71133422851562,
+        325.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/7-4",
+      "merged_visible_text": "http://localhost:8080/7-4",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 33,
+      "merged_page": 282,
+      "uri": "https://getbootstrap.jp/docs/5.3/layout/grid/",
+      "chapter_rect": [
+        184.29150390625,
+        221.52001953125,
+        397.3856201171875,
+        232.55999755859375
+      ],
+      "merged_rect": [
+        184.29150390625,
+        221.52001953125,
+        397.3856201171875,
+        232.55999755859375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://getbootstrap.jp/docs/5.3/layout/grid/",
+      "merged_visible_text": "https://getbootstrap.jp/docs/5.3/layout/grid/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 33,
+      "merged_page": 282,
+      "uri": "http://localhost:8080/7-5",
+      "chapter_rect": [
+        85.10399627685547,
+        110.0,
+        204.71133422851562,
+        121.03997802734375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        110.0,
+        204.71133422851562,
+        121.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/7-5",
+      "merged_visible_text": "http://localhost:8080/7-5",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 37,
+      "merged_page": 286,
+      "uri": "https://getbootstrap.jp/docs/5.3/layout/columns/",
+      "chapter_rect": [
+        183.19650268554688,
+        372.8199462890625,
+        407.0685119628906,
+        383.37994384765625
+      ],
+      "merged_rect": [
+        183.19650268554688,
+        372.8199462890625,
+        407.0685119628906,
+        383.37994384765625
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://getbootstrap.jp/docs/5.3/layout/columns/",
+      "merged_visible_text": "https://getbootstrap.jp/docs/5.3/layout/columns/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 37,
+      "merged_page": 286,
+      "uri": "http://localhost:8080/7-5-2",
+      "chapter_rect": [
+        85.10399627685547,
+        110.0,
+        215.75132751464844,
+        121.03997802734375
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        110.0,
+        215.75132751464844,
+        121.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/7-5-2",
+      "merged_visible_text": "http://localhost:8080/7-5-2",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "07",
+      "chapter_page": 40,
+      "merged_page": 289,
+      "uri": "https://getbootstrap.jp/docs/5.3/forms/form-control/",
+      "chapter_rect": [
+        85.10399627685547,
+        296.5999755859375,
+        337.6771240234375,
+        307.63995361328125
+      ],
+      "merged_rect": [
+        85.10399627685547,
+        296.5999755859375,
+        337.6771240234375,
+        307.63995361328125
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://getbootstrap.jp/docs/5.3/forms/form-control/",
+      "merged_visible_text": "https://getbootstrap.jp/docs/5.3/forms/form-control/",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "appendix-a",
+      "chapter_page": 5,
+      "merged_page": 303,
+      "uri": "https://start.spring.io",
+      "chapter_rect": [
+        333.30999755859375,
+        718.3125,
+        434.56878662109375,
+        729.3524780273438
+      ],
+      "merged_rect": [
+        333.30999755859375,
+        718.3125,
+        434.56878662109375,
+        729.3524780273438
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://start.spring.io",
+      "merged_visible_text": "https://start.spring.io",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "appendix-a",
+      "chapter_page": 7,
+      "merged_page": 305,
+      "uri": "https://start.spring.io",
+      "chapter_rect": [
+        191.5399932861328,
+        510.54248046875,
+        292.80987548828125,
+        521.5824584960938
+      ],
+      "merged_rect": [
+        191.5399932861328,
+        510.54248046875,
+        292.80987548828125,
+        521.5824584960938
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "、https://start.spring.io",
+      "merged_visible_text": "、https://start.spring.io",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "part": "appendix-b",
+      "chapter_page": 7,
+      "merged_page": 313,
+      "uri": "http://www.trainocate.co.jp/",
+      "chapter_rect": [
+        336.7900085449219,
+        689.3986206054688,
+        464.81500244140625,
+        698.3986206054688
+      ],
+      "merged_rect": [
+        336.7900085449219,
+        689.3986206054688,
+        464.81500244140625,
+        698.3986206054688
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://www.trainocate.co.jp/",
+      "merged_visible_text": "http://www.trainocate.co.jp/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex02",
+      "chapter_page": 5,
+      "merged_page": 15,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        602.9949951171875,
+        266.871337890625,
+        614.0349731445312
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        602.9949951171875,
+        266.871337890625,
+        614.0349731445312
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex02",
+      "chapter_page": 6,
+      "merged_page": 16,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        373.9045715332031,
+        266.871337890625,
+        384.9445495605469
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        373.9045715332031,
+        266.871337890625,
+        384.9445495605469
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex03",
+      "chapter_page": 6,
+      "merged_page": 22,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        200.0,
+        266.849609375,
+        211.03997802734375
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        200.0,
+        266.849609375,
+        211.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex03",
+      "chapter_page": 8,
+      "merged_page": 24,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        158.0,
+        266.849609375,
+        169.03997802734375
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        158.0,
+        266.849609375,
+        169.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex03",
+      "chapter_page": 9,
+      "merged_page": 25,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        344.0,
+        266.849609375,
+        355.03997802734375
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        344.0,
+        266.849609375,
+        355.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex03",
+      "chapter_page": 11,
+      "merged_page": 27,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        380.0,
+        266.849609375,
+        391.03997802734375
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        380.0,
+        266.849609375,
+        391.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex04",
+      "chapter_page": 4,
+      "merged_page": 32,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        494.6412658691406,
+        266.871337890625,
+        505.6812438964844
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        494.6412658691406,
+        266.871337890625,
+        505.6812438964844
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex04",
+      "chapter_page": 5,
+      "merged_page": 33,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        577.64453125,
+        266.871337890625,
+        588.6845092773438
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        577.64453125,
+        266.871337890625,
+        588.6845092773438
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex04",
+      "chapter_page": 7,
+      "merged_page": 35,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        429.66033935546875,
+        266.871337890625,
+        440.7003173828125
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        429.66033935546875,
+        266.871337890625,
+        440.7003173828125
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex05",
+      "chapter_page": 4,
+      "merged_page": 40,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        443.4703063964844,
+        266.871337890625,
+        454.5102844238281
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        443.4703063964844,
+        266.871337890625,
+        454.5102844238281
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex05",
+      "chapter_page": 7,
+      "merged_page": 43,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        163.82400512695312,
+        177.66033935546875,
+        266.871337890625,
+        188.7003173828125
+      ],
+      "merged_rect": [
+        163.82400512695312,
+        177.66033935546875,
+        266.871337890625,
+        188.7003173828125
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex06",
+      "chapter_page": 8,
+      "merged_page": 54,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        134.78399658203125,
+        134.0,
+        237.8096160888672,
+        145.03997802734375
+      ],
+      "merged_rect": [
+        134.78399658203125,
+        134.0,
+        237.8096160888672,
+        145.03997802734375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex06",
+      "chapter_page": 8,
+      "merged_page": 54,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        134.78399658203125,
+        537.69580078125,
+        237.8096160888672,
+        548.7357788085938
+      ],
+      "merged_rect": [
+        134.78399658203125,
+        537.69580078125,
+        237.8096160888672,
+        548.7357788085938
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex06",
+      "chapter_page": 10,
+      "merged_page": 56,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        134.78399658203125,
+        238.751220703125,
+        237.8096160888672,
+        249.79119873046875
+      ],
+      "merged_rect": [
+        134.78399658203125,
+        238.751220703125,
+        237.8096160888672,
+        249.79119873046875
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex06",
+      "chapter_page": 12,
+      "merged_page": 58,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        134.78399658203125,
+        273.19415283203125,
+        237.8096160888672,
+        284.234130859375
+      ],
+      "merged_rect": [
+        134.78399658203125,
+        273.19415283203125,
+        237.8096160888672,
+        284.234130859375
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex06",
+      "chapter_page": 13,
+      "merged_page": 59,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        134.78399658203125,
+        461.251220703125,
+        237.8096160888672,
+        472.29119873046875
+      ],
+      "merged_rect": [
+        134.78399658203125,
+        461.251220703125,
+        237.8096160888672,
+        472.29119873046875
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex06",
+      "chapter_page": 16,
+      "merged_page": 62,
+      "uri": "http://localhost:8080/",
+      "chapter_rect": [
+        134.78399658203125,
+        308.1370849609375,
+        237.8096160888672,
+        319.17706298828125
+      ],
+      "merged_rect": [
+        134.78399658203125,
+        308.1370849609375,
+        237.8096160888672,
+        319.17706298828125
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/",
+      "merged_visible_text": "http://localhost:8080/",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex07",
+      "chapter_page": 15,
+      "merged_page": 77,
+      "uri": "http://localhost:8080/4",
+      "chapter_rect": [
+        114.14399719238281,
+        493.9045715332031,
+        222.69581604003906,
+        504.9445495605469
+      ],
+      "merged_rect": [
+        114.14399719238281,
+        493.9045715332031,
+        222.69581604003906,
+        504.9445495605469
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "http://localhost:8080/4",
+      "merged_visible_text": "http://localhost:8080/4",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "part": "ex-back",
+      "chapter_page": 1,
+      "merged_page": 78,
+      "uri": "https://www.trainocate.co.jp/",
+      "chapter_rect": [
+        336.42999267578125,
+        689.3986206054688,
+        468.98199462890625,
+        698.3986206054688
+      ],
+      "merged_rect": [
+        336.42999267578125,
+        689.3986206054688,
+        468.98199462890625,
+        698.3986206054688
+      ],
+      "maximum_coordinate_delta_pt": 0.0,
+      "chapter_visible_text": "https://www.trainocate.co.jp/",
+      "merged_visible_text": "https://www.trainocate.co.jp/",
+      "passed": true
+    }
+  ]
+}

@@ -124,7 +124,7 @@
 ::: {#p285-b03 .paragraph}
 
 [&#32;例）\[spring\_exercise\_2\]プロジェクトを実行したいなら、まず親プロジェクトである、]{.s008}\
-[\[spring\_exercise\]プロジェクトを右クリック→\[Maven install\]をクリック]{.s008}
+[\[spring\_exercise\]プロジェクトを右クリック→\[Maven install\]をクリック。]{.s008}
 
 :::
 

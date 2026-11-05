@@ -1,0 +1,116 @@
+{
+  "status": "pass",
+  "generated_utc": "2026-11-05T05:05:30.881136+00:00",
+  "scope": "第1章原文復元。新説明禁止、必要な版名・句点と既存active図版参照以外の差分を許可しない。外部プロジェクト・元SVG・baseline・source-layoutは編集しない。",
+  "checks": {
+    "raw_markdown_matches_baseline_with_only_allowed_differences": true,
+    "same_block_id_set": true,
+    "same_source_page_order": true,
+    "same_figure_ids": true,
+    "no_unexpected_figure_reference_change": true,
+    "only_version_and_period_body_differences": true,
+    "all_other_blocks_including_code_unchanged": true,
+    "no_new_ids": true,
+    "no_cli_verify_or_mvnw_in_body": true,
+    "baseline_mysql_example_restored": true,
+    "original_GUI_steps_restored": true,
+    "framework_version_matches_actual_bom": true
+  },
+  "block_count": 84,
+  "figure_count": 15,
+  "source_pages": 16,
+  "remaining_differences": [
+    {
+      "kind": "非表示のメタデータ",
+      "location": "冒頭HTMLコメント",
+      "baseline": "<!-- 元PDF 15〜30ページ。本文の改訂はまだ行っていません。 -->",
+      "current": "<!-- 元PDF 15〜30ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+      "reason": "Java21/SpringBoot4.0.2対応版の管理表示。本文に出力されない。"
+    },
+    {
+      "kind": "必要なバージョン表記訂正",
+      "block_id": "p020-b10",
+      "baseline": "本書では、Spring Framework 6.0(2022 年11 月リリース)を利用します。",
+      "current": "本書では、Spring Framework 7.0.3を利用します。",
+      "reason": "Boot4.0.2実BOMのspring-framework.version=7.0.3。旧版6.0の2022年11月注記は削除し、新説明は追加しない。"
+    },
+    {
+      "kind": "句点補完",
+      "block_id": "p022-b08",
+      "baseline": "以下の画像は、Maven により必要なライブラリが自動導入されている様子です。開発者はバ\nージョンの相性に悩まされることなく、スムーズに開発を始めることができます",
+      "current": "以下の画像は、Maven により必要なライブラリが自動導入されている様子です。開発者はバ\nージョンの相性に悩まされることなく、スムーズに開発を始めることができます。",
+      "reason": "文末「できます」の句点欠落1か所だけを補完。"
+    }
+  ],
+  "figure_reference_differences": [],
+  "node_difference_ids": [
+    "p020-b10",
+    "p022-b08"
+  ],
+  "removed_new_ids": [
+    "migration-01-pom-parent",
+    "migration-01-pom-java21"
+  ],
+  "restored_blocks": [
+    "p025-b06",
+    "p026-b01",
+    "p026-b02",
+    "p027-b01",
+    "p027-b02",
+    "p028-b04"
+  ],
+  "new_explanatory_paragraph_count": 0,
+  "baseline_sha256": "6dc74e72c752c2b04de5e6322cb2c5b7d957ca2cd621636b4ebd09d8c520dd59",
+  "current_sha256": "e8224d1b982ec9db87fd72cd0cde007a11723e10d639e39fceac66d0c9381b8a",
+  "source_layout_sha256": "5ce6828b7182fc445bc8c1ab3a5d8eb03711f413ed5a42b8e750ba66bb8ab483",
+  "all_unified_diff_lines": [
+    "--- baseline.md",
+    "+++ chapter.md",
+    "@@ -1,4 +1,4 @@",
+    "-<!-- 元PDF 15〜30ページ。本文の改訂はまだ行っていません。 -->",
+    "+<!-- 元PDF 15〜30ページ。Java 21・Spring Boot 4.0.2対応版。 -->",
+    " ",
+    " ::: {#page-15 .source-page}",
+    " ",
+    "@@ -258,7 +258,7 @@",
+    " ",
+    " ::: {#p020-b10 .paragraph}",
+    " ",
+    "-[本書では、Spring Framework 6.0(2022 年11 月リリース)を利用します。]{.s011}",
+    "+[本書では、Spring Framework 7.0.3を利用します。]{.s011}",
+    " ",
+    " :::",
+    " ",
+    "@@ -360,7 +360,7 @@",
+    " ::: {#p022-b08 .paragraph}",
+    " ",
+    " [以下の画像は、Maven により必要なライブラリが自動導入されている様子です。開発者はバ]{.s009}\\",
+    "-[ージョンの相性に悩まされることなく、スムーズに開発を始めることができます]{.s009}",
+    "+[ージョンの相性に悩まされることなく、スムーズに開発を始めることができます。]{.s009}",
+    " ",
+    " :::",
+    " "
+  ],
+  "official_sources": [
+    {
+      "url": "https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/4.0.2/spring-boot-dependencies-4.0.2.pom",
+      "verified_via": "公式MavenのBOMをHTTP200で再取得し、ローカル実BOMでも同じ値をXML解析",
+      "version": "4.0.2",
+      "property": "spring-framework.version",
+      "value": "7.0.3",
+      "downloaded_sha256": "b4904891e811431820f16b378776f935fb7bff8129e26e8dc72936b6283af8da"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/spring-projects/spring-boot/v4.0.2/gradle.properties",
+      "verified_via": "web閲覧",
+      "property": "springFrameworkVersion",
+      "value": "7.0.3"
+    },
+    {
+      "url": "https://spring.io/blog/2026/01/15/spring-framework-7-0-3-available-now/",
+      "verified_via": "web閲覧",
+      "finding": "Framework7.0.3がBoot4.0.2に同梱される旨を公式リリース記事で確認。"
+    }
+  ],
+  "answer_evidence": "本教材のSpring Boot4.0.2前提ではSpring Framework6.0の記述は旧版の誤り。実BOMの管理値7.0.3へ訂正する。Maven導入例はユーザー指定に従い原文8.3.0/compileへ戻し、配布アプリの実POMは変更しない。"
+}

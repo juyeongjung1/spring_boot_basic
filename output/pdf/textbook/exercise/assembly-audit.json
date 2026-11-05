@@ -6,8 +6,8 @@
   "source_page_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 19,
-  "maximum_uri_coordinate_delta_pt": 0,
-  "pdf_sha256": "a40f85b2065105d14f06ff920a04c20d11ae9cf6906fb701368406c0c92c93bb",
-  "verification": "output/verification/remaining/",
-  "scope": "今回の合冊の本文/ヘッダー/ページ境界/URI。画像の表示はfinal-images-qaに別記。"
+  "maximum_uri_coordinate_delta_pt": 0.0,
+  "pdf_sha256": "d24efe203c99423cb4e2531c594e87b9c3790a24b978e832b4ce453069a5fdf2",
+  "verification": "output/verification/fidelity/",
+  "scope": "今回の合冊の本文・原本ヘッダー・ページ境界・URI。PPT/段落の画像比較を別記。"
 }
