@@ -1,0 +1,562 @@
+{
+  "status": "合格：最終24点を原寸・560px印刷相当で確認",
+  "reviewed": 24,
+  "passed": 24,
+  "needs_edit": 0,
+  "reviewed_new_or_edited": 14,
+  "previously_reviewed_and_sha_identical": 10,
+  "criteria": [
+    "綴り・式・注釈・数字・大小文字",
+    "概念の対応と矢印方向",
+    "実DBの例と図の仮例の区別",
+    "560px幅の印刷相当で可読性"
+  ],
+  "method": "最終24点の生成元とSHAを固定。初回確認のうち10点はSHA一致で継承し、再編集4点・新規9点・差替え新規1点を原寸で確認した。今回の最終差替え時は他23点のSHA完全一致も確認。最終560pxシート4枚で24点を目視し、元画像/教材assetsは加工していない。",
+  "records": [
+    {
+      "id": "framework-foundation",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-d505955c-bd91-4211-b5ad-a361cdb2e8e6.png",
+      "sha256": "068482bcbf67f185e7bc71a390c5475ff7b2c36e9df514e93fc087025ff5aca3",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\01\\assets\\revision-ill-framework-foundation.png",
+      "chapter": "01",
+      "source_page": 18,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-framework-foundation.png",
+      "small_viewed": true,
+      "findings": [
+        "共通基盤と独自の処理の組合せ、3つの共通機能、文字を確認。小型でも読める。"
+      ]
+    },
+    {
+      "id": "boot-managed-versions",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-5133a05c-63e4-49c2-bf3e-a3cefe04df7d.png",
+      "sha256": "03831328dd9641aa06719ce511e0e64e4ef1ee29d7cb416c1a8962b0e6d88878",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\01\\assets\\revision-ill-boot-managed-versions.png",
+      "chapter": "01",
+      "source_page": 22,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-boot-managed-versions.png",
+      "small_viewed": true,
+      "findings": [
+        "管理対象の枠と3部品の向き、文字を確認。任意の全ライブラリに一般化しない構成。"
+      ]
+    },
+    {
+      "id": "bean-auto-configuration",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-db01342a-f74b-4766-8e8a-a98397bd4376.png",
+      "sha256": "82d0c5c68fd92bcbcb0a9d3ea672d3f4d9702dc283c815d42ca19c6d44ab6744",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\01\\assets\\revision-ill-bean-auto-configuration.png",
+      "chapter": "01",
+      "source_page": 23,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-bean-auto-configuration.png",
+      "small_viewed": true,
+      "findings": [
+        "ライブラリ/設定から条件付きでBeanを用意する向きと、DIコンテナの綴りを確認。"
+      ]
+    },
+    {
+      "id": "request-response-search",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-27d288fa-ff4f-4ad5-bdb3-1877ad132570.png",
+      "sha256": "d5ffaed55ac43dc87a67bd1a76f818ce0dc9cd14a9da42ccf0b1937db097b626",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\02\\assets\\revision-ill-request-response-search.png",
+      "chapter": "02",
+      "source_page": 35,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-request-response-search.png",
+      "small_viewed": true,
+      "findings": [
+        "リクエストは左→右、レスポンスは右→左。検索条件と結果の対応、ラベルを確認。"
+      ]
+    },
+    {
+      "id": "get-post-routing",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-f4bf8fe3-f415-4a60-a48b-5552828063a3.png",
+      "sha256": "7a915d65db9a483f7eb19a967d7483f6dab118a74334c31767fe23156fa5468d",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\02\\assets\\revision-ill-get-post-routing.png",
+      "chapter": "02",
+      "source_page": 52,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-get-post-routing.png",
+      "small_viewed": true,
+      "findings": [
+        "GET /login→showLoginView()、POST /login→doLogin(...)の綴り・大文字・経路を確認。"
+      ]
+    },
+    {
+      "id": "form-name-binding",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-c5ea9bff-754e-42cc-841c-4ddf73acb89a.png",
+      "sha256": "fef1db7487b44c446fa489719fa5d65363f2fade76062f59e972c79ff33c1619",
+      "pixels": [
+        1944,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\02\\assets\\revision-ill-form-name-binding.png",
+      "chapter": "02",
+      "source_page": 54,
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-form-name-binding.png",
+      "small_viewed": true,
+      "findings": [
+        "name=\"id\"/name=\"password\"の引用符が直線になったことを確認。大小文字・1234/abc・矢印・1つのUserFormへの対応は正確。"
+      ]
+    },
+    {
+      "id": "model-key-property",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-2b86db07-8a33-47e4-b071-1cddbc3f1dfa.png",
+      "sha256": "3a9fa32e1d3b81fe1f7421a9252ceb4768b672cf55324c2f041aee980d1beec4",
+      "pixels": [
+        1921,
+        819
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\02\\assets\\revision-ill-model-key-property.png",
+      "chapter": "02",
+      "source_page": 60,
+      "width_pt": 280,
+      "height_pt": 119.37532535137949,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-model-key-property.png",
+      "small_viewed": true,
+      "findings": [
+        "${user.id}の$・波括弧・ドット・綴り・大小文字が正確。userキーとUserFormのid:1234、出力1234への対応は正しい。"
+      ]
+    },
+    {
+      "id": "repository-implementation",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-940943fb-6ff2-480c-a300-60ea551adb2a.png",
+      "sha256": "60de3494d576a8ef52763aee5b948c268f6cac1f9ad3ea740b36359adc203056",
+      "pixels": [
+        1944,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\03\\assets\\revision-ill-repository-implementation.png",
+      "chapter": "03",
+      "source_page": 78,
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-repository-implementation.png",
+      "small_viewed": true,
+      "findings": [
+        "図内をRepository／Spring Data改行JPA／実装へ短縮し、文字が大きくなった。findAll()/save()の綴り、仕様→実装の矢印、DBとの関係は保持。"
+      ]
+    },
+    {
+      "id": "query-method-name",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-aad8a4f5-124d-4b53-aca3-c72f4046e54d.png",
+      "sha256": "a124f068d00c9d48139325b55c08b36a5c0396d8647ed651f4d066d302a1bb18",
+      "pixels": [
+        1944,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\03\\assets\\revision-ill-query-method-name.png",
+      "chapter": "03",
+      "source_page": 97,
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-query-method-name.png",
+      "small_viewed": true,
+      "findings": [
+        "findByPrice(20000)、price = 20000、30000/20000/50000の数字と一致条件を確認。",
+        "30000はTV、20000はモニター、50000はPCへ修正され、20000のモニターのみが結果へ出る。"
+      ]
+    },
+    {
+      "id": "redirect-new-request",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-83dbdc7c-6666-4fb3-9cc7-867ee0a20e61.png",
+      "sha256": "300c92faa5386933fbb1979a926d9c048f2a4be03d8690505db590d44d6bc481",
+      "pixels": [
+        1944,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\03\\assets\\revision-ill-redirect-new-request.png",
+      "chapter": "03",
+      "source_page": 124,
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-redirect-new-request.png",
+      "small_viewed": true,
+      "findings": [
+        "初回ブラウザーは空となり、redirect応答自体に完成HTMLを見せていない。redirect:/product/findAllの表記を確認。",
+        "応答は左向き、新しいリクエストは右向き、最終HTMLは左向き。サーバー内部の直接呼出しを描いていない。"
+      ]
+    },
+    {
+      "id": "model-session-lifetime",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-615fe25c-16e9-4646-98cd-d9b68a30a00a.png",
+      "sha256": "2cb2839a1c29509203ffc5e670e0facfefd80ac603b52a94bdaa0ce409264d9c",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\04\\assets\\revision-ill-model-session-lifetime.png",
+      "chapter": "04",
+      "source_page": 143,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-model-session-lifetime.png",
+      "small_viewed": true,
+      "findings": [
+        "Modelは次回の箱が空、HttpSessionは同じロッカー内の値を保つ。自動コピー矢印がなく、区別が明確。"
+      ]
+    },
+    {
+      "id": "form-error-roundtrip",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-a137cf61-2912-4743-a2e5-406404918d79.png",
+      "sha256": "01e287137a6ea41f26b7d4cf72a1472c047492a5f10b97a31af8feca033cb01a",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\04\\assets\\revision-ill-form-error-roundtrip.png",
+      "chapter": "04",
+      "source_page": 153,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-form-error-roundtrip.png",
+      "small_viewed": true,
+      "findings": [
+        "UserFormとBindingResultの綴りを確認。入力123を保持して再表示し、空のパスワードと入力エラーを示す。値と検証結果は区別されている。"
+      ]
+    },
+    {
+      "id": "null-blank-constraints",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-f5b1a7fd-ea47-43d0-a875-ebb366657698.png",
+      "sha256": "4ea1d32d308f32c06e232cd8bad724722a8263bb96f48e553daed9ded7247402",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\04\\assets\\revision-ill-null-blank-constraints.png",
+      "chapter": "04",
+      "source_page": 157,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-null-blank-constraints.png",
+      "small_viewed": true,
+      "findings": [
+        "@NotNullはnullだけ×、空文字/空白だけ/ABCは✓。@NotBlankはnull/空文字/空白だけが×、ABCは✓。",
+        "注釈の大小文字と日本語を確認。captionがStringに限定していることも確認。"
+      ]
+    },
+    {
+      "id": "text-escape",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-10d7a5c3-c398-4a7c-874b-83124e711e40.png",
+      "sha256": "fcb3ab1c0aa8bdb666df631859414eb1606c43ebac648f069216fa4b591d9a5a",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\05\\assets\\revision-ill-text-escape.png",
+      "chapter": "05",
+      "source_page": 169,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-text-escape.png",
+      "small_viewed": true,
+      "findings": [
+        "入力も出力も<b>A</b>と正しく表記し、th:textでタグを解釈せず文字として表示する。<、>、/、:の欠落なし。"
+      ]
+    },
+    {
+      "id": "dynamic-url-id",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-dc26a722-cf9a-4304-910e-5ad817cd2e3b.png",
+      "sha256": "f5163680a7328867df587937f6329c21e5d323628190a58abd9b6f16e5ba0d87",
+      "pixels": [
+        1944,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\05\\assets\\revision-ill-dynamic-url-id.png",
+      "chapter": "05",
+      "source_page": 174,
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-dynamic-url-id.png",
+      "small_viewed": true,
+      "findings": [
+        "商品ID 4の冷蔵庫→/product/findById/4→@PathVariableのid:4という値の対応が正確。",
+        "findById/@PathVariableの大小文字、スラッシュ、IDを取り出す橙矢印を確認。"
+      ]
+    },
+    {
+      "id": "static-public-path",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-3cf808ef-1210-4d0a-b88d-3e4f7e45f8c9.png",
+      "sha256": "89ea9fa18045e0834c4ad636849ce0d67ae4edabb69f2f4b13b39fd897fe542e",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\05\\assets\\revision-ill-static-public-path.png",
+      "chapter": "05",
+      "source_page": 179,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-static-public-path.png",
+      "small_viewed": true,
+      "findings": [
+        "static内のcss/style.css→/css/style.css、js/script.js→/js/script.jsで対応し、公開URLに/staticを余計に付けていない。",
+        "綴り・大文字/小文字・スラッシュと2本の矢印を確認。"
+      ]
+    },
+    {
+      "id": "relationship-field-column",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-27857715-44e4-4785-b148-c04a95634fbc.png",
+      "sha256": "462d12f2b92c67c3981d91444cd9e2675a58b3bbb7d9bd50371eec1fd2f7c228",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\06\\assets\\revision-ill-relationship-field-column.png",
+      "chapter": "06",
+      "source_page": 201,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-relationship-field-column.png",
+      "small_viewed": true,
+      "findings": [
+        "Category.productListのmappedByはProduct.categoryのJavaフィールドを指す。JoinColumnはDBのcategory_idへ対応。",
+        "mappedBy/JoinColumn/productList/category/category_idの綴りと矢印終点を確認。"
+      ]
+    },
+    {
+      "id": "null-reference-guard",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-1047880a-3bca-4fb3-b272-56ebb6b560de.png",
+      "sha256": "cc2487ed5239766b486903d47abed3361f04656186a7bf0dd8547405d7fe42d6",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\06\\assets\\revision-ill-null-reference-guard.png",
+      "chapter": "06",
+      "source_page": 206,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "差替え新規図を原寸で目視",
+      "small_image": "second-review-final-small-null-reference-guard.png",
+      "small_viewed": true,
+      "findings": [
+        "上段のProduct.categoryはCategoryを参照し、nameの冷蔵庫を出力する。Product/Category/category/nameの大小文字を確認。",
+        "下段はcategoryがnullで、Category.nameへ進む線を描かず未設定へ直接進む。nullは参照先なしを示し、文字列nullの入ったCategoryではない。"
+      ]
+    },
+    {
+      "id": "select-label-value",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-f5f979cd-f6cc-4cbb-b2f6-45c8bbfe41ec.png",
+      "sha256": "bf4e9a7f7287e946e3616dfd303781b68d91d92156a7c29e166cea0f0f809216",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\06\\assets\\revision-ill-select-label-value.png",
+      "chapter": "06",
+      "source_page": 218,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-select-label-value.png",
+      "small_viewed": true,
+      "findings": [
+        "表示名は冷蔵庫、送信するvalue = 3はcategoryId = 3へ対応。表示文字と送信値を区別し、数字と綴りが一致。"
+      ]
+    },
+    {
+      "id": "jpql-entity-names",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-841f4314-ad70-4d72-984d-811eaadcbfbf.png",
+      "sha256": "75578c0ebc172b1e43d212546084c5ed0ed6e554ebc9b6515eea0118c565cc0d",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\06\\assets\\revision-ill-jpql-entity-names.png",
+      "chapter": "06",
+      "source_page": 225,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-jpql-entity-names.png",
+      "small_viewed": true,
+      "findings": [
+        "DBのproduct/category_idと、JavaのProduct/categoryを区別。JPQLのFROM Product pとp.category.nameは綴り・大小文字・ドットとも正確。"
+      ]
+    },
+    {
+      "id": "groupby-aggregate-dto",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-b881bf09-3127-4278-9009-6ac0d7f2f944.png",
+      "sha256": "1744914b64e48c0a1f9e93454c0db5555ef9812945ec3b72a8f873aece159f32",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\06\\assets\\revision-ill-groupby-aggregate-dto.png",
+      "chapter": "06",
+      "source_page": 233,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "再編集4点・新規9点を原寸で目視",
+      "small_image": "second-review-final-small-groupby-aggregate-dto.png",
+      "small_viewed": true,
+      "findings": [
+        "Aの30000+20000=50000、COUNT 2。Bの15000=15000、COUNT 1。GROUP BY/DTO/SUM/COUNTの綴り、仕分けと集約の矢印は正確。",
+        "captionの「図の例では」により、3件の模式例であり実DBの全件集計ではないことを確認。"
+      ]
+    },
+    {
+      "id": "cdn-local-delivery",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-81a1f90f-99c2-4806-b282-e0a450858306.png",
+      "sha256": "56771c382e3389281ceb45f3b9568199a1fb1d1627c78581b41a95caa3beb323",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\07\\assets\\revision-ill-cdn-local-delivery.png",
+      "chapter": "07",
+      "source_page": 245,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-cdn-local-delivery.png",
+      "small_viewed": true,
+      "findings": [
+        "CDN/アプリのstaticからブラウザーへ別々にCSS・JSが届く2つの経路。ブラウザーからJavaへの代理取得を描いていない。"
+      ]
+    },
+    {
+      "id": "spacing-box-model",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-3e19204c-4463-45c5-a2c6-26bd5c590721.png",
+      "sha256": "46086f3daaac7f864f042716afadd5c9a8b0fb2da4217686601b0a8f8c15db01",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\07\\assets\\revision-ill-spacing-box-model.png",
+      "chapter": "07",
+      "source_page": 259,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-spacing-box-model.png",
+      "small_viewed": true,
+      "findings": [
+        "外側マージン/境界/内側パディング/内容の順を確認。日本語と指示線は正確。"
+      ]
+    },
+    {
+      "id": "grid-containment",
+      "source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-15171ac4-0c07-4167-8999-301ba6d0e88c.png",
+      "sha256": "50bc470ae6cd081a2b904f10419d8d9b7ba988ff15b10f10909c14f90f5c88cd",
+      "pixels": [
+        1942,
+        809
+      ],
+      "intended_asset": "D:\\work\\Spring Boot 入門\\docs\\textbook\\chapters\\07\\assets\\revision-ill-grid-containment.png",
+      "chapter": "07",
+      "source_page": 265,
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "status": "pass",
+      "original_viewed": true,
+      "original_review_mode": "前回目視済み画像とSHA一致",
+      "small_image": "second-review-final-small-grid-containment.png",
+      "small_viewed": true,
+      "findings": [
+        "container内にrow、その内側に兄弟col2つ。すべて綴りが正確。"
+      ]
+    }
+  ],
+  "sheets": [
+    "second-review-sheet-01.png",
+    "second-review-sheet-02.png",
+    "second-review-sheet-03.png",
+    "second-review-sheet-04.png"
+  ],
+  "latest_review_new": 1,
+  "latest_review_inherited_sha": 23,
+  "latest_review_note": "固定ページの組版保全に伴い、最終候補を本文06/p206のnull-reference-guardに確定。"
+}

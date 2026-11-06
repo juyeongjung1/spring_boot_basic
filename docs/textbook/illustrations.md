@@ -1,36 +1,55 @@
 # 教材へ挿入した小型イラスト
 
-本文・付録・演習の全19章と既存図を調べ、概念の受け渡し・分岐・使い分けを補う9点を追加しました。既存のDI図を含む10点は、幅300pt・高さ140pt以内に収めています。新規9点の標準幅は280pt（約9.9cm）、DIは260ptです。
+難しい概念を説明する箇所へ、今回24点を追加しました。前回9点と既存DI図を合わせた全34点を、幅300pt・高さ140pt以内に収めます。新規33点は標準幅280pt、DIは260ptです。
 
-図中の短い語と色を大きく使い、長い説明は画像の外に文字のキャプションとして配置しています。図とキャプションは同一ページに保持します。通常本文・既存スライド・コードは書き換えていません。
+本文・コード・既存スライドは書き換えず、新しい図と短いキャプションだけを追加しています。図とキャプションは同じページに保持します。図中は短い語と色で関係を示し、詳しい説明は元の本文を使います。
 
-| 挿絵 | 章・原本頁 | ねらい | 画像 |
+## 今回追加した24点
+
+| 挿絵 | 章・元頁 | 理解を補う点 | 画像 |
 | --- | --- | --- | --- |
-| pom.xmlの指定から必要なライブラリをそろえる | 01・28p | pom.xmlを部品の指定リストとして共有し、Mavenが必要なライブラリを管理する関係を理解する。 | [表示](chapters/01/assets/revision-ill-maven.png) |
-| Modelを使ったデータの受け渡し | 02・58p | Formで受け取ったデータを、Modelのキーを介してViewへ渡す関係を理解する。MVC全体図は再掲しない。 | [表示](chapters/02/assets/revision-ill-model.png) |
-| Repositoryの返り値はリストと0/1件で異なる | 03・90p | Entityの1行1インスタンス図は既存のまま活用し、検索結果がない場合も含めた返り値の形を示す。 | [表示](chapters/03/assets/revision-ill-repository.png) |
-| 識別IDとサーバー側のセッション保存 | 04・142p | 画面を移っても残ることと、他のブラウザーセッションと分かれていることを同時に理解する。 | [表示](chapters/04/assets/revision-ill-session.png) |
-| 入力チェックの成功とエラーの分岐 | 04・148p | アノテーションが何をして、その結果を使ってどこへ進むかを理解する。 | [表示](chapters/04/assets/revision-ill-validation.png) |
-| 共通レイアウトと画面ごとの内容を組み合わせる | 05・181p | 共通部分を毎画面へコピーする方法と、1つの枠を再利用する方法の違いを直感で捉える。 | [表示](chapters/05/assets/revision-ill-layout.png) |
-| DBの外部キー値とJavaのオブジェクト参照 | 06・201p | category_idという列の値と、Category型のcategoryフィールドを混同しない。 | [表示](chapters/06/assets/revision-ill-foreign-key.png) |
-| 横幅によって左右配置から上下配置へ切り替わる | 07・269p | col-md-3/col-md-9が常に3:9のまま縮む指定ではないことを理解する。 | [表示](chapters/07/assets/revision-ill-responsive.png) |
-| 外側の例外から原因と自分のコードをたどる | appendix-b・291p | 一番上の例外だけで判断せず、原因とアプリケーションの場所を区別して探す。 | [表示](chapters/appendix-b/assets/revision-ill-errors.png) |
+| 共通の基盤にアプリケーション固有の処理を組み合わせる | 01・18p | 抽象語の『フレームワーク』を、共通の土台と個別に作る部分の区別として記憶できるようにする。 | [表示](chapters/01/assets/revision-ill-framework-foundation.png) |
+| Spring Bootが管理するライブラリのバージョンの組合せ | 01・22p | ライブラリを取得するMavenの働きと、管理対象ライブラリのバージョンをそろえるBootの働きを混同しないようにする。 | [表示](chapters/01/assets/revision-ill-boot-managed-versions.png) |
+| 条件に合う共通機能のBeanを自動で用意する | 01・23p | 『Beanの自動設定』を、全クラスが勝手に作られるという理解ではなく、利用条件に応じて共通部品が準備される仕組みとして捉える。 | [表示](chapters/01/assets/revision-ill-bean-auto-configuration.png) |
+| 検索のお願いと検索結果の応答 | 02・35p | リクエストとレスポンスを、教科書本文の服の検索の具体的な行動と対応付ける。 | [表示](chapters/02/assets/revision-ill-request-response-search.png) |
+| 同じURLでもGETとPOSTで担当メソッドが変わる | 02・52p | URLだけが対応付けの条件ではなく、HTTPメソッドも含めて処理が分かれることを理解する。 | [表示](chapters/02/assets/revision-ill-get-post-routing.png) |
+| 入力欄のnameとFormのフィールドを結び付ける | 02・54p | 日本語の項目名とnameの違い、複数の値が1つのFormへまとまる関係を可視化する。 | [表示](chapters/02/assets/revision-ill-form-name-binding.png) |
+| user.idをキー名とフィールド名に分けて読む | 02・60p | ModelのキーとFormのフィールドを混同せず、ドットの前後を別の段階として理解する。 | [表示](chapters/02/assets/revision-ill-model-key-property.png) |
+| Repositoryの宣言から使える実装オブジェクトが用意される | 03・78p | インターフェースを書いただけなのにfindAllやsaveを使える理由を、宣言と実体の区別で説明する。 | [表示](chapters/03/assets/revision-ill-repository-implementation.png) |
+| メソッド名と引数が検索条件になる | 03・97p | 命名ルールを暗記するだけでなく、メソッド名のプロパティと引数の値がどう条件になるかを理解する。 | [表示](chapters/03/assets/revision-ill-query-method-name.png) |
+| redirectはブラウザーからの新しいリクエストを生む | 03・124p | returnでController内の別メソッドを直接呼ぶことと、ブラウザーを介したredirectの違いを正しくイメージする。 | [表示](chapters/03/assets/revision-ill-redirect-new-request.png) |
+| ModelとHttpSessionではデータを渡す範囲が違う | 04・143p | 既存p143-f08は完成画面とModelコードの例。既存追加図session-separationはセッションIDと利用者ごとの分離。新図はリクエストをまたぐ保存期間だけを対比する。 | [表示](chapters/04/assets/revision-ill-model-session-lifetime.png) |
+| 入力値と入力エラーを同じ画面へ戻す | 04・153p | 既存validation-branchは成功/失敗の分岐だけ。新図はエラーで戻った画面に値とメッセージが再表示される理由を説明する。 | [表示](chapters/04/assets/revision-ill-form-error-roundtrip.png) |
+| null・空文字・空白だけの文字列は同じではない | 04・157p | p157-f18は多数のアノテーション一覧表。新図は特に誤りやすい3種類の空の状態を具体的な容器で比較する。 | [表示](chapters/04/assets/revision-ill-null-blank-constraints.png) |
+| タグに見える入力を文字として表示する | 05・169p | p167-f02はth:textの構文とXSSへの短い言及。新図はエスケープが文字列の見え方をどう変えるかに限定する。 | [表示](chapters/05/assets/revision-ill-text-escape.png) |
+| リンクのURLに含めたIDを引数へ取り出す | 05・174p | 既存p173-f07/p174-f08は実ブラウザーとコード。新図はURL末尾の値がJava引数へ対応する1対1の関係を抽出する。 | [表示](chapters/05/assets/revision-ill-dynamic-url-id.png) |
+| プロジェクト内の保存場所とブラウザー用URLを区別する | 05・179p | p178-f11はEclipseフォルダー画面。新図は保存場所と公開URLの対応、staticをURLに付けない理由を視覚化する。 | [表示](chapters/05/assets/revision-ill-static-public-path.png) |
+| mappedByのフィールド名とJoinColumnの列名を区別する | 06・201p | p195-f02はアノテーションのコード、既存foreign-key-referenceはFK値とオブジェクト参照。新図は2つの属性に指定する名前の名前空間を区別する。 | [表示](chapters/06/assets/revision-ill-relationship-field-column.png) |
+| 参照先がある場合だけ次のフィールドを読む | 06・206p | p206は2方式の構文のみ。既存foreign-key-referenceの「参照先がある場合」に対し、参照先なしで途中のドットアクセスを止める必要を示す。 | [表示](chapters/06/assets/revision-ill-null-reference-guard.png) |
+| 選択肢の表示名と送信する値は異なる | 06・218p | p213-f10はselectとEntityのコード。p218はテキストのみなので、th:textとth:valueが別の役割であることを具体例で示せる。 | [表示](chapters/06/assets/revision-ill-select-label-value.png) |
+| JPQLではJava側の名前を使う | 06・225p | p225-f16は構文の箇条書き。新図はSQL/DBの列名に慣れた学習者が混同する2つの名前空間を視覚的に分離する。 | [表示](chapters/06/assets/revision-ill-jpql-entity-names.png) |
+| 商品をカテゴリ別にまとめて集計する | 06・233p | p233〜235はDTOと集計コード/表のみで、グループ化の途中状態の図がない。データをまとめる段階と集計済み結果を分離して理解できる。 | [表示](chapters/06/assets/revision-ill-groupby-aggregate-dto.png) |
+| CSS・JSをどこから読み込むか | 07・245p | CDNとローカルを2つの設定手順として暗記せず、ブラウザーへ届くファイルの取得元の違いとして理解する。 | [表示](chapters/07/assets/revision-ill-cdn-local-delivery.png) |
+| マージンは枠の外、パディングは枠の内 | 07・259p | mとpの違いを、コードやブラウザー色だけに頼らず同じ要素の境界で理解する。 | [表示](chapters/07/assets/revision-ill-spacing-box-model.png) |
+| container・row・colの入れ子 | 07・265p | HTMLの閉じタグが連続すると見失いやすい親子関係を、空間の包み込みとして理解する。 | [表示](chapters/07/assets/revision-ill-grid-containment.png) |
+
+## 前回の9点とDI図
+
+| 挿絵 | 章・元頁 | 画像 |
+| --- | --- | --- |
+| pom.xmlの指定から必要なライブラリをそろえる | 01・28p | [表示](chapters/01/assets/revision-ill-maven.png) |
+| Modelを使ったデータの受け渡し | 02・58p | [表示](chapters/02/assets/revision-ill-model.png) |
+| Repositoryの返り値はリストと0/1件で異なる | 03・90p | [表示](chapters/03/assets/revision-ill-repository.png) |
+| 識別IDとサーバー側のセッション保存 | 04・142p | [表示](chapters/04/assets/revision-ill-session.png) |
+| 入力チェックの成功とエラーの分岐 | 04・148p | [表示](chapters/04/assets/revision-ill-validation.png) |
+| 共通レイアウトと画面ごとの内容を組み合わせる | 05・181p | [表示](chapters/05/assets/revision-ill-layout.png) |
+| DBの外部キー値とJavaのオブジェクト参照 | 06・201p | [表示](chapters/06/assets/revision-ill-foreign-key.png) |
+| 横幅によって左右配置から上下配置へ切り替わる | 07・269p | [表示](chapters/07/assets/revision-ill-responsive.png) |
+| 外側の例外から原因と自分のコードをたどる | appendix-b・291p | [表示](chapters/appendix-b/assets/revision-ill-errors.png) |
+| 依存性の注入 | 03・80p | [表示](chapters/03/assets/revision-di-remote.png) |
 
 ## 保存と生成記録
 
-9点は組み込みimage_genで生成しました。最終画像は各章のassetsへ保存しています。正確な生成プロンプト、元出力パス、最終画像のSHA256、配置元頁・ID・キャプションは [カタログ](illustrations.json) に記録しています。DIの元図はそのまま使用し、表示寸法を縮小しました。
+画像は組み込みimage_genで生成し、各章のassetsへ保存しています。正確な生成プロンプト、元出力パス、最終画像のSHA256、配置元頁・ID・キャプションは[カタログ](illustrations.json)に記録しています。新しい画像で既存画像を上書きしていません。
 
-## 既存図を活かした箇所
-
-- MVC全体の往復図は再掲せず、Modelのデータとテンプレートから画面を生成する部分を補いました。
-- Entityの1行と1インスタンスの対応図は残し、Repositoryの0件・複数件・0または1件の違いを補いました。
-- 外部参照の1対多・多対1の図は残し、DBの外部キー値とJavaのオブジェクト参照を対比しました。
-- Bootstrapの12列の説明図は残し、col-md-3/col-md-9が画面幅に応じて横並びから縦並びへ変わる点を補いました。追加図の色面は配置の模式図です。
-- 言語別メッセージは既存の参考欄の例を活かし、新たな図のために参考欄を分断しない構成にしました。
-- 演習には完成画面やヒントが既にあるため、新しい概念図は対応する本文側へまとめました。
-
-## 技術的な確認
-
-Bootstrap 5.3の標準mdブレークポイントは768pxです。追加図では幅の条件を表示し、端末の種類だけで切り替わるとの誤解を避けています。[公式のブレークポイント](https://getbootstrap.com/docs/5.3/layout/breakpoints/)、[公式のグリッド説明](https://getbootstrap.com/docs/5.3/layout/grid/)で確認しました。
-
-Caused by:の図にあるProductService.javaの26行目は、直前に掲載したログ例の行番号です。一般のエラーに固定の行番号があるという説明ではありません。
+元頁は配置元の原本ページ番号です。現在のPDFの物理ページ番号は、組版後の検証記録で確認します。

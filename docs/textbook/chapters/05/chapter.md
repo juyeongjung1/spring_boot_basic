@@ -208,6 +208,14 @@
 
 :::
 
+![タグに見える入力を文字として表示する](assets/revision-ill-text-escape.png){#illustration-expansion-2026-text-escape}
+
+::: {#illustration-expansion-2026-text-escape-caption .paragraph}
+
+th:textはタグに見える入力もエスケープして、HTMLの本文へ文字として出力します。
+
+:::
+
 ::: {#p169-b02 .paragraph}
 
 [その対策として、th:text を使用すると、入力データは自動的にエスケープ処理されます。こ]{.s009}\
@@ -412,6 +420,14 @@ public String showProductById(@PathVariable int id, Model model) {
 [動的なURL リンクによる呼び出しの場合は、URL からid を受け取る処理が必要となりますの]{.s009}\
 [で、2 章のupdate とdelete の場合と同様に、@PathVariable アノテーションを付与する必要が]{.s009}\
 [あります。（その場合、フォームからのid 検索は無効になります）]{.s009}
+
+:::
+
+![リンクのURLに含めたIDを引数へ取り出す](assets/revision-ill-dynamic-url-id.png){#illustration-expansion-2026-dynamic-url-id}
+
+::: {#illustration-expansion-2026-dynamic-url-id-caption .paragraph}
+
+動的リンクのURLに埋めた商品番号を、@PathVariableでハンドラメソッドの引数へ取り出します。
 
 :::
 
@@ -754,6 +770,14 @@ th:text="${product.name}"></div>
 
 [body の終了タグの直前の場所に、th:src でjs ファイルの場所を記述すると、読み込みできま]{.s009}\
 [す。]{.s009}
+
+:::
+
+![プロジェクト内の保存場所とブラウザー用URLを区別する](assets/revision-ill-static-public-path.png){#illustration-expansion-2026-static-public-path}
+
+::: {#illustration-expansion-2026-static-public-path-caption .paragraph}
+
+static内のCSSやJavaScriptは、ブラウザーからは/css/や/js/で始まるURLで読み込みます。
 
 :::
 

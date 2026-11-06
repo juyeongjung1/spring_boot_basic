@@ -1,0 +1,3016 @@
+{
+  "mechanical_passed": true,
+  "manual_review_completed": true,
+  "passed": true,
+  "scope": "最終合冊本文364頁上の新24図＋既存9図＋DI1図。ページ全体・図とcaptionの拡大PNGを全件目視。",
+  "before_commit": "f16135f3cebb2e2f9ab481e9cfead35b05bd52d4",
+  "before_pdf_sha256": "e59623eefe51d8785aa573261a6ea9d3db3ca4aac2f0ae34160175385c0dacf2",
+  "merged_pdf_sha256": "a3cfbd131dd2ada326f82c6b8778ef901f7c06d965d78f279d99e61a37c5e20b",
+  "textbook_pages": 364,
+  "additional_figures": 24,
+  "total_illustrations": 34,
+  "original_ppt_slides_preserved": 65,
+  "maximum_width_pt": 280,
+  "maximum_height_pt": 133.1164383561644,
+  "records": [
+    {
+      "id": "maven-libraries",
+      "chapter": "01",
+      "source_page": 28,
+      "figure_id": "illustration-2026-maven-libraries",
+      "caption_id": "illustration-2026-maven-libraries-caption",
+      "chapter_page": 16,
+      "box": [
+        85.104,
+        257.320625,
+        365.104,
+        373.96326145726056
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 377.96326145726056,
+      "caption_y1": 387.46326145726056,
+      "caption_same_page": true,
+      "source_page_range": [
+        16,
+        16
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "3d834f94ba65861a74d0c278ba1632cc",
+      "asset_sha256": "7665bd484da68cc4c1d2de5bb8657dfe050c178430c183d6cb78c3f0aa63ee57",
+      "expected_merged_page": 30,
+      "merged_page": 30,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/01-maven-libraries-merged-page.png",
+      "detail_png": "pages/01-maven-libraries-merged-detail.png",
+      "title": "pom.xmlの指定から必要なライブラリをそろえる",
+      "new": false,
+      "manual_review": {
+        "id": "maven-libraries",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      },
+      "declared_boundary_order_verified": true,
+      "previous_anchor_position": [
+        16,
+        244.36062500000003
+      ],
+      "following_anchor_position": [
+        16,
+        399.46326145726056
+      ]
+    },
+    {
+      "id": "model-transfer",
+      "chapter": "02",
+      "source_page": 58,
+      "figure_id": "illustration-2026-model-transfer",
+      "caption_id": "illustration-2026-model-transfer-caption",
+      "chapter_page": 35,
+      "box": [
+        85.104,
+        170.0,
+        365.104,
+        286.64263645726055
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 290.64263645726055,
+      "caption_y1": 300.14263645726055,
+      "caption_same_page": true,
+      "source_page_range": [
+        35,
+        36
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "7ea883325cfba192f3d7b4bba7242107",
+      "asset_sha256": "fa23edf5a85d40aa5b04d2766d50a0cbf4096ea945086385f3c711b9c6cfadd1",
+      "expected_merged_page": 67,
+      "merged_page": 67,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/02-model-transfer-merged-page.png",
+      "detail_png": "pages/02-model-transfer-merged-detail.png",
+      "title": "Modelを使ったデータの受け渡し",
+      "new": false,
+      "manual_review": {
+        "id": "model-transfer",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      },
+      "declared_boundary_order_verified": true,
+      "previous_anchor_position": [
+        35,
+        157.04000000000002
+      ],
+      "following_anchor_position": [
+        35,
+        320.88482445726055
+      ]
+    },
+    {
+      "id": "repository-results",
+      "chapter": "03",
+      "source_page": 90,
+      "figure_id": "illustration-2026-repository-results",
+      "caption_id": "illustration-2026-repository-results-caption",
+      "chapter_page": 37,
+      "box": [
+        85.104,
+        504.41366943359367,
+        365.104,
+        621.0563058908542
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 625.0563058908543,
+      "caption_y1": 634.5563058908543,
+      "caption_same_page": true,
+      "source_page_range": [
+        37,
+        37
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "a9181b903605508d068cb825621675f7",
+      "asset_sha256": "3d497fbe46709329443984b93d7e484ee7d43035ea01fb0c5a8f3c39fbc2c75b",
+      "expected_merged_page": 111,
+      "merged_page": 111,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/03-repository-results-merged-page.png",
+      "detail_png": "pages/03-repository-results-merged-detail.png",
+      "title": "Repositoryの返り値はリストと0/1件で異なる",
+      "new": false,
+      "manual_review": {
+        "id": "repository-results",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      },
+      "declared_boundary_order_verified": true,
+      "previous_anchor_position": [
+        37,
+        491.4536694335937
+      ],
+      "following_anchor_position": [
+        38,
+        86.0
+      ]
+    },
+    {
+      "id": "session-separation",
+      "chapter": "04",
+      "source_page": 142,
+      "figure_id": "illustration-2026-session-separation",
+      "caption_id": "illustration-2026-session-separation-caption",
+      "chapter_page": 13,
+      "box": [
+        85.104,
+        587.1066284179688,
+        365.104,
+        704.2789710392278
+      ],
+      "width_pt": 280,
+      "height_pt": 117.17234262125903,
+      "caption_y0": 708.2789710392277,
+      "caption_y1": 717.7789710392277,
+      "caption_same_page": true,
+      "source_page_range": [
+        13,
+        13
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "fa372e759eb9a1c318c05a21360c2a91",
+      "asset_sha256": "04270c73e903a68afe19c6858f5c791914cdceb6b741a1798b0f35728d7dd204",
+      "expected_merged_page": 177,
+      "merged_page": 177,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/04-session-separation-merged-page.png",
+      "detail_png": "pages/04-session-separation-merged-detail.png",
+      "title": "識別IDとサーバー側のセッション保存",
+      "new": false,
+      "manual_review": {
+        "id": "session-separation",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      },
+      "declared_boundary_order_verified": true,
+      "previous_anchor_position": [
+        13,
+        574.1466284179687
+      ],
+      "following_anchor_position": [
+        14,
+        86.0
+      ]
+    },
+    {
+      "id": "validation-branch",
+      "chapter": "04",
+      "source_page": 148,
+      "figure_id": "illustration-2026-validation-branch",
+      "caption_id": "illustration-2026-validation-branch-caption",
+      "chapter_page": 21,
+      "box": [
+        85.104,
+        497.10662841796875,
+        365.104,
+        613.7492648752293
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 617.7492648752293,
+      "caption_y1": 627.2492648752293,
+      "caption_same_page": true,
+      "source_page_range": [
+        21,
+        21
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "73634cae25a7df72ff98d4531c1afc11",
+      "asset_sha256": "947378b5efdbc8df46b1a4d4284dbee2febb12144b3be5decec8e3454d0f6d74",
+      "expected_merged_page": 185,
+      "merged_page": 185,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/04-validation-branch-merged-page.png",
+      "detail_png": "pages/04-validation-branch-merged-detail.png",
+      "title": "入力チェックの成功とエラーの分岐",
+      "new": false,
+      "manual_review": {
+        "id": "validation-branch",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      },
+      "declared_boundary_order_verified": true,
+      "previous_anchor_position": [
+        21,
+        484.14662841796877
+      ],
+      "following_anchor_position": [
+        22,
+        86.0
+      ]
+    },
+    {
+      "id": "layout-reuse",
+      "chapter": "05",
+      "source_page": 181,
+      "figure_id": "illustration-2026-layout-reuse",
+      "caption_id": "illustration-2026-layout-reuse-caption",
+      "chapter_page": 22,
+      "box": [
+        85.104,
+        598.6419677734375,
+        365.104,
+        715.284604230698
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 719.284604230698,
+      "caption_y1": 728.784604230698,
+      "caption_same_page": true,
+      "source_page_range": [
+        22,
+        22
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "bbe9d3d73c80acd78041249e324895ce",
+      "asset_sha256": "d43ef7ce20e5a6be6d6d528bc969586a31ae3da60fd0616ac361819ef69ea98c",
+      "expected_merged_page": 227,
+      "merged_page": 227,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/05-layout-reuse-merged-page.png",
+      "detail_png": "pages/05-layout-reuse-merged-detail.png",
+      "title": "共通レイアウトと画面ごとの内容を組み合わせる",
+      "new": false,
+      "manual_review": {
+        "id": "layout-reuse",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "元181頁の宣言した段落境界に配置され、最後の導入文が図の後に続く。本文227頁で欠け/重なりなし。"
+      },
+      "declared_boundary_order_verified": true,
+      "previous_anchor_position": [
+        22,
+        585.6819677734375
+      ],
+      "following_anchor_position": [
+        22,
+        740.784604230698
+      ]
+    },
+    {
+      "id": "foreign-key-reference",
+      "chapter": "06",
+      "source_page": 201,
+      "figure_id": "illustration-2026-foreign-key-reference",
+      "caption_id": "illustration-2026-foreign-key-reference-caption",
+      "chapter_page": 11,
+      "box": [
+        85.104,
+        332.282,
+        365.104,
+        448.92463645726053
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 452.92463645726053,
+      "caption_y1": 462.42463645726053,
+      "caption_same_page": true,
+      "source_page_range": [
+        11,
+        12
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "322aa4fdc7d4cd2a6768a956fd3be27b",
+      "asset_sha256": "ac4474dc2e5a7e11d9f7cb3d4250f9c9ef53f8940272513354ea2249c1d0538c",
+      "expected_merged_page": 251,
+      "merged_page": 251,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/06-foreign-key-reference-merged-page.png",
+      "detail_png": "pages/06-foreign-key-reference-merged-detail.png",
+      "title": "DBの外部キー値とJavaのオブジェクト参照",
+      "new": false,
+      "manual_review": {
+        "id": "foreign-key-reference",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "新mappedBy図と併置されても、DBのキー値とJava参照という旧図の役割が分かれる。"
+      },
+      "declared_boundary_order_verified": true,
+      "previous_anchor_position": [
+        11,
+        319.322
+      ],
+      "following_anchor_position": [
+        11,
+        474.42463645726053
+      ]
+    },
+    {
+      "id": "responsive-switch",
+      "chapter": "07",
+      "source_page": 269,
+      "figure_id": "illustration-2026-responsive-switch",
+      "caption_id": "illustration-2026-responsive-switch-caption",
+      "chapter_page": 38,
+      "box": [
+        85.104,
+        582.5599938964845,
+        365.104,
+        699.202630353745
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 703.202630353745,
+      "caption_y1": 712.702630353745,
+      "caption_same_page": true,
+      "source_page_range": [
+        38,
+        38
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "57890bf9832a94b8b7eff5b8404ed029",
+      "asset_sha256": "ad37337b92a96772e3e1fa60e587cf7b86bd4c97d69685749a3d862cafbf71fc",
+      "expected_merged_page": 331,
+      "merged_page": 331,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/07-responsive-switch-merged-page.png",
+      "detail_png": "pages/07-responsive-switch-merged-detail.png",
+      "title": "横幅によって左右配置から上下配置へ切り替わる",
+      "new": false,
+      "manual_review": {
+        "id": "responsive-switch",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      },
+      "declared_boundary_order_verified": true,
+      "previous_anchor_position": [
+        38,
+        569.5999938964844
+      ],
+      "following_anchor_position": [
+        39,
+        94.742188
+      ]
+    },
+    {
+      "id": "error-cause-chain",
+      "chapter": "appendix-b",
+      "source_page": 291,
+      "figure_id": "illustration-2026-error-cause-chain",
+      "caption_id": "illustration-2026-error-cause-chain-caption",
+      "chapter_page": 3,
+      "box": [
+        85.104,
+        352.29699999999997,
+        365.104,
+        469.4089133574007
+      ],
+      "width_pt": 280,
+      "height_pt": 117.11191335740072,
+      "caption_y0": 473.4089133574007,
+      "caption_y1": 482.9089133574007,
+      "caption_same_page": true,
+      "source_page_range": [
+        2,
+        4
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "3263d28d219cef7a3b5ab8e688775360",
+      "asset_sha256": "4b17013f8ceeba8cc6677ae6b02661871e4f8a7070b9d915427a5806ed67a356",
+      "expected_merged_page": 358,
+      "merged_page": 358,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/appendix-b-error-cause-chain-merged-page.png",
+      "detail_png": "pages/appendix-b-error-cause-chain-merged-detail.png",
+      "title": "外側の例外から原因と自分のコードをたどる",
+      "new": false,
+      "manual_review": {
+        "id": "error-cause-chain",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      },
+      "declared_boundary_order_verified": true,
+      "previous_anchor_position": [
+        3,
+        339.337
+      ],
+      "following_anchor_position": [
+        3,
+        494.9089133574007
+      ]
+    },
+    {
+      "id": "framework-foundation",
+      "chapter": "01",
+      "source_page": 18,
+      "figure_id": "illustration-expansion-2026-framework-foundation",
+      "caption_id": "illustration-expansion-2026-framework-foundation-caption",
+      "chapter_page": 4,
+      "box": [
+        85.104,
+        639.8019714355469,
+        365.104,
+        756.4446078928074
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 760.4446078928074,
+      "caption_y1": 769.9446078928074,
+      "caption_same_page": true,
+      "source_page_range": [
+        4,
+        5
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "c54133e5f696a29889b7f1d66fbfce9f",
+      "asset_sha256": "068482bcbf67f185e7bc71a390c5475ff7b2c36e9df514e93fc087025ff5aca3",
+      "expected_merged_page": 18,
+      "previous_anchor_position": [
+        4,
+        626.8419714355468
+      ],
+      "following_anchor_position": [
+        5,
+        86.0
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 18,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/01-framework-foundation-merged-page.png",
+      "detail_png": "pages/01-framework-foundation-merged-detail.png",
+      "before_f161_merged_page": 18,
+      "comparison_png": "pages/01-framework-foundation-comparison.png",
+      "title": "共通の基盤にアプリケーション固有の処理を組み合わせる",
+      "new": true,
+      "manual_review": {
+        "id": "framework-foundation",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "PPTの固定上段を保ち、元18頁の説明を読み切った後、注意点の前に配置。"
+      }
+    },
+    {
+      "id": "boot-managed-versions",
+      "chapter": "01",
+      "source_page": 22,
+      "figure_id": "illustration-expansion-2026-boot-managed-versions",
+      "caption_id": "illustration-expansion-2026-boot-managed-versions-caption",
+      "chapter_page": 10,
+      "box": [
+        85.104,
+        86.0,
+        365.104,
+        202.64263645726055
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 206.64263645726055,
+      "caption_y1": 216.14263645726055,
+      "caption_same_page": true,
+      "source_page_range": [
+        9,
+        10
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "864df59742ac96b37bc9072ee1d00b82",
+      "asset_sha256": "03831328dd9641aa06719ce511e0e64e4ef1ee29d7cb416c1a8962b0e6d88878",
+      "expected_merged_page": 24,
+      "previous_anchor_position": [
+        9,
+        740.1904518664493
+      ],
+      "following_anchor_position": [
+        11,
+        86.0
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 24,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/01-boot-managed-versions-merged-page.png",
+      "detail_png": "pages/01-boot-managed-versions-merged-detail.png",
+      "before_f161_merged_page": 22,
+      "comparison_png": "pages/01-boot-managed-versions-comparison.png",
+      "title": "Spring Bootが管理するライブラリのバージョンの組合せ",
+      "new": true,
+      "manual_review": {
+        "id": "boot-managed-versions",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図とcaptionだけの継続頁。操作説明/画面例と元頁境界の保全を優先。余白は広いが図を過大に拡大していない。"
+      }
+    },
+    {
+      "id": "bean-auto-configuration",
+      "chapter": "01",
+      "source_page": 23,
+      "figure_id": "illustration-expansion-2026-bean-auto-configuration",
+      "caption_id": "illustration-expansion-2026-bean-auto-configuration-caption",
+      "chapter_page": 11,
+      "box": [
+        85.104,
+        457.67115624999997,
+        365.104,
+        574.3137927072605
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 578.3137927072606,
+      "caption_y1": 587.8137927072606,
+      "caption_same_page": true,
+      "source_page_range": [
+        11,
+        11
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "22e39c184a34ae0537c81231a558c141",
+      "asset_sha256": "82d0c5c68fd92bcbcb0a9d3ea672d3f4d9702dc283c815d42ca19c6d44ab6744",
+      "expected_merged_page": 25,
+      "previous_anchor_position": [
+        11,
+        444.71115625
+      ],
+      "following_anchor_position": [
+        11,
+        599.8137927072606
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 25,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/01-bean-auto-configuration-merged-page.png",
+      "detail_png": "pages/01-bean-auto-configuration-merged-detail.png",
+      "before_f161_merged_page": 23,
+      "comparison_png": "pages/01-bean-auto-configuration-comparison.png",
+      "title": "条件に合う共通機能のBeanを自動で用意する",
+      "new": true,
+      "manual_review": {
+        "id": "bean-auto-configuration",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "request-response-search",
+      "chapter": "02",
+      "source_page": 35,
+      "figure_id": "illustration-expansion-2026-request-response-search",
+      "caption_id": "illustration-expansion-2026-request-response-search-caption",
+      "chapter_page": 5,
+      "box": [
+        85.104,
+        266.0,
+        365.104,
+        382.64263645726055
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 386.64263645726055,
+      "caption_y1": 396.14263645726055,
+      "caption_same_page": true,
+      "source_page_range": [
+        5,
+        5
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "1d79d55e907a91d0cea9ea930aa2903a",
+      "asset_sha256": "d5ffaed55ac43dc87a67bd1a76f818ce0dc9cd14a9da42ccf0b1937db097b626",
+      "expected_merged_page": 37,
+      "previous_anchor_position": [
+        5,
+        253.04000000000002
+      ],
+      "following_anchor_position": [
+        5,
+        414.14263645726055
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 37,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/02-request-response-search-merged-page.png",
+      "detail_png": "pages/02-request-response-search-merged-detail.png",
+      "before_f161_merged_page": 35,
+      "comparison_png": "pages/02-request-response-search-comparison.png",
+      "title": "検索のお願いと検索結果の応答",
+      "new": true,
+      "manual_review": {
+        "id": "request-response-search",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "get-post-routing",
+      "chapter": "02",
+      "source_page": 52,
+      "figure_id": "illustration-expansion-2026-get-post-routing",
+      "caption_id": "illustration-expansion-2026-get-post-routing-caption",
+      "chapter_page": 27,
+      "box": [
+        85.104,
+        86.0,
+        365.104,
+        202.64263645726055
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 206.64263645726055,
+      "caption_y1": 216.14263645726055,
+      "caption_same_page": true,
+      "source_page_range": [
+        26,
+        27
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "06b6556fe9b981e99e1c3670c6a21283",
+      "asset_sha256": "7a915d65db9a483f7eb19a967d7483f6dab118a74334c31767fe23156fa5468d",
+      "expected_merged_page": 59,
+      "previous_anchor_position": [
+        26,
+        656.6799888847629
+      ],
+      "following_anchor_position": [
+        27,
+        228.14263645726055
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 59,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/02-get-post-routing-merged-page.png",
+      "detail_png": "pages/02-get-post-routing-merged-detail.png",
+      "before_f161_merged_page": 56,
+      "comparison_png": "pages/02-get-post-routing-comparison.png",
+      "title": "同じURLでもGETとPOSTで担当メソッドが変わる",
+      "new": true,
+      "manual_review": {
+        "id": "get-post-routing",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "form-name-binding",
+      "chapter": "02",
+      "source_page": 54,
+      "figure_id": "illustration-expansion-2026-form-name-binding",
+      "caption_id": "illustration-expansion-2026-form-name-binding-caption",
+      "chapter_page": 29,
+      "box": [
+        85.104,
+        369.990469538448,
+        365.104,
+        486.51310328330396
+      ],
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "caption_y0": 490.51310328330396,
+      "caption_y1": 500.01310328330396,
+      "caption_same_page": true,
+      "source_page_range": [
+        29,
+        30
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "c195518cf71da6018859bd21e5c41559",
+      "asset_sha256": "fef1db7487b44c446fa489719fa5d65363f2fade76062f59e972c79ff33c1619",
+      "expected_merged_page": 61,
+      "previous_anchor_position": [
+        29,
+        357.030469538448
+      ],
+      "following_anchor_position": [
+        30,
+        94.742188
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 61,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/02-form-name-binding-merged-page.png",
+      "detail_png": "pages/02-form-name-binding-merged-detail.png",
+      "before_f161_merged_page": 58,
+      "comparison_png": "pages/02-form-name-binding-comparison.png",
+      "title": "入力欄のnameとFormのフィールドを結び付ける",
+      "new": true,
+      "manual_review": {
+        "id": "form-name-binding",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "model-key-property",
+      "chapter": "02",
+      "source_page": 60,
+      "figure_id": "illustration-expansion-2026-model-key-property",
+      "caption_id": "illustration-expansion-2026-model-key-property-caption",
+      "chapter_page": 39,
+      "box": [
+        85.104,
+        625.8019999999999,
+        365.104,
+        745.1773253513794
+      ],
+      "width_pt": 280,
+      "height_pt": 119.37532535137949,
+      "caption_y0": 749.1773253513794,
+      "caption_y1": 758.6773253513794,
+      "caption_same_page": true,
+      "source_page_range": [
+        39,
+        40
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "1ab364607fc6abcf2826c85c80048d52",
+      "asset_sha256": "3a9fa32e1d3b81fe1f7421a9252ceb4768b672cf55324c2f041aee980d1beec4",
+      "expected_merged_page": 71,
+      "previous_anchor_position": [
+        39,
+        611.9267189999999
+      ],
+      "following_anchor_position": [
+        40,
+        86.0
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 71,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/02-model-key-property-merged-page.png",
+      "detail_png": "pages/02-model-key-property-merged-detail.png",
+      "before_f161_merged_page": 67,
+      "comparison_png": "pages/02-model-key-property-comparison.png",
+      "title": "user.idをキー名とフィールド名に分けて読む",
+      "new": true,
+      "manual_review": {
+        "id": "model-key-property",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "repository-implementation",
+      "chapter": "03",
+      "source_page": 78,
+      "figure_id": "illustration-expansion-2026-repository-implementation",
+      "caption_id": "illustration-expansion-2026-repository-implementation-caption",
+      "chapter_page": 20,
+      "box": [
+        85.104,
+        630.2970095996878,
+        365.104,
+        746.8196433445438
+      ],
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "caption_y0": 750.8196433445438,
+      "caption_y1": 760.3196433445438,
+      "caption_same_page": true,
+      "source_page_range": [
+        20,
+        21
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "e3ba1470db6ac62245ac971bad7fdbc4",
+      "asset_sha256": "60de3494d576a8ef52763aee5b948c268f6cac1f9ad3ea740b36359adc203056",
+      "expected_merged_page": 94,
+      "previous_anchor_position": [
+        20,
+        617.3370095996879
+      ],
+      "following_anchor_position": [
+        21,
+        86.0
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 94,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/03-repository-implementation-merged-page.png",
+      "detail_png": "pages/03-repository-implementation-merged-detail.png",
+      "before_f161_merged_page": 90,
+      "comparison_png": "pages/03-repository-implementation-comparison.png",
+      "title": "Repositoryの宣言から使える実装オブジェクトが用意される",
+      "new": true,
+      "manual_review": {
+        "id": "repository-implementation",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "query-method-name",
+      "chapter": "03",
+      "source_page": 97,
+      "figure_id": "illustration-expansion-2026-query-method-name",
+      "caption_id": "illustration-expansion-2026-query-method-name-caption",
+      "chapter_page": 46,
+      "box": [
+        85.104,
+        324.15078124999997,
+        365.104,
+        440.67341499485593
+      ],
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "caption_y0": 444.67341499485593,
+      "caption_y1": 454.17341499485593,
+      "caption_same_page": true,
+      "source_page_range": [
+        46,
+        47
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "a6dbd29956afc723169b5113a31b78da",
+      "asset_sha256": "a124f068d00c9d48139325b55c08b36a5c0396d8647ed651f4d066d302a1bb18",
+      "expected_merged_page": 120,
+      "previous_anchor_position": [
+        46,
+        311.19078125
+      ],
+      "following_anchor_position": [
+        46,
+        472.17341499485593
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 120,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/03-query-method-name-merged-page.png",
+      "detail_png": "pages/03-query-method-name-merged-detail.png",
+      "before_f161_merged_page": 115,
+      "comparison_png": "pages/03-query-method-name-comparison.png",
+      "title": "メソッド名と引数が検索条件になる",
+      "new": true,
+      "manual_review": {
+        "id": "query-method-name",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "redirect-new-request",
+      "chapter": "03",
+      "source_page": 124,
+      "figure_id": "illustration-expansion-2026-redirect-new-request",
+      "caption_id": "illustration-expansion-2026-redirect-new-request-caption",
+      "chapter_page": 80,
+      "box": [
+        85.104,
+        134.0,
+        365.104,
+        250.52263374485597
+      ],
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "caption_y0": 254.52263374485597,
+      "caption_y1": 264.02263374485597,
+      "caption_same_page": true,
+      "source_page_range": [
+        80,
+        81
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "b1568bfd03a3203cbfebdf3dd5ec9059",
+      "asset_sha256": "300c92faa5386933fbb1979a926d9c048f2a4be03d8690505db590d44d6bc481",
+      "expected_merged_page": 154,
+      "previous_anchor_position": [
+        80,
+        121.04
+      ],
+      "following_anchor_position": [
+        80,
+        282.02263374485597
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 154,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/03-redirect-new-request-merged-page.png",
+      "detail_png": "pages/03-redirect-new-request-merged-detail.png",
+      "before_f161_merged_page": 148,
+      "comparison_png": "pages/03-redirect-new-request-comparison.png",
+      "title": "redirectはブラウザーからの新しいリクエストを生む",
+      "new": true,
+      "manual_review": {
+        "id": "redirect-new-request",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "model-session-lifetime",
+      "chapter": "04",
+      "source_page": 143,
+      "figure_id": "illustration-expansion-2026-model-session-lifetime",
+      "caption_id": "illustration-expansion-2026-model-session-lifetime-caption",
+      "chapter_page": 15,
+      "box": [
+        85.104,
+        86.0,
+        365.104,
+        202.64263645726055
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 206.64263645726055,
+      "caption_y1": 216.14263645726055,
+      "caption_same_page": true,
+      "source_page_range": [
+        14,
+        15
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "bc14503148799bb2b18d8812f518f482",
+      "asset_sha256": "2cb2839a1c29509203ffc5e670e0facfefd80ac603b52a94bdaa0ce409264d9c",
+      "expected_merged_page": 179,
+      "previous_anchor_position": [
+        14,
+        716.256966832192
+      ],
+      "following_anchor_position": [
+        15,
+        228.14263645726055
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 179,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/04-model-session-lifetime-merged-page.png",
+      "detail_png": "pages/04-model-session-lifetime-merged-detail.png",
+      "before_f161_merged_page": 171,
+      "comparison_png": "pages/04-model-session-lifetime-comparison.png",
+      "title": "ModelとHttpSessionではデータを渡す範囲が違う",
+      "new": true,
+      "manual_review": {
+        "id": "model-session-lifetime",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "通常ModelとHttpSessionの保存範囲の違いが読める。継続頁の参照文の前に配置。"
+      }
+    },
+    {
+      "id": "form-error-roundtrip",
+      "chapter": "04",
+      "source_page": 153,
+      "figure_id": "illustration-expansion-2026-form-error-roundtrip",
+      "caption_id": "illustration-expansion-2026-form-error-roundtrip-caption",
+      "chapter_page": 29,
+      "box": [
+        85.104,
+        520.4970000000001,
+        365.104,
+        637.1396364572606
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 641.1396364572606,
+      "caption_y1": 650.6396364572606,
+      "caption_same_page": true,
+      "source_page_range": [
+        29,
+        30
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "dc2f8a8bb74dc03f08be004c6204bcdc",
+      "asset_sha256": "01e287137a6ea41f26b7d4cf72a1472c047492a5f10b97a31af8feca033cb01a",
+      "expected_merged_page": 193,
+      "previous_anchor_position": [
+        29,
+        506.621094
+      ],
+      "following_anchor_position": [
+        30,
+        86.0
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 193,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/04-form-error-roundtrip-merged-page.png",
+      "detail_png": "pages/04-form-error-roundtrip-merged-detail.png",
+      "before_f161_merged_page": 185,
+      "comparison_png": "pages/04-form-error-roundtrip-comparison.png",
+      "title": "入力値と入力エラーを同じ画面へ戻す",
+      "new": true,
+      "manual_review": {
+        "id": "form-error-roundtrip",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "null-blank-constraints",
+      "chapter": "04",
+      "source_page": 157,
+      "figure_id": "illustration-expansion-2026-null-blank-constraints",
+      "caption_id": "illustration-expansion-2026-null-blank-constraints-caption",
+      "chapter_page": 34,
+      "box": [
+        85.104,
+        581.1066284179688,
+        365.104,
+        697.7492648752293
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 701.7492648752293,
+      "caption_y1": 711.2492648752293,
+      "caption_same_page": true,
+      "source_page_range": [
+        34,
+        34
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "41822fa070d6a89cf012dfbc3e3387e0",
+      "asset_sha256": "4ea1d32d308f32c06e232cd8bad724722a8263bb96f48e553daed9ded7247402",
+      "expected_merged_page": 198,
+      "previous_anchor_position": [
+        34,
+        568.1466284179687
+      ],
+      "following_anchor_position": [
+        34,
+        723.2492648752293
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 198,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/04-null-blank-constraints-merged-page.png",
+      "detail_png": "pages/04-null-blank-constraints-merged-detail.png",
+      "before_f161_merged_page": 190,
+      "comparison_png": "pages/04-null-blank-constraints-comparison.png",
+      "title": "null・空文字・空白だけの文字列は同じではない",
+      "new": true,
+      "manual_review": {
+        "id": "null-blank-constraints",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "元PPT一覧を保持し、NotNull/NotBlankの比較図をPatternの補足より前に表示。"
+      }
+    },
+    {
+      "id": "text-escape",
+      "chapter": "05",
+      "source_page": 169,
+      "figure_id": "illustration-expansion-2026-text-escape",
+      "caption_id": "illustration-expansion-2026-text-escape-caption",
+      "chapter_page": 7,
+      "box": [
+        85.104,
+        164.0,
+        365.104,
+        280.64263645726055
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 284.64263645726055,
+      "caption_y1": 294.14263645726055,
+      "caption_same_page": true,
+      "source_page_range": [
+        7,
+        7
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "58a8a606881d3d3c909214ae2068a2d1",
+      "asset_sha256": "fcb3ab1c0aa8bdb666df631859414eb1606c43ebac648f069216fa4b591d9a5a",
+      "expected_merged_page": 212,
+      "previous_anchor_position": [
+        7,
+        151.04000000000002
+      ],
+      "following_anchor_position": [
+        7,
+        306.14263645726055
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 212,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/05-text-escape-merged-page.png",
+      "detail_png": "pages/05-text-escape-merged-detail.png",
+      "before_f161_merged_page": 204,
+      "comparison_png": "pages/05-text-escape-comparison.png",
+      "title": "タグに見える入力を文字として表示する",
+      "new": true,
+      "manual_review": {
+        "id": "text-escape",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "dynamic-url-id",
+      "chapter": "05",
+      "source_page": 174,
+      "figure_id": "illustration-expansion-2026-dynamic-url-id",
+      "caption_id": "illustration-expansion-2026-dynamic-url-id-caption",
+      "chapter_page": 12,
+      "box": [
+        85.104,
+        300.79299999999995,
+        365.104,
+        417.3156337448559
+      ],
+      "width_pt": 280,
+      "height_pt": 116.52263374485597,
+      "caption_y0": 421.3156337448559,
+      "caption_y1": 430.8156337448559,
+      "caption_same_page": true,
+      "source_page_range": [
+        12,
+        13
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "33a0869c6c719a7b396dc946355db1d0",
+      "asset_sha256": "f5163680a7328867df587937f6329c21e5d323628190a58abd9b6f16e5ba0d87",
+      "expected_merged_page": 217,
+      "previous_anchor_position": [
+        12,
+        287.83299999999997
+      ],
+      "following_anchor_position": [
+        13,
+        86.0
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 217,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/05-dynamic-url-id-merged-page.png",
+      "detail_png": "pages/05-dynamic-url-id-merged-detail.png",
+      "before_f161_merged_page": 209,
+      "comparison_png": "pages/05-dynamic-url-id-comparison.png",
+      "title": "リンクのURLに含めたIDを引数へ取り出す",
+      "new": true,
+      "manual_review": {
+        "id": "dynamic-url-id",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "static-public-path",
+      "chapter": "05",
+      "source_page": 179,
+      "figure_id": "illustration-expansion-2026-static-public-path",
+      "caption_id": "illustration-expansion-2026-static-public-path-caption",
+      "chapter_page": 19,
+      "box": [
+        85.104,
+        408.59599999999995,
+        365.104,
+        525.2386364572606
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 529.2386364572606,
+      "caption_y1": 538.7386364572606,
+      "caption_same_page": true,
+      "source_page_range": [
+        19,
+        20
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "d9ab1bc5777aed703af5f8dba4c6c099",
+      "asset_sha256": "89ea9fa18045e0834c4ad636849ce0d67ae4edabb69f2f4b13b39fd897fe542e",
+      "expected_merged_page": 224,
+      "previous_anchor_position": [
+        19,
+        395.63599999999997
+      ],
+      "following_anchor_position": [
+        19,
+        556.7386364572604
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 224,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/05-static-public-path-merged-page.png",
+      "detail_png": "pages/05-static-public-path-merged-detail.png",
+      "before_f161_merged_page": 215,
+      "comparison_png": "pages/05-static-public-path-comparison.png",
+      "title": "プロジェクト内の保存場所とブラウザー用URLを区別する",
+      "new": true,
+      "manual_review": {
+        "id": "static-public-path",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "relationship-field-column",
+      "chapter": "06",
+      "source_page": 201,
+      "figure_id": "illustration-expansion-2026-relationship-field-column",
+      "caption_id": "illustration-expansion-2026-relationship-field-column-caption",
+      "chapter_page": 11,
+      "box": [
+        85.104,
+        618.4246364572605,
+        365.104,
+        735.067272914521
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 739.067272914521,
+      "caption_y1": 748.567272914521,
+      "caption_same_page": true,
+      "source_page_range": [
+        11,
+        12
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "ab0853096bd8b0d167e221778e0dd422",
+      "asset_sha256": "462d12f2b92c67c3981d91444cd9e2675a58b3bbb7d9bd50371eec1fd2f7c228",
+      "expected_merged_page": 251,
+      "previous_anchor_position": [
+        11,
+        605.4646364572604
+      ],
+      "following_anchor_position": [
+        12,
+        86.0
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 251,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/06-relationship-field-column-merged-page.png",
+      "detail_png": "pages/06-relationship-field-column-merged-detail.png",
+      "before_f161_merged_page": 241,
+      "comparison_png": "pages/06-relationship-field-column-comparison.png",
+      "title": "mappedByのフィールド名とJoinColumnの列名を区別する",
+      "new": true,
+      "manual_review": {
+        "id": "relationship-field-column",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "元201頁の旧FK図と同じ本文251頁で共存。区別されたJava/DBの名前、矢印と本文に重なりなし。"
+      }
+    },
+    {
+      "id": "null-reference-guard",
+      "chapter": "06",
+      "source_page": 206,
+      "figure_id": "illustration-expansion-2026-null-reference-guard",
+      "caption_id": "illustration-expansion-2026-null-reference-guard-caption",
+      "chapter_page": 17,
+      "box": [
+        85.104,
+        530.122,
+        365.104,
+        646.7646364572605
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 650.7646364572605,
+      "caption_y1": 660.2646364572605,
+      "caption_same_page": true,
+      "source_page_range": [
+        17,
+        18
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "d6d29c1779d6b961a071281b6028b152",
+      "asset_sha256": "cc2487ed5239766b486903d47abed3361f04656186a7bf0dd8547405d7fe42d6",
+      "expected_merged_page": 257,
+      "previous_anchor_position": [
+        17,
+        517.1619999999999
+      ],
+      "following_anchor_position": [
+        18,
+        86.0
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 257,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/06-null-reference-guard-merged-page.png",
+      "detail_png": "pages/06-null-reference-guard-merged-detail.png",
+      "before_f161_merged_page": 246,
+      "comparison_png": "pages/06-null-reference-guard-comparison.png",
+      "title": "参照先がある場合だけ次のフィールドを読む",
+      "new": true,
+      "manual_review": {
+        "id": "null-reference-guard",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "null分岐の図/captionは本文257頁。次の方法見出し/導入文/コードは本文258頁で同頁。"
+      }
+    },
+    {
+      "id": "select-label-value",
+      "chapter": "06",
+      "source_page": 218,
+      "figure_id": "illustration-expansion-2026-select-label-value",
+      "caption_id": "illustration-expansion-2026-select-label-value-caption",
+      "chapter_page": 30,
+      "box": [
+        85.104,
+        427.801,
+        365.104,
+        544.4436364572605
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 548.4436364572606,
+      "caption_y1": 557.9436364572606,
+      "caption_same_page": true,
+      "source_page_range": [
+        30,
+        30
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "d52c5886feeaf20736f3dbc94b038d1c",
+      "asset_sha256": "bf4e9a7f7287e946e3616dfd303781b68d91d92156a7c29e166cea0f0f809216",
+      "expected_merged_page": 270,
+      "previous_anchor_position": [
+        30,
+        414.841
+      ],
+      "following_anchor_position": [
+        30,
+        569.9436364572605
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 270,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/06-select-label-value-merged-page.png",
+      "detail_png": "pages/06-select-label-value-merged-detail.png",
+      "before_f161_merged_page": 259,
+      "comparison_png": "pages/06-select-label-value-comparison.png",
+      "title": "選択肢の表示名と送信する値は異なる",
+      "new": true,
+      "manual_review": {
+        "id": "select-label-value",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "jpql-entity-names",
+      "chapter": "06",
+      "source_page": 225,
+      "figure_id": "illustration-expansion-2026-jpql-entity-names",
+      "caption_id": "illustration-expansion-2026-jpql-entity-names-caption",
+      "chapter_page": 37,
+      "box": [
+        85.104,
+        543.8019714355469,
+        365.104,
+        660.4446078928074
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 664.4446078928074,
+      "caption_y1": 673.9446078928074,
+      "caption_same_page": true,
+      "source_page_range": [
+        37,
+        38
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "38735b367441ff17ff0e8411ed66bbbf",
+      "asset_sha256": "75578c0ebc172b1e43d212546084c5ed0ed6e554ebc9b6515eea0118c565cc0d",
+      "expected_merged_page": 277,
+      "previous_anchor_position": [
+        37,
+        530.8419714355468
+      ],
+      "following_anchor_position": [
+        37,
+        685.9446078928074
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 277,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/06-jpql-entity-names-merged-page.png",
+      "detail_png": "pages/06-jpql-entity-names-merged-detail.png",
+      "before_f161_merged_page": 266,
+      "comparison_png": "pages/06-jpql-entity-names-comparison.png",
+      "title": "JPQLではJava側の名前を使う",
+      "new": true,
+      "manual_review": {
+        "id": "jpql-entity-names",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "元PPTと特徴の説明の後、特徴の箇条書きより前に図を表示。"
+      }
+    },
+    {
+      "id": "groupby-aggregate-dto",
+      "chapter": "06",
+      "source_page": 233,
+      "figure_id": "illustration-expansion-2026-groupby-aggregate-dto",
+      "caption_id": "illustration-expansion-2026-groupby-aggregate-dto-caption",
+      "chapter_page": 47,
+      "box": [
+        85.104,
+        308.16,
+        365.104,
+        424.8026364572606
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 428.8026364572605,
+      "caption_y1": 438.3026364572605,
+      "caption_same_page": true,
+      "source_page_range": [
+        47,
+        48
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "4c45418437d882ea9426b94a256b2e36",
+      "asset_sha256": "1744914b64e48c0a1f9e93454c0db5555ef9812945ec3b72a8f873aece159f32",
+      "expected_merged_page": 287,
+      "previous_anchor_position": [
+        47,
+        295.2
+      ],
+      "following_anchor_position": [
+        48,
+        86.0
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 287,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/06-groupby-aggregate-dto-merged-page.png",
+      "detail_png": "pages/06-groupby-aggregate-dto-merged-detail.png",
+      "before_f161_merged_page": 275,
+      "comparison_png": "pages/06-groupby-aggregate-dto-comparison.png",
+      "title": "商品をカテゴリ別にまとめて集計する",
+      "new": true,
+      "manual_review": {
+        "id": "groupby-aggregate-dto",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "集計図とcaptionは本文287頁、続くDTO導入ラベルとコードは本文288頁で同頁。数値とSUM/COUNTは可読。"
+      }
+    },
+    {
+      "id": "cdn-local-delivery",
+      "chapter": "07",
+      "source_page": 245,
+      "figure_id": "illustration-expansion-2026-cdn-local-delivery",
+      "caption_id": "illustration-expansion-2026-cdn-local-delivery-caption",
+      "chapter_page": 8,
+      "box": [
+        85.104,
+        498.34660156250004,
+        365.104,
+        614.9892380197606
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 618.9892380197606,
+      "caption_y1": 628.4892380197606,
+      "caption_same_page": true,
+      "source_page_range": [
+        8,
+        8
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "72b30c298b0e242533074458adbd69a3",
+      "asset_sha256": "56771c382e3389281ceb45f3b9568199a1fb1d1627c78581b41a95caa3beb323",
+      "expected_merged_page": 301,
+      "previous_anchor_position": [
+        8,
+        479.3066015625
+      ],
+      "following_anchor_position": [
+        8,
+        640.4892380197606
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 301,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/07-cdn-local-delivery-merged-page.png",
+      "detail_png": "pages/07-cdn-local-delivery-merged-detail.png",
+      "before_f161_merged_page": 288,
+      "comparison_png": "pages/07-cdn-local-delivery-comparison.png",
+      "title": "CSS・JSをどこから読み込むか",
+      "new": true,
+      "manual_review": {
+        "id": "cdn-local-delivery",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "CDN/ローカルの2方式の説明後に図、注意書き/公式URLはその後。"
+      }
+    },
+    {
+      "id": "spacing-box-model",
+      "chapter": "07",
+      "source_page": 259,
+      "figure_id": "illustration-expansion-2026-spacing-box-model",
+      "caption_id": "illustration-expansion-2026-spacing-box-model-caption",
+      "chapter_page": 25,
+      "box": [
+        85.104,
+        152.0,
+        365.104,
+        268.64263645726055
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 272.64263645726055,
+      "caption_y1": 282.14263645726055,
+      "caption_same_page": true,
+      "source_page_range": [
+        25,
+        26
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "418129c569239932542f24049ae7c86c",
+      "asset_sha256": "46086f3daaac7f864f042716afadd5c9a8b0fb2da4217686601b0a8f8c15db01",
+      "expected_merged_page": 318,
+      "previous_anchor_position": [
+        25,
+        139.04000000000002
+      ],
+      "following_anchor_position": [
+        25,
+        295.10263645726053
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 318,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/07-spacing-box-model-merged-page.png",
+      "detail_png": "pages/07-spacing-box-model-merged-detail.png",
+      "before_f161_merged_page": 305,
+      "comparison_png": "pages/07-spacing-box-model-comparison.png",
+      "title": "マージンは枠の外、パディングは枠の内",
+      "new": true,
+      "manual_review": {
+        "id": "spacing-box-model",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    },
+    {
+      "id": "grid-containment",
+      "chapter": "07",
+      "source_page": 265,
+      "figure_id": "illustration-expansion-2026-grid-containment",
+      "caption_id": "illustration-expansion-2026-grid-containment-caption",
+      "chapter_page": 33,
+      "box": [
+        85.104,
+        86.0,
+        365.104,
+        202.64263645726055
+      ],
+      "width_pt": 280,
+      "height_pt": 116.64263645726055,
+      "caption_y0": 206.64263645726055,
+      "caption_y1": 216.14263645726055,
+      "caption_same_page": true,
+      "source_page_range": [
+        32,
+        33
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "8779c8e1a811a6d235d89fc5eaefc863",
+      "asset_sha256": "50bc470ae6cd081a2b904f10419d8d9b7ba988ff15b10f10909c14f90f5c88cd",
+      "expected_merged_page": 326,
+      "previous_anchor_position": [
+        32,
+        716.8419714355468
+      ],
+      "following_anchor_position": [
+        33,
+        228.14263645726055
+      ],
+      "declared_boundary_order_verified": true,
+      "merged_page": 326,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/07-grid-containment-merged-page.png",
+      "detail_png": "pages/07-grid-containment-merged-detail.png",
+      "before_f161_merged_page": 311,
+      "comparison_png": "pages/07-grid-containment-comparison.png",
+      "title": "container・row・colの入れ子",
+      "new": true,
+      "manual_review": {
+        "id": "grid-containment",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "入れ子図の後に元の説明2段落が続き、宣言した境界順を保持。"
+      }
+    },
+    {
+      "id": "di-remote",
+      "chapter": "03",
+      "source_page": 80,
+      "figure_id": "revision-di-remote",
+      "caption_id": "revision-di-caption",
+      "chapter_page": 24,
+      "box": [
+        85.104,
+        206.0,
+        345.104,
+        339.1164383561644
+      ],
+      "width_pt": 260,
+      "height_pt": 133.1164383561644,
+      "caption_y0": 343.1164383561644,
+      "caption_y1": 366.6164383561644,
+      "caption_same_page": true,
+      "source_page_range": [
+        24,
+        25
+      ],
+      "source_page_membership_verified": true,
+      "image_digest": "5f8fe1df150930eb7f496a5a933f8adc",
+      "asset_sha256": "5eb730c40743a0968ad164f49c61fd00e4d2e76ecba57de2ce8f7bc23515e734",
+      "expected_merged_page": 98,
+      "merged_page": 98,
+      "chapter_to_merged_figure_caption_pixels_identical": true,
+      "page_png": "pages/03-di-remote-merged-page.png",
+      "detail_png": "pages/03-di-remote-merged-detail.png",
+      "title": "依存性の注入",
+      "new": false,
+      "manual_review": {
+        "id": "di-remote",
+        "readable": true,
+        "no_overlap_or_clipping": true,
+        "full_page_reviewed": true,
+        "figure_caption_detail_reviewed": true,
+        "note": "図中の語・矢印・captionを判読でき、本文/コード/見出しとの重なりや欠けを認めない。"
+      }
+    }
+  ],
+  "documents": [
+    {
+      "chapter": "01",
+      "pages": 18,
+      "pdf_sha256": "67c2ea83227382258420c1be0aa967af83ea97aa69e72b3f06870a0f529f967b",
+      "checks_sha256": "5cae3279f74676e5504a2268a622f7d340c724c4ed4420367d818813fc795580",
+      "checks": {
+        "native_text_complete": true,
+        "overflow": [],
+        "heading_orphans": [],
+        "split_figures": [],
+        "split_short_code": [],
+        "split_short_tables": [],
+        "split_instructions": []
+      }
+    },
+    {
+      "chapter": "02",
+      "pages": 42,
+      "pdf_sha256": "883e7d436e5f060338d6ae7d5aa1ab3a8ddcfed4ddf8c4266114bc59e33c4b1d",
+      "checks_sha256": "f8e42596217c4dd27e2e7205b256c1d4b4d36b37a0cddceab5846da062a159d5",
+      "checks": {
+        "native_text_complete": true,
+        "overflow": [],
+        "heading_orphans": [],
+        "split_figures": [],
+        "split_short_code": [],
+        "split_short_tables": [],
+        "split_instructions": []
+      }
+    },
+    {
+      "chapter": "03",
+      "pages": 90,
+      "pdf_sha256": "9fe3a3625032ebac955aab5c66362d7e215c47433b86d6c93290072a56e405e5",
+      "checks_sha256": "a28344d853ce474d5becbc2bbcb86f6f01d25b70b640604cdc9874253458623e",
+      "checks": {
+        "native_text_complete": true,
+        "overflow": [],
+        "heading_orphans": [],
+        "split_figures": [],
+        "split_short_code": [],
+        "split_short_tables": [],
+        "split_instructions": []
+      }
+    },
+    {
+      "chapter": "04",
+      "pages": 41,
+      "pdf_sha256": "1a61c67a970dba5407307cdd5a589a10ce06257ba1be06979c6108f85dd89fc4",
+      "checks_sha256": "4a9a5e1b1b8f4fba3b602fb76cb9ffdb38538f7a28976489f5f55f22a7757548",
+      "checks": {
+        "native_text_complete": true,
+        "overflow": [],
+        "heading_orphans": [],
+        "split_figures": [],
+        "split_short_code": [],
+        "split_short_tables": [],
+        "split_instructions": []
+      }
+    },
+    {
+      "chapter": "05",
+      "pages": 35,
+      "pdf_sha256": "9523d0c33ddec1c96e37136653530c85555a3e604f2f5867bc633605cd9b3d7a",
+      "checks_sha256": "e5fd6eb7ba63e860c0162d72ebe58a473188788717a34fda9b094a6fb979ffde",
+      "checks": {
+        "native_text_complete": true,
+        "overflow": [],
+        "heading_orphans": [],
+        "split_figures": [],
+        "split_short_code": [],
+        "split_short_tables": [],
+        "split_instructions": []
+      }
+    },
+    {
+      "chapter": "06",
+      "pages": 53,
+      "pdf_sha256": "f5f95631c3b18d2ca53a0b89f5aca8b0b095fdf3b12136b76b3349d3b787b31c",
+      "checks_sha256": "9aa5e6295a6345299798c36daa7577da44360dc8cc79434d1d719927d92133be",
+      "checks": {
+        "native_text_complete": true,
+        "overflow": [],
+        "heading_orphans": [],
+        "split_figures": [],
+        "split_short_code": [],
+        "split_short_tables": [],
+        "split_instructions": []
+      }
+    },
+    {
+      "chapter": "07",
+      "pages": 54,
+      "pdf_sha256": "143744438122644cec13515504d87eb6d4de2f52a5eb9f168f065f13ca417440",
+      "checks_sha256": "ecd4f4b14f0253eb1cd6f59afc501e51837eb594eb9afcbaf69805e196d61b51",
+      "checks": {
+        "native_text_complete": true,
+        "overflow": [],
+        "heading_orphans": [],
+        "split_figures": [],
+        "split_short_code": [],
+        "split_short_tables": [],
+        "split_instructions": []
+      }
+    }
+  ],
+  "slides": [
+    {
+      "chapter": "front",
+      "figure_id": "p009-f01",
+      "before_merged_page": 9,
+      "chapter_page": 9,
+      "expected_merged_page": 9,
+      "box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "front",
+      "figure_id": "p010-f02",
+      "before_merged_page": 10,
+      "chapter_page": 10,
+      "expected_merged_page": 10,
+      "box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "front",
+      "figure_id": "p011-f03",
+      "before_merged_page": 11,
+      "chapter_page": 11,
+      "expected_merged_page": 11,
+      "box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "01",
+      "figure_id": "p017-f01",
+      "before_merged_page": 17,
+      "chapter_page": 3,
+      "expected_merged_page": 17,
+      "box": [
+        112.26,
+        116.12,
+        483.06,
+        392.91
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "01",
+      "figure_id": "p018-f02",
+      "before_merged_page": 18,
+      "chapter_page": 4,
+      "expected_merged_page": 18,
+      "box": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "01",
+      "figure_id": "p019-f03",
+      "before_merged_page": 19,
+      "chapter_page": 6,
+      "expected_merged_page": 20,
+      "box": [
+        112.26,
+        113.82000000000001,
+        485.3,
+        390.61
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "01",
+      "figure_id": "p021-f04",
+      "before_merged_page": 21,
+      "chapter_page": 8,
+      "expected_merged_page": 22,
+      "box": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "01",
+      "figure_id": "p024-f07",
+      "before_merged_page": 24,
+      "chapter_page": 12,
+      "expected_merged_page": 26,
+      "box": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "01",
+      "figure_id": "p029-f15",
+      "before_merged_page": 29,
+      "chapter_page": 17,
+      "expected_merged_page": 31,
+      "box": [
+        112.26,
+        113.82000000000001,
+        483.06,
+        390.61
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p033-f01",
+      "before_merged_page": 33,
+      "chapter_page": 3,
+      "expected_merged_page": 35,
+      "box": [
+        112.22999877929688,
+        114.27000732421875,
+        483.0799987792969,
+        392.5599792480469
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p034-f02",
+      "before_merged_page": 34,
+      "chapter_page": 4,
+      "expected_merged_page": 36,
+      "box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p036-f03",
+      "before_merged_page": 36,
+      "chapter_page": 6,
+      "expected_merged_page": 38,
+      "box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p038-f05",
+      "before_merged_page": 38,
+      "chapter_page": 8,
+      "expected_merged_page": 40,
+      "box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p039-f06",
+      "before_merged_page": 39,
+      "chapter_page": 9,
+      "expected_merged_page": 41,
+      "box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p047-f20",
+      "before_merged_page": 49,
+      "chapter_page": 19,
+      "expected_merged_page": 51,
+      "box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p053-f25",
+      "before_merged_page": 57,
+      "chapter_page": 28,
+      "expected_merged_page": 60,
+      "box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p057-f31",
+      "before_merged_page": 62,
+      "chapter_page": 34,
+      "expected_merged_page": 66,
+      "box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "02",
+      "figure_id": "p062-f33",
+      "before_merged_page": 70,
+      "chapter_page": 42,
+      "expected_merged_page": 74,
+      "box": [
+        112.22999877929688,
+        112.230029296875,
+        483.0799987792969,
+        390.519970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p065-f01",
+      "before_merged_page": 73,
+      "chapter_page": 3,
+      "expected_merged_page": 77,
+      "box": [
+        112.22999877929688,
+        114.9900390625,
+        483.0799987792969,
+        393.3999755859375
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p066-f02",
+      "before_merged_page": 74,
+      "chapter_page": 4,
+      "expected_merged_page": 78,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p072-f09",
+      "before_merged_page": 83,
+      "chapter_page": 13,
+      "expected_merged_page": 87,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p077-f13",
+      "before_merged_page": 89,
+      "chapter_page": 19,
+      "expected_merged_page": 93,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p079-f15",
+      "before_merged_page": 91,
+      "chapter_page": 22,
+      "expected_merged_page": 96,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p082-f17",
+      "before_merged_page": 96,
+      "chapter_page": 27,
+      "expected_merged_page": 101,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p085-f18",
+      "before_merged_page": 99,
+      "chapter_page": 30,
+      "expected_merged_page": 104,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p090-f23",
+      "before_merged_page": 106,
+      "chapter_page": 37,
+      "expected_merged_page": 111,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p095-f30",
+      "before_merged_page": 113,
+      "chapter_page": 44,
+      "expected_merged_page": 118,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p099-f34",
+      "before_merged_page": 117,
+      "chapter_page": 49,
+      "expected_merged_page": 123,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p103-f38",
+      "before_merged_page": 122,
+      "chapter_page": 54,
+      "expected_merged_page": 128,
+      "box": [
+        112.22999877929688,
+        113.79002685546875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p105-f39",
+      "before_merged_page": 124,
+      "chapter_page": 56,
+      "expected_merged_page": 130,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p114-f51",
+      "before_merged_page": 137,
+      "chapter_page": 69,
+      "expected_merged_page": 143,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p122-f59",
+      "before_merged_page": 146,
+      "chapter_page": 78,
+      "expected_merged_page": 152,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p125-f64",
+      "before_merged_page": 149,
+      "chapter_page": 82,
+      "expected_merged_page": 156,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "03",
+      "figure_id": "p132-f69",
+      "before_merged_page": 157,
+      "chapter_page": 90,
+      "expected_merged_page": 164,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p135-f01",
+      "before_merged_page": 160,
+      "chapter_page": 3,
+      "expected_merged_page": 167,
+      "box": [
+        112.22999877929688,
+        114.9900390625,
+        483.0799987792969,
+        393.3999755859375
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p136-f02",
+      "before_merged_page": 161,
+      "chapter_page": 4,
+      "expected_merged_page": 168,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p142-f07",
+      "before_merged_page": 170,
+      "chapter_page": 13,
+      "expected_merged_page": 177,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p148-f12",
+      "before_merged_page": 177,
+      "chapter_page": 21,
+      "expected_merged_page": 185,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p157-f18",
+      "before_merged_page": 190,
+      "chapter_page": 34,
+      "expected_merged_page": 198,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p159-f19",
+      "before_merged_page": 192,
+      "chapter_page": 36,
+      "expected_merged_page": 200,
+      "box": [
+        112.22999877929688,
+        113.0699951171875,
+        483.0799987792969,
+        391.35999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "04",
+      "figure_id": "p162-f25",
+      "before_merged_page": 196,
+      "chapter_page": 40,
+      "expected_merged_page": 204,
+      "box": [
+        112.22999877929688,
+        114.9900390625,
+        483.0799987792969,
+        393.3999755859375
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p166-f01",
+      "before_merged_page": 200,
+      "chapter_page": 3,
+      "expected_merged_page": 208,
+      "box": [
+        112.97999877929688,
+        115.7400390625,
+        482.3299987792969,
+        392.6499755859375
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p167-f02",
+      "before_merged_page": 201,
+      "chapter_page": 4,
+      "expected_merged_page": 209,
+      "box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p170-f03",
+      "before_merged_page": 205,
+      "chapter_page": 8,
+      "expected_merged_page": 213,
+      "box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p175-f09",
+      "before_merged_page": 210,
+      "chapter_page": 14,
+      "expected_merged_page": 219,
+      "box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p178-f10",
+      "before_merged_page": 214,
+      "chapter_page": 18,
+      "expected_merged_page": 223,
+      "box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p181-f13",
+      "before_merged_page": 217,
+      "chapter_page": 22,
+      "expected_merged_page": 227,
+      "box": [
+        112.97999877929688,
+        113.8199951171875,
+        482.3299987792969,
+        390.60999755859376
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "05",
+      "figure_id": "p190-f19",
+      "before_merged_page": 229,
+      "chapter_page": 34,
+      "expected_merged_page": 239,
+      "box": [
+        112.97999877929688,
+        115.7400390625,
+        482.3299987792969,
+        392.6499755859375
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "06",
+      "figure_id": "p194-f01",
+      "before_merged_page": 233,
+      "chapter_page": 3,
+      "expected_merged_page": 243,
+      "box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "06",
+      "figure_id": "p195-f02",
+      "before_merged_page": 234,
+      "chapter_page": 4,
+      "expected_merged_page": 244,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "06",
+      "figure_id": "p203-f04",
+      "before_merged_page": 243,
+      "chapter_page": 14,
+      "expected_merged_page": 254,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "06",
+      "figure_id": "p208-f06",
+      "before_merged_page": 249,
+      "chapter_page": 20,
+      "expected_merged_page": 260,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "06",
+      "figure_id": "p213-f10",
+      "before_merged_page": 254,
+      "chapter_page": 25,
+      "expected_merged_page": 265,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "06",
+      "figure_id": "p222-f15",
+      "before_merged_page": 263,
+      "chapter_page": 34,
+      "expected_merged_page": 274,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "06",
+      "figure_id": "p225-f16",
+      "before_merged_page": 266,
+      "chapter_page": 37,
+      "expected_merged_page": 277,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "06",
+      "figure_id": "p236-f19",
+      "before_merged_page": 279,
+      "chapter_page": 52,
+      "expected_merged_page": 292,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "07",
+      "figure_id": "p240-f01",
+      "before_merged_page": 283,
+      "chapter_page": 3,
+      "expected_merged_page": 296,
+      "box": [
+        112.97999877929688,
+        115.02000732421875,
+        482.3299987792969,
+        391.8099792480469
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "07",
+      "figure_id": "p241-f02",
+      "before_merged_page": 284,
+      "chapter_page": 4,
+      "expected_merged_page": 297,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "07",
+      "figure_id": "p245-f05",
+      "before_merged_page": 288,
+      "chapter_page": 8,
+      "expected_merged_page": 301,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "07",
+      "figure_id": "p250-f08",
+      "before_merged_page": 295,
+      "chapter_page": 15,
+      "expected_merged_page": 308,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "07",
+      "figure_id": "p262-f20",
+      "before_merged_page": 308,
+      "chapter_page": 29,
+      "expected_merged_page": 322,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "07",
+      "figure_id": "p265-f22",
+      "before_merged_page": 311,
+      "chapter_page": 32,
+      "expected_merged_page": 325,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "07",
+      "figure_id": "p272-f27",
+      "before_merged_page": 320,
+      "chapter_page": 42,
+      "expected_merged_page": 335,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "07",
+      "figure_id": "p280-f34",
+      "before_merged_page": 331,
+      "chapter_page": 53,
+      "expected_merged_page": 346,
+      "box": [
+        112.97999877929688,
+        112.980029296875,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    },
+    {
+      "chapter": "appendix-a",
+      "figure_id": "p286-f08",
+      "before_merged_page": 337,
+      "chapter_page": 5,
+      "expected_merged_page": 352,
+      "box": [
+        112.97999877929688,
+        113.7,
+        482.3299987792969,
+        389.769970703125
+      ],
+      "pixels_identical": true
+    }
+  ],
+  "contact_sheets": [
+    "pages/merged-detail-contact-01.png",
+    "pages/merged-detail-contact-02.png",
+    "pages/merged-detail-contact-03.png",
+    "pages/merged-detail-contact-04.png",
+    "pages/merged-detail-contact-05.png",
+    "pages/merged-detail-contact-06.png",
+    "pages/merged-page-contact-01.png",
+    "pages/merged-page-contact-02.png",
+    "pages/merged-page-contact-03.png",
+    "pages/merged-page-contact-04.png",
+    "pages/merged-page-contact-05.png",
+    "pages/merged-page-contact-06.png",
+    "pages/merged-page-contact-07.png",
+    "pages/merged-page-contact-08.png",
+    "pages/merged-page-contact-09.png"
+  ],
+  "focus_pages": [
+    "pages/focus-introduction-p206-b11-merged.png",
+    "pages/focus-introduction-p233-b09-merged.png",
+    "pages/focus-introduction-p234-b01-merged.png",
+    "pages/focus-source-201-merged-011.png",
+    "pages/focus-source-201-merged-012.png",
+    "pages/focus-source-233-merged-047.png",
+    "pages/focus-source-233-merged-048.png"
+  ],
+  "public_files": [
+    "pages/01-bean-auto-configuration-comparison.png",
+    "pages/01-bean-auto-configuration-merged-detail.png",
+    "pages/01-bean-auto-configuration-merged-page.png",
+    "pages/01-boot-managed-versions-comparison.png",
+    "pages/01-boot-managed-versions-merged-detail.png",
+    "pages/01-boot-managed-versions-merged-page.png",
+    "pages/01-framework-foundation-comparison.png",
+    "pages/01-framework-foundation-merged-detail.png",
+    "pages/01-framework-foundation-merged-page.png",
+    "pages/01-maven-libraries-merged-detail.png",
+    "pages/01-maven-libraries-merged-page.png",
+    "pages/02-form-name-binding-comparison.png",
+    "pages/02-form-name-binding-merged-detail.png",
+    "pages/02-form-name-binding-merged-page.png",
+    "pages/02-get-post-routing-comparison.png",
+    "pages/02-get-post-routing-merged-detail.png",
+    "pages/02-get-post-routing-merged-page.png",
+    "pages/02-model-key-property-comparison.png",
+    "pages/02-model-key-property-merged-detail.png",
+    "pages/02-model-key-property-merged-page.png",
+    "pages/02-model-transfer-merged-detail.png",
+    "pages/02-model-transfer-merged-page.png",
+    "pages/02-request-response-search-comparison.png",
+    "pages/02-request-response-search-merged-detail.png",
+    "pages/02-request-response-search-merged-page.png",
+    "pages/03-di-remote-merged-detail.png",
+    "pages/03-di-remote-merged-page.png",
+    "pages/03-query-method-name-comparison.png",
+    "pages/03-query-method-name-merged-detail.png",
+    "pages/03-query-method-name-merged-page.png",
+    "pages/03-redirect-new-request-comparison.png",
+    "pages/03-redirect-new-request-merged-detail.png",
+    "pages/03-redirect-new-request-merged-page.png",
+    "pages/03-repository-implementation-comparison.png",
+    "pages/03-repository-implementation-merged-detail.png",
+    "pages/03-repository-implementation-merged-page.png",
+    "pages/03-repository-results-merged-detail.png",
+    "pages/03-repository-results-merged-page.png",
+    "pages/04-form-error-roundtrip-comparison.png",
+    "pages/04-form-error-roundtrip-merged-detail.png",
+    "pages/04-form-error-roundtrip-merged-page.png",
+    "pages/04-model-session-lifetime-comparison.png",
+    "pages/04-model-session-lifetime-merged-detail.png",
+    "pages/04-model-session-lifetime-merged-page.png",
+    "pages/04-null-blank-constraints-comparison.png",
+    "pages/04-null-blank-constraints-merged-detail.png",
+    "pages/04-null-blank-constraints-merged-page.png",
+    "pages/04-session-separation-merged-detail.png",
+    "pages/04-session-separation-merged-page.png",
+    "pages/04-validation-branch-merged-detail.png",
+    "pages/04-validation-branch-merged-page.png",
+    "pages/05-dynamic-url-id-comparison.png",
+    "pages/05-dynamic-url-id-merged-detail.png",
+    "pages/05-dynamic-url-id-merged-page.png",
+    "pages/05-layout-reuse-merged-detail.png",
+    "pages/05-layout-reuse-merged-page.png",
+    "pages/05-static-public-path-comparison.png",
+    "pages/05-static-public-path-merged-detail.png",
+    "pages/05-static-public-path-merged-page.png",
+    "pages/05-text-escape-comparison.png",
+    "pages/05-text-escape-merged-detail.png",
+    "pages/05-text-escape-merged-page.png",
+    "pages/06-foreign-key-reference-merged-detail.png",
+    "pages/06-foreign-key-reference-merged-page.png",
+    "pages/06-groupby-aggregate-dto-comparison.png",
+    "pages/06-groupby-aggregate-dto-merged-detail.png",
+    "pages/06-groupby-aggregate-dto-merged-page.png",
+    "pages/06-jpql-entity-names-comparison.png",
+    "pages/06-jpql-entity-names-merged-detail.png",
+    "pages/06-jpql-entity-names-merged-page.png",
+    "pages/06-null-reference-guard-comparison.png",
+    "pages/06-null-reference-guard-merged-detail.png",
+    "pages/06-null-reference-guard-merged-page.png",
+    "pages/06-relationship-field-column-comparison.png",
+    "pages/06-relationship-field-column-merged-detail.png",
+    "pages/06-relationship-field-column-merged-page.png",
+    "pages/06-select-label-value-comparison.png",
+    "pages/06-select-label-value-merged-detail.png",
+    "pages/06-select-label-value-merged-page.png",
+    "pages/07-cdn-local-delivery-comparison.png",
+    "pages/07-cdn-local-delivery-merged-detail.png",
+    "pages/07-cdn-local-delivery-merged-page.png",
+    "pages/07-grid-containment-comparison.png",
+    "pages/07-grid-containment-merged-detail.png",
+    "pages/07-grid-containment-merged-page.png",
+    "pages/07-responsive-switch-merged-detail.png",
+    "pages/07-responsive-switch-merged-page.png",
+    "pages/07-spacing-box-model-comparison.png",
+    "pages/07-spacing-box-model-merged-detail.png",
+    "pages/07-spacing-box-model-merged-page.png",
+    "pages/appendix-b-error-cause-chain-merged-detail.png",
+    "pages/appendix-b-error-cause-chain-merged-page.png",
+    "pages/focus-introduction-p206-b11-merged.png",
+    "pages/focus-introduction-p233-b09-merged.png",
+    "pages/focus-introduction-p234-b01-merged.png",
+    "pages/focus-source-201-merged-011.png",
+    "pages/focus-source-201-merged-012.png",
+    "pages/focus-source-233-merged-047.png",
+    "pages/focus-source-233-merged-048.png",
+    "pages/merged-detail-contact-01.png",
+    "pages/merged-detail-contact-02.png",
+    "pages/merged-detail-contact-03.png",
+    "pages/merged-detail-contact-04.png",
+    "pages/merged-detail-contact-05.png",
+    "pages/merged-detail-contact-06.png",
+    "pages/merged-page-contact-01.png",
+    "pages/merged-page-contact-02.png",
+    "pages/merged-page-contact-03.png",
+    "pages/merged-page-contact-04.png",
+    "pages/merged-page-contact-05.png",
+    "pages/merged-page-contact-06.png",
+    "pages/merged-page-contact-07.png",
+    "pages/merged-page-contact-08.png",
+    "pages/merged-page-contact-09.png"
+  ],
+  "code_introduction_groups": [
+    {
+      "ids": [
+        "p233-b09",
+        "p233-b10"
+      ],
+      "chapter_page": 48,
+      "all_on_same_page": true,
+      "positions": [
+        {
+          "id": "p233-b09",
+          "edge": "start",
+          "page": 48,
+          "x": 96.144,
+          "y": 86.0
+        },
+        {
+          "id": "p233-b10",
+          "edge": "start",
+          "page": 48,
+          "x": 80.214,
+          "y": 147.309531
+        }
+      ]
+    },
+    {
+      "ids": [
+        "p234-b01",
+        "p234-b02"
+      ],
+      "chapter_page": 49,
+      "all_on_same_page": true,
+      "positions": [
+        {
+          "id": "p234-b01",
+          "edge": "start",
+          "page": 49,
+          "x": 96.144,
+          "y": 86.0
+        },
+        {
+          "id": "p234-b02",
+          "edge": "start",
+          "page": 49,
+          "x": 80.214,
+          "y": 147.309531
+        }
+      ]
+    },
+    {
+      "ids": [
+        "p206-b11",
+        "p206-b12",
+        "p206-b13"
+      ],
+      "chapter_page": 18,
+      "all_on_same_page": true,
+      "positions": [
+        {
+          "id": "p206-b11",
+          "edge": "start",
+          "page": 18,
+          "x": 85.104,
+          "y": 86.0
+        },
+        {
+          "id": "p206-b12",
+          "edge": "start",
+          "page": 18,
+          "x": 85.104,
+          "y": 110.0
+        },
+        {
+          "id": "p206-b13",
+          "edge": "start",
+          "page": 18,
+          "x": 80.214,
+          "y": 191.22953099999998
+        }
+      ]
+    }
+  ],
+  "resolved_findings": {
+    "slide_page_boundary_order_cases": 5,
+    "code_introduction_groups": 3,
+    "source_201": "旧FK図と新mappedBy図は同じ物理頁に併存し、本文と重ならない。",
+    "source_233": "DTO2件の短い導入ラベルは、それぞれ対応コードと同じ頁。",
+    "source_206": "丸数字の方法見出し・導入段落・短いコードを同じ頁に保持。"
+  },
+  "sparse_continuation_page": {
+    "id": "boot-managed-versions",
+    "source_page": 22,
+    "chapter_page": 10,
+    "merged_page": 24,
+    "image_only_with_caption": true,
+    "judgement": "既存の操作説明と画面例、元頁の明示的な境界を守るため、図とcaptionだけの継続頁を保持。図は約99×41mmで過大ではないが、余白は広い。",
+    "image": "pages/01-boot-managed-versions-merged-page.png"
+  },
+  "visual_scope": "印刷用の寸法と実PDFの見た目を確認。追加前はWord原本ではなく、直前に確定したf16135f版。"
+}

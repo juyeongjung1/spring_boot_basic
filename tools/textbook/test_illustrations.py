@@ -13,6 +13,7 @@ from PIL import Image
 from build import ROOT, read_markdown
 
 CATALOG = ROOT / 'docs/textbook/illustrations.json'
+APPROVED_EDITION = 'f16135f3cebb2e2f9ab481e9cfead35b05bd52d4'
 
 
 @lru_cache(maxsize=None)
@@ -52,9 +53,9 @@ def image_size(record):
 
 
 class IllustrationSourceTests(unittest.TestCase):
-    def test_nine_new_assets_and_existing_di_follow_print_limits(self):
+    def test_new_assets_and_existing_di_follow_print_limits(self):
         data = catalog()
-        self.assertEqual(len(data['new']), 9)
+        self.assertEqual(len(data['new']), 33)
         self.assertEqual(len(data['resized']), 1)
         self.assertEqual(data['resized'][0]['figure_id'], 'revision-di-remote')
         ids = [r['figure_id'] for r in data['new'] + data['resized']]
@@ -64,12 +65,17 @@ class IllustrationSourceTests(unittest.TestCase):
                 folder = chapter(record['chapter'])[0]
                 asset = folder / record['asset']
                 self.assertTrue(asset.is_file())
+                if record in data['new']:
+                    self.assertIn('asset_sha256', record)
+                    self.assertIn('image_pixels', record)
                 if 'asset_sha256' in record:
                     self.assertEqual(hashlib.sha256(asset.read_bytes()).hexdigest(), record['asset_sha256'])
                 with Image.open(asset) as image:
                     if 'image_pixels' in record:
                         self.assertEqual(list(image.size), record['image_pixels'])
-                        self.assertAlmostEqual(image.width / image.height, 2.4, delta=.04)
+                        # 既存9図の比率は保持し、追加図は実寸と印刷上限で検査する。
+                        if record['figure_id'].startswith('illustration-2026-'):
+                            self.assertAlmostEqual(image.width / image.height, 2.4, delta=.04)
                 width, height = image_size(record)
                 self.assertGreater(width, 0)
                 self.assertGreater(height, 0)
@@ -125,7 +131,35 @@ class IllustrationSourceTests(unittest.TestCase):
             original_count += len(before_nodes) + len(before_figures)
             current_count += len(nodes) + len(figures)
         self.assertEqual(original_count, 2879)
-        self.assertEqual(current_count, original_count + 18)
+        self.assertEqual(current_count, original_count + 66)
+
+    def test_only_new_illustration_settings_are_added_since_the_approved_edition(self):
+        command = ['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'show']
+        previous = subprocess.run(command + [APPROVED_EDITION + ':docs/textbook/illustrations.json'],
+            cwd=ROOT, check=True, capture_output=True)
+        previous = json.loads(previous.stdout)
+        previous_records = {r['figure_id']: r for r in previous['new']}
+        current_records = {r['figure_id']: r for r in catalog()['new']}
+        self.assertEqual(len(current_records.keys() - previous_records.keys()), 24)
+        for ident, record in previous_records.items():
+            self.assertEqual(current_records[ident], record, ident)
+        additions = defaultdict(set)
+        for ident in current_records.keys() - previous_records.keys():
+            additions[current_records[ident]['chapter']].add(ident)
+        for name in catalog()['reviewed_chapters']:
+            with self.subTest(chapter=name):
+                relative = 'docs/textbook/chapters/' + name + '/source.json'
+                before = subprocess.run(command + [APPROVED_EDITION + ':' + relative],
+                    cwd=ROOT, check=True, capture_output=True)
+                before = json.loads(before.stdout)
+                config = chapter(name)[4]
+                self.assertEqual({k:v for k,v in config.items() if k != 'illustrations'},
+                                 {k:v for k,v in before.items() if k != 'illustrations'})
+                old_options = before.get('illustrations', {})
+                new_options = config.get('illustrations', {})
+                self.assertEqual(set(new_options) - set(old_options), additions[name])
+                for ident, options in old_options.items():
+                    self.assertEqual(new_options[ident], options, ident)
 
     def test_original_baseline_layout_and_assets_are_unchanged(self):
         paths = []
@@ -140,6 +174,43 @@ class IllustrationSourceTests(unittest.TestCase):
 
 
 class IllustrationPdfTests(unittest.TestCase):
+    def test_each_image_and_caption_stay_between_the_declared_pdf_anchors(self):
+        contexts = {}
+        for record in catalog()['new']:
+            name = record['chapter']
+            if name not in contexts:
+                folder = ROOT / 'output/pdf/textbook' / ('chapter-' + name)
+                checks = json.loads((folder / 'checks.json').read_text(encoding='utf-8'))
+                pdf = fitz.open(folder / 'chapter-flow.pdf')
+                self.addCleanup(pdf.close)
+                contexts[name] = (checks['flow']['block_positions'], pdf)
+            marks, pdf = contexts[name]
+
+            def position(ident, edge):
+                matches = [m for m in marks if m['id'] == ident and m['edge'] == edge]
+                if edge == 'start':
+                    matches += [m for m in marks if m['id'] == ident and m['edge'] == 'heading']
+                if matches:
+                    points = [(m['page'], round(m['y'], 2)) for m in matches]
+                    return max(points) if edge == 'end' else min(points)
+                # 見出し・手順には終端マーカーがないため、実PDFの文字の下端で確認する。
+                heading = [m for m in marks if m['id'] == ident and m['edge'] == 'heading']
+                self.assertTrue(edge == 'end' and len(heading) == 1, (ident, edge))
+                mark = heading[0]
+                rectangles = pdf[mark['page'] - 1].search_for(chapter(name)[1][ident]['text'])
+                rectangles = [r for r in rectangles if abs(r.y0 - mark['y']) < 2]
+                self.assertTrue(rectangles, ident)
+                return mark['page'], round(max(r.y1 for r in rectangles), 2)
+
+            with self.subTest(figure=record['figure_id']):
+                anchors = [(record['after_id'], 'end'), (record['figure_id'], 'start'),
+                           (record['figure_id'], 'end'), (record['caption_id'], 'start'),
+                           (record['caption_id'], 'end'), (record['before_id'], 'start')]
+                points = [position(ident, edge) for ident, edge in anchors]
+                for index in range(len(points) - 1):
+                    self.assertLessEqual(points[index], points[index + 1],
+                        (anchors[index], points[index], anchors[index + 1], points[index + 1]))
+
     def test_image_dimensions_and_caption_are_kept_on_one_physical_page(self):
         for record in catalog()['new'] + catalog()['resized']:
             with self.subTest(figure=record['figure_id']):

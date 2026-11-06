@@ -176,6 +176,14 @@
 
 :::
 
+![検索のお願いと検索結果の応答](assets/revision-ill-request-response-search.png){#illustration-expansion-2026-request-response-search}
+
+::: {#illustration-expansion-2026-request-response-search-caption .paragraph}
+
+検索条件をリクエストで送り、サーバーで作った検索結果をレスポンスで受け取ります。
+
+:::
+
 ::: {#p035-b04 .heading}
 
 [Spring でのWeb アプリケーション開発]{.s010}
@@ -1196,6 +1204,14 @@ initial-scale=1.0"/>
 
 :::
 
+![同じURLでもGETとPOSTで担当メソッドが変わる](assets/revision-ill-get-post-routing.png){#illustration-expansion-2026-get-post-routing}
+
+::: {#illustration-expansion-2026-get-post-routing-caption .paragraph}
+
+同じ/loginでも、GETは入力画面の表示、POSTは入力データの受信を担当します。
+
+:::
+
 ::: {#p052-b10 .paragraph}
 
 [Spring を使った開発は、このように「決まったルール通り」命名をすれば、後ろで自動的にや]{.s009}\
@@ -1269,6 +1285,14 @@ initial-scale=1.0"/>
 ::: {#p054-b03 .paragraph}
 
 [ここで注意点は、]{.s009}[フィールド名は、必ずView からのname 属性値と一致させる]{.s012}[ことです。]{.s009}
+
+:::
+
+![入力欄のnameとFormのフィールドを結び付ける](assets/revision-ill-form-name-binding.png){#illustration-expansion-2026-form-name-binding}
+
+::: {#illustration-expansion-2026-form-name-binding-caption .paragraph}
+
+入力欄のnameとFormのフィールド名を対応させ、送信された値を1つのオブジェクトにまとめます。
 
 :::
 
@@ -1701,6 +1725,14 @@ request.setAttribute("password", password);
 [Controller からModel に格納した「user」というキーの後ろに、「.フィールド名」を記載すること]{.s009}\
 [で、id の値を出力できます。]{.s009}\
 [例えば、user.id が1234 であれば、出力は\<span\>1234\</span\>となります。]{.s009}
+
+:::
+
+![user.idをキー名とフィールド名に分けて読む](assets/revision-ill-model-key-property.png){#illustration-expansion-2026-model-key-property}
+
+::: {#illustration-expansion-2026-model-key-property-caption .paragraph}
+
+${user.id}は、Modelのキーuserが指すオブジェクトからidの値を取り出します。
 
 :::
 

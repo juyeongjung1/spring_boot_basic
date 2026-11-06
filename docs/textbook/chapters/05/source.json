@@ -211,6 +211,21 @@
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-2026-layout-reuse-caption"
+    },
+    "illustration-expansion-2026-text-escape": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-text-escape-caption"
+    },
+    "illustration-expansion-2026-dynamic-url-id": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-dynamic-url-id-caption"
+    },
+    "illustration-expansion-2026-static-public-path": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-static-public-path-caption"
     }
   }
 }

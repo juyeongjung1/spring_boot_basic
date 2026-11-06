@@ -856,6 +856,21 @@
       "width": 260,
       "max_height": 140,
       "caption_id": "revision-di-caption"
+    },
+    "illustration-expansion-2026-repository-implementation": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-repository-implementation-caption"
+    },
+    "illustration-expansion-2026-query-method-name": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-query-method-name-caption"
+    },
+    "illustration-expansion-2026-redirect-new-request": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-redirect-new-request-caption"
     }
   }
 }

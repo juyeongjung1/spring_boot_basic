@@ -496,6 +496,14 @@ DBではcategory_idの値で関連付け、JavaではProductのcategoryフィー
 
 :::
 
+![mappedByのフィールド名とJoinColumnの列名を区別する](assets/revision-ill-relationship-field-column.png){#illustration-expansion-2026-relationship-field-column}
+
+::: {#illustration-expansion-2026-relationship-field-column-caption .paragraph}
+
+mappedByは相手のJavaフィールド名、JoinColumnのnameはDBの列名を指定します。
+
+:::
+
 ::: {#p201-b07 .paragraph}
 
 [&#32;このアノテーションを記述すると、]{.s009}[検索時に参照関係にあるテーブルが内部結合され、自動]{.s012}\
@@ -789,6 +797,14 @@ public class ProductController {
 
 [この部分は、「カテゴリが未設定の場合」に実行されます。「未設定」という文字列を]{.s022}\
 [表示します。]{.s022}
+
+:::
+
+![参照先がある場合だけ次のフィールドを読む](assets/revision-ill-null-reference-guard.png){#illustration-expansion-2026-null-reference-guard}
+
+::: {#illustration-expansion-2026-null-reference-guard-caption .paragraph}
+
+product.categoryがあるときだけnameを読み、nullのときは「未設定」を表示します。
 
 :::
 
@@ -1433,6 +1449,14 @@ public class ProductController {
 
 :::
 
+![選択肢の表示名と送信する値は異なる](assets/revision-ill-select-label-value.png){#illustration-expansion-2026-select-label-value}
+
+::: {#illustration-expansion-2026-select-label-value-caption .paragraph}
+
+選択メニューにはカテゴリ名を表示し、送信時には対応するカテゴリIDをcategoryIdとして渡します。
+
+:::
+
 ::: {#p218-b07 .paragraph}
 
 [ポイント:]{.s010}
@@ -1882,6 +1906,14 @@ productRepository.findByNameLikeOrCategoryNameLikeOrDescriptionLikeOrBrandLikeOr
 
 [SQLと似た構文ですが、]{.s009}[テーブル名や列名ではなく、エンティティ名やフィールド名を使用]{.s010}[し]{.s009}\
 [ます。]{.s009}
+
+:::
+
+![JPQLではJava側の名前を使う](assets/revision-ill-jpql-entity-names.png){#illustration-expansion-2026-jpql-entity-names}
+
+::: {#illustration-expansion-2026-jpql-entity-names-caption .paragraph}
+
+JPQLは、テーブル名・列名ではなくエンティティ名・フィールド名で記述します。
 
 :::
 
@@ -2517,6 +2549,14 @@ public String showProductListByNameAndPrice(String name, int price, Model model)
 
 [JPQL では DTO（データ転送オブジェクト） を作成して、結果をオブジェクトとして受け取る]{.s009}\
 [のが一般的です。]{.s009}
+
+:::
+
+![商品をカテゴリ別にまとめて集計する](assets/revision-ill-groupby-aggregate-dto.png){#illustration-expansion-2026-groupby-aggregate-dto}
+
+::: {#illustration-expansion-2026-groupby-aggregate-dto-caption .paragraph}
+
+図の例では、商品をカテゴリ別にまとめ、価格合計と件数をDTOで受け取ります。
 
 :::
 

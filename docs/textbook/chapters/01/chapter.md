@@ -118,6 +118,14 @@
 
 :::
 
+![共通の基盤にアプリケーション固有の処理を組み合わせる](assets/revision-ill-framework-foundation.png){#illustration-expansion-2026-framework-foundation}
+
+::: {#illustration-expansion-2026-framework-foundation-caption .paragraph}
+
+共通機能をフレームワークに任せ、開発者はアプリケーション固有の処理を組み立てます。
+
+:::
+
 ::: {#p018-b06 .heading}
 
 [フレームワークの注意点]{.s010}
@@ -366,6 +374,14 @@
 
 ![Mavenの依存ライブラリ画面](assets/p022-f06.svg){#p022-f06}
 
+![Spring Bootが管理するライブラリのバージョンの組合せ](assets/revision-ill-boot-managed-versions.png){#illustration-expansion-2026-boot-managed-versions}
+
+::: {#illustration-expansion-2026-boot-managed-versions-caption .paragraph}
+
+Spring Bootの管理対象ライブラリは、Bootが定めるバージョンの組合せを利用できます。
+
+:::
+
 :::
 
 ::: {#page-23 .source-page}
@@ -411,6 +427,14 @@ public class AppConfig {
 [ただし、]{.s009}[Bean の数が多くなると、それぞれの設定が複雑になり、管理が難しくなります。]{.s011}\
 [Spring Boot は、多くの一般的なBean を、最初から自動でDI コンテナに準備・設定してくれま]{.s011}\
 [す。]{.s011}
+
+:::
+
+![条件に合う共通機能のBeanを自動で用意する](assets/revision-ill-bean-auto-configuration.png){#illustration-expansion-2026-bean-auto-configuration}
+
+::: {#illustration-expansion-2026-bean-auto-configuration-caption .paragraph}
+
+Spring Bootは条件に合う共通機能のBeanを自動設定し、アプリケーションから利用できるようにします。
 
 :::
 

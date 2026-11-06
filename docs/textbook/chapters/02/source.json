@@ -353,6 +353,26 @@
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-2026-model-transfer-caption"
+    },
+    "illustration-expansion-2026-request-response-search": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-request-response-search-caption"
+    },
+    "illustration-expansion-2026-get-post-routing": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-get-post-routing-caption"
+    },
+    "illustration-expansion-2026-form-name-binding": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-form-name-binding-caption"
+    },
+    "illustration-expansion-2026-model-key-property": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-model-key-property-caption"
     }
   }
 }

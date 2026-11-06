@@ -590,8 +590,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if page['id'] in slide_headers:
             entries.append('__slide-' + page['id'])
         originals = next((p['entries'] for p in layout['pages'] if p['source_page'] == page['source_page']), [])
-        # 追加された要素は原本の説明の後へ置き、既存のスライドを押し下げない。
-        additions = [ident for ident in page['entries'] if ident not in originals]
+        # スライド上段は固定し、本文用の挿絵とcaptionはMDの挿入順を保つ。
+        additions = [ident for ident in page['entries'] if ident not in originals
+                     and ident not in compact_figures and ident not in illustration_captions]
         entries.extend(ident for ident in page['entries'] if ident not in slide_consumed and (page['id'] not in slide_headers or ident not in additions))
         if page['id'] in slide_headers:
             entries.extend(additions)
@@ -658,6 +659,18 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             commands.append(f'#code-label({q(ident)},[{inline(nodes[ident]["parts"])}])')
             i+=1
             continue
+        # 短いコード導入ラベルと、その直後の説明を最初のコード枠に繋げる。
+        if (ident in nodes and nodes[ident]['kind'] == 'paragraph'
+                and re.fullmatch(r'[■①-⑳][^\n。]+', plain_symbols(nodes[ident]['text']).strip())):
+            end = i + 1
+            if (end+1 < len(entries) and entries[end] in nodes and nodes[entries[end]]['kind'] == 'paragraph'
+                    and entries[end+1] in nodes and nodes[entries[end+1]]['kind'] == 'code'):
+                end += 1
+            if end < len(entries) and entries[end] in nodes and nodes[entries[end]]['kind'] == 'code':
+                body = '\n'.join(render(e) for e in entries[i:end])
+                commands.append(f'#block(sticky: true, breakable: false, above: 0pt, below: 0pt)[{body}]')
+                i = end
+                continue
         commands.append(render(ident))
         i += 1
     if reference_open:

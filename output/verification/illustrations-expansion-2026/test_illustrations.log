@@ -1,0 +1,12 @@
+test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) ... ok
+test_image_dimensions_and_caption_are_kept_on_one_physical_page (__main__.IllustrationPdfTests.test_image_dimensions_and_caption_are_kept_on_one_physical_page) ... ok
+test_figure_and_caption_are_adjacent_in_the_declared_source_page (__main__.IllustrationSourceTests.test_figure_and_caption_are_adjacent_in_the_declared_source_page) ... ok
+test_new_assets_and_existing_di_follow_print_limits (__main__.IllustrationSourceTests.test_new_assets_and_existing_di_follow_print_limits) ... ok
+test_only_new_illustration_settings_are_added_since_the_approved_edition (__main__.IllustrationSourceTests.test_only_new_illustration_settings_are_added_since_the_approved_edition) ... ok
+test_original_baseline_layout_and_assets_are_unchanged (__main__.IllustrationSourceTests.test_original_baseline_layout_and_assets_are_unchanged) ... ok
+test_original_text_code_and_id_order_are_unchanged (__main__.IllustrationSourceTests.test_original_text_code_and_id_order_are_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 94.312s
+
+OK

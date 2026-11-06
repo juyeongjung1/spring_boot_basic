@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "chapter_md_sha256": "cdba2c8898825a2a1bbb22c0f8bcbe5f8f8a661773026508ca0f9472dc09619c",
+  "id": "boot-managed-versions",
+  "after_id": "p022-f06",
+  "before_id": "p023-b01",
+  "source_page": 22,
+  "placement": "end-of-source-page",
+  "existing_text_figures_order_unchanged": true,
+  "existing_config_and_asset_bytes_unchanged": true,
+  "raw_original_recovered": true
+}

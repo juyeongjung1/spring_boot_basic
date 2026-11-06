@@ -586,6 +586,14 @@ userForm.getPassword());
 
 :::
 
+![ModelとHttpSessionではデータを渡す範囲が違う](assets/revision-ill-model-session-lifetime.png){#illustration-expansion-2026-model-session-lifetime}
+
+::: {#illustration-expansion-2026-model-session-lifetime-caption .paragraph}
+
+通常のModelはその画面表示へ、HttpSessionは同じセッションの後続リクエストへデータを渡します。
+
+:::
+
 ::: {#p143-b06 .paragraph}
 
 [Model については、3 章の「findAll メソッドでの全件検索」を参照してください。]{.s009}
@@ -1293,6 +1301,14 @@ bdResult) {
 
 :::
 
+![入力値と入力エラーを同じ画面へ戻す](assets/revision-ill-form-error-roundtrip.png){#illustration-expansion-2026-form-error-roundtrip}
+
+::: {#illustration-expansion-2026-form-error-roundtrip-caption .paragraph}
+
+入力エラー時はFormの値とBindingResultを使って、入力欄とエラーメッセージを再表示します。
+
+:::
+
 ::: {#p153-b08 .heading}
 
 [動作確認]{.s013}
@@ -1504,6 +1520,14 @@ userForm.getPassword());
 
 [@NotNull については、String 型に適用できないわけではありませんが、@NotBlank の方が]{.s009}\
 [空文字や空白のケアができるのでより適切です。]{.s009}
+
+:::
+
+![null・空文字・空白だけの文字列は同じではない](assets/revision-ill-null-blank-constraints.png){#illustration-expansion-2026-null-blank-constraints}
+
+::: {#illustration-expansion-2026-null-blank-constraints-caption .paragraph}
+
+Stringでは、@NotNullはnullを、@NotBlankはnull・空文字・空白だけの値を入力エラーにします。
 
 :::
 

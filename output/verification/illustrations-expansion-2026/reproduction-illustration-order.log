@@ -1,0 +1,69 @@
+test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) ...
+  test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-2026-layout-reuse') ... FAIL
+  test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-framework-foundation') ... FAIL
+  test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-boot-managed-versions') ... FAIL
+  test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-null-blank-constraints') ... FAIL
+  test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-jpql-entity-names') ... FAIL
+  test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-cdn-local-delivery') ... FAIL
+  test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-grid-containment') ... FAIL
+
+======================================================================
+FAIL: test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-2026-layout-reuse')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_illustrations.py", line 211, in test_each_image_and_caption_stay_between_the_declared_pdf_anchors
+    self.assertLessEqual(points[index], points[index + 1],
+AssertionError: (22, 752.78) not less than or equal to (22, 598.64) : (('illustration-2026-layout-reuse-caption', 'end'), (22, 752.78), ('p181-b05', 'start'), (22, 598.64))
+
+======================================================================
+FAIL: test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-framework-foundation')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_illustrations.py", line 211, in test_each_image_and_caption_stay_between_the_declared_pdf_anchors
+    self.assertLessEqual(points[index], points[index + 1],
+AssertionError: (5, 216.14) not less than or equal to (4, 644.84) : (('illustration-expansion-2026-framework-foundation-caption', 'end'), (5, 216.14), ('p018-b06', 'start'), (4, 644.84))
+
+======================================================================
+FAIL: test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-boot-managed-versions')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_illustrations.py", line 211, in test_each_image_and_caption_stay_between_the_declared_pdf_anchors
+    self.assertLessEqual(points[index], points[index + 1],
+AssertionError: (10, 189.9) not less than or equal to (9, 594.29) : (('p022-f06', 'end'), (10, 189.9), ('illustration-expansion-2026-boot-managed-versions', 'start'), (9, 594.29))
+
+======================================================================
+FAIL: test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-null-blank-constraints')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_illustrations.py", line 211, in test_each_image_and_caption_stay_between_the_declared_pdf_anchors
+    self.assertLessEqual(points[index], points[index + 1],
+AssertionError: (34, 753.25) not less than or equal to (34, 581.11) : (('illustration-expansion-2026-null-blank-constraints-caption', 'end'), (34, 753.25), ('p157-b05', 'start'), (34, 581.11))
+
+======================================================================
+FAIL: test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-jpql-entity-names')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_illustrations.py", line 211, in test_each_image_and_caption_stay_between_the_declared_pdf_anchors
+    self.assertLessEqual(points[index], points[index + 1],
+AssertionError: (38, 216.14) not less than or equal to (37, 543.8) : (('illustration-expansion-2026-jpql-entity-names-caption', 'end'), (38, 216.14), ('p225-b05', 'start'), (37, 543.8))
+
+======================================================================
+FAIL: test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-cdn-local-delivery')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_illustrations.py", line 211, in test_each_image_and_caption_stay_between_the_declared_pdf_anchors
+    self.assertLessEqual(points[index], points[index + 1],
+AssertionError: (8, 691.49) not less than or equal to (8, 496.35) : (('illustration-expansion-2026-cdn-local-delivery-caption', 'end'), (8, 691.49), ('p245-b05', 'start'), (8, 496.35))
+
+======================================================================
+FAIL: test_each_image_and_caption_stay_between_the_declared_pdf_anchors (__main__.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) (figure='illustration-expansion-2026-grid-containment')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_illustrations.py", line 211, in test_each_image_and_caption_stay_between_the_declared_pdf_anchors
+    self.assertLessEqual(points[index], points[index + 1],
+AssertionError: (33, 216.14) not less than or equal to (32, 729.8) : (('illustration-expansion-2026-grid-containment-caption', 'end'), (33, 216.14), ('p265-b09', 'start'), (32, 729.8))
+
+----------------------------------------------------------------------
+Ran 1 test in 0.973s
+
+FAILED (failures=7)

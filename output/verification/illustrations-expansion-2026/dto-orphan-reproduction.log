@@ -1,0 +1,42 @@
+test_code_introductions_stay_with_the_first_code_panel (__main__.PaginationTests.test_code_introductions_stay_with_the_first_code_panel) ...
+  test_code_introductions_stay_with_the_first_code_panel (__main__.PaginationTests.test_code_introductions_stay_with_the_first_code_panel) (introduction='p233-b09') ... FAIL
+  test_code_introductions_stay_with_the_first_code_panel (__main__.PaginationTests.test_code_introductions_stay_with_the_first_code_panel) (introduction='p206-b11') ... FAIL
+  test_code_introductions_stay_with_the_first_code_panel (__main__.PaginationTests.test_code_introductions_stay_with_the_first_code_panel) (introduction='p206-b12') ... FAIL
+
+======================================================================
+FAIL: test_code_introductions_stay_with_the_first_code_panel (__main__.PaginationTests.test_code_introductions_stay_with_the_first_code_panel) (introduction='p233-b09')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_pagination.py", line 21, in test_code_introductions_stay_with_the_first_code_panel
+    self.assertEqual({m['page'] for m in intro}, {start['page']})
+AssertionError: Items in the first set but not the second:
+47
+Items in the second set but not the first:
+48
+
+======================================================================
+FAIL: test_code_introductions_stay_with_the_first_code_panel (__main__.PaginationTests.test_code_introductions_stay_with_the_first_code_panel) (introduction='p206-b11')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_pagination.py", line 21, in test_code_introductions_stay_with_the_first_code_panel
+    self.assertEqual({m['page'] for m in intro}, {start['page']})
+AssertionError: Items in the first set but not the second:
+17
+Items in the second set but not the first:
+18
+
+======================================================================
+FAIL: test_code_introductions_stay_with_the_first_code_panel (__main__.PaginationTests.test_code_introductions_stay_with_the_first_code_panel) (introduction='p206-b12')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_pagination.py", line 21, in test_code_introductions_stay_with_the_first_code_panel
+    self.assertEqual({m['page'] for m in intro}, {start['page']})
+AssertionError: Items in the first set but not the second:
+17
+Items in the second set but not the first:
+18
+
+----------------------------------------------------------------------
+Ran 1 test in 0.042s
+
+FAILED (failures=3)

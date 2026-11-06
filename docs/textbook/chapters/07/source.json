@@ -382,6 +382,21 @@
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-2026-responsive-switch-caption"
+    },
+    "illustration-expansion-2026-spacing-box-model": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-spacing-box-model-caption"
+    },
+    "illustration-expansion-2026-grid-containment": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-grid-containment-caption"
+    },
+    "illustration-expansion-2026-cdn-local-delivery": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-cdn-local-delivery-caption"
     }
   }
 }

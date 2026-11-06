@@ -881,6 +881,14 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{ }
 
 :::
 
+![Repositoryの宣言から使える実装オブジェクトが用意される](assets/revision-ill-repository-implementation.png){#illustration-expansion-2026-repository-implementation}
+
+::: {#illustration-expansion-2026-repository-implementation-caption .paragraph}
+
+宣言したRepositoryインターフェースに対し、Spring Data JPAが実装オブジェクトを用意します。
+
+:::
+
 ::: {#p078-b07 .paragraph}
 
 [extends JpaRepository の後ろには、ジェネリクス（\< \>）を記載します。 \<Product, Integer\>のよ]{.s009}\
@@ -2107,6 +2115,14 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{
 ::: {#p097-b06 .paragraph}
 
 [例）findByprice / findbyPrice /FindByPrice / findByPlice→ NG]{.s031}
+
+:::
+
+![メソッド名と引数が検索条件になる](assets/revision-ill-query-method-name.png){#illustration-expansion-2026-query-method-name}
+
+::: {#illustration-expansion-2026-query-method-name-caption .paragraph}
+
+findByPrice(20000)は、Productのpriceが20000のデータを検索します。
 
 :::
 
@@ -3613,6 +3629,14 @@ public String insertProduct2(ProductForm productForm, Model model) {
 ::: {#p124-b02 .paragraph}
 
 [その時は、]{.s009}[return “redirect:/ \[呼び出したいURL\]”]{.s011}[&#32;の書き方にします。]{.s009}
+
+:::
+
+![redirectはブラウザーからの新しいリクエストを生む](assets/revision-ill-redirect-new-request.png){#illustration-expansion-2026-redirect-new-request}
+
+::: {#illustration-expansion-2026-redirect-new-request-caption .paragraph}
+
+redirect:で移動先を受け取ったブラウザーが、新しいリクエストで一覧ページを取得します。
 
 :::
 

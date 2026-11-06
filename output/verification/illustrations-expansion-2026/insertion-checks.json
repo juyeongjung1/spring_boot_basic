@@ -1,0 +1,375 @@
+{
+  "passed": true,
+  "base_commit": "f16135f3cebb2e2f9ab481e9cfead35b05bd52d4",
+  "prior_base_commit": "256b3be61bec8493104294f923a0711985098554",
+  "original_ids": 2897,
+  "current_ids": 2945,
+  "added_figures": 24,
+  "added_captions": 24,
+  "total_generated_new": 33,
+  "existing_di": 1,
+  "frozen_files": 844,
+  "original_text_spans_code_figures_order_unchanged": true,
+  "original_assets_baseline_layout_unchanged": true,
+  "non_illustration_config_unchanged": true,
+  "raw_markdown_recovered_by_removing_only_new_insertions": true,
+  "changed": [
+    "docs/textbook/chapters/01/chapter.md",
+    "docs/textbook/chapters/01/source.json",
+    "docs/textbook/chapters/02/chapter.md",
+    "docs/textbook/chapters/02/source.json",
+    "docs/textbook/chapters/03/chapter.md",
+    "docs/textbook/chapters/03/source.json",
+    "docs/textbook/chapters/04/chapter.md",
+    "docs/textbook/chapters/04/source.json",
+    "docs/textbook/chapters/05/chapter.md",
+    "docs/textbook/chapters/05/source.json",
+    "docs/textbook/chapters/06/chapter.md",
+    "docs/textbook/chapters/06/source.json",
+    "docs/textbook/chapters/07/chapter.md",
+    "docs/textbook/chapters/07/source.json",
+    "docs/textbook/illustration-proposals.md",
+    "docs/textbook/illustrations.json",
+    "docs/textbook/illustrations.md"
+  ],
+  "chapters": [
+    {
+      "chapter": "01",
+      "original_ids": 101,
+      "added_ids": 6,
+      "original_text_spans_code_figures_order_unchanged": true,
+      "source_page_membership_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "original_ids": 242,
+      "added_ids": 8,
+      "original_text_spans_code_figures_order_unchanged": true,
+      "source_page_membership_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "original_ids": 557,
+      "added_ids": 6,
+      "original_text_spans_code_figures_order_unchanged": true,
+      "source_page_membership_unchanged": true
+    },
+    {
+      "chapter": "04",
+      "original_ids": 224,
+      "added_ids": 6,
+      "original_text_spans_code_figures_order_unchanged": true,
+      "source_page_membership_unchanged": true
+    },
+    {
+      "chapter": "05",
+      "original_ids": 161,
+      "added_ids": 6,
+      "original_text_spans_code_figures_order_unchanged": true,
+      "source_page_membership_unchanged": true
+    },
+    {
+      "chapter": "06",
+      "original_ids": 335,
+      "added_ids": 10,
+      "original_text_spans_code_figures_order_unchanged": true,
+      "source_page_membership_unchanged": true
+    },
+    {
+      "chapter": "07",
+      "original_ids": 301,
+      "added_ids": 6,
+      "original_text_spans_code_figures_order_unchanged": true,
+      "source_page_membership_unchanged": true
+    },
+    {
+      "chapter": "appendix-b",
+      "original_ids": 71,
+      "added_ids": 0,
+      "original_text_spans_code_figures_order_unchanged": true,
+      "source_page_membership_unchanged": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "framework-foundation",
+      "chapter": "01",
+      "source_page": 18,
+      "figure_id": "illustration-expansion-2026-framework-foundation",
+      "caption_id": "illustration-expansion-2026-framework-foundation-caption",
+      "asset": "docs/textbook/chapters/01/assets/revision-ill-framework-foundation.png",
+      "asset_sha256": "068482bcbf67f185e7bc71a390c5475ff7b2c36e9df514e93fc087025ff5aca3",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "boot-managed-versions",
+      "chapter": "01",
+      "source_page": 22,
+      "figure_id": "illustration-expansion-2026-boot-managed-versions",
+      "caption_id": "illustration-expansion-2026-boot-managed-versions-caption",
+      "asset": "docs/textbook/chapters/01/assets/revision-ill-boot-managed-versions.png",
+      "asset_sha256": "03831328dd9641aa06719ce511e0e64e4ef1ee29d7cb416c1a8962b0e6d88878",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "bean-auto-configuration",
+      "chapter": "01",
+      "source_page": 23,
+      "figure_id": "illustration-expansion-2026-bean-auto-configuration",
+      "caption_id": "illustration-expansion-2026-bean-auto-configuration-caption",
+      "asset": "docs/textbook/chapters/01/assets/revision-ill-bean-auto-configuration.png",
+      "asset_sha256": "82d0c5c68fd92bcbcb0a9d3ea672d3f4d9702dc283c815d42ca19c6d44ab6744",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "request-response-search",
+      "chapter": "02",
+      "source_page": 35,
+      "figure_id": "illustration-expansion-2026-request-response-search",
+      "caption_id": "illustration-expansion-2026-request-response-search-caption",
+      "asset": "docs/textbook/chapters/02/assets/revision-ill-request-response-search.png",
+      "asset_sha256": "d5ffaed55ac43dc87a67bd1a76f818ce0dc9cd14a9da42ccf0b1937db097b626",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "get-post-routing",
+      "chapter": "02",
+      "source_page": 52,
+      "figure_id": "illustration-expansion-2026-get-post-routing",
+      "caption_id": "illustration-expansion-2026-get-post-routing-caption",
+      "asset": "docs/textbook/chapters/02/assets/revision-ill-get-post-routing.png",
+      "asset_sha256": "7a915d65db9a483f7eb19a967d7483f6dab118a74334c31767fe23156fa5468d",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "form-name-binding",
+      "chapter": "02",
+      "source_page": 54,
+      "figure_id": "illustration-expansion-2026-form-name-binding",
+      "caption_id": "illustration-expansion-2026-form-name-binding-caption",
+      "asset": "docs/textbook/chapters/02/assets/revision-ill-form-name-binding.png",
+      "asset_sha256": "fef1db7487b44c446fa489719fa5d65363f2fade76062f59e972c79ff33c1619",
+      "width": 280,
+      "height": 116.52263374485597
+    },
+    {
+      "id": "model-key-property",
+      "chapter": "02",
+      "source_page": 60,
+      "figure_id": "illustration-expansion-2026-model-key-property",
+      "caption_id": "illustration-expansion-2026-model-key-property-caption",
+      "asset": "docs/textbook/chapters/02/assets/revision-ill-model-key-property.png",
+      "asset_sha256": "3a9fa32e1d3b81fe1f7421a9252ceb4768b672cf55324c2f041aee980d1beec4",
+      "width": 280,
+      "height": 119.37532535137949
+    },
+    {
+      "id": "repository-implementation",
+      "chapter": "03",
+      "source_page": 78,
+      "figure_id": "illustration-expansion-2026-repository-implementation",
+      "caption_id": "illustration-expansion-2026-repository-implementation-caption",
+      "asset": "docs/textbook/chapters/03/assets/revision-ill-repository-implementation.png",
+      "asset_sha256": "60de3494d576a8ef52763aee5b948c268f6cac1f9ad3ea740b36359adc203056",
+      "width": 280,
+      "height": 116.52263374485597
+    },
+    {
+      "id": "query-method-name",
+      "chapter": "03",
+      "source_page": 97,
+      "figure_id": "illustration-expansion-2026-query-method-name",
+      "caption_id": "illustration-expansion-2026-query-method-name-caption",
+      "asset": "docs/textbook/chapters/03/assets/revision-ill-query-method-name.png",
+      "asset_sha256": "a124f068d00c9d48139325b55c08b36a5c0396d8647ed651f4d066d302a1bb18",
+      "width": 280,
+      "height": 116.52263374485597
+    },
+    {
+      "id": "redirect-new-request",
+      "chapter": "03",
+      "source_page": 124,
+      "figure_id": "illustration-expansion-2026-redirect-new-request",
+      "caption_id": "illustration-expansion-2026-redirect-new-request-caption",
+      "asset": "docs/textbook/chapters/03/assets/revision-ill-redirect-new-request.png",
+      "asset_sha256": "300c92faa5386933fbb1979a926d9c048f2a4be03d8690505db590d44d6bc481",
+      "width": 280,
+      "height": 116.52263374485597
+    },
+    {
+      "id": "model-session-lifetime",
+      "chapter": "04",
+      "source_page": 143,
+      "figure_id": "illustration-expansion-2026-model-session-lifetime",
+      "caption_id": "illustration-expansion-2026-model-session-lifetime-caption",
+      "asset": "docs/textbook/chapters/04/assets/revision-ill-model-session-lifetime.png",
+      "asset_sha256": "2cb2839a1c29509203ffc5e670e0facfefd80ac603b52a94bdaa0ce409264d9c",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "form-error-roundtrip",
+      "chapter": "04",
+      "source_page": 153,
+      "figure_id": "illustration-expansion-2026-form-error-roundtrip",
+      "caption_id": "illustration-expansion-2026-form-error-roundtrip-caption",
+      "asset": "docs/textbook/chapters/04/assets/revision-ill-form-error-roundtrip.png",
+      "asset_sha256": "01e287137a6ea41f26b7d4cf72a1472c047492a5f10b97a31af8feca033cb01a",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "null-blank-constraints",
+      "chapter": "04",
+      "source_page": 157,
+      "figure_id": "illustration-expansion-2026-null-blank-constraints",
+      "caption_id": "illustration-expansion-2026-null-blank-constraints-caption",
+      "asset": "docs/textbook/chapters/04/assets/revision-ill-null-blank-constraints.png",
+      "asset_sha256": "4ea1d32d308f32c06e232cd8bad724722a8263bb96f48e553daed9ded7247402",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "text-escape",
+      "chapter": "05",
+      "source_page": 169,
+      "figure_id": "illustration-expansion-2026-text-escape",
+      "caption_id": "illustration-expansion-2026-text-escape-caption",
+      "asset": "docs/textbook/chapters/05/assets/revision-ill-text-escape.png",
+      "asset_sha256": "fcb3ab1c0aa8bdb666df631859414eb1606c43ebac648f069216fa4b591d9a5a",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "dynamic-url-id",
+      "chapter": "05",
+      "source_page": 174,
+      "figure_id": "illustration-expansion-2026-dynamic-url-id",
+      "caption_id": "illustration-expansion-2026-dynamic-url-id-caption",
+      "asset": "docs/textbook/chapters/05/assets/revision-ill-dynamic-url-id.png",
+      "asset_sha256": "f5163680a7328867df587937f6329c21e5d323628190a58abd9b6f16e5ba0d87",
+      "width": 280,
+      "height": 116.52263374485597
+    },
+    {
+      "id": "static-public-path",
+      "chapter": "05",
+      "source_page": 179,
+      "figure_id": "illustration-expansion-2026-static-public-path",
+      "caption_id": "illustration-expansion-2026-static-public-path-caption",
+      "asset": "docs/textbook/chapters/05/assets/revision-ill-static-public-path.png",
+      "asset_sha256": "89ea9fa18045e0834c4ad636849ce0d67ae4edabb69f2f4b13b39fd897fe542e",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "relationship-field-column",
+      "chapter": "06",
+      "source_page": 201,
+      "figure_id": "illustration-expansion-2026-relationship-field-column",
+      "caption_id": "illustration-expansion-2026-relationship-field-column-caption",
+      "asset": "docs/textbook/chapters/06/assets/revision-ill-relationship-field-column.png",
+      "asset_sha256": "462d12f2b92c67c3981d91444cd9e2675a58b3bbb7d9bd50371eec1fd2f7c228",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "null-reference-guard",
+      "chapter": "06",
+      "source_page": 206,
+      "figure_id": "illustration-expansion-2026-null-reference-guard",
+      "caption_id": "illustration-expansion-2026-null-reference-guard-caption",
+      "asset": "docs/textbook/chapters/06/assets/revision-ill-null-reference-guard.png",
+      "asset_sha256": "cc2487ed5239766b486903d47abed3361f04656186a7bf0dd8547405d7fe42d6",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "select-label-value",
+      "chapter": "06",
+      "source_page": 218,
+      "figure_id": "illustration-expansion-2026-select-label-value",
+      "caption_id": "illustration-expansion-2026-select-label-value-caption",
+      "asset": "docs/textbook/chapters/06/assets/revision-ill-select-label-value.png",
+      "asset_sha256": "bf4e9a7f7287e946e3616dfd303781b68d91d92156a7c29e166cea0f0f809216",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "jpql-entity-names",
+      "chapter": "06",
+      "source_page": 225,
+      "figure_id": "illustration-expansion-2026-jpql-entity-names",
+      "caption_id": "illustration-expansion-2026-jpql-entity-names-caption",
+      "asset": "docs/textbook/chapters/06/assets/revision-ill-jpql-entity-names.png",
+      "asset_sha256": "75578c0ebc172b1e43d212546084c5ed0ed6e554ebc9b6515eea0118c565cc0d",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "groupby-aggregate-dto",
+      "chapter": "06",
+      "source_page": 233,
+      "figure_id": "illustration-expansion-2026-groupby-aggregate-dto",
+      "caption_id": "illustration-expansion-2026-groupby-aggregate-dto-caption",
+      "asset": "docs/textbook/chapters/06/assets/revision-ill-groupby-aggregate-dto.png",
+      "asset_sha256": "1744914b64e48c0a1f9e93454c0db5555ef9812945ec3b72a8f873aece159f32",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "cdn-local-delivery",
+      "chapter": "07",
+      "source_page": 245,
+      "figure_id": "illustration-expansion-2026-cdn-local-delivery",
+      "caption_id": "illustration-expansion-2026-cdn-local-delivery-caption",
+      "asset": "docs/textbook/chapters/07/assets/revision-ill-cdn-local-delivery.png",
+      "asset_sha256": "56771c382e3389281ceb45f3b9568199a1fb1d1627c78581b41a95caa3beb323",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "spacing-box-model",
+      "chapter": "07",
+      "source_page": 259,
+      "figure_id": "illustration-expansion-2026-spacing-box-model",
+      "caption_id": "illustration-expansion-2026-spacing-box-model-caption",
+      "asset": "docs/textbook/chapters/07/assets/revision-ill-spacing-box-model.png",
+      "asset_sha256": "46086f3daaac7f864f042716afadd5c9a8b0fb2da4217686601b0a8f8c15db01",
+      "width": 280,
+      "height": 116.64263645726055
+    },
+    {
+      "id": "grid-containment",
+      "chapter": "07",
+      "source_page": 265,
+      "figure_id": "illustration-expansion-2026-grid-containment",
+      "caption_id": "illustration-expansion-2026-grid-containment-caption",
+      "asset": "docs/textbook/chapters/07/assets/revision-ill-grid-containment.png",
+      "asset_sha256": "50bc470ae6cd081a2b904f10419d8d9b7ba988ff15b10f10909c14f90f5c88cd",
+      "width": 280,
+      "height": 116.64263645726055
+    }
+  ],
+  "replacement": {
+    "removed": "port-ownership",
+    "added": "null-reference-guard",
+    "reason": "固定native頁を変更せず、通常のflow頁へ追加図を配置するため。",
+    "appendix_b_restored_to_f161_bytes": true
+  },
+  "safe_placement": {
+    "id": "boot-managed-versions",
+    "after_id": "p022-f06",
+    "before_id": "p023-b01",
+    "source_page": 22,
+    "placement": "end-of-source-page",
+    "existing_text_figures_order_unchanged": true,
+    "existing_config_and_asset_bytes_unchanged": true,
+    "raw_original_recovered": true
+  }
+}

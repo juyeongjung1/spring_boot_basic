@@ -1,40 +1,44 @@
-# 括弧・小小見出し・コードのファイル名の修正
+# 難しい概念を補うイラスト24点の追加
 
-2026年11月6日。本文349ページ、演習82ページ。改訂前の530b127からページ数は変わっていません。
+2026年11月6日。本文364ページ、演習82ページ。前版の本文349ページから15ページ増えました。
 
 - [本文PDF](../../output/pdf/textbook/textbook/flow.pdf)
 - [演習PDF](../../output/pdf/textbook/exercise/flow.pdf)
-- [最終独立監査](../../output/verification/brackets-2026/final-audit.md)
+- [追加位置・画像・生成記録の一覧](illustrations.md)
+- [正確な生成プロンプトと配置カタログ](illustrations.json)
+- [最終独立監査](../../output/verification/illustrations-expansion-2026/final-audit.md)
 
-## 【】と原本の比較
+## 追加内容
 
-全19章を調べ、原稿中の212ブロック・215組を原本と実PDFに対応付けました。内側の実空白は0件でした。閉じ括弧の外側にある原文の空白103箇所は保持します。
+第1〜7章へ24点を追加し、前回9点と既存DI図を合わせて34点にしました。図は幅280pt（約9.9cm）・高さ140pt以内、DIは幅260ptです。短い大きなラベルで関係を示し、本文は書き換えず図と短いキャプションだけを追加しました。
 
-自動組版で【】だけを全角幅の別書体へ置き換えていた処理をやめ、元の比例書体と字送りを使います。さらに、固定座標で1文字ずつ描く大見出しなどでは、組版エンジンが開き括弧を行頭記号として左へ寄せていたため、原本の指定位置に戻します。原稿の文字や既存図版は変更していません。
+| 章 | 追加数 | 主な内容 |
+| --- | ---: | --- |
+| 1 | 3 | 共通基盤、管理対象バージョン、Beanの自動設定 |
+| 2 | 4 | リクエストと応答、GET/POST、nameとForm、Modelのキーとフィールド |
+| 3 | 3 | Repositoryの宣言と実装、検索メソッド名、redirectの新規リクエスト |
+| 4 | 3 | Model/Sessionの保持期間、入力エラーの再表示、null・空文字・空白 |
+| 5 | 3 | th:text、動的URLとID、staticの保存先と公開URL |
+| 6 | 5 | mappedBy/JoinColumn、null参照、表示名と送信値、JPQL、GROUP BY/DTO |
+| 7 | 3 | CDN/static、margin/padding、container/row/colの包含 |
 
-36pの小見出しの【→参は、原本6.108pt・修正前12pt・修正後6ptです。原本にある微小な字間調整と、自動組版の標準送りは分けて記録しています。図内の輪郭化された文字は文字抽出の対象と区別し、元資材と実PDFの描画の保全を確認します。
+## 図の確認
 
-- [全【】の対応一覧](../../output/verification/brackets-2026/inventory-final.md)
-- [書体・小見出しの確認](../../output/verification/brackets-2026/content-typography-report.md)
-- [36pの原本と修正版](../../output/verification/brackets-2026/p036-full-comparison-final.png)
-- [37pの原本と修正版](../../output/verification/brackets-2026/p037-full-comparison-final.png)
+生成には組み込みimage_genを使いました。全24点を原寸と印刷相当の560px表示で二重確認し、技術的な意味、綴り、数値、矢印、文字の可読性を確認しました。Form属性の引用符、Repositoryの文字サイズ、redirectの応答表示を調整し、商品の絵も配布DBへ合わせました。
 
-## 小小見出しの太字
+- [生成画像の第二者レビュー](../../output/verification/illustrations-expansion-2026/second-review.md)
+- [実PDFの全34図レビュー・比較画像](../../output/verification/illustrations-expansion-2026/final-visual-review.md)
 
-37pの「【参考】サーブレットの基本」と、同じ原因で太字が欠けていた作業見出し5箇所を補強しました。元の書体・サイズ・色を保持します。既存の太字・大見出し・説明文の続きには補強を加えません。
+原本の操作説明・画面・ページ区切りを優先し、元22pのバージョン管理図は本文24pの図中心の継続ページにしています。図の大きさは約99×41mmで、原本の説明と画面を分断していません。
 
-## コード右上のファイル名
+## 改ページと原本保全
 
-右上の位置を保ち、Meiryoの実太字、濃青、下線、淡青のラベルで強調しました。全116ヘッダーを目視し、折り返し・続きカードを含めて欠けや重なりがないことを確認しました。名前のない74部品には推測したファイル名を追加していません。元のコード枠の幅、コード本文、表の配色は維持します。
+スライド上段の固定配置を維持し、本文用の図とキャプションはMarkdownの挿入順を保つようにしました。全33図の前後アンカー順も実PDFで検査します。コード導入の短いラベルと直後の説明は、最初のコード枠と同じページに保ちます。
 
-- [全件監査と実ページ](../../output/verification/brackets-2026/filename-audit.md)
-- [ファイル名の変更前後](../../output/verification/brackets-2026/filename-audit/fixture-comparison-1.png)
+- 回帰テスト65件が合格。全19章の文字照合・はみ出し・孤立見出し・図/表/短いコード/手順の分断検査も合格しました。
+- 前版の2897 IDに、図24・キャプション24の48 IDだけを追加し、計2945 IDを確認しました。
+- 元資材739点、baseline/layout38件、既存本文・コード・表・Span・図行・順序・元頁所属を保全しました。
+- 原本373ページ、空白17ページ、合冊446ページのヘッダー・ページ境界、URI89件、章から合冊への全文一致を監査しました。
+- 既存スライド65点は原位置と描画領域の全画素が前版と一致。固定配置の【】24組、コードの右上ファイル名も保持しました。
 
-## 最終検証
-
-- 回帰テスト62件が合格。全19章の文字照合、はみ出し、孤立見出し、図・短いコード・表・作業手順の分断検査も合格しました。
-- 全2897 ID、原本373ページへの所属、空白17ページ、合冊431ページのヘッダーを照合しました。今回の新規ID・本文改稿は0件です。
-- 章別PDFから合冊への全文一致とURIリンク89件を確認しました。
-- 元PDF・Word、Markdown、source設定、baseline、source-layout、既存資材を保全しました。
-
-[テスト件数](../../output/verification/brackets-2026/regressions.json)と[最終PDFのSHA256](../../output/verification/brackets-2026/summary.json)を保存しています。前回の商標・段落字下げ・挿絵の確認は[illustrations-2026](../../output/verification/illustrations-2026/final-audit.md)に保持しています。
+[全テスト記録](../../output/verification/illustrations-expansion-2026/regressions.json)と[最終PDFのSHA256](../../output/verification/illustrations-expansion-2026/summary.json)を保存しました。前回の括弧・太字・ファイル名の検証は[brackets-2026](../../output/verification/brackets-2026/final-audit.md)に保持しています。

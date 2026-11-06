@@ -1,12 +1,12 @@
 {
   "collection": "textbook",
-  "flow_pages": 349,
+  "flow_pages": 364,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 70,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "e59623eefe51d8785aa573261a6ea9d3db3ca4aac2f0ae34160175385c0dacf2",
-  "verification": "output/verification/brackets-2026/"
+  "pdf_sha256": "a3cfbd131dd2ada326f82c6b8778ef901f7c06d965d78f279d99e61a37c5e20b",
+  "verification": "output/verification/illustrations-expansion-2026/"
 }

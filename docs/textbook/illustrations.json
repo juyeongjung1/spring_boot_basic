@@ -234,6 +234,1214 @@
         1939,
         811
       ]
+    },
+    {
+      "id": "framework-foundation",
+      "chapter": "01",
+      "source_page": 18,
+      "after_id": "p018-b05",
+      "before_id": "p018-b06",
+      "priority": "推奨",
+      "title": "共通の基盤にアプリケーション固有の処理を組み合わせる",
+      "caption": "共通機能をフレームワークに任せ、開発者はアプリケーション固有の処理を組み立てます。",
+      "purpose": "抽象語の『フレームワーク』を、共通の土台と個別に作る部分の区別として記憶できるようにする。",
+      "composition": "共通の基盤の上に、開発者がアプリ固有の処理のブロックを組み込む。基盤はリクエスト受付・画面表示・データ保持を例示。",
+      "labels": [
+        "リクエスト受付",
+        "画面表示",
+        "データ保持",
+        "共通の基盤",
+        "独自の処理"
+      ],
+      "accuracy_constraints": [
+        "フレームワークが業務固有の完成アプリまで自動生成する図にしない。",
+        "開発者がルールに従って固有の処理を作る役割を残す。",
+        "Springとすべての他のライブラリの違いを断定する一般図にはしない。"
+      ],
+      "existing_figures": [
+        "p018-f02"
+      ],
+      "difference": "既存の文字とコードの説明を、共通基盤と独自処理を組み合わせる具体的な組立の比喩で補う。",
+      "safety": "フレームワークの説明段落を読み切った後、注意点の独立見出しの直前。スライドの上段へ挿入しない。",
+      "source_evidence": [
+        "p018-b03",
+        "p018-b04",
+        "p018-b05",
+        "p018-b07"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-framework-foundation",
+      "caption_id": "illustration-expansion-2026-framework-foundation-caption",
+      "asset": "assets/revision-ill-framework-foundation.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-d505955c-bd91-4211-b5ad-a361cdb2e8e6.png",
+      "prompt": "Use case: scientific-educational. Generate one compact illustration for a Japanese introductory Spring Boot textbook. Landscape canvas exactly 2.4:1 if possible, white background, clean flat editorial illustration, crisp navy outlines, muted teal and pale blue with small orange accents. Use simple physical building-block metaphors, no glossy surfaces, gradients, shadows, photographic realism, title banner, logos or watermark. Very large clear Japanese labels, no tiny prose. The image will print at only 100 mm wide and at most 49 mm high; all labels must remain readable. One asset only.\nSubject: a framework provides common foundations while the developer adds the specific application behavior. At bottom draw one broad teal foundation with three plainly separated sections, labeled exactly \"リクエスト受付\", \"画面表示\", and \"データ保持\". A short large label below the foundation is exactly \"共通の基盤\". On top draw a small distinct orange block representing the shop-specific feature, with a person programmer adding it to a matching empty socket. Label this orange block exactly \"独自の処理\". Show the orange block joining the foundation, not replacing it. This is a conceptual metaphor, not a UML or literal architecture. No arrows between the three foundation sections, since they are common functions and not a sequential data pipeline. Keep composition sparse with ample white edges.\n\n最終調整（元画像への編集指示）:\nEdit only the existing illustration. Remove the entire upper-left banner reading \"Spring Bootの仕組み\" including its rounded blue border and fill, replace that region with pure white background. The illustration explains a framework in general, not Spring Boot specifically. Do not add any replacement title or other text. Preserve the orange 独自の処理 block, all three teal foundation sections and their existing exact labels リクエスト受付 / 画面表示 / データ保持, 共通の基盤, person, colors, outlines, and 2.4:1 wide composition. No other changes.",
+      "asset_sha256": "068482bcbf67f185e7bc71a390c5475ff7b2c36e9df514e93fc087025ff5aca3",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "boot-managed-versions",
+      "chapter": "01",
+      "source_page": 22,
+      "after_id": "p022-f06",
+      "before_id": "p023-b01",
+      "priority": "推奨",
+      "title": "Spring Bootが管理するライブラリのバージョンの組合せ",
+      "caption": "Spring Bootの管理対象ライブラリは、Bootが定めるバージョンの組合せを利用できます。",
+      "purpose": "ライブラリを取得するMavenの働きと、管理対象ライブラリのバージョンをそろえるBootの働きを混同しないようにする。",
+      "composition": "中央の設計図カード『Spring Boot』から、右の3つの整合した部品カードへ細い線。3部品は『Web』『DB』『Template』で、共通色のはめ込み形状がそろう。カード群全体を『管理対象』の短い枠でまとめる。別々のバージョン数字や赤いエラーの山は不要。『全部のライブラリ』と書かない。",
+      "labels": [
+        "Spring Boot",
+        "管理対象",
+        "Web",
+        "DB",
+        "Template"
+      ],
+      "accuracy_constraints": [
+        "任意の外部ライブラリまでBootが自動でバージョン管理するとの印象を与えない。",
+        "バージョン番号を創作して図中へ入れない。",
+        "pom.xmlや依存宣言が不要であるように描かない。"
+      ],
+      "existing_figures": [
+        "p022-f06",
+        "illustration-2026-maven-libraries"
+      ],
+      "difference": "既存p022-f06は依存ライブラリ一覧の画面、既存Maven挿絵はpom.xmlから取得する働き。新図は『管理対象の組合せをそろえる』点に限定する。",
+      "safety": "原本の見出し・説明・依存ライブラリ画面のまとまりを保持した直後。図/captionは元頁22に所属し、次の元頁23の先頭より前。",
+      "source_evidence": [
+        "p022-b06",
+        "p022-b07"
+      ],
+      "primary_sources": [
+        "https://docs.spring.io/spring-boot/4.0/reference/using/build-systems.html"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-boot-managed-versions",
+      "caption_id": "illustration-expansion-2026-boot-managed-versions-caption",
+      "asset": "assets/revision-ill-boot-managed-versions.png",
+      "placement": "end-of-source-page",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-5133a05c-63e4-49c2-bf3e-a3cefe04df7d.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on a pure white background. Clean flat editorial drawings, thick crisp navy outlines, muted teal/pale blue with orange accents; large sparse labels readable at only 100 mm print width and at most 49 mm high. No glossy finish, shadows, title banner, logos, watermark or extra prose. Use ONLY the exact short labels requested, no invented headings. One asset. A coordinated set of managed dependency versions, not downloading libraries. Left: one large blueprint/settings card labeled exactly \"Spring Boot\". Three clear connector lines point from that card to three distinct component blocks on the right, labeled exactly \"Web\", \"DB\", \"Template\". Those three blocks have matching compatible socket shapes, and are enclosed together by one light outline labeled exactly \"管理対象\". Do not invent any version numbers, do not claim all possible libraries are managed, do not show dependency declarations becoming unnecessary. This is a schematic of a compatible managed set, not Maven fetching files.",
+      "asset_sha256": "03831328dd9641aa06719ce511e0e64e4ef1ee29d7cb416c1a8962b0e6d88878",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "bean-auto-configuration",
+      "chapter": "01",
+      "source_page": 23,
+      "after_id": "p023-b05",
+      "before_id": "p023-b06",
+      "priority": "推奨",
+      "title": "条件に合う共通機能のBeanを自動で用意する",
+      "caption": "Spring Bootは条件に合う共通機能のBeanを自動設定し、アプリケーションから利用できるようにします。",
+      "purpose": "『Beanの自動設定』を、全クラスが勝手に作られるという理解ではなく、利用条件に応じて共通部品が準備される仕組みとして捉える。",
+      "composition": "左の小さなライブラリの部品と設定用紙が、中央の自動組立台『Spring Boot』へ入る。右に整理された棚『DIコンテナ』があり、同じ形の小さな部品2〜3個『Bean』が置かれる。棚からアプリ側へは薄い利用の矢印のみ。図中に『条件に応じて』を短く置く。実在の独自MyServiceクラスのコードは描かない。",
+      "labels": [
+        "ライブラリ",
+        "設定",
+        "Spring Boot",
+        "条件に応じて",
+        "DIコンテナ",
+        "Bean"
+      ],
+      "accuracy_constraints": [
+        "Bootがアプリ内のすべてのクラスを自動でBean登録する図にしない。",
+        "ユーザーが定義したBeanを無条件に上書きするような表現を避ける。",
+        "自動設定の共通機能の準備と、既存DIリモコン図の『注入して利用する』働きを区別する。"
+      ],
+      "existing_figures": [
+        "revision-di-remote"
+      ],
+      "difference": "既存DI図は用意された部品をControllerへ渡して使う関係を示す。新図は、その前段階にある条件付きの自動準備を説明する。",
+      "safety": "手動設定のコードと説明が終わった後。次の利点の段落の直前。",
+      "source_evidence": [
+        "p023-b02",
+        "p023-b03",
+        "p023-b05",
+        "p023-b06"
+      ],
+      "primary_sources": [
+        "https://docs.spring.io/spring-boot/4.0/reference/using/auto-configuration.html"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-bean-auto-configuration",
+      "caption_id": "illustration-expansion-2026-bean-auto-configuration-caption",
+      "asset": "assets/revision-ill-bean-auto-configuration.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-db01342a-f74b-4766-8e8a-a98397bd4376.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on a pure white background. Clean flat editorial drawings, thick crisp navy outlines, muted teal/pale blue with orange accents; large sparse labels readable at only 100 mm print width and at most 49 mm high. No glossy finish, shadows, title banner, logos, watermark or extra prose. Use ONLY the exact short labels requested, no invented headings. One asset. Conditional auto-configuration of infrastructure beans. Left: a small stack of library components labeled exactly \"ライブラリ\" and a separate configuration page labeled exactly \"設定\". Both go to one compact assembly station labeled exactly \"Spring Boot\", with one condition gate labeled exactly \"条件に応じて\". Right: the station supplies two simple completed component pieces on a tidy shelf labeled exactly \"DIコンテナ\"; label the supplied pieces collectively exactly \"Bean\". Only qualified infrastructure components are supplied. No application class list and no assertion that every application class becomes a bean. No code, no extra labels.",
+      "asset_sha256": "82d0c5c68fd92bcbcb0a9d3ea672d3f4d9702dc283c815d42ca19c6d44ab6744",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "request-response-search",
+      "chapter": "02",
+      "source_page": 35,
+      "after_id": "p035-b03",
+      "before_id": "p035-b04",
+      "priority": "推奨",
+      "title": "検索のお願いと検索結果の応答",
+      "caption": "検索条件をリクエストで送り、サーバーで作った検索結果をレスポンスで受け取ります。",
+      "purpose": "リクエストとレスポンスを、教科書本文の服の検索の具体的な行動と対応付ける。",
+      "composition": "左にブラウザーと検索欄、右にサーバーと小さな服のカードの棚。左から右へ上側の矢印『リクエスト』、右から左へ下側の矢印『レスポンス』。上の矢印には検索条件の小さな紙、下の矢印には服の商品カードが並んだHTMLの紙を載せる。ブラウザー上の検索結果には同じ服の絵を表示する。",
+      "labels": [
+        "ブラウザー",
+        "サーバー",
+        "検索条件",
+        "リクエスト",
+        "レスポンス",
+        "検索結果"
+      ],
+      "accuracy_constraints": [
+        "リクエストとレスポンスの向きを逆にしない。",
+        "DBの生データそのものがブラウザー画面になるようにせず、サーバーがHTMLの結果を作る。",
+        "POSTだけで検索する、あるいはレスポンスが常にHTMLだけ、という一般的断定はしない。図は本書の検索例として扱う。"
+      ],
+      "existing_figures": [
+        "p034-f02"
+      ],
+      "difference": "既存スライドの一般的なブラウザー/サーバー往復を、本文の服の検索例の具体的な要求と結果に結び付ける。",
+      "safety": "例の説明3段落を読み終わってから、Springでの開発という次の見出しの前。既存スライド領域とは別頁。",
+      "source_evidence": [
+        "p035-b01",
+        "p035-b02",
+        "p035-b03"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-request-response-search",
+      "caption_id": "illustration-expansion-2026-request-response-search-caption",
+      "asset": "assets/revision-ill-request-response-search.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-27d288fa-ff4f-4ad5-bdb3-1877ad132570.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on a pure white background. Clean flat editorial drawings, thick crisp navy outlines, muted teal/pale blue with orange accents; large sparse labels readable at only 100 mm print width and at most 49 mm high. No glossy finish, shadows, title banner, logos, watermark or extra prose. Use ONLY the exact short labels requested, no invented headings. One asset. Concrete request/response pair for shopping search. Left is ONE browser screen labeled exactly \"ブラウザー\", showing a search input and two small shirt product silhouettes. Right is a server cabinet labeled exactly \"サーバー\", with matching shirt product cards. UPPER arrow clearly points LEFT TO RIGHT from browser to server, carrying a small search slip labeled exactly \"検索条件\"; put exact label \"リクエスト\" above this arrow. LOWER arrow clearly points RIGHT TO LEFT, carrying a completed HTML result page with the matching shirt cards; label this arrow exactly \"レスポンス\" and the returned page exactly \"検索結果\". Do not reverse arrows, do not add a direct database-to-browser connection. Two arrows must be visually separated.",
+      "asset_sha256": "d5ffaed55ac43dc87a67bd1a76f818ce0dc9cd14a9da42ccf0b1937db097b626",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "get-post-routing",
+      "chapter": "02",
+      "source_page": 52,
+      "after_id": "p052-b09",
+      "before_id": "p052-b10",
+      "priority": "推奨",
+      "title": "同じURLでもGETとPOSTで担当メソッドが変わる",
+      "caption": "同じ/loginでも、GETは入力画面の表示、POSTは入力データの受信を担当します。",
+      "purpose": "URLだけが対応付けの条件ではなく、HTTPメソッドも含めて処理が分かれることを理解する。",
+      "composition": "左上に『GET /login』の青い封筒、左下に『POST /login』の橙の封筒。中央にURLとメソッドを確認する分岐ゲート、右上に『showLoginView()』と白い入力用紙、右下に『doLogin(...)』と入力値のカード。青い経路と橙の経路を交差させず並行に結ぶ。",
+      "labels": [
+        "GET /login",
+        "POST /login",
+        "showLoginView()",
+        "doLogin(...)"
+      ],
+      "accuracy_constraints": [
+        "HTTPメソッドのGET/POSTをURLのパスの一部として描かない。",
+        "POSTで送れば暗号化されて安全になるという連想を加えない。",
+        "図は教材の2つのMappingに限定し、HTTPメソッド一般の全用途を説明しようとしない。"
+      ],
+      "existing_figures": [
+        "p038-f05",
+        "p052-f24"
+      ],
+      "difference": "既存MVC図は9段階の全体の往復、動作画面は取得結果。新図は、同じパスをHTTPメソッドで2本に振り分ける条件だけを拡大する。",
+      "safety": "p052-b09のGET/POSTのまとめを読み終えてから、命名ルールの注意の前。コード/解説の消費ID外。",
+      "source_evidence": [
+        "p051-b04",
+        "p051-b07",
+        "p052-b09"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-get-post-routing",
+      "caption_id": "illustration-expansion-2026-get-post-routing-caption",
+      "asset": "assets/revision-ill-get-post-routing.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-f4bf8fe3-f415-4a60-a48b-5552828063a3.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on a pure white background. Clean flat editorial drawings, thick crisp navy outlines, muted teal/pale blue with orange accents; large sparse labels readable at only 100 mm print width and at most 49 mm high. No glossy finish, shadows, title banner, logos, watermark or extra prose. Use ONLY the exact short labels requested, no invented headings. One asset. Two parallel handler mappings selected by HTTP method even when URL path is identical. Top row: a blue envelope labeled exactly \"GET /login\" passes through a small matching gate to an operation panel labeled exactly \"showLoginView()\", with a blank form sheet icon. Bottom row: an orange envelope labeled exactly \"POST /login\" passes through its own matching gate to a panel labeled exactly \"doLogin(...)\", with submitted data card icons. Lines do not cross. Display only these four labels. GET and POST are method labels, not part of the path string. No padlocks or claims POST is encrypted.",
+      "asset_sha256": "7a915d65db9a483f7eb19a967d7483f6dab118a74334c31767fe23156fa5468d",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "form-name-binding",
+      "chapter": "02",
+      "source_page": 54,
+      "after_id": "p054-b03",
+      "before_id": "p054-b04",
+      "priority": "推奨",
+      "title": "入力欄のnameとFormのフィールドを結び付ける",
+      "caption": "入力欄のnameとFormのフィールド名を対応させ、送信された値を1つのオブジェクトにまとめます。",
+      "purpose": "日本語の項目名とnameの違い、複数の値が1つのFormへまとまる関係を可視化する。",
+      "composition": "左に2つの入力欄。上は『name=\"id\"』と値1234、下は『name=\"password\"』と値abc。右に1個の大きな箱『UserForm』を置き、中に『id』と1234、『password』とabcの2行。名前が同じ行同士を青と橙の線で結ぶ。2個の別のFormオブジェクトを作らない。",
+      "labels": [
+        "name=\"id\"",
+        "name=\"password\"",
+        "UserForm",
+        "id",
+        "password",
+        "1234",
+        "abc"
+      ],
+      "accuracy_constraints": [
+        "項目の表示ラベル『社員番号』でバインドされるように描かない。",
+        "nameとフィールド名の大小文字/綴りを一致させる。",
+        "この図は教材のフォームの基本バインドで、任意の送信キーがすべて自動保存される図にしない。",
+        "フォームのpasswordは説明用のabcのみで、機密データを生成しない。"
+      ],
+      "existing_figures": [
+        "p053-f25",
+        "p053-f26",
+        "p054-f27"
+      ],
+      "difference": "既存スライドはコードと箇条書き、既存画像はEclipse操作。新図は値を持つ入力欄と同名フィールドを色で1対1対応させる。",
+      "safety": "フィールド名一致の注意を読み終わった後、ファイル名p054-b04とコードp054-b05の組を崩さずその直前に入れる。",
+      "source_evidence": [
+        "p050-b02",
+        "p053-b03",
+        "p054-b02",
+        "p054-b03",
+        "p056-b06"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-form-name-binding",
+      "caption_id": "illustration-expansion-2026-form-name-binding-caption",
+      "asset": "assets/revision-ill-form-name-binding.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-c5ea9bff-754e-42cc-841c-4ddf73acb89a.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on a pure white background. Clean flat editorial drawings, thick crisp navy outlines, muted teal/pale blue with orange accents; large sparse labels readable at only 100 mm print width and at most 49 mm high. No glossy finish, shadows, title banner, logos, watermark or extra prose. Use ONLY the exact short labels requested, no invented headings. One asset. Request parameters bind by matching input name to the fields of ONE UserForm object. Left: two simple form input strips, the upper labeled exactly 'name=\"id\"' with value exactly \"1234\", lower labeled exactly 'name=\"password\"' with value exactly \"abc\". Right: ONE unified object box labeled exactly \"UserForm\", containing an upper field labeled exactly \"id\" with value \"1234\", and a lower field labeled exactly \"password\" with value \"abc\". Connect upper matching pair by a blue line and lower matching pair by an orange line, left to right. No crossing, no separate object for each field, no database, no extra text. Preserve all spelling and double quotes.\n\n最終調整（元画像への編集指示）:\nChange only the two name attribute text labels. Render the upper EXACTLY name=\"id\" and lower EXACTLY name=\"password\" using STRAIGHT ASCII double quote U+0022 on BOTH sides of each value, as in a monospace HTML code editor. Absolutely no curly typographic quotation marks “ ”. Keep every value, UserForm, id, password, arrows, colors, sizes, positions and all other pixels/composition as close as possible. No extra text.",
+      "asset_sha256": "fef1db7487b44c446fa489719fa5d65363f2fade76062f59e972c79ff33c1619",
+      "image_pixels": [
+        1944,
+        809
+      ]
+    },
+    {
+      "id": "model-key-property",
+      "chapter": "02",
+      "source_page": 60,
+      "after_id": "p060-b08",
+      "before_id": "p060-b09",
+      "priority": "推奨",
+      "title": "user.idをキー名とフィールド名に分けて読む",
+      "caption": "${user.id}は、Modelのキーuserが指すオブジェクトからidの値を取り出します。",
+      "purpose": "ModelのキーとFormのフィールドを混同せず、ドットの前後を別の段階として理解する。",
+      "composition": "左に『Model』の棚。その中にキーの札『user』と小箱『UserForm』。小箱には『id : 1234』の大きな1行。中央の式『${user.id}』でuserを青、idを橙に色分けし、userからキー札へ、idからid行へ短い対応線。右に結果『1234』を表示する小さなHTML紙。要素を増やし過ぎない。",
+      "labels": [
+        "Model",
+        "user",
+        "UserForm",
+        "id : 1234",
+        "${user.id}",
+        "1234"
+      ],
+      "accuracy_constraints": [
+        "userはJavaクラス名でもテンプレートのファイル名でもなくModelのキーである。",
+        "UserFormはデータの入れ物であり、DBや描画処理そのものにしない。",
+        "ユーザー入力からブラウザーのJavaScriptが直接Modelを読み出すように描かない。サーバー側の参照を表す。"
+      ],
+      "existing_figures": [
+        "illustration-2026-model-transfer"
+      ],
+      "difference": "既存Model図はControllerからModelとテンプレートを経てHTMLを生成する全体図。新図はキーとフィールドの2段階の参照だけを拡大する。",
+      "safety": "p060-b04〜b08の構文解説consume_idsの末尾の直後。次の独立したJSP参考見出しの前なので、HTML解説カードの途中へ図を差し込まない。",
+      "source_evidence": [
+        "p059-b02",
+        "p060-b03",
+        "p060-b08"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-model-key-property",
+      "caption_id": "illustration-expansion-2026-model-key-property-caption",
+      "asset": "assets/revision-ill-model-key-property.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-2b86db07-8a33-47e4-b071-1cddbc3f1dfa.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on pure white. Clean flat editorial drawing with crisp navy outlines, pale blue and teal, restrained orange highlights. Sparse large labels readable at 100 mm print width, maximum print height 49 mm. No title, invented headings, gloss, watermark, decorative prose or logos. Only the exact specified labels. Explain server-side property lookup in the expression \"${user.id}\". Left is one passive shelf labeled exactly \"Model\", containing a key tag labeled exactly \"user\" attached to one small data box labeled exactly \"UserForm\". Within that box, one obvious field reads exactly \"id : 1234\". Center is the large expression exactly \"${user.id}\" with \"user\" blue and \"id\" orange. Short correspondence pointers lead from user in the expression to the shelf key and id in the expression to the id field. Right is a simple output page showing exactly \"1234\". Keep Java object, key and field distinct. Do not draw a browser requesting the Model, no JavaScript, no DB. All braces and dollar sign must be exact.",
+      "asset_sha256": "3a9fa32e1d3b81fe1f7421a9252ceb4768b672cf55324c2f041aee980d1beec4",
+      "image_pixels": [
+        1921,
+        819
+      ]
+    },
+    {
+      "id": "repository-implementation",
+      "chapter": "03",
+      "source_page": 78,
+      "after_id": "p078-b06",
+      "before_id": "p078-b07",
+      "priority": "推奨",
+      "title": "Repositoryの宣言から使える実装オブジェクトが用意される",
+      "caption": "宣言したRepositoryインターフェースに対し、Spring Data JPAが実装オブジェクトを用意します。",
+      "purpose": "インターフェースを書いただけなのにfindAllやsaveを使える理由を、宣言と実体の区別で説明する。",
+      "composition": "Repositoryの宣言→Spring Data JPAが用意する実装→DBの関係。正式名はcaptionと元コードで確認し、図内は短いラベルを大きく配置。",
+      "labels": [
+        "Repository",
+        "Spring Data",
+        "JPA",
+        "実装",
+        "findAll()",
+        "save()",
+        "DB"
+      ],
+      "accuracy_constraints": [
+        "開発者がinterfaceをnewしている図にしない。",
+        "通常のRepository呼出しのたびに新しい実装クラスのソースファイルが生成されるようにしない。起動時に使える実体が用意される関係を示す。",
+        "Hibernate/JPA/JDBCの全スタックを省略するが、DBへSQLなしで直接オブジェクトが送信されるという絵にしない。"
+      ],
+      "existing_figures": [
+        "p077-f13",
+        "revision-di-remote"
+      ],
+      "difference": "既存p077-f13はextendsとジェネリクスのコード、DI図は用意済みRepositoryを渡す関係。新図は宣言と実装の違い、フレームワークが実体を用意する部分に限定する。",
+      "safety": "継承でメソッドが利用可能という段落の直後、ジェネリクスの型引数の説明の前。コードの枠やDI図を分断しない。",
+      "source_evidence": [
+        "p077-b04",
+        "p078-b05",
+        "p078-b06"
+      ],
+      "primary_sources": [
+        "https://docs.spring.io/spring-data/jpa/reference/repositories/create-instances.html"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-repository-implementation",
+      "caption_id": "illustration-expansion-2026-repository-implementation-caption",
+      "asset": "assets/revision-ill-repository-implementation.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-940943fb-6ff2-480c-a300-60ea551adb2a.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on pure white. Clean flat editorial drawing with crisp navy outlines, pale blue and teal, restrained orange highlights. Sparse large labels readable at 100 mm print width, maximum print height 49 mm. No title, invented headings, gloss, watermark, decorative prose or logos. Only the exact specified labels. Distinguish a Repository interface declaration from the runtime implementation prepared by Spring Data JPA. Left: one thin specification page labeled exactly \"ProductRepository\", with two operation buttons labeled exactly \"findAll()\" and \"save()\". Middle: one simple assembly machine labeled exactly \"Spring Data JPA\". Right: one solid operation panel with the same two button icons, labeled exactly \"実装オブジェクト\". A thin use connection reaches a small DB cylinder labeled exactly \"DB\". Show the declaration leading through framework preparation to a usable runtime object. No developer directly instantiates the interface, no generated .java source file, no claim each method call regenerates a class. Large text, simple separated objects.\n\n最終調整（元画像への編集指示）:\nImprove ONLY text labels and their size for 100 mm print readability. Replace the LEFT title \"ProductRepository\" with the shorter exact label \"Repository\", making it substantially larger. Set the central machine title to TWO large centered lines exactly \"Spring Data\" then \"JPA\". Replace the right long title \"実装オブジェクト\" with the short exact label \"実装\", in large type. Make existing findAll() and save() operation labels readable and large in their same buttons. Preserve method spelling, DB label, arrows, the separate specification sheet / framework machine / implementation panel / DB roles, colors, outlines and wide canvas. Do not add any text or change flow.",
+      "asset_sha256": "60de3494d576a8ef52763aee5b948c268f6cac1f9ad3ea740b36359adc203056",
+      "image_pixels": [
+        1944,
+        809
+      ]
+    },
+    {
+      "id": "query-method-name",
+      "chapter": "03",
+      "source_page": 97,
+      "after_id": "p097-b06",
+      "before_id": "p097-b07",
+      "priority": "推奨",
+      "title": "メソッド名と引数が検索条件になる",
+      "caption": "findByPrice(20000)は、Productのpriceが20000のデータを検索します。",
+      "purpose": "命名ルールを暗記するだけでなく、メソッド名のプロパティと引数の値がどう条件になるかを理解する。",
+      "composition": "左に『findByPrice(20000)』を大きく置き、『Price』を青、『20000』を橙にする。中央に同じ色で『price = 20000』の条件ゲート。右の3枚の商品カードの価格は30000、20000、50000で、20000のカードだけがゲートを通り、薄い囲み『検索結果』へ出る。ゲートの条件が文字列の大文字PriceではなくProductのpriceに対応することを示す。",
+      "labels": [
+        "findByPrice(20000)",
+        "price = 20000",
+        "30000",
+        "20000",
+        "50000",
+        "検索結果"
+      ],
+      "accuracy_constraints": [
+        "メソッド名はエンティティのプロパティに基づく。任意のDB物理列名を大文字化するだけという説明にしない。",
+        "同じ価格が複数あれば複数結果になり得る。図の3件中1件は例であり常に1件との断定を避ける。",
+        "メソッド名の大小文字と綴りを正確にする。",
+        "引数と検索結果を逆にしない。"
+      ],
+      "existing_figures": [
+        "p095-f30",
+        "p096-f31"
+      ],
+      "difference": "既存スライドと作業画面は宣言と実装手順が主。新図はメソッド名の一部と入力値を色分けし、実データのフィルターと対応させる。",
+      "safety": "命名ルールと誤字注意の一群を読み終えた後、次のController実装見出しの前。途中のSQL文とその説明を分断しない。",
+      "source_evidence": [
+        "p095-b04",
+        "p096-b08",
+        "p097-b01",
+        "p097-b02",
+        "p097-b03",
+        "p097-b04",
+        "p097-b05",
+        "p097-b06"
+      ],
+      "primary_sources": [
+        "https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-query-method-name",
+      "caption_id": "illustration-expansion-2026-query-method-name-caption",
+      "asset": "assets/revision-ill-query-method-name.png",
+      "data_note": "30000=スマートテレビ、20000=ゲーミングモニター、50000=ノートパソコンとして配布DB sample.sqlと照合済み。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-aad8a4f5-124d-4b53-aca3-c72f4046e54d.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on pure white. Clean flat editorial drawing with crisp navy outlines, pale blue and teal, restrained orange highlights. Sparse large labels readable at 100 mm print width, maximum print height 49 mm. No title, invented headings, gloss, watermark, decorative prose or logos. Only the exact specified labels. Show a derived query as a filter with concrete data. Large top-left text exactly \"findByPrice(20000)\", with Price blue and 20000 orange. A short arrow points to a condition gate reading exactly \"price = 20000\". Three product price cards are presented to that filter: exactly \"30000\", \"20000\", \"50000\". ONLY the card with 20000 emerges to a clean outlined result tray labeled exactly \"検索結果\"; other cards remain before or beside the filter, not in the tray. This is one sample of three records, no guarantee all calls return one result. Preserve equality sign, method spelling and exact numbers. No database table column name label.\n\n最終調整（元画像への編集指示）:\nChange ONLY the device/product icons to agree with the sample database. The LEFT 30000 product card should show a flat-screen television, LEFT 20000 card a desktop monitor with stand and no keyboard, LEFT 50000 card a laptop computer. The RIGHT matching 20000 result should show the SAME desktop monitor as the left 20000 card. Preserve all exact price values, findByPrice(20000), price = 20000, 検索結果, filter, arrows, card counts and positions. Do not add product names or other text.",
+      "asset_sha256": "a124f068d00c9d48139325b55c08b36a5c0396d8647ed651f4d066d302a1bb18",
+      "image_pixels": [
+        1944,
+        809
+      ]
+    },
+    {
+      "id": "redirect-new-request",
+      "chapter": "03",
+      "source_page": 124,
+      "after_id": "p124-b02",
+      "before_id": "p124-b03",
+      "priority": "推奨",
+      "title": "redirectはブラウザーからの新しいリクエストを生む",
+      "caption": "redirect:で移動先を受け取ったブラウザーが、新しいリクエストで一覧ページを取得します。",
+      "purpose": "returnでController内の別メソッドを直接呼ぶことと、ブラウザーを介したredirectの違いを正しくイメージする。",
+      "composition": "左レーンにブラウザー、右レーンにサーバー。上段はサーバー側の『削除』からブラウザーへ左向き矢印『redirect:』と小さい移動先札『/product/findAll』。下段はブラウザーからサーバーの『一覧取得』へ右向き矢印『新しいリクエスト』。最後にサーバーからブラウザーの一覧画面へ返るHTMLの細い矢印。ブラウザーの上下は同じ縦の端末枠にし、別ユーザーに見せない。",
+      "labels": [
+        "ブラウザー",
+        "サーバー",
+        "削除",
+        "redirect:",
+        "/product/findAll",
+        "新しいリクエスト",
+        "一覧取得"
+      ],
+      "accuracy_constraints": [
+        "redirectの後の一覧取得をサーバー内部の直接メソッド呼出しとして描かない。",
+        "新しいリクエストの向きはブラウザー→サーバー、HTMLの応答はサーバー→ブラウザー。",
+        "図は削除後の遷移の説明に限定する。教材の削除URLを一般的なHTTP設計として推奨する新説明は加えない。"
+      ],
+      "existing_figures": [
+        "p124-f61",
+        "p124-f62",
+        "p124-f63"
+      ],
+      "difference": "既存画像はブラウザー画面操作。新図は画面の裏で起きるredirect応答と新規リクエストの往復を説明する。",
+      "safety": "redirect:の書き方の段落が終わった後、動作確認の独立見出しの直前。動作確認の手順や画像は連続して残す。",
+      "source_evidence": [
+        "p123-b07",
+        "p123-b11",
+        "p124-b01",
+        "p124-b02"
+      ],
+      "primary_sources": [
+        "https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/redirecting-passing-data.html"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-expansion-2026-redirect-new-request",
+      "caption_id": "illustration-expansion-2026-redirect-new-request-caption",
+      "asset": "assets/revision-ill-redirect-new-request.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-83dbdc7c-6666-4fb3-9cc7-867ee0a20e61.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on pure white. Clean flat editorial drawing with crisp navy outlines, pale blue and teal, restrained orange highlights. Sparse large labels readable at 100 mm print width, maximum print height 49 mm. No title, invented headings, gloss, watermark, decorative prose or logos. Only the exact specified labels. Three sequential exchange arrows between the SAME browser on left and SAME server on right. Keep distinct vertical lanes with top labels exactly \"ブラウザー\" and \"サーバー\". At upper right is a small completed action labeled exactly \"削除\". First arrow points RIGHT TO LEFT, from server back to browser, labeled exactly \"redirect:\" and destination exactly \"/product/findAll\". Second arrow lower down points LEFT TO RIGHT, from that browser to server, labeled exactly \"新しいリクエスト\"; it reaches a server operation labeled exactly \"一覧取得\". Third bottom arrow points RIGHT TO LEFT and carries a finished page with a simple product list to the browser. The first redirect reply is not the finished HTML list; final HTML comes after the new request. Do not draw an internal direct server-to-server method arrow. Three arrows, no crossover.\n\n最終調整（元画像への編集指示）:\nTwo precise corrections only. First, clear the BODY of the UPPER LEFT browser screen: remove the product cube and grey data rows, leaving a plain empty white browser body (preserve its window frame and top bar). The first arrow is a redirect response and must not depict a received HTML product result. Keep the completed list visible in the BOTTOM LEFT browser. Second, change the upper arrow label to exactly \"redirect:/product/findAll\", with NO space after the colon. Preserve all three arrows and their directions (top server-to-browser, middle browser-to-server, bottom server-to-browser), all lane labels, 削除, 一覧取得 and other composition. No new elements.",
+      "asset_sha256": "300c92faa5386933fbb1979a926d9c048f2a4be03d8690505db590d44d6bc481",
+      "image_pixels": [
+        1944,
+        809
+      ]
+    },
+    {
+      "id": "model-session-lifetime",
+      "chapter": "04",
+      "source_page": 143,
+      "after_id": "p143-b05",
+      "before_id": "p143-b06",
+      "title": "ModelとHttpSessionではデータを渡す範囲が違う",
+      "caption": "通常のModelはその画面表示へ、HttpSessionは同じセッションの後続リクエストへデータを渡します。",
+      "figure_id": "illustration-expansion-2026-model-session-lifetime",
+      "caption_id": "illustration-expansion-2026-model-session-lifetime-caption",
+      "asset": "assets/revision-ill-model-session-lifetime.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "横長の2段対比。上段はログイン応答のModelのトレーにユーザカードがあり、次のリクエストのModelは空のトレー。下段は同じブラウザーの2つの画面から、中央のHttpSessionの同じロッカーに入ったユーザカードを参照する。横向きの時間の流れを合わせる。",
+      "labels": [
+        "Model",
+        "HttpSession",
+        "今回",
+        "次回",
+        "userData"
+      ],
+      "constraints": [
+        "通常のModelとセッション属性を区別する。@SessionAttributesで昇格させる例外はこの図の対象外。",
+        "ブラウザーがUserオブジェクトを保存するようには描かない。",
+        "新しいModelのカードは自動コピーされない。セッション下段は同一セッション内の話に限定する。"
+      ],
+      "difference": "既存p143-f08は完成画面とModelコードの例。既存追加図session-separationはセッションIDと利用者ごとの分離。新図はリクエストをまたぐ保存期間だけを対比する。",
+      "technical_sources": [],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "source_context": {
+        "after_text": "このコードは、ユーザが入力した従業員ID（empId）とパスワードが正しい場合、ユーザ情報\nをModel オブジェクトに格納しているコードです。Model はビューへデータを送るために使用さ\nれますが、さらに画面が変わるとそのデータは保持されません。つまり、ユーザが別の画面\nに移動すると、先ほどのユーザデータは失われてしまいます。",
+        "before_text": "Model については、3 章の「findAll メソッドでの全件検索」を参照してください。"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-615fe25c-16e9-4646-98cd-d9b68a30a00a.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on pure white. Clean flat editorial drawing with crisp navy outlines, pale blue and teal, restrained orange highlights. Sparse large labels readable at 100 mm print width, maximum print height 49 mm. No title, invented headings, gloss, watermark, decorative prose or logos. Only the exact specified labels. Two parallel horizontal rows compare lifetimes across two consecutive requests of the SAME browser session. Use small column labels exactly \"今回\" on left and \"次回\" on right. UPPER ROW labeled exactly \"Model\": left tray holds a data card exactly \"userData\", right tray is visibly EMPTY; a subtle dashed boundary separates requests, no data-copy arrow across the boundary. LOWER ROW labeled exactly \"HttpSession\": one continuous server-side locker extends beneath both columns and keeps one clear data card exactly \"userData\"; both request positions can refer to this SAME locker, showing it persists. Do not put the data inside a browser, no separate users, no claim every Model is automatically retained. Contrast temporary tray and persistent locker with large uncluttered icons. No extra labels.",
+      "asset_sha256": "2cb2839a1c29509203ffc5e670e0facfefd80ac603b52a94bdaa0ce409264d9c",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "form-error-roundtrip",
+      "chapter": "04",
+      "source_page": 153,
+      "after_id": "p153-b07",
+      "before_id": "p153-b08",
+      "title": "入力値と入力エラーを同じ画面へ戻す",
+      "caption": "入力エラー時はFormの値とBindingResultを使って、入力欄とエラーメッセージを再表示します。",
+      "figure_id": "illustration-expansion-2026-form-error-roundtrip",
+      "caption_id": "illustration-expansion-2026-form-error-roundtrip-caption",
+      "asset": "assets/revision-ill-form-error-roundtrip.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "左の入力画面から社員番号123と、長すぎるパスワードを送信。中央サーバーでUserFormの値カードとBindingResultのエラーカードを並べ、右の再表示画面では社員番号123が残り、パスワード欄の横に短い赤い入力エラーを表示。上に送信、下に応答の矢印で往復を示す。",
+      "labels": [
+        "入力",
+        "UserForm",
+        "BindingResult",
+        "再表示",
+        "社員番号 123",
+        "入力エラー"
+      ],
+      "constraints": [
+        "passwordの入力値がそのまま再表示される図は描かない。社員番号の保持だけを明示する。",
+        "セッションに保存する流れは描かない。1回のエラー応答内のデータである。",
+        "フォームとエラー結果は別のデータだが同じ画面表示に使われる。"
+      ],
+      "difference": "既存validation-branchは成功/失敗の分岐だけ。新図はエラーで戻った画面に値とメッセージが再表示される理由を説明する。",
+      "technical_sources": [
+        "https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html"
+      ],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "heading"
+      },
+      "source_context": {
+        "after_text": "フォームを送信したとき、もし empId フィールドの値が入力チェックのルールに違反していれ\nば（例えば、必須フィールドが空である、など）、 <span> タグの中に入力チェックごとのエラー\nメッセージが表示されます。",
+        "before_text": "動作確認"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-a137cf61-2912-4743-a2e5-406404918d79.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration. Landscape 2.4:1, white background, clean editorial icon drawing, navy outlines, soft blue/teal and orange accents. Large minimal text readable at 100 mm wide and 49 mm high. No title banner, glossy elements, logos, watermark, invented text or prose. Preserve exact technical spelling, numbers, brackets and slashes. Show redisplaying submitted values together with validation errors in ONE failed form response. Left, a form sheet labeled exactly \"入力\" shows a non-secret employee number field exactly \"社員番号 123\", and a separate blank password field. Middle, two separate server-side data cards labeled exactly \"UserForm\" and \"BindingResult\"; UserForm has value \"123\", BindingResult has an orange error symbol. Right, the returned form sheet labeled exactly \"再表示\" STILL shows exactly \"社員番号 123\", a blank password field and a red message labeled exactly \"入力エラー\". Arrows lead from input to server data, then from BOTH cards to the redisplayed form. Do not show any password value, no persistent session locker, no new user registration, no data loss of employee number.",
+      "asset_sha256": "01e287137a6ea41f26b7d4cf72a1472c047492a5f10b97a31af8feca033cb01a",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "null-blank-constraints",
+      "chapter": "04",
+      "source_page": 157,
+      "after_id": "p157-b04",
+      "before_id": "p157-b05",
+      "title": "null・空文字・空白だけの文字列は同じではない",
+      "caption": "Stringでは、@NotNullはnullを、@NotBlankはnull・空文字・空白だけの値を入力エラーにします。",
+      "figure_id": "illustration-expansion-2026-null-blank-constraints",
+      "caption_id": "illustration-expansion-2026-null-blank-constraints-caption",
+      "asset": "assets/revision-ill-null-blank-constraints.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "2行×4列の小型比較イラスト。列はnull（容器なし）、空文字（空の文字カード）、空白だけ（空白を枠で可視化したカード）、ABC（文字入りカード）。上段@NotNullはnullだけ赤い×、他3列は青緑のチェック。下段@NotBlankは初めの3列が×、ABCのみチェック。",
+      "labels": [
+        "null",
+        "空文字",
+        "空白だけ",
+        "ABC",
+        "@NotNull",
+        "@NotBlank"
+      ],
+      "constraints": [
+        "比較対象はString。Integerに@NotBlankを使用できるようには描かない。",
+        "空文字とnullを同じ物にしない。空白だけはASCIIスペース3個の想定。",
+        "チェック/×は平面の普通の線画記号。光沢や絵文字表現にしない。"
+      ],
+      "difference": "p157-f18は多数のアノテーション一覧表。新図は特に誤りやすい3種類の空の状態を具体的な容器で比較する。",
+      "technical_sources": [
+        "https://jakarta.ee/specifications/bean-validation/3.0/jakarta-bean-validation-spec-3.0.html"
+      ],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "source_context": {
+        "after_text": "@NotNull については、String 型に適用できないわけではありませんが、@NotBlank の方が\n空文字や空白のケアができるのでより適切です。",
+        "before_text": "複雑な入力条件は、@Pattern アノテーションで「正規表現」を使うことで、細かく設定できま\nすので、参考にしてください。"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-f5b1a7fd-ea47-43d0-a875-ebb366657698.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration. Landscape 2.4:1, white background, clean editorial icon drawing, navy outlines, soft blue/teal and orange accents. Large minimal text readable at 100 mm wide and 49 mm high. No title banner, glossy elements, logos, watermark, invented text or prose. Preserve exact technical spelling, numbers, brackets and slashes. An accurate sparse comparison grid, TWO annotation rows and FOUR input-value columns. Column headers exactly \"null\", \"空文字\", \"空白だけ\", \"ABC\". Use a missing-container outline icon for null, a visibly empty card for empty string, a card with three outlined space positions for whitespace-only, and a card containing ABC for valid text. Row labels exactly \"@NotNull\" and \"@NotBlank\". In @NotNull row the four marks MUST be X, check, check, check from left to right. In @NotBlank row marks MUST be X, X, X, check. Simple flat green checks and orange X marks, no emoji, no shine. Applies to String, not numbers. Do not add other constraints or prose; the distinction between null and empty/whitespace is the point. All eight marks must align clearly with their row and column.",
+      "asset_sha256": "4ea1d32d308f32c06e232cd8bad724722a8263bb96f48e553daed9ded7247402",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "text-escape",
+      "chapter": "05",
+      "source_page": 169,
+      "after_id": "p169-b01",
+      "before_id": "p169-b02",
+      "title": "タグに見える入力を文字として表示する",
+      "caption": "th:textはタグに見える入力もエスケープして、HTMLの本文へ文字として出力します。",
+      "figure_id": "illustration-expansion-2026-text-escape",
+      "caption_id": "illustration-expansion-2026-text-escape-caption",
+      "asset": "assets/revision-ill-text-escape.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "左に入力データのカード「<b>A</b>」、中央にThymeleafの小さな処理ゲート「th:text」、右にブラウザーの本文領域。右の本文にはタグを含む文字列「<b>A</b>」をそのまま大きく描き、Aだけを太字化しない。処理ゲートに小さな山括弧の文字ピースを通し、文字として扱うことを示す。",
+      "labels": [
+        "入力データ",
+        "<b>A</b>",
+        "th:text",
+        "文字として表示"
+      ],
+      "constraints": [
+        "右側はHTMLソース表示ではなく、利用者に見える本文の文字表示。",
+        "サーバーから送るHTML内では&lt;などへエスケープされ、ブラウザーで文字として見える関係を保つ。",
+        "全てのXSSや属性/JS文脈を万能に防ぐという鍵/盾/安全保証の図にはしない。"
+      ],
+      "difference": "p167-f02はth:textの構文とXSSへの短い言及。新図はエスケープが文字列の見え方をどう変えるかに限定する。",
+      "technical_sources": [
+        "https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html"
+      ],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "source_context": {
+        "after_text": "th:text の特徴の一つは、クロスサイトスクリプティング（XSS）の対策です。例えば、ユーザが\n「<script>悪質なJavaScript コード</script>」 というデータを入力した場合、XSS対策が施され\nていないと、この悪意のあるJavaScriptコードがHTML 内に組み込まれ、不特定多数のユーザ\nに被害を及ぼす可能性があります。",
+        "before_text": "その対策として、th:text を使用すると、入力データは自動的にエスケープ処理されます。こ\nれにより、‘<’ や ‘>’ のような文字はHTML タグとしてではなく、ただの文字列として扱われ\nます。結果として、悪意のあるJavaScript コードが実行される心配はなくなります。"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-10d7a5c3-c398-4a7c-874b-83124e711e40.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration. Landscape 2.4:1, white background, clean editorial icon drawing, navy outlines, soft blue/teal and orange accents. Large minimal text readable at 100 mm wide and 49 mm high. No title banner, glossy elements, logos, watermark, invented text or prose. Preserve exact technical spelling, numbers, brackets and slashes. Demonstrate Thymeleaf th:text rendering a tag-looking input as literal visible text, not HTML markup. Left data card labeled exactly \"入力データ\" displays literal string exactly \"<b>A</b>\". Middle a small processing gate labeled exactly \"th:text\". Right an ordinary browser BODY area labeled exactly \"文字として表示\" visibly displays THE ENTIRE literal string exactly \"<b>A</b>\", including all angle brackets, slash, lowercase b and uppercase A, in uniform text. Do not render only A or make A special/bolder than the surrounding literal characters. The right is the user-visible page, not source view. No shields, locks, security guarantee, JavaScript or additional labels. One arrow sequence from left through th:text to right.",
+      "asset_sha256": "fcb3ab1c0aa8bdb666df631859414eb1606c43ebac648f069216fa4b591d9a5a",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "dynamic-url-id",
+      "chapter": "05",
+      "source_page": 174,
+      "after_id": "p174-b03",
+      "before_id": "p174-b04",
+      "title": "リンクのURLに含めたIDを引数へ取り出す",
+      "caption": "動的リンクのURLに埋めた商品番号を、@PathVariableでハンドラメソッドの引数へ取り出します。",
+      "figure_id": "illustration-expansion-2026-dynamic-url-id",
+      "caption_id": "illustration-expansion-2026-dynamic-url-id-caption",
+      "asset": "assets/revision-ill-dynamic-url-id.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "左に商品カードID4とリンク、中央にブラウザーのURL「/product/findById/4」。末尾4を橙色の同じピースで強調し、右のControllerの受取口「id = 4」へ矢印で移す。URLパスの区切りを保ち、@PathVariableを受取口の上に付ける。",
+      "labels": [
+        "商品ID 4",
+        "/product/findById/4",
+        "@PathVariable",
+        "id = 4"
+      ],
+      "constraints": [
+        "POSTフォームやクエリパラメータ?id=4の図にしない。",
+        "ControllerがURLを生成する流れと混同しない。ここは生成済みリンクをクリックしたGET要求。",
+        "クラスの/productとメソッド/findById/{id}を合わせたURLである。"
+      ],
+      "difference": "既存p173-f07/p174-f08は実ブラウザーとコード。新図はURL末尾の値がJava引数へ対応する1対1の関係を抽出する。",
+      "technical_sources": [
+        "https://www.thymeleaf.org/doc/articles/standardurlsyntax.html"
+      ],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "heading"
+      },
+      "source_context": {
+        "after_text": "動的なURL リンクによる呼び出しの場合は、URL からid を受け取る処理が必要となりますの\nで、2 章のupdate とdelete の場合と同様に、@PathVariable アノテーションを付与する必要が\nあります。（その場合、フォームからのid 検索は無効になります）",
+        "before_text": "動作確認"
+      },
+      "data_note": "商品ID4は2ドア冷蔵庫であるため、図の製品アイコンも冷蔵庫に合わせた。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-dc26a722-cf9a-4304-910e-5ad817cd2e3b.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration. Landscape 2.4:1, white background, clean editorial icon drawing, navy outlines, soft blue/teal and orange accents. Large minimal text readable at 100 mm wide and 49 mm high. No title banner, glossy elements, logos, watermark, invented text or prose. Preserve exact technical spelling, numbers, brackets and slashes. Show the same ID value traveling from a clicked product link into a Java handler parameter. Left small product card labeled exactly \"商品ID 4\". Center a single large unbroken URL strip reading exactly \"/product/findById/4\", with only the final digit 4 highlighted orange. Right a receiving handler card labeled exactly \"@PathVariable\", with a parameter inside reading exactly \"id = 4\". A correspondence arrow specifically links the orange final URL digit to the orange parameter value, not the whole URL becoming the Java value. Do not use ?id=4, no POST form, no database. Allow enough horizontal space for the entire URL to remain readable and unbroken, correct uppercase B and I.\n\n最終調整（元画像への編集指示）:\nChange ONLY the product picture on the LEFT 商品ID 4 card. Replace the shoe with a simple two-door refrigerator illustration in the same clean blue/navy style, to match product ID 4 in the textbook database. Preserve 商品ID 4, the click icon, exact URL /product/findById/4, final orange 4, @PathVariable, id = 4, all arrows, sizes and every other element. No extra text.",
+      "asset_sha256": "f5163680a7328867df587937f6329c21e5d323628190a58abd9b6f16e5ba0d87",
+      "image_pixels": [
+        1944,
+        809
+      ]
+    },
+    {
+      "id": "static-public-path",
+      "chapter": "05",
+      "source_page": 179,
+      "after_id": "p179-b08",
+      "before_id": "p179-b09",
+      "title": "プロジェクト内の保存場所とブラウザー用URLを区別する",
+      "caption": "static内のCSSやJavaScriptは、ブラウザーからは/css/や/js/で始まるURLで読み込みます。",
+      "figure_id": "illustration-expansion-2026-static-public-path",
+      "caption_id": "illustration-expansion-2026-static-public-path-caption",
+      "asset": "assets/revision-ill-static-public-path.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "左はサーバーの「static」フォルダーを大きく描き、その中にcss/style.cssとjs/script.jsの2ファイル。右はブラウザーから使うURLの札/css/style.cssと/js/script.js。各ファイルと対応するURLを平行な2本の矢印で結ぶ。staticという内部フォルダー名はURL札に含めない。",
+      "labels": [
+        "static",
+        "css/style.css",
+        "js/script.js",
+        "/css/style.css",
+        "/js/script.js",
+        "ブラウザーのURL"
+      ],
+      "constraints": [
+        "Spring Boot既定構成を対象。任意のカスタム静的パス設定までは扱わない。",
+        "templatesフォルダーを直接URLで取得できるようには描かない。",
+        "サーバー内の完全なWindowsファイルパスは描かず、内部ファイル名と公開URLを分ける。"
+      ],
+      "difference": "p178-f11はEclipseフォルダー画面。新図は保存場所と公開URLの対応、staticをURLに付けない理由を視覚化する。",
+      "technical_sources": [],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "heading"
+      },
+      "source_context": {
+        "after_text": "body の終了タグの直前の場所に、th:src でjs ファイルの場所を記述すると、読み込みできま\nす。",
+        "before_text": "サンプルのCSS・JS ファイルのコード"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-3cf808ef-1210-4d0a-b88d-3e4f7e45f8c9.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration. Landscape 2.4:1, white background, clean editorial icon drawing, navy outlines, soft blue/teal and orange accents. Large minimal text readable at 100 mm wide and 49 mm high. No title banner, glossy elements, logos, watermark, invented text or prose. Preserve exact technical spelling, numbers, brackets and slashes. Two parallel file-to-URL correspondences, clean large labels. Left a server folder labeled exactly \"static\" contains TWO separate file cards: upper exactly \"css/style.css\", lower exactly \"js/script.js\". Right is a simple browser panel headed exactly \"ブラウザーのURL\", with two URL strips: upper exactly \"/css/style.css\", lower exactly \"/js/script.js\". Blue arrow connects upper file to upper URL, orange arrow connects lower file to lower URL, no crossing. The static folder name MUST NOT appear in the public URLs. No templates folder, full Windows path, extra prefix, or controller method. All dots and slashes exact.",
+      "asset_sha256": "89ea9fa18045e0834c4ad636849ce0d67ae4edabb69f2f4b13b39fd897fe542e",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "relationship-field-column",
+      "chapter": "06",
+      "source_page": 201,
+      "after_id": "p201-b06",
+      "before_id": "p201-b07",
+      "title": "mappedByのフィールド名とJoinColumnの列名を区別する",
+      "caption": "mappedByは相手のJavaフィールド名、JoinColumnのnameはDBの列名を指定します。",
+      "figure_id": "illustration-expansion-2026-relationship-field-column",
+      "caption_id": "illustration-expansion-2026-relationship-field-column-caption",
+      "asset": "assets/revision-ill-relationship-field-column.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "横長の上段にJavaのCategoryとProductの2つのカード。Category側productListからProduct側categoryという欄に「mappedBy」の破線を向ける。下段にDBのproductのcategory_id列を描き、Product.category側から「JoinColumn」の線で結ぶ。JavaのフィールドcategoryとDBの列category_idは同じ色でも別の札にする。",
+      "labels": [
+        "Category",
+        "Product",
+        "productList",
+        "category",
+        "mappedBy",
+        "JoinColumn",
+        "category_id",
+        "Java",
+        "DB"
+      ],
+      "constraints": [
+        "mappedByにDB列category_idを書くような表示にしない。",
+        "JoinColumnのnameは参照元productテーブルのFK列であり、Categoryの主キー名を指定する図にしない。",
+        "対応関係の図であり、常に1本のSQL JOINで読み込むことやSQL発行タイミングを示さない。"
+      ],
+      "difference": "p195-f02はアノテーションのコード、既存foreign-key-referenceはFK値とオブジェクト参照。新図は2つの属性に指定する名前の名前空間を区別する。",
+      "technical_sources": [
+        "https://jakarta.ee/learn/specification-guides/persistence-explained/"
+      ],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "source_context": {
+        "after_text": "@JoinColumn アノテーションは、参照元テーブルのどの列と参照先テーブルのどの列が外部\n参照制約の関係にあるかを定義します。 name 属性には、外部キーとして使用するテーブル\n列名（例: category_id）を指定します。",
+        "before_text": " このアノテーションを記述すると、検索時に参照関係にあるテーブルが内部結合され、自動\n的にデータを取得できます。つまり、Product テーブルを対象に検索したら、Category テーブ\nルのデータも取得できるようになるということです。なお、参照関係にあるテーブルのレコード\nはエンティティのフィールドに代入されます。"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-27857715-44e4-4785-b148-c04a95634fbc.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration, landscape 2.4:1, pure white. Crisp navy outline editorial diagrams, soft blue/teal and orange accents, minimal large labels readable at 100 mm print width and 49 mm high. No title banner, extra prose, glossy highlights, logos or watermark. Preserve exact technical spelling, capitalization and numbers. Separate Java relationship field names from a database foreign-key column. Upper band marked exactly \"Java\": left a card labeled exactly \"Category\" containing field exactly \"productList\"; right a card labeled exactly \"Product\" containing field exactly \"category\". A DASHED correspondence arrow labeled exactly \"mappedBy\" points from productList toward the Java field category, NOT to any DB column. Below the Product card, lower band marked exactly \"DB\" contains a product-table column tile exactly \"category_id\". A SOLID downward correspondence line labeled exactly \"JoinColumn\" links Product.category to this DB column. Do not connect mappedBy to category_id. Use just these 9 short labels. This is name correspondence, not SQL execution timing or query sequence. Keep all text prominent and avoid dense UML.",
+      "asset_sha256": "462d12f2b92c67c3981d91444cd9e2675a58b3bbb7d9bd50371eec1fd2f7c228",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "null-reference-guard",
+      "chapter": "06",
+      "source_page": 206,
+      "after_id": "p206-b10",
+      "before_id": "p206-b11",
+      "title": "参照先がある場合だけ次のフィールドを読む",
+      "caption": "product.categoryがあるときだけnameを読み、nullのときは「未設定」を表示します。",
+      "figure_id": "illustration-expansion-2026-null-reference-guard",
+      "caption_id": "illustration-expansion-2026-null-reference-guard-caption",
+      "asset": "assets/revision-ill-null-reference-guard.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 2,
+      "recommended": false,
+      "visual": "左にProductカードのcategoryスロット。上の例ではCategoryカードへ矢印がつながり、そのnameの冷蔵庫を画面へ出す。下の例ではcategoryスロットがnullで接続先がなく、nameへ進む矢印を描かず、別の道で「未設定」の札を出す。",
+      "labels": [
+        "Product",
+        "category",
+        "name",
+        "null",
+        "冷蔵庫",
+        "未設定"
+      ],
+      "constraints": [
+        "nullを文字列\"null\"として保存したデータにはしない。参照先が無い状態として描く。",
+        "Optional.orElse(null)だけで以後の参照もすべて安全になるような説明にしない。",
+        "コースのnull対策の例であり、nullable=falseのDB列へnullデータを登録する推奨の絵にはしない。"
+      ],
+      "difference": "p206は2方式の構文のみ。既存foreign-key-referenceの「参照先がある場合」に対し、参照先なしで途中のドットアクセスを止める必要を示す。",
+      "technical_sources": [
+        "https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html"
+      ],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "source_context": {
+        "after_text": "この部分は、「カテゴリが未設定の場合」に実行されます。「未設定」という文字列を\n表示します。",
+        "before_text": "②  条件式を1 行で記述する方法（三項演算子）"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-1047880a-3bca-4fb3-b272-56ebb6b560de.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook diagram explaining a null relationship before reading its nested property. Very wide landscape 2.4:1, white background, clean navy outlines, soft blue/teal with orange accent, large sparse labels readable at 100 mm print width and 49 mm high. No title banner, extra prose, watermark or gloss. TWO clearly separated horizontal cases. UPPER case: a Product object card labeled exactly \"Product\" has a field exactly \"category\"; a solid reference arrow reaches a real Category object card labeled exactly \"Category\" whose field row reads exactly \"name\" and \"冷蔵庫\". It leads to a small output displaying exactly \"冷蔵庫\". LOWER case: a second Product card labeled \"Product\" has field \"category\" with code value exactly \"null\" in orange. There is NO Category object and NO attempt to read name in this lower case; instead a clear bypass arrow leads directly to output exactly \"未設定\". Show an empty/dotted reference endpoint if helpful, not a data object containing the literal string null. Do not draw a successful arrow to name after null. Exact text whitelist: Product, category, Category, name, null, 冷蔵庫, 未設定. The point is to test that the reference exists before following it.",
+      "asset_sha256": "cc2487ed5239766b486903d47abed3361f04656186a7bf0dd8547405d7fe42d6",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "select-label-value",
+      "chapter": "06",
+      "source_page": 218,
+      "after_id": "p218-b06",
+      "before_id": "p218-b07",
+      "title": "選択肢の表示名と送信する値は異なる",
+      "caption": "選択メニューにはカテゴリ名を表示し、送信時には対応するカテゴリIDをcategoryIdとして渡します。",
+      "figure_id": "illustration-expansion-2026-select-label-value",
+      "caption_id": "illustration-expansion-2026-select-label-value-caption",
+      "asset": "assets/revision-ill-select-label-value.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "左にカテゴリ表の1行「3 冷蔵庫」。中にブラウザーのselect欄「冷蔵庫」を示し、利用者に見える文字の札を上に配置。下に別色の値札「value = 3」。送信矢印は文字名ではなく値3から右のForm受取箱「categoryId = 3」へ伸ばす。",
+      "labels": [
+        "冷蔵庫",
+        "value = 3",
+        "categoryId = 3",
+        "表示名",
+        "送信する値"
+      ],
+      "constraints": [
+        "category.nameを送信値として扱わない。",
+        "同じカテゴリを選んだ1つの例を示し、全選択肢のIDが3になる図にしない。",
+        "DBへの直接保存はこの図に含めず、まずFormにIDとして届くところまでに限定する。"
+      ],
+      "difference": "p213-f10はselectとEntityのコード。p218はテキストのみなので、th:textとth:valueが別の役割であることを具体例で示せる。",
+      "technical_sources": [
+        "https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html"
+      ],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "source_context": {
+        "after_text": "⚫ th:value:\nフォーム送信時にカテゴリID（category.id）をコントローラに渡します。登録処理ではこ\nのID を使用します。",
+        "before_text": "ポイント:"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-f5f979cd-f6cc-4cbb-b2f6-45c8bbfe41ec.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration, landscape 2.4:1, pure white. Crisp navy outline editorial diagrams, soft blue/teal and orange accents, minimal large labels readable at 100 mm print width and 49 mm high. No title banner, extra prose, glossy highlights, logos or watermark. Preserve exact technical spelling, capitalization and numbers. Explain dropdown display label versus submitted value, using one concrete category. Left: a browser select control visibly displays exactly \"冷蔵庫\", with a short label exactly \"表示名\" above it. Beneath that control a separate orange value tag reads exactly \"value = 3\", with a short label exactly \"送信する値\". The orange arrow originates ONLY from this numeric value tag, travels right to a form object card containing exactly \"categoryId = 3\". The displayed word 冷蔵庫 is NOT sent as the categoryId. Keep exactly these five labels. No database save yet, no multiple items or changing IDs, no extra labels.",
+      "asset_sha256": "bf4e9a7f7287e946e3616dfd303781b68d91d92156a7c29e166cea0f0f809216",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "jpql-entity-names",
+      "chapter": "06",
+      "source_page": 225,
+      "after_id": "p225-b04",
+      "before_id": "p225-b05",
+      "title": "JPQLではJava側の名前を使う",
+      "caption": "JPQLは、テーブル名・列名ではなくエンティティ名・フィールド名で記述します。",
+      "figure_id": "illustration-expansion-2026-jpql-entity-names",
+      "caption_id": "illustration-expansion-2026-jpql-entity-names-caption",
+      "asset": "assets/revision-ill-jpql-entity-names.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "2段の対比。上はDBのテーブルカード「product」と列札「category_id」。下はJavaのクラスカード「Product」とフィールド札「category」。下段のJavaカードから虫眼鏡のJPQL札「FROM Product p」「p.category.name」へ線を出す。上段のSQLと下段のJPQLを別の色枠で区別する。",
+      "labels": [
+        "DB",
+        "product",
+        "category_id",
+        "Java",
+        "Product",
+        "category",
+        "JPQL",
+        "FROM Product p",
+        "p.category.name"
+      ],
+      "constraints": [
+        "JPA実装がJPQLをそのままDBへ送る図にしない。必要ならDB側への実行矢印は省略する。",
+        "エンティティのクラス名ProductとDBテーブル名productの大文字小文字を正確に描く。",
+        "JPQLのパスcategory.nameがDBに同名1列として存在するように描かない。"
+      ],
+      "difference": "p225-f16は構文の箇条書き。新図はSQL/DBの列名に慣れた学習者が混同する2つの名前空間を視覚的に分離する。",
+      "technical_sources": [
+        "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-querylanguage/persistence-querylanguage.html",
+        "https://jakarta.ee/learn/specification-guides/persistence-explained/"
+      ],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "source_context": {
+        "after_text": "SQLと似た構文ですが、テーブル名や列名ではなく、エンティティ名やフィールド名を使用し\nます。",
+        "before_text": "JPQL の主な特徴："
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-841f4314-ad70-4d72-984d-811eaadcbfbf.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration, landscape 2.4:1, pure white. Crisp navy outline editorial diagrams, soft blue/teal and orange accents, minimal large labels readable at 100 mm print width and 49 mm high. No title banner, extra prose, glossy highlights, logos or watermark. Preserve exact technical spelling, capitalization and numbers. Visually separate database names from Java entity/field names, then show which names JPQL uses. UPPER left light grey band labeled exactly \"DB\" contains table card exactly \"product\" and its physical column exactly \"category_id\". LOWER left teal band labeled exactly \"Java\" contains entity card exactly \"Product\" with field exactly \"category\". Right a wide query card labeled exactly \"JPQL\" contains two large, separate code lines exactly \"FROM Product p\" and exactly \"p.category.name\". ONLY the Java entity/field band connects by a line to the JPQL card. Do not draw a line from the DB column to the JPQL code and do not put category_id inside JPQL. Preserve product lowercase versus Product uppercase P. No SQL execution arrow, no database field named category.name.",
+      "asset_sha256": "75578c0ebc172b1e43d212546084c5ed0ed6e554ebc9b6515eea0118c565cc0d",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "groupby-aggregate-dto",
+      "chapter": "06",
+      "source_page": 233,
+      "after_id": "p233-b08",
+      "before_id": "p233-b09",
+      "title": "商品をカテゴリ別にまとめて集計する",
+      "caption": "図の例では、商品をカテゴリ別にまとめ、価格合計と件数をDTOで受け取ります。",
+      "figure_id": "illustration-expansion-2026-groupby-aggregate-dto",
+      "caption_id": "illustration-expansion-2026-groupby-aggregate-dto-caption",
+      "asset": "assets/revision-ill-groupby-aggregate-dto.png",
+      "width": 280,
+      "max_height": 140,
+      "priority": 1,
+      "recommended": true,
+      "visual": "左に3枚の商品価格カード。2枚は同カテゴリAの価格30000と20000、1枚はカテゴリBの15000。中央でA/Bの2つのトレーへ分類し、GROUP BYを付ける。右は集計結果の2つの箱。AはSUM50000/COUNT2、BはSUM15000/COUNT1。右の箱にDTOという小さな見出しを付ける。",
+      "labels": [
+        "GROUP BY",
+        "SUM",
+        "COUNT",
+        "DTO",
+        "A",
+        "B",
+        "30000",
+        "20000",
+        "15000",
+        "50000",
+        "2",
+        "1"
+      ],
+      "constraints": [
+        "SUM(price)は商品価格の合計であり、販売数量や売上金額と呼ばない。",
+        "件数と合計値を入れ替えない。Aの2件30000+20000=50000、Bの1件15000を維持する。",
+        "元の商品データを破壊的にまとめるようなシュレッダー等は描かない。検索結果として別のDTOを作る。"
+      ],
+      "difference": "p233〜235はDTOと集計コード/表のみで、グループ化の途中状態の図がない。データをまとめる段階と集計済み結果を分離して理解できる。",
+      "technical_sources": [
+        "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-querylanguage/persistence-querylanguage.html"
+      ],
+      "placement_checks": {
+        "same_source_page": true,
+        "adjacent_entries": true,
+        "not_inside_explanation_component": true,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "source_context": {
+        "after_text": "JPQL では DTO（データ転送オブジェクト） を作成して、結果をオブジェクトとして受け取る\nのが一般的です。",
+        "before_text": "■カテゴリごとの合計価格を受け取るDTO"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-b881bf09-3127-4278-9009-6ac0d7f2f944.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration, landscape 2.4:1, pure white. Crisp navy outline editorial diagrams, soft blue/teal and orange accents, minimal large labels readable at 100 mm print width and 49 mm high. No title banner, extra prose, glossy highlights, logos or watermark. Preserve exact technical spelling, capitalization and numbers. One illustrative grouping example of THREE records into TWO result groups. Left are three compact input cards: group \"A\" price \"30000\", group \"A\" price \"20000\", group \"B\" price \"15000\". Middle two sorting trays labeled \"A\" and \"B\", under large exact label \"GROUP BY\"; the two A cards go to the A tray and the B card to B, without destroying input data. Right two result cards under large label exactly \"DTO\". A result shows exactly \"A\", \"SUM 50000\", \"COUNT 2\". B result shows exactly \"B\", \"SUM 15000\", \"COUNT 1\". These are sums of product prices and record counts, NOT sales revenue or item quantities. Keep all five key numbers and counts mathematically correct and readable, no extra labels, no dense table. All arrows are from input to grouping to separate result objects.",
+      "asset_sha256": "1744914b64e48c0a1f9e93454c0db5555ef9812945ec3b72a8f873aece159f32",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "cdn-local-delivery",
+      "rank": 3,
+      "recommend": true,
+      "chapter": "07",
+      "source_page": 245,
+      "after_id": "p245-b04",
+      "before_id": "p245-b05",
+      "title": "CSS・JSをどこから読み込むか",
+      "caption": "BootstrapのCSS・JSは、CDNまたはアプリ内のstaticからブラウザーへ読み込みます。",
+      "purpose": "CDNとローカルを2つの設定手順として暗記せず、ブラウザーへ届くファイルの取得元の違いとして理解する。",
+      "composition": "上下2行の比較。上段はCDNの雲からCSS/JSの2枚のカードがブラウザーへ届く。下段はSpring Bootの建物のstatic棚から同じCSS/JSカードがブラウザーへ届く。各行に「CDN」「static」「ブラウザー」を大きく。両行を結ぶ矢印は置かず、2方式を区別する。",
+      "constraints": [
+        "CDNへのアクセスをJavaやControllerが実行する図にしない。資材を読む主体はブラウザー。",
+        "CDN方式とstatic方式の両方を同時に必ず読む図にしない。2つの選択肢として並列にする。",
+        "ローカル方式を「インターネット不要」と断定せず、外部CDNへ依存しない取得元の差だけ描く。"
+      ],
+      "difference": "p245-f05は読み込みタグの比較で、通信経路そのものの図はない。新図はブラウザーに届くCSS/JSの取得元の違いだけを示す。",
+      "safe_boundary": "導入方法2つの列挙が終わった後、公式ページ参照の注記の前。後続CDN/ローカルの手順やコードは分断しない。",
+      "sources": [
+        "https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "asset": "assets/revision-ill-cdn-local-delivery.png",
+      "figure_id": "illustration-expansion-2026-cdn-local-delivery",
+      "caption_id": "illustration-expansion-2026-cdn-local-delivery-caption",
+      "boundary_checks": {
+        "same_source_page": true,
+        "adjacent_source_entries": true,
+        "shared_html_component": false,
+        "after_kind": "step",
+        "before_kind": "paragraph"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-81a1f90f-99c2-4806-b282-e0a450858306.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration, very wide landscape 2.4:1, pure white background. Friendly flat editorial drawing with crisp navy outlines, muted teal and pale blue, restrained orange accent. Large sparse labels readable at 100 mm print width and 49 mm maximum height. No gloss, gradients, shadows, logos, watermark, title banner, or additional prose. Use ONLY the exact short labels requested. Do not write Spring Boot unless explicitly requested. One asset, no multi-image sheet. Two clearly separated parallel horizontal rows compare alternative ways to obtain CSS and JavaScript. UPPER row: a cloud labeled exactly \"CDN\" sends a pair of very simple file cards together labeled exactly \"CSS / JS\" along one arrow to a browser screen labeled exactly \"ブラウザー\". LOWER row: an application server cabinet containing a small folder labeled exactly \"static\" sends another pair of file cards labeled exactly \"CSS / JS\" along its own arrow to a SECOND browser screen labeled exactly \"ブラウザー\". These rows are alternatives, not a two-stage process; no arrow connects the rows. The browser obtains the assets directly, not a Java Controller doing the CDN fetch. No title, no code, no automatic fallback symbol.",
+      "asset_sha256": "56771c382e3389281ceb45f3b9568199a1fb1d1627c78581b41a95caa3beb323",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "spacing-box-model",
+      "rank": 1,
+      "recommend": true,
+      "chapter": "07",
+      "source_page": 259,
+      "after_id": "p259-b02",
+      "before_id": "p259-b03",
+      "title": "マージンは枠の外、パディングは枠の内",
+      "caption": "マージンは枠の外側、パディングは枠と内容の間の余白です。",
+      "purpose": "mとpの違いを、コードやブラウザー色だけに頼らず同じ要素の境界で理解する。",
+      "composition": "横長の1枚。中央に紺の枠線、内側の淡青領域に小さな内容カード、外側に淡橙の余白帯。外の帯へ「マージン」、内の帯へ「パディング」、中央へ「内容」の3ラベル。内外を指す短い寸法線。",
+      "constraints": [
+        "マージンとパディングを別々の箱の隙間にせず、1つの要素の同じ枠線を境に描く。",
+        "枠線=borderを細く鮮明に描き、外側をmargin、枠の内側をpaddingにする。",
+        "余白の数字をpxへ換算しない。Bootstrap標準spacerはカスタマイズ可能。",
+        "外側marginの色は説明用ハイライトとして区別し、要素の背景色がmarginまで塗られるという誤解を避ける。"
+      ],
+      "difference": "p258-f16は開発者ツールの実画面、p259-f17はp-*の各出力。新図は内外の境界を一図で対比し、どちらを増やすとどこが広がるかを示す。",
+      "safe_boundary": "説明2段落の完了後、方向別クラス一覧の前。コードや行解説を分断しない。",
+      "sources": [
+        "https://getbootstrap.com/docs/5.3/utilities/spacing/"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "asset": "assets/revision-ill-spacing-box-model.png",
+      "figure_id": "illustration-expansion-2026-spacing-box-model",
+      "caption_id": "illustration-expansion-2026-spacing-box-model-caption",
+      "boundary_checks": {
+        "same_source_page": true,
+        "adjacent_source_entries": true,
+        "shared_html_component": false,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-3e19204c-4463-45c5-a2c6-26bd5c590721.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration, very wide landscape 2.4:1, pure white background. Friendly flat editorial drawing with crisp navy outlines, muted teal and pale blue, restrained orange accent. Large sparse labels readable at 100 mm print width and 49 mm maximum height. No gloss, gradients, shadows, logos, watermark, title banner, or additional prose. Use ONLY the exact short labels requested. Do not write Spring Boot unless explicitly requested. One asset, no multi-image sheet. Show the CSS box model of ONE element as a wide package-like cross-section with three nested rectangular areas. The outer pale orange band is OUTSIDE a single clearly visible navy border, and is labeled exactly \"マージン\". INSIDE the navy border a pale teal cushioning band surrounds a central small content card; label that inner band exactly \"パディング\", label the central card exactly \"内容\". Add short clear pointers to the outer and inner bands. Make the same border the shared boundary between outside margin and inside padding. The content is inside padding, padding inside border, margin outside border. Do not put padding outside the border, do not show two separate unrelated boxes. Keep all labels large.",
+      "asset_sha256": "46086f3daaac7f864f042716afadd5c9a8b0fb2da4217686601b0a8f8c15db01",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "grid-containment",
+      "rank": 2,
+      "recommend": true,
+      "chapter": "07",
+      "source_page": 265,
+      "after_id": "p265-b08",
+      "before_id": "p265-b09",
+      "title": "container・row・colの入れ子",
+      "caption": "containerの中にrowを置き、rowの中にcolを並べます。",
+      "purpose": "HTMLの閉じタグが連続すると見失いやすい親子関係を、空間の包み込みとして理解する。",
+      "composition": "大きな入れ子の容器1つ。最外の青いcontainer枠、その中に橙のrow枠1個、さらにrowの中に横並びの緑のcol枠2個。ラベルはcontainer/row/col/colのみ。三層が視覚的に明確な横長レイアウト。",
+      "constraints": [
+        "rowとcolを並列の兄弟に描かない。rowがcolを包み、containerがrowを包む。",
+        "列比率や12個の細かい目盛りは描かず、今回の目的を包含関係だけに絞る。",
+        "新しい入れ子のrowをcolの外に描かない。"
+      ],
+      "difference": "p265-f22は文章とコード、p267-f23は6:3:3の横幅出力。既存responsive-switchは幅条件の前後。新図は要素の三層の親子関係を可視化する。",
+      "safe_boundary": "3基本要素の列挙完了後、入れ子構造を言い換える2段落の前。スライド直下は変更しない。",
+      "sources": [
+        "https://getbootstrap.com/docs/5.3/layout/grid/"
+      ],
+      "width": 280,
+      "max_height": 140,
+      "asset": "assets/revision-ill-grid-containment.png",
+      "figure_id": "illustration-expansion-2026-grid-containment",
+      "caption_id": "illustration-expansion-2026-grid-containment-caption",
+      "boundary_checks": {
+        "same_source_page": true,
+        "adjacent_source_entries": true,
+        "shared_html_component": false,
+        "after_kind": "paragraph",
+        "before_kind": "paragraph"
+      },
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-15171ac4-0c07-4167-8999-301ba6d0e88c.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration, very wide landscape 2.4:1, pure white background. Friendly flat editorial drawing with crisp navy outlines, muted teal and pale blue, restrained orange accent. Large sparse labels readable at 100 mm print width and 49 mm maximum height. No gloss, gradients, shadows, logos, watermark, title banner, or additional prose. Use ONLY the exact short labels requested. Do not write Spring Boot unless explicitly requested. One asset, no multi-image sheet. Show only the containment structure of Bootstrap layout as nested open trays with plain front-facing labels. One wide outer pale blue tray labeled exactly \"container\" contains ONE orange outlined inner tray labeled exactly \"row\". Entirely INSIDE row, two separate teal child trays sit side by side, each labeled exactly \"col\". Emphasize all three boundaries so col is inside row and row is inside container. No arrow pipeline, no code sheet, no title, no 12-grid ticks, no devices. The two cols are children of row, not its siblings.",
+      "asset_sha256": "50bc470ae6cd081a2b904f10419d8d9b7ba988ff15b10f10909c14f90f5c88cd",
+      "image_pixels": [
+        1942,
+        809
+      ]
     }
   ],
   "resized": [
@@ -266,5 +1474,6 @@
     ],
     "physical_page": 2,
     "text": "IIBA®、BABOK® は、IIBA® (International Institute of Business Analysis™) の登録商標です。"
-  }
+  },
+  "expansion_base_commit": "f16135f3cebb2e2f9ab481e9cfead35b05bd52d4"
 }

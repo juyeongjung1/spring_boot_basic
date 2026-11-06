@@ -9,6 +9,17 @@ from build import ROOT, normalized, read_markdown
 
 
 class PaginationTests(unittest.TestCase):
+    def test_code_introductions_stay_with_the_first_code_panel(self):
+        path = ROOT / 'output/pdf/textbook/chapter-06/checks.json'
+        marks = json.loads(path.read_text(encoding='utf-8'))['flow']['block_positions']
+        for introduction, code in [('p233-b09', 'p233-b10'), ('p234-b01', 'p234-b02'),
+                                   ('p206-b11', 'p206-b13'), ('p206-b12', 'p206-b13')]:
+            with self.subTest(introduction=introduction):
+                intro = [m for m in marks if m['id'] == introduction and m['edge'] in ('start', 'end')]
+                start = min((m for m in marks if m['id'] == code and m['edge'] == 'start'),
+                            key=lambda m: (m['page'], m['y']))
+                self.assertEqual({m['page'] for m in intro}, {start['page']})
+
     def test_every_source_page_starts_after_the_previous_content(self):
         for folder in (ROOT / 'docs/textbook/chapters').iterdir():
             if not (folder / 'source.json').exists():

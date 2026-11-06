@@ -393,6 +393,31 @@
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-2026-foreign-key-reference-caption"
+    },
+    "illustration-expansion-2026-relationship-field-column": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-relationship-field-column-caption"
+    },
+    "illustration-expansion-2026-select-label-value": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-select-label-value-caption"
+    },
+    "illustration-expansion-2026-jpql-entity-names": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-jpql-entity-names-caption"
+    },
+    "illustration-expansion-2026-groupby-aggregate-dto": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-groupby-aggregate-dto-caption"
+    },
+    "illustration-expansion-2026-null-reference-guard": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-null-reference-guard-caption"
     }
   }
 }

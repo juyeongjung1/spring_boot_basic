@@ -441,6 +441,14 @@
 
 :::
 
+![CSS・JSをどこから読み込むか](assets/revision-ill-cdn-local-delivery.png){#illustration-expansion-2026-cdn-local-delivery}
+
+::: {#illustration-expansion-2026-cdn-local-delivery-caption .paragraph}
+
+BootstrapのCSS・JSは、CDNまたはアプリ内のstaticからブラウザーへ読み込みます。
+
+:::
+
 ::: {#p245-b05 .paragraph}
 
 [※バージョンによって、詳細が変わる可能性がありますので、以下の公式ホームページのド]{.s009}\
@@ -1161,6 +1169,14 @@ crossorigin="anonymous">
 
 :::
 
+![マージンは枠の外、パディングは枠の内](assets/revision-ill-spacing-box-model.png){#illustration-expansion-2026-spacing-box-model}
+
+::: {#illustration-expansion-2026-spacing-box-model-caption .paragraph}
+
+マージンは枠の外側、パディングは枠と内容の間の余白です。
+
+:::
+
 ::: {#p259-b03 .paragraph}
 
 [⚫&#32;]{.s014}[p-0&#32;&#32;～ p-5&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;全方向のパディングを設定]{.s011}\
@@ -1510,6 +1526,14 @@ crossorigin="anonymous">
 
 [③&#32;]{.s009}[カラム（Column）:列のことを「カラム」と言います。カラムは、コンテンツを配置するため]{.s009}\
 [の垂直のレイアウト要素です。最大12 カラムまで使用できます。]{.s009}
+
+:::
+
+![container・row・colの入れ子](assets/revision-ill-grid-containment.png){#illustration-expansion-2026-grid-containment}
+
+::: {#illustration-expansion-2026-grid-containment-caption .paragraph}
+
+containerの中にrowを置き、rowの中にcolを並べます。
 
 :::
 

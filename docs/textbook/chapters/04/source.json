@@ -326,6 +326,21 @@
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-2026-validation-branch-caption"
+    },
+    "illustration-expansion-2026-model-session-lifetime": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-model-session-lifetime-caption"
+    },
+    "illustration-expansion-2026-form-error-roundtrip": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-form-error-roundtrip-caption"
+    },
+    "illustration-expansion-2026-null-blank-constraints": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-expansion-2026-null-blank-constraints-caption"
     }
   }
 }

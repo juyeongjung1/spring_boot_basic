@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-11-06T02:59:09.666659+00:00",
+  "path": "tools/textbook/code_explanations.json",
+  "normalized_full_text_equal": true,
+  "json_values_equal": true,
+  "git_diff_unchanged": true,
+  "current_sha256": "f904a1c619b4fdd8d0f85a5af41cce00d0036805af1e676d980d598d19ad31e6",
+  "git_blob_sha256": "6ace30a098c571028721e4dc99a3af04b9357b0cd2bb7c9df2e0ed336df7b4fd",
+  "final_pdf_and_tool_hashes_unchanged": true,
+  "passed": true
+}

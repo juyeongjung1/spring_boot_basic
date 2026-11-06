@@ -1,0 +1,10 @@
+{
+  "path": "tools/textbook/build.py",
+  "base_commit": "f16135f3cebb2e2f9ab481e9cfead35b05bd52d4",
+  "before_sha256": "ab77c2ccd96d9afc8586d2ace76678efd24476c5821334be7fc48515eb08a3c7",
+  "approved_sha256": "b54be1f470cfba807dd5dbb73a91d229d65ee94dc0a50512671b7b0c20ee02a3",
+  "purpose": [
+    "PPT上段を保ったままcompact図とcaptionのMD順を保持",
+    "コード導入ラベルと短い説明を最初のコード枠に接続"
+  ]
+}
