@@ -356,5 +356,17 @@
     },
     "paragraph_continuations": [],
     "figure_scales": {}
+  },
+  "typography": {
+    "minor_heading_extra_space": [
+      "p137-b01",
+      "p138-b05",
+      "p141-b02",
+      "p144-b01",
+      "p149-b04",
+      "p151-b05",
+      "p160-b01",
+      "revision-messages-title"
+    ]
   }
 }

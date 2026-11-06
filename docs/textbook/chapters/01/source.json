@@ -184,5 +184,11 @@
       "max_height": 140,
       "caption_id": "illustration-figure-cards-2026-di-remote-intro-caption"
     }
+  },
+  "typography": {
+    "minor_heading_extra_space": [
+      "p018-b06",
+      "p025-b02"
+    ]
   }
 }

@@ -411,5 +411,15 @@
     },
     "paragraph_continuations": [],
     "figure_scales": {}
+  },
+  "typography": {
+    "minor_heading_extra_space": [
+      "p264-b02",
+      "p266-b01",
+      "p269-b01",
+      "p272-b03",
+      "p272-b05",
+      "p279-b01"
+    ]
   }
 }

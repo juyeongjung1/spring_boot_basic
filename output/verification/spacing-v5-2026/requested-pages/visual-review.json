@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "pages": 11,
+  "reviewed": [
+    {
+      "path": "contact-01.png",
+      "sha256": "f8adb28be4b82bf5889caaf16396ade2103139f7f8236a969038eeee526e53ed"
+    },
+    {
+      "path": "contact-02.png",
+      "sha256": "c4a92d7263110542aeb46bc60574b9813e85783839bc4e734e3c649f2671dce0"
+    },
+    {
+      "path": "contact-03.png",
+      "sha256": "7e67d2f80a1504da3debd4b371541d93bb48cc5c85ea456b72c1d8fc90043904"
+    },
+    {
+      "path": "contact-04.png",
+      "sha256": "0ef1d4a656763b20072c436b6c388ef31f91b79ad3f1100d2e5c4e0555861ce3"
+    },
+    {
+      "path": "contact-05.png",
+      "sha256": "f01e1f5115b9fd3b7bc3f0374ee44ddd58402f59141b64ec08d807aa18fbddd1"
+    },
+    {
+      "path": "contact-06.png",
+      "sha256": "600e14839c0fc62374c261b6aca0553f0c519851b50ff5ca8bb15dbb48f90124"
+    }
+  ],
+  "checks": [
+    "前頁への手順と動作確認の継続",
+    "社員番号・パスワードの別行",
+    "節ごとの①・②と演習参照",
+    "既習サーブレットからModelへの橋渡し",
+    "白基調の表と短いJPA本文",
+    "文字切れ・重なり・余白・連番"
+  ]
+}

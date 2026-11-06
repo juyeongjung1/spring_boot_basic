@@ -1,0 +1,297 @@
+{
+  "baseline": "380e36f",
+  "tables": 33,
+  "tests_passed": 10,
+  "test_seconds": 30.44,
+  "data_unchanged": true,
+  "geometry_unchanged": true,
+  "manually_reviewed": true,
+  "changed": [
+    "表の塗り色",
+    "罫線色",
+    "ヘッダー文字色"
+  ],
+  "unchanged": [
+    "全表データ",
+    "意味のある赤字と下線",
+    "字体と字号",
+    "表幅と列幅",
+    "行間とセル余白",
+    "列の整列",
+    "技術語のnowrap",
+    "全33部品の高さ",
+    "全33表の文字座標"
+  ],
+  "comparisons": [
+    "before-after-products.png",
+    "before-after-table-definition.png",
+    "before-after-comparison.png",
+    "before-after-validation.png"
+  ],
+  "entries": [
+    {
+      "id": "03-p067-table01",
+      "data_sha256": "ca060ab5ca2d5455f98b0932e3f5e9923d5f93172cb6f84ea68f314a18c4f682",
+      "height_before": 108.75,
+      "height_after": 108.75,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "03-p067-table02",
+      "data_sha256": "fe52833352f9f6be12dc41b17214d067dd51a6da664eef2d3bd5fc817fb31ea3",
+      "height_before": 122.25,
+      "height_after": 122.25,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "03-p067-table03",
+      "data_sha256": "90c123a255c9c2ac2234e6af2d579ad503482fc70b6ec93d8df11588960ea533",
+      "height_before": 270,
+      "height_after": 270,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "03-p069-table01",
+      "data_sha256": "ea5d935c51ec9a9174715dede53971d11846157b168bdef6ed19c60399f4a21b",
+      "height_before": 421.29,
+      "height_after": 421.29,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "03-p071-b05",
+      "data_sha256": "04e3ee97379fef2cd82bed782ede5926a990bb57b6b0af9bccc13da83ca53734",
+      "height_before": 149.25,
+      "height_after": 149.25,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "03-p073-table01",
+      "data_sha256": "854892bbcec22f7cb2e2b1118fceeb5705b72660fff92aef9908f4bbbaa1a8da",
+      "height_before": 122.25,
+      "height_after": 122.25,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "04-p136-table01",
+      "data_sha256": "925e7c7873c2f74479291406e9eb1fafe8655152b33396a1b35ee9d3b9c7fa33",
+      "height_before": 108,
+      "height_after": 108,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "04-p136-table02",
+      "data_sha256": "c8daab738d3bc0c2e253416ac39428e5a3f01e7e74dc71190ac1767bd8d6aaa0",
+      "height_before": 108,
+      "height_after": 108,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "06-p196-table01",
+      "data_sha256": "041bc90d9c46683a313cdebd6b847c9c69c77480cec36082d8402da9bdf0c300",
+      "height_before": 81,
+      "height_after": 81,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "06-p196-table02",
+      "data_sha256": "b10be5c588254f7bf9a3da1650c294300234af752bd4037761d8bd5b8b5348b6",
+      "height_before": 135,
+      "height_after": 135,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "06-p197-table01",
+      "data_sha256": "79d0f889e619df060103e6d238cc7c923e0270de47ae66347edda2b1cf3db3ef",
+      "height_before": 177.75,
+      "height_after": 177.75,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "06-p197-table02",
+      "data_sha256": "5c25780c5f40eeb59b8d5521d77640d54796454781d2ac29be9f3a8666ab23c4",
+      "height_before": 270,
+      "height_after": 270,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "06-p200-table01",
+      "data_sha256": "e9b6c6fdc6644af7ffc8fa456065db2277ddba662deb61760aa30f8b0dd9c346",
+      "height_before": 56.25,
+      "height_after": 56.25,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "06-p223-table01",
+      "data_sha256": "ef6d200a27a141a280990dd1fd2576fd1fcb799a8bdfbe029f219e98611ea27c",
+      "height_before": 243,
+      "height_after": 243,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "06-p235-table01",
+      "data_sha256": "ebfc04cf926956d210b5ada65fc3db30f658364305c818ee7a61621729ea73b1",
+      "height_before": 150.75,
+      "height_after": 150.75,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex03-p019-table01",
+      "data_sha256": "889d98a761195e271dda7721c87aaf4733a18a9c817b81c13d7707a26aaad004",
+      "height_before": 108.75,
+      "height_after": 108.75,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex03-p019-table02",
+      "data_sha256": "de6042125d3b59279c9d1d95828a234839474146a5cee07687ad9e95271830b5",
+      "height_before": 149.25,
+      "height_after": 149.25,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex03-p019-table03",
+      "data_sha256": "ef4f959a6f50a2899531381fd492be1cc720578203e5006413b80aa8ca1ecdeb",
+      "height_before": 243,
+      "height_after": 243,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex04-p034-table01",
+      "data_sha256": "ec626c73e258a8569fee965c3c0274eeae1de774668d9e281435085967da1bd3",
+      "height_before": 95.25,
+      "height_after": 95.25,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex04-p036-table01",
+      "data_sha256": "a980f222eac1332ab5ca780dc1ce77bc92b4ffcb5221a2b35b365c71e6ff53b2",
+      "height_before": 177.75,
+      "height_after": 177.75,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p049-table01",
+      "data_sha256": "889d98a761195e271dda7721c87aaf4733a18a9c817b81c13d7707a26aaad004",
+      "height_before": 108.75,
+      "height_after": 108.75,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p049-table02",
+      "data_sha256": "c1597a2eef4a22d3764a5511aaa548897cd0007accaebbb04a3b46ed7aeee8bb",
+      "height_before": 122.25,
+      "height_after": 122.25,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p050-table01",
+      "data_sha256": "23e9a4024343b88edb12f2303812e2db1472ce0492e38a2a4b739998bd1094d7",
+      "height_before": 54.75,
+      "height_after": 54.75,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p050-table02",
+      "data_sha256": "03493e09c7241e497ba36101aec663798385068e2e03aea5dc08b5c5f925e50d",
+      "height_before": 243,
+      "height_after": 243,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p050-table03",
+      "data_sha256": "777d1b9eaf4095f55c069830252b0227a4c6787b5a3f9237ee1fcff21a5bb096",
+      "height_before": 95.25,
+      "height_after": 95.25,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p050-table04",
+      "data_sha256": "2eff87a1b55bc3f264a924ad05205ea544e348aba538e68cab9383ef13f446dd",
+      "height_before": 162,
+      "height_after": 162,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p057-table01",
+      "data_sha256": "4a13e4e803b68417b843a22e4751e48c035140eae47d9b1f7f3a1d5db769bd83",
+      "height_before": 162,
+      "height_after": 162,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p059-table01",
+      "data_sha256": "f163972567262a136099f5c212b8364a428d7a0b000199e662aee24fef9b5465",
+      "height_before": 150.75,
+      "height_after": 150.75,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p061-table01",
+      "data_sha256": "af4f4c82e0d88badef970df40708f48fc94ed2e0be602b1698e0e4cb3e35436a",
+      "height_before": 81,
+      "height_after": 81,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex06-p062-table01",
+      "data_sha256": "58811eb87d30ce6c6cd407ac25c8acde38eb22eccb7a8d27a22e84fe95e58858",
+      "height_before": 189,
+      "height_after": 189,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex07-p066-table01",
+      "data_sha256": "444108ec93ee901f425f7fb014687228fef9a509d3340dda5a2750f5b77411d7",
+      "height_before": 81,
+      "height_after": 81,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex07-p070-table01",
+      "data_sha256": "1df68c1525267ae2b942c384a15b2be58a0bf733d906914d1da2b1971f3eec59",
+      "height_before": 108,
+      "height_after": 108,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    },
+    {
+      "id": "ex07-p071-table01",
+      "data_sha256": "e4c7ffe1f0192b05ab5f9698a7aac91311390c145960e04510fd8d8c6a9e5e86",
+      "height_before": 108,
+      "height_after": 108,
+      "text_geometry_unchanged": true,
+      "manually_reviewed": true
+    }
+  ]
+}

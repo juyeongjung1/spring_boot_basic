@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "method": "最終PDF由来の指摘箇所PNGを監査担当が独立に目視。全76見出しの目視は別担当の正式証跡、全marker所属頁は恒久検査で確認。",
+  "textbook_sha256": "9ac6ba0bd0c0159dcc5cd1cb2bcb37282a7b074b4adaec9918db25ccd10e427e",
+  "checked_pages": [
+    {"page":54,"checked":"作業手順③が直前本文へ続き、見出し上の間隔と後続コードが整っている。"},
+    {"page":56,"checked":"社員番号とパスワードがそれぞれ独立した字下げ付き段落になっている。"},
+    {"page":65,"checked":"既習request.setAttributeのコード直後に、同じ役割を説明する最小の橋渡し文を通常書体で配置。"},
+    {"page":68,"checked":"直前のコード説明に動作確認・URL・操作画像・後続本文が同頁で続き、見出し上の間隔も明確。"},
+    {"page":77,"checked":"JDBC/JPA比較表の寒色背景、罫線、元赤字/下線が明確。表下のJPA説明は指定の短い1文のみ。"}
+  ],
+  "problems": []
+}

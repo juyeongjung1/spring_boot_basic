@@ -1,0 +1,604 @@
+[
+  {
+    "id": "__source-page-291",
+    "edge": "source-page",
+    "page": 2,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p291-b01",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p291-b02",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 115.07439453125
+  },
+  {
+    "id": "p291-b03",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 134.11439453125
+  },
+  {
+    "id": "p291-b04",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 153.15439453125
+  },
+  {
+    "id": "p291-b05",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 172.19439453124997
+  },
+  {
+    "id": "p291-b06",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 209.23439453125
+  },
+  {
+    "id": "p291-b07",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 246.27439453125
+  },
+  {
+    "id": "p291-b08",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 301.31439453125
+  },
+  {
+    "id": "p291-b09",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 366.35439453125
+  },
+  {
+    "id": "p291-b10",
+    "edge": "start",
+    "page": 2,
+    "x": 85.104,
+    "y": 395.4287890625
+  },
+  {
+    "id": "p291-b10",
+    "edge": "end",
+    "page": 2,
+    "x": 85.104,
+    "y": 424.46878906250004
+  },
+  {
+    "id": "revision-errors-title",
+    "edge": "heading",
+    "page": 2,
+    "x": 85.104,
+    "y": 442.46878906250004
+  },
+  {
+    "id": "revision-errors-console",
+    "edge": "start",
+    "page": 2,
+    "x": 85.104,
+    "y": 468.50878906250006
+  },
+  {
+    "id": "revision-errors-console",
+    "edge": "end",
+    "page": 2,
+    "x": 85.104,
+    "y": 515.5487890625001
+  },
+  {
+    "id": "revision-errors-name",
+    "edge": "start",
+    "page": 2,
+    "x": 85.104,
+    "y": 528.5087890625
+  },
+  {
+    "id": "revision-errors-name",
+    "edge": "end",
+    "page": 2,
+    "x": 85.104,
+    "y": 653.5487890625
+  },
+  {
+    "id": "revision-errors-trace-intro",
+    "edge": "start",
+    "page": 2,
+    "x": 85.104,
+    "y": 666.5087890625
+  },
+  {
+    "id": "revision-errors-trace-intro",
+    "edge": "end",
+    "page": 2,
+    "x": 85.104,
+    "y": 677.5487890625
+  },
+  {
+    "id": "appendix-b-revision-errors-trace-part1",
+    "edge": "html-component",
+    "page": 3,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "revision-errors-trace",
+    "edge": "short-code",
+    "page": 3,
+    "x": 85.854,
+    "y": 128.269531
+  },
+  {
+    "id": "revision-errors-trace",
+    "edge": "start",
+    "page": 3,
+    "x": 85.854,
+    "y": 128.269531
+  },
+  {
+    "id": "revision-errors-trace",
+    "edge": "end",
+    "page": 3,
+    "x": 511.021969,
+    "y": 236.796875
+  },
+  {
+    "id": "revision-errors-trace-read",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 256.297
+  },
+  {
+    "id": "revision-errors-trace-read",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 339.337
+  },
+  {
+    "id": "instruction-illustration-2026-error-cause-chain",
+    "edge": "start",
+    "page": 3,
+    "x": 79.104,
+    "y": 352.29699999999997
+  },
+  {
+    "id": "figure-frame-illustration-2026-error-cause-chain",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 358.29699999999997
+  },
+  {
+    "id": "figure-number-illustration-2026-error-cause-chain",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 358.29699999999997
+  },
+  {
+    "id": "figure-number-illustration-2026-error-cause-chain",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 367.29699999999997
+  },
+  {
+    "id": "illustration-2026-error-cause-chain",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 372.29699999999997
+  },
+  {
+    "id": "illustration-2026-error-cause-chain",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 489.4089133574007
+  },
+  {
+    "id": "illustration-2026-error-cause-chain-caption",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 495.4089133574007
+  },
+  {
+    "id": "illustration-2026-error-cause-chain-caption",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 504.9089133574007
+  },
+  {
+    "id": "figure-frame-illustration-2026-error-cause-chain",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 504.9089133574007
+  },
+  {
+    "id": "instruction-illustration-2026-error-cause-chain",
+    "edge": "end",
+    "page": 3,
+    "x": 79.104,
+    "y": 510.9089133574007
+  },
+  {
+    "id": "revision-errors-template",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 522.9089133574007
+  },
+  {
+    "id": "revision-errors-template",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 587.9489133574007
+  },
+  {
+    "id": "revision-errors-sql",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 600.9089133574007
+  },
+  {
+    "id": "revision-errors-sql",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 665.9489133574007
+  },
+  {
+    "id": "revision-errors-status",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 678.9089133574007
+  },
+  {
+    "id": "revision-errors-status",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 743.9489133574007
+  },
+  {
+    "id": "p291-b11",
+    "edge": "heading",
+    "page": 4,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p291-b12",
+    "edge": "heading",
+    "page": 4,
+    "x": 85.104,
+    "y": 105.04
+  },
+  {
+    "id": "p291-b13",
+    "edge": "heading",
+    "page": 4,
+    "x": 85.104,
+    "y": 124.08
+  },
+  {
+    "id": "p291-b14",
+    "edge": "heading",
+    "page": 4,
+    "x": 85.104,
+    "y": 161.11999999999998
+  },
+  {
+    "id": "p291-b15",
+    "edge": "heading",
+    "page": 4,
+    "x": 85.104,
+    "y": 216.16
+  },
+  {
+    "id": "__source-page-292",
+    "edge": "source-page",
+    "page": 5,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-292",
+    "edge": "native-page",
+    "page": 5,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "figure-frame-p292-f01",
+    "edge": "start",
+    "page": 5,
+    "x": 91.7999984741211,
+    "y": 210.84999389648436
+  },
+  {
+    "id": "figure-frame-p292-f01",
+    "edge": "end",
+    "page": 5,
+    "x": 91.7999984741211,
+    "y": 306.84998779296876
+  },
+  {
+    "id": "p292-f01",
+    "edge": "start",
+    "page": 5,
+    "x": 95.7999984741211,
+    "y": 214.84999389648436
+  },
+  {
+    "id": "p292-f01",
+    "edge": "end",
+    "page": 5,
+    "x": 95.7999984741211,
+    "y": 302.84998779296876
+  },
+  {
+    "id": "figure-number-p292-f01",
+    "edge": "start",
+    "page": 5,
+    "x": 457.1000183105469,
+    "y": 219.84999389648436
+  },
+  {
+    "id": "figure-number-p292-f01",
+    "edge": "end",
+    "page": 5,
+    "x": 457.1000183105469,
+    "y": 231.59999389648436
+  },
+  {
+    "id": "__source-page-293",
+    "edge": "source-page",
+    "page": 6,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-293",
+    "edge": "native-page",
+    "page": 6,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "figure-frame-p293-f02",
+    "edge": "start",
+    "page": 6,
+    "x": 91.2999984741211,
+    "y": 82.7999984741211
+  },
+  {
+    "id": "figure-frame-p293-f02",
+    "edge": "end",
+    "page": 6,
+    "x": 91.2999984741211,
+    "y": 214.79999999999998
+  },
+  {
+    "id": "p293-f02",
+    "edge": "start",
+    "page": 6,
+    "x": 95.2999984741211,
+    "y": 86.7999984741211
+  },
+  {
+    "id": "p293-f02",
+    "edge": "end",
+    "page": 6,
+    "x": 95.2999984741211,
+    "y": 210.79999999999998
+  },
+  {
+    "id": "figure-number-p293-f02",
+    "edge": "start",
+    "page": 6,
+    "x": 420.6000183105469,
+    "y": 91.7999984741211
+  },
+  {
+    "id": "figure-number-p293-f02",
+    "edge": "end",
+    "page": 6,
+    "x": 420.6000183105469,
+    "y": 103.5499984741211
+  },
+  {
+    "id": "figure-frame-p293-f03",
+    "edge": "start",
+    "page": 6,
+    "x": 80.2999984741211,
+    "y": 357.4999572753906
+  },
+  {
+    "id": "figure-frame-p293-f03",
+    "edge": "end",
+    "page": 6,
+    "x": 80.2999984741211,
+    "y": 410.29996948242194
+  },
+  {
+    "id": "p293-f03",
+    "edge": "start",
+    "page": 6,
+    "x": 84.2999984741211,
+    "y": 361.4999572753906
+  },
+  {
+    "id": "p293-f03",
+    "edge": "end",
+    "page": 6,
+    "x": 84.2999984741211,
+    "y": 406.29996948242194
+  },
+  {
+    "id": "figure-number-p293-f03",
+    "edge": "start",
+    "page": 6,
+    "x": 517.8,
+    "y": 366.4999572753906
+  },
+  {
+    "id": "figure-number-p293-f03",
+    "edge": "end",
+    "page": 6,
+    "x": 517.8,
+    "y": 378.2499572753906
+  },
+  {
+    "id": "figure-frame-p293-f04",
+    "edge": "start",
+    "page": 6,
+    "x": 91.2999984741211,
+    "y": 551.0499755859375
+  },
+  {
+    "id": "figure-frame-p293-f04",
+    "edge": "end",
+    "page": 6,
+    "x": 91.2999984741211,
+    "y": 596.6499755859375
+  },
+  {
+    "id": "p293-f04",
+    "edge": "start",
+    "page": 6,
+    "x": 95.2999984741211,
+    "y": 555.0499755859375
+  },
+  {
+    "id": "p293-f04",
+    "edge": "end",
+    "page": 6,
+    "x": 95.2999984741211,
+    "y": 592.6499755859375
+  },
+  {
+    "id": "figure-number-p293-f04",
+    "edge": "start",
+    "page": 6,
+    "x": 391.8,
+    "y": 560.0499755859375
+  },
+  {
+    "id": "figure-number-p293-f04",
+    "edge": "end",
+    "page": 6,
+    "x": 391.8,
+    "y": 571.7999755859375
+  },
+  {
+    "id": "__source-page-294",
+    "edge": "source-page",
+    "page": 7,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-294",
+    "edge": "native-page",
+    "page": 7,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "figure-frame-p294-f05",
+    "edge": "start",
+    "page": 7,
+    "x": 91.7999984741211,
+    "y": 516.8500244140625
+  },
+  {
+    "id": "figure-frame-p294-f05",
+    "edge": "end",
+    "page": 7,
+    "x": 91.7999984741211,
+    "y": 756.8500488281251
+  },
+  {
+    "id": "p294-f05",
+    "edge": "start",
+    "page": 7,
+    "x": 95.7999984741211,
+    "y": 520.8500244140625
+  },
+  {
+    "id": "p294-f05",
+    "edge": "end",
+    "page": 7,
+    "x": 95.7999984741211,
+    "y": 752.8500488281251
+  },
+  {
+    "id": "figure-number-p294-f05",
+    "edge": "start",
+    "page": 7,
+    "x": 385.1000183105469,
+    "y": 525.8500244140625
+  },
+  {
+    "id": "figure-number-p294-f05",
+    "edge": "end",
+    "page": 7,
+    "x": 385.1000183105469,
+    "y": 537.6000244140625
+  },
+  {
+    "id": "__source-page-295",
+    "edge": "source-page",
+    "page": 8,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-295",
+    "edge": "native-page",
+    "page": 8,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "__source-page-296",
+    "edge": "source-page",
+    "page": 9,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-296",
+    "edge": "native-page",
+    "page": 9,
+    "x": 85.104,
+    "y": 86.0
+  }
+]

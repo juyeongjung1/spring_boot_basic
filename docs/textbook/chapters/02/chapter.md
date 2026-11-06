@@ -1182,7 +1182,8 @@ initial-scale=1.0"/>
 
 ::: {#p052-b07 .paragraph}
 
-[社員番号：1234]{.s009}\
+[社員番号：1234]{.s009}
+
 [パスワード：password]{.s009}
 
 :::
@@ -1482,7 +1483,7 @@ HTMLのname属性値をFormのフィールド名と対応させ、送信され�
 
 ::: {#p058-b01 .heading}
 
-[【作業手順③】 model オブジェクトにデータを格納]{.s010}
+[【作業手順①】 model オブジェクトにデータを格納]{.s010}
 
 :::
 
@@ -1605,7 +1606,7 @@ request.setAttribute("password", password);
 
 ::: {#p059-b06 .paragraph}
 
-[サーブレットのrequest.setAttribute と役割も、使い方は同じですので、参考にしてください。]{.s009}
+[ModelのaddAttributeは、サーブレットで使ったrequest.setAttributeと同じように、画面へ渡すデータに名前を付けて格納するためのメソッドです。]{.s009}
 
 :::
 
@@ -1631,7 +1632,7 @@ request.setAttribute("password", password);
 
 ::: {#p059-b10 .heading}
 
-[【作業手順④】&#32;]{.s010}[Thymeleaf を利用したデータ出力]{.s012}
+[【作業手順②】&#32;]{.s010}[Thymeleaf を利用したデータ出力]{.s012}
 
 :::
 

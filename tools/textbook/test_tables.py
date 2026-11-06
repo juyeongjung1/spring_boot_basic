@@ -50,9 +50,10 @@ class TableSourceTests(unittest.TestCase):
         html=tables()['03-p067-table03']['html']
         self.assertIn('text-align:left">乾燥機能付き洗濯機',re.sub(r'<span[^>]*>|</span>','',html))
 
-    def test_meaningful_fills_constraints_and_message_line_pairs_are_retained(self):
-        self.assertIn('background:#ed7d31',tables()['03-p073-table01']['html'])
-        self.assertIn('background:#fbe4d5',tables()['03-p067-table03']['html'])
+    def test_modern_fill_styles_keep_constraints_and_message_line_pairs(self):
+        for table in tables().values():
+            self.assertNotIn('background:',table['html'])
+        self.assertIn('color:#334155',tables()['03-p073-table01']['html'])
         self.assertIn('PRIMARY KEY<br>AUTO_INCREMENT',tables()['03-p073-table01']['html'])
         self.assertIn('<br>',tables()['ex04-p034-table01']['html'])
         comparison=tables()['03-p069-table01']['html']
@@ -127,6 +128,21 @@ class TablePdfTests(unittest.TestCase):
                 lines=[''.join(span['text'] for span in line['spans'])
                        for block in pdf[0].get_text('dict')['blocks'] for line in block.get('lines',[])]
                 self.assertEqual(lines.count('category_id'),1)
+
+    def test_modern_pdf_palette_keeps_the_meaningful_red_emphasis(self):
+        vivid={(237,125,49),(251,228,213),(255,255,0),(255,192,0)}
+        header=(234,240,246)
+        for ident,parts in self.rendered.items():
+            with self.subTest(table=ident),fitz.open(parts[0]['pdf']) as pdf:
+                fills={tuple(round(channel*255) for channel in drawing['fill'])
+                       for drawing in pdf[0].get_drawings() if drawing['fill']}
+                self.assertFalse(vivid & fills)
+                if tables()[ident]['node']['has_header']:
+                    self.assertIn(header,fills)
+                if ident in {'03-p069-table01','ex04-p036-table01'}:
+                    colors={span['color'] for block in pdf[0].get_text('dict')['blocks']
+                            for line in block.get('lines',[]) for span in line['spans']}
+                    self.assertIn(0xff0000,colors)
 
 
 if __name__=='__main__':

@@ -17,6 +17,7 @@ CATALOG = ROOT / 'docs/textbook/illustrations.json'
 APPROVED_EDITION = 'f16135f3cebb2e2f9ab481e9cfead35b05bd52d4'
 FIGURE_REVISION_EDITION = '96a99882326d65ec048100b2f20fa0ed4aaa72d2'
 REVIEW_EDITION = 'ac012ddc04163641c9fa3c865b11b00b0b6307d6'
+SPACING_EDITION = '380e36fb9b1aae65f4f82405ab39f669e4c2f083'
 DI_INTRO = 'illustration-figure-cards-2026-di-remote-intro'
 MANAGED = 'illustration-expansion-2026-boot-managed-versions'
 BEAN = 'illustration-expansion-2026-bean-auto-configuration'
@@ -59,11 +60,15 @@ def edition_json(relative, base=REVIEW_EDITION):
     return json.loads(result.stdout)
 
 
+def edition_chapter(name, edition):
+    nodes, figures, pages = base_chapter(name, edition)
+    return (ROOT/'docs/textbook/chapters'/name, nodes, figures, pages,
+            edition_json('docs/textbook/chapters/' + name + '/source.json', edition))
+
+
 def reviewed_chapter(name):
     # 過去の挿絵追加を全原文と照合する検査は、承認済み版で固定する。
-    nodes, figures, pages = base_chapter(name, REVIEW_EDITION)
-    return (chapter(name)[0], nodes, figures, pages,
-            edition_json('docs/textbook/chapters/' + name + '/source.json'))
+    return edition_chapter(name, REVIEW_EDITION)
 
 
 def image_size(record):
@@ -276,7 +281,8 @@ class IllustrationSourceTests(unittest.TestCase):
             capture_output=True, encoding='utf-8').stdout.splitlines()
         self.assertTrue(set(changed_assets).issubset(allowed_assets), changed_assets)
 
-    def test_only_requested_content_changes_follow_the_reviewed_edition(self):
+    def test_only_requested_content_changes_reached_the_approved_review_edition(self):
+        data = edition_json('docs/textbook/illustrations.json', SPACING_EDITION)
         removed = {'02': {'p060-b09', 'p060-b10', 'p060-b11'},
             '03': {'p071-b06', 'p071-b07', 'p071-b08', REPOSITORY, REPOSITORY+'-caption'}}
         added = {'02': {'revision-login3-instruction'}, '03': {EACH, EACH+'-caption'}}
@@ -286,9 +292,9 @@ class IllustrationSourceTests(unittest.TestCase):
                    '03': codes | {'p071-b05'}, 'ex04': {'p036-table01'}}
         annotations = {'Spring Controller で', 'model に格納した', 'キー名を右に。', '左は任意の変数名'}
         count = 0
-        for name in catalog()['reviewed_chapters']:
+        for name in data['reviewed_chapters']:
             _, old_nodes, old_figures, old_pages, old_config = reviewed_chapter(name)
-            folder, nodes, figures, pages, config = chapter(name)
+            folder, nodes, figures, pages, config = edition_chapter(name, SPACING_EDITION)
             old_ids, ids = set(old_nodes) | set(old_figures), set(nodes) | set(figures)
             with self.subTest(chapter=name):
                 self.assertEqual(old_ids - ids, removed.get(name, set()))
@@ -303,7 +309,8 @@ class IllustrationSourceTests(unittest.TestCase):
                         self.assertEqual(figures.get(ident), old_figures.get(ident), ident)
                 # 変換対象の外側は、Span・字下げ属性を含むMarkdown全字を保全する。
                 previous = ROOT/'tmp/illustrations-tests/base'/REVIEW_EDITION/(name+'.md')
-                texts = [previous.read_text(encoding='utf-8'), (folder/'chapter.md').read_text(encoding='utf-8')]
+                current = ROOT/'tmp/illustrations-tests/base'/SPACING_EDITION/(name+'.md')
+                texts = [previous.read_text(encoding='utf-8'), current.read_text(encoding='utf-8')]
                 for index, text in enumerate(texts):
                     for ident in removed.get(name, set()) | added.get(name, set()) | changed.get(name, set()):
                         pattern = (r'^::: \{#'+re.escape(ident)+r'\b[^\n]*\}\n.*?^:::\n\n'
@@ -356,10 +363,10 @@ class IllustrationSourceTests(unittest.TestCase):
             count += len(ids)
         self.assertEqual(count, 2940)
         previous = edition_json('docs/textbook/illustrations.json')
-        self.assertEqual({k:v for k,v in catalog().items() if k != 'new'},
+        self.assertEqual({k:v for k,v in data.items() if k != 'new'},
                          {k:v for k,v in previous.items() if k != 'new'})
         old_records = {r['figure_id']: r for r in previous['new']}
-        records = {r['figure_id']: r for r in catalog()['new']}
+        records = {r['figure_id']: r for r in data['new']}
         self.assertEqual(set(old_records)-set(records), {REPOSITORY})
         self.assertEqual(set(records)-set(old_records), {EACH})
         for ident in set(old_records) & set(records) - {FORM}:
@@ -369,15 +376,67 @@ class IllustrationSourceTests(unittest.TestCase):
             self.assertEqual(records[ident], expected, ident)
         for ident, source, after, before in [(FORM,54,'p054-b03','p054-b04'), (EACH,87,'p087-b07','p088-b01')]:
             self.assertEqual([records[ident][k] for k in ('source_page','after_id','before_id')], [source,after,before])
-        paths = ['docs/textbook/chapters/'+name+'/assets' for name in catalog()['reviewed_chapters']]
+        paths = ['docs/textbook/chapters/'+name+'/assets' for name in data['reviewed_chapters']]
         command = ['git','-c','safe.directory='+ROOT.as_posix()]
-        changed_assets = subprocess.run(command+['diff','--name-only','--no-renames',REVIEW_EDITION,'--',*paths],
+        changed_assets = subprocess.run(command+['diff','--name-only','--no-renames',REVIEW_EDITION,SPACING_EDITION,'--',*paths],
             cwd=ROOT,check=True,capture_output=True,encoding='utf-8').stdout.splitlines()
-        new_assets = subprocess.run(command+['ls-files','--others','--exclude-standard','--',*paths],
-            cwd=ROOT,check=True,capture_output=True,encoding='utf-8').stdout.splitlines()
-        self.assertEqual(set(changed_assets+new_assets), {REMOVED_REPOSITORY_ASSET,
+        self.assertEqual(set(changed_assets), {REMOVED_REPOSITORY_ASSET,
             'docs/textbook/chapters/02/assets/revision-ill-form-name-binding.png',
             'docs/textbook/chapters/03/assets/revision-ill-each-variable-key.png'})
+
+    def test_only_requested_prose_and_spacing_changes_follow_the_review_edition(self):
+        review = ROOT/'output/verification/spacing-v5-2026'
+        prose = json.loads((review/'prose/prose-changes.json').read_text(encoding='utf-8'))
+        spacing = json.loads((review/'heading-spacing-plan.json').read_text(encoding='utf-8'))
+        changes = {(r['chapter'],r['id']):r for r in prose['changes']}
+        self.assertEqual(set(changes), {('02','p052-b07'),('02','p058-b01'),('02','p059-b06'),('02','p059-b10'),
+            ('03','p069-b01'),('03','p078-b01'),('ex02','p015-b03'),('ex02','p015-b06'),('ex02','p015-b10'),('ex03','p020-b10')})
+        accepted = {r['chapter']:r['accepted'] for r in spacing['chapters']}
+        self.assertEqual(catalog(), edition_json('docs/textbook/illustrations.json', SPACING_EDITION))
+        count, immutable = 0, ['docs/textbook/illustrations.json','tools/textbook/code_explanations.json','tools/textbook/filename_labels.json']
+        for name in catalog()['reviewed_chapters']:
+            folder, old_nodes, old_figures, old_pages, old_config = edition_chapter(name, SPACING_EDITION)
+            _, nodes, figures, pages, config = chapter(name)
+            with self.subTest(chapter=name):
+                self.assertEqual(set(nodes),set(old_nodes))
+                self.assertEqual(figures,old_figures)
+                self.assertEqual(pages,old_pages)
+                for ident,node in old_nodes.items():
+                    change=changes.get((name,ident))
+                    if change is None:
+                        self.assertEqual(nodes[ident],node,ident)
+                    else:
+                        self.assertEqual(node['text'],change['before'],ident)
+                        self.assertEqual(nodes[ident]['text'],change['after'],ident)
+                        self.assertEqual(json.loads(json.dumps(node['parts'])),change['before_parts'],ident)
+                        self.assertEqual(json.loads(json.dumps(nodes[ident]['parts'])),change['after_parts'],ident)
+                        self.assertEqual({k:v for k,v in node.items() if k not in {'parts','text'}},
+                                         {k:v for k,v in nodes[ident].items() if k not in {'parts','text'}},ident)
+                old_path=ROOT/'tmp/illustrations-tests/base'/SPACING_EDITION/(name+'.md')
+                texts=[old_path.read_text(encoding='utf-8'),(folder/'chapter.md').read_text(encoding='utf-8')]
+                for index,text in enumerate(texts):
+                    for chapter_name,ident in changes:
+                        if chapter_name==name:
+                            text=re.sub(r'^::: \{#'+re.escape(ident)+r'\b[^\n]*\}\n.*?^:::\n\n','',text,flags=re.M|re.S)
+                    texts[index]=text
+                self.assertEqual(texts[0],texts[1],name)
+                expected=json.loads(json.dumps(old_config))
+                if name=='02':
+                    expected['pagination']['continue_before'].update({'51':'short-minor-heading','61':'short-minor-heading'})
+                if accepted[name]:
+                    expected['typography']={'minor_heading_extra_space':accepted[name]}
+                self.assertEqual(config,expected,name)
+            count+=len(nodes)+len(figures)
+            prefix='docs/textbook/chapters/'+name+'/'
+            immutable += [prefix+'baseline.md',prefix+'source-layout.json',prefix+'assets']
+        self.assertEqual(count,2940)
+        command=['git','-c','safe.directory='+ROOT.as_posix()]
+        changed=subprocess.run(command+['diff','--name-only','--no-renames',SPACING_EDITION,'--',*immutable],
+            cwd=ROOT,check=True,capture_output=True,encoding='utf-8').stdout
+        self.assertFalse(changed,changed)
+        new_assets=subprocess.run(command+['ls-files','--others','--exclude-standard','--',
+            *[p for p in immutable if p.endswith('/assets')]],cwd=ROOT,check=True,capture_output=True,encoding='utf-8').stdout
+        self.assertFalse(new_assets,new_assets)
 
 
 class IllustrationPdfTests(unittest.TestCase):

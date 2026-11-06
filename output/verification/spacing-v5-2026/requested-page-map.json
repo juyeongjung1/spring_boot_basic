@@ -1,0 +1,79 @@
+[
+  {
+    "label": "55p 作業手順③を前頁へ",
+    "chapter": "02",
+    "id": "p051-b01",
+    "collection": "textbook",
+    "page": 54
+  },
+  {
+    "label": "57p 入力例を改行",
+    "chapter": "02",
+    "id": "p052-b07",
+    "collection": "textbook",
+    "page": 56
+  },
+  {
+    "label": "65p 手順①へリセット",
+    "chapter": "02",
+    "id": "p058-b01",
+    "collection": "textbook",
+    "page": 64
+  },
+  {
+    "label": "次の手順②",
+    "chapter": "02",
+    "id": "p059-b10",
+    "collection": "textbook",
+    "page": 66
+  },
+  {
+    "label": "66p 既習のサーブレットとの接続",
+    "chapter": "02",
+    "id": "p059-b06",
+    "collection": "textbook",
+    "page": 65
+  },
+  {
+    "label": "69p後へ70pの動作確認",
+    "chapter": "02",
+    "id": "p061-b01",
+    "collection": "textbook",
+    "page": 68
+  },
+  {
+    "label": "76p 表の新デザイン",
+    "chapter": "03",
+    "id": "p067-table03",
+    "collection": "textbook",
+    "page": 74
+  },
+  {
+    "label": "79p 比較表と自然なまとめ文",
+    "chapter": "03",
+    "id": "p069-b01",
+    "collection": "textbook",
+    "page": 77
+  },
+  {
+    "label": "3.3節 手順①へリセット",
+    "chapter": "03",
+    "id": "p078-b01",
+    "collection": "textbook",
+    "page": 89
+  },
+  {
+    "label": "演習2の参照番号",
+    "chapter": "ex02",
+    "id": "p015-b03",
+    "collection": "exercise",
+    "page": 15
+  },
+  {
+    "label": "演習3の参照番号",
+    "chapter": "ex03",
+    "id": "p020-b10",
+    "collection": "exercise",
+    "page": 20
+  }
+]

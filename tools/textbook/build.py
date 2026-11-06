@@ -285,6 +285,9 @@ def pagination_options(config, layout, nodes, figures, order):
 
 def flow_layout(folder, config, layout, nodes, figures, order, modern=None):
     page_continuations, paragraph_pairs, figure_scales = pagination_options(config, layout, nodes, figures, order)
+    spaced_headings = set(config.get('typography', {}).get('minor_heading_extra_space', []))
+    if any(ident not in nodes or nodes[ident]['kind'] != 'heading' for ident in spaced_headings):
+        raise ValueError('小小見出しの余白指定に対応する見出しがありません')
     numbered = figure_numbers(config, layout, nodes, figures, order)
     has_cover=config.get('cover_mode','classic')!='none'
     furniture_condition='here().page() > 1' if has_cover else 'true'
@@ -639,6 +642,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if method is None:
             raise ValueError(f'未対応のブロック種類: {node["kind"]}')
         options = ', above: 0pt' if method == 'section-heading' and ident in slide_body_first else ''
+        if ident in spaced_headings and ident not in slide_body_first:
+            options = ', above: 36pt'
         # 見出しに分類された説明文の続き（句点終わり）は、原本の通常書体を保つ。
         heading = node['kind'] == 'heading' and not node['text'].rstrip().endswith('。')
         return f'#{method}({q(ident)}, [{inline(node["parts"], heading=heading)}]{options})'
@@ -732,6 +737,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 body = "\n".join(render(e) for e in entries[i:end + 1])
                 # 枠の先頭にある子見出しの上余白は相殺されるため、外側で確保する。
                 above = 0 if ident in slide_body_first else (18 if nodes[ident]['kind'] == 'heading' else 8)
+                if ident in spaced_headings and ident not in slide_body_first:
+                    above += 18
                 commands.append(f'#instruction({q("instruction-" + ident)}, above: {above}pt)[{body}]')
                 i = end + 1
                 continue

@@ -296,5 +296,16 @@
       "has_header": true,
       "page": 62
     }
-  ]
+  ],
+  "typography": {
+    "minor_heading_extra_space": [
+      "p049-b08",
+      "p049-b10",
+      "p049-b11",
+      "p055-b04",
+      "p057-b02",
+      "p061-b10",
+      "p062-b02"
+    ]
+  }
 }

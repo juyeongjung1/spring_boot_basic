@@ -1,0 +1,2910 @@
+{
+  "passed": true,
+  "extra_space_pt": 18,
+  "chapters": [
+    {
+      "chapter": "front",
+      "baseline_pages": 14,
+      "pages": 14,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "attempts": [],
+      "positions": [],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "01",
+      "baseline_pages": 18,
+      "pages": 18,
+      "candidates": [
+        "p018-b06",
+        "p025-b02"
+      ],
+      "accepted": [
+        "p018-b06",
+        "p025-b02"
+      ],
+      "excluded": [
+        {
+          "id": "p018-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p019-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p020-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p021-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p024-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p028-b01",
+          "reason": "ページ先頭"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p018-b06",
+          "accepted": true,
+          "page": 5,
+          "changed_pages": []
+        },
+        {
+          "id": "p025-b02",
+          "accepted": true,
+          "page": 13,
+          "changed_pages": []
+        }
+      ],
+      "positions": [
+        {
+          "id": "p018-b06",
+          "before_y": 262.14263645726055,
+          "after_y": 280.14263645726055,
+          "page": 5
+        },
+        {
+          "id": "p025-b02",
+          "before_y": 169.04000000000002,
+          "after_y": 187.04000000000002,
+          "page": 13
+        }
+      ],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "02",
+      "baseline_pages": 37,
+      "pages": 37,
+      "candidates": [
+        "p034-b05",
+        "p035-b04",
+        "p036-b02",
+        "p038-b06",
+        "p039-b02",
+        "p041-b05",
+        "p043-b04",
+        "p043-b08",
+        "p044-b03",
+        "p047-b02",
+        "p048-b01",
+        "p049-b02",
+        "p051-b01"
+      ],
+      "accepted": [
+        "p034-b05",
+        "p035-b04",
+        "p036-b02",
+        "p038-b06",
+        "p039-b02",
+        "p041-b05",
+        "p043-b04",
+        "p043-b08",
+        "p044-b03",
+        "p047-b02",
+        "p048-b01",
+        "p049-b02",
+        "p051-b01"
+      ],
+      "excluded": [
+        {
+          "id": "p034-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p037-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p038-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p040-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p041-b02",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p042-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p045-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p046-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p052-b05",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p053-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p053-b04",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p055-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p056-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p056-b09",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p058-b01",
+          "reason": "ページ先頭"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p034-b05",
+          "accepted": true,
+          "page": 4,
+          "changed_pages": []
+        },
+        {
+          "id": "p035-b04",
+          "accepted": true,
+          "page": 5,
+          "changed_pages": []
+        },
+        {
+          "id": "p036-b02",
+          "accepted": true,
+          "page": 6,
+          "changed_pages": []
+        },
+        {
+          "id": "p038-b06",
+          "accepted": true,
+          "page": 8,
+          "changed_pages": []
+        },
+        {
+          "id": "p039-b02",
+          "accepted": true,
+          "page": 9,
+          "changed_pages": []
+        },
+        {
+          "id": "p041-b05",
+          "accepted": true,
+          "page": 11,
+          "changed_pages": []
+        },
+        {
+          "id": "p043-b04",
+          "accepted": true,
+          "page": 13,
+          "changed_pages": []
+        },
+        {
+          "id": "p043-b08",
+          "accepted": true,
+          "page": 14,
+          "changed_pages": []
+        },
+        {
+          "id": "p044-b03",
+          "accepted": true,
+          "page": 14,
+          "changed_pages": []
+        },
+        {
+          "id": "p047-b02",
+          "accepted": true,
+          "page": 18,
+          "changed_pages": []
+        },
+        {
+          "id": "p048-b01",
+          "accepted": true,
+          "page": 19,
+          "changed_pages": []
+        },
+        {
+          "id": "p049-b02",
+          "accepted": true,
+          "page": 20,
+          "changed_pages": []
+        },
+        {
+          "id": "p051-b01",
+          "accepted": true,
+          "page": 22,
+          "changed_pages": []
+        }
+      ],
+      "positions": [
+        {
+          "id": "p034-b05",
+          "before_y": 602.8419714355468,
+          "after_y": 620.8419714355468,
+          "page": 4
+        },
+        {
+          "id": "p035-b04",
+          "before_y": 442.14263645726055,
+          "after_y": 460.14263645726055,
+          "page": 5
+        },
+        {
+          "id": "p036-b02",
+          "before_y": 435.8019714355469,
+          "after_y": 435.8019714355469,
+          "page": 6
+        },
+        {
+          "id": "p038-b06",
+          "before_y": 590.8419714355468,
+          "after_y": 608.8419714355468,
+          "page": 8
+        },
+        {
+          "id": "p039-b02",
+          "before_y": 435.8019714355469,
+          "after_y": 435.8019714355469,
+          "page": 9
+        },
+        {
+          "id": "p041-b05",
+          "before_y": 405.68715625000004,
+          "after_y": 423.68715625000004,
+          "page": 11
+        },
+        {
+          "id": "p043-b04",
+          "before_y": 333.86600000000004,
+          "after_y": 351.86600000000004,
+          "page": 13
+        },
+        {
+          "id": "p043-b08",
+          "before_y": 249.7399480401498,
+          "after_y": 267.7399480401498,
+          "page": 14
+        },
+        {
+          "id": "p044-b03",
+          "before_y": 467.47992981766174,
+          "after_y": 503.47992981766174,
+          "page": 14
+        },
+        {
+          "id": "p047-b02",
+          "before_y": 435.8019714355469,
+          "after_y": 435.8019714355469,
+          "page": 18
+        },
+        {
+          "id": "p048-b01",
+          "before_y": 151.87015624999998,
+          "after_y": 169.87015624999998,
+          "page": 19
+        },
+        {
+          "id": "p049-b02",
+          "before_y": 229.04000000000002,
+          "after_y": 247.04000000000002,
+          "page": 20
+        },
+        {
+          "id": "p051-b01",
+          "before_y": 151.04000000000002,
+          "after_y": 169.04000000000002,
+          "page": 22
+        }
+      ],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "03",
+      "baseline_pages": 85,
+      "pages": 85,
+      "candidates": [
+        "p067-b04",
+        "p071-b01",
+        "p073-b04",
+        "p081-b05",
+        "p082-b04",
+        "p089-b02",
+        "p094-b05",
+        "p098-b01",
+        "p102-b01",
+        "p111-b04",
+        "p115-b04",
+        "p121-b02",
+        "p123-b05",
+        "p124-b03",
+        "p125-b04"
+      ],
+      "accepted": [
+        "p067-b04",
+        "p073-b04",
+        "p089-b02",
+        "p098-b01",
+        "p102-b01",
+        "p115-b04",
+        "p121-b02",
+        "p123-b05",
+        "p125-b04"
+      ],
+      "excluded": [
+        {
+          "id": "p066-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p067-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p068-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p070-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p072-b02",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p073-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p077-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p078-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p079-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p085-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p087-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p089-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p091-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p095-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p099-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p104-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p105-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p106-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p113-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p114-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p120-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p126-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p130-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p071-b01",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p081-b05",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p082-b04",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p094-b05",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p111-b04",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p124-b03",
+          "reason": "余白を加えると改ページ位置が変わる"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p067-b04",
+          "accepted": true,
+          "page": 5,
+          "changed_pages": []
+        },
+        {
+          "id": "p071-b01",
+          "accepted": false,
+          "page": 10,
+          "changed_pages": [
+            {
+              "id": "p071-b04",
+              "edge": "start",
+              "before": 10,
+              "after": 11
+            },
+            {
+              "id": "p071-b04",
+              "edge": "end",
+              "before": 10,
+              "after": 11
+            }
+          ]
+        },
+        {
+          "id": "p073-b04",
+          "accepted": true,
+          "page": 14,
+          "changed_pages": []
+        },
+        {
+          "id": "p081-b05",
+          "accepted": false,
+          "page": 25,
+          "changed_pages": [
+            {
+              "id": "figure-frame-p081-f16",
+              "edge": "start",
+              "before": 25,
+              "after": 26
+            },
+            {
+              "id": "figure-number-p081-f16",
+              "edge": "start",
+              "before": 25,
+              "after": 26
+            },
+            {
+              "id": "figure-number-p081-f16",
+              "edge": "end",
+              "before": 25,
+              "after": 26
+            },
+            {
+              "id": "p081-f16",
+              "edge": "start",
+              "before": 25,
+              "after": 26
+            },
+            {
+              "id": "p081-f16",
+              "edge": "end",
+              "before": 25,
+              "after": 26
+            },
+            {
+              "id": "figure-frame-p081-f16",
+              "edge": "end",
+              "before": 25,
+              "after": 26
+            },
+            {
+              "id": "__source-page-82",
+              "edge": "source-page",
+              "before": 26,
+              "after": 27
+            },
+            {
+              "id": "p082-b01",
+              "edge": "start",
+              "before": 26,
+              "after": 27
+            },
+            {
+              "id": "p082-b01",
+              "edge": "end",
+              "before": 26,
+              "after": 27
+            },
+            {
+              "id": "p082-f17",
+              "edge": "start",
+              "before": 26,
+              "after": 27
+            },
+            {
+              "id": "p082-f17",
+              "edge": "end",
+              "before": 26,
+              "after": 27
+            },
+            {
+              "id": "p082-b02",
+              "edge": "start",
+              "before": 26,
+              "after": 27
+            }
+          ]
+        },
+        {
+          "id": "p082-b04",
+          "accepted": false,
+          "page": 26,
+          "changed_pages": [
+            {
+              "id": "03-p082-b06-part1",
+              "edge": "html-component",
+              "before": 26,
+              "after": 27
+            },
+            {
+              "id": "p082-b06",
+              "edge": "short-code",
+              "before": 26,
+              "after": 27
+            },
+            {
+              "id": "p082-b06",
+              "edge": "start",
+              "before": 26,
+              "after": 27
+            },
+            {
+              "id": "p082-b06",
+              "edge": "end",
+              "before": 26,
+              "after": 27
+            },
+            {
+              "id": "__source-page-83",
+              "edge": "source-page",
+              "before": 27,
+              "after": 28
+            },
+            {
+              "id": "03-p083-b01-part1",
+              "edge": "html-component",
+              "before": 27,
+              "after": 28
+            },
+            {
+              "id": "p083-b01",
+              "edge": "short-code",
+              "before": 27,
+              "after": 28
+            },
+            {
+              "id": "p083-b01",
+              "edge": "start",
+              "before": 27,
+              "after": 28
+            },
+            {
+              "id": "p083-b01",
+              "edge": "end",
+              "before": 27,
+              "after": 28
+            },
+            {
+              "id": "p083-b02",
+              "edge": "start",
+              "before": 27,
+              "after": 28
+            },
+            {
+              "id": "p083-b02",
+              "edge": "end",
+              "before": 27,
+              "after": 28
+            },
+            {
+              "id": "p083-b03",
+              "edge": "start",
+              "before": 27,
+              "after": 28
+            }
+          ]
+        },
+        {
+          "id": "p089-b02",
+          "accepted": true,
+          "page": 35,
+          "changed_pages": []
+        },
+        {
+          "id": "p094-b05",
+          "accepted": false,
+          "page": 41,
+          "changed_pages": [
+            {
+              "id": "p094-b08",
+              "edge": "start",
+              "before": 41,
+              "after": 42
+            },
+            {
+              "id": "p094-b08",
+              "edge": "end",
+              "before": 41,
+              "after": 42
+            },
+            {
+              "id": "__source-page-95",
+              "edge": "source-page",
+              "before": 42,
+              "after": 43
+            },
+            {
+              "id": "p095-b01",
+              "edge": "start",
+              "before": 42,
+              "after": 43
+            },
+            {
+              "id": "p095-b01",
+              "edge": "end",
+              "before": 42,
+              "after": 43
+            },
+            {
+              "id": "p095-f30",
+              "edge": "start",
+              "before": 42,
+              "after": 43
+            },
+            {
+              "id": "p095-f30",
+              "edge": "end",
+              "before": 42,
+              "after": 43
+            },
+            {
+              "id": "p095-b02",
+              "edge": "heading",
+              "before": 42,
+              "after": 43
+            },
+            {
+              "id": "p095-b03",
+              "edge": "start",
+              "before": 42,
+              "after": 43
+            },
+            {
+              "id": "p095-b03",
+              "edge": "end",
+              "before": 42,
+              "after": 43
+            },
+            {
+              "id": "p095-b04",
+              "edge": "start",
+              "before": 42,
+              "after": 43
+            },
+            {
+              "id": "p095-b04",
+              "edge": "end",
+              "before": 42,
+              "after": 43
+            }
+          ]
+        },
+        {
+          "id": "p098-b01",
+          "accepted": true,
+          "page": 45,
+          "changed_pages": []
+        },
+        {
+          "id": "p102-b01",
+          "accepted": true,
+          "page": 50,
+          "changed_pages": []
+        },
+        {
+          "id": "p111-b04",
+          "accepted": false,
+          "page": 61,
+          "changed_pages": [
+            {
+              "id": "instruction-p111-b04",
+              "edge": "start",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "p111-b04",
+              "edge": "heading",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "p111-b05",
+              "edge": "start",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "p111-b05",
+              "edge": "end",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "figure-frame-p111-f46",
+              "edge": "start",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "figure-number-p111-f46",
+              "edge": "start",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "figure-number-p111-f46",
+              "edge": "end",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "p111-f46",
+              "edge": "start",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "p111-f46",
+              "edge": "end",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "figure-frame-p111-f46",
+              "edge": "end",
+              "before": 61,
+              "after": 62
+            },
+            {
+              "id": "instruction-p111-b04",
+              "edge": "end",
+              "before": 61,
+              "after": 62
+            }
+          ]
+        },
+        {
+          "id": "p115-b04",
+          "accepted": true,
+          "page": 66,
+          "changed_pages": []
+        },
+        {
+          "id": "p121-b02",
+          "accepted": true,
+          "page": 72,
+          "changed_pages": []
+        },
+        {
+          "id": "p123-b05",
+          "accepted": true,
+          "page": 74,
+          "changed_pages": []
+        },
+        {
+          "id": "p124-b03",
+          "accepted": false,
+          "page": 75,
+          "changed_pages": [
+            {
+              "id": "p124-b06",
+              "edge": "start",
+              "before": 75,
+              "after": 76
+            },
+            {
+              "id": "p124-b06",
+              "edge": "end",
+              "before": 75,
+              "after": 76
+            }
+          ]
+        },
+        {
+          "id": "p125-b04",
+          "accepted": true,
+          "page": 77,
+          "changed_pages": []
+        }
+      ],
+      "positions": [
+        {
+          "id": "p067-b04",
+          "before_y": 283.79,
+          "after_y": 301.79,
+          "page": 5
+        },
+        {
+          "id": "p073-b04",
+          "before_y": 295.80029169897375,
+          "after_y": 313.80029169897375,
+          "page": 14
+        },
+        {
+          "id": "p089-b02",
+          "before_y": 116.0,
+          "after_y": 134.0,
+          "page": 35
+        },
+        {
+          "id": "p098-b01",
+          "before_y": 371.106,
+          "after_y": 389.106,
+          "page": 45
+        },
+        {
+          "id": "p102-b01",
+          "before_y": 181.04000000000002,
+          "after_y": 199.04000000000002,
+          "page": 50
+        },
+        {
+          "id": "p115-b04",
+          "before_y": 610.9399645193936,
+          "after_y": 628.9399645193936,
+          "page": 66
+        },
+        {
+          "id": "p121-b02",
+          "before_y": 314.5400063281691,
+          "after_y": 332.5400063281691,
+          "page": 72
+        },
+        {
+          "id": "p123-b05",
+          "before_y": 434.6299891548056,
+          "after_y": 452.6299891548056,
+          "page": 74
+        },
+        {
+          "id": "p125-b04",
+          "before_y": 562.1466284179687,
+          "after_y": 580.1466284179687,
+          "page": 77
+        }
+      ],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "04",
+      "baseline_pages": 39,
+      "pages": 39,
+      "candidates": [
+        "p137-b01",
+        "p138-b05",
+        "p139-b05",
+        "p141-b02",
+        "p144-b01",
+        "p149-b04",
+        "p151-b05",
+        "p160-b01",
+        "revision-messages-title"
+      ],
+      "accepted": [
+        "p137-b01",
+        "p138-b05",
+        "p141-b02",
+        "p144-b01",
+        "p149-b04",
+        "p151-b05",
+        "p160-b01",
+        "revision-messages-title"
+      ],
+      "excluded": [
+        {
+          "id": "p139-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p141-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p143-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p145-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p146-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p149-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p150-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p153-b08",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p155-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p161-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p139-b05",
+          "reason": "余白を加えると改ページ位置が変わる"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p137-b01",
+          "accepted": true,
+          "page": 5,
+          "changed_pages": []
+        },
+        {
+          "id": "p138-b05",
+          "accepted": true,
+          "page": 7,
+          "changed_pages": []
+        },
+        {
+          "id": "p139-b05",
+          "accepted": false,
+          "page": 8,
+          "changed_pages": [
+            {
+              "id": "p139-b08",
+              "edge": "end",
+              "before": 8,
+              "after": 9
+            },
+            {
+              "id": "__source-page-140",
+              "edge": "source-page",
+              "before": 9,
+              "after": 10
+            },
+            {
+              "id": "p140-b01",
+              "edge": "heading",
+              "before": 9,
+              "after": 10
+            },
+            {
+              "id": "04-p140-b03-part1",
+              "edge": "html-component",
+              "before": 9,
+              "after": 10
+            },
+            {
+              "id": "p140-b02",
+              "edge": "heading",
+              "before": 9,
+              "after": 10
+            },
+            {
+              "id": "p140-b03",
+              "edge": "short-code",
+              "before": 9,
+              "after": 10
+            },
+            {
+              "id": "p140-b03",
+              "edge": "start",
+              "before": 9,
+              "after": 10
+            },
+            {
+              "id": "p140-b03",
+              "edge": "end",
+              "before": 9,
+              "after": 10
+            },
+            {
+              "id": "04-explanation-2-part1",
+              "edge": "html-component",
+              "before": 10,
+              "after": 11
+            },
+            {
+              "id": "p140-b04",
+              "edge": "start",
+              "before": 10,
+              "after": 11
+            },
+            {
+              "id": "p140-b04",
+              "edge": "end",
+              "before": 10,
+              "after": 11
+            },
+            {
+              "id": "p140-b05",
+              "edge": "start",
+              "before": 10,
+              "after": 11
+            }
+          ]
+        },
+        {
+          "id": "p141-b02",
+          "accepted": true,
+          "page": 11,
+          "changed_pages": []
+        },
+        {
+          "id": "p144-b01",
+          "accepted": true,
+          "page": 14,
+          "changed_pages": []
+        },
+        {
+          "id": "p149-b04",
+          "accepted": true,
+          "page": 20,
+          "changed_pages": []
+        },
+        {
+          "id": "p151-b05",
+          "accepted": true,
+          "page": 23,
+          "changed_pages": []
+        },
+        {
+          "id": "p160-b01",
+          "accepted": true,
+          "page": 35,
+          "changed_pages": []
+        },
+        {
+          "id": "revision-messages-title",
+          "accepted": true,
+          "page": 37,
+          "changed_pages": []
+        }
+      ],
+      "positions": [
+        {
+          "id": "p137-b01",
+          "before_y": 235.04000000000002,
+          "after_y": 253.04000000000002,
+          "page": 5
+        },
+        {
+          "id": "p138-b05",
+          "before_y": 407.353,
+          "after_y": 425.353,
+          "page": 7
+        },
+        {
+          "id": "p141-b02",
+          "before_y": 116.0,
+          "after_y": 134.0,
+          "page": 11
+        },
+        {
+          "id": "p144-b01",
+          "before_y": 285.18263645726057,
+          "after_y": 303.18263645726057,
+          "page": 14
+        },
+        {
+          "id": "p149-b04",
+          "before_y": 500.376,
+          "after_y": 518.3760000000001,
+          "page": 20
+        },
+        {
+          "id": "p151-b05",
+          "before_y": 298.826,
+          "after_y": 316.826,
+          "page": 23
+        },
+        {
+          "id": "p160-b01",
+          "before_y": 115.04,
+          "after_y": 133.04000000000002,
+          "page": 35
+        },
+        {
+          "id": "revision-messages-title",
+          "before_y": 94.0,
+          "after_y": 94.0,
+          "page": 37
+        }
+      ],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "05",
+      "baseline_pages": 33,
+      "pages": 33,
+      "candidates": [
+        "p168-b08",
+        "p176-b02",
+        "p179-b05",
+        "p179-b09",
+        "p182-b01",
+        "p182-b03"
+      ],
+      "accepted": [
+        "p168-b08",
+        "p176-b02",
+        "p179-b05",
+        "p182-b01",
+        "p182-b03"
+      ],
+      "excluded": [
+        {
+          "id": "p167-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p168-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p171-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p173-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p175-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p179-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p181-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p187-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p179-b09",
+          "reason": "余白を加えると改ページ位置が変わる"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p168-b08",
+          "accepted": true,
+          "page": 5,
+          "changed_pages": []
+        },
+        {
+          "id": "p176-b02",
+          "accepted": true,
+          "page": 14,
+          "changed_pages": []
+        },
+        {
+          "id": "p179-b05",
+          "accepted": true,
+          "page": 18,
+          "changed_pages": []
+        },
+        {
+          "id": "p179-b09",
+          "accepted": false,
+          "page": 18,
+          "changed_pages": [
+            {
+              "id": "p179-b12",
+              "edge": "start",
+              "before": 18,
+              "after": 19
+            },
+            {
+              "id": "p179-b12",
+              "edge": "end",
+              "before": 18,
+              "after": 19
+            }
+          ]
+        },
+        {
+          "id": "p182-b01",
+          "accepted": true,
+          "page": 21,
+          "changed_pages": []
+        },
+        {
+          "id": "p182-b03",
+          "accepted": true,
+          "page": 21,
+          "changed_pages": []
+        }
+      ],
+      "positions": [
+        {
+          "id": "p168-b08",
+          "before_y": 612.3950000000001,
+          "after_y": 630.3950000000001,
+          "page": 5
+        },
+        {
+          "id": "p176-b02",
+          "before_y": 151.04000000000002,
+          "after_y": 169.04000000000002,
+          "page": 14
+        },
+        {
+          "id": "p179-b05",
+          "before_y": 249.81799999999998,
+          "after_y": 267.818,
+          "page": 18
+        },
+        {
+          "id": "p182-b01",
+          "before_y": 115.04,
+          "after_y": 133.04000000000002,
+          "page": 21
+        },
+        {
+          "id": "p182-b03",
+          "before_y": 456.1799805705465,
+          "after_y": 492.1799805705465,
+          "page": 21
+        }
+      ],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "06",
+      "baseline_pages": 49,
+      "pages": 49,
+      "candidates": [
+        "p196-b05",
+        "p202-b01",
+        "p206-b07",
+        "p206-b09",
+        "p207-b02",
+        "p212-b01",
+        "p212-b02",
+        "p215-b05",
+        "p218-b01",
+        "p221-b02",
+        "p226-b01",
+        "p230-b01",
+        "p231-b01",
+        "p231-b02"
+      ],
+      "accepted": [
+        "p196-b05",
+        "p202-b01",
+        "p206-b07",
+        "p206-b09",
+        "p207-b02",
+        "p212-b01",
+        "p212-b02",
+        "p215-b05",
+        "p221-b02",
+        "p226-b01",
+        "p230-b01"
+      ],
+      "excluded": [
+        {
+          "id": "p196-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p197-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p198-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p199-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p200-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p204-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p205-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p206-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p207-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p209-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p210-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p214-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p221-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p224-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p225-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p228-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p232-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p233-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p218-b01",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p231-b01",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p231-b02",
+          "reason": "余白を加えると改ページ位置が変わる"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p196-b05",
+          "accepted": true,
+          "page": 5,
+          "changed_pages": []
+        },
+        {
+          "id": "p202-b01",
+          "accepted": true,
+          "page": 11,
+          "changed_pages": []
+        },
+        {
+          "id": "p206-b07",
+          "accepted": true,
+          "page": 15,
+          "changed_pages": []
+        },
+        {
+          "id": "p206-b09",
+          "accepted": true,
+          "page": 15,
+          "changed_pages": []
+        },
+        {
+          "id": "p207-b02",
+          "accepted": true,
+          "page": 17,
+          "changed_pages": []
+        },
+        {
+          "id": "p212-b01",
+          "accepted": true,
+          "page": 21,
+          "changed_pages": []
+        },
+        {
+          "id": "p212-b02",
+          "accepted": true,
+          "page": 21,
+          "changed_pages": []
+        },
+        {
+          "id": "p215-b05",
+          "accepted": true,
+          "page": 25,
+          "changed_pages": []
+        },
+        {
+          "id": "p218-b01",
+          "accepted": false,
+          "page": 27,
+          "changed_pages": [
+            {
+              "id": "p218-b08",
+              "edge": "start",
+              "before": 27,
+              "after": 28
+            },
+            {
+              "id": "p218-b08",
+              "edge": "end",
+              "before": 27,
+              "after": 28
+            }
+          ]
+        },
+        {
+          "id": "p221-b02",
+          "accepted": true,
+          "page": 31,
+          "changed_pages": []
+        },
+        {
+          "id": "p226-b01",
+          "accepted": true,
+          "page": 36,
+          "changed_pages": []
+        },
+        {
+          "id": "p230-b01",
+          "accepted": true,
+          "page": 39,
+          "changed_pages": []
+        },
+        {
+          "id": "p231-b01",
+          "accepted": false,
+          "page": 40,
+          "changed_pages": [
+            {
+              "id": "p231-b05",
+              "edge": "start",
+              "before": 40,
+              "after": 41
+            },
+            {
+              "id": "p231-b05",
+              "edge": "end",
+              "before": 40,
+              "after": 41
+            }
+          ]
+        },
+        {
+          "id": "p231-b02",
+          "accepted": false,
+          "page": 40,
+          "changed_pages": [
+            {
+              "id": "p231-b05",
+              "edge": "start",
+              "before": 40,
+              "after": 41
+            },
+            {
+              "id": "p231-b05",
+              "edge": "end",
+              "before": 40,
+              "after": 41
+            }
+          ]
+        }
+      ],
+      "positions": [
+        {
+          "id": "p196-b05",
+          "before_y": 321.08000000000004,
+          "after_y": 339.08000000000004,
+          "page": 5
+        },
+        {
+          "id": "p202-b01",
+          "before_y": 381.18263645726057,
+          "after_y": 399.18263645726057,
+          "page": 11
+        },
+        {
+          "id": "p206-b07",
+          "before_y": 389.24199999999996,
+          "after_y": 407.24199999999996,
+          "page": 15
+        },
+        {
+          "id": "p206-b09",
+          "before_y": 462.20199999999994,
+          "after_y": 498.20199999999994,
+          "page": 15
+        },
+        {
+          "id": "p207-b02",
+          "before_y": 116.0,
+          "after_y": 134.0,
+          "page": 17
+        },
+        {
+          "id": "p212-b01",
+          "before_y": 288.79299999999995,
+          "after_y": 306.79299999999995,
+          "page": 21
+        },
+        {
+          "id": "p212-b02",
+          "before_y": 318.79299999999995,
+          "after_y": 354.79299999999995,
+          "page": 21
+        },
+        {
+          "id": "p215-b05",
+          "before_y": 241.04000000000002,
+          "after_y": 259.04,
+          "page": 25
+        },
+        {
+          "id": "p221-b02",
+          "before_y": 116.0,
+          "after_y": 134.0,
+          "page": 31
+        },
+        {
+          "id": "p226-b01",
+          "before_y": 157.04000000000002,
+          "after_y": 175.04000000000002,
+          "page": 36
+        },
+        {
+          "id": "p230-b01",
+          "before_y": 342.841,
+          "after_y": 360.841,
+          "page": 39
+        }
+      ],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "07",
+      "baseline_pages": 51,
+      "pages": 51,
+      "candidates": [
+        "p246-b06",
+        "p247-b01",
+        "p247-b03",
+        "p264-b02",
+        "p266-b01",
+        "p269-b01",
+        "p272-b03",
+        "p272-b05",
+        "p279-b01"
+      ],
+      "accepted": [
+        "p264-b02",
+        "p266-b01",
+        "p269-b01",
+        "p272-b03",
+        "p272-b05",
+        "p279-b01"
+      ],
+      "excluded": [
+        {
+          "id": "p241-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p242-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p246-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p262-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p265-b02",
+          "reason": "スライド直後の固定間隔"
+        },
+        {
+          "id": "p275-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p277-b04",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p246-b06",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p247-b01",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p247-b03",
+          "reason": "余白を加えると改ページ位置が変わる"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p246-b06",
+          "accepted": false,
+          "page": 10,
+          "changed_pages": [
+            {
+              "id": "p246-b11",
+              "edge": "start",
+              "before": 10,
+              "after": 11
+            },
+            {
+              "id": "p246-b11",
+              "edge": "end",
+              "before": 10,
+              "after": 11
+            },
+            {
+              "id": "07-p247-b09-part1",
+              "edge": "html-component",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b08",
+              "edge": "heading",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b09",
+              "edge": "short-code",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b09",
+              "edge": "start",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b09",
+              "edge": "end",
+              "before": 11,
+              "after": 12
+            }
+          ]
+        },
+        {
+          "id": "p247-b01",
+          "accepted": false,
+          "page": 11,
+          "changed_pages": [
+            {
+              "id": "07-p247-b09-part1",
+              "edge": "html-component",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b08",
+              "edge": "heading",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b09",
+              "edge": "short-code",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b09",
+              "edge": "start",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b09",
+              "edge": "end",
+              "before": 11,
+              "after": 12
+            }
+          ]
+        },
+        {
+          "id": "p247-b03",
+          "accepted": false,
+          "page": 11,
+          "changed_pages": [
+            {
+              "id": "07-p247-b09-part1",
+              "edge": "html-component",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b08",
+              "edge": "heading",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b09",
+              "edge": "short-code",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b09",
+              "edge": "start",
+              "before": 11,
+              "after": 12
+            },
+            {
+              "id": "p247-b09",
+              "edge": "end",
+              "before": 11,
+              "after": 12
+            }
+          ]
+        },
+        {
+          "id": "p264-b02",
+          "accepted": true,
+          "page": 31,
+          "changed_pages": []
+        },
+        {
+          "id": "p266-b01",
+          "accepted": true,
+          "page": 33,
+          "changed_pages": []
+        },
+        {
+          "id": "p269-b01",
+          "accepted": true,
+          "page": 36,
+          "changed_pages": []
+        },
+        {
+          "id": "p272-b03",
+          "accepted": true,
+          "page": 40,
+          "changed_pages": []
+        },
+        {
+          "id": "p272-b05",
+          "accepted": true,
+          "page": 40,
+          "changed_pages": []
+        },
+        {
+          "id": "p279-b01",
+          "accepted": true,
+          "page": 49,
+          "changed_pages": []
+        }
+      ],
+      "positions": [
+        {
+          "id": "p264-b02",
+          "before_y": 308.809,
+          "after_y": 326.809,
+          "page": 31
+        },
+        {
+          "id": "p266-b01",
+          "before_y": 309.18263645726057,
+          "after_y": 327.18263645726057,
+          "page": 33
+        },
+        {
+          "id": "p269-b01",
+          "before_y": 436.6400011164969,
+          "after_y": 454.6400011164969,
+          "page": 36
+        },
+        {
+          "id": "p272-b03",
+          "before_y": 483.3066015625,
+          "after_y": 501.3066015625,
+          "page": 40
+        },
+        {
+          "id": "p272-b05",
+          "before_y": 554.3466015625,
+          "after_y": 590.3466015625,
+          "page": 40
+        },
+        {
+          "id": "p279-b01",
+          "before_y": 246.793,
+          "after_y": 264.79299999999995,
+          "page": 49
+        }
+      ],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "appendix-a",
+      "baseline_pages": 8,
+      "pages": 8,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [
+        {
+          "id": "p284-b04",
+          "reason": "固定配置・コード内ラベル・スライド上段"
+        },
+        {
+          "id": "p284-b05",
+          "reason": "固定配置・コード内ラベル・スライド上段"
+        },
+        {
+          "id": "p284-b06",
+          "reason": "固定配置・コード内ラベル・スライド上段"
+        },
+        {
+          "id": "p284-b07",
+          "reason": "固定配置・コード内ラベル・スライド上段"
+        },
+        {
+          "id": "p286-b02",
+          "reason": "固定配置・コード内ラベル・スライド上段"
+        }
+      ],
+      "attempts": [],
+      "positions": [],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "appendix-b",
+      "baseline_pages": 9,
+      "pages": 9,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "attempts": [],
+      "positions": [],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "ex-front",
+      "baseline_pages": 6,
+      "pages": 6,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "attempts": [],
+      "positions": [],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "ex01",
+      "baseline_pages": 4,
+      "pages": 4,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "attempts": [],
+      "positions": [],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "ex02",
+      "baseline_pages": 6,
+      "pages": 6,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "attempts": [],
+      "positions": [],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "ex03",
+      "baseline_pages": 12,
+      "pages": 12,
+      "candidates": [
+        "p019-b03",
+        "p019-b04",
+        "p019-b05"
+      ],
+      "accepted": [],
+      "excluded": [
+        {
+          "id": "p019-b01",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p019-b03",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p019-b04",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p019-b05",
+          "reason": "余白を加えると改ページ位置が変わる"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p019-b03",
+          "accepted": false,
+          "page": 3,
+          "changed_pages": [
+            {
+              "id": "p019-b05",
+              "edge": "heading",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "ex03-p019-table03-part1",
+              "edge": "html-component",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "p019-table03",
+              "edge": "short-table",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "p019-table03",
+              "edge": "start",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "p019-table03",
+              "edge": "end",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "__source-page-20",
+              "edge": "source-page",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b01",
+              "edge": "heading",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b02",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b02",
+              "edge": "end",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b03",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b03",
+              "edge": "end",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b04",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            }
+          ]
+        },
+        {
+          "id": "p019-b04",
+          "accepted": false,
+          "page": 3,
+          "changed_pages": [
+            {
+              "id": "p019-b05",
+              "edge": "heading",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "ex03-p019-table03-part1",
+              "edge": "html-component",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "p019-table03",
+              "edge": "short-table",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "p019-table03",
+              "edge": "start",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "p019-table03",
+              "edge": "end",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "__source-page-20",
+              "edge": "source-page",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b01",
+              "edge": "heading",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b02",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b02",
+              "edge": "end",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b03",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b03",
+              "edge": "end",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b04",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            }
+          ]
+        },
+        {
+          "id": "p019-b05",
+          "accepted": false,
+          "page": 3,
+          "changed_pages": [
+            {
+              "id": "p019-b05",
+              "edge": "heading",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "ex03-p019-table03-part1",
+              "edge": "html-component",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "p019-table03",
+              "edge": "short-table",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "p019-table03",
+              "edge": "start",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "p019-table03",
+              "edge": "end",
+              "before": 3,
+              "after": 4
+            },
+            {
+              "id": "__source-page-20",
+              "edge": "source-page",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b01",
+              "edge": "heading",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b02",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b02",
+              "edge": "end",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b03",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b03",
+              "edge": "end",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p020-b04",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            }
+          ]
+        }
+      ],
+      "positions": [],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "ex04",
+      "baseline_pages": 8,
+      "pages": 8,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "attempts": [],
+      "positions": [],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "ex05",
+      "baseline_pages": 13,
+      "pages": 13,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "attempts": [],
+      "positions": [],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "ex06",
+      "baseline_pages": 16,
+      "pages": 16,
+      "candidates": [
+        "p049-b08",
+        "p049-b10",
+        "p049-b11",
+        "p050-b01",
+        "p050-b02",
+        "p050-b03",
+        "p055-b04",
+        "p057-b02",
+        "p061-b10",
+        "p062-b02"
+      ],
+      "accepted": [
+        "p049-b08",
+        "p049-b10",
+        "p049-b11",
+        "p055-b04",
+        "p057-b02",
+        "p061-b10",
+        "p062-b02"
+      ],
+      "excluded": [
+        {
+          "id": "p050-b01",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p050-b02",
+          "reason": "余白を加えると改ページ位置が変わる"
+        },
+        {
+          "id": "p050-b03",
+          "reason": "余白を加えると改ページ位置が変わる"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p049-b08",
+          "accepted": true,
+          "page": 3,
+          "changed_pages": []
+        },
+        {
+          "id": "p049-b10",
+          "accepted": true,
+          "page": 3,
+          "changed_pages": []
+        },
+        {
+          "id": "p049-b11",
+          "accepted": true,
+          "page": 3,
+          "changed_pages": []
+        },
+        {
+          "id": "p050-b01",
+          "accepted": false,
+          "page": 4,
+          "changed_pages": [
+            {
+              "id": "p050-b03",
+              "edge": "heading",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "ex06-p050-table04-part1",
+              "edge": "html-component",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p050-table04",
+              "edge": "short-table",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p050-table04",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p050-table04",
+              "edge": "end",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "__source-page-51",
+              "edge": "source-page",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b01",
+              "edge": "heading",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b02",
+              "edge": "heading",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b03",
+              "edge": "start",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b03",
+              "edge": "end",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b04",
+              "edge": "start",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b04",
+              "edge": "end",
+              "before": 5,
+              "after": 6
+            }
+          ]
+        },
+        {
+          "id": "p050-b02",
+          "accepted": false,
+          "page": 4,
+          "changed_pages": [
+            {
+              "id": "p050-b03",
+              "edge": "heading",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "ex06-p050-table04-part1",
+              "edge": "html-component",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p050-table04",
+              "edge": "short-table",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p050-table04",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p050-table04",
+              "edge": "end",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "__source-page-51",
+              "edge": "source-page",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b01",
+              "edge": "heading",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b02",
+              "edge": "heading",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b03",
+              "edge": "start",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b03",
+              "edge": "end",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b04",
+              "edge": "start",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b04",
+              "edge": "end",
+              "before": 5,
+              "after": 6
+            }
+          ]
+        },
+        {
+          "id": "p050-b03",
+          "accepted": false,
+          "page": 4,
+          "changed_pages": [
+            {
+              "id": "p050-b03",
+              "edge": "heading",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "ex06-p050-table04-part1",
+              "edge": "html-component",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p050-table04",
+              "edge": "short-table",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p050-table04",
+              "edge": "start",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "p050-table04",
+              "edge": "end",
+              "before": 4,
+              "after": 5
+            },
+            {
+              "id": "__source-page-51",
+              "edge": "source-page",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b01",
+              "edge": "heading",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b02",
+              "edge": "heading",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b03",
+              "edge": "start",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b03",
+              "edge": "end",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b04",
+              "edge": "start",
+              "before": 5,
+              "after": 6
+            },
+            {
+              "id": "p051-b04",
+              "edge": "end",
+              "before": 5,
+              "after": 6
+            }
+          ]
+        },
+        {
+          "id": "p055-b04",
+          "accepted": true,
+          "page": 9,
+          "changed_pages": []
+        },
+        {
+          "id": "p057-b02",
+          "accepted": true,
+          "page": 11,
+          "changed_pages": []
+        },
+        {
+          "id": "p061-b10",
+          "accepted": true,
+          "page": 15,
+          "changed_pages": []
+        },
+        {
+          "id": "p062-b02",
+          "accepted": true,
+          "page": 16,
+          "changed_pages": []
+        }
+      ],
+      "positions": [
+        {
+          "id": "p049-b08",
+          "before_y": 281.0,
+          "after_y": 299.0,
+          "page": 3
+        },
+        {
+          "id": "p049-b10",
+          "before_y": 352.04,
+          "after_y": 388.04,
+          "page": 3
+        },
+        {
+          "id": "p049-b11",
+          "before_y": 502.79,
+          "after_y": 556.79,
+          "page": 3
+        },
+        {
+          "id": "p055-b04",
+          "before_y": 441.77438135976024,
+          "after_y": 459.77438135976024,
+          "page": 9
+        },
+        {
+          "id": "p057-b02",
+          "before_y": 441.81436036613195,
+          "after_y": 459.81436036613195,
+          "page": 11
+        },
+        {
+          "id": "p061-b10",
+          "before_y": 430.2707812499999,
+          "after_y": 448.2707812499999,
+          "page": 15
+        },
+        {
+          "id": "p062-b02",
+          "before_y": 133.6370703125,
+          "after_y": 151.6370703125,
+          "page": 16
+        }
+      ],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "ex07",
+      "baseline_pages": 13,
+      "pages": 13,
+      "candidates": [
+        "p066-b01",
+        "p067-b07",
+        "p067-b11",
+        "p067-b13",
+        "p068-b02",
+        "p068-b03",
+        "p068-b06",
+        "p069-b01",
+        "p069-b04",
+        "p069-b07",
+        "p073-b05",
+        "p073-b10",
+        "p075-b08",
+        "p076-b05",
+        "p076-b08"
+      ],
+      "accepted": [
+        "p066-b01",
+        "p067-b07",
+        "p067-b11",
+        "p067-b13",
+        "p068-b02",
+        "p068-b03",
+        "p068-b06",
+        "p069-b01",
+        "p069-b04",
+        "p069-b07",
+        "p073-b05",
+        "p073-b10",
+        "p075-b08",
+        "p076-b05",
+        "p076-b08"
+      ],
+      "excluded": [
+        {
+          "id": "p068-b12",
+          "reason": "ページ先頭"
+        },
+        {
+          "id": "p072-b03",
+          "reason": "ページ先頭"
+        }
+      ],
+      "attempts": [
+        {
+          "id": "p066-b01",
+          "accepted": true,
+          "page": 3,
+          "changed_pages": []
+        },
+        {
+          "id": "p067-b07",
+          "accepted": true,
+          "page": 4,
+          "changed_pages": []
+        },
+        {
+          "id": "p067-b11",
+          "accepted": true,
+          "page": 4,
+          "changed_pages": []
+        },
+        {
+          "id": "p067-b13",
+          "accepted": true,
+          "page": 4,
+          "changed_pages": []
+        },
+        {
+          "id": "p068-b02",
+          "accepted": true,
+          "page": 5,
+          "changed_pages": []
+        },
+        {
+          "id": "p068-b03",
+          "accepted": true,
+          "page": 5,
+          "changed_pages": []
+        },
+        {
+          "id": "p068-b06",
+          "accepted": true,
+          "page": 5,
+          "changed_pages": []
+        },
+        {
+          "id": "p069-b01",
+          "accepted": true,
+          "page": 6,
+          "changed_pages": []
+        },
+        {
+          "id": "p069-b04",
+          "accepted": true,
+          "page": 6,
+          "changed_pages": []
+        },
+        {
+          "id": "p069-b07",
+          "accepted": true,
+          "page": 6,
+          "changed_pages": []
+        },
+        {
+          "id": "p073-b05",
+          "accepted": true,
+          "page": 10,
+          "changed_pages": []
+        },
+        {
+          "id": "p073-b10",
+          "accepted": true,
+          "page": 10,
+          "changed_pages": []
+        },
+        {
+          "id": "p075-b08",
+          "accepted": true,
+          "page": 12,
+          "changed_pages": []
+        },
+        {
+          "id": "p076-b05",
+          "accepted": true,
+          "page": 13,
+          "changed_pages": []
+        },
+        {
+          "id": "p076-b08",
+          "accepted": true,
+          "page": 13,
+          "changed_pages": []
+        }
+      ],
+      "positions": [
+        {
+          "id": "p066-b01",
+          "before_y": 432.430390625,
+          "after_y": 450.430390625,
+          "page": 3
+        },
+        {
+          "id": "p067-b07",
+          "before_y": 417.414510590939,
+          "after_y": 435.414510590939,
+          "page": 4
+        },
+        {
+          "id": "p067-b11",
+          "before_y": 525.414510590939,
+          "after_y": 561.414510590939,
+          "page": 4
+        },
+        {
+          "id": "p067-b13",
+          "before_y": 585.414510590939,
+          "after_y": 639.414510590939,
+          "page": 4
+        },
+        {
+          "id": "p068-b02",
+          "before_y": 390.0743712137128,
+          "after_y": 408.0743712137128,
+          "page": 5
+        },
+        {
+          "id": "p068-b03",
+          "before_y": 420.0743712137128,
+          "after_y": 456.0743712137128,
+          "page": 5
+        },
+        {
+          "id": "p068-b06",
+          "before_y": 521.1143712137128,
+          "after_y": 575.1143712137128,
+          "page": 5
+        },
+        {
+          "id": "p069-b01",
+          "before_y": 234.2000703125,
+          "after_y": 252.2000703125,
+          "page": 6
+        },
+        {
+          "id": "p069-b04",
+          "before_y": 396.4820703125,
+          "after_y": 432.4820703125,
+          "page": 6
+        },
+        {
+          "id": "p069-b07",
+          "before_y": 528.5862265625001,
+          "after_y": 582.5862265625001,
+          "page": 6
+        },
+        {
+          "id": "p073-b05",
+          "before_y": 298.024296875,
+          "after_y": 316.024296875,
+          "page": 10
+        },
+        {
+          "id": "p073-b10",
+          "before_y": 432.5147656249999,
+          "after_y": 468.5147656249999,
+          "page": 10
+        },
+        {
+          "id": "p075-b08",
+          "before_y": 297.53046874999995,
+          "after_y": 315.53046874999995,
+          "page": 12
+        },
+        {
+          "id": "p076-b05",
+          "before_y": 222.94455078125,
+          "after_y": 240.94455078125,
+          "page": 13
+        },
+        {
+          "id": "p076-b08",
+          "before_y": 391.22655078125,
+          "after_y": 427.22655078125,
+          "page": 13
+        }
+      ],
+      "page_assignment_preserved": true
+    },
+    {
+      "chapter": "ex-back",
+      "baseline_pages": 1,
+      "pages": 1,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "attempts": [],
+      "positions": [],
+      "page_assignment_preserved": true
+    }
+  ],
+  "candidates": 96,
+  "accepted": 76
+}

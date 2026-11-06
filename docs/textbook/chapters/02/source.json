@@ -385,7 +385,9 @@
       "49": "continued-prose",
       "50": "continued-prose",
       "54": "continued-prose",
-      "59": "continued-prose"
+      "59": "continued-prose",
+      "51": "short-minor-heading",
+      "61": "short-minor-heading"
     },
     "paragraph_continuations": [
       [
@@ -396,5 +398,22 @@
     "figure_scales": {
       "p045-f16": 0.96
     }
+  },
+  "typography": {
+    "minor_heading_extra_space": [
+      "p034-b05",
+      "p035-b04",
+      "p036-b02",
+      "p038-b06",
+      "p039-b02",
+      "p041-b05",
+      "p043-b04",
+      "p043-b08",
+      "p044-b03",
+      "p047-b02",
+      "p048-b01",
+      "p049-b02",
+      "p051-b01"
+    ]
   }
 }

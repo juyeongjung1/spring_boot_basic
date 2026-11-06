@@ -149,7 +149,8 @@ def table_cell_html(parts, layout, header_cell, preserve_breaks):
         if style_id:
             style = layout['styles'][style_id]
             weight = 700 if header_cell or style.get('stroke', 0) or 'Bold' in style['font'] or style.get('flags',0)&16 else 400
-            body = f'<span class="source-style" style="color:{style["color"]};font-weight:{weight};text-decoration:{"underline" if underline else "none"}">{body}</span>'
+            color = '#334155' if header_cell else style['color']
+            body = f'<span class="source-style" style="color:{color};font-weight:{weight};text-decoration:{"underline" if underline else "none"}">{body}</span>'
         output.append(body)
     return ''.join(output)
 
@@ -177,8 +178,6 @@ def table_html(folder, layout, ident, node):
                     body = body.replace(term, '<span class="table-term">'+term+'</span>')
             align = 'center' if comparison and header_cell and j else alignments[j]
             declarations = [f'text-align:{align}']
-            if cell and cell['fill'].lower() not in {'#ffffff', '#fff', 'white'}:
-                declarations.append(f'background:{cell["fill"]}')
             if align == 'right':
                 declarations.append('white-space:nowrap')
             scope = ' scope="col"' if header_cell else ''

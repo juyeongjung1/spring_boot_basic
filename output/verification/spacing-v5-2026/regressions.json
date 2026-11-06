@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "total": 96,
+  "suites": [
+    {
+      "suite": "symbols",
+      "exit_code": 0,
+      "tests": 2,
+      "log": "output/verification/spacing-v5-2026/tests/test-symbols.log"
+    },
+    {
+      "suite": "remaining",
+      "exit_code": 0,
+      "tests": 9,
+      "log": "output/verification/spacing-v5-2026/tests/test-remaining.log"
+    },
+    {
+      "suite": "fidelity",
+      "exit_code": 0,
+      "tests": 10,
+      "log": "output/verification/spacing-v5-2026/tests/test-fidelity.log"
+    },
+    {
+      "suite": "pipeline",
+      "exit_code": 0,
+      "tests": 8,
+      "log": "output/verification/spacing-v5-2026/tests/test-pipeline.log"
+    },
+    {
+      "suite": "bracket_headings",
+      "exit_code": 0,
+      "tests": 4,
+      "log": "output/verification/spacing-v5-2026/tests/test-bracket_headings.log"
+    },
+    {
+      "suite": "html_components",
+      "exit_code": 0,
+      "tests": 17,
+      "log": "output/verification/spacing-v5-2026/tests/test-html_components.log"
+    },
+    {
+      "suite": "source_layout",
+      "exit_code": 0,
+      "tests": 7,
+      "log": "output/verification/spacing-v5-2026/tests/test-source_layout.log"
+    },
+    {
+      "suite": "tables",
+      "exit_code": 0,
+      "tests": 10,
+      "log": "output/verification/spacing-v5-2026/tests/test-tables.log"
+    },
+    {
+      "suite": "pagination",
+      "exit_code": 0,
+      "tests": 10,
+      "log": "output/verification/spacing-v5-2026/tests/test-pagination.log"
+    },
+    {
+      "suite": "figure_frames",
+      "exit_code": 0,
+      "tests": 5,
+      "log": "output/verification/spacing-v5-2026/tests/test-figure_frames.log"
+    },
+    {
+      "suite": "illustrations",
+      "tests": 10,
+      "exit_code": 0,
+      "log": "output/verification/spacing-v5-2026/illustrations-tests.log"
+    },
+    {
+      "suite": "minor_spacing",
+      "tests": 4,
+      "exit_code": 0,
+      "log": "output/verification/spacing-v5-2026/minor-spacing-tests.log"
+    }
+  ]
+}

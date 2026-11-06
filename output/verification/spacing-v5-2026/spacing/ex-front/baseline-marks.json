@@ -1,0 +1,72 @@
+[
+  {
+    "id": "__source-page-2",
+    "edge": "source-page",
+    "page": 2,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-2",
+    "edge": "native-page",
+    "page": 2,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "__source-page-3",
+    "edge": "source-page",
+    "page": 3,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-3",
+    "edge": "native-page",
+    "page": 3,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "__source-page-4",
+    "edge": "source-page",
+    "page": 4,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-4",
+    "edge": "native-page",
+    "page": 4,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "__source-page-5",
+    "edge": "source-page",
+    "page": 5,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-5",
+    "edge": "native-page",
+    "page": 5,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "__source-page-6",
+    "edge": "source-page",
+    "page": 6,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-6",
+    "edge": "native-page",
+    "page": 6,
+    "x": 85.104,
+    "y": 86.0
+  }
+]

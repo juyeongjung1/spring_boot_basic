@@ -240,7 +240,8 @@ class SourceLayoutTests(unittest.TestCase):
             for text in ('要素', 'JDBC', 'ドライバー', 'mysql-connector-j.jar',
                          '手動でプロジェクトに追加する', 'application.properties'):
                 style = chapter['layout']['styles'][next(r for r in table['runs'] if text in r['text'])['style']]
-                self.assertTrue(all(c['color'] == int(style['color'].lstrip('#'), 16)
+                color = 0x334155 if text in ('要素', 'JDBC') else int(style['color'].lstrip('#'), 16)
+                self.assertTrue(all(c['color'] == color
                                     for c in self.text_hit(characters, text)), text)
             jdbc = self.text_box(self.text_hit(characters, 'JDBC'))
             _, _, area = parts[0]

@@ -1,0 +1,529 @@
+{
+  "passed": true,
+  "scope": "見出し一覧10枚・全76対象、完成本文56/64/65/66p、補強用の完成本文143/214pを実視認。",
+  "reviewed_contact_sheets": 10,
+  "reviewed_headings": 76,
+  "reviewed_requested_pages": [
+    56,
+    64,
+    65,
+    66
+  ],
+  "reviewed_files": [
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-01.png",
+      "sha256": "ac366af3b65e8773f2a6fc22c5825ba18666d7909b44d8340d222f4a8d6f0d5e",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "01",
+          "id": "p018-b06"
+        },
+        {
+          "chapter": "01",
+          "id": "p025-b02"
+        },
+        {
+          "chapter": "02",
+          "id": "p034-b05"
+        },
+        {
+          "chapter": "02",
+          "id": "p035-b04"
+        },
+        {
+          "chapter": "02",
+          "id": "p036-b02"
+        },
+        {
+          "chapter": "02",
+          "id": "p038-b06"
+        },
+        {
+          "chapter": "02",
+          "id": "p039-b02"
+        },
+        {
+          "chapter": "02",
+          "id": "p041-b05"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-02.png",
+      "sha256": "f58d155c4ae6f44f190edfb113d8ab46fa6f4bfa2c677b587324e2a2322919f1",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "02",
+          "id": "p043-b04"
+        },
+        {
+          "chapter": "02",
+          "id": "p043-b08"
+        },
+        {
+          "chapter": "02",
+          "id": "p044-b03"
+        },
+        {
+          "chapter": "02",
+          "id": "p047-b02"
+        },
+        {
+          "chapter": "02",
+          "id": "p048-b01"
+        },
+        {
+          "chapter": "02",
+          "id": "p049-b02"
+        },
+        {
+          "chapter": "02",
+          "id": "p051-b01"
+        },
+        {
+          "chapter": "03",
+          "id": "p067-b04"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-03.png",
+      "sha256": "7f0c870457ad1a76f4c902bfd4ba14eeb21ee794d241f153734523a538563772",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "03",
+          "id": "p073-b04"
+        },
+        {
+          "chapter": "03",
+          "id": "p089-b02"
+        },
+        {
+          "chapter": "03",
+          "id": "p098-b01"
+        },
+        {
+          "chapter": "03",
+          "id": "p102-b01"
+        },
+        {
+          "chapter": "03",
+          "id": "p115-b04"
+        },
+        {
+          "chapter": "03",
+          "id": "p121-b02"
+        },
+        {
+          "chapter": "03",
+          "id": "p123-b05"
+        },
+        {
+          "chapter": "03",
+          "id": "p125-b04"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-04.png",
+      "sha256": "94201b47adae9f64396d70e9ad4c18a833abefe884b7622e915f006d054833b7",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "04",
+          "id": "p137-b01"
+        },
+        {
+          "chapter": "04",
+          "id": "p138-b05"
+        },
+        {
+          "chapter": "04",
+          "id": "p141-b02"
+        },
+        {
+          "chapter": "04",
+          "id": "p144-b01"
+        },
+        {
+          "chapter": "04",
+          "id": "p149-b04"
+        },
+        {
+          "chapter": "04",
+          "id": "p151-b05"
+        },
+        {
+          "chapter": "04",
+          "id": "p160-b01"
+        },
+        {
+          "chapter": "04",
+          "id": "revision-messages-title"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-05.png",
+      "sha256": "3f27b11d274923ae535f5a2daa5b29b05558ccbcfacdf89c55fcb138af430f54",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "05",
+          "id": "p168-b08"
+        },
+        {
+          "chapter": "05",
+          "id": "p176-b02"
+        },
+        {
+          "chapter": "05",
+          "id": "p179-b05"
+        },
+        {
+          "chapter": "05",
+          "id": "p182-b01"
+        },
+        {
+          "chapter": "05",
+          "id": "p182-b03"
+        },
+        {
+          "chapter": "06",
+          "id": "p196-b05"
+        },
+        {
+          "chapter": "06",
+          "id": "p202-b01"
+        },
+        {
+          "chapter": "06",
+          "id": "p206-b07"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-06.png",
+      "sha256": "0f984a9f6ba8f660ebde20c9f8b3153f6a489b2cc20274b664b29a67545f2dd1",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "06",
+          "id": "p206-b09"
+        },
+        {
+          "chapter": "06",
+          "id": "p207-b02"
+        },
+        {
+          "chapter": "06",
+          "id": "p212-b01"
+        },
+        {
+          "chapter": "06",
+          "id": "p212-b02"
+        },
+        {
+          "chapter": "06",
+          "id": "p215-b05"
+        },
+        {
+          "chapter": "06",
+          "id": "p221-b02"
+        },
+        {
+          "chapter": "06",
+          "id": "p226-b01"
+        },
+        {
+          "chapter": "06",
+          "id": "p230-b01"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-07.png",
+      "sha256": "c9ca81d1da57cd1a1a887ffc7d7c82209b7e19ab71c12ccee0d9dae9079c80f1",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "07",
+          "id": "p264-b02"
+        },
+        {
+          "chapter": "07",
+          "id": "p266-b01"
+        },
+        {
+          "chapter": "07",
+          "id": "p269-b01"
+        },
+        {
+          "chapter": "07",
+          "id": "p272-b03"
+        },
+        {
+          "chapter": "07",
+          "id": "p272-b05"
+        },
+        {
+          "chapter": "07",
+          "id": "p279-b01"
+        },
+        {
+          "chapter": "ex06",
+          "id": "p049-b08"
+        },
+        {
+          "chapter": "ex06",
+          "id": "p049-b10"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-08.png",
+      "sha256": "396df4ed500fbbe9eaa0feb47e99553722a9456e31cc3b9a338fa7baf98b9d53",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "ex06",
+          "id": "p049-b11"
+        },
+        {
+          "chapter": "ex06",
+          "id": "p055-b04"
+        },
+        {
+          "chapter": "ex06",
+          "id": "p057-b02"
+        },
+        {
+          "chapter": "ex06",
+          "id": "p061-b10"
+        },
+        {
+          "chapter": "ex06",
+          "id": "p062-b02"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p066-b01"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p067-b07"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p067-b11"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-09.png",
+      "sha256": "78c056875865c5845716617bc891f3d65dee495dfd82f3096e320b29f066a4f3",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "ex07",
+          "id": "p067-b13"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p068-b02"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p068-b03"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p068-b06"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p069-b01"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p069-b04"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p069-b07"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p073-b05"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/heading-previews/contact-10.png",
+      "sha256": "785e132f83da914caca77645b4ba5da11fd1c97250420f1b9fb898b38b1b5f91",
+      "kind": "見出し一覧",
+      "headings": [
+        {
+          "chapter": "ex07",
+          "id": "p073-b10"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p075-b08"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p076-b05"
+        },
+        {
+          "chapter": "ex07",
+          "id": "p076-b08"
+        }
+      ],
+      "visual_reviewed": true,
+      "one_line_space": "ページ先頭以外は直前の本文と追加の1行分の空きが見分けられる。",
+      "text_clipping": false,
+      "text_overlap": false,
+      "new_isolated_heading": false,
+      "result": "今回の見出し前余白に伴う新規の崩れなし。既存の継続見出しは別項に記録。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/requested-pages/textbook-056.png",
+      "sha256": "33965ba2130260aee8f17a109d097214da10dacc148882ab3a9614bc5821544f",
+      "kind": "完成ページ",
+      "page": 56,
+      "visual_reviewed": true,
+      "passed": true,
+      "observation": "社員番号：1234とパスワード：passwordが別行で、字下げと左位置もそろっている。図・本文・下部の強調文に切れや重なりなし。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/requested-pages/textbook-064.png",
+      "sha256": "4f082d35c32a1e2f6d37d2d38fddcaf1cef8db20e9eaf1ea1c27e059aafecd75",
+      "kind": "完成ページ",
+      "page": 64,
+      "visual_reviewed": true,
+      "passed": true,
+      "observation": "2.5節の最初の作業手順が①。見出し、本文、イラスト、コードと後続本文が明確に分離し、ページ末尾も収まる。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/requested-pages/textbook-065.png",
+      "sha256": "c6fa60354c477496db016d3035d4b23944f3bcb442c6d72f1cb1d9830f333837",
+      "kind": "完成ページ",
+      "page": 65,
+      "visual_reviewed": true,
+      "passed": true,
+      "observation": "既習のrequest.setAttributeとModelのaddAttributeの関係を説明する指定の文面が自然に2行で表示される。通常本文の書式と字下げを保持。参考見出しがコードと同じページに収まる。"
+    },
+    {
+      "file": "output/verification/spacing-v5-2026/requested-pages/textbook-066.png",
+      "sha256": "3eee741f5cb4cf984e6ada23a342227d7f59010ec764641f8ec71f4cd58f9d34",
+      "kind": "完成ページ",
+      "page": 66,
+      "visual_reviewed": true,
+      "passed": true,
+      "observation": "Thymeleaf出力の作業手順が②。前のコード説明との間に見出しの空きがあり、見出しの後に説明とHTMLコードが続く。見出しの孤立なし。"
+    },
+    {
+      "file": "tmp/spacing-v5-2026/final-prose-qa/textbook-143.png",
+      "sha256": "6f73ff958bc9a89f6d2dfea4947366ca113d9cac435cc199802c8aa1a1c65121",
+      "kind": "追加の完成ページ拡大確認",
+      "page": 143,
+      "visual_reviewed": true,
+      "passed": true,
+      "observation": "p123-b05の【作業手順②】を含む見出し全文が表示されている。一覧で疑った左端の欠けは完成ページではない。"
+    },
+    {
+      "file": "tmp/spacing-v5-2026/final-prose-qa/textbook-214.png",
+      "sha256": "f1f4f380110394b66d046134b396e95d12aa8a113253e043962b34be970ce324",
+      "kind": "追加の完成ページ拡大確認",
+      "page": 214,
+      "visual_reviewed": true,
+      "passed": true,
+      "observation": "p182-b03の【事前準備】を含む見出し全文が表示されている。前後の本文、図、POMコードに重なりなし。"
+    }
+  ],
+  "new_visual_defects": [],
+  "existing_observations": [
+    {
+      "chapter": "03",
+      "ids": [
+        "p115-b04",
+        "p115-b05"
+      ],
+      "page": 135,
+      "observation": "1つの文が2つの見出しIDへ分かれ、後半「で、進んでください。」の前が広い。",
+      "classification": "既存の抽出分割。今回の新規不具合ではない。",
+      "baseline_and_final_check": "rootがbaseline/完成markerを照合し、継続部分の間隔はいずれも30ptと確認。後半IDは今回の余白変更対象外。"
+    },
+    {
+      "chapter": "ex06",
+      "ids": [
+        "p055-b04",
+        "p055-b05"
+      ],
+      "page": 58,
+      "observation": "指示文末尾の「い。」が別の見出しIDに分かれている。",
+      "classification": "既存の抽出分割。今回の新規不具合ではない。",
+      "baseline_and_final_check": "rootがbaseline/完成markerを照合し、継続部分の間隔はいずれも30ptと確認。後半IDは今回の余白変更対象外。"
+    }
+  ],
+  "source_editing": false,
+  "limitations": "一覧画像の上下端で前後の文脈が切れている部分は切り出し範囲として扱った。疑った左端2箇所は完成ページ全体を別途確認して解消。原文保全・合冊一致は別担当の独立監査対象。"
+}

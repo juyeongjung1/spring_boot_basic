@@ -1,0 +1,1794 @@
+{
+  "references_and_headings": [
+    {
+      "chapter": "02",
+      "id": "p041-b02",
+      "kind": "heading",
+      "section_id": "p039-b01",
+      "section": "2.2. Controller の基本",
+      "text": "【作業手順①】 Controller クラスの作成"
+    },
+    {
+      "chapter": "02",
+      "id": "p044-b03",
+      "kind": "heading",
+      "section_id": "p039-b01",
+      "section": "2.2. Controller の基本",
+      "text": "【作業手順②】ビューの作成と構成"
+    },
+    {
+      "chapter": "02",
+      "id": "p045-b01",
+      "kind": "heading",
+      "section_id": "p039-b01",
+      "section": "2.2. Controller の基本",
+      "text": "【作業手順③】Spring Boot アプリケーションの実行"
+    },
+    {
+      "chapter": "02",
+      "id": "p048-b01",
+      "kind": "heading",
+      "section_id": "p047-b01",
+      "section": "2.3. データ送信とパラメータの取得",
+      "text": "【作業手順①】ログイン画面を表示するメソッドの作成"
+    },
+    {
+      "chapter": "02",
+      "id": "p049-b02",
+      "kind": "heading",
+      "section_id": "p047-b01",
+      "section": "2.3. データ送信とパラメータの取得",
+      "text": "【作業手順②】入力フォームがあるHTML の作成"
+    },
+    {
+      "chapter": "02",
+      "id": "p051-b01",
+      "kind": "heading",
+      "section_id": "p047-b01",
+      "section": "2.3. データ送信とパラメータの取得",
+      "text": "【作業手順③】ログインデータの受信と処理"
+    },
+    {
+      "chapter": "02",
+      "id": "p053-b04",
+      "kind": "heading",
+      "section_id": "p053-b01",
+      "section": "2.4. Form クラスでパラメータ取得",
+      "text": "【作業手順①】 UserForm クラスの作成"
+    },
+    {
+      "chapter": "02",
+      "id": "p056-b01",
+      "kind": "heading",
+      "section_id": "p053-b01",
+      "section": "2.4. Form クラスでパラメータ取得",
+      "text": "【作業手順②】Form クラスのオブジェクトでパラメータを取得"
+    },
+    {
+      "chapter": "02",
+      "id": "p058-b01",
+      "kind": "heading",
+      "section_id": "p057-b01",
+      "section": "2.5. Controller からView へのデータ処理",
+      "text": "【作業手順③】 model オブジェクトにデータを格納"
+    },
+    {
+      "chapter": "02",
+      "id": "p059-b10",
+      "kind": "heading",
+      "section_id": "p057-b01",
+      "section": "2.5. Controller からView へのデータ処理",
+      "text": "【作業手順④】 Thymeleaf を利用したデータ出力"
+    },
+    {
+      "chapter": "03",
+      "id": "p070-b01",
+      "kind": "heading",
+      "section_id": "p066-b01",
+      "section": "3.1. Spring Data JPA の利用",
+      "text": "【作業手順①】Spring Data JPA と、MySQL ドライバーの導入"
+    },
+    {
+      "chapter": "03",
+      "id": "p071-b01",
+      "kind": "heading",
+      "section_id": "p066-b01",
+      "section": "3.1. Spring Data JPA の利用",
+      "text": "【作業手順②】接続情報の設定"
+    },
+    {
+      "chapter": "03",
+      "id": "p073-b06",
+      "kind": "heading",
+      "section_id": "p072-b01",
+      "section": "3.2. エンティティの定義",
+      "text": "【作業手順①】 テーブルの列名と型をJava のフィールドで表現する"
+    },
+    {
+      "chapter": "03",
+      "id": "p074-b05",
+      "kind": "heading",
+      "section_id": "p072-b01",
+      "section": "3.2. エンティティの定義",
+      "text": "【作業手順②】 Lombok の@Data アノテーションを付与"
+    },
+    {
+      "chapter": "03",
+      "id": "p075-b01",
+      "kind": "heading",
+      "section_id": "p072-b01",
+      "section": "3.2. エンティティの定義",
+      "text": "【作業手順③】 制約をアノテーションで表現"
+    },
+    {
+      "chapter": "03",
+      "id": "p078-b01",
+      "kind": "heading",
+      "section_id": "p077-b01",
+      "section": "3.3. リポジトリの定義",
+      "text": "【作業手順④】 リポジトリの作成"
+    },
+    {
+      "chapter": "03",
+      "id": "p085-b02",
+      "kind": "heading",
+      "section_id": "p085-b01",
+      "section": "3.4. 全件検索",
+      "text": "【作業手順①】 findAll メソッドで全件データ取得"
+    },
+    {
+      "chapter": "03",
+      "id": "p087-b01",
+      "kind": "heading",
+      "section_id": "p085-b01",
+      "section": "3.4. 全件検索",
+      "text": "【作業手順②】 Thymeleaf でリストの出力"
+    },
+    {
+      "chapter": "03",
+      "id": "p091-b04",
+      "kind": "heading",
+      "section_id": "p090-b01",
+      "section": "3.5. 主キーによる条件検索",
+      "text": "【作業手順①】 遷移用のメソッド作成"
+    },
+    {
+      "chapter": "03",
+      "id": "p092-b01",
+      "kind": "heading",
+      "section_id": "p090-b01",
+      "section": "3.5. 主キーによる条件検索",
+      "text": "【作業手順②】 検索入力View の作成"
+    },
+    {
+      "chapter": "03",
+      "id": "p092-b06",
+      "kind": "heading",
+      "section_id": "p090-b01",
+      "section": "3.5. 主キーによる条件検索",
+      "text": "【作業手順③】 主キー検索メソッドを作成"
+    },
+    {
+      "chapter": "03",
+      "id": "p093-b09",
+      "kind": "heading",
+      "section_id": "p090-b01",
+      "section": "3.5. 主キーによる条件検索",
+      "text": "【作業手順④】 商品詳細ページの作成"
+    },
+    {
+      "chapter": "03",
+      "id": "p096-b01",
+      "kind": "heading",
+      "section_id": "p095-b01",
+      "section": "3.5.1. 主キーではない列による条件検索",
+      "text": "【作業手順①】 価格による検索フォームの追加"
+    },
+    {
+      "chapter": "03",
+      "id": "p096-b06",
+      "kind": "heading",
+      "section_id": "p095-b01",
+      "section": "3.5.1. 主キーではない列による条件検索",
+      "text": "【作業手順②】 price 列で条件検索をするメソッドをリポジトリに追加"
+    },
+    {
+      "chapter": "03",
+      "id": "p097-b07",
+      "kind": "heading",
+      "section_id": "p095-b01",
+      "section": "3.5.1. 主キーではない列による条件検索",
+      "text": "【作業手順③】 showProductListByPrice メソッドを作成し、findByPrice のメソッドを実行"
+    },
+    {
+      "chapter": "03",
+      "id": "p100-b01",
+      "kind": "heading",
+      "section_id": "p099-b01",
+      "section": "3.5.2. 複数の列による条件検索",
+      "text": "【作業手順①】 商品名と価格の検索フォームの追加"
+    },
+    {
+      "chapter": "03",
+      "id": "p100-b06",
+      "kind": "heading",
+      "section_id": "p099-b01",
+      "section": "3.5.2. 複数の列による条件検索",
+      "text": "【作業手順②】 name とprice 列で条件検索をするメソッドをリポジトリに追加"
+    },
+    {
+      "chapter": "03",
+      "id": "p101-b02",
+      "kind": "heading",
+      "section_id": "p099-b01",
+      "section": "3.5.2. 複数の列による条件検索",
+      "text": "【作業手順③】 showProductListByNameAndPrice メソッドを作成し、findByNameAndPrice"
+    },
+    {
+      "chapter": "03",
+      "id": "p106-b03",
+      "kind": "heading",
+      "section_id": "p105-b01",
+      "section": "3.6. 登録処理",
+      "text": "【作業手順①】 入力View 遷移用メソッドの定義"
+    },
+    {
+      "chapter": "03",
+      "id": "p107-b01",
+      "kind": "heading",
+      "section_id": "p105-b01",
+      "section": "3.6. 登録処理",
+      "text": "【作業手順②】 入力View 作成"
+    },
+    {
+      "chapter": "03",
+      "id": "p108-b01",
+      "kind": "heading",
+      "section_id": "p105-b01",
+      "section": "3.6. 登録処理",
+      "text": "【作業手順③】 ProductForm の定義"
+    },
+    {
+      "chapter": "03",
+      "id": "p109-b01",
+      "kind": "heading",
+      "section_id": "p105-b01",
+      "section": "3.6. 登録処理",
+      "text": "【作業手順④】 登録処理メソッドの定義"
+    },
+    {
+      "chapter": "03",
+      "id": "p116-b01",
+      "kind": "heading",
+      "section_id": "p114-b01",
+      "section": "3.7. 更新処理",
+      "text": "【作業手順①】 詳細画面に、更新ボタンを実装するように修正"
+    },
+    {
+      "chapter": "03",
+      "id": "p117-b01",
+      "kind": "heading",
+      "section_id": "p114-b01",
+      "section": "3.7. 更新処理",
+      "text": "【作業手順②】 更新対象データの既存データ取得"
+    },
+    {
+      "chapter": "03",
+      "id": "p118-b01",
+      "kind": "heading",
+      "section_id": "p114-b01",
+      "section": "3.7. 更新処理",
+      "text": "【作業手順③】 修正フォーム（update_input.html）の作成"
+    },
+    {
+      "chapter": "03",
+      "id": "p119-b01",
+      "kind": "heading",
+      "section_id": "p114-b01",
+      "section": "3.7. 更新処理",
+      "text": "【作業手順④】 修正処理メソッドの定義"
+    },
+    {
+      "chapter": "03",
+      "id": "p123-b01",
+      "kind": "heading",
+      "section_id": "p122-b01",
+      "section": "3.8. 削除処理",
+      "text": "【作業手順①】 詳細画面に削除ボタンを追加"
+    },
+    {
+      "chapter": "03",
+      "id": "p123-b05",
+      "kind": "heading",
+      "section_id": "p122-b01",
+      "section": "3.8. 削除処理",
+      "text": "【作業手順②】 削除処理のメソッドを定義"
+    },
+    {
+      "chapter": "03",
+      "id": "p127-b01",
+      "kind": "heading",
+      "section_id": "p125-b01",
+      "section": "3.9. 【参考】 Service クラスでビジネスロジックを分離",
+      "text": "【作業手順①】サービスインターフェースの作成"
+    },
+    {
+      "chapter": "03",
+      "id": "p128-b01",
+      "kind": "heading",
+      "section_id": "p125-b01",
+      "section": "3.9. 【参考】 Service クラスでビジネスロジックを分離",
+      "text": "【作業手順②】 サービス実装クラスの作成"
+    },
+    {
+      "chapter": "03",
+      "id": "p130-b01",
+      "kind": "heading",
+      "section_id": "p125-b01",
+      "section": "3.9. 【参考】 Service クラスでビジネスロジックを分離",
+      "text": "【作業手順③】 Controller からService クラスを経由してDB 操作を行う"
+    },
+    {
+      "chapter": "04",
+      "id": "p138-b05",
+      "kind": "heading",
+      "section_id": "p136-b01",
+      "section": "4.1. 基礎的なログイン機能の実装",
+      "text": "【作業手順①】 LoginController の作成と、ログイン画面遷移用のメソッド作成"
+    },
+    {
+      "chapter": "04",
+      "id": "p139-b01",
+      "kind": "heading",
+      "section_id": "p136-b01",
+      "section": "4.1. 基礎的なログイン機能の実装",
+      "text": "【作業手順②】 ログイン画面の作成"
+    },
+    {
+      "chapter": "04",
+      "id": "p139-b05",
+      "kind": "heading",
+      "section_id": "p136-b01",
+      "section": "4.1. 基礎的なログイン機能の実装",
+      "text": "【作業手順③】 リポジトリにID とパスワードのAnd 検索メソッドの定義"
+    },
+    {
+      "chapter": "04",
+      "id": "p140-b01",
+      "kind": "heading",
+      "section_id": "p136-b01",
+      "section": "4.1. 基礎的なログイン機能の実装",
+      "text": "【作業手順④】 ログイン認証メソッドの定義"
+    },
+    {
+      "chapter": "04",
+      "id": "p144-b01",
+      "kind": "heading",
+      "section_id": "p142-b01",
+      "section": "4.2. セッションによるユーザ情報の保持",
+      "text": "【作業手順①】 HttpSession 直接利用する方法"
+    },
+    {
+      "chapter": "04",
+      "id": "p145-b01",
+      "kind": "heading",
+      "section_id": "p142-b01",
+      "section": "4.2. セッションによるユーザ情報の保持",
+      "text": "【作業手順②】 セッションスコープ内のデータを参照する方法"
+    },
+    {
+      "chapter": "04",
+      "id": "p150-b01",
+      "kind": "heading",
+      "section_id": "p148-b01",
+      "section": "4.3. ログイン時の入力チェック",
+      "text": "【作業手順①】 Form クラスにValidation のアノテーションを付与"
+    },
+    {
+      "chapter": "04",
+      "id": "p151-b01",
+      "kind": "heading",
+      "section_id": "p148-b01",
+      "section": "4.3. ログイン時の入力チェック",
+      "text": "【作業手順②】 ログイン入力ページ遷移用のメソッド定義"
+    },
+    {
+      "chapter": "04",
+      "id": "p151-b05",
+      "kind": "heading",
+      "section_id": "p148-b01",
+      "section": "4.3. ログイン時の入力チェック",
+      "text": "【作業手順③】 入力チェック用メソッドの定義"
+    },
+    {
+      "chapter": "04",
+      "id": "p152-b03",
+      "kind": "heading",
+      "section_id": "p148-b01",
+      "section": "4.3. ログイン時の入力チェック",
+      "text": "【作業手順④】 ログイン入力ページの修正"
+    },
+    {
+      "chapter": "05",
+      "id": "p183-b01",
+      "kind": "heading",
+      "section_id": "p181-b01",
+      "section": "5.3. レイアウト機能",
+      "text": "【作業手順①】 レイアウトファイルの作成"
+    },
+    {
+      "chapter": "05",
+      "id": "p184-b08",
+      "kind": "heading",
+      "section_id": "p181-b01",
+      "section": "5.3. レイアウト機能",
+      "text": "【作業手順②】 コンテンツ用のHTML の修正"
+    },
+    {
+      "chapter": "06",
+      "id": "p196-b01",
+      "kind": "heading",
+      "section_id": "p195-b01",
+      "section": "6.1. 外部参照を持つエンティティの定義",
+      "text": "【作業手順①】 新たなテーブルと、データの準備"
+    },
+    {
+      "chapter": "06",
+      "id": "p199-b01",
+      "kind": "heading",
+      "section_id": "p195-b01",
+      "section": "6.1. 外部参照を持つエンティティの定義",
+      "text": "【作業手順②】 参照先エンティティの作成"
+    },
+    {
+      "chapter": "06",
+      "id": "p200-b01",
+      "kind": "heading",
+      "section_id": "p195-b01",
+      "section": "6.1. 外部参照を持つエンティティの定義",
+      "text": "【作業手順③】 参照元エンティティの修正"
+    },
+    {
+      "chapter": "06",
+      "id": "p202-b01",
+      "kind": "heading",
+      "section_id": "p195-b01",
+      "section": "6.1. 外部参照を持つエンティティの定義",
+      "text": "【作業手順④】 CategoryRepository の作成"
+    },
+    {
+      "chapter": "06",
+      "id": "p204-b01",
+      "kind": "heading",
+      "section_id": "p203-b01",
+      "section": "6.2. 外部参照を用いた検索",
+      "text": "【作業手順①】 商品コントローラーの再確認"
+    },
+    {
+      "chapter": "06",
+      "id": "p205-b01",
+      "kind": "heading",
+      "section_id": "p203-b01",
+      "section": "6.2. 外部参照を用いた検索",
+      "text": "【作業手順②】 View にカテゴリ名を出力するよう修正"
+    },
+    {
+      "chapter": "06",
+      "id": "p209-b01",
+      "kind": "heading",
+      "section_id": "p208-b01",
+      "section": "6.2.1. 【参考】 検索結果のエラーハンドリング",
+      "text": "【作業手順①】 findById(id).orElse(null)の確認"
+    },
+    {
+      "chapter": "06",
+      "id": "p210-b01",
+      "kind": "heading",
+      "section_id": "p208-b01",
+      "section": "6.2.1. 【参考】 検索結果のエラーハンドリング",
+      "text": "【作業手順②】 商品が見つからなかった際の表示の切り替え"
+    },
+    {
+      "chapter": "06",
+      "id": "p215-b05",
+      "kind": "heading",
+      "section_id": "p213-b01",
+      "section": "6.3. 外部参照付きのデータ登録",
+      "text": "【作業手順①】 登録処理の準備 - ProductForm の修正"
+    },
+    {
+      "chapter": "06",
+      "id": "p216-b01",
+      "kind": "heading",
+      "section_id": "p213-b01",
+      "section": "6.3. 外部参照付きのデータ登録",
+      "text": "【作業手順②】 登録画面遷移用のコントローラーの修正"
+    },
+    {
+      "chapter": "06",
+      "id": "p218-b01",
+      "kind": "heading",
+      "section_id": "p213-b01",
+      "section": "6.3. 外部参照付きのデータ登録",
+      "text": "【作業手順③】 カテゴリのリストの動的表示"
+    },
+    {
+      "chapter": "06",
+      "id": "p219-b01",
+      "kind": "heading",
+      "section_id": "p213-b01",
+      "section": "6.3. 外部参照付きのデータ登録",
+      "text": "【作業手順④】 登録処理の実装 - 不具合の確認"
+    },
+    {
+      "chapter": "06",
+      "id": "p220-b01",
+      "kind": "heading",
+      "section_id": "p213-b01",
+      "section": "6.3. 外部参照付きのデータ登録",
+      "text": "【作業手順➄】 Product エンティティにcategoryId フィールドの追加"
+    },
+    {
+      "chapter": "06",
+      "id": "p220-b02",
+      "kind": "paragraph",
+      "section_id": "p213-b01",
+      "section": "6.3. 外部参照付きのデータ登録",
+      "text": "作業手順④の不具合を解決するため、Product エンティティにcategoryId フィールドを追加 します。 ただし、categoryId とcategory の2 つのフィールドが同じ列を参照するため、重複マッピングに 注意が必要です。"
+    },
+    {
+      "chapter": "06",
+      "id": "p233-b07",
+      "kind": "heading",
+      "section_id": "p225-b01",
+      "section": "6.4.2. JPQL の基本構文",
+      "text": "【作業手順①】 DTO（集計結果を受け取るためのクラス）の作成"
+    },
+    {
+      "chapter": "06",
+      "id": "p235-b01",
+      "kind": "heading",
+      "section_id": "p225-b01",
+      "section": "6.4.2. JPQL の基本構文",
+      "text": "【作業手順➁】 リポジトリの作成"
+    },
+    {
+      "chapter": "ex02",
+      "id": "p013-b03",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト2.2 の【作業手順①】を参考にしてください。"
+    },
+    {
+      "chapter": "ex02",
+      "id": "p014-b03",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト2.3 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex02",
+      "id": "p014-b06",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト2.3 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-b03",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 2.5 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-b06",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 2.5 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-b10",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 2.5 の【作業手順④】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p020-b03",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テーブル情報と、テキスト3.2 の【作業手順①～②】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p020-b06",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テーブル情報と、テキスト3.2 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p020-b10",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.3 の【作業手順④】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p021-b08",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.4 の【作業手順①】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p022-b02",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.4 の【作業手順②】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p023-b03",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.5 の【作業手順①～②】が該当する内容です。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p023-b07",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.5 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p023-b09",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.5 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p024-b03",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.5 の【作業手順④】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p024-b08",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.5.1 の【作業手順①】の内容が該当します。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p024-b11",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 3.5.1 の【作業手順②】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p025-b02",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.5.1 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p025-b04",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.5.1 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p026-b11",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.6 の【作業手順②】の内容が該当します。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b03",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.6 の【作業手順③】の内容が該当します。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b05",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.6 の【作業手順④】を参考にしてください。"
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b07",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト3.6 の【作業手順④】を参考にしてください。"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-b06",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト4.1 の【作業手順②】の内容が該当します。"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-b10",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト4.1 の【作業手順③】の内容を参考にしてください。"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p032-b02",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト4.1 の【作業手順④】を参考にしてください。"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p033-b05",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト4.2 の【作業手順①】を参考にしてください。"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p033-b10",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト4.2 の【作業手順②】を参考にしてください。"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p034-b04",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 4.3 の【作業手順①】を参考にしてください。 ⚫ 「未満」については、「4.3.1 その他の validation アノテーション」の@Min を参考にしてく ださい。（文字ではなく、数字の文字数チェックはなく、数値の大きさで判定）"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p034-b08",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 4.3 の【作業手順②】を参考にしてください。"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p035-b02",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 4.3 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex04",
+      "id": "p035-b09",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 4.3 の【作業手順④】を参考にしてください。"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p042-b09",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト5.3 の【作業手順①】を参考にしてください。"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p042-b16",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 5.3 の【作業手順②】を参考にしてください。"
+    },
+    {
+      "chapter": "ex05",
+      "id": "p043-b02",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "⚫ テキスト 5.3 の【作業手順②】を参考にしてください。"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b08",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "• テキスト6.1 の【作業手順②】を参考にしてください。"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b13",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "• テキスト6.1 の【作業手順③】を参考にしてください。"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p052-b03",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "• テキスト6.1 の【作業手順➁】を参考にしてください。 • 「1 つの勤務地に複数の社員が所属する」関係を表現します。 • リスト型はjava.util.List をインポートしてください。"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p054-b02",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "• テキスト6.2 の【作業手順➁】を参考にしてください。"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p055-b08",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "• if 文などでnull 判定は不要です。orElse(null)により、null かオブジェクトかが自動で取 得できます。 • テキスト6.2.1 の【作業手順①】を参考にしてください。"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p056-b04",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "• th:if=\"${emp == null}\" と th:unless=\"${emp == null}\" を使い、切り替えます。 • テキスト6.2.1 の【作業手順➁】を参考にしてください。"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p058-b06",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "• テキスト6.5 の【作業手順①】を参考にしてください。"
+    },
+    {
+      "chapter": "ex06",
+      "id": "p059-b04",
+      "kind": "paragraph",
+      "section_id": null,
+      "section": null,
+      "text": "• Employee エンティティ内の location フィールドは Location 型です。一方、Form か らは Integer 型の locationId が送られてくるため、直接代入はできません。 代わりに locationId を登録用に持たせておき、 location フィールドには insertable = false, updatable = false を指定しておく必要があります。 • テキスト6.5 の【作業手順④・⑤】を参考にしてください。"
+    }
+  ],
+  "sections": [
+    {
+      "chapter": "01",
+      "id": "p018-b01",
+      "title": "1.1. フレームワークとは",
+      "steps": []
+    },
+    {
+      "chapter": "01",
+      "id": "p019-b01",
+      "title": "1.2. Spring Framework",
+      "steps": []
+    },
+    {
+      "chapter": "01",
+      "id": "p021-b01",
+      "title": "1.3. Spring Boot とは",
+      "steps": []
+    },
+    {
+      "chapter": "01",
+      "id": "p024-b01",
+      "title": "1.4. Maven でライブラリ管理",
+      "steps": []
+    },
+    {
+      "chapter": "02",
+      "id": "p034-b01",
+      "title": "2.1. Web アプリケーションの概要",
+      "steps": []
+    },
+    {
+      "chapter": "02",
+      "id": "p036-b01",
+      "title": "2.1.1. 【参考】サーブレットについて",
+      "steps": []
+    },
+    {
+      "chapter": "02",
+      "id": "p038-b01",
+      "title": "2.1.2. 【参考】MVC パターンとSpring アプリケーションの流れ",
+      "steps": []
+    },
+    {
+      "chapter": "02",
+      "id": "p039-b01",
+      "title": "2.2. Controller の基本",
+      "steps": [
+        {
+          "chapter": "02",
+          "id": "p041-b02",
+          "kind": "heading",
+          "section_id": "p039-b01",
+          "section": "2.2. Controller の基本",
+          "text": "【作業手順①】 Controller クラスの作成"
+        },
+        {
+          "chapter": "02",
+          "id": "p044-b03",
+          "kind": "heading",
+          "section_id": "p039-b01",
+          "section": "2.2. Controller の基本",
+          "text": "【作業手順②】ビューの作成と構成"
+        },
+        {
+          "chapter": "02",
+          "id": "p045-b01",
+          "kind": "heading",
+          "section_id": "p039-b01",
+          "section": "2.2. Controller の基本",
+          "text": "【作業手順③】Spring Boot アプリケーションの実行"
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p047-b01",
+      "title": "2.3. データ送信とパラメータの取得",
+      "steps": [
+        {
+          "chapter": "02",
+          "id": "p048-b01",
+          "kind": "heading",
+          "section_id": "p047-b01",
+          "section": "2.3. データ送信とパラメータの取得",
+          "text": "【作業手順①】ログイン画面を表示するメソッドの作成"
+        },
+        {
+          "chapter": "02",
+          "id": "p049-b02",
+          "kind": "heading",
+          "section_id": "p047-b01",
+          "section": "2.3. データ送信とパラメータの取得",
+          "text": "【作業手順②】入力フォームがあるHTML の作成"
+        },
+        {
+          "chapter": "02",
+          "id": "p051-b01",
+          "kind": "heading",
+          "section_id": "p047-b01",
+          "section": "2.3. データ送信とパラメータの取得",
+          "text": "【作業手順③】ログインデータの受信と処理"
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p053-b01",
+      "title": "2.4. Form クラスでパラメータ取得",
+      "steps": [
+        {
+          "chapter": "02",
+          "id": "p053-b04",
+          "kind": "heading",
+          "section_id": "p053-b01",
+          "section": "2.4. Form クラスでパラメータ取得",
+          "text": "【作業手順①】 UserForm クラスの作成"
+        },
+        {
+          "chapter": "02",
+          "id": "p056-b01",
+          "kind": "heading",
+          "section_id": "p053-b01",
+          "section": "2.4. Form クラスでパラメータ取得",
+          "text": "【作業手順②】Form クラスのオブジェクトでパラメータを取得"
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p057-b01",
+      "title": "2.5. Controller からView へのデータ処理",
+      "steps": [
+        {
+          "chapter": "02",
+          "id": "p058-b01",
+          "kind": "heading",
+          "section_id": "p057-b01",
+          "section": "2.5. Controller からView へのデータ処理",
+          "text": "【作業手順③】 model オブジェクトにデータを格納"
+        },
+        {
+          "chapter": "02",
+          "id": "p059-b10",
+          "kind": "heading",
+          "section_id": "p057-b01",
+          "section": "2.5. Controller からView へのデータ処理",
+          "text": "【作業手順④】 Thymeleaf を利用したデータ出力"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p066-b01",
+      "title": "3.1. Spring Data JPA の利用",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p070-b01",
+          "kind": "heading",
+          "section_id": "p066-b01",
+          "section": "3.1. Spring Data JPA の利用",
+          "text": "【作業手順①】Spring Data JPA と、MySQL ドライバーの導入"
+        },
+        {
+          "chapter": "03",
+          "id": "p071-b01",
+          "kind": "heading",
+          "section_id": "p066-b01",
+          "section": "3.1. Spring Data JPA の利用",
+          "text": "【作業手順②】接続情報の設定"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p072-b01",
+      "title": "3.2. エンティティの定義",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p073-b06",
+          "kind": "heading",
+          "section_id": "p072-b01",
+          "section": "3.2. エンティティの定義",
+          "text": "【作業手順①】 テーブルの列名と型をJava のフィールドで表現する"
+        },
+        {
+          "chapter": "03",
+          "id": "p074-b05",
+          "kind": "heading",
+          "section_id": "p072-b01",
+          "section": "3.2. エンティティの定義",
+          "text": "【作業手順②】 Lombok の@Data アノテーションを付与"
+        },
+        {
+          "chapter": "03",
+          "id": "p075-b01",
+          "kind": "heading",
+          "section_id": "p072-b01",
+          "section": "3.2. エンティティの定義",
+          "text": "【作業手順③】 制約をアノテーションで表現"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p077-b01",
+      "title": "3.3. リポジトリの定義",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p078-b01",
+          "kind": "heading",
+          "section_id": "p077-b01",
+          "section": "3.3. リポジトリの定義",
+          "text": "【作業手順④】 リポジトリの作成"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p079-b01",
+      "title": "3.3.1. 依存性の注入",
+      "steps": []
+    },
+    {
+      "chapter": "03",
+      "id": "p081-b01",
+      "title": "3.3.2. コントローラーの基本URL 設定",
+      "steps": []
+    },
+    {
+      "chapter": "03",
+      "id": "p085-b01",
+      "title": "3.4. 全件検索",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p085-b02",
+          "kind": "heading",
+          "section_id": "p085-b01",
+          "section": "3.4. 全件検索",
+          "text": "【作業手順①】 findAll メソッドで全件データ取得"
+        },
+        {
+          "chapter": "03",
+          "id": "p087-b01",
+          "kind": "heading",
+          "section_id": "p085-b01",
+          "section": "3.4. 全件検索",
+          "text": "【作業手順②】 Thymeleaf でリストの出力"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p090-b01",
+      "title": "3.5. 主キーによる条件検索",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p091-b04",
+          "kind": "heading",
+          "section_id": "p090-b01",
+          "section": "3.5. 主キーによる条件検索",
+          "text": "【作業手順①】 遷移用のメソッド作成"
+        },
+        {
+          "chapter": "03",
+          "id": "p092-b01",
+          "kind": "heading",
+          "section_id": "p090-b01",
+          "section": "3.5. 主キーによる条件検索",
+          "text": "【作業手順②】 検索入力View の作成"
+        },
+        {
+          "chapter": "03",
+          "id": "p092-b06",
+          "kind": "heading",
+          "section_id": "p090-b01",
+          "section": "3.5. 主キーによる条件検索",
+          "text": "【作業手順③】 主キー検索メソッドを作成"
+        },
+        {
+          "chapter": "03",
+          "id": "p093-b09",
+          "kind": "heading",
+          "section_id": "p090-b01",
+          "section": "3.5. 主キーによる条件検索",
+          "text": "【作業手順④】 商品詳細ページの作成"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p095-b01",
+      "title": "3.5.1. 主キーではない列による条件検索",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p096-b01",
+          "kind": "heading",
+          "section_id": "p095-b01",
+          "section": "3.5.1. 主キーではない列による条件検索",
+          "text": "【作業手順①】 価格による検索フォームの追加"
+        },
+        {
+          "chapter": "03",
+          "id": "p096-b06",
+          "kind": "heading",
+          "section_id": "p095-b01",
+          "section": "3.5.1. 主キーではない列による条件検索",
+          "text": "【作業手順②】 price 列で条件検索をするメソッドをリポジトリに追加"
+        },
+        {
+          "chapter": "03",
+          "id": "p097-b07",
+          "kind": "heading",
+          "section_id": "p095-b01",
+          "section": "3.5.1. 主キーではない列による条件検索",
+          "text": "【作業手順③】 showProductListByPrice メソッドを作成し、findByPrice のメソッドを実行"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p099-b01",
+      "title": "3.5.2. 複数の列による条件検索",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p100-b01",
+          "kind": "heading",
+          "section_id": "p099-b01",
+          "section": "3.5.2. 複数の列による条件検索",
+          "text": "【作業手順①】 商品名と価格の検索フォームの追加"
+        },
+        {
+          "chapter": "03",
+          "id": "p100-b06",
+          "kind": "heading",
+          "section_id": "p099-b01",
+          "section": "3.5.2. 複数の列による条件検索",
+          "text": "【作業手順②】 name とprice 列で条件検索をするメソッドをリポジトリに追加"
+        },
+        {
+          "chapter": "03",
+          "id": "p101-b02",
+          "kind": "heading",
+          "section_id": "p099-b01",
+          "section": "3.5.2. 複数の列による条件検索",
+          "text": "【作業手順③】 showProductListByNameAndPrice メソッドを作成し、findByNameAndPrice"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p103-b01",
+      "title": "3.5.3. その他の条件検索",
+      "steps": []
+    },
+    {
+      "chapter": "03",
+      "id": "p105-b01",
+      "title": "3.6. 登録処理",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p106-b03",
+          "kind": "heading",
+          "section_id": "p105-b01",
+          "section": "3.6. 登録処理",
+          "text": "【作業手順①】 入力View 遷移用メソッドの定義"
+        },
+        {
+          "chapter": "03",
+          "id": "p107-b01",
+          "kind": "heading",
+          "section_id": "p105-b01",
+          "section": "3.6. 登録処理",
+          "text": "【作業手順②】 入力View 作成"
+        },
+        {
+          "chapter": "03",
+          "id": "p108-b01",
+          "kind": "heading",
+          "section_id": "p105-b01",
+          "section": "3.6. 登録処理",
+          "text": "【作業手順③】 ProductForm の定義"
+        },
+        {
+          "chapter": "03",
+          "id": "p109-b01",
+          "kind": "heading",
+          "section_id": "p105-b01",
+          "section": "3.6. 登録処理",
+          "text": "【作業手順④】 登録処理メソッドの定義"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p114-b01",
+      "title": "3.7. 更新処理",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p116-b01",
+          "kind": "heading",
+          "section_id": "p114-b01",
+          "section": "3.7. 更新処理",
+          "text": "【作業手順①】 詳細画面に、更新ボタンを実装するように修正"
+        },
+        {
+          "chapter": "03",
+          "id": "p117-b01",
+          "kind": "heading",
+          "section_id": "p114-b01",
+          "section": "3.7. 更新処理",
+          "text": "【作業手順②】 更新対象データの既存データ取得"
+        },
+        {
+          "chapter": "03",
+          "id": "p118-b01",
+          "kind": "heading",
+          "section_id": "p114-b01",
+          "section": "3.7. 更新処理",
+          "text": "【作業手順③】 修正フォーム（update_input.html）の作成"
+        },
+        {
+          "chapter": "03",
+          "id": "p119-b01",
+          "kind": "heading",
+          "section_id": "p114-b01",
+          "section": "3.7. 更新処理",
+          "text": "【作業手順④】 修正処理メソッドの定義"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p122-b01",
+      "title": "3.8. 削除処理",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p123-b01",
+          "kind": "heading",
+          "section_id": "p122-b01",
+          "section": "3.8. 削除処理",
+          "text": "【作業手順①】 詳細画面に削除ボタンを追加"
+        },
+        {
+          "chapter": "03",
+          "id": "p123-b05",
+          "kind": "heading",
+          "section_id": "p122-b01",
+          "section": "3.8. 削除処理",
+          "text": "【作業手順②】 削除処理のメソッドを定義"
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p125-b01",
+      "title": "3.9. 【参考】 Service クラスでビジネスロジックを分離",
+      "steps": [
+        {
+          "chapter": "03",
+          "id": "p127-b01",
+          "kind": "heading",
+          "section_id": "p125-b01",
+          "section": "3.9. 【参考】 Service クラスでビジネスロジックを分離",
+          "text": "【作業手順①】サービスインターフェースの作成"
+        },
+        {
+          "chapter": "03",
+          "id": "p128-b01",
+          "kind": "heading",
+          "section_id": "p125-b01",
+          "section": "3.9. 【参考】 Service クラスでビジネスロジックを分離",
+          "text": "【作業手順②】 サービス実装クラスの作成"
+        },
+        {
+          "chapter": "03",
+          "id": "p130-b01",
+          "kind": "heading",
+          "section_id": "p125-b01",
+          "section": "3.9. 【参考】 Service クラスでビジネスロジックを分離",
+          "text": "【作業手順③】 Controller からService クラスを経由してDB 操作を行う"
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p136-b01",
+      "title": "4.1. 基礎的なログイン機能の実装",
+      "steps": [
+        {
+          "chapter": "04",
+          "id": "p138-b05",
+          "kind": "heading",
+          "section_id": "p136-b01",
+          "section": "4.1. 基礎的なログイン機能の実装",
+          "text": "【作業手順①】 LoginController の作成と、ログイン画面遷移用のメソッド作成"
+        },
+        {
+          "chapter": "04",
+          "id": "p139-b01",
+          "kind": "heading",
+          "section_id": "p136-b01",
+          "section": "4.1. 基礎的なログイン機能の実装",
+          "text": "【作業手順②】 ログイン画面の作成"
+        },
+        {
+          "chapter": "04",
+          "id": "p139-b05",
+          "kind": "heading",
+          "section_id": "p136-b01",
+          "section": "4.1. 基礎的なログイン機能の実装",
+          "text": "【作業手順③】 リポジトリにID とパスワードのAnd 検索メソッドの定義"
+        },
+        {
+          "chapter": "04",
+          "id": "p140-b01",
+          "kind": "heading",
+          "section_id": "p136-b01",
+          "section": "4.1. 基礎的なログイン機能の実装",
+          "text": "【作業手順④】 ログイン認証メソッドの定義"
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p142-b01",
+      "title": "4.2. セッションによるユーザ情報の保持",
+      "steps": [
+        {
+          "chapter": "04",
+          "id": "p144-b01",
+          "kind": "heading",
+          "section_id": "p142-b01",
+          "section": "4.2. セッションによるユーザ情報の保持",
+          "text": "【作業手順①】 HttpSession 直接利用する方法"
+        },
+        {
+          "chapter": "04",
+          "id": "p145-b01",
+          "kind": "heading",
+          "section_id": "p142-b01",
+          "section": "4.2. セッションによるユーザ情報の保持",
+          "text": "【作業手順②】 セッションスコープ内のデータを参照する方法"
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p148-b01",
+      "title": "4.3. ログイン時の入力チェック",
+      "steps": [
+        {
+          "chapter": "04",
+          "id": "p150-b01",
+          "kind": "heading",
+          "section_id": "p148-b01",
+          "section": "4.3. ログイン時の入力チェック",
+          "text": "【作業手順①】 Form クラスにValidation のアノテーションを付与"
+        },
+        {
+          "chapter": "04",
+          "id": "p151-b01",
+          "kind": "heading",
+          "section_id": "p148-b01",
+          "section": "4.3. ログイン時の入力チェック",
+          "text": "【作業手順②】 ログイン入力ページ遷移用のメソッド定義"
+        },
+        {
+          "chapter": "04",
+          "id": "p151-b05",
+          "kind": "heading",
+          "section_id": "p148-b01",
+          "section": "4.3. ログイン時の入力チェック",
+          "text": "【作業手順③】 入力チェック用メソッドの定義"
+        },
+        {
+          "chapter": "04",
+          "id": "p152-b03",
+          "kind": "heading",
+          "section_id": "p148-b01",
+          "section": "4.3. ログイン時の入力チェック",
+          "text": "【作業手順④】 ログイン入力ページの修正"
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p157-b01",
+      "title": "4.3.1. 【参考】その他のValidation アノテーション",
+      "steps": []
+    },
+    {
+      "chapter": "04",
+      "id": "p159-b01",
+      "title": "4.3.2. 【参考】メッセージのカスタマイズ",
+      "steps": []
+    },
+    {
+      "chapter": "05",
+      "id": "p167-b01",
+      "title": "5.1. Thymeleaf の基本構文",
+      "steps": []
+    },
+    {
+      "chapter": "05",
+      "id": "p170-b01",
+      "title": "5.1.1. 動的にイメージとリンク生成(th:attr)",
+      "steps": []
+    },
+    {
+      "chapter": "05",
+      "id": "p175-b01",
+      "title": "5.1.2. 条件式による表示制御(th:if)",
+      "steps": []
+    },
+    {
+      "chapter": "05",
+      "id": "p178-b01",
+      "title": "5.2. CSS とJavaScript の利用",
+      "steps": []
+    },
+    {
+      "chapter": "05",
+      "id": "p181-b01",
+      "title": "5.3. レイアウト機能",
+      "steps": [
+        {
+          "chapter": "05",
+          "id": "p183-b01",
+          "kind": "heading",
+          "section_id": "p181-b01",
+          "section": "5.3. レイアウト機能",
+          "text": "【作業手順①】 レイアウトファイルの作成"
+        },
+        {
+          "chapter": "05",
+          "id": "p184-b08",
+          "kind": "heading",
+          "section_id": "p181-b01",
+          "section": "5.3. レイアウト機能",
+          "text": "【作業手順②】 コンテンツ用のHTML の修正"
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p195-b01",
+      "title": "6.1. 外部参照を持つエンティティの定義",
+      "steps": [
+        {
+          "chapter": "06",
+          "id": "p196-b01",
+          "kind": "heading",
+          "section_id": "p195-b01",
+          "section": "6.1. 外部参照を持つエンティティの定義",
+          "text": "【作業手順①】 新たなテーブルと、データの準備"
+        },
+        {
+          "chapter": "06",
+          "id": "p199-b01",
+          "kind": "heading",
+          "section_id": "p195-b01",
+          "section": "6.1. 外部参照を持つエンティティの定義",
+          "text": "【作業手順②】 参照先エンティティの作成"
+        },
+        {
+          "chapter": "06",
+          "id": "p200-b01",
+          "kind": "heading",
+          "section_id": "p195-b01",
+          "section": "6.1. 外部参照を持つエンティティの定義",
+          "text": "【作業手順③】 参照元エンティティの修正"
+        },
+        {
+          "chapter": "06",
+          "id": "p202-b01",
+          "kind": "heading",
+          "section_id": "p195-b01",
+          "section": "6.1. 外部参照を持つエンティティの定義",
+          "text": "【作業手順④】 CategoryRepository の作成"
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p203-b01",
+      "title": "6.2. 外部参照を用いた検索",
+      "steps": [
+        {
+          "chapter": "06",
+          "id": "p204-b01",
+          "kind": "heading",
+          "section_id": "p203-b01",
+          "section": "6.2. 外部参照を用いた検索",
+          "text": "【作業手順①】 商品コントローラーの再確認"
+        },
+        {
+          "chapter": "06",
+          "id": "p205-b01",
+          "kind": "heading",
+          "section_id": "p203-b01",
+          "section": "6.2. 外部参照を用いた検索",
+          "text": "【作業手順②】 View にカテゴリ名を出力するよう修正"
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p208-b01",
+      "title": "6.2.1. 【参考】 検索結果のエラーハンドリング",
+      "steps": [
+        {
+          "chapter": "06",
+          "id": "p209-b01",
+          "kind": "heading",
+          "section_id": "p208-b01",
+          "section": "6.2.1. 【参考】 検索結果のエラーハンドリング",
+          "text": "【作業手順①】 findById(id).orElse(null)の確認"
+        },
+        {
+          "chapter": "06",
+          "id": "p210-b01",
+          "kind": "heading",
+          "section_id": "p208-b01",
+          "section": "6.2.1. 【参考】 検索結果のエラーハンドリング",
+          "text": "【作業手順②】 商品が見つからなかった際の表示の切り替え"
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p213-b01",
+      "title": "6.3. 外部参照付きのデータ登録",
+      "steps": [
+        {
+          "chapter": "06",
+          "id": "p215-b05",
+          "kind": "heading",
+          "section_id": "p213-b01",
+          "section": "6.3. 外部参照付きのデータ登録",
+          "text": "【作業手順①】 登録処理の準備 - ProductForm の修正"
+        },
+        {
+          "chapter": "06",
+          "id": "p216-b01",
+          "kind": "heading",
+          "section_id": "p213-b01",
+          "section": "6.3. 外部参照付きのデータ登録",
+          "text": "【作業手順②】 登録画面遷移用のコントローラーの修正"
+        },
+        {
+          "chapter": "06",
+          "id": "p218-b01",
+          "kind": "heading",
+          "section_id": "p213-b01",
+          "section": "6.3. 外部参照付きのデータ登録",
+          "text": "【作業手順③】 カテゴリのリストの動的表示"
+        },
+        {
+          "chapter": "06",
+          "id": "p219-b01",
+          "kind": "heading",
+          "section_id": "p213-b01",
+          "section": "6.3. 外部参照付きのデータ登録",
+          "text": "【作業手順④】 登録処理の実装 - 不具合の確認"
+        },
+        {
+          "chapter": "06",
+          "id": "p220-b01",
+          "kind": "heading",
+          "section_id": "p213-b01",
+          "section": "6.3. 外部参照付きのデータ登録",
+          "text": "【作業手順➄】 Product エンティティにcategoryId フィールドの追加"
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p222-b01",
+      "title": "6.4. 複雑なSQL 文の操作方法",
+      "steps": []
+    },
+    {
+      "chapter": "06",
+      "id": "p223-b01",
+      "title": "6.4.1. 複雑な検索をメソッド名で定義する際のデメリット",
+      "steps": []
+    },
+    {
+      "chapter": "06",
+      "id": "p225-b01",
+      "title": "6.4.2. JPQL の基本構文",
+      "steps": [
+        {
+          "chapter": "06",
+          "id": "p233-b07",
+          "kind": "heading",
+          "section_id": "p225-b01",
+          "section": "6.4.2. JPQL の基本構文",
+          "text": "【作業手順①】 DTO（集計結果を受け取るためのクラス）の作成"
+        },
+        {
+          "chapter": "06",
+          "id": "p235-b01",
+          "kind": "heading",
+          "section_id": "p225-b01",
+          "section": "6.4.2. JPQL の基本構文",
+          "text": "【作業手順➁】 リポジトリの作成"
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p241-b01",
+      "title": "7.1. Bootstrap とは",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p245-b01",
+      "title": "7.2. Bootstrap の導入方法",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p250-b01",
+      "title": "7.3. Bootstrap を使ったスタイルの適用",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p251-b01",
+      "title": "7.3.1. テキスト",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p252-b01",
+      "title": "7.3.2. 色",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p254-b01",
+      "title": "7.3.3. ボタン",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p256-b01",
+      "title": "7.3.4. ボーダー(Border)",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p257-b01",
+      "title": "7.3.5. 余白",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p260-b01",
+      "title": "7.3.6. ブロック要素の幅の調整(高さと横幅)",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p262-b01",
+      "title": "7.4. テーブル",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p265-b01",
+      "title": "7.5. グリッドシステムを使ったレスポンシブデザイン",
+      "steps": []
+    },
+    {
+      "chapter": "07",
+      "id": "p272-b01",
+      "title": "7.6. フォーム",
+      "steps": []
+    }
+  ]
+}

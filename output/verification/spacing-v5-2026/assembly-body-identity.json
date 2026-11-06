@@ -1,0 +1,2503 @@
+{
+  "passed": true,
+  "pages": 416,
+  "problems": [],
+  "checks": [
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 1,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 2,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 6,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 7,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 8,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 9,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 10,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 11,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 12,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 13,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "page": 14,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 15,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 16,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 17,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 18,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 19,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 20,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 21,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 22,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 23,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 24,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 25,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 26,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 27,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 28,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 29,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 30,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 31,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "page": 32,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 33,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 34,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 35,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 36,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 37,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 38,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 39,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 40,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 41,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 42,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 43,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 44,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 45,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 46,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 47,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 48,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 49,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 50,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 51,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 52,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 53,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 54,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 55,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 56,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 57,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 58,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 59,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 60,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 61,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 62,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 63,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 64,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 65,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 66,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 67,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 68,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "page": 69,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 70,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 71,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 72,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 73,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 74,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 75,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 76,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 77,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 78,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 79,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 80,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 81,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 82,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 83,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 84,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 85,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 86,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 87,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 88,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 89,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 90,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 91,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 92,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 93,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 94,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 95,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 96,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 97,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 98,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 99,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 100,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 101,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 102,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 103,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 104,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 105,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 106,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 107,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 108,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 109,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 110,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 111,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 112,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 113,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 114,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 115,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 116,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 117,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 118,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 119,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 120,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 121,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 122,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 123,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 124,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 125,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 126,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 127,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 128,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 129,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 130,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 131,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 132,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 133,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 134,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 135,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 136,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 137,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 138,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 139,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 140,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 141,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 142,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 143,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 144,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 145,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 146,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 147,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 148,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 149,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 150,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 151,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 152,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 153,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "page": 154,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 155,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 156,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 157,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 158,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 159,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 160,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 161,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 162,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 163,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 164,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 165,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 166,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 167,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 168,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 169,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 170,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 171,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 172,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 173,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 174,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 175,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 176,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 177,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 178,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 179,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 180,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 181,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 182,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 183,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 184,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 185,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 186,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 187,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 188,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 189,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 190,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 191,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 192,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "page": 193,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 194,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 195,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 196,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 197,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 198,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 199,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 200,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 201,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 202,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 203,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 204,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 205,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 206,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 207,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 208,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 209,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 210,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 211,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 212,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 213,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 214,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 215,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 216,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 217,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 218,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 219,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 220,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 221,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 222,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 223,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 224,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 225,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "page": 226,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 227,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 228,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 229,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 230,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 231,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 232,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 233,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 234,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 235,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 236,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 237,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 238,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 239,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 240,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 241,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 242,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 243,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 244,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 245,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 246,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 247,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 248,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 249,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 250,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 251,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 252,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 253,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 254,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 255,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 256,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 257,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 258,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 259,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 260,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 261,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 262,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 263,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 264,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 265,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 266,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 267,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 268,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 269,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 270,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 271,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 272,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 273,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 274,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "page": 275,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 276,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 277,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 278,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 279,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 280,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 281,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 282,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 283,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 284,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 285,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 286,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 287,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 288,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 289,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 290,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 291,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 292,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 293,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 294,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 295,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 296,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 297,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 298,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 299,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 300,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 301,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 302,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 303,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 304,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 305,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 306,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 307,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 308,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 309,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 310,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 311,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 312,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 313,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 314,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 315,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 316,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 317,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 318,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 319,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 320,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 321,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 322,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 323,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 324,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 325,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "page": 326,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "page": 327,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "page": 328,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "page": 329,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "page": 330,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "page": 331,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "page": 332,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "page": 333,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "page": 334,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "page": 335,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "page": 336,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "page": 337,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "page": 338,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "page": 339,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "page": 340,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "page": 341,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "page": 342,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "page": 343,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-front",
+      "page": 1,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-front",
+      "page": 2,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-front",
+      "page": 6,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex01",
+      "page": 7,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex01",
+      "page": 8,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex01",
+      "page": 9,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex01",
+      "page": 10,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "page": 11,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "page": 12,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "page": 13,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "page": 14,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "page": 15,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "page": 16,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 17,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 18,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 19,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 20,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 21,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 22,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 23,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 24,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 25,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 26,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 27,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "page": 28,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "page": 29,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "page": 30,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "page": 31,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "page": 32,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "page": 33,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "page": 34,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "page": 35,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "page": 36,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 37,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 38,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 39,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 40,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 41,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 42,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 43,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 44,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 45,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 46,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 47,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 48,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "page": 49,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 50,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 51,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 52,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 53,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 54,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 55,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 56,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 57,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 58,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 59,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 60,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 61,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 62,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 63,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 64,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "page": 65,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 66,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 67,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 68,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 69,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 70,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 71,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 72,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 73,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 74,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 75,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 76,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 77,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "page": 78,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-back",
+      "page": 79,
+      "passed": true
+    }
+  ]
+}

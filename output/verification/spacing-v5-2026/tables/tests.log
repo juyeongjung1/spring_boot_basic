@@ -1,0 +1,15 @@
+test_all_real_tables_fit_and_the_pdf_keeps_every_cell (__main__.TablePdfTests.test_all_real_tables_fit_and_the_pdf_keeps_every_cell) ... ok
+test_category_column_identifier_is_not_split_in_either_table (__main__.TablePdfTests.test_category_column_identifier_is_not_split_in_either_table) ... ok
+test_comparison_labels_and_technical_terms_are_not_split_in_the_middle (__main__.TablePdfTests.test_comparison_labels_and_technical_terms_are_not_split_in_the_middle) ... ok
+test_modern_pdf_palette_keeps_the_meaningful_red_emphasis (__main__.TablePdfTests.test_modern_pdf_palette_keeps_the_meaningful_red_emphasis) ... ok
+test_product_eight_is_left_aligned_like_the_other_product_names (__main__.TablePdfTests.test_product_eight_is_left_aligned_like_the_other_product_names) ... ok
+test_all_tables_keep_the_original_cell_text_without_a_code_header (__main__.TableSourceTests.test_all_tables_keep_the_original_cell_text_without_a_code_header) ... ok
+test_modern_fill_styles_keep_constraints_and_message_line_pairs (__main__.TableSourceTests.test_modern_fill_styles_keep_constraints_and_message_line_pairs) ... ok
+test_product_names_constraints_and_numbers_align_by_column (__main__.TableSourceTests.test_product_names_constraints_and_numbers_align_by_column) ... ok
+test_property_keys_have_room_and_use_table_structure (__main__.TableSourceTests.test_property_keys_have_room_and_use_table_structure) ... ok
+test_restored_employee_validation_row_keeps_its_original_red_text (__main__.TableSourceTests.test_restored_employee_validation_row_keeps_its_original_red_text) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 30.440s
+
+OK
