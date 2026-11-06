@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "pages": 7,
+  "reviewed": [
+    {
+      "path": "contact-01.png",
+      "sha256": "d2aa57ddf34b90f072d146d4f9ac780bf266deee5100055c28d75206b5cc1a62"
+    },
+    {
+      "path": "contact-02.png",
+      "sha256": "b944edc1f8b7f549bee6c0f0c11abab0ce6ad4e5f4db8444c10782561ec8c57a"
+    },
+    {
+      "path": "contact-03.png",
+      "sha256": "65c703cd05f2a1d1b50ab6bf867aefbe6a6341a6743319fa3962c99e59dcd33a"
+    },
+    {
+      "path": "contact-04.png",
+      "sha256": "3e7440de1d3d7622ba9e8537bd034a7e26f3ec81d85b482fc56833c4720577fb"
+    }
+  ],
+  "checks": [
+    "短い表の自然な幅と左端",
+    "中央の列見出し・全データ左",
+    "縦横罫線と四辺外周・四隅",
+    "全セルの字句と折り返し",
+    "本文・図・小小見出し・ヘッダー/フッターの保全"
+  ]
+}

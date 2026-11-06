@@ -18,6 +18,7 @@ APPROVED_EDITION = 'f16135f3cebb2e2f9ab481e9cfead35b05bd52d4'
 FIGURE_REVISION_EDITION = '96a99882326d65ec048100b2f20fa0ed4aaa72d2'
 REVIEW_EDITION = 'ac012ddc04163641c9fa3c865b11b00b0b6307d6'
 SPACING_EDITION = '380e36fb9b1aae65f4f82405ab39f669e4c2f083'
+TABLE_EDITION = 'ee2f9a455b14bbb85cec9e97e208bd948eaff8f2'
 DI_INTRO = 'illustration-figure-cards-2026-di-remote-intro'
 MANAGED = 'illustration-expansion-2026-boot-managed-versions'
 BEAN = 'illustration-expansion-2026-bean-auto-configuration'
@@ -384,7 +385,7 @@ class IllustrationSourceTests(unittest.TestCase):
             'docs/textbook/chapters/02/assets/revision-ill-form-name-binding.png',
             'docs/textbook/chapters/03/assets/revision-ill-each-variable-key.png'})
 
-    def test_only_requested_prose_and_spacing_changes_follow_the_review_edition(self):
+    def test_only_requested_prose_and_spacing_changes_reached_the_approved_spacing_edition(self):
         review = ROOT/'output/verification/spacing-v5-2026'
         prose = json.loads((review/'prose/prose-changes.json').read_text(encoding='utf-8'))
         spacing = json.loads((review/'heading-spacing-plan.json').read_text(encoding='utf-8'))
@@ -396,7 +397,7 @@ class IllustrationSourceTests(unittest.TestCase):
         count, immutable = 0, ['docs/textbook/illustrations.json','tools/textbook/code_explanations.json','tools/textbook/filename_labels.json']
         for name in catalog()['reviewed_chapters']:
             folder, old_nodes, old_figures, old_pages, old_config = edition_chapter(name, SPACING_EDITION)
-            _, nodes, figures, pages, config = chapter(name)
+            _, nodes, figures, pages, config = edition_chapter(name, TABLE_EDITION)
             with self.subTest(chapter=name):
                 self.assertEqual(set(nodes),set(old_nodes))
                 self.assertEqual(figures,old_figures)
@@ -413,7 +414,8 @@ class IllustrationSourceTests(unittest.TestCase):
                         self.assertEqual({k:v for k,v in node.items() if k not in {'parts','text'}},
                                          {k:v for k,v in nodes[ident].items() if k not in {'parts','text'}},ident)
                 old_path=ROOT/'tmp/illustrations-tests/base'/SPACING_EDITION/(name+'.md')
-                texts=[old_path.read_text(encoding='utf-8'),(folder/'chapter.md').read_text(encoding='utf-8')]
+                approved_path=ROOT/'tmp/illustrations-tests/base'/TABLE_EDITION/(name+'.md')
+                texts=[old_path.read_text(encoding='utf-8'),approved_path.read_text(encoding='utf-8')]
                 for index,text in enumerate(texts):
                     for chapter_name,ident in changes:
                         if chapter_name==name:
@@ -431,7 +433,29 @@ class IllustrationSourceTests(unittest.TestCase):
             immutable += [prefix+'baseline.md',prefix+'source-layout.json',prefix+'assets']
         self.assertEqual(count,2940)
         command=['git','-c','safe.directory='+ROOT.as_posix()]
-        changed=subprocess.run(command+['diff','--name-only','--no-renames',SPACING_EDITION,'--',*immutable],
+        changed=subprocess.run(command+['diff','--name-only','--no-renames',SPACING_EDITION,TABLE_EDITION,'--',*immutable],
+            cwd=ROOT,check=True,capture_output=True,encoding='utf-8').stdout
+        self.assertFalse(changed,changed)
+
+    def test_table_revision_preserves_all_chapter_sources_settings_and_assets(self):
+        immutable=['docs/textbook/illustrations.json','tools/textbook/code_explanations.json','tools/textbook/filename_labels.json']
+        count=0
+        for name in catalog()['reviewed_chapters']:
+            folder,old_nodes,old_figures,old_pages,old_config=edition_chapter(name,TABLE_EDITION)
+            _,nodes,figures,pages,config=chapter(name)
+            with self.subTest(chapter=name):
+                self.assertEqual(nodes,old_nodes)
+                self.assertEqual(figures,old_figures)
+                self.assertEqual(pages,old_pages)
+                self.assertEqual(config,old_config)
+                snapshot=ROOT/'tmp/illustrations-tests/base'/TABLE_EDITION/(name+'.md')
+                self.assertEqual((folder/'chapter.md').read_text(encoding='utf-8'),snapshot.read_text(encoding='utf-8'))
+            count+=len(nodes)+len(figures)
+            prefix='docs/textbook/chapters/'+name+'/'
+            immutable += [prefix+'baseline.md',prefix+'source-layout.json',prefix+'assets']
+        self.assertEqual(count,2940)
+        command=['git','-c','safe.directory='+ROOT.as_posix()]
+        changed=subprocess.run(command+['diff','--name-only','--no-renames',TABLE_EDITION,'--',*immutable],
             cwd=ROOT,check=True,capture_output=True,encoding='utf-8').stdout
         self.assertFalse(changed,changed)
         new_assets=subprocess.run(command+['ls-files','--others','--exclude-standard','--',

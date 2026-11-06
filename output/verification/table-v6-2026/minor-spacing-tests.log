@@ -1,0 +1,9 @@
+test_all_final_markers_keep_the_no_extra_space_page_assignments (spacing_v5_test_minor_spacing.MinorSpacingTests.test_all_final_markers_keep_the_no_extra_space_page_assignments) ... ok
+test_only_accepted_flow_minor_headings_receive_the_extra_space (spacing_v5_test_minor_spacing.MinorSpacingTests.test_only_accepted_flow_minor_headings_receive_the_extra_space) ... ok
+test_the_extra_space_adds_eighteen_points_in_an_actual_pdf (spacing_v5_test_minor_spacing.MinorSpacingTests.test_the_extra_space_adds_eighteen_points_in_an_actual_pdf) ... ok
+test_the_two_requested_operation_headings_follow_the_previous_page (spacing_v5_test_minor_spacing.MinorSpacingTests.test_the_two_requested_operation_headings_follow_the_previous_page) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 30.212s
+
+OK

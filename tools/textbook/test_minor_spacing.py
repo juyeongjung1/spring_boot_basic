@@ -6,14 +6,16 @@ import unittest
 import typst
 
 from build import ROOT, compile_pdf, flow_layout, read_markdown, style_header
+from test_illustrations import TABLE_EDITION, edition_json
 
-REVIEW = ROOT/'output/verification/spacing-v5-2026'
+REVIEW = ROOT/'output/verification/table-v6-2026'
+REVIEWS = ((ROOT/'output/verification/spacing-v5-2026',TABLE_EDITION),(REVIEW,None))
 read = lambda path: json.loads(path.read_text(encoding='utf-8'))
 
 
-@lru_cache(maxsize=1)
-def plan():
-    return read(REVIEW/'heading-spacing-plan.json')
+@lru_cache(maxsize=None)
+def plan(review=REVIEW):
+    return read(review/'heading-spacing-plan.json')
 
 
 @lru_cache(maxsize=None)
@@ -26,35 +28,40 @@ def chapter(name):
 class MinorSpacingTests(unittest.TestCase):
     def test_only_accepted_flow_minor_headings_receive_the_extra_space(self):
         expected={name for collection in read(ROOT/'docs/textbook/collections.json').values() for name in collection['parts']}
-        self.assertEqual({part['chapter'] for part in plan()['chapters']},expected)
-        self.assertEqual(plan()['extra_space_pt'],18)
-        for part in plan()['chapters']:
-            name=part['chapter']
-            nodes,_,config,layout=chapter(name)
-            accepted=part['accepted']
-            with self.subTest(chapter=name):
-                self.assertEqual(config.get('typography',{}),
-                    {'minor_heading_extra_space':accepted} if accepted else {})
-                self.assertEqual(len(accepted),len(set(accepted)))
-                self.assertTrue(set(accepted).issubset(part['candidates']))
-                self.assertFalse(set(accepted)&{row['id'] for row in part['excluded']})
-                for ident in accepted:
-                    self.assertEqual(nodes[ident]['kind'],'heading')
-                    styles=[layout['styles'][(style or '').split(':')[-1]]
-                            for text,style in nodes[ident]['parts'] if text.strip()]
-                    self.assertTrue(styles,ident)
-                    self.assertTrue(all(abs(s['size']-12)<.1 and 'Gothic' in s['font'] for s in styles),ident)
+        for review,edition in REVIEWS:
+            self.assertEqual({part['chapter'] for part in plan(review)['chapters']},expected)
+            self.assertEqual(plan(review)['extra_space_pt'],18)
+            for part in plan(review)['chapters']:
+                name=part['chapter']
+                nodes,_,config,layout=chapter(name)
+                if edition:
+                    config=edition_json('docs/textbook/chapters/'+name+'/source.json',edition)
+                accepted=part['accepted']
+                with self.subTest(review=review.name,chapter=name):
+                    self.assertEqual(config.get('typography',{}),
+                        {'minor_heading_extra_space':accepted} if accepted else {})
+                    self.assertEqual(len(accepted),len(set(accepted)))
+                    self.assertTrue(set(accepted).issubset(part['candidates']))
+                    self.assertFalse(set(accepted)&{row['id'] for row in part['excluded']})
+                    for ident in accepted:
+                        self.assertEqual(nodes[ident]['kind'],'heading')
+                        styles=[layout['styles'][(style or '').split(':')[-1]]
+                                for text,style in nodes[ident]['parts'] if text.strip()]
+                        self.assertTrue(styles,ident)
+                        self.assertTrue(all(abs(s['size']-12)<.1 and 'Gothic' in s['font'] for s in styles),ident)
 
     def test_all_final_markers_keep_the_no_extra_space_page_assignments(self):
-        for part in plan()['chapters']:
-            name=part['chapter']
-            before=read(REVIEW/'spacing'/name/'baseline-marks.json')
-            checks=read(ROOT/'output/pdf/textbook'/('chapter-'+name)/'checks.json')
-            signature=lambda marks:[(m['id'],m['edge'],m['page']) for m in marks]
-            with self.subTest(chapter=name):
-                self.assertEqual(signature(checks['flow']['block_positions']),signature(before))
-                self.assertEqual(checks['flow']['pages'],part['baseline_pages'])
-                self.assertEqual(part['pages'],part['baseline_pages'])
+        for review,edition in REVIEWS:
+            for part in plan(review)['chapters']:
+                name=part['chapter']
+                before=read(review/'spacing'/name/'baseline-marks.json')
+                relative='output/pdf/textbook/chapter-'+name+'/checks.json'
+                checks=edition_json(relative,edition) if edition else read(ROOT/relative)
+                signature=lambda marks:[(m['id'],m['edge'],m['page']) for m in marks]
+                with self.subTest(review=review.name,chapter=name):
+                    self.assertEqual(signature(checks['flow']['block_positions']),signature(before))
+                    self.assertEqual(checks['flow']['pages'],part['baseline_pages'])
+                    self.assertEqual(part['pages'],part['baseline_pages'])
 
     def test_the_two_requested_operation_headings_follow_the_previous_page(self):
         _,pages,config,_=chapter('02')

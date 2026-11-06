@@ -1,0 +1,1934 @@
+[
+  {
+    "id": "__source-page-16",
+    "edge": "source-page",
+    "page": 2,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-16",
+    "edge": "native-page",
+    "page": 2,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "__source-page-17",
+    "edge": "source-page",
+    "page": 3,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p017-b01",
+    "edge": "start",
+    "page": 3,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p017-b01",
+    "edge": "end",
+    "page": 3,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p017-f01",
+    "edge": "start",
+    "page": 3,
+    "x": 112.26,
+    "y": 116.12
+  },
+  {
+    "id": "p017-f01",
+    "edge": "end",
+    "page": 3,
+    "x": 112.26,
+    "y": 392.91
+  },
+  {
+    "id": "p017-b02",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 438.3066101074219
+  },
+  {
+    "id": "p017-b02",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 467.3466101074219
+  },
+  {
+    "id": "p017-b03",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 480.3066101074219
+  },
+  {
+    "id": "p017-b03",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 527.3466101074218
+  },
+  {
+    "id": "p017-b04",
+    "edge": "start",
+    "page": 3,
+    "x": 85.104,
+    "y": 540.3066101074219
+  },
+  {
+    "id": "p017-b04",
+    "edge": "end",
+    "page": 3,
+    "x": 85.104,
+    "y": 569.3466101074218
+  },
+  {
+    "id": "__source-page-18",
+    "edge": "source-page",
+    "page": 4,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p018-b01",
+    "edge": "start",
+    "page": 4,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p018-b01",
+    "edge": "end",
+    "page": 4,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p018-f02",
+    "edge": "start",
+    "page": 4,
+    "x": 112.26,
+    "y": 113.82000000000001
+  },
+  {
+    "id": "p018-f02",
+    "edge": "end",
+    "page": 4,
+    "x": 112.26,
+    "y": 390.61
+  },
+  {
+    "id": "p018-b02",
+    "edge": "heading",
+    "page": 4,
+    "x": 85.104,
+    "y": 435.8019714355469
+  },
+  {
+    "id": "p018-b03",
+    "edge": "start",
+    "page": 4,
+    "x": 85.104,
+    "y": 459.8019714355469
+  },
+  {
+    "id": "p018-b03",
+    "edge": "end",
+    "page": 4,
+    "x": 85.104,
+    "y": 488.8419714355469
+  },
+  {
+    "id": "p018-b04",
+    "edge": "start",
+    "page": 4,
+    "x": 85.104,
+    "y": 501.8019714355469
+  },
+  {
+    "id": "p018-b04",
+    "edge": "end",
+    "page": 4,
+    "x": 85.104,
+    "y": 548.8419714355468
+  },
+  {
+    "id": "p018-b05",
+    "edge": "start",
+    "page": 4,
+    "x": 85.104,
+    "y": 561.8019714355469
+  },
+  {
+    "id": "p018-b05",
+    "edge": "end",
+    "page": 4,
+    "x": 85.104,
+    "y": 626.8419714355468
+  },
+  {
+    "id": "instruction-illustration-expansion-2026-framework-foundation",
+    "edge": "start",
+    "page": 5,
+    "x": 79.104,
+    "y": 86.0
+  },
+  {
+    "id": "figure-frame-illustration-expansion-2026-framework-foundation",
+    "edge": "start",
+    "page": 5,
+    "x": 85.104,
+    "y": 92.0
+  },
+  {
+    "id": "figure-number-illustration-expansion-2026-framework-foundation",
+    "edge": "start",
+    "page": 5,
+    "x": 85.104,
+    "y": 92.0
+  },
+  {
+    "id": "figure-number-illustration-expansion-2026-framework-foundation",
+    "edge": "end",
+    "page": 5,
+    "x": 85.104,
+    "y": 101.0
+  },
+  {
+    "id": "illustration-expansion-2026-framework-foundation",
+    "edge": "start",
+    "page": 5,
+    "x": 85.104,
+    "y": 106.0
+  },
+  {
+    "id": "illustration-expansion-2026-framework-foundation",
+    "edge": "end",
+    "page": 5,
+    "x": 85.104,
+    "y": 222.64263645726055
+  },
+  {
+    "id": "illustration-expansion-2026-framework-foundation-caption",
+    "edge": "start",
+    "page": 5,
+    "x": 85.104,
+    "y": 228.64263645726055
+  },
+  {
+    "id": "illustration-expansion-2026-framework-foundation-caption",
+    "edge": "end",
+    "page": 5,
+    "x": 85.104,
+    "y": 238.14263645726055
+  },
+  {
+    "id": "figure-frame-illustration-expansion-2026-framework-foundation",
+    "edge": "end",
+    "page": 5,
+    "x": 85.104,
+    "y": 238.14263645726055
+  },
+  {
+    "id": "instruction-illustration-expansion-2026-framework-foundation",
+    "edge": "end",
+    "page": 5,
+    "x": 79.104,
+    "y": 244.14263645726055
+  },
+  {
+    "id": "p018-b06",
+    "edge": "heading",
+    "page": 5,
+    "x": 85.104,
+    "y": 262.14263645726055
+  },
+  {
+    "id": "p018-b07",
+    "edge": "start",
+    "page": 5,
+    "x": 85.104,
+    "y": 286.14263645726055
+  },
+  {
+    "id": "p018-b07",
+    "edge": "end",
+    "page": 5,
+    "x": 85.104,
+    "y": 369.18263645726057
+  },
+  {
+    "id": "__source-page-19",
+    "edge": "source-page",
+    "page": 6,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p019-b01",
+    "edge": "start",
+    "page": 6,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p019-b01",
+    "edge": "end",
+    "page": 6,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p019-f03",
+    "edge": "start",
+    "page": 6,
+    "x": 112.26,
+    "y": 113.82000000000001
+  },
+  {
+    "id": "p019-f03",
+    "edge": "end",
+    "page": 6,
+    "x": 112.26,
+    "y": 390.61
+  },
+  {
+    "id": "p019-b02",
+    "edge": "heading",
+    "page": 6,
+    "x": 85.104,
+    "y": 435.8019714355469
+  },
+  {
+    "id": "p019-b03",
+    "edge": "start",
+    "page": 6,
+    "x": 85.104,
+    "y": 459.8019714355469
+  },
+  {
+    "id": "p019-b03",
+    "edge": "end",
+    "page": 6,
+    "x": 85.104,
+    "y": 506.8419714355469
+  },
+  {
+    "id": "p019-b04",
+    "edge": "start",
+    "page": 6,
+    "x": 85.104,
+    "y": 519.8019714355469
+  },
+  {
+    "id": "p019-b04",
+    "edge": "end",
+    "page": 6,
+    "x": 85.104,
+    "y": 584.8419714355468
+  },
+  {
+    "id": "p019-b05",
+    "edge": "start",
+    "page": 6,
+    "x": 85.104,
+    "y": 597.8019714355469
+  },
+  {
+    "id": "p019-b05",
+    "edge": "end",
+    "page": 6,
+    "x": 85.104,
+    "y": 662.8419714355468
+  },
+  {
+    "id": "p019-b06",
+    "edge": "start",
+    "page": 6,
+    "x": 85.104,
+    "y": 675.8019714355469
+  },
+  {
+    "id": "p019-b06",
+    "edge": "end",
+    "page": 6,
+    "x": 85.104,
+    "y": 740.8419714355468
+  },
+  {
+    "id": "__source-page-20",
+    "edge": "source-page",
+    "page": 7,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p020-b01",
+    "edge": "heading",
+    "page": 7,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p020-b02",
+    "edge": "heading",
+    "page": 7,
+    "x": 85.104,
+    "y": 116.0
+  },
+  {
+    "id": "p020-b03",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 139.04000000000002
+  },
+  {
+    "id": "p020-b03",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 204.08000000000004
+  },
+  {
+    "id": "instruction-illustration-figure-cards-2026-di-remote-intro",
+    "edge": "start",
+    "page": 7,
+    "x": 79.104,
+    "y": 217.04000000000002
+  },
+  {
+    "id": "figure-frame-illustration-figure-cards-2026-di-remote-intro",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 223.04000000000002
+  },
+  {
+    "id": "figure-number-illustration-figure-cards-2026-di-remote-intro",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 223.04000000000002
+  },
+  {
+    "id": "figure-number-illustration-figure-cards-2026-di-remote-intro",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 232.04000000000002
+  },
+  {
+    "id": "illustration-figure-cards-2026-di-remote-intro",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 237.04000000000002
+  },
+  {
+    "id": "illustration-figure-cards-2026-di-remote-intro",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 353.68263645726057
+  },
+  {
+    "id": "illustration-figure-cards-2026-di-remote-intro-caption",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 359.68263645726057
+  },
+  {
+    "id": "illustration-figure-cards-2026-di-remote-intro-caption",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 369.18263645726057
+  },
+  {
+    "id": "figure-frame-illustration-figure-cards-2026-di-remote-intro",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 369.18263645726057
+  },
+  {
+    "id": "instruction-illustration-figure-cards-2026-di-remote-intro",
+    "edge": "end",
+    "page": 7,
+    "x": 79.104,
+    "y": 375.18263645726057
+  },
+  {
+    "id": "p020-b04",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 387.18263645726057
+  },
+  {
+    "id": "p020-b04",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 416.2226364572606
+  },
+  {
+    "id": "p020-b05",
+    "edge": "heading",
+    "page": 7,
+    "x": 85.104,
+    "y": 434.2226364572606
+  },
+  {
+    "id": "p020-b06",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 457.26263645726056
+  },
+  {
+    "id": "p020-b06",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 522.3026364572605
+  },
+  {
+    "id": "p020-b07",
+    "edge": "heading",
+    "page": 7,
+    "x": 85.104,
+    "y": 540.3026364572606
+  },
+  {
+    "id": "p020-b08",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 563.3426364572606
+  },
+  {
+    "id": "p020-b08",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 628.3826364572606
+  },
+  {
+    "id": "p020-b09",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 641.3426364572606
+  },
+  {
+    "id": "p020-b09",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 670.3826364572606
+  },
+  {
+    "id": "p020-b10",
+    "edge": "start",
+    "page": 7,
+    "x": 85.104,
+    "y": 683.3426364572606
+  },
+  {
+    "id": "p020-b10",
+    "edge": "end",
+    "page": 7,
+    "x": 85.104,
+    "y": 694.3826364572606
+  },
+  {
+    "id": "__source-page-21",
+    "edge": "source-page",
+    "page": 8,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p021-b01",
+    "edge": "start",
+    "page": 8,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p021-b01",
+    "edge": "end",
+    "page": 8,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p021-f04",
+    "edge": "start",
+    "page": 8,
+    "x": 112.26,
+    "y": 113.82000000000001
+  },
+  {
+    "id": "p021-f04",
+    "edge": "end",
+    "page": 8,
+    "x": 112.26,
+    "y": 390.61
+  },
+  {
+    "id": "p021-b02",
+    "edge": "heading",
+    "page": 8,
+    "x": 85.104,
+    "y": 435.8019714355469
+  },
+  {
+    "id": "p021-b03",
+    "edge": "start",
+    "page": 8,
+    "x": 85.104,
+    "y": 459.8019714355469
+  },
+  {
+    "id": "p021-b03",
+    "edge": "end",
+    "page": 8,
+    "x": 85.104,
+    "y": 489.67212768554685
+  },
+  {
+    "id": "p021-b04",
+    "edge": "start",
+    "page": 8,
+    "x": 85.104,
+    "y": 502.63212768554683
+  },
+  {
+    "id": "p021-b04",
+    "edge": "end",
+    "page": 8,
+    "x": 85.104,
+    "y": 551.3324401855468
+  },
+  {
+    "id": "p021-b05",
+    "edge": "start",
+    "page": 8,
+    "x": 85.104,
+    "y": 564.2924401855468
+  },
+  {
+    "id": "p021-b05",
+    "edge": "end",
+    "page": 8,
+    "x": 85.104,
+    "y": 594.1625964355468
+  },
+  {
+    "id": "__source-page-22",
+    "edge": "source-page",
+    "page": 9,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p022-b01",
+    "edge": "heading",
+    "page": 9,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p022-b02",
+    "edge": "start",
+    "page": 9,
+    "x": 85.104,
+    "y": 109.04
+  },
+  {
+    "id": "p022-b02",
+    "edge": "end",
+    "page": 9,
+    "x": 85.104,
+    "y": 175.7403125
+  },
+  {
+    "id": "instruction-p022-b03",
+    "edge": "start",
+    "page": 9,
+    "x": 85.104,
+    "y": 193.7403125
+  },
+  {
+    "id": "p022-b03",
+    "edge": "heading",
+    "page": 9,
+    "x": 85.104,
+    "y": 193.7403125
+  },
+  {
+    "id": "figure-frame-p022-f05",
+    "edge": "start",
+    "page": 9,
+    "x": 93.20000000000002,
+    "y": 222.78031249999998
+  },
+  {
+    "id": "figure-number-p022-f05",
+    "edge": "start",
+    "page": 9,
+    "x": 93.20000000000002,
+    "y": 222.78031249999998
+  },
+  {
+    "id": "figure-number-p022-f05",
+    "edge": "end",
+    "page": 9,
+    "x": 93.20000000000002,
+    "y": 231.78031249999998
+  },
+  {
+    "id": "p022-f05",
+    "edge": "start",
+    "page": 9,
+    "x": 93.20000000000002,
+    "y": 236.78031249999998
+  },
+  {
+    "id": "p022-f05",
+    "edge": "end",
+    "page": 9,
+    "x": 93.20000000000002,
+    "y": 429.3802984067191
+  },
+  {
+    "id": "figure-frame-p022-f05",
+    "edge": "end",
+    "page": 9,
+    "x": 93.20000000000002,
+    "y": 429.3802984067191
+  },
+  {
+    "id": "instruction-p022-b03",
+    "edge": "end",
+    "page": 9,
+    "x": 85.104,
+    "y": 435.3802984067191
+  },
+  {
+    "id": "p022-b04",
+    "edge": "start",
+    "page": 9,
+    "x": 85.104,
+    "y": 447.3802984067191
+  },
+  {
+    "id": "p022-b04",
+    "edge": "end",
+    "page": 9,
+    "x": 85.104,
+    "y": 476.42029840671904
+  },
+  {
+    "id": "instruction-p022-b05",
+    "edge": "start",
+    "page": 10,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p022-b05",
+    "edge": "heading",
+    "page": 10,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p022-b06",
+    "edge": "start",
+    "page": 10,
+    "x": 85.104,
+    "y": 109.04
+  },
+  {
+    "id": "p022-b06",
+    "edge": "end",
+    "page": 10,
+    "x": 85.104,
+    "y": 120.08
+  },
+  {
+    "id": "p022-b07",
+    "edge": "start",
+    "page": 10,
+    "x": 85.104,
+    "y": 133.04000000000002
+  },
+  {
+    "id": "p022-b07",
+    "edge": "end",
+    "page": 10,
+    "x": 85.104,
+    "y": 198.91015625
+  },
+  {
+    "id": "p022-b08",
+    "edge": "start",
+    "page": 10,
+    "x": 85.104,
+    "y": 211.87015624999998
+  },
+  {
+    "id": "p022-b08",
+    "edge": "end",
+    "page": 10,
+    "x": 85.104,
+    "y": 240.91015625
+  },
+  {
+    "id": "figure-frame-p022-f06",
+    "edge": "start",
+    "page": 10,
+    "x": 95.0,
+    "y": 259.87015625
+  },
+  {
+    "id": "figure-number-p022-f06",
+    "edge": "start",
+    "page": 10,
+    "x": 95.0,
+    "y": 259.87015625
+  },
+  {
+    "id": "figure-number-p022-f06",
+    "edge": "end",
+    "page": 10,
+    "x": 95.0,
+    "y": 268.87015625
+  },
+  {
+    "id": "p022-f06",
+    "edge": "start",
+    "page": 10,
+    "x": 95.0,
+    "y": 273.87015625
+  },
+  {
+    "id": "p022-f06",
+    "edge": "end",
+    "page": 10,
+    "x": 95.0,
+    "y": 377.7701534597302
+  },
+  {
+    "id": "figure-frame-p022-f06",
+    "edge": "end",
+    "page": 10,
+    "x": 95.0,
+    "y": 377.7701534597302
+  },
+  {
+    "id": "instruction-p022-b05",
+    "edge": "end",
+    "page": 10,
+    "x": 85.104,
+    "y": 383.7701534597302
+  },
+  {
+    "id": "__source-page-23",
+    "edge": "source-page",
+    "page": 11,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p023-b01",
+    "edge": "heading",
+    "page": 11,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p023-b02",
+    "edge": "start",
+    "page": 11,
+    "x": 85.104,
+    "y": 109.04
+  },
+  {
+    "id": "p023-b02",
+    "edge": "end",
+    "page": 11,
+    "x": 85.104,
+    "y": 156.08
+  },
+  {
+    "id": "instruction-illustration-expansion-2026-bean-auto-configuration",
+    "edge": "start",
+    "page": 11,
+    "x": 79.104,
+    "y": 169.04000000000002
+  },
+  {
+    "id": "figure-frame-illustration-expansion-2026-bean-auto-configuration",
+    "edge": "start",
+    "page": 11,
+    "x": 85.104,
+    "y": 175.04000000000002
+  },
+  {
+    "id": "figure-number-illustration-expansion-2026-bean-auto-configuration",
+    "edge": "start",
+    "page": 11,
+    "x": 85.104,
+    "y": 175.04000000000002
+  },
+  {
+    "id": "figure-number-illustration-expansion-2026-bean-auto-configuration",
+    "edge": "end",
+    "page": 11,
+    "x": 85.104,
+    "y": 184.04000000000002
+  },
+  {
+    "id": "illustration-expansion-2026-bean-auto-configuration",
+    "edge": "start",
+    "page": 11,
+    "x": 85.104,
+    "y": 189.04000000000002
+  },
+  {
+    "id": "illustration-expansion-2026-bean-auto-configuration",
+    "edge": "end",
+    "page": 11,
+    "x": 85.104,
+    "y": 305.562633744856
+  },
+  {
+    "id": "illustration-expansion-2026-bean-auto-configuration-caption",
+    "edge": "start",
+    "page": 11,
+    "x": 85.104,
+    "y": 311.562633744856
+  },
+  {
+    "id": "illustration-expansion-2026-bean-auto-configuration-caption",
+    "edge": "end",
+    "page": 11,
+    "x": 85.104,
+    "y": 321.062633744856
+  },
+  {
+    "id": "figure-frame-illustration-expansion-2026-bean-auto-configuration",
+    "edge": "end",
+    "page": 11,
+    "x": 85.104,
+    "y": 321.062633744856
+  },
+  {
+    "id": "instruction-illustration-expansion-2026-bean-auto-configuration",
+    "edge": "end",
+    "page": 11,
+    "x": 79.104,
+    "y": 327.062633744856
+  },
+  {
+    "id": "p023-b03",
+    "edge": "start",
+    "page": 11,
+    "x": 85.104,
+    "y": 339.062633744856
+  },
+  {
+    "id": "p023-b03",
+    "edge": "end",
+    "page": 11,
+    "x": 85.104,
+    "y": 368.93278999485597
+  },
+  {
+    "id": "01-p023-b04-part1",
+    "edge": "html-component",
+    "page": 11,
+    "x": 79.464,
+    "y": 381.89278999485595
+  },
+  {
+    "id": "p023-b04",
+    "edge": "short-code",
+    "page": 11,
+    "x": 80.214,
+    "y": 424.162320994856
+  },
+  {
+    "id": "p023-b04",
+    "edge": "start",
+    "page": 11,
+    "x": 80.214,
+    "y": 424.162320994856
+  },
+  {
+    "id": "p023-b04",
+    "edge": "end",
+    "page": 11,
+    "x": 514.381969,
+    "y": 548.1935709948559
+  },
+  {
+    "id": "p023-b05",
+    "edge": "start",
+    "page": 11,
+    "x": 85.104,
+    "y": 567.6937899948559
+  },
+  {
+    "id": "p023-b05",
+    "edge": "end",
+    "page": 11,
+    "x": 85.104,
+    "y": 614.733789994856
+  },
+  {
+    "id": "p023-b06",
+    "edge": "start",
+    "page": 11,
+    "x": 85.104,
+    "y": 627.6937899948559
+  },
+  {
+    "id": "p023-b06",
+    "edge": "end",
+    "page": 11,
+    "x": 85.104,
+    "y": 657.563946244856
+  },
+  {
+    "id": "p023-b07",
+    "edge": "start",
+    "page": 11,
+    "x": 85.104,
+    "y": 670.5239462448559
+  },
+  {
+    "id": "p023-b07",
+    "edge": "end",
+    "page": 11,
+    "x": 85.104,
+    "y": 700.3941024948559
+  },
+  {
+    "id": "__source-page-24",
+    "edge": "source-page",
+    "page": 12,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p024-b01",
+    "edge": "start",
+    "page": 12,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p024-b01",
+    "edge": "end",
+    "page": 12,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p024-f07",
+    "edge": "start",
+    "page": 12,
+    "x": 112.26,
+    "y": 113.82000000000001
+  },
+  {
+    "id": "p024-f07",
+    "edge": "end",
+    "page": 12,
+    "x": 112.26,
+    "y": 390.61
+  },
+  {
+    "id": "p024-b02",
+    "edge": "heading",
+    "page": 12,
+    "x": 85.104,
+    "y": 435.8019714355469
+  },
+  {
+    "id": "p024-b03",
+    "edge": "start",
+    "page": 12,
+    "x": 85.104,
+    "y": 459.8019714355469
+  },
+  {
+    "id": "p024-b03",
+    "edge": "end",
+    "page": 12,
+    "x": 85.104,
+    "y": 506.8419714355469
+  },
+  {
+    "id": "p024-b04",
+    "edge": "start",
+    "page": 12,
+    "x": 85.104,
+    "y": 519.8019714355469
+  },
+  {
+    "id": "p024-b04",
+    "edge": "end",
+    "page": 12,
+    "x": 85.104,
+    "y": 567.6721276855469
+  },
+  {
+    "id": "p024-b05",
+    "edge": "heading",
+    "page": 12,
+    "x": 85.104,
+    "y": 585.6721276855469
+  },
+  {
+    "id": "p024-b06",
+    "edge": "start",
+    "page": 12,
+    "x": 85.104,
+    "y": 608.7121276855469
+  },
+  {
+    "id": "p024-b06",
+    "edge": "end",
+    "page": 12,
+    "x": 85.104,
+    "y": 638.5822839355469
+  },
+  {
+    "id": "p024-b07",
+    "edge": "start",
+    "page": 12,
+    "x": 85.104,
+    "y": 651.5422839355468
+  },
+  {
+    "id": "p024-b07",
+    "edge": "end",
+    "page": 12,
+    "x": 85.104,
+    "y": 663.4124401855469
+  },
+  {
+    "id": "p024-b08",
+    "edge": "start",
+    "page": 12,
+    "x": 85.104,
+    "y": 676.3724401855468
+  },
+  {
+    "id": "p024-b08",
+    "edge": "end",
+    "page": 12,
+    "x": 85.104,
+    "y": 688.2425964355468
+  },
+  {
+    "id": "p024-b09",
+    "edge": "start",
+    "page": 12,
+    "x": 85.104,
+    "y": 701.2025964355468
+  },
+  {
+    "id": "p024-b09",
+    "edge": "end",
+    "page": 12,
+    "x": 85.104,
+    "y": 748.2425964355468
+  },
+  {
+    "id": "__source-page-25",
+    "edge": "source-page",
+    "page": 13,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p025-b01",
+    "edge": "start",
+    "page": 13,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p025-b01",
+    "edge": "end",
+    "page": 13,
+    "x": 85.104,
+    "y": 151.04000000000002
+  },
+  {
+    "id": "p025-b02",
+    "edge": "heading",
+    "page": 13,
+    "x": 85.104,
+    "y": 169.04000000000002
+  },
+  {
+    "id": "instruction-p025-b03",
+    "edge": "start",
+    "page": 13,
+    "x": 85.104,
+    "y": 193.04000000000002
+  },
+  {
+    "id": "p025-b03",
+    "edge": "heading",
+    "page": 13,
+    "x": 85.104,
+    "y": 193.04000000000002
+  },
+  {
+    "id": "p025-b04",
+    "edge": "start",
+    "page": 13,
+    "x": 85.104,
+    "y": 210.91015625
+  },
+  {
+    "id": "p025-b04",
+    "edge": "end",
+    "page": 13,
+    "x": 85.104,
+    "y": 222.78031249999998
+  },
+  {
+    "id": "p025-b05",
+    "edge": "start",
+    "page": 13,
+    "x": 85.104,
+    "y": 235.74031250000002
+  },
+  {
+    "id": "p025-b05",
+    "edge": "end",
+    "page": 13,
+    "x": 85.104,
+    "y": 245.77765625000004
+  },
+  {
+    "id": "figure-frame-p025-f08",
+    "edge": "start",
+    "page": 13,
+    "x": 83.8,
+    "y": 264.73765625
+  },
+  {
+    "id": "figure-number-p025-f08",
+    "edge": "start",
+    "page": 13,
+    "x": 85.104,
+    "y": 264.73765625
+  },
+  {
+    "id": "figure-number-p025-f08",
+    "edge": "end",
+    "page": 13,
+    "x": 85.104,
+    "y": 273.73765625
+  },
+  {
+    "id": "p025-f08",
+    "edge": "start",
+    "page": 13,
+    "x": 83.8,
+    "y": 278.73765625
+  },
+  {
+    "id": "p025-f08",
+    "edge": "end",
+    "page": 13,
+    "x": 83.8,
+    "y": 454.03763404113516
+  },
+  {
+    "id": "figure-frame-p025-f08",
+    "edge": "end",
+    "page": 13,
+    "x": 83.8,
+    "y": 454.03763404113516
+  },
+  {
+    "id": "instruction-p025-b03",
+    "edge": "end",
+    "page": 13,
+    "x": 85.104,
+    "y": 460.03763404113516
+  },
+  {
+    "id": "instruction-p025-b06",
+    "edge": "start",
+    "page": 13,
+    "x": 85.104,
+    "y": 472.03763404113516
+  },
+  {
+    "id": "p025-b06",
+    "edge": "heading",
+    "page": 13,
+    "x": 85.104,
+    "y": 472.03763404113516
+  },
+  {
+    "id": "figure-frame-p025-f09",
+    "edge": "start",
+    "page": 13,
+    "x": 84.20000000000002,
+    "y": 515.9077902911351
+  },
+  {
+    "id": "figure-number-p025-f09",
+    "edge": "start",
+    "page": 13,
+    "x": 85.104,
+    "y": 515.9077902911351
+  },
+  {
+    "id": "figure-number-p025-f09",
+    "edge": "end",
+    "page": 13,
+    "x": 85.104,
+    "y": 524.9077902911351
+  },
+  {
+    "id": "p025-f09",
+    "edge": "start",
+    "page": 13,
+    "x": 84.20000000000002,
+    "y": 529.9077902911351
+  },
+  {
+    "id": "p025-f09",
+    "edge": "end",
+    "page": 13,
+    "x": 84.20000000000002,
+    "y": 705.3077994464086
+  },
+  {
+    "id": "figure-frame-p025-f09",
+    "edge": "end",
+    "page": 13,
+    "x": 84.20000000000002,
+    "y": 705.3077994464086
+  },
+  {
+    "id": "instruction-p025-b06",
+    "edge": "end",
+    "page": 13,
+    "x": 85.104,
+    "y": 711.3077994464086
+  },
+  {
+    "id": "__source-page-26",
+    "edge": "source-page",
+    "page": 14,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "instruction-p026-b01",
+    "edge": "start",
+    "page": 14,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p026-b01",
+    "edge": "heading",
+    "page": 14,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "figure-frame-p026-f10",
+    "edge": "start",
+    "page": 14,
+    "x": 83.8,
+    "y": 129.87015624999998
+  },
+  {
+    "id": "figure-number-p026-f10",
+    "edge": "start",
+    "page": 14,
+    "x": 85.104,
+    "y": 129.87015624999998
+  },
+  {
+    "id": "figure-number-p026-f10",
+    "edge": "end",
+    "page": 14,
+    "x": 85.104,
+    "y": 138.87015624999998
+  },
+  {
+    "id": "p026-f10",
+    "edge": "start",
+    "page": 14,
+    "x": 83.8,
+    "y": 143.87015624999998
+  },
+  {
+    "id": "p026-f10",
+    "edge": "end",
+    "page": 14,
+    "x": 83.8,
+    "y": 319.87015625
+  },
+  {
+    "id": "figure-frame-p026-f10",
+    "edge": "end",
+    "page": 14,
+    "x": 83.8,
+    "y": 319.87015625
+  },
+  {
+    "id": "instruction-p026-b01",
+    "edge": "end",
+    "page": 14,
+    "x": 85.104,
+    "y": 325.87015625
+  },
+  {
+    "id": "01-p026-b02-part1",
+    "edge": "html-component",
+    "page": 14,
+    "x": 79.464,
+    "y": 337.87015625
+  },
+  {
+    "id": "p026-b02",
+    "edge": "short-code",
+    "page": 14,
+    "x": 80.214,
+    "y": 380.13968724999995
+  },
+  {
+    "id": "p026-b02",
+    "edge": "start",
+    "page": 14,
+    "x": 80.214,
+    "y": 380.13968724999995
+  },
+  {
+    "id": "p026-b02",
+    "edge": "end",
+    "page": 14,
+    "x": 514.381969,
+    "y": 473.16312525
+  },
+  {
+    "id": "instruction-p026-b03",
+    "edge": "start",
+    "page": 14,
+    "x": 85.104,
+    "y": 492.66315624999993
+  },
+  {
+    "id": "p026-b03",
+    "edge": "heading",
+    "page": 14,
+    "x": 85.104,
+    "y": 492.66315624999993
+  },
+  {
+    "id": "figure-frame-p026-f11",
+    "edge": "start",
+    "page": 14,
+    "x": 106.0,
+    "y": 535.70315625
+  },
+  {
+    "id": "figure-number-p026-f11",
+    "edge": "start",
+    "page": 14,
+    "x": 106.0,
+    "y": 535.70315625
+  },
+  {
+    "id": "figure-number-p026-f11",
+    "edge": "end",
+    "page": 14,
+    "x": 106.0,
+    "y": 544.70315625
+  },
+  {
+    "id": "p026-f11",
+    "edge": "start",
+    "page": 14,
+    "x": 106.0,
+    "y": 549.70315625
+  },
+  {
+    "id": "p026-f11",
+    "edge": "end",
+    "page": 14,
+    "x": 106.0,
+    "y": 711.0031543194852
+  },
+  {
+    "id": "figure-frame-p026-f11",
+    "edge": "end",
+    "page": 14,
+    "x": 106.0,
+    "y": 711.0031543194852
+  },
+  {
+    "id": "instruction-p026-b03",
+    "edge": "end",
+    "page": 14,
+    "x": 85.104,
+    "y": 717.0031543194852
+  },
+  {
+    "id": "p026-b04",
+    "edge": "heading",
+    "page": 14,
+    "x": 85.104,
+    "y": 729.0031543194852
+  },
+  {
+    "id": "__source-page-27",
+    "edge": "source-page",
+    "page": 15,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "figure-frame-p027-f12",
+    "edge": "start",
+    "page": 15,
+    "x": 84.20000000000002,
+    "y": 92.0
+  },
+  {
+    "id": "figure-number-p027-f12",
+    "edge": "start",
+    "page": 15,
+    "x": 85.104,
+    "y": 92.0
+  },
+  {
+    "id": "figure-number-p027-f12",
+    "edge": "end",
+    "page": 15,
+    "x": 85.104,
+    "y": 101.0
+  },
+  {
+    "id": "p027-f12",
+    "edge": "start",
+    "page": 15,
+    "x": 84.20000000000002,
+    "y": 106.0
+  },
+  {
+    "id": "p027-f12",
+    "edge": "end",
+    "page": 15,
+    "x": 84.20000000000002,
+    "y": 260.20001220703125
+  },
+  {
+    "id": "figure-frame-p027-f12",
+    "edge": "end",
+    "page": 15,
+    "x": 84.20000000000002,
+    "y": 260.20001220703125
+  },
+  {
+    "id": "instruction-p027-b01",
+    "edge": "start",
+    "page": 15,
+    "x": 85.104,
+    "y": 278.20001220703125
+  },
+  {
+    "id": "p027-b01",
+    "edge": "heading",
+    "page": 15,
+    "x": 85.104,
+    "y": 278.20001220703125
+  },
+  {
+    "id": "figure-frame-p027-f13",
+    "edge": "start",
+    "page": 15,
+    "x": 84.20000000000002,
+    "y": 322.07016845703123
+  },
+  {
+    "id": "figure-number-p027-f13",
+    "edge": "start",
+    "page": 15,
+    "x": 85.104,
+    "y": 322.07016845703123
+  },
+  {
+    "id": "figure-number-p027-f13",
+    "edge": "end",
+    "page": 15,
+    "x": 85.104,
+    "y": 331.07016845703123
+  },
+  {
+    "id": "p027-f13",
+    "edge": "start",
+    "page": 15,
+    "x": 84.20000000000002,
+    "y": 336.07016845703123
+  },
+  {
+    "id": "p027-f13",
+    "edge": "end",
+    "page": 15,
+    "x": 84.20000000000002,
+    "y": 475.97016648553506
+  },
+  {
+    "id": "figure-frame-p027-f13",
+    "edge": "end",
+    "page": 15,
+    "x": 84.20000000000002,
+    "y": 475.97016648553506
+  },
+  {
+    "id": "instruction-p027-b01",
+    "edge": "end",
+    "page": 15,
+    "x": 85.104,
+    "y": 481.9701664855351
+  },
+  {
+    "id": "instruction-p027-b02",
+    "edge": "start",
+    "page": 15,
+    "x": 85.104,
+    "y": 493.9701664855351
+  },
+  {
+    "id": "p027-b02",
+    "edge": "heading",
+    "page": 15,
+    "x": 85.104,
+    "y": 493.9701664855351
+  },
+  {
+    "id": "p027-b03",
+    "edge": "start",
+    "page": 15,
+    "x": 85.104,
+    "y": 511.8403227355351
+  },
+  {
+    "id": "p027-b03",
+    "edge": "end",
+    "page": 15,
+    "x": 85.104,
+    "y": 523.7104789855351
+  },
+  {
+    "id": "p027-b04",
+    "edge": "start",
+    "page": 15,
+    "x": 85.104,
+    "y": 536.670478985535
+  },
+  {
+    "id": "p027-b04",
+    "edge": "end",
+    "page": 15,
+    "x": 85.104,
+    "y": 548.5406352355351
+  },
+  {
+    "id": "figure-frame-p027-f14",
+    "edge": "start",
+    "page": 15,
+    "x": 95.20000000000002,
+    "y": 567.5006352355351
+  },
+  {
+    "id": "figure-number-p027-f14",
+    "edge": "start",
+    "page": 15,
+    "x": 95.20000000000002,
+    "y": 567.5006352355351
+  },
+  {
+    "id": "figure-number-p027-f14",
+    "edge": "end",
+    "page": 15,
+    "x": 95.20000000000002,
+    "y": 576.5006352355351
+  },
+  {
+    "id": "p027-f14",
+    "edge": "start",
+    "page": 15,
+    "x": 95.20000000000002,
+    "y": 581.5006352355351
+  },
+  {
+    "id": "p027-f14",
+    "edge": "end",
+    "page": 15,
+    "x": 95.20000000000002,
+    "y": 714.3006270883427
+  },
+  {
+    "id": "figure-frame-p027-f14",
+    "edge": "end",
+    "page": 15,
+    "x": 95.20000000000002,
+    "y": 714.3006270883427
+  },
+  {
+    "id": "instruction-p027-b02",
+    "edge": "end",
+    "page": 15,
+    "x": 85.104,
+    "y": 720.3006270883427
+  },
+  {
+    "id": "__source-page-28",
+    "edge": "source-page",
+    "page": 16,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p028-b01",
+    "edge": "heading",
+    "page": 16,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p028-b02",
+    "edge": "start",
+    "page": 16,
+    "x": 85.104,
+    "y": 110.0
+  },
+  {
+    "id": "p028-b02",
+    "edge": "end",
+    "page": 16,
+    "x": 85.104,
+    "y": 139.87015624999998
+  },
+  {
+    "id": "p028-b03",
+    "edge": "start",
+    "page": 16,
+    "x": 85.104,
+    "y": 152.83015625
+  },
+  {
+    "id": "p028-b03",
+    "edge": "end",
+    "page": 16,
+    "x": 85.104,
+    "y": 201.53046874999998
+  },
+  {
+    "id": "p028-b04",
+    "edge": "start",
+    "page": 16,
+    "x": 85.104,
+    "y": 214.49046875
+  },
+  {
+    "id": "p028-b04",
+    "edge": "end",
+    "page": 16,
+    "x": 85.104,
+    "y": 244.36062500000003
+  },
+  {
+    "id": "instruction-illustration-2026-maven-libraries",
+    "edge": "start",
+    "page": 16,
+    "x": 79.104,
+    "y": 257.320625
+  },
+  {
+    "id": "figure-frame-illustration-2026-maven-libraries",
+    "edge": "start",
+    "page": 16,
+    "x": 85.104,
+    "y": 263.320625
+  },
+  {
+    "id": "figure-number-illustration-2026-maven-libraries",
+    "edge": "start",
+    "page": 16,
+    "x": 85.104,
+    "y": 263.320625
+  },
+  {
+    "id": "figure-number-illustration-2026-maven-libraries",
+    "edge": "end",
+    "page": 16,
+    "x": 85.104,
+    "y": 272.320625
+  },
+  {
+    "id": "illustration-2026-maven-libraries",
+    "edge": "start",
+    "page": 16,
+    "x": 85.104,
+    "y": 277.320625
+  },
+  {
+    "id": "illustration-2026-maven-libraries",
+    "edge": "end",
+    "page": 16,
+    "x": 85.104,
+    "y": 393.96326145726056
+  },
+  {
+    "id": "illustration-2026-maven-libraries-caption",
+    "edge": "start",
+    "page": 16,
+    "x": 85.104,
+    "y": 399.96326145726056
+  },
+  {
+    "id": "illustration-2026-maven-libraries-caption",
+    "edge": "end",
+    "page": 16,
+    "x": 85.104,
+    "y": 409.46326145726056
+  },
+  {
+    "id": "figure-frame-illustration-2026-maven-libraries",
+    "edge": "end",
+    "page": 16,
+    "x": 85.104,
+    "y": 409.46326145726056
+  },
+  {
+    "id": "instruction-illustration-2026-maven-libraries",
+    "edge": "end",
+    "page": 16,
+    "x": 79.104,
+    "y": 415.46326145726056
+  },
+  {
+    "id": "p028-b05",
+    "edge": "start",
+    "page": 16,
+    "x": 85.104,
+    "y": 427.46326145726056
+  },
+  {
+    "id": "p028-b05",
+    "edge": "end",
+    "page": 16,
+    "x": 85.104,
+    "y": 457.33341770726054
+  },
+  {
+    "id": "__source-page-29",
+    "edge": "source-page",
+    "page": 17,
+    "x": 85.104,
+    "y": 86.0
+  },
+  {
+    "id": "p029-b01",
+    "edge": "start",
+    "page": 17,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p029-b01",
+    "edge": "end",
+    "page": 17,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "p029-f15",
+    "edge": "start",
+    "page": 17,
+    "x": 112.26,
+    "y": 113.82000000000001
+  },
+  {
+    "id": "p029-f15",
+    "edge": "end",
+    "page": 17,
+    "x": 112.26,
+    "y": 390.61
+  },
+  {
+    "id": "p029-b02",
+    "edge": "start",
+    "page": 17,
+    "x": 85.104,
+    "y": 435.913330078125
+  },
+  {
+    "id": "p029-b02",
+    "edge": "end",
+    "page": 17,
+    "x": 85.104,
+    "y": 522.273955078125
+  },
+  {
+    "id": "p029-b03",
+    "edge": "start",
+    "page": 17,
+    "x": 85.104,
+    "y": 535.233955078125
+  },
+  {
+    "id": "p029-b03",
+    "edge": "end",
+    "page": 17,
+    "x": 85.104,
+    "y": 583.934267578125
+  },
+  {
+    "id": "__source-page-30",
+    "edge": "source-page",
+    "page": 18,
+    "x": 0.0,
+    "y": 0.0
+  },
+  {
+    "id": "__native-page-30",
+    "edge": "native-page",
+    "page": 18,
+    "x": 85.104,
+    "y": 86.0
+  }
+]

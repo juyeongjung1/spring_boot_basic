@@ -1,5 +1,6 @@
 """Markdownのコード・表・構文解説をHTML/CSSから文字付きPDF部品へ変換する。"""
 from collections import Counter, defaultdict
+from functools import lru_cache
 from hashlib import sha256
 from html import escape
 from pathlib import Path
@@ -118,14 +119,37 @@ def code_html(rows, lang, filenames, footer=''):
 
 
 def table_column_alignments(node):
-    """元Wordの単一セルのずれを引き継がず、列の値の種類で整列する。"""
-    body = node['rows'][1:] if node['has_header'] else node['rows']
-    alignments = []
-    for column in range(len(node['rows'][0])):
-        values = [row[column].strip() for row in body if row[column].strip() not in {'', '-', '－'}]
-        numeric = values and all(re.fullmatch(r'[+-]?\d[\d,.]*(?:\s*%)?', value) for value in values)
-        alignments.append('right' if numeric else 'left')
-    return alignments
+    """データは数値を含め、全列を左揃えに統一する。"""
+    return ['left']*len(node['rows'][0])
+
+
+@lru_cache(maxsize=1)
+def table_measure_font():
+    return fitz.Font(fontfile='C:/Windows/Fonts/meiryob.ttc')
+
+
+def table_dimensions(folder, layout, ident, node):
+    """短い少数列表だけ、字号を変えず内容に応じた幅へ絞る。"""
+    full_width = 426.672
+    info = layout.get('tables', {}).get(ident)
+    headings = [re.sub(r'\s+', '', value) for value in node['rows'][0]] if node['has_header'] else []
+    comparison = headings == ['要素', 'JDBC', 'SpringDataJPA']
+    properties = node['has_header'] and len(node['rows']) > 1 and len(node['rows'][0]) == 2 and all(row[0].strip().startswith('spring.') for row in node['rows'][1:])
+    widths = [25,37.5,37.5] if comparison else [43,57] if properties else (
+        [b-a for a,b in zip(info['xs'],info['xs'][1:])] if info else [1]*len(node['rows'][0]))
+    if folder.name == '06' and ident in {'p197-table01', 'p200-table01'}:
+        widths[2] += 8
+        widths[5] -= 8
+    # 多列表・説明の長い表と、定義表の続きは本文幅を活用する。
+    if len(widths) >= 6 or comparison or properties:
+        return full_width, widths
+    font = table_measure_font()
+    natural = [max(font.text_length(re.sub(r'\s+', '', row[column]),
+        fontsize=9 if i == 0 and node['has_header'] else 9.5)
+        for i,row in enumerate(node['rows']))+26 for column in range(len(widths))]
+    if sum(natural) <= full_width*.85:
+        return round(max(120, sum(natural)), 3), natural
+    return full_width, widths
 
 
 def table_cell_html(parts, layout, header_cell, preserve_breaks):
@@ -176,9 +200,9 @@ def table_html(folder, layout, ident, node):
             if comparison and j:
                 for term in ('mysql-connector-j.jar', 'application.properties', 'DriverManager.getConnection', 'SQLException', 'RuntimeException'):
                     body = body.replace(term, '<span class="table-term">'+term+'</span>')
-            align = 'center' if comparison and header_cell and j else alignments[j]
+            align = 'center' if header_cell else alignments[j]
             declarations = [f'text-align:{align}']
-            if align == 'right':
+            if re.fullmatch(r'[+-]?\d[\d,.]*(?:\s*%)?', value.strip()):
                 declarations.append('white-space:nowrap')
             scope = ' scope="col"' if header_cell else ''
             cells.append(f'<{tag}{scope} style="'+ ';'.join(declarations)+'">'+body+f'</{tag}>')
@@ -187,11 +211,7 @@ def table_html(folder, layout, ident, node):
         content = '<thead>'+rows[0]+'</thead><tbody>'+''.join(rows[1:])+'</tbody>'
     else:
         content = '<tbody>'+''.join(rows)+'</tbody>'
-    widths = [25,37.5,37.5] if comparison else [43,57] if property_table else (
-        [b-a for a,b in zip(info['xs'],info['xs'][1:])] if info else [1]*len(node['rows'][0]))
-    if folder.name == '06' and ident in {'p197-table01', 'p200-table01'}:
-        widths[2] += 8
-        widths[5] -= 8
+    _, widths = table_dimensions(folder, layout, ident, node)
     columns = '<colgroup>'+''.join(f'<col style="width:{100*w/sum(widths):.5f}%">' for w in widths)+'</colgroup>'
     modifier = ' comparison-table' if comparison else ' property-table' if property_table else ''
     return '<section class="card table-card'+modifier+'"><div class="card-content"><table>'+columns+content+'</table></div></section>'
@@ -382,9 +402,7 @@ def prepare(folder, config, layout, nodes, figures, order):
         add(ident,ident,consume,code_html(rows,lang,names,footer),width,offset)
     for ident,node in nodes.items():
         if node['kind']=='table' and pages[ident] not in fixed:
-            info=layout.get('tables',{}).get(ident)
-            # 表は共通の本文幅へ揃え、数値や短い列名の不自然な折り返しを避ける。
-            width=426.672
+            width,_=table_dimensions(folder,layout,ident,node)
             offset=0
             add(ident,ident,[ident],table_html(folder,layout,ident,node),width,offset,'table')
     for index,record in enumerate(explanations):

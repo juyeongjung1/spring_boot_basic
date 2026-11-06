@@ -23,9 +23,20 @@ def tables():
         layout=json.loads((folder/'source-layout.json').read_text(encoding='utf-8'))
         for ident,node in nodes.items():
             if node['kind']=='table':
-                result[folder.name+'-'+ident]=dict(folder=folder,layout=layout,node=node,
+                width,_=components.table_dimensions(folder,layout,ident,node)
+                result[folder.name+'-'+ident]=dict(folder=folder,layout=layout,node=node,width=width,
                     html=components.table_html(folder,layout,ident,node))
     return result
+
+
+def pdf_grid(page):
+    colors={(188,200,213),(135,155,175),(169,186,203)}
+    rules=[drawing['rect'] for drawing in page.get_drawings() if drawing['fill']
+           and tuple(round(value*255) for value in drawing['fill']) in colors
+           and min(drawing['rect'].width,drawing['rect'].height)<=1.5]
+    xs=sorted({round((rect.x0+rect.x1)/2,4) for rect in rules if rect.width<=1.5<rect.height})
+    ys=sorted({round((rect.y0+rect.y1)/2,4) for rect in rules if rect.height<=1.5<rect.width})
+    return rules,xs,ys
 
 
 class TableSourceTests(unittest.TestCase):
@@ -40,15 +51,25 @@ class TableSourceTests(unittest.TestCase):
                 self.assertNotIn('card-header',html)
                 self.assertNotIn('language-badge',html)
 
-    def test_product_names_constraints_and_numbers_align_by_column(self):
+    def test_every_header_is_centered_and_all_data_columns_are_left_aligned(self):
         product=tables()['03-p067-table03']['node']
-        self.assertEqual(components.table_column_alignments(product),['right','left','right'])
+        self.assertEqual(components.table_column_alignments(product),['left']*3)
         for ident in ('03-p067-table02','03-p073-table01'):
             node=tables()[ident]['node']
-            self.assertEqual(components.table_column_alignments(node),
-                ['right','left','left','left','right','left','left'])
+            self.assertEqual(components.table_column_alignments(node),['left']*7)
+        for table in tables().values():
+            self.assertTrue(all('text-align:center' in cell
+                for cell in re.findall(r'<th\b[^>]*>',table['html'])))
+            self.assertTrue(all('text-align:left' in cell
+                for cell in re.findall(r'<td\b[^>]*>',table['html'])))
         html=tables()['03-p067-table03']['html']
         self.assertIn('text-align:left">乾燥機能付き洗濯機',re.sub(r'<span[^>]*>|</span>','',html))
+
+    def test_short_tables_use_content_width_without_shrinking_description_tables(self):
+        self.assertLess(tables()['03-p067-table01']['width'],250)
+        self.assertLess(tables()['03-p067-table03']['width'],260)
+        for ident in ('03-p069-table01','03-p071-b05','06-p200-table01','ex06-p059-table01'):
+            self.assertEqual(tables()[ident]['width'],426.672)
 
     def test_modern_fill_styles_keep_constraints_and_message_line_pairs(self):
         for table in tables().values():
@@ -90,7 +111,7 @@ class TableSourceTests(unittest.TestCase):
 class TablePdfTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        specs=[dict(id=ident,width=426.672,html=table['html']) for ident,table in tables().items()]
+        specs=[dict(id=ident,width=table['width'],html=table['html']) for ident,table in tables().items()]
         components._render(specs,'tables-v4-tests')
         cls.rendered={spec['id']:spec['result']['parts'] for spec in specs}
 
@@ -105,13 +126,59 @@ class TablePdfTests(unittest.TestCase):
                 self.assertEqual(Counter(components.normalized(part['pdf_text'])),
                                  Counter(components.normalized(expected)))
 
-    def test_product_eight_is_left_aligned_like_the_other_product_names(self):
+    def test_product_names_and_prices_are_left_aligned_by_column(self):
         with fitz.open(self.rendered['03-p067-table03'][0]['pdf']) as pdf:
             first=pdf[0].search_for('スマートテレビ')[0]
             eighth=pdf[0].search_for('乾燥機能付き洗濯機')[0]
             self.assertAlmostEqual(first.x0,eighth.x0,delta=.05)
             prices=[pdf[0].search_for(value)[0] for value in ('20000','15000','40000','60000')]
-            self.assertLess(max(r.x1 for r in prices)-min(r.x1 for r in prices),.1)
+            self.assertLess(max(r.x0 for r in prices)-min(r.x0 for r in prices),.1)
+
+    def test_every_pdf_cell_aligns_and_the_complete_grid_stays_inside_the_clip(self):
+        for ident,parts in self.rendered.items():
+            with self.subTest(table=ident),fitz.open(parts[0]['pdf']) as pdf:
+                page=pdf[0]
+                rules,xs,ys=pdf_grid(page)
+                node=tables()[ident]['node']
+                self.assertEqual(len(xs),len(node['rows'][0])+1)
+                self.assertEqual(len(ys),len(node['rows'])+1)
+                self.assertLessEqual(max(rect.x1 for rect in rules),page.rect.width+.01)
+                self.assertLessEqual(max(rect.y1 for rect in rules),min(page.rect.height,parts[0]['height'])+.01)
+                self.assertGreaterEqual(min(rect.x0 for rect in rules),0)
+                self.assertGreaterEqual(min(rect.y0 for rect in rules),0)
+                for x in xs:
+                    for top,bottom in zip(ys,ys[1:]):
+                        self.assertTrue(any(rect.contains(fitz.Point(x,(top+bottom)/2)) for rect in rules))
+                for y in ys:
+                    for left,right in zip(xs,xs[1:]):
+                        self.assertTrue(any(rect.contains(fitz.Point((left+right)/2,y)) for rect in rules))
+                outer=[drawing['rect'] for drawing in page.get_drawings() if drawing['fill']
+                       and tuple(round(value*255) for value in drawing['fill'])==(135,155,175)]
+                for top,bottom in zip(ys,ys[1:]):
+                    for x in (xs[0],xs[-1]):
+                        self.assertTrue(any(rect.contains(fitz.Point(x,(top+bottom)/2)) for rect in outer))
+                for left,right in zip(xs,xs[1:]):
+                    for y in (ys[0],ys[-1]):
+                        self.assertTrue(any(rect.contains(fitz.Point((left+right)/2,y)) for rect in outer))
+                chars=[char for block in page.get_text('rawdict')['blocks']
+                       for line in block.get('lines',[]) for span in line['spans']
+                       for char in span['chars'] if components.normalized(char['c'])]
+                for row,values in enumerate(node['rows']):
+                    for column,value in enumerate(values):
+                        cell=fitz.Rect(xs[column],ys[row],xs[column+1],ys[row+1])
+                        inside=[char for char in chars if cell.contains(
+                            (fitz.Rect(char['bbox']).tl+fitz.Rect(char['bbox']).br)/2)]
+                        self.assertEqual(Counter(components.normalized(''.join(char['c'] for char in inside))),
+                                         Counter(components.normalized(value)),(row,column,value))
+                        lines={}
+                        for char in inside:
+                            lines.setdefault(round(char['origin'][1],1),[]).append(fitz.Rect(char['bbox']))
+                        for boxes in lines.values():
+                            left,right=min(box.x0 for box in boxes),max(box.x1 for box in boxes)
+                            if row==0 and node['has_header']:
+                                self.assertAlmostEqual((left+right)/2,(cell.x0+cell.x1)/2,delta=1)
+                            else:
+                                self.assertAlmostEqual(left-cell.x0,6.375,delta=1)
 
     def test_comparison_labels_and_technical_terms_are_not_split_in_the_middle(self):
         with fitz.open(self.rendered['03-p069-table01'][0]['pdf']) as pdf:

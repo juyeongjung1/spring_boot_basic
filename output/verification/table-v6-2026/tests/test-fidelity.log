@@ -1,0 +1,15 @@
+test_chapter_one_has_no_added_explanation_or_command_line_steps (__main__.FidelityTests.test_chapter_one_has_no_added_explanation_or_command_line_steps) ... ok
+test_confirmed_source_fragments_share_a_paragraph_and_keep_each_boundary_once (__main__.FidelityTests.test_confirmed_source_fragments_share_a_paragraph_and_keep_each_boundary_once) ... ok
+test_exercise_body_uses_its_font_size_but_time_lists_keep_left_alignment (__main__.FidelityTests.test_exercise_body_uses_its_font_size_but_time_lists_keep_left_alignment) ... ok
+test_grouped_heading_keeps_its_outer_space (__main__.FidelityTests.test_grouped_heading_keeps_its_outer_space) ... ok
+test_multiple_paragraphs_inside_one_element_have_the_same_spacing (__main__.FidelityTests.test_multiple_paragraphs_inside_one_element_have_the_same_spacing) ... ok
+test_native_punctuation_preserves_every_original_character_position (__main__.FidelityTests.test_native_punctuation_preserves_every_original_character_position) ... ok
+test_paragraph_boundary_is_wider_than_a_line_break (__main__.FidelityTests.test_paragraph_boundary_is_wider_than_a_line_break) ... ok
+test_parallel_subheadings_are_all_classified_as_headings (__main__.FidelityTests.test_parallel_subheadings_are_all_classified_as_headings) ... ok
+test_single_and_styled_paragraphs_indent_one_character_without_indenting_wraps_or_notes (__main__.FidelityTests.test_single_and_styled_paragraphs_indent_one_character_without_indenting_wraps_or_notes) ... ok
+test_word_paragraphs_and_answer_choices_are_not_concatenated (__main__.FidelityTests.test_word_paragraphs_and_answer_choices_are_not_concatenated) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 16.697s
+
+OK

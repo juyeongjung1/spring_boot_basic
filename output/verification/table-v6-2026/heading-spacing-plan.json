@@ -1,0 +1,833 @@
+{
+  "passed": true,
+  "extra_space_pt": 18,
+  "chapters": [
+    {
+      "chapter": "front",
+      "baseline_pages": 14,
+      "pages": 14,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "01",
+      "baseline_pages": 18,
+      "pages": 18,
+      "candidates": [
+        "p018-b06",
+        "p025-b02"
+      ],
+      "accepted": [
+        "p018-b06",
+        "p025-b02"
+      ],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": [
+        {
+          "id": "p018-b06",
+          "page": 5,
+          "before_y": 262.14263645726055,
+          "after_y": 280.14263645726055
+        },
+        {
+          "id": "p025-b02",
+          "page": 13,
+          "before_y": 169.04000000000002,
+          "after_y": 187.04000000000002
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "baseline_pages": 37,
+      "pages": 37,
+      "candidates": [
+        "p034-b05",
+        "p035-b04",
+        "p036-b02",
+        "p038-b06",
+        "p039-b02",
+        "p041-b05",
+        "p043-b04",
+        "p043-b08",
+        "p044-b03",
+        "p047-b02",
+        "p048-b01",
+        "p049-b02",
+        "p051-b01"
+      ],
+      "accepted": [
+        "p034-b05",
+        "p035-b04",
+        "p036-b02",
+        "p038-b06",
+        "p039-b02",
+        "p041-b05",
+        "p043-b04",
+        "p043-b08",
+        "p044-b03",
+        "p047-b02",
+        "p048-b01",
+        "p049-b02",
+        "p051-b01"
+      ],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": [
+        {
+          "id": "p034-b05",
+          "page": 4,
+          "before_y": 602.8419714355468,
+          "after_y": 620.8419714355468
+        },
+        {
+          "id": "p035-b04",
+          "page": 5,
+          "before_y": 442.14263645726055,
+          "after_y": 460.14263645726055
+        },
+        {
+          "id": "p036-b02",
+          "page": 6,
+          "before_y": 435.8019714355469,
+          "after_y": 435.8019714355469
+        },
+        {
+          "id": "p038-b06",
+          "page": 8,
+          "before_y": 590.8419714355468,
+          "after_y": 608.8419714355468
+        },
+        {
+          "id": "p039-b02",
+          "page": 9,
+          "before_y": 435.8019714355469,
+          "after_y": 435.8019714355469
+        },
+        {
+          "id": "p041-b05",
+          "page": 11,
+          "before_y": 405.68715625000004,
+          "after_y": 423.68715625000004
+        },
+        {
+          "id": "p043-b04",
+          "page": 13,
+          "before_y": 333.86600000000004,
+          "after_y": 351.86600000000004
+        },
+        {
+          "id": "p043-b08",
+          "page": 14,
+          "before_y": 249.7399480401498,
+          "after_y": 267.7399480401498
+        },
+        {
+          "id": "p044-b03",
+          "page": 14,
+          "before_y": 467.47992981766174,
+          "after_y": 503.47992981766174
+        },
+        {
+          "id": "p047-b02",
+          "page": 18,
+          "before_y": 435.8019714355469,
+          "after_y": 435.8019714355469
+        },
+        {
+          "id": "p048-b01",
+          "page": 19,
+          "before_y": 151.87015624999998,
+          "after_y": 169.87015624999998
+        },
+        {
+          "id": "p049-b02",
+          "page": 20,
+          "before_y": 229.04000000000002,
+          "after_y": 247.04000000000002
+        },
+        {
+          "id": "p051-b01",
+          "page": 22,
+          "before_y": 151.04000000000002,
+          "after_y": 169.04000000000002
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "baseline_pages": 39,
+      "pages": 39,
+      "candidates": [
+        "p137-b01",
+        "p138-b05",
+        "p141-b02",
+        "p144-b01",
+        "p149-b04",
+        "p151-b05",
+        "p160-b01",
+        "revision-messages-title"
+      ],
+      "accepted": [
+        "p137-b01",
+        "p138-b05",
+        "p141-b02",
+        "p144-b01",
+        "p149-b04",
+        "p151-b05",
+        "p160-b01",
+        "revision-messages-title"
+      ],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": [
+        {
+          "id": "p137-b01",
+          "page": 5,
+          "before_y": 236.54000000000002,
+          "after_y": 254.54000000000002
+        },
+        {
+          "id": "p138-b05",
+          "page": 7,
+          "before_y": 407.353,
+          "after_y": 425.353
+        },
+        {
+          "id": "p141-b02",
+          "page": 11,
+          "before_y": 116.0,
+          "after_y": 134.0
+        },
+        {
+          "id": "p144-b01",
+          "page": 14,
+          "before_y": 285.18263645726057,
+          "after_y": 303.18263645726057
+        },
+        {
+          "id": "p149-b04",
+          "page": 20,
+          "before_y": 500.376,
+          "after_y": 518.3760000000001
+        },
+        {
+          "id": "p151-b05",
+          "page": 23,
+          "before_y": 298.826,
+          "after_y": 316.826
+        },
+        {
+          "id": "p160-b01",
+          "page": 35,
+          "before_y": 115.04,
+          "after_y": 133.04000000000002
+        },
+        {
+          "id": "revision-messages-title",
+          "page": 37,
+          "before_y": 94.0,
+          "after_y": 94.0
+        }
+      ]
+    },
+    {
+      "chapter": "05",
+      "baseline_pages": 33,
+      "pages": 33,
+      "candidates": [
+        "p168-b08",
+        "p176-b02",
+        "p179-b05",
+        "p182-b01",
+        "p182-b03"
+      ],
+      "accepted": [
+        "p168-b08",
+        "p176-b02",
+        "p179-b05",
+        "p182-b01",
+        "p182-b03"
+      ],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": [
+        {
+          "id": "p168-b08",
+          "page": 5,
+          "before_y": 612.3950000000001,
+          "after_y": 630.3950000000001
+        },
+        {
+          "id": "p176-b02",
+          "page": 14,
+          "before_y": 151.04000000000002,
+          "after_y": 169.04000000000002
+        },
+        {
+          "id": "p179-b05",
+          "page": 18,
+          "before_y": 249.81799999999998,
+          "after_y": 267.818
+        },
+        {
+          "id": "p182-b01",
+          "page": 21,
+          "before_y": 115.04,
+          "after_y": 133.04000000000002
+        },
+        {
+          "id": "p182-b03",
+          "page": 21,
+          "before_y": 456.1799805705465,
+          "after_y": 492.1799805705465
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "baseline_pages": 85,
+      "pages": 85,
+      "candidates": [
+        "p067-b04",
+        "p073-b04",
+        "p089-b02",
+        "p098-b01",
+        "p102-b01",
+        "p115-b04",
+        "p121-b02",
+        "p123-b05",
+        "p125-b04"
+      ],
+      "accepted": [
+        "p067-b04",
+        "p073-b04",
+        "p089-b02",
+        "p098-b01",
+        "p102-b01",
+        "p115-b04",
+        "p121-b02",
+        "p123-b05",
+        "p125-b04"
+      ],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": [
+        {
+          "id": "p067-b04",
+          "page": 5,
+          "before_y": 285.29,
+          "after_y": 303.29
+        },
+        {
+          "id": "p073-b04",
+          "page": 14,
+          "before_y": 295.80029169897375,
+          "after_y": 313.80029169897375
+        },
+        {
+          "id": "p089-b02",
+          "page": 35,
+          "before_y": 116.0,
+          "after_y": 134.0
+        },
+        {
+          "id": "p098-b01",
+          "page": 45,
+          "before_y": 371.106,
+          "after_y": 389.106
+        },
+        {
+          "id": "p102-b01",
+          "page": 50,
+          "before_y": 181.04000000000002,
+          "after_y": 199.04000000000002
+        },
+        {
+          "id": "p115-b04",
+          "page": 66,
+          "before_y": 610.9399645193936,
+          "after_y": 628.9399645193936
+        },
+        {
+          "id": "p121-b02",
+          "page": 72,
+          "before_y": 314.5400063281691,
+          "after_y": 332.5400063281691
+        },
+        {
+          "id": "p123-b05",
+          "page": 74,
+          "before_y": 434.6299891548056,
+          "after_y": 452.6299891548056
+        },
+        {
+          "id": "p125-b04",
+          "page": 77,
+          "before_y": 562.1466284179687,
+          "after_y": 580.1466284179687
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "baseline_pages": 49,
+      "pages": 49,
+      "candidates": [
+        "p196-b05",
+        "p202-b01",
+        "p206-b07",
+        "p206-b09",
+        "p207-b02",
+        "p212-b01",
+        "p212-b02",
+        "p215-b05",
+        "p221-b02",
+        "p226-b01",
+        "p230-b01"
+      ],
+      "accepted": [
+        "p196-b05",
+        "p202-b01",
+        "p206-b07",
+        "p206-b09",
+        "p207-b02",
+        "p212-b01",
+        "p212-b02",
+        "p215-b05",
+        "p221-b02",
+        "p226-b01",
+        "p230-b01"
+      ],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": [
+        {
+          "id": "p196-b05",
+          "page": 5,
+          "before_y": 322.58000000000004,
+          "after_y": 340.58000000000004
+        },
+        {
+          "id": "p202-b01",
+          "page": 11,
+          "before_y": 381.18263645726057,
+          "after_y": 399.18263645726057
+        },
+        {
+          "id": "p206-b07",
+          "page": 15,
+          "before_y": 389.24199999999996,
+          "after_y": 407.24199999999996
+        },
+        {
+          "id": "p206-b09",
+          "page": 15,
+          "before_y": 462.20199999999994,
+          "after_y": 498.20199999999994
+        },
+        {
+          "id": "p207-b02",
+          "page": 17,
+          "before_y": 116.0,
+          "after_y": 134.0
+        },
+        {
+          "id": "p212-b01",
+          "page": 21,
+          "before_y": 288.79299999999995,
+          "after_y": 306.79299999999995
+        },
+        {
+          "id": "p212-b02",
+          "page": 21,
+          "before_y": 318.79299999999995,
+          "after_y": 354.79299999999995
+        },
+        {
+          "id": "p215-b05",
+          "page": 25,
+          "before_y": 241.04000000000002,
+          "after_y": 259.04
+        },
+        {
+          "id": "p221-b02",
+          "page": 31,
+          "before_y": 116.0,
+          "after_y": 134.0
+        },
+        {
+          "id": "p226-b01",
+          "page": 36,
+          "before_y": 157.04000000000002,
+          "after_y": 175.04000000000002
+        },
+        {
+          "id": "p230-b01",
+          "page": 39,
+          "before_y": 342.841,
+          "after_y": 360.841
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-a",
+      "baseline_pages": 8,
+      "pages": 8,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "ex-front",
+      "baseline_pages": 6,
+      "pages": 6,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "appendix-b",
+      "baseline_pages": 9,
+      "pages": 9,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "ex01",
+      "baseline_pages": 4,
+      "pages": 4,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "ex02",
+      "baseline_pages": 6,
+      "pages": 6,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "ex03",
+      "baseline_pages": 12,
+      "pages": 12,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "ex04",
+      "baseline_pages": 8,
+      "pages": 8,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "07",
+      "baseline_pages": 51,
+      "pages": 51,
+      "candidates": [
+        "p264-b02",
+        "p266-b01",
+        "p269-b01",
+        "p272-b03",
+        "p272-b05",
+        "p279-b01"
+      ],
+      "accepted": [
+        "p264-b02",
+        "p266-b01",
+        "p269-b01",
+        "p272-b03",
+        "p272-b05",
+        "p279-b01"
+      ],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": [
+        {
+          "id": "p264-b02",
+          "page": 31,
+          "before_y": 308.809,
+          "after_y": 326.809
+        },
+        {
+          "id": "p266-b01",
+          "page": 33,
+          "before_y": 309.18263645726057,
+          "after_y": 327.18263645726057
+        },
+        {
+          "id": "p269-b01",
+          "page": 36,
+          "before_y": 436.6400011164969,
+          "after_y": 454.6400011164969
+        },
+        {
+          "id": "p272-b03",
+          "page": 40,
+          "before_y": 483.3066015625,
+          "after_y": 501.3066015625
+        },
+        {
+          "id": "p272-b05",
+          "page": 40,
+          "before_y": 554.3466015625,
+          "after_y": 590.3466015625
+        },
+        {
+          "id": "p279-b01",
+          "page": 49,
+          "before_y": 246.793,
+          "after_y": 264.79299999999995
+        }
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "baseline_pages": 13,
+      "pages": 13,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "ex06",
+      "baseline_pages": 16,
+      "pages": 16,
+      "candidates": [
+        "p049-b08",
+        "p049-b10",
+        "p049-b11",
+        "p055-b04",
+        "p057-b02",
+        "p061-b10",
+        "p062-b02"
+      ],
+      "accepted": [
+        "p049-b08",
+        "p049-b10",
+        "p049-b11",
+        "p055-b04",
+        "p057-b02",
+        "p061-b10",
+        "p062-b02"
+      ],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": [
+        {
+          "id": "p049-b08",
+          "page": 3,
+          "before_y": 281.0,
+          "after_y": 299.0
+        },
+        {
+          "id": "p049-b10",
+          "page": 3,
+          "before_y": 352.04,
+          "after_y": 388.04
+        },
+        {
+          "id": "p049-b11",
+          "page": 3,
+          "before_y": 504.29,
+          "after_y": 558.29
+        },
+        {
+          "id": "p055-b04",
+          "page": 9,
+          "before_y": 441.77438135976024,
+          "after_y": 459.77438135976024
+        },
+        {
+          "id": "p057-b02",
+          "page": 11,
+          "before_y": 441.81436036613195,
+          "after_y": 459.81436036613195
+        },
+        {
+          "id": "p061-b10",
+          "page": 15,
+          "before_y": 431.7707812499999,
+          "after_y": 449.7707812499999
+        },
+        {
+          "id": "p062-b02",
+          "page": 16,
+          "before_y": 133.6370703125,
+          "after_y": 151.6370703125
+        }
+      ]
+    },
+    {
+      "chapter": "ex-back",
+      "baseline_pages": 1,
+      "pages": 1,
+      "candidates": [],
+      "accepted": [],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": []
+    },
+    {
+      "chapter": "ex07",
+      "baseline_pages": 13,
+      "pages": 13,
+      "candidates": [
+        "p066-b01",
+        "p067-b07",
+        "p067-b11",
+        "p067-b13",
+        "p068-b02",
+        "p068-b03",
+        "p068-b06",
+        "p069-b01",
+        "p069-b04",
+        "p069-b07",
+        "p073-b05",
+        "p073-b10",
+        "p075-b08",
+        "p076-b05",
+        "p076-b08"
+      ],
+      "accepted": [
+        "p066-b01",
+        "p067-b07",
+        "p067-b11",
+        "p067-b13",
+        "p068-b02",
+        "p068-b03",
+        "p068-b06",
+        "p069-b01",
+        "p069-b04",
+        "p069-b07",
+        "p073-b05",
+        "p073-b10",
+        "p075-b08",
+        "p076-b05",
+        "p076-b08"
+      ],
+      "excluded": [],
+      "page_assignment_preserved": true,
+      "positions": [
+        {
+          "id": "p066-b01",
+          "page": 3,
+          "before_y": 432.430390625,
+          "after_y": 450.430390625
+        },
+        {
+          "id": "p067-b07",
+          "page": 4,
+          "before_y": 417.414510590939,
+          "after_y": 435.414510590939
+        },
+        {
+          "id": "p067-b11",
+          "page": 4,
+          "before_y": 525.414510590939,
+          "after_y": 561.414510590939
+        },
+        {
+          "id": "p067-b13",
+          "page": 4,
+          "before_y": 585.414510590939,
+          "after_y": 639.414510590939
+        },
+        {
+          "id": "p068-b02",
+          "page": 5,
+          "before_y": 390.0743712137128,
+          "after_y": 408.0743712137128
+        },
+        {
+          "id": "p068-b03",
+          "page": 5,
+          "before_y": 420.0743712137128,
+          "after_y": 456.0743712137128
+        },
+        {
+          "id": "p068-b06",
+          "page": 5,
+          "before_y": 521.1143712137128,
+          "after_y": 575.1143712137128
+        },
+        {
+          "id": "p069-b01",
+          "page": 6,
+          "before_y": 234.2000703125,
+          "after_y": 252.2000703125
+        },
+        {
+          "id": "p069-b04",
+          "page": 6,
+          "before_y": 396.4820703125,
+          "after_y": 432.4820703125
+        },
+        {
+          "id": "p069-b07",
+          "page": 6,
+          "before_y": 528.5862265625001,
+          "after_y": 582.5862265625001
+        },
+        {
+          "id": "p073-b05",
+          "page": 10,
+          "before_y": 298.024296875,
+          "after_y": 316.024296875
+        },
+        {
+          "id": "p073-b10",
+          "page": 10,
+          "before_y": 432.5147656249999,
+          "after_y": 468.5147656249999
+        },
+        {
+          "id": "p075-b08",
+          "page": 12,
+          "before_y": 297.53046874999995,
+          "after_y": 315.53046874999995
+        },
+        {
+          "id": "p076-b05",
+          "page": 13,
+          "before_y": 222.94455078125,
+          "after_y": 240.94455078125
+        },
+        {
+          "id": "p076-b08",
+          "page": 13,
+          "before_y": 391.22655078125,
+          "after_y": 427.22655078125
+        }
+      ]
+    }
+  ],
+  "candidates": 76,
+  "accepted": 76
+}

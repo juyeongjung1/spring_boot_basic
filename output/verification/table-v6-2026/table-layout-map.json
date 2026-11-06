@@ -1,0 +1,335 @@
+{
+  "tables": 33,
+  "records": [
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "id": "p067-table01",
+      "page": 74,
+      "x": 85.104,
+      "y": 134.0,
+      "width": 221.158,
+      "height": 110.25
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "id": "p067-table02",
+      "page": 74,
+      "x": 85.104,
+      "y": 327.29,
+      "width": 426.672,
+      "height": 123.75
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "id": "p067-table03",
+      "page": 74,
+      "x": 85.104,
+      "y": 487.04,
+      "width": 231.646,
+      "height": 271.5
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "id": "p069-table01",
+      "page": 77,
+      "x": 85.104,
+      "y": 86.0,
+      "width": 426.672,
+      "height": 422.79
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "id": "p071-b05",
+      "page": 80,
+      "x": 85.104,
+      "y": 86.0,
+      "width": 426.672,
+      "height": 150.75
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "id": "p073-table01",
+      "page": 83,
+      "x": 85.104,
+      "y": 337.80029169897375,
+      "width": 426.672,
+      "height": 123.75
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "id": "p136-table01",
+      "page": 158,
+      "x": 85.104,
+      "y": 525.1866284179688,
+      "width": 426.672,
+      "height": 109.5
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "id": "p136-table02",
+      "page": 159,
+      "x": 85.104,
+      "y": 109.04,
+      "width": 218.552,
+      "height": 109.5
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "id": "p196-table01",
+      "page": 231,
+      "x": 85.104,
+      "y": 222.08,
+      "width": 426.672,
+      "height": 82.5
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "id": "p196-table02",
+      "page": 231,
+      "x": 85.104,
+      "y": 364.58000000000004,
+      "width": 175.689,
+      "height": 136.5
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "id": "p197-table01",
+      "page": 232,
+      "x": 85.104,
+      "y": 110.0,
+      "width": 426.672,
+      "height": 179.25
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "id": "p197-table02",
+      "page": 232,
+      "x": 85.104,
+      "y": 325.25,
+      "width": 305.335,
+      "height": 271.5
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "id": "p200-table01",
+      "page": 235,
+      "x": 85.104,
+      "y": 648.36,
+      "width": 426.672,
+      "height": 57.75
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "id": "p223-table01",
+      "page": 259,
+      "x": 85.104,
+      "y": 248.11999999999998,
+      "width": 161.848,
+      "height": 244.5
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "id": "p235-table01",
+      "page": 273,
+      "x": 85.104,
+      "y": 86.0,
+      "width": 426.672,
+      "height": 152.25
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "id": "p019-table01",
+      "page": 19,
+      "x": 85.104,
+      "y": 181.04000000000002,
+      "width": 226.632,
+      "height": 110.25
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "id": "p019-table02",
+      "page": 19,
+      "x": 85.104,
+      "y": 333.29,
+      "width": 426.672,
+      "height": 150.75
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "id": "p019-table03",
+      "page": 19,
+      "x": 85.104,
+      "y": 526.04,
+      "width": 263.997,
+      "height": 244.5
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "id": "p034-table01",
+      "page": 34,
+      "x": 85.104,
+      "y": 463.64264949004354,
+      "width": 426.672,
+      "height": 96.75
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "id": "p036-table01",
+      "page": 36,
+      "x": 85.104,
+      "y": 309.91436105842774,
+      "width": 426.672,
+      "height": 179.25
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p049-table01",
+      "page": 52,
+      "x": 85.104,
+      "y": 412.04,
+      "width": 226.632,
+      "height": 110.25
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p049-table02",
+      "page": 52,
+      "x": 85.104,
+      "y": 582.29,
+      "width": 426.672,
+      "height": 123.75
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p050-table01",
+      "page": 53,
+      "x": 85.104,
+      "y": 86.0,
+      "width": 426.672,
+      "height": 56.25
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p050-table02",
+      "page": 53,
+      "x": 85.104,
+      "y": 184.25,
+      "width": 342.551,
+      "height": 244.5
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p050-table03",
+      "page": 53,
+      "x": 85.104,
+      "y": 470.75,
+      "width": 426.672,
+      "height": 96.75
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p050-table04",
+      "page": 53,
+      "x": 85.104,
+      "y": 609.5,
+      "width": 120,
+      "height": 163.5
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p057-table01",
+      "page": 60,
+      "x": 85.104,
+      "y": 483.81436036613195,
+      "width": 344.795,
+      "height": 163.5
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p059-table01",
+      "page": 62,
+      "x": 85.104,
+      "y": 346.7512109375,
+      "width": 426.672,
+      "height": 152.25
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p061-table01",
+      "page": 64,
+      "x": 85.104,
+      "y": 197.7403125,
+      "width": 426.672,
+      "height": 82.5
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "id": "p062-table01",
+      "page": 65,
+      "x": 85.104,
+      "y": 205.6370703125,
+      "width": 426.672,
+      "height": 190.5
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "id": "p066-table01",
+      "page": 68,
+      "x": 85.104,
+      "y": 630.2803628767532,
+      "width": 333.099,
+      "height": 82.5
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "id": "p070-table01",
+      "page": 72,
+      "x": 85.104,
+      "y": 604.6643616167019,
+      "width": 426.672,
+      "height": 109.5
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "id": "p071-table01",
+      "page": 73,
+      "x": 85.104,
+      "y": 241.04000000000002,
+      "width": 281.299,
+      "height": 109.5
+    }
+  ]
+}

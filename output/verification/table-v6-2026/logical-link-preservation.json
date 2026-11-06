@@ -1,0 +1,4245 @@
+{
+  "base_commit": "ee2f9a455b14bbb85cec9e97e208bd948eaff8f2",
+  "passed": true,
+  "collections": [
+    {
+      "collection": "textbook",
+      "before": {
+        "annotation_count": 63,
+        "uri_counts": {
+          "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j": 1,
+          "http://www.thymeleaf.org": 10,
+          "http://localhost:8080/index": 1,
+          "http://localhost:8080/login": 1,
+          "http://localhost:8080/login2": 1,
+          "http://localhost:8080/login3": 1,
+          "http://localhost:8080/product/findAll": 5,
+          "http://localhost:8080/product/": 8,
+          "http://localhost:8080/product/insert": 3,
+          "http://localhost:8080/product/update/1": 1,
+          "http://localhost:8080/": 1,
+          "http://localhost:8080/2": 1,
+          "http://localhost:8080/4": 1,
+          "http://localhost:8080/product2/findAll": 1,
+          "http://www.ultraq.net.nz/thymeleaf/layout": 4,
+          "https://getbootstrap.jp/": 3,
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js": 4,
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css": 4,
+          "http://localhost:8080/7-2": 1,
+          "https://www.tohoho-web.com/bootstrap5/index.html": 1,
+          "http://localhost:8080/7-3": 1,
+          "http://localhost:8080/7-4": 1,
+          "https://getbootstrap.jp/docs/5.3/layout/grid/": 1,
+          "http://localhost:8080/7-5": 1,
+          "https://getbootstrap.jp/docs/5.3/layout/columns/": 1,
+          "http://localhost:8080/7-5-2": 1,
+          "https://getbootstrap.jp/docs/5.3/forms/form-control/": 1,
+          "https://start.spring.io": 2,
+          "http://www.trainocate.co.jp/": 1
+        },
+        "pdf": "D:\\work\\Spring Boot 入門\\tmp\\table-v6-2026\\before-textbook.pdf",
+        "pdf_sha256": "9ac6ba0bd0c0159dcc5cd1cb2bcb37282a7b074b4adaec9918db25ccd10e427e"
+      },
+      "after": {
+        "annotation_count": 63,
+        "uri_counts": {
+          "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j": 1,
+          "http://www.thymeleaf.org": 10,
+          "http://localhost:8080/index": 1,
+          "http://localhost:8080/login": 1,
+          "http://localhost:8080/login2": 1,
+          "http://localhost:8080/login3": 1,
+          "http://localhost:8080/product/findAll": 5,
+          "http://localhost:8080/product/": 8,
+          "http://localhost:8080/product/insert": 3,
+          "http://localhost:8080/product/update/1": 1,
+          "http://localhost:8080/": 1,
+          "http://localhost:8080/2": 1,
+          "http://localhost:8080/4": 1,
+          "http://localhost:8080/product2/findAll": 1,
+          "http://www.ultraq.net.nz/thymeleaf/layout": 4,
+          "https://getbootstrap.jp/": 3,
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js": 4,
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css": 4,
+          "http://localhost:8080/7-2": 1,
+          "https://www.tohoho-web.com/bootstrap5/index.html": 1,
+          "http://localhost:8080/7-3": 1,
+          "http://localhost:8080/7-4": 1,
+          "https://getbootstrap.jp/docs/5.3/layout/grid/": 1,
+          "http://localhost:8080/7-5": 1,
+          "https://getbootstrap.jp/docs/5.3/layout/columns/": 1,
+          "http://localhost:8080/7-5-2": 1,
+          "https://getbootstrap.jp/docs/5.3/forms/form-control/": 1,
+          "https://start.spring.io": 2,
+          "http://www.trainocate.co.jp/": 1
+        },
+        "pdf": "D:\\work\\Spring Boot 入門\\output\\pdf\\textbook\\textbook\\flow.pdf",
+        "pdf_sha256": "9b57bf0175e795a0cfa20c0575259feb42e579b3ad4cfe75210cc1630bc08253"
+      },
+      "logical_occurrences_before": 59,
+      "logical_occurrences_after": 59
+    },
+    {
+      "collection": "exercise",
+      "before": {
+        "annotation_count": 19,
+        "uri_counts": {
+          "http://localhost:8080/": 17,
+          "http://localhost:8080/4": 1,
+          "https://www.trainocate.co.jp/": 1
+        },
+        "pdf": "D:\\work\\Spring Boot 入門\\tmp\\table-v6-2026\\before-exercise.pdf",
+        "pdf_sha256": "fa38d9438b19581af28c67d8446d901f2c05583cf9861e3ed273f7db60533eb0"
+      },
+      "after": {
+        "annotation_count": 19,
+        "uri_counts": {
+          "http://localhost:8080/": 17,
+          "http://localhost:8080/4": 1,
+          "https://www.trainocate.co.jp/": 1
+        },
+        "pdf": "D:\\work\\Spring Boot 入門\\output\\pdf\\textbook\\exercise\\flow.pdf",
+        "pdf_sha256": "8ac438ad150cde1b653e9f6f8e9d0c91b64cebb8dac320de99953b28d2e5fd34"
+      },
+      "logical_occurrences_before": 19,
+      "logical_occurrences_after": 19
+    }
+  ],
+  "records": [
+    {
+      "collection": "textbook",
+      "chapter": "01",
+      "component": "outside-components-p025-b05",
+      "uri": "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 27,
+            "chapter_page": 13,
+            "rectangle": [
+              99.82040405273438,
+              252.97564697265625,
+              386.8494567871094,
+              264.015625
+            ],
+            "visible_text": "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j)",
+            "source_ids": [
+              "p025-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j)",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ")"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 27,
+            "chapter_page": 13,
+            "rectangle": [
+              99.82040405273438,
+              252.97564697265625,
+              386.8494567871094,
+              264.015625
+            ],
+            "visible_text": "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j)",
+            "source_ids": [
+              "p025-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://mvnrepository.com/artifact/com.mysql/mysql-connector-j)",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ")"
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "component": "02-explanation-11",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 67,
+            "chapter_page": 35,
+            "rectangle": [
+              186.23446655273438,
+              383.2418518066406,
+              324.8345031738281,
+              393.7418518066406
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p060-b04",
+              "p060-b05",
+              "p060-b06",
+              "p060-b07",
+              "p060-b08"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 67,
+            "chapter_page": 35,
+            "rectangle": [
+              186.23446655273438,
+              383.2418518066406,
+              324.8345031738281,
+              393.7418518066406
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p060-b04",
+              "p060-b05",
+              "p060-b06",
+              "p060-b07",
+              "p060-b08"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "component": "02-explanation-2",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 47,
+            "chapter_page": 15,
+            "rectangle": [
+              186.23446655273438,
+              405.2728576660156,
+              324.8345031738281,
+              415.7728576660156
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p044-b09",
+              "p044-b10"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 47,
+            "chapter_page": 15,
+            "rectangle": [
+              186.23446655273438,
+              405.2728576660156,
+              324.8345031738281,
+              415.7728576660156
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p044-b09",
+              "p044-b10"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "component": "02-p044-b08",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 47,
+            "chapter_page": 15,
+            "rectangle": [
+              215.59835815429688,
+              146.51947021484375,
+              354.1984558105469,
+              157.03118896484375
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p044-b08",
+              "p044-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 47,
+            "chapter_page": 15,
+            "rectangle": [
+              215.59835815429688,
+              146.51947021484375,
+              354.1984558105469,
+              157.03118896484375
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p044-b08",
+              "p044-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "component": "02-p049-b04",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 52,
+            "chapter_page": 20,
+            "rectangle": [
+              215.59835815429688,
+              331.5672302246094,
+              354.1984558105469,
+              342.08013916015625
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p049-b04",
+              "p049-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 52,
+            "chapter_page": 20,
+            "rectangle": [
+              215.59835815429688,
+              331.5672302246094,
+              354.1984558105469,
+              342.08013916015625
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p049-b04",
+              "p049-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "component": "02-p059-b13",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 66,
+            "chapter_page": 34,
+            "rectangle": [
+              215.59835815429688,
+              408.07379150390625,
+              354.1984558105469,
+              418.5840759277344
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p059-b13",
+              "p059-b12"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 66,
+            "chapter_page": 34,
+            "rectangle": [
+              215.59835815429688,
+              408.07379150390625,
+              354.1984558105469,
+              418.5840759277344
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p059-b13",
+              "p059-b12"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "component": "outside-components-p052-b06",
+      "uri": "http://localhost:8080/login",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 56,
+            "chapter_page": 24,
+            "rectangle": [
+              85.10399627685547,
+              110.0,
+              209.0062713623047,
+              121.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/login",
+            "source_ids": [
+              "p052-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/login",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 56,
+            "chapter_page": 24,
+            "rectangle": [
+              85.10399627685547,
+              110.0,
+              209.0062713623047,
+              121.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/login",
+            "source_ids": [
+              "p052-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/login",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "component": "outside-components-p056-b11",
+      "uri": "http://localhost:8080/login2",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 62,
+            "chapter_page": 30,
+            "rectangle": [
+              85.10399627685547,
+              152.0,
+              214.5479736328125,
+              163.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/login2",
+            "source_ids": [
+              "p056-b11"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/login2",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 62,
+            "chapter_page": 30,
+            "rectangle": [
+              85.10399627685547,
+              152.0,
+              214.5479736328125,
+              163.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/login2",
+            "source_ids": [
+              "p056-b11"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/login2",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "component": "outside-components-p061-b02",
+      "uri": "http://localhost:8080/login3",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 68,
+            "chapter_page": 36,
+            "rectangle": [
+              85.10399627685547,
+              244.60302734375,
+              214.5479736328125,
+              255.64300537109375
+            ],
+            "visible_text": "http://localhost:8080/login3",
+            "source_ids": [
+              "p061-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/login3",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 68,
+            "chapter_page": 36,
+            "rectangle": [
+              85.10399627685547,
+              244.60302734375,
+              214.5479736328125,
+              255.64300537109375
+            ],
+            "visible_text": "http://localhost:8080/login3",
+            "source_ids": [
+              "p061-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/login3",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "02",
+      "component": "outside-components-source-45",
+      "uri": "http://localhost:8080/index",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 48,
+            "chapter_page": 16,
+            "rectangle": [
+              85.10399627685547,
+              603.8548583984375,
+              213.87973022460938,
+              614.8948364257812
+            ],
+            "visible_text": "http://localhost:8080/index",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/index",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 48,
+            "chapter_page": 16,
+            "rectangle": [
+              85.10399627685547,
+              603.8548583984375,
+              213.87973022460938,
+              614.8948364257812
+            ],
+            "visible_text": "http://localhost:8080/index",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/index",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "component": "outside-components-p089-b02",
+      "uri": "http://localhost:8080/product/findAll",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 104,
+            "chapter_page": 35,
+            "rectangle": [
+              85.10399627685547,
+              134.0,
+              272.31597900390625,
+              146.0
+            ],
+            "visible_text": "http://localhost:8080/product/findAll",
+            "source_ids": [
+              "p089-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 104,
+            "chapter_page": 35,
+            "rectangle": [
+              85.10399627685547,
+              134.0,
+              272.31597900390625,
+              146.0
+            ],
+            "visible_text": "http://localhost:8080/product/findAll",
+            "source_ids": [
+              "p089-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "component": "outside-components-p094-b06",
+      "uri": "http://localhost:8080/product/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 110,
+            "chapter_page": 41,
+            "rectangle": [
+              85.10399627685547,
+              462.36102294921875,
+              228.9993438720703,
+              473.4010009765625
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p094-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 110,
+            "chapter_page": 41,
+            "rectangle": [
+              85.10399627685547,
+              462.36102294921875,
+              228.9993438720703,
+              473.4010009765625
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p094-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "component": "outside-components-p098-b02",
+      "uri": "http://localhost:8080/product/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 114,
+            "chapter_page": 45,
+            "rectangle": [
+              85.10399627685547,
+              413.10601806640625,
+              228.9993438720703,
+              424.14599609375
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p098-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 114,
+            "chapter_page": 45,
+            "rectangle": [
+              85.10399627685547,
+              413.10601806640625,
+              228.9993438720703,
+              424.14599609375
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p098-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "component": "outside-components-p102-b02",
+      "uri": "http://localhost:8080/product/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 119,
+            "chapter_page": 50,
+            "rectangle": [
+              85.10399627685547,
+              223.0400390625,
+              228.9993438720703,
+              234.08001708984375
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p102-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 119,
+            "chapter_page": 50,
+            "rectangle": [
+              85.10399627685547,
+              223.0400390625,
+              228.9993438720703,
+              234.08001708984375
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p102-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "component": "outside-components-p111-b05",
+      "uri": "http://localhost:8080/product/insert",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 130,
+            "chapter_page": 61,
+            "rectangle": [
+              85.10399627685547,
+              539.8920288085938,
+              255.18621826171875,
+              550.9320068359375
+            ],
+            "visible_text": "http://localhost:8080/product/insert",
+            "source_ids": [
+              "p111-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/insert",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 130,
+            "chapter_page": 61,
+            "rectangle": [
+              85.10399627685547,
+              539.8920288085938,
+              255.18621826171875,
+              550.9320068359375
+            ],
+            "visible_text": "http://localhost:8080/product/insert",
+            "source_ids": [
+              "p111-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/insert",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "component": "outside-components-p116-b07",
+      "uri": "http://localhost:8080/product/update/1",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 136,
+            "chapter_page": 67,
+            "rectangle": [
+              85.10399627685547,
+              574.7900390625,
+              271.1452331542969,
+              585.8300170898438
+            ],
+            "visible_text": "http://localhost:8080/product/update/1",
+            "source_ids": [
+              "p116-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/update/1",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 136,
+            "chapter_page": 67,
+            "rectangle": [
+              85.10399627685547,
+              574.7900390625,
+              271.1452331542969,
+              585.8300170898438
+            ],
+            "visible_text": "http://localhost:8080/product/update/1",
+            "source_ids": [
+              "p116-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/update/1",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "component": "outside-components-p120-b02",
+      "uri": "http://localhost:8080/product/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 140,
+            "chapter_page": 71,
+            "rectangle": [
+              85.10399627685547,
+              110.0,
+              228.9993438720703,
+              121.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p120-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 140,
+            "chapter_page": 71,
+            "rectangle": [
+              85.10399627685547,
+              110.0,
+              228.9993438720703,
+              121.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p120-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "03",
+      "component": "outside-components-p124-b04",
+      "uri": "http://localhost:8080/product/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 144,
+            "chapter_page": 75,
+            "rectangle": [
+              85.10399627685547,
+              334.02264404296875,
+              228.9993438720703,
+              345.0626220703125
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p124-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 144,
+            "chapter_page": 75,
+            "rectangle": [
+              85.10399627685547,
+              334.02264404296875,
+              228.9993438720703,
+              345.0626220703125
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p124-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "component": "outside-components-p141-b02",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 165,
+            "chapter_page": 11,
+            "rectangle": [
+              85.10399627685547,
+              134.0,
+              197.11199951171875,
+              146.0
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p141-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 165,
+            "chapter_page": 11,
+            "rectangle": [
+              85.10399627685547,
+              134.0,
+              197.11199951171875,
+              146.0
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p141-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "component": "outside-components-p146-b02",
+      "uri": "http://localhost:8080/2",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 171,
+            "chapter_page": 17,
+            "rectangle": [
+              85.10399627685547,
+              116.0,
+              203.11199951171875,
+              128.0
+            ],
+            "visible_text": "http://localhost:8080/2 ",
+            "source_ids": [
+              "p146-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/2",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 171,
+            "chapter_page": 17,
+            "rectangle": [
+              85.10399627685547,
+              116.0,
+              203.11199951171875,
+              128.0
+            ],
+            "visible_text": "http://localhost:8080/2 ",
+            "source_ids": [
+              "p146-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/2",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "component": "outside-components-p146-b06",
+      "uri": "http://localhost:8080/product/findAll",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 171,
+            "chapter_page": 17,
+            "rectangle": [
+              110.5477523803711,
+              538.9999389648438,
+              282.78277587890625,
+              550.0399169921875
+            ],
+            "visible_text": " http://localhost:8080/product/findAll ",
+            "source_ids": [
+              "p146-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 171,
+            "chapter_page": 17,
+            "rectangle": [
+              110.5477523803711,
+              538.9999389648438,
+              282.78277587890625,
+              550.0399169921875
+            ],
+            "visible_text": " http://localhost:8080/product/findAll ",
+            "source_ids": [
+              "p146-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "04",
+      "component": "outside-components-p153-b09",
+      "uri": "http://localhost:8080/4",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 181,
+            "chapter_page": 27,
+            "rectangle": [
+              85.10399627685547,
+              110.0,
+              193.6713409423828,
+              121.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/4",
+            "source_ids": [
+              "p153-b09"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/4",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 181,
+            "chapter_page": 27,
+            "rectangle": [
+              85.10399627685547,
+              110.0,
+              193.6713409423828,
+              121.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/4",
+            "source_ids": [
+              "p153-b09"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/4",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "05-explanation-1",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 198,
+            "chapter_page": 5,
+            "rectangle": [
+              186.23446655273438,
+              378.28656005859375,
+              324.8345031738281,
+              388.79339599609375
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p168-b04",
+              "p168-b05",
+              "p168-b06",
+              "p168-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 198,
+            "chapter_page": 5,
+            "rectangle": [
+              186.23446655273438,
+              378.28656005859375,
+              324.8345031738281,
+              388.79339599609375
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p168-b04",
+              "p168-b05",
+              "p168-b06",
+              "p168-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "05-explanation-2",
+      "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 216,
+            "chapter_page": 23,
+            "rectangle": [
+              174.6961669921875,
+              183.95184326171875,
+              411.4713439941406,
+              194.45184326171875
+            ],
+            "visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+            "source_ids": [
+              "p184-b02",
+              "p184-b03",
+              "p184-b04",
+              "p184-b05",
+              "p184-b06",
+              "p184-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 216,
+            "chapter_page": 23,
+            "rectangle": [
+              174.6961669921875,
+              183.95184326171875,
+              411.4713439941406,
+              194.45184326171875
+            ],
+            "visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+            "source_ids": [
+              "p184-b02",
+              "p184-b03",
+              "p184-b04",
+              "p184-b05",
+              "p184-b06",
+              "p184-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "05-explanation-3",
+      "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 218,
+            "chapter_page": 25,
+            "rectangle": [
+              174.6961669921875,
+              141.951904296875,
+              411.4713439941406,
+              152.451904296875
+            ],
+            "visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+            "source_ids": [
+              "p185-b01",
+              "p185-b02",
+              "p185-b03",
+              "p185-b04",
+              "p185-b05",
+              "p185-b06",
+              "p185-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 218,
+            "chapter_page": 25,
+            "rectangle": [
+              174.6961669921875,
+              141.951904296875,
+              411.4713439941406,
+              152.451904296875
+            ],
+            "visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+            "source_ids": [
+              "p185-b01",
+              "p185-b02",
+              "p185-b03",
+              "p185-b04",
+              "p185-b05",
+              "p185-b06",
+              "p185-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "05-p168-b03",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 198,
+            "chapter_page": 5,
+            "rectangle": [
+              215.59835815429688,
+              212.595947265625,
+              354.1984558105469,
+              223.12103271484375
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p168-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 198,
+            "chapter_page": 5,
+            "rectangle": [
+              215.59835815429688,
+              212.595947265625,
+              354.1984558105469,
+              223.12103271484375
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p168-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "05-p183-b03",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 215,
+            "chapter_page": 22,
+            "rectangle": [
+              215.59835815429688,
+              169.49188232421875,
+              354.1984558105469,
+              179.99188232421875
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p183-b03",
+              "p183-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 215,
+            "chapter_page": 22,
+            "rectangle": [
+              215.59835815429688,
+              169.49188232421875,
+              354.1984558105469,
+              179.99188232421875
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p183-b03",
+              "p183-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "05-p183-b03",
+      "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 215,
+            "chapter_page": 22,
+            "rectangle": [
+              209.82101440429688,
+              185.24188232421875,
+              446.59625244140625,
+              195.74188232421875
+            ],
+            "visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+            "source_ids": [
+              "p183-b03",
+              "p183-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 215,
+            "chapter_page": 22,
+            "rectangle": [
+              209.82101440429688,
+              185.24188232421875,
+              446.59625244140625,
+              195.74188232421875
+            ],
+            "visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+            "source_ids": [
+              "p183-b03",
+              "p183-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "05-p184-b10",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 217,
+            "chapter_page": 24,
+            "rectangle": [
+              215.59835815429688,
+              170.45196533203125,
+              354.1984558105469,
+              180.95196533203125
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p184-b10",
+              "p184-b09"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 217,
+            "chapter_page": 24,
+            "rectangle": [
+              215.59835815429688,
+              170.45196533203125,
+              354.1984558105469,
+              180.95196533203125
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p184-b10",
+              "p184-b09"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "05-p184-b10",
+      "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 217,
+            "chapter_page": 24,
+            "rectangle": [
+              209.82101440429688,
+              186.20196533203125,
+              446.59625244140625,
+              196.70196533203125
+            ],
+            "visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+            "source_ids": [
+              "p184-b10",
+              "p184-b09"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 217,
+            "chapter_page": 24,
+            "rectangle": [
+              209.82101440429688,
+              186.20196533203125,
+              446.59625244140625,
+              196.70196533203125
+            ],
+            "visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+            "source_ids": [
+              "p184-b10",
+              "p184-b09"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.ultraq.net.nz/thymeleaf/layout",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "outside-components-p174-b05",
+      "uri": "http://localhost:8080/product/findAll",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 205,
+            "chapter_page": 12,
+            "rectangle": [
+              85.10399627685547,
+              109.0400390625,
+              259.6463928222656,
+              120.08001708984375
+            ],
+            "visible_text": "http://localhost:8080/product/findAll",
+            "source_ids": [
+              "p174-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 205,
+            "chapter_page": 12,
+            "rectangle": [
+              85.10399627685547,
+              109.0400390625,
+              259.6463928222656,
+              120.08001708984375
+            ],
+            "visible_text": "http://localhost:8080/product/findAll",
+            "source_ids": [
+              "p174-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "05",
+      "component": "outside-components-p180-b02",
+      "uri": "http://localhost:8080/product2/findAll",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 212,
+            "chapter_page": 19,
+            "rectangle": [
+              85.10399627685547,
+              215.35400390625,
+              262.8590393066406,
+              226.39398193359375
+            ],
+            "visible_text": "http://localhost:8080/product2/findAll",
+            "source_ids": [
+              "p180-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product2/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 212,
+            "chapter_page": 19,
+            "rectangle": [
+              85.10399627685547,
+              215.35400390625,
+              262.8590393066406,
+              226.39398193359375
+            ],
+            "visible_text": "http://localhost:8080/product2/findAll",
+            "source_ids": [
+              "p180-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product2/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "component": "outside-components-p207-b02",
+      "uri": "http://localhost:8080/product/findAll",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 243,
+            "chapter_page": 17,
+            "rectangle": [
+              85.10399627685547,
+              134.0,
+              272.31597900390625,
+              146.0
+            ],
+            "visible_text": "http://localhost:8080/product/findAll",
+            "source_ids": [
+              "p207-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 243,
+            "chapter_page": 17,
+            "rectangle": [
+              85.10399627685547,
+              134.0,
+              272.31597900390625,
+              146.0
+            ],
+            "visible_text": "http://localhost:8080/product/findAll",
+            "source_ids": [
+              "p207-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "component": "outside-components-p212-b02",
+      "uri": "http://localhost:8080/product/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 247,
+            "chapter_page": 21,
+            "rectangle": [
+              85.10399627685547,
+              354.7929992675781,
+              241.51199340820312,
+              366.7929992675781
+            ],
+            "visible_text": "http://localhost:8080/product/",
+            "source_ids": [
+              "p212-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 247,
+            "chapter_page": 21,
+            "rectangle": [
+              85.10399627685547,
+              354.7929992675781,
+              241.51199340820312,
+              366.7929992675781
+            ],
+            "visible_text": "http://localhost:8080/product/",
+            "source_ids": [
+              "p212-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "component": "outside-components-p221-b02",
+      "uri": "http://localhost:8080/product/insert",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 257,
+            "chapter_page": 31,
+            "rectangle": [
+              85.10399627685547,
+              134.0,
+              269.9759826660156,
+              146.0
+            ],
+            "visible_text": "http://localhost:8080/product/insert",
+            "source_ids": [
+              "p221-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/insert",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 257,
+            "chapter_page": 31,
+            "rectangle": [
+              85.10399627685547,
+              134.0,
+              269.9759826660156,
+              146.0
+            ],
+            "visible_text": "http://localhost:8080/product/insert",
+            "source_ids": [
+              "p221-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/insert",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "component": "outside-components-p227-b04",
+      "uri": "http://localhost:8080/product/findAll",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 263,
+            "chapter_page": 37,
+            "rectangle": [
+              85.10399627685547,
+              282.79296875,
+              259.6463928222656,
+              293.83294677734375
+            ],
+            "visible_text": "http://localhost:8080/product/findAll ",
+            "source_ids": [
+              "p227-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 263,
+            "chapter_page": 37,
+            "rectangle": [
+              85.10399627685547,
+              282.79296875,
+              259.6463928222656,
+              293.83294677734375
+            ],
+            "visible_text": "http://localhost:8080/product/findAll ",
+            "source_ids": [
+              "p227-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/findAll",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "component": "outside-components-p229-b04",
+      "uri": "http://localhost:8080/product/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 265,
+            "chapter_page": 39,
+            "rectangle": [
+              85.10399627685547,
+              295.801025390625,
+              230.4566192626953,
+              306.84100341796875
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p229-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 265,
+            "chapter_page": 39,
+            "rectangle": [
+              85.10399627685547,
+              295.801025390625,
+              230.4566192626953,
+              306.84100341796875
+            ],
+            "visible_text": "http://localhost:8080/product/ ",
+            "source_ids": [
+              "p229-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "component": "outside-components-p231-b02",
+      "uri": "http://localhost:8080/product/insert",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 266,
+            "chapter_page": 40,
+            "rectangle": [
+              85.10399627685547,
+              419.3529968261719,
+              269.9759826660156,
+              431.3529968261719
+            ],
+            "visible_text": "http://localhost:8080/product/insert",
+            "source_ids": [
+              "p231-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/insert",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 266,
+            "chapter_page": 40,
+            "rectangle": [
+              85.10399627685547,
+              419.3529968261719,
+              269.9759826660156,
+              431.3529968261719
+            ],
+            "visible_text": "http://localhost:8080/product/insert",
+            "source_ids": [
+              "p231-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/insert",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "06",
+      "component": "outside-components-p231-b05",
+      "uri": "http://localhost:8080/product/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 266,
+            "chapter_page": 40,
+            "rectangle": [
+              85.10399627685547,
+              761.1530151367188,
+              230.4566192626953,
+              772.1929931640625
+            ],
+            "visible_text": "http://localhost:8080/product/",
+            "source_ids": [
+              "p231-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 266,
+            "chapter_page": 40,
+            "rectangle": [
+              85.10399627685547,
+              761.1530151367188,
+              230.4566192626953,
+              772.1929931640625
+            ],
+            "visible_text": "http://localhost:8080/product/",
+            "source_ids": [
+              "p231-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/product/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "07-p246-b07",
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 285,
+            "chapter_page": 10,
+            "rectangle": [
+              157.86007690429688,
+              422.49395751953125,
+              504.3603820800781,
+              433.0190734863281
+            ],
+            "visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootst",
+            "source_ids": [
+              "p246-b07"
+            ]
+          },
+          {
+            "physical_page": 285,
+            "chapter_page": 10,
+            "rectangle": [
+              123.21009063720703,
+              438.2815856933594,
+              186.7350616455078,
+              448.80670166015625
+            ],
+            "visible_text": "rap.min.css",
+            "source_ids": [
+              "p246-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 285,
+            "chapter_page": 10,
+            "rectangle": [
+              157.86007690429688,
+              422.49395751953125,
+              504.3603820800781,
+              433.0190734863281
+            ],
+            "visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootst",
+            "source_ids": [
+              "p246-b07"
+            ]
+          },
+          {
+            "physical_page": 285,
+            "chapter_page": 10,
+            "rectangle": [
+              123.21009063720703,
+              438.2815856933594,
+              186.7350616455078,
+              448.80670166015625
+            ],
+            "visible_text": "rap.min.css",
+            "source_ids": [
+              "p246-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "07-p246-b10",
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 285,
+            "chapter_page": 10,
+            "rectangle": [
+              152.08273315429688,
+              644.8710327148438,
+              533.2330932617188,
+              655.3961181640625
+            ],
+            "visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bun",
+            "source_ids": [
+              "p246-b10"
+            ]
+          },
+          {
+            "physical_page": 285,
+            "chapter_page": 10,
+            "rectangle": [
+              123.2100830078125,
+              660.6586303710938,
+              180.96005249023438,
+              671.1837158203125
+            ],
+            "visible_text": "dle.min.js",
+            "source_ids": [
+              "p246-b10"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 285,
+            "chapter_page": 10,
+            "rectangle": [
+              152.08273315429688,
+              644.8710327148438,
+              533.2330932617188,
+              655.3961181640625
+            ],
+            "visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bun",
+            "source_ids": [
+              "p246-b10"
+            ]
+          },
+          {
+            "physical_page": 285,
+            "chapter_page": 10,
+            "rectangle": [
+              123.2100830078125,
+              660.6586303710938,
+              180.96005249023438,
+              671.1837158203125
+            ],
+            "visible_text": "dle.min.js",
+            "source_ids": [
+              "p246-b10"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "07-p248-b02",
+      "uri": "http://www.thymeleaf.org",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 288,
+            "chapter_page": 13,
+            "rectangle": [
+              215.59835815429688,
+              146.451904296875,
+              354.1984558105469,
+              156.951904296875
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 288,
+            "chapter_page": 13,
+            "rectangle": [
+              215.59835815429688,
+              146.451904296875,
+              354.1984558105469,
+              156.951904296875
+            ],
+            "visible_text": "http://www.thymeleaf.org",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://www.thymeleaf.org",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "07-p248-b02",
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 288,
+            "chapter_page": 13,
+            "rectangle": [
+              128.98509216308594,
+              378.951904296875,
+              492.8103332519531,
+              389.451904296875
+            ],
+            "visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          },
+          {
+            "physical_page": 288,
+            "chapter_page": 13,
+            "rectangle": [
+              123.21009063720703,
+              394.701904296875,
+              169.41006469726562,
+              405.201904296875
+            ],
+            "visible_text": ".min.css",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 288,
+            "chapter_page": 13,
+            "rectangle": [
+              128.98509216308594,
+              378.951904296875,
+              492.8103332519531,
+              389.451904296875
+            ],
+            "visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          },
+          {
+            "physical_page": 288,
+            "chapter_page": 13,
+            "rectangle": [
+              123.21009063720703,
+              394.701904296875,
+              169.41006469726562,
+              405.201904296875
+            ],
+            "visible_text": ".min.css",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "07-p248-b02",
+      "uri": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 289,
+            "chapter_page": 14,
+            "rectangle": [
+              128.98509216308594,
+              146.45184326171875,
+              492.8103332519531,
+              156.95184326171875
+            ],
+            "visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          },
+          {
+            "physical_page": 289,
+            "chapter_page": 14,
+            "rectangle": [
+              123.21009063720703,
+              162.20184326171875,
+              198.28506469726562,
+              172.70184326171875
+            ],
+            "visible_text": "bundle.min.js",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 289,
+            "chapter_page": 14,
+            "rectangle": [
+              128.98509216308594,
+              146.45184326171875,
+              492.8103332519531,
+              156.95184326171875
+            ],
+            "visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          },
+          {
+            "physical_page": 289,
+            "chapter_page": 14,
+            "rectangle": [
+              123.21009063720703,
+              162.20184326171875,
+              198.28506469726562,
+              172.70184326171875
+            ],
+            "visible_text": "bundle.min.js",
+            "source_ids": [
+              "p248-b02",
+              "p248-b01"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p245-b06",
+      "uri": "https://getbootstrap.jp/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 284,
+            "chapter_page": 9,
+            "rectangle": [
+              85.10399627685547,
+              709.724609375,
+              184.78416442871094,
+              720.7645874023438
+            ],
+            "visible_text": "https://getbootstrap.jp/",
+            "source_ids": [
+              "p245-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 284,
+            "chapter_page": 9,
+            "rectangle": [
+              85.10399627685547,
+              709.724609375,
+              184.78416442871094,
+              720.7645874023438
+            ],
+            "visible_text": "https://getbootstrap.jp/",
+            "source_ids": [
+              "p245-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p249-b03",
+      "uri": "http://localhost:8080/7-2",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 289,
+            "chapter_page": 14,
+            "rectangle": [
+              85.10399627685547,
+              372.8890075683594,
+              204.71133422851562,
+              383.9289855957031
+            ],
+            "visible_text": "http://localhost:8080/7-2",
+            "source_ids": [
+              "p249-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-2",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 289,
+            "chapter_page": 14,
+            "rectangle": [
+              85.10399627685547,
+              372.8890075683594,
+              204.71133422851562,
+              383.9289855957031
+            ],
+            "visible_text": "http://localhost:8080/7-2",
+            "source_ids": [
+              "p249-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-2",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p249-b05",
+      "uri": "https://getbootstrap.jp/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 289,
+            "chapter_page": 14,
+            "rectangle": [
+              209.73524475097656,
+              568.489013671875,
+              322.4094543457031,
+              579.5289916992188
+            ],
+            "visible_text": "https://getbootstrap.jp/）",
+            "source_ids": [
+              "p249-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/）",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "）"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 289,
+            "chapter_page": 14,
+            "rectangle": [
+              209.73524475097656,
+              568.489013671875,
+              322.4094543457031,
+              579.5289916992188
+            ],
+            "visible_text": "https://getbootstrap.jp/）",
+            "source_ids": [
+              "p249-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/）",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "）"
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p250-b04",
+      "uri": "https://getbootstrap.jp/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 290,
+            "chapter_page": 15,
+            "rectangle": [
+              213.37808227539062,
+              520.2666015625,
+              326.05230712890625,
+              531.3065795898438
+            ],
+            "visible_text": "https://getbootstrap.jp/",
+            "source_ids": [
+              "p250-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 290,
+            "chapter_page": 15,
+            "rectangle": [
+              213.37808227539062,
+              520.2666015625,
+              326.05230712890625,
+              531.3065795898438
+            ],
+            "visible_text": "https://getbootstrap.jp/",
+            "source_ids": [
+              "p250-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p250-b05",
+      "uri": "https://www.tohoho-web.com/bootstrap5/index.html",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 290,
+            "chapter_page": 15,
+            "rectangle": [
+              235.75650024414062,
+              544.2666015625,
+              480.380859375,
+              555.3065795898438
+            ],
+            "visible_text": "(https://www.tohoho-web.com/bootstrap5/index.html)",
+            "source_ids": [
+              "p250-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "(https://www.tohoho-web.com/bootstrap5/index.html)",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "()"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 290,
+            "chapter_page": 15,
+            "rectangle": [
+              235.75650024414062,
+              544.2666015625,
+              480.380859375,
+              555.3065795898438
+            ],
+            "visible_text": "(https://www.tohoho-web.com/bootstrap5/index.html)",
+            "source_ids": [
+              "p250-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "(https://www.tohoho-web.com/bootstrap5/index.html)",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "()"
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p261-b06",
+      "uri": "http://localhost:8080/7-3",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 303,
+            "chapter_page": 28,
+            "rectangle": [
+              85.10399627685547,
+              447.6260070800781,
+              204.71133422851562,
+              458.6659851074219
+            ],
+            "visible_text": "http://localhost:8080/7-3",
+            "source_ids": [
+              "p261-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-3",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 303,
+            "chapter_page": 28,
+            "rectangle": [
+              85.10399627685547,
+              447.6260070800781,
+              204.71133422851562,
+              458.6659851074219
+            ],
+            "visible_text": "http://localhost:8080/7-3",
+            "source_ids": [
+              "p261-b06"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-3",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p264-b03",
+      "uri": "http://localhost:8080/7-4",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 306,
+            "chapter_page": 31,
+            "rectangle": [
+              85.10399627685547,
+              350.80902099609375,
+              204.71133422851562,
+              361.8489990234375
+            ],
+            "visible_text": "http://localhost:8080/7-4",
+            "source_ids": [
+              "p264-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-4",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 306,
+            "chapter_page": 31,
+            "rectangle": [
+              85.10399627685547,
+              350.80902099609375,
+              204.71133422851562,
+              361.8489990234375
+            ],
+            "visible_text": "http://localhost:8080/7-4",
+            "source_ids": [
+              "p264-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-4",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p268-b02",
+      "uri": "http://localhost:8080/7-5",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 311,
+            "chapter_page": 36,
+            "rectangle": [
+              85.10399627685547,
+              270.08001708984375,
+              204.71133422851562,
+              281.1199951171875
+            ],
+            "visible_text": "http://localhost:8080/7-5",
+            "source_ids": [
+              "p268-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-5",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 311,
+            "chapter_page": 36,
+            "rectangle": [
+              85.10399627685547,
+              270.08001708984375,
+              204.71133422851562,
+              281.1199951171875
+            ],
+            "visible_text": "http://localhost:8080/7-5",
+            "source_ids": [
+              "p268-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-5",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p268-b04",
+      "uri": "https://getbootstrap.jp/docs/5.3/layout/grid/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 311,
+            "chapter_page": 36,
+            "rectangle": [
+              184.29150390625,
+              407.6000061035156,
+              397.3856201171875,
+              418.6399841308594
+            ],
+            "visible_text": "https://getbootstrap.jp/docs/5.3/layout/grid/ ",
+            "source_ids": [
+              "p268-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/docs/5.3/layout/grid/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 311,
+            "chapter_page": 36,
+            "rectangle": [
+              184.29150390625,
+              407.6000061035156,
+              397.3856201171875,
+              418.6399841308594
+            ],
+            "visible_text": "https://getbootstrap.jp/docs/5.3/layout/grid/ ",
+            "source_ids": [
+              "p268-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/docs/5.3/layout/grid/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p271-b02",
+      "uri": "http://localhost:8080/7-5-2",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 314,
+            "chapter_page": 39,
+            "rectangle": [
+              85.10399627685547,
+              269.8330078125,
+              215.75132751464844,
+              280.87298583984375
+            ],
+            "visible_text": "http://localhost:8080/7-5-2",
+            "source_ids": [
+              "p271-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-5-2",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 314,
+            "chapter_page": 39,
+            "rectangle": [
+              85.10399627685547,
+              269.8330078125,
+              215.75132751464844,
+              280.87298583984375
+            ],
+            "visible_text": "http://localhost:8080/7-5-2",
+            "source_ids": [
+              "p271-b02"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/7-5-2",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p271-b03",
+      "uri": "https://getbootstrap.jp/docs/5.3/layout/columns/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 314,
+            "chapter_page": 39,
+            "rectangle": [
+              183.19650268554688,
+              558.6529541015625,
+              407.0685119628906,
+              569.2129516601562
+            ],
+            "visible_text": " https://getbootstrap.jp/docs/5.3/layout/columns/ ",
+            "source_ids": [
+              "p271-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/docs/5.3/layout/columns/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 314,
+            "chapter_page": 39,
+            "rectangle": [
+              183.19650268554688,
+              558.6529541015625,
+              407.0685119628906,
+              569.2129516601562
+            ],
+            "visible_text": " https://getbootstrap.jp/docs/5.3/layout/columns/ ",
+            "source_ids": [
+              "p271-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/docs/5.3/layout/columns/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "07",
+      "component": "outside-components-p274-b03",
+      "uri": "https://getbootstrap.jp/docs/5.3/forms/form-control/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 318,
+            "chapter_page": 43,
+            "rectangle": [
+              85.10399627685547,
+              428.1629943847656,
+              337.6771240234375,
+              439.2029724121094
+            ],
+            "visible_text": "https://getbootstrap.jp/docs/5.3/forms/form-control/",
+            "source_ids": [
+              "p274-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/docs/5.3/forms/form-control/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 318,
+            "chapter_page": 43,
+            "rectangle": [
+              85.10399627685547,
+              428.1629943847656,
+              337.6771240234375,
+              439.2029724121094
+            ],
+            "visible_text": "https://getbootstrap.jp/docs/5.3/forms/form-control/",
+            "source_ids": [
+              "p274-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "https://getbootstrap.jp/docs/5.3/forms/form-control/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "component": "outside-components-source-286",
+      "uri": "https://start.spring.io",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 331,
+            "chapter_page": 5,
+            "rectangle": [
+              333.30999755859375,
+              718.3125,
+              434.56878662109375,
+              729.3524780273438
+            ],
+            "visible_text": "https://start.spring.io",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "https://start.spring.io",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 331,
+            "chapter_page": 5,
+            "rectangle": [
+              333.30999755859375,
+              718.3125,
+              434.56878662109375,
+              729.3524780273438
+            ],
+            "visible_text": "https://start.spring.io",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "https://start.spring.io",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "component": "outside-components-source-288",
+      "uri": "https://start.spring.io",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 333,
+            "chapter_page": 7,
+            "rectangle": [
+              191.5399932861328,
+              510.54248046875,
+              292.80987548828125,
+              521.5824584960938
+            ],
+            "visible_text": "、https://start.spring.io",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "、https://start.spring.io",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "、"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 333,
+            "chapter_page": 7,
+            "rectangle": [
+              191.5399932861328,
+              510.54248046875,
+              292.80987548828125,
+              521.5824584960938
+            ],
+            "visible_text": "、https://start.spring.io",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "、https://start.spring.io",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "、"
+      },
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "component": "outside-components-source-296",
+      "uri": "http://www.trainocate.co.jp/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 343,
+            "chapter_page": 9,
+            "rectangle": [
+              336.7900085449219,
+              689.3986206054688,
+              464.81500244140625,
+              698.3986206054688
+            ],
+            "visible_text": "http://www.trainocate.co.jp/",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "http://www.trainocate.co.jp/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 343,
+            "chapter_page": 9,
+            "rectangle": [
+              336.7900085449219,
+              689.3986206054688,
+              464.81500244140625,
+              698.3986206054688
+            ],
+            "visible_text": "http://www.trainocate.co.jp/",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "http://www.trainocate.co.jp/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-back",
+      "component": "outside-components-source-77",
+      "uri": "https://www.trainocate.co.jp/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 79,
+            "chapter_page": 1,
+            "rectangle": [
+              336.42999267578125,
+              689.3986206054688,
+              468.98199462890625,
+              698.3986206054688
+            ],
+            "visible_text": "https://www.trainocate.co.jp/",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "https://www.trainocate.co.jp/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 79,
+            "chapter_page": 1,
+            "rectangle": [
+              336.42999267578125,
+              689.3986206054688,
+              468.98199462890625,
+              698.3986206054688
+            ],
+            "visible_text": "https://www.trainocate.co.jp/",
+            "source_ids": []
+          }
+        ],
+        "joined_visible_text": "https://www.trainocate.co.jp/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "component": "outside-components-p015-b14",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 15,
+            "chapter_page": 5,
+            "rectangle": [
+              163.82400512695312,
+              628.9949951171875,
+              266.871337890625,
+              640.0349731445312
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p015-b14"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 15,
+            "chapter_page": 5,
+            "rectangle": [
+              163.82400512695312,
+              628.9949951171875,
+              266.871337890625,
+              640.0349731445312
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p015-b14"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "component": "outside-components-p016-b12",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 16,
+            "chapter_page": 6,
+            "rectangle": [
+              163.82400512695312,
+              373.9045715332031,
+              266.871337890625,
+              384.9445495605469
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p016-b12"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 16,
+            "chapter_page": 6,
+            "rectangle": [
+              163.82400512695312,
+              373.9045715332031,
+              266.871337890625,
+              384.9445495605469
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p016-b12"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "component": "outside-components-p022-b05",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 22,
+            "chapter_page": 6,
+            "rectangle": [
+              163.82400512695312,
+              200.0,
+              266.871337890625,
+              211.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p022-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 22,
+            "chapter_page": 6,
+            "rectangle": [
+              163.82400512695312,
+              200.0,
+              266.871337890625,
+              211.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p022-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "component": "outside-components-p024-b04",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 24,
+            "chapter_page": 8,
+            "rectangle": [
+              163.82400512695312,
+              158.0,
+              266.871337890625,
+              169.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p024-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 24,
+            "chapter_page": 8,
+            "rectangle": [
+              163.82400512695312,
+              158.0,
+              266.871337890625,
+              169.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p024-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "component": "outside-components-p025-b11",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 25,
+            "chapter_page": 9,
+            "rectangle": [
+              163.82400512695312,
+              344.0,
+              266.871337890625,
+              355.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p025-b11"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 25,
+            "chapter_page": 9,
+            "rectangle": [
+              163.82400512695312,
+              344.0,
+              266.871337890625,
+              355.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p025-b11"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "component": "outside-components-p027-b11",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 27,
+            "chapter_page": 11,
+            "rectangle": [
+              163.82400512695312,
+              380.0,
+              266.871337890625,
+              391.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p027-b11"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 27,
+            "chapter_page": 11,
+            "rectangle": [
+              163.82400512695312,
+              380.0,
+              266.871337890625,
+              391.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p027-b11"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "component": "outside-components-p032-b14",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 32,
+            "chapter_page": 4,
+            "rectangle": [
+              163.82400512695312,
+              494.6412658691406,
+              266.871337890625,
+              505.6812438964844
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p032-b14"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 32,
+            "chapter_page": 4,
+            "rectangle": [
+              163.82400512695312,
+              494.6412658691406,
+              266.871337890625,
+              505.6812438964844
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p032-b14"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "component": "outside-components-p033-b15",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 33,
+            "chapter_page": 5,
+            "rectangle": [
+              163.82400512695312,
+              603.64453125,
+              266.871337890625,
+              614.6845092773438
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p033-b15"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 33,
+            "chapter_page": 5,
+            "rectangle": [
+              163.82400512695312,
+              603.64453125,
+              266.871337890625,
+              614.6845092773438
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p033-b15"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "component": "outside-components-p035-b13",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 35,
+            "chapter_page": 7,
+            "rectangle": [
+              163.82400512695312,
+              429.66033935546875,
+              266.871337890625,
+              440.7003173828125
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p035-b13"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 35,
+            "chapter_page": 7,
+            "rectangle": [
+              163.82400512695312,
+              429.66033935546875,
+              266.871337890625,
+              440.7003173828125
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p035-b13"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "component": "outside-components-p040-b08",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 40,
+            "chapter_page": 4,
+            "rectangle": [
+              163.82400512695312,
+              469.4703063964844,
+              266.871337890625,
+              480.5102844238281
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p040-b08"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 40,
+            "chapter_page": 4,
+            "rectangle": [
+              163.82400512695312,
+              469.4703063964844,
+              266.871337890625,
+              480.5102844238281
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p040-b08"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "component": "outside-components-p043-b04",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 44,
+            "chapter_page": 8,
+            "rectangle": [
+              163.82400512695312,
+              177.66033935546875,
+              266.871337890625,
+              188.7003173828125
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p043-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 44,
+            "chapter_page": 8,
+            "rectangle": [
+              163.82400512695312,
+              177.66033935546875,
+              266.871337890625,
+              188.7003173828125
+            ],
+            "visible_text": "http://localhost:8080/",
+            "source_ids": [
+              "p043-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "component": "outside-components-p054-b03",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 57,
+            "chapter_page": 8,
+            "rectangle": [
+              145.82400512695312,
+              134.0,
+              248.87135314941406,
+              145.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p054-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 57,
+            "chapter_page": 8,
+            "rectangle": [
+              145.82400512695312,
+              134.0,
+              248.87135314941406,
+              145.03997802734375
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p054-b03"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "component": "outside-components-p054-b15",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 57,
+            "chapter_page": 8,
+            "rectangle": [
+              145.82400512695312,
+              537.69580078125,
+              248.87135314941406,
+              548.7357788085938
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p054-b15"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 57,
+            "chapter_page": 8,
+            "rectangle": [
+              145.82400512695312,
+              537.69580078125,
+              248.87135314941406,
+              548.7357788085938
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p054-b15"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "component": "outside-components-p056-b05",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 59,
+            "chapter_page": 10,
+            "rectangle": [
+              145.82400512695312,
+              238.751220703125,
+              248.87135314941406,
+              249.79119873046875
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p056-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 59,
+            "chapter_page": 10,
+            "rectangle": [
+              145.82400512695312,
+              238.751220703125,
+              248.87135314941406,
+              249.79119873046875
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p056-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "component": "outside-components-p058-b07",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 61,
+            "chapter_page": 12,
+            "rectangle": [
+              145.82400512695312,
+              273.19415283203125,
+              248.87135314941406,
+              284.234130859375
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p058-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 61,
+            "chapter_page": 12,
+            "rectangle": [
+              145.82400512695312,
+              273.19415283203125,
+              248.87135314941406,
+              284.234130859375
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p058-b07"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "component": "outside-components-p059-b05",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 62,
+            "chapter_page": 13,
+            "rectangle": [
+              145.82400512695312,
+              509.501220703125,
+              248.87135314941406,
+              520.5411987304688
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p059-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 62,
+            "chapter_page": 13,
+            "rectangle": [
+              145.82400512695312,
+              511.001220703125,
+              248.87135314941406,
+              522.0411987304688
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p059-b05"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "component": "outside-components-p062-b04",
+      "uri": "http://localhost:8080/",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 65,
+            "chapter_page": 16,
+            "rectangle": [
+              145.82400512695312,
+              406.6370849609375,
+              248.87135314941406,
+              417.67706298828125
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p062-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 65,
+            "chapter_page": 16,
+            "rectangle": [
+              145.82400512695312,
+              408.1370849609375,
+              248.87135314941406,
+              419.17706298828125
+            ],
+            "visible_text": "http://localhost:8080/「",
+            "source_ids": [
+              "p062-b04"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/「",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": "「"
+      },
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "component": "outside-components-p076-b12",
+      "uri": "http://localhost:8080/4",
+      "before": {
+        "annotations": [
+          {
+            "physical_page": 78,
+            "chapter_page": 13,
+            "rectangle": [
+              114.14399719238281,
+              566.1865844726562,
+              222.7113494873047,
+              577.2265625
+            ],
+            "visible_text": "http://localhost:8080/4",
+            "source_ids": [
+              "p076-b12"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/4",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "after": {
+        "annotations": [
+          {
+            "physical_page": 78,
+            "chapter_page": 13,
+            "rectangle": [
+              114.14399719238281,
+              566.1865844726562,
+              222.7113494873047,
+              577.2265625
+            ],
+            "visible_text": "http://localhost:8080/4",
+            "source_ids": [
+              "p076-b12"
+            ]
+          }
+        ],
+        "joined_visible_text": "http://localhost:8080/4",
+        "logical_occurrences": 1,
+        "all_url_characters_clickable": true,
+        "adjacent_text_outside_url": ""
+      },
+      "passed": true
+    }
+  ],
+  "changed_rectangle_groups": [],
+  "problems": [],
+  "method": "旧/新の各URLを章・同じHTML部品ID/consume元ID（部品外は元ブロック、境界未確定時は元頁）へ対応付け、注釈矩形で取得できる可視文字を連結。空白とゼロ幅文字を除き、宛先URL全字が各論理出現でクリック可能であり、その出現数と所属元IDが同一であることを要求する。矩形に隣接する引用符・句読点が入る場合も、URL本体の全字を必須とする。"
+}

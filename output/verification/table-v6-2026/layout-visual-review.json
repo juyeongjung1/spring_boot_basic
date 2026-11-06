@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "method": "最終PDFから生成された指摘7頁を監査担当が独立目視。全33表の全セル/全罫線/整列/styleは実章PDFから別途自動検査。",
+  "textbook_sha256": "9b57bf0175e795a0cfa20c0575259feb42e579b3ad4cfe75210cc1630bc08253",
+  "exercise_sha256": "8ac438ad150cde1b653e9f6f8e9d0c91b64cebb8dac320de99953b28d2e5fd34",
+  "checked_pages": [
+    {"collection":"textbook","page":74,"checked":"RDBMS情報表と商品一覧が内容相応の幅へ縮み、定義表は全幅を保持。見出し中央、数値を含む全データ左、縦横罫線と外周を確認。"},
+    {"collection":"textbook","page":77,"checked":"長い比較表は全幅。原本の赤字/下線を保ち、見出し中央と明確なセル区切りを確認。"},
+    {"collection":"textbook","page":80,"checked":"properties設定表は意味説明のため全幅を保持。外周・内部の全罫線と中央見出し、左揃えデータを確認。"},
+    {"collection":"textbook","page":83,"checked":"制約列を含む定義表の整列と罫線が明確。直前の図と後続コードの表示も保全。"},
+    {"collection":"textbook","page":232,"checked":"外部参照の定義表と商品データ表の幅を使い分け。category_id・下線・数値の左揃えを確認。"},
+    {"collection":"exercise","page":53,"checked":"社員/勤務地のデータ表は内容相応の幅。定義表は全幅。小さい勤務地表の四隅を含め線欠けなし。"},
+    {"collection":"exercise","page":68,"checked":"Bootstrapファイル名/保存場所の表も自然な幅。見出し中央、データ左、外周を確認。"}
+  ],
+  "problems": []
+}

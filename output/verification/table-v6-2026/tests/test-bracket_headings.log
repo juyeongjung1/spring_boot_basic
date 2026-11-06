@@ -1,0 +1,9 @@
+test_native_brackets_and_neighboring_characters_keep_the_exact_source_coordinates (__main__.BracketHeadingTests.test_native_brackets_and_neighboring_characters_keep_the_exact_source_coordinates) ... ok
+test_only_heading_rendering_requests_extra_emphasis (__main__.BracketHeadingTests.test_only_heading_rendering_requests_extra_emphasis) ... ok
+test_original_outline_and_large_bold_font_are_preserved (__main__.BracketHeadingTests.test_original_outline_and_large_bold_font_are_preserved) ... ok
+test_regular_small_heading_is_outlined_without_changing_its_font_or_size (__main__.BracketHeadingTests.test_regular_small_heading_is_outlined_without_changing_its_font_or_size) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.996s
+
+OK

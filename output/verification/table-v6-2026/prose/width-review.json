@@ -1,0 +1,1209 @@
+{
+  "baseline": "ee2f9a4",
+  "stage": "実装前の読者・著者としての幅提案。実装や本文は変更していない。",
+  "body_width_pt": 426.672,
+  "tables_reviewed": 33,
+  "shrink_recommended": 15,
+  "full_width_recommended": 18,
+  "measurement": {
+    "body_font": [
+      "MS PGothic",
+      "Regular"
+    ],
+    "body_font_size_pt": 9.5,
+    "header_font": [
+      "Meiryo",
+      "Bold"
+    ],
+    "header_font_size_pt": 9,
+    "method": "PillowでWindows実フォントの文字幅を計測。各列の最長値に左右余白12ptと罫線相当0.6ptを加えた。提案幅には読みやすさの余裕を別途含む。",
+    "limits": "ブラウザのレイアウト実測ではない。元Wordの手動改行は多くを連結して計測し、制約の列は併記の行を保った。長文表の計測値をそのまま表の実幅にはしない。"
+  },
+  "principles": [
+    "短い2～3列の値一覧は幅を内容に合わせ、ラベルと値の間の空白を減らす。",
+    "4～5列でも全セルが短いデータ一覧は軽い縮幅が可能。",
+    "長文説明・条件とメッセージの対応・6～7列の定義表は全幅を優先する。",
+    "分割・再掲された定義表は元の表と同じ幅と列位置を保つ。",
+    "文字サイズを縮めて表を詰めず、ヘッダーの中央寄せ・データの左寄せ・内外罫線を保った状態で最終PDFを確認する。"
+  ],
+  "implementation_note": "root採用の内容実測+85%閾値に対する参考値。360pt前後の軽い縮幅の境界例は、実装で全幅になっても可読性に支障はない。最終の33fixtureと合冊74p相当を目視して判断する。",
+  "tables": [
+    {
+      "chapter": "03",
+      "id": "p067-table01",
+      "columns": 2,
+      "rows": 4,
+      "header": null,
+      "width_no_wrap_pt": 160.7,
+      "column_min_widths_pt": [
+        74.3,
+        86.4
+      ],
+      "longest_per_column": [
+        "データベース名",
+        "spring_sample_user"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 215,
+      "recommended_column_widths_pt": [
+        90,
+        125
+      ],
+      "comfortable_width_range_pt": [
+        200,
+        240
+      ],
+      "reason": "接続情報は短い値だけなので、ラベルから値までの視線移動を短くする。",
+      "width_ratio": 0.504
+    },
+    {
+      "chapter": "03",
+      "id": "p067-table02",
+      "columns": 7,
+      "rows": 3,
+      "header": [
+        "No",
+        "論理名称",
+        "物理名称",
+        "データ型",
+        "桁数",
+        "制約",
+        "備考"
+      ],
+      "width_no_wrap_pt": 351.1,
+      "column_min_widths_pt": [
+        25.7,
+        50.6,
+        48.6,
+        54.9,
+        30.6,
+        90.1,
+        50.6
+      ],
+      "longest_per_column": [
+        "No",
+        "商品番号",
+        "物理名称",
+        "VARCHAR",
+        "桁数",
+        "AUTO_INCREMENT",
+        "自動採番"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "7列のテーブル定義表。物理名・データ型・制約・備考の列があり、少数列の短いデータ一覧と分けて全幅を保つ。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "03",
+      "id": "p067-table03",
+      "columns": 3,
+      "rows": 9,
+      "header": [
+        "商品番号",
+        "商品名",
+        "価格"
+      ],
+      "width_no_wrap_pt": 181.6,
+      "column_min_widths_pt": [
+        48.6,
+        96.6,
+        36.4
+      ],
+      "longest_per_column": [
+        "商品番号",
+        "乾燥機能付き洗濯機",
+        "60000"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 240,
+      "recommended_column_widths_pt": [
+        60,
+        125,
+        55
+      ],
+      "comfortable_width_range_pt": [
+        220,
+        280
+      ],
+      "reason": "商品名の最長値も125pt列で収まり、番号・価格の列に過剰な空白を作らない。",
+      "width_ratio": 0.562
+    },
+    {
+      "chapter": "03",
+      "id": "p069-table01",
+      "columns": 3,
+      "rows": 5,
+      "header": [
+        "要素",
+        "JDBC",
+        "Spring Data JPA"
+      ],
+      "width_no_wrap_pt": 1260.7,
+      "column_min_widths_pt": [
+        98.8,
+        664.1,
+        497.8
+      ],
+      "longest_per_column": [
+        "外部ライブラリの依存",
+        "接続情報（URL、ユーザー名、パスワード）がソースコード内に直接書かれることが多く、セキュリティリスクになり得る。環境の変更があるたびにコードの変更が必要。",
+        "接続情報は外部の設定ファイル（application.properties）に記載するため、セキュリティが向上し、環境に応じた変更も容易。"
+      ],
+      "has_long_prose_or_identifier_list": true,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "3列だが各セルに比較説明が数文ある。全幅で読みやすい改行数を保ち、比較対象を横に並べる。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "03",
+      "id": "p071-b05",
+      "columns": 2,
+      "rows": 4,
+      "header": [
+        "設定項目",
+        "意味"
+      ],
+      "width_no_wrap_pt": 389.9,
+      "column_min_widths_pt": [
+        122.0,
+        267.9
+      ],
+      "longest_per_column": [
+        "spring.datasource.username",
+        "データベースの URL(サーバー名/データベース名が含まれます)"
+      ],
+      "has_long_prose_or_identifier_list": true,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "長い設定キーと日本語の説明が並ぶ。キーを識別しやすくし、説明を狭い列へ押し込まない。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "03",
+      "id": "p073-table01",
+      "columns": 7,
+      "rows": 3,
+      "header": [
+        "No",
+        "論理名称",
+        "物理名称",
+        "データ型",
+        "桁数",
+        "制約",
+        "備考"
+      ],
+      "width_no_wrap_pt": 351.1,
+      "column_min_widths_pt": [
+        25.7,
+        50.6,
+        48.6,
+        54.9,
+        30.6,
+        90.1,
+        50.6
+      ],
+      "longest_per_column": [
+        "No",
+        "商品番号",
+        "物理名称",
+        "VARCHAR",
+        "桁数",
+        "AUTO_INCREMENT",
+        "自動採番"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "7列のテーブル定義表。物理名・データ型・制約・備考の列があり、少数列の短いデータ一覧と分けて全幅を保つ。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "04",
+      "id": "p136-table01",
+      "columns": 6,
+      "rows": 3,
+      "header": [
+        "No",
+        "論理名称",
+        "物理名称",
+        "データ型",
+        "制約",
+        "備考"
+      ],
+      "width_no_wrap_pt": 305.8,
+      "column_min_widths_pt": [
+        25.7,
+        55.5,
+        52.9,
+        70.2,
+        70.9,
+        30.6
+      ],
+      "longest_per_column": [
+        "No",
+        "パスワード",
+        "emp_name",
+        "VARCHAR(30)",
+        "PRIMARY KEY",
+        "備考"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "6列の定義表。データ型・制約などの列見出しを読みやすくし、同種の定義表と統一する。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "04",
+      "id": "p136-table02",
+      "columns": 3,
+      "rows": 3,
+      "header": [
+        "emp_id",
+        "password",
+        "emp_name"
+      ],
+      "width_no_wrap_pt": 172.6,
+      "column_min_widths_pt": [
+        48.2,
+        58.3,
+        66.1
+      ],
+      "longest_per_column": [
+        "emp_id",
+        "password",
+        "emp_name"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 225,
+      "recommended_column_widths_pt": [
+        60,
+        75,
+        90
+      ],
+      "comfortable_width_range_pt": [
+        210,
+        255
+      ],
+      "reason": "社員番号・パスワード・社員名の短い実例を3列でまとめて読む。",
+      "width_ratio": 0.527
+    },
+    {
+      "chapter": "06",
+      "id": "p196-table01",
+      "columns": 6,
+      "rows": 2,
+      "header": [
+        "No",
+        "論理名称",
+        "物理名称",
+        "データ型",
+        "制約",
+        "備考"
+      ],
+      "width_no_wrap_pt": 299.9,
+      "column_min_widths_pt": [
+        25.7,
+        53.9,
+        48.6,
+        70.2,
+        70.9,
+        30.6
+      ],
+      "longest_per_column": [
+        "No",
+        "カテゴリ名",
+        "物理名称",
+        "VARCHAR(30)",
+        "PRIMARY KEY",
+        "備考"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "6列の定義表。短い2列データ一覧とは役割が異なり、定義項目を見渡せる幅を保つ。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "06",
+      "id": "p196-table02",
+      "columns": 2,
+      "rows": 4,
+      "header": [
+        "カテゴリID",
+        "カテゴリ名"
+      ],
+      "width_no_wrap_pt": 135.9,
+      "column_min_widths_pt": [
+        60.3,
+        75.6
+      ],
+      "longest_per_column": [
+        "カテゴリID",
+        "テレビ・モニター"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 180,
+      "recommended_column_widths_pt": [
+        75,
+        105
+      ],
+      "comfortable_width_range_pt": [
+        165,
+        210
+      ],
+      "reason": "4カテゴリの短い一覧なので、IDとカテゴリ名を近づける。",
+      "width_ratio": 0.422
+    },
+    {
+      "chapter": "06",
+      "id": "p197-table01",
+      "columns": 7,
+      "rows": 4,
+      "header": [
+        "No",
+        "論理名称",
+        "物理名称",
+        "データ型",
+        "桁数",
+        "制約",
+        "備考"
+      ],
+      "width_no_wrap_pt": 459.2,
+      "column_min_widths_pt": [
+        25.7,
+        52.9,
+        56.6,
+        54.9,
+        30.6,
+        90.1,
+        148.4
+      ],
+      "longest_per_column": [
+        "No",
+        "カテゴリID",
+        "category_id",
+        "VARCHAR",
+        "桁数",
+        "AUTO_INCREMENT",
+        "(Category テーブルのid 列を参照)"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "7列で外部キーの参照先説明もある。全幅でも折り返しが必要なので縮めない。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "06",
+      "id": "p197-table02",
+      "columns": 4,
+      "rows": 9,
+      "header": [
+        "商品番号",
+        "商品名",
+        "価格",
+        "カテゴリID"
+      ],
+      "width_no_wrap_pt": 241.9,
+      "column_min_widths_pt": [
+        48.6,
+        96.6,
+        36.4,
+        60.3
+      ],
+      "longest_per_column": [
+        "商品番号",
+        "乾燥機能付き洗濯機",
+        "60000",
+        "カテゴリID"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 300,
+      "recommended_column_widths_pt": [
+        55,
+        125,
+        50,
+        70
+      ],
+      "comfortable_width_range_pt": [
+        280,
+        340
+      ],
+      "reason": "商品一覧にカテゴリIDを加えた4列。最長商品名と列見出しを保ったまま少し広めにまとめる。",
+      "width_ratio": 0.703
+    },
+    {
+      "chapter": "06",
+      "id": "p200-table01",
+      "columns": 7,
+      "rows": 1,
+      "header": null,
+      "width_no_wrap_pt": 384.8,
+      "column_min_widths_pt": [
+        17.4,
+        52.9,
+        56.6,
+        26.6,
+        12.6,
+        70.3,
+        148.4
+      ],
+      "longest_per_column": [
+        "4",
+        "カテゴリID",
+        "category_id",
+        "INT",
+        "",
+        "FOREIGN KEY",
+        "(Category テーブルのid 列を参照)"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "既出のProduct定義表から1行を再掲する表。独立した短文表として縮めず、p197-table01と同じ幅・列位置を保つ。",
+      "width_ratio": 1.0,
+      "shared_columns_with": {
+        "chapter": "06",
+        "id": "p197-table01"
+      }
+    },
+    {
+      "chapter": "06",
+      "id": "p223-table01",
+      "columns": 2,
+      "rows": 8,
+      "header": [
+        "列の物理名",
+        "列の論理名"
+      ],
+      "width_no_wrap_pt": 115.2,
+      "column_min_widths_pt": [
+        57.6,
+        57.6
+      ],
+      "longest_per_column": [
+        "列の物理名",
+        "列の論理名"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 170,
+      "recommended_column_widths_pt": [
+        85,
+        85
+      ],
+      "comfortable_width_range_pt": [
+        150,
+        200
+      ],
+      "reason": "列名の対応だけを読む辞書的な表。左右の語を近づけて照合しやすくする。",
+      "width_ratio": 0.398
+    },
+    {
+      "chapter": "06",
+      "id": "p235-table01",
+      "columns": 3,
+      "rows": 3,
+      "header": [
+        "メソッド",
+        "目的",
+        "JPQL クエリ"
+      ],
+      "width_no_wrap_pt": 523.3,
+      "column_min_widths_pt": [
+        175.2,
+        185.5,
+        162.6
+      ],
+      "longest_per_column": [
+        "findCategoriesByMinSales(LongminSales)",
+        "価格の合計が指定値以上のカテゴリを取得",
+        "SUM(price) GROUP BYcategory.name"
+      ],
+      "has_long_prose_or_identifier_list": true,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "メソッド名・説明・JPQLの3列が長い。幅を縮めると識別子と構文の折り返しが増えて読みづらくなる。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "ex03",
+      "id": "p019-table01",
+      "columns": 2,
+      "rows": 4,
+      "header": null,
+      "width_no_wrap_pt": 166.4,
+      "column_min_widths_pt": [
+        74.3,
+        92.1
+      ],
+      "longest_per_column": [
+        "データベース名",
+        "spring_exercise_user"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 220,
+      "recommended_column_widths_pt": [
+        90,
+        130
+      ],
+      "comfortable_width_range_pt": [
+        200,
+        245
+      ],
+      "reason": "接続情報は短い識別子と値のみ。演習の同種の接続表と同じ程度の幅にそろえる。",
+      "width_ratio": 0.516
+    },
+    {
+      "chapter": "ex03",
+      "id": "p019-table02",
+      "columns": 7,
+      "rows": 4,
+      "header": [
+        "No",
+        "論理名称",
+        "物理名\n称",
+        "データ型",
+        "桁数",
+        "制約",
+        "備考"
+      ],
+      "width_no_wrap_pt": 357.0,
+      "column_min_widths_pt": [
+        25.7,
+        55.5,
+        49.6,
+        54.9,
+        30.6,
+        90.1,
+        50.6
+      ],
+      "longest_per_column": [
+        "No",
+        "パスワード",
+        "password",
+        "VARCHAR",
+        "桁数",
+        "AUTO_INCREMENT",
+        "自動採番"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "7列のテーブル定義表。物理名・データ型・制約・備考の列があり、少数列の短いデータ一覧と分けて全幅を保つ。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "ex03",
+      "id": "p019-table03",
+      "columns": 4,
+      "rows": 8,
+      "header": [
+        "id",
+        "password",
+        "name",
+        "salary"
+      ],
+      "width_no_wrap_pt": 191.4,
+      "column_min_widths_pt": [
+        31.6,
+        58.3,
+        60.1,
+        41.4
+      ],
+      "longest_per_column": [
+        "1008",
+        "password",
+        "高橋美智子",
+        "salary"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 260,
+      "recommended_column_widths_pt": [
+        45,
+        75,
+        80,
+        60
+      ],
+      "comfortable_width_range_pt": [
+        240,
+        300
+      ],
+      "reason": "4列すべて短いデータ。氏名と給与の横方向の間隔を抑え、行を追いやすくする。",
+      "width_ratio": 0.609
+    },
+    {
+      "chapter": "ex04",
+      "id": "p034-table01",
+      "columns": 3,
+      "rows": 2,
+      "header": [
+        "対象",
+        "チェック内容",
+        "出力メッセージ"
+      ],
+      "width_no_wrap_pt": 518.6,
+      "column_min_widths_pt": [
+        55.5,
+        181.7,
+        281.4
+      ],
+      "longest_per_column": [
+        "パスワード",
+        "①未入力時②4 桁未満の社員番号入力時",
+        "社員番号を入力してください4 桁以上の社員番号を入力してください"
+      ],
+      "has_long_prose_or_identifier_list": true,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "入力条件と複数のエラーメッセージの行対応が重要。メッセージ列の幅を優先して全幅を保つ。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "ex04",
+      "id": "p036-table01",
+      "columns": 3,
+      "rows": 4,
+      "header": [
+        "対象",
+        "チェック内容",
+        "出力メッセージ"
+      ],
+      "width_no_wrap_pt": 597.7,
+      "column_min_widths_pt": [
+        134.6,
+        181.7,
+        281.4
+      ],
+      "longest_per_column": [
+        "社員番号（アノテーション削除）",
+        "①未入力時②4 桁未満の社員番号入力時",
+        "社員番号を入力してください4 桁以上の社員番号を入力してください"
+      ],
+      "has_long_prose_or_identifier_list": true,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "入力チェックの一覧が長く、対象列にも補足がある。条件とメッセージの対応を保つため全幅とする。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p049-table01",
+      "columns": 2,
+      "rows": 4,
+      "header": null,
+      "width_no_wrap_pt": 166.4,
+      "column_min_widths_pt": [
+        74.3,
+        92.1
+      ],
+      "longest_per_column": [
+        "データベース名",
+        "spring_exercise_user"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 220,
+      "recommended_column_widths_pt": [
+        90,
+        130
+      ],
+      "comfortable_width_range_pt": [
+        200,
+        245
+      ],
+      "reason": "演習3と同じ接続情報なので、同じ幅にそろえる。",
+      "width_ratio": 0.516
+    },
+    {
+      "chapter": "ex06",
+      "id": "p049-table02",
+      "columns": 7,
+      "rows": 3,
+      "header": [
+        "No",
+        "論理名称",
+        "物理名称",
+        "データ型",
+        "桁数",
+        "制約",
+        "備考"
+      ],
+      "width_no_wrap_pt": 357.0,
+      "column_min_widths_pt": [
+        25.7,
+        55.5,
+        49.6,
+        54.9,
+        30.6,
+        90.1,
+        50.6
+      ],
+      "longest_per_column": [
+        "No",
+        "パスワード",
+        "password",
+        "VARCHAR",
+        "桁数",
+        "AUTO_INCREMENT",
+        "自動採番"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "7列のテーブル定義表。物理名・データ型・制約・備考の列があり、少数列の短いデータ一覧と分けて全幅を保つ。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p050-table01",
+      "columns": 7,
+      "rows": 2,
+      "header": null,
+      "width_no_wrap_pt": 294.9,
+      "column_min_widths_pt": [
+        17.4,
+        60.1,
+        53.2,
+        26.6,
+        17.4,
+        70.3,
+        49.9
+      ],
+      "longest_per_column": [
+        "5",
+        "勤務地番号",
+        "location_id",
+        "INT",
+        "-",
+        "FOREIGN KEY",
+        "外部キー"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "前ページのemployee定義表の続き。行数が少なくても独立に縮めず、p049-table02と同じ幅・列位置を保つ。",
+      "width_ratio": 1.0,
+      "shared_columns_with": {
+        "chapter": "ex06",
+        "id": "p049-table02"
+      }
+    },
+    {
+      "chapter": "ex06",
+      "id": "p050-table02",
+      "columns": 5,
+      "rows": 8,
+      "header": [
+        "ID",
+        "password",
+        "name",
+        "salary",
+        "location_id"
+      ],
+      "width_no_wrap_pt": 256.5,
+      "column_min_widths_pt": [
+        31.6,
+        58.3,
+        60.1,
+        41.4,
+        65.1
+      ],
+      "longest_per_column": [
+        "1008",
+        "password",
+        "高橋美智子",
+        "salary",
+        "location_id"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 330,
+      "recommended_column_widths_pt": [
+        45,
+        70,
+        80,
+        60,
+        75
+      ],
+      "comfortable_width_range_pt": [
+        310,
+        360
+      ],
+      "reason": "5列だが内容は短い実データのみ。location_id見出しを折り返さない余裕を確保して軽く縮幅する。",
+      "width_ratio": 0.773
+    },
+    {
+      "chapter": "ex06",
+      "id": "p050-table03",
+      "columns": 7,
+      "rows": 2,
+      "header": [
+        "No",
+        "論理名称",
+        "物理名\n称",
+        "データ型",
+        "桁数",
+        "制約",
+        "備考"
+      ],
+      "width_no_wrap_pt": 360.6,
+      "column_min_widths_pt": [
+        25.7,
+        60.1,
+        48.6,
+        54.9,
+        30.6,
+        90.1,
+        50.6
+      ],
+      "longest_per_column": [
+        "No",
+        "勤務地番号",
+        "物理名称",
+        "VARCHAR",
+        "桁数",
+        "AUTO_INCREMENT",
+        "自動採番"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "7列のテーブル定義表。物理名・データ型・制約・備考の列があり、少数列の短いデータ一覧と分けて全幅を保つ。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p050-table04",
+      "columns": 2,
+      "rows": 5,
+      "header": [
+        "id",
+        "name"
+      ],
+      "width_no_wrap_pt": 65.2,
+      "column_min_widths_pt": [
+        21.3,
+        43.9
+      ],
+      "longest_per_column": [
+        "id",
+        "sapporo"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 120,
+      "recommended_column_widths_pt": [
+        40,
+        80
+      ],
+      "comfortable_width_range_pt": [
+        105,
+        150
+      ],
+      "reason": "短いidと都市名だけの表。最小寸法まで詰めず、列ごとに余裕を残した小さな表とする。",
+      "width_ratio": 0.281
+    },
+    {
+      "chapter": "ex06",
+      "id": "p057-table01",
+      "columns": 2,
+      "rows": 5,
+      "header": [
+        "小問",
+        "内容"
+      ],
+      "width_no_wrap_pt": 279.8,
+      "column_min_widths_pt": [
+        30.6,
+        249.2
+      ],
+      "longest_per_column": [
+        "小問",
+        "location テーブルのリストを使って、<select> メニューを表示"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 340,
+      "recommended_column_widths_pt": [
+        45,
+        295
+      ],
+      "comfortable_width_range_pt": [
+        320,
+        360
+      ],
+      "reason": "小問記号と実装内容の一覧。内容列は実測最大249.2ptを超える295ptとし、説明を不要に折り返さず全幅を避ける。",
+      "width_ratio": 0.797
+    },
+    {
+      "chapter": "ex06",
+      "id": "p059-table01",
+      "columns": 2,
+      "rows": 3,
+      "header": [
+        "フィールド",
+        "説明"
+      ],
+      "width_no_wrap_pt": 616.0,
+      "column_min_widths_pt": [
+        152.1,
+        463.9
+      ],
+      "longest_per_column": [
+        "insertable = false, updatable = false",
+        "外部テーブルと結びつけるためのオブジェクト。SELECT では自動でJOIN してくれるが、登録・更新には使わない。"
+      ],
+      "has_long_prose_or_identifier_list": true,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "フィールドと設定値の意味を数文で説明する2列表。読者が文章を読むための幅を優先する。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p061-table01",
+      "columns": 2,
+      "rows": 2,
+      "header": [
+        "入力項目",
+        "内容"
+      ],
+      "width_no_wrap_pt": 366.8,
+      "column_min_widths_pt": [
+        48.6,
+        318.2
+      ],
+      "longest_per_column": [
+        "入力項目",
+        "DB のLocation テーブルから name を取得し、セレクトメニューに表示している"
+      ],
+      "has_long_prose_or_identifier_list": true,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "HTMLの属性値と入力仕様が長い説明表。値の範囲やLocationの説明を余裕のある列で読めるようにする。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "ex06",
+      "id": "p062-table01",
+      "columns": 2,
+      "rows": 6,
+      "header": [
+        "内容",
+        "詳細"
+      ],
+      "width_no_wrap_pt": 330.3,
+      "column_min_widths_pt": [
+        115.0,
+        215.3
+      ],
+      "longest_per_column": [
+        "使用するリポジトリメソッド",
+        "findHighSalaryByLocation()（演習6.6.c で実装済み）"
+      ],
+      "has_long_prose_or_identifier_list": true,
+      "recommendation": "keep_full",
+      "recommended_width_pt": 426.672,
+      "recommended_column_widths_pt": null,
+      "comfortable_width_range_pt": [
+        426.672,
+        426.672
+      ],
+      "reason": "引数の列挙と長いリポジトリメソッド名が含まれる仕様表。識別子の途中の改行を増やさない。",
+      "width_ratio": 1.0
+    },
+    {
+      "chapter": "ex07",
+      "id": "p066-table01",
+      "columns": 2,
+      "rows": 2,
+      "header": [
+        "ファイル名",
+        "格納場所"
+      ],
+      "width_no_wrap_pt": 244.3,
+      "column_min_widths_pt": [
+        102.2,
+        142.1
+      ],
+      "longest_per_column": [
+        "bootstrap.bundle.min.js",
+        "src/main/resources/static/css/"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 300,
+      "recommended_column_widths_pt": [
+        120,
+        180
+      ],
+      "comfortable_width_range_pt": [
+        280,
+        330
+      ],
+      "reason": "ファイル名と格納場所の対応。長い英語のパスを壊さず、2列を近づけて読む。",
+      "width_ratio": 0.703
+    },
+    {
+      "chapter": "ex07",
+      "id": "p070-table01",
+      "columns": 2,
+      "rows": 3,
+      "header": [
+        "修正ポイント",
+        "内容"
+      ],
+      "width_no_wrap_pt": 314.5,
+      "column_min_widths_pt": [
+        66.6,
+        247.9
+      ],
+      "longest_per_column": [
+        "修正ポイント",
+        "border=\"1\" を削除し、Bootstrap の .table クラスを追加する"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 360,
+      "recommended_column_widths_pt": [
+        80,
+        280
+      ],
+      "comfortable_width_range_pt": [
+        345,
+        365
+      ],
+      "reason": "短いタグ名と変更内容の対応。説明列の最長実測247.9ptを超える280ptを確保する。",
+      "width_ratio": 0.844
+    },
+    {
+      "chapter": "ex07",
+      "id": "p071-table01",
+      "columns": 2,
+      "rows": 3,
+      "header": [
+        "クラス名",
+        "効果"
+      ],
+      "width_no_wrap_pt": 225.1,
+      "column_min_widths_pt": [
+        71.7,
+        153.4
+      ],
+      "longest_per_column": [
+        "table-bordered",
+        "Bootstrap 標準のテーブルデザイン"
+      ],
+      "has_long_prose_or_identifier_list": false,
+      "recommendation": "shrink",
+      "recommended_width_pt": 280,
+      "recommended_column_widths_pt": [
+        95,
+        185
+      ],
+      "comfortable_width_range_pt": [
+        255,
+        310
+      ],
+      "reason": "Bootstrapクラス名と短い効果説明の対応。クラス名の横幅を確保して過剰な全幅を避ける。",
+      "width_ratio": 0.656
+    }
+  ]
+}

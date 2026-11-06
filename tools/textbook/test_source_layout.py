@@ -247,7 +247,7 @@ class SourceLayoutTests(unittest.TestCase):
             _, _, area = parts[0]
             ratio = .4375  # 要素25%、JDBC37.5%、JPA37.5%の新しい比較用レイアウト。
             self.assertAlmostEqual((jdbc.x0 + jdbc.x1) / 2, area.x0 + area.width * ratio, delta=1)
-            border = (215 / 255, 221 / 255, 229 / 255)
+            border = (188 / 255, 200 / 255, 213 / 255)
             self.assertTrue(any(self.color_is(d['fill'], border) or self.color_is(d['color'], border)
                                 for d in self.page_drawings('03', parts[0][1]['page'])))
             return
