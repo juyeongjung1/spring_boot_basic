@@ -1104,6 +1104,43 @@
         "title": ""
       }
     },
+    "pagination": {
+      "options": {},
+      "source_boundaries": [
+        {
+          "source_page": 12,
+          "page": 2,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 13,
+          "page": 3,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 14,
+          "page": 4,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 15,
+          "page": 5,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 16,
+          "page": 6,
+          "mode": "page-break",
+          "reason": null
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
+    },
     "html_components": []
   }
 }

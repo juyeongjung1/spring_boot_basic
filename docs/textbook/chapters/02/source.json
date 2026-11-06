@@ -374,5 +374,27 @@
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-model-key-property-caption"
     }
+  },
+  "pagination": {
+    "continue_before": {
+      "45": "short-minor-heading",
+      "46": "short-minor-heading",
+      "48": "short-minor-heading",
+      "52": "short-minor-heading",
+      "44": "continued-prose",
+      "49": "continued-prose",
+      "50": "continued-prose",
+      "54": "continued-prose",
+      "59": "continued-prose"
+    },
+    "paragraph_continuations": [
+      [
+        "p048-b07",
+        "p049-b01"
+      ]
+    ],
+    "figure_scales": {
+      "p045-f16": 0.96
+    }
   }
 }

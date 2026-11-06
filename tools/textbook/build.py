@@ -241,7 +241,50 @@ def inline(parts, typography=True, heading=False):
     return '#flowing[' + content + ']' if typography else content
 
 
+def pagination_options(config, layout, nodes, figures, order):
+    """継続が確認された境界と、小幅な図縮小だけを明示指定で許可する。"""
+    options = config.get('pagination', {})
+    continuations = {int(page): reason for page, reason in options.get('continue_before', {}).items()}
+    scales = options.get('figure_scales', {})
+    pages = {page['source_page']: page for page in order}
+    owners = {ident: page['source_page'] for page in order for ident in page['entries']}
+    sequence = [ident for page in order for ident in page['entries']]
+    originals = {figure['id']: figure for figure in layout['figures']}
+    fixed = set(config.get('native_pages', []))
+    fixed |= {page['source_page'] for page in order if not page['entries']}
+    if config.get('cover_mode', 'classic') != 'none':
+        fixed.add(order[0]['source_page'])
+    protected = fixed | {figure['page'] for figure in layout['figures'] if figure.get('slide')}
+    for page, reason in continuations.items():
+        if (page not in pages or page-1 not in pages or page in protected or page-1 in fixed
+                or reason not in {'continued-prose', 'short-minor-heading'}):
+            raise ValueError(f'継続できないページ境界です: {page}')
+        first = nodes.get(pages[page]['entries'][0])
+        if (not first or re.match(r'^(?:演習\s*)?\d+\.\d+(?:\.\d+)?(?:[.\s]|$)', first['text'].strip())
+                or first['text'].strip() == '章のまとめ'):
+            raise ValueError(f'節・項や図から始まるページは継続できません: {page}')
+        if reason == 'continued-prose' and first['kind'] != 'paragraph':
+            raise ValueError(f'本文の続きではありません: {page}')
+        if reason == 'short-minor-heading' and first['kind'] not in {'heading', 'step'}:
+            raise ValueError(f'小小見出しではありません: {page}')
+    pairs = options.get('paragraph_continuations', [])
+    for first, following in pairs:
+        if (first not in nodes or following not in nodes or nodes[first]['kind'] != 'paragraph'
+                or nodes[following]['kind'] != 'paragraph'
+                or sequence.index(following) != sequence.index(first)+1
+                or owners[following] != owners[first]+1
+                or continuations.get(owners[following]) != 'continued-prose'):
+            raise ValueError(f'段落の続きが隣接していません: {first} / {following}')
+    for ident, scale in scales.items():
+        figure = originals.get(ident)
+        if (ident not in figures or not figure or figure.get('slide') or owners[ident] in protected
+                or not .85 <= scale < 1):
+            raise ValueError(f'縮小できない図または倍率です: {ident} / {scale}')
+    return continuations, pairs, scales
+
+
 def flow_layout(folder, config, layout, nodes, figures, order, modern=None):
+    page_continuations, paragraph_pairs, figure_scales = pagination_options(config, layout, nodes, figures, order)
     numbered = figure_numbers(config, layout, nodes, figures, order)
     has_cover=config.get('cover_mode','classic')!='none'
     furniture_condition='here().page() > 1' if has_cover else 'true'
@@ -295,6 +338,11 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             raise ValueError('本文の続き断片が隣接していません: ' + following)
         joined_paragraphs[first] = following
     joined_continuations = set(joined_paragraphs.values())
+    for first, following in paragraph_pairs:
+        joined_paragraphs[first] = following
+    joined_continuations.update(following for _, following in paragraph_pairs)
+    joined_source_starts = {source_pages[following]: following for previous, following in paragraph_pairs
+                            if source_pages[following] != source_pages[previous]}
     for ident, options in config.get('illustrations', {}).items():
         if ident in figure_map:
             continue
@@ -520,7 +568,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                         f'{q(caption_id)}, {q(nodes[caption_id]["text"])}, {q(numbered[ident]["number"])})')
             fig = figure_map.get(ident, {"box": [85.104, 0, 511.776, 0]})
             path = "/" + (folder / figures[ident]).relative_to(ROOT).as_posix()
-            width = fig['box'][2] - fig['box'][0]
+            width = (fig['box'][2] - fig['box'][0]) * figure_scales.get(ident, 1)
             offset = fig['box'][0] - 85.104
             number = f', number: {q(numbered[ident]["number"])}' if ident in numbered else ''
             return f'#illustration({q(ident)}, {q(path)}, {width}, offset: {offset}pt{number})'
@@ -541,9 +589,14 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             first_style = next((style for value, style in parts if value.strip()), None)
             size = layout['styles'].get((first_style or '').split(':')[-1], {}).get('size', 11.04)
             if ident in joined_paragraphs:
-                following = joined_paragraphs[ident]
-                body = (inline(parts) + f'#mark({q(ident)}, "end")#mark({q(following)}, "start")'
-                        + inline(nodes[following]['parts']))
+                following = ident
+                body = inline(parts)
+                while following in joined_paragraphs:
+                    previous, following = following, joined_paragraphs[following]
+                    body += f'#mark({q(previous)}, "end")'
+                    if source_pages[following] != source_pages[previous]:
+                        body += f'#mark({q("__source-page-"+str(source_pages[following]))}, "source-page")'
+                    body += f'#mark({q(following)}, "start")' + inline(nodes[following]['parts'])
                 return f'#paragraph({q(ident)}, [{body}], indent: {size}pt, end-id: {q(following)})'
             if size != 11.04:
                 return f'#paragraph({q(ident)}, [{inline(parts)}], indent: {size}pt)'
@@ -625,7 +678,20 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             commands += ['#pagebreak(weak: true)', '#reference-panel[']
             reference_open = True
         if ident.startswith('__source-'):
-            commands += ['#pagebreak(weak: true)', f'#mark({q(ident)}, "source-page")']
+            source_page = int(ident.rsplit('-', 1)[1])
+            if source_page not in page_continuations:
+                commands.append('#pagebreak(weak: true)')
+            elif page_continuations[source_page] == 'short-minor-heading':
+                # 自分の位置で改頁を判定すると改頁後の位置との循環になる。
+                # 位置が確定している直前元頁の本文末尾で半頁条件を判定する。
+                previous_ids = next(page['entries'] for page in order if page['source_page']==source_page-1)
+                ids = '(' + ','.join(q(value) for value in previous_ids) + ',)'
+                commands.append('#context {let previous=query(<book-check>).filter(item => '
+                    + ids + '.contains(item.value.id) and ("end","heading").contains(item.value.edge)); '
+                    'let last=previous.sorted(key: item => (item.location().page(),item.location().position().y)).last(); '
+                    'if last.location().position().y > 429.96pt {pagebreak(weak: true)}}')
+            if source_page not in joined_source_starts:
+                commands.append(f'#mark({q(ident)}, "source-page")')
             i += 1
             continue
         if ident.startswith('__slide-'):
@@ -639,6 +705,11 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if ident in illustration_captions or ident in joined_continuations:
             i += 1
             continue
+        # 続き本文の後に節・項が登場した場合は、その見出しから新頁にする。
+        if (source_pages.get(ident) in page_continuations and ident in nodes
+                and nodes[ident]['kind']=='heading'
+                and re.match(r'^(?:演習\s*)?\d+\.\d+(?:\.\d+)?(?:[.\s]|$)', nodes[ident]['text'].strip())):
+            commands.append('#pagebreak(weak: true)')
         if modern and ident in modern['anchors']:
             commands.append(modern_panel(ident))
             i += 1
@@ -766,6 +837,11 @@ def build(chapter="01", mode="all", markdown=None, output=None):
         numbered = figure_numbers(config, layout, nodes, figures, order)
         pdf, source = compile_pdf(work, "flow", header + flow_layout(folder, config, layout, nodes, figures, order, modern=modern), font_paths)
         marks = json.loads(typst.query(str(source), "<book-check>", field="value", format="json", root=str(ROOT), font_paths=font_paths, ignore_system_fonts=True))
+        boundaries = [mark for mark in marks if mark['edge']=='source-page']
+        source_order = order[1:] if config.get('cover_mode','classic')!='none' else order
+        assert [int(mark['id'].rsplit('-',1)[1]) for mark in boundaries]==[page['source_page'] for page in source_order], '元頁境界の順序が崩れています'
+        assert all(mark['page'] >= (2 if config.get('cover_mode','classic')!='none' else 1) for mark in boundaries), '本文が扉へ流入しています'
+        assert all(a['page']<=b['page'] for a,b in zip(boundaries,boundaries[1:])), '元頁の物理順序が崩れています'
         html_components.embed(pdf, modern, marks)
         url_links = add_url_links(pdf, nodes)
         pdf.save(out / "chapter-flow.pdf", garbage=4, deflate=True)
@@ -844,6 +920,18 @@ def build(chapter="01", mode="all", markdown=None, output=None):
         report["flow"] = {"pages": len(pdf), "native_text_complete": complete, "heading_orphans": orphan, "split_figures": split_figures, "split_short_code": split_short_code, "split_short_tables":split_short_tables, "split_instructions": split_instructions, "instruction_groups": len(instruction_ids), "fixed_pages":sorted(native_page_positions), "overflow": overflow, "block_positions": marks}
         report['flow']['url_links'] = url_links
         report['flow']['numbered_figures'] = {ident: dict(record) for ident, record in numbered.items()}
+        continuations, paragraph_pairs, scales = pagination_options(config, layout, nodes, figures, order)
+        report['flow']['pagination'] = dict(
+            options=config.get('pagination', {}),
+            source_boundaries=[dict(source_page=int(mark['id'].rsplit('-', 1)[1]), page=mark['page'],
+                mode='continue' if int(mark['id'].rsplit('-', 1)[1]) in continuations else 'page-break',
+                reason=continuations.get(int(mark['id'].rsplit('-', 1)[1])))
+                for mark in marks if mark['edge'] == 'source-page'],
+            paragraph_continuations=paragraph_pairs,
+            scaled_figures={ident: dict(scale=scale,
+                original_width=next(f['box'][2]-f['box'][0] for f in layout['figures'] if f['id']==ident),
+                width=next(f['box'][2]-f['box'][0] for f in layout['figures'] if f['id']==ident)*scale)
+                for ident, scale in scales.items()})
         for ident, record in report['flow']['numbered_figures'].items():
             if record['kind'] == 'native':
                 fig = next(f for f in layout['figures'] if f['id'] == ident)

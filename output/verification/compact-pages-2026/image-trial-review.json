@@ -1,0 +1,1081 @@
+{
+  "cases": [
+    {
+      "chapter": "03",
+      "source_page": 94,
+      "ids": [
+        "p094-f28",
+        "p094-f29"
+      ],
+      "baseline": {
+        "chapter_pages": 86,
+        "source_pages": [
+          40,
+          41
+        ],
+        "same_page": false,
+        "source_entry_pages": {
+          "p094-b07": [
+            40
+          ],
+          "p094-b01": [
+            40
+          ],
+          "p094-b05": [
+            40
+          ],
+          "p094-b04": [
+            40
+          ],
+          "p094-b06": [
+            40
+          ],
+          "p094-b08": [
+            41
+          ],
+          "p094-f28": [
+            40
+          ],
+          "p094-b03": [
+            40
+          ],
+          "p094-f29": [
+            40
+          ],
+          "p094-b02": [
+            40
+          ]
+        },
+        "last_page_body_bottom": 97.04,
+        "last_page_used_ratio": 0.016,
+        "isolated_tail": true
+      },
+      "old_scale": 1.0,
+      "minimum_scale": 0.85,
+      "trials": [
+        {
+          "scale": 0.96,
+          "chapter_pages": 85,
+          "source_pages": [
+            40
+          ],
+          "same_page": true,
+          "source_entry_pages": {
+            "p094-b07": [
+              40
+            ],
+            "p094-b01": [
+              40
+            ],
+            "p094-b05": [
+              40
+            ],
+            "p094-b04": [
+              40
+            ],
+            "p094-b06": [
+              40
+            ],
+            "p094-b08": [
+              40
+            ],
+            "p094-f28": [
+              40
+            ],
+            "p094-b03": [
+              40
+            ],
+            "p094-f29": [
+              40
+            ],
+            "p094-b02": [
+              40
+            ]
+          },
+          "last_page_body_bottom": 773.897,
+          "last_page_used_ratio": 1.027,
+          "isolated_tail": false,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-03\\p94-scale-96\\chapter-flow.pdf"
+        },
+        {
+          "scale": 0.99,
+          "chapter_pages": 86,
+          "source_pages": [
+            40,
+            41
+          ],
+          "same_page": false,
+          "source_entry_pages": {
+            "p094-b07": [
+              40
+            ],
+            "p094-b01": [
+              40
+            ],
+            "p094-b05": [
+              40
+            ],
+            "p094-b04": [
+              40
+            ],
+            "p094-b06": [
+              40
+            ],
+            "p094-b08": [
+              41
+            ],
+            "p094-f28": [
+              40
+            ],
+            "p094-b03": [
+              40
+            ],
+            "p094-f29": [
+              40
+            ],
+            "p094-b02": [
+              40
+            ]
+          },
+          "last_page_body_bottom": 97.04,
+          "last_page_used_ratio": 0.016,
+          "isolated_tail": true,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-03\\p94-scale-99\\chapter-flow.pdf"
+        },
+        {
+          "scale": 0.98,
+          "chapter_pages": 86,
+          "source_pages": [
+            40,
+            41
+          ],
+          "same_page": false,
+          "source_entry_pages": {
+            "p094-b07": [
+              40
+            ],
+            "p094-b01": [
+              40
+            ],
+            "p094-b05": [
+              40
+            ],
+            "p094-b04": [
+              40
+            ],
+            "p094-b06": [
+              40
+            ],
+            "p094-b08": [
+              41
+            ],
+            "p094-f28": [
+              40
+            ],
+            "p094-b03": [
+              40
+            ],
+            "p094-f29": [
+              40
+            ],
+            "p094-b02": [
+              40
+            ]
+          },
+          "last_page_body_bottom": 97.04,
+          "last_page_used_ratio": 0.016,
+          "isolated_tail": true,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-03\\p94-scale-98\\chapter-flow.pdf"
+        },
+        {
+          "scale": 0.97,
+          "chapter_pages": 86,
+          "source_pages": [
+            40,
+            41
+          ],
+          "same_page": false,
+          "source_entry_pages": {
+            "p094-b07": [
+              40
+            ],
+            "p094-b01": [
+              40
+            ],
+            "p094-b05": [
+              40
+            ],
+            "p094-b04": [
+              40
+            ],
+            "p094-b06": [
+              40
+            ],
+            "p094-b08": [
+              41
+            ],
+            "p094-f28": [
+              40
+            ],
+            "p094-b03": [
+              40
+            ],
+            "p094-f29": [
+              40
+            ],
+            "p094-b02": [
+              40
+            ]
+          },
+          "last_page_body_bottom": 97.04,
+          "last_page_used_ratio": 0.016,
+          "isolated_tail": true,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-03\\p94-scale-97\\chapter-flow.pdf"
+        }
+      ],
+      "old_pdf": "tmp\\compact-pages-2026\\image-trials-03\\baseline\\chapter-flow.pdf",
+      "adopted": true,
+      "scale": 0.96,
+      "reason": "85%以上の範囲で同頁収容が成立する最大倍率（1%刻み）。",
+      "selected_pdf": "tmp\\compact-pages-2026\\image-trials-03\\p94-scale-96\\chapter-flow.pdf",
+      "after": {
+        "chapter_pages": 85,
+        "source_pages": [
+          40
+        ],
+        "same_page": true,
+        "source_entry_pages": {
+          "p094-b07": [
+            40
+          ],
+          "p094-b01": [
+            40
+          ],
+          "p094-b05": [
+            40
+          ],
+          "p094-b04": [
+            40
+          ],
+          "p094-b06": [
+            40
+          ],
+          "p094-b08": [
+            40
+          ],
+          "p094-f28": [
+            40
+          ],
+          "p094-b03": [
+            40
+          ],
+          "p094-f29": [
+            40
+          ],
+          "p094-b02": [
+            40
+          ]
+        },
+        "last_page_body_bottom": 773.897,
+        "last_page_used_ratio": 1.0,
+        "isolated_tail": false
+      },
+      "original_chapter_pages": 94,
+      "comparison_png": "image-trials-03/p94-comparison.png",
+      "review_pngs": [
+        {
+          "label": "before",
+          "page": 40,
+          "path": "image-trials-03/p94-before-page40.png"
+        },
+        {
+          "label": "before",
+          "page": 41,
+          "path": "image-trials-03/p94-before-page41.png"
+        },
+        {
+          "label": "after",
+          "page": 40,
+          "path": "image-trials-03/p94-after-page40.png"
+        }
+      ],
+      "measured_image_height_ratios": {
+        "p094-f28": 0.96,
+        "p094-f29": 0.96
+      },
+      "visually_reviewed": true,
+      "visual_findings": [],
+      "visual_review_note": "150%実ページPNGと425px幅の比較一覧で、画像/表記の可読性、図番号/枠/本文の衝突、末尾文とfooterの分離を目視。縮小3～4%の採用2箇所は読み取り可能。"
+    },
+    {
+      "chapter": "03",
+      "source_page": 120,
+      "ids": [
+        "p120-f55",
+        "p120-f56",
+        "p120-f57"
+      ],
+      "baseline": {
+        "chapter_pages": 85,
+        "source_pages": [
+          70,
+          71
+        ],
+        "same_page": false,
+        "source_entry_pages": {
+          "p120-b04": [
+            70
+          ],
+          "p120-b05": [
+            71
+          ],
+          "p120-b01": [
+            70
+          ],
+          "p120-f55": [
+            70
+          ],
+          "p120-b03": [
+            70
+          ],
+          "p120-f56": [
+            70
+          ],
+          "p120-f57": [
+            70
+          ],
+          "p120-b02": [
+            70
+          ]
+        },
+        "last_page_body_bottom": 97.04,
+        "last_page_used_ratio": 0.016,
+        "isolated_tail": true
+      },
+      "old_scale": 1.0,
+      "minimum_scale": 0.85,
+      "trials": [
+        {
+          "scale": 0.96,
+          "chapter_pages": 84,
+          "source_pages": [
+            70
+          ],
+          "same_page": true,
+          "source_entry_pages": {
+            "p120-b04": [
+              70
+            ],
+            "p120-b05": [
+              70
+            ],
+            "p120-b01": [
+              70
+            ],
+            "p120-f55": [
+              70
+            ],
+            "p120-b03": [
+              70
+            ],
+            "p120-f56": [
+              70
+            ],
+            "p120-f57": [
+              70
+            ],
+            "p120-b02": [
+              70
+            ]
+          },
+          "last_page_body_bottom": 767.034,
+          "last_page_used_ratio": 1.017,
+          "isolated_tail": false,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-03\\p120-scale-96\\chapter-flow.pdf"
+        },
+        {
+          "scale": 0.99,
+          "chapter_pages": 85,
+          "source_pages": [
+            70,
+            71
+          ],
+          "same_page": false,
+          "source_entry_pages": {
+            "p120-b04": [
+              70
+            ],
+            "p120-b05": [
+              71
+            ],
+            "p120-b01": [
+              70
+            ],
+            "p120-f55": [
+              70
+            ],
+            "p120-b03": [
+              70
+            ],
+            "p120-f56": [
+              70
+            ],
+            "p120-f57": [
+              70
+            ],
+            "p120-b02": [
+              70
+            ]
+          },
+          "last_page_body_bottom": 97.04,
+          "last_page_used_ratio": 0.016,
+          "isolated_tail": true,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-03\\p120-scale-99\\chapter-flow.pdf"
+        },
+        {
+          "scale": 0.98,
+          "chapter_pages": 85,
+          "source_pages": [
+            70,
+            71
+          ],
+          "same_page": false,
+          "source_entry_pages": {
+            "p120-b04": [
+              70
+            ],
+            "p120-b05": [
+              71
+            ],
+            "p120-b01": [
+              70
+            ],
+            "p120-f55": [
+              70
+            ],
+            "p120-b03": [
+              70
+            ],
+            "p120-f56": [
+              70
+            ],
+            "p120-f57": [
+              70
+            ],
+            "p120-b02": [
+              70
+            ]
+          },
+          "last_page_body_bottom": 97.04,
+          "last_page_used_ratio": 0.016,
+          "isolated_tail": true,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-03\\p120-scale-98\\chapter-flow.pdf"
+        },
+        {
+          "scale": 0.97,
+          "chapter_pages": 84,
+          "source_pages": [
+            70
+          ],
+          "same_page": true,
+          "source_entry_pages": {
+            "p120-b04": [
+              70
+            ],
+            "p120-b05": [
+              70
+            ],
+            "p120-b01": [
+              70
+            ],
+            "p120-f55": [
+              70
+            ],
+            "p120-b03": [
+              70
+            ],
+            "p120-f56": [
+              70
+            ],
+            "p120-f57": [
+              70
+            ],
+            "p120-b02": [
+              70
+            ]
+          },
+          "last_page_body_bottom": 771.825,
+          "last_page_used_ratio": 1.024,
+          "isolated_tail": false,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-03\\p120-scale-97\\chapter-flow.pdf"
+        }
+      ],
+      "old_pdf": "tmp\\compact-pages-2026\\image-trials-03\\p94-scale-96\\chapter-flow.pdf",
+      "adopted": true,
+      "scale": 0.97,
+      "reason": "85%以上の範囲で同頁収容が成立する最大倍率（1%刻み）。",
+      "selected_pdf": "tmp\\compact-pages-2026\\image-trials-03\\p120-scale-97\\chapter-flow.pdf",
+      "after": {
+        "chapter_pages": 84,
+        "source_pages": [
+          70
+        ],
+        "same_page": true,
+        "source_entry_pages": {
+          "p120-b04": [
+            70
+          ],
+          "p120-b05": [
+            70
+          ],
+          "p120-b01": [
+            70
+          ],
+          "p120-f55": [
+            70
+          ],
+          "p120-b03": [
+            70
+          ],
+          "p120-f56": [
+            70
+          ],
+          "p120-f57": [
+            70
+          ],
+          "p120-b02": [
+            70
+          ]
+        },
+        "last_page_body_bottom": 771.825,
+        "last_page_used_ratio": 0.997,
+        "isolated_tail": false
+      },
+      "original_chapter_pages": 94,
+      "comparison_png": "image-trials-03/p120-comparison.png",
+      "review_pngs": [
+        {
+          "label": "before",
+          "page": 70,
+          "path": "image-trials-03/p120-before-page70.png"
+        },
+        {
+          "label": "before",
+          "page": 71,
+          "path": "image-trials-03/p120-before-page71.png"
+        },
+        {
+          "label": "after",
+          "page": 70,
+          "path": "image-trials-03/p120-after-page70.png"
+        }
+      ],
+      "measured_image_height_ratios": {
+        "p120-f55": 0.97,
+        "p120-f56": 0.97,
+        "p120-f57": 0.97
+      },
+      "visually_reviewed": true,
+      "visual_findings": [],
+      "visual_review_note": "150%実ページPNGと425px幅の比較一覧で、画像/表記の可読性、図番号/枠/本文の衝突、末尾文とfooterの分離を目視。縮小3～4%の採用2箇所は読み取り可能。"
+    },
+    {
+      "chapter": "06",
+      "source_page": 212,
+      "ids": [
+        "p212-f07",
+        "p212-f08"
+      ],
+      "baseline": {
+        "chapter_pages": 49,
+        "source_pages": [
+          21,
+          22
+        ],
+        "same_page": false,
+        "source_entry_pages": {
+          "p212-b03": [
+            21
+          ],
+          "p212-f07": [
+            21
+          ],
+          "p212-b06": [
+            22
+          ],
+          "p212-f08": [
+            22
+          ],
+          "p212-b04": [
+            22
+          ],
+          "p212-b05": [
+            22
+          ],
+          "p212-b01": [
+            21
+          ],
+          "p212-f09": [
+            22
+          ],
+          "p212-b02": [
+            21
+          ]
+        },
+        "last_page_body_bottom": 503.5,
+        "last_page_used_ratio": 0.607,
+        "isolated_tail": false
+      },
+      "old_scale": 1.0,
+      "minimum_scale": 0.85,
+      "trials": [],
+      "old_pdf": "tmp\\compact-pages-2026\\image-trials-06\\baseline\\chapter-flow.pdf",
+      "adopted": false,
+      "scale": 1.0,
+      "reason": "continue_beforeと共通書体の変更だけで少量tailが解消。画像縮小不要。",
+      "selected_pdf": "tmp\\compact-pages-2026\\image-trials-06\\baseline\\chapter-flow.pdf",
+      "after": {
+        "chapter_pages": 49,
+        "source_pages": [
+          21,
+          22
+        ],
+        "same_page": false,
+        "source_entry_pages": {
+          "p212-b03": [
+            21
+          ],
+          "p212-f07": [
+            21
+          ],
+          "p212-b06": [
+            22
+          ],
+          "p212-f08": [
+            22
+          ],
+          "p212-b04": [
+            22
+          ],
+          "p212-b05": [
+            22
+          ],
+          "p212-b01": [
+            21
+          ],
+          "p212-f09": [
+            22
+          ],
+          "p212-b02": [
+            21
+          ]
+        },
+        "last_page_body_bottom": 503.5,
+        "last_page_used_ratio": 0.607,
+        "isolated_tail": false
+      },
+      "original_chapter_pages": 54,
+      "comparison_png": "image-trials-06/p212-comparison.png",
+      "review_pngs": [
+        {
+          "label": "before",
+          "page": 21,
+          "path": "image-trials-06/p212-before-page21.png"
+        },
+        {
+          "label": "before",
+          "page": 22,
+          "path": "image-trials-06/p212-before-page22.png"
+        },
+        {
+          "label": "after",
+          "page": 21,
+          "path": "image-trials-06/p212-after-page21.png"
+        },
+        {
+          "label": "after",
+          "page": 22,
+          "path": "image-trials-06/p212-after-page22.png"
+        }
+      ],
+      "measured_image_height_ratios": {
+        "p212-f07": 1.0,
+        "p212-f08": 1.0
+      },
+      "visually_reviewed": true,
+      "visual_findings": [],
+      "visual_review_note": "150%実ページPNGと425px幅の比較一覧で、画像/表記の可読性、図番号/枠/本文の衝突、末尾文とfooterの分離を目視。縮小3～4%の採用2箇所は読み取り可能。"
+    },
+    {
+      "chapter": "ex05",
+      "source_page": 45,
+      "ids": [
+        "p045-f08",
+        "p045-f09"
+      ],
+      "baseline": {
+        "chapter_pages": 13,
+        "source_pages": [
+          10,
+          11
+        ],
+        "same_page": false,
+        "source_entry_pages": {
+          "p045-f08": [
+            10
+          ],
+          "p045-b02": [
+            10
+          ],
+          "p045-b03": [
+            11
+          ],
+          "p045-b01": [
+            10
+          ],
+          "p045-f09": [
+            10
+          ]
+        },
+        "last_page_body_bottom": 269.191,
+        "last_page_used_ratio": 0.266,
+        "isolated_tail": true
+      },
+      "old_scale": 1.0,
+      "minimum_scale": 0.85,
+      "trials": [
+        {
+          "scale": 0.96,
+          "chapter_pages": 13,
+          "source_pages": [
+            10
+          ],
+          "same_page": true,
+          "source_entry_pages": {
+            "p045-f08": [
+              10
+            ],
+            "p045-b02": [
+              10
+            ],
+            "p045-b03": [
+              10
+            ],
+            "p045-b01": [
+              10
+            ],
+            "p045-f09": [
+              10
+            ]
+          },
+          "last_page_body_bottom": 770.223,
+          "last_page_used_ratio": 1.021,
+          "isolated_tail": false,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-ex05\\p45-scale-96\\chapter-flow.pdf"
+        },
+        {
+          "scale": 0.99,
+          "chapter_pages": 13,
+          "source_pages": [
+            10,
+            11
+          ],
+          "same_page": false,
+          "source_entry_pages": {
+            "p045-f08": [
+              10
+            ],
+            "p045-b02": [
+              10
+            ],
+            "p045-b03": [
+              11
+            ],
+            "p045-b01": [
+              10
+            ],
+            "p045-f09": [
+              10
+            ]
+          },
+          "last_page_body_bottom": 269.191,
+          "last_page_used_ratio": 0.273,
+          "isolated_tail": true,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-ex05\\p45-scale-99\\chapter-flow.pdf"
+        },
+        {
+          "scale": 0.98,
+          "chapter_pages": 13,
+          "source_pages": [
+            10,
+            11
+          ],
+          "same_page": false,
+          "source_entry_pages": {
+            "p045-f08": [
+              10
+            ],
+            "p045-b02": [
+              10
+            ],
+            "p045-b03": [
+              11
+            ],
+            "p045-b01": [
+              10
+            ],
+            "p045-f09": [
+              10
+            ]
+          },
+          "last_page_body_bottom": 269.191,
+          "last_page_used_ratio": 0.273,
+          "isolated_tail": true,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-ex05\\p45-scale-98\\chapter-flow.pdf"
+        },
+        {
+          "scale": 0.97,
+          "chapter_pages": 13,
+          "source_pages": [
+            10,
+            11
+          ],
+          "same_page": false,
+          "source_entry_pages": {
+            "p045-f08": [
+              10
+            ],
+            "p045-b02": [
+              10
+            ],
+            "p045-b03": [
+              11
+            ],
+            "p045-b01": [
+              10
+            ],
+            "p045-f09": [
+              10
+            ]
+          },
+          "last_page_body_bottom": 269.191,
+          "last_page_used_ratio": 0.273,
+          "isolated_tail": true,
+          "pdf": "tmp\\compact-pages-2026\\image-trials-ex05\\p45-scale-97\\chapter-flow.pdf"
+        }
+      ],
+      "old_pdf": "tmp\\compact-pages-2026\\image-trials-ex05\\baseline\\chapter-flow.pdf",
+      "adopted": false,
+      "scale": 1.0,
+      "reason": "4%縮小で元45頁の全entriesは同頁になるが、次元46頁のヒントが別頁に残り章頁数13→13で減らない。実効性がないため原寸に戻す。",
+      "selected_pdf": "tmp\\compact-pages-2026\\image-trials-ex05\\baseline\\chapter-flow.pdf",
+      "after": {
+        "chapter_pages": 13,
+        "source_pages": [
+          10,
+          11
+        ],
+        "same_page": false,
+        "source_entry_pages": {
+          "p045-f08": [
+            10
+          ],
+          "p045-b02": [
+            10
+          ],
+          "p045-b03": [
+            11
+          ],
+          "p045-b01": [
+            10
+          ],
+          "p045-f09": [
+            10
+          ]
+        },
+        "last_page_body_bottom": 269.191,
+        "last_page_used_ratio": 0.266,
+        "isolated_tail": true
+      },
+      "successful_same_page_trial": {
+        "scale": 0.96,
+        "pdf": "tmp\\compact-pages-2026\\image-trials-ex05\\p45-scale-96\\chapter-flow.pdf",
+        "geometry": {
+          "chapter_pages": 13,
+          "source_pages": [
+            10
+          ],
+          "same_page": true,
+          "source_entry_pages": {
+            "p045-f08": [
+              10
+            ],
+            "p045-b02": [
+              10
+            ],
+            "p045-b03": [
+              10
+            ],
+            "p045-b01": [
+              10
+            ],
+            "p045-f09": [
+              10
+            ]
+          },
+          "last_page_body_bottom": 770.223,
+          "last_page_used_ratio": 1.021,
+          "isolated_tail": false
+        }
+      },
+      "original_chapter_pages": 12,
+      "comparison_png": "image-trials-ex05/p45-comparison.png",
+      "review_pngs": [
+        {
+          "label": "before",
+          "page": 10,
+          "path": "image-trials-ex05/p45-before-page10.png"
+        },
+        {
+          "label": "before",
+          "page": 11,
+          "path": "image-trials-ex05/p45-before-page11.png"
+        },
+        {
+          "label": "after",
+          "page": 10,
+          "path": "image-trials-ex05/p45-after-page10.png"
+        },
+        {
+          "label": "after",
+          "page": 11,
+          "path": "image-trials-ex05/p45-after-page11.png"
+        }
+      ],
+      "measured_image_height_ratios": {
+        "p045-f08": 1.0,
+        "p045-f09": 1.0
+      },
+      "visually_reviewed": true,
+      "visual_findings": [],
+      "visual_review_note": "150%実ページPNGと425px幅の比較一覧で、画像/表記の可読性、図番号/枠/本文の衝突、末尾文とfooterの分離を目視。縮小3～4%の採用2箇所は読み取り可能。"
+    },
+    {
+      "chapter": "ex07",
+      "source_page": 72,
+      "ids": [
+        "p072-f05"
+      ],
+      "baseline": {
+        "chapter_pages": 13,
+        "source_pages": [
+          9,
+          10
+        ],
+        "same_page": false,
+        "source_entry_pages": {
+          "p072-b02": [
+            9
+          ],
+          "p072-b03": [
+            10
+          ],
+          "p072-f05": [
+            9
+          ],
+          "p072-b04": [
+            10
+          ],
+          "p072-b01": [
+            9
+          ]
+        },
+        "last_page_body_bottom": 634.666,
+        "last_page_used_ratio": 0.798,
+        "isolated_tail": false
+      },
+      "old_scale": 1.0,
+      "minimum_scale": 0.85,
+      "trials": [],
+      "old_pdf": "tmp\\compact-pages-2026\\image-trials-ex07\\baseline\\chapter-flow.pdf",
+      "adopted": false,
+      "scale": 1.0,
+      "reason": "continue_beforeと共通書体の変更だけで少量tailが解消。画像縮小不要。",
+      "selected_pdf": "tmp\\compact-pages-2026\\image-trials-ex07\\baseline\\chapter-flow.pdf",
+      "after": {
+        "chapter_pages": 13,
+        "source_pages": [
+          9,
+          10
+        ],
+        "same_page": false,
+        "source_entry_pages": {
+          "p072-b02": [
+            9
+          ],
+          "p072-b03": [
+            10
+          ],
+          "p072-f05": [
+            9
+          ],
+          "p072-b04": [
+            10
+          ],
+          "p072-b01": [
+            9
+          ]
+        },
+        "last_page_body_bottom": 634.666,
+        "last_page_used_ratio": 0.798,
+        "isolated_tail": false
+      },
+      "original_chapter_pages": 17,
+      "comparison_png": "image-trials-ex07/p72-comparison.png",
+      "review_pngs": [
+        {
+          "label": "before",
+          "page": 9,
+          "path": "image-trials-ex07/p72-before-page9.png"
+        },
+        {
+          "label": "before",
+          "page": 10,
+          "path": "image-trials-ex07/p72-before-page10.png"
+        },
+        {
+          "label": "after",
+          "page": 9,
+          "path": "image-trials-ex07/p72-after-page9.png"
+        },
+        {
+          "label": "after",
+          "page": 10,
+          "path": "image-trials-ex07/p72-after-page10.png"
+        }
+      ],
+      "measured_image_height_ratios": {
+        "p072-f05": 1.0
+      },
+      "visually_reviewed": true,
+      "visual_findings": [],
+      "visual_review_note": "150%実ページPNGと425px幅の比較一覧で、画像/表記の可読性、図番号/枠/本文の衝突、末尾文とfooterの分離を目視。縮小3～4%の採用2箇所は読み取り可能。"
+    }
+  ],
+  "adopted_cases": 2,
+  "adopted_scales": {
+    "p094-f28": 0.96,
+    "p094-f29": 0.96,
+    "p120-f55": 0.97,
+    "p120-f56": 0.97,
+    "p120-f57": 0.97
+  },
+  "source_scope": "編集は03/06/ex05/ex07のpagination.figure_scalesのみ。最終的な採用は03の5画像だけ。",
+  "all_five_cases_visually_reviewed": true,
+  "manual_review_findings": [],
+  "source_assets_modified": false,
+  "source_markdown_modified": false,
+  "chapter03_pages_before_scales": 86,
+  "chapter03_pages_after_scales": 84,
+  "print_pages_saved_by_adopted_scales": 2
+}

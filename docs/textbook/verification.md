@@ -1,38 +1,47 @@
-# 図番号・コード配色・構文解説の改訂
+# 書体と継続箇所の改ページ改善
 
-2026年11月6日。本文377ページ、演習84ページ。指定された図の変更と全体の表示修正を反映しました。
+2026年11月6日。本文377→343ページ、演習ガイド84→81ページ、合計37ページ減です。本文の字号や段落余白は縮めず、指定されたパターンだけを調整しました。
 
 - [本文PDF](../../output/pdf/textbook/textbook/flow.pdf)
 - [演習PDF](../../output/pdf/textbook/exercise/flow.pdf)
-- [最終独立監査](../../output/verification/figure-cards-2026/final-audit.md)
-- [生成プロンプト・保存先・配置カタログ](illustrations.json)
+- [最終独立監査](../../output/verification/compact-pages-2026/final-audit.md)
 
-## 指定箇所の図
+## ① 本文と強調の書体
 
-21pのDIの説明直後に、倉庫からAクラスへリモコンを渡し、メソッドのスイッチでBクラスの機能を使う図を追加しました。25pのBean図は、DIコンテナ内に準備されたリモコン本体を示す図へ差し替えました。旧24pの管理対象ライブラリ図とそのキャプションは削除しました。小型図は計34点を維持し、画像本体は幅300pt・高さ140pt以内です。
+コードの読み方46箇所・84項目の本文をP明朝、元からの強調部分をPゴシックの太字に統一しました。45pの強調が細い原因は、EdgeがPゴシックの擬似太字を印刷PDFへ反映していないことでした。文字を1回だけ埋め込むPDFの文字描画で太さを補い、通常の本文と同じ字号/35ptの輪郭にそろえました。原文・強調箇所・字号・色・位置・リンクを保持しています。
 
-新しい2図は組み込みimage_genで生成し、章1のassetsへ保存しています。[今回の生成記録](../../output/verification/figure-cards-2026/generation-manifest.json)に初回・修正プロンプトと生成元パスを記録しました。
+明朝のまま太字になっていた57文字とTimes系25文字も共通の書体へ統一しました。全46箇所を完成PDFで目視し、文字の重複・通常本文への太字漏れがないことを確認しています。
 
-## 全体の表示
+[書体・太字の比較画像と検査案内](../../output/verification/compact-pages-2026/prose-fonts/確認内容.md)
 
-- スライド以外の独立図229点に図番号と枠を付けました。章・節・連番で採番し、図の説明文も同じ枠内に収めます。元画像の左端・幅を維持し、固定ページの番号は空き位置のタブに置きます。
-- Javaのアノテーションを赤、HTMLの要素名を青、`th:`属性を紫にしました。緑のコメント、白テーマ、表の配色、右上の太字・下線付きファイル名を保持しています。
-- 「コードの読み方」46箇所・84項目は3列表を廃止しました。行番号とコードを全幅の枠へ置き、下に元の説明文を通常の段落として表示します。原文の部分強調・書体・色を復元し、先頭文への自動強調と人工的な段落分割を撤回しました。
-- 元Wordで一意に対応する82項目から段落境界20件・明示改行22件を復元しました。説明の意味や語句は全84項目で維持しています。
+## ②～④ 続き本文・画像・小小見出し
+
+元頁境界をすべて強制改ページにしていたため、文の途中や小小見出しでも空きが残っていました。調査した箇所のうち、続き本文と小小見出しの56境界だけを明示登録しました。小小見出しは、再組版後も直前頁の本文が半頁以下のときだけ同頁へ続けます。節・項、章扉、スライド、固定頁、空白頁と、その他の元頁境界は保っています。
+
+旧47pのreturnの補足を直前の説明へ続け、旧55～56pの「構造を整／理しやすく」の文は表示時に1段落へ戻しました。旧53～54pの短い説明と【作業手順】も同頁へ続きます。
+
+| 指摘箇所（前版） | 最終版 | 確認する内容 |
+| --- | --- | --- |
+| 45p | [45pの画像](../../output/verification/compact-pages-2026/requested-pages/after-45.png) | public/String/indexの説明とPゴシック太字 |
+| 46～47pのreturn補足 | [46pの画像](../../output/verification/compact-pages-2026/requested-pages/after-46.png) | 前の説明と同頁へ継続 |
+| 49～50p | [48pの画像](../../output/verification/compact-pages-2026/requested-pages/after-48.png) | 操作手順1～6を1頁へ |
+| 53～54pの作業手順① | [51pの画像](../../output/verification/compact-pages-2026/requested-pages/after-51.png) | 短い説明の後に見出しを継続 |
+| 55～56pの本文と作業手順② | [52pの画像](../../output/verification/compact-pages-2026/requested-pages/after-52.png) | 文途中の分断をなくし、HTMLコードと同頁へ |
+
+旧49～50pは操作画面1点を96%へ縮め、手順1～6を1頁へ収めました。他の採用は第3章の元94pの2図を96%、元120pの3図を97%です。縮小は計6点、3～4%だけで、元画像・左端・縦横比を保持しています。続きの配置だけで孤立頁がなくなる図と、縮小しても頁数が減らない図は原寸のままです。第1章の元22pは次頁が半頁近くあり、少量の続きという条件に合わないため縮小していません。
+
+元274pは、同頁化すると継続用の「10行目」枠が直前と重複するため従来の区切りを保持しました。この除外による増頁はありません。コードや説明文の改稿はしていません。
+
+- [確定した境界・倍率の一覧](../../output/verification/compact-pages-2026/approved-pagination.json)
+- [候補調査と各箇所の根拠](../../output/verification/compact-pages-2026/curated-selection.json)
+- [画像縮小の採否と比較](../../output/verification/compact-pages-2026/image-trial-review.json)
 
 ## 検証
 
-回帰テスト74件が合格しました。全19章の文字照合、はみ出し、見出しの孤立、図・短いコード・表・手順の分断検査も合格しています。全229図を実PDFから切り出し、36枚の一覧で目視確認しました。コード解説も完成版PDFと部品PDFの本文・書式・配色を比較しています。
+回帰テスト78件が合格しました。全19章の原稿・コード・表・書式Span・2945 IDは変更せず、画像資材763点、baseline/layout38件、原本4件も保全しています。図番号229点、PPT65点の位置と画素、ファイル名、元頁373件、空白17頁、全424頁のヘッダーとページ番号を検査しました。論理リンク78箇所・URI注釈82矩形も、宛先とクリック領域を保持しています。
 
-図番号の左端調整後に全19章を再生成済みです。その調整が適用されない12章は、合冊の対応115頁と描画を比較し、目次更新6頁を除く109頁の全画素一致を確認して合冊を保持しました。
+- [全テスト結果](../../output/verification/compact-pages-2026/regressions.json)
+- [リンク監査](../../output/verification/compact-pages-2026/final-links.md)
+- [最終PDFのSHA256・概要](../../output/verification/compact-pages-2026/summary.json)
 
-原文IDは2945件を維持しました。DI図/captionの2件追加、不要図/captionの2件削除、Bean図/captionの差し替え・移動以外は、元の本文・コード・表・書式Span・ページ所属と順序を保っています。原本入力4件、baseline/layout38件、今回の明示指定以外の既存資材を保全しました。既存スライド65点は原位置と描画を保持しています。表示URLへのリンクは論理78箇所すべてを保持し、URI注釈82件の宛先・座標を章から合冊まで照合しました。全幅化でURLの折り返しが減ったため、5箇所で同じURLを覆う矩形数がまとまり、前版89件から82件へ減っています。全URLの文字がクリック領域に収まることも確認済みです。
-
-- [図229点の実PDF確認](../../output/verification/figure-cards-2026/figure-frames/final-figure-review.json)
-- [コード・構文解説の確認資料](../../output/verification/figure-cards-2026/code-layout/確認内容.md)
-- [全テスト結果](../../output/verification/figure-cards-2026/regressions.json)
-- [リンク監査](../../output/verification/figure-cards-2026/final-links.md)
-- [元のURL78箇所の保持検査](../../output/verification/figure-cards-2026/logical-link-preservation.md)
-- [最終PDFのSHA256と概要](../../output/verification/figure-cards-2026/summary.json)
-
-以前の改訂の検証は[イラスト追加時](../../output/verification/illustrations-expansion-2026/final-audit.md)・[括弧などの修正時](../../output/verification/brackets-2026/final-audit.md)の記録に保持しています。
+前回の[図番号・枠・イラスト改訂](../../output/verification/figure-cards-2026/final-audit.md)と、[生成プロンプト・配置カタログ](illustrations.json)はそのまま保持しています。

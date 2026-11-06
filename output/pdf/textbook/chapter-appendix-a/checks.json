@@ -991,6 +991,55 @@
         ]
       }
     },
+    "pagination": {
+      "options": {},
+      "source_boundaries": [
+        {
+          "source_page": 283,
+          "page": 2,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 284,
+          "page": 3,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 285,
+          "page": 4,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 286,
+          "page": 5,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 287,
+          "page": 6,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 288,
+          "page": 7,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 289,
+          "page": 8,
+          "mode": "page-break",
+          "reason": null
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
+    },
     "html_components": []
   }
 }

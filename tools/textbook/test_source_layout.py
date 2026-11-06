@@ -135,7 +135,10 @@ class SourceLayoutTests(unittest.TestCase):
                     modes[mode] += 1
                     self.assertEqual(start['page'], end['page'])
                     self.assertAlmostEqual(start['x'], box[0], delta=.02)
-                    self.assertAlmostEqual(end['y'] - start['y'], box[3] - box[1], delta=.02)
+                    scale = chapter['config'].get('pagination',{}).get('figure_scales',{}).get(ident,1)
+                    self.assertGreaterEqual(scale,.85)
+                    self.assertLessEqual(scale,1)
+                    self.assertAlmostEqual(end['y'] - start['y'], (box[3] - box[1])*scale, delta=.02)
                     if mode != 'flow':
                         self.assertAlmostEqual(start['y'], box[1], delta=.02)
         for mode in ('native', 'slide', 'flow'):

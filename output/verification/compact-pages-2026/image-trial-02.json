@@ -1,0 +1,28 @@
+{
+  "chapter": "02",
+  "source_page": 45,
+  "image": "p045-f16",
+  "adopted_scale": 0.96,
+  "trials": [
+    {
+      "scale": 1,
+      "pages": 39,
+      "source45_tail_same_page": false
+    },
+    {
+      "scale": 0.97,
+      "pages": 39,
+      "source45_tail_same_page": false
+    },
+    {
+      "scale": 0.96,
+      "pages": 38,
+      "source45_tail_same_page": true
+    }
+  ],
+  "other_example": {
+    "source_page": 48,
+    "scale": 1,
+    "reason": "少量の孤立頁は継続設定で解消。残る頁には次の説明とHTMLコードが入り、縮小不要。"
+  }
+}

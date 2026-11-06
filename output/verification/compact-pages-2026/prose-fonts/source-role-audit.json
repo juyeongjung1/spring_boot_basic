@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "explanations": 46,
+  "meaning_rows": 84,
+  "regular_spans": 789,
+  "emphasis_spans": 267,
+  "changed_font_characters": 82,
+  "retained": [
+    "meaning全文",
+    "元の強調位置",
+    "元の文字サイズ",
+    "元の色",
+    "元の段落/明示改行",
+    "コード・構文色",
+    "右上ファイル名"
+  ],
+  "normalization": "説明本文はMS PMincho、既存強調はMS PGothic。Edgeの擬似太字が印刷PDFで消えるため、該当runだけ文字列単一の描画モード2で通常Typstと同じ紙面線幅0.31543ptを付与。原文の字間と位置は不変。",
+  "public_example": "旧45pは実PDFでPゴシック字形が太くなっていない問題を特定し、実際の線幅を修正。原稿に残っていた明朝太字57文字・Times25文字も3解説で修正。",
+  "changed": [
+    {
+      "chapter": "05",
+      "anchor": "p184-b02",
+      "source_id": "p184-b07",
+      "text": " この部分のコードは、",
+      "before_font": "MS-PMincho",
+      "after_font": "MS-PGothic",
+      "emphasized": true,
+      "size": 11.04,
+      "color": "#000000"
+    },
+    {
+      "chapter": "05",
+      "anchor": "p185-b01",
+      "source_id": "p185-b02",
+      "text": " レイアウトにコピーするコンテンツ側のHTML",
+      "before_font": "MS-PMincho",
+      "after_font": "MS-PGothic",
+      "emphasized": true,
+      "size": 11.04,
+      "color": "#000000"
+    },
+    {
+      "chapter": "05",
+      "anchor": "p185-b01",
+      "source_id": "p185-b02",
+      "text": " ",
+      "before_font": "MS-PMincho",
+      "after_font": "MS-PGothic",
+      "emphasized": true,
+      "size": 11.04,
+      "color": "#000000"
+    },
+    {
+      "chapter": "05",
+      "anchor": "p185-b01",
+      "source_id": "p185-b02",
+      "text": "にも、同じくレイアウト関連のルールを宣言して",
+      "before_font": "MS-PMincho",
+      "after_font": "MS-PGothic",
+      "emphasized": true,
+      "size": 11.04,
+      "color": "#000000"
+    },
+    {
+      "chapter": "07",
+      "anchor": "p266-b11",
+      "source_id": "p266-b11",
+      "text": "container ",
+      "before_font": "TimesNewRomanPSMT",
+      "after_font": "MS-PMincho",
+      "emphasized": false,
+      "size": 11.04,
+      "color": "#000000"
+    },
+    {
+      "chapter": "07",
+      "anchor": "p266-b11",
+      "source_id": "p266-b11",
+      "text": "container-fluid",
+      "before_font": "TimesNewRomanPSMT",
+      "after_font": "MS-PMincho",
+      "emphasized": false,
+      "size": 11.04,
+      "color": "#000000"
+    }
+  ],
+  "pdf_samples": [
+    {
+      "id": "02-p043-b05",
+      "part": 1,
+      "fonts": {
+        "MS-PGothic": 2,
+        "Meiryo-Bold": 2,
+        "Consolas-Bold": 2,
+        "Consolas": 8,
+        "MS-PMincho": 5
+      },
+      "text_complete": true,
+      "pdf": "D:\\work\\Spring Boot 入門\\tmp\\prose-fonts-2026\\render\\0001-02-p043-b05-1.pdf",
+      "finished_emphasis_runs": 5
+    },
+    {
+      "id": "05-p184-b02",
+      "part": 1,
+      "fonts": {
+        "MS-PGothic": 5,
+        "Meiryo-Bold": 3,
+        "Consolas": 23,
+        "MS-PMincho": 10,
+        "Consolas-Bold": 1,
+        "MS-Gothic": 1
+      },
+      "text_complete": true,
+      "pdf": "D:\\work\\Spring Boot 入門\\tmp\\prose-fonts-2026\\render\\0002-05-p184-b02-1.pdf",
+      "finished_emphasis_runs": 6
+    },
+    {
+      "id": "05-p185-b01",
+      "part": 1,
+      "fonts": {
+        "MS-PGothic": 9,
+        "Meiryo-Bold": 3,
+        "Consolas": 13,
+        "MS-PMincho": 8,
+        "MS-Gothic": 1
+      },
+      "text_complete": true,
+      "pdf": "D:\\work\\Spring Boot 入門\\tmp\\prose-fonts-2026\\render\\0003-05-p185-b01-1.pdf",
+      "finished_emphasis_runs": 35
+    },
+    {
+      "id": "07-p266-b11",
+      "part": 1,
+      "fonts": {
+        "MS-PGothic": 1,
+        "Meiryo-Bold": 1,
+        "Consolas": 6,
+        "MS-PMincho": 2
+      },
+      "text_complete": true,
+      "pdf": "D:\\work\\Spring Boot 入門\\tmp\\prose-fonts-2026\\render\\0004-07-p266-b11-1.pdf",
+      "finished_emphasis_runs": 0
+    }
+  ],
+  "problems": []
+}

@@ -1,0 +1,119 @@
+{
+  "05": {
+    "continue_before": {
+      "180": "short-minor-heading",
+      "182": "short-minor-heading",
+      "169": "continued-prose",
+      "185": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
+  },
+  "06": {
+    "continue_before": {
+      "202": "short-minor-heading",
+      "207": "short-minor-heading",
+      "210": "short-minor-heading",
+      "212": "short-minor-heading",
+      "218": "short-minor-heading",
+      "226": "short-minor-heading",
+      "230": "short-minor-heading",
+      "231": "short-minor-heading",
+      "201": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
+  },
+  "07": {
+    "continue_before": {
+      "247": "short-minor-heading",
+      "266": "short-minor-heading",
+      "268": "short-minor-heading",
+      "269": "short-minor-heading",
+      "271": "short-minor-heading",
+      "279": "short-minor-heading",
+      "249": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
+  },
+  "ex05": {
+    "continue_before": {
+      "46": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
+  },
+  "ex07": {
+    "continue_before": {
+      "66": "short-minor-heading",
+      "69": "short-minor-heading",
+      "71": "continued-prose",
+      "73": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
+  },
+  "02": {
+    "continue_before": {
+      "45": "short-minor-heading",
+      "46": "short-minor-heading",
+      "48": "short-minor-heading",
+      "52": "short-minor-heading",
+      "44": "continued-prose",
+      "49": "continued-prose",
+      "50": "continued-prose",
+      "54": "continued-prose",
+      "59": "continued-prose"
+    },
+    "paragraph_continuations": [
+      [
+        "p048-b07",
+        "p049-b01"
+      ]
+    ],
+    "figure_scales": {
+      "p045-f16": 0.96
+    }
+  },
+  "03": {
+    "continue_before": {
+      "68": "short-minor-heading",
+      "71": "short-minor-heading",
+      "75": "short-minor-heading",
+      "89": "short-minor-heading",
+      "98": "short-minor-heading",
+      "102": "short-minor-heading",
+      "109": "short-minor-heading",
+      "119": "short-minor-heading",
+      "80": "continued-prose",
+      "88": "continued-prose",
+      "93": "continued-prose",
+      "101": "continued-prose",
+      "110": "continued-prose",
+      "131": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {
+      "p094-f28": 0.96,
+      "p094-f29": 0.96,
+      "p120-f55": 0.97,
+      "p120-f56": 0.97,
+      "p120-f57": 0.97
+    }
+  },
+  "04": {
+    "continue_before": {
+      "137": "short-minor-heading",
+      "138": "short-minor-heading",
+      "141": "short-minor-heading",
+      "144": "short-minor-heading",
+      "145": "short-minor-heading",
+      "160": "short-minor-heading",
+      "152": "continued-prose",
+      "153": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
+  }
+}

@@ -1,0 +1,1217 @@
+{
+  "passed": true,
+  "joined_boundaries": [
+    {
+      "chapter": "02",
+      "source_page": 45,
+      "previous_source_page": 44,
+      "reason": "short-minor-heading",
+      "shared": false,
+      "boundary": {
+        "id": "__source-page-45",
+        "edge": "source-page",
+        "page": 16,
+        "x": 85.104,
+        "y": 86.0
+      }
+    },
+    {
+      "chapter": "02",
+      "source_page": 46,
+      "previous_source_page": 45,
+      "reason": "short-minor-heading",
+      "shared": false,
+      "boundary": {
+        "id": "__source-page-46",
+        "edge": "source-page",
+        "page": 17,
+        "x": 85.104,
+        "y": 86.0
+      }
+    },
+    {
+      "chapter": "02",
+      "source_page": 48,
+      "previous_source_page": 47,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-48",
+        "edge": "source-page",
+        "page": 19,
+        "x": 85.104,
+        "y": 151.87015624999998
+      }
+    },
+    {
+      "chapter": "02",
+      "source_page": 52,
+      "previous_source_page": 51,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-52",
+        "edge": "source-page",
+        "page": 23,
+        "x": 85.104,
+        "y": 396.594
+      }
+    },
+    {
+      "chapter": "02",
+      "source_page": 44,
+      "previous_source_page": 43,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-44",
+        "edge": "source-page",
+        "page": 14,
+        "x": 85.104,
+        "y": 378.4399298176618
+      }
+    },
+    {
+      "chapter": "02",
+      "source_page": 49,
+      "previous_source_page": 48,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-49",
+        "edge": "source-page",
+        "page": 20,
+        "x": 96.144,
+        "y": 191.48749999999998
+      }
+    },
+    {
+      "chapter": "02",
+      "source_page": 50,
+      "previous_source_page": 49,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-50",
+        "edge": "source-page",
+        "page": 21,
+        "x": 85.104,
+        "y": 359.563
+      }
+    },
+    {
+      "chapter": "02",
+      "source_page": 54,
+      "previous_source_page": 53,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-54",
+        "edge": "source-page",
+        "page": 26,
+        "x": 85.104,
+        "y": 312.5801873552635
+      }
+    },
+    {
+      "chapter": "02",
+      "source_page": 59,
+      "previous_source_page": 58,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-59",
+        "edge": "source-page",
+        "page": 33,
+        "x": 85.104,
+        "y": 275.56300000000005
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 68,
+      "previous_source_page": 67,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-68",
+        "edge": "source-page",
+        "page": 6,
+        "x": 85.104,
+        "y": 392.364
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 71,
+      "previous_source_page": 70,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-71",
+        "edge": "source-page",
+        "page": 10,
+        "x": 85.104,
+        "y": 420.99999491737594
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 75,
+      "previous_source_page": 74,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-75",
+        "edge": "source-page",
+        "page": 16,
+        "x": 85.104,
+        "y": 291.39999464790117
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 89,
+      "previous_source_page": 88,
+      "reason": "short-minor-heading",
+      "shared": false,
+      "boundary": {
+        "id": "__source-page-89",
+        "edge": "source-page",
+        "page": 34,
+        "x": 85.104,
+        "y": 86.0
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 98,
+      "previous_source_page": 97,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-98",
+        "edge": "source-page",
+        "page": 44,
+        "x": 85.104,
+        "y": 371.106
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 102,
+      "previous_source_page": 101,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-102",
+        "edge": "source-page",
+        "page": 49,
+        "x": 85.104,
+        "y": 181.04000000000002
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 109,
+      "previous_source_page": 108,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-109",
+        "edge": "source-page",
+        "page": 56,
+        "x": 85.104,
+        "y": 291.5000226632527
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 119,
+      "previous_source_page": 118,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-119",
+        "edge": "source-page",
+        "page": 69,
+        "x": 85.104,
+        "y": 175.04000000000002
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 80,
+      "previous_source_page": 79,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-80",
+        "edge": "source-page",
+        "page": 23,
+        "x": 85.104,
+        "y": 178.778
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 88,
+      "previous_source_page": 87,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-88",
+        "edge": "source-page",
+        "page": 32,
+        "x": 85.104,
+        "y": 329.56300000000005
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 93,
+      "previous_source_page": 92,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-93",
+        "edge": "source-page",
+        "page": 38,
+        "x": 85.104,
+        "y": 215.563
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 101,
+      "previous_source_page": 100,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-101",
+        "edge": "source-page",
+        "page": 48,
+        "x": 85.104,
+        "y": 110.83015625
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 110,
+      "previous_source_page": 109,
+      "reason": "continued-prose",
+      "shared": false,
+      "boundary": {
+        "id": "__source-page-110",
+        "edge": "source-page",
+        "page": 58,
+        "x": 85.104,
+        "y": 86.0
+      }
+    },
+    {
+      "chapter": "03",
+      "source_page": 131,
+      "previous_source_page": 130,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-131",
+        "edge": "source-page",
+        "page": 82,
+        "x": 85.104,
+        "y": 421.625
+      }
+    },
+    {
+      "chapter": "04",
+      "source_page": 137,
+      "previous_source_page": 136,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-137",
+        "edge": "source-page",
+        "page": 5,
+        "x": 85.104,
+        "y": 265.498
+      }
+    },
+    {
+      "chapter": "04",
+      "source_page": 138,
+      "previous_source_page": 137,
+      "reason": "short-minor-heading",
+      "shared": false,
+      "boundary": {
+        "id": "__source-page-138",
+        "edge": "source-page",
+        "page": 7,
+        "x": 85.104,
+        "y": 86.0
+      }
+    },
+    {
+      "chapter": "04",
+      "source_page": 141,
+      "previous_source_page": 140,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-141",
+        "edge": "source-page",
+        "page": 10,
+        "x": 85.104,
+        "y": 231.29000000000002
+      }
+    },
+    {
+      "chapter": "04",
+      "source_page": 144,
+      "previous_source_page": 143,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-144",
+        "edge": "source-page",
+        "page": 14,
+        "x": 85.104,
+        "y": 285.18263645726057
+      }
+    },
+    {
+      "chapter": "04",
+      "source_page": 145,
+      "previous_source_page": 144,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-145",
+        "edge": "source-page",
+        "page": 15,
+        "x": 85.104,
+        "y": 432.594
+      }
+    },
+    {
+      "chapter": "04",
+      "source_page": 160,
+      "previous_source_page": 159,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-160",
+        "edge": "source-page",
+        "page": 35,
+        "x": 85.104,
+        "y": 115.04
+      }
+    },
+    {
+      "chapter": "04",
+      "source_page": 152,
+      "previous_source_page": 151,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-152",
+        "edge": "source-page",
+        "page": 24,
+        "x": 85.104,
+        "y": 403.602
+      }
+    },
+    {
+      "chapter": "04",
+      "source_page": 153,
+      "previous_source_page": 152,
+      "reason": "continued-prose",
+      "shared": false,
+      "boundary": {
+        "id": "__source-page-153",
+        "edge": "source-page",
+        "page": 26,
+        "x": 85.104,
+        "y": 86.0
+      }
+    },
+    {
+      "chapter": "05",
+      "source_page": 180,
+      "previous_source_page": 179,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-180",
+        "edge": "source-page",
+        "page": 19,
+        "x": 85.104,
+        "y": 192.314
+      }
+    },
+    {
+      "chapter": "05",
+      "source_page": 182,
+      "previous_source_page": 181,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-182",
+        "edge": "source-page",
+        "page": 21,
+        "x": 85.104,
+        "y": 115.04
+      }
+    },
+    {
+      "chapter": "05",
+      "source_page": 169,
+      "previous_source_page": 168,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-169",
+        "edge": "source-page",
+        "page": 6,
+        "x": 85.104,
+        "y": 164.0
+      }
+    },
+    {
+      "chapter": "05",
+      "source_page": 185,
+      "previous_source_page": 184,
+      "reason": "continued-prose",
+      "shared": false,
+      "boundary": {
+        "id": "__source-page-185",
+        "edge": "source-page",
+        "page": 25,
+        "x": 85.104,
+        "y": 86.0
+      }
+    },
+    {
+      "chapter": "06",
+      "source_page": 202,
+      "previous_source_page": 201,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-202",
+        "edge": "source-page",
+        "page": 11,
+        "x": 85.104,
+        "y": 381.18263645726057
+      }
+    },
+    {
+      "chapter": "06",
+      "source_page": 207,
+      "previous_source_page": 206,
+      "reason": "short-minor-heading",
+      "shared": false,
+      "boundary": {
+        "id": "__source-page-207",
+        "edge": "source-page",
+        "page": 17,
+        "x": 85.104,
+        "y": 86.0
+      }
+    },
+    {
+      "chapter": "06",
+      "source_page": 210,
+      "previous_source_page": 209,
+      "reason": "short-minor-heading",
+      "shared": false,
+      "boundary": {
+        "id": "__source-page-210",
+        "edge": "source-page",
+        "page": 20,
+        "x": 85.104,
+        "y": 86.0
+      }
+    },
+    {
+      "chapter": "06",
+      "source_page": 212,
+      "previous_source_page": 211,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-212",
+        "edge": "source-page",
+        "page": 21,
+        "x": 85.104,
+        "y": 288.79299999999995
+      }
+    },
+    {
+      "chapter": "06",
+      "source_page": 218,
+      "previous_source_page": 217,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-218",
+        "edge": "source-page",
+        "page": 27,
+        "x": 85.104,
+        "y": 217.04000000000002
+      }
+    },
+    {
+      "chapter": "06",
+      "source_page": 226,
+      "previous_source_page": 225,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-226",
+        "edge": "source-page",
+        "page": 36,
+        "x": 85.104,
+        "y": 157.04000000000002
+      }
+    },
+    {
+      "chapter": "06",
+      "source_page": 230,
+      "previous_source_page": 229,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-230",
+        "edge": "source-page",
+        "page": 39,
+        "x": 85.104,
+        "y": 342.841
+      }
+    },
+    {
+      "chapter": "06",
+      "source_page": 231,
+      "previous_source_page": 230,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-231",
+        "edge": "source-page",
+        "page": 40,
+        "x": 85.104,
+        "y": 389.353
+      }
+    },
+    {
+      "chapter": "06",
+      "source_page": 201,
+      "previous_source_page": 200,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-201",
+        "edge": "source-page",
+        "page": 10,
+        "x": 85.104,
+        "y": 110.0
+      }
+    },
+    {
+      "chapter": "07",
+      "source_page": 247,
+      "previous_source_page": 246,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-247",
+        "edge": "source-page",
+        "page": 11,
+        "x": 85.104,
+        "y": 133.04000000000002
+      }
+    },
+    {
+      "chapter": "07",
+      "source_page": 266,
+      "previous_source_page": 265,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-266",
+        "edge": "source-page",
+        "page": 33,
+        "x": 85.104,
+        "y": 309.18263645726057
+      }
+    },
+    {
+      "chapter": "07",
+      "source_page": 268,
+      "previous_source_page": 267,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-268",
+        "edge": "source-page",
+        "page": 36,
+        "x": 85.104,
+        "y": 247.04000000000002
+      }
+    },
+    {
+      "chapter": "07",
+      "source_page": 269,
+      "previous_source_page": 268,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-269",
+        "edge": "source-page",
+        "page": 36,
+        "x": 85.104,
+        "y": 436.6400011164969
+      }
+    },
+    {
+      "chapter": "07",
+      "source_page": 271,
+      "previous_source_page": 270,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-271",
+        "edge": "source-page",
+        "page": 39,
+        "x": 85.104,
+        "y": 246.793
+      }
+    },
+    {
+      "chapter": "07",
+      "source_page": 279,
+      "previous_source_page": 278,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-279",
+        "edge": "source-page",
+        "page": 49,
+        "x": 85.104,
+        "y": 246.793
+      }
+    },
+    {
+      "chapter": "07",
+      "source_page": 249,
+      "previous_source_page": 248,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-249",
+        "edge": "source-page",
+        "page": 14,
+        "x": 85.104,
+        "y": 302.809
+      }
+    },
+    {
+      "chapter": "ex05",
+      "source_page": 46,
+      "previous_source_page": 45,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-46",
+        "edge": "source-page",
+        "page": 11,
+        "x": 85.104,
+        "y": 128.83015625
+      }
+    },
+    {
+      "chapter": "ex07",
+      "source_page": 66,
+      "previous_source_page": 65,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-66",
+        "edge": "source-page",
+        "page": 3,
+        "x": 85.104,
+        "y": 432.430390625
+      }
+    },
+    {
+      "chapter": "ex07",
+      "source_page": 69,
+      "previous_source_page": 68,
+      "reason": "short-minor-heading",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-69",
+        "edge": "source-page",
+        "page": 6,
+        "x": 85.104,
+        "y": 234.2000703125
+      }
+    },
+    {
+      "chapter": "ex07",
+      "source_page": 71,
+      "previous_source_page": 70,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-71",
+        "edge": "source-page",
+        "page": 8,
+        "x": 85.104,
+        "y": 134.0
+      }
+    },
+    {
+      "chapter": "ex07",
+      "source_page": 73,
+      "previous_source_page": 72,
+      "reason": "continued-prose",
+      "shared": true,
+      "boundary": {
+        "id": "__source-page-73",
+        "edge": "source-page",
+        "page": 10,
+        "x": 85.104,
+        "y": 140.95999999999998
+      }
+    }
+  ],
+  "figure_scales": [
+    {
+      "chapter": "02",
+      "id": "p045-f16",
+      "factor": 0.96,
+      "source_page": 45,
+      "old_height": 211.8999735733479,
+      "current_height": 203.42397463041402,
+      "before_source_pages": 2,
+      "after_source_pages": 1
+    },
+    {
+      "chapter": "03",
+      "id": "p094-f28",
+      "factor": 0.96,
+      "source_page": 94,
+      "old_height": 89.50001090608248,
+      "current_height": 85.92001046983921,
+      "before_source_pages": 2,
+      "after_source_pages": 1
+    },
+    {
+      "chapter": "03",
+      "id": "p094-f29",
+      "factor": 0.96,
+      "source_page": 94,
+      "old_height": 94.35000682840143,
+      "current_height": 90.5760065552654,
+      "before_source_pages": 2,
+      "after_source_pages": 1
+    },
+    {
+      "chapter": "03",
+      "id": "p120-f55",
+      "factor": 0.97,
+      "source_page": 120,
+      "old_height": 103.89995945224962,
+      "current_height": 100.78296066868214,
+      "before_source_pages": 2,
+      "after_source_pages": 1
+    },
+    {
+      "chapter": "03",
+      "id": "p120-f56",
+      "factor": 0.97,
+      "source_page": 120,
+      "old_height": 168.7000175127505,
+      "current_height": 163.639016987368,
+      "before_source_pages": 2,
+      "after_source_pages": 1
+    },
+    {
+      "chapter": "03",
+      "id": "p120-f57",
+      "factor": 0.97,
+      "source_page": 120,
+      "old_height": 206.56001395283488,
+      "current_height": 200.36321353424978,
+      "before_source_pages": 2,
+      "after_source_pages": 1
+    }
+  ],
+  "section_breaks": [
+    {
+      "chapter": "ex05",
+      "id": "p046-b05",
+      "source_page": 46,
+      "text": "演習5.5. 【オプション】顔写真の全画面適用",
+      "markers": [
+        {
+          "id": "p046-b05",
+          "edge": "heading",
+          "page": 12,
+          "x": 85.104,
+          "y": 86.0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chapter": "ex05",
+      "id": "p046-b07",
+      "source_page": 46,
+      "text": "演習5.6. 【オプション】権限による「給与検索」の動的表示",
+      "markers": [
+        {
+          "id": "p046-b07",
+          "edge": "heading",
+          "page": 13,
+          "x": 85.104,
+          "y": 86.0
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "problems": [],
+  "allowed_pairs": [
+    {
+      "chapter": "02",
+      "source_page": 48,
+      "previous": 47,
+      "page": 19,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "02",
+      "source_page": 52,
+      "previous": 51,
+      "page": 23,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "02",
+      "source_page": 44,
+      "previous": 43,
+      "page": 14,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "02",
+      "source_page": 49,
+      "previous": 48,
+      "page": 20,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "02",
+      "source_page": 50,
+      "previous": 49,
+      "page": 21,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "02",
+      "source_page": 54,
+      "previous": 53,
+      "page": 26,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "02",
+      "source_page": 59,
+      "previous": 58,
+      "page": 33,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "03",
+      "source_page": 68,
+      "previous": 67,
+      "page": 6,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "03",
+      "source_page": 71,
+      "previous": 70,
+      "page": 10,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "03",
+      "source_page": 75,
+      "previous": 74,
+      "page": 16,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "03",
+      "source_page": 98,
+      "previous": 97,
+      "page": 44,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "03",
+      "source_page": 102,
+      "previous": 101,
+      "page": 49,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "03",
+      "source_page": 109,
+      "previous": 108,
+      "page": 56,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "03",
+      "source_page": 119,
+      "previous": 118,
+      "page": 69,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "03",
+      "source_page": 80,
+      "previous": 79,
+      "page": 23,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "03",
+      "source_page": 88,
+      "previous": 87,
+      "page": 32,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "03",
+      "source_page": 93,
+      "previous": 92,
+      "page": 38,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "03",
+      "source_page": 101,
+      "previous": 100,
+      "page": 48,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "03",
+      "source_page": 131,
+      "previous": 130,
+      "page": 82,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "04",
+      "source_page": 137,
+      "previous": 136,
+      "page": 5,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "04",
+      "source_page": 141,
+      "previous": 140,
+      "page": 10,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "04",
+      "source_page": 144,
+      "previous": 143,
+      "page": 14,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "04",
+      "source_page": 145,
+      "previous": 144,
+      "page": 15,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "04",
+      "source_page": 160,
+      "previous": 159,
+      "page": 35,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "04",
+      "source_page": 152,
+      "previous": 151,
+      "page": 24,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "05",
+      "source_page": 180,
+      "previous": 179,
+      "page": 19,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "05",
+      "source_page": 182,
+      "previous": 181,
+      "page": 21,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "05",
+      "source_page": 169,
+      "previous": 168,
+      "page": 6,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "06",
+      "source_page": 202,
+      "previous": 201,
+      "page": 11,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "06",
+      "source_page": 212,
+      "previous": 211,
+      "page": 21,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "06",
+      "source_page": 218,
+      "previous": 217,
+      "page": 27,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "06",
+      "source_page": 226,
+      "previous": 225,
+      "page": 36,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "06",
+      "source_page": 230,
+      "previous": 229,
+      "page": 39,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "06",
+      "source_page": 231,
+      "previous": 230,
+      "page": 40,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "06",
+      "source_page": 201,
+      "previous": 200,
+      "page": 10,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "07",
+      "source_page": 247,
+      "previous": 246,
+      "page": 11,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "07",
+      "source_page": 266,
+      "previous": 265,
+      "page": 33,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "07",
+      "source_page": 268,
+      "previous": 267,
+      "page": 36,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "07",
+      "source_page": 269,
+      "previous": 268,
+      "page": 36,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "07",
+      "source_page": 271,
+      "previous": 270,
+      "page": 39,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "07",
+      "source_page": 279,
+      "previous": 278,
+      "page": 49,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "07",
+      "source_page": 249,
+      "previous": 248,
+      "page": 14,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "ex05",
+      "source_page": 46,
+      "previous": 45,
+      "page": 11,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "ex07",
+      "source_page": 66,
+      "previous": 65,
+      "page": 3,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "ex07",
+      "source_page": 69,
+      "previous": 68,
+      "page": 6,
+      "reason": "short-minor-heading"
+    },
+    {
+      "chapter": "ex07",
+      "source_page": 71,
+      "previous": 70,
+      "page": 8,
+      "reason": "continued-prose"
+    },
+    {
+      "chapter": "ex07",
+      "source_page": 73,
+      "previous": 72,
+      "page": 10,
+      "reason": "continued-prose"
+    }
+  ]
+}

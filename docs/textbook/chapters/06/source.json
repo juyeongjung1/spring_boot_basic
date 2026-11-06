@@ -419,5 +419,20 @@
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-null-reference-guard-caption"
     }
+  },
+  "pagination": {
+    "continue_before": {
+      "202": "short-minor-heading",
+      "207": "short-minor-heading",
+      "210": "short-minor-heading",
+      "212": "short-minor-heading",
+      "218": "short-minor-heading",
+      "226": "short-minor-heading",
+      "230": "short-minor-heading",
+      "231": "short-minor-heading",
+      "201": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
   }
 }

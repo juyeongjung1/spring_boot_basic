@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 
 import pymupdf as fitz
 
-from build import ROOT, normalized, read_markdown
+from build import ROOT, normalized, read_markdown, pagination_options
 
 
 class PaginationTests(unittest.TestCase):
@@ -20,12 +20,15 @@ class PaginationTests(unittest.TestCase):
                             key=lambda m: (m['page'], m['y']))
                 self.assertEqual({m['page'] for m in intro}, {start['page']})
 
-    def test_every_source_page_starts_after_the_previous_content(self):
+    def test_only_reviewed_source_pages_can_continue_the_previous_content(self):
         for folder in (ROOT / 'docs/textbook/chapters').iterdir():
             if not (folder / 'source.json').exists():
                 continue
             config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
             checks = json.loads((ROOT / 'output/pdf/textbook' / ('chapter-' + folder.name) / 'checks.json').read_text(encoding='utf-8'))
+            layout = json.loads((folder / 'source-layout.json').read_text(encoding='utf-8'))
+            nodes, figures, order = read_markdown(folder / 'chapter.md')
+            allowed, _, _ = pagination_options(config, layout, nodes, figures, order)
             marks = checks['flow']['block_positions']
             expected = list(range(config['first_page'], config['last_page'] + 1))
             if config.get('cover_mode', 'classic') != 'none':
@@ -36,10 +39,37 @@ class PaginationTests(unittest.TestCase):
             for n, (start, source, page) in enumerate(boundaries):
                 stop = boundaries[n + 1][0] if n + 1 < len(boundaries) else len(marks)
                 content = marks[start + 1:stop]
-                self.assertGreater(page, previous_end, (folder.name, source))
+                if source in allowed:
+                    self.assertGreaterEqual(page, previous_end, (folder.name, source))
+                else:
+                    self.assertGreater(page, previous_end, (folder.name, source))
                 self.assertTrue(content, (folder.name, source, '空白ページも実体を保持する'))
                 self.assertTrue(all(m['page'] >= page for m in content), (folder.name, source))
                 previous_end = max(m['page'] for m in content)
+
+    def test_requested_continuations_and_short_operation_pages_stay_together(self):
+        checks = json.loads((ROOT / 'output/pdf/textbook/chapter-02/checks.json').read_text(encoding='utf-8'))
+        marks = checks['flow']['block_positions']
+        def edge(ident, kind):
+            return next(m for m in marks if m['id']==ident and m['edge']==kind)
+        self.assertEqual(edge('p043-b09','end')['page'], edge('p044-b01','start')['page'])
+        self.assertEqual(edge('p048-b07','end')['page'], edge('p049-b01','start')['page'])
+        self.assertEqual(edge('p045-b01','heading')['page'], edge('p045-f17','end')['page'])
+        # 旧54～56pの短い説明は、次のHTMLコードと同じ頁へ続ける。
+        self.assertEqual(edge('p048-b07','end')['page'], edge('p049-b04','start')['page'])
+        self.assertEqual(edge('p047-b04','end')['page'], edge('p048-b01','heading')['page'])
+
+    def test_section_and_subsection_page_starts_remain_protected(self):
+        import re
+        for folder in (ROOT/'docs/textbook/chapters').iterdir():
+            if not (folder/'source.json').exists():
+                continue
+            config=json.loads((folder/'source.json').read_text(encoding='utf-8'))
+            nodes,_,order=read_markdown(folder/'chapter.md')
+            for page in order:
+                first=next((nodes[i] for i in page['entries'] if i in nodes),None)
+                if first and re.match(r'^(?:演習\s*)?\d+\.\d+(?:\.\d+)?(?:[.\s]|$)',first['text'].strip()):
+                    self.assertNotIn(str(page['source_page']),config.get('pagination',{}).get('continue_before',{}))
 
     def test_slide_positions_keep_the_original_upper_area(self):
         count = 0

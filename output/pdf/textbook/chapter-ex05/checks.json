@@ -125,7 +125,7 @@
     ]
   },
   "flow": {
-    "pages": 12,
+    "pages": 13,
     "native_text_complete": true,
     "heading_orphans": [],
     "split_figures": [],
@@ -1518,107 +1518,107 @@
       {
         "id": "__source-page-46",
         "edge": "source-page",
-        "page": 12,
+        "page": 11,
         "x": 85.104,
-        "y": 86.0
+        "y": 128.83015625
       },
       {
         "id": "p046-b01",
         "edge": "start",
-        "page": 12,
-        "x": 96.144,
-        "y": 86.0
-      },
-      {
-        "id": "p046-b01",
-        "edge": "end",
-        "page": 12,
-        "x": 96.144,
-        "y": 115.87015625
-      },
-      {
-        "id": "p046-b02",
-        "edge": "start",
-        "page": 12,
+        "page": 11,
         "x": 96.144,
         "y": 128.83015625
       },
       {
+        "id": "p046-b01",
+        "edge": "end",
+        "page": 11,
+        "x": 96.144,
+        "y": 158.70031250000002
+      },
+      {
+        "id": "p046-b02",
+        "edge": "start",
+        "page": 11,
+        "x": 96.144,
+        "y": 171.6603125
+      },
+      {
         "id": "p046-b02",
         "edge": "end",
-        "page": 12,
+        "page": 11,
         "x": 96.144,
-        "y": 176.70031250000002
+        "y": 219.53046874999998
       },
       {
         "id": "p046-b03",
         "edge": "start",
-        "page": 12,
+        "page": 11,
         "x": 96.144,
-        "y": 189.6603125
+        "y": 232.49046874999996
       },
       {
         "id": "p046-b03",
         "edge": "end",
-        "page": 12,
+        "page": 11,
         "x": 96.144,
-        "y": 201.53046874999998
+        "y": 244.36062499999997
       },
       {
         "id": "p046-b04",
         "edge": "start",
-        "page": 12,
+        "page": 11,
         "x": 96.144,
-        "y": 214.49046875
+        "y": 257.32062499999995
       },
       {
         "id": "p046-b04",
         "edge": "end",
-        "page": 12,
+        "page": 11,
         "x": 96.144,
-        "y": 226.36062500000003
+        "y": 269.19078124999993
       },
       {
         "id": "p046-b05",
         "edge": "heading",
         "page": 12,
         "x": 85.104,
-        "y": 244.36062500000003
+        "y": 86.0
       },
       {
         "id": "p046-b06",
         "edge": "start",
         "page": 12,
         "x": 96.144,
-        "y": 274.39501953125
+        "y": 116.03439453125002
       },
       {
         "id": "p046-b06",
         "edge": "end",
         "page": 12,
         "x": 96.144,
-        "y": 304.26517578125
+        "y": 145.90455078125004
       },
       {
         "id": "p046-b07",
         "edge": "heading",
-        "page": 12,
+        "page": 13,
         "x": 85.104,
-        "y": 322.26517578125
+        "y": 86.0
       },
       {
         "id": "p046-b08",
         "edge": "start",
-        "page": 12,
+        "page": 13,
         "x": 96.144,
-        "y": 352.29957031249995
+        "y": 116.03439453125002
       },
       {
         "id": "p046-b08",
         "edge": "end",
-        "page": 12,
+        "page": 13,
         "x": 96.144,
-        "y": 363.3395703125
+        "y": 127.07439453125001
       }
     ],
     "url_links": [
@@ -1707,6 +1707,73 @@
         "caption": "",
         "title": ""
       }
+    },
+    "pagination": {
+      "options": {
+        "continue_before": {
+          "46": "continued-prose"
+        },
+        "paragraph_continuations": [],
+        "figure_scales": {}
+      },
+      "source_boundaries": [
+        {
+          "source_page": 38,
+          "page": 2,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 39,
+          "page": 3,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 40,
+          "page": 4,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 41,
+          "page": 5,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 42,
+          "page": 7,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 43,
+          "page": 8,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 44,
+          "page": 9,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 45,
+          "page": 10,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 46,
+          "page": 11,
+          "mode": "continue",
+          "reason": "continued-prose"
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
     },
     "html_components": []
   }

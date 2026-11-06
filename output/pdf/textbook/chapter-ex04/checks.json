@@ -1878,6 +1878,55 @@
         "title": ""
       }
     },
+    "pagination": {
+      "options": {},
+      "source_boundaries": [
+        {
+          "source_page": 30,
+          "page": 2,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 31,
+          "page": 3,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 32,
+          "page": 4,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 33,
+          "page": 5,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 34,
+          "page": 6,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 35,
+          "page": 7,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 36,
+          "page": 8,
+          "mode": "page-break",
+          "reason": null
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
+    },
     "html_components": [
       {
         "id": "ex04-p034-table01",

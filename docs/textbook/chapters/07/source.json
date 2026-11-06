@@ -398,5 +398,18 @@
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-cdn-local-delivery-caption"
     }
+  },
+  "pagination": {
+    "continue_before": {
+      "247": "short-minor-heading",
+      "266": "short-minor-heading",
+      "268": "short-minor-heading",
+      "269": "short-minor-heading",
+      "271": "short-minor-heading",
+      "279": "short-minor-heading",
+      "249": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
   }
 }

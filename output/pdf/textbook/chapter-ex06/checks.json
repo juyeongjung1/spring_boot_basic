@@ -2479,6 +2479,103 @@
         "title": ""
       }
     },
+    "pagination": {
+      "options": {},
+      "source_boundaries": [
+        {
+          "source_page": 48,
+          "page": 2,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 49,
+          "page": 3,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 50,
+          "page": 4,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 51,
+          "page": 6,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 52,
+          "page": 7,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 53,
+          "page": 8,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 54,
+          "page": 9,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 55,
+          "page": 10,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 56,
+          "page": 11,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 57,
+          "page": 12,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 58,
+          "page": 13,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 59,
+          "page": 14,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 60,
+          "page": 15,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 61,
+          "page": 16,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 62,
+          "page": 17,
+          "mode": "page-break",
+          "reason": null
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
+    },
     "html_components": [
       {
         "id": "ex06-p049-table01",

@@ -1,0 +1,16 @@
+{
+  "chapter_input_pdfs_unchanged": 38,
+  "before": {
+    "output/pdf/textbook/textbook/reference.pdf": "f443a948fe8bbf8645f9d24a4689c125a9f921a024adb5629cad3427f9b5b981",
+    "output/pdf/textbook/textbook/comparison.pdf": "ba079fb953622f433a2880cbb1a28970df2c3a20aa875eded51ff02e031cc2a3",
+    "output/pdf/textbook/exercise/reference.pdf": "310c4ebd4dcde12e309efaeabb6a82613c20b415bad1c7411a101be8b66a44f0",
+    "output/pdf/textbook/exercise/comparison.pdf": "9447b394aaa2b60514a100235cd2767c0becaeba3874fcf508ae82c9ac3da7e3"
+  },
+  "after": {
+    "output/pdf/textbook/textbook/reference.pdf": "8276782673b95ffbf0f807501c2fd07d77f61791f0fe6f270212b0b873eb8a0e",
+    "output/pdf/textbook/textbook/comparison.pdf": "a7be90e709900f5ba214ae3e96ece2f17c933ecbbf26232699f9f433aac86342",
+    "output/pdf/textbook/exercise/reference.pdf": "0ba517a79ab453363efa18977cde04258950c6bc9e5bc8fccafb191681b1a9e3",
+    "output/pdf/textbook/exercise/comparison.pdf": "42f6878fa831d591ec56135ec5c60aa2c2991be22178effc6fff1e28dbe6f970"
+  },
+  "reason": "元位置再現版と比較版の入力38件は同一。4合冊の再保存による不要差分だけを戻して保持。"
+}

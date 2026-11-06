@@ -158,8 +158,8 @@ class IllustrationSourceTests(unittest.TestCase):
                     cwd=ROOT, check=True, capture_output=True)
                 before = json.loads(before.stdout)
                 config = chapter(name)[4]
-                self.assertEqual({k:v for k,v in config.items() if k != 'illustrations'},
-                                 {k:v for k,v in before.items() if k != 'illustrations'})
+                self.assertEqual({k:v for k,v in config.items() if k not in {'illustrations','pagination'}},
+                                 {k:v for k,v in before.items() if k not in {'illustrations','pagination'}})
                 old_options = before.get('illustrations', {})
                 new_options = config.get('illustrations', {})
                 self.assertEqual(set(new_options) - set(old_options), additions[name])
@@ -220,6 +220,8 @@ class IllustrationSourceTests(unittest.TestCase):
                 before_config = json.loads(subprocess.run(command + [FIGURE_REVISION_EDITION + ':' + relative],
                     cwd=ROOT, check=True, capture_output=True).stdout)
                 current_config = dict(config)
+                # 頁継続・小幅な図縮小はtest_paginationと専用監査で別に検査する。
+                current_config.pop('pagination',None)
                 current_options = dict(current_config.get('illustrations', {}))
                 if name == '01':
                     old_options = before_config['illustrations']

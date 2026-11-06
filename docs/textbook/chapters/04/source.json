@@ -342,5 +342,19 @@
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-null-blank-constraints-caption"
     }
+  },
+  "pagination": {
+    "continue_before": {
+      "137": "short-minor-heading",
+      "138": "short-minor-heading",
+      "141": "short-minor-heading",
+      "144": "short-minor-heading",
+      "145": "short-minor-heading",
+      "160": "short-minor-heading",
+      "152": "continued-prose",
+      "153": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
   }
 }

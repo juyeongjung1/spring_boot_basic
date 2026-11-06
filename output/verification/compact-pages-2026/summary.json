@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-06",
+  "base_commit": "2e85db99a0fb4b8e9183a936a7fb6e4ac59fa185",
+  "tests": 78,
+  "original_text_unchanged": true,
+  "audit": {
+    "passed": true,
+    "chapters": 19,
+    "original_pages": 373,
+    "mapped_source_pages": 373,
+    "physical_pages": 424,
+    "blank_pages": 17,
+    "original_ids": 2853,
+    "base_ids": 2945,
+    "authorized_added_ids": 0,
+    "current_ids": 2945,
+    "explanation_cards": 46,
+    "explanation_rows": 84,
+    "header_checks": 424,
+    "uri_links": 82,
+    "login3_real_links": 1,
+    "problems": 0,
+    "problem_counts": {},
+    "numbered_figures": 229,
+    "ppt_slides": 65,
+    "logical_links": 78,
+    "previous_physical_pages": 461,
+    "reduced_pages": 37,
+    "approved_continuations": 56,
+    "actual_shared_boundaries": 47,
+    "scaled_figures": 6
+  },
+  "before_pages": {
+    "textbook": 377,
+    "exercise": 84
+  },
+  "final_artifacts": [
+    {
+      "collection": "textbook",
+      "path": "output/pdf/textbook/textbook/flow.pdf",
+      "pages": 343,
+      "bytes": 86162197,
+      "sha256": "2587e2033031f38222c952c2525dba82c9dce60e008dbef4820cdd00cfec7381"
+    },
+    {
+      "collection": "exercise",
+      "path": "output/pdf/textbook/exercise/flow.pdf",
+      "pages": 81,
+      "bytes": 6877660,
+      "sha256": "fd28bc370f770b374def5db5295fa18cd8f626e6e7da085db0befffa6aa8a237"
+    }
+  ]
+}

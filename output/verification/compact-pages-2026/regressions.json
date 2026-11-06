@@ -1,0 +1,62 @@
+[
+  {
+    "suite": "pipeline",
+    "tests": 8,
+    "passed": true,
+    "log": "test-pipeline.log"
+  },
+  {
+    "suite": "pagination",
+    "tests": 10,
+    "passed": true,
+    "log": "test-pagination.log"
+  },
+  {
+    "suite": "symbols",
+    "tests": 2,
+    "passed": true,
+    "log": "test-symbols.log"
+  },
+  {
+    "suite": "remaining",
+    "tests": 9,
+    "passed": true,
+    "log": "test-remaining.log"
+  },
+  {
+    "suite": "fidelity",
+    "tests": 10,
+    "passed": true,
+    "log": "test-fidelity.log"
+  },
+  {
+    "suite": "source_layout",
+    "tests": 7,
+    "passed": true,
+    "log": "test-source_layout.log"
+  },
+  {
+    "suite": "bracket_headings",
+    "tests": 4,
+    "passed": true,
+    "log": "test-bracket_headings.log"
+  },
+  {
+    "suite": "illustrations",
+    "tests": 8,
+    "passed": true,
+    "log": "test-illustrations.log"
+  },
+  {
+    "suite": "figure_frames",
+    "tests": 5,
+    "passed": true,
+    "log": "test-figure_frames.log"
+  },
+  {
+    "suite": "html_components",
+    "tests": 15,
+    "passed": true,
+    "log": "prose-fonts/prose-font-tests.log"
+  }
+]

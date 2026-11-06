@@ -1,12 +1,13 @@
 {
   "collection": "textbook",
-  "flow_pages": 377,
+  "flow_pages": 343,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
+  "approved_continuation_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 63,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "380e793309f0c04af91377157c099b2682f3c04ebfabf37b4eda6d7cfcda6ef4",
-  "verification": "output/verification/figure-cards-2026/"
+  "pdf_sha256": "2587e2033031f38222c952c2525dba82c9dce60e008dbef4820cdd00cfec7381",
+  "verification": "output/verification/compact-pages-2026/"
 }

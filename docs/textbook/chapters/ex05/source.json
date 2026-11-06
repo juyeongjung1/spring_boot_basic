@@ -99,5 +99,12 @@
     }
   ],
   "cover_mode": "native",
-  "tables": []
+  "tables": [],
+  "pagination": {
+    "continue_before": {
+      "46": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
+  }
 }

@@ -67,6 +67,19 @@
       }
     ],
     "numbered_figures": {},
+    "pagination": {
+      "options": {},
+      "source_boundaries": [
+        {
+          "source_page": 77,
+          "page": 1,
+          "mode": "page-break",
+          "reason": null
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
+    },
     "html_components": []
   }
 }

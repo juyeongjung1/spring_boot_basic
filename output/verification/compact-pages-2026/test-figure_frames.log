@@ -1,0 +1,10 @@
+test_left_margin_figure_keeps_image_position_and_number_inside_body (test_figure_frames.FigureNumberTests.test_left_margin_figure_keeps_image_position_and_number_inside_body) ... ok
+test_native_number_tabs_do_not_intersect_source_content (test_figure_frames.FigureNumberTests.test_native_number_tabs_do_not_intersect_source_content) ... ok
+test_numbered_figures_cover_all_independent_images (test_figure_frames.FigureNumberTests.test_numbered_figures_cover_all_independent_images) ... ok
+test_only_actual_code_images_receive_figure_numbers (test_figure_frames.FigureNumberTests.test_only_actual_code_images_receive_figure_numbers) ... ok
+test_section_numbering_uses_main_section_not_subsection (test_figure_frames.FigureNumberTests.test_section_numbering_uses_main_section_not_subsection) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 35.570s
+
+OK

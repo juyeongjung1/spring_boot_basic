@@ -2243,6 +2243,103 @@
         "title": ""
       }
     },
+    "pagination": {
+      "options": {},
+      "source_boundaries": [
+        {
+          "source_page": 16,
+          "page": 2,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 17,
+          "page": 3,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 18,
+          "page": 4,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 19,
+          "page": 6,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 20,
+          "page": 7,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 21,
+          "page": 8,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 22,
+          "page": 9,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 23,
+          "page": 11,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 24,
+          "page": 12,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 25,
+          "page": 13,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 26,
+          "page": 14,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 27,
+          "page": 15,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 28,
+          "page": 16,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 29,
+          "page": 17,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 30,
+          "page": 18,
+          "mode": "page-break",
+          "reason": null
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
+    },
     "html_components": [
       {
         "id": "01-p023-b04",

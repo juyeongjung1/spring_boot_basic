@@ -171,6 +171,43 @@
     ],
     "url_links": [],
     "numbered_figures": {},
+    "pagination": {
+      "options": {},
+      "source_boundaries": [
+        {
+          "source_page": 2,
+          "page": 2,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 3,
+          "page": 3,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 4,
+          "page": 4,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 5,
+          "page": 5,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 6,
+          "page": 6,
+          "mode": "page-break",
+          "reason": null
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
+    },
     "html_components": []
   }
 }

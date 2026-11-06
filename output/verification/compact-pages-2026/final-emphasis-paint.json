@@ -1,0 +1,332 @@
+{
+  "passed": true,
+  "cards": 46,
+  "real_gothic_emphasis_fill_runs": 307,
+  "real_gothic_emphasis_stroke_runs": 307,
+  "method": "完成した章PDFの全46解説領域で本文10pt超のPゴシックfillに同文字・同位置・同色のstrokeがあることを検査。紙面線幅は通常本文と同じ字号/35pt。P明朝本文にstrokeが漏れていないことも検査。",
+  "records": [
+    {
+      "chapter": "02",
+      "id": "02-explanation-1",
+      "regular_mincho_fill_runs": 17,
+      "gothic_emphasis_fill_runs": 5,
+      "gothic_emphasis_stroke_runs": 5
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-2",
+      "regular_mincho_fill_runs": 21,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-3",
+      "regular_mincho_fill_runs": 41,
+      "gothic_emphasis_fill_runs": 14,
+      "gothic_emphasis_stroke_runs": 14
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-4",
+      "regular_mincho_fill_runs": 20,
+      "gothic_emphasis_fill_runs": 5,
+      "gothic_emphasis_stroke_runs": 5
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-5",
+      "regular_mincho_fill_runs": 43,
+      "gothic_emphasis_fill_runs": 11,
+      "gothic_emphasis_stroke_runs": 11
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-6",
+      "regular_mincho_fill_runs": 8,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-7",
+      "regular_mincho_fill_runs": 16,
+      "gothic_emphasis_fill_runs": 9,
+      "gothic_emphasis_stroke_runs": 9
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-8",
+      "regular_mincho_fill_runs": 10,
+      "gothic_emphasis_fill_runs": 5,
+      "gothic_emphasis_stroke_runs": 5
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-9",
+      "regular_mincho_fill_runs": 18,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-10",
+      "regular_mincho_fill_runs": 18,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-11",
+      "regular_mincho_fill_runs": 30,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "02",
+      "id": "02-explanation-12",
+      "regular_mincho_fill_runs": 4,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-1",
+      "regular_mincho_fill_runs": 21,
+      "gothic_emphasis_fill_runs": 14,
+      "gothic_emphasis_stroke_runs": 14
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-2",
+      "regular_mincho_fill_runs": 15,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-3",
+      "regular_mincho_fill_runs": 30,
+      "gothic_emphasis_fill_runs": 13,
+      "gothic_emphasis_stroke_runs": 13
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-4",
+      "regular_mincho_fill_runs": 18,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-5",
+      "regular_mincho_fill_runs": 7,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-6",
+      "regular_mincho_fill_runs": 24,
+      "gothic_emphasis_fill_runs": 20,
+      "gothic_emphasis_stroke_runs": 20
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-7",
+      "regular_mincho_fill_runs": 9,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-8",
+      "regular_mincho_fill_runs": 11,
+      "gothic_emphasis_fill_runs": 9,
+      "gothic_emphasis_stroke_runs": 9
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-9",
+      "regular_mincho_fill_runs": 19,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-10",
+      "regular_mincho_fill_runs": 5,
+      "gothic_emphasis_fill_runs": 13,
+      "gothic_emphasis_stroke_runs": 13
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-11",
+      "regular_mincho_fill_runs": 13,
+      "gothic_emphasis_fill_runs": 5,
+      "gothic_emphasis_stroke_runs": 5
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-12",
+      "regular_mincho_fill_runs": 9,
+      "gothic_emphasis_fill_runs": 17,
+      "gothic_emphasis_stroke_runs": 17
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-13",
+      "regular_mincho_fill_runs": 21,
+      "gothic_emphasis_fill_runs": 1,
+      "gothic_emphasis_stroke_runs": 1
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-14",
+      "regular_mincho_fill_runs": 11,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-15",
+      "regular_mincho_fill_runs": 34,
+      "gothic_emphasis_fill_runs": 7,
+      "gothic_emphasis_stroke_runs": 7
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-16",
+      "regular_mincho_fill_runs": 8,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-17",
+      "regular_mincho_fill_runs": 37,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "03",
+      "id": "03-explanation-18",
+      "regular_mincho_fill_runs": 17,
+      "gothic_emphasis_fill_runs": 1,
+      "gothic_emphasis_stroke_runs": 1
+    },
+    {
+      "chapter": "04",
+      "id": "04-explanation-1",
+      "regular_mincho_fill_runs": 14,
+      "gothic_emphasis_fill_runs": 10,
+      "gothic_emphasis_stroke_runs": 10
+    },
+    {
+      "chapter": "04",
+      "id": "04-explanation-2",
+      "regular_mincho_fill_runs": 37,
+      "gothic_emphasis_fill_runs": 10,
+      "gothic_emphasis_stroke_runs": 10
+    },
+    {
+      "chapter": "04",
+      "id": "04-explanation-3",
+      "regular_mincho_fill_runs": 16,
+      "gothic_emphasis_fill_runs": 21,
+      "gothic_emphasis_stroke_runs": 21
+    },
+    {
+      "chapter": "04",
+      "id": "04-explanation-4",
+      "regular_mincho_fill_runs": 29,
+      "gothic_emphasis_fill_runs": 8,
+      "gothic_emphasis_stroke_runs": 8
+    },
+    {
+      "chapter": "04",
+      "id": "04-explanation-5",
+      "regular_mincho_fill_runs": 23,
+      "gothic_emphasis_fill_runs": 9,
+      "gothic_emphasis_stroke_runs": 9
+    },
+    {
+      "chapter": "04",
+      "id": "04-explanation-6",
+      "regular_mincho_fill_runs": 6,
+      "gothic_emphasis_fill_runs": 15,
+      "gothic_emphasis_stroke_runs": 15
+    },
+    {
+      "chapter": "04",
+      "id": "04-explanation-7",
+      "regular_mincho_fill_runs": 21,
+      "gothic_emphasis_fill_runs": 22,
+      "gothic_emphasis_stroke_runs": 22
+    },
+    {
+      "chapter": "04",
+      "id": "04-explanation-8",
+      "regular_mincho_fill_runs": 34,
+      "gothic_emphasis_fill_runs": 16,
+      "gothic_emphasis_stroke_runs": 16
+    },
+    {
+      "chapter": "05",
+      "id": "05-explanation-1",
+      "regular_mincho_fill_runs": 30,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "05",
+      "id": "05-explanation-2",
+      "regular_mincho_fill_runs": 34,
+      "gothic_emphasis_fill_runs": 6,
+      "gothic_emphasis_stroke_runs": 6
+    },
+    {
+      "chapter": "05",
+      "id": "05-explanation-3",
+      "regular_mincho_fill_runs": 24,
+      "gothic_emphasis_fill_runs": 35,
+      "gothic_emphasis_stroke_runs": 35
+    },
+    {
+      "chapter": "07",
+      "id": "07-explanation-1",
+      "regular_mincho_fill_runs": 7,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "07",
+      "id": "07-explanation-2",
+      "regular_mincho_fill_runs": 18,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "07",
+      "id": "07-explanation-3",
+      "regular_mincho_fill_runs": 12,
+      "gothic_emphasis_fill_runs": 3,
+      "gothic_emphasis_stroke_runs": 3
+    },
+    {
+      "chapter": "07",
+      "id": "07-explanation-4",
+      "regular_mincho_fill_runs": 15,
+      "gothic_emphasis_fill_runs": 0,
+      "gothic_emphasis_stroke_runs": 0
+    },
+    {
+      "chapter": "07",
+      "id": "07-explanation-5",
+      "regular_mincho_fill_runs": 7,
+      "gothic_emphasis_fill_runs": 3,
+      "gothic_emphasis_stroke_runs": 3
+    }
+  ],
+  "problems": []
+}

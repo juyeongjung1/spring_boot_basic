@@ -195,27 +195,21 @@ def meaning_span(text, style_id, layout):
         return safe
     effects = style_id.split(':')
     style = layout.get('styles', {}).get(effects[-1])
-    declarations = []
+    emphasized = 'strong' in effects or bool(style and (
+        style.get('stroke', 0) or style.get('flags', 0)&16 or 'Bold' in style['font']))
+    family = 'MS PGothic' if emphasized else 'MS PMincho'
+    declarations = [f'font-family:"{family}"', f'font-weight:{700 if emphasized else 400}']
     if style:
         name = style['font']
-        family = next((family for key, family in (
-            ('MS-PMincho', 'MS PMincho'), ('MS-Mincho', 'MS Mincho'),
-            ('MS-PGothic', 'MS PGothic'), ('MS-Gothic', 'MS Gothic'),
-            ('MeiryoUI', 'Meiryo UI'), ('Meiryo', 'Meiryo'),
-            ('TimesNewRoman', 'Times New Roman'), ('Arial', 'Arial'),
-            ('SegoeUI', 'Segoe UI')) if key in name), name)
-        bold = style.get('stroke', 0) or style.get('flags', 0)&16 or 'Bold' in name
-        declarations += [f'font-family:"{family}"', f'font-size:{style["size"]}pt',
-                         f'color:{style["color"]}', f'font-weight:{700 if bold else 400}']
+        declarations += [f'font-size:{style["size"]}pt', f'color:{style["color"]}']
         if 'Italic' in name or style.get('flags', 0)&2:
             declarations.append('font-style:italic')
-    if 'strong' in effects:
-        declarations.append('font-weight:700')
     if 'emph' in effects:
         declarations.append('font-style:italic')
     if 'underline' in effects:
         declarations.append('text-decoration:underline')
-    body = '<span class="source-style" style="'+escape(';'.join(declarations), quote=True)+'">'+safe+'</span>'
+    classes = 'source-style prose-emphasis' if emphasized else 'source-style'
+    body = '<span class="'+classes+'" style="'+escape(';'.join(declarations), quote=True)+'">'+safe+'</span>'
     link = next((effect[5:] for effect in effects if effect.startswith('link%')), None)
     return '<a href="'+escape(unquote(link), quote=True)+'">'+body+'</a>' if link else body
 
@@ -385,7 +379,7 @@ def prepare(folder, config, layout, nodes, figures, order):
 def _render(specs, chapter):
     cache=ROOT/'tmp/html-components'
     cache.mkdir(parents=True,exist_ok=True)
-    version=(HERE/'components.css').read_bytes()+(HERE/'render_components.cjs').read_bytes()
+    version=(HERE/'components.css').read_bytes()+(HERE/'render_components.cjs').read_bytes()+Path(__file__).read_bytes()
     pending=[]
     for spec in specs:
         key=sha256(version+json.dumps({k:spec[k] for k in ('id','width','html')},ensure_ascii=False).encode()).hexdigest()
@@ -409,12 +403,15 @@ def _render(specs, chapter):
                 target=cache/(spec['cache_key']+'-'+str(index+1)+'.pdf')
                 target.write_bytes(Path(part['pdf']).read_bytes())
                 part['pdf']=str(target)
-                doc=fitz.open(target)
+                doc=fitz.open(stream=target.read_bytes(), filetype='pdf')
                 if len(doc)!=1:raise ValueError('HTML部品が単頁ではありません: '+spec['id'])
+                if finish_prose_emphasis(doc, spec['html']):
+                    target.write_bytes(doc.tobytes(garbage=4, deflate=True))
                 # Chromeの紙寸法の丸めを除き、DOMと同じpt座標で合成する。
                 part['pdf_text']=doc[0].get_text()
                 if Counter(normalized(part['text']))!=Counter(normalized(part['pdf_text'])):
                     raise ValueError('HTML/PDFの文字差: '+spec['id']+' '+str(Counter(normalized(part['text']))-Counter(normalized(part['pdf_text']))))
+                doc.close()
             spec['result']=result
             (cache/(spec['cache_key']+'.json')).write_text(json.dumps(result,ensure_ascii=False),encoding='utf-8')
     preview=ROOT/'output/html/textbook'
@@ -422,6 +419,36 @@ def _render(specs, chapter):
     css=(HERE/'components.css').read_text(encoding='utf-8')
     body='\n'.join('<article><p class="preview-id">'+escape(spec['id'])+'</p><div style="width:'+str(spec['width'])+'pt">'+spec['html']+'</div></article>' for spec in specs)
     (preview/(chapter+'.html')).write_text('<!doctype html><html lang="ja"><meta charset="utf-8"><title>'+escape(chapter)+' 教材部品プレビュー</title><style>'+css+'body{padding:24px;background:#eef2f6}article{margin:0 auto 28px;width:max-content;max-width:100%}.preview-id{font:12px sans-serif;color:#475569}</style><body>'+body+'</body></html>',encoding='utf-8')
+
+
+def finish_prose_emphasis(doc, html):
+    """Edgeが印刷時に落とす解説の擬似太字を、単一の文字描画で仕上げる。"""
+    sizes = {float(value) for value in re.findall(
+        r'class="source-style prose-emphasis" style="[^\"]*font-size:([\d.]+)pt', html)}
+    if not sizes:
+        return 0
+    changed = 0
+    for page in doc:
+        fonts = {font[4].encode() for font in page.get_fonts() if font[3].endswith('+MS-PGothic')}
+        def finish(match):
+            nonlocal changed
+            body = match[1]
+            uses = re.findall(rb'/([^\s]+)\s+([\d.]+)\s+Tf\b', body)
+            if len(uses) != 1 or uses[0][0] not in fonts or b'2 Tr' in body:
+                return match[0]
+            size = float(uses[0][1])
+            # Chromiumの文字サイズはCSS px、紙面上はその3/4pt。
+            if not any(abs(size*.75 - value) < .01 for value in sizes):
+                return match[0]
+            changed += 1
+            # 通常本文のPゴシック強調と同じ size/35。文字列・位置・色は動かさない。
+            return b'q\n'+str(size/35).encode()+b' w\nBT\n2 Tr\n'+body+b'\n0 Tr\nET\nQ'
+        for xref in page.get_contents():
+            original = doc.xref_stream(xref)
+            updated = re.sub(rb'\bBT\s(.*?)\bET\b', finish, original, flags=re.S)
+            if updated != original:
+                doc.update_stream(xref, updated)
+    return changed
 
 
 def embed(pdf, modern, marks):

@@ -1,0 +1,74 @@
+{
+  "pdf": "tmp/prose-fonts-2026/render/0003-05-p185-b01-1.pdf",
+  "colored_gothic_fill_runs": 4,
+  "passed": true,
+  "scope": "コードの読み方の見出し9.5ptを除く、11.04ptのPゴシック強調",
+  "chrome_sets_both_stroke_and_fill_red": true,
+  "runs": [
+    {
+      "text": "layout.html",
+      "fill_color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "stroke_colors": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "same_color": true
+    },
+    {
+      "text": "の場所をURL",
+      "fill_color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "stroke_colors": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "same_color": true
+    },
+    {
+      "text": " ",
+      "fill_color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "stroke_colors": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "same_color": true
+    },
+    {
+      "text": "で指定",
+      "fill_color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "stroke_colors": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "same_color": true
+    }
+  ],
+  "implementation_change_required": false
+}

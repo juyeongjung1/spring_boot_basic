@@ -872,5 +872,31 @@
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-redirect-new-request-caption"
     }
+  },
+  "pagination": {
+    "continue_before": {
+      "68": "short-minor-heading",
+      "71": "short-minor-heading",
+      "75": "short-minor-heading",
+      "89": "short-minor-heading",
+      "98": "short-minor-heading",
+      "102": "short-minor-heading",
+      "109": "short-minor-heading",
+      "119": "short-minor-heading",
+      "80": "continued-prose",
+      "88": "continued-prose",
+      "93": "continued-prose",
+      "101": "continued-prose",
+      "110": "continued-prose",
+      "131": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {
+      "p094-f28": 0.96,
+      "p094-f29": 0.96,
+      "p120-f55": 0.97,
+      "p120-f56": 0.97,
+      "p120-f57": 0.97
+    }
   }
 }

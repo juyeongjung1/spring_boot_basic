@@ -1,0 +1,183 @@
+[
+  {
+    "id": "native",
+    "fonts": [
+      "MS-PGothic"
+    ],
+    "texts": [
+      "Controller の中のメソッドは、通常は戻り値をString にします。"
+    ],
+    "strokes": [
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239,
+      null,
+      0.3154299855232239
+    ],
+    "ink": 3666527,
+    "size": [
+      1151,
+      61
+    ]
+  },
+  {
+    "id": "weight-400",
+    "fonts": [
+      "MS-PGothic"
+    ],
+    "texts": [
+      "Controller の中のメソッドは、通常は戻り値をString にします。"
+    ],
+    "strokes": [
+      null
+    ],
+    "ink": 2658803,
+    "size": [
+      1163,
+      61
+    ]
+  },
+  {
+    "id": "weight-500",
+    "fonts": [
+      "MS-PGothic"
+    ],
+    "texts": [
+      "Controller の中のメソッドは、通常は戻り値をString にします。"
+    ],
+    "strokes": [
+      null
+    ],
+    "ink": 2658803,
+    "size": [
+      1163,
+      61
+    ]
+  },
+  {
+    "id": "weight-600",
+    "fonts": [
+      "MS-PGothic"
+    ],
+    "texts": [
+      "Controller の中のメソッドは、通常は戻り値をString にします。"
+    ],
+    "strokes": [
+      null
+    ],
+    "ink": 2658803,
+    "size": [
+      1277,
+      61
+    ]
+  },
+  {
+    "id": "weight-700",
+    "fonts": [
+      "MS-PGothic"
+    ],
+    "texts": [
+      "Controller の中のメソッドは、通常は戻り値をString にします。"
+    ],
+    "strokes": [
+      null
+    ],
+    "ink": 2658803,
+    "size": [
+      1277,
+      61
+    ]
+  },
+  {
+    "id": "weight-800",
+    "fonts": [
+      "MS-PGothic"
+    ],
+    "texts": [
+      "Controller の中のメソッドは、通常は戻り値をString にします。"
+    ],
+    "strokes": [
+      null
+    ],
+    "ink": 2658803,
+    "size": [
+      1277,
+      61
+    ]
+  },
+  {
+    "id": "weight-900",
+    "fonts": [
+      "MS-PGothic"
+    ],
+    "texts": [
+      "Controller の中のメソッドは、通常は戻り値をString にします。"
+    ],
+    "strokes": [
+      null
+    ],
+    "ink": 2658803,
+    "size": [
+      1277,
+      61
+    ]
+  },
+  {
+    "id": "weight-1000",
+    "fonts": [
+      "MS-PGothic"
+    ],
+    "texts": [
+      "Controller の中のメソッドは、通常は戻り値をString にします。"
+    ],
+    "strokes": [
+      null
+    ],
+    "ink": 2658803,
+    "size": [
+      1277,
+      61
+    ]
+  },
+  {
+    "id": "weight-700-mode2",
+    "fonts": [
+      "MS-PGothic"
+    ],
+    "texts": [
+      "Controller の中のメソッドは、通常は戻り値をString にします。"
+    ],
+    "strokes": [
+      null,
+      0.4205714464187622
+    ],
+    "ink": 3664563,
+    "size": [
+      1277,
+      61
+    ]
+  }
+]

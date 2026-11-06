@@ -1,0 +1,6 @@
+{
+  "chapter": "07",
+  "source_page": 274,
+  "reason": "前元273pの10行目枠と、次頁継続用に生成した同じ枠が同頁で重複するため、従来の区切りを保つ。原文・生成コードは変更しない。",
+  "removed_permission": "continued-prose"
+}

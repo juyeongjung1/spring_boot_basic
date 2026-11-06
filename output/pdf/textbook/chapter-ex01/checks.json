@@ -325,6 +325,31 @@
     ],
     "url_links": [],
     "numbered_figures": {},
+    "pagination": {
+      "options": {},
+      "source_boundaries": [
+        {
+          "source_page": 8,
+          "page": 2,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 9,
+          "page": 3,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 10,
+          "page": 4,
+          "mode": "page-break",
+          "reason": null
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
+    },
     "html_components": []
   }
 }

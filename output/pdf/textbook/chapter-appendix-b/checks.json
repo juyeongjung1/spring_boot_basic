@@ -828,6 +828,49 @@
         ]
       }
     },
+    "pagination": {
+      "options": {},
+      "source_boundaries": [
+        {
+          "source_page": 291,
+          "page": 2,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 292,
+          "page": 5,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 293,
+          "page": 6,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 294,
+          "page": 7,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 295,
+          "page": 8,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 296,
+          "page": 9,
+          "mode": "page-break",
+          "reason": null
+        }
+      ],
+      "paragraph_continuations": [],
+      "scaled_figures": {}
+    },
     "html_components": [
       {
         "id": "appendix-b-revision-errors-trace",

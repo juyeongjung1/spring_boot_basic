@@ -135,5 +135,15 @@
       "has_header": true,
       "page": 71
     }
-  ]
+  ],
+  "pagination": {
+    "continue_before": {
+      "66": "short-minor-heading",
+      "69": "short-minor-heading",
+      "71": "continued-prose",
+      "73": "continued-prose"
+    },
+    "paragraph_continuations": [],
+    "figure_scales": {}
+  }
 }

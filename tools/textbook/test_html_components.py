@@ -191,15 +191,15 @@ class BrowserComponentTests(unittest.TestCase):
             source_ids=['second-keep-source'], source_fragments=[{'source_id': 'second-keep-source',
                 'role': 'meaning', 'text': '次の項目の原文説明です。'}])]}
         keep_explanation = components.explanation_html(keep_record, {})
-        styled_node = {'parts': [('通常の説明。', 's1'), ('原文の部分強調。', 's2')],
+        styled_node = {'parts': [('通常の説明。', 's1'), ('原文の部分強調。', 'link%https%3A%2F%2Fexample.com%2F:s2')],
                        'text': '通常の説明。原文の部分強調。'}
         styled_record = {'owner_code_ids': [], 'rows': [dict(line_label='2 行目', code='return "index";',
             meaning=styled_node['text'], source_ids=['styled-meaning-source'], source_fragments=[{
                 'source_id': 'styled-meaning-source', 'role': 'meaning', 'text': styled_node['text'],
                 'start': 0, 'end': len(styled_node['text'])}])]}
         styled_explanation = components.explanation_html(styled_record, {'styled-meaning-source': styled_node},
-            {'styles': {'s1': {'font': 'MS-PMincho', 'size': 11.04, 'color': '#000000', 'flags': 4},
-                        's2': {'font': 'MS-PGothic', 'size': 11.04, 'color': '#000000', 'stroke': .3}}})
+            {'styles': {'s1': {'font': 'TimesNewRomanPSMT', 'size': 11.04, 'color': '#000000', 'flags': 4},
+                        's2': {'font': 'MS-PMincho', 'size': 11.04, 'color': '#000000', 'stroke': .31543}}})
         colors = components.code_html([{'number': 1, 'code': '@Controller', 'ids': ['annotation-source']}], 'java', [])
         html_colors = components.code_html([{'number': 1, 'code': '<span th:text="${user.id}">名前</span>',
             'ids': ['html-source']}], 'html', [])
@@ -213,6 +213,10 @@ class BrowserComponentTests(unittest.TestCase):
         _, _, real_layout, real_nodes, _, _ = chapter('02')
         cls.cards.append({'id': 'original-explanation', 'width': 426.672,
             'html': components.explanation_html(real_record, real_nodes, real_layout)})
+        public_record = next(r for r in json.loads((components.HERE / 'code_explanations.json').read_text(encoding='utf-8'))
+                             if r['anchor_id'] == 'p043-b05')
+        cls.cards.append({'id': 'public-explanation', 'width': 426.672,
+            'html': components.explanation_html(public_record, real_nodes, real_layout)})
         wrapped = components.code_html([{'number': 1, 'code': '// 折り返し確認', 'ids': ['wrapped-code-source']}],
             'java', [('非常に長いファイル名/授業教材/商品管理画面の入力値を確認する/MessageController.java', ['wrapped-filename-source'])])
         cls.cards.append({'id': 'wrapped-code', 'width': 240, 'html': wrapped})
@@ -225,6 +229,16 @@ class BrowserComponentTests(unittest.TestCase):
         if run.returncode:
             raise AssertionError(run.stdout + run.stderr)
         cls.results = {c['id']: c['parts'] for c in json.loads((cls.work / 'render/results.json').read_text(encoding='utf-8'))['cards']}
+        cls.before_emphasis = {}
+        html_by_id = {card['id']: card['html'] for card in cls.cards}
+        for ident, parts in cls.results.items():
+            for index, part in enumerate(parts):
+                path = Path(part['pdf'])
+                with fitz.open(stream=path.read_bytes(), filetype='pdf') as pdf:
+                    cls.before_emphasis[(ident,index)] = dict(text=pdf[0].get_text(),
+                        words=pdf[0].get_text('words'), links=pdf[0].get_links())
+                    if components.finish_prose_emphasis(pdf, html_by_id[ident]):
+                        path.write_bytes(pdf.tobytes(garbage=4, deflate=True))
 
     def test_actual_component_pdfs_are_single_page_and_keep_all_dom_text_and_anchors(self):
         for ident, parts in self.results.items():
@@ -283,7 +297,8 @@ class BrowserComponentTests(unittest.TestCase):
           await page.evaluate(()=>document.fonts.ready);
           console.log(JSON.stringify(await page.evaluate(()=>({
             filenames:[...document.querySelectorAll('.filename')].map(e=>getComputedStyle(e).fontWeight),
-            originalEmphasis:[...document.querySelectorAll('.source-style')].some(e=>Number(getComputedStyle(e).fontWeight)>=700),
+            originalEmphasis:[...document.querySelectorAll('.prose-emphasis')].map(e=>({
+              family:getComputedStyle(e).fontFamily,weight:getComputedStyle(e).fontWeight})),
             summaries:[...document.querySelectorAll('.meaning-summary')].map(e=>getComputedStyle(e).fontWeight),
             explanationWidths:[...document.querySelectorAll('.explanation-code, .explanation-paragraph')].map(e=>e.getBoundingClientRect().width)
           }))));}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1});'''
@@ -293,6 +308,8 @@ class BrowserComponentTests(unittest.TestCase):
         applied = json.loads(run.stdout)
         self.assertTrue(all(int(weight) >= 700 for weight in applied['filenames']))
         self.assertTrue(applied['originalEmphasis'])
+        self.assertTrue(all('MS PGothic' in item['family'] and int(item['weight']) >= 700
+                            for item in applied['originalEmphasis']))
         self.assertEqual(applied['summaries'], [])
         self.assertTrue(all(width > 426 for width in applied['explanationWidths']))
 
@@ -310,6 +327,32 @@ class BrowserComponentTests(unittest.TestCase):
             original_bold = [s for s in spans if '原文の部分強調' in s['text']]
             self.assertTrue(regular and all(s['font'].startswith('MS-PMincho') and not s['flags'] & 16 for s in regular))
             self.assertTrue(original_bold and all(s['font'].startswith('MS-PGothic') for s in original_bold))
+
+    def test_public_explanation_uses_the_same_body_and_emphasis_fonts(self):
+        with fitz.open(self.results['public-explanation'][0]['pdf']) as pdf:
+            spans = [s for b in pdf[0].get_text('dict')['blocks'] for line in b.get('lines', []) for s in line['spans']]
+            regular = [s for s in spans if 'public は、このメソッド' in s['text']]
+            emphasis = [s for s in spans if 'Controller の中のメソッドは' in s['text']]
+            self.assertTrue(regular and all(s['font'].startswith('MS-PMincho') for s in regular))
+            self.assertTrue(emphasis and all(s['font'].startswith('MS-PGothic') for s in emphasis))
+            self.assertTrue(all(abs(s['size']-11.04) < .03 for s in regular+emphasis))
+            self.assertTrue(any(t['font']=='MS-PGothic' and t['type']==1 and t['linewidth'] > .4
+                                for t in pdf[0].get_texttrace()))
+            before = self.before_emphasis[('public-explanation',0)]
+            self.assertEqual(pdf[0].get_text(), before['text'])
+            self.assertEqual(pdf[0].get_text('words'), before['words'])
+            self.assertEqual(pdf[0].get_links(), before['links'])
+
+    def test_emphasis_finishing_keeps_link_text_and_geometry_without_duplicate_text(self):
+        before = self.before_emphasis[('styled-explanation',0)]
+        with fitz.open(self.results['styled-explanation'][0]['pdf']) as pdf:
+            self.assertEqual(pdf[0].get_text(), before['text'])
+            self.assertEqual(pdf[0].get_text('words'), before['words'])
+            signature = lambda links: [(link['kind'],link.get('uri'),tuple(link['from'])) for link in links]
+            self.assertTrue(before['links'])
+            self.assertEqual(signature(pdf[0].get_links()), signature(before['links']))
+            html = next(c['html'] for c in self.cards if c['id']=='styled-explanation')
+            self.assertEqual(components.finish_prose_emphasis(pdf, html), 0)
 
     def test_long_meaning_splits_inside_paragraph_without_text_or_source_id_loss(self):
         parts = self.results['long-explanation']
