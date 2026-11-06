@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-11-06T01:01:47.253240+00:00",
+  "source_only": true,
+  "audit_syntax_valid": true,
+  "passed": true,
+  "chapters": 19,
+  "old_content_ids": 2879,
+  "current_content_ids": 2897,
+  "immutable_source_files": 38,
+  "recorded_assets": 738,
+  "catalog_sha256": "53671c88892205a4bdd00de9f31887a4fd31001ba69490c0606628d6e2d0cf60",
+  "problems": [],
+  "final_pdf_audit_executed": false
+}

@@ -315,5 +315,17 @@
       "has_header": true,
       "page": 136
     }
-  ]
+  ],
+  "illustrations": {
+    "illustration-2026-session-separation": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-2026-session-separation-caption"
+    },
+    "illustration-2026-validation-branch": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-2026-validation-branch-caption"
+    }
+  }
 }

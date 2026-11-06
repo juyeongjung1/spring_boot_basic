@@ -5,8 +5,8 @@
     133,
     163
   ],
-  "blocks": 195,
-  "figures": 25,
+  "blocks": 197,
+  "figures": 27,
   "source_coverage": [
     {
       "body": 97,
@@ -363,7 +363,7 @@
     "split_short_code": [],
     "split_short_tables": [],
     "split_instructions": [],
-    "instruction_groups": 6,
+    "instruction_groups": 8,
     "fixed_pages": [
       2,
       34,
@@ -677,7 +677,7 @@
         "edge": "end",
         "page": 7,
         "x": 85.104,
-        "y": 322.345
+        "y": 340.345
       },
       {
         "id": "__source-page-138",
@@ -1301,6 +1301,48 @@
         "page": 13,
         "x": 85.104,
         "y": 574.1466284179687
+      },
+      {
+        "id": "instruction-illustration-2026-session-separation",
+        "edge": "start",
+        "page": 13,
+        "x": 85.104,
+        "y": 587.1066284179688
+      },
+      {
+        "id": "illustration-2026-session-separation",
+        "edge": "start",
+        "page": 13,
+        "x": 85.104,
+        "y": 587.1066284179688
+      },
+      {
+        "id": "illustration-2026-session-separation",
+        "edge": "end",
+        "page": 13,
+        "x": 85.104,
+        "y": 704.2789710392277
+      },
+      {
+        "id": "illustration-2026-session-separation-caption",
+        "edge": "start",
+        "page": 13,
+        "x": 85.104,
+        "y": 708.2789710392277
+      },
+      {
+        "id": "illustration-2026-session-separation-caption",
+        "edge": "end",
+        "page": 13,
+        "x": 85.104,
+        "y": 717.7789710392277
+      },
+      {
+        "id": "instruction-illustration-2026-session-separation",
+        "edge": "end",
+        "page": 13,
+        "x": 85.104,
+        "y": 717.7789710392278
       },
       {
         "id": "__source-page-143",
@@ -1958,35 +2000,35 @@
         "edge": "end",
         "page": 19,
         "x": 85.104,
-        "y": 586.9200000000001
+        "y": 604.9200000000001
       },
       {
         "id": "p147-b08",
         "edge": "start",
         "page": 19,
         "x": 85.104,
-        "y": 599.8800000000001
+        "y": 617.88
       },
       {
         "id": "p147-b08",
         "edge": "end",
         "page": 19,
         "x": 85.104,
-        "y": 628.9200000000001
+        "y": 646.92
       },
       {
         "id": "p147-b09",
         "edge": "start",
         "page": 19,
         "x": 85.104,
-        "y": 641.88
+        "y": 659.88
       },
       {
         "id": "p147-b09",
         "edge": "end",
         "page": 19,
         "x": 85.104,
-        "y": 670.92
+        "y": 688.92
       },
       {
         "id": "__source-page-148",
@@ -2036,6 +2078,48 @@
         "page": 20,
         "x": 85.104,
         "y": 484.14662841796877
+      },
+      {
+        "id": "instruction-illustration-2026-validation-branch",
+        "edge": "start",
+        "page": 20,
+        "x": 85.104,
+        "y": 497.10662841796875
+      },
+      {
+        "id": "illustration-2026-validation-branch",
+        "edge": "start",
+        "page": 20,
+        "x": 85.104,
+        "y": 497.10662841796875
+      },
+      {
+        "id": "illustration-2026-validation-branch",
+        "edge": "end",
+        "page": 20,
+        "x": 85.104,
+        "y": 613.7492648752293
+      },
+      {
+        "id": "illustration-2026-validation-branch-caption",
+        "edge": "start",
+        "page": 20,
+        "x": 85.104,
+        "y": 617.7492648752293
+      },
+      {
+        "id": "illustration-2026-validation-branch-caption",
+        "edge": "end",
+        "page": 20,
+        "x": 85.104,
+        "y": 627.2492648752293
+      },
+      {
+        "id": "instruction-illustration-2026-validation-branch",
+        "edge": "end",
+        "page": 20,
+        "x": 85.104,
+        "y": 627.2492648752293
       },
       {
         "id": "__source-page-149",
@@ -3831,9 +3915,9 @@
         "page": 18,
         "uri": "http://localhost:8080/product/findAll",
         "rect": [
-          99.50775146484375,
+          110.5477523803711,
           486.9999694824219,
-          271.7427673339844,
+          282.78277587890625,
           498.0399475097656
         ]
       },

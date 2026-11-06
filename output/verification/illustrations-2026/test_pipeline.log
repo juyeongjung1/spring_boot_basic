@@ -1,0 +1,17 @@
+最終回帰検証 2026-11-05T17:36:39.410358 tools/textbook/test_pipeline.py
+test_added_paragraphs_reach_the_pdf_and_paginate (__main__.TextbookTests.test_added_paragraphs_reach_the_pdf_and_paginate) ... ok
+test_duplicate_ids_are_rejected (__main__.TextbookTests.test_duplicate_ids_are_rejected) ... ok
+test_edited_text_cannot_reuse_old_positions (__main__.TextbookTests.test_edited_text_cannot_reuse_old_positions) ... ok
+test_every_source_block_survives_markdown (__main__.TextbookTests.test_every_source_block_survives_markdown) ... ok
+test_number_replacement_preserves_body_pixels_and_strokes (__main__.TextbookTests.test_number_replacement_preserves_body_pixels_and_strokes) ... ok
+test_single_row_table_without_header_keeps_its_data (__main__.TextbookTests.test_single_row_table_without_header_keeps_its_data) ... ok
+test_thymeleaf_and_spaces_survive_inline_markdown (__main__.TextbookTests.test_thymeleaf_and_spaces_survive_inline_markdown) ... ok
+test_windows_newlines_keep_the_same_reference (__main__.TextbookTests.test_windows_newlines_keep_the_same_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 12.246s
+
+OK
+{"chapter": "01", "blocks": 105, "figures": 16, "reference_pages": null, "flow_pages": 25}
+{"chapter": "01", "blocks": 85, "figures": 16, "reference_pages": null, "flow_pages": 16}
+{"test": "tools/textbook/test_pipeline.py", "exit_code": 0, "seconds": 14.08}

@@ -387,5 +387,12 @@
       "has_header": true,
       "page": 235
     }
-  ]
+  ],
+  "illustrations": {
+    "illustration-2026-foreign-key-reference": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-2026-foreign-key-reference-caption"
+    }
+  }
 }

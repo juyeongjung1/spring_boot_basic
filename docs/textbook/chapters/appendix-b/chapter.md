@@ -129,6 +129,14 @@ Caused by: java.sql.SQLSyntaxErrorException:
 
 :::
 
+![外側の例外から原因と自分のコードをたどる](assets/revision-ill-errors.png){#illustration-2026-error-cause-chain}
+
+::: {#illustration-2026-error-cause-chain-caption .paragraph}
+
+このログの例では、Caused by:から原因をたどり、ProductService.javaの26行目を確認します。
+
+:::
+
 ::: {#revision-errors-template .paragraph}
 
 [TemplateInputException なら、まず続くメッセージを確認します。Error resolving template なら、Controller の戻り値と templates 配下のファイル名・配置を照合します。テンプレートの解析中のエラーなら、ログ中のテンプレート名・行・列と、さらに続く Caused by: を確認します。名前だけで原因を決めつけないことが大切です。]{.s007}

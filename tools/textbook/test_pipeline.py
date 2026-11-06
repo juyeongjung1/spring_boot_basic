@@ -90,11 +90,13 @@ class TextbookTests(unittest.TestCase):
         additions.append(f'::: {{#long-code .code}}\n\n```java\n{code}\n```\n\n:::\n')
         rows='\n'.join(f'| 項目{i:03d} | 表の改ページも文字を失わず継続します。 |' for i in range(80))
         additions.append('::: {#long-table .table has-header="true"}\n\n| 列名 | 内容 |\n| --- | --- |\n'+rows+'\n\n:::\n')
-        last = self.markdown.rfind(":::")
+        # flowの実原稿にはsource設定で指定された挿絵・captionも含める。
+        current_markdown = (self.folder / 'chapter.md').read_text(encoding='utf-8')
+        last = current_markdown.rfind(":::")
         path = self.work / "edited.md"
-        path.write_text(self.markdown[:last] + "\n".join(additions) + "\n" + self.markdown[last:], encoding="utf-8")
+        path.write_text(current_markdown[:last] + "\n".join(additions) + "\n" + current_markdown[last:], encoding="utf-8")
         report = build("01", "flow", path, self.work / "edited")
-        original = build("01", "flow", self.folder / "baseline.md", self.work / "unmodified")
+        original = build("01", "flow", self.folder / "chapter.md", self.work / "unmodified")
         self.assertGreater(report["flow"]["pages"], original["flow"]["pages"])
         self.assertTrue(report["flow"]["native_text_complete"])
         table = next(c for c in report['flow']['html_components']

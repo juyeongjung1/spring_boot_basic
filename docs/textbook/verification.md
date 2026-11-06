@@ -1,55 +1,49 @@
-# HTML/CSSによるコード・表・構文解説の改訂
+# 商標確認・本文字下げ・小型挿絵の追加
 
-2026年11月5日。本文348ページ、演習82ページ。今回の依頼で許可された表示刷新と、DI挿絵・メッセージ参考欄・エラー調査の追記を反映しました。
+2026年11月6日。本文349ページ、演習82ページ。
 
 - [本文PDF](../../output/pdf/textbook/textbook/flow.pdf)
 - [演習PDF](../../output/pdf/textbook/exercise/flow.pdf)
-- [最終独立監査](../../output/verification/modern-2026/final-audit.md)
-- [原文とコードの対応検査](../../output/verification/modern-2026/explanations-report.md)
+- [最終独立監査](../../output/verification/illustrations-2026/final-audit.md)
+- [挿絵と生成プロンプトの一覧](illustrations.md)
 
-## 表示の変更
+## 商標
 
-- コード186カードを白背景のHTML/CSSで統一。言語名、右上のファイル名、行番号、構文色、緑のコメントを表示します。画像だけのファイル名5件も文字へ統合しました。
-- 通常の表32点は本文幅とセル余白を統一。元の背景色・文字色・太字・下線・列幅の比率は保持し、数値の途中改行を防ぎます。
-- 構文解説46カード・84表示行は「行番号／該当コード／意味・補足」の3列にしました。原文を省略せず、引数の列挙や跨頁の続きも区別します。
-- 長い部品は620ptを上限に行境界で分割。見出し・ファイル名・続き表示を再掲します。DOMと個別PDFの文字、実測した高さ、セル内の横はみ出しを検査します。
-- 元のコード枠の幅と左端は保持。画像ラベル・URL定義・ModelMapper矢印は新ヘッダーや注記へ整理し、実行例2図はカード下部へ保持します。通常の図版と65点のスライドは元の左端・寸法、スライド上段の位置を保持します。
+IIBA®・BABOK®の指定文言は、本文・演習の両冊2ページ目で、CiscoとIntelの間に既に1回ずつありました。原稿・原本情報・実PDF・ページPNGを照合し、通常書体と®/™を確認しました。重複追加は不要でした。
 
-## 指定された内容
+## 本文の字下げ
 
-- 第3章の原80ページに、DIコンテナからリモコンを受け取って使う挿絵と説明を挿入しました。その他の挿絵は [提案一覧](illustration-proposals.md) に記録し、未挿入です。
-- 第4章の原161ページ後に、固定文言の集約、標準ファイル、messages_ja.properties・_en・_ko、UTF-8、Locale、ThymeleafとMessageSourceの参考欄を1ページで追加しました。
-- 付録Bの原291ページに、Pleiadesのコンソールで例外名・メッセージ・Caused by:・自分のコードの行番号を読む方法を追加しました。404/405/500の区別など、既存の誤記3ブロックも訂正しました。
-- メッセージとエラーの例は、配布プロジェクトのBoot 4.0.2依存・Java 21で13項目を実行確認しました。配布プロジェクトは今回変更していません。
-- 図内コメント6点を#008000へ局所修正。全268図の校正波線候補を目視し、既知の除去済み図も拡大して確認しました。ModelMapperの旧コード字片は新カードへ重ねません。
+通常の段落頭を、その先頭書体の全角1文字分下げます。設定だけでは単独段落へ効いていなかった問題を、共通paragraphの明示的な終端で修正しました。行送り18pt・段落境界24ptは維持します。原稿中の手動空白は表示時だけ整理し、二重字下げを防ぎます。
+
+見出し・箇条書き・URL・注記・演習時間一覧・図のキャプションは区別します。演習の確定した3つの継続断片は、元の文字とIDを保って、表示上だけ前の文と同じ段落へつなぎます。例えば「プ」「ログラム」が別段落にならないようにしています。
+
+- [全章の実測記録](../../output/verification/illustrations-2026/indent-audit.md)
+- [商標確認記録](../../output/verification/illustrations-2026/trademark-audit.md)
+
+## 挿絵
+
+全19章と既存図を調べ、Maven・Model・Repository・セッション・入力チェック・共通レイアウト・外部キー・レスポンシブ配置・エラー調査に新規9図を挿入しました。既存DI図も縮小しています。新図は幅280pt（約9.9cm）、DIは260pt、全て高さ140pt以内です。図と9.5ptのキャプションは同一ページに保持します。
+
+| 図 | 原本頁 | 現在の本文PDF頁 | 変更前後の画像 |
+| --- | ---: | ---: | --- |
+| pom.xmlの指定から必要なライブラリをそろえる | 28 | 28 | [表示](../../output/verification/illustrations-2026/pages/maven-libraries-comparison.png) |
+| Modelを使ったデータの受け渡し | 58 | 63 | [表示](../../output/verification/illustrations-2026/pages/model-transfer-comparison.png) |
+| Repositoryの返り値はリストと0/1件で異なる | 90 | 106 | [表示](../../output/verification/illustrations-2026/pages/repository-results-comparison.png) |
+| 識別IDとサーバー側のセッション保存 | 142 | 170 | [表示](../../output/verification/illustrations-2026/pages/session-separation-comparison.png) |
+| 入力チェックの成功とエラーの分岐 | 148 | 177 | [表示](../../output/verification/illustrations-2026/pages/validation-branch-comparison.png) |
+| 共通レイアウトと画面ごとの内容を組み合わせる | 181 | 217 | [表示](../../output/verification/illustrations-2026/pages/layout-reuse-comparison.png) |
+| DBの外部キー値とJavaのオブジェクト参照 | 201 | 241 | [表示](../../output/verification/illustrations-2026/pages/foreign-key-reference-comparison.png) |
+| 横幅によって左右配置から上下配置へ切り替わる | 269 | 316 | [表示](../../output/verification/illustrations-2026/pages/responsive-switch-comparison.png) |
+| 外側の例外から原因と自分のコードをたどる | 291 | 343 | [表示](../../output/verification/illustrations-2026/pages/error-cause-chain-comparison.png) |
+| 依存性の注入 | 80 | 93 | [表示](../../output/verification/illustrations-2026/pages/di-remote-comparison.png) |
 
 ## 最終検証
 
-- 全19章で文字照合が一致。見出し孤立、図・短いコード・小表・手順の分断、紙面のはみ出しは0件。
-- 原本373ページ、空白17ページ、原本2853 IDを保持。基準版の依存コード1 IDと、今回許可された25 IDを含む2879 IDの所属・順序・元ページ境界を独立検査しました。
-- ヘッダー430ページ、URI注釈89件、login3の実リンク、目次番号、章別PDFから合冊への本文を検査しました。
-- 回帰テスト49件が合格。代表ページを原本と並べて画像比較し、全46構文解説カードと全32表も目視しました。詳細は下記の記録を参照してください。
+- 回帰テスト57件が合格。全19章の文字照合・はみ出し・孤立見出し・図/コード/手順の分断検査も合格。
+- 原本373ページ、空白17ページ、既存2879 IDを保ち、新規図とキャプション18 IDを加えた2897 IDを独立監査。既存本文・コード・表・書式Span・図の参照・順序は不変。
+- 合冊後の全431ページのヘッダー・元頁所属・章別からの本文一致、URI89件を照合。
+- 新9図とDIの全10図を実PDFで目視し、寸法・キャプション同頁・小型表示の可読性を確認。既存スライド65点は変更前の同領域と全画素一致。
+- 生成画像内の文字と矢印は目視確認。Bootstrapの追加図は画面幅による配置切替の模式図で、厳密な列幅は既存の12列図とコードで説明する。
+- 原本PDF/Word、baseline、source-layout、既存資材は保全。Java 21・Boot 4.0.2の配布プロジェクトとZIPは今回変更していない。
 
-## 代表ページの比較
-
-| 対象 | 原本ページ | 改訂版ページ | 比較画像 |
-| --- | --- | --- | --- |
-| Javaコード | 41 | 41 | [表示](../../output/verification/modern-2026/code-comparison.png) |
-| 構文解説 | 59 | 65 | [表示](../../output/verification/modern-2026/explanation-comparison.png) |
-| 数値を含む表 | 67 | 76 | [表示](../../output/verification/modern-2026/table-comparison.png) |
-| 表の色・下線 | 69 | 79 | [表示](../../output/verification/modern-2026/table-color-comparison.png) |
-| 設定ファイル | 71 | 82 | [表示](../../output/verification/modern-2026/properties-comparison.png) |
-| DI挿絵 | 80 | 93 | [表示](../../output/verification/modern-2026/di-comparison.png) |
-| ModelMapper | 113 | 136 | [表示](../../output/verification/modern-2026/modelmapper-comparison.png) |
-| コメント色 | 128 | 152 | [表示](../../output/verification/modern-2026/comment-comparison.png) |
-| メッセージ参考 | 161 | 195 | [表示](../../output/verification/modern-2026/messages-comparison.png) |
-| 跨頁の解説 | 274 | 323 | [表示](../../output/verification/modern-2026/continuation-comparison.png) |
-| エラー原因調査 | 291 | 342 | [表示](../../output/verification/modern-2026/errors-comparison.png) |
-
-## 比較範囲と保全
-
-原本PDF/Word、baseline.md、source-layout.json、元の図版は変更していません。過去版の検証記録はoutput/verification/layout-restore/に保持しています。今回のcode・表・構文解説の表示は新デザインであり、以前の黄色背景やコードの字サイズを完全再現する方針から変更しています。
-
-UI画面やスライド内のコード画像は、注釈や操作の意味を保つため図版として残しています。本文のコードは文字として選択できますが、PDFでカード全体をコピーすると行番号や折り返し改行も含まれることがあります。編集元のMarkdownからはコード本文を取得できます。
-
-索引、本文中のページ参照の自動追従、PowerPointからの自動図版更新は今回の対象外です。章別HTMLは部品の確認用で、全文のHTML版ではありません。
+詳細：[画像の小型レビュー](../../output/verification/illustrations-2026/generated-small-review.md)、[実PDFの目視](../../output/verification/illustrations-2026/final-visual-review.md)。前回のHTML/CSS化の検証はoutput/verification/modern-2026に保持しています。

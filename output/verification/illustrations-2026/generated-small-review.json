@@ -1,0 +1,228 @@
+{
+  "review_date": "2026-11-05",
+  "scope": "生成済み新規9点の単体・小型画像QA。実PDFの最終配置QAは未実施。",
+  "result": "9点のラベルと意味は可読。Responsiveの色面幅は概念寸法であり厳密な12列図ではない。",
+  "images": [
+    {
+      "name": "maven",
+      "chapter": "01",
+      "source": "docs/textbook/chapters/01/assets/revision-ill-maven.png",
+      "source_size_px": [
+        1942,
+        809
+      ],
+      "source_sha256": "7665bd484da68cc4c1d2de5bb8657dfe050c178430c183d6cb78c3f0aa63ee57",
+      "review_png": "tmp/illustrations-2026/maven-small300x140-144dpi.png",
+      "nominal_review_size_pt": [
+        300,
+        140
+      ],
+      "dpi": 144,
+      "review_method": "画像を縦横比維持して小型PNGへ縮小し全件を独立目視。本文captionと照合。",
+      "small_text_readable": true,
+      "text_clipping_seen": false,
+      "unintended_arrow_overlap_seen": false,
+      "caption": "pom.xmlの指定をもとに、Mavenが必要なライブラリをそろえます。",
+      "meaning_check": "pom.xml→Maven→必要ライブラリ。最新版やアプリ全体の自動生成とは描いていない。",
+      "status": "pass"
+    },
+    {
+      "name": "model",
+      "chapter": "02",
+      "source": "docs/textbook/chapters/02/assets/revision-ill-model.png",
+      "source_size_px": [
+        1942,
+        809
+      ],
+      "source_sha256": "fa23edf5a85d40aa5b04d2766d50a0cbf4096ea945086385f3c711b9c6cfadd1",
+      "review_png": "tmp/illustrations-2026/model-small300x140-144dpi.png",
+      "nominal_review_size_pt": [
+        300,
+        140
+      ],
+      "dpi": 144,
+      "review_method": "画像を縦横比維持して小型PNGへ縮小し全件を独立目視。本文captionと照合。",
+      "small_text_readable": true,
+      "text_clipping_seen": false,
+      "unintended_arrow_overlap_seen": false,
+      "caption": "ControllerがModelに入れたデータとテンプレートから、Thymeleafがサーバー側でHTMLを生成します。",
+      "meaning_check": "Controllerのデータとテンプレートの二入力をThymeleafが合成しHTML出力。Modelを実行工程やDBと描かない。",
+      "status": "pass"
+    },
+    {
+      "name": "repository",
+      "chapter": "03",
+      "source": "docs/textbook/chapters/03/assets/revision-ill-repository.png",
+      "source_size_px": [
+        1942,
+        809
+      ],
+      "source_sha256": "3d497fbe46709329443984b93d7e484ee7d43035ea01fb0c5a8f3c39fbc2c75b",
+      "review_png": "tmp/illustrations-2026/repository-small300x140-144dpi.png",
+      "nominal_review_size_pt": [
+        300,
+        140
+      ],
+      "dpi": 144,
+      "review_method": "画像を縦横比維持して小型PNGへ縮小し全件を独立目視。本文captionと照合。",
+      "small_text_readable": true,
+      "text_clipping_seen": false,
+      "unintended_arrow_overlap_seen": false,
+      "caption": "findAll()の結果は0件以上、findById(id)の結果は0件または1件です。後者はOptionalで受け取ります。",
+      "meaning_check": "findAllは0件以上、findByIdは0/1件。captionがOptionalを明示し、絵の空ケースと一致。",
+      "status": "pass"
+    },
+    {
+      "name": "session",
+      "chapter": "04",
+      "source": "docs/textbook/chapters/04/assets/revision-ill-session.png",
+      "source_size_px": [
+        1938,
+        811
+      ],
+      "source_sha256": "04270c73e903a68afe19c6858f5c791914cdceb6b741a1798b0f35728d7dd204",
+      "review_png": "tmp/illustrations-2026/session-small300x140-144dpi.png",
+      "nominal_review_size_pt": [
+        300,
+        140
+      ],
+      "dpi": 144,
+      "review_method": "画像を縦横比維持して小型PNGへ縮小し全件を独立目視。本文captionと照合。",
+      "small_text_readable": true,
+      "text_clipping_seen": false,
+      "unintended_arrow_overlap_seen": false,
+      "caption": "ブラウザーはセッションIDを送り、サーバーがそのセッションに対応するログイン情報を参照します。",
+      "meaning_check": "ブラウザーにID、ログイン情報はサーバー枠内。captionがセッションIDと明示。",
+      "status": "pass"
+    },
+    {
+      "name": "validation",
+      "chapter": "04",
+      "source": "docs/textbook/chapters/04/assets/revision-ill-validation.png",
+      "source_size_px": [
+        1942,
+        809
+      ],
+      "source_sha256": "947378b5efdbc8df46b1a4d4284dbee2febb12144b3be5decec8e3454d0f6d74",
+      "review_png": "tmp/illustrations-2026/validation-small300x140-144dpi.png",
+      "nominal_review_size_pt": [
+        300,
+        140
+      ],
+      "dpi": 144,
+      "review_method": "画像を縦横比維持して小型PNGへ縮小し全件を独立目視。本文captionと照合。",
+      "small_text_readable": true,
+      "text_clipping_seen": false,
+      "unintended_arrow_overlap_seen": false,
+      "caption": "サーバー側でFormを検証し、エラーがあれば入力画面を表示し、なければ次の処理へ進みます。",
+      "meaning_check": "検証→エラー表示／処理を続けるの分岐。captionでForm・サーバー側と補足し、認証成功を表さない。",
+      "status": "pass"
+    },
+    {
+      "name": "layout",
+      "chapter": "05",
+      "source": "docs/textbook/chapters/05/assets/revision-ill-layout.png",
+      "source_size_px": [
+        1942,
+        809
+      ],
+      "source_sha256": "d43ef7ce20e5a6be6d6d528bc969586a31ae3da60fd0616ac361819ef69ea98c",
+      "review_png": "tmp/illustrations-2026/layout-small300x140-144dpi.png",
+      "nominal_review_size_pt": [
+        300,
+        140
+      ],
+      "dpi": 144,
+      "review_method": "画像を縦横比維持して小型PNGへ縮小し全件を独立目視。本文captionと照合。",
+      "small_text_readable": true,
+      "text_clipping_seen": false,
+      "unintended_arrow_overlap_seen": false,
+      "caption": "サーバー側で共通レイアウトと各ページの内容を組み合わせます。ヘッダーやフッターを再利用できます。",
+      "meaning_check": "青の共通レイアウトと橙の内容が合成前後で一致。captionがサーバー側と補足。",
+      "status": "pass"
+    },
+    {
+      "name": "foreign-key",
+      "chapter": "06",
+      "source": "docs/textbook/chapters/06/assets/revision-ill-foreign-key.png",
+      "source_size_px": [
+        1942,
+        809
+      ],
+      "source_sha256": "ac4474dc2e5a7e11d9f7cb3d4250f9c9ef53f8940272513354ea2249c1d0538c",
+      "review_png": "tmp/illustrations-2026/foreign-key-small300x140-144dpi.png",
+      "nominal_review_size_pt": [
+        300,
+        140
+      ],
+      "dpi": 144,
+      "review_method": "画像を縦横比維持して小型PNGへ縮小し全件を独立目視。本文captionと照合。",
+      "small_text_readable": true,
+      "text_clipping_seen": false,
+      "unintended_arrow_overlap_seen": false,
+      "caption": "DBではcategory_idの値で関連付け、JavaではProductのcategoryフィールドからCategoryを参照します。",
+      "meaning_check": "DBはcategory_id=2→id=2、JavaはProduct.category→Category。DBセルにオブジェクト全体を置かない。",
+      "status": "pass"
+    },
+    {
+      "name": "responsive",
+      "chapter": "07",
+      "source": "docs/textbook/chapters/07/assets/revision-ill-responsive.png",
+      "source_size_px": [
+        1942,
+        809
+      ],
+      "source_sha256": "ad37337b92a96772e3e1fa60e587cf7b86bd4c97d69685749a3d862cafbf71fc",
+      "review_png": "tmp/illustrations-2026/responsive-small300x140-144dpi.png",
+      "nominal_review_size_pt": [
+        300,
+        140
+      ],
+      "dpi": 144,
+      "review_method": "画像を縦横比維持して小型PNGへ縮小し全件を独立目視。本文captionと照合。",
+      "small_text_readable": true,
+      "text_clipping_seen": false,
+      "unintended_arrow_overlap_seen": false,
+      "caption": "col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイドバー・本文の順に縦に並びます。",
+      "meaning_check": "768px以上は横並び、未満はサイドバー→本文の上下。同じ色と順序。3:9は概略寸法（注記参照）。",
+      "status": "pass_with_schematic_geometry_note"
+    },
+    {
+      "name": "errors",
+      "chapter": "appendix-b",
+      "source": "docs/textbook/chapters/appendix-b/assets/revision-ill-errors.png",
+      "source_size_px": [
+        1939,
+        811
+      ],
+      "source_sha256": "4b17013f8ceeba8cc6677ae6b02661871e4f8a7070b9d915427a5806ed67a356",
+      "review_png": "tmp/illustrations-2026/errors-small300x140-144dpi.png",
+      "nominal_review_size_pt": [
+        300,
+        140
+      ],
+      "dpi": 144,
+      "review_method": "画像を縦横比維持して小型PNGへ縮小し全件を独立目視。本文captionと照合。",
+      "small_text_readable": true,
+      "text_clipping_seen": false,
+      "unintended_arrow_overlap_seen": false,
+      "caption": "このログの例では、Caused by:から原因をたどり、ProductService.javaの26行目を確認します。",
+      "meaning_check": "Caused by:→自分のコードProductService.java/26行。captionがこのログの例と限定。",
+      "status": "pass"
+    }
+  ],
+  "responsive_geometry": {
+    "measurement": "元画像y=300/400の連続色面。白いgutterは除外。",
+    "sidebar_px": 296,
+    "main_px": 823,
+    "ratio_main_per_sidebar": 2.7804054054054053,
+    "sidebar_share_of_color_area": 0.2645218945487042,
+    "expected_css_ratio": [
+      3,
+      9
+    ],
+    "assessment": "横→縦の変化を示す概念図として承認。厳密な列幅説明は既存12列図・本文col-md-3/9と併読する。必要なら生成図の境界を局所修正するが担当は原図を変更していない。"
+  },
+  "preserved": "原稿・組版・元図版を編集していない。",
+  "pending": "最終章PDFでの実表示寸法、caption同頁、元page境界・周辺コードとの接触、DI既存図縮小後の可読性。"
+}

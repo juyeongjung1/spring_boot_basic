@@ -845,5 +845,17 @@
       ],
       "has_header": true
     }
-  ]
+  ],
+  "illustrations": {
+    "illustration-2026-repository-results": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-2026-repository-results-caption"
+    },
+    "revision-di-remote": {
+      "width": 260,
+      "max_height": 140,
+      "caption_id": "revision-di-caption"
+    }
+  }
 }

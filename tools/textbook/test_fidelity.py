@@ -5,7 +5,7 @@ from collections import Counter
 
 import typst
 
-from build import (ROOT, compile_pdf, flow_layout, native_runs, read_markdown,
+from build import (ROOT, compile_pdf, flow_layout, inline, native_runs, read_markdown,
                    style_header, updated_native_block)
 
 
@@ -29,6 +29,14 @@ class FidelityTests(unittest.TestCase):
 ]
 #paragraph("multi", [一つの要素内の第一段落です。#parbreak()一つの要素内の第二段落です。])
 '''
+        source += '#paragraph("styled-single", [' + inline([('通常の本文も一文字下げます。', 's009')]) + '])\n'
+        source += '#paragraph("styled-multi", [' + inline([('　 内部の第一段落です。', 's009'),
+            ('\n\n', None), ('　 内部の第二段落です。', 's009')]) + '])\n'
+        source += '#paragraph("note", [' + inline([('※注記は左揃えです。', 's009')]) + '], indent: 0pt)\n'
+        source += '#paragraph("large", [#text(size: 14.04pt, "大きい本文も全角一文字下げます。")], indent: 14.04pt)\n'
+        source += ('#paragraph("fragment-first", [#text(size: 14.04pt, "実際のプ")'
+            '#mark("fragment-first", "end")#mark("fragment-next", "start")'
+            '#text(size: 14.04pt, "ログラムを作成します。")], indent: 14.04pt, end-id: "fragment-next")\n')
         cls.pdf, path = compile_pdf(cls.work, 'spacing', source, ['C:/Windows/Fonts'])
         cls.marks = json.loads(typst.query(str(path), '<book-check>', field='value', format='json',
                                           root=str(ROOT), font_paths=['C:/Windows/Fonts']))
@@ -59,13 +67,61 @@ class FidelityTests(unittest.TestCase):
         self.assertAlmostEqual(first.x0, 35.04, places=2)
         self.assertAlmostEqual(second.x0, first.x0, places=2)
 
+    def test_single_and_styled_paragraphs_indent_one_character_without_indenting_wraps_or_notes(self):
+        for text in ('第一段落の一行目です。', '第二段落です。', '通常の本文も一文字下げます。',
+                     '内部の第一段落です。', '内部の第二段落です。'):
+            with self.subTest(text=text):
+                self.assertAlmostEqual(self.pdf[0].search_for(text)[0].x0, 35.04, places=2)
+        self.assertAlmostEqual(self.pdf[0].search_for('第一段落の二行目です。')[0].x0, 24, places=2)
+        self.assertAlmostEqual(self.pdf[0].search_for('※注記は左揃えです。')[0].x0, 24, places=2)
+        self.assertAlmostEqual(self.pdf[0].search_for('大きい本文も全角一文字下げます。')[0].x0, 38.04, places=2)
+
+    def test_exercise_body_uses_its_font_size_but_time_lists_keep_left_alignment(self):
+        folder = ROOT / 'docs/textbook/chapters/ex01'
+        nodes, figures, order = read_markdown(folder / 'chapter.md')
+        config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
+        layout = json.loads((folder / 'source-layout.json').read_text(encoding='utf-8'))
+        source = flow_layout(folder, config, layout, nodes, figures, order)
+        lines = source.splitlines()
+        self.assertIn('indent: 14.04pt)', next(line for line in lines if line.startswith('#paragraph("p008-b06"')))
+        self.assertIn('indent: 0pt)', next(line for line in lines if line.startswith('#paragraph("p008-b08"')))
+
+    def test_confirmed_source_fragments_share_a_paragraph_and_keep_each_boundary_once(self):
+        self.assertEqual(len(self.pdf[0].search_for('プログラム')), 1)
+        for ident in ('fragment-first', 'fragment-next'):
+            for edge in ('start', 'end'):
+                self.assertEqual(sum(m['id'] == ident and m['edge'] == edge for m in self.marks), 1)
+        end, start = self.mark('fragment-first', 'end'), self.mark('fragment-next', 'start')
+        self.assertEqual(end['page'], start['page'])
+        self.assertAlmostEqual(end['x'], start['x'], places=3)
+        self.assertAlmostEqual(end['y'], start['y'], places=3)
+        for chapter, first, following in (('ex02', 'p012-b08', 'p012-b09'),
+                ('ex06', 'p048-b09', 'p048-b10'), ('ex07', 'p064-b11', 'p064-b12')):
+            folder = ROOT / 'docs/textbook/chapters' / chapter
+            nodes, figures, order = read_markdown(folder / 'chapter.md')
+            config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
+            layout = json.loads((folder / 'source-layout.json').read_text(encoding='utf-8'))
+            source = flow_layout(folder, config, layout, nodes, figures, order)
+            self.assertIn('end-id: "' + following + '"', source)
+            self.assertNotIn('#paragraph("' + following + '"', source)
+            self.assertEqual(source.count('#mark("' + first + '", "end")'), 1)
+            self.assertEqual(source.count('#mark("' + following + '", "start")'), 1)
+
     def test_chapter_one_has_no_added_explanation_or_command_line_steps(self):
         folder = ROOT / 'docs/textbook/chapters/01'
         old, old_figures, old_order = read_markdown(folder / 'baseline.md')
         new, new_figures, new_order = read_markdown(folder / 'chapter.md')
-        self.assertEqual(set(old), set(new))
-        self.assertEqual(set(old_figures), set(new_figures))
-        self.assertEqual(old_order, new_order)
+        config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
+        illustrations = {ident: spec for ident, spec in config.get('illustrations', {}).items() if ident not in old_figures}
+        captions = {spec['caption_id'] for spec in illustrations.values()}
+        self.assertFalse(set(old) - set(new))
+        self.assertEqual(set(new) - set(old), captions)
+        self.assertFalse(set(old_figures) - set(new_figures))
+        self.assertEqual(set(new_figures) - set(old_figures), set(illustrations))
+        self.assertEqual(old_order, [dict(page, entries=[i for i in page['entries'] if i not in captions and i not in illustrations]) for page in new_order])
+        for ident in captions:
+            self.assertEqual(new[ident]['kind'], 'paragraph')
+            self.assertNotIn('mvnw', new[ident]['text'])
         for ident, node in old.items():
             expected = node['text']
             if ident == 'p020-b10':
@@ -73,7 +129,6 @@ class FidelityTests(unittest.TestCase):
             if ident == 'p022-b08':
                 expected += '。'
             self.assertEqual(expected, new[ident]['text'], ident)
-        config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
         layout = json.loads((folder / 'source-layout.json').read_text(encoding='utf-8'))
         source = flow_layout(folder, config, layout, new, new_figures, new_order)
         self.assertIn('#instruction("instruction-p022-b05", above: 18pt)', source)

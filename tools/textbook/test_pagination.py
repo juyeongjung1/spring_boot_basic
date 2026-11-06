@@ -101,9 +101,13 @@ class PaginationTests(unittest.TestCase):
             after, current_figures, _ = read_markdown(folder / 'chapter.md')
             allowed_additions = {'revision-errors-' + suffix for suffix in (
                 'title', 'console', 'name', 'trace-intro', 'trace', 'trace-read', 'template', 'sql', 'status')}
+            config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
+            illustration_ids = {ident for ident in config.get('illustrations', {}) if ident not in original_figures}
+            allowed_additions.update(config['illustrations'][ident]['caption_id'] for ident in illustration_ids)
             self.assertFalse(set(before) - set(after), chapter)
             self.assertEqual(set(after) - set(before), allowed_additions if chapter == 'appendix-b' else set(), chapter)
-            self.assertEqual(set(original_figures), set(current_figures), chapter)
+            self.assertFalse(set(original_figures) - set(current_figures), chapter)
+            self.assertEqual(set(current_figures) - set(original_figures), illustration_ids, chapter)
             allowed = {'p285-f07', 'p287-f09', 'p287-f10', 'p288-f11', 'p288-f13'}
             for ident, old_path in original_figures.items():
                 new_path = current_figures[ident]

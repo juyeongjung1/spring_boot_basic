@@ -873,6 +873,14 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 :::
 
+![共通レイアウトと画面ごとの内容を組み合わせる](assets/revision-ill-layout.png){#illustration-2026-layout-reuse}
+
+::: {#illustration-2026-layout-reuse-caption .paragraph}
+
+サーバー側で共通レイアウトと各ページの内容を組み合わせます。ヘッダーやフッターを再利用できます。
+
+:::
+
 ::: {#p181-b05 .paragraph}
 
 [それでは、Thymeleaf でのレイアウトの作成方法について詳しくご説明します。]{.s009}

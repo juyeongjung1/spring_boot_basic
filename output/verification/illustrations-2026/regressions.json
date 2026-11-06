@@ -1,0 +1,42 @@
+[
+  {
+    "log": "test_pipeline.log",
+    "tests": 8,
+    "passed": true
+  },
+  {
+    "log": "test_pagination.log",
+    "tests": 7,
+    "passed": true
+  },
+  {
+    "log": "test_symbols.log",
+    "tests": 2,
+    "passed": true
+  },
+  {
+    "log": "test_remaining.log",
+    "tests": 9,
+    "passed": true
+  },
+  {
+    "log": "test_fidelity.log",
+    "tests": 10,
+    "passed": true
+  },
+  {
+    "log": "test_source_layout.log",
+    "tests": 7,
+    "passed": true
+  },
+  {
+    "log": "test_html_components.log",
+    "tests": 9,
+    "passed": true
+  },
+  {
+    "log": "test_illustrations.log",
+    "tests": 5,
+    "passed": true
+  }
+]

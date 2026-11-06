@@ -68,5 +68,12 @@
   ],
   "native_text_updates": [
     "p296-b04"
-  ]
+  ],
+  "illustrations": {
+    "illustration-2026-error-cause-chain": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-2026-error-cause-chain-caption"
+    }
+  }
 }

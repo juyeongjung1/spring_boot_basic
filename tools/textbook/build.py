@@ -204,7 +204,7 @@ def typographic_parts(parts):
     parts = [(value, style) for value, style in parts if value != '\n']
     text = ''.join(value for value, _ in parts)
     remove = set()
-    for match in re.finditer(r'(?<=[「『【（])[ \t\u3000]+|[ \t\u3000]+(?=[」』】）])|\A[ \t\u3000]+|[ \t\u3000]+\Z', text):
+    for match in re.finditer(r'(?<=[「『【（])[ \t\u3000]+|[ \t\u3000]+(?=[」』】）])|\A[ \t\u3000]+|(?<=\n\n)[ \t\u3000]+|[ \t\u3000]+\Z', text):
         remove.update(range(match.start(), match.end()))
     result, offset = [], 0
     for value, style in parts:
@@ -275,6 +275,42 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 body.append(f'#at({x0},{y0},image({q("/"+(folder/figures[ident]).relative_to(ROOT).as_posix())},width:{x1-x0}pt,height:{y1-y0}pt))')
         commands += ['#native-cover['+'\n'.join(body)+']','#pagebreak()']
     figure_map = {f["id"]: f for f in layout["figures"]}
+    compact_figures, illustration_captions = {}, {}
+    source_pages = {ident: page['source_page'] for page in order for ident in page['entries']}
+    continuation_pairs = {
+        'ex02': ('p012-b08', 'p012-b09'),
+        'ex06': ('p048-b09', 'p048-b10'),
+        'ex07': ('p064-b11', 'p064-b12'),
+    }
+    joined_paragraphs = {}
+    if folder.name in continuation_pairs:
+        first, following = continuation_pairs[folder.name]
+        if source_pages[first] != source_pages[following]:
+            raise ValueError('本文の続き断片は同じ原ページで結合してください: ' + following)
+        entries_on_page = next(page['entries'] for page in order if first in page['entries'])
+        if entries_on_page.index(following) != entries_on_page.index(first) + 1:
+            raise ValueError('本文の続き断片が隣接していません: ' + following)
+        joined_paragraphs[first] = following
+    joined_continuations = set(joined_paragraphs.values())
+    for ident, options in config.get('illustrations', {}).items():
+        if ident in figure_map:
+            continue
+        caption_id = options['caption_id']
+        if ident not in figures or caption_id not in nodes:
+            raise ValueError('挿絵またはキャプションがありません: ' + ident)
+        if source_pages[ident] != source_pages[caption_id] or source_pages[ident] in config.get('native_pages', []):
+            raise ValueError('挿絵とキャプションは同じ自動組版ページへ配置してください: ' + ident)
+        if caption_id in illustration_captions:
+            raise ValueError('挿絵キャプションの重複: ' + caption_id)
+        with Image.open(folder / figures[ident]) as image:
+            width = min(float(options.get('width', 300)), 426.672)
+            height = width * image.height / image.width
+        maximum = float(options.get('max_height', 140))
+        if height > maximum:
+            width *= maximum / height
+            height = maximum
+        compact_figures[ident] = dict(width=width, height=height, caption_id=caption_id)
+        illustration_captions[caption_id] = ident
     code_boxes = code_geometries(folder, layout, nodes)
     code_groups, frame_owners = {}, {}
     for code_id, geometry in code_boxes.items():
@@ -464,7 +500,15 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 f'font-size: {font_size}pt, leading: {max(0,pitch-font_size)}pt{content_option})')
 
     def render(ident):
+        if ident in joined_continuations:
+            return ''
         if ident in figures:
+            if ident in compact_figures:
+                figure = compact_figures[ident]
+                path = '/' + (folder / figures[ident]).relative_to(ROOT).as_posix()
+                caption_id = figure['caption_id']
+                return (f'#compact-illustration({q(ident)}, {q(path)}, {figure["width"]}, {figure["height"]}, '
+                        f'{q(caption_id)}, {q(nodes[caption_id]["text"])})')
             fig = figure_map.get(ident, {"box": [85.104, 0, 511.776, 0]})
             path = "/" + (folder / figures[ident]).relative_to(ROOT).as_posix()
             width = fig['box'][2] - fig['box'][0]
@@ -480,8 +524,19 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 return f'#bullet-paragraph({q(ident)}, [{marker}], [{inline(parts)}], continuing: {str(ident in list_with_continuation).lower()})'
             if ident in list_continuations:
                 return f'#list-continuation({q(ident)}, [{inline(parts)}], continuing: {str(ident in list_with_continuation).lower()})'
-            if node['text'].lstrip().startswith(('※', 'http://', 'https://')):
+            is_time_list = folder.name.startswith('ex') and re.fullmatch(
+                r'(?:演習\s*\d+\.\d+.*\d+\s*分|\d+\s*分)', node['text'].strip(), re.S)
+            if node['text'].lstrip().startswith(('※', 'http://', 'https://')) or is_time_list or node['text'].strip() == 'ヒント':
                 return f'#paragraph({q(ident)}, [{inline(parts)}], indent: 0pt)'
+            first_style = next((style for value, style in parts if value.strip()), None)
+            size = layout['styles'].get((first_style or '').split(':')[-1], {}).get('size', 11.04)
+            if ident in joined_paragraphs:
+                following = joined_paragraphs[ident]
+                body = (inline(parts) + f'#mark({q(ident)}, "end")#mark({q(following)}, "start")'
+                        + inline(nodes[following]['parts']))
+                return f'#paragraph({q(ident)}, [{body}], indent: {size}pt, end-id: {q(following)})'
+            if size != 11.04:
+                return f'#paragraph({q(ident)}, [{inline(parts)}], indent: {size}pt)'
         if node['kind'] == 'step' and config['chapter'] == 'front':
             return f'#list-item({q(ident)}, [{inline(node["parts"])}])'
         if node['kind']=='table':
@@ -568,6 +623,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             commands += ['#pagebreak(weak: true)','#[#set page(header: none, footer: none)\n#mark('+q(ident)+',"native-page")\n#native-cover['+native_page_map[ident[len('__native-'):]]+']\n#pagebreak(weak: true)]']
             i+=1
             continue
+        if ident in illustration_captions or ident in joined_continuations:
+            i += 1
+            continue
         if modern and ident in modern['anchors']:
             commands.append(modern_panel(ident))
             i += 1
@@ -586,7 +644,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             end = i + 1
             while end < len(entries) and entries[end] not in code_members and (not modern or entries[end] not in modern['consume']) and entries[end] in nodes and nodes[entries[end]]["kind"] == "paragraph":
                 end += 1
-            if end < len(entries) and entries[end] in figures and entries[end] not in code_members and (not modern or entries[end] not in modern['consume']):
+            if end < len(entries) and entries[end] in figures and entries[end] not in compact_figures and entries[end] not in code_members and (not modern or entries[end] not in modern['consume']):
                 body = "\n".join(render(e) for e in entries[i:end + 1])
                 # 枠の先頭にある子見出しの上余白は相殺されるため、外側で確保する。
                 above = 0 if ident in slide_body_first else (18 if nodes[ident]['kind'] == 'heading' else 8)

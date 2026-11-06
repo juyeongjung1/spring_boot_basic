@@ -1810,6 +1810,14 @@ crossorigin="anonymous">
 
 :::
 
+![横幅によって左右配置から上下配置へ切り替わる](assets/revision-ill-responsive.png){#illustration-2026-responsive-switch}
+
+::: {#illustration-2026-responsive-switch-caption .paragraph}
+
+col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイドバー・本文の順に縦に並びます。
+
+:::
+
 :::
 
 ::: {#page-270 .source-page}

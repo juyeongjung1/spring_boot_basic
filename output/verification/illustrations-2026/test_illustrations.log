@@ -1,0 +1,10 @@
+test_image_dimensions_and_caption_are_kept_on_one_physical_page (__main__.IllustrationPdfTests.test_image_dimensions_and_caption_are_kept_on_one_physical_page) ... ok
+test_figure_and_caption_are_adjacent_in_the_declared_source_page (__main__.IllustrationSourceTests.test_figure_and_caption_are_adjacent_in_the_declared_source_page) ... ok
+test_nine_new_assets_and_existing_di_follow_print_limits (__main__.IllustrationSourceTests.test_nine_new_assets_and_existing_di_follow_print_limits) ... ok
+test_original_baseline_layout_and_assets_are_unchanged (__main__.IllustrationSourceTests.test_original_baseline_layout_and_assets_are_unchanged) ... ok
+test_original_text_code_and_id_order_are_unchanged (__main__.IllustrationSourceTests.test_original_text_code_and_id_order_are_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 73.578s
+
+OK

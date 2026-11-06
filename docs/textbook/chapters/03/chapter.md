@@ -1635,6 +1635,14 @@ public class Sample5 extends HttpServlet {
 
 :::
 
+![Repositoryの返り値はリストと0/1件で異なる](assets/revision-ill-repository.png){#illustration-2026-repository-results}
+
+::: {#illustration-2026-repository-results-caption .paragraph}
+
+findAll()の結果は0件以上、findById(id)の結果は0件または1件です。後者はOptionalで受け取ります。
+
+:::
+
 :::
 
 ::: {#page-91 .source-page}

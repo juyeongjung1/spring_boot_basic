@@ -376,5 +376,12 @@
     }
   ],
   "cover_mode": "native",
-  "tables": []
+  "tables": [],
+  "illustrations": {
+    "illustration-2026-responsive-switch": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-2026-responsive-switch-caption"
+    }
+  }
 }

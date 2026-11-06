@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "final_artifacts": [
+    {
+      "path": "output/pdf/textbook/textbook/flow.pdf",
+      "bytes": 55298254,
+      "sha256": "94251c704132f990984f8a1d1f2d99b94857ad8d0d34c259245365c93ef6c1b7"
+    },
+    {
+      "path": "output/pdf/textbook/exercise/flow.pdf",
+      "bytes": 6861072,
+      "sha256": "0c768357553f1d3c6c60d30a939d46a21a9a943a0a08eabfa38b9d3e5f48fb33"
+    }
+  ],
+  "new_figures": 9,
+  "resized_figures": 1,
+  "verified_figures": 10,
+  "max_figure_width_pt": 280,
+  "max_figure_height_pt": 133.1164383561644,
+  "uri_count": 89,
+  "uri_max_delta_pt": 0.0,
+  "trademark_checks": [
+    {
+      "collection": "textbook",
+      "page": 2,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "page": 2,
+      "passed": true
+    }
+  ],
+  "problems": 0
+}

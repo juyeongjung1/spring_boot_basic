@@ -1,0 +1,108 @@
+{
+  "audit": {
+    "passed": true,
+    "chapters": 19,
+    "original_pages": 373,
+    "mapped_source_pages": 373,
+    "physical_pages": 431,
+    "blank_pages": 17,
+    "original_ids": 2853,
+    "base_ids": 2879,
+    "authorized_added_ids": 18,
+    "current_ids": 2897,
+    "explanation_cards": 46,
+    "explanation_rows": 84,
+    "header_checks": 431,
+    "uri_links": 89,
+    "login3_real_links": 1,
+    "problems": 0,
+    "problem_counts": {},
+    "new_illustrations": 9,
+    "resized_illustrations": 1,
+    "verified_illustrations": 10,
+    "original_markdown_unchanged": true
+  },
+  "regression_tests": 57,
+  "pages": [
+    {
+      "id": "maven-libraries",
+      "title": "pom.xmlの指定から必要なライブラリをそろえる",
+      "source_page": 28,
+      "before_page": 28,
+      "flow_page": 28,
+      "image": "pages/maven-libraries-comparison.png"
+    },
+    {
+      "id": "model-transfer",
+      "title": "Modelを使ったデータの受け渡し",
+      "source_page": 58,
+      "before_page": 63,
+      "flow_page": 63,
+      "image": "pages/model-transfer-comparison.png"
+    },
+    {
+      "id": "repository-results",
+      "title": "Repositoryの返り値はリストと0/1件で異なる",
+      "source_page": 90,
+      "before_page": 106,
+      "flow_page": 106,
+      "image": "pages/repository-results-comparison.png"
+    },
+    {
+      "id": "session-separation",
+      "title": "識別IDとサーバー側のセッション保存",
+      "source_page": 142,
+      "before_page": 170,
+      "flow_page": 170,
+      "image": "pages/session-separation-comparison.png"
+    },
+    {
+      "id": "validation-branch",
+      "title": "入力チェックの成功とエラーの分岐",
+      "source_page": 148,
+      "before_page": 177,
+      "flow_page": 177,
+      "image": "pages/validation-branch-comparison.png"
+    },
+    {
+      "id": "layout-reuse",
+      "title": "共通レイアウトと画面ごとの内容を組み合わせる",
+      "source_page": 181,
+      "before_page": 217,
+      "flow_page": 217,
+      "image": "pages/layout-reuse-comparison.png"
+    },
+    {
+      "id": "foreign-key-reference",
+      "title": "DBの外部キー値とJavaのオブジェクト参照",
+      "source_page": 201,
+      "before_page": 241,
+      "flow_page": 241,
+      "image": "pages/foreign-key-reference-comparison.png"
+    },
+    {
+      "id": "responsive-switch",
+      "title": "横幅によって左右配置から上下配置へ切り替わる",
+      "source_page": 269,
+      "before_page": 316,
+      "flow_page": 316,
+      "image": "pages/responsive-switch-comparison.png"
+    },
+    {
+      "id": "error-cause-chain",
+      "title": "外側の例外から原因と自分のコードをたどる",
+      "source_page": 291,
+      "before_page": 343,
+      "flow_page": 343,
+      "image": "pages/error-cause-chain-comparison.png"
+    },
+    {
+      "id": "di-remote",
+      "title": "依存性の注入",
+      "source_page": 80,
+      "before_page": 93,
+      "flow_page": 93,
+      "image": "pages/di-remote-comparison.png"
+    }
+  ]
+}

@@ -523,6 +523,14 @@ public interface UserRepository extends JpaRepository<User, Integer>{
 
 :::
 
+![識別IDとサーバー側のセッション保存](assets/revision-ill-session.png){#illustration-2026-session-separation}
+
+::: {#illustration-2026-session-separation-caption .paragraph}
+
+ブラウザーはセッションIDを送り、サーバーがそのセッションに対応するログイン情報を参照します。
+
+:::
+
 :::
 
 ::: {#page-143 .source-page}
@@ -899,6 +907,14 @@ userForm.getPassword());
 [Spring では、フォームに入力した値が想定された形式や文字列であるかをチェックする機]{.s009}\
 [能を提供しています。その機能のことを「入力チェック（Validation）」と呼びます。この節では]{.s009}\
 [Spring のValidation API を活用した、入力チェックの仕方についてご説明いたします。]{.s009}
+
+:::
+
+![入力チェックの成功とエラーの分岐](assets/revision-ill-validation.png){#illustration-2026-validation-branch}
+
+::: {#illustration-2026-validation-branch-caption .paragraph}
+
+サーバー側でFormを検証し、エラーがあれば入力画面を表示し、なければ次の処理へ進みます。
 
 :::
 

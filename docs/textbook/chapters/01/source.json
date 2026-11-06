@@ -162,5 +162,12 @@
       ],
       "slide": "Microsoft_PowerPoint_Slide8.sldx"
     }
-  ]
+  ],
+  "illustrations": {
+    "illustration-2026-maven-libraries": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-2026-maven-libraries-caption"
+    }
+  }
 }

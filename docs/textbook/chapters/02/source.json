@@ -347,5 +347,12 @@
       "slide": "Microsoft_PowerPoint_Slide17.sldx"
     }
   ],
-  "tables": []
+  "tables": [],
+  "illustrations": {
+    "illustration-2026-model-transfer": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-2026-model-transfer-caption"
+    }
+  }
 }

@@ -466,6 +466,14 @@ private Category category;
 
 :::
 
+![DBの外部キー値とJavaのオブジェクト参照](assets/revision-ill-foreign-key.png){#illustration-2026-foreign-key-reference}
+
+::: {#illustration-2026-foreign-key-reference-caption .paragraph}
+
+DBではcategory_idの値で関連付け、JavaではProductのcategoryフィールドからCategoryを参照します。
+
+:::
+
 ::: {#p201-b04 .paragraph}
 
 [そして、]{.s009}[@ManyToOne アノテーションは、複数のアイテムが1つのカテゴリに属する「多対1」]{.s010}\

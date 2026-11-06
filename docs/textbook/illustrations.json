@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "base_commit": "256b3be61bec8493104294f923a0711985098554",
+  "generation_mode": "組み込み image_gen",
+  "print_limits": {
+    "max_width": 300,
+    "max_height": 140
+  },
+  "reviewed_chapters": [
+    "front",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "appendix-a",
+    "appendix-b",
+    "ex-front",
+    "ex01",
+    "ex02",
+    "ex03",
+    "ex04",
+    "ex05",
+    "ex06",
+    "ex07",
+    "ex-back"
+  ],
+  "new": [
+    {
+      "id": "maven-libraries",
+      "title": "pom.xmlの指定から必要なライブラリをそろえる",
+      "chapter": "01",
+      "source_page": 28,
+      "after_id": "p028-b04",
+      "before_id": "p028-b05",
+      "figure_id": "illustration-2026-maven-libraries",
+      "caption_id": "illustration-2026-maven-libraries-caption",
+      "asset": "assets/revision-ill-maven.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "pom.xmlの指定をもとに、Mavenが必要なライブラリをそろえます。",
+      "purpose": "pom.xmlを部品の指定リストとして共有し、Mavenが必要なライブラリを管理する関係を理解する。",
+      "difference": "既存は利点の箇条書きと導入操作画面。指定リスト→ツール→部品という仕組みの小型概念図はない。28pは図がなく、満杯のmessages参考欄より配置余地がある。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-4924f21d-da85-427f-8159-6f1849163f24.png",
+      "prompt": "Use case: scientific-educational. One compact illustration for a Japanese Spring Boot textbook. Very wide horizontal composition about 2.4:1, pure white background. Friendly flat 2D editorial drawing, crisp navy outlines, muted teal/blue, small warm orange accent. Sparse, readable at 106 mm wide by at most 49 mm high. No shadows, no glossy surfaces, no title banner, no watermark. Subject: how Maven uses project dependency declarations to assemble required libraries. Exactly three main elements in one horizontal row: left a blue file sheet labeled exactly \"pom.xml\" with three short abstract dependency-list strokes; middle a teal sorting/organizing box with a small gear labeled exactly \"Maven\"; right a neat group of three library package boxes with small Java-style file icons but NO logos, collectively labeled exactly \"ライブラリ\". One arrow from pom.xml to Maven and one arrow from Maven to the library group. Large legible labels. No version numbers, no command lines, no internet cloud, no download icon, no word latest, no running application or output screen. Teach dependencies being assembled according to a declaration, without implying a network download on every build or automatic selection of the newest version.",
+      "asset_sha256": "7665bd484da68cc4c1d2de5bb8657dfe050c178430c183d6cb78c3f0aa63ee57",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "model-transfer",
+      "title": "Modelを使ったデータの受け渡し",
+      "chapter": "02",
+      "source_page": 58,
+      "after_id": "p058-b02",
+      "before_id": "p058-b03",
+      "figure_id": "illustration-2026-model-transfer",
+      "caption_id": "illustration-2026-model-transfer-caption",
+      "asset": "assets/revision-ill-model.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "ControllerがModelに入れたデータとテンプレートから、Thymeleafがサーバー側でHTMLを生成します。",
+      "purpose": "Formで受け取ったデータを、Modelのキーを介してViewへ渡す関係を理解する。MVC全体図は再掲しない。",
+      "difference": "既存図はMVC全体の往復とAPI構文。今回は名前付きデータを渡す箱の比喩だけに限定する。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-1b15bc7e-ef57-48f5-a445-603bfe408c5a.png",
+      "prompt": "Use case: scientific-educational. One compact illustration for a Japanese Spring Boot textbook, very wide horizontal composition about 2.4:1, pure white background. Friendly flat 2D editorial drawing with crisp dark navy outlines, muted teal and blue and a small warm orange accent. No glossy surfaces, no shadows, no decorative objects, no title banner, no watermark. Very large legible labels and a sparse layout, suitable for printing at only 106 mm wide by 49 mm high. Only render exact requested labels. This must be technically accurate.\nSubject: how template rendering combines Model data and a template, explicitly not a linear chain where Model executes application logic. Arrange an upper-left Controller desk labeled exactly \"Controller\", with an orange data card being placed in a teal open basket labeled exactly \"Model\". Below it a separate white template sheet with empty rectangular placeholders, labeled exactly \"テンプレート\". An arrow from the Model basket and a separate arrow from the template sheet converge on a small central rendering gear labeled exactly \"Thymeleaf\". From the gear, one arrow leads right to a clean HTML result sheet, where the same orange card's contents now fill the placeholder; label this result exactly \"HTML\". Model is drawn as a passive container, never as a processing gear. No browser and no client-side execution.",
+      "asset_sha256": "fa23edf5a85d40aa5b04d2766d50a0cbf4096ea945086385f3c711b9c6cfadd1",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "repository-results",
+      "title": "Repositoryの返り値はリストと0/1件で異なる",
+      "chapter": "03",
+      "source_page": 90,
+      "after_id": "p090-b03",
+      "before_id": "p091-b01",
+      "figure_id": "illustration-2026-repository-results",
+      "caption_id": "illustration-2026-repository-results-caption",
+      "asset": "assets/revision-ill-repository.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "findAll()の結果は0件以上、findById(id)の結果は0件または1件です。後者はOptionalで受け取ります。",
+      "purpose": "Entityの1行1インスタンス図は既存のまま活用し、検索結果がない場合も含めた返り値の形を示す。",
+      "difference": "p072-f10は1行=1インスタンスを既に完全図示。p090-f23はヒット時の1行を示すため、新図は空の結果とコレクション/Optionalの形の対比に限定する。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-c6437ceb-33b1-4fd4-ae40-4ea0f3f47972.png",
+      "prompt": "Use case: scientific-educational. One compact illustration for a Japanese Spring Boot textbook, very wide horizontal composition about 2.4:1, pure white background. Friendly flat 2D editorial drawing with crisp dark navy outlines, muted teal and blue and a small warm orange accent. No glossy surfaces, no shadows, no decorative objects, no title banner, no watermark. Very large legible labels and a sparse layout, suitable for printing at only 106 mm wide by 49 mm high. Only render exact requested labels. This must be technically accurate.\nSubject: two parallel rows comparing result cardinality of two repository methods, not a sequential workflow. Left upper: a small search tray labeled exactly \"findAll()\"; to its right an arrow to a tidy collection of three product cards labeled exactly \"0件以上\". Use identical small product silhouettes on those cards. Left lower: a single-key search tray labeled exactly \"findById(id)\"; to its right an arrow that branches very slightly to two alternatives: one product card and a dotted empty slot, collectively labeled exactly \"0件または1件\". The empty slot must clearly represent no matching record. Do not draw more than one record as a findById result. The labels describe possible counts; the upper row must not suggest that results always exist. No return-type class names, no database query code.",
+      "asset_sha256": "3d497fbe46709329443984b93d7e484ee7d43035ea01fb0c5a8f3c39fbc2c75b",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "session-separation",
+      "title": "識別IDとサーバー側のセッション保存",
+      "chapter": "04",
+      "source_page": 142,
+      "after_id": "p142-b05",
+      "before_id": "p143-b01",
+      "figure_id": "illustration-2026-session-separation",
+      "caption_id": "illustration-2026-session-separation-caption",
+      "asset": "assets/revision-ill-session.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "ブラウザーはセッションIDを送り、サーバーがそのセッションに対応するログイン情報を参照します。",
+      "purpose": "画面を移っても残ることと、他のブラウザーセッションと分かれていることを同時に理解する。",
+      "difference": "既存はSessionのAPIと画面上の名前が変わらない例。識別子とサーバー側の利用区画の分離は図示されていない。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-f8a09bca-383c-41a4-8ca2-4b63f469d4c1.png",
+      "prompt": "Use case: scientific-educational. Create one compact educational illustration for a Japanese Spring Boot textbook. Wide horizontal composition about 2.4:1. Pure white background. Clean flat 2D editorial drawing, crisp dark navy outlines, muted teal and blue, small warm orange accents. Match a friendly printed technical textbook, not a glossy UI. No gradients, no shadows, no ornamental objects, no title banner. Use very large legible labels and generous white space, few objects, thick enough lines to remain clear when printed only 106 mm wide and at most 49 mm high. Render only the exact quoted labels requested. No additional prose, no watermark, no brand logos.\nSubject: show the separation of session ID in the browser and actual logged-in user data on the server. On the left a browser window with a small ticket reading exactly \"ID: abc\". Above it exact Japanese label \"ブラウザー\". On the right a clearly outlined server area labeled exactly \"サーバー\" containing a matching \"ID: abc\" ticket linked to a single user-information card labeled exactly \"ログイン情報\". One arrow from the browser ticket to the matching server ticket. The user-information card must remain entirely within the server area, with no arrow taking that card back to the browser. This is a conceptual teaching picture, not a real UI. Keep the browser and server separated by broad empty space.",
+      "asset_sha256": "04270c73e903a68afe19c6858f5c791914cdceb6b741a1798b0f35728d7dd204",
+      "image_pixels": [
+        1938,
+        811
+      ]
+    },
+    {
+      "id": "validation-branch",
+      "title": "入力チェックの成功とエラーの分岐",
+      "chapter": "04",
+      "source_page": 148,
+      "after_id": "p148-b02",
+      "before_id": "p149-b01",
+      "figure_id": "illustration-2026-validation-branch",
+      "caption_id": "illustration-2026-validation-branch-caption",
+      "asset": "assets/revision-ill-validation.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "サーバー側でFormを検証し、エラーがあれば入力画面を表示し、なければ次の処理へ進みます。",
+      "purpose": "アノテーションが何をして、その結果を使ってどこへ進むかを理解する。",
+      "difference": "既存はアノテーション構文と依存導入。新図はチェック結果を使った分岐だけを示す。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-b4fd2e94-b875-448b-a2c2-5fa5d51c29b2.png",
+      "prompt": "Use case: scientific-educational. Create one compact educational illustration for a Japanese Spring Boot textbook. Wide horizontal composition about 2.4:1. Pure white background. Clean flat 2D editorial drawing, crisp dark navy outlines, muted teal and blue, small warm orange accents. Match a friendly printed technical textbook, not a glossy UI. No gradients, no shadows, no ornamental objects, no title banner. Use very large legible labels and generous white space, few objects, thick enough lines to remain clear when printed only 106 mm wide and at most 49 mm high. Render only the exact quoted labels requested. No additional prose, no watermark, no brand logos.\nSubject: simple left-to-right branching illustration for form validation. Left: a small input form sheet labeled exactly \"入力\". Center: a check/shield icon labeled exactly \"検証\". An arrow from the input form to this check. From the check, branch into two clearly separated destinations on the right: upper destination is a copy of the input form with a small orange field error marker, labeled exactly \"エラー表示\"; lower destination is a small gear with a green check, labeled exactly \"処理を続ける\". Use an orange arrow to the error form and a teal arrow to the successful processing gear. Both arrows originate from the central validation check. No database, no extra circles or steps. The result should clearly teach that validation errors return to the form while valid input proceeds.",
+      "asset_sha256": "947378b5efdbc8df46b1a4d4284dbee2febb12144b3be5decec8e3454d0f6d74",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "layout-reuse",
+      "title": "共通レイアウトと画面ごとの内容を組み合わせる",
+      "chapter": "05",
+      "source_page": 181,
+      "after_id": "p181-b04",
+      "before_id": "p181-b05",
+      "figure_id": "illustration-2026-layout-reuse",
+      "caption_id": "illustration-2026-layout-reuse-caption",
+      "asset": "assets/revision-ill-layout.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "サーバー側で共通レイアウトと各ページの内容を組み合わせます。ヘッダーやフッターを再利用できます。",
+      "purpose": "共通部分を毎画面へコピーする方法と、1つの枠を再利用する方法の違いを直感で捉える。",
+      "difference": "既存は構文と実画面の領域説明。新図は共通枠1つ+異なる内容という合成の考え方に限る。既存スクリーンショットを縮小再掲しない。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-aa5f3795-cc9c-4e75-b5d3-a2aacc01e3e9.png",
+      "prompt": "Use case: scientific-educational. Create one compact educational illustration for a Japanese Spring Boot textbook. Wide horizontal composition about 2.4:1. Pure white background. Clean flat 2D editorial drawing, crisp dark navy outlines, muted teal and blue, small warm orange accents. Match a friendly printed technical textbook, not a glossy UI. No gradients, no shadows, no ornamental objects, no title banner. Use very large legible labels and generous white space, few objects, thick enough lines to remain clear when printed only 106 mm wide and at most 49 mm high. Render only the exact quoted labels requested. No additional prose, no watermark, no brand logos.\nSubject: explain composition of a shared web layout and page-specific content using three simplified page sheets in a single horizontal row. Left sheet labeled exactly \"共通レイアウト\": blue header bar and blue footer bar, blank white opening in the middle outlined with a dotted border. Middle: one smaller orange content rectangle labeled exactly \"ページの内容\", with tiny abstract horizontal text strokes and no header/footer. Between left and middle place a simple plus sign. Right sheet labeled exactly \"表示画面\": the same blue header and footer, and the orange content rectangle fitted precisely inside its middle opening. A single arrow points from the first two pieces towards the composed right sheet. No code and no other text. Make reuse of the shared blue portions and insertion of the orange content obvious.",
+      "asset_sha256": "d43ef7ce20e5a6be6d6d528bc969586a31ae3da60fd0616ac361819ef69ea98c",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "foreign-key-reference",
+      "title": "DBの外部キー値とJavaのオブジェクト参照",
+      "chapter": "06",
+      "source_page": 201,
+      "after_id": "p201-b03",
+      "before_id": "p201-b04",
+      "figure_id": "illustration-2026-foreign-key-reference",
+      "caption_id": "illustration-2026-foreign-key-reference-caption",
+      "asset": "assets/revision-ill-foreign-key.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "DBではcategory_idの値で関連付け、JavaではProductのcategoryフィールドからCategoryを参照します。",
+      "purpose": "category_idという列の値と、Category型のcategoryフィールドを混同しない。",
+      "difference": "既存は関係の本数と結合後の画面データ。新図はDBのキー値とJava参照という表現の違いだけ。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-9f9386f4-807f-4432-b535-82849a454402.png",
+      "prompt": "Use case: scientific-educational. One compact illustration for a Japanese Spring Boot textbook, very wide horizontal composition about 2.4:1, pure white background. Friendly flat 2D editorial drawing with crisp dark navy outlines, muted teal and blue and a small warm orange accent. No glossy surfaces, no shadows, no decorative objects, no title banner, no watermark. Very large legible labels and a sparse layout, suitable for printing at only 106 mm wide by 49 mm high. Only render exact requested labels. This must be technically accurate.\nSubject: show the difference between a foreign key value in a DB row and a Java object reference. Use two side-by-side groups, with exact group headings \"DB\" and \"Java\". DB group: a small Product row card labeled \"Product\" containing the exact field text \"category_id = 2\", connected by a thin arrow to one Category row card labeled \"Category\" containing \"id = 2\". Java group: a Product object card labeled \"Product\" containing the exact field text \"category\", with a reference arrow from that field to a distinct Category object card labeled \"Category\". The matching Category row and Category object share teal color. Product uses pale blue. The DB field shows a numeric ID; the Java field must not show a numeric ID or an equals sign. No copying of all fields, no multiple categories, no UML multiplicity markings. Keep all labels large and readable with just these four compact cards.",
+      "asset_sha256": "ac4474dc2e5a7e11d9f7cb3d4250f9c9ef53f8940272513354ea2249c1d0538c",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "responsive-switch",
+      "title": "横幅によって左右配置から上下配置へ切り替わる",
+      "chapter": "07",
+      "source_page": 269,
+      "after_id": "p269-b08",
+      "before_id": "p270-b01",
+      "figure_id": "illustration-2026-responsive-switch",
+      "caption_id": "illustration-2026-responsive-switch-caption",
+      "asset": "assets/revision-ill-responsive.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイドバー・本文の順に縦に並びます。",
+      "purpose": "col-md-3/col-md-9が常に3:9のまま縮む指定ではないことを理解する。",
+      "difference": "既存図は12列の割当やPCでの実画面構造。新図は同じcol-md指定の広い/狭い幅の前後対比だけ。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-3f84d0dc-86cc-4f7e-98c3-5be1a0f5063c.png",
+      "prompt": "Use case: scientific-educational. One compact illustration for a Japanese Spring Boot textbook, very wide horizontal composition about 2.4:1, pure white background. Friendly flat 2D editorial drawing with crisp dark navy outlines, muted teal and blue and a small warm orange accent. No gloss, no shadows, no decorative objects, no title banner, no watermark. Very large legible labels and a sparse layout, suitable for printing at only 106 mm wide by 49 mm high. Only render exact requested labels. Technically accurate.\nSubject: the Bootstrap col-md-3 and col-md-9 responsive change, showing the SAME two regions in two device outlines. Left a landscape browser screen labeled exactly \"768px以上\"; its content has two adjacent rectangles in exactly 1:3 WIDTH ratio: narrow blue sidebar on the left labeled \"サイドバー\", wide teal area on the right labeled \"本文\". Right a narrow portrait browser screen labeled exactly \"768px未満\"; its content has the same blue sidebar FIRST at the top spanning full width, and the same teal main area SECOND below it spanning full width, separated by white space. Do not retain side-by-side columns in the narrow screen. No 12-cell grid and no third region. Put one simple arrow between the two screens to indicate a width change, not data transfer. Keep every Japanese label fully within its rectangle. The main distinction is horizontal 3:9 on the wide screen versus vertical full-width stacking on the narrow screen.",
+      "asset_sha256": "ad37337b92a96772e3e1fa60e587cf7b86bd4c97d69685749a3d862cafbf71fc",
+      "image_pixels": [
+        1942,
+        809
+      ]
+    },
+    {
+      "id": "error-cause-chain",
+      "title": "外側の例外から原因と自分のコードをたどる",
+      "chapter": "appendix-b",
+      "source_page": 291,
+      "after_id": "revision-errors-trace-read",
+      "before_id": "revision-errors-template",
+      "figure_id": "illustration-2026-error-cause-chain",
+      "caption_id": "illustration-2026-error-cause-chain-caption",
+      "asset": "assets/revision-ill-errors.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "このログの例では、Caused by:から原因をたどり、ProductService.javaの26行目を確認します。",
+      "purpose": "一番上の例外だけで判断せず、原因とアプリケーションの場所を区別して探す。",
+      "difference": "既存はポート衝突やIDE操作画面で、原因チェーンを読む図はない。今回の短縮ログの直後に読み順だけを補う。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-799f5442-5d57-42ad-976a-4adb4d925dd0.png",
+      "prompt": "Use case: scientific-educational. One compact illustration for a Japanese Spring Boot textbook, very wide horizontal composition about 2.4:1, pure white background. Friendly flat 2D editorial drawing with crisp dark navy outlines, muted teal and blue and a small warm orange accent. No gloss, no shadows, no decorative objects, no title banner, no watermark. Very large legible labels and a sparse layout, suitable for printing at only 106 mm wide by 49 mm high. Only render exact requested labels. Technically accurate.\nSubject: a compact three-part visual guide to reading an error log. Left: a log sheet, large label exactly \"例外名\", with dark abstract log strokes and one highlighted orange cause line lower down. Center: a magnifying glass zooming in on that cause line, with the exact large readable text \"Caused by:\" inside a simple highlighted strip. Right: a source-code page labeled exactly \"自分のコード\", showing exactly \"ProductService.java\" at its top and one clearly marked orange line labeled exactly \"26行\". A simple arrow from the log sheet to the magnified cause, then a simple arrow to the code page, clearly teaching to identify the exception, follow its cause, then locate the application's code line. Do not add a debugging command, terminal command, web browser error screen, or other words. Keep it a reading guide, not a claim that every exception has a Caused by line.",
+      "asset_sha256": "4b17013f8ceeba8cc6677ae6b02661871e4f8a7070b9d915427a5806ed67a356",
+      "image_pixels": [
+        1939,
+        811
+      ]
+    }
+  ],
+  "resized": [
+    {
+      "id": "di-remote",
+      "chapter": "03",
+      "source_page": 80,
+      "figure_id": "revision-di-remote",
+      "caption_id": "revision-di-caption",
+      "asset": "assets/revision-di-remote.png",
+      "width": 260,
+      "max_height": 140
+    }
+  ],
+  "sources": [
+    {
+      "subject": "Bootstrap 5.3 のmdブレークポイント",
+      "url": "https://getbootstrap.com/docs/5.3/layout/breakpoints/"
+    },
+    {
+      "subject": "Bootstrap 5.3 のグリッド配置",
+      "url": "https://getbootstrap.com/docs/5.3/layout/grid/"
+    }
+  ],
+  "trademark": {
+    "already_present": true,
+    "collections": [
+      "textbook",
+      "exercise"
+    ],
+    "physical_page": 2,
+    "text": "IIBA®、BABOK® は、IIBA® (International Institute of Business Analysis™) の登録商標です。"
+  }
+}

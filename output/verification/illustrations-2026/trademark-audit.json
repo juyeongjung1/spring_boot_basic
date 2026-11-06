@@ -1,0 +1,177 @@
+{
+  "status": "pass",
+  "added_count": 0,
+  "source_changes": [],
+  "books": [
+    {
+      "chapter": "front",
+      "specified_text": "IIBA®、BABOK® は、IIBA® (International Institute of Business Analysis™) の登録商標です。",
+      "manuscript_text_exact": true,
+      "baseline_text_preserved": true,
+      "native_regular_styles": true,
+      "bottom_notice": "その他の会社名、製品名およびサービス名は、それぞれ各社の商標または登録商標です。",
+      "bottom_notice_baseline": 713.739990234375,
+      "variants": [
+        {
+          "kind": "original",
+          "pdf": "JAC0177G-T1-04(260715).pdf",
+          "page": 2,
+          "iiba_count": 1,
+          "all_original_trademarks_preserved": true,
+          "cisco_before_iiba_before_intel": true,
+          "regular_black_font": true,
+          "glyphs": {
+            "®": 3,
+            "™": 1
+          },
+          "fonts": [
+            "MS-PMincho",
+            "TimesNewRomanPSMT",
+            "YuGothic-Regular"
+          ],
+          "iiba_baseline": 522.7899780273438,
+          "line_pixel_sha256": "6e894f78ca0e77a36ac77e67676f8a03815db6f80c6e43615735a19384c9da4c",
+          "pass": true,
+          "pdf_sha256": "e730cacfb87c9851f00b2bc254efb0b5e5a6dea76c73ae5dbd2f104ec2756b46"
+        },
+        {
+          "kind": "chapter",
+          "pdf": "output\\pdf\\textbook\\chapter-front\\chapter-flow.pdf",
+          "page": 2,
+          "iiba_count": 1,
+          "all_original_trademarks_preserved": true,
+          "cisco_before_iiba_before_intel": true,
+          "regular_black_font": true,
+          "glyphs": {
+            "®": 3,
+            "™": 1
+          },
+          "fonts": [
+            "MS-PMincho",
+            "TimesNewRomanPSMT",
+            "YuGothic-Regular"
+          ],
+          "iiba_baseline": 522.7899780273438,
+          "line_pixel_sha256": "6d6012a1ca10fc170d62036e919f6e5f0c74ae113c4de8141c355a473404fbe4",
+          "pass": true,
+          "pdf_sha256": "d0270ccc0981601a04d6366081080edc16018e102cd30856802093d817cfcc64"
+        },
+        {
+          "kind": "assembled",
+          "pdf": "output\\pdf\\textbook\\textbook\\flow.pdf",
+          "page": 2,
+          "iiba_count": 1,
+          "all_original_trademarks_preserved": true,
+          "cisco_before_iiba_before_intel": true,
+          "regular_black_font": true,
+          "glyphs": {
+            "®": 3,
+            "™": 1
+          },
+          "fonts": [
+            "MS-PMincho",
+            "TimesNewRomanPSMT",
+            "YuGothic-Regular"
+          ],
+          "iiba_baseline": 522.7899780273438,
+          "line_pixel_sha256": "6d6012a1ca10fc170d62036e919f6e5f0c74ae113c4de8141c355a473404fbe4",
+          "pass": true,
+          "pdf_sha256": "94251c704132f990984f8a1d1f2d99b94857ad8d0d34c259245365c93ef6c1b7"
+        }
+      ],
+      "added_trademark_count": 0,
+      "source_sha256": {
+        "chapter.md": "7685292312cbd0b5b9157b1030fd59250318e7ef731e9fb3f3db1640f8be08e9",
+        "baseline.md": "e76e1d7761ddc45da9211688345c372a34399566db6bfd0b8b3e2b8a8ea3626e",
+        "source-layout.json": "bf1cb7740920b186ebfc60cb34dd0d2884c2422d99064e4a9895f0d63ab36180",
+        "source.json": "b879e75559a8b3506840bf6193abbd991b3e53166d2e0920caac4a936ebccf99"
+      }
+    },
+    {
+      "chapter": "ex-front",
+      "specified_text": "IIBA®、BABOK® は、IIBA® (International Institute of Business Analysis™) の登録商標です。",
+      "manuscript_text_exact": true,
+      "baseline_text_preserved": true,
+      "native_regular_styles": true,
+      "bottom_notice": "その他の会社名、製品名およびサービス名は、それぞれ各社の商標または登録商標です。",
+      "bottom_notice_baseline": 756.3599853515625,
+      "variants": [
+        {
+          "kind": "original",
+          "pdf": "JAC0177G-L1-04(260715).pdf",
+          "page": 2,
+          "iiba_count": 1,
+          "all_original_trademarks_preserved": true,
+          "cisco_before_iiba_before_intel": true,
+          "regular_black_font": true,
+          "glyphs": {
+            "®": 3,
+            "™": 1
+          },
+          "fonts": [
+            "MS-PMincho",
+            "TimesNewRomanPSMT",
+            "YuGothic-Regular"
+          ],
+          "iiba_baseline": 565.2999877929688,
+          "line_pixel_sha256": "a95f44b8fafe52264b828ee0b4814772e115a9fec3d596e0bf35a80c7a75536b",
+          "pass": true,
+          "pdf_sha256": "957797f8197dedde19e4e80cab503849d96cd9aed185c94e0d8bcab39328a7cd"
+        },
+        {
+          "kind": "chapter",
+          "pdf": "output\\pdf\\textbook\\chapter-ex-front\\chapter-flow.pdf",
+          "page": 2,
+          "iiba_count": 1,
+          "all_original_trademarks_preserved": true,
+          "cisco_before_iiba_before_intel": true,
+          "regular_black_font": true,
+          "glyphs": {
+            "®": 3,
+            "™": 1
+          },
+          "fonts": [
+            "MS-PMincho",
+            "TimesNewRomanPSMT",
+            "YuGothic-Regular"
+          ],
+          "iiba_baseline": 565.2999877929688,
+          "line_pixel_sha256": "51a995807bb75aee1d94c113c08abda6b2aa813ea192c258ead99a8388545121",
+          "pass": true,
+          "pdf_sha256": "56ef56ca2188a41365b4fc283f018ad753050060ab8f066d8a92a404543bbe3f"
+        },
+        {
+          "kind": "assembled",
+          "pdf": "output\\pdf\\textbook\\exercise\\flow.pdf",
+          "page": 2,
+          "iiba_count": 1,
+          "all_original_trademarks_preserved": true,
+          "cisco_before_iiba_before_intel": true,
+          "regular_black_font": true,
+          "glyphs": {
+            "®": 3,
+            "™": 1
+          },
+          "fonts": [
+            "MS-PMincho",
+            "TimesNewRomanPSMT",
+            "YuGothic-Regular"
+          ],
+          "iiba_baseline": 565.2999877929688,
+          "line_pixel_sha256": "51a995807bb75aee1d94c113c08abda6b2aa813ea192c258ead99a8388545121",
+          "pass": true,
+          "pdf_sha256": "0c768357553f1d3c6c60d30a939d46a21a9a943a0a08eabfa38b9d3e5f48fb33"
+        }
+      ],
+      "added_trademark_count": 0,
+      "source_sha256": {
+        "chapter.md": "fd90186dd47bf383a30f93474f8a8941212da96d7c866f6a44db0e01e3b0c5cd",
+        "baseline.md": "fd90186dd47bf383a30f93474f8a8941212da96d7c866f6a44db0e01e3b0c5cd",
+        "source-layout.json": "98ca9358876677944f156c0aac87fdddc06e1220fc514c62a6eea4255041798c",
+        "source.json": "8626e2b74979c695c0aa7f96a3fbc2ad515bbb146754a8d5a75d92461d040d2a"
+      }
+    }
+  ],
+  "visual_review": "原本/現稿/生成PDFに既に同文があるため重複追加なし。両冊2頁PNGを目視し、CiscoとIntel間、通常書体、®/™、一行収まりと下部注意書き保持を確認。",
+  "verified_utc": "2026-11-06T01:06:38.206782+00:00"
+}

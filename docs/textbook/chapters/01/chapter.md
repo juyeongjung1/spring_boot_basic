@@ -652,6 +652,14 @@ public class AppConfig {
 
 :::
 
+![pom.xmlの指定から必要なライブラリをそろえる](assets/revision-ill-maven.png){#illustration-2026-maven-libraries}
+
+::: {#illustration-2026-maven-libraries-caption .paragraph}
+
+pom.xmlの指定をもとに、Mavenが必要なライブラリをそろえます。
+
+:::
+
 ::: {#p028-b05 .paragraph}
 
 [これにより、「]{.s009}[A]{.s007}[&#32;さんのパソコンでは動くのに、]{.s009}[B]{.s007}[&#32;さんのパソコンでは動かない」といった環]{.s009}\

@@ -1,0 +1,609 @@
+{
+  "generated_at_utc": "2026-11-05T08:08:16.395660+00:00",
+  "recommended_new_illustrations": 9,
+  "chapters_reviewed": [
+    "front",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "appendix-a",
+    "appendix-b",
+    "ex-front",
+    "ex01",
+    "ex02",
+    "ex03",
+    "ex04",
+    "ex05",
+    "ex06",
+    "ex07",
+    "ex-back"
+  ],
+  "source_edit_performed": false,
+  "common_spec": {
+    "aspect_ratio": "2.4:1",
+    "canvas_px": [
+      1536,
+      640
+    ],
+    "default_print_size_pt": [
+      280,
+      116.667
+    ],
+    "maximum_print_size_pt": [
+      300,
+      140
+    ],
+    "existing_di_print_width_pt": 260,
+    "background": "白",
+    "style": "マットなフラットイラスト。共通色は落ち着いた青緑/灰/少量の橙。光沢・立体感なし。",
+    "labels": "短い語を原則4〜7個。細かいAPIや長い説明は画像へ詰めず本文/captionに任せる。生成画像内の綴りと可読性は必ず確認し、必要なら組版側へ出す。",
+    "caption_placement": "図の直下、既存本文より控えめに1〜2行。figureとcaptionは1つの短い非分割ブロックにする。",
+    "page_boundaries": "新図は指定source-pageのDiv内へ挿入。before_idが次のsource-pageに属する場合も、次頁へ所属を移さない。",
+    "preserve_existing": "既存コード、解説本文、source-layout/baseline/SVGを変更しない。コードのファイル名と本体、既存の構文説明カードの途中へ新図を挿入しない。"
+  },
+  "candidates": [
+    {
+      "id": "maven-libraries",
+      "chapter": "01",
+      "source_page": 28,
+      "after_id": "p028-b04",
+      "before_id": "p028-b05",
+      "before_id_source_page": 28,
+      "priority": 2,
+      "title": "pom.xmlの指定から必要なライブラリをそろえる",
+      "purpose": "pom.xmlを部品の指定リストとして共有し、Mavenが必要なライブラリを管理する関係を理解する。",
+      "content": "左にpom.xmlの小さな指定リスト、中央にMavenの仕分け箱、右に必要なライブラリのカード群。短い一方向の矢印でつなぎ、同じ指定には同じ版の部品がそろうことを同じ記号で示す。細かなXMLやバージョン番号、リポジトリのWeb画面は描かない。",
+      "labels": [
+        "pom.xml",
+        "Maven",
+        "指定",
+        "ライブラリ"
+      ],
+      "caption": "pom.xmlの指定をもとに、必要なライブラリをそろえます。",
+      "avoid": [
+        "pom.xmlだけ渡せばソースコードなしでアプリ全体が動くと示さない。",
+        "常に毎回インターネットから新規ダウンロードするとは描かない。ローカルキャッシュもありうる。",
+        "Mavenが勝手に最新版を選ぶ絵にしない。対象はpomや親/管理設定に基づく指定。",
+        "mvnrepository.comがJAR取得元そのものと誤解するURLやロゴを描かない。"
+      ],
+      "existing_figures": [
+        "01/p024-f07",
+        "01/p025-f08",
+        "01/p026-f10",
+        "01/p027-f13"
+      ],
+      "difference": "既存は利点の箇条書きと導入操作画面。指定リスト→ツール→部品という仕組みの小型概念図はない。28pは図がなく、満杯のmessages参考欄より配置余地がある。",
+      "placement_note": "p028-b04後、まとめのp028-b05前。同じsource-page28内。",
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-maven-libraries",
+      "new_caption_id": "illustration-2026-maven-libraries-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/01/assets/illustration-2026-maven-libraries.png",
+      "status": "confirmed",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。左にpom.xmlの小さな指定リスト、中央にMavenの仕分け箱、右に必要なライブラリのカード群。短い一方向の矢印でつなぎ、同じ指定には同じ版の部品がそろうことを同じ記号で示す。細かなXMLやバージョン番号、リポジトリのWeb画面は描かない。 図中ラベルを入れる場合は短い指定語だけ：pom.xml / Maven / 指定 / ライブラリ。細かいコードや長文は描かない。"
+    },
+    {
+      "id": "model-transfer",
+      "chapter": "02",
+      "source_page": 58,
+      "after_id": "p058-b02",
+      "before_id": "p058-b03",
+      "priority": 2,
+      "title": "Modelを使ったデータの受け渡し",
+      "purpose": "Formで受け取ったデータを、Modelのキーを介してViewへ渡す関係を理解する。MVC全体図は再掲しない。",
+      "content": "左にControllerと小さなUserFormカード、中央にuserというタグを付けた浅いトレー、右に結果画面。カードが中央のModelトレーを経由して結果画面へ届く、1方向の短い流れ。ブラウザー往復やDBは描かない。",
+      "labels": [
+        "Controller",
+        "Model",
+        "user",
+        "View"
+      ],
+      "caption": "Modelに名前を付けてデータを渡し、Viewから参照します。",
+      "avoid": [
+        "MVCのModel一般とSpring MVCのModelオブジェクトを同一概念だと断定しない。図は後者の受け渡しだけ。",
+        "Modelを永続保存先やSessionとして描かない。",
+        "パスワードや架空の認証成功を図に追加しない。"
+      ],
+      "existing_figures": [
+        "02/p038-f05",
+        "02/p057-f31"
+      ],
+      "difference": "既存図はMVC全体の往復とAPI構文。今回は名前付きデータを渡す箱の比喩だけに限定する。",
+      "placement_note": "説明p058-b02の直後。次のファイル名p058-b03とコードp058-b04の間へは挿入しない。",
+      "before_id_source_page": 58,
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-model-transfer",
+      "new_caption_id": "illustration-2026-model-transfer-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/02/assets/illustration-2026-model-transfer.png",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。左にControllerと小さなUserFormカード、中央にuserというタグを付けた浅いトレー、右に結果画面。カードが中央のModelトレーを経由して結果画面へ届く、1方向の短い流れ。ブラウザー往復やDBは描かない。 図中ラベルを入れる場合は短い指定語だけ：Controller / Model / user / View。細かいコードや長文は描かない。",
+      "status": "confirmed"
+    },
+    {
+      "id": "repository-results",
+      "chapter": "03",
+      "source_page": 90,
+      "after_id": "p090-b03",
+      "before_id": "p091-b01",
+      "priority": 2,
+      "title": "Repositoryの返り値はリストと0/1件で異なる",
+      "purpose": "Entityの1行1インスタンス図は既存のまま活用し、検索結果がない場合も含めた返り値の形を示す。",
+      "content": "中央のRepository窓口から上下2経路。findAll側は空にもなる複数カード用トレー、findById側はOptionalという1枚用ケース。1枚入った状態と空の状態を並べる。小さなレコードカードは同じ形に統一し、テーブルやフィールド一覧を再描画しない。",
+      "labels": [
+        "Repository",
+        "findAll",
+        "0件以上",
+        "List",
+        "findById",
+        "0/1件",
+        "Optional"
+      ],
+      "caption": "findAllはリスト、findByIdは0件または1件分を扱います。",
+      "avoid": [
+        "findAllが必ず2件以上を返すと示さない。",
+        "findByIdが常にProductやnullを直接返すと示さない。Optionalが空になり、本文例ではorElse(null)で取り出す。",
+        "検索なしのケースをエラーや例外の赤い爆発として描かない。"
+      ],
+      "existing_figures": [
+        "03/p072-f10",
+        "03/p085-f22",
+        "03/p090-f23"
+      ],
+      "difference": "p072-f10は1行=1インスタンスを既に完全図示。p090-f23はヒット時の1行を示すため、新図は空の結果とコレクション/Optionalの形の対比に限定する。",
+      "placement_note": "source-page90末尾、p090-b03後のclosing Divより前。p091-b01は次source-pageの先頭なので、図を91側へ移さない。",
+      "before_id_source_page": 91,
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-repository-results",
+      "new_caption_id": "illustration-2026-repository-results-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/03/assets/illustration-2026-repository-results.png",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。中央のRepository窓口から上下2経路。findAll側は空にもなる複数カード用トレー、findById側はOptionalという1枚用ケース。1枚入った状態と空の状態を並べる。小さなレコードカードは同じ形に統一し、テーブルやフィールド一覧を再描画しない。 図中ラベルを入れる場合は短い指定語だけ：Repository / findAll / 0件以上 / List / findById / 0/1件 / Optional。細かいコードや長文は描かない。",
+      "status": "confirmed"
+    },
+    {
+      "id": "session-separation",
+      "chapter": "04",
+      "source_page": 142,
+      "after_id": "p142-b05",
+      "before_id": "p143-b01",
+      "priority": 1,
+      "title": "識別IDとサーバー側のセッション保存",
+      "purpose": "画面を移っても残ることと、他のブラウザーセッションと分かれていることを同時に理解する。",
+      "content": "左にブラウザーと1つの識別IDの札。右のサーバー枠に、そのIDに対応するログイン情報の区画。識別IDを使って同じ保存領域を参照する短い矢印を描く。小型図へ2セッションを詰めず、区別されることはcaptionで伝える。保存データはサーバー内だけに置く。",
+      "labels": [
+        "ブラウザー",
+        "識別ID",
+        "サーバー",
+        "ログイン情報"
+      ],
+      "caption": "識別IDでセッションを区別し、ログイン情報はサーバー側に保持します。",
+      "avoid": [
+        "Cookieにユーザー情報全体が保存される絵にしない。",
+        "全利用者が1つのSessionを共有すると示さない。",
+        "必ずユーザー1人=セッション1つとは示さない。別のブラウザー/セッションを例示する。",
+        "時間無制限の保存やタブを分ければ必ず別セッションになるという図にしない。"
+      ],
+      "existing_figures": [
+        "04/p142-f07",
+        "04/p143-f08"
+      ],
+      "difference": "既存はSessionのAPIと画面上の名前が変わらない例。識別子とサーバー側の利用区画の分離は図示されていない。",
+      "placement_note": "source-page142末尾に追加。続く143のModel説明や144のコードカードを分割しない。",
+      "before_id_source_page": 143,
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-session-separation",
+      "new_caption_id": "illustration-2026-session-separation-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/04/assets/illustration-2026-session-separation.png",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。左にブラウザーと1つの識別IDの札。右のサーバー枠に、そのIDに対応するログイン情報の区画。識別IDを使って同じ保存領域を参照する短い矢印を描く。小型図へ2セッションを詰めず、区別されることはcaptionで伝える。保存データはサーバー内だけに置く。 図中ラベルを入れる場合は短い指定語だけ：ブラウザー / 識別ID / サーバー / ログイン情報。細かいコードや長文は描かない。",
+      "status": "confirmed"
+    },
+    {
+      "id": "validation-branch",
+      "chapter": "04",
+      "source_page": 148,
+      "after_id": "p148-b02",
+      "before_id": "p149-b01",
+      "priority": 1,
+      "title": "入力チェックの成功とエラーの分岐",
+      "purpose": "アノテーションが何をして、その結果を使ってどこへ進むかを理解する。",
+      "content": "入力用紙から、サーバー内のチェックゲートへ。通過側は次の処理へ進む矢印、エラー側は用紙へ戻る矢印と小さな項目マーカー。2経路は緑/赤だけで区別せず、チェック記号/注意記号と矢印方向も変える。",
+      "labels": [
+        "入力",
+        "サーバー",
+        "入力チェック",
+        "エラーなし",
+        "エラーあり",
+        "次の処理"
+      ],
+      "caption": "入力チェックの結果に応じて、処理を分けます。",
+      "avoid": [
+        "ブラウザーのrequiredだけでValidationが完了する絵にしない。",
+        "エラーがある場合にDB保存へ進む矢印を描かない。",
+        "@Validだけで必ず画面へ自動的に戻るとは示さない。分岐は本文のBindingResult/hasErrorsの処理。",
+        "現在のログイン例にないDB更新や追加の認証処理を描かない。"
+      ],
+      "existing_figures": [
+        "04/p148-f12",
+        "04/p149-f13"
+      ],
+      "difference": "既存はアノテーション構文と依存導入。新図はチェック結果を使った分岐だけを示す。",
+      "placement_note": "source-page148末尾。p151/p152の構文解説カード内部には挿入しない。",
+      "before_id_source_page": 149,
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-validation-branch",
+      "new_caption_id": "illustration-2026-validation-branch-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/04/assets/illustration-2026-validation-branch.png",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。入力用紙から、サーバー内のチェックゲートへ。通過側は次の処理へ進む矢印、エラー側は用紙へ戻る矢印と小さな項目マーカー。2経路は緑/赤だけで区別せず、チェック記号/注意記号と矢印方向も変える。 図中ラベルを入れる場合は短い指定語だけ：入力 / サーバー / 入力チェック / エラーなし / エラーあり / 次の処理。細かいコードや長文は描かない。",
+      "status": "confirmed"
+    },
+    {
+      "id": "layout-reuse",
+      "chapter": "05",
+      "source_page": 181,
+      "after_id": "p181-b04",
+      "before_id": "p181-b05",
+      "priority": 2,
+      "title": "共通レイアウトと画面ごとの内容を組み合わせる",
+      "purpose": "共通部分を毎画面へコピーする方法と、1つの枠を再利用する方法の違いを直感で捉える。",
+      "content": "中央にヘッダー/サイド/フッターを持つ1枚の共通枠。枠の中央の空き領域へ、一覧/入力の2つのカードを別々の完成画面として組み合わせる。2枚の完成画面で共通の枠は同じ色、主領域だけ色を変える。",
+      "labels": [
+        "共通レイアウト",
+        "画面の内容",
+        "一覧",
+        "入力",
+        "共通部分"
+      ],
+      "caption": "共通の枠に、画面ごとの内容を組み合わせます。",
+      "avoid": [
+        "iframeやブラウザー内での後からの動的差し替えに見せない。",
+        "2つの画面を同じ時刻に同じmain領域へ同時表示しない。",
+        "全HTMLを毎回手動コピーすることが正解という矢印にしない。",
+        "template名を入れるならlayout.htmlとmain_contentの綴りを原文と一致させる。"
+      ],
+      "existing_figures": [
+        "05/p181-f13",
+        "05/p182-f14",
+        "ex05/p041-f04",
+        "ex05/p041-f05"
+      ],
+      "difference": "既存は構文と実画面の領域説明。新図は共通枠1つ+異なる内容という合成の考え方に限る。既存スクリーンショットを縮小再掲しない。",
+      "placement_note": "導入説明p181-b04後、作業へ入るp181-b05前。次ページの目標画面やライブラリカードの間には入れない。",
+      "before_id_source_page": 181,
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-layout-reuse",
+      "new_caption_id": "illustration-2026-layout-reuse-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/05/assets/illustration-2026-layout-reuse.png",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。中央にヘッダー/サイド/フッターを持つ1枚の共通枠。枠の中央の空き領域へ、一覧/入力の2つのカードを別々の完成画面として組み合わせる。2枚の完成画面で共通の枠は同じ色、主領域だけ色を変える。 図中ラベルを入れる場合は短い指定語だけ：共通レイアウト / 画面の内容 / 一覧 / 入力 / 共通部分。細かいコードや長文は描かない。",
+      "status": "confirmed"
+    },
+    {
+      "id": "foreign-key-reference",
+      "chapter": "06",
+      "source_page": 201,
+      "after_id": "p201-b03",
+      "before_id": "p201-b04",
+      "priority": 1,
+      "title": "DBの外部キー値とJavaのオブジェクト参照",
+      "purpose": "category_idという列の値と、Category型のcategoryフィールドを混同しない。",
+      "content": "上段DB：productのcategory_id=3からcategoryのid=3へ短い対応線。下段Java：ProductのcategoryからCategoryオブジェクトへ参照の線。上下で対応する2つの関係を同色で示し、Categoryのデータ全体がproductの1セルに入る絵にはしない。",
+      "labels": [
+        "DB",
+        "category_id = 3",
+        "id = 3",
+        "Java",
+        "Product.category",
+        "Category"
+      ],
+      "caption": "DBでは外部キーで結び、Javaでは参照先をフィールドで扱います。",
+      "avoid": [
+        "Categoryオブジェクト全体がDBのcategory_id列へ格納される絵にしない。",
+        "この図をJavaの継承関係として描かない。",
+        "@ManyToOneだけで常に同じSQLや1回のJOINが発行されると断定しない。",
+        "1対多/多対1の矢印本数を説明する既存p198-f03は再描画しない。"
+      ],
+      "existing_figures": [
+        "06/p195-f02",
+        "06/p198-f03",
+        "06/p203-f04"
+      ],
+      "difference": "既存は関係の本数と結合後の画面データ。新図はDBのキー値とJava参照という表現の違いだけ。",
+      "placement_note": "コードp201-b02と直後の説明p201-b03を先に読める位置。ManyToOne詳細p201-b04へ進む前。",
+      "before_id_source_page": 201,
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-foreign-key-reference",
+      "new_caption_id": "illustration-2026-foreign-key-reference-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/06/assets/illustration-2026-foreign-key-reference.png",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。上段DB：productのcategory_id=3からcategoryのid=3へ短い対応線。下段Java：ProductのcategoryからCategoryオブジェクトへ参照の線。上下で対応する2つの関係を同色で示し、Categoryのデータ全体がproductの1セルに入る絵にはしない。 図中ラベルを入れる場合は短い指定語だけ：DB / category_id = 3 / id = 3 / Java / Product.category / Category。細かいコードや長文は描かない。",
+      "status": "confirmed"
+    },
+    {
+      "id": "responsive-switch",
+      "chapter": "07",
+      "source_page": 269,
+      "after_id": "p269-b08",
+      "before_id": "p270-b01",
+      "priority": 2,
+      "title": "横幅によって左右配置から上下配置へ切り替わる",
+      "purpose": "col-md-3/col-md-9が常に3:9のまま縮む指定ではないことを理解する。",
+      "content": "左は幅の広い画面でサイド3/本文9の左右配置、右は幅の狭い画面で同じサイドと本文が縦に並ぶ。対応する領域は同じ色、読み順は上から下。画面の物理機種の絵より、幅の違いが分かる単純なブラウザー枠を使う。",
+      "labels": [
+        "md以上",
+        "md未満",
+        "サイド",
+        "本文",
+        "3 : 9"
+      ],
+      "caption": "横幅に応じて、左右の配置から上下の配置へ切り替わります。",
+      "avoid": [
+        "12分割の6+3+3を再図示しない。",
+        "col-3/col-9でも必ず同じ切り替えが起きると示さない。対象は本文のcol-md-3/col-md-9。",
+        "端末名だけで切替条件が決まると描かない。判定は表示領域の幅。",
+        "狭い画面でサイドを自動的に非表示にしたり、メニューへ折り畳む機能を勝手に描かない。"
+      ],
+      "existing_figures": [
+        "07/p265-f22",
+        "07/p267-f23",
+        "07/p269-f25",
+        "ex07/p072-f05"
+      ],
+      "difference": "既存図は12列の割当やPCでの実画面構造。新図は同じcol-md指定の広い/狭い幅の前後対比だけ。",
+      "placement_note": "source-page269末尾。p269-b07/b08と新図をできるだけ同じ物理頁に保ち、p270のコード開始は別source-pageのまま。",
+      "before_id_source_page": 270,
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-responsive-switch",
+      "new_caption_id": "illustration-2026-responsive-switch-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/07/assets/illustration-2026-responsive-switch.png",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。左は幅の広い画面でサイド3/本文9の左右配置、右は幅の狭い画面で同じサイドと本文が縦に並ぶ。対応する領域は同じ色、読み順は上から下。画面の物理機種の絵より、幅の違いが分かる単純なブラウザー枠を使う。 図中ラベルを入れる場合は短い指定語だけ：md以上 / md未満 / サイド / 本文 / 3 : 9。細かいコードや長文は描かない。",
+      "status": "confirmed"
+    },
+    {
+      "id": "error-cause-chain",
+      "chapter": "appendix-b",
+      "source_page": 291,
+      "after_id": "revision-errors-trace-read",
+      "before_id": "revision-errors-template",
+      "priority": 1,
+      "title": "外側の例外から原因と自分のコードをたどる",
+      "purpose": "一番上の例外だけで判断せず、原因とアプリケーションの場所を区別して探す。",
+      "content": "外側の例外から原因をたどり、元ログのProductService.javaの26行目へ至る小さな読み順の図。原因には注意アイコン、コード位置にはファイル/しおりの記号。数値はこのログの例に限定し、長いログ全体や複数の例外名は再掲しない。",
+      "labels": [
+        "外側の例外",
+        "Caused by",
+        "原因",
+        "ProductService.java",
+        "26行目"
+      ],
+      "caption": "このログの例では、原因とProductService.javaの26行目を確かめます。",
+      "avoid": [
+        "ログの最後の行が常に真の原因と示さない。",
+        "Caused byが必ず存在する、または最も深い例外だけで全て分かると示さない。",
+        "自作コードの場所と例外そのものを同じ意味のアイコンにしない。",
+        "26行目は本文の短縮ログ例の位置であり、別のエラーも常に26行目にあるとは示さない。"
+      ],
+      "existing_figures": [
+        "appendix-b/p292-f01",
+        "appendix-b/p293-f02",
+        "appendix-b/p293-f03",
+        "appendix-b/p293-f04"
+      ],
+      "difference": "既存はポート衝突やIDE操作画面で、原因チェーンを読む図はない。今回の短縮ログの直後に読み順だけを補う。",
+      "placement_note": "短縮ログと説明revision-errors-trace-readの後、個別エラーの説明revision-errors-templateの前。codeカードとその説明を分断しない。",
+      "before_id_source_page": 291,
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-error-cause-chain",
+      "new_caption_id": "illustration-2026-error-cause-chain-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/appendix-b/assets/illustration-2026-error-cause-chain.png",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。外側の例外から原因をたどり、元ログのProductService.javaの26行目へ至る小さな読み順の図。原因には注意アイコン、コード位置にはファイル/しおりの記号。数値はこのログの例に限定し、長いログ全体や複数の例外名は再掲しない。 図中ラベルを入れる場合は短い指定語だけ：外側の例外 / Caused by / 原因 / ProductService.java / 26行目。細かいコードや長文は描かない。",
+      "status": "confirmed"
+    }
+  ],
+  "evaluated_but_not_added": [
+    {
+      "topic": "第1章framework",
+      "decision": "追加しない",
+      "evidence": [
+        "01/p018-f02",
+        "01/p019-f03",
+        "01/p021-f04"
+      ],
+      "reason": "frameworkの共通機能やSpring/Bootの図は既に十分。一方、Mavenは原28pに指定リスト→部品取得の局所図を追加する。"
+    },
+    {
+      "topic": "MVC全体の往復",
+      "decision": "Model受渡しだけに限定",
+      "evidence": [
+        "02/p038-f05"
+      ],
+      "reason": "9段階の既存フローがあるため、ブラウザー→Controller→Model→Viewの全経路をもう1枚描かない。前回MVC案を局所化。"
+    },
+    {
+      "topic": "Entityの1行1インスタンス",
+      "decision": "追加しない",
+      "evidence": [
+        "03/p072-f10"
+      ],
+      "reason": "元図の実画像を確認し、テーブル9行とProductインスタンス9件が既に完全に図示されていた。Repository結果の形へ置換。"
+    },
+    {
+      "topic": "DIリモコン",
+      "decision": "新規生成しない",
+      "evidence": [
+        "03/revision-di-remote",
+        "03/revision-di-caption"
+      ],
+      "reason": "前回案は原80pに追加済み。今回は同じ図の表示幅をroot方針の260ptへ整えるだけ。"
+    },
+    {
+      "topic": "外部参照の1対多/多対1",
+      "decision": "DBのIDとJava参照に限定",
+      "evidence": [
+        "06/p198-f03"
+      ],
+      "reason": "元図の実画像で本数の対比が明確。矢印の本数を再図示しない。"
+    },
+    {
+      "topic": "第7章12分割",
+      "decision": "レスポンシブの切替へ限定",
+      "evidence": [
+        "07/p265-f22",
+        "07/p267-f23",
+        "07/p269-f25"
+      ],
+      "reason": "列幅の算数とPC実画面は既存図で十分。幅が変わる前後の比較がないため、その差だけ描く。"
+    },
+    {
+      "topic": "付録Aの環境構築",
+      "decision": "追加しない",
+      "evidence": [
+        "appendix-a/p283-f01",
+        "appendix-a/p284-f04",
+        "appendix-a/p285-f06",
+        "appendix-a/p287-f09"
+      ],
+      "reason": "操作画面と手順の対応が中心。小型イラストよりスクリーンショットと順序の保持が有効。"
+    },
+    {
+      "topic": "演習全9章",
+      "decision": "今回は新図を足さない",
+      "evidence": [
+        "ex02/p013-f01",
+        "ex03/p021-f01",
+        "ex04/p031-f01",
+        "ex05/p041-f04",
+        "ex06/p053-f01",
+        "ex07/p072-f05"
+      ],
+      "reason": "完成画面/入力結果/ヒントが既にあり、概念図は対応本文側へ集約する。解答コードや設計の答えを絵で先出ししない。"
+    },
+    {
+      "topic": "messages言語選択",
+      "decision": "今回は保留",
+      "evidence": [
+        "04/revision-messages-locale"
+      ],
+      "reason": "原161pの参考欄が満杯で、図だけで物理頁が増える懸念があるため今回は保留。"
+    }
+  ],
+  "qa": [
+    "追加18IDと既存DIの幅だけを差分として明確にする。",
+    "全373元page境界と元2879IDを保持。新ID所属とfigure/captionの同頁配置を確認する。",
+    "小型表示でラベルを読めるか実PDFで確認。画像内の文字はnative_text_completeと別に目視する。",
+    "セッションの保存場所、Optionalの空、言語コード、参照先、レスポンシブの領域順序を仕様通り目視する。",
+    "図の追加でコードラベルが孤立しないこと、次source-pageの開始が消えないことを全checksとmarksで確認。"
+  ],
+  "markdown_sha256": {
+    "front": "7685292312cbd0b5b9157b1030fd59250318e7ef731e9fb3f3db1640f8be08e9",
+    "01": "9fe360e6fea5994f40727cb9af410fe1779fc8ee7d74f29637472d0e662bd7bc",
+    "02": "2763461a475d99b4fa30da5765af84533f7d17b54f2abbcf5311b746c6be3fb4",
+    "03": "28dcebc661f6da389a425e7f2d3173930a019e5322e9de93bf1ea4e7fd2ea468",
+    "04": "a5e3a7e152e45351eee7a6505e1b5864cb6baba64760a6c06e9ca7defcb8f47e",
+    "05": "a183fca03375425987403a658fda89b5ccfdf2f12f7370ac2e3a536602021345",
+    "06": "4fa9df67f310f843140ac4c4ae33f7fe8886039a963825b1066ef916b9e4cad8",
+    "07": "476dc6e8edb268b857675b01164e8c3c0c24bcbf3730e535bc3d6e6bbb1fe543",
+    "appendix-a": "d70e5383134d479fada9ff833e0195fb2ba0d419a13e2660c7ea0cf12fd11310",
+    "appendix-b": "dfbffbc67f893f77733a7e25708c7aaddb4fa492b7648b49e40157707bfeac70",
+    "ex-front": "fd90186dd47bf383a30f93474f8a8941212da96d7c866f6a44db0e01e3b0c5cd",
+    "ex01": "97835a61d42bae53c771372592b375a19a2c460d9b79564b5905a480a007ac03",
+    "ex02": "0e8f94c3fca9d5144a20a553388a5f361b15e88703c1bf004a4c90f83236594e",
+    "ex03": "9342baebdc02d7fef51ad2ae3518ec5e382c127ad23a30fab04b6debbfe8699b",
+    "ex04": "4ad5ca6c9000ed431406e0fc2025ec62c6867a437ee72c28e47fd0f34f6bd960",
+    "ex05": "a5745ee144b57476d109ddb31a508e8249677a2753c9b0ebfe613e0246e65f16",
+    "ex06": "f95fcc8fa462ca234a7f2d4ec86c627cb6b3ff4a852a9e5c2a44ead72e5338f0",
+    "ex07": "e8d7c4ceb761c934a4f81cee2c04235e0fa92634ab3ba1c3358b0fbe3b31db57",
+    "ex-back": "d5bb1243ca35bcc7489d06a8dc436c94e13b9d08b889c2d5ba996211341cca61"
+  },
+  "deferred_candidates": [
+    {
+      "id": "messages-locale",
+      "chapter": "04",
+      "source_page": 161,
+      "after_id": "revision-messages-locale",
+      "before_id": "p162-b01",
+      "priority": 1,
+      "title": "同じキーから言語別の文言を選ぶ",
+      "purpose": "画面のキーを変えずに、言語別ファイルの文言を参照することを理解する。",
+      "content": "左に小さな言語選択の札、中央に共通キーの鍵形カード、右にja/enの2つの薄いファイルと同じ形のログインボタン。上のボタンはログイン、下はLog in。標準ファイルのフォールバックを複雑な矢印にせず、主題は同じキーの言語別表示だけに絞る。",
+      "labels": [
+        "同じキー",
+        "screen.login",
+        "ja",
+        "en",
+        "ログイン",
+        "Log in"
+      ],
+      "caption": "同じキーで参照し、言語に応じて表示を切り替えます。",
+      "avoid": [
+        "jaをjp、koをkrと書かない。",
+        "未対応言語が必ず直接標準ファイルへ戻ると断定しない。system-locale設定を含む詳細は直前の本文へ委ねる。",
+        "ブラウザー側がpropertiesを直接読み込む絵にしない。",
+        "翻訳APIや自動翻訳処理が存在するように描かない。"
+      ],
+      "existing_figures": [
+        "04/p161-f23",
+        "04/p161-f24"
+      ],
+      "difference": "既存はエラーメッセージ設定と画面。今回追加された言語別バンドル/同じキーの図はまだない。前回提案のmessages案を簡素化して採用。",
+      "placement_note": "source-page161の参考本文がすべて終わった後に置く。reference-group=messagesの途中に画像を挟むと枠が閉じて次の参考要素が新頁へ分かれるため、必ずrevision-messages-locale後。",
+      "before_id_source_page": 162,
+      "same_source_page_required": true,
+      "new_figure_id": "illustration-2026-messages-locale",
+      "new_caption_id": "illustration-2026-messages-locale-caption",
+      "print_size_pt": [
+        280,
+        116.667
+      ],
+      "asset_path_suggestion": "docs/textbook/chapters/04/assets/illustration-2026-messages-locale.png",
+      "generation_prompt_ja": "横長2.4対1。白地。教材向けの小さく読みやすいマットなフラットイラスト。細すぎない輪郭、落ち着いた青緑と灰色。光沢、グラデーション、3D、写真表現なし。左に小さな言語選択の札、中央に共通キーの鍵形カード、右にja/enの2つの薄いファイルと同じ形のログインボタン。上のボタンはログイン、下はLog in。標準ファイルのフォールバックを複雑な矢印にせず、主題は同じキーの言語別表示だけに絞る。 図中ラベルを入れる場合は短い指定語だけ：同じキー / screen.login / ja / en / ログイン / Log in。細かいコードや長文は描かない。",
+      "status": "deferred",
+      "deferred_reason": "原161pの参考欄が満杯で、図だけで物理頁が増える懸念があるため今回は保留。"
+    }
+  ],
+  "generation_order": [
+    "session-separation",
+    "validation-branch",
+    "layout-reuse",
+    "model-transfer",
+    "repository-results",
+    "foreign-key-reference",
+    "responsive-switch",
+    "error-cause-chain",
+    "maven-libraries"
+  ]
+}

@@ -5,8 +5,8 @@
     164,
     191
   ],
-  "blocks": 140,
-  "figures": 19,
+  "blocks": 141,
+  "figures": 20,
   "source_coverage": [
     {
       "body": 101,
@@ -330,7 +330,7 @@
     "split_short_code": [],
     "split_short_tables": [],
     "split_instructions": [],
-    "instruction_groups": 5,
+    "instruction_groups": 6,
     "fixed_pages": [
       2,
       33
@@ -2184,6 +2184,48 @@
         "page": 20,
         "x": 85.104,
         "y": 609.6819677734375
+      },
+      {
+        "id": "instruction-illustration-2026-layout-reuse",
+        "edge": "start",
+        "page": 20,
+        "x": 85.104,
+        "y": 622.6419677734375
+      },
+      {
+        "id": "illustration-2026-layout-reuse",
+        "edge": "start",
+        "page": 20,
+        "x": 85.104,
+        "y": 622.6419677734375
+      },
+      {
+        "id": "illustration-2026-layout-reuse",
+        "edge": "end",
+        "page": 20,
+        "x": 85.104,
+        "y": 739.284604230698
+      },
+      {
+        "id": "illustration-2026-layout-reuse-caption",
+        "edge": "start",
+        "page": 20,
+        "x": 85.104,
+        "y": 743.284604230698
+      },
+      {
+        "id": "illustration-2026-layout-reuse-caption",
+        "edge": "end",
+        "page": 20,
+        "x": 85.104,
+        "y": 752.784604230698
+      },
+      {
+        "id": "instruction-illustration-2026-layout-reuse",
+        "edge": "end",
+        "page": 20,
+        "x": 85.104,
+        "y": 752.784604230698
       },
       {
         "id": "__source-page-182",

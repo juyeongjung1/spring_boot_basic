@@ -1,0 +1,50 @@
+[
+  {
+    "chapter": "ex02",
+    "first": "p012-b08",
+    "continuation": "p012-b09",
+    "word_file": "JAC0177G-L1-04(260715修正).docx",
+    "word_paragraph_matches": [
+      {
+        "index": 184,
+        "text": "第2章で学習したSpringアプリケーションの基本文法を確認し、実際にプログラムを作成します。 "
+      }
+    ],
+    "unique_same_word_paragraph": true,
+    "verified_utc": "2026-11-06T01:02:06.689257+00:00",
+    "word_sha256": "caa569586b7a71b1036313f8811905178ffabcc61b9668dec90555033a7e22aa",
+    "chapter_sha256": "0e8f94c3fca9d5144a20a553388a5f361b15e88703c1bf004a4c90f83236594e"
+  },
+  {
+    "chapter": "ex06",
+    "first": "p048-b09",
+    "continuation": "p048-b10",
+    "word_file": "JAC0177G-L1-04(260715修正).docx",
+    "word_paragraph_matches": [
+      {
+        "index": 998,
+        "text": "この章では、第6章で学習した「外部参照のあるエンティティの構成方法」や「JPQLによる実践的な検索処理」を確認します。"
+      }
+    ],
+    "unique_same_word_paragraph": true,
+    "verified_utc": "2026-11-06T01:02:08.001942+00:00",
+    "word_sha256": "caa569586b7a71b1036313f8811905178ffabcc61b9668dec90555033a7e22aa",
+    "chapter_sha256": "f95fcc8fa462ca234a7f2d4ec86c627cb6b3ff4a852a9e5c2a44ead72e5338f0"
+  },
+  {
+    "chapter": "ex07",
+    "first": "p064-b11",
+    "continuation": "p064-b12",
+    "word_file": "JAC0177G-L1-04(260715修正).docx",
+    "word_paragraph_matches": [
+      {
+        "index": 1431,
+        "text": "この章では、第7章で学習した Bootstrap の基礎知識を踏まえ、実際にシステム画面のスタイルを改善します。"
+      }
+    ],
+    "unique_same_word_paragraph": true,
+    "verified_utc": "2026-11-06T01:02:09.388875+00:00",
+    "word_sha256": "caa569586b7a71b1036313f8811905178ffabcc61b9668dec90555033a7e22aa",
+    "chapter_sha256": "e8d7c4ceb761c934a4f81cee2c04235e0fa92634ab3ba1c3358b0fbe3b31db57"
+  }
+]

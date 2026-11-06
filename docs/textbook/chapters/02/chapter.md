@@ -1470,6 +1470,14 @@ initial-scale=1.0"/>
 
 :::
 
+![Modelを使ったデータの受け渡し](assets/revision-ill-model.png){#illustration-2026-model-transfer}
+
+::: {#illustration-2026-model-transfer-caption .paragraph}
+
+ControllerがModelに入れたデータとテンプレートから、Thymeleafがサーバー側でHTMLを生成します。
+
+:::
+
 ::: {#p058-b03 .paragraph}
 
 […/controller/LoginController3.java]{.s012}

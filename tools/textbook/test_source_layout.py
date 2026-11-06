@@ -97,8 +97,14 @@ class SourceLayoutTests(unittest.TestCase):
         expected = {('03', 'migration-03-jpa-pom'), ('03', 'revision-di-caption')}
         expected.update(('04', 'revision-messages-' + name) for name in messages)
         expected.update(('appendix-b', 'revision-errors-' + name) for name in errors)
+        expected_figures = {('03', 'revision-di-remote')}
+        for name, chapter in self.chapters.items():
+            for ident, spec in chapter['config'].get('illustrations', {}).items():
+                if ident not in chapter['original_figures']:
+                    expected.add((name, spec['caption_id']))
+                    expected_figures.add((name, ident))
         self.assertEqual(added, expected)
-        self.assertEqual(added_figures, {('03', 'revision-di-remote')})
+        self.assertEqual(added_figures, expected_figures)
         start = self.mark(self.chapters['03'], 'revision-di-remote', 'start')
         end = self.mark(self.chapters['03'], 'revision-di-remote', 'end')
         self.assertEqual(start['page'], end['page'])

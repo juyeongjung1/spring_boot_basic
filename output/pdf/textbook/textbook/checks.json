@@ -2,7 +2,7 @@
   "title": "Spring Boot入門 本文教材",
   "source_pages": 296,
   "reference_pages": 296,
-  "flow_pages": 348,
+  "flow_pages": 349,
   "comparison_pages": 296,
   "complete_source_coverage": true,
   "continuous_footer_numbers": true,
@@ -385,22 +385,22 @@
     {
       "title": "8080 ポート衝突エラー",
       "source_page": 292,
-      "flow_page": 344
+      "flow_page": 345
     },
     {
       "title": "Eclipse 上で赤線が発生したり、呼び出したいメソッドが候補から出ない",
       "source_page": 293,
-      "flow_page": 345
+      "flow_page": 346
     },
     {
       "title": "設定ファイル・イメージ・CSS・JavaScript などを修正しても反映されない",
       "source_page": 294,
-      "flow_page": 346
+      "flow_page": 347
     },
     {
       "title": "インポート時にエラーが発生する時",
       "source_page": 294,
-      "flow_page": 346
+      "flow_page": 347
     }
   ],
   "chapters": [
@@ -438,8 +438,8 @@
         15,
         30
       ],
-      "blocks": 84,
-      "figures": 15,
+      "blocks": 85,
+      "figures": 16,
       "table_count": 0
     },
     {
@@ -457,8 +457,8 @@
         31,
         70
       ],
-      "blocks": 207,
-      "figures": 33,
+      "blocks": 208,
+      "figures": 34,
       "table_count": 0
     },
     {
@@ -476,8 +476,8 @@
         71,
         157
       ],
-      "blocks": 485,
-      "figures": 70,
+      "blocks": 486,
+      "figures": 71,
       "table_count": 5
     },
     {
@@ -495,8 +495,8 @@
         158,
         197
       ],
-      "blocks": 195,
-      "figures": 25,
+      "blocks": 197,
+      "figures": 27,
       "table_count": 2
     },
     {
@@ -514,8 +514,8 @@
         198,
         230
       ],
-      "blocks": 140,
-      "figures": 19,
+      "blocks": 141,
+      "figures": 20,
       "table_count": 0
     },
     {
@@ -533,8 +533,8 @@
         231,
         280
       ],
-      "blocks": 314,
-      "figures": 19,
+      "blocks": 315,
+      "figures": 20,
       "table_count": 7
     },
     {
@@ -552,8 +552,8 @@
         281,
         332
       ],
-      "blocks": 265,
-      "figures": 34,
+      "blocks": 266,
+      "figures": 35,
       "table_count": 0
     },
     {
@@ -588,10 +588,10 @@
       ],
       "flow_pages": [
         341,
-        348
+        349
       ],
-      "blocks": 64,
-      "figures": 5,
+      "blocks": 65,
+      "figures": 6,
       "table_count": 0
     }
   ]

@@ -21,11 +21,11 @@
   body
 }
 #let glyph(x, y, value, style) = at(x, y, text(top-edge: 0pt, bottom-edge: 0pt)[#styled(style, value)])
-#let mark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), x: here().position().x / 1pt, y: here().position().y / 1pt)) <book-check>]
+#let mark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), x: here().position().x / 1pt, y: here().position().y / 1pt))<book-check>]
 // 本文の行送り18ptに対し、段落境界は24ptにする。
-#let paragraph(id, body, indent: 11.04pt) = block(above: 0pt, below: 12.96pt)[
+#let paragraph(id, body, indent: 11.04pt, end-id: none) = block(above: 0pt, below: 12.96pt)[
   #set par(first-line-indent: (amount: indent, all: true))
-  #mark(id, "start")#body#mark(id, "end")
+  #mark(id, "start")#body#mark(if end-id == none {id} else {end-id}, "end")#parbreak()
 ]
 #let bullet-paragraph(id, marker, body, continuing: false) = block(
   above: 12.96pt, below: if continuing {6.96pt} else {12.96pt}, inset: (left: 11.04pt))[
@@ -67,6 +67,18 @@
   #mark(id, "start")
   #image(path, width: width * 1pt)
   #mark(id, "end")
+]
+#let compact-illustration(id, path, width, height, caption-id, caption) = block(
+  width: 100%, breakable: false, above: 8pt, below: 12pt)[
+  #mark("instruction-" + id, "start")
+  #block(width: width * 1pt, above: 0pt, below: 4pt)[
+    #mark(id, "start")#image(path, width: width * 1pt, height: height * 1pt)#mark(id, "end")
+  ]
+  #block(above: 0pt, below: 0pt)[
+    #set par(first-line-indent: 0pt, leading: 4.5pt, spacing: 0pt)
+    #mark(caption-id, "start")#text(font: "MS PMincho", size: 9.5pt, caption)#mark(caption-id, "end")
+  ]
+  #mark("instruction-" + id, "end")
 ]
 #let code-fragment(lines, language, font-size: 12pt, leading: 6pt) = [
   #set text(font: "MS Gothic", size: font-size)

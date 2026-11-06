@@ -5,8 +5,8 @@
     290,
     296
   ],
-  "blocks": 64,
-  "figures": 5,
+  "blocks": 65,
+  "figures": 6,
   "source_coverage": [
     {
       "body": 15,
@@ -92,20 +92,20 @@
     ]
   },
   "flow": {
-    "pages": 8,
+    "pages": 9,
     "native_text_complete": true,
     "heading_orphans": [],
     "split_figures": [],
     "split_short_code": [],
     "split_short_tables": [],
     "split_instructions": [],
-    "instruction_groups": 0,
+    "instruction_groups": 1,
     "fixed_pages": [
-      4,
       5,
       6,
       7,
-      8
+      8,
+      9
     ],
     "overflow": [],
     "block_positions": [
@@ -285,226 +285,268 @@
         "y": 339.337
       },
       {
-        "id": "revision-errors-template",
+        "id": "instruction-illustration-2026-error-cause-chain",
         "edge": "start",
         "page": 3,
         "x": 85.104,
         "y": 352.29699999999997
       },
       {
+        "id": "illustration-2026-error-cause-chain",
+        "edge": "start",
+        "page": 3,
+        "x": 85.104,
+        "y": 352.29699999999997
+      },
+      {
+        "id": "illustration-2026-error-cause-chain",
+        "edge": "end",
+        "page": 3,
+        "x": 85.104,
+        "y": 469.4089133574007
+      },
+      {
+        "id": "illustration-2026-error-cause-chain-caption",
+        "edge": "start",
+        "page": 3,
+        "x": 85.104,
+        "y": 473.4089133574007
+      },
+      {
+        "id": "illustration-2026-error-cause-chain-caption",
+        "edge": "end",
+        "page": 3,
+        "x": 85.104,
+        "y": 482.9089133574007
+      },
+      {
+        "id": "instruction-illustration-2026-error-cause-chain",
+        "edge": "end",
+        "page": 3,
+        "x": 85.104,
+        "y": 482.9089133574007
+      },
+      {
+        "id": "revision-errors-template",
+        "edge": "start",
+        "page": 3,
+        "x": 85.104,
+        "y": 494.9089133574007
+      },
+      {
         "id": "revision-errors-template",
         "edge": "end",
         "page": 3,
         "x": 85.104,
-        "y": 417.337
+        "y": 559.9489133574007
       },
       {
         "id": "revision-errors-sql",
         "edge": "start",
         "page": 3,
         "x": 85.104,
-        "y": 430.29699999999997
+        "y": 572.9089133574007
       },
       {
         "id": "revision-errors-sql",
         "edge": "end",
         "page": 3,
         "x": 85.104,
-        "y": 495.337
+        "y": 637.9489133574007
       },
       {
         "id": "revision-errors-status",
         "edge": "start",
         "page": 3,
         "x": 85.104,
-        "y": 508.29699999999997
+        "y": 650.9089133574007
       },
       {
         "id": "revision-errors-status",
         "edge": "end",
         "page": 3,
         "x": 85.104,
-        "y": 573.337
+        "y": 715.9489133574007
       },
       {
         "id": "p291-b11",
         "edge": "heading",
-        "page": 3,
+        "page": 4,
         "x": 85.104,
-        "y": 586.297
+        "y": 86.0
       },
       {
         "id": "p291-b12",
         "edge": "heading",
-        "page": 3,
+        "page": 4,
         "x": 85.104,
-        "y": 605.337
+        "y": 105.04
       },
       {
         "id": "p291-b13",
         "edge": "heading",
-        "page": 3,
+        "page": 4,
         "x": 85.104,
-        "y": 624.377
+        "y": 124.08
       },
       {
         "id": "p291-b14",
         "edge": "heading",
-        "page": 3,
+        "page": 4,
         "x": 85.104,
-        "y": 661.417
+        "y": 161.11999999999998
       },
       {
         "id": "p291-b15",
         "edge": "heading",
-        "page": 3,
+        "page": 4,
         "x": 85.104,
-        "y": 716.457
+        "y": 216.16
       },
       {
         "id": "__source-page-292",
         "edge": "source-page",
-        "page": 4,
+        "page": 5,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-292",
         "edge": "native-page",
-        "page": 4,
+        "page": 5,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p292-f01",
         "edge": "start",
-        "page": 4,
+        "page": 5,
         "x": 95.7999984741211,
         "y": 214.84999389648436
       },
       {
         "id": "p292-f01",
         "edge": "end",
-        "page": 4,
+        "page": 5,
         "x": 95.7999984741211,
         "y": 302.84998779296876
       },
       {
         "id": "__source-page-293",
         "edge": "source-page",
-        "page": 5,
+        "page": 6,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-293",
         "edge": "native-page",
-        "page": 5,
+        "page": 6,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p293-f02",
         "edge": "start",
-        "page": 5,
+        "page": 6,
         "x": 95.2999984741211,
         "y": 86.7999984741211
       },
       {
         "id": "p293-f02",
         "edge": "end",
-        "page": 5,
+        "page": 6,
         "x": 95.2999984741211,
         "y": 210.79999999999998
       },
       {
         "id": "p293-f03",
         "edge": "start",
-        "page": 5,
+        "page": 6,
         "x": 84.2999984741211,
         "y": 361.4999572753906
       },
       {
         "id": "p293-f03",
         "edge": "end",
-        "page": 5,
+        "page": 6,
         "x": 84.2999984741211,
         "y": 406.29996948242194
       },
       {
         "id": "p293-f04",
         "edge": "start",
-        "page": 5,
+        "page": 6,
         "x": 95.2999984741211,
         "y": 555.0499755859375
       },
       {
         "id": "p293-f04",
         "edge": "end",
-        "page": 5,
+        "page": 6,
         "x": 95.2999984741211,
         "y": 592.6499755859375
       },
       {
         "id": "__source-page-294",
         "edge": "source-page",
-        "page": 6,
+        "page": 7,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-294",
         "edge": "native-page",
-        "page": 6,
+        "page": 7,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p294-f05",
         "edge": "start",
-        "page": 6,
+        "page": 7,
         "x": 95.7999984741211,
         "y": 520.8500244140625
       },
       {
         "id": "p294-f05",
         "edge": "end",
-        "page": 6,
+        "page": 7,
         "x": 95.7999984741211,
         "y": 752.8500488281251
       },
       {
         "id": "__source-page-295",
         "edge": "source-page",
-        "page": 7,
+        "page": 8,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-295",
         "edge": "native-page",
-        "page": 7,
+        "page": 8,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "__source-page-296",
         "edge": "source-page",
-        "page": 8,
+        "page": 9,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-296",
         "edge": "native-page",
-        "page": 8,
+        "page": 9,
         "x": 85.104,
         "y": 86.0
       }
     ],
     "url_links": [
       {
-        "page": 8,
+        "page": 9,
         "uri": "http://www.trainocate.co.jp/",
         "rect": [
           336.7900085449219,
