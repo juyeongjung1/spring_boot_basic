@@ -137,11 +137,28 @@ class ComponentSourceTests(unittest.TestCase):
                 if '/*' in source or source.startswith('//'):
                     self.assertIn('class="comment"', html)
 
+    def test_explanations_keep_original_meaning_spans_in_full_width_paragraphs(self):
+        for record in self.records:
+            _, _, layout, nodes, _, _ = chapter(record['chapter'])
+            html = components.explanation_html(record, nodes, layout)
+            self.assertNotIn('<table', html)
+            self.assertNotIn('meaning-summary', html)
+            for row in record['rows']:
+                parts = components.meaning_parts(row, nodes)
+                self.assertEqual(''.join(text for text, _, _ in parts), row['meaning'])
+                body = components.meaning_html(row, nodes, layout)
+                self.assertEqual(components.normalized(unescape(re.sub('<[^>]*>', '', body))),
+                                 components.normalized(row['meaning']))
+                self.assertNotIn('説明は次ページへ続きます', body)
+        for label, expected in (('1 行', '1行目'), ('9-11 行目', '9～11行目'),
+                                ('13 行-14 行目', '13～14行目'), ('続き', '続き')):
+            self.assertEqual(components.explanation_label(label), expected)
+
 
 class BrowserComponentTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.work = ROOT / 'tmp/html-components-tests'
+        cls.work = ROOT / 'tmp/figure-cards-2026/html-components-tests'
         cls.work.mkdir(parents=True, exist_ok=True)
         short = components.code_html([{'number': 1, 'code': '// 日本語コメント', 'ids': ['comment-source']}],
             'java', [('非常に長いファイル名/MessageController.java', ['filename-source'])])
@@ -158,9 +175,44 @@ class BrowserComponentTests(unittest.TestCase):
             source_fragments=[{'source_id': 'explanation-source', 'role': 'meaning',
                                'text': '入力値を確認します。原文の説明を続けます。'}])]}
         explanation = components.explanation_html(record, {})
+        cls.long_meaning = ''.join(f'説明{i:03d}は原文の本文を広い段落で読み、コードの意味を確認します。' for i in range(1, 121))
+        long_record = {'owner_code_ids': [], 'rows': [dict(line_label='9-11 行目',
+            code='model.addAttribute("user", userForm);', meaning=cls.long_meaning,
+            source_ids=['long-meaning-source'], source_fragments=[{'source_id': 'long-meaning-source',
+                'role': 'meaning', 'text': cls.long_meaning}])]}
+        long_explanation = components.explanation_html(long_record, {})
+        first_meaning = '\n'.join(f'前の項目の原文説明{i:02d}。' for i in range(1, 27))
+        keep_record = {'owner_code_ids': [], 'rows': [dict(line_label='1 行目', code='first();',
+            meaning=first_meaning, word_paragraph_breaks=[],
+            word_line_breaks=[match.end() for match in re.finditer('\n', first_meaning)],
+            source_ids=['first-keep-source'], source_fragments=[{'source_id': 'first-keep-source',
+                'role': 'meaning', 'text': first_meaning}]),
+            dict(line_label='2 行目', code='second();', meaning='次の項目の原文説明です。',
+            source_ids=['second-keep-source'], source_fragments=[{'source_id': 'second-keep-source',
+                'role': 'meaning', 'text': '次の項目の原文説明です。'}])]}
+        keep_explanation = components.explanation_html(keep_record, {})
+        styled_node = {'parts': [('通常の説明。', 's1'), ('原文の部分強調。', 's2')],
+                       'text': '通常の説明。原文の部分強調。'}
+        styled_record = {'owner_code_ids': [], 'rows': [dict(line_label='2 行目', code='return "index";',
+            meaning=styled_node['text'], source_ids=['styled-meaning-source'], source_fragments=[{
+                'source_id': 'styled-meaning-source', 'role': 'meaning', 'text': styled_node['text'],
+                'start': 0, 'end': len(styled_node['text'])}])]}
+        styled_explanation = components.explanation_html(styled_record, {'styled-meaning-source': styled_node},
+            {'styles': {'s1': {'font': 'MS-PMincho', 'size': 11.04, 'color': '#000000', 'flags': 4},
+                        's2': {'font': 'MS-PGothic', 'size': 11.04, 'color': '#000000', 'stroke': .3}}})
+        colors = components.code_html([{'number': 1, 'code': '@Controller', 'ids': ['annotation-source']}], 'java', [])
+        html_colors = components.code_html([{'number': 1, 'code': '<span th:text="${user.id}">名前</span>',
+            'ids': ['html-source']}], 'html', [])
         cls.cards = [{'id': ident, 'width': 426.672, 'html': html} for ident, html in (
             ('short-code', short), ('long-code', long_code), ('long-table', table),
-            ('original-table', original_table), ('explanation', explanation))]
+            ('original-table', original_table), ('explanation', explanation),
+            ('long-explanation', long_explanation), ('styled-explanation', styled_explanation),
+            ('annotation-color', colors), ('html-colors', html_colors), ('keep-explanation', keep_explanation))]
+        real_record = next(r for r in json.loads((components.HERE / 'code_explanations.json').read_text(encoding='utf-8'))
+                           if r['anchor_id'] == 'p060-b04')
+        _, _, real_layout, real_nodes, _, _ = chapter('02')
+        cls.cards.append({'id': 'original-explanation', 'width': 426.672,
+            'html': components.explanation_html(real_record, real_nodes, real_layout)})
         wrapped = components.code_html([{'number': 1, 'code': '// 折り返し確認', 'ids': ['wrapped-code-source']}],
             'java', [('非常に長いファイル名/授業教材/商品管理画面の入力値を確認する/MessageController.java', ['wrapped-filename-source'])])
         cls.cards.append({'id': 'wrapped-code', 'width': 240, 'html': wrapped})
@@ -222,7 +274,7 @@ class BrowserComponentTests(unittest.TestCase):
         self.assertTrue({0x374151, 0xff0000}.issubset(colors))
         html = next(c['html'] for c in self.cards if c['id'] == 'original-table')
         self.assertIn('font-weight:700', html)
-        self.assertIn('meaning-summary', next(c['html'] for c in self.cards if c['id'] == 'explanation'))
+        self.assertNotIn('meaning-summary', next(c['html'] for c in self.cards if c['id'] == 'explanation'))
         # 合成太字はPDFのfont flagsに出ない書体もあるため、実DOMの適用結果も調べる。
         script = r'''const fs=require('node:fs');const {chromium}=require('playwright');
           (async()=>{const request=JSON.parse(fs.readFileSync(process.argv[1],'utf8'));
@@ -232,7 +284,8 @@ class BrowserComponentTests(unittest.TestCase):
           console.log(JSON.stringify(await page.evaluate(()=>({
             filenames:[...document.querySelectorAll('.filename')].map(e=>getComputedStyle(e).fontWeight),
             originalEmphasis:[...document.querySelectorAll('.source-style')].some(e=>Number(getComputedStyle(e).fontWeight)>=700),
-            summaries:[...document.querySelectorAll('.meaning-summary')].map(e=>getComputedStyle(e).fontWeight)
+            summaries:[...document.querySelectorAll('.meaning-summary')].map(e=>getComputedStyle(e).fontWeight),
+            explanationWidths:[...document.querySelectorAll('.explanation-code, .explanation-paragraph')].map(e=>e.getBoundingClientRect().width)
           }))));}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1});'''
         run = subprocess.run(['node', '-e', script, str(self.work / 'request.json'),
             str(components.HERE / 'components.css')], cwd=ROOT, env=self.env,
@@ -240,7 +293,40 @@ class BrowserComponentTests(unittest.TestCase):
         applied = json.loads(run.stdout)
         self.assertTrue(all(int(weight) >= 700 for weight in applied['filenames']))
         self.assertTrue(applied['originalEmphasis'])
-        self.assertTrue(applied['summaries'] and all(int(weight) >= 700 for weight in applied['summaries']))
+        self.assertEqual(applied['summaries'], [])
+        self.assertTrue(all(width > 426 for width in applied['explanationWidths']))
+
+    def test_new_syntax_colors_and_original_prose_emphasis_survive_in_pdf(self):
+        for ident, phrase, color in (('annotation-color', '@Controller', 0xc62828),
+                ('html-colors', 'span', 0x165dce), ('html-colors', 'th:text', 0x7c3aed)):
+            with fitz.open(self.results[ident][0]['pdf']) as pdf:
+                spans = [s for b in pdf[0].get_text('dict')['blocks'] for line in b.get('lines', [])
+                         for s in line['spans'] if phrase in s['text']]
+                self.assertTrue(spans, (ident, phrase))
+                self.assertTrue(all(s['color'] == color for s in spans), spans)
+        with fitz.open(self.results['styled-explanation'][0]['pdf']) as pdf:
+            spans = [s for b in pdf[0].get_text('dict')['blocks'] for line in b.get('lines', []) for s in line['spans']]
+            regular = [s for s in spans if '通常の説明' in s['text']]
+            original_bold = [s for s in spans if '原文の部分強調' in s['text']]
+            self.assertTrue(regular and all(s['font'].startswith('MS-PMincho') and not s['flags'] & 16 for s in regular))
+            self.assertTrue(original_bold and all(s['font'].startswith('MS-PGothic') for s in original_bold))
+
+    def test_long_meaning_splits_inside_paragraph_without_text_or_source_id_loss(self):
+        parts = self.results['long-explanation']
+        self.assertGreater(len(parts), 1)
+        text = components.normalized(''.join(part['text'] for part in parts))
+        for i in range(1, 121):
+            self.assertEqual(text.count(f'説明{i:03d}'), 1)
+        self.assertTrue(all('long-meaning-source' in part['anchors'] for part in parts))
+        self.assertIn('9～11行目', parts[0]['text'])
+        self.assertIn('説明001', parts[0]['text'])
+        self.assertEqual(text.count('model.addAttribute'), 1)
+        keep = self.results['keep-explanation']
+        self.assertGreater(len(keep), 1)
+        self.assertFalse(any('second();' in part['text'] and '次の項目の原文説明です。' not in part['text'] for part in keep))
+        combined = components.normalized(''.join(part['text'] for part in keep))
+        for i in range(1, 27):
+            self.assertEqual(combined.count(f'前の項目の原文説明{i:02d}。'), 1)
 
     def test_filenames_embed_real_bold_font_and_keep_underlines_when_wrapped_or_continued(self):
         filenames = {

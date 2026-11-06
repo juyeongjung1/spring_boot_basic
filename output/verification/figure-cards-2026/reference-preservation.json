@@ -1,0 +1,16 @@
+{
+  "chapter_input_pdfs_unchanged": 38,
+  "reason": "参照版・比較版の章入力PDFは全件Git基準と同一。合冊で再保存した4ファイルの不要な差分を戻し、既存成果物を保持。",
+  "before": {
+    "output/pdf/textbook/textbook/reference.pdf": "64ed8042d71ea176171d2f3b71f41b02b69b16351239ac32dac3c70c0ad96dff",
+    "output/pdf/textbook/textbook/comparison.pdf": "9f3b3e237a71880e88360872cbfca3385ee0d283b636bec95eaf80f6e984be9b",
+    "output/pdf/textbook/exercise/reference.pdf": "85090218ed4c35870c36acdc5cf29fb0063e46010dc6d6493bc29ffac11974ae",
+    "output/pdf/textbook/exercise/comparison.pdf": "a69cc58fd6a10f5937512eb3464a860385c087046eaec8255e3ad986e5490383"
+  },
+  "after": {
+    "output/pdf/textbook/textbook/reference.pdf": "8276782673b95ffbf0f807501c2fd07d77f61791f0fe6f270212b0b873eb8a0e",
+    "output/pdf/textbook/textbook/comparison.pdf": "a7be90e709900f5ba214ae3e96ece2f17c933ecbbf26232699f9f433aac86342",
+    "output/pdf/textbook/exercise/reference.pdf": "0ba517a79ab453363efa18977cde04258950c6bc9e5bc8fccafb191681b1a9e3",
+    "output/pdf/textbook/exercise/comparison.pdf": "42f6878fa831d591ec56135ec5c60aa2c2991be22178effc6fff1e28dbe6f970"
+  }
+}

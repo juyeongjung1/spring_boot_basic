@@ -15,6 +15,7 @@ import typst
 from PIL import Image, ImageChops, ImageStat
 from links import add_url_links
 from code_geometry import code_geometries
+from figure_numbers import figure_numbers, native_number_box
 from table_styles import table_paint, table_geometry
 import html_components
 
@@ -241,6 +242,7 @@ def inline(parts, typography=True, heading=False):
 
 
 def flow_layout(folder, config, layout, nodes, figures, order, modern=None):
+    numbered = figure_numbers(config, layout, nodes, figures, order)
     has_cover=config.get('cover_mode','classic')!='none'
     furniture_condition='here().page() > 1' if has_cover else 'true'
     running_title = next((''.join(run['text'] for run in page['furniture'] if run['bbox'][1] < 80).strip()
@@ -343,7 +345,13 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 elif ident in layout.get('tables',{}):body+=native_runs(layout['tables'][ident]['runs'])
                 elif ident in figures:
                     fig=figure_map[ident];x0,y0,x1,y1=fig['box']
-                    body.append(f'#at({x0},{y0},[#mark({q(ident)}, "start")#image({q("/"+(folder/figures[ident]).relative_to(ROOT).as_posix())},width:{x1-x0}pt,height:{y1-y0}pt)#mark({q(ident)}, "end")])')
+                    path = '/' + (folder/figures[ident]).relative_to(ROOT).as_posix()
+                    if ident in numbered:
+                        number = numbered[ident]['number']
+                        label = native_number_box(ident, number, page, layout)
+                        body.append(f'#native-illustration({q(ident)}, {q(path)}, {x0}, {y0}, {x1-x0}, {y1-y0}, {q(number)}, {label[0]}, {label[1]})')
+                    else:
+                        body.append(f'#at({x0},{y0},[#mark({q(ident)}, "start")#image({q(path)},width:{x1-x0}pt,height:{y1-y0}pt)#mark({q(ident)}, "end")])')
             body += native_runs(page['furniture'])
             native_page_map['page-'+str(page['source_page'])]='\n'.join(body)
     # スライドの上段は原本の座標を保持し、下段の説明だけを組み直す。
@@ -509,12 +517,13 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 path = '/' + (folder / figures[ident]).relative_to(ROOT).as_posix()
                 caption_id = figure['caption_id']
                 return (f'#compact-illustration({q(ident)}, {q(path)}, {figure["width"]}, {figure["height"]}, '
-                        f'{q(caption_id)}, {q(nodes[caption_id]["text"])})')
+                        f'{q(caption_id)}, {q(nodes[caption_id]["text"])}, {q(numbered[ident]["number"])})')
             fig = figure_map.get(ident, {"box": [85.104, 0, 511.776, 0]})
             path = "/" + (folder / figures[ident]).relative_to(ROOT).as_posix()
             width = fig['box'][2] - fig['box'][0]
             offset = fig['box'][0] - 85.104
-            return f'#illustration({q(ident)}, {q(path)}, {width}, offset: {offset}pt)'
+            number = f', number: {q(numbered[ident]["number"])}' if ident in numbered else ''
+            return f'#illustration({q(ident)}, {q(path)}, {width}, offset: {offset}pt{number})'
         node = nodes[ident]
         if node['kind'] == 'paragraph':
             parts = typographic_parts(node['parts'])
@@ -754,6 +763,7 @@ def build(chapter="01", mode="all", markdown=None, output=None):
         report["reference"] = {"pages": len(pdf), "page_checks": pages}
     if mode in ("all", "flow"):
         modern = html_components.prepare(folder, config, layout, nodes, figures, order)
+        numbered = figure_numbers(config, layout, nodes, figures, order)
         pdf, source = compile_pdf(work, "flow", header + flow_layout(folder, config, layout, nodes, figures, order, modern=modern), font_paths)
         marks = json.loads(typst.query(str(source), "<book-check>", field="value", format="json", root=str(ROOT), font_paths=font_paths, ignore_system_fonts=True))
         html_components.embed(pdf, modern, marks)
@@ -816,6 +826,8 @@ def build(chapter="01", mode="all", markdown=None, output=None):
                     if x0 < left_limit or x1 > right_limit or y1 > 778:
                         overflow.append({"page": index + 1, "bbox": list(line["bbox"])})
         expected = Counter(normalized("".join(n["text"] for ident,n in nodes.items() if ident not in modern['consume']) + modern['expected_text']))
+        expected += Counter(normalized(''.join(record['number'] for ident, record in numbered.items()
+                                                if ident not in modern['consume'])))
         # 新しい設定図のSVGには、輪郭ではなく文字として残したラベルもある。
         svg_text=''.join(''.join(node.itertext()) for ident,path in figures.items() if ident not in modern['consume'] and Path(path).suffix.lower()=='.svg' for node in ET.parse(folder/path).iter('{http://www.w3.org/2000/svg}text'))
         expected += Counter(normalized(svg_text))
@@ -831,6 +843,13 @@ def build(chapter="01", mode="all", markdown=None, output=None):
             raise AssertionError(f"自動組版の文字差: 不足{dict(expected-actual)} 余分{dict(actual-expected)}")
         report["flow"] = {"pages": len(pdf), "native_text_complete": complete, "heading_orphans": orphan, "split_figures": split_figures, "split_short_code": split_short_code, "split_short_tables":split_short_tables, "split_instructions": split_instructions, "instruction_groups": len(instruction_ids), "fixed_pages":sorted(native_page_positions), "overflow": overflow, "block_positions": marks}
         report['flow']['url_links'] = url_links
+        report['flow']['numbered_figures'] = {ident: dict(record) for ident, record in numbered.items()}
+        for ident, record in report['flow']['numbered_figures'].items():
+            if record['kind'] == 'native':
+                fig = next(f for f in layout['figures'] if f['id'] == ident)
+                page = next(p for p in layout['pages'] if p['source_page'] == fig['page'])
+                record['frame_box'] = [fig['box'][0]-4, fig['box'][1]-4, fig['box'][2]+4, fig['box'][3]+4]
+                record['number_box'] = native_number_box(ident, record['number'], page, layout)
         report['flow']['html_components'] = [{'id':spec['id'], 'kind':spec['kind'], 'consume_ids':spec['consume'], 'parts':[{'token':token, 'width':modern['parts'][token]['width'], 'height':modern['parts'][token]['height']} for token in modern['anchors'][spec['anchor']]]} for spec in modern['specs']]
         assert not orphan and not split_figures and not split_short_code and not split_short_tables and not split_instructions and not overflow, report["flow"]
     (out / "checks.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")

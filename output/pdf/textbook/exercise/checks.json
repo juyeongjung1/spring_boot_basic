@@ -2,7 +2,7 @@
   "title": "Spring Boot入門 演習ガイド",
   "source_pages": 77,
   "reference_pages": 77,
-  "flow_pages": 82,
+  "flow_pages": 84,
   "comparison_pages": 77,
   "complete_source_coverage": true,
   "continuous_footer_numbers": true,
@@ -145,92 +145,92 @@
     {
       "title": "演習5.3. イメージの動的挿入",
       "source_page": 44,
-      "flow_page": 45
+      "flow_page": 46
     },
     {
       "title": "演習5.4. 【オプション】 権限による給与データの動的表示",
       "source_page": 45,
-      "flow_page": 46
+      "flow_page": 47
     },
     {
       "title": "演習5.5. 【オプション】顔写真の全画面適用",
       "source_page": 46,
-      "flow_page": 47
+      "flow_page": 49
     },
     {
       "title": "演習5.6. 【オプション】権限による「給与検索」の動的表示",
       "source_page": 46,
-      "flow_page": 47
+      "flow_page": 49
     },
     {
       "title": "演習 6 外部参照と複雑な SQL 操作",
       "source_page": 47,
-      "flow_page": 48
+      "flow_page": 50
     },
     {
       "title": "演習6.1. エンティティ・リポジトリの追加と修正",
       "source_page": 51,
-      "flow_page": 53
+      "flow_page": 55
     },
     {
       "title": "演習6.2. 外部参照を持つデータの全件検索",
       "source_page": 53,
-      "flow_page": 55
+      "flow_page": 57
     },
     {
       "title": "演習6.3. 社員番号を使った個別検索",
       "source_page": 54,
-      "flow_page": 56
+      "flow_page": 58
     },
     {
       "title": "演習6.4. 【オプション】存在しない社員番号を考慮する個別検索",
       "source_page": 55,
-      "flow_page": 57
+      "flow_page": 59
     },
     {
       "title": "演習6.5. 社員情報の登録",
       "source_page": 57,
-      "flow_page": 59
+      "flow_page": 61
     },
     {
       "title": "演習6.6. JPQL を使った検索(給与+勤務地)",
       "source_page": 60,
-      "flow_page": 62
+      "flow_page": 64
     },
     {
       "title": "演習 7 Bootstrap",
       "source_page": 63,
-      "flow_page": 65
+      "flow_page": 67
     },
     {
       "title": "演習7.1. Bootstrap 導入前後の変化を確認",
       "source_page": 67,
-      "flow_page": 69
+      "flow_page": 71
     },
     {
       "title": "演習7.2. Bootstrap の基本スタイルの適用",
       "source_page": 68,
-      "flow_page": 70
+      "flow_page": 72
     },
     {
       "title": "演習7.3. Bootstrap のテーブルデザインの適用",
       "source_page": 70,
-      "flow_page": 73
+      "flow_page": 75
     },
     {
       "title": "演習7.4. グリッドシステムで画面レイアウトを整える",
       "source_page": 72,
-      "flow_page": 76
+      "flow_page": 78
     },
     {
       "title": "演習7.5. フォームの改善",
       "source_page": 74,
-      "flow_page": 79
+      "flow_page": 81
     },
     {
       "title": "演習7.6. 【オプション】 共通レイアウト画面に変更",
       "source_page": 76,
-      "flow_page": 81
+      "flow_page": 83
     }
   ],
   "chapters": [
@@ -342,7 +342,7 @@
       ],
       "flow_pages": [
         38,
-        47
+        49
       ],
       "blocks": 77,
       "figures": 9,
@@ -360,8 +360,8 @@
         62
       ],
       "flow_pages": [
-        48,
-        64
+        50,
+        66
       ],
       "blocks": 143,
       "figures": 4,
@@ -379,8 +379,8 @@
         76
       ],
       "flow_pages": [
-        65,
-        81
+        67,
+        83
       ],
       "blocks": 137,
       "figures": 6,
@@ -398,8 +398,8 @@
         77
       ],
       "flow_pages": [
-        82,
-        82
+        84,
+        84
       ],
       "blocks": 4,
       "figures": 0,

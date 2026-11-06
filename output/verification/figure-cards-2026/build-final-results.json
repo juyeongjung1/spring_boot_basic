@@ -1,0 +1,135 @@
+[
+  {
+    "chapter": "front",
+    "blocks": 85,
+    "figures": 3,
+    "reference_pages": 14,
+    "flow_pages": 14
+  },
+  {
+    "chapter": "01",
+    "blocks": 88,
+    "figures": 19,
+    "reference_pages": 16,
+    "flow_pages": 18
+  },
+  {
+    "chapter": "02",
+    "blocks": 212,
+    "figures": 38,
+    "reference_pages": 32,
+    "flow_pages": 46
+  },
+  {
+    "chapter": "03",
+    "blocks": 489,
+    "figures": 74,
+    "reference_pages": 70,
+    "flow_pages": 94
+  },
+  {
+    "chapter": "04",
+    "blocks": 200,
+    "figures": 30,
+    "reference_pages": 31,
+    "flow_pages": 43
+  },
+  {
+    "chapter": "05",
+    "blocks": 144,
+    "figures": 23,
+    "reference_pages": 28,
+    "flow_pages": 36
+  },
+  {
+    "chapter": "06",
+    "blocks": 320,
+    "figures": 25,
+    "reference_pages": 46,
+    "flow_pages": 54
+  },
+  {
+    "chapter": "07",
+    "blocks": 269,
+    "figures": 38,
+    "reference_pages": 44,
+    "flow_pages": 55
+  },
+  {
+    "chapter": "appendix-a",
+    "blocks": 41,
+    "figures": 13,
+    "reference_pages": 8,
+    "flow_pages": 8
+  },
+  {
+    "chapter": "appendix-b",
+    "blocks": 65,
+    "figures": 6,
+    "reference_pages": 7,
+    "flow_pages": 9
+  },
+  {
+    "chapter": "ex-front",
+    "blocks": 52,
+    "figures": 0,
+    "reference_pages": 6,
+    "flow_pages": 6
+  },
+  {
+    "chapter": "ex01",
+    "blocks": 22,
+    "figures": 0,
+    "reference_pages": 4,
+    "flow_pages": 4
+  },
+  {
+    "chapter": "ex02",
+    "blocks": 65,
+    "figures": 2,
+    "reference_pages": 6,
+    "flow_pages": 6
+  },
+  {
+    "chapter": "ex03",
+    "blocks": 129,
+    "figures": 6,
+    "reference_pages": 12,
+    "flow_pages": 13
+  },
+  {
+    "chapter": "ex04",
+    "blocks": 102,
+    "figures": 5,
+    "reference_pages": 8,
+    "flow_pages": 8
+  },
+  {
+    "chapter": "ex05",
+    "blocks": 77,
+    "figures": 9,
+    "reference_pages": 10,
+    "flow_pages": 12
+  },
+  {
+    "chapter": "ex06",
+    "blocks": 143,
+    "figures": 4,
+    "reference_pages": 16,
+    "flow_pages": 17
+  },
+  {
+    "chapter": "ex07",
+    "blocks": 137,
+    "figures": 6,
+    "reference_pages": 14,
+    "flow_pages": 17
+  },
+  {
+    "chapter": "ex-back",
+    "blocks": 4,
+    "figures": 0,
+    "reference_pages": 1,
+    "flow_pages": 1
+  }
+]

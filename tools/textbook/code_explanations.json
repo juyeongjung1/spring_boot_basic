@@ -48,7 +48,9 @@
             "role": "meaning",
             "text": "public は、このメソッドが外部からアクセス可能であることを意味します。String は、メソッド\nが文字列を返すことを示しています。index() はメソッド名で、このメソッドが何をするのかを\n表します。Controller の中のメソッドは、通常は戻り値をString にします。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "10 行",
@@ -88,7 +90,9 @@
             "role": "meaning",
             "text": "return には文字列を指定します。通常、この文字列は表示させたいhtml ファイル名を指定\nします。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -134,6 +138,10 @@
             "role": "meaning",
             "text": "このビューの特徴として、2 行目に注目してください。ここでは、Spring Boot と相性が良いテ\nンプレートエンジン「Thymeleaf」を使用するという宣言をしています。\nxmlns:th を記載することで、HTML ファイル内でThymeleaf の機能が利用可能になります。"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          89
         ]
       },
       {
@@ -160,7 +168,9 @@
             "role": "meaning",
             "text": "[トップページ]と表示される部分（10 行目）からは、ユーザに見える画面の内容が入ります。\n今後、さまざまな情報やデザイン要素を追加していくことになります。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -214,6 +224,10 @@
             "role": "meaning",
             "text": "<form>要素を用いてデータ送信のためのフォームを作成します。この要素のth:action 属性\nは、フォームデータが送信されるサーバー上のURL を指定できます。Thymeleaf では、ただの\naction ではなく、th:action を使うことで、実行環境に変化があってもURL を正しく解決できま\nす。「@」は、アプリケーションのコンテキストパス(基本URL）を、自動生成してくれます。URL\nが異なるサーバーで実行しても、影響がなくなる効果があります。\n ここでは/login がそのURL として指定されています。通常、th:action 属性のURL 先は、\n@Controller のメソッドを指定します。そして、method という属性がありますが、この属性は一般\n的なGET 方式の送信ではなく、POST 方式の送信をするという意味です。POST 方式にする\nと、パスワードがURL に表示されないなどのメリットがあり、隠したいデータを送信する時によく\n使われます。"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          235
         ]
       }
     ],
@@ -275,7 +289,9 @@
             "role": "meaning",
             "text": "<input>要素はユーザがデータを入力するためのフィールドを提供します。type=\"text\"を指\n定することでテキスト入力フィールドが、type=\"password\"を指定することでパスワード入力フィ\nールドがそれぞれ生成されます。ここで、このフォームのデータは、社員番号という日本語で認\n識されるのではなく、name 属性の値で認識されます。今回は、「id」と「password」というname\nでデータが送られるということを覚えてください。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "13 行目",
@@ -309,7 +325,9 @@
             "role": "meaning",
             "text": "<input type=\"submit\">は送信ボタンを表します。このボタンをクリックすると、フォーム内のデ\nータがth:action 属性で指定されたURL に送信されます。value 属性はボタン上に表示される\nテキストを定義します。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -367,7 +385,9 @@
             "role": "meaning",
             "text": "@PostMapping は、POST リクエストが送られた際に、このメソッドが実行されることを示してい\nます。3 行でも同じ/login というURL を待ち受けていますが、普通のGet 方式での呼び出しが\nあった場合は、showLoginView()メソッドが実行され、Post 方式の呼び出しがあった場合は、こ\nちらのdoLogin メソッドが実行されます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "11 行目",
@@ -401,7 +421,9 @@
             "role": "meaning",
             "text": "login_input.html から送信したデータのname 属性に対応する値を受け取るために使用され\nています。Spring では、Controller のメソッドの仮引数をhtml のname 属性の値と合わせるだ\nけで、パラメータを受け取ることができます。login_input.html では、「id」と「password」のデータ\nが送られるので、引数名も、int id, String password に合わせます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -462,7 +484,9 @@
             "role": "meaning",
             "text": "本当にid とpassword のデータを取得できたのか、コンソールに出力することで、検証をして\nいます。結果は、以下の画像のように、入力した値を問題なく取得できているのがわかります。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -518,6 +542,10 @@
             "role": "meaning",
             "text": "doLogin メソッドの仮引数に、UserForm のオブジェクトを入れています。Spring では、仮引数\nにForm クラスのオブジェクトを入れるだけで、リクエストパラメータがUserForm オブジェクト\nの対応するフィールド(id, password)に自動的にセットされます。\nよって、各リクエストパラメータを個別に取得するためのコードを書く必要がなくなります。"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          145
         ]
       },
       {
@@ -557,7 +585,9 @@
             "role": "meaning",
             "text": "UserForm クラスに予め作成しておいた、getId()とgetPassword()メソッドを呼び出すことで、\nuserForm オブジェクトにバインドされたID とパスワードを取得し、コンソールに出力します。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -622,6 +652,12 @@
             "role": "meaning",
             "text": "UserForm の時と同様に、Spring ではメソッドの仮引数にオブジェクト名を書くと、オブジェク\nトを生成しなくても、使うことができます。"
           }
+        ],
+        "word_paragraph_breaks": [
+          104
+        ],
+        "word_line_breaks": [
+          38
         ]
       }
     ],
@@ -691,6 +727,13 @@
             "role": "meaning",
             "text": "これにより、return で呼び出すlogin_success.html でも、userForm オブジェクトのデータが使\n用可能になります。"
           }
+        ],
+        "word_paragraph_breaks": [
+          71
+        ],
+        "word_line_breaks": [
+          46,
+          56
         ]
       }
     ],
@@ -755,7 +798,11 @@
             "role": "meaning",
             "text": "このようにModel オブジェクトを使うと、Controller からView へデータを「一時的に入れておく\n箱」としてリクエストスコープを利用することができ、Spring のMVC パターンに沿った方法でデ\nータを渡すことができます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [
+          45
+        ],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -814,7 +861,9 @@
             "role": "meaning",
             "text": "10 行と、11 行には、th:text というthymeleaf 固有の属性が登場していますが、そのためには、\n予め宣言をする必要があります。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "10 行目",
@@ -856,6 +905,12 @@
             "role": "meaning",
             "text": "Controller からModel に格納した「user」というキーの後ろに、「.フィールド名」を記載すること\nで、id の値を出力できます。\n例えば、user.id が1234 であれば、出力は<span>1234</span>となります。"
           }
+        ],
+        "word_paragraph_breaks": [
+          51
+        ],
+        "word_line_breaks": [
+          124
         ]
       }
     ],
@@ -914,7 +969,9 @@
             "role": "meaning",
             "text": "ここでもth:text属性を使い、userオブジェクトのpasswordフィールドの値を表示しています。\n変数式を使用することで、動的に内容をWeb ページに埋め込むことができます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -984,6 +1041,10 @@
             "role": "code",
             "text": "5:    @Autowired\n6: private ProductRepository prodRepo;"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          162
         ]
       },
       {
@@ -1018,7 +1079,9 @@
             "role": "meaning",
             "text": "findAll メソッドを実行すると、Product テーブル内の全データを、List<Product>の形で取得でき\nます。List のImport 先は「java.util」ですので、ご注意ください。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -1089,6 +1152,11 @@
             "role": "code",
             "text": "12: model.addAttribute(\"products\", list);\n13: return \"product/list\";"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          48,
+          94
         ]
       }
     ],
@@ -1153,6 +1221,12 @@
             "role": "meaning",
             "text": "今回は、全部で9 個のデータがproducts リストの中に入っているので、products リストの要\n素が product 変数に9 回代入されます。:を中心にして、右はController のmodel で格納した\nキー名、左はリストの中に格納されているものを意味する変数名を使います。\n今回は、リストの中に、複数のproduct インスタンスが格納されているため、「product」としまし\nた。"
           }
+        ],
+        "word_paragraph_breaks": [
+          101
+        ],
+        "word_line_breaks": [
+          248
         ]
       }
     ],
@@ -1218,7 +1292,9 @@
             "role": "meaning",
             "text": " product 変数に1 行～9 行までのデータが順番に格納されていますので、「product.フィー\nルド名」でデータを出力することができます。つまり、各product オブジェクトの id、name、\nprice を<td>の中に9 回出力するソースコードが生成されます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -1272,7 +1348,9 @@
             "role": "meaning",
             "text": "View から送信される主キーのname 属性が「id」ですので、引数名を一致させることで、リクエス\nトパラメータを取得します。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -1346,6 +1424,14 @@
             "role": "meaning",
             "text": "findAll は、全件検索だったため、複数行が取得されることの前提でした。よって\nList<Product>型で受け取りました。\n主キー検索は、必ず1 行のみ取得できるので、List での取得よりは、エンティティ単位での\n[Product product]で受け取るのが一般的です。"
           }
+        ],
+        "word_paragraph_breaks": [
+          215,
+          315
+        ],
+        "word_line_breaks": [
+          130,
+          381
         ]
       },
       {
@@ -1380,7 +1466,9 @@
             "role": "meaning",
             "text": "検索する商品番号に「1」を入れて実行させてみると、以下のように1 行のデータを取得できて\nいるのがわかります。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -1438,7 +1526,9 @@
             "role": "meaning",
             "text": "取得した1 行のデータは、Product エンティティの中に格納されているので、Viewに出力させる\nため、model に格納します。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -1484,7 +1574,9 @@
             "role": "meaning",
             "text": "5 行では、リクエストパラメータprice の値を取得し、prodRepo.findByPrice メソッドを実行しま\nした。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "6 行以降",
@@ -1525,7 +1617,9 @@
             "role": "meaning",
             "text": "findAll メソッドを実行した時と、出力結果は同じくList になるメソッドですので、6 行以降は\nshowProductList メソッドと全く同じです。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -1580,7 +1674,11 @@
             "role": "meaning",
             "text": "もし、入力値が更に増えるなら、Form クラスを使ってパラメータ取得しても良いでしょう。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [
+          79
+        ],
+        "word_line_breaks": []
       },
       {
         "line_label": "6 行以降",
@@ -1667,7 +1765,9 @@
             "role": "meaning",
             "text": "5 行の@Data ですが、エンティティの定義の際にご説明しました通り、@Data アノテーションをつ\nけると、Getter&Setter メソッドは勿論、equals やtoString、hashCode メソッドが自動生成され\nますので、とても便利です。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -1722,7 +1822,9 @@
             "role": "meaning",
             "text": "ユーザからの複数の入力値を受け取るために、productForm クラスをメソッドの引数に入れ\nます。リクエストデータは、Form クラスのフィールドに自動でセットされます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "5 行目",
@@ -1756,7 +1858,9 @@
             "role": "meaning",
             "text": " 商品の登録をするためには、予め商品1 個分をを表す、エンティティのインスタンスを生成\nする必要がありますので、new でProduct のオブジェクトを生成します。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -1821,7 +1925,11 @@
             "role": "meaning",
             "text": "しかし、エンティティのインスタンスであるproduct は、5 行でオブジェクト生成はしたものの、\nデータを入れないと、空っぽの状態のままになってしまいます。ユーザからのデータを受け取\nっているのは、product ではなく、4 行のProductForm の方ですので、データをコピーする必要\nがあります。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [
+          93
+        ],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -1893,7 +2001,11 @@
             "role": "meaning",
             "text": "この作業により、空っぽだったproduct にも、ユーザからのデータが格納されました。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [
+          52
+        ],
+        "word_line_breaks": []
       },
       {
         "line_label": "8-9 行目",
@@ -1932,7 +2044,9 @@
             "role": "meaning",
             "text": "戻り値としては、登録完了した商品情報をエンティティのインスタンスとして取得できます。ここ\nには、自動割り当てされたid も含まれます。結果画面へ表示するため、model に格納します。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "10 行目",
@@ -1972,7 +2086,9 @@
             "role": "meaning",
             "text": "本当に登録が完了したのか確認するために、商品データを出力する結果画面を表示させま\nす。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -2021,7 +2137,9 @@
             "role": "meaning",
             "text": "9 行目のproduct.id に注目してください。save メソッドの戻り値には、自動採番により割り当てさ\nれたID 番号も含まれているので、表示できます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -2082,6 +2200,10 @@
             "role": "meaning",
             "text": "View から動的URL が送られる場合、同じく動的パラメータを指定する必要があります。\n書き方は、{ パラメータ名 } で記載します。"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          45
         ]
       },
       {
@@ -2116,7 +2238,9 @@
             "role": "meaning",
             "text": "3 行で指定した動的URLの文字列と一致する引数名に@PathVariable アノテーションをつけ\nると、動的URL の値を取得することができます。動的URL は、{id}なので、int id で合わせま\nす。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "5 行から",
@@ -2157,7 +2281,9 @@
             "role": "meaning",
             "text": "5 行からは、更新対象の既存の値をfindById メソッドで取得+Model に格納し、\nupdate_input.html へ遷移させています。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -2215,7 +2341,9 @@
             "role": "meaning",
             "text": " 登録の際は、主キーである「id」をProductエンティティ内にセットしていませんでしたが、更新\n処理の際は、必ず主キーのフィールドをセットさせます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "7 行目",
@@ -2249,7 +2377,9 @@
             "role": "meaning",
             "text": " save メソッドの引数に入れたエンティティのフィールドに、主キー(id)の値があったら、新しい\n値に上書きされる更新処理が実行されます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -2318,7 +2448,9 @@
             "role": "meaning",
             "text": "サービス実装クラスには、@Service アノテーションを付けます。忘れがちですので、注意して\nください。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "6 行目",
@@ -2360,6 +2492,11 @@
             "role": "meaning",
             "text": "9-10 行目のコードと連携します。\n単体テストのしやすさのために、サービス実装クラスではこの方法が推奨されます。"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          39,
+          58
         ]
       },
       {
@@ -2400,7 +2537,9 @@
             "role": "meaning",
             "text": "前の手順で作成たサービスインターフェースと繋げるために、implements します。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "9 行-10 行目",
@@ -2439,6 +2578,10 @@
             "role": "meaning",
             "text": "DB 処理のためProductRepository を利用したいので、依存性の注入を行います。\n6 行目と合わせて記載することで、コンストラクタを自動生成できます。"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          48
         ]
       },
       {
@@ -2478,6 +2621,10 @@
             "role": "meaning",
             "text": "Controller に記載していたDB 処理部分だけ分離させ、DB から取得した商品データをその\nままreturn しています。ProductService インターフェースで定義した抽象メソッドと同じ呼び\n方をするように、オーバーライドする必要があります。\n(リモコンのボタンを押したら、このメソッドの処理が行われるイメージ)"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          131
         ]
       }
     ],
@@ -2543,7 +2690,9 @@
             "role": "meaning",
             "text": "  Controller が変わったので、異なる基本URL を設定します。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "7 行目",
@@ -2577,7 +2726,9 @@
             "role": "meaning",
             "text": "DB処理は、ProductServiceの方で担当するので、このクラスで利用できるように、依存性の\n注入を行います。既存のProductRepository の依存性の注入は不要になります。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "13 行目",
@@ -2611,7 +2762,9 @@
             "role": "meaning",
             "text": " ここが一番大事です。今までは、Controller のメソッドの中で直接「prodRepo.メソッド」を実\n行する書き方でしたが、今回はServiceクラスに定義されているメソッドを実行させて、その戻\nり値を利用する書き方になりました。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -2660,7 +2813,12 @@
             "role": "meaning",
             "text": "User テーブルを利用しますので、User エンティティも新しく定義する必要があります。\n\nエンティティの定義については、前の章のProduct とほぼ同じですが、12 行のname 属性を見\nてください。テーブル内の列名は[emp_name]ですが、Java では通常、変数名の単語ごとの区\n切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメル\nケース」を使います。\n\nよって、テーブル内の列名と変数名に違いが発生したら、明示的にname 属性をつける必要\nがあります。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [
+          47,
+          207
+        ],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -2720,7 +2878,9 @@
             "role": "meaning",
             "text": "\nUserRepository に予め定義しておいたメソッドを実装しました。login_input.html からのリクエ\nストパラメータは、userForm 内に自動格納されているため、getメソッドで取得し、引数に入れま\nした。検索結果は、最大1 件ですので、User エンティティで受け取ります。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "5 行",
@@ -2760,6 +2920,12 @@
             "role": "meaning",
             "text": "\n社員ID とパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何\nも取得できないので、user 変数は、null のままになります。\nこのif 文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促\nすコードです。\n\n5 行のif 文内でreturn されると、即遷移するため、7 行以降が実行されることはありません。"
           }
+        ],
+        "word_paragraph_breaks": [
+          133
+        ],
+        "word_line_breaks": [
+          79
         ]
       },
       {
@@ -2800,7 +2966,11 @@
             "role": "meaning",
             "text": "\nデータを取得できたなら、ログイン成功ですので、main_page.html へ遷移させます。\n\nmain_page.html は、下記のように、簡単なhtml ファイルです。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [
+          49
+        ],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -2857,7 +3027,9 @@
             "role": "meaning",
             "text": " セッションは、HttpSession のインスタンスを利用することで、データをセッションスコープに格\n納できたり、セッション情報を消したりできます。 Spring のController にURL がマッピングされ\nたメソッドのことを、改めて「ハンドラメソッド」といいます。このハンドラメソッドの引数に\nHttpSession を指定するだけで、裏でフレームワークが HttpSession のインスタンス生成\nと、セッション情報の取得を自動で行ってくれます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "13 行目",
@@ -2891,7 +3063,9 @@
             "role": "meaning",
             "text": " session.setAttribute メソッドは、model.addAttribute と同じような書き方をします。第一引数に\nは、キーワードを記載して、第二引数には、データを指定します。このコードが実行されると、\nセッションスコープの中に、\"userData\"という名前でログインユーザの全情報を保持できるよう\nになります。このデータは、画面が変わっても、システム全域で呼び出すことができます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -2960,7 +3134,9 @@
             "role": "meaning",
             "text": " Validationのバージョンによりますが、最新のValidation API は、jakarta.validation.constraints\nパッケージの方を利用することが推奨されています。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "11 行目",
@@ -2994,7 +3170,9 @@
             "role": "meaning",
             "text": " このアノテーションを付与したフィールドに、入力値がない場合は、入力エラーだと検知して\nくれます。Integerのフィールドは、@NotNullを付与します。message属性は、出力するメッセー\nジをカスタマイズすることができます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "14-15 行",
@@ -3039,6 +3217,10 @@
             "role": "meaning",
             "text": " ＠NotNull と似ていますが、こちらは文字列の入力有無チェックに特化されています。未入力\nはもちろん、空文字(“”)まで検知することができます。\n @Size は、文字列の文字数制限を設定できます。Max で最大文字数、min で最小文字数の\n設定ができます。"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          77
         ]
       }
     ],
@@ -3098,7 +3280,9 @@
             "role": "meaning",
             "text": " @Valid アノテーションは、対象のオブジェクト（この場合は UserForm）が持つValidation アノ\nテーション（例えば @Size、@NotNull など）に基づいて入力チェックを実行するために使用さ\nれます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "3 行目",
@@ -3132,7 +3316,9 @@
             "role": "meaning",
             "text": "BindingResult は、@Valid アノテーションによる入力チェックの結果を保持するオブジェクトで\nす。入力チェックエラーの詳細を取得するために使用されます。通常、メソッドの引数として渡\nされます。必ず、@Valid をつけた直後(ここでは、第2 引数)に記載しないといけないルールが\nありますので、ご注意ください。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -3188,7 +3374,9 @@
             "role": "meaning",
             "text": " BindingResult の hasErrors メソッドは、入力チェック中にエラーが発生したかどうかを確認\nするために使用されます。エラーが存在する場合は true を、そうでない場合は false を返\nします。このメソッドを利用して条件分岐を行い、エラーがある場合は入力フォームに戻り、エ\nラーメッセージをユーザに表示します。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -3260,6 +3448,13 @@
             "role": "meaning",
             "text": "フォーム内では、*{...}という選択式を使用して、userForm オブジェクトのプロパティに簡潔にア\nクセスできます。userForm.empId ではなく、*{empId}だけでアクセスできるようになります。"
           }
+        ],
+        "word_paragraph_breaks": [
+          108,
+          262
+        ],
+        "word_line_breaks": [
+          178
         ]
       }
     ],
@@ -3337,7 +3532,12 @@
             "role": "meaning",
             "text": "なお、*{empId}は、userForm オブジェクトのempId プロパティを参照しています。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [
+          87,
+          193
+        ],
+        "word_line_breaks": []
       },
       {
         "line_label": "7 行目",
@@ -3379,7 +3579,11 @@
             "role": "meaning",
             "text": "フォームを送信したとき、もし empId フィールドの値が入力チェックのルールに違反していれ\nば（例えば、必須フィールドが空である、など）、 <span> タグの中に入力チェックごとのエラー\nメッセージが表示されます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [
+          84
+        ],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -3440,7 +3644,9 @@
             "role": "meaning",
             "text": "Thymeleaf テンプレートで使われる HTML の宣言です。この宣言により、Thymeleaf のル\nールが HTML ページに追加されます。それによって、Thymeleaf の特有の属性や構文が\nHTML タグ内で認識され、正しく処理されます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "6 行",
@@ -3474,7 +3680,9 @@
             "role": "meaning",
             "text": " この宣言は、Thymeleaf の構文ではありませんが、Web ページがモバイルデバイスで表示さ\nれる際のビューポート（表示領域）の設定に使われます。デバイスがどのような画面サイズを持\nっていても、Web ページはそれに適応するように表示されます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -3534,7 +3742,9 @@
             "role": "meaning",
             "text": "レイアウトファイルを定義するためには、既存のhtml 属性に、xmlns:layout 属性を追記する\n必要があります。html 要素を2 回書いたわけではなく、html 要素に2 つの属性を追加している\nことに気をつけてください。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "8 行目",
@@ -3568,7 +3778,9 @@
             "role": "meaning",
             "text": " レイアウト専用のcss ファイルを別途作成し、読み込ませました。css ファイルの詳細は、デザ\nインの領域ですので、章末の【参考】の部分をご覧ください。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "27-29 行",
@@ -3612,6 +3824,10 @@
             "role": "meaning",
             "text": " この部分のコードは、中身がありません。その理由は、ここはメインコンテンツが配置される\n場所だからです。\n「layout:fragment=“識別名”」の属性をつけると、この部分に別のhtml ファイル(コンテンツ)の\nfragment 識別名が一致しているコードがコピーされ、置き換えられます。"
           }
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": [
+          53
         ]
       }
     ],
@@ -3675,7 +3891,9 @@
             "role": "meaning",
             "text": " レイアウトにコピーするコンテンツ側のHTML にも、同じくレイアウト関連のルールを宣言して\nおきます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "4 行目",
@@ -3717,7 +3935,11 @@
             "role": "meaning",
             "text": "例えば、layout がproduct フォルダ内にあるなら、”~{/product/layout}” のように記述すれば\nOK です。URL を間違えると、レイアウト機能が使えませんので、ご注意ください。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [
+          82
+        ],
+        "word_line_breaks": []
       },
       {
         "line_label": "9-13 行目",
@@ -3771,7 +3993,9 @@
             "role": "meaning",
             "text": "既存の<body>内に書いていたソースコードを、全てこの要素で囲みます。先ほどの\nlayout.html のfragment 識別名が“main_content”でしたので、同じ値を入れます。そうすること\nで、9-13 行内の全てのHTML コードが、layout.html の28 行にコピーされ、レイアウト+コンテ\nンツの新しいHTML が生成されます。insert.html へreturn して一覧画面を開くと、自動で\nlayout.html の共通部分まで生成された画面が表示されます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -3835,7 +4059,9 @@
             "role": "meaning",
             "text": "\n今回のサンプルでは、外側を container でコンテナを作っています。画面の中央にコンテン\nツが配置されます。もし、container-fluid にすると、横幅いっぱいに変わります。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -3895,7 +4121,9 @@
             "role": "meaning",
             "text": "\n コンテナの中に、row をclass 属性として持つdiv 要素を入れます。後述のカラムを配置する\nためにも、必ずrow が必要です。まるでtable 要素に、<tr>がないと、<td>も書けないのと同じ\nです。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "3 行目～5 行目",
@@ -3939,7 +4167,9 @@
             "role": "meaning",
             "text": "1 つのrow の中に、複数のカラムを配置できます。このサンプル通りだと、以下のように表示\nされます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -3999,7 +4229,9 @@
             "role": "meaning",
             "text": "グリッドシステムでは、<div>要素を使うことが多いので、閉じタグだけでは、どの要素の閉じ\nタグなのか、区別がつきません。そのため、どの要素の閉じタグなのかを明確にするため、コ\nメントを記載することが多いです。特に、row が複数ある場合は「END row1」や、「END row2」と\nかでコメントを残すことで実際の範囲も読みやすくなるので、重要です。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
@@ -4058,7 +4290,9 @@
             "role": "meaning",
             "text": " フォームとは直接関係がないコードですが、横幅の3 割のみ占めるように、限定をさせること\nで、左サイドバーのようなレイアウトを作ることができます。検索バーは、サイドバーに配置させ\nることが多いので、予めカラムを生成しました。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "8 行目",
@@ -4092,7 +4326,9 @@
             "role": "meaning",
             "text": "<div>ではなく、<form>要素をrow として生成すると、フォームを別途の行として扱えることが\nできます。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "9 行目・13 行目",
@@ -4131,7 +4367,9 @@
             "role": "meaning",
             "text": "入力フォームに8、ボタンに4 の割合でカラムを生成しています。"
           }
-        ]
+        ],
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       },
       {
         "line_label": "10 行目",
@@ -4211,7 +4449,9 @@
           }
         ],
         "continuation": true,
-        "continued_from": "p273-b10"
+        "continued_from": "p273-b10",
+        "word_paragraph_breaks": [],
+        "word_line_breaks": []
       }
     ],
     "source_texts": {

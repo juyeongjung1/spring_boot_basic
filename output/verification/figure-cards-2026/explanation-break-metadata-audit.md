@@ -1,0 +1,13 @@
+# 原Wordの段落・明示改行メタデータの不変検査
+
+判定：合格。46カード・84行のmeaning/code/label/source_fragments等、すべての既存JSON値がGit基準と完全一致。
+
+一意一致82行へword_paragraph_breaks / word_line_breaksの2キーだけを追加。元Wordの段落20件と明示改行22件を記録。
+
+row.meaningの元文字列における次の非空白文字の0-based index。w:p/w:brの直前にある抽出空白・改行は表示時に消費する。未設定キーはWord位置の未確定を表し、空配列は明示境界が無いことを表す。
+
+未知のまま保持した2行は、空説明1行とWord内に同じ短文が2回現れる1行。
+
+旧値比較の基準：96a99882326d65ec048100b2f20fa0ed4aaa72d2
+
+現在ファイルSHA-256：1409430f518aedbd2b1c9b5ddef2d3a1065a3915688dd6380877d1e2557cd804

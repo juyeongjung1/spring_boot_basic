@@ -129,6 +129,9 @@ pre.source-code {
 .source-code .number { color: #18568b; }
 .source-code .type { color: #176a69; }
 .source-code .function { color: #245b9d; }
+.source-code .annotation { color: #c62828; font-weight: 700; }
+.source-code .element { color: #165dce; }
+.source-code .thymeleaf { color: #7c3aed; font-weight: 700; }
 .source-code .operator,
 .source-code .punctuation { color: #374151; }
 
@@ -180,11 +183,49 @@ pre.source-code {
   background: #f8fafc;
 }
 
-.explanation-table th:nth-child(1) { width: 14%; }
-.explanation-table th:nth-child(2) { width: 36%; }
-.explanation-table th:nth-child(3) { width: 50%; }
-.explanation-table pre.source-code { padding: 0; font-size: 9.5pt; line-height: 14.5pt; }
-.explanation-table .line-label { font-size: 9.5pt; }
+.explanation-card {
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.explanation-card > .card-header {
+  padding: 0 0 7pt;
+  border-bottom: 0;
+  background: #fff;
+}
+
+.explanation-item { margin: 0 0 12pt; }
+.explanation-item:last-child { margin-bottom: 0; }
+
+.explanation-code {
+  margin-bottom: 6pt;
+  border: 0.6pt solid #d7dde5;
+  border-radius: 4pt;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.explanation-code .line-label {
+  padding: 4pt 8pt;
+  border-bottom: 0.6pt solid #e5e9ef;
+  color: #374151;
+  font: 700 9.5pt/1.4 "Meiryo", sans-serif;
+}
+
+.explanation-code pre.source-code { padding: 5pt 8pt; }
+
+.explanation-paragraph {
+  margin: 0 0 6pt;
+  font: 11.04pt/18pt "MS PMincho", serif;
+  text-indent: 1em;
+  overflow-wrap: anywhere;
+}
+
+.explanation-paragraph:last-child { margin-bottom: 0; }
+.explanation-prose-line { margin: 0; text-indent: 0; }
+.explanation-prose-line.paragraph-start { text-indent: 1em; }
+.explanation-prose-line br { display: none; }
 
 .card td p,
 .card th p {
@@ -204,6 +245,17 @@ pre.source-code {
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
+
+.code-figure {
+  width: max-content;
+  max-width: 100%;
+  margin: 5pt 0 0;
+  border: 0.6pt solid #c5cdd7;
+  background: #fff;
+}
+
+.code-figure-label { padding: 3pt 5pt; font-weight: 700; }
+.code-figure img { display: block; max-width: 100%; }
 
 @media print {
   .card {

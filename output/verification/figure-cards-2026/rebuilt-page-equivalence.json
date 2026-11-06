@@ -1,0 +1,1040 @@
+{
+  "passed": true,
+  "chapters": 12,
+  "pages": 115,
+  "method": "再生成した12章の全ページを現合冊の対応ページと108dpiで比較。合冊の連番footerは除外し、更新済み目次6頁は別途内部リンク/全文監査へ委ねる。",
+  "exact_pages": 109,
+  "updated_toc_pages": 6,
+  "max_mean_rgb_difference_0_255": 0.0,
+  "rows": [
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 1,
+      "merged_page": 1,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 2,
+      "merged_page": 2,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 3,
+      "merged_page": 3,
+      "kind": "updated-toc",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 4,
+      "merged_page": 4,
+      "kind": "updated-toc",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 5,
+      "merged_page": 5,
+      "kind": "updated-toc",
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 6,
+      "merged_page": 6,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 7,
+      "merged_page": 7,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 8,
+      "merged_page": 8,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 9,
+      "merged_page": 9,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 10,
+      "merged_page": 10,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 11,
+      "merged_page": 11,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 12,
+      "merged_page": 12,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 13,
+      "merged_page": 13,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "front",
+      "local_page": 14,
+      "merged_page": 14,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "local_page": 1,
+      "merged_page": 361,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "local_page": 2,
+      "merged_page": 362,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "local_page": 3,
+      "merged_page": 363,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "local_page": 4,
+      "merged_page": 364,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "local_page": 5,
+      "merged_page": 365,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "local_page": 6,
+      "merged_page": 366,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "local_page": 7,
+      "merged_page": 367,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-a",
+      "local_page": 8,
+      "merged_page": 368,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "local_page": 1,
+      "merged_page": 369,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "local_page": 2,
+      "merged_page": 370,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "local_page": 3,
+      "merged_page": 371,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "local_page": 4,
+      "merged_page": 372,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "local_page": 5,
+      "merged_page": 373,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "local_page": 6,
+      "merged_page": 374,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "local_page": 7,
+      "merged_page": 375,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "local_page": 8,
+      "merged_page": 376,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "textbook",
+      "chapter": "appendix-b",
+      "local_page": 9,
+      "merged_page": 377,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-front",
+      "local_page": 1,
+      "merged_page": 1,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-front",
+      "local_page": 2,
+      "merged_page": 2,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-front",
+      "local_page": 3,
+      "merged_page": 3,
+      "kind": "updated-toc",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-front",
+      "local_page": 4,
+      "merged_page": 4,
+      "kind": "updated-toc",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-front",
+      "local_page": 5,
+      "merged_page": 5,
+      "kind": "updated-toc",
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-front",
+      "local_page": 6,
+      "merged_page": 6,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex01",
+      "local_page": 1,
+      "merged_page": 7,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex01",
+      "local_page": 2,
+      "merged_page": 8,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex01",
+      "local_page": 3,
+      "merged_page": 9,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex01",
+      "local_page": 4,
+      "merged_page": 10,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "local_page": 1,
+      "merged_page": 11,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "local_page": 2,
+      "merged_page": 12,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "local_page": 3,
+      "merged_page": 13,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "local_page": 4,
+      "merged_page": 14,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "local_page": 5,
+      "merged_page": 15,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex02",
+      "local_page": 6,
+      "merged_page": 16,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 1,
+      "merged_page": 17,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 2,
+      "merged_page": 18,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 3,
+      "merged_page": 19,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 4,
+      "merged_page": 20,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 5,
+      "merged_page": 21,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 6,
+      "merged_page": 22,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 7,
+      "merged_page": 23,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 8,
+      "merged_page": 24,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 9,
+      "merged_page": 25,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 10,
+      "merged_page": 26,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 11,
+      "merged_page": 27,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 12,
+      "merged_page": 28,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex03",
+      "local_page": 13,
+      "merged_page": 29,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "local_page": 1,
+      "merged_page": 30,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "local_page": 2,
+      "merged_page": 31,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "local_page": 3,
+      "merged_page": 32,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "local_page": 4,
+      "merged_page": 33,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "local_page": 5,
+      "merged_page": 34,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "local_page": 6,
+      "merged_page": 35,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "local_page": 7,
+      "merged_page": 36,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex04",
+      "local_page": 8,
+      "merged_page": 37,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 1,
+      "merged_page": 38,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 2,
+      "merged_page": 39,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 3,
+      "merged_page": 40,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 4,
+      "merged_page": 41,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 5,
+      "merged_page": 42,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 6,
+      "merged_page": 43,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 7,
+      "merged_page": 44,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 8,
+      "merged_page": 45,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 9,
+      "merged_page": 46,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 10,
+      "merged_page": 47,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 11,
+      "merged_page": 48,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex05",
+      "local_page": 12,
+      "merged_page": 49,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 1,
+      "merged_page": 50,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 2,
+      "merged_page": 51,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 3,
+      "merged_page": 52,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 4,
+      "merged_page": 53,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 5,
+      "merged_page": 54,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 6,
+      "merged_page": 55,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 7,
+      "merged_page": 56,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 8,
+      "merged_page": 57,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 9,
+      "merged_page": 58,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 10,
+      "merged_page": 59,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 11,
+      "merged_page": 60,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 12,
+      "merged_page": 61,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 13,
+      "merged_page": 62,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 14,
+      "merged_page": 63,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 15,
+      "merged_page": 64,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 16,
+      "merged_page": 65,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex06",
+      "local_page": 17,
+      "merged_page": 66,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 1,
+      "merged_page": 67,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 2,
+      "merged_page": 68,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 3,
+      "merged_page": 69,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 4,
+      "merged_page": 70,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 5,
+      "merged_page": 71,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 6,
+      "merged_page": 72,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 7,
+      "merged_page": 73,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 8,
+      "merged_page": 74,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 9,
+      "merged_page": 75,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 10,
+      "merged_page": 76,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 11,
+      "merged_page": 77,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 12,
+      "merged_page": 78,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 13,
+      "merged_page": 79,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 14,
+      "merged_page": 80,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 15,
+      "merged_page": 81,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 16,
+      "merged_page": 82,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex07",
+      "local_page": 17,
+      "merged_page": 83,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    },
+    {
+      "collection": "exercise",
+      "chapter": "ex-back",
+      "local_page": 1,
+      "merged_page": 84,
+      "mean_rgb_difference_0_255": 0.0,
+      "difference_bbox": null,
+      "passed": true
+    }
+  ]
+}

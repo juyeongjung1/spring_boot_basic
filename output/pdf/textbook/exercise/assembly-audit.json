@@ -1,12 +1,12 @@
 {
   "collection": "exercise",
-  "flow_pages": 82,
+  "flow_pages": 84,
   "source_pages": 77,
   "toc_entries": 45,
   "source_page_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 19,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "e36296d10fc7135b308decafd10790e5e4719de75455dd019ded3c03331a3e47",
-  "verification": "output/verification/illustrations-expansion-2026/"
+  "pdf_sha256": "a9f3a07b3e40ba490a104003a553a3c4ee8dd7c0e07fbf038ede108aa621ff86",
+  "verification": "output/verification/figure-cards-2026/"
 }

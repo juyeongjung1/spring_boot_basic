@@ -1,0 +1,12 @@
+実行済みツール出力を連結して保存（実行内容の再現や再実行ではない）。
+test_figure_and_caption_are_adjacent_in_the_declared_source_page (test_illustrations.IllustrationSourceTests.test_figure_and_caption_are_adjacent_in_the_declared_source_page) ... ok
+test_new_assets_and_existing_di_follow_print_limits (test_illustrations.IllustrationSourceTests.test_new_assets_and_existing_di_follow_print_limits) ... ok
+test_only_new_illustration_settings_are_added_since_the_approved_edition (test_illustrations.IllustrationSourceTests.test_only_new_illustration_settings_are_added_since_the_approved_edition) ... ok
+test_only_requested_di_bean_changes_follow_the_previous_edition (test_illustrations.IllustrationSourceTests.test_only_requested_di_bean_changes_follow_the_previous_edition) ... ok
+test_original_baseline_layout_and_assets_are_unchanged (test_illustrations.IllustrationSourceTests.test_original_baseline_layout_and_assets_are_unchanged) ... ok
+test_original_text_code_and_id_order_are_unchanged (test_illustrations.IllustrationSourceTests.test_original_text_code_and_id_order_are_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 157.562s
+
+OK

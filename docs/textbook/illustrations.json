@@ -283,50 +283,23 @@
       ]
     },
     {
-      "id": "boot-managed-versions",
+      "id": "di-remote-intro",
+      "title": "DIコンテナからAクラスへリモコンを渡す",
       "chapter": "01",
-      "source_page": 22,
-      "after_id": "p022-f06",
-      "before_id": "p023-b01",
-      "priority": "推奨",
-      "title": "Spring Bootが管理するライブラリのバージョンの組合せ",
-      "caption": "Spring Bootの管理対象ライブラリは、Bootが定めるバージョンの組合せを利用できます。",
-      "purpose": "ライブラリを取得するMavenの働きと、管理対象ライブラリのバージョンをそろえるBootの働きを混同しないようにする。",
-      "composition": "中央の設計図カード『Spring Boot』から、右の3つの整合した部品カードへ細い線。3部品は『Web』『DB』『Template』で、共通色のはめ込み形状がそろう。カード群全体を『管理対象』の短い枠でまとめる。別々のバージョン数字や赤いエラーの山は不要。『全部のライブラリ』と書かない。",
-      "labels": [
-        "Spring Boot",
-        "管理対象",
-        "Web",
-        "DB",
-        "Template"
-      ],
-      "accuracy_constraints": [
-        "任意の外部ライブラリまでBootが自動でバージョン管理するとの印象を与えない。",
-        "バージョン番号を創作して図中へ入れない。",
-        "pom.xmlや依存宣言が不要であるように描かない。"
-      ],
-      "existing_figures": [
-        "p022-f06",
-        "illustration-2026-maven-libraries"
-      ],
-      "difference": "既存p022-f06は依存ライブラリ一覧の画面、既存Maven挿絵はpom.xmlから取得する働き。新図は『管理対象の組合せをそろえる』点に限定する。",
-      "safety": "原本の見出し・説明・依存ライブラリ画面のまとまりを保持した直後。図/captionは元頁22に所属し、次の元頁23の先頭より前。",
-      "source_evidence": [
-        "p022-b06",
-        "p022-b07"
-      ],
-      "primary_sources": [
-        "https://docs.spring.io/spring-boot/4.0/reference/using/build-systems.html"
-      ],
+      "source_page": 20,
+      "after_id": "p020-b03",
+      "before_id": "p020-b04",
+      "figure_id": "illustration-figure-cards-2026-di-remote-intro",
+      "caption_id": "illustration-figure-cards-2026-di-remote-intro-caption",
+      "asset": "assets/revision-ill-di-remote-intro.png",
       "width": 280,
       "max_height": 140,
-      "figure_id": "illustration-expansion-2026-boot-managed-versions",
-      "caption_id": "illustration-expansion-2026-boot-managed-versions-caption",
-      "asset": "assets/revision-ill-boot-managed-versions.png",
-      "placement": "end-of-source-page",
-      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-5133a05c-63e4-49c2-bf3e-a3cefe04df7d.png",
-      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on a pure white background. Clean flat editorial drawings, thick crisp navy outlines, muted teal/pale blue with orange accents; large sparse labels readable at only 100 mm print width and at most 49 mm high. No glossy finish, shadows, title banner, logos, watermark or extra prose. Use ONLY the exact short labels requested, no invented headings. One asset. A coordinated set of managed dependency versions, not downloading libraries. Left: one large blueprint/settings card labeled exactly \"Spring Boot\". Three clear connector lines point from that card to three distinct component blocks on the right, labeled exactly \"Web\", \"DB\", \"Template\". Those three blocks have matching compatible socket shapes, and are enclosed together by one light outline labeled exactly \"管理対象\". Do not invent any version numbers, do not claim all possible libraries are managed, do not show dependency declarations becoming unnecessary. This is a schematic of a compatible managed set, not Maven fetching files.",
-      "asset_sha256": "03831328dd9641aa06719ce511e0e64e4ef1ee29d7cb416c1a8962b0e6d88878",
+      "caption": "DIコンテナから渡されたリモコンを使い、AクラスがBクラスの機能を呼び出します。",
+      "purpose": "倉庫に準備されたリモコンをAへ渡し、スイッチ（メソッド）でBの機能を利用する本文の比喩を示す。",
+      "difference": "第1章のDI導入文に合わせて、倉庫・受け渡し・呼び出しを一枚にまとめる。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-7fc78cc8-5ff3-40e7-94f8-d9ffe41f28f1.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration using a remote-control-and-warehouse metaphor. Landscape 2.4:1, pure white background, clean friendly editorial drawing, crisp navy outlines, soft blue and teal, small orange accents. The image prints at only 100 mm wide by at most 49 mm high. All labels must be large and sparse. No title banner, no code, no decorative prose, no glossy highlights, no watermark or logo. Use only the exact listed labels. Explain this precise metaphor: a remote connected to class B is prepared in the DI warehouse; when needed the remote is handed to class A; A presses its method switch to use B. LEFT: one simple open storage cabinet labeled exactly \"DIコンテナ\", holding a distinctive blue remote with two orange buttons. CENTER: a class A character/panel labeled exactly \"Aクラス\" receives that SAME kind of remote via a clear orange arrow from the cabinet labeled exactly \"渡す\". A fingertip is pressing one orange switch on the received remote. A short callout pointing to this switch reads exactly \"メソッド\". RIGHT: one simple working machine/gear panel labeled exactly \"Bクラス\". A blue signal arrow goes FROM THE HELD REMOTE to the B machine, making clear that the remote invokes B functionality. Do not draw a direct new()/construction arrow from A to B. The two drawings of the remote are before/after stages of the same reference, not two different services. No Spring Boot automatic factory, no network/cloud icon. Exact text whitelist: DIコンテナ, Aクラス, Bクラス, 渡す, メソッド.",
+      "asset_sha256": "0919e7b975a864e31f261e3ea9049e760103cceecf49186520a38190572a60c0",
       "image_pixels": [
         1942,
         809
@@ -336,37 +309,28 @@
       "id": "bean-auto-configuration",
       "chapter": "01",
       "source_page": 23,
-      "after_id": "p023-b05",
-      "before_id": "p023-b06",
+      "after_id": "p023-b02",
+      "before_id": "p023-b03",
       "priority": "推奨",
-      "title": "条件に合う共通機能のBeanを自動で用意する",
-      "caption": "Spring Bootは条件に合う共通機能のBeanを自動設定し、アプリケーションから利用できるようにします。",
-      "purpose": "『Beanの自動設定』を、全クラスが勝手に作られるという理解ではなく、利用条件に応じて共通部品が準備される仕組みとして捉える。",
-      "composition": "左の小さなライブラリの部品と設定用紙が、中央の自動組立台『Spring Boot』へ入る。右に整理された棚『DIコンテナ』があり、同じ形の小さな部品2〜3個『Bean』が置かれる。棚からアプリ側へは薄い利用の矢印のみ。図中に『条件に応じて』を短く置く。実在の独自MyServiceクラスのコードは描かない。",
+      "title": "BeanはDIコンテナに準備されたリモコン本体",
+      "caption": "Beanは、DIコンテナに準備されているリモコン本体に相当します。",
+      "purpose": "DIコンテナを倉庫、Beanを倉庫の中のリモコン本体として識別する。",
+      "composition": "DIコンテナと記した倉庫の中に複数のリモコンを置き、一つのリモコン全体をBeanとして指し示す。",
       "labels": [
-        "ライブラリ",
-        "設定",
-        "Spring Boot",
-        "条件に応じて",
         "DIコンテナ",
-        "Bean"
+        "Bean",
+        "リモコン本体"
       ],
       "accuracy_constraints": [
-        "Bootがアプリ内のすべてのクラスを自動でBean登録する図にしない。",
-        "ユーザーが定義したBeanを無条件に上書きするような表現を避ける。",
-        "自動設定の共通機能の準備と、既存DIリモコン図の『注入して利用する』働きを区別する。"
+        "Beanの矢印はボタンではなくリモコン本体の外装を指す。",
+        "自動設定の工場やライブラリ入力を描かない。"
       ],
       "existing_figures": [
         "revision-di-remote"
       ],
-      "difference": "既存DI図は用意された部品をControllerへ渡して使う関係を示す。新図は、その前段階にある条件付きの自動準備を説明する。",
-      "safety": "手動設定のコードと説明が終わった後。次の利点の段落の直前。",
-      "source_evidence": [
-        "p023-b02",
-        "p023-b03",
-        "p023-b05",
-        "p023-b06"
-      ],
+      "difference": "直前に読む本文と同じ倉庫とリモコンの比喩に統一する。",
+      "safety": "Beanとリモコン本体の対応を述べたp023-b02の直後。手動設定の説明とコードの前。",
+      "source_evidence": [],
       "primary_sources": [
         "https://docs.spring.io/spring-boot/4.0/reference/using/auto-configuration.html"
       ],
@@ -375,13 +339,14 @@
       "figure_id": "illustration-expansion-2026-bean-auto-configuration",
       "caption_id": "illustration-expansion-2026-bean-auto-configuration-caption",
       "asset": "assets/revision-ill-bean-auto-configuration.png",
-      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-db01342a-f74b-4766-8e8a-a98397bd4376.png",
-      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on a pure white background. Clean flat editorial drawings, thick crisp navy outlines, muted teal/pale blue with orange accents; large sparse labels readable at only 100 mm print width and at most 49 mm high. No glossy finish, shadows, title banner, logos, watermark or extra prose. Use ONLY the exact short labels requested, no invented headings. One asset. Conditional auto-configuration of infrastructure beans. Left: a small stack of library components labeled exactly \"ライブラリ\" and a separate configuration page labeled exactly \"設定\". Both go to one compact assembly station labeled exactly \"Spring Boot\", with one condition gate labeled exactly \"条件に応じて\". Right: the station supplies two simple completed component pieces on a tidy shelf labeled exactly \"DIコンテナ\"; label the supplied pieces collectively exactly \"Bean\". Only qualified infrastructure components are supplied. No application class list and no assertion that every application class becomes a bean. No code, no extra labels.",
-      "asset_sha256": "82d0c5c68fd92bcbcb0a9d3ea672d3f4d9702dc283c815d42ca19c6d44ab6744",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-6bd6aeed-5904-4980-82dd-539150d24111.png",
+      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration using a remote-control-and-warehouse metaphor. Landscape 2.4:1, pure white background, clean friendly editorial drawing, crisp navy outlines, soft blue and teal, small orange accents. The image prints at only 100 mm wide by at most 49 mm high. All labels must be large and sparse. No title banner, no code, no decorative prose, no glossy highlights, no watermark or logo. Use only the exact listed labels. Explain ONLY that a Bean is the remote body prepared in the warehouse called a DI container. Center one large simple open storage cabinet labeled exactly \"DIコンテナ\". INSIDE its shelves are two or three readily identifiable blue remote controls with orange buttons, already prepared for use. One remote remains clearly INSIDE the cabinet and is prominently highlighted, with a large short callout exactly \"Bean\" pointing directly to THE REMOTE BODY, not to a button or the cabinet. A second small clear label exactly \"リモコン本体\" may identify that same remote. This is a calm inventory/identification picture, not a factory or automatic configuration process. Do not show gears assembling blocks, library inputs, Spring Boot, a delivery pipeline, or any client class. The cabinet is the DI container, the remote is the Bean. Exact text whitelist: DIコンテナ, Bean, リモコン本体.",
+      "asset_sha256": "7c0c09be8903e84142a1b4cb9430e465fb0eb6520b50ffe2396fe3e303481e7a",
       "image_pixels": [
-        1942,
+        1944,
         809
-      ]
+      ],
+      "edit_prompt": "Make one precise correction to this illustration. The arrow from the \"Bean\" callout must point to the OUTER ORANGE OUTLINE of the entire highlighted remote body at its lower-left edge, NOT to any button, directional pad or switch. This is essential: Bean is the whole remote object, a method would be a switch. Move the callout tail lower and left as needed, leaving the outer-case edge visually obvious. Preserve the exact labels DIコンテナ, Bean, リモコン本体, all remotes, cabinet, colors, sizes, white background and wide composition. Keep the リモコン本体 callout pointing to the body edge too. Do not add any text or alter the other diagram contents."
     },
     {
       "id": "request-response-search",

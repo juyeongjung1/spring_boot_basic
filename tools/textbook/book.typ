@@ -64,24 +64,59 @@
 ]
 #let slide-header(height, body) = block(width: 100%, height: height * 1pt,
   breakable: false, above: 0pt, below: 0pt)[#body]
-#let illustration(id, path, width, offset: 0pt) = block(width: 100%, breakable: false,
-  inset: (left: offset), above: 8pt, below: 12pt)[
-  #mark(id, "start")
-  #image(path, width: width * 1pt)
-  #mark(id, "end")
+#let figure-number(id, number, offset: 0pt) = block(above: 0pt, below: 5pt,
+  inset: (left: offset))[
+  #set par(first-line-indent: 0pt, leading: 0pt, spacing: 0pt)
+  #mark("figure-number-" + id, "start")#text(font: "MS Gothic", size: 9pt,
+    weight: "bold", fill: rgb("35536C"), number)#mark("figure-number-" + id, "end")
 ]
-#let compact-illustration(id, path, width, height, caption-id, caption) = block(
-  width: 100%, breakable: false, above: 8pt, below: 12pt)[
+// 枠の余白を外側へ出し、原図の左端と幅を保つ。
+#let illustration(id, path, width, offset: 0pt, number: none) = block(width: 100%, breakable: false,
+  inset: (left: offset - (if number == none {0pt} else {6pt})), above: 8pt, below: 12pt)[
+  #if number == none {
+    [#mark(id, "start")#image(path, width: width * 1pt)#mark(id, "end")]
+  } else {
+    block(width: width * 1pt + 12pt, inset: 6pt, fill: white,
+      stroke: 0.65pt + rgb("9AAEBF"), radius: 3pt, above: 0pt, below: 0pt)[
+      #mark("figure-frame-" + id, "start")
+      #figure-number(id, number, offset: calc.max(0pt, -offset))
+      #mark(id, "start")#image(path, width: width * 1pt)#mark(id, "end")
+      #mark("figure-frame-" + id, "end")
+    ]
+  }
+]
+#let compact-illustration(id, path, width, height, caption-id, caption, number) = block(
+  width: 100%, breakable: false, inset: (left: -6pt), above: 8pt, below: 12pt)[
   #mark("instruction-" + id, "start")
-  #block(width: width * 1pt, above: 0pt, below: 4pt)[
-    #mark(id, "start")#image(path, width: width * 1pt, height: height * 1pt)#mark(id, "end")
-  ]
-  #block(above: 0pt, below: 0pt)[
-    #set par(first-line-indent: 0pt, leading: 4.5pt, spacing: 0pt)
-    #mark(caption-id, "start")#text(font: "MS PMincho", size: 9.5pt, caption)#mark(caption-id, "end")
+  #block(width: 100% + 6pt, inset: 6pt, fill: white,
+    stroke: 0.65pt + rgb("9AAEBF"), radius: 3pt, above: 0pt, below: 0pt)[
+    #mark("figure-frame-" + id, "start")
+    #figure-number(id, number)
+    #block(width: width * 1pt, above: 0pt, below: 6pt)[
+      #mark(id, "start")#image(path, width: width * 1pt, height: height * 1pt)#mark(id, "end")
+    ]
+    #block(above: 0pt, below: 0pt)[
+      #set par(first-line-indent: 0pt, leading: 4.5pt, spacing: 0pt)
+      #mark(caption-id, "start")#text(font: "MS PMincho", size: 9.5pt, caption)#mark(caption-id, "end")
+    ]
+    #mark("figure-frame-" + id, "end")
   ]
   #mark("instruction-" + id, "end")
 ]
+// 固定ページでは、図本体の座標を保ち、空いている側へ番号タブを付ける。
+#let native-illustration(id, path, x, y, width, height, number, label-x, label-y) = {
+  at(x - 4, y - 4, [#mark("figure-frame-" + id, "start")#rect(
+    width: width * 1pt + 8pt, height: height * 1pt + 8pt,
+    fill: white, stroke: 0.65pt + rgb("9AAEBF"), radius: 2pt)#mark("figure-frame-" + id, "end")])
+  at(x, y, [#mark(id, "start")#image(path, width: width * 1pt,
+    height: height * 1pt)#mark(id, "end")])
+  at(label-x, label-y, block(width: 48pt, height: 15pt, inset: (left: 3pt, right: 3pt),
+    fill: white, stroke: 0.65pt + rgb("9AAEBF"), radius: 2pt)[
+    #set par(first-line-indent: 0pt, leading: 0pt, spacing: 0pt)
+    #align(center + horizon)[#mark("figure-number-" + id, "start")#text(font: "MS Gothic",
+      size: 8.5pt, weight: "bold", fill: rgb("35536C"), number)#mark("figure-number-" + id, "end")]
+  ])
+}
 #let code-fragment(lines, language, font-size: 12pt, leading: 6pt) = [
   #set text(font: "MS Gothic", size: font-size)
   #set par(leading: leading, spacing: 0pt)

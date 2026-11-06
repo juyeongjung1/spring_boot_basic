@@ -1,0 +1,6 @@
+test_left_margin_figure_keeps_image_position_and_number_inside_body (tools.textbook.test_figure_frames.FigureNumberTests.test_left_margin_figure_keeps_image_position_and_number_inside_body) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.165s
+
+OK

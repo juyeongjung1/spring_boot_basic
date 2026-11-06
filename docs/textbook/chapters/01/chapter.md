@@ -220,6 +220,14 @@
 
 :::
 
+![DIコンテナからAクラスへリモコンを渡す](assets/revision-ill-di-remote-intro.png){#illustration-figure-cards-2026-di-remote-intro}
+
+::: {#illustration-figure-cards-2026-di-remote-intro-caption .paragraph}
+
+DIコンテナから渡されたリモコンを使い、AクラスがBクラスの機能を呼び出します。
+
+:::
+
 ::: {#p020-b04 .paragraph}
 
 [この仕組みのおかげで、]{.s009}[よく使われるクラスを簡単に呼び出し、プログラムの柔軟性と再利]{.s011}\
@@ -374,14 +382,6 @@
 
 ![Mavenの依存ライブラリ画面](assets/p022-f06.svg){#p022-f06}
 
-![Spring Bootが管理するライブラリのバージョンの組合せ](assets/revision-ill-boot-managed-versions.png){#illustration-expansion-2026-boot-managed-versions}
-
-::: {#illustration-expansion-2026-boot-managed-versions-caption .paragraph}
-
-Spring Bootの管理対象ライブラリは、Bootが定めるバージョンの組合せを利用できます。
-
-:::
-
 :::
 
 ::: {#page-23 .source-page}
@@ -397,6 +397,14 @@ Spring Bootの管理対象ライブラリは、Bootが定めるバージョン�
 [Spring Framework では、アプリケーションの多くの機能が]{.s009}[「Bean」]{.s011}[と呼ばれる特別なオブジェ]{.s009}\
 [クトとして管理されます。Bean は、先ほどDI（依存性の注入）で例えた「予め倉庫（DI コンテナ）]{.s009}\
 [に準備されている、リモコン本体」のことです。]{.s009}
+
+:::
+
+![BeanはDIコンテナに準備されたリモコン本体](assets/revision-ill-bean-auto-configuration.png){#illustration-expansion-2026-bean-auto-configuration}
+
+::: {#illustration-expansion-2026-bean-auto-configuration-caption .paragraph}
+
+Beanは、DIコンテナに準備されているリモコン本体に相当します。
 
 :::
 
@@ -427,14 +435,6 @@ public class AppConfig {
 [ただし、]{.s009}[Bean の数が多くなると、それぞれの設定が複雑になり、管理が難しくなります。]{.s011}\
 [Spring Boot は、多くの一般的なBean を、最初から自動でDI コンテナに準備・設定してくれま]{.s011}\
 [す。]{.s011}
-
-:::
-
-![条件に合う共通機能のBeanを自動で用意する](assets/revision-ill-bean-auto-configuration.png){#illustration-expansion-2026-bean-auto-configuration}
-
-::: {#illustration-expansion-2026-bean-auto-configuration-caption .paragraph}
-
-Spring Bootは条件に合う共通機能のBeanを自動設定し、アプリケーションから利用できるようにします。
 
 :::
 

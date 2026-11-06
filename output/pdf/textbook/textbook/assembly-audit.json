@@ -1,12 +1,12 @@
 {
   "collection": "textbook",
-  "flow_pages": 364,
+  "flow_pages": 377,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
-  "uri_annotations_verified": 70,
+  "uri_annotations_verified": 63,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "a3cfbd131dd2ada326f82c6b8778ef901f7c06d965d78f279d99e61a37c5e20b",
-  "verification": "output/verification/illustrations-expansion-2026/"
+  "pdf_sha256": "380e793309f0c04af91377157c099b2682f3c04ebfabf37b4eda6d7cfcda6ef4",
+  "verification": "output/verification/figure-cards-2026/"
 }

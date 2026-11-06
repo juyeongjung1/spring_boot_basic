@@ -174,15 +174,15 @@
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-framework-foundation-caption"
     },
-    "illustration-expansion-2026-boot-managed-versions": {
-      "width": 280,
-      "max_height": 140,
-      "caption_id": "illustration-expansion-2026-boot-managed-versions-caption"
-    },
     "illustration-expansion-2026-bean-auto-configuration": {
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-bean-auto-configuration-caption"
+    },
+    "illustration-figure-cards-2026-di-remote-intro": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-figure-cards-2026-di-remote-intro-caption"
     }
   }
 }

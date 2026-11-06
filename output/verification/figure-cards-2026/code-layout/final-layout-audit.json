@@ -1,0 +1,1228 @@
+{
+  "explanations": 46,
+  "meaning_rows": 84,
+  "explanation_pages": 46,
+  "max_pixel_difference": 6.240415657788539,
+  "syntax_spans": {
+    "0xc62828": 144,
+    "0x165dce": 874,
+    "0x7c3aed": 109,
+    "0x8000": 478,
+    "0x123d68": 116
+  },
+  "bold_filename_parts": 116,
+  "filenames": [
+    {
+      "id": "02-p041-b03",
+      "part": "02-p041-b03-part1",
+      "page": 11,
+      "text": "…/controller/IndexController.java"
+    },
+    {
+      "id": "02-p044-b08",
+      "part": "02-p044-b08-part1",
+      "page": 15,
+      "text": "…/resources/templates/index.html"
+    },
+    {
+      "id": "02-p048-b05",
+      "part": "02-p048-b05-part1",
+      "page": 22,
+      "text": "…/controller/LoginController.java"
+    },
+    {
+      "id": "02-p049-b04",
+      "part": "02-p049-b04-part1",
+      "page": 24,
+      "text": "…/resources/templates/login_input.html"
+    },
+    {
+      "id": "02-p051-b04",
+      "part": "02-p051-b04-part1",
+      "page": 27,
+      "text": "…/controller/LoginController.java"
+    },
+    {
+      "id": "02-p054-b05",
+      "part": "02-p054-b05-part1",
+      "page": 34,
+      "text": "…/form/UserForm.java"
+    },
+    {
+      "id": "02-p056-b04",
+      "part": "02-p056-b04-part1",
+      "page": 36,
+      "text": "…/controller/LoginController2.java"
+    },
+    {
+      "id": "02-p058-b04",
+      "part": "02-p058-b04-part1",
+      "page": 39,
+      "text": "…/controller/LoginController3.java"
+    },
+    {
+      "id": "02-p059-b13",
+      "part": "02-p059-b13-part1",
+      "page": 42,
+      "text": "…/resources/templates/login_success.html"
+    },
+    {
+      "id": "03-p071-b03",
+      "part": "03-p071-b03-part1",
+      "page": 12,
+      "text": "application.properties"
+    },
+    {
+      "id": "03-p073-b09",
+      "part": "03-p073-b09-part1",
+      "page": 15,
+      "text": "…/entity/Product.java"
+    },
+    {
+      "id": "03-p074-b07",
+      "part": "03-p074-b07-part1",
+      "page": 16,
+      "text": "…/entity/Product.java"
+    },
+    {
+      "id": "03-p075-b04",
+      "part": "03-p075-b04-part1",
+      "page": 18,
+      "text": "…/entity/Product.java"
+    },
+    {
+      "id": "03-p075-b10",
+      "part": "03-p075-b10-part1",
+      "page": 18,
+      "text": "…/entity/Product.java"
+    },
+    {
+      "id": "03-p078-b04",
+      "part": "03-p078-b04-part1",
+      "page": 21,
+      "text": "…/repository/ProductRepository.java"
+    },
+    {
+      "id": "03-p081-b08",
+      "part": "03-p081-b08-part1",
+      "page": 27,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p085-b04",
+      "part": "03-p085-b04-part1",
+      "page": 31,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p087-b04",
+      "part": "03-p087-b04-part1",
+      "page": 33,
+      "text": "…/resources/templates/product/list.html"
+    },
+    {
+      "id": "03-p091-b06",
+      "part": "03-p091-b06-part1",
+      "page": 39,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p092-b03",
+      "part": "03-p092-b03-part1",
+      "page": 40,
+      "text": "…/resources/templates/product/search.html"
+    },
+    {
+      "id": "03-p092-b08",
+      "part": "03-p092-b08-part1",
+      "page": 40,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p094-b02",
+      "part": "03-p094-b02-part1",
+      "page": 44,
+      "text": "…/resources/templates/product/detail.html"
+    },
+    {
+      "id": "03-p096-b03",
+      "part": "03-p096-b03-part1",
+      "page": 47,
+      "text": "…/resources/templates/product/search.html"
+    },
+    {
+      "id": "03-p096-b08",
+      "part": "03-p096-b08-part1",
+      "page": 47,
+      "text": "…/repository/ProductRepository.java"
+    },
+    {
+      "id": "03-p097-b09",
+      "part": "03-p097-b09-part1",
+      "page": 48,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p100-b03",
+      "part": "03-p100-b03-part1",
+      "page": 52,
+      "text": "…/resources/templates/product/search.html"
+    },
+    {
+      "id": "03-p100-b08",
+      "part": "03-p100-b08-part1",
+      "page": 52,
+      "text": "…/repository/ProductRepository.java"
+    },
+    {
+      "id": "03-p101-b05",
+      "part": "03-p101-b05-part1",
+      "page": 54,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p106-b05",
+      "part": "03-p106-b05-part1",
+      "page": 60,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p107-b03",
+      "part": "03-p107-b03-part1",
+      "page": 61,
+      "text": "…/resources/templates/product/insert.html"
+    },
+    {
+      "id": "03-p108-b04",
+      "part": "03-p108-b04-part1",
+      "page": 62,
+      "text": "…/form/ProductForm.java"
+    },
+    {
+      "id": "03-p109-b03",
+      "part": "03-p109-b03-part1",
+      "page": 64,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p111-b02",
+      "part": "03-p111-b02-part1",
+      "page": 68,
+      "text": "…/resources/templates/product/result.html"
+    },
+    {
+      "id": "03-p113-b04",
+      "part": "03-p113-b04-part1",
+      "page": 71,
+      "text": "pom.xml"
+    },
+    {
+      "id": "03-p113-b07",
+      "part": "03-p113-b07-part1",
+      "page": 71,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p116-b04",
+      "part": "03-p116-b04-part1",
+      "page": 74,
+      "text": "…/resources/templates/product/detail.html"
+    },
+    {
+      "id": "03-p117-b03",
+      "part": "03-p117-b03-part1",
+      "page": 75,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p118-b04",
+      "part": "03-p118-b04-part1",
+      "page": 76,
+      "text": "…/resources/templates/product/update_input.html"
+    },
+    {
+      "id": "03-p119-b03",
+      "part": "03-p119-b03-part1",
+      "page": 78,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p121-b04",
+      "part": "03-p121-b04-part1",
+      "page": 81,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p123-b03",
+      "part": "03-p123-b03-part1",
+      "page": 83,
+      "text": "…/resources/templates/product/detail.html"
+    },
+    {
+      "id": "03-p123-b07",
+      "part": "03-p123-b07-part1",
+      "page": 83,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "03-p127-b04",
+      "part": "03-p127-b04-part1",
+      "page": 88,
+      "text": "…/service/ProductService.java"
+    },
+    {
+      "id": "03-p128-b06",
+      "part": "03-p128-b06-part1",
+      "page": 89,
+      "text": "…/service/ProductServiceImpl.java"
+    },
+    {
+      "id": "03-p130-b04",
+      "part": "03-p130-b04-part1",
+      "page": 91,
+      "text": "…/controller/ProductController2.java"
+    },
+    {
+      "id": "04-p137-b03",
+      "part": "04-p137-b03-part1",
+      "page": 6,
+      "text": "…/enitity/User.java"
+    },
+    {
+      "id": "04-p137-b07",
+      "part": "04-p137-b07-part1",
+      "page": 7,
+      "text": "…/repository/UserRepository.java"
+    },
+    {
+      "id": "04-p138-b03",
+      "part": "04-p138-b03-part1",
+      "page": 8,
+      "text": "…/form/UserForm.java"
+    },
+    {
+      "id": "04-p138-b07",
+      "part": "04-p138-b07-part1",
+      "page": 8,
+      "text": "…/controller/LoginController.java"
+    },
+    {
+      "id": "04-p139-b03",
+      "part": "04-p139-b03-part1",
+      "page": 9,
+      "text": "…/resources/templates/login_input.html"
+    },
+    {
+      "id": "04-p139-b07",
+      "part": "04-p139-b07-part1",
+      "page": 9,
+      "text": "…/repository/UserRepository.java"
+    },
+    {
+      "id": "04-p140-b03",
+      "part": "04-p140-b03-part1",
+      "page": 10,
+      "text": "…/controller/LoginController.java"
+    },
+    {
+      "id": "04-p140-b08",
+      "part": "04-p140-b08-part1",
+      "page": 11,
+      "text": "…/resources/templates/main_page.html"
+    },
+    {
+      "id": "04-p144-b04",
+      "part": "04-p144-b04-part1",
+      "page": 16,
+      "text": "…/controller/LoginController.java"
+    },
+    {
+      "id": "04-p145-b06",
+      "part": "04-p145-b06-part1",
+      "page": 18,
+      "text": "…/resources/templates/main_page_session.html"
+    },
+    {
+      "id": "04-p145-b09",
+      "part": "04-p145-b09-part1",
+      "page": 18,
+      "text": "…/resources/templates/product/list.html"
+    },
+    {
+      "id": "04-p147-b04",
+      "part": "04-p147-b04-part1",
+      "page": 20,
+      "text": "…/controller/LoginController.java"
+    },
+    {
+      "id": "04-p149-b05",
+      "part": "04-p149-b05-part1",
+      "page": 22,
+      "text": "pom.xml"
+    },
+    {
+      "id": "04-p150-b03",
+      "part": "04-p150-b03-part1",
+      "page": 23,
+      "text": "…/form/UserForm.java"
+    },
+    {
+      "id": "04-p151-b03",
+      "part": "04-p151-b03-part1",
+      "page": 25,
+      "text": "…/controller/LoginController.java"
+    },
+    {
+      "id": "04-p151-b07",
+      "part": "04-p151-b07-part1",
+      "page": 25,
+      "text": "…/controller/LoginController.java"
+    },
+    {
+      "id": "04-p152-b05",
+      "part": "04-p152-b05-part1",
+      "page": 27,
+      "text": "…/resources/templates/validation_login_input.html"
+    },
+    {
+      "id": "04-p155-b08",
+      "part": "04-p155-b08-part1",
+      "page": 32,
+      "text": "…/resources/templates/login_input_final.html"
+    },
+    {
+      "id": "04-p156-b02",
+      "part": "04-p156-b02-part1",
+      "page": 33,
+      "text": "…/controller/LoginController.java"
+    },
+    {
+      "id": "04-p156-b04",
+      "part": "04-p156-b04-part1",
+      "page": 33,
+      "text": "…/resources/templates/main_page_session.html"
+    },
+    {
+      "id": "04-p161-b02",
+      "part": "04-p161-b02-part1",
+      "page": 40,
+      "text": "/resources/messages.properties"
+    },
+    {
+      "id": "04-revision-messages-bundles",
+      "part": "04-revision-messages-bundles-part1",
+      "page": 41,
+      "text": "messages.properties"
+    },
+    {
+      "id": "04-revision-messages-ja",
+      "part": "04-revision-messages-ja-part1",
+      "page": 41,
+      "text": "messages_ja.properties"
+    },
+    {
+      "id": "04-revision-messages-en",
+      "part": "04-revision-messages-en-part1",
+      "page": 41,
+      "text": "messages_en.properties"
+    },
+    {
+      "id": "04-revision-messages-html",
+      "part": "04-revision-messages-html-part1",
+      "page": 41,
+      "text": "message.html"
+    },
+    {
+      "id": "05-p171-b05",
+      "part": "05-p171-b05-part1",
+      "page": 9,
+      "text": "…/resources/templates/product/list.html"
+    },
+    {
+      "id": "05-p173-b05",
+      "part": "05-p173-b05-part1",
+      "page": 11,
+      "text": "…/resources/templates/product/list.html"
+    },
+    {
+      "id": "05-p174-b02",
+      "part": "05-p174-b02-part1",
+      "page": 12,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "05-p175-b06",
+      "part": "05-p175-b06-part1",
+      "page": 14,
+      "text": "…/resources/templates/product/list.html"
+    },
+    {
+      "id": "05-p179-b03",
+      "part": "05-p179-b03-part1",
+      "page": 19,
+      "text": "…/resources/templates/product2/list.html"
+    },
+    {
+      "id": "05-p179-b07",
+      "part": "05-p179-b07-part1",
+      "page": 19,
+      "text": "…/resources/templates/product2/list.html"
+    },
+    {
+      "id": "05-p179-b11",
+      "part": "05-p179-b11-part1",
+      "page": 19,
+      "text": "…/resources/static/css/style.css"
+    },
+    {
+      "id": "05-p179-b14",
+      "part": "05-p179-b14-part1",
+      "page": 20,
+      "text": "…/resources/static/js/script.js"
+    },
+    {
+      "id": "05-p182-b04",
+      "part": "05-p182-b04-part1",
+      "page": 24,
+      "text": "pom.xml"
+    },
+    {
+      "id": "05-p183-b03",
+      "part": "05-p183-b03-part1",
+      "page": 25,
+      "text": "…/resources/templates/layout.html"
+    },
+    {
+      "id": "05-p184-b10",
+      "part": "05-p184-b10-part1",
+      "page": 27,
+      "text": "…/resources/templates/product/insert.html"
+    },
+    {
+      "id": "05-p187-b03",
+      "part": "05-p187-b03-part1",
+      "page": 31,
+      "text": "…/resources/static/css/layout.css"
+    },
+    {
+      "id": "06-p199-b04",
+      "part": "06-p199-b04-part1",
+      "page": 8,
+      "text": "…/entity/Category.java"
+    },
+    {
+      "id": "06-p200-b04",
+      "part": "06-p200-b04-part1",
+      "page": 9,
+      "text": "…/entity/Product.java"
+    },
+    {
+      "id": "06-p202-b03",
+      "part": "06-p202-b03-part1",
+      "page": 13,
+      "text": "…/repository/CategoryRepository.java"
+    },
+    {
+      "id": "06-p204-b04",
+      "part": "06-p204-b04-part1",
+      "page": 15,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "06-p205-b04",
+      "part": "06-p205-b04-part1",
+      "page": 16,
+      "text": "…/resources/templates/product/list.html"
+    },
+    {
+      "id": "06-p209-b03",
+      "part": "06-p209-b03-part1",
+      "page": 21,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "06-p210-b03",
+      "part": "06-p210-b03-part1",
+      "page": 22,
+      "text": "…/resources/templates/product/detail.html"
+    },
+    {
+      "id": "06-p214-b05",
+      "part": "06-p214-b05-part1",
+      "page": 27,
+      "text": "…/resources/templates/product/insert.html"
+    },
+    {
+      "id": "06-p215-b12",
+      "part": "06-p215-b12-part1",
+      "page": 28,
+      "text": "…/form/ProductForm.java"
+    },
+    {
+      "id": "06-p216-b03",
+      "part": "06-p216-b03-part1",
+      "page": 29,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "06-p219-b04",
+      "part": "06-p219-b04-part1",
+      "page": 32,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "06-p220-b04",
+      "part": "06-p220-b04-part1",
+      "page": 33,
+      "text": "…/entity/Product.java"
+    },
+    {
+      "id": "06-p226-b04",
+      "part": "06-p226-b04-part1",
+      "page": 40,
+      "text": "…/repository/ProductRepository.java"
+    },
+    {
+      "id": "06-p227-b03",
+      "part": "06-p227-b03-part1",
+      "page": 41,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "06-p228-b05",
+      "part": "06-p228-b05-part1",
+      "page": 42,
+      "text": "…/repository/ProductRepository.java"
+    },
+    {
+      "id": "06-p229-b02",
+      "part": "06-p229-b02-part1",
+      "page": 43,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "06-p230-b05",
+      "part": "06-p230-b05-part1",
+      "page": 44,
+      "text": "…/repository/ProductRepository.java"
+    },
+    {
+      "id": "06-p230-b08",
+      "part": "06-p230-b08-part1",
+      "page": 44,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "06-p232-b03",
+      "part": "06-p232-b03-part1",
+      "page": 47,
+      "text": "…/repository/ProductRepository.java"
+    },
+    {
+      "id": "07-p247-b09",
+      "part": "07-p247-b09-part1",
+      "page": 12,
+      "text": "…/controller/ProductController.java"
+    },
+    {
+      "id": "07-p248-b02",
+      "part": "07-p248-b02-part1",
+      "page": 13,
+      "text": "…/resources/templates/bootstrap_setup.html"
+    },
+    {
+      "id": "07-p248-b02",
+      "part": "07-p248-b02-part2",
+      "page": 14,
+      "text": "…/resources/templates/bootstrap_setup.html"
+    },
+    {
+      "id": "07-p252-b05",
+      "part": "07-p252-b05-part1",
+      "page": 18,
+      "text": "…/resources/templates/style_sample.html"
+    },
+    {
+      "id": "07-p253-b04",
+      "part": "07-p253-b04-part1",
+      "page": 19,
+      "text": "…/resources/templates/style_sample.html"
+    },
+    {
+      "id": "07-p254-b05",
+      "part": "07-p254-b05-part1",
+      "page": 21,
+      "text": "…/resources/templates/style_sample.html"
+    },
+    {
+      "id": "07-p255-b03",
+      "part": "07-p255-b03-part1",
+      "page": 22,
+      "text": "…/resources/templates/style_sample.html"
+    },
+    {
+      "id": "07-p255-b06",
+      "part": "07-p255-b06-part1",
+      "page": 22,
+      "text": "…/resources/templates/style_sample.html"
+    },
+    {
+      "id": "07-p263-b02",
+      "part": "07-p263-b02-part1",
+      "page": 31,
+      "text": "…/resources/templates/table_sample.html"
+    },
+    {
+      "id": "07-p266-b10",
+      "part": "07-p266-b10-part1",
+      "page": 35,
+      "text": "…/resources/templates/grid_sample.html"
+    },
+    {
+      "id": "07-p270-b02",
+      "part": "07-p270-b02-part1",
+      "page": 40,
+      "text": "…/resources/templates/grid_sample2.html"
+    },
+    {
+      "id": "07-p270-b02",
+      "part": "07-p270-b02-part2",
+      "page": 41,
+      "text": "…/resources/templates/grid_sample2.html"
+    },
+    {
+      "id": "07-p273-b02",
+      "part": "07-p273-b02-part1",
+      "page": 44,
+      "text": "…/resources/templates/form_sample.html"
+    },
+    {
+      "id": "07-p277-b06",
+      "part": "07-p277-b06-part1",
+      "page": 50,
+      "text": "…/resources/templates/form_sample2.html"
+    },
+    {
+      "id": "appendix-b-revision-errors-trace",
+      "part": "appendix-b-revision-errors-trace-part1",
+      "page": 3,
+      "text": "コンソールの表示例"
+    }
+  ],
+  "checks": [
+    {
+      "chapter": "02",
+      "anchor": "p043-b05",
+      "rows": 2,
+      "pages": [
+        13
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p044-b09",
+      "rows": 2,
+      "pages": [
+        16
+      ],
+      "pixel_mean_absolute_differences": [
+        4.002636701844467
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p049-b05",
+      "rows": 1,
+      "pages": [
+        25
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p050-b01",
+      "rows": 2,
+      "pages": [
+        26
+      ],
+      "pixel_mean_absolute_differences": [
+        0.07418742459726067
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p051-b06",
+      "rows": 2,
+      "pages": [
+        28
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p052-b03",
+      "rows": 1,
+      "pages": [
+        29
+      ],
+      "pixel_mean_absolute_differences": [
+        0.06821683184184542
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p056-b05",
+      "rows": 2,
+      "pages": [
+        36
+      ],
+      "pixel_mean_absolute_differences": [
+        0.12722999035679847
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p058-b06",
+      "rows": 1,
+      "pages": [
+        40
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p059-b01",
+      "rows": 1,
+      "pages": [
+        41
+      ],
+      "pixel_mean_absolute_differences": [
+        0.02302382772526321
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p059-b07",
+      "rows": 1,
+      "pages": [
+        41
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p060-b04",
+      "rows": 2,
+      "pages": [
+        43
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p060-b12",
+      "rows": 1,
+      "pages": [
+        44
+      ],
+      "pixel_mean_absolute_differences": [
+        6.240415657788539
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p086-b03",
+      "rows": 2,
+      "pages": [
+        32
+      ],
+      "pixel_mean_absolute_differences": [
+        0.09044388812619451
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p086-b09",
+      "rows": 1,
+      "pages": [
+        32
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0693192921506894
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p087-b05",
+      "rows": 1,
+      "pages": [
+        34
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p088-b01",
+      "rows": 1,
+      "pages": [
+        35
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p092-b09",
+      "rows": 1,
+      "pages": [
+        41
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p093-b01",
+      "rows": 2,
+      "pages": [
+        42
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p093-b07",
+      "rows": 1,
+      "pages": [
+        42
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p097-b10",
+      "rows": 2,
+      "pages": [
+        49
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p101-b06",
+      "rows": 2,
+      "pages": [
+        54
+      ],
+      "pixel_mean_absolute_differences": [
+        3.750952252510679
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p108-b06",
+      "rows": 1,
+      "pages": [
+        62
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p109-b04",
+      "rows": 2,
+      "pages": [
+        64
+      ],
+      "pixel_mean_absolute_differences": [
+        3.716624985429229
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p110-b01",
+      "rows": 1,
+      "pages": [
+        66
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p110-b04",
+      "rows": 3,
+      "pages": [
+        67
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p111-b03",
+      "rows": 1,
+      "pages": [
+        68
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p117-b04",
+      "rows": 3,
+      "pages": [
+        75
+      ],
+      "pixel_mean_absolute_differences": [
+        0.024881020197179447
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p119-b04",
+      "rows": 2,
+      "pages": [
+        78
+      ],
+      "pixel_mean_absolute_differences": [
+        3.1012191761950683
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p129-b01",
+      "rows": 5,
+      "pages": [
+        90
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p130-b05",
+      "rows": 3,
+      "pages": [
+        92
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p137-b04",
+      "rows": 1,
+      "pages": [
+        6
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p140-b04",
+      "rows": 3,
+      "pages": [
+        10
+      ],
+      "pixel_mean_absolute_differences": [
+        0.1192480895558848
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p144-b05",
+      "rows": 2,
+      "pages": [
+        17
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p150-b04",
+      "rows": 3,
+      "pages": [
+        24
+      ],
+      "pixel_mean_absolute_differences": [
+        0.01778048105453539
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p151-b08",
+      "rows": 2,
+      "pages": [
+        26
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p152-b01",
+      "rows": 1,
+      "pages": [
+        27
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p152-b06",
+      "rows": 1,
+      "pages": [
+        28
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p153-b01",
+      "rows": 2,
+      "pages": [
+        29
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor": "p168-b04",
+      "rows": 2,
+      "pages": [
+        5
+      ],
+      "pixel_mean_absolute_differences": [
+        0.12254040960646555
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor": "p184-b02",
+      "rows": 3,
+      "pages": [
+        26
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor": "p185-b01",
+      "rows": 3,
+      "pages": [
+        28
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor": "p266-b11",
+      "rows": 1,
+      "pages": [
+        35
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor": "p267-b01",
+      "rows": 2,
+      "pages": [
+        36
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor": "p267-b09",
+      "rows": 1,
+      "pages": [
+        36
+      ],
+      "pixel_mean_absolute_differences": [
+        0.08689240561876123
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor": "p273-b04",
+      "rows": 4,
+      "pages": [
+        45
+      ],
+      "pixel_mean_absolute_differences": [
+        0.05954257022593732
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor": "p274-b01",
+      "rows": 1,
+      "pages": [
+        46
+      ],
+      "pixel_mean_absolute_differences": [
+        0.0
+      ]
+    }
+  ],
+  "exact_character_style_match": true,
+  "character_style_scope": "46箇所の全非空白文字：文字・フォント名・色が一致、サイズ差0.03pt未満",
+  "compared_non_whitespace_characters": 15206,
+  "all_46_explanations_visually_reviewed": true,
+  "visual_contact_sheets": 8,
+  "original_word_paragraph_breaks": 20,
+  "original_word_explicit_line_breaks": 22,
+  "pixel_comparison_note": "Chromeの用紙丸めによる下端1 CSS pxとPDF再配置時のアンチエイリアス差を記録。差が2.5以上の5箇所はfixture/最終画像を並べて確認し、改行・位置・書式の崩れがないことを確認。"
+}

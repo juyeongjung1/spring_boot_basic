@@ -1,0 +1,1046 @@
+{
+  "count": 65,
+  "failures": [],
+  "slides": [
+    {
+      "chapter": "01",
+      "id": "p017-f01",
+      "asset": "docs/textbook/chapters/01/assets/p017-f01.svg",
+      "asset_sha256": "3f11f208e5ee42bf37c853bd660129bf2a6b7d9a299ec0c9d3e56e163913ab9a",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.26,
+        116.12
+      ],
+      "expected": [
+        112.26,
+        116.12
+      ]
+    },
+    {
+      "chapter": "01",
+      "id": "p018-f02",
+      "asset": "docs/textbook/chapters/01/assets/p018-f02-canvas-fit.svg",
+      "asset_sha256": "b696dece80450684b7456137098945f96579d4597db03a189e6989563b3529b3",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.26,
+        113.82000000000001
+      ],
+      "expected": [
+        112.26,
+        113.82000000000001
+      ]
+    },
+    {
+      "chapter": "01",
+      "id": "p019-f03",
+      "asset": "docs/textbook/chapters/01/assets/p019-f03.svg",
+      "asset_sha256": "11de9b8b1a1019f0bafb3a90df16c938e10aa1fe971bdedf8b9daacad48f34ba",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.26,
+        113.82000000000001
+      ],
+      "expected": [
+        112.26,
+        113.82000000000001
+      ]
+    },
+    {
+      "chapter": "01",
+      "id": "p021-f04",
+      "asset": "docs/textbook/chapters/01/assets/p021-f04.svg",
+      "asset_sha256": "9eda93d912be3eebca58ba66a29279ceff6a72d959d062e1531201bf2cba681d",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.26,
+        113.82000000000001
+      ],
+      "expected": [
+        112.26,
+        113.82000000000001
+      ]
+    },
+    {
+      "chapter": "01",
+      "id": "p024-f07",
+      "asset": "docs/textbook/chapters/01/assets/p024-f07.svg",
+      "asset_sha256": "b402b5969904dba5dae29dccf327d23ccb6162b48d00217e76f9acf2d183a0a5",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.26,
+        113.82000000000001
+      ],
+      "expected": [
+        112.26,
+        113.82000000000001
+      ]
+    },
+    {
+      "chapter": "01",
+      "id": "p029-f15",
+      "asset": "docs/textbook/chapters/01/assets/p029-f15.svg",
+      "asset_sha256": "8201e4d5b55fa98f10684d8b50d72675005d9585fe400a714a23fc460b666342",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.26,
+        113.82000000000001
+      ],
+      "expected": [
+        112.26,
+        113.82000000000001
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p033-f01",
+      "asset": "docs/textbook/chapters/02/assets/p033-f01.svg",
+      "asset_sha256": "ca3f36cd22b62572ea27accca4bbea8de0f20f90266f33496d8d20b9b53dc9df",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        114.27000732421875
+      ],
+      "expected": [
+        112.22999877929688,
+        114.27000732421875
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p034-f02",
+      "asset": "docs/textbook/chapters/02/assets/p034-f02.svg",
+      "asset_sha256": "99a2ad4434ff74a0a0920a927c8634d2f95c5c082150d40fbac4b9a2c2647c2e",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        112.230029296875
+      ],
+      "expected": [
+        112.22999877929688,
+        112.230029296875
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p036-f03",
+      "asset": "docs/textbook/chapters/02/assets/p036-f03.svg",
+      "asset_sha256": "8240cc78a7380a76954de862ec6cb9339df23a6a1f1c2e38b9101c6507c58dff",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        112.230029296875
+      ],
+      "expected": [
+        112.22999877929688,
+        112.230029296875
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p038-f05",
+      "asset": "docs/textbook/chapters/02/assets/p038-f05.svg",
+      "asset_sha256": "e3b93a408619fc4f1afa8678839f707fd4398d3c53d8c396ec0185770e3e5884",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        112.230029296875
+      ],
+      "expected": [
+        112.22999877929688,
+        112.230029296875
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p039-f06",
+      "asset": "docs/textbook/chapters/02/assets/p039-f06.svg",
+      "asset_sha256": "ab788b7b09a6cebca3839c31e5e82a947215aeb77c0044d1530246a767c5cf9a",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        112.230029296875
+      ],
+      "expected": [
+        112.22999877929688,
+        112.230029296875
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p047-f20",
+      "asset": "docs/textbook/chapters/02/assets/p047-f20.svg",
+      "asset_sha256": "49eaa9563cac0a87fd8f74d3e4df7f34360be71bf7a4a5be5a94d1330e15bd99",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        112.230029296875
+      ],
+      "expected": [
+        112.22999877929688,
+        112.230029296875
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p053-f25",
+      "asset": "docs/textbook/chapters/02/assets/p053-f25-clean.svg",
+      "asset_sha256": "a56978c873728996307e2341525221cd90786092ff9936e532b85b06b6b28699",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        112.230029296875
+      ],
+      "expected": [
+        112.22999877929688,
+        112.230029296875
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p057-f31",
+      "asset": "docs/textbook/chapters/02/assets/p057-f31-canvas-fit.svg",
+      "asset_sha256": "50c168d503190bc3fa85f16cd91a65d17837e560675bcfb22b8dcd99fe12b908",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        112.230029296875
+      ],
+      "expected": [
+        112.22999877929688,
+        112.230029296875
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p062-f33",
+      "asset": "docs/textbook/chapters/02/assets/p062-f33.svg",
+      "asset_sha256": "1de8ef666e0ff6d596de1749e23289d0299a561f85f48b6aafc78d7d33cd1f5a",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        112.230029296875
+      ],
+      "expected": [
+        112.22999877929688,
+        112.230029296875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p065-f01",
+      "asset": "docs/textbook/chapters/03/assets/p065-f01.svg",
+      "asset_sha256": "44e073259b1dc55a3ecd7847a2b296b15286fd077884a9d4d9b6ac28ebe19ce2",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        114.9900390625
+      ],
+      "expected": [
+        112.22999877929688,
+        114.9900390625
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p066-f02",
+      "asset": "docs/textbook/chapters/03/assets/p066-f02.svg",
+      "asset_sha256": "9144fc324a82ab9776a1fda8c2045d9e2a6696976a877d4c6c4804e12827a7cf",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p072-f09",
+      "asset": "docs/textbook/chapters/03/assets/p072-f09.svg",
+      "asset_sha256": "1fb667d6aa893d70d282a250d5e63b651f7774951eb33fdf5ecce9b37b1e299b",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p077-f13",
+      "asset": "docs/textbook/chapters/03/assets/p077-f13.svg",
+      "asset_sha256": "505d42d0868e53eae7e9a4cde3faceba025fb2509cfd200d84d7d0f0f51e83d4",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p079-f15",
+      "asset": "docs/textbook/chapters/03/assets/p079-f15.svg",
+      "asset_sha256": "1395721a2a165552cc20f5def689cdb10adb2afe7de0f27ab2427a08e272ce1b",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p082-f17",
+      "asset": "docs/textbook/chapters/03/assets/p082-f17.svg",
+      "asset_sha256": "03752e9c4f4326d5a4a3c598b2b0557e0429074ee10d573880a6ef35c7527a95",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p085-f18",
+      "asset": "docs/textbook/chapters/03/assets/p085-f18.svg",
+      "asset_sha256": "d5ebbcd9274f796bbda3a604a9fb80c3d517bafd27adb62b39aab886e3555048",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p090-f23",
+      "asset": "docs/textbook/chapters/03/assets/p090-f23.svg",
+      "asset_sha256": "4f89da286625468a121c09c22519b5bc7697c1918ce12e3067b37f17d484a2f3",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p095-f30",
+      "asset": "docs/textbook/chapters/03/assets/p095-f30.svg",
+      "asset_sha256": "d7b5f078c5af494dadbed2ae37361356701e55851e68146b0d372c5066dd8de0",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p099-f34",
+      "asset": "docs/textbook/chapters/03/assets/p099-f34.svg",
+      "asset_sha256": "045230bf2e47fe94dd42b00a888aa2131ccce215943502b22fda1b05364c127a",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p103-f38",
+      "asset": "docs/textbook/chapters/03/assets/p103-f38-canvas-fit.svg",
+      "asset_sha256": "6b78387c01bc2fd86462bea01a627a5782533efa9546f099054a7c93c0da644a",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.79002685546875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.79002685546875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p105-f39",
+      "asset": "docs/textbook/chapters/03/assets/p105-f39.svg",
+      "asset_sha256": "030df3b96787cc386d61299a4e8fcfcc7141e416276e449073c99cbb276e88bd",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p114-f51",
+      "asset": "docs/textbook/chapters/03/assets/p114-f51.svg",
+      "asset_sha256": "3736f920a1fb1d918bed21cc250770e443f004d4aa91d6efda3b61738b8535fe",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p122-f59",
+      "asset": "docs/textbook/chapters/03/assets/p122-f59.svg",
+      "asset_sha256": "03c90df3c1ceb5063a602d2ea87f692242337ddcb9fd551a94c145850954df09",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p125-f64",
+      "asset": "docs/textbook/chapters/03/assets/p125-f64.svg",
+      "asset_sha256": "7876b1f1413f34bb5523c704d55d88cf73225f3c0a7675acb5644aef1d93281f",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p132-f69",
+      "asset": "docs/textbook/chapters/03/assets/p132-f69.svg",
+      "asset_sha256": "e22e57091715d4f4129bc68c4ac938ad9ebbc6feccb418d6894f48ce58eb16d0",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p135-f01",
+      "asset": "docs/textbook/chapters/04/assets/p135-f01.svg",
+      "asset_sha256": "43ce25e988815f3bac68d014bfa7d7e7312bacf51e030db839454c3f0733e6ca",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        114.9900390625
+      ],
+      "expected": [
+        112.22999877929688,
+        114.9900390625
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p136-f02",
+      "asset": "docs/textbook/chapters/04/assets/p136-f02-clean.svg",
+      "asset_sha256": "d737b74fb06b4a56f4847d74284e8a6a33abd4db756466cd4f5db4a27938f403",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p142-f07",
+      "asset": "docs/textbook/chapters/04/assets/p142-f07.svg",
+      "asset_sha256": "8dad514f3caec747e2a735d4d338c7d1d62aa03b7381465fd27821a7f41f503c",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p148-f12",
+      "asset": "docs/textbook/chapters/04/assets/p148-f12.svg",
+      "asset_sha256": "1f24d4305d375124a19a1a5f4e087308f8657f714cfe4c440b999ca049d745a0",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p157-f18",
+      "asset": "docs/textbook/chapters/04/assets/p157-f18.svg",
+      "asset_sha256": "4c13876a461b11f70b3f148a6f81d65f3a03f1389626d2ba61f1adb0e28866f6",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p159-f19",
+      "asset": "docs/textbook/chapters/04/assets/p159-f19.svg",
+      "asset_sha256": "85ba5378bceaecbc3d0fc9fcfe381b3a0f06fac1940685adf5dd1bc8771531e9",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        113.0699951171875
+      ],
+      "expected": [
+        112.22999877929688,
+        113.0699951171875
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p162-f25",
+      "asset": "docs/textbook/chapters/04/assets/p162-f25.svg",
+      "asset_sha256": "ac86002fc7a9b007b67c703f133024883a53162eed5ef4fa255bd3b8cb789da9",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.22999877929688,
+        114.9900390625
+      ],
+      "expected": [
+        112.22999877929688,
+        114.9900390625
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p166-f01",
+      "asset": "docs/textbook/chapters/05/assets/p166-f01.svg",
+      "asset_sha256": "603f037eae634b75427d257b848d524640619fb9d9ebbaad6a3a80e043df5f89",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        115.7400390625
+      ],
+      "expected": [
+        112.97999877929688,
+        115.7400390625
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p167-f02",
+      "asset": "docs/textbook/chapters/05/assets/p167-f02.svg",
+      "asset_sha256": "168939f015985cc813748c8c4253f8bfa6c2606295a307a7193e90f3ef9bf52c",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        113.8199951171875
+      ],
+      "expected": [
+        112.97999877929688,
+        113.8199951171875
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p170-f03",
+      "asset": "docs/textbook/chapters/05/assets/p170-f03.svg",
+      "asset_sha256": "456d0ecb86a2ebeb90e739ce18a1c9d05dfc8655d6383d250a49b7a3b26d7969",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        113.8199951171875
+      ],
+      "expected": [
+        112.97999877929688,
+        113.8199951171875
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p175-f09",
+      "asset": "docs/textbook/chapters/05/assets/p175-f09.svg",
+      "asset_sha256": "6fde8dde231bded730575643bf6a51a75b6781c1a5ef8ddb2a52cbfca5428ea5",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        113.8199951171875
+      ],
+      "expected": [
+        112.97999877929688,
+        113.8199951171875
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p178-f10",
+      "asset": "docs/textbook/chapters/05/assets/p178-f10.svg",
+      "asset_sha256": "ed15b503efd696754f458f7cd7f507ca6f0a79ddbf37b587753afe308cf7e04a",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        113.8199951171875
+      ],
+      "expected": [
+        112.97999877929688,
+        113.8199951171875
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p181-f13",
+      "asset": "docs/textbook/chapters/05/assets/p181-f13.svg",
+      "asset_sha256": "baa13591aff860248f6ba26d545fb8487280d176017c9d6b2877964ba3984c79",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        113.8199951171875
+      ],
+      "expected": [
+        112.97999877929688,
+        113.8199951171875
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p190-f19",
+      "asset": "docs/textbook/chapters/05/assets/p190-f19.svg",
+      "asset_sha256": "5c31a43d9aa4592444077171e151fe2511d3ccae2681fdf3fe295b72e9f1967e",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        115.7400390625
+      ],
+      "expected": [
+        112.97999877929688,
+        115.7400390625
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p194-f01",
+      "asset": "docs/textbook/chapters/06/assets/p194-f01.svg",
+      "asset_sha256": "214b2ffc7808743de5642898d5013de9e3a5c4e06f71fbfd4cdc080642770ed4",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        115.02000732421875
+      ],
+      "expected": [
+        112.97999877929688,
+        115.02000732421875
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p195-f02",
+      "asset": "docs/textbook/chapters/06/assets/p195-f02.svg",
+      "asset_sha256": "1ccb4c0190a3a0482cff0e2a59ed40e8c235fa0253c9d9579b3230f375854adf",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p203-f04",
+      "asset": "docs/textbook/chapters/06/assets/p203-f04.svg",
+      "asset_sha256": "9e0dd5d37384a17ce0e5e7cfe861dd29e978f93029638f72764d4826de908019",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p208-f06",
+      "asset": "docs/textbook/chapters/06/assets/p208-f06.svg",
+      "asset_sha256": "8eb1671fd40790112e6518b8902ee3263519f3b6812085fd03dcce8b73cc3350",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p213-f10",
+      "asset": "docs/textbook/chapters/06/assets/p213-f10-clean.svg",
+      "asset_sha256": "80cd68bb4525d69c6a0e43dea612076d8821ba4b7f576e0f0d070f06d8a3a18c",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p222-f15",
+      "asset": "docs/textbook/chapters/06/assets/p222-f15.svg",
+      "asset_sha256": "4bb134502d25ef9d32608651c774934b1effd46299294c17e2877e4abbbf1828",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p225-f16",
+      "asset": "docs/textbook/chapters/06/assets/p225-f16.svg",
+      "asset_sha256": "c0293ceeefa749ac8cb81c9fdb199b6c4bc31a0591ca1a6dc7f913d608e78b9e",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p236-f19",
+      "asset": "docs/textbook/chapters/06/assets/p236-f19.svg",
+      "asset_sha256": "855c73c28b2246bffe31e85cf39e383c77fa31dad6446c68a058f0c6ea5705fd",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p240-f01",
+      "asset": "docs/textbook/chapters/07/assets/p240-f01.svg",
+      "asset_sha256": "8d5fd916f08d528e09cfd551a404df847007b0ee34d784aa1f949f15f132cbe5",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        115.02000732421875
+      ],
+      "expected": [
+        112.97999877929688,
+        115.02000732421875
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p241-f02",
+      "asset": "docs/textbook/chapters/07/assets/p241-f02.svg",
+      "asset_sha256": "9f6013f355c8aa5bffd2829fa715c14ed9e25cdbb980c996862fec251aee214f",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p245-f05",
+      "asset": "docs/textbook/chapters/07/assets/p245-f05-revised.svg",
+      "asset_sha256": "dde00b83fcc667f777eafed1b4da7c891cfbbccd76f091e0ac08d9de8143db16",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p250-f08",
+      "asset": "docs/textbook/chapters/07/assets/p250-f08.svg",
+      "asset_sha256": "bfd67153433a8c3e11981ffd03ebc8f913c58700631fa80935df01bb0b3ecab5",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p262-f20",
+      "asset": "docs/textbook/chapters/07/assets/p262-f20.svg",
+      "asset_sha256": "e45d168398ca277dfb42bc19aff2d1734e3850ccf22115e99dfd32c32053062c",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p265-f22",
+      "asset": "docs/textbook/chapters/07/assets/p265-f22.svg",
+      "asset_sha256": "078164be64c4cd9716794ce8d5a7d81686d33ee44923b46949b53ba998cfe554",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p272-f27",
+      "asset": "docs/textbook/chapters/07/assets/p272-f27.svg",
+      "asset_sha256": "bdcbdb965d579f8b3a044aceaed737a4b85875f76034fe8bd91873699494fcce",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p280-f34",
+      "asset": "docs/textbook/chapters/07/assets/p280-f34.svg",
+      "asset_sha256": "ab7367ebae9db430729c0742b3ba7bf2fd8f92495824c68ff41df194b3d10ae7",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        112.980029296875
+      ],
+      "expected": [
+        112.97999877929688,
+        112.980029296875
+      ]
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p286-f08",
+      "asset": "docs/textbook/chapters/appendix-a/assets/p286-f08.svg",
+      "asset_sha256": "5f699941d08afbcedd861e0379e9e333b6720ee21f83ce043f8b53154c47b1de",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        113.7
+      ],
+      "expected": [
+        112.97999877929688,
+        113.7
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p009-f01",
+      "asset": "docs/textbook/chapters/front/assets/p009-f01.svg",
+      "asset_sha256": "86b1a6e82f5ab206336e079f38ba4767f91017770d3bafe06a94327b892d81ae",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        115.02000732421875
+      ],
+      "expected": [
+        112.97999877929688,
+        115.02000732421875
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p010-f02",
+      "asset": "docs/textbook/chapters/front/assets/p010-f02.svg",
+      "asset_sha256": "7050b2ad304690b81a363e86320d88f554cb91f47cfcfdd0dadcb1208185035e",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        115.02000732421875
+      ],
+      "expected": [
+        112.97999877929688,
+        115.02000732421875
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p011-f03",
+      "asset": "docs/textbook/chapters/front/assets/p011-f03.svg",
+      "asset_sha256": "ea203475ffdb635246abee70a7e28dd7d68b3c009c87e75638e158cb769072e3",
+      "asset_unchanged": true,
+      "position_unchanged": true,
+      "actual": [
+        112.97999877929688,
+        115.02000732421875
+      ],
+      "expected": [
+        112.97999877929688,
+        115.02000732421875
+      ]
+    }
+  ]
+}

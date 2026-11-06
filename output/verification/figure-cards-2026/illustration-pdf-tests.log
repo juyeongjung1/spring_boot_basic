@@ -1,0 +1,7 @@
+test_each_image_and_caption_stay_between_the_declared_pdf_anchors (test_illustrations.IllustrationPdfTests.test_each_image_and_caption_stay_between_the_declared_pdf_anchors) ... ok
+test_image_dimensions_and_caption_are_kept_on_one_physical_page (test_illustrations.IllustrationPdfTests.test_image_dimensions_and_caption_are_kept_on_one_physical_page) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 6.178s
+
+OK

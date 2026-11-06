@@ -1,0 +1,13 @@
+front verified
+appendix-a verified
+appendix-b verified
+ex-front verified
+ex01 verified
+ex02 verified
+ex03 verified
+ex04 verified
+ex05 verified
+ex06 verified
+ex07 verified
+ex-back verified
+{'passed': True, 'chapters': 12, 'pages': 115, 'method': '再生成した12章の全ページを現合冊の対応ページと108dpiで比較。合冊の連番footerは除外し、更新済み目次6頁は別途内部リンク/全文監査へ委ねる。', 'exact_pages': 109, 'updated_toc_pages': 6, 'max_mean_rgb_difference_0_255': 0.0}

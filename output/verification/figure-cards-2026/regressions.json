@@ -1,0 +1,71 @@
+[
+  {
+    "suite": "symbols",
+    "tests": 2,
+    "passed": true,
+    "log": "test-symbols.log"
+  },
+  {
+    "suite": "remaining",
+    "tests": 9,
+    "passed": true,
+    "log": "test-remaining.log"
+  },
+  {
+    "suite": "fidelity",
+    "tests": 10,
+    "passed": true,
+    "log": "test-fidelity.log"
+  },
+  {
+    "suite": "pipeline",
+    "tests": 8,
+    "passed": true,
+    "log": "test-pipeline.log"
+  },
+  {
+    "suite": "bracket_headings",
+    "tests": 4,
+    "passed": true,
+    "log": "test-bracket_headings.log"
+  },
+  {
+    "suite": "pagination",
+    "tests": 8,
+    "passed": true,
+    "log": "test-pagination.log"
+  },
+  {
+    "suite": "source_layout",
+    "tests": 7,
+    "passed": true,
+    "log": "test-source_layout.log"
+  },
+  {
+    "suite": "html_components",
+    "tests": 13,
+    "passed": true,
+    "log": "code-layout/html-components-tests.log"
+  },
+  {
+    "suite": "illustrations_source",
+    "tests": 6,
+    "passed": true,
+    "log": "illustration-source-tests.log"
+  },
+  {
+    "suite": "illustrations_pdf",
+    "tests": 2,
+    "passed": true,
+    "log": "illustration-pdf-tests.log"
+  },
+  {
+    "suite": "figure_frames",
+    "tests": 5,
+    "passed": true,
+    "log": [
+      "figure-frames/unit-tests.log",
+      "figure-frames/left-margin-test.log"
+    ]
+  }
+]

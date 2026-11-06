@@ -1,0 +1,70 @@
+{
+  "status": "最終19章の全229図を検証・目視済み",
+  "numbered_figures": 229,
+  "kinds": {
+    "flow": 176,
+    "compact": 34,
+    "native": 17,
+    "code": 2
+  },
+  "tests": {
+    "passed": 5,
+    "runs": [
+      {
+        "command": "python -m unittest tools/textbook/test_figure_frames.py -v（左端回帰テスト追加前）",
+        "passed": 4,
+        "log": "unit-tests.log"
+      },
+      {
+        "command": "python -m unittest tools.textbook.test_figure_frames.FigureNumberTests.test_left_margin_figure_keeps_image_position_and_number_inside_body -v",
+        "passed": 1,
+        "log": "left-margin-test.log"
+      }
+    ]
+  },
+  "chapter01": {
+    "pages": 18,
+    "native_text_complete": true,
+    "heading_orphans": [],
+    "split_figures": [],
+    "split_instructions": [],
+    "overflow": [],
+    "di_number": "図1.2.1",
+    "bean_number": "図1.3.3",
+    "removed_id_not_rendered": true
+  },
+  "native_images": {
+    "count": 17,
+    "mean_absolute_rgb_error_0_255": "16点は0、p283-f03のみ0.00047",
+    "original_image_position_and_dimensions_preserved": true,
+    "number_tabs_do_not_intersect_source_text_or_images": true
+  },
+  "visual_review": [
+    "通常図/小型図の枠・番号・captionのfixtureを目視",
+    "付録A/Bの固定17図を全点目視",
+    "最新原稿のDI図とBean図の掲載ページを目視",
+    "最終19章の229図を36接触シートで全点目視"
+  ],
+  "final_pdf_review": {
+    "figure_count": 229,
+    "contact_sheets": 36,
+    "machine_failures": [],
+    "visually_reviewed_figures": 229,
+    "visually_reviewed_sheets": 36,
+    "findings": [],
+    "checks": [
+      "全図番号は実PDFで一意に表示",
+      "全通常図/小型図は共通枠、固定図は位置保持枠、コード内実画像2点は番号付き枠を確認",
+      "図番号/枠/画像/captionと前後本文の衝突なし",
+      "図の追加の欠け・用紙外・本文下端はみ出しなし"
+    ],
+    "manifest": "final-figure-review.json"
+  },
+  "ppt_preservation": {
+    "count": 65,
+    "source_assets_unchanged": true,
+    "original_top_left_preserved": true,
+    "failures": [],
+    "manifest": "ppt-preservation.json"
+  }
+}

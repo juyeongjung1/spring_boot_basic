@@ -383,65 +383,93 @@
       {
         "id": "instruction-illustration-expansion-2026-framework-foundation",
         "edge": "start",
-        "page": 4,
+        "page": 5,
+        "x": 79.104,
+        "y": 86.0
+      },
+      {
+        "id": "figure-frame-illustration-expansion-2026-framework-foundation",
+        "edge": "start",
+        "page": 5,
         "x": 85.104,
-        "y": 639.8019714355469
+        "y": 92.0
+      },
+      {
+        "id": "figure-number-illustration-expansion-2026-framework-foundation",
+        "edge": "start",
+        "page": 5,
+        "x": 85.104,
+        "y": 92.0
+      },
+      {
+        "id": "figure-number-illustration-expansion-2026-framework-foundation",
+        "edge": "end",
+        "page": 5,
+        "x": 85.104,
+        "y": 101.0
       },
       {
         "id": "illustration-expansion-2026-framework-foundation",
         "edge": "start",
-        "page": 4,
+        "page": 5,
         "x": 85.104,
-        "y": 639.8019714355469
+        "y": 106.0
       },
       {
         "id": "illustration-expansion-2026-framework-foundation",
         "edge": "end",
-        "page": 4,
+        "page": 5,
         "x": 85.104,
-        "y": 756.4446078928074
+        "y": 222.64263645726055
       },
       {
         "id": "illustration-expansion-2026-framework-foundation-caption",
         "edge": "start",
-        "page": 4,
+        "page": 5,
         "x": 85.104,
-        "y": 760.4446078928074
+        "y": 228.64263645726055
       },
       {
         "id": "illustration-expansion-2026-framework-foundation-caption",
         "edge": "end",
-        "page": 4,
+        "page": 5,
         "x": 85.104,
-        "y": 769.9446078928074
+        "y": 238.14263645726055
+      },
+      {
+        "id": "figure-frame-illustration-expansion-2026-framework-foundation",
+        "edge": "end",
+        "page": 5,
+        "x": 85.104,
+        "y": 238.14263645726055
       },
       {
         "id": "instruction-illustration-expansion-2026-framework-foundation",
         "edge": "end",
-        "page": 4,
-        "x": 85.104,
-        "y": 769.9446078928074
+        "page": 5,
+        "x": 79.104,
+        "y": 244.14263645726055
       },
       {
         "id": "p018-b06",
         "edge": "heading",
         "page": 5,
         "x": 85.104,
-        "y": 86.0
+        "y": 262.14263645726055
       },
       {
         "id": "p018-b07",
         "edge": "start",
         "page": 5,
         "x": 85.104,
-        "y": 110.0
+        "y": 286.14263645726055
       },
       {
         "id": "p018-b07",
         "edge": "end",
         "page": 5,
         "x": 85.104,
-        "y": 193.04000000000002
+        "y": 369.18263645726057
       },
       {
         "id": "__source-page-19",
@@ -577,88 +605,158 @@
         "y": 204.08000000000004
       },
       {
+        "id": "instruction-illustration-figure-cards-2026-di-remote-intro",
+        "edge": "start",
+        "page": 7,
+        "x": 79.104,
+        "y": 217.04000000000002
+      },
+      {
+        "id": "figure-frame-illustration-figure-cards-2026-di-remote-intro",
+        "edge": "start",
+        "page": 7,
+        "x": 85.104,
+        "y": 223.04000000000002
+      },
+      {
+        "id": "figure-number-illustration-figure-cards-2026-di-remote-intro",
+        "edge": "start",
+        "page": 7,
+        "x": 85.104,
+        "y": 223.04000000000002
+      },
+      {
+        "id": "figure-number-illustration-figure-cards-2026-di-remote-intro",
+        "edge": "end",
+        "page": 7,
+        "x": 85.104,
+        "y": 232.04000000000002
+      },
+      {
+        "id": "illustration-figure-cards-2026-di-remote-intro",
+        "edge": "start",
+        "page": 7,
+        "x": 85.104,
+        "y": 237.04000000000002
+      },
+      {
+        "id": "illustration-figure-cards-2026-di-remote-intro",
+        "edge": "end",
+        "page": 7,
+        "x": 85.104,
+        "y": 353.68263645726057
+      },
+      {
+        "id": "illustration-figure-cards-2026-di-remote-intro-caption",
+        "edge": "start",
+        "page": 7,
+        "x": 85.104,
+        "y": 359.68263645726057
+      },
+      {
+        "id": "illustration-figure-cards-2026-di-remote-intro-caption",
+        "edge": "end",
+        "page": 7,
+        "x": 85.104,
+        "y": 369.18263645726057
+      },
+      {
+        "id": "figure-frame-illustration-figure-cards-2026-di-remote-intro",
+        "edge": "end",
+        "page": 7,
+        "x": 85.104,
+        "y": 369.18263645726057
+      },
+      {
+        "id": "instruction-illustration-figure-cards-2026-di-remote-intro",
+        "edge": "end",
+        "page": 7,
+        "x": 79.104,
+        "y": 375.18263645726057
+      },
+      {
         "id": "p020-b04",
         "edge": "start",
         "page": 7,
         "x": 85.104,
-        "y": 217.04000000000002
+        "y": 387.18263645726057
       },
       {
         "id": "p020-b04",
         "edge": "end",
         "page": 7,
         "x": 85.104,
-        "y": 246.08000000000004
+        "y": 416.2226364572606
       },
       {
         "id": "p020-b05",
         "edge": "heading",
         "page": 7,
         "x": 85.104,
-        "y": 264.08000000000004
+        "y": 434.2226364572606
       },
       {
         "id": "p020-b06",
         "edge": "start",
         "page": 7,
         "x": 85.104,
-        "y": 287.12000000000006
+        "y": 457.26263645726056
       },
       {
         "id": "p020-b06",
         "edge": "end",
         "page": 7,
         "x": 85.104,
-        "y": 352.1600000000001
+        "y": 522.3026364572605
       },
       {
         "id": "p020-b07",
         "edge": "heading",
         "page": 7,
         "x": 85.104,
-        "y": 370.1600000000001
+        "y": 540.3026364572606
       },
       {
         "id": "p020-b08",
         "edge": "start",
         "page": 7,
         "x": 85.104,
-        "y": 393.20000000000005
+        "y": 563.3426364572606
       },
       {
         "id": "p020-b08",
         "edge": "end",
         "page": 7,
         "x": 85.104,
-        "y": 458.24000000000007
+        "y": 628.3826364572606
       },
       {
         "id": "p020-b09",
         "edge": "start",
         "page": 7,
         "x": 85.104,
-        "y": 471.20000000000005
+        "y": 641.3426364572606
       },
       {
         "id": "p020-b09",
         "edge": "end",
         "page": 7,
         "x": 85.104,
-        "y": 500.24000000000007
+        "y": 670.3826364572606
       },
       {
         "id": "p020-b10",
         "edge": "start",
         "page": 7,
         "x": 85.104,
-        "y": 513.2
+        "y": 683.3426364572606
       },
       {
         "id": "p020-b10",
         "edge": "end",
         "page": 7,
         "x": 85.104,
-        "y": 524.2400000000001
+        "y": 694.3826364572606
       },
       {
         "id": "__source-page-21",
@@ -787,158 +885,172 @@
         "y": 193.7403125
       },
       {
+        "id": "figure-frame-p022-f05",
+        "edge": "start",
+        "page": 9,
+        "x": 93.20000000000002,
+        "y": 222.78031249999998
+      },
+      {
+        "id": "figure-number-p022-f05",
+        "edge": "start",
+        "page": 9,
+        "x": 93.20000000000002,
+        "y": 222.78031249999998
+      },
+      {
+        "id": "figure-number-p022-f05",
+        "edge": "end",
+        "page": 9,
+        "x": 93.20000000000002,
+        "y": 231.78031249999998
+      },
+      {
         "id": "p022-f05",
         "edge": "start",
         "page": 9,
         "x": 93.20000000000002,
-        "y": 216.78031249999998
+        "y": 236.78031249999998
       },
       {
         "id": "p022-f05",
         "edge": "end",
         "page": 9,
         "x": 93.20000000000002,
-        "y": 409.3802984067191
+        "y": 429.3802984067191
+      },
+      {
+        "id": "figure-frame-p022-f05",
+        "edge": "end",
+        "page": 9,
+        "x": 93.20000000000002,
+        "y": 429.3802984067191
       },
       {
         "id": "instruction-p022-b03",
         "edge": "end",
         "page": 9,
         "x": 85.104,
-        "y": 409.3802984067191
+        "y": 435.3802984067191
       },
       {
         "id": "p022-b04",
         "edge": "start",
         "page": 9,
         "x": 85.104,
-        "y": 421.3802984067191
+        "y": 447.3802984067191
       },
       {
         "id": "p022-b04",
         "edge": "end",
         "page": 9,
         "x": 85.104,
-        "y": 450.42029840671904
+        "y": 476.42029840671904
       },
       {
         "id": "instruction-p022-b05",
         "edge": "start",
-        "page": 9,
+        "page": 10,
         "x": 85.104,
-        "y": 468.42029840671904
+        "y": 86.0
       },
       {
         "id": "p022-b05",
         "edge": "heading",
-        "page": 9,
+        "page": 10,
         "x": 85.104,
-        "y": 468.42029840671904
+        "y": 86.0
       },
       {
         "id": "p022-b06",
         "edge": "start",
-        "page": 9,
+        "page": 10,
         "x": 85.104,
-        "y": 491.46029840671906
+        "y": 109.04
       },
       {
         "id": "p022-b06",
         "edge": "end",
-        "page": 9,
+        "page": 10,
         "x": 85.104,
-        "y": 502.5002984067191
+        "y": 120.08
       },
       {
         "id": "p022-b07",
         "edge": "start",
-        "page": 9,
+        "page": 10,
         "x": 85.104,
-        "y": 515.4602984067191
+        "y": 133.04000000000002
       },
       {
         "id": "p022-b07",
         "edge": "end",
-        "page": 9,
+        "page": 10,
         "x": 85.104,
-        "y": 581.3304546567191
+        "y": 198.91015625
       },
       {
         "id": "p022-b08",
         "edge": "start",
-        "page": 9,
+        "page": 10,
         "x": 85.104,
-        "y": 594.290454656719
+        "y": 211.87015624999998
       },
       {
         "id": "p022-b08",
         "edge": "end",
-        "page": 9,
+        "page": 10,
         "x": 85.104,
-        "y": 623.3304546567191
+        "y": 240.91015625
+      },
+      {
+        "id": "figure-frame-p022-f06",
+        "edge": "start",
+        "page": 10,
+        "x": 95.0,
+        "y": 259.87015625
+      },
+      {
+        "id": "figure-number-p022-f06",
+        "edge": "start",
+        "page": 10,
+        "x": 95.0,
+        "y": 259.87015625
+      },
+      {
+        "id": "figure-number-p022-f06",
+        "edge": "end",
+        "page": 10,
+        "x": 95.0,
+        "y": 268.87015625
       },
       {
         "id": "p022-f06",
         "edge": "start",
-        "page": 9,
+        "page": 10,
         "x": 95.0,
-        "y": 636.290454656719
+        "y": 273.87015625
       },
       {
         "id": "p022-f06",
         "edge": "end",
-        "page": 9,
+        "page": 10,
         "x": 95.0,
-        "y": 740.1904518664493
+        "y": 377.7701534597302
+      },
+      {
+        "id": "figure-frame-p022-f06",
+        "edge": "end",
+        "page": 10,
+        "x": 95.0,
+        "y": 377.7701534597302
       },
       {
         "id": "instruction-p022-b05",
         "edge": "end",
-        "page": 9,
-        "x": 85.104,
-        "y": 740.1904518664493
-      },
-      {
-        "id": "instruction-illustration-expansion-2026-boot-managed-versions",
-        "edge": "start",
         "page": 10,
         "x": 85.104,
-        "y": 86.0
-      },
-      {
-        "id": "illustration-expansion-2026-boot-managed-versions",
-        "edge": "start",
-        "page": 10,
-        "x": 85.104,
-        "y": 86.0
-      },
-      {
-        "id": "illustration-expansion-2026-boot-managed-versions",
-        "edge": "end",
-        "page": 10,
-        "x": 85.104,
-        "y": 202.64263645726055
-      },
-      {
-        "id": "illustration-expansion-2026-boot-managed-versions-caption",
-        "edge": "start",
-        "page": 10,
-        "x": 85.104,
-        "y": 206.64263645726055
-      },
-      {
-        "id": "illustration-expansion-2026-boot-managed-versions-caption",
-        "edge": "end",
-        "page": 10,
-        "x": 85.104,
-        "y": 216.14263645726055
-      },
-      {
-        "id": "instruction-illustration-expansion-2026-boot-managed-versions",
-        "edge": "end",
-        "page": 10,
-        "x": 85.104,
-        "y": 216.14263645726055
+        "y": 383.7701534597302
       },
       {
         "id": "__source-page-23",
@@ -969,130 +1081,158 @@
         "y": 156.08
       },
       {
+        "id": "instruction-illustration-expansion-2026-bean-auto-configuration",
+        "edge": "start",
+        "page": 11,
+        "x": 79.104,
+        "y": 169.04000000000002
+      },
+      {
+        "id": "figure-frame-illustration-expansion-2026-bean-auto-configuration",
+        "edge": "start",
+        "page": 11,
+        "x": 85.104,
+        "y": 175.04000000000002
+      },
+      {
+        "id": "figure-number-illustration-expansion-2026-bean-auto-configuration",
+        "edge": "start",
+        "page": 11,
+        "x": 85.104,
+        "y": 175.04000000000002
+      },
+      {
+        "id": "figure-number-illustration-expansion-2026-bean-auto-configuration",
+        "edge": "end",
+        "page": 11,
+        "x": 85.104,
+        "y": 184.04000000000002
+      },
+      {
+        "id": "illustration-expansion-2026-bean-auto-configuration",
+        "edge": "start",
+        "page": 11,
+        "x": 85.104,
+        "y": 189.04000000000002
+      },
+      {
+        "id": "illustration-expansion-2026-bean-auto-configuration",
+        "edge": "end",
+        "page": 11,
+        "x": 85.104,
+        "y": 305.562633744856
+      },
+      {
+        "id": "illustration-expansion-2026-bean-auto-configuration-caption",
+        "edge": "start",
+        "page": 11,
+        "x": 85.104,
+        "y": 311.562633744856
+      },
+      {
+        "id": "illustration-expansion-2026-bean-auto-configuration-caption",
+        "edge": "end",
+        "page": 11,
+        "x": 85.104,
+        "y": 321.062633744856
+      },
+      {
+        "id": "figure-frame-illustration-expansion-2026-bean-auto-configuration",
+        "edge": "end",
+        "page": 11,
+        "x": 85.104,
+        "y": 321.062633744856
+      },
+      {
+        "id": "instruction-illustration-expansion-2026-bean-auto-configuration",
+        "edge": "end",
+        "page": 11,
+        "x": 79.104,
+        "y": 327.062633744856
+      },
+      {
         "id": "p023-b03",
         "edge": "start",
         "page": 11,
         "x": 85.104,
-        "y": 169.04000000000002
+        "y": 339.062633744856
       },
       {
         "id": "p023-b03",
         "edge": "end",
         "page": 11,
         "x": 85.104,
-        "y": 198.91015625
+        "y": 368.93278999485597
       },
       {
         "id": "01-p023-b04-part1",
         "edge": "html-component",
         "page": 11,
         "x": 79.464,
-        "y": 211.87015624999998
+        "y": 381.89278999485595
       },
       {
         "id": "p023-b04",
         "edge": "short-code",
         "page": 11,
         "x": 80.214,
-        "y": 254.13968724999998
+        "y": 424.162320994856
       },
       {
         "id": "p023-b04",
         "edge": "start",
         "page": 11,
         "x": 80.214,
-        "y": 254.13968724999998
+        "y": 424.162320994856
       },
       {
         "id": "p023-b04",
         "edge": "end",
         "page": 11,
         "x": 514.381969,
-        "y": 378.17093724999995
+        "y": 548.1935709948559
       },
       {
         "id": "p023-b05",
         "edge": "start",
         "page": 11,
         "x": 85.104,
-        "y": 397.67115624999997
+        "y": 567.6937899948559
       },
       {
         "id": "p023-b05",
         "edge": "end",
         "page": 11,
         "x": 85.104,
-        "y": 444.71115625
-      },
-      {
-        "id": "instruction-illustration-expansion-2026-bean-auto-configuration",
-        "edge": "start",
-        "page": 11,
-        "x": 85.104,
-        "y": 457.67115624999997
-      },
-      {
-        "id": "illustration-expansion-2026-bean-auto-configuration",
-        "edge": "start",
-        "page": 11,
-        "x": 85.104,
-        "y": 457.67115624999997
-      },
-      {
-        "id": "illustration-expansion-2026-bean-auto-configuration",
-        "edge": "end",
-        "page": 11,
-        "x": 85.104,
-        "y": 574.3137927072606
-      },
-      {
-        "id": "illustration-expansion-2026-bean-auto-configuration-caption",
-        "edge": "start",
-        "page": 11,
-        "x": 85.104,
-        "y": 578.3137927072606
-      },
-      {
-        "id": "illustration-expansion-2026-bean-auto-configuration-caption",
-        "edge": "end",
-        "page": 11,
-        "x": 85.104,
-        "y": 587.8137927072606
-      },
-      {
-        "id": "instruction-illustration-expansion-2026-bean-auto-configuration",
-        "edge": "end",
-        "page": 11,
-        "x": 85.104,
-        "y": 587.8137927072606
+        "y": 614.733789994856
       },
       {
         "id": "p023-b06",
         "edge": "start",
         "page": 11,
         "x": 85.104,
-        "y": 599.8137927072606
+        "y": 627.6937899948559
       },
       {
         "id": "p023-b06",
         "edge": "end",
         "page": 11,
         "x": 85.104,
-        "y": 629.6839489572606
+        "y": 657.563946244856
       },
       {
         "id": "p023-b07",
         "edge": "start",
         "page": 11,
         "x": 85.104,
-        "y": 642.6439489572606
+        "y": 670.5239462448559
       },
       {
         "id": "p023-b07",
         "edge": "end",
         "page": 11,
         "x": 85.104,
-        "y": 672.5141052072605
+        "y": 700.3941024948559
       },
       {
         "id": "__source-page-24",
@@ -1298,60 +1438,116 @@
         "y": 245.77765625000004
       },
       {
+        "id": "figure-frame-p025-f08",
+        "edge": "start",
+        "page": 13,
+        "x": 83.8,
+        "y": 264.73765625
+      },
+      {
+        "id": "figure-number-p025-f08",
+        "edge": "start",
+        "page": 13,
+        "x": 85.104,
+        "y": 264.73765625
+      },
+      {
+        "id": "figure-number-p025-f08",
+        "edge": "end",
+        "page": 13,
+        "x": 85.104,
+        "y": 273.73765625
+      },
+      {
         "id": "p025-f08",
         "edge": "start",
         "page": 13,
         "x": 83.8,
-        "y": 258.73765625
+        "y": 278.73765625
       },
       {
         "id": "p025-f08",
         "edge": "end",
         "page": 13,
         "x": 83.8,
-        "y": 434.03763404113516
+        "y": 454.03763404113516
+      },
+      {
+        "id": "figure-frame-p025-f08",
+        "edge": "end",
+        "page": 13,
+        "x": 83.8,
+        "y": 454.03763404113516
       },
       {
         "id": "instruction-p025-b03",
         "edge": "end",
         "page": 13,
         "x": 85.104,
-        "y": 434.03763404113516
+        "y": 460.03763404113516
       },
       {
         "id": "instruction-p025-b06",
         "edge": "start",
         "page": 13,
         "x": 85.104,
-        "y": 446.03763404113516
+        "y": 472.03763404113516
       },
       {
         "id": "p025-b06",
         "edge": "heading",
         "page": 13,
         "x": 85.104,
-        "y": 446.03763404113516
+        "y": 472.03763404113516
+      },
+      {
+        "id": "figure-frame-p025-f09",
+        "edge": "start",
+        "page": 13,
+        "x": 84.20000000000002,
+        "y": 515.9077902911351
+      },
+      {
+        "id": "figure-number-p025-f09",
+        "edge": "start",
+        "page": 13,
+        "x": 85.104,
+        "y": 515.9077902911351
+      },
+      {
+        "id": "figure-number-p025-f09",
+        "edge": "end",
+        "page": 13,
+        "x": 85.104,
+        "y": 524.9077902911351
       },
       {
         "id": "p025-f09",
         "edge": "start",
         "page": 13,
         "x": 84.20000000000002,
-        "y": 483.90779029113514
+        "y": 529.9077902911351
       },
       {
         "id": "p025-f09",
         "edge": "end",
         "page": 13,
         "x": 84.20000000000002,
-        "y": 659.3077994464086
+        "y": 705.3077994464086
+      },
+      {
+        "id": "figure-frame-p025-f09",
+        "edge": "end",
+        "page": 13,
+        "x": 84.20000000000002,
+        "y": 705.3077994464086
       },
       {
         "id": "instruction-p025-b06",
         "edge": "end",
         "page": 13,
         "x": 85.104,
-        "y": 659.3077994464086
+        "y": 711.3077994464086
       },
       {
         "id": "__source-page-26",
@@ -1375,95 +1571,151 @@
         "y": 86.0
       },
       {
+        "id": "figure-frame-p026-f10",
+        "edge": "start",
+        "page": 14,
+        "x": 83.8,
+        "y": 129.87015624999998
+      },
+      {
+        "id": "figure-number-p026-f10",
+        "edge": "start",
+        "page": 14,
+        "x": 85.104,
+        "y": 129.87015624999998
+      },
+      {
+        "id": "figure-number-p026-f10",
+        "edge": "end",
+        "page": 14,
+        "x": 85.104,
+        "y": 138.87015624999998
+      },
+      {
         "id": "p026-f10",
         "edge": "start",
         "page": 14,
         "x": 83.8,
-        "y": 123.87015625
+        "y": 143.87015624999998
       },
       {
         "id": "p026-f10",
         "edge": "end",
         "page": 14,
         "x": 83.8,
-        "y": 299.87015625
+        "y": 319.87015625
+      },
+      {
+        "id": "figure-frame-p026-f10",
+        "edge": "end",
+        "page": 14,
+        "x": 83.8,
+        "y": 319.87015625
       },
       {
         "id": "instruction-p026-b01",
         "edge": "end",
         "page": 14,
         "x": 85.104,
-        "y": 299.87015625
+        "y": 325.87015625
       },
       {
         "id": "01-p026-b02-part1",
         "edge": "html-component",
         "page": 14,
         "x": 79.464,
-        "y": 311.87015625
+        "y": 337.87015625
       },
       {
         "id": "p026-b02",
         "edge": "short-code",
         "page": 14,
         "x": 80.214,
-        "y": 354.13968724999995
+        "y": 380.13968724999995
       },
       {
         "id": "p026-b02",
         "edge": "start",
         "page": 14,
         "x": 80.214,
-        "y": 354.13968724999995
+        "y": 380.13968724999995
       },
       {
         "id": "p026-b02",
         "edge": "end",
         "page": 14,
         "x": 514.381969,
-        "y": 447.16312525
+        "y": 473.16312525
       },
       {
         "id": "instruction-p026-b03",
         "edge": "start",
         "page": 14,
         "x": 85.104,
-        "y": 466.66315624999993
+        "y": 492.66315624999993
       },
       {
         "id": "p026-b03",
         "edge": "heading",
         "page": 14,
         "x": 85.104,
-        "y": 466.66315624999993
+        "y": 492.66315624999993
+      },
+      {
+        "id": "figure-frame-p026-f11",
+        "edge": "start",
+        "page": 14,
+        "x": 106.0,
+        "y": 535.70315625
+      },
+      {
+        "id": "figure-number-p026-f11",
+        "edge": "start",
+        "page": 14,
+        "x": 106.0,
+        "y": 535.70315625
+      },
+      {
+        "id": "figure-number-p026-f11",
+        "edge": "end",
+        "page": 14,
+        "x": 106.0,
+        "y": 544.70315625
       },
       {
         "id": "p026-f11",
         "edge": "start",
         "page": 14,
         "x": 106.0,
-        "y": 503.70315624999995
+        "y": 549.70315625
       },
       {
         "id": "p026-f11",
         "edge": "end",
         "page": 14,
         "x": 106.0,
-        "y": 665.0031543194852
+        "y": 711.0031543194852
+      },
+      {
+        "id": "figure-frame-p026-f11",
+        "edge": "end",
+        "page": 14,
+        "x": 106.0,
+        "y": 711.0031543194852
       },
       {
         "id": "instruction-p026-b03",
         "edge": "end",
         "page": 14,
         "x": 85.104,
-        "y": 665.0031543194852
+        "y": 717.0031543194852
       },
       {
         "id": "p026-b04",
         "edge": "heading",
         "page": 14,
         "x": 85.104,
-        "y": 677.0031543194852
+        "y": 729.0031543194852
       },
       {
         "id": "__source-page-27",
@@ -1473,116 +1725,200 @@
         "y": 86.0
       },
       {
+        "id": "figure-frame-p027-f12",
+        "edge": "start",
+        "page": 15,
+        "x": 84.20000000000002,
+        "y": 92.0
+      },
+      {
+        "id": "figure-number-p027-f12",
+        "edge": "start",
+        "page": 15,
+        "x": 85.104,
+        "y": 92.0
+      },
+      {
+        "id": "figure-number-p027-f12",
+        "edge": "end",
+        "page": 15,
+        "x": 85.104,
+        "y": 101.0
+      },
+      {
         "id": "p027-f12",
         "edge": "start",
         "page": 15,
         "x": 84.20000000000002,
-        "y": 86.0
+        "y": 106.0
       },
       {
         "id": "p027-f12",
         "edge": "end",
         "page": 15,
         "x": 84.20000000000002,
-        "y": 240.20001220703125
+        "y": 260.20001220703125
+      },
+      {
+        "id": "figure-frame-p027-f12",
+        "edge": "end",
+        "page": 15,
+        "x": 84.20000000000002,
+        "y": 260.20001220703125
       },
       {
         "id": "instruction-p027-b01",
         "edge": "start",
         "page": 15,
         "x": 85.104,
-        "y": 252.20001220703125
+        "y": 278.20001220703125
       },
       {
         "id": "p027-b01",
         "edge": "heading",
         "page": 15,
         "x": 85.104,
-        "y": 252.20001220703125
+        "y": 278.20001220703125
+      },
+      {
+        "id": "figure-frame-p027-f13",
+        "edge": "start",
+        "page": 15,
+        "x": 84.20000000000002,
+        "y": 322.07016845703123
+      },
+      {
+        "id": "figure-number-p027-f13",
+        "edge": "start",
+        "page": 15,
+        "x": 85.104,
+        "y": 322.07016845703123
+      },
+      {
+        "id": "figure-number-p027-f13",
+        "edge": "end",
+        "page": 15,
+        "x": 85.104,
+        "y": 331.07016845703123
       },
       {
         "id": "p027-f13",
         "edge": "start",
         "page": 15,
         "x": 84.20000000000002,
-        "y": 290.07016845703123
+        "y": 336.07016845703123
       },
       {
         "id": "p027-f13",
         "edge": "end",
         "page": 15,
         "x": 84.20000000000002,
-        "y": 429.97016648553506
+        "y": 475.97016648553506
+      },
+      {
+        "id": "figure-frame-p027-f13",
+        "edge": "end",
+        "page": 15,
+        "x": 84.20000000000002,
+        "y": 475.97016648553506
       },
       {
         "id": "instruction-p027-b01",
         "edge": "end",
         "page": 15,
         "x": 85.104,
-        "y": 429.9701664855351
+        "y": 481.9701664855351
       },
       {
         "id": "instruction-p027-b02",
         "edge": "start",
         "page": 15,
         "x": 85.104,
-        "y": 441.9701664855351
+        "y": 493.9701664855351
       },
       {
         "id": "p027-b02",
         "edge": "heading",
         "page": 15,
         "x": 85.104,
-        "y": 441.9701664855351
+        "y": 493.9701664855351
       },
       {
         "id": "p027-b03",
         "edge": "start",
         "page": 15,
         "x": 85.104,
-        "y": 459.8403227355351
+        "y": 511.8403227355351
       },
       {
         "id": "p027-b03",
         "edge": "end",
         "page": 15,
         "x": 85.104,
-        "y": 471.7104789855351
+        "y": 523.7104789855351
       },
       {
         "id": "p027-b04",
         "edge": "start",
         "page": 15,
         "x": 85.104,
-        "y": 484.6704789855351
+        "y": 536.670478985535
       },
       {
         "id": "p027-b04",
         "edge": "end",
         "page": 15,
         "x": 85.104,
-        "y": 496.5406352355351
+        "y": 548.5406352355351
+      },
+      {
+        "id": "figure-frame-p027-f14",
+        "edge": "start",
+        "page": 15,
+        "x": 95.20000000000002,
+        "y": 567.5006352355351
+      },
+      {
+        "id": "figure-number-p027-f14",
+        "edge": "start",
+        "page": 15,
+        "x": 95.20000000000002,
+        "y": 567.5006352355351
+      },
+      {
+        "id": "figure-number-p027-f14",
+        "edge": "end",
+        "page": 15,
+        "x": 95.20000000000002,
+        "y": 576.5006352355351
       },
       {
         "id": "p027-f14",
         "edge": "start",
         "page": 15,
         "x": 95.20000000000002,
-        "y": 509.50063523553507
+        "y": 581.5006352355351
       },
       {
         "id": "p027-f14",
         "edge": "end",
         "page": 15,
         "x": 95.20000000000002,
-        "y": 642.3006270883427
+        "y": 714.3006270883427
+      },
+      {
+        "id": "figure-frame-p027-f14",
+        "edge": "end",
+        "page": 15,
+        "x": 95.20000000000002,
+        "y": 714.3006270883427
       },
       {
         "id": "instruction-p027-b02",
         "edge": "end",
         "page": 15,
         "x": 85.104,
-        "y": 642.3006270883427
+        "y": 720.3006270883427
       },
       {
         "id": "__source-page-28",
@@ -1644,57 +1980,85 @@
         "id": "instruction-illustration-2026-maven-libraries",
         "edge": "start",
         "page": 16,
-        "x": 85.104,
+        "x": 79.104,
         "y": 257.320625
+      },
+      {
+        "id": "figure-frame-illustration-2026-maven-libraries",
+        "edge": "start",
+        "page": 16,
+        "x": 85.104,
+        "y": 263.320625
+      },
+      {
+        "id": "figure-number-illustration-2026-maven-libraries",
+        "edge": "start",
+        "page": 16,
+        "x": 85.104,
+        "y": 263.320625
+      },
+      {
+        "id": "figure-number-illustration-2026-maven-libraries",
+        "edge": "end",
+        "page": 16,
+        "x": 85.104,
+        "y": 272.320625
       },
       {
         "id": "illustration-2026-maven-libraries",
         "edge": "start",
         "page": 16,
         "x": 85.104,
-        "y": 257.320625
+        "y": 277.320625
       },
       {
         "id": "illustration-2026-maven-libraries",
         "edge": "end",
         "page": 16,
         "x": 85.104,
-        "y": 373.96326145726056
+        "y": 393.96326145726056
       },
       {
         "id": "illustration-2026-maven-libraries-caption",
         "edge": "start",
         "page": 16,
         "x": 85.104,
-        "y": 377.96326145726056
+        "y": 399.96326145726056
       },
       {
         "id": "illustration-2026-maven-libraries-caption",
         "edge": "end",
         "page": 16,
         "x": 85.104,
-        "y": 387.46326145726056
+        "y": 409.46326145726056
+      },
+      {
+        "id": "figure-frame-illustration-2026-maven-libraries",
+        "edge": "end",
+        "page": 16,
+        "x": 85.104,
+        "y": 409.46326145726056
       },
       {
         "id": "instruction-illustration-2026-maven-libraries",
         "edge": "end",
         "page": 16,
-        "x": 85.104,
-        "y": 387.46326145726056
+        "x": 79.104,
+        "y": 415.46326145726056
       },
       {
         "id": "p028-b05",
         "edge": "start",
         "page": 16,
         "x": 85.104,
-        "y": 399.46326145726056
+        "y": 427.46326145726056
       },
       {
         "id": "p028-b05",
         "edge": "end",
         "page": 16,
         "x": 85.104,
-        "y": 429.33341770726054
+        "y": 457.33341770726054
       },
       {
         "id": "__source-page-29",
@@ -1786,6 +2150,99 @@
         ]
       }
     ],
+    "numbered_figures": {
+      "illustration-expansion-2026-framework-foundation": {
+        "number": "図1.1.1",
+        "kind": "compact",
+        "caption_id": "illustration-expansion-2026-framework-foundation-caption",
+        "caption": "共通機能をフレームワークに任せ、開発者はアプリケーション固有の処理を組み立てます。",
+        "title": ""
+      },
+      "illustration-figure-cards-2026-di-remote-intro": {
+        "number": "図1.2.1",
+        "kind": "compact",
+        "caption_id": "illustration-figure-cards-2026-di-remote-intro-caption",
+        "caption": "DIコンテナから渡されたリモコンを使い、AクラスがBクラスの機能を呼び出します。",
+        "title": ""
+      },
+      "p022-f05": {
+        "number": "図1.3.1",
+        "kind": "flow",
+        "caption_id": null,
+        "caption": "",
+        "title": ""
+      },
+      "p022-f06": {
+        "number": "図1.3.2",
+        "kind": "flow",
+        "caption_id": null,
+        "caption": "",
+        "title": ""
+      },
+      "illustration-expansion-2026-bean-auto-configuration": {
+        "number": "図1.3.3",
+        "kind": "compact",
+        "caption_id": "illustration-expansion-2026-bean-auto-configuration-caption",
+        "caption": "Beanは、DIコンテナに準備されているリモコン本体に相当します。",
+        "title": ""
+      },
+      "p025-f08": {
+        "number": "図1.4.1",
+        "kind": "flow",
+        "caption_id": null,
+        "caption": "",
+        "title": ""
+      },
+      "p025-f09": {
+        "number": "図1.4.2",
+        "kind": "flow",
+        "caption_id": null,
+        "caption": "",
+        "title": ""
+      },
+      "p026-f10": {
+        "number": "図1.4.3",
+        "kind": "flow",
+        "caption_id": null,
+        "caption": "",
+        "title": ""
+      },
+      "p026-f11": {
+        "number": "図1.4.4",
+        "kind": "flow",
+        "caption_id": null,
+        "caption": "",
+        "title": ""
+      },
+      "p027-f12": {
+        "number": "図1.4.5",
+        "kind": "flow",
+        "caption_id": null,
+        "caption": "",
+        "title": ""
+      },
+      "p027-f13": {
+        "number": "図1.4.6",
+        "kind": "flow",
+        "caption_id": null,
+        "caption": "",
+        "title": ""
+      },
+      "p027-f14": {
+        "number": "図1.4.7",
+        "kind": "flow",
+        "caption_id": null,
+        "caption": "",
+        "title": ""
+      },
+      "illustration-2026-maven-libraries": {
+        "number": "図1.4.8",
+        "kind": "compact",
+        "caption_id": "illustration-2026-maven-libraries-caption",
+        "caption": "pom.xmlの指定をもとに、Mavenが必要なライブラリをそろえます。",
+        "title": ""
+      }
+    },
     "html_components": [
       {
         "id": "01-p023-b04",

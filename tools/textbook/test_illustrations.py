@@ -14,6 +14,11 @@ from build import ROOT, read_markdown
 
 CATALOG = ROOT / 'docs/textbook/illustrations.json'
 APPROVED_EDITION = 'f16135f3cebb2e2f9ab481e9cfead35b05bd52d4'
+FIGURE_REVISION_EDITION = '96a99882326d65ec048100b2f20fa0ed4aaa72d2'
+DI_INTRO = 'illustration-figure-cards-2026-di-remote-intro'
+MANAGED = 'illustration-expansion-2026-boot-managed-versions'
+BEAN = 'illustration-expansion-2026-bean-auto-configuration'
+REMOVED_MANAGED_ASSET = 'docs/textbook/chapters/01/assets/revision-ill-boot-managed-versions.png'
 
 
 @lru_cache(maxsize=None)
@@ -30,8 +35,8 @@ def chapter(name):
 
 
 @lru_cache(maxsize=None)
-def base_chapter(name):
-    base = catalog()['base_commit']
+def base_chapter(name, base=None):
+    base = base or catalog()['base_commit']
     relative = 'docs/textbook/chapters/' + name + '/chapter.md'
     result = subprocess.run(['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'show', base + ':' + relative],
                             cwd=ROOT, check=True, capture_output=True)
@@ -170,7 +175,80 @@ class IllustrationSourceTests(unittest.TestCase):
             '--no-renames', catalog()['base_commit'], '--', *paths], cwd=ROOT, check=True,
             capture_output=True, encoding='utf-8')
         allowed = {'docs/textbook/chapters/'+r['chapter']+'/'+r['asset'] for r in catalog()['new']}
+        allowed.add(REMOVED_MANAGED_ASSET)
         self.assertTrue(set(result.stdout.splitlines()).issubset(allowed), result.stdout)
+
+    def test_only_requested_di_bean_changes_follow_the_previous_edition(self):
+        command = ['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'show']
+        previous = json.loads(subprocess.run(command +
+            [FIGURE_REVISION_EDITION + ':docs/textbook/illustrations.json'],
+            cwd=ROOT, check=True, capture_output=True).stdout)
+        old_records = {r['figure_id']: r for r in previous['new'] + previous['resized']}
+        records = {r['figure_id']: r for r in catalog()['new'] + catalog()['resized']}
+        self.assertEqual(set(records) - set(old_records), {DI_INTRO})
+        self.assertEqual(set(old_records) - set(records), {MANAGED})
+        for ident, record in old_records.items():
+            if ident not in {MANAGED, BEAN}:
+                self.assertEqual(records[ident], record, ident)
+        self.assertEqual(records[BEAN]['asset'], old_records[BEAN]['asset'])
+        self.assertNotEqual(records[BEAN]['asset_sha256'], old_records[BEAN]['asset_sha256'])
+        old_count = current_count = 0
+        for name in catalog()['reviewed_chapters']:
+            before_nodes, before_figures, before_pages = base_chapter(name, FIGURE_REVISION_EDITION)
+            _, nodes, figures, pages, config = chapter(name)
+            added = {DI_INTRO, DI_INTRO + '-caption'} if name == '01' else set()
+            removed = {MANAGED, MANAGED + '-caption'} if name == '01' else set()
+            moved = {BEAN, BEAN + '-caption'} if name == '01' else set()
+            with self.subTest(chapter=name):
+                old_ids, current_ids = set(before_nodes) | set(before_figures), set(nodes) | set(figures)
+                self.assertEqual(current_ids - old_ids, added)
+                self.assertEqual(old_ids - current_ids, removed)
+                for ident, node in before_nodes.items():
+                    if ident in removed or name == '01' and ident == BEAN + '-caption':
+                        continue
+                    self.assertEqual({k:v for k,v in node.items() if k != 'attrs'},
+                                     {k:v for k,v in nodes[ident].items() if k != 'attrs'}, ident)
+                for ident, path in before_figures.items():
+                    if ident not in removed:
+                        self.assertEqual(figures[ident], path, ident)
+                self.assertEqual([p['source_page'] for p in pages], [p['source_page'] for p in before_pages])
+                for old, new in zip(before_pages, pages):
+                    ignored = added | removed | moved
+                    self.assertEqual([i for i in old['entries'] if i not in ignored],
+                                     [i for i in new['entries'] if i not in ignored])
+                relative = 'docs/textbook/chapters/' + name + '/source.json'
+                before_config = json.loads(subprocess.run(command + [FIGURE_REVISION_EDITION + ':' + relative],
+                    cwd=ROOT, check=True, capture_output=True).stdout)
+                current_config = dict(config)
+                current_options = dict(current_config.get('illustrations', {}))
+                if name == '01':
+                    old_options = before_config['illustrations']
+                    old_options.pop(MANAGED)
+                    current_options.pop(DI_INTRO)
+                current_config['illustrations'] = current_options
+                if 'illustrations' not in before_config:
+                    current_config.pop('illustrations')
+                self.assertEqual(current_config, before_config)
+            old_count += len(before_nodes) + len(before_figures)
+            current_count += len(nodes) + len(figures)
+        self.assertEqual(old_count, 2945)
+        self.assertEqual(current_count, old_count)
+        _, _, _, pages, _ = chapter('01')
+        for ident, anchor, source in [(DI_INTRO, 'p020-b03', 20), (BEAN, 'p023-b02', 23)]:
+            entries = next(p['entries'] for p in pages if p['source_page'] == source)
+            position = entries.index(anchor)
+            self.assertEqual(entries[position:position+3], [anchor, ident, ident + '-caption'])
+            self.assertEqual(records[ident]['source_page'], source)
+            self.assertEqual(records[ident]['after_id'], anchor)
+        self.assertFalse((ROOT / REMOVED_MANAGED_ASSET).exists())
+        allowed_assets = {REMOVED_MANAGED_ASSET,
+            'docs/textbook/chapters/01/' + records[DI_INTRO]['asset'],
+            'docs/textbook/chapters/01/' + records[BEAN]['asset']}
+        asset_paths = ['docs/textbook/chapters/' + name + '/assets' for name in catalog()['reviewed_chapters']]
+        changed_assets = subprocess.run(command[:-1] + ['diff', '--name-only', '--no-renames',
+            FIGURE_REVISION_EDITION, '--', *asset_paths], cwd=ROOT, check=True,
+            capture_output=True, encoding='utf-8').stdout.splitlines()
+        self.assertTrue(set(changed_assets).issubset(allowed_assets), changed_assets)
 
 
 class IllustrationPdfTests(unittest.TestCase):

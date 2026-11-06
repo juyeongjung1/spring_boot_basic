@@ -42,12 +42,56 @@ async function main() {
         const root = document.querySelector('#component-root');
         const template = root.querySelector('.card');
         if (!template) throw new Error(`カード ${id}: .card がありません。`);
+        // 元のSpanを保ったまま実際の描画行へ区切り、長い解説段落も途中で改ページする。
+        for (const paragraph of template.querySelectorAll('[data-split-paragraph]')) {
+          const walker = document.createTreeWalker(paragraph, NodeFilter.SHOW_TEXT);
+          const lines = [];
+          const lineHeight = Number.parseFloat(getComputedStyle(paragraph).lineHeight);
+          let node, previousTop;
+          while ((node = walker.nextNode())) {
+            for (let offset = 0; offset < node.length;) {
+              const length = node.data.codePointAt(offset) > 0xffff ? 2 : 1;
+              const range = document.createRange();
+              range.setStart(node, offset);
+              range.setEnd(node, offset + length);
+              const rect = range.getBoundingClientRect();
+              if (rect.height && (previousTop === undefined || Math.abs(rect.top - previousTop) > lineHeight / 2)) {
+                lines.push({ node, offset });
+                previousTop = rect.top;
+              }
+              offset += length;
+            }
+          }
+          if (!lines.length) continue;
+          const rendered = [];
+          for (const [index, start] of lines.entries()) {
+            const range = document.createRange();
+            range.setStart(start.node, start.offset);
+            const next = lines[index + 1];
+            if (next) range.setEnd(next.node, next.offset);
+            else range.setEndAfter(paragraph.lastChild);
+            const line = document.createElement('div');
+            line.className = 'explanation-prose-line';
+            if (index === 0) line.classList.add('paragraph-start');
+            line.dataset.breakRow = '';
+            line.dataset.sourceIds = paragraph.dataset.sourceIds;
+            line.append(range.cloneContents());
+            rendered.push(line);
+          }
+          const replacement = document.createElement('div');
+          replacement.className = paragraph.className;
+          replacement.dataset.splitContainer = '';
+          replacement.append(...rendered);
+          paragraph.replaceWith(replacement);
+        }
         const rows = element => Array.from(element.querySelectorAll('[data-break-row]'))
           .filter(row => !row.parentElement.closest('[data-break-row]'));
         const originals = rows(template);
         function candidate(start, end, continued, last) {
           const clone = template.cloneNode(true);
           rows(clone).forEach((row, i) => { if (i < start || i >= end) row.remove(); });
+          clone.querySelectorAll('[data-split-container], .explanation-meaning, .explanation-item')
+            .forEach(element => { if (!element.querySelector('[data-break-row]')) element.remove(); });
           if (!last) clone.querySelectorAll('.card-footer').forEach(footer => footer.remove());
           let continuation = clone.querySelector('.card-header .continuation');
           if (continued && !continuation) {
@@ -74,6 +118,11 @@ async function main() {
             const part = candidate(start, middle, parts.length > 0, false);
             if (fits(part)) { best = part; bestEnd = middle; low = middle + 1; }
             else high = middle - 1;
+          }
+          // 該当コードだけを前ページへ取り残さず、最初の説明行を同じページへ置く。
+          if (best && originals[bestEnd - 1].hasAttribute('data-keep-next')) {
+            bestEnd -= 1;
+            best = bestEnd > start ? candidate(start, bestEnd, parts.length > 0, false) : null;
           }
           if (!best) {
             const row = originals[start];

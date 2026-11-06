@@ -1,0 +1,2001 @@
+{
+  "summary": {
+    "rows": 84,
+    "unique_word_matches": 82,
+    "ambiguous_matches": 1,
+    "missing_matches": 1,
+    "empty_meaning_rows": 1,
+    "missing_nonempty_meaning_rows": 0,
+    "paragraph_breaks": 20,
+    "explicit_line_breaks": 22
+  },
+  "word_document": "D:\\work\\Spring Boot 入門\\JAC0177G-T1-04(260715修正).docx",
+  "word_xml_sha256": "41d32545246b994936c4008c9e09d83514ff0c4eb4e315c258c4b6f718e35fe4",
+  "rows": [
+    {
+      "chapter": "02",
+      "anchor_id": "p043-b05",
+      "row": 0,
+      "line_label": "9 行",
+      "normalized_text": "publicは、このメソッドが外部からアクセス可能であることを意味します。Stringは、メソッドが文字列を返すことを示しています。index()はメソッド名で、このメソッドが何をするのかを表します。Controllerの中のメソッドは、通常は戻り値をStringにします。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 501,
+          "text": "・9行 public String index()\npublic は、このメソッドが外部からアクセス可能であることを意味します。String は、メソッドが文字列を返すことを示しています。index() はメソッド名で、このメソッドが何をするのかを表します。Controllerの中のメソッドは、通常は戻り値をStringにします。"
+        }
+      ],
+      "span": [
+        12349,
+        12486
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p043-b05",
+      "row": 1,
+      "line_label": "10 行",
+      "normalized_text": "returnには文字列を指定します。通常、この文字列は表示させたいhtmlファイル名を指定します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 503,
+          "text": "・10行 return “index”;\nreturnには文字列を指定します。通常、この文字列は表示させたいhtmlファイル名を指定します。"
+        }
+      ],
+      "span": [
+        12504,
+        12553
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p044-b09",
+      "row": 0,
+      "line_label": "2 行目",
+      "normalized_text": "このビューの特徴として、2行目に注目してください。ここでは、SpringBootと相性が良いテンプレートエンジン「Thymeleaf」を使用するという宣言をしています。xmlns:thを記載することで、HTMLファイル内でThymeleafの機能が利用可能になります。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 84,
+          "meaning_offset": 89,
+          "xml_paragraph_index": 532
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 532,
+          "text": "このビューの特徴として、2行目に注目してください。ここでは、Spring Bootと相性が良いテンプレートエンジン「Thymeleaf」を使用するという宣言をしています。\nxmlns:th を記載することで、HTMLファイル内でThymeleafの機能が利用可能になります。"
+        }
+      ],
+      "span": [
+        13265,
+        13399
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p044-b09",
+      "row": 1,
+      "line_label": "10 行目",
+      "normalized_text": "[トップページ]と表示される部分(10行目)からは、ユーザに見える画面の内容が入ります。今後、さまざまな情報やデザイン要素を追加していくことになります。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 533,
+          "text": "[トップページ]と表示される部分（10行目）からは、ユーザに見える画面の内容が入ります。今後、さまざまな情報やデザイン要素を追加していくことになります。"
+        }
+      ],
+      "span": [
+        13399,
+        13475
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p049-b05",
+      "row": 0,
+      "line_label": "10 行目",
+      "normalized_text": "<form>要素を用いてデータ送信のためのフォームを作成します。この要素のth:action属性は、フォームデータが送信されるサーバー上のURLを指定できます。Thymeleafでは、ただのactionではなく、th:actionを使うことで、実行環境に変化があってもURLを正しく解決できます。「@」は、アプリケーションのコンテキストパス(基本URL)を、自動生成してくれます。URLが異なるサーバーで実行しても、影響がなくなる効果があります。ここでは/loginがそのURLとして指定されています。通常、th:action属性のURL先は、@Controllerのメソッドを指定します。そして、methodという属性がありますが、この属性は一般的なGET方式の送信ではなく、POST方式の送信をするという意味です。POST方式にすると、パスワードがURLに表示されないなどのメリットがあり、隠したいデータを送信する時によく使われます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 223,
+          "meaning_offset": 235,
+          "xml_paragraph_index": 619
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 619,
+          "text": "<form>要素を用いてデータ送信のためのフォームを作成します。この要素のth:action属性は、フォームデータが送信されるサーバー上のURLを指定できます。Thymeleafでは、ただのactionではなく、th:actionを使うことで、実行環境に変化があってもURLを正しく解決できます。「@」は、アプリケーションのコンテキストパス(基本URL）を、自動生成してくれます。URLが異なるサーバーで実行しても、影響がなくなる効果があります。\n ここでは/loginがそのURLとして指定されています。通常、th:action属性のURL先は、@Controllerのメソッドを指定します。そして、methodという属性がありますが、この属性は一般的なGET方式の送信ではなく、POST方式の送信をするという意味です。POST方式にすると、パスワードがURLに表示されないなどのメリットがあり、隠したいデータを送信する時によく使われます。"
+        }
+      ],
+      "span": [
+        15419,
+        15838
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p050-b01",
+      "row": 0,
+      "line_label": "11 行・12 行目",
+      "normalized_text": "<input>要素はユーザがデータを入力するためのフィールドを提供します。type=\"text\"を指定することでテキスト入力フィールドが、type=\"password\"を指定することでパスワード入力フィールドがそれぞれ生成されます。ここで、このフォームのデータは、社員番号という日本語で認識されるのではなく、name属性の値で認識されます。今回は、「id」と「password」というnameでデータが送られるということを覚えてください。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 621,
+          "text": "<input>要素はユーザがデータを入力するためのフィールドを提供します。type=\"text\"を指定することでテキスト入力フィールドが、type=\"password\"を指定することでパスワード入力フィールドがそれぞれ生成されます。ここで、このフォームのデータは、社員番号という日本語で認識されるのではなく、name属性の値で認識されます。今回は、「id」と「password」というnameでデータが送られるということを覚えてください。\n"
+        }
+      ],
+      "span": [
+        15878,
+        16097
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p050-b01",
+      "row": 1,
+      "line_label": "13 行目",
+      "normalized_text": "<inputtype=\"submit\">は送信ボタンを表します。このボタンをクリックすると、フォーム内のデータがth:action属性で指定されたURLに送信されます。value属性はボタン上に表示されるテキストを定義します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 623,
+          "text": "<input type=\"submit\">は送信ボタンを表します。このボタンをクリックすると、フォーム内のデータがth:action属性で指定されたURLに送信されます。value属性はボタン上に表示されるテキストを定義します。"
+        }
+      ],
+      "span": [
+        16134,
+        16247
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p051-b06",
+      "row": 0,
+      "line_label": "10 行目",
+      "normalized_text": "@PostMappingは、POSTリクエストが送られた際に、このメソッドが実行されることを示しています。3行でも同じ/loginというURLを待ち受けていますが、普通のGet方式での呼び出しがあった場合は、showLoginView()メソッドが実行され、Post方式の呼び出しがあった場合は、こちらのdoLoginメソッドが実行されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 664,
+          "text": "@PostMappingは、POSTリクエストが送られた際に、このメソッドが実行されることを示しています。3行でも同じ/loginというURLを待ち受けていますが、普通のGet方式での呼び出しがあった場合は、showLoginView()メソッドが実行され、Post方式の呼び出しがあった場合は、こちらのdoLoginメソッドが実行されます。"
+        }
+      ],
+      "span": [
+        16588,
+        16759
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p051-b06",
+      "row": 1,
+      "line_label": "11 行目",
+      "normalized_text": "login_input.htmlから送信したデータのname属性に対応する値を受け取るために使用されています。Springでは、Controllerのメソッドの仮引数をhtmlのname属性の値と合わせるだけで、パラメータを受け取ることができます。login_input.htmlでは、「id」と「password」のデータが送られるので、引数名も、intid,Stringpasswordに合わせます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 667,
+          "text": "login_input.htmlから送信したデータのname属性に対応する値を受け取るために使用されています。Springでは、Controllerのメソッドの仮引数をhtmlのname属性の値と合わせるだけで、パラメータを受け取ることができます。login_input.htmlでは、「id」と「password」のデータが送られるので、引数名も、int id, String passwordに合わせます。"
+        }
+      ],
+      "span": [
+        16787,
+        16989
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p052-b03",
+      "row": 0,
+      "line_label": "13 行、14 行目",
+      "normalized_text": "本当にidとpasswordのデータを取得できたのか、コンソールに出力することで、検証をしています。結果は、以下の画像のように、入力した値を問題なく取得できているのがわかります。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 673,
+          "text": "本当にidとpasswordのデータを取得できたのか、コンソールに出力することで、検証をしています。結果は、以下の画像のように、入力した値を問題なく取得できているのがわかります。"
+        }
+      ],
+      "span": [
+        17105,
+        17194
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p056-b05",
+      "row": 0,
+      "line_label": "4 行目",
+      "normalized_text": "doLoginメソッドの仮引数に、UserFormのオブジェクトを入れています。Springでは、仮引数にFormクラスのオブジェクトを入れるだけで、リクエストパラメータがUserFormオブジェクトの対応するフィールド(id,password)に自動的にセットされます。よって、各リクエストパラメータを個別に取得するためのコードを書く必要がなくなります。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 136,
+          "meaning_offset": 145,
+          "xml_paragraph_index": 754
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 754,
+          "text": "doLoginメソッドの仮引数に、UserFormのオブジェクトを入れています。Springでは、仮引数にFormクラスのオブジェクトを入れるだけで、リクエストパラメータがUserFormオブジェクトの対応するフィールド(id, password)に自動的にセットされます。\nよって、各リクエストパラメータを個別に取得するためのコードを書く必要がなくなります。"
+        }
+      ],
+      "span": [
+        18400,
+        18578
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p056-b05",
+      "row": 1,
+      "line_label": "7-8 行目",
+      "normalized_text": "UserFormクラスに予め作成しておいた、getId()とgetPassword()メソッドを呼び出すことで、userFormオブジェクトにバインドされたIDとパスワードを取得し、コンソールに出力します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 757,
+          "text": "UserFormクラスに予め作成しておいた、getId()とgetPassword()メソッドを呼び出すことで、userFormオブジェクトにバインドされたIDとパスワードを取得し、コンソールに出力します。"
+        }
+      ],
+      "span": [
+        18584,
+        18687
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p058-b06",
+      "row": 0,
+      "line_label": "13 行目",
+      "normalized_text": "UserFormオブジェクトは、フォームから送信されたデータを受け取り、リクエストスコープのオブジェクト(データ一時保管用の箱)を生み出すため、Modelオブジェクトをメソッドの仮引数に入れます。UserFormの時と同様に、Springではメソッドの仮引数にオブジェクト名を書くと、オブジェクトを生成しなくても、使うことができます。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 98,
+          "meaning_offset": 104,
+          "xml_paragraph_index": 807
+        }
+      ],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 36,
+          "meaning_offset": 38,
+          "xml_paragraph_index": 806
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 806,
+          "text": "UserFormオブジェクトは、フォームから送信されたデータを受け取り、\nリクエストスコープのオブジェクト(データ一時保管用の箱)を生み出すため、Modelオブジェクトをメソッドの仮引数に入れます。"
+        },
+        {
+          "xml_paragraph_index": 807,
+          "text": "UserFormの時と同様に、Springではメソッドの仮引数にオブジェクト名を書くと、オブジェクトを生成しなくても、使うことができます。"
+        }
+      ],
+      "span": [
+        19258,
+        19425
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p059-b01",
+      "row": 0,
+      "line_label": "14-15 行目",
+      "normalized_text": "この行は、UserFormオブジェクトを\"user\"というキーでモデルに追加しています。第1引数:キー名第2引数:格納したい変数これにより、returnで呼び出すlogin_success.htmlでも、userFormオブジェクトのデータが使用可能になります。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 64,
+          "meaning_offset": 71,
+          "xml_paragraph_index": 811
+        }
+      ],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 44,
+          "meaning_offset": 46,
+          "xml_paragraph_index": 810
+        },
+        {
+          "normalized_offset": 52,
+          "meaning_offset": 56,
+          "xml_paragraph_index": 810
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 810,
+          "text": "この行は、UserFormオブジェクトを\"user\"というキーでモデルに追加しています。\n第1引数：キー名\n第2引数：格納したい変数"
+        },
+        {
+          "xml_paragraph_index": 811,
+          "text": "これにより、returnで呼び出すlogin_success.htmlでも、userFormオブジェクトのデータが使用可能になります。"
+        }
+      ],
+      "span": [
+        19469,
+        19600
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p059-b07",
+      "row": 0,
+      "line_label": "17 行",
+      "normalized_text": "モデルに格納されたデータと共に、login_success.htmlを呼び出します。このようにModelオブジェクトを使うと、ControllerからViewへデータを「一時的に入れておく箱」としてリクエストスコープを利用することができ、SpringのMVCパターンに沿った方法でデータを渡すことができます。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 42,
+          "meaning_offset": 45,
+          "xml_paragraph_index": 820
+        }
+      ],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 818,
+          "text": "モデルに格納されたデータと共に、login_success.htmlを呼び出します。"
+        },
+        {
+          "xml_paragraph_index": 820,
+          "text": "このようにModelオブジェクトを使うと、ControllerからViewへデータを「一時的に入れておく箱」としてリクエストスコープを利用することができ、SpringのMVCパターンに沿った方法でデータを渡すことができます。"
+        }
+      ],
+      "span": [
+        19706,
+        19860
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p060-b04",
+      "row": 0,
+      "line_label": "2 行目",
+      "normalized_text": "10行と、11行には、th:textというthymeleaf固有の属性が登場していますが、そのためには、予め宣言をする必要があります。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 846,
+          "text": "10行と、11行には、th:textというthymeleaf固有の属性が登場していますが、そのためには、予め宣言をする必要があります。"
+        }
+      ],
+      "span": [
+        20213,
+        20280
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p060-b04",
+      "row": 1,
+      "line_label": "10 行目",
+      "normalized_text": "この部分はThymeleaf独自のスクレプト文法の一つの、th:text属性を使用しています。ControllerからModelに格納した「user」というキーの後ろに、「.フィールド名」を記載することで、idの値を出力できます。例えば、user.idが1234であれば、出力は<span>1234</span>となります。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 47,
+          "meaning_offset": 51,
+          "xml_paragraph_index": 849
+        }
+      ],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 115,
+          "meaning_offset": 124,
+          "xml_paragraph_index": 849
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 848,
+          "text": "この部分はThymeleaf独自のスクレプト文法の一つの、th:text属性を使用しています。"
+        },
+        {
+          "xml_paragraph_index": 849,
+          "text": "ControllerからModelに格納した「user」というキーの後ろに、「.フィールド名」を記載することで、idの値を出力できます。\n例えば、user.idが1234であれば、出力は<span>1234</span>となります。\n"
+        }
+      ],
+      "span": [
+        20318,
+        20480
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p060-b12",
+      "row": 0,
+      "line_label": "11 行目",
+      "normalized_text": "ここでもth:text属性を使い、userオブジェクトのpasswordフィールドの値を表示しています。変数式を使用することで、動的に内容をWebページに埋め込むことができます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 860,
+          "text": "ここでもth:text属性を使い、userオブジェクトのpasswordフィールドの値を表示しています。変数式を使用することで、動的に内容をWebページに埋め込むことができます。"
+        }
+      ],
+      "span": [
+        20600,
+        20689
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p086-b03",
+      "row": 0,
+      "line_label": "5-6 行目",
+      "normalized_text": "全件検索をするためには、ProductRepositoryから利用できる「findAll」メソッドを呼び出さないといけません。ProductRepositoryのメソッドを簡単に利用できるように、ProductRepositoryのフィールドを宣言して、@Autowiredで依存性の注入をしておきましょう。この2行のコードを書いておけば、[prodRepo]を使って、findAllメソッドを呼び出せます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 154,
+          "meaning_offset": 162,
+          "xml_paragraph_index": 1390
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1390,
+          "text": "全件検索をするためには、ProductRepositoryから利用できる「findAll」メソッドを呼び出さないといけません。ProductRepositoryのメソッドを簡単に利用できるように、ProductRepositoryのフィールドを宣言して、@Autowiredで依存性の注入をしておきましょう。\n　この2行のコードを書いておけば、 [prodRepo]を使って、findAllメソッドを呼び出せます。"
+        }
+      ],
+      "span": [
+        28128,
+        28332
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p086-b03",
+      "row": 1,
+      "line_label": "10 行目",
+      "normalized_text": "findAllメソッドを実行すると、Productテーブル内の全データを、List<Product>の形で取得できます。ListのImport先は「java.util」ですので、ご注意ください。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1393,
+          "text": "findAllメソッドを実行すると、Productテーブル内の全データを、List<Product>の形で取得できます。ListのImport先は「java.util」ですので、ご注意ください。"
+        }
+      ],
+      "span": [
+        28373,
+        28470
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p086-b09",
+      "row": 0,
+      "line_label": "12-13 行目",
+      "normalized_text": "最後は、データの塊である、listをViewへ出力させるために、modelに格納します。このリストは、productが複数入っているので、キーは[products]にしました。遷移先は、productフォルダの、list.htmlを指しています。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 44,
+          "meaning_offset": 48,
+          "xml_paragraph_index": 1400
+        },
+        {
+          "normalized_offset": 88,
+          "meaning_offset": 94,
+          "xml_paragraph_index": 1400
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1400,
+          "text": "最後は、データの塊である、listをViewへ出力させるために、modelに格納します。\nこのリストは、productが複数入っているので、キーは[products]にしました。\n遷移先は、productフォルダの、list.htmlを指しています。"
+        }
+      ],
+      "span": [
+        28644,
+        28767
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p087-b05",
+      "row": 0,
+      "line_label": "8 行目",
+      "normalized_text": "th:eachは、Javaの拡張for文と似た使い方をします。指定されたコレクション(ここではproductsリスト)の各要素に対して、<tr>タグ(テーブルの行)を繰り返し生成します。今回は、全部で9個のデータがproductsリストの中に入っているので、productsリストの要素がproduct変数に9回代入されます。:を中心にして、右はControllerのmodelで格納したキー名、左はリストの中に格納されているものを意味する変数名を使います。今回は、リストの中に、複数のproductインスタンスが格納されているため、「product」としました。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 93,
+          "meaning_offset": 101,
+          "xml_paragraph_index": 1431
+        }
+      ],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 229,
+          "meaning_offset": 248,
+          "xml_paragraph_index": 1431
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1430,
+          "text": "th:each は、Javaの拡張for文と似た使い方をします。指定されたコレクション（ここでは productsリスト）の各要素に対して、<tr> タグ（テーブルの行）を繰り返し生成します。"
+        },
+        {
+          "xml_paragraph_index": 1431,
+          "text": "今回は、全部で9個のデータがproductsリストの中に入っているので、products リストの要素が product 変数に9回代入されます。:を中心にして、右はControllerのmodelで格納したキー名、左はリストの中に格納されているものを意味する変数名を使います。\n今回は、リストの中に、複数のproductインスタンスが格納されているため、「product」としました。"
+        }
+      ],
+      "span": [
+        28894,
+        29176
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p088-b01",
+      "row": 0,
+      "line_label": "9-11 行目",
+      "normalized_text": "product変数に1行~9行までのデータが順番に格納されていますので、「product.フィールド名」でデータを出力することができます。つまり、各productオブジェクトのid、name、priceを<td>の中に9回出力するソースコードが生成されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1433,
+          "text": " product変数に1行～9行までのデータが順番に格納されていますので、「product.フィールド名」でデータを出力することができます。つまり、各product オブジェクトの id、name、priceを<td>の中に9回出力するソースコードが生成されます。"
+        }
+      ],
+      "span": [
+        29241,
+        29370
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p092-b09",
+      "row": 0,
+      "line_label": "4 行目",
+      "normalized_text": "Viewから送信される主キーのname属性が「id」ですので、引数名を一致させることで、リクエストパラメータを取得します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1505,
+          "text": "Viewから送信される主キーのname属性が「id」ですので、引数名を一致させることで、リクエストパラメータを取得します。"
+        }
+      ],
+      "span": [
+        30276,
+        30337
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p093-b01",
+      "row": 0,
+      "line_label": "5 行目",
+      "normalized_text": "findByIdメソッドは、findAllと同じく、継承したJpaRepositoryの親に定義されているメソッドです。引数には主キーを入れて、後ろに.orElse(null)を付けることで、主キー検索による、1行の結果を取得することができます。.findByIdメソッドの戻り値は「Optional」という特殊な戻り値ですので、.orElse(null)をつけないとデータを取得できません。ご注意ください。※.orElse(null)の代わりに、.get()というメソッドもありますが、検索結果がない場合はnullではなく、例外を出してアプリケーションを強制終了されてしまうので、お勧めしません。findAllは、全件検索だったため、複数行が取得されることの前提でした。よってList<Product>型で受け取りました。主キー検索は、必ず1行のみ取得できるので、Listでの取得よりは、エンティティ単位での[Productproduct]で受け取るのが一般的です。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 204,
+          "meaning_offset": 215,
+          "xml_paragraph_index": 1508
+        },
+        {
+          "normalized_offset": 299,
+          "meaning_offset": 315,
+          "xml_paragraph_index": 1509
+        }
+      ],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 123,
+          "meaning_offset": 130,
+          "xml_paragraph_index": 1507
+        },
+        {
+          "normalized_offset": 362,
+          "meaning_offset": 381,
+          "xml_paragraph_index": 1509
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1507,
+          "text": "findByIdメソッドは、findAllと同じく、継承したJpaRepositoryの親に定義されているメソッドです。引数には主キーを入れて、後ろに.orElse(null)を付けることで、主キー検索による、1行の結果を取得することができます。\n.findByIdメソッドの戻り値は「Optional」という特殊な戻り値ですので、.orElse(null)をつけないとデータを取得できません。ご注意ください。"
+        },
+        {
+          "xml_paragraph_index": 1508,
+          "text": "※.orElse(null)の代わりに、.get() というメソッドもありますが、検索結果がない場合はnullではなく、例外を出してアプリケーションを強制終了されてしまうので、お勧めしません。"
+        },
+        {
+          "xml_paragraph_index": 1509,
+          "text": "findAllは、全件検索だったため、複数行が取得されることの前提でした。よってList<Product>型で受け取りました。\n主キー検索は、必ず1行のみ取得できるので、Listでの取得よりは、エンティティ単位での[Product product]で受け取るのが一般的です。"
+        }
+      ],
+      "span": [
+        30390,
+        30824
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p093-b01",
+      "row": 1,
+      "line_label": "6 行目",
+      "normalized_text": "検索する商品番号に「1」を入れて実行させてみると、以下のように1行のデータを取得できているのがわかります。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1512,
+          "text": "検索する商品番号に「1」を入れて実行させてみると、以下のように1行のデータを取得できているのがわかります。"
+        }
+      ],
+      "span": [
+        30855,
+        30908
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p093-b07",
+      "row": 0,
+      "line_label": "7 行目",
+      "normalized_text": "取得した1行のデータは、Productエンティティの中に格納されているので、Viewに出力させるため、modelに格納します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1515,
+          "text": "取得した1行のデータは、Productエンティティの中に格納されているので、Viewに出力させるため、modelに格納します。"
+        }
+      ],
+      "span": [
+        30949,
+        31012
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p097-b10",
+      "row": 0,
+      "line_label": "5 行",
+      "normalized_text": "5行では、リクエストパラメータpriceの値を取得し、prodRepo.findByPriceメソッドを実行しました。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1601,
+          "text": "5行では、リクエストパラメータpriceの値を取得し、prodRepo.findByPriceメソッドを実行しました。"
+        }
+      ],
+      "span": [
+        32433,
+        32492
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p097-b10",
+      "row": 1,
+      "line_label": "6 行以降",
+      "normalized_text": "findAllメソッドを実行した時と、出力結果は同じくListになるメソッドですので、6行以降はshowProductListメソッドと全く同じです。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1602,
+          "text": "findAllメソッドを実行した時と、出力結果は同じくListになるメソッドですので、6行以降はshowProductListメソッドと全く同じです。"
+        }
+      ],
+      "span": [
+        32492,
+        32567
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p101-b06",
+      "row": 0,
+      "line_label": "5 行",
+      "normalized_text": "5行では、リクエストパラメータnameとpriceの値を取得し、prodRepo.findByNameAndPriceメソッドを実行しました。もし、入力値が更に増えるなら、Formクラスを使ってパラメータ取得しても良いでしょう。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 71,
+          "meaning_offset": 79,
+          "xml_paragraph_index": 1667
+        }
+      ],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1666,
+          "text": "5行では、リクエストパラメータnameとpriceの値を取得し、prodRepo. findByNameAndPriceメソッドを実行しました。"
+        },
+        {
+          "xml_paragraph_index": 1667,
+          "text": "もし、入力値が更に増えるなら、Formクラスを使ってパラメータ取得しても良いでしょう。"
+        }
+      ],
+      "span": [
+        33412,
+        33526
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p101-b06",
+      "row": 1,
+      "line_label": "6 行以降",
+      "normalized_text": "6行以降はshowProductListメソッドと全く同じです。",
+      "matching_count": 2,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p108-b06",
+      "row": 0,
+      "line_label": "5 行",
+      "normalized_text": "5行の@Dataですが、エンティティの定義の際にご説明しました通り、@Dataアノテーションをつけると、Getter&Setterメソッドは勿論、equalsやtoString、hashCodeメソッドが自動生成されますので、とても便利です。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1802,
+          "text": "5行の@Dataですが、エンティティの定義の際にご説明しました通り、@Dataアノテーションをつけると、Getter&Setterメソッドは勿論、equalsやtoString、hashCodeメソッドが自動生成されますので、とても便利です。"
+        }
+      ],
+      "span": [
+        35343,
+        35464
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p109-b04",
+      "row": 0,
+      "line_label": "4 行目",
+      "normalized_text": "ユーザからの複数の入力値を受け取るために、productFormクラスをメソッドの引数に入れます。リクエストデータは、Formクラスのフィールドに自動でセットされます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1819,
+          "text": "ユーザからの複数の入力値を受け取るために、productFormクラスをメソッドの引数に入れます。リクエストデータは、Formクラスのフィールドに自動でセットされます。"
+        }
+      ],
+      "span": [
+        35537,
+        35621
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p109-b04",
+      "row": 1,
+      "line_label": "5 行目",
+      "normalized_text": "商品の登録をするためには、予め商品1個分をを表す、エンティティのインスタンスを生成する必要がありますので、newでProductのオブジェクトを生成します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1822,
+          "text": "　商品の登録をするためには、予め商品1個分をを表す、エンティティのインスタンスを生成する必要がありますので、newでProductのオブジェクトを生成します。"
+        }
+      ],
+      "span": [
+        35654,
+        35732
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p110-b01",
+      "row": 0,
+      "line_label": "8 行目",
+      "normalized_text": "先に説明します。InsertのSQL文を実行させるためには、findAllと同じく、既にリポジトリに定義されている、[save]メソッドを実行すれば、登録処理が完了します。しかし、エンティティのインスタンスであるproductは、5行でオブジェクト生成はしたものの、データを入れないと、空っぽの状態のままになってしまいます。ユーザからのデータを受け取っているのは、productではなく、4行のProductFormの方ですので、データをコピーする必要があります。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 86,
+          "meaning_offset": 93,
+          "xml_paragraph_index": 1826
+        }
+      ],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1825,
+          "text": "　先に説明します。InsertのSQL文を実行させるためには、findAllと同じく、既にリポジトリに定義されている、[save]メソッドを実行すれば、登録処理が完了します。"
+        },
+        {
+          "xml_paragraph_index": 1826,
+          "text": "　しかし、エンティティのインスタンスであるproductは、5行でオブジェクト生成はしたものの、データを入れないと、空っぽの状態のままになってしまいます。ユーザからのデータを受け取っているのは、productではなく、4行のProductFormの方ですので、データをコピーする必要があります。"
+        }
+      ],
+      "span": [
+        35768,
+        36000
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p110-b04",
+      "row": 0,
+      "line_label": "6～7 行目",
+      "normalized_text": "saveメソッドの実行前に、Formインスタンス内のデータを、productへコピーさせます。この作業により、空っぽだったproductにも、ユーザからのデータが格納されました。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 47,
+          "meaning_offset": 52,
+          "xml_paragraph_index": 1830
+        }
+      ],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1829,
+          "text": "saveメソッドの実行前に、Formインスタンス内のデータを、productへコピーさせます。"
+        },
+        {
+          "xml_paragraph_index": 1830,
+          "text": "この作業により、空っぽだったproductにも、ユーザからのデータが格納されました。"
+        }
+      ],
+      "span": [
+        36087,
+        36176
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p110-b04",
+      "row": 1,
+      "line_label": "8-9 行目",
+      "normalized_text": "戻り値としては、登録完了した商品情報をエンティティのインスタンスとして取得できます。ここには、自動割り当てされたidも含まれます。結果画面へ表示するため、modelに格納します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1833,
+          "text": "戻り値としては、登録完了した商品情報をエンティティのインスタンスとして取得できます。ここには、自動割り当てされたidも含まれます。結果画面へ表示するため、modelに格納します。"
+        }
+      ],
+      "span": [
+        36252,
+        36341
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p110-b04",
+      "row": 2,
+      "line_label": "10 行目",
+      "normalized_text": "本当に登録が完了したのか確認するために、商品データを出力する結果画面を表示させます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1834,
+          "text": "・10行目: return \"/product/result\";\n本当に登録が完了したのか確認するために、商品データを出力する結果画面を表示させます。"
+        }
+      ],
+      "span": [
+        36371,
+        36413
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p111-b03",
+      "row": 0,
+      "line_label": "9 行目",
+      "normalized_text": "9行目のproduct.idに注目してください。saveメソッドの戻り値には、自動採番により割り当てされたID番号も含まれているので、表示できます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1853,
+          "text": "9行目のproduct.idに注目してください。saveメソッドの戻り値には、自動採番により割り当てされたID番号も含まれているので、表示できます。"
+        }
+      ],
+      "span": [
+        36413,
+        36487
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p117-b04",
+      "row": 0,
+      "line_label": "3 行目",
+      "normalized_text": "Viewから動的URLが送られる場合、同じく動的パラメータを指定する必要があります。書き方は、{パラメータ名}で記載します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 42,
+          "meaning_offset": 45,
+          "xml_paragraph_index": 1939
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1939,
+          "text": "・3行目: @GetMapping(\"update/{id}\")\nViewから動的URLが送られる場合、同じく動的パラメータを指定する必要があります。\n書き方は、{ パラメータ名 } で記載します。"
+        }
+      ],
+      "span": [
+        38111,
+        38173
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p117-b04",
+      "row": 1,
+      "line_label": "4 行目",
+      "normalized_text": "3行で指定した動的URLの文字列と一致する引数名に@PathVariableアノテーションをつけると、動的URLの値を取得することができます。動的URLは、{id}なので、intidで合わせます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1942,
+          "text": "3行で指定した動的URLの文字列と一致する引数名に@PathVariableアノテーションをつけると、動的URLの値を取得することができます。動的URLは、{id}なので、int idで合わせます。"
+        }
+      ],
+      "span": [
+        38241,
+        38339
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p117-b04",
+      "row": 2,
+      "line_label": "5 行から",
+      "normalized_text": "5行からは、更新対象の既存の値をfindByIdメソッドで取得+Modelに格納し、update_input.htmlへ遷移させています。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1943,
+          "text": "5行からは、更新対象の既存の値をfindByIdメソッドで取得+Modelに格納し、update_input.htmlへ遷移させています。"
+        }
+      ],
+      "span": [
+        38339,
+        38408
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p119-b04",
+      "row": 0,
+      "line_label": "4 行目",
+      "normalized_text": "登録の際は、主キーである「id」をProductエンティティ内にセットしていませんでしたが、更新処理の際は、必ず主キーのフィールドをセットさせます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1978,
+          "text": "　登録の際は、主キーである「id」をProductエンティティ内にセットしていませんでしたが、更新処理の際は、必ず主キーのフィールドをセットさせます。"
+        }
+      ],
+      "span": [
+        38840,
+        38914
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p119-b04",
+      "row": 1,
+      "line_label": "7 行目",
+      "normalized_text": "saveメソッドの引数に入れたエンティティのフィールドに、主キー(id)の値があったら、新しい値に上書きされる更新処理が実行されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 1981,
+          "text": "　saveメソッドの引数に入れたエンティティのフィールドに、主キー(id)の値があったら、新しい値に上書きされる更新処理が実行されます。"
+        }
+      ],
+      "span": [
+        38950,
+        39017
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 0,
+      "line_label": "5 行目",
+      "normalized_text": "サービス実装クラスには、@Serviceアノテーションを付けます。忘れがちですので、注意してください。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2136,
+          "text": "・5行目： @Service\nサービス実装クラスには、@Serviceアノテーションを付けます。忘れがちですので、注意してください。"
+        }
+      ],
+      "span": [
+        41468,
+        41519
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 1,
+      "line_label": "6 行目",
+      "normalized_text": "3.3.1「依存性の注入」の【依存性の注入方法3】でご紹介した書き方です。9-10行目のコードと連携します。単体テストのしやすさのために、サービス実装クラスではこの方法が推奨されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 37,
+          "meaning_offset": 39,
+          "xml_paragraph_index": 2137
+        },
+        {
+          "normalized_offset": 54,
+          "meaning_offset": 58,
+          "xml_paragraph_index": 2137
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2137,
+          "text": "・6行目： @RequiredArgsConstructor\n3.3.1「依存性の注入」の【依存性の注入方法③】でご紹介した書き方です。\n9-10行目のコードと連携します。\n単体テストのしやすさのために、サービス実装クラスではこの方法が推奨されます。"
+        }
+      ],
+      "span": [
+        41548,
+        41640
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 2,
+      "line_label": "7 行目",
+      "normalized_text": "前の手順で作成たサービスインターフェースと繋げるために、implementsします。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2138,
+          "text": "・7行目： implements ProductService\n前の手順で作成たサービスインターフェースと繋げるために、implementsします。"
+        }
+      ],
+      "span": [
+        41669,
+        41711
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 3,
+      "line_label": "9 行-10 行目",
+      "normalized_text": "DB処理のためProductRepositoryを利用したいので、依存性の注入を行います。6行目と合わせて記載することで、コンストラクタを自動生成できます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 45,
+          "meaning_offset": 48,
+          "xml_paragraph_index": 2140
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2140,
+          "text": "DB処理のためProductRepositoryを利用したいので、依存性の注入を行います。\n6行目と合わせて記載することで、コンストラクタを自動生成できます。"
+        }
+      ],
+      "span": [
+        41758,
+        41836
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 4,
+      "line_label": "13 行-14 行目",
+      "normalized_text": "Controllerに記載していたDB処理部分だけ分離させ、DBから取得した商品データをそのままreturnしています。ProductServiceインターフェースで定義した抽象メソッドと同じ呼び方をするように、オーバーライドする必要があります。(リモコンのボタンを押したら、このメソッドの処理が行われるイメージ)",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 123,
+          "meaning_offset": 131,
+          "xml_paragraph_index": 2142
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2142,
+          "text": "Controllerに記載していたDB処理部分だけ分離させ、DBから取得した商品データをそのままreturnしています。ProductServiceインターフェースで定義した抽象メソッドと同じ呼び方をするように、オーバーライドする必要があります。\n(リモコンのボタンを押したら、このメソッドの処理が行われるイメージ)"
+        }
+      ],
+      "span": [
+        41888,
+        42045
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p130-b05",
+      "row": 0,
+      "line_label": "2 行目",
+      "normalized_text": "Controllerが変わったので、異なる基本URLを設定します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2164,
+          "text": " 　Controllerが変わったので、異なる基本URLを設定します。"
+        }
+      ],
+      "span": [
+        42184,
+        42217
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p130-b05",
+      "row": 1,
+      "line_label": "7 行目",
+      "normalized_text": "DB処理は、ProductServiceの方で担当するので、このクラスで利用できるように、依存性の注入を行います。既存のProductRepositoryの依存性の注入は不要になります。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2167,
+          "text": "　 DB処理は、ProductServiceの方で担当するので、このクラスで利用できるように、依存性の注入を行います。既存のProductRepositoryの依存性の注入は不要になります。"
+        }
+      ],
+      "span": [
+        42255,
+        42348
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p130-b05",
+      "row": 2,
+      "line_label": "13 行目",
+      "normalized_text": "ここが一番大事です。今までは、Controllerのメソッドの中で直接「prodRepo.メソッド」を実行する書き方でしたが、今回はServiceクラスに定義されているメソッドを実行させて、その戻り値を利用する書き方になりました。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2170,
+          "text": "　ここが一番大事です。今までは、Controllerのメソッドの中で直接「prodRepo.メソッド」を実行する書き方でしたが、今回はServiceクラスに定義されているメソッドを実行させて、その戻り値を利用する書き方になりました。"
+        }
+      ],
+      "span": [
+        42401,
+        42516
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p137-b04",
+      "row": 0,
+      "line_label": "12 行",
+      "normalized_text": "Userテーブルを利用しますので、Userエンティティも新しく定義する必要があります。エンティティの定義については、前の章のProductとほぼ同じですが、12行のname属性を見てください。テーブル内の列名は[emp_name]ですが、Javaでは通常、変数名の単語ごとの区切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメルケース」を使います。よって、テーブル内の列名と変数名に違いが発生したら、明示的にname属性をつける必要があります。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 43,
+          "meaning_offset": 47,
+          "xml_paragraph_index": 2261
+        },
+        {
+          "normalized_offset": 194,
+          "meaning_offset": 207,
+          "xml_paragraph_index": 2262
+        }
+      ],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2260,
+          "text": "Userテーブルを利用しますので、Userエンティティも新しく定義する必要があります。"
+        },
+        {
+          "xml_paragraph_index": 2261,
+          "text": "エンティティの定義については、前の章のProductとほぼ同じですが、12行のname属性を見てください。テーブル内の列名は[emp_name]ですが、Javaでは通常、変数名の単語ごとの区切りに「アンダースコア(_)」を入れるよりは、大文字と小文字の組み合わせにする、「キャーメルケース」を使います。"
+        },
+        {
+          "xml_paragraph_index": 2262,
+          "text": "よって、テーブル内の列名と変数名に違いが発生したら、明示的にname属性をつける必要があります。"
+        }
+      ],
+      "span": [
+        43305,
+        43547
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p140-b04",
+      "row": 0,
+      "line_label": "3 行目",
+      "normalized_text": "UserRepositoryに予め定義しておいたメソッドを実装しました。login_input.htmlからのリクエストパラメータは、userForm内に自動格納されているため、getメソッドで取得し、引数に入れました。検索結果は、最大1件ですので、Userエンティティで受け取ります。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2361,
+          "text": "UserRepositoryに予め定義しておいたメソッドを実装しました。login_input.htmlからのリクエストパラメータは、userForm内に自動格納されているため、getメソッドで取得し、引数に入れました。検索結果は、最大1件ですので、Userエンティティで受け取ります。"
+        }
+      ],
+      "span": [
+        44213,
+        44356
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p140-b04",
+      "row": 1,
+      "line_label": "5 行",
+      "normalized_text": "社員IDとパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何も取得できないので、user変数は、nullのままになります。このif文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促すコードです。5行のif文内でreturnされると、即遷移するため、7行以降が実行されることはありません。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 123,
+          "meaning_offset": 133,
+          "xml_paragraph_index": 2365
+        }
+      ],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 73,
+          "meaning_offset": 79,
+          "xml_paragraph_index": 2364
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2364,
+          "text": "社員IDとパスワードが一致したら、社員データを取得できますが、入力に誤りがあると、何も取得できないので、user変数は、nullのままになります。\nこのif文は、取得できなかった際は、もう一回ログイン画面へ遷移させることで、再入力を促すコードです。"
+        },
+        {
+          "xml_paragraph_index": 2365,
+          "text": "5行のif文内でreturnされると、即遷移するため、7行以降が実行されることはありません。"
+        }
+      ],
+      "span": [
+        44364,
+        44533
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p140-b04",
+      "row": 2,
+      "line_label": "8 行目",
+      "normalized_text": "データを取得できたなら、ログイン成功ですので、main_page.htmlへ遷移させます。main_page.htmlは、下記のように、簡単なhtmlファイルです。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 45,
+          "meaning_offset": 49,
+          "xml_paragraph_index": 2369
+        }
+      ],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2368,
+          "text": "データを取得できたなら、ログイン成功ですので、main_page.htmlへ遷移させます。"
+        },
+        {
+          "xml_paragraph_index": 2369,
+          "text": "main_page.htmlは、下記のように、簡単なhtmlファイルです。"
+        }
+      ],
+      "span": [
+        44555,
+        44637
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p144-b05",
+      "row": 0,
+      "line_label": "7 行目",
+      "normalized_text": "セッションは、HttpSessionのインスタンスを利用することで、データをセッションスコープに格納できたり、セッション情報を消したりできます。SpringのControllerにURLがマッピングされたメソッドのことを、改めて「ハンドラメソッド」といいます。このハンドラメソッドの引数にHttpSessionを指定するだけで、裏でフレームワークがHttpSessionのインスタンス生成と、セッション情報の取得を自動で行ってくれます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2456,
+          "text": "　セッションは、HttpSessionのインスタンスを利用することで、データをセッションスコープに格納できたり、セッション情報を消したりできます。 SpringのControllerにURLがマッピングされたメソッドのことを、改めて「ハンドラメソッド」といいます。このハンドラメソッドの引数に HttpSession を指定するだけで、裏でフレームワークが HttpSession のインスタンス生成と、セッション情報の取得を自動で行ってくれます。"
+        }
+      ],
+      "span": [
+        45623,
+        45841
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p144-b05",
+      "row": 1,
+      "line_label": "13 行目",
+      "normalized_text": "session.setAttributeメソッドは、model.addAttributeと同じような書き方をします。第一引数には、キーワードを記載して、第二引数には、データを指定します。このコードが実行されると、セッションスコープの中に、\"userData\"という名前でログインユーザの全情報を保持できるようになります。このデータは、画面が変わっても、システム全域で呼び出すことができます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2459,
+          "text": "　session.setAttributeメソッドは、model.addAttributeと同じような書き方をします。第一引数には、キーワードを記載して、第二引数には、データを指定します。このコードが実行されると、セッションスコープの中に、\"userData\"という名前でログインユーザの全情報を保持できるようになります。このデータは、画面が変わっても、システム全域で呼び出すことができます。"
+        }
+      ],
+      "span": [
+        45884,
+        46079
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p150-b04",
+      "row": 0,
+      "line_label": "3-5 行目",
+      "normalized_text": "Validationのバージョンによりますが、最新のValidationAPIは、jakarta.validation.constraintsパッケージの方を利用することが推奨されています。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2587,
+          "text": " Validationのバージョンによりますが、最新のValidation APIは、jakarta.validation.constraintsパッケージの方を利用することが推奨されています。"
+        }
+      ],
+      "span": [
+        47614,
+        47709
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p150-b04",
+      "row": 1,
+      "line_label": "11 行目",
+      "normalized_text": "このアノテーションを付与したフィールドに、入力値がない場合は、入力エラーだと検知してくれます。Integerのフィールドは、@NotNullを付与します。message属性は、出力するメッセージをカスタマイズすることができます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2589,
+          "text": "　このアノテーションを付与したフィールドに、入力値がない場合は、入力エラーだと検知してくれます。Integerのフィールドは、@NotNullを付与します。message属性は、出力するメッセージをカスタマイズすることができます。"
+        }
+      ],
+      "span": [
+        47723,
+        47837
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p150-b04",
+      "row": 2,
+      "line_label": "14-15 行",
+      "normalized_text": "@NotNullと似ていますが、こちらは文字列の入力有無チェックに特化されています。未入力はもちろん、空文字(“”)まで検知することができます。@Sizeは、文字列の文字数制限を設定できます。Maxで最大文字数、minで最小文字数の設定ができます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 72,
+          "meaning_offset": 77,
+          "xml_paragraph_index": 2590
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2590,
+          "text": "・14-15行　＠NotBlank、@Size(max = 15):\n ＠NotNullと似ていますが、こちらは文字列の入力有無チェックに特化されています。未入力はもちろん、空文字(“”)まで検知することができます。\n　@Sizeは、文字列の文字数制限を設定できます。Maxで最大文字数、minで最小文字数の設定ができます。"
+        }
+      ],
+      "span": [
+        47868,
+        47992
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p151-b08",
+      "row": 0,
+      "line_label": "3 行目",
+      "normalized_text": "@Validアノテーションは、対象のオブジェクト(この場合はUserForm)が持つValidationアノテーション(例えば@Size、@NotNullなど)に基づいて入力チェックを実行するために使用されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2616,
+          "text": "　@Valid アノテーションは、対象のオブジェクト（この場合は UserForm）が持つValidationアノテーション（例えば @Size、@NotNull など）に基づいて入力チェックを実行するために使用されます。"
+        }
+      ],
+      "span": [
+        48151,
+        48257
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p151-b08",
+      "row": 1,
+      "line_label": "3 行目",
+      "normalized_text": "BindingResultは、@Validアノテーションによる入力チェックの結果を保持するオブジェクトです。入力チェックエラーの詳細を取得するために使用されます。通常、メソッドの引数として渡されます。必ず、@Validをつけた直後(ここでは、第2引数)に記載しないといけないルールがありますので、ご注意ください。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2618,
+          "text": "BindingResult は、@Valid アノテーションによる入力チェックの結果を保持するオブジェクトです。入力チェックエラーの詳細を取得するために使用されます。通常、メソッドの引数として渡されます。必ず、@Validをつけた直後(ここでは、第2引数)に記載しないといけないルールがありますので、ご注意ください。"
+        }
+      ],
+      "span": [
+        48275,
+        48431
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p152-b01",
+      "row": 0,
+      "line_label": "4 行目",
+      "normalized_text": "BindingResultのhasErrorsメソッドは、入力チェック中にエラーが発生したかどうかを確認するために使用されます。エラーが存在する場合はtrueを、そうでない場合はfalseを返します。このメソッドを利用して条件分岐を行い、エラーがある場合は入力フォームに戻り、エラーメッセージをユーザに表示します。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2620,
+          "text": "　BindingResult の hasErrors メソッドは、入力チェック中にエラーが発生したかどうかを確認するために使用されます。エラーが存在する場合は true を、そうでない場合は false を返します。このメソッドを利用して条件分岐を行い、エラーがある場合は入力フォームに戻り、エラーメッセージをユーザに表示します。"
+        }
+      ],
+      "span": [
+        48456,
+        48613
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p152-b06",
+      "row": 0,
+      "line_label": "4 行目",
+      "normalized_text": "th:object属性は、「選択対象オブジェクト」と呼ばれ、フォームのデータをControllerのオブジェクト(この場合はUserFormオブジェクト)にバインド(結びつけ)するために使用されます。formタグに記述することで、フォームの入力フィールドの値が、UserFormオブジェクトの対応するプロパティに自動的に格納されます。つまり、Controllerのメソッド内でModelにデータを格納しなくても、Formタグの中で、Thymeleaf上でデータを受け取れるということです。フォーム内では、*{...}という選択式を使用して、userFormオブジェクトのプロパティに簡潔にアクセスできます。userForm.empIdではなく、*{empId}だけでアクセスできるようになります。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 100,
+          "meaning_offset": 108,
+          "xml_paragraph_index": 2643
+        },
+        {
+          "normalized_offset": 244,
+          "meaning_offset": 262,
+          "xml_paragraph_index": 2644
+        }
+      ],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 167,
+          "meaning_offset": 178,
+          "xml_paragraph_index": 2643
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2642,
+          "text": "th:object属性は、「選択対象オブジェクト」と呼ばれ、フォームのデータをControllerのオブジェクト（この場合は UserForm オブジェクト）にバインド（結びつけ）するために使用されます。"
+        },
+        {
+          "xml_paragraph_index": 2643,
+          "text": "formタグに記述することで、フォームの入力フィールドの値が、UserForm オブジェクトの対応するプロパティに自動的に格納されます。\nつまり、Controllerのメソッド内でModelにデータを格納しなくても、Formタグの中で、Thymeleaf上でデータを受け取れるということです。"
+        },
+        {
+          "xml_paragraph_index": 2644,
+          "text": "フォーム内では、*{...}という選択式を使用して、userFormオブジェクトのプロパティに簡潔にアクセスできます。userForm.empIdではなく、*{empId}だけでアクセスできるようになります。"
+        }
+      ],
+      "span": [
+        48660,
+        49008
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p153-b01",
+      "row": 0,
+      "line_label": "6 行目",
+      "normalized_text": "th:field属性は、対応するフィールドのname,id,およびvalue属性を自動的に生成します。ですので、name、id、valueを省略できます。自動生成されるvalue属性により、フォーム送信後に入力チェックエラーが発生した場合でも、ユーザが入力した値がフィールドに保持されます。これにより、ユーザは入力値を再度入力する手間を省くことができます。なお、*{empId}は、userFormオブジェクトのempIdプロパティを参照しています。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 77,
+          "meaning_offset": 87,
+          "xml_paragraph_index": 2647
+        },
+        {
+          "normalized_offset": 178,
+          "meaning_offset": 193,
+          "xml_paragraph_index": 2648
+        }
+      ],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2646,
+          "text": "　th:field 属性は、対応するフィールドの name, id, および value 属性を自動的に生成します。ですので、name、id、valueを省略できます。"
+        },
+        {
+          "xml_paragraph_index": 2647,
+          "text": "自動生成されるvalue属性により、フォーム送信後に入力チェックエラーが発生した場合でも、ユーザが入力した値がフィールドに保持されます。これにより、ユーザは入力値を再度入力する手間を省くことができます。"
+        },
+        {
+          "xml_paragraph_index": 2648,
+          "text": "なお、*{empId}は、userFormオブジェクトのempIdプロパティを参照しています。"
+        }
+      ],
+      "span": [
+        49032,
+        49257
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p153-b01",
+      "row": 1,
+      "line_label": "7 行目",
+      "normalized_text": "このコードは、empIdフィールドに関連する入力チェックエラーがある場合にエラーメッセージを表示するために使われます。エラーがない場合は、何も表示されません。フォームを送信したとき、もしempIdフィールドの値が入力チェックのルールに違反していれば(例えば、必須フィールドが空である、など)、<span>タグの中に入力チェックごとのエラーメッセージが表示されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 79,
+          "meaning_offset": 84,
+          "xml_paragraph_index": 2652
+        }
+      ],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2651,
+          "text": "　このコードは、empId フィールドに関連する入力チェックエラーがある場合にエラーメッセージを表示するために使われます。エラーがない場合は、何も表示されません。"
+        },
+        {
+          "xml_paragraph_index": 2652,
+          "text": "フォームを送信したとき、もし empId フィールドの値が入力チェックのルールに違反していれば（例えば、必須フィールドが空である、など）、 <span> タグの中に入力チェックごとのエラーメッセージが表示されます。"
+        }
+      ],
+      "span": [
+        49295,
+        49477
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p168-b04",
+      "row": 0,
+      "line_label": "2 行",
+      "normalized_text": "Thymeleafテンプレートで使われるHTMLの宣言です。この宣言により、ThymeleafのルールがHTMLページに追加されます。それによって、Thymeleafの特有の属性や構文がHTMLタグ内で認識され、正しく処理されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2832,
+          "text": "Thymeleaf テンプレートで使われる HTML の宣言です。この宣言により、Thymeleaf のルールが HTML ページに追加されます。それによって、Thymeleaf の特有の属性や構文が HTML タグ内で認識され、正しく処理されます。"
+        }
+      ],
+      "span": [
+        51765,
+        51881
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p168-b04",
+      "row": 1,
+      "line_label": "6 行",
+      "normalized_text": "この宣言は、Thymeleafの構文ではありませんが、Webページがモバイルデバイスで表示される際のビューポート(表示領域)の設定に使われます。デバイスがどのような画面サイズを持っていても、Webページはそれに適応するように表示されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 2835,
+          "text": "　この宣言は、Thymeleafの構文ではありませんが、Webページがモバイルデバイスで表示される際のビューポート（表示領域）の設定に使われます。デバイスがどのような画面サイズを持っていても、Webページはそれに適応するように表示されます。"
+        }
+      ],
+      "span": [
+        51953,
+        52072
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p184-b02",
+      "row": 0,
+      "line_label": "3 行目",
+      "normalized_text": "レイアウトファイルを定義するためには、既存のhtml属性に、xmlns:layout属性を追記する必要があります。html要素を2回書いたわけではなく、html要素に2つの属性を追加していることに気をつけてください。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 3105,
+          "text": "レイアウトファイルを定義するためには、既存のhtml属性に、xmlns:layout属性を追記する必要があります。html要素を2回書いたわけではなく、html要素に2つの属性を追加していることに気をつけてください。"
+        }
+      ],
+      "span": [
+        55752,
+        55860
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p184-b02",
+      "row": 1,
+      "line_label": "8 行目",
+      "normalized_text": "レイアウト専用のcssファイルを別途作成し、読み込ませました。cssファイルの詳細は、デザインの領域ですので、章末の【参考】の部分をご覧ください。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 3107,
+          "text": "　レイアウト専用のcssファイルを別途作成し、読み込ませました。cssファイルの詳細は、デザインの領域ですので、章末の【参考】の部分をご覧ください。"
+        }
+      ],
+      "span": [
+        55915,
+        55988
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p184-b02",
+      "row": 2,
+      "line_label": "27-29 行",
+      "normalized_text": "この部分のコードは、中身がありません。その理由は、ここはメインコンテンツが配置される場所だからです。「layout:fragment=“識別名”」の属性をつけると、この部分に別のhtmlファイル(コンテンツ)のfragment識別名が一致しているコードがコピーされ、置き換えられます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [
+        {
+          "normalized_offset": 50,
+          "meaning_offset": 53,
+          "xml_paragraph_index": 3109
+        }
+      ],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 3109,
+          "text": "　この部分のコードは、中身がありません。その理由は、ここはメインコンテンツが配置される場所だからです。\n「layout:fragment=“識別名”」の属性をつけると、この部分に別のhtmlファイル(コンテンツ)のfragment識別名が一致しているコードがコピーされ、置き換えられます。"
+        }
+      ],
+      "span": [
+        56038,
+        56180
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p185-b01",
+      "row": 0,
+      "line_label": "3 行目",
+      "normalized_text": "レイアウトにコピーするコンテンツ側のHTMLにも、同じくレイアウト関連のルールを宣言しておきます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 3131,
+          "text": "　レイアウトにコピーするコンテンツ側のHTMLにも、同じくレイアウト関連のルールを宣言しておきます。"
+        }
+      ],
+      "span": [
+        56298,
+        56347
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p185-b01",
+      "row": 1,
+      "line_label": "4 行目",
+      "normalized_text": "<html>の属性の中にlayout:decorate属性も追記します。この部分の属性値は、layout.htmlの場所をURLで指定すればOKです。例えば、layoutがproductフォルダ内にあるなら、”~{/product/layout}”のように記述すればOKです。URLを間違えると、レイアウト機能が使えませんので、ご注意ください。",
+      "matching_count": 1,
+      "paragraph_breaks": [
+        {
+          "normalized_offset": 75,
+          "meaning_offset": 82,
+          "xml_paragraph_index": 3135
+        }
+      ],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 3134,
+          "text": " <html>の属性の中にlayout:decorate属性も追記します。この部分の属性値は、layout.htmlの場所をURLで指定すればOKです。"
+        },
+        {
+          "xml_paragraph_index": 3135,
+          "text": "例えば、layoutがproductフォルダ内にあるなら、”~{/product/layout}” のように記述すればOKです。URLを間違えると、レイアウト機能が使えませんので、ご注意ください。"
+        }
+      ],
+      "span": [
+        56380,
+        56552
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p185-b01",
+      "row": 2,
+      "line_label": "9-13 行目",
+      "normalized_text": "既存の<body>内に書いていたソースコードを、全てこの要素で囲みます。先ほどのlayout.htmlのfragment識別名が“main_content”でしたので、同じ値を入れます。そうすることで、9-13行内の全てのHTMLコードが、layout.htmlの28行にコピーされ、レイアウト+コンテンツの新しいHTMLが生成されます。insert.htmlへreturnして一覧画面を開くと、自動でlayout.htmlの共通部分まで生成された画面が表示されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 3138,
+          "text": " 既存の<body>内に書いていたソースコードを、全てこの要素で囲みます。先ほどのlayout.htmlのfragment識別名が“main_content”でしたので、同じ値を入れます。そうすることで、9-13行内の全てのHTMLコードが、layout.htmlの28行にコピーされ、レイアウト+コンテンツの新しいHTMLが生成されます。insert.htmlへreturnして一覧画面を開くと、自動でlayout.htmlの共通部分まで生成された画面が表示されます。"
+        }
+      ],
+      "span": [
+        56595,
+        56829
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p266-b11",
+      "row": 0,
+      "line_label": "1 行目",
+      "normalized_text": "今回のサンプルでは、外側をcontainerでコンテナを作っています。画面の中央にコンテンツが配置されます。もし、container-fluidにすると、横幅いっぱいに変わります。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 4684,
+          "text": "今回のサンプルでは、外側をcontainerでコンテナを作っています。画面の中央にコンテンツが配置されます。もし、container-fluidにすると、横幅いっぱいに変わります。"
+        }
+      ],
+      "span": [
+        75846,
+        75936
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p267-b01",
+      "row": 0,
+      "line_label": "2 行目",
+      "normalized_text": "コンテナの中に、rowをclass属性として持つdiv要素を入れます。後述のカラムを配置するためにも、必ずrowが必要です。まるでtable要素に、<tr>がないと、<td>も書けないのと同じです。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 4688,
+          "text": "　コンテナの中に、rowをclass属性として持つdiv要素を入れます。後述のカラムを配置するためにも、必ずrowが必要です。まるでtable要素に、<tr>がないと、<td>も書けないのと同じです。"
+        }
+      ],
+      "span": [
+        75956,
+        76055
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p267-b01",
+      "row": 1,
+      "line_label": "3 行目～5 行目",
+      "normalized_text": "1つのrowの中に、複数のカラムを配置できます。このサンプル通りだと、以下のように表示されます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 4691,
+          "text": "1つのrowの中に、複数のカラムを配置できます。このサンプル通りだと、以下のように表示されます。"
+        }
+      ],
+      "span": [
+        76080,
+        76128
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p267-b09",
+      "row": 0,
+      "line_label": "6 行目～7 行目",
+      "normalized_text": "グリッドシステムでは、<div>要素を使うことが多いので、閉じタグだけでは、どの要素の閉じタグなのか、区別がつきません。そのため、どの要素の閉じタグなのかを明確にするため、コメントを記載することが多いです。特に、rowが複数ある場合は「ENDrow1」や、「ENDrow2」とかでコメントを残すことで実際の範囲も読みやすくなるので、重要です。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 4700,
+          "text": "グリッドシステムでは、<div>要素を使うことが多いので、閉じタグだけでは、どの要素の閉じタグなのか、区別がつきません。そのため、どの要素の閉じタグなのかを明確にするため、コメントを記載することが多いです。特に、rowが複数ある場合は「END row1」や、「END row2」とかでコメントを残すことで実際の範囲も読みやすくなるので、重要です。"
+        }
+      ],
+      "span": [
+        76363,
+        76534
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p273-b04",
+      "row": 0,
+      "line_label": "5 行目",
+      "normalized_text": "フォームとは直接関係がないコードですが、横幅の3割のみ占めるように、限定をさせることで、左サイドバーのようなレイアウトを作ることができます。検索バーは、サイドバーに配置させることが多いので、予めカラムを生成しました。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 4816,
+          "text": "　フォームとは直接関係がないコードですが、横幅の3割のみ占めるように、限定をさせることで、左サイドバーのようなレイアウトを作ることができます。検索バーは、サイドバーに配置させることが多いので、予めカラムを生成しました。"
+        }
+      ],
+      "span": [
+        77757,
+        77865
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p273-b04",
+      "row": 1,
+      "line_label": "8 行目",
+      "normalized_text": "<div>ではなく、<form>要素をrowとして生成すると、フォームを別途の行として扱えることができます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 4818,
+          "text": "<div>ではなく、<form>要素をrowとして生成すると、フォームを別途の行として扱えることができます。"
+        }
+      ],
+      "span": [
+        77886,
+        77940
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p273-b04",
+      "row": 2,
+      "line_label": "9 行目・13 行目",
+      "normalized_text": "入力フォームに8、ボタンに4の割合でカラムを生成しています。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 4820,
+          "text": "入力フォームに8、ボタンに4の割合でカラムを生成しています。"
+        }
+      ],
+      "span": [
+        77985,
+        78015
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p273-b04",
+      "row": 3,
+      "line_label": "10 行目",
+      "normalized_text": "",
+      "matching_count": 0,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": []
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p274-b01",
+      "row": 0,
+      "line_label": "10 行目",
+      "normalized_text": "Bootstrapのフォーム関連クラスの中で、一番大事なクラスです。テキストフォームにこのクラスを付与することで、Bootstrap式のテキストフォームのデザインを適用することができます。",
+      "matching_count": 1,
+      "paragraph_breaks": [],
+      "explicit_line_breaks": [],
+      "word_paragraphs": [
+        {
+          "xml_paragraph_index": 4822,
+          "text": "　　Bootstrapのフォーム関連クラスの中で、一番大事なクラスです。テキストフォームにこのクラスを付与することで、Bootstrap式のテキストフォームのデザインを適用することができます。"
+        }
+      ],
+      "span": [
+        78058,
+        78152
+      ]
+    }
+  ],
+  "policy": "一意な全文一致で得たw:p境界とw:br/w:crだけを根拠として提供。通常のPDF抽出改行を一律に段落としない。offsetは非空白NFKC列とmeaningの元文字位置を両方記録。"
+}

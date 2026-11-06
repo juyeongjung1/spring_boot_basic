@@ -129,6 +129,9 @@ pre.source-code {
 .source-code .number { color: #18568b; }
 .source-code .type { color: #176a69; }
 .source-code .function { color: #245b9d; }
+.source-code .annotation { color: #c62828; font-weight: 700; }
+.source-code .element { color: #165dce; }
+.source-code .thymeleaf { color: #7c3aed; font-weight: 700; }
 .source-code .operator,
 .source-code .punctuation { color: #374151; }
 
@@ -180,11 +183,49 @@ pre.source-code {
   background: #f8fafc;
 }
 
-.explanation-table th:nth-child(1) { width: 14%; }
-.explanation-table th:nth-child(2) { width: 36%; }
-.explanation-table th:nth-child(3) { width: 50%; }
-.explanation-table pre.source-code { padding: 0; font-size: 9.5pt; line-height: 14.5pt; }
-.explanation-table .line-label { font-size: 9.5pt; }
+.explanation-card {
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.explanation-card > .card-header {
+  padding: 0 0 7pt;
+  border-bottom: 0;
+  background: #fff;
+}
+
+.explanation-item { margin: 0 0 12pt; }
+.explanation-item:last-child { margin-bottom: 0; }
+
+.explanation-code {
+  margin-bottom: 6pt;
+  border: 0.6pt solid #d7dde5;
+  border-radius: 4pt;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.explanation-code .line-label {
+  padding: 4pt 8pt;
+  border-bottom: 0.6pt solid #e5e9ef;
+  color: #374151;
+  font: 700 9.5pt/1.4 "Meiryo", sans-serif;
+}
+
+.explanation-code pre.source-code { padding: 5pt 8pt; }
+
+.explanation-paragraph {
+  margin: 0 0 6pt;
+  font: 11.04pt/18pt "MS PMincho", serif;
+  text-indent: 1em;
+  overflow-wrap: anywhere;
+}
+
+.explanation-paragraph:last-child { margin-bottom: 0; }
+.explanation-prose-line { margin: 0; text-indent: 0; }
+.explanation-prose-line.paragraph-start { text-indent: 1em; }
+.explanation-prose-line br { display: none; }
 
 .card td p,
 .card th p {
@@ -205,17 +246,28 @@ pre.source-code {
   overflow-wrap: anywhere;
 }
 
+.code-figure {
+  width: max-content;
+  max-width: 100%;
+  margin: 5pt 0 0;
+  border: 0.6pt solid #c5cdd7;
+  background: #fff;
+}
+
+.code-figure-label { padding: 3pt 5pt; font-weight: 700; }
+.code-figure img { display: block; max-width: 100%; }
+
 @media print {
   .card {
     box-shadow: none;
     break-inside: avoid;
   }
 }
-body{padding:24px;background:#eef2f6}article{margin:0 auto 28px;width:max-content;max-width:100%}.preview-id{font:12px sans-serif;color:#475569}</style><body><article><p class="preview-id">ex07-p068-b13</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p068-b13"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="comment">&lt;!-- body タグを修正してください --&gt;</span></pre></div><div class="code-row" data-break-row data-source-ids="p068-b13"><div class="line-number">2</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span>body class<span class="operator">=</span><span class="string">&quot;bg-light p-4&quot;</span><span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
-<article><p class="preview-id">ex07-p069-b02</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p069-b02"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span>h1 class<span class="operator">=</span><span class="string">&quot;text-center text-primary fw-bold mb-4&quot;</span><span class="punctuation">&gt;</span>人事管理システム</pre></div><div class="code-row" data-break-row data-source-ids="p069-b02"><div class="line-number">2</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="punctuation">/</span>h1<span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
-<article><p class="preview-id">ex07-p069-b05</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p069-b05"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span>h2 class<span class="operator">=</span><span class="string">&quot;text-success border-bottom pb-2 mb-4&quot;</span><span class="punctuation">&gt;</span>社員検索<span class="punctuation">&lt;</span><span class="punctuation">/</span>h2<span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
-<article><p class="preview-id">ex07-p069-b08</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p069-b08"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span>input type<span class="operator">=</span><span class="string">&quot;submit&quot;</span> value<span class="operator">=</span><span class="string">&quot;検索&quot;</span> class<span class="operator">=</span><span class="string">&quot;btn btn-primary ms-2&quot;</span><span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
-<article><p class="preview-id">ex07-p076-b07</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p076-b07"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span>div class<span class="operator">=</span><span class="string">&quot;col-md-9&quot;</span> layout:fragment<span class="operator">=</span><span class="string">&quot;main_content&quot;</span><span class="punctuation">&gt;</span></pre></div><div class="code-row" data-break-row data-source-ids="p076-b07"><div class="line-number">2</div><pre class="source-code" spellcheck="false">        <span class="comment">&lt;!-- ここに各画面固有のコンテンツが表示されます --&gt;</span></pre></div><div class="code-row" data-break-row data-source-ids="p076-b07"><div class="line-number">3</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="punctuation">/</span>div<span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
+body{padding:24px;background:#eef2f6}article{margin:0 auto 28px;width:max-content;max-width:100%}.preview-id{font:12px sans-serif;color:#475569}</style><body><article><p class="preview-id">ex07-p068-b13</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p068-b13"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="comment">&lt;!-- body タグを修正してください --&gt;</span></pre></div><div class="code-row" data-break-row data-source-ids="p068-b13"><div class="line-number">2</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">body</span> class<span class="operator">=</span><span class="string">&quot;bg-light p-4&quot;</span><span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
+<article><p class="preview-id">ex07-p069-b02</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p069-b02"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">h1</span> class<span class="operator">=</span><span class="string">&quot;text-center text-primary fw-bold mb-4&quot;</span><span class="punctuation">&gt;</span>人事管理システム</pre></div><div class="code-row" data-break-row data-source-ids="p069-b02"><div class="line-number">2</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="punctuation">/</span><span class="element">h1</span><span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
+<article><p class="preview-id">ex07-p069-b05</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p069-b05"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">h2</span> class<span class="operator">=</span><span class="string">&quot;text-success border-bottom pb-2 mb-4&quot;</span><span class="punctuation">&gt;</span>社員検索<span class="punctuation">&lt;</span><span class="punctuation">/</span><span class="element">h2</span><span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
+<article><p class="preview-id">ex07-p069-b08</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p069-b08"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">input</span> type<span class="operator">=</span><span class="string">&quot;submit&quot;</span> value<span class="operator">=</span><span class="string">&quot;検索&quot;</span> class<span class="operator">=</span><span class="string">&quot;btn btn-primary ms-2&quot;</span><span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
+<article><p class="preview-id">ex07-p076-b07</p><div style="width:425.236pt"><section class="card code-card"><header class="card-header"><span class="language-badge">HTML</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><div class="code-row" data-break-row data-source-ids="p076-b07"><div class="line-number">1</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">div</span> class<span class="operator">=</span><span class="string">&quot;col-md-9&quot;</span> layout:fragment<span class="operator">=</span><span class="string">&quot;main_content&quot;</span><span class="punctuation">&gt;</span></pre></div><div class="code-row" data-break-row data-source-ids="p076-b07"><div class="line-number">2</div><pre class="source-code" spellcheck="false">        <span class="comment">&lt;!-- ここに各画面固有のコンテンツが表示されます --&gt;</span></pre></div><div class="code-row" data-break-row data-source-ids="p076-b07"><div class="line-number">3</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="punctuation">/</span><span class="element">div</span><span class="punctuation">&gt;</span></pre></div></div><footer class="card-footer"></footer></section></div></article>
 <article><p class="preview-id">ex07-p066-table01</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:42.25402%"><col style="width:57.74598%"></colgroup><thead><tr><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">ファイル名</span></th><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">格納場所</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p066-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">bootstrap.min.css</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">src/main/resources/static/css/</span></td></tr><tr data-break-row data-source-ids="p066-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">bootstrap.bundle.min.js</span></td><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">src/main/resources/static/js/</span></td></tr></tbody></table></div></section></div></article>
 <article><p class="preview-id">ex07-p070-table01</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:21.76867%"><col style="width:78.23133%"></colgroup><thead><tr><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">修正ポイント</span></th><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">内容</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p070-table01"><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">&lt;table&gt;</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">border=&quot;1&quot; を削除し、Bootstrap の .table クラスを追加する</span></td></tr><tr data-break-row data-source-ids="p070-table01"><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">&lt;thead&gt;</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">ヘッダー行（見出し）を囲むタグとして追加する</span></td></tr><tr data-break-row data-source-ids="p070-table01"><td style="background:#ffffff;text-align:center"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">&lt;tbody&gt;</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">データ行（繰り返し部分）を囲むタグとして追加する</span></td></tr></tbody></table></div></section></div></article>
 <article><p class="preview-id">ex07-p071-table01</p><div style="width:426.672pt"><section class="card table-card"><header class="card-header"><span class="language-badge">表</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><table><colgroup><col style="width:29.98098%"><col style="width:70.01902%"></colgroup><thead><tr><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:700;text-decoration:none">クラス名</span></th><th style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">効果</span></th></tr></thead><tbody><tr data-break-row data-source-ids="p071-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">table</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">Bootstrap 標準のテーブルデザイン</span></td></tr><tr data-break-row data-source-ids="p071-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">table-bordered</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">枠線をつける</span></td></tr><tr data-break-row data-source-ids="p071-table01"><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">table-hover</span></td><td style="background:#ffffff;text-align:left"><span class="source-style" style="color:#000000;font-weight:400;text-decoration:none">ホバー時に行の背景色が変わる</span></td></tr></tbody></table></div></section></div></article></body></html>

@@ -1,0 +1,9 @@
+test_native_number_tabs_do_not_intersect_source_content (tools.textbook.test_figure_frames.FigureNumberTests.test_native_number_tabs_do_not_intersect_source_content) ... ok
+test_numbered_figures_cover_all_independent_images (tools.textbook.test_figure_frames.FigureNumberTests.test_numbered_figures_cover_all_independent_images) ... ok
+test_only_actual_code_images_receive_figure_numbers (tools.textbook.test_figure_frames.FigureNumberTests.test_only_actual_code_images_receive_figure_numbers) ... ok
+test_section_numbering_uses_main_section_not_subsection (tools.textbook.test_figure_frames.FigureNumberTests.test_section_numbering_uses_main_section_not_subsection) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 56.264s
+
+OK

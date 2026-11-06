@@ -1,0 +1,687 @@
+{
+  "base_commit": "96a99882326d65ec048100b2f20fa0ed4aaa72d2",
+  "path": "tools/textbook/code_explanations.json",
+  "passed": true,
+  "cards": 46,
+  "rows": 84,
+  "metadata_rows": 82,
+  "added_keys": [
+    "word_paragraph_breaks",
+    "word_line_breaks"
+  ],
+  "unknown_rows": [
+    {
+      "chapter": "03",
+      "anchor_id": "p101-b06",
+      "row": 1,
+      "reason": "Word内の同文2箇所"
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p273-b04",
+      "row": 3,
+      "reason": "空の説明"
+    }
+  ],
+  "paragraph_breaks": 20,
+  "line_breaks": 22,
+  "existing_values_exact_from_base": true,
+  "previous_sha256": "f904a1c619b4fdd8d0f85a5af41cce00d0036805af1e676d980d598d19ad31e6",
+  "current_sha256": "1409430f518aedbd2b1c9b5ddef2d3a1065a3915688dd6380877d1e2557cd804",
+  "base_blob_sha256": "6ace30a098c571028721e4dc99a3af04b9357b0cd2bb7c9df2e0ed336df7b4fd",
+  "proof_sha256": "79eced25a8815ba8e063b4c6b2fa56181500ff6302a5659f64e56918e1d3147c",
+  "word_xml_sha256": "41d32545246b994936c4008c9e09d83514ff0c4eb4e315c258c4b6f718e35fe4",
+  "records": [
+    {
+      "chapter": "02",
+      "anchor_id": "p043-b05",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p043-b05",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p044-b09",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        89
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p044-b09",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p049-b05",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        235
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p050-b01",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p050-b01",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p051-b06",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p051-b06",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p052-b03",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p056-b05",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        145
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p056-b05",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p058-b06",
+      "row": 0,
+      "word_paragraph_breaks": [
+        104
+      ],
+      "word_line_breaks": [
+        38
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p059-b01",
+      "row": 0,
+      "word_paragraph_breaks": [
+        71
+      ],
+      "word_line_breaks": [
+        46,
+        56
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p059-b07",
+      "row": 0,
+      "word_paragraph_breaks": [
+        45
+      ],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p060-b04",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p060-b04",
+      "row": 1,
+      "word_paragraph_breaks": [
+        51
+      ],
+      "word_line_breaks": [
+        124
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor_id": "p060-b12",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p086-b03",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        162
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p086-b03",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p086-b09",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        48,
+        94
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p087-b05",
+      "row": 0,
+      "word_paragraph_breaks": [
+        101
+      ],
+      "word_line_breaks": [
+        248
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p088-b01",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p092-b09",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p093-b01",
+      "row": 0,
+      "word_paragraph_breaks": [
+        215,
+        315
+      ],
+      "word_line_breaks": [
+        130,
+        381
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p093-b01",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p093-b07",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p097-b10",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p097-b10",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p101-b06",
+      "row": 0,
+      "word_paragraph_breaks": [
+        79
+      ],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p108-b06",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p109-b04",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p109-b04",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p110-b01",
+      "row": 0,
+      "word_paragraph_breaks": [
+        93
+      ],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p110-b04",
+      "row": 0,
+      "word_paragraph_breaks": [
+        52
+      ],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p110-b04",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p110-b04",
+      "row": 2,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p111-b03",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p117-b04",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        45
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p117-b04",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p117-b04",
+      "row": 2,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p119-b04",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p119-b04",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        39,
+        58
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 2,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 3,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        48
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p129-b01",
+      "row": 4,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        131
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p130-b05",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p130-b05",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "03",
+      "anchor_id": "p130-b05",
+      "row": 2,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p137-b04",
+      "row": 0,
+      "word_paragraph_breaks": [
+        47,
+        207
+      ],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p140-b04",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p140-b04",
+      "row": 1,
+      "word_paragraph_breaks": [
+        133
+      ],
+      "word_line_breaks": [
+        79
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p140-b04",
+      "row": 2,
+      "word_paragraph_breaks": [
+        49
+      ],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p144-b05",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p144-b05",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p150-b04",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p150-b04",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p150-b04",
+      "row": 2,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        77
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p151-b08",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p151-b08",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p152-b01",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p152-b06",
+      "row": 0,
+      "word_paragraph_breaks": [
+        108,
+        262
+      ],
+      "word_line_breaks": [
+        178
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p153-b01",
+      "row": 0,
+      "word_paragraph_breaks": [
+        87,
+        193
+      ],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "04",
+      "anchor_id": "p153-b01",
+      "row": 1,
+      "word_paragraph_breaks": [
+        84
+      ],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p168-b04",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p168-b04",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p184-b02",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p184-b02",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p184-b02",
+      "row": 2,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": [
+        53
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p185-b01",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p185-b01",
+      "row": 1,
+      "word_paragraph_breaks": [
+        82
+      ],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "05",
+      "anchor_id": "p185-b01",
+      "row": 2,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p266-b11",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p267-b01",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p267-b01",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p267-b09",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p273-b04",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p273-b04",
+      "row": 1,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p273-b04",
+      "row": 2,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    },
+    {
+      "chapter": "07",
+      "anchor_id": "p274-b01",
+      "row": 0,
+      "word_paragraph_breaks": [],
+      "word_line_breaks": []
+    }
+  ],
+  "offset_definition": "row.meaningの元文字列における次の非空白文字の0-based index。w:p/w:brの直前にある抽出空白・改行は表示時に消費する。未設定キーはWord位置の未確定を表し、空配列は明示境界が無いことを表す。"
+}

@@ -8,6 +8,7 @@ import os
 import re
 import subprocess
 import textwrap
+from urllib.parse import unquote
 
 import pymupdf as fitz
 from pygments import lex
@@ -15,6 +16,7 @@ from pygments.lexers import get_lexer_by_name
 from pygments.token import Token
 
 from code_geometry import FILE_LABEL, code_geometries
+from figure_numbers import figure_numbers
 from table_styles import table_paint
 
 HERE = Path(__file__).resolve().parent
@@ -60,10 +62,14 @@ def highlighted(value, lang, soft_breaks=False):
     output = []
     # JavaLexerは行末コメントの終端に改行を必要とする。補った1字だけ最後に除く。
     for token, text in lex(value+'\n', get_lexer_by_name(lang, stripnl=False, ensurenl=False)):
-        kind = next((name for family, name in ((Token.Comment, 'comment'), (Token.Keyword, 'keyword'),
+        kind = next((name for family, name in ((Token.Comment, 'comment'), (Token.Name.Decorator, 'annotation'), (Token.Keyword, 'keyword'),
             (Token.Literal.String, 'string'), (Token.Literal.Number, 'number'), (Token.Name.Class, 'type'),
             (Token.Name.Function, 'function'), (Token.Operator, 'operator'), (Token.Punctuation, 'punctuation'))
             if token in family), '')
+        if lang == 'html' and token in Token.Name.Tag:
+            kind = 'element'
+        elif lang == 'html' and token in Token.Name.Attribute and text.startswith('th:'):
+            kind = 'thymeleaf'
         fragments = text.split('\n')
         for i, fragment in enumerate(fragments):
             if fragment:
@@ -145,33 +151,117 @@ def table_html(folder, layout, ident, node):
     return '<section class="card table-card">'+header('表')+'<div class="card-content"><table>'+columns+content+'</table></div></section>'
 
 
-def explanation_html(record, nodes):
+def explanation_label(value):
+    value = re.sub(r'(\d+)\s*行(?!目)', r'\1行目', value)
+    value = re.sub(r'(\d+)\s*行目', r'\1行目', value)
+    value = re.sub(r'(\d+)(?:行目)?\s*[-～]\s*(\d+)行目', r'\1～\2行目', value)
+    return value
+
+
+def meaning_parts(row, nodes):
+    """原文のoffsetでSpanを切り出し、部分強調やリンクを保持する。"""
+    parts = []
+    meaning_cursor = 0
+    for fragment in row['source_fragments']:
+        if fragment['role'] != 'meaning':
+            continue
+        ident = fragment['source_id']
+        position = row['meaning'].find(fragment['text'], meaning_cursor)
+        if position < 0 or row['meaning'][meaning_cursor:position].strip():
+            raise ValueError('構文解説の原文断片が一致しません: '+ident)
+        if position > meaning_cursor:
+            parts.append((row['meaning'][meaning_cursor:position], None, ident))
+        meaning_cursor = position+len(fragment['text'])
+        source = nodes.get(ident)
+        if source is None or 'start' not in fragment:
+            parts.append((fragment['text'], None, ident))
+            continue
+        cursor = 0
+        for text, style in source['parts']:
+            start, end = max(0, fragment['start']-cursor), min(len(text), fragment['end']-cursor)
+            if start < end:
+                parts.append((text[start:end], style, ident))
+            cursor += len(text)
+    if meaning_cursor < len(row['meaning']) and not row['meaning'][meaning_cursor:].strip():
+        parts.append((row['meaning'][meaning_cursor:], None, row['source_ids'][-1]))
+    if ''.join(text for text, _, _ in parts) != row['meaning']:
+        raise ValueError('構文解説の原文Spanが一致しません: '+str(row['source_ids']))
+    return parts
+
+
+def meaning_span(text, style_id, layout):
+    safe = escape(text.translate(SYMBOLS)).replace('\n', '')
+    if not style_id:
+        return safe
+    effects = style_id.split(':')
+    style = layout.get('styles', {}).get(effects[-1])
+    declarations = []
+    if style:
+        name = style['font']
+        family = next((family for key, family in (
+            ('MS-PMincho', 'MS PMincho'), ('MS-Mincho', 'MS Mincho'),
+            ('MS-PGothic', 'MS PGothic'), ('MS-Gothic', 'MS Gothic'),
+            ('MeiryoUI', 'Meiryo UI'), ('Meiryo', 'Meiryo'),
+            ('TimesNewRoman', 'Times New Roman'), ('Arial', 'Arial'),
+            ('SegoeUI', 'Segoe UI')) if key in name), name)
+        bold = style.get('stroke', 0) or style.get('flags', 0)&16 or 'Bold' in name
+        declarations += [f'font-family:"{family}"', f'font-size:{style["size"]}pt',
+                         f'color:{style["color"]}', f'font-weight:{700 if bold else 400}']
+        if 'Italic' in name or style.get('flags', 0)&2:
+            declarations.append('font-style:italic')
+    if 'strong' in effects:
+        declarations.append('font-weight:700')
+    if 'emph' in effects:
+        declarations.append('font-style:italic')
+    if 'underline' in effects:
+        declarations.append('text-decoration:underline')
+    body = '<span class="source-style" style="'+escape(';'.join(declarations), quote=True)+'">'+safe+'</span>'
+    link = next((effect[5:] for effect in effects if effect.startswith('link%')), None)
+    return '<a href="'+escape(unquote(link), quote=True)+'">'+body+'</a>' if link else body
+
+
+def meaning_html(row, nodes, layout):
+    parts = meaning_parts(row, nodes)
+    meaning = row['meaning']
+    paragraph_breaks = set(row.get('word_paragraph_breaks', []))
+    if 'word_paragraph_breaks' not in row:
+        paragraph_breaks.update(match.end() for match in re.finditer(r'\n\n+', meaning))
+    line_breaks = set(row.get('word_line_breaks', []))-paragraph_breaks
+    cuts = sorted({0, len(meaning), *paragraph_breaks, *line_breaks})
+    paragraphs, body, ids = [], [], []
+    for start, end in zip(cuts, cuts[1:]):
+        cursor = 0
+        for text, style, ident in parts:
+            a, b = max(0, start-cursor), min(len(text), end-cursor)
+            if a < b:
+                body.append(meaning_span(text[a:b], style, layout))
+                ids.append(ident)
+            cursor += len(text)
+        if end in line_breaks:
+            body.append('<br>')
+        if end in paragraph_breaks or end == len(meaning):
+            if meaning[start:end].strip() or body:
+                paragraphs.append('<p class="explanation-paragraph" data-split-paragraph'+ids_attr(list(dict.fromkeys(ids)))+'>'+''.join(body)+'</p>')
+            body, ids = [], []
+    return ''.join(paragraphs)
+
+
+def explanation_html(record, nodes, layout=None):
     lang = next((language(nodes[i]) for i in record['owner_code_ids'] if i in nodes), 'java')
     output = []
     for row in record['rows']:
-        meaning = row['meaning'].translate(SYMBOLS)
-        meaning = re.sub(r'\n(?=第\s*\d+\s*引数\s*[：:])', '\n\n', meaning)
-        paragraphs = [p.replace('\n','') for p in meaning.split('\n\n') if p.strip()]
-        prose = []
-        for index, paragraph in enumerate(paragraphs):
-            end = paragraph.find('。')+1
-            if index == 0 and end:
-                prose.append('<p><strong class="meaning-summary">'+escape(paragraph[:end])+'</strong>'+escape(paragraph[end:])+'</p>')
-            else:
-                prose.append('<p>'+escape(paragraph)+'</p>')
-        continuation = '<small style="display:block;white-space:nowrap">続き</small>' if row.get('continuation') else ''
-        if not prose:
-            prose = ['<p>説明は次ページへ続きます。</p>']
-        label = ''.join(escape(piece) if piece in ('・','、','～','-') else '<span style="white-space:nowrap">'+escape(piece)+'</span>' for piece in re.split(r'([・、～-])',row['line_label']) if piece)
         source_ids = list(dict.fromkeys(fragment['source_id'] for fragment in row['source_fragments']))
-        output.append('<tr data-break-row'+ids_attr(source_ids)+'><td class="line-label">'+label+continuation+'</td><td><pre class="source-code" spellcheck="false">'+highlighted(canonical(textwrap.dedent(row['code'])),lang,soft_breaks=True)+'</pre></td><td>'+''.join(prose)+'</td></tr>')
-    return '<section class="card explanation-card">'+header('コードの読み方')+'<div class="card-content"><table class="explanation-table"><thead><tr><th>行番号</th><th>該当コード</th><th>意味・補足</th></tr></thead><tbody>'+''.join(output)+'</tbody></table></div></section>'
+        prose = meaning_html(row, nodes, layout or {})
+        keep = ' data-keep-next' if prose else ''
+        output.append('<section class="explanation-item"><div class="explanation-code" data-break-row'+keep+ids_attr(source_ids)+'><div class="line-label">'+escape(explanation_label(row['line_label']))+'</div><pre class="source-code" spellcheck="false">'+highlighted(canonical(textwrap.dedent(row['code'])),lang,soft_breaks=True)+'</pre></div><div class="explanation-meaning">'+prose+'</div></section>')
+    return '<section class="card explanation-card">'+header('コードの読み方')+'<div class="card-content">'+''.join(output)+'</div></section>'
 
 
 def prepare(folder, config, layout, nodes, figures, order):
     chapter = folder.name
     fixed = set(config.get('native_pages',[]))
     pages = {ident:page['source_page'] for page in order for ident in page['entries']}
+    numbered_figures = figure_numbers(config, layout, nodes, figures, order)
     explanations = [r for r in json.loads((HERE/'code_explanations.json').read_text(encoding='utf-8')) if r['chapter']==chapter and pages[r['anchor_id']] not in fixed]
     for record in explanations:
         for ident, original in record['source_texts'].items():
@@ -230,7 +320,11 @@ def prepare(folder, config, layout, nodes, figures, order):
                 import base64
                 data=base64.b64encode((folder/figures[image_id]).read_bytes()).decode()
                 f=next(f for f in layout['figures'] if f['id']==image_id)
-                footer += '<div'+ids_attr([image_id])+'><img alt="実行結果の例" style="max-width:100%;width:'+str(f['box'][2]-f['box'][0])+'pt" src="data:image/svg+xml;base64,'+data+'"></div>'
+                number = numbered_figures.get(image_id, {}).get('number')
+                footer += '<figure class="code-figure"'+ids_attr([image_id])+'>'
+                if number:
+                    footer += '<figcaption class="code-figure-label">'+escape(number)+'</figcaption>'
+                footer += '<img alt="実行結果の例" style="width:'+str(f['box'][2]-f['box'][0])+'pt" src="data:image/svg+xml;base64,'+data+'"></figure>'
         consume = group+caption_ids+attached+[r['figure_id'] for r in label_figures]
         add(ident,ident,consume,code_html(rows,lang,names,footer),width,offset)
     for ident,node in nodes.items():
@@ -241,7 +335,7 @@ def prepare(folder, config, layout, nodes, figures, order):
             offset=0
             add(ident,ident,[ident],table_html(folder,layout,ident,node),width,offset,'table')
     for index,record in enumerate(explanations):
-        add('explanation-'+str(index+1),record['anchor_id'],record['consume_ids'],explanation_html(record,nodes),kind='explanation')
+        add('explanation-'+str(index+1),record['anchor_id'],record['consume_ids'],explanation_html(record,nodes,layout),kind='explanation')
     consume = {}
     for spec in specs:
         for ident in spec['consume']:
