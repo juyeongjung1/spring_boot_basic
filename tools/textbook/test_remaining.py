@@ -20,8 +20,8 @@ class RemainingReviewTests(unittest.TestCase):
         }
         cls.url = 'http://localhost:8080/product/search'
         source = style_header(styles) + '\n#set page(width: 360pt, height: 650pt, margin: 24pt)\n#set text(font: "MS PMincho", size: 11.04pt, lang: "ja", kerning: false, overhang: false)\n'
-        source += inline([('「Maven」【作業手順】（タイムリーフ）', 's001')])
-        source += '\n#parbreak()\n' + inline([('「Bean」', 's002'), ('と呼ばれます。', 's001')])
+        source += inline([('「Maven」【作業手順】『標準』（タイムリーフ）', 's001')])
+        source += '\n#parbreak()\n' + inline([('「Bean」【参考】', 's002'), ('と呼ばれます。', 's001')])
         source += '\n#parbreak()\n' + inline([('Getter と Setter', 'strong:s001')])
         source += '\n#parbreak()\n#text("http://localhost:8080/")#linebreak()#text("product/search")\n#parbreak()\n'
         link = {'t': 'Link', 'c': [['', [], []], [{'t': 'Str', 'c': '開く'}], ['http://localhost:8080/login3', '']]}
@@ -38,21 +38,27 @@ class RemainingReviewTests(unittest.TestCase):
         pdf.save(path)
         cls.pdf = fitz.open(path)
 
-    def test_brackets_have_full_width_in_regular_and_emphasized_text(self):
+    def test_brackets_keep_the_source_font_metrics_in_regular_and_emphasized_text(self):
         seen = set()
         for block in self.pdf[0].get_text('rawdict')['blocks']:
             for line in block.get('lines', []):
                 for span in line['spans']:
                     for char in span['chars']:
-                        if char['c'] in '「」【】（）':
+                        if char['c'] in '「」『』【】（）':
                             seen.add(char['c'])
-                            self.assertAlmostEqual(char['bbox'][2] - char['bbox'][0], span['size'], places=2)
-                            self.assertIn(span['font'], ('MS-Mincho', 'MS-Gothic'))
-        self.assertEqual(seen, set('「」【】（）'))
+                            if char['c'] in '【】':
+                                self.assertAlmostEqual(char['bbox'][2] - char['bbox'][0], span['size'] / 2, places=2)
+                                self.assertIn(span['font'], ('MS-PMincho', 'MS-PGothic'))
+                            else:
+                                self.assertAlmostEqual(char['bbox'][2] - char['bbox'][0], span['size'], places=2)
+                                self.assertIn(span['font'], ('MS-Mincho', 'MS-Gothic'))
+        self.assertEqual(seen, set('「」『』【】（）'))
 
     def test_manual_bracket_padding_is_removed_across_style_boundaries(self):
         parts = [('  「 ', 's001'), ('Maven', 's002'), (' 」 ', 's001')]
         self.assertEqual(''.join(v for v, _ in typographic_parts(parts)), '「Maven」')
+        parts = [(' 前【 ', 's001'), ('参考', 's002'), (' 】、 後 ', 's001')]
+        self.assertEqual(''.join(v for v, _ in typographic_parts(parts)), '前【参考】、 後')
 
     def test_named_markdown_link_and_wrapped_url_keep_their_destinations(self):
         links = self.pdf[0].get_links()

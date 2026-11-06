@@ -1,0 +1,1594 @@
+{
+  "status": "pass",
+  "native_pairs": 24,
+  "glyphs": 126,
+  "maximum_coordinate_error_pt": 7.32421875682121e-06,
+  "chapters": {
+    "02": "df2f2d93f2be55d8b990ff546f4f7bfa107384a5cfebb9e78918f56319b68793",
+    "03": "6bdfbac134f34568eaca2c99c41fb2a19c443a29aa9d330db65177cd6a66753e",
+    "04": "75ecd7471cd44f5746c952efe663742eb80d528e0eac75e438c622423fc68241",
+    "06": "4255f098aa2c0c6b8acf189d7d740da0812a46ef0ec9d9c453daed847631454a",
+    "ex-front": "b777f08ab1cbc4c27eaf54e4c18d02b5f531b054a8a2ca9613aa9c1918a4edf3",
+    "front": "2269a6888de474f0def8e2396373c50259de95ef3dafdf5db5319a5bc2743c1d"
+  },
+  "records": [
+    {
+      "chapter": "02",
+      "id": "p036-b01",
+      "page": 6,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 136.7,
+          "source_y": 99.5,
+          "current_x": 136.6999969482422,
+          "current_y": 99.5,
+          "delta_x_pt": -3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "参",
+          "source_x": 143.7621,
+          "source_y": 99.5,
+          "current_x": 143.76210021972656,
+          "current_y": 99.5,
+          "delta_x_pt": 2.19726558725597e-07,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "考",
+          "source_x": 157.8021,
+          "source_y": 99.5,
+          "current_x": 157.80209350585938,
+          "current_y": 99.5,
+          "delta_x_pt": -6.494140620816324e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "】",
+          "source_x": 171.7157,
+          "source_y": 99.5,
+          "current_x": 171.7156982421875,
+          "current_y": 99.5,
+          "delta_x_pt": -1.7578124982264853e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "02",
+      "id": "p038-b01",
+      "page": 8,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 136.7,
+          "source_y": 99.5,
+          "current_x": 136.6999969482422,
+          "current_y": 99.5,
+          "delta_x_pt": -3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "参",
+          "source_x": 143.7621,
+          "source_y": 99.5,
+          "current_x": 143.76210021972656,
+          "current_y": 99.5,
+          "delta_x_pt": 2.19726558725597e-07,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "考",
+          "source_x": 157.8021,
+          "source_y": 99.5,
+          "current_x": 157.80209350585938,
+          "current_y": 99.5,
+          "delta_x_pt": -6.494140620816324e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "】",
+          "source_x": 171.7157,
+          "source_y": 99.5,
+          "current_x": 171.7156982421875,
+          "current_y": 99.5,
+          "delta_x_pt": -1.7578124982264853e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "03",
+      "id": "p082-b01",
+      "page": 26,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 85.104,
+          "source_y": 100.219970703125,
+          "current_x": 85.10399627685547,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -3.723144530454192e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "参",
+          "source_x": 92.1661,
+          "source_y": 100.219970703125,
+          "current_x": 92.16609954833984,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -4.516601563864242e-07,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "考",
+          "source_x": 106.2061,
+          "source_y": 100.219970703125,
+          "current_x": 106.20610046386719,
+          "current_y": 100.219970703125,
+          "delta_x_pt": 4.638671811107997e-07,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "】",
+          "source_x": 120.1198,
+          "source_y": 100.219970703125,
+          "current_x": 120.11979675292969,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -3.247070310408162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "03",
+      "id": "p125-b01",
+      "page": 79,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 122.3,
+          "source_y": 100.219970703125,
+          "current_x": 122.30000305175781,
+          "current_y": 100.219970703125,
+          "delta_x_pt": 3.051757815342171e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "参",
+          "source_x": 129.3621,
+          "source_y": 100.219970703125,
+          "current_x": 129.3621063232422,
+          "current_y": 100.219970703125,
+          "delta_x_pt": 6.323242189409939e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "考",
+          "source_x": 143.4021,
+          "source_y": 100.219970703125,
+          "current_x": 143.402099609375,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -3.906249901319825e-07,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "】",
+          "source_x": 157.3158,
+          "source_y": 100.219970703125,
+          "current_x": 157.3157958984375,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -4.101562495861799e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "04",
+      "id": "p157-b01",
+      "page": 33,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 136.7,
+          "source_y": 100.219970703125,
+          "current_x": 136.6999969482422,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "参",
+          "source_x": 143.7621,
+          "source_y": 100.219970703125,
+          "current_x": 143.76210021972656,
+          "current_y": 100.219970703125,
+          "delta_x_pt": 2.19726558725597e-07,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "考",
+          "source_x": 157.8021,
+          "source_y": 100.219970703125,
+          "current_x": 157.80209350585938,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -6.494140620816324e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "】",
+          "source_x": 171.7157,
+          "source_y": 100.219970703125,
+          "current_x": 171.7156982421875,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -1.7578124982264853e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "04",
+      "id": "p159-b01",
+      "page": 35,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 136.7,
+          "source_y": 100.219970703125,
+          "current_x": 136.6999969482422,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "参",
+          "source_x": 143.7621,
+          "source_y": 100.219970703125,
+          "current_x": 143.76210021972656,
+          "current_y": 100.219970703125,
+          "delta_x_pt": 2.19726558725597e-07,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "考",
+          "source_x": 157.8021,
+          "source_y": 100.219970703125,
+          "current_x": 157.80209350585938,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -6.494140620816324e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "】",
+          "source_x": 171.7157,
+          "source_y": 100.219970703125,
+          "current_x": 171.7156982421875,
+          "current_y": 100.219970703125,
+          "delta_x_pt": -1.7578124982264853e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "06",
+      "id": "p208-b01",
+      "page": 19,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 136.7,
+          "source_y": 99.5,
+          "current_x": 136.6999969482422,
+          "current_y": 99.5,
+          "delta_x_pt": -3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "参",
+          "source_x": 143.7621,
+          "source_y": 99.5,
+          "current_x": 143.76210021972656,
+          "current_y": 99.5,
+          "delta_x_pt": 2.19726558725597e-07,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "考",
+          "source_x": 157.8021,
+          "source_y": 99.5,
+          "current_x": 157.80209350585938,
+          "current_y": 99.5,
+          "delta_x_pt": -6.494140620816324e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        },
+        {
+          "char": "】",
+          "source_x": 171.7157,
+          "source_y": 99.5,
+          "current_x": 171.7156982421875,
+          "current_y": 99.5,
+          "delta_x_pt": -1.7578124982264853e-06,
+          "delta_y_pt": 0.0,
+          "font": "MeiryoUI-Bold",
+          "size": 14.039999961853027
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p003-b11",
+      "page": 3,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 475.7499694824219,
+          "current_x": 140.4199981689453,
+          "current_y": 475.7499694824219,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 475.7499694824219,
+          "current_x": 145.44979858398438,
+          "current_y": 475.7499694824219,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 475.7499694824219,
+          "current_x": 154.9217987060547,
+          "current_y": 475.7499694824219,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 475.7499694824219,
+          "current_x": 163.6865997314453,
+          "current_y": 475.7499694824219,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 475.7499694824219,
+          "current_x": 172.8000030517578,
+          "current_y": 475.7499694824219,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 475.7499694824219,
+          "current_x": 179.06480407714844,
+          "current_y": 475.7499694824219,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 475.7499694824219,
+          "current_x": 187.66029357910156,
+          "current_y": 475.7499694824219,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p003-b18",
+      "page": 3,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 709.7799682617188,
+          "current_x": 140.4199981689453,
+          "current_y": 709.7799682617188,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 709.7799682617188,
+          "current_x": 145.44979858398438,
+          "current_y": 709.7799682617188,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 709.7799682617188,
+          "current_x": 154.9217987060547,
+          "current_y": 709.7799682617188,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 709.7799682617188,
+          "current_x": 163.6865997314453,
+          "current_y": 709.7799682617188,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 709.7799682617188,
+          "current_x": 172.8000030517578,
+          "current_y": 709.7799682617188,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 709.7799682617188,
+          "current_x": 179.06480407714844,
+          "current_y": 709.7799682617188,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 709.7799682617188,
+          "current_x": 187.66029357910156,
+          "current_y": 709.7799682617188,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p003-b19",
+      "page": 3,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 739.7999877929688,
+          "current_x": 140.4199981689453,
+          "current_y": 739.7999877929688,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 739.7999877929688,
+          "current_x": 145.44979858398438,
+          "current_y": 739.7999877929688,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 739.7999877929688,
+          "current_x": 154.9217987060547,
+          "current_y": 739.7999877929688,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 739.7999877929688,
+          "current_x": 163.6865997314453,
+          "current_y": 739.7999877929688,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 739.7999877929688,
+          "current_x": 172.8000030517578,
+          "current_y": 739.7999877929688,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 739.7999877929688,
+          "current_x": 179.06480407714844,
+          "current_y": 739.7999877929688,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 739.7999877929688,
+          "current_x": 187.66029357910156,
+          "current_y": 739.7999877929688,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p003-b20",
+      "page": 3,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 769.7999877929688,
+          "current_x": 140.4199981689453,
+          "current_y": 769.7999877929688,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 769.7999877929688,
+          "current_x": 145.44979858398438,
+          "current_y": 769.7999877929688,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 769.7999877929688,
+          "current_x": 154.9217987060547,
+          "current_y": 769.7999877929688,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 769.7999877929688,
+          "current_x": 163.6865997314453,
+          "current_y": 769.7999877929688,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 769.7999877929688,
+          "current_x": 172.8000030517578,
+          "current_y": 769.7999877929688,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 769.7999877929688,
+          "current_x": 179.06480407714844,
+          "current_y": 769.7999877929688,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 769.7999877929688,
+          "current_x": 187.66029357910156,
+          "current_y": 769.7999877929688,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b05",
+      "page": 4,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 217.70001220703125,
+          "current_x": 140.4199981689453,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 217.70001220703125,
+          "current_x": 145.44979858398438,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 217.70001220703125,
+          "current_x": 154.9217987060547,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 217.70001220703125,
+          "current_x": 163.6865997314453,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 217.70001220703125,
+          "current_x": 172.8000030517578,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 217.70001220703125,
+          "current_x": 179.06480407714844,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 217.70001220703125,
+          "current_x": 187.66029357910156,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b10",
+      "page": 4,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 391.72998046875,
+          "current_x": 140.4199981689453,
+          "current_y": 391.72998046875,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 391.72998046875,
+          "current_x": 145.44979858398438,
+          "current_y": 391.72998046875,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 391.72998046875,
+          "current_x": 154.9217987060547,
+          "current_y": 391.72998046875,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 391.72998046875,
+          "current_x": 163.6865997314453,
+          "current_y": 391.72998046875,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 391.72998046875,
+          "current_x": 172.8000030517578,
+          "current_y": 391.72998046875,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 391.72998046875,
+          "current_x": 179.06480407714844,
+          "current_y": 391.72998046875,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 391.72998046875,
+          "current_x": 187.66029357910156,
+          "current_y": 391.72998046875,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b11",
+      "page": 4,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 421.7499694824219,
+          "current_x": 140.4199981689453,
+          "current_y": 421.7499694824219,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 421.7499694824219,
+          "current_x": 145.44979858398438,
+          "current_y": 421.7499694824219,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 421.7499694824219,
+          "current_x": 154.9217987060547,
+          "current_y": 421.7499694824219,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 421.7499694824219,
+          "current_x": 163.6865997314453,
+          "current_y": 421.7499694824219,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 421.7499694824219,
+          "current_x": 172.8000030517578,
+          "current_y": 421.7499694824219,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 421.7499694824219,
+          "current_x": 179.06480407714844,
+          "current_y": 421.7499694824219,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 421.7499694824219,
+          "current_x": 187.66029357910156,
+          "current_y": 421.7499694824219,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b12",
+      "page": 4,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 451.7499694824219,
+          "current_x": 140.4199981689453,
+          "current_y": 451.7499694824219,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 451.7499694824219,
+          "current_x": 145.44979858398438,
+          "current_y": 451.7499694824219,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 451.7499694824219,
+          "current_x": 154.9217987060547,
+          "current_y": 451.7499694824219,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 451.7499694824219,
+          "current_x": 163.6865997314453,
+          "current_y": 451.7499694824219,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 451.7499694824219,
+          "current_x": 172.8000030517578,
+          "current_y": 451.7499694824219,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 451.7499694824219,
+          "current_x": 179.06480407714844,
+          "current_y": 451.7499694824219,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 451.7499694824219,
+          "current_x": 187.66029357910156,
+          "current_y": 451.7499694824219,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b17",
+      "page": 4,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 625.7799682617188,
+          "current_x": 140.4199981689453,
+          "current_y": 625.7799682617188,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 625.7799682617188,
+          "current_x": 145.44979858398438,
+          "current_y": 625.7799682617188,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 625.7799682617188,
+          "current_x": 154.9217987060547,
+          "current_y": 625.7799682617188,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 625.7799682617188,
+          "current_x": 163.6865997314453,
+          "current_y": 625.7799682617188,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 625.7799682617188,
+          "current_x": 172.8000030517578,
+          "current_y": 625.7799682617188,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 625.7799682617188,
+          "current_x": 179.06480407714844,
+          "current_y": 625.7799682617188,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 625.7799682617188,
+          "current_x": 187.66029357910156,
+          "current_y": 625.7799682617188,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p005-b05",
+      "page": 5,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 140.42,
+          "source_y": 217.70001220703125,
+          "current_x": 140.4199981689453,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -1.8310546749944479e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "オ",
+          "source_x": 145.4498,
+          "source_y": 217.70001220703125,
+          "current_x": 145.44979858398438,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -1.4160156354137143e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "プ",
+          "source_x": 154.9218,
+          "source_y": 217.70001220703125,
+          "current_x": 154.9217987060547,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -1.293945302904831e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "シ",
+          "source_x": 163.6866,
+          "source_y": 217.70001220703125,
+          "current_x": 163.6865997314453,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -2.685546860448085e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ョ",
+          "source_x": 172.8,
+          "source_y": 217.70001220703125,
+          "current_x": 172.8000030517578,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": 3.0517578011313162e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "ン",
+          "source_x": 179.0648,
+          "source_y": 217.70001220703125,
+          "current_x": 179.06480407714844,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": 4.077148446413048e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 187.6603,
+          "source_y": 217.70001220703125,
+          "current_x": 187.66029357910156,
+          "current_y": 217.70001220703125,
+          "delta_x_pt": -6.420898444048362e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "front",
+      "id": "p003-b06",
+      "page": 3,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 137.18,
+          "source_y": 433.7499694824219,
+          "current_x": 137.17999267578125,
+          "current_y": 433.7499694824219,
+          "delta_x_pt": -7.32421875682121e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "参",
+          "source_x": 142.2098,
+          "source_y": 433.7499694824219,
+          "current_x": 142.2097930908203,
+          "current_y": 433.7499694824219,
+          "delta_x_pt": -6.909179688818767e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "考",
+          "source_x": 152.1698,
+          "source_y": 433.7499694824219,
+          "current_x": 152.1697998046875,
+          "current_y": 433.7499694824219,
+          "delta_x_pt": -1.9531250927684596e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 162.1298,
+          "source_y": 433.7499694824219,
+          "current_x": 162.1298065185547,
+          "current_y": 433.7499694824219,
+          "delta_x_pt": 6.518554698686785e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "front",
+      "id": "p003-b06",
+      "page": 3,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 137.18,
+          "source_y": 433.7499694824219,
+          "current_x": 137.17999267578125,
+          "current_y": 433.7499694824219,
+          "delta_x_pt": -7.32421875682121e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "参",
+          "source_x": 142.2098,
+          "source_y": 433.7499694824219,
+          "current_x": 142.2097930908203,
+          "current_y": 433.7499694824219,
+          "delta_x_pt": -6.909179688818767e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "考",
+          "source_x": 152.1698,
+          "source_y": 433.7499694824219,
+          "current_x": 152.1697998046875,
+          "current_y": 433.7499694824219,
+          "delta_x_pt": -1.9531250927684596e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 162.1298,
+          "source_y": 433.7499694824219,
+          "current_x": 162.1298065185547,
+          "current_y": 433.7499694824219,
+          "delta_x_pt": 6.518554698686785e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "front",
+      "id": "p003-b09",
+      "page": 3,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 107.18,
+          "source_y": 703.7799682617188,
+          "current_x": 107.18000030517578,
+          "current_y": 703.7799682617188,
+          "delta_x_pt": 3.0517577442878974e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "参",
+          "source_x": 112.2098,
+          "source_y": 703.7799682617188,
+          "current_x": 112.20980072021484,
+          "current_y": 703.7799682617188,
+          "delta_x_pt": 7.202148424312327e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "考",
+          "source_x": 122.1698,
+          "source_y": 703.7799682617188,
+          "current_x": 122.1697998046875,
+          "current_y": 703.7799682617188,
+          "delta_x_pt": -1.9531249506599124e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 132.1298,
+          "source_y": 703.7799682617188,
+          "current_x": 132.1298065185547,
+          "current_y": 703.7799682617188,
+          "delta_x_pt": 6.518554698686785e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "front",
+      "id": "p004-b01",
+      "page": 4,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 128.78,
+          "source_y": 169.70001220703125,
+          "current_x": 128.77999877929688,
+          "current_y": 169.70001220703125,
+          "delta_x_pt": -1.2207031261368684e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "参",
+          "source_x": 133.8098,
+          "source_y": 169.70001220703125,
+          "current_x": 133.80979919433594,
+          "current_y": 169.70001220703125,
+          "delta_x_pt": -8.056640581344254e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "考",
+          "source_x": 143.7698,
+          "source_y": 169.70001220703125,
+          "current_x": 143.76980590820312,
+          "current_y": 169.70001220703125,
+          "delta_x_pt": 5.908203121407496e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 153.7298,
+          "source_y": 169.70001220703125,
+          "current_x": 153.72979736328125,
+          "current_y": 169.70001220703125,
+          "delta_x_pt": -2.6367187615505827e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "front",
+      "id": "p004-b03",
+      "page": 4,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 137.18,
+          "source_y": 331.72998046875,
+          "current_x": 137.17999267578125,
+          "current_y": 331.72998046875,
+          "delta_x_pt": -7.32421875682121e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "参",
+          "source_x": 142.2098,
+          "source_y": 331.72998046875,
+          "current_x": 142.2097930908203,
+          "current_y": 331.72998046875,
+          "delta_x_pt": -6.909179688818767e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "考",
+          "source_x": 152.1698,
+          "source_y": 331.72998046875,
+          "current_x": 152.1697998046875,
+          "current_y": 331.72998046875,
+          "delta_x_pt": -1.9531250927684596e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 162.1298,
+          "source_y": 331.72998046875,
+          "current_x": 162.1298065185547,
+          "current_y": 331.72998046875,
+          "delta_x_pt": 6.518554698686785e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "front",
+      "id": "p004-b03",
+      "page": 4,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 137.18,
+          "source_y": 331.72998046875,
+          "current_x": 137.17999267578125,
+          "current_y": 331.72998046875,
+          "delta_x_pt": -7.32421875682121e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "参",
+          "source_x": 142.2098,
+          "source_y": 331.72998046875,
+          "current_x": 142.2097930908203,
+          "current_y": 331.72998046875,
+          "delta_x_pt": -6.909179688818767e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "考",
+          "source_x": 152.1698,
+          "source_y": 331.72998046875,
+          "current_x": 152.1697998046875,
+          "current_y": 331.72998046875,
+          "delta_x_pt": -1.9531250927684596e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 162.1298,
+          "source_y": 331.72998046875,
+          "current_x": 162.1298065185547,
+          "current_y": 331.72998046875,
+          "delta_x_pt": 6.518554698686785e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "front",
+      "id": "p004-b07",
+      "page": 4,
+      "glyphs": [
+        {
+          "char": "【",
+          "source_x": 137.18,
+          "source_y": 583.7799682617188,
+          "current_x": 137.17999267578125,
+          "current_y": 583.7799682617188,
+          "delta_x_pt": -7.32421875682121e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "参",
+          "source_x": 142.2098,
+          "source_y": 583.7799682617188,
+          "current_x": 142.2097930908203,
+          "current_y": 583.7799682617188,
+          "delta_x_pt": -6.909179688818767e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "考",
+          "source_x": 152.1698,
+          "source_y": 583.7799682617188,
+          "current_x": 152.1697998046875,
+          "current_y": 583.7799682617188,
+          "delta_x_pt": -1.9531250927684596e-07,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        },
+        {
+          "char": "】",
+          "source_x": 162.1298,
+          "source_y": 583.7799682617188,
+          "current_x": 162.1298065185547,
+          "current_y": 583.7799682617188,
+          "delta_x_pt": 6.518554698686785e-06,
+          "delta_y_pt": 0.0,
+          "font": "MS-PGothic",
+          "size": 9.960000038146973
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

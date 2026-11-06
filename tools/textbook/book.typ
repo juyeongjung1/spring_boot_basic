@@ -3,24 +3,26 @@
 #show regex("[■●•▪○]"): it => text(font: "MS Gothic", fallback: false,
   weight: "regular", style: "normal", stroke: none, it.text)
 #let at(x, y, body) = place(top + left, dx: x * 1pt, dy: y * 1pt, body)
-#let styled(style, body, emphasis: false) = {
+#let styled(style, body, emphasis: false, heading: false) = {
   let s = styles.at(style)
-  let outline = if emphasis {calc.max(s.stroke, s.size / 35)} else {s.stroke}
+  let heading-emphasis = heading and s.font == "MS PGothic" and s.size <= 12 and s.weight == "regular" and s.stroke == 0
+  let outline = if emphasis or heading-emphasis {calc.max(s.stroke, s.size / 35)} else {s.stroke}
   text(font: if emphasis {"MS PGothic"} else {s.font}, size: s.size * 1pt,
     weight: s.weight, style: s.slant, fill: rgb(s.color),
     stroke: if outline > 0 {outline * 1pt + rgb(s.color)} else {none}, body)
 }
-// 比例書体の括弧を全角の字幅で組み、文字が詰まることを防ぐ。
+// 鉤括弧と丸括弧は全角、【】は原本の比例書体の字幅を保つ。
 // 原本座標の一字配置には適用せず、本文の自動組版だけで使用する。
 #let flowing(body) = {
-  show regex("[「」『』【】（）]"): it => context {
+  show regex("[「」『』（）]"): it => context {
     let gothic = repr(text.font).contains("Gothic") or repr(text.font).contains("Meiryo")
     text(font: if gothic {"MS Gothic"} else {"MS Mincho"}, fallback: false,
       features: (halt: 0, palt: 0), it.text)
   }
   body
 }
-#let glyph(x, y, value, style) = at(x, y, text(top-edge: 0pt, bottom-edge: 0pt)[#styled(style, value)])
+// 単字の【を行頭約物として圧縮させず、原本の指定x座標をそのまま保つ。
+#let glyph(x, y, value, style) = at(x, y, text(top-edge: 0pt, bottom-edge: 0pt)[#if value.starts-with("【") {box(width: 0pt, height: 0pt)}#styled(style, value)])
 #let mark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), x: here().position().x / 1pt, y: here().position().y / 1pt))<book-check>]
 // 本文の行送り18ptに対し、段落境界は24ptにする。
 #let paragraph(id, body, indent: 11.04pt, end-id: none) = block(above: 0pt, below: 12.96pt)[

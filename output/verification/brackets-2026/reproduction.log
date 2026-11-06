@@ -1,0 +1,14 @@
+test_brackets_keep_the_source_font_metrics_in_regular_and_emphasized_text (__main__.RemainingReviewTests.test_brackets_keep_the_source_font_metrics_in_regular_and_emphasized_text) ... FAIL
+
+======================================================================
+FAIL: test_brackets_keep_the_source_font_metrics_in_regular_and_emphasized_text (__main__.RemainingReviewTests.test_brackets_keep_the_source_font_metrics_in_regular_and_emphasized_text)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_remaining.py", line 50, in test_brackets_keep_the_source_font_metrics_in_regular_and_emphasized_text
+    self.assertAlmostEqual(char['bbox'][2] - char['bbox'][0], span['size'] / 2, places=2)
+AssertionError: 11.040000915527344 != 5.519999980926514 within 2 places (5.52000093460083 difference)
+
+----------------------------------------------------------------------
+Ran 1 test in 4.531s
+
+FAILED (failures=1)

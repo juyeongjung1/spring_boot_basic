@@ -1,0 +1,126 @@
+{
+  "status": "pass",
+  "count": 6,
+  "headings": [
+    {
+      "chapter": "02",
+      "id": "p037-b01",
+      "page": 7,
+      "text": "【参考】サーブレットの基本",
+      "text_matches": true,
+      "font": [
+        "MS-PGothic"
+      ],
+      "font_size": [
+        12.0
+      ],
+      "outline_widths": [
+        0.34285715222358704
+      ],
+      "source_color": "#000000",
+      "color_preserved": true,
+      "chapter_pdf_sha256": "df2f2d93f2be55d8b990ff546f4f7bfa107384a5cfebb9e78918f56319b68793",
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b03",
+      "page": 9,
+      "text": "➀ <head>要素内に、<meta name=\"viewport\">を記載",
+      "text_matches": true,
+      "font": [
+        "MS-PGothic"
+      ],
+      "font_size": [
+        11.039999961853027
+      ],
+      "outline_widths": [
+        0.31542858481407166
+      ],
+      "source_color": "#0000ff",
+      "color_preserved": true,
+      "chapter_pdf_sha256": "cb4dea009a33fc507766a2f3cbd1588d7e44788e7bb6a42ee8ddac740d1c681c",
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b06",
+      "page": 9,
+      "text": "➁ Bootstrap のcss ファイルの読み込む",
+      "text_matches": true,
+      "font": [
+        "MS-PGothic"
+      ],
+      "font_size": [
+        12.0
+      ],
+      "outline_widths": [
+        0.34285715222358704
+      ],
+      "source_color": "#0000ff",
+      "color_preserved": true,
+      "chapter_pdf_sha256": "cb4dea009a33fc507766a2f3cbd1588d7e44788e7bb6a42ee8ddac740d1c681c",
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b09",
+      "page": 9,
+      "text": "➂ Bootstrap のｊｓファイルを読み込む",
+      "text_matches": true,
+      "font": [
+        "MS-PGothic"
+      ],
+      "font_size": [
+        11.039999961853027
+      ],
+      "outline_widths": [
+        0.31542858481407166
+      ],
+      "source_color": "#0000ff",
+      "color_preserved": true,
+      "chapter_pdf_sha256": "cb4dea009a33fc507766a2f3cbd1588d7e44788e7bb6a42ee8ddac740d1c681c",
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "id": "p247-b03",
+      "page": 11,
+      "text": "① 以下のコードを<head>に記入",
+      "text_matches": true,
+      "font": [
+        "MS-PGothic"
+      ],
+      "font_size": [
+        12.0
+      ],
+      "outline_widths": [
+        0.34285715222358704
+      ],
+      "source_color": "#0000ff",
+      "color_preserved": true,
+      "chapter_pdf_sha256": "cb4dea009a33fc507766a2f3cbd1588d7e44788e7bb6a42ee8ddac740d1c681c",
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "id": "p247-b05",
+      "page": 11,
+      "text": "② 以下のコードを<body>の末尾に記入",
+      "text_matches": true,
+      "font": [
+        "MS-PGothic"
+      ],
+      "font_size": [
+        11.039999961853027
+      ],
+      "outline_widths": [
+        0.31542858481407166
+      ],
+      "source_color": "#0000ff",
+      "color_preserved": true,
+      "chapter_pdf_sha256": "cb4dea009a33fc507766a2f3cbd1588d7e44788e7bb6a42ee8ddac740d1c681c",
+      "pass": true
+    }
+  ]
+}

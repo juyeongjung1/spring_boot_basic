@@ -1,0 +1,14 @@
+test_native_brackets_and_neighboring_characters_keep_the_exact_source_coordinates (__main__.BracketHeadingTests.test_native_brackets_and_neighboring_characters_keep_the_exact_source_coordinates) ... FAIL
+
+======================================================================
+FAIL: test_native_brackets_and_neighboring_characters_keep_the_exact_source_coordinates (__main__.BracketHeadingTests.test_native_brackets_and_neighboring_characters_keep_the_exact_source_coordinates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\work\Spring Boot 入門\tools\textbook\test_bracket_headings.py", line 95, in test_native_brackets_and_neighboring_characters_keep_the_exact_source_coordinates
+    self.assertAlmostEqual(char[2][0], expected_x, places=3)
+AssertionError: 21.510000228881836 != 24 within 3 places (2.489999771118164 difference)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.636s
+
+FAILED (failures=1)

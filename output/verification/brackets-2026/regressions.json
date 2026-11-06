@@ -1,0 +1,47 @@
+[
+  {
+    "suite": "test_pipeline",
+    "tests": 8,
+    "passed": true
+  },
+  {
+    "suite": "test_pagination",
+    "tests": 7,
+    "passed": true
+  },
+  {
+    "suite": "test_symbols",
+    "tests": 2,
+    "passed": true
+  },
+  {
+    "suite": "test_remaining",
+    "tests": 9,
+    "passed": true
+  },
+  {
+    "suite": "test_fidelity",
+    "tests": 10,
+    "passed": true
+  },
+  {
+    "suite": "test_source_layout",
+    "tests": 7,
+    "passed": true
+  },
+  {
+    "suite": "test_html_components",
+    "tests": 10,
+    "passed": true
+  },
+  {
+    "suite": "test_illustrations",
+    "tests": 5,
+    "passed": true
+  },
+  {
+    "suite": "test_bracket_headings",
+    "tests": 4,
+    "passed": true
+  }
+]

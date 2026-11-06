@@ -1,0 +1,338 @@
+{
+  "date": "2026-11-06T10:21:16+09:00",
+  "status": "pass",
+  "changed_files": [
+    "tools/textbook/components.css",
+    "tools/textbook/test_html_components.py"
+  ],
+  "unchanged": "HTML headerの構造・本文コード・本文コード幅・白テーマ・挿絵・表配色・ファイル名文字列",
+  "style": {
+    "font": "Meiryo-Bold (実PDF埋込、flags16)",
+    "font_size_pt": 10.5,
+    "text_color": "#123d68",
+    "background": "#e8f1fb",
+    "border": "0.6pt #adc5dd",
+    "underline": "0.8pt CSS（実PDFは約0.75ptの塗り矩形）",
+    "position": "右上、長pathは右寄せで折返し"
+  },
+  "before_actual_pdf": {
+    "font": "MS-PGothic",
+    "flags": 0,
+    "color": "#202833",
+    "real_bold_requirement": "fail",
+    "underline_requirement": "fail"
+  },
+  "after_actual_pdf_requirement": "pass",
+  "fixture_cards": 8,
+  "fixture_parts": 10,
+  "measurements": [
+    {
+      "id": "short",
+      "before_header_height_pt": 35.51953125,
+      "after_header_height_pt": 35.51953125,
+      "header_height_delta_pt": 0.0,
+      "before_code_width_pt": 391.171875,
+      "after_code_width_pt": 391.171875,
+      "filename_items": [
+        {
+          "text": "…/controller/LoginController3.java",
+          "box": {
+            "x": 209.625,
+            "y": 8.7421875,
+            "width": 206.296875,
+            "height": 18.1875
+          },
+          "family": "Meiryo, sans-serif",
+          "weight": "700",
+          "color": "rgb(18, 61, 104)",
+          "decoration": "underline",
+          "background": "rgb(232, 241, 251)",
+          "scrollWidth": 273,
+          "clientWidth": 273
+        }
+      ]
+    },
+    {
+      "id": "long-japanese",
+      "before_header_height_pt": 46.125,
+      "after_header_height_pt": 49.6171875,
+      "header_height_delta_pt": 3.4921875,
+      "before_code_width_pt": 391.171875,
+      "after_code_width_pt": 391.171875,
+      "filename_items": [
+        {
+          "text": "非常に長いファイル名/授業教材/商品管理画面の入力値を確認する/MessageController.java",
+          "box": {
+            "x": 49.98046875,
+            "y": 8.7421875,
+            "width": 365.94140625,
+            "height": 32.8828125
+          },
+          "family": "Meiryo, sans-serif",
+          "weight": "700",
+          "color": "rgb(18, 61, 104)",
+          "decoration": "underline",
+          "background": "rgb(232, 241, 251)",
+          "scrollWidth": 486,
+          "clientWidth": 486
+        }
+      ]
+    },
+    {
+      "id": "narrow-long",
+      "before_header_height_pt": 60.8203125,
+      "after_header_height_pt": 64.3125,
+      "header_height_delta_pt": 3.4921875,
+      "before_code_width_pt": 204.50390625,
+      "after_code_width_pt": 204.50390625,
+      "filename_items": [
+        {
+          "text": "非常に長いファイル名/授業教材/商品管理画面の入力値を確認する/MessageController.java",
+          "box": {
+            "x": 49.98046875,
+            "y": 8.7421875,
+            "width": 179.2734375,
+            "height": 47.578125
+          },
+          "family": "Meiryo, sans-serif",
+          "weight": "700",
+          "color": "rgb(18, 61, 104)",
+          "decoration": "underline",
+          "background": "rgb(232, 241, 251)",
+          "scrollWidth": 237,
+          "clientWidth": 237
+        }
+      ]
+    },
+    {
+      "id": "properties",
+      "before_header_height_pt": 35.51953125,
+      "after_header_height_pt": 35.51953125,
+      "header_height_delta_pt": 0.0,
+      "before_code_width_pt": 391.171875,
+      "after_code_width_pt": 391.171875,
+      "filename_items": [
+        {
+          "text": "application.properties",
+          "box": {
+            "x": 284.66015625,
+            "y": 8.7421875,
+            "width": 131.26171875,
+            "height": 18.1875
+          },
+          "family": "Meiryo, sans-serif",
+          "weight": "700",
+          "color": "rgb(18, 61, 104)",
+          "decoration": "underline",
+          "background": "rgb(232, 241, 251)",
+          "scrollWidth": 173,
+          "clientWidth": 173
+        }
+      ]
+    },
+    {
+      "id": "pom",
+      "before_header_height_pt": 35.51953125,
+      "after_header_height_pt": 35.51953125,
+      "header_height_delta_pt": 0.0,
+      "before_code_width_pt": 391.171875,
+      "after_code_width_pt": 391.171875,
+      "filename_items": [
+        {
+          "text": "pom.xml",
+          "box": {
+            "x": 357.48046875,
+            "y": 8.7421875,
+            "width": 58.44140625,
+            "height": 18.1875
+          },
+          "family": "Meiryo, sans-serif",
+          "weight": "700",
+          "color": "rgb(18, 61, 104)",
+          "decoration": "underline",
+          "background": "rgb(232, 241, 251)",
+          "scrollWidth": 76,
+          "clientWidth": 76
+        }
+      ]
+    },
+    {
+      "id": "messages",
+      "before_header_height_pt": 35.51953125,
+      "after_header_height_pt": 35.51953125,
+      "header_height_delta_pt": 0.0,
+      "before_code_width_pt": 375.17578125,
+      "after_code_width_pt": 375.17578125,
+      "filename_items": [
+        {
+          "text": "/resources/messages.properties",
+          "box": {
+            "x": 208.32421875,
+            "y": 8.7421875,
+            "width": 191.6015625,
+            "height": 18.1875
+          },
+          "family": "Meiryo, sans-serif",
+          "weight": "700",
+          "color": "rgb(18, 61, 104)",
+          "decoration": "underline",
+          "background": "rgb(232, 241, 251)",
+          "scrollWidth": 253,
+          "clientWidth": 253
+        }
+      ]
+    },
+    {
+      "id": "no-filename",
+      "before_header_height_pt": 35.51953125,
+      "after_header_height_pt": 35.51953125,
+      "header_height_delta_pt": 0.0,
+      "before_code_width_pt": 391.171875,
+      "after_code_width_pt": 391.171875,
+      "filename_items": []
+    },
+    {
+      "id": "continued",
+      "before_header_height_pt": 35.51953125,
+      "after_header_height_pt": 35.51953125,
+      "header_height_delta_pt": 0.0,
+      "before_code_width_pt": 391.171875,
+      "after_code_width_pt": 391.171875,
+      "filename_items": [
+        {
+          "text": "長いコードの例/LongCode.java",
+          "box": {
+            "x": 244.6640625,
+            "y": 8.7421875,
+            "width": 171.2578125,
+            "height": 18.1875
+          },
+          "family": "Meiryo, sans-serif",
+          "weight": "700",
+          "color": "rgb(18, 61, 104)",
+          "decoration": "underline",
+          "background": "rgb(232, 241, 251)",
+          "scrollWidth": 226,
+          "clientWidth": 226
+        }
+      ]
+    }
+  ],
+  "pdf_checks": [
+    {
+      "id": "short",
+      "part": 1,
+      "pdf": "tmp/filename-emphasis/pdf/0001-short-1.pdf",
+      "height_pt": 80.778,
+      "real_bold_font": true,
+      "filename_text": "…/controller/LoginController3.java",
+      "underline_rects": 1
+    },
+    {
+      "id": "long-japanese",
+      "part": 1,
+      "pdf": "tmp/filename-emphasis/pdf/0002-long-japanese-1.pdf",
+      "height_pt": 94.875,
+      "real_bold_font": true,
+      "filename_text": "非常に長いファイル名/授業教材/商品管理画面の入力値を確認す\nる/MessageController.java",
+      "underline_rects": 2
+    },
+    {
+      "id": "narrow-long",
+      "part": 1,
+      "pdf": "tmp/filename-emphasis/pdf/0003-narrow-long-1.pdf",
+      "height_pt": 125.075,
+      "real_bold_font": true,
+      "filename_text": "非常に長いファイル名/授業教材/\n商品管理画面の入力値を確認す\nる/MessageController.java",
+      "underline_rects": 3
+    },
+    {
+      "id": "properties",
+      "part": 1,
+      "pdf": "tmp/filename-emphasis/pdf/0004-properties-1.pdf",
+      "height_pt": 80.778,
+      "real_bold_font": true,
+      "filename_text": "application.properties",
+      "underline_rects": 1
+    },
+    {
+      "id": "pom",
+      "part": 1,
+      "pdf": "tmp/filename-emphasis/pdf/0005-pom-1.pdf",
+      "height_pt": 80.778,
+      "real_bold_font": true,
+      "filename_text": "pom.xml",
+      "underline_rects": 1
+    },
+    {
+      "id": "messages",
+      "part": 1,
+      "pdf": "tmp/filename-emphasis/pdf/0006-messages-1.pdf",
+      "height_pt": 80.778,
+      "real_bold_font": true,
+      "filename_text": "/resources/messages.properties",
+      "underline_rects": 1
+    },
+    {
+      "id": "no-filename",
+      "part": 1,
+      "pdf": "tmp/filename-emphasis/pdf/0007-no-filename-1.pdf",
+      "height_pt": 80.778,
+      "real_bold_font": null,
+      "filename_text": "",
+      "underline_rects": 0
+    },
+    {
+      "id": "continued",
+      "part": 1,
+      "pdf": "tmp/filename-emphasis/pdf/0008-continued-1.pdf",
+      "height_pt": 607.911,
+      "real_bold_font": true,
+      "filename_text": "長いコードの例/LongCode.java",
+      "underline_rects": 1
+    },
+    {
+      "id": "continued",
+      "part": 2,
+      "pdf": "tmp/filename-emphasis/pdf/0008-continued-2.pdf",
+      "height_pt": 607.911,
+      "real_bold_font": true,
+      "filename_text": "長いコードの例/LongCode.java",
+      "underline_rects": 1
+    },
+    {
+      "id": "continued",
+      "part": 3,
+      "pdf": "tmp/filename-emphasis/pdf/0008-continued-3.pdf",
+      "height_pt": 173.801,
+      "real_bold_font": true,
+      "filename_text": "長いコードの例/LongCode.java",
+      "underline_rects": 1
+    }
+  ],
+  "unit_tests": {
+    "command": "python tools/textbook/test_html_components.py",
+    "tests": 10,
+    "result": "OK",
+    "seconds": 39.183,
+    "coverage": "実太字font/underline、長日本語path、続き全part、DOM/PDF文字一致、緑comment、元表配色、全46解説と元5filename画像ID保持"
+  },
+  "visual_review": {
+    "comparison_pngs": [
+      "comparison-1.png",
+      "comparison-2.png"
+    ],
+    "pdf_pngs": [
+      "pdf-short-1.png",
+      "pdf-narrow-long-1.png",
+      "header-continued.png"
+    ],
+    "monochrome_pngs": [
+      "header-short-monochrome.png",
+      "header-narrow-long-monochrome.png"
+    ],
+    "status": "全件可読・欠け/重なりなし。モノクロでも太字と下線で識別可能。"
+  },
+  "css_sha256": "59dc523340ea1d281741d4dcce547b6e3f0a658499354db14c875d891a86b299",
+  "next": "全章一括再生成と合冊はroot担当。CSS確定以降の変更なし。"
+}

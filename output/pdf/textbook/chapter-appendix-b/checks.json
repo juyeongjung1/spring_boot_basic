@@ -205,42 +205,42 @@
         "edge": "start",
         "page": 2,
         "x": 85.104,
-        "y": 468.769296875
+        "y": 468.50878906250006
       },
       {
         "id": "revision-errors-console",
         "edge": "end",
         "page": 2,
         "x": 85.104,
-        "y": 515.8092968750001
+        "y": 515.5487890625001
       },
       {
         "id": "revision-errors-name",
         "edge": "start",
         "page": 2,
         "x": 85.104,
-        "y": 528.7692968750001
+        "y": 528.5087890625
       },
       {
         "id": "revision-errors-name",
         "edge": "end",
         "page": 2,
         "x": 85.104,
-        "y": 653.8092968750001
+        "y": 653.5487890625
       },
       {
         "id": "revision-errors-trace-intro",
         "edge": "start",
         "page": 2,
         "x": 85.104,
-        "y": 666.769296875
+        "y": 666.5087890625
       },
       {
         "id": "revision-errors-trace-intro",
         "edge": "end",
         "page": 2,
         "x": 85.104,
-        "y": 677.809296875
+        "y": 677.5487890625
       },
       {
         "id": "appendix-b-revision-errors-trace-part1",

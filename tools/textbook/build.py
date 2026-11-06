@@ -215,7 +215,7 @@ def typographic_parts(parts):
     return result
 
 
-def inline(parts, typography=True):
+def inline(parts, typography=True, heading=False):
     result = []
     if typography:
         parts = typographic_parts(parts)
@@ -228,7 +228,8 @@ def inline(parts, typography=True):
         fields = (style or "").split(":")
         value=plain_symbols(value)
         emphasis = ', emphasis: true' if 'strong' in fields[:-1] else ''
-        content = f'#styled({q(fields[-1])}, {q(value)}{emphasis})' if fields[-1] else f'#text({q(value)})'
+        heading_option = ', heading: true' if heading else ''
+        content = f'#styled({q(fields[-1])}, {q(value)}{emphasis}{heading_option})' if fields[-1] else f'#text({q(value)})'
         for modifier in reversed(fields[:-1]):
             if modifier.startswith('link%'):
                 content = f'#link({q(unquote(modifier[5:]))})[{content}]'
@@ -576,7 +577,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if method is None:
             raise ValueError(f'未対応のブロック種類: {node["kind"]}')
         options = ', above: 0pt' if method == 'section-heading' and ident in slide_body_first else ''
-        return f'#{method}({q(ident)}, [{inline(node["parts"])}]{options})'
+        # 見出しに分類された説明文の続き（句点終わり）は、原本の通常書体を保つ。
+        heading = node['kind'] == 'heading' and not node['text'].rstrip().endswith('。')
+        return f'#{method}({q(ident)}, [{inline(node["parts"], heading=heading)}]{options})'
 
     entries = []
     for page in order[1:] if has_cover else order:

@@ -1,0 +1,32 @@
+[
+  {
+    "chapter": "02",
+    "opening": 2,
+    "closing": 2
+  },
+  {
+    "chapter": "03",
+    "opening": 2,
+    "closing": 2
+  },
+  {
+    "chapter": "04",
+    "opening": 2,
+    "closing": 2
+  },
+  {
+    "chapter": "06",
+    "opening": 1,
+    "closing": 1
+  },
+  {
+    "chapter": "ex-front",
+    "opening": 10,
+    "closing": 10
+  },
+  {
+    "chapter": "front",
+    "opening": 7,
+    "closing": 7
+  }
+]

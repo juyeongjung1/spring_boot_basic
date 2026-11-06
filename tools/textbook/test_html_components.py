@@ -161,6 +161,9 @@ class BrowserComponentTests(unittest.TestCase):
         cls.cards = [{'id': ident, 'width': 426.672, 'html': html} for ident, html in (
             ('short-code', short), ('long-code', long_code), ('long-table', table),
             ('original-table', original_table), ('explanation', explanation))]
+        wrapped = components.code_html([{'number': 1, 'code': '// 折り返し確認', 'ids': ['wrapped-code-source']}],
+            'java', [('非常に長いファイル名/授業教材/商品管理画面の入力値を確認する/MessageController.java', ['wrapped-filename-source'])])
+        cls.cards.append({'id': 'wrapped-code', 'width': 240, 'html': wrapped})
         request = cls.work / 'request.json'
         request.write_text(json.dumps({'output_dir': str(cls.work / 'render'), 'cards': cls.cards}, ensure_ascii=False), encoding='utf-8')
         cls.env = dict(os.environ)
@@ -238,6 +241,30 @@ class BrowserComponentTests(unittest.TestCase):
         self.assertTrue(all(int(weight) >= 700 for weight in applied['filenames']))
         self.assertTrue(applied['originalEmphasis'])
         self.assertTrue(applied['summaries'] and all(int(weight) >= 700 for weight in applied['summaries']))
+
+    def test_filenames_embed_real_bold_font_and_keep_underlines_when_wrapped_or_continued(self):
+        filenames = {
+            'short-code': '非常に長いファイル名/MessageController.java',
+            'wrapped-code': '非常に長いファイル名/授業教材/商品管理画面の入力値を確認する/MessageController.java',
+            'long-code': 'LongCode.java',
+        }
+        for ident, filename in filenames.items():
+            for part in self.results[ident]:
+                with self.subTest(card=ident, pdf=part['pdf']), fitz.open(part['pdf']) as pdf:
+                    page = pdf[0]
+                    spans = [s for b in page.get_text('dict')['blocks'] for line in b.get('lines', [])
+                             for s in line['spans'] if s['color'] == 0x123d68]
+                    self.assertEqual(components.normalized(''.join(s['text'] for s in spans)),
+                                     components.normalized(filename))
+                    self.assertTrue(all(s['flags'] & 16 and s['font'] == 'Meiryo-Bold' for s in spans))
+                    self.assertTrue(all(0 <= s['bbox'][0] < s['bbox'][2] <= part['width'] for s in spans))
+                    underlines = [drawing for drawing in page.get_drawings()
+                                  if drawing.get('fill') and all(abs(a-b) < .005 for a, b in
+                                      zip(drawing['fill'], (18/255, 61/255, 104/255)))
+                                  and .5 <= drawing['rect'].height <= 1 and drawing['rect'].width > 10]
+                    self.assertGreaterEqual(len(underlines), len(spans))
+                    if ident == 'wrapped-code':
+                        self.assertGreater(len(spans), 1)
 
     def test_oversized_rows_and_overflowing_cells_fail_with_card_and_original_id(self):
         html = components.code_html([{'number': 1, 'code': '// 行\n' * 50, 'ids': ['oversized-source']}], 'java', [])

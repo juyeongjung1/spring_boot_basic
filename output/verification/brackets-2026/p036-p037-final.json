@@ -1,0 +1,212 @@
+{
+  "status": "pass",
+  "comparisons": [
+    {
+      "id": "p036-b02",
+      "source_page": 36,
+      "readings": [
+        {
+          "variant": "original",
+          "page_index": 35,
+          "bracket_characters": [
+            {
+              "char": "【",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                96.14399719238281,
+                446.1099853515625
+              ]
+            },
+            {
+              "char": "参",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                102.25199890136719,
+                446.1099853515625
+              ]
+            },
+            {
+              "char": "考",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                114.25199890136719,
+                446.1099853515625
+              ]
+            },
+            {
+              "char": "】",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                126.36000061035156,
+                446.1099853515625
+              ]
+            }
+          ],
+          "opening_advance_pt": 6.108001708984375,
+          "outline_widths_pt": [
+            0.34286001324653625
+          ]
+        },
+        {
+          "variant": "revised",
+          "page_index": 5,
+          "bracket_characters": [
+            {
+              "char": "【",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                82.10399627685547,
+                446.1144714355469
+              ]
+            },
+            {
+              "char": "参",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                88.10399627685547,
+                446.1144714355469
+              ]
+            },
+            {
+              "char": "考",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                100.10399627685547,
+                446.1144714355469
+              ]
+            },
+            {
+              "char": "】",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                112.10399627685547,
+                446.1144714355469
+              ]
+            }
+          ],
+          "opening_advance_pt": 6.0,
+          "outline_widths_pt": [
+            0.34286001324653625
+          ]
+        }
+      ],
+      "image": "tmp\\brackets-2026\\p036-heading-comparison-final.png"
+    },
+    {
+      "id": "p037-b01",
+      "source_page": 37,
+      "readings": [
+        {
+          "variant": "original",
+          "page_index": 36,
+          "bracket_characters": [
+            {
+              "char": "【",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                96.14399719238281,
+                98.41998291015625
+              ]
+            },
+            {
+              "char": "参",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                102.14399719238281,
+                98.41998291015625
+              ]
+            },
+            {
+              "char": "考",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                114.14399719238281,
+                98.41998291015625
+              ]
+            },
+            {
+              "char": "】",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                126.14399719238281,
+                98.41998291015625
+              ]
+            }
+          ],
+          "opening_advance_pt": 6.0,
+          "outline_widths_pt": []
+        },
+        {
+          "variant": "revised",
+          "page_index": 6,
+          "bracket_characters": [
+            {
+              "char": "【",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                82.10399627685547,
+                96.3125
+              ]
+            },
+            {
+              "char": "参",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                88.10399627685547,
+                96.3125
+              ]
+            },
+            {
+              "char": "考",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                100.10399627685547,
+                96.3125
+              ]
+            },
+            {
+              "char": "】",
+              "font": "MS-PGothic",
+              "size": 12.0,
+              "origin": [
+                112.10399627685547,
+                96.3125
+              ]
+            }
+          ],
+          "opening_advance_pt": 6.0,
+          "outline_widths_pt": [
+            0.34285715222358704
+          ]
+        }
+      ],
+      "image": "tmp\\brackets-2026\\p037-heading-comparison-final.png"
+    }
+  ],
+  "chapter_pdf_sha256": "df2f2d93f2be55d8b990ff546f4f7bfa107384a5cfebb9e78918f56319b68793",
+  "checks": {
+    "pages": 40,
+    "native_text_complete": true,
+    "heading_orphans": [],
+    "split_figures": [],
+    "split_short_code": [],
+    "split_short_tables": [],
+    "split_instructions": [],
+    "overflow": []
+  }
+}

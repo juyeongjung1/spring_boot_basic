@@ -1,0 +1,106 @@
+[
+  {
+    "chapter": "02",
+    "source_id": "p051-b04",
+    "kind": "code",
+    "original_font": [
+      "MS-Gothic"
+    ],
+    "current_font": [
+      "MS-Gothic"
+    ],
+    "source_size": 12.0,
+    "current_size": 10.50614070892334,
+    "advance_delta_pt": -1.5,
+    "before_this_task_advance_pt": 10.5,
+    "after_before_delta_pt": 0.0,
+    "classification": "承認済みHTMLコード12→10.5pt"
+  },
+  {
+    "chapter": "02",
+    "source_id": "p056-b04",
+    "kind": "code",
+    "original_font": [
+      "MS-Gothic"
+    ],
+    "current_font": [
+      "MS-Gothic"
+    ],
+    "source_size": 12.0,
+    "current_size": 10.5,
+    "advance_delta_pt": -1.5,
+    "before_this_task_advance_pt": 10.5,
+    "after_before_delta_pt": 0.0,
+    "classification": "承認済みHTMLコード12→10.5pt"
+  },
+  {
+    "chapter": "03",
+    "source_id": "p129-b03",
+    "kind": "本文",
+    "original_font": [
+      "MS-PMincho"
+    ],
+    "current_font": [
+      "MS-PGothic"
+    ],
+    "source_size": 11.039999961853027,
+    "current_size": 10.50351619720459,
+    "advance_delta_pt": 0.5747528076171875,
+    "before_this_task_advance_pt": 6.0,
+    "after_before_delta_pt": 0.0,
+    "classification": "承認済みHTML構文解説の意味欄Mincho11.04→Gothic10.5pt",
+    "note": "先頭文の太字強調とセル幅による表示改行。文字自体は不変、今回修正前も【→依6ptで同一。"
+  },
+  {
+    "chapter": "05",
+    "source_id": "p184-b05",
+    "kind": "本文",
+    "original_font": [
+      "MS-PMincho"
+    ],
+    "current_font": [
+      "MS-PGothic"
+    ],
+    "source_size": 11.039999961853027,
+    "current_size": 10.502204895019531,
+    "advance_delta_pt": -0.2700042724609375,
+    "before_this_task_advance_pt": 5.25,
+    "after_before_delta_pt": 0.0,
+    "classification": "承認済みHTML構文解説の意味欄Mincho11.04→Gothic10.5pt",
+    "note": "意味欄の通常文。10.5pt比例fontの【→参5.25ptで、今回修正前と同一。"
+  },
+  {
+    "chapter": "06",
+    "source_id": "p232-b03",
+    "kind": "code",
+    "original_font": [
+      "MS-Gothic"
+    ],
+    "current_font": [
+      "MS-Gothic"
+    ],
+    "source_size": 12.0,
+    "current_size": 10.506298065185547,
+    "advance_delta_pt": -1.5,
+    "before_this_task_advance_pt": 10.5,
+    "after_before_delta_pt": 0.0,
+    "classification": "承認済みHTMLコード12→10.5pt"
+  },
+  {
+    "chapter": "06",
+    "source_id": "p232-b04",
+    "kind": "code",
+    "original_font": [
+      "MS-Gothic"
+    ],
+    "current_font": [
+      "MS-Gothic"
+    ],
+    "source_size": 12.0,
+    "current_size": 10.506298065185547,
+    "advance_delta_pt": -1.5,
+    "before_this_task_advance_pt": 10.5,
+    "after_before_delta_pt": 0.0,
+    "classification": "承認済みHTMLコード12→10.5pt"
+  }
+]

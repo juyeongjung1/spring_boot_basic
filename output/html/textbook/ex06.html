@@ -50,12 +50,30 @@ html, body {
 }
 
 .card-header .filename {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 2pt;
   flex: 1 1 0;
   min-width: 0;
   text-align: right;
+  color: #123d68;
+  font-family: "Meiryo", sans-serif;
   font-size: 10.5pt;
   font-weight: 700;
   overflow-wrap: anywhere;
+}
+
+.card-header .file-item {
+  min-width: 0;
+  max-width: 100%;
+  padding: 1pt 4pt;
+  border: 0.6pt solid #adc5dd;
+  border-radius: 3pt;
+  background: #e8f1fb;
+  text-decoration: underline;
+  text-decoration-thickness: 0.8pt;
+  text-underline-offset: 1.5pt;
 }
 
 .card-header .continuation {

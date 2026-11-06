@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-06",
+  "base_commit": "530b12756c6cb323beb964d557ff9f306dc75c3c",
+  "audit": {
+    "passed": true,
+    "chapters": 19,
+    "original_pages": 373,
+    "mapped_source_pages": 373,
+    "physical_pages": 431,
+    "blank_pages": 17,
+    "original_ids": 2853,
+    "base_ids": 2897,
+    "authorized_added_ids": 0,
+    "current_ids": 2897,
+    "explanation_cards": 46,
+    "explanation_rows": 84,
+    "header_checks": 431,
+    "uri_links": 89,
+    "login3_real_links": 1,
+    "problems": 0,
+    "problem_counts": {},
+    "ppt_slides": 65,
+    "native_bracket_pairs": 24,
+    "bracket_pairs": 215,
+    "filename_items": 114,
+    "verified_illustrations": 10,
+    "source_unchanged": true
+  },
+  "tests": 62,
+  "artifacts": [
+    {
+      "path": "output/pdf/textbook/textbook/flow.pdf",
+      "bytes": 55457544,
+      "sha256": "e59623eefe51d8785aa573261a6ea9d3db3ca4aac2f0ae34160175385c0dacf2"
+    },
+    {
+      "path": "output/pdf/textbook/exercise/flow.pdf",
+      "bytes": 6856010,
+      "sha256": "ee833a175c2c711bba65823b1caa07a38c4de0c52a69731abe5f624487c0abb7"
+    }
+  ]
+}

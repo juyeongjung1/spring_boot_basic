@@ -1,0 +1,7154 @@
+{
+  "regular_headings": [
+    {
+      "chapter": "01",
+      "id": "p015-b04",
+      "text": "◼ フレームワークとSpring Framework について理解する",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "01",
+      "id": "p015-b05",
+      "text": "◼ Spring Boot の基本概念と特徴を把握する",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "01",
+      "id": "p015-b06",
+      "text": "◼ Maven を用いてライブラリのインストールができる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p031-b04",
+      "text": "◼ Web アプリケーションの基本的な流れを理解できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p031-b05",
+      "text": "◼ Controller を作成し、利用できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p031-b06",
+      "text": "◼ View からController へのリクエストパラメータを取得できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p031-b07",
+      "text": "◼ Form クラスを使用してリクエストパラメータを取得できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p031-b08",
+      "text": "◼ Model を通じてController からView にデータを表示できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p037-b01",
+      "text": "【参考】サーブレットの基本",
+      "parts": [
+        {
+          "text": "【参考】サーブレットの基本",
+          "style": "s014",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p063-b04",
+      "text": "◼ Spring Data JPA の基本概念を理解できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p063-b05",
+      "text": "◼ エンティティとリポジトリを実装できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p063-b06",
+      "text": "◼ 全件検索・条件検索ができる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p063-b07",
+      "text": "◼ 登録・更新・削除ができる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p133-b04",
+      "text": "◼ ID とパスワードによる認証処理を実装できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p133-b05",
+      "text": "◼ セッションへのデータ保持と、活用方法について理解できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p133-b06",
+      "text": "◼ 入力チェックとエラーハンドリングを理解し、実装できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p164-b04",
+      "text": "◼ Thymeleaf の基本構文について理解できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p164-b05",
+      "text": "◼ Thymeleaf からCSS やJavaScript を活用できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p164-b06",
+      "text": "◼ レイアウト機能について理解できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p183-b01",
+      "text": "【作業手順①】 レイアウトファイルの作成",
+      "parts": [
+        {
+          "text": "【",
+          "style": "s009",
+          "font": "MS-PMincho",
+          "size": 11.04,
+          "color": "#000000",
+          "flags": 4,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p192-b04",
+      "text": "◼ 外部参照を持つエンティティを利用し、データベース間のリレーション",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p192-b06",
+      "text": "◼ Spring Data JPA を用いた外部参照付きの検索や登録を実装で",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p192-b08",
+      "text": "◼ 複雑なSQL クエリを実行し、実践的なデータ操作ができる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p238-b04",
+      "text": "◼ Bootstrap の特徴と導入方法を習得する",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p238-b05",
+      "text": "◼ Bootstrap でよく使うスタイルについて実装できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p238-b06",
+      "text": "◼ Bootstrap でテーブルのカスタマイズができる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p238-b07",
+      "text": "◼ グリッドシステムとレスポンシブデザインについて理解できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p238-b08",
+      "text": "◼ Bootstrap でフォームを実装できる",
+      "parts": [
+        {
+          "text": "◼ ",
+          "style": "s003",
+          "font": "Wingdings-Regular",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b03",
+      "text": "➀ <head>要素内に、<meta name=\"viewport\">を記載",
+      "parts": [
+        {
+          "text": "➀",
+          "style": "s021",
+          "font": "MS-PGothic",
+          "size": 11.04,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "<head>要素内に、<meta",
+          "style": "s021",
+          "font": "MS-PGothic",
+          "size": 11.04,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "name=\"viewport\">を記載",
+          "style": "s021",
+          "font": "MS-PGothic",
+          "size": 11.04,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b06",
+      "text": "➁ Bootstrap のcss ファイルの読み込む",
+      "parts": [
+        {
+          "text": "➁",
+          "style": "s022",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "Bootstrap",
+          "style": "s022",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "のcss",
+          "style": "s022",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "ファイルの読み込む",
+          "style": "s022",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p246-b09",
+      "text": "➂ Bootstrap のｊｓファイルを読み込む",
+      "parts": [
+        {
+          "text": "➂",
+          "style": "s021",
+          "font": "MS-PGothic",
+          "size": 11.04,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "Bootstrap",
+          "style": "s021",
+          "font": "MS-PGothic",
+          "size": 11.04,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "のｊｓファイルを読み込む",
+          "style": "s021",
+          "font": "MS-PGothic",
+          "size": 11.04,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p247-b03",
+      "text": "① 以下のコードを<head>に記入",
+      "parts": [
+        {
+          "text": "①",
+          "style": "s022",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "以下のコードを<head>に記入",
+          "style": "s022",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p247-b05",
+      "text": "② 以下のコードを<body>の末尾に記入",
+      "parts": [
+        {
+          "text": "②",
+          "style": "s021",
+          "font": "MS-PGothic",
+          "size": 11.04,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "以下のコードを<body>の末尾に記入",
+          "style": "s021",
+          "font": "MS-PGothic",
+          "size": 11.04,
+          "color": "#0000ff",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p283-b01",
+      "text": "Import 手順",
+      "parts": [
+        {
+          "text": " 手順",
+          "style": "s007",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p284-b04",
+      "text": "enshu_answer : 演習ガイド解答",
+      "parts": [
+        {
+          "text": "enshu_answer",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": ":",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "演習ガイド解答",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p284-b05",
+      "text": "enshu_exercise : 演習ガイド問題",
+      "parts": [
+        {
+          "text": "enshu_exercise",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": ":",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "演習ガイド問題",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p284-b06",
+      "text": "spring_answer : テキスト内のサンプル",
+      "parts": [
+        {
+          "text": "spring_answer",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": ":",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "テキスト内のサンプル",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-a",
+      "id": "p284-b07",
+      "text": "spring_exercise : テキスト内の穴埋め問題",
+      "parts": [
+        {
+          "text": "spring_exercise",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": ":",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "テキスト内の穴埋め問題",
+          "style": "s010",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p291-b01",
+      "text": "404 エラーが出る場合：",
+      "parts": [
+        {
+          "text": " エラーが出る場合：",
+          "style": "s006",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p291-b09",
+      "text": "500 Thymeleaf エラー",
+      "parts": [
+        {
+          "text": " エラー",
+          "style": "s006",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "p292-b02",
+      "text": "8080 ポート衝突エラー",
+      "parts": [
+        {
+          "text": " ポート衝突エラー",
+          "style": "s006",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "id": "p010-b01",
+      "text": "演習1.3. Spring Boot とは",
+      "parts": [
+        {
+          "text": " とは",
+          "style": "s014",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex01",
+      "id": "p010-b04",
+      "text": "演習1.4. Maven でライブラリ管理",
+      "parts": [
+        {
+          "text": " でライブラリ管理",
+          "style": "s014",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p014-b01",
+      "text": "演習2.2. BMI 計算用のメソッド作成",
+      "parts": [
+        {
+          "text": " 計算用のメソッド作成",
+          "style": "s016",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-b01",
+      "text": "演習2.3. 計算済みの BMI 数値を結果ページへ表示",
+      "parts": [
+        {
+          "text": " 数値を結果ページへ表示",
+          "style": "s016",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p016-b01",
+      "text": "演習2.4. 【オプション】 Form クラスを利用",
+      "parts": [
+        {
+          "text": " クラスを利用",
+          "style": "s016",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p020-b01",
+      "text": "演習3.1. Entity と Repository の定義",
+      "parts": [
+        {
+          "text": " と ",
+          "style": "s020",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": " の定義",
+          "style": "s020",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p028-b07",
+      "text": "演習3.8. 【オプション】Service クラスの利用",
+      "parts": [
+        {
+          "text": " クラスの利用",
+          "style": "s020",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-b01",
+      "text": "演習4.1. ID とパスワードからのログイン機能の実装",
+      "parts": [
+        {
+          "text": " とパスワードからのログイン機能の実装",
+          "style": "s014",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "id": "p039-b01",
+      "text": "演習5.1. CSS と JavaScript の適用",
+      "parts": [
+        {
+          "text": " と ",
+          "style": "s014",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": " の適用",
+          "style": "s014",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p060-b01",
+      "text": "演習6.6. JPQL を使った検索(給与+勤務地)",
+      "parts": [
+        {
+          "text": " を使った検索",
+          "style": "s025",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p065-b01",
+      "text": "• グリッドシステムを活用し、メニューとメインコンテンツを左右に分け",
+      "parts": [
+        {
+          "text": "• ",
+          "style": "s010",
+          "font": "SymbolMT",
+          "size": 9.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "グリッドシステムを活用し、メニューとメインコンテンツを左右に分け",
+          "style": "s009",
+          "font": "MS-PMincho",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 4,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p065-b02",
+      "text": "て表示",
+      "parts": [
+        {
+          "text": "て表示",
+          "style": "s009",
+          "font": "MS-PMincho",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 4,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p065-b03",
+      "text": "• 共通レイアウト（layout.html）を作成し、ヘッダーやサイドバーをすべ",
+      "parts": [
+        {
+          "text": "• ",
+          "style": "s010",
+          "font": "SymbolMT",
+          "size": 9.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "共通レイアウト（layout.html）を作成し、ヘッダーやサイドバーをすべ",
+          "style": "s009",
+          "font": "MS-PMincho",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 4,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p065-b04",
+      "text": "ての画面で共通化",
+      "parts": [
+        {
+          "text": "ての画面で共通化",
+          "style": "s009",
+          "font": "MS-PMincho",
+          "size": 14.04,
+          "color": "#000000",
+          "flags": 4,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p067-b01",
+      "text": "演習7.1. Bootstrap 導入前後の変化を確認",
+      "parts": [
+        {
+          "text": " 導入前後の変化を確認",
+          "style": "s017",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p067-b03",
+      "text": "がどう変わるかを体感しましょう。",
+      "parts": [
+        {
+          "text": "がどう変わるかを体感しましょう。",
+          "style": "s019",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p068-b01",
+      "text": "演習7.2. Bootstrap の基本スタイルの適用",
+      "parts": [
+        {
+          "text": " の基本スタイルの適用",
+          "style": "s017",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p068-b02",
+      "text": "■ ブラウザから、「localhost:8080/2」を開いて、修正していく演習です",
+      "parts": [
+        {
+          "text": "■ ",
+          "style": "s019",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p068-b03",
+      "text": "■ index2.html に Bootstrap のクラスを適用して、画面全体の見た目を整えてくだ",
+      "parts": [
+        {
+          "text": "■ ",
+          "style": "s019",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p068-b06",
+      "text": "■ 適用されたことが確認できたら、テキストを参照し、class を変え、変化を確認して",
+      "parts": [
+        {
+          "text": "■ ",
+          "style": "s019",
+          "font": "MS-PGothic",
+          "size": 12.0,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p070-b01",
+      "text": "演習7.3. Bootstrap のテーブルデザインの適用",
+      "parts": [
+        {
+          "text": " のテーブルデザインの適用",
+          "style": "s017",
+          "font": "MS-PGothic",
+          "size": 15.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p003-b09",
+      "text": "【参考】既存の全件検索方法 .................................................................................................. 82",
+      "parts": [
+        {
+          "text": "【参考】既存の全件検索方法",
+          "style": "s013",
+          "font": "MS-PGothic",
+          "size": 9.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": " ..................................................................................................",
+          "style": "s012",
+          "font": "ArialMT",
+          "size": 9.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        },
+        {
+          "text": "82",
+          "style": "s012",
+          "font": "ArialMT",
+          "size": 9.96,
+          "color": "#000000",
+          "flags": 0,
+          "stroke": 0
+        }
+      ]
+    }
+  ],
+  "bracket_blocks": [
+    {
+      "chapter": "01",
+      "id": "p024-b05",
+      "kind": "heading",
+      "text": "【参考】従来のライブラリ導入方法",
+      "parts": [
+        [
+          "【参考】従来のライブラリ導入方法",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p036-b01",
+      "kind": "heading",
+      "text": "2.1.1. 【参考】サーブレットについて",
+      "parts": [
+        [
+          "2.1.1. ",
+          "s004"
+        ],
+        [
+          "【参考】サーブレットについて",
+          "s004"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p036-b02",
+      "kind": "heading",
+      "text": "【参考】サーブレットについて",
+      "parts": [
+        [
+          "【参考】サーブレットについて",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p037-b01",
+      "kind": "heading",
+      "text": "【参考】サーブレットの基本",
+      "parts": [
+        [
+          "【参考】サーブレットの基本",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p038-b01",
+      "kind": "heading",
+      "text": "2.1.2. 【参考】MVC パターンとSpring アプリケーションの流れ",
+      "parts": [
+        [
+          "2.1.2. ",
+          "s004"
+        ],
+        [
+          "【参考】MVC",
+          "s004"
+        ],
+        [
+          " ",
+          "s004"
+        ],
+        [
+          "パターンとSpring",
+          "s004"
+        ],
+        [
+          " ",
+          "s004"
+        ],
+        [
+          "アプリケーションの流れ",
+          "s004"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p039-b02",
+      "kind": "heading",
+      "text": "【参考】controller パッケージの作成",
+      "parts": [
+        [
+          "【参考】controller",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "パッケージの作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p040-b01",
+      "kind": "heading",
+      "text": "【参考】Controller クラス作成",
+      "parts": [
+        [
+          "【参考】Controller",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "クラス作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p041-b02",
+      "kind": "heading",
+      "text": "【作業手順①】 Controller クラスの作成",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "Controller",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "クラスの作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p043-b01",
+      "kind": "heading",
+      "text": "【参考】 サーブレットでURL を対応させるコード",
+      "parts": [
+        [
+          "【参考】",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "サーブレットでURL",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "を対応させるコード",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p043-b08",
+      "kind": "heading",
+      "text": "【参考】 サーブレットでindex.jsp を表示するためには",
+      "parts": [
+        [
+          "【参考】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "サーブレットでindex.jsp",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "を表示するためには",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p044-b03",
+      "kind": "heading",
+      "text": "【作業手順②】ビューの作成と構成",
+      "parts": [
+        [
+          "【作業手順②】ビューの作成と構成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p045-b01",
+      "kind": "heading",
+      "text": "【作業手順③】Spring Boot アプリケーションの実行",
+      "parts": [
+        [
+          "【作業手順③】Spring",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "Boot",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "アプリケーションの実行",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p046-b01",
+      "kind": "heading",
+      "text": "【参考】 application.properties ファイルについて",
+      "parts": [
+        [
+          "【参考】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "application.properties",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "ファイルについて",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p048-b01",
+      "kind": "heading",
+      "text": "【作業手順①】ログイン画面を表示するメソッドの作成",
+      "parts": [
+        [
+          "【作業手順①】ログイン画面を表示するメソッドの作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p049-b02",
+      "kind": "heading",
+      "text": "【作業手順②】入力フォームがあるHTML の作成",
+      "parts": [
+        [
+          "【作業手順②】入力フォームがあるHTML",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "の作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p051-b01",
+      "kind": "heading",
+      "text": "【作業手順③】ログインデータの受信と処理",
+      "parts": [
+        [
+          "【作業手順③】ログインデータの受信と処理",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p051-b04",
+      "kind": "code",
+      "text": " 1://【省略】\n 2:\n 3:@GetMapping(\"/login\")\n 4:public String showLoginView() {\n 5: return \"login_input\";\n 6:}\n 7:\n 8://同じ「login」というURL でも、\n 9://Get かPost かによって、異なるメソッドが実行されます\n10:@PostMapping(\"/login\")\n11:public String doLogin(int id, String password) {\n12: //仮引数を記載するだけで、自動的にデータが格納されます\n13: System.out.println(id);\n14: System.out.println(password);\n15: return \"index\";",
+      "parts": [
+        [
+          " 1://【省略】\n 2:\n 3:@GetMapping(\"/login\")\n 4:public String showLoginView() {\n 5: return \"login_input\";\n 6:}\n 7:\n 8://同じ「login」というURL でも、\n 9://Get かPost かによって、異なるメソッドが実行されます\n10:@PostMapping(\"/login\")\n11:public String doLogin(int id, String password) {\n12: //仮引数を記載するだけで、自動的にデータが格納されます\n13: System.out.println(id);\n14: System.out.println(password);\n15: return \"index\";",
+          null
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p052-b01",
+      "kind": "heading",
+      "text": "【参考】サーブレットでパラメータを受け取る方法",
+      "parts": [
+        [
+          "【参考】サーブレットでパラメータを受け取る方法",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p053-b04",
+      "kind": "heading",
+      "text": "【作業手順①】 UserForm クラスの作成",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "UserForm",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "クラスの作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p055-b01",
+      "kind": "heading",
+      "text": "【参考】 Getter&Setter メソッドをEclipse で簡単に生成する方法",
+      "parts": [
+        [
+          "【参考】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "Getter&Setter",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "メソッドをEclipse",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "で簡単に生成する方法",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p056-b01",
+      "kind": "heading",
+      "text": "【作業手順②】Form クラスのオブジェクトでパラメータを取得",
+      "parts": [
+        [
+          "【作業手順②】Form",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "クラスのオブジェクトでパラメータを取得",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p056-b04",
+      "kind": "code",
+      "text": "1://【省略】\n2:\n3:@PostMapping(\"/login2\")\n4: public String doLogin(UserForm userForm) {\n5: //仮引数にForm クラスを記載するだけで、\n6: //自動的にデータがフィールドにセットされます\n7: System.out.println(userForm.getId());\n8: System.out.println(userForm.getPassword());\n9: return \"index\";\n10: }",
+      "parts": [
+        [
+          "1://【省略】\n2:\n3:@PostMapping(\"/login2\")\n4: public String doLogin(UserForm userForm) {\n5: //仮引数にForm クラスを記載するだけで、\n6: //自動的にデータがフィールドにセットされます\n7: System.out.println(userForm.getId());\n8: System.out.println(userForm.getPassword());\n9: return \"index\";\n10: }",
+          null
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p058-b01",
+      "kind": "heading",
+      "text": "【作業手順③】 model オブジェクトにデータを格納",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "model",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "オブジェクトにデータを格納",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p059-b04",
+      "kind": "heading",
+      "text": "【参考】 サーブレットでリクエストデータを格納するコード",
+      "parts": [
+        [
+          "【参考】",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "サーブレットでリクエストデータを格納するコード",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p059-b10",
+      "kind": "heading",
+      "text": "【作業手順④】 Thymeleaf を利用したデータ出力",
+      "parts": [
+        [
+          "【作業手順④】 ",
+          "s010"
+        ],
+        [
+          "Thymeleaf",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "を利用したデータ出力",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "02",
+      "id": "p060-b09",
+      "kind": "heading",
+      "text": "【参考】 JSP でデータを表示する出力するコード",
+      "parts": [
+        [
+          "【参考】",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "JSP",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "でデータを表示する出力するコード",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p067-b01",
+      "kind": "heading",
+      "text": "【参考】 サンプルデータベースの定義",
+      "parts": [
+        [
+          "【参考】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "サンプルデータベースの定義",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p068-b01",
+      "kind": "heading",
+      "text": "【参考】既存のJDBC 接続(Java+MySQL)方法と問題",
+      "parts": [
+        [
+          "【参考】既存のJDBC",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "接続(Java+MySQL)方法と問題",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p070-b01",
+      "kind": "heading",
+      "text": "【作業手順①】Spring Data JPA と、MySQL ドライバーの導入",
+      "parts": [
+        [
+          "【作業手順①】Spring",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "Data",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "JPA",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "と、MySQL",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "ドライバーの導入",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p071-b01",
+      "kind": "heading",
+      "text": "【作業手順②】接続情報の設定",
+      "parts": [
+        [
+          "【作業手順②】接続情報の設定",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p073-b04",
+      "kind": "heading",
+      "text": "【参考】<Product テーブル>",
+      "parts": [
+        [
+          "【参考】<Product",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "テーブル>",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p073-b06",
+      "kind": "heading",
+      "text": "【作業手順①】 テーブルの列名と型をJava のフィールドで表現する",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "テーブルの列名と型をJava",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "のフィールドで表現する",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p074-b05",
+      "kind": "heading",
+      "text": "【作業手順②】 Lombok の@Data アノテーションを付与",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "Lombok",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "の@Data",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "アノテーションを付与",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p075-b01",
+      "kind": "heading",
+      "text": "【作業手順③】 制約をアノテーションで表現",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "制約をアノテーションで表現",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p078-b01",
+      "kind": "heading",
+      "text": "【作業手順④】 リポジトリの作成",
+      "parts": [
+        [
+          "【作業手順④】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "リポジトリの作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p080-b03",
+      "kind": "heading",
+      "text": "【参考】 その他の依存性の注入方法",
+      "parts": [
+        [
+          "【参考】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "その他の依存性の注入方法",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p082-b01",
+      "kind": "heading",
+      "text": "【参考】既存の全件検索方法",
+      "parts": [
+        [
+          "【参考】既存の全件検索方法",
+          "s004"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p082-b04",
+      "kind": "heading",
+      "text": "【参考】サーブレットでデータベースの操作(全件検索)",
+      "parts": [
+        [
+          "【参考】サーブレットでデータベースの操作(全件検索)",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p085-b02",
+      "kind": "heading",
+      "text": "【作業手順①】 findAll メソッドで全件データ取得",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "findAll",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "メソッドで全件データ取得",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p087-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 Thymeleaf でリストの出力",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "Thymeleaf",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "でリストの出力",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p091-b04",
+      "kind": "heading",
+      "text": "【作業手順①】 遷移用のメソッド作成",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s010"
+        ],
+        [
+          " 遷移用のメソッド作成",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p092-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 検索入力View の作成",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s010"
+        ],
+        [
+          " 検索入力View",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "の作成",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p092-b06",
+      "kind": "heading",
+      "text": "【作業手順③】 主キー検索メソッドを作成",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s010"
+        ],
+        [
+          " 主キー検索メソッドを作成",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p093-b09",
+      "kind": "heading",
+      "text": "【作業手順④】 商品詳細ページの作成",
+      "parts": [
+        [
+          "【作業手順④】",
+          "s010"
+        ],
+        [
+          " 商品詳細ページの作成",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p096-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 価格による検索フォームの追加",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "価格による検索フォームの追加",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p096-b06",
+      "kind": "heading",
+      "text": "【作業手順②】 price 列で条件検索をするメソッドをリポジトリに追加",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s010"
+        ],
+        [
+          " price",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "列で条件検索をするメソッドをリポジトリに追加",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p097-b07",
+      "kind": "heading",
+      "text": "【作業手順③】 showProductListByPrice メソッドを作成し、findByPrice のメソッドを実行",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s010"
+        ],
+        [
+          " showProductListByPrice",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "メソッドを作成し、findByPrice",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "のメソッドを実行",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p100-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 商品名と価格の検索フォームの追加",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s010"
+        ],
+        [
+          " 商品名と価格の検索フォームの追加",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p100-b06",
+      "kind": "heading",
+      "text": "【作業手順②】 name とprice 列で条件検索をするメソッドをリポジトリに追加",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s010"
+        ],
+        [
+          " name",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "とprice",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "列で条件検索をするメソッドをリポジトリに追加",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p101-b02",
+      "kind": "heading",
+      "text": "【作業手順③】 showProductListByNameAndPrice メソッドを作成し、findByNameAndPrice",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s010"
+        ],
+        [
+          " showProductListByNameAndPrice",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "メソッドを作成し、findByNameAndPrice",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p106-b03",
+      "kind": "heading",
+      "text": "【作業手順①】 入力View 遷移用メソッドの定義",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s010"
+        ],
+        [
+          " 入力View",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "遷移用メソッドの定義",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p107-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 入力View 作成",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s010"
+        ],
+        [
+          " 入力View",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "作成",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p108-b01",
+      "kind": "heading",
+      "text": "【作業手順③】 ProductForm の定義",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s010"
+        ],
+        [
+          " ProductForm",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "の定義",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p109-b01",
+      "kind": "heading",
+      "text": "【作業手順④】 登録処理メソッドの定義",
+      "parts": [
+        [
+          "【作業手順④】",
+          "s010"
+        ],
+        [
+          " 登録処理メソッドの定義",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p113-b01",
+      "kind": "heading",
+      "text": "【参考】 ModelMapper で「Form→Entity のデータコピー」を簡単にする方法",
+      "parts": [
+        [
+          "【参考】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "ModelMapper",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "で「Form→Entity",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "のデータコピー」を簡単にする方法",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p116-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 詳細画面に、更新ボタンを実装するように修正",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s010"
+        ],
+        [
+          " 詳細画面に、更新ボタンを実装するように修正",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p117-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 更新対象データの既存データ取得",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s010"
+        ],
+        [
+          " 更新対象データの既存データ取得",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p118-b01",
+      "kind": "heading",
+      "text": "【作業手順③】 修正フォーム（update_input.html）の作成",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s010"
+        ],
+        [
+          " 修正フォーム（update_input.html）の作成",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p119-b01",
+      "kind": "heading",
+      "text": "【作業手順④】 修正処理メソッドの定義",
+      "parts": [
+        [
+          "【作業手順④】",
+          "s010"
+        ],
+        [
+          " 修正処理メソッドの定義",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p121-b02",
+      "kind": "heading",
+      "text": "【参考】 登録と更新の処理を一つにする方法",
+      "parts": [
+        [
+          "【参考】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "登録と更新の処理を一つにする方法",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p123-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 詳細画面に削除ボタンを追加",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s010"
+        ],
+        [
+          " 詳細画面に削除ボタンを追加",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p123-b05",
+      "kind": "heading",
+      "text": "【作業手順②】 削除処理のメソッドを定義",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "削除処理のメソッドを定義",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p125-b01",
+      "kind": "heading",
+      "text": "3.9. 【参考】 Service クラスでビジネスロジックを分離",
+      "parts": [
+        [
+          "3.9. ",
+          "s004"
+        ],
+        [
+          "【参考】",
+          "s004"
+        ],
+        [
+          " ",
+          "s004"
+        ],
+        [
+          "Service",
+          "s004"
+        ],
+        [
+          " ",
+          "s004"
+        ],
+        [
+          "クラスでビジネスロジックを分離",
+          "s004"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p127-b01",
+      "kind": "heading",
+      "text": "【作業手順①】サービスインターフェースの作成",
+      "parts": [
+        [
+          "【作業手順①】サービス",
+          "s011"
+        ],
+        [
+          "インターフェースの作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p128-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 サービス実装クラスの作成",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "サービス実装クラスの作成",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p129-b03",
+      "kind": "step",
+      "text": "3.3.1「依存性の注入」の【依存性の注入方法③】でご紹介した書き方です。",
+      "parts": [
+        [
+          "3.3.1「依存性の注入」の【依存性の注入方法③】でご紹介した書き方です。",
+          "s009"
+        ]
+      ]
+    },
+    {
+      "chapter": "03",
+      "id": "p130-b01",
+      "kind": "heading",
+      "text": "【作業手順③】 Controller からService クラスを経由してDB 操作を行う",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "Controller",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "からService",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "クラスを経由してDB",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "操作を行う",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p136-b03",
+      "kind": "heading",
+      "text": "【参考】＜User テーブル＞",
+      "parts": [
+        [
+          "【参考】＜User",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "テーブル＞",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p136-b04",
+      "kind": "heading",
+      "text": "【参考】＜初期データ＞",
+      "parts": [
+        [
+          "【参考】＜初期データ＞",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p137-b01",
+      "kind": "heading",
+      "text": "【事前準備①】 エンティティの定義",
+      "parts": [
+        [
+          "【事前準備①】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "エンティティの定義",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p137-b05",
+      "kind": "heading",
+      "text": "【事前準備②】 リポジトリの定義",
+      "parts": [
+        [
+          "【事前準備②】 ",
+          "s013"
+        ],
+        [
+          "リポジトリの定義",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p138-b01",
+      "kind": "heading",
+      "text": "【事前準備③】Form クラス定義",
+      "parts": [
+        [
+          "【事前準備③】",
+          "s013"
+        ],
+        [
+          "Form",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "クラス定義",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p138-b05",
+      "kind": "heading",
+      "text": "【作業手順①】 LoginController の作成と、ログイン画面遷移用のメソッド作成",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "LoginController",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "の作成と、ログイン画面遷移用のメソッド作成",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p139-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 ログイン画面の作成",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "ログイン画面の作成",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p139-b05",
+      "kind": "heading",
+      "text": "【作業手順③】 リポジトリにID とパスワードのAnd 検索メソッドの定義",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "リポジトリにID",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "とパスワードのAnd",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "検索メソッドの定義",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p140-b01",
+      "kind": "heading",
+      "text": "【作業手順④】 ログイン認証メソッドの定義",
+      "parts": [
+        [
+          "【作業手順④】 ",
+          "s013"
+        ],
+        [
+          "ログイン認証メソッドの定義",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p144-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 HttpSession 直接利用する方法",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "HttpSession",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "直接利用する方法",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p145-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 セッションスコープ内のデータを参照する方法",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "セッションスコープ内のデータを参照する方法",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p147-b01",
+      "kind": "heading",
+      "text": "【参考】 @ SessionAttributes を利用する方法",
+      "parts": [
+        [
+          "【参考】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "@",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "SessionAttributes",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "を利用する方法",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p149-b01",
+      "kind": "heading",
+      "text": "【参考】既存の入力チェックのコード",
+      "parts": [
+        [
+          "【参考】既存の入力チェックのコード",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p149-b04",
+      "kind": "heading",
+      "text": "【事前準備】 Validation API を利用する",
+      "parts": [
+        [
+          "【事前準備】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "Validation",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "API",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "を利用する",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p150-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 Form クラスにValidation のアノテーションを付与",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "Form",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "クラスにValidation",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "のアノテーションを付与",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p151-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 ログイン入力ページ遷移用のメソッド定義",
+      "parts": [
+        [
+          "【作業手順②】 ",
+          "s013"
+        ],
+        [
+          "ログイン入力ページ遷移用のメソッド定義",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p151-b05",
+      "kind": "heading",
+      "text": "【作業手順③】 入力チェック用メソッドの定義",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "入力チェック用メソッドの定義",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p152-b03",
+      "kind": "heading",
+      "text": "【作業手順④】 ログイン入力ページの修正",
+      "parts": [
+        [
+          "【作業手順④】 ",
+          "s013"
+        ],
+        [
+          "ログイン入力ページの修正",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p155-b01",
+      "kind": "heading",
+      "text": "【参考】 ログイン機能の最終版のソースコード",
+      "parts": [
+        [
+          "【参考】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "ログイン機能の最終版のソースコード",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p157-b01",
+      "kind": "heading",
+      "text": "4.3.1. 【参考】その他のValidation アノテーション",
+      "parts": [
+        [
+          "4.3.1. ",
+          "s004"
+        ],
+        [
+          "【参考】その他のValidation",
+          "s004"
+        ],
+        [
+          " ",
+          "s004"
+        ],
+        [
+          "アノテーション",
+          "s004"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "p159-b01",
+      "kind": "heading",
+      "text": "4.3.2. 【参考】メッセージのカスタマイズ",
+      "parts": [
+        [
+          "4.3.2. ",
+          "s004"
+        ],
+        [
+          "【参考】メッセージのカスタマイズ",
+          "s004"
+        ]
+      ]
+    },
+    {
+      "chapter": "04",
+      "id": "revision-messages-title",
+      "kind": "heading",
+      "text": "【参考】画面の文言をまとめて管理する",
+      "parts": [
+        [
+          "【参考】画面の文言をまとめて管理する",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p171-b02",
+      "kind": "paragraph",
+      "text": "【振り返り】＜Spring Boot プロジェクトの構成＞",
+      "parts": [
+        [
+          "【振り返り】＜Spring",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "Boot",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "プロジェクトの構成＞",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p182-b03",
+      "kind": "heading",
+      "text": "【事前準備】 ライブラリを導入",
+      "parts": [
+        [
+          "【事前準備】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "ライブラリを導入",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p183-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 レイアウトファイルの作成",
+      "parts": [
+        [
+          "【",
+          "s009"
+        ],
+        [
+          "作業手順①】",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "レイアウトファイルの作成",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p184-b05",
+      "kind": "paragraph",
+      "text": " レイアウト専用のcss ファイルを別途作成し、読み込ませました。css ファイルの詳細は、デザ\nインの領域ですので、章末の【参考】の部分をご覧ください。",
+      "parts": [
+        [
+          " レイアウト専用のcss",
+          "s009"
+        ],
+        [
+          " ",
+          "s009"
+        ],
+        [
+          "ファイルを別途作成し、読み込ませました。css",
+          "s009"
+        ],
+        [
+          " ",
+          "s009"
+        ],
+        [
+          "ファイルの詳細は、デザ",
+          "s009"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "インの領域ですので、章末の【参考】の部分をご覧ください。",
+          "s009"
+        ]
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p184-b08",
+      "kind": "heading",
+      "text": "【作業手順②】 コンテンツ用のHTML の修正",
+      "parts": [
+        [
+          "【作業手順②】 ",
+          "s014"
+        ],
+        [
+          "コンテンツ用のHTML",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "の修正",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "05",
+      "id": "p187-b01",
+      "kind": "heading",
+      "text": "【参考】 layout.css のソースコード",
+      "parts": [
+        [
+          "【参考】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "layout.css",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "のソースコード",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p196-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 新たなテーブルと、データの準備",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "新たなテーブルと、データの準備",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p199-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 参照先エンティティの作成",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "参照先エンティティの作成",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p200-b01",
+      "kind": "heading",
+      "text": "【作業手順③】 参照元エンティティの修正",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "参照元エンティティの修正",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p202-b01",
+      "kind": "heading",
+      "text": "【作業手順④】 CategoryRepository の作成",
+      "parts": [
+        [
+          "【作業手順④】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "CategoryRepository",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "の作成",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p204-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 商品コントローラーの再確認",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "商品コントローラーの再確認",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p205-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 View にカテゴリ名を出力するよう修正",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "View",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "にカテゴリ名を出力するよう修正",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p206-b01",
+      "kind": "heading",
+      "text": "【参考】 null データの参照時のエラー対策",
+      "parts": [
+        [
+          "【参考】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "null",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "データの参照時のエラー対策",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p208-b01",
+      "kind": "heading",
+      "text": "6.2.1. 【参考】 検索結果のエラーハンドリング",
+      "parts": [
+        [
+          "6.2.1. ",
+          "s004"
+        ],
+        [
+          "【参考】",
+          "s004"
+        ],
+        [
+          " ",
+          "s004"
+        ],
+        [
+          "検索結果のエラーハンドリング",
+          "s004"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p209-b01",
+      "kind": "heading",
+      "text": "【作業手順①】 findById(id).orElse(null)の確認",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "findById(id).orElse(null)の確認",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p210-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 商品が見つからなかった際の表示の切り替え",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "商品が見つからなかった際の表示の切り替え",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p215-b05",
+      "kind": "heading",
+      "text": "【作業手順①】 登録処理の準備 - ProductForm の修正",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "登録処理の準備",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "-",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "ProductForm",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "の修正",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p216-b01",
+      "kind": "heading",
+      "text": "【作業手順②】 登録画面遷移用のコントローラーの修正",
+      "parts": [
+        [
+          "【作業手順②】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "登録画面遷移用のコントローラーの修正",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p218-b01",
+      "kind": "heading",
+      "text": "【作業手順③】 カテゴリのリストの動的表示",
+      "parts": [
+        [
+          "【作業手順③】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "カテゴリのリストの動的表示",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p219-b01",
+      "kind": "heading",
+      "text": "【作業手順④】 登録処理の実装 - 不具合の確認",
+      "parts": [
+        [
+          "【作業手順④】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "登録処理の実装",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "-",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "不具合の確認",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p220-b01",
+      "kind": "heading",
+      "text": "【作業手順➄】 Product エンティティにcategoryId フィールドの追加",
+      "parts": [
+        [
+          "【作業手順➄】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "Product",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "エンティティにcategoryId",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "フィールドの追加",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p222-b04",
+      "kind": "paragraph",
+      "text": "JPQL の基本構文を学び、簡単な例を通じて理解を深めます。最後に【参考】として、複雑な\n仕様に基づいたJPQL の実装例を紹介します。",
+      "parts": [
+        [
+          "JPQL",
+          "s009"
+        ],
+        [
+          " ",
+          "s009"
+        ],
+        [
+          "の基本構文を学び、簡単な例を通じて理解を深めます。最後に【参考】として、複雑な",
+          "s009"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "仕様に基づいたJPQL",
+          "s009"
+        ],
+        [
+          " ",
+          "s009"
+        ],
+        [
+          "の実装例を紹介します。",
+          "s009"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p227-b06",
+      "kind": "heading",
+      "text": "【参考】大量データを扱う場合の注意点",
+      "parts": [
+        [
+          "【参考】大量データを扱う場合の注意点",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p232-b01",
+      "kind": "heading",
+      "text": "【参考】 6.4.1 の例題をJPQL で作成する例",
+      "parts": [
+        [
+          "【参考】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "6.4.1",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "の例題をJPQL",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "で作成する例",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p232-b03",
+      "kind": "code",
+      "text": "//【参考】複雑な仕様の例題のサンプル➀\n        @Query(\"SELECT p FROM Product p LEFT JOIN p.category c \" +\n                       \"WHERE p.name LIKE %:keyword% \" +\n                       \"OR c.name LIKE %:keyword% \" +\n                       \"OR p.description LIKE %:keyword% \" +\n                       \"OR p.brand LIKE %:keyword% \" +\n                       \"OR p.sku LIKE %:keyword%\")\n        List<Product> searchProductsByKeyword(String keyword);",
+      "parts": [
+        [
+          "//【参考】複雑な仕様の例題のサンプル➀\n        @Query(\"SELECT p FROM Product p LEFT JOIN p.category c \" +\n                       \"WHERE p.name LIKE %:keyword% \" +\n                       \"OR c.name LIKE %:keyword% \" +\n                       \"OR p.description LIKE %:keyword% \" +\n                       \"OR p.brand LIKE %:keyword% \" +\n                       \"OR p.sku LIKE %:keyword%\")\n        List<Product> searchProductsByKeyword(String keyword);",
+          null
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p232-b04",
+      "kind": "code",
+      "text": "//【参考】複雑な仕様の例題のサンプル➁\n        @Query(\"SELECT p FROM Product p WHERE p.name LIKE %:keyword% \" +\n           \"OR p.category.name LIKE %:keyword% \" +\n           \"OR p.description LIKE %:keyword% \" +\n           \"OR p.brand LIKE %:keyword% \" +\n           \"OR p.sku LIKE %:keyword%\")\n        List<Product> searchProductsByKeyword(String keyword);",
+      "parts": [
+        [
+          "//【参考】複雑な仕様の例題のサンプル➁\n        @Query(\"SELECT p FROM Product p WHERE p.name LIKE %:keyword% \" +\n           \"OR p.category.name LIKE %:keyword% \" +\n           \"OR p.description LIKE %:keyword% \" +\n           \"OR p.brand LIKE %:keyword% \" +\n           \"OR p.sku LIKE %:keyword%\")\n        List<Product> searchProductsByKeyword(String keyword);",
+          null
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p233-b01",
+      "kind": "heading",
+      "text": "【参考】 集計関数とGROUP BY の場合",
+      "parts": [
+        [
+          "【参考】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "集計関数とGROUP",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "BY",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "の場合",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p233-b07",
+      "kind": "heading",
+      "text": "【作業手順①】 DTO（集計結果を受け取るためのクラス）の作成",
+      "parts": [
+        [
+          "【作業手順①】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "DTO（集計結果を受け取るためのクラス）の作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "06",
+      "id": "p235-b01",
+      "kind": "heading",
+      "text": "【作業手順➁】 リポジトリの作成",
+      "parts": [
+        [
+          "【作業手順➁】",
+          "s010"
+        ],
+        [
+          " ",
+          "s010"
+        ],
+        [
+          "リポジトリの作成",
+          "s010"
+        ]
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p267-b11",
+      "kind": "heading",
+      "text": "【参考】 知っておくと便利になるカラムのコツ",
+      "parts": [
+        [
+          "【参考】",
+          "s031"
+        ],
+        [
+          " ",
+          "s031"
+        ],
+        [
+          "知っておくと便利になるカラムのコツ",
+          "s031"
+        ]
+      ]
+    },
+    {
+      "chapter": "07",
+      "id": "p269-b01",
+      "kind": "heading",
+      "text": "【参考】 グリッドシステムの応用",
+      "parts": [
+        [
+          "【参考】",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "グリッドシステムの応用",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "appendix-b",
+      "id": "revision-errors-title",
+      "kind": "heading",
+      "text": "【参考】コンソールからエラーの原因を読み取る",
+      "parts": [
+        [
+          "【参考】コンソールからエラーの原因を読み取る",
+          "s013"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p003-b11",
+      "kind": "paragraph",
+      "text": "演習 2.4. 【オプション】 Form クラスを利用 .............................................................................. 16",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "2.4. ",
+          "s014"
+        ],
+        [
+          "【オプション】 ",
+          "s013"
+        ],
+        [
+          "Form",
+          "s014"
+        ],
+        [
+          " クラスを利用",
+          "s015"
+        ],
+        [
+          " ..............................................................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "16",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p003-b18",
+      "kind": "paragraph",
+      "text": "演習 3.6. 【オプション】 名前検索機能の実装 ........................................................................... 26",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "3.6. ",
+          "s014"
+        ],
+        [
+          "【オプション】 ",
+          "s013"
+        ],
+        [
+          "名前検索機能の実装",
+          "s013"
+        ],
+        [
+          " ...........................................................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "26",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p003-b19",
+      "kind": "paragraph",
+      "text": "演習 3.7. 【オプション】 削除機能の実装 .................................................................................. 28",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "3.7. ",
+          "s014"
+        ],
+        [
+          "【オプション】",
+          "s013"
+        ],
+        [
+          " ",
+          "s013"
+        ],
+        [
+          "削除機能の実装",
+          "s013"
+        ],
+        [
+          " ..................................................................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "28",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p003-b20",
+      "kind": "paragraph",
+      "text": "演習 3.8. 【オプション】Service クラスの利用 ............................................................................ 28",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "3.8. ",
+          "s014"
+        ],
+        [
+          "【オプション】",
+          "s013"
+        ],
+        [
+          "Service",
+          "s014"
+        ],
+        [
+          " クラスの利用",
+          "s015"
+        ],
+        [
+          " ............................................................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "28",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b05",
+      "kind": "paragraph",
+      "text": "演習 4.4. 【オプション】 登録画面に入力チェック機能の実装 ..................................................... 36",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "4.4. ",
+          "s014"
+        ],
+        [
+          "【オプション】 ",
+          "s013"
+        ],
+        [
+          "登録画面に入力チェック機能の実装",
+          "s013"
+        ],
+        [
+          " .....................................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "36",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b10",
+      "kind": "paragraph",
+      "text": "演習 5.4. 【オプション】 権限による給与データの動的表示 ........................................................ 45",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "5.4. ",
+          "s014"
+        ],
+        [
+          "【オプション】 ",
+          "s013"
+        ],
+        [
+          "権限による給与データの動的表示",
+          "s013"
+        ],
+        [
+          " ........................................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "45",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b11",
+      "kind": "paragraph",
+      "text": "演習 5.5. 【オプション】顔写真の全画面適用 ............................................................................. 46",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "5.5. ",
+          "s014"
+        ],
+        [
+          "【オプション】顔写真の全画面適用",
+          "s013"
+        ],
+        [
+          " .............................................................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "46",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b12",
+      "kind": "paragraph",
+      "text": "演習 5.6. 【オプション】権限による「給与検索」の動的表示 ........................................................ 46",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "5.6. ",
+          "s014"
+        ],
+        [
+          "【オプション】権限による「給与検索」の動的表示",
+          "s013"
+        ],
+        [
+          " ........................................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "46",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p004-b17",
+      "kind": "paragraph",
+      "text": "演習 6.4. 【オプション】存在しない社員番号を考慮する個別検索 ............................................... 55",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "6.4. ",
+          "s014"
+        ],
+        [
+          "【オプション】存在しない社員番号を考慮する個別検索",
+          "s013"
+        ],
+        [
+          " ...............................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "55",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex-front",
+      "id": "p005-b05",
+      "kind": "paragraph",
+      "text": "演習 7.6. 【オプション】 共通レイアウト画面に変更 ................................................................... 76",
+      "parts": [
+        [
+          "演習 ",
+          "s013"
+        ],
+        [
+          "7.6. ",
+          "s014"
+        ],
+        [
+          "【オプション】 ",
+          "s013"
+        ],
+        [
+          "共通レイアウト画面に変更",
+          "s013"
+        ],
+        [
+          " ...................................................................",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "76",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p013-b03",
+      "kind": "paragraph",
+      "text": "⚫ テキスト2.2 の【作業手順①】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s013"
+        ],
+        [
+          "テキスト2.2",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "の【作業手順①】を参考にしてください。",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p013-b05",
+      "kind": "paragraph",
+      "text": "⚫ テキスト2.2 の【Index メソッドの解説】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s013"
+        ],
+        [
+          "テキスト2.2",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "の【Index",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "メソッドの解説】を参考にしてください。",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p014-b03",
+      "kind": "paragraph",
+      "text": "⚫ テキスト2.3 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s013"
+        ],
+        [
+          "テキスト2.3",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "の【作業手順③】を参考にしてください。",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p014-b06",
+      "kind": "paragraph",
+      "text": "⚫ テキスト2.3 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s013"
+        ],
+        [
+          "テキスト2.3",
+          "s014"
+        ],
+        [
+          " ",
+          "s014"
+        ],
+        [
+          "の【作業手順③】を参考にしてください。",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-b03",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 2.5 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s013"
+        ],
+        [
+          "テキスト ",
+          "s014"
+        ],
+        [
+          "2.5",
+          "s005"
+        ],
+        [
+          " の【作業手順③】を参考にしてください。",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-b06",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 2.5 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s013"
+        ],
+        [
+          "テキスト ",
+          "s014"
+        ],
+        [
+          "2.5",
+          "s005"
+        ],
+        [
+          " の【作業手順③】を参考にしてください。",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p015-b10",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 2.5 の【作業手順④】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s013"
+        ],
+        [
+          "テキスト ",
+          "s014"
+        ],
+        [
+          "2.5",
+          "s005"
+        ],
+        [
+          " の【作業手順④】を参考にしてください。",
+          "s014"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex02",
+      "id": "p016-b01",
+      "kind": "heading",
+      "text": "演習2.4. 【オプション】 Form クラスを利用",
+      "parts": [
+        [
+          "演習",
+          "s010"
+        ],
+        [
+          "2.4. ",
+          "s011"
+        ],
+        [
+          "【オプション】 ",
+          "s010"
+        ],
+        [
+          "Form",
+          "s011"
+        ],
+        [
+          " クラスを利用",
+          "s016"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p020-b03",
+      "kind": "paragraph",
+      "text": "⚫ テーブル情報と、テキスト3.2 の【作業手順①～②】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テーブル情報と、テキスト3.2",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順①～②】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p020-b06",
+      "kind": "paragraph",
+      "text": "⚫ テーブル情報と、テキスト3.2 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テーブル情報と、テキスト3.2",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順③】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p020-b10",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.3 の【作業手順④】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.3",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順④】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p021-b08",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.4 の【作業手順①】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.4",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順①】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p022-b02",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.4 の【作業手順②】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.4",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順②】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p023-b03",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.5 の【作業手順①～②】が該当する内容です。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.5",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順①～②】が該当する内容です。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p023-b07",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.5 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.5",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順③】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p023-b09",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.5 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.5",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順③】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p024-b03",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.5 の【作業手順④】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.5",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順④】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p024-b08",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.5.1 の【作業手順①】の内容が該当します。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.5.1",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順①】の内容が該当します。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p024-b11",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 3.5.1 の【作業手順②】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト ",
+          "s022"
+        ],
+        [
+          "3.5.1",
+          "s005"
+        ],
+        [
+          " の【作業手順②】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p025-b02",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.5.1 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.5.1",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順③】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p025-b04",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.5.1 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.5.1",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順③】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p026-b01",
+      "kind": "heading",
+      "text": "演習3.5. 【オプション】 名前検索機能の実装",
+      "parts": [
+        [
+          "演習",
+          "s018"
+        ],
+        [
+          "3.5. ",
+          "s019"
+        ],
+        [
+          "【オプション】 ",
+          "s018"
+        ],
+        [
+          "名前検索機能の実装",
+          "s018"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p026-b11",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.6 の【作業手順②】の内容が該当します。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.6",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順②】の内容が該当します。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b03",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.6 の【作業手順③】の内容が該当します。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.6",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順③】の内容が該当します。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b05",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.6 の【作業手順④】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.6",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順④】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p027-b07",
+      "kind": "paragraph",
+      "text": "⚫ テキスト3.6 の【作業手順④】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s021"
+        ],
+        [
+          "テキスト3.6",
+          "s022"
+        ],
+        [
+          " ",
+          "s022"
+        ],
+        [
+          "の【作業手順④】を参考にしてください。",
+          "s022"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p028-b01",
+      "kind": "heading",
+      "text": "演習3.7. 【オプション】 削除機能の実装",
+      "parts": [
+        [
+          "演習",
+          "s018"
+        ],
+        [
+          "3.7. ",
+          "s019"
+        ],
+        [
+          "【オプション】",
+          "s018"
+        ],
+        [
+          " ",
+          "s018"
+        ],
+        [
+          "削除機能の実装",
+          "s018"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex03",
+      "id": "p028-b07",
+      "kind": "heading",
+      "text": "演習3.8. 【オプション】Service クラスの利用",
+      "parts": [
+        [
+          "演習",
+          "s018"
+        ],
+        [
+          "3.8. ",
+          "s019"
+        ],
+        [
+          "【オプション】",
+          "s018"
+        ],
+        [
+          "Service",
+          "s019"
+        ],
+        [
+          " クラスの利用",
+          "s020"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-b06",
+      "kind": "paragraph",
+      "text": "⚫ テキスト4.1 の【作業手順②】の内容が該当します。",
+      "parts": [
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "テキスト4.1",
+          "s017"
+        ],
+        [
+          " ",
+          "s017"
+        ],
+        [
+          "の【作業手順②】の内容が該当します。",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p031-b10",
+      "kind": "paragraph",
+      "text": "⚫ テキスト4.1 の【作業手順③】の内容を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "テキスト4.1",
+          "s017"
+        ],
+        [
+          " ",
+          "s017"
+        ],
+        [
+          "の【作業手順③】の内容を参考にしてください。",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p032-b02",
+      "kind": "paragraph",
+      "text": "⚫ テキスト4.1 の【作業手順④】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "テキスト4.1",
+          "s017"
+        ],
+        [
+          " ",
+          "s017"
+        ],
+        [
+          "の【作業手順④】を参考にしてください。",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p033-b05",
+      "kind": "paragraph",
+      "text": "⚫ テキスト4.2 の【作業手順①】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "テキスト4.2",
+          "s017"
+        ],
+        [
+          " ",
+          "s017"
+        ],
+        [
+          "の【作業手順①】を参考にしてください。",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p033-b10",
+      "kind": "paragraph",
+      "text": "⚫ テキスト4.2 の【作業手順②】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "テキスト4.2",
+          "s017"
+        ],
+        [
+          " ",
+          "s017"
+        ],
+        [
+          "の【作業手順②】を参考にしてください。",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p034-b04",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 4.3 の【作業手順①】を参考にしてください。\n⚫ 「未満」については、「4.3.1 その他の validation アノテーション」の@Min を参考にしてく\nださい。（文字ではなく、数字の文字数チェックはなく、数値の大きさで判定）",
+      "parts": [
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "テキスト ",
+          "s017"
+        ],
+        [
+          "4.3",
+          "s005"
+        ],
+        [
+          " の【作業手順①】を参考にしてください。",
+          "s017"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "「未満」については、「",
+          "s017"
+        ],
+        [
+          "4.3.1 ",
+          "s005"
+        ],
+        [
+          "その他の ",
+          "s017"
+        ],
+        [
+          "validation",
+          "s005"
+        ],
+        [
+          " アノテーション」の",
+          "s017"
+        ],
+        [
+          "@Min",
+          "s005"
+        ],
+        [
+          " を参考にしてく",
+          "s017"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "ださい。（文字ではなく、数字の文字数チェックはなく、数値の大きさで判定）",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p034-b08",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 4.3 の【作業手順②】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "テキスト ",
+          "s017"
+        ],
+        [
+          "4.3",
+          "s005"
+        ],
+        [
+          " の【作業手順②】を参考にしてください。",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p035-b02",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 4.3 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "テキスト ",
+          "s017"
+        ],
+        [
+          "4.3",
+          "s005"
+        ],
+        [
+          " の【作業手順③】を参考にしてください。",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p035-b09",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 4.3 の【作業手順④】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s015"
+        ],
+        [
+          "テキスト ",
+          "s017"
+        ],
+        [
+          "4.3",
+          "s005"
+        ],
+        [
+          " の【作業手順④】を参考にしてください。",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p035-b17",
+      "kind": "paragraph",
+      "text": "社員番号：【空欄】\nパスワード：【空欄】  の状態で [ログイン]ボタンをクリックしてください。\n→ ログインに失敗し、再入力を促すメッセージが表示されたら、OK です。",
+      "parts": [
+        [
+          "社員番号：【空欄】",
+          "s017"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "パスワード：【空欄】  の状態で",
+          "s017"
+        ],
+        [
+          " [",
+          "s005"
+        ],
+        [
+          "ログイン",
+          "s017"
+        ],
+        [
+          "]",
+          "s005"
+        ],
+        [
+          "ボタンをクリックしてください。",
+          "s017"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "→",
+          "s017"
+        ],
+        [
+          " ",
+          "s017"
+        ],
+        [
+          "ログインに失敗し、再入力を促すメッセージが表示されたら、",
+          "s017"
+        ],
+        [
+          "OK",
+          "s005"
+        ],
+        [
+          " です。",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex04",
+      "id": "p036-b01",
+      "kind": "heading",
+      "text": "演習4.4. 【オプション】 登録画面に入力チェック機能の実装",
+      "parts": [
+        [
+          "演習",
+          "s012"
+        ],
+        [
+          "4.4. ",
+          "s013"
+        ],
+        [
+          "【オプション】 ",
+          "s012"
+        ],
+        [
+          "登録画面に入力チェック機能の実装",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "id": "p042-b07",
+      "kind": "paragraph",
+      "text": "⚫ テキスト5.3 の「【事前準備】 ライブラリを導入」を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s016"
+        ],
+        [
+          "テキスト5.3",
+          "s015"
+        ],
+        [
+          " ",
+          "s015"
+        ],
+        [
+          "の「【事前準備】",
+          "s015"
+        ],
+        [
+          " ",
+          "s015"
+        ],
+        [
+          "ライブラリを導入」を参考にしてください。",
+          "s015"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "id": "p042-b09",
+      "kind": "paragraph",
+      "text": "⚫ テキスト5.3 の【作業手順①】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s016"
+        ],
+        [
+          "テキスト5.3",
+          "s015"
+        ],
+        [
+          " ",
+          "s015"
+        ],
+        [
+          "の【作業手順①】を参考にしてください。",
+          "s015"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "id": "p042-b16",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 5.3 の【作業手順②】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s016"
+        ],
+        [
+          "テキスト ",
+          "s015"
+        ],
+        [
+          "5.3",
+          "s005"
+        ],
+        [
+          " の【作業手順②】を参考にしてください。",
+          "s015"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "id": "p043-b02",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 5.3 の【作業手順②】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s016"
+        ],
+        [
+          "テキスト ",
+          "s015"
+        ],
+        [
+          "5.3",
+          "s005"
+        ],
+        [
+          " の【作業手順②】を参考にしてください。",
+          "s015"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "id": "p044-b05",
+      "kind": "paragraph",
+      "text": "⚫ テキスト 5.1.1 の【イメージの動的挿入】を参考にしてください。",
+      "parts": [
+        [
+          "⚫ ",
+          "s016"
+        ],
+        [
+          "テキスト ",
+          "s015"
+        ],
+        [
+          "5.1.1",
+          "s005"
+        ],
+        [
+          " の【イメージの動的挿入】を参考にしてください。",
+          "s015"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "id": "p045-b01",
+      "kind": "heading",
+      "text": "演習5.4. 【オプション】 権限による給与データの動的表示",
+      "parts": [
+        [
+          "演習",
+          "s012"
+        ],
+        [
+          "5.4. ",
+          "s013"
+        ],
+        [
+          "【オプション】 ",
+          "s012"
+        ],
+        [
+          "権限による給与データの動的表示",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "id": "p046-b05",
+      "kind": "heading",
+      "text": "演習5.5. 【オプション】顔写真の全画面適用",
+      "parts": [
+        [
+          "演習",
+          "s012"
+        ],
+        [
+          "5.5. ",
+          "s013"
+        ],
+        [
+          "【オプション】顔写真の全画面適用",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex05",
+      "id": "p046-b07",
+      "kind": "heading",
+      "text": "演習5.6. 【オプション】権限による「給与検索」の動的表示",
+      "parts": [
+        [
+          "演習",
+          "s012"
+        ],
+        [
+          "5.6. ",
+          "s013"
+        ],
+        [
+          "【オプション】権限による「給与検索」の動的表示",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b07",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b08",
+      "kind": "paragraph",
+      "text": "• テキスト6.1 の【作業手順②】を参考にしてください。",
+      "parts": [
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "テキスト6.1",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "の【作業手順②】を参考にしてください。",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b12",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p051-b13",
+      "kind": "paragraph",
+      "text": "• テキスト6.1 の【作業手順③】を参考にしてください。",
+      "parts": [
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "テキスト6.1",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "の【作業手順③】を参考にしてください。",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p052-b02",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p052-b03",
+      "kind": "paragraph",
+      "text": "• テキスト6.1 の【作業手順➁】を参考にしてください。\n• 「1 つの勤務地に複数の社員が所属する」関係を表現します。\n• リスト型はjava.util.List をインポートしてください。",
+      "parts": [
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "テキスト6.1",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "の【作業手順➁】を参考にしてください。",
+          "s019"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "「1",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "つの勤務地に複数の社員が所属する」関係を表現します。",
+          "s019"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "リスト型はjava.util.List",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "をインポートしてください。",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p052-b06",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p053-b07",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p054-b01",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p054-b02",
+      "kind": "paragraph",
+      "text": "• テキスト6.2 の【作業手順➁】を参考にしてください。",
+      "parts": [
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "テキスト6.2",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "の【作業手順➁】を参考にしてください。",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p054-b09",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p054-b13",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p055-b01",
+      "kind": "heading",
+      "text": "演習6.4. 【オプション】存在しない社員番号を考慮する個別検索",
+      "parts": [
+        [
+          "演習",
+          "s017"
+        ],
+        [
+          "6.4. ",
+          "s018"
+        ],
+        [
+          "【オプション】存在しない社員番号を考慮する個別検索",
+          "s017"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p055-b07",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p055-b08",
+      "kind": "paragraph",
+      "text": "• if 文などでnull 判定は不要です。orElse(null)により、null かオブジェクトかが自動で取\n得できます。\n• テキスト6.2.1 の【作業手順①】を参考にしてください。",
+      "parts": [
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "if",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "文などでnull",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "判定は不要です。orElse(null)により、null",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "かオブジェクトかが自動で取",
+          "s019"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "得できます。",
+          "s019"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "テキスト6.2.1",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "の【作業手順①】を参考にしてください。",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p056-b03",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p056-b04",
+      "kind": "paragraph",
+      "text": "• th:if=\"${emp == null}\" と th:unless=\"${emp == null}\" を使い、切り替えます。\n• テキスト6.2.1 の【作業手順➁】を参考にしてください。",
+      "parts": [
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "th:if=\"${emp",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "==",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "null}\"",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "と",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "th:unless=\"${emp",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "==",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "null}\"",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "を使い、切り替えます。",
+          "s019"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "テキスト6.2.1",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "の【作業手順➁】を参考にしてください。",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p058-b01",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p058-b05",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p058-b06",
+      "kind": "paragraph",
+      "text": "• テキスト6.5 の【作業手順①】を参考にしてください。",
+      "parts": [
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "テキスト6.5",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "の【作業手順①】を参考にしてください。",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p058-b10",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p059-b03",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p059-b04",
+      "kind": "paragraph",
+      "text": "• Employee エンティティ内の location フィールドは Location 型です。一方、Form か\nらは Integer 型の locationId が送られてくるため、直接代入はできません。\n代わりに locationId を登録用に持たせておき、 location フィールドには insertable =\nfalse, updatable = false を指定しておく必要があります。\n• テキスト6.5 の【作業手順④・⑤】を参考にしてください。",
+      "parts": [
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "Employee",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "エンティティ内の",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "location",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "フィールドは",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "Location",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "型です。一方、Form",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "か",
+          "s019"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "らは",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "Integer",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "型の",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "locationId",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "が送られてくるため、直接代入はできません。",
+          "s019"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "代わりに",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "locationId",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "を登録用に持たせておき、",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "location",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "フィールドには",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "insertable",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "=",
+          "s019"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "false,",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "updatable",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "=",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "false",
+          "s019"
+        ],
+        [
+          " ",
+          "s019"
+        ],
+        [
+          "を指定しておく必要があります。",
+          "s019"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "• ",
+          "s009"
+        ],
+        [
+          "テキスト6.5",
+          "s024"
+        ],
+        [
+          " ",
+          "s024"
+        ],
+        [
+          "の【作業手順④・⑤】を参考にしてください。",
+          "s024"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p061-b06",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex06",
+      "id": "p061-b13",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s019"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p065-b12",
+      "kind": "paragraph",
+      "text": "演習7.6 演習7.6. 【オプション】 共通レイアウト画面に変更：20 分",
+      "parts": [
+        [
+          "演習7.6",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "演習7.6.",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "【オプション】",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "共通レイアウト画面に変更：20",
+          "s011"
+        ],
+        [
+          " ",
+          "s011"
+        ],
+        [
+          "分",
+          "s011"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p073-b02",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s020"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p073-b14",
+      "kind": "paragraph",
+      "text": "【ヒント】",
+      "parts": [
+        [
+          "【ヒント】",
+          "s020"
+        ]
+      ]
+    },
+    {
+      "chapter": "ex07",
+      "id": "p076-b01",
+      "kind": "heading",
+      "text": "演習7.6. 【オプション】 共通レイアウト画面に変更",
+      "parts": [
+        [
+          "演習",
+          "s015"
+        ],
+        [
+          "7.6. ",
+          "s016"
+        ],
+        [
+          "【オプション】 ",
+          "s015"
+        ],
+        [
+          "共通レイアウト画面に変更",
+          "s015"
+        ]
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p003-b06",
+      "kind": "step",
+      "text": "2.1. Web アプリケーションの概要 ........................................................................................... 34\n2.1.1. 【参考】サーブレットについて ........................................................................................ 36\n2.1.2. 【参考】MVC パターンと Spring アプリケーションの流れ ............................................... 38\n2.2. Controller の基本 ........................................................................................................... 39\n2.3. データ送信とパラメータの取得 ........................................................................................ 47\n2.4. Form クラスでパラメータ取得 .......................................................................................... 53\n2.5. Controller から View へのデータ処理 .............................................................................. 57\n章のまとめ ............................................................................................................................. 62",
+      "parts": [
+        [
+          "2.1.",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "Web",
+          "s012"
+        ],
+        [
+          " アプリケーションの概要",
+          "s013"
+        ],
+        [
+          " ...........................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "34",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "2.1.1. ",
+          "s012"
+        ],
+        [
+          "【参考】サーブレットについて",
+          "s013"
+        ],
+        [
+          " ........................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "36",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "2.1.2. ",
+          "s012"
+        ],
+        [
+          "【参考】",
+          "s013"
+        ],
+        [
+          "MVC",
+          "s012"
+        ],
+        [
+          " パターンと ",
+          "s013"
+        ],
+        [
+          "Spring",
+          "s012"
+        ],
+        [
+          " アプリケーションの流れ",
+          "s013"
+        ],
+        [
+          " ...............................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "38",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "2.2.",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "Controller",
+          "s012"
+        ],
+        [
+          " の基本",
+          "s013"
+        ],
+        [
+          " ...........................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "39",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "2.3. ",
+          "s012"
+        ],
+        [
+          "データ送信とパラメータの取得",
+          "s013"
+        ],
+        [
+          " ........................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "47",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "2.4.",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "Form",
+          "s012"
+        ],
+        [
+          " クラスでパラメータ取得",
+          "s013"
+        ],
+        [
+          " ..........................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "53",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "2.5.",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "Controller",
+          "s012"
+        ],
+        [
+          " から ",
+          "s013"
+        ],
+        [
+          "View",
+          "s012"
+        ],
+        [
+          " へのデータ処理",
+          "s013"
+        ],
+        [
+          " ..............................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "57",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "章のまとめ",
+          "s013"
+        ],
+        [
+          " .............................................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "62",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p003-b09",
+      "kind": "heading",
+      "text": "【参考】既存の全件検索方法 .................................................................................................. 82",
+      "parts": [
+        [
+          "【参考】既存の全件検索方法",
+          "s013"
+        ],
+        [
+          " ..................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "82",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p004-b01",
+      "kind": "step",
+      "text": "3.5.3. その他の条件検索 .................................................................................................... 103\n3.6. 登録処理 ..................................................................................................................... 105\n3.7. 更新処理 ..................................................................................................................... 114\n3.8. 削除処理 ..................................................................................................................... 122\n3.9. 【参考】 Service クラスでビジネスロジックを分離 .......................................................... 125\n章のまとめ ........................................................................................................................... 132",
+      "parts": [
+        [
+          "3.5.3. ",
+          "s012"
+        ],
+        [
+          "その他の条件検索",
+          "s013"
+        ],
+        [
+          " ....................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "103",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "3.6. ",
+          "s012"
+        ],
+        [
+          "登録処理",
+          "s013"
+        ],
+        [
+          " .....................................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "105",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "3.7. ",
+          "s012"
+        ],
+        [
+          "更新処理",
+          "s013"
+        ],
+        [
+          " .....................................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "114",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "3.8. ",
+          "s012"
+        ],
+        [
+          "削除処理",
+          "s013"
+        ],
+        [
+          " .....................................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "122",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "3.9. ",
+          "s012"
+        ],
+        [
+          "【参考】",
+          "s013"
+        ],
+        [
+          " Service",
+          "s012"
+        ],
+        [
+          " クラスでビジネスロジックを分離",
+          "s013"
+        ],
+        [
+          " ..........................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "125",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "章のまとめ",
+          "s013"
+        ],
+        [
+          " ...........................................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "132",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p004-b03",
+      "kind": "step",
+      "text": "4.1. 基礎的なログイン機能の実装 ....................................................................................... 136\n4.2. セッションによるユーザ情報の保持 ............................................................................... 142\n4.3. ログイン時の入力チェック ............................................................................................. 148\n4.3.1. 【参考】その他の Validation アノテーション ................................................................. 157\n4.3.2. 【参考】メッセージのカスタマイズ ................................................................................ 159",
+      "parts": [
+        [
+          "4.1. ",
+          "s012"
+        ],
+        [
+          "基礎的なログイン機能の実装",
+          "s013"
+        ],
+        [
+          " .......................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "136",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "4.2. ",
+          "s012"
+        ],
+        [
+          "セッションによるユーザ情報の保持",
+          "s013"
+        ],
+        [
+          " ...............................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "142",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "4.3. ",
+          "s012"
+        ],
+        [
+          "ログイン時の入力チェック",
+          "s013"
+        ],
+        [
+          " .............................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "148",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "4.3.1. ",
+          "s012"
+        ],
+        [
+          "【参考】その他の ",
+          "s013"
+        ],
+        [
+          "Validation",
+          "s012"
+        ],
+        [
+          " アノテーション",
+          "s013"
+        ],
+        [
+          " .................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "157",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "4.3.2. ",
+          "s012"
+        ],
+        [
+          "【参考】メッセージのカスタマイズ",
+          "s013"
+        ],
+        [
+          " ................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "159",
+          "s012"
+        ]
+      ]
+    },
+    {
+      "chapter": "front",
+      "id": "p004-b07",
+      "kind": "step",
+      "text": "6.1. 外部参照を持つエンティティの定義 ............................................................................... 195\n6.2. 外部参照を用いた検索 ................................................................................................. 203\n6.2.1. 【参考】 検索結果のエラーハンドリング ...................................................................... 208\n6.3. 外部参照付きのデータ登録 .......................................................................................... 213\n6.4. 複雑な SQL 文の操作方法........................................................................................... 222\n6.4.1. 複雑な検索をメソッド名で定義する際のデメリット ....................................................... 223\n6.4.2. JPQL の基本構文...................................................................................................... 225\n章のまとめ ........................................................................................................................... 236",
+      "parts": [
+        [
+          "6.1. ",
+          "s012"
+        ],
+        [
+          "外部参照を持つエンティティの定義",
+          "s013"
+        ],
+        [
+          " ...............................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "195",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "6.2. ",
+          "s012"
+        ],
+        [
+          "外部参照を用いた検索",
+          "s013"
+        ],
+        [
+          " .................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "203",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "6.2.1. ",
+          "s012"
+        ],
+        [
+          "【参考】 ",
+          "s013"
+        ],
+        [
+          "検索結果のエラーハンドリング",
+          "s013"
+        ],
+        [
+          " ......................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "208",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "6.3. ",
+          "s012"
+        ],
+        [
+          "外部参照付きのデータ登録",
+          "s013"
+        ],
+        [
+          " ..........................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "213",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "6.4. ",
+          "s012"
+        ],
+        [
+          "複雑な ",
+          "s013"
+        ],
+        [
+          "SQL",
+          "s012"
+        ],
+        [
+          " 文の操作方法",
+          "s013"
+        ],
+        [
+          "...........................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "222",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "6.4.1. ",
+          "s012"
+        ],
+        [
+          "複雑な検索をメソッド名で定義する際のデメリット",
+          "s013"
+        ],
+        [
+          " .......................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "223",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "6.4.2.",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "JPQL",
+          "s012"
+        ],
+        [
+          " の基本構文",
+          "s013"
+        ],
+        [
+          "......................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "225",
+          "s012"
+        ],
+        [
+          "\n",
+          null
+        ],
+        [
+          "章のまとめ",
+          "s013"
+        ],
+        [
+          " ...........................................................................................................................",
+          "s012"
+        ],
+        [
+          " ",
+          "s012"
+        ],
+        [
+          "236",
+          "s012"
+        ]
+      ]
+    }
+  ],
+  "manual_inner_space_blocks": [],
+  "bracket_span_boundary_occurrences": [
+    {
+      "chapter": "05",
+      "id": "p183-b01",
+      "bracket": "【作業手順①】"
+    },
+    {
+      "chapter": "ex02",
+      "id": "p013-b05",
+      "bracket": "【Index メソッドの解説】"
+    }
+  ],
+  "counts": {
+    "bracket_blocks": 212,
+    "bracket_characters": 430,
+    "manual_inner_space_blocks": 0,
+    "span_boundary_occurrences": 2,
+    "regular_heading_including_native_symbols": 63
+  },
+  "markdown_diff_vs_head": ""
+}
