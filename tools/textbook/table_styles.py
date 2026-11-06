@@ -114,10 +114,14 @@ def table_paint(folder, layout, table, rows):
     geometry = table_geometry(layout, table)
     page = next(page for page in layout["pages"] if page["source_page"] == table["source_page"])
     fills = _decoration_fills(str((Path(folder) / page["decoration"]).resolve()))
+    original_rows = [[re.sub(r"\s+|\u200b", "", value) for value in row] for row in table["rows"]]
     result = []
     for row_index, text_row in enumerate(rows):
         output_row = []
         source_row = min(row_index, len(source) - 1)
+        text_key = [re.sub(r"\s+|\u200b", "", value) for value in text_row]
+        if original_rows[source_row] != text_key and text_key in original_rows:
+            source_row = original_rows.index(text_key)
         for column, text in enumerate(text_row):
             source_column = min(column, len(source[source_row]) - 1)
             characters = source[source_row][source_column]

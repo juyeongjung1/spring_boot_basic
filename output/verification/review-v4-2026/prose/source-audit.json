@@ -1,0 +1,718 @@
+{
+  "baseline": "ac012dd",
+  "meaning_unchanged": true,
+  "label_unchanged": true,
+  "word_break_metadata_unchanged": true,
+  "records": 46,
+  "rows": 84,
+  "checks": [
+    {
+      "chapter": "02",
+      "anchor": "p043-b05",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p044-b09",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p049-b05",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p050-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p051-b06",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p052-b03",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p056-b05",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p058-b06",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p059-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p059-b07",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p060-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "02",
+      "anchor": "p060-b12",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p086-b03",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p086-b09",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p087-b05",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p088-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p092-b09",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p093-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p093-b07",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p097-b10",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p101-b06",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p108-b06",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p109-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p110-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p110-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p111-b03",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p117-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p119-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p129-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "03",
+      "anchor": "p130-b05",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "04",
+      "anchor": "p137-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "04",
+      "anchor": "p140-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "04",
+      "anchor": "p144-b05",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "04",
+      "anchor": "p150-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "04",
+      "anchor": "p151-b08",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "04",
+      "anchor": "p152-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "04",
+      "anchor": "p152-b06",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "04",
+      "anchor": "p153-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "05",
+      "anchor": "p168-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "05",
+      "anchor": "p184-b02",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "05",
+      "anchor": "p185-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "07",
+      "anchor": "p266-b11",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "07",
+      "anchor": "p267-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "07",
+      "anchor": "p267-b09",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "07",
+      "anchor": "p273-b04",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    },
+    {
+      "chapter": "07",
+      "anchor": "p274-b01",
+      "meanings_unchanged": true,
+      "original_break_metadata_unchanged": true
+    }
+  ],
+  "changed": [
+    {
+      "chapter": "02",
+      "anchor": "p043-b05",
+      "source_ids": [
+        "p043-b05"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p044-b09",
+      "source_ids": [
+        "p044-b09"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p049-b05",
+      "source_ids": [
+        "p049-b05",
+        "p049-b06"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p050-b01",
+      "source_ids": [
+        "p050-b01",
+        "p050-b02"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p050-b01",
+      "source_ids": [
+        "p050-b03",
+        "p050-b04"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p051-b06",
+      "source_ids": [
+        "p051-b06",
+        "p051-b07"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p051-b06",
+      "source_ids": [
+        "p051-b08",
+        "p051-b09"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p056-b05",
+      "source_ids": [
+        "p056-b05",
+        "p056-b06"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p058-b06",
+      "source_ids": [
+        "p058-b06",
+        "p058-b07",
+        "p058-b08"
+      ],
+      "keys": [
+        "editor_ignored_line_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p059-b01",
+      "source_ids": [
+        "p059-b01",
+        "p059-b02",
+        "p059-b03"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "02",
+      "anchor": "p060-b04",
+      "source_ids": [
+        "p060-b06",
+        "p060-b07",
+        "p060-b08"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p086-b03",
+      "source_ids": [
+        "p086-b03",
+        "p086-b05",
+        "p086-b04"
+      ],
+      "keys": [
+        "source_fragments",
+        "code_line_sources",
+        "editor_paragraph_breaks",
+        "code"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p086-b03",
+      "source_ids": [
+        "p086-b06",
+        "p086-b07"
+      ],
+      "keys": [
+        "code_line_sources",
+        "code"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p086-b09",
+      "source_ids": [
+        "p086-b09",
+        "p086-b11",
+        "p086-b10"
+      ],
+      "keys": [
+        "editor_ignored_line_breaks",
+        "source_fragments",
+        "code_line_sources",
+        "editor_paragraph_breaks",
+        "code"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p087-b05",
+      "source_ids": [
+        "p087-b05",
+        "p087-b06",
+        "p087-b07"
+      ],
+      "keys": [
+        "code_line_sources",
+        "editor_paragraph_breaks",
+        "code"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p088-b01",
+      "source_ids": [
+        "p088-b01",
+        "p088-b02"
+      ],
+      "keys": [
+        "code_line_sources",
+        "code"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p092-b09",
+      "source_ids": [
+        "p092-b09",
+        "p092-b10"
+      ],
+      "keys": [
+        "code_line_sources",
+        "code"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p093-b01",
+      "source_ids": [
+        "p093-b01",
+        "p093-b02",
+        "p093-b03",
+        "p093-b04"
+      ],
+      "keys": [
+        "editor_ignored_line_breaks",
+        "code_line_sources",
+        "editor_paragraph_breaks",
+        "code"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p093-b01",
+      "source_ids": [
+        "p093-b05",
+        "p093-b06"
+      ],
+      "keys": [
+        "code_line_sources",
+        "code"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p093-b07",
+      "source_ids": [
+        "p093-b07",
+        "p093-b08"
+      ],
+      "keys": [
+        "code_line_sources",
+        "code"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p110-b04",
+      "source_ids": [
+        "p110-b07",
+        "p110-b08"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p117-b04",
+      "source_ids": [
+        "p117-b04"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p129-b01",
+      "source_ids": [
+        "p129-b02",
+        "p129-b03",
+        "p129-b04"
+      ],
+      "keys": [
+        "editor_ignored_line_breaks",
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p129-b01",
+      "source_ids": [
+        "p129-b06",
+        "p129-b07"
+      ],
+      "keys": [
+        "editor_ignored_line_breaks"
+      ]
+    },
+    {
+      "chapter": "03",
+      "anchor": "p129-b01",
+      "source_ids": [
+        "p129-b08",
+        "p129-b09"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p140-b04",
+      "source_ids": [
+        "p140-b04"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p140-b04",
+      "source_ids": [
+        "p140-b05"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p144-b05",
+      "source_ids": [
+        "p144-b05",
+        "p144-b06"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p144-b05",
+      "source_ids": [
+        "p144-b07",
+        "p144-b08"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p150-b04",
+      "source_ids": [
+        "p150-b06",
+        "p150-b07"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p150-b04",
+      "source_ids": [
+        "p150-b08"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p151-b08",
+      "source_ids": [
+        "p151-b10",
+        "p151-b11"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p152-b01",
+      "source_ids": [
+        "p152-b01",
+        "p152-b02"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "04",
+      "anchor": "p152-b06",
+      "source_ids": [
+        "p152-b06",
+        "p152-b07",
+        "p152-b08",
+        "p152-b09"
+      ],
+      "keys": [
+        "editor_ignored_line_breaks"
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor": "p184-b02",
+      "source_ids": [
+        "p184-b06",
+        "p184-b07"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "05",
+      "anchor": "p185-b01",
+      "source_ids": [
+        "p185-b06",
+        "p185-b07"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    },
+    {
+      "chapter": "07",
+      "anchor": "p267-b09",
+      "source_ids": [
+        "p267-b09",
+        "p267-b10"
+      ],
+      "keys": [
+        "editor_paragraph_breaks"
+      ]
+    }
+  ]
+}

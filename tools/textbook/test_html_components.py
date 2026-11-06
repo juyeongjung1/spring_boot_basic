@@ -154,6 +154,25 @@ class ComponentSourceTests(unittest.TestCase):
                                 ('13 行-14 行目', '13～14行目'), ('続き', '続き')):
             self.assertEqual(components.explanation_label(label), expected)
 
+    def test_editorial_paragraphs_keep_words_and_separate_form_topics(self):
+        record=next(r for r in self.records if r['anchor_id']=='p049-b05')
+        _,_,layout,nodes,_,_=chapter('02')
+        body=components.meaning_html(record['rows'][0],nodes,layout)
+        paragraphs=re.findall(r'<p[^>]*>(.*?)</p>',body)
+        self.assertEqual(len(paragraphs),4)
+        text=lambda value:unescape(re.sub('<[^>]*>','',value)).strip()
+        self.assertTrue(text(paragraphs[0]).startswith('<form>要素'))
+        self.assertTrue(text(paragraphs[1]).startswith('Thymeleaf では'))
+        self.assertTrue(text(paragraphs[2]).startswith('ここでは/login'))
+        self.assertTrue(text(paragraphs[3]).startswith('そして、method'))
+        self.assertEqual(components.normalized(''.join(text(p) for p in paragraphs)),
+                         components.normalized(record['rows'][0]['meaning']))
+        row=next(r for r in self.records if r['anchor_id']=='p059-b01')['rows'][0]
+        arguments=components.meaning_html(row,nodes,layout)
+        self.assertEqual(arguments.count('explanation-argument-paragraph'),2)
+        row=next(r for r in self.records if r['anchor_id']=='p058-b06')['rows'][0]
+        self.assertNotIn('<br>',components.meaning_html(row,nodes,layout))
+
 
 class BrowserComponentTests(unittest.TestCase):
     @classmethod
@@ -217,6 +236,10 @@ class BrowserComponentTests(unittest.TestCase):
                              if r['anchor_id'] == 'p043-b05')
         cls.cards.append({'id': 'public-explanation', 'width': 426.672,
             'html': components.explanation_html(public_record, real_nodes, real_layout)})
+        form_record=next(
+            r for r in json.loads((components.HERE/'code_explanations.json').read_text(encoding='utf-8')) if r['anchor_id']=='p049-b05')
+        cls.cards.append({'id':'form-explanation','width':426.672,
+            'html':components.explanation_html(form_record,real_nodes,real_layout)})
         wrapped = components.code_html([{'number': 1, 'code': '// 折り返し確認', 'ids': ['wrapped-code-source']}],
             'java', [('非常に長いファイル名/授業教材/商品管理画面の入力値を確認する/MessageController.java', ['wrapped-filename-source'])])
         cls.cards.append({'id': 'wrapped-code', 'width': 240, 'html': wrapped})
@@ -266,7 +289,7 @@ class BrowserComponentTests(unittest.TestCase):
             self.assertEqual(table_text.count(f'項目{i:03d}'), 1)
         for parts, filename in ((code, 'LongCode.java'), (table, None)):
             for index, part in enumerate(parts):
-                self.assertEqual('続き' in part['text'], index > 0)
+                self.assertEqual('続き' in part['text'], index > 0 and bool(filename))
                 if filename:
                     self.assertIn(filename, part['text'])
                     self.assertEqual('最後だけの補足' in part['text'], index == len(parts) - 1)
@@ -327,6 +350,15 @@ class BrowserComponentTests(unittest.TestCase):
             original_bold = [s for s in spans if '原文の部分強調' in s['text']]
             self.assertTrue(regular and all(s['font'].startswith('MS-PMincho') and not s['flags'] & 16 for s in regular))
             self.assertTrue(original_bold and all(s['font'].startswith('MS-PGothic') for s in original_bold))
+
+    def test_form_explanation_paragraphs_all_have_one_character_indent(self):
+        parts=self.results['form-explanation']
+        self.assertEqual(len(parts),1)
+        with fitz.open(parts[0]['pdf']) as pdf:
+            for phrase in ('<form>要素','Thymeleaf では','ここでは/login','そして、method'):
+                rectangles=pdf[0].search_for(phrase)
+                self.assertTrue(rectangles,phrase)
+                self.assertAlmostEqual(rectangles[0].x0,11.04,delta=.03)
 
     def test_public_explanation_uses_the_same_body_and_emphasis_fonts(self):
         with fitz.open(self.results['public-explanation'][0]['pdf']) as pdf:

@@ -847,11 +847,6 @@
     }
   ],
   "illustrations": {
-    "illustration-2026-repository-results": {
-      "width": 280,
-      "max_height": 140,
-      "caption_id": "illustration-2026-repository-results-caption"
-    },
     "revision-di-remote": {
       "width": 260,
       "max_height": 140,
@@ -871,6 +866,11 @@
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-redirect-new-request-caption"
+    },
+    "illustration-review-v4-each-variable-key": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-review-v4-each-variable-key-caption"
     }
   },
   "pagination": {

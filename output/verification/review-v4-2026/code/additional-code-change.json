@@ -1,0 +1,8 @@
+{
+  "chapter": "03",
+  "id": "p109-b03",
+  "before": "```java\n1://showProductInsertView()の下に追記\n2:\n3:@PostMapping(\"/insert\")\n4: public String insertProduct(ProductForm productForm, Model model) {\n5: Product product = new Product();\n6: product.setName(productForm.getName());\n7: product.setPrice(productForm.getPrice());\n8: product = prodRepo.save(product);\n9:             model.addAttribute(\"product\", product);\n10: return \"/product/result\";\n11: }\n```\n",
+  "after": "```java\n1://showProductInsertView()の下に追記\n2:\n3:@PostMapping(\"/insert\")\n4:public String insertProduct(ProductForm productForm, Model model) {\n5:    Product product = new Product();\n6:    product.setName(productForm.getName());\n7:    product.setPrice(productForm.getPrice());\n8:    product = prodRepo.save(product);\n9:    model.addAttribute(\"product\", product);\n10:    return \"/product/result\";\n11:}\n```",
+  "scope": "単独メソッドの先頭は字下げなし、メソッド内4字。引用8行を同期。字句・意味・枠幅・字号は不変。",
+  "non_whitespace_code_preserved": true
+}

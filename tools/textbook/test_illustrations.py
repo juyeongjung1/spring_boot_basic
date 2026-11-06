@@ -1,9 +1,10 @@
-"""小型挿絵の寸法・caption・元頁所属と、追加前の原文を検証する。"""
+"""小型挿絵の寸法・caption・元頁所属、過去の原文保全と今回の許可差分を検証する。"""
 from collections import defaultdict
 from functools import lru_cache
 from pathlib import Path
 import hashlib
 import json
+import re
 import subprocess
 import unittest
 
@@ -15,10 +16,15 @@ from build import ROOT, read_markdown
 CATALOG = ROOT / 'docs/textbook/illustrations.json'
 APPROVED_EDITION = 'f16135f3cebb2e2f9ab481e9cfead35b05bd52d4'
 FIGURE_REVISION_EDITION = '96a99882326d65ec048100b2f20fa0ed4aaa72d2'
+REVIEW_EDITION = 'ac012ddc04163641c9fa3c865b11b00b0b6307d6'
 DI_INTRO = 'illustration-figure-cards-2026-di-remote-intro'
 MANAGED = 'illustration-expansion-2026-boot-managed-versions'
 BEAN = 'illustration-expansion-2026-bean-auto-configuration'
 REMOVED_MANAGED_ASSET = 'docs/textbook/chapters/01/assets/revision-ill-boot-managed-versions.png'
+FORM = 'illustration-expansion-2026-form-name-binding'
+REPOSITORY = 'illustration-2026-repository-results'
+EACH = 'illustration-review-v4-each-variable-key'
+REMOVED_REPOSITORY_ASSET = 'docs/textbook/chapters/03/assets/revision-ill-repository.png'
 
 
 @lru_cache(maxsize=None)
@@ -44,6 +50,20 @@ def base_chapter(name, base=None):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(result.stdout)
     return read_markdown(path)
+
+
+@lru_cache(maxsize=None)
+def edition_json(relative, base=REVIEW_EDITION):
+    result = subprocess.run(['git', '-c', 'safe.directory=' + ROOT.as_posix(),
+        'show', base + ':' + relative], cwd=ROOT, check=True, capture_output=True)
+    return json.loads(result.stdout)
+
+
+def reviewed_chapter(name):
+    # 過去の挿絵追加を全原文と照合する検査は、承認済み版で固定する。
+    nodes, figures, pages = base_chapter(name, REVIEW_EDITION)
+    return (chapter(name)[0], nodes, figures, pages,
+            edition_json('docs/textbook/chapters/' + name + '/source.json'))
 
 
 def image_size(record):
@@ -109,15 +129,16 @@ class IllustrationSourceTests(unittest.TestCase):
                     self.assertEqual(order.index(record['before_id']), order.index(caption) + 1)
 
     def test_original_text_code_and_id_order_are_unchanged(self):
+        data = edition_json('docs/textbook/illustrations.json')
         additions = defaultdict(set)
         captions = defaultdict(set)
-        for record in catalog()['new']:
+        for record in data['new']:
             additions[record['chapter']].add(record['figure_id'])
             captions[record['chapter']].add(record['caption_id'])
         original_count = current_count = 0
-        for name in catalog()['reviewed_chapters']:
+        for name in data['reviewed_chapters']:
             before_nodes, before_figures, before_pages = base_chapter(name)
-            _, nodes, figures, pages, _ = chapter(name)
+            _, nodes, figures, pages, _ = reviewed_chapter(name)
             with self.subTest(chapter=name):
                 self.assertEqual(set(nodes) - set(before_nodes), captions[name])
                 self.assertEqual(set(figures) - set(before_figures), additions[name])
@@ -139,25 +160,26 @@ class IllustrationSourceTests(unittest.TestCase):
         self.assertEqual(current_count, original_count + 66)
 
     def test_only_new_illustration_settings_are_added_since_the_approved_edition(self):
+        data = edition_json('docs/textbook/illustrations.json')
         command = ['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'show']
         previous = subprocess.run(command + [APPROVED_EDITION + ':docs/textbook/illustrations.json'],
             cwd=ROOT, check=True, capture_output=True)
         previous = json.loads(previous.stdout)
         previous_records = {r['figure_id']: r for r in previous['new']}
-        current_records = {r['figure_id']: r for r in catalog()['new']}
+        current_records = {r['figure_id']: r for r in data['new']}
         self.assertEqual(len(current_records.keys() - previous_records.keys()), 24)
         for ident, record in previous_records.items():
             self.assertEqual(current_records[ident], record, ident)
         additions = defaultdict(set)
         for ident in current_records.keys() - previous_records.keys():
             additions[current_records[ident]['chapter']].add(ident)
-        for name in catalog()['reviewed_chapters']:
+        for name in data['reviewed_chapters']:
             with self.subTest(chapter=name):
                 relative = 'docs/textbook/chapters/' + name + '/source.json'
                 before = subprocess.run(command + [APPROVED_EDITION + ':' + relative],
                     cwd=ROOT, check=True, capture_output=True)
                 before = json.loads(before.stdout)
-                config = chapter(name)[4]
+                config = reviewed_chapter(name)[4]
                 self.assertEqual({k:v for k,v in config.items() if k not in {'illustrations','pagination'}},
                                  {k:v for k,v in before.items() if k not in {'illustrations','pagination'}})
                 old_options = before.get('illustrations', {})
@@ -176,15 +198,17 @@ class IllustrationSourceTests(unittest.TestCase):
             capture_output=True, encoding='utf-8')
         allowed = {'docs/textbook/chapters/'+r['chapter']+'/'+r['asset'] for r in catalog()['new']}
         allowed.add(REMOVED_MANAGED_ASSET)
+        allowed.add(REMOVED_REPOSITORY_ASSET)
         self.assertTrue(set(result.stdout.splitlines()).issubset(allowed), result.stdout)
 
     def test_only_requested_di_bean_changes_follow_the_previous_edition(self):
+        data = edition_json('docs/textbook/illustrations.json')
         command = ['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'show']
         previous = json.loads(subprocess.run(command +
             [FIGURE_REVISION_EDITION + ':docs/textbook/illustrations.json'],
             cwd=ROOT, check=True, capture_output=True).stdout)
         old_records = {r['figure_id']: r for r in previous['new'] + previous['resized']}
-        records = {r['figure_id']: r for r in catalog()['new'] + catalog()['resized']}
+        records = {r['figure_id']: r for r in data['new'] + data['resized']}
         self.assertEqual(set(records) - set(old_records), {DI_INTRO})
         self.assertEqual(set(old_records) - set(records), {MANAGED})
         for ident, record in old_records.items():
@@ -193,9 +217,9 @@ class IllustrationSourceTests(unittest.TestCase):
         self.assertEqual(records[BEAN]['asset'], old_records[BEAN]['asset'])
         self.assertNotEqual(records[BEAN]['asset_sha256'], old_records[BEAN]['asset_sha256'])
         old_count = current_count = 0
-        for name in catalog()['reviewed_chapters']:
+        for name in data['reviewed_chapters']:
             before_nodes, before_figures, before_pages = base_chapter(name, FIGURE_REVISION_EDITION)
-            _, nodes, figures, pages, config = chapter(name)
+            _, nodes, figures, pages, config = reviewed_chapter(name)
             added = {DI_INTRO, DI_INTRO + '-caption'} if name == '01' else set()
             removed = {MANAGED, MANAGED + '-caption'} if name == '01' else set()
             moved = {BEAN, BEAN + '-caption'} if name == '01' else set()
@@ -235,7 +259,7 @@ class IllustrationSourceTests(unittest.TestCase):
             current_count += len(nodes) + len(figures)
         self.assertEqual(old_count, 2945)
         self.assertEqual(current_count, old_count)
-        _, _, _, pages, _ = chapter('01')
+        _, _, _, pages, _ = reviewed_chapter('01')
         for ident, anchor, source in [(DI_INTRO, 'p020-b03', 20), (BEAN, 'p023-b02', 23)]:
             entries = next(p['entries'] for p in pages if p['source_page'] == source)
             position = entries.index(anchor)
@@ -248,9 +272,112 @@ class IllustrationSourceTests(unittest.TestCase):
             'docs/textbook/chapters/01/' + records[BEAN]['asset']}
         asset_paths = ['docs/textbook/chapters/' + name + '/assets' for name in catalog()['reviewed_chapters']]
         changed_assets = subprocess.run(command[:-1] + ['diff', '--name-only', '--no-renames',
-            FIGURE_REVISION_EDITION, '--', *asset_paths], cwd=ROOT, check=True,
+            FIGURE_REVISION_EDITION, REVIEW_EDITION, '--', *asset_paths], cwd=ROOT, check=True,
             capture_output=True, encoding='utf-8').stdout.splitlines()
         self.assertTrue(set(changed_assets).issubset(allowed_assets), changed_assets)
+
+    def test_only_requested_content_changes_follow_the_reviewed_edition(self):
+        removed = {'02': {'p060-b09', 'p060-b10', 'p060-b11'},
+            '03': {'p071-b06', 'p071-b07', 'p071-b08', REPOSITORY, REPOSITORY+'-caption'}}
+        added = {'02': {'revision-login3-instruction'}, '03': {EACH, EACH+'-caption'}}
+        codes = {'p083-b04', 'p084-b01', 'p085-b04', 'p086-b04', 'p086-b10',
+                 'p087-b04', 'p092-b03', 'p092-b08', 'p109-b03'}
+        changed = {'02': {'p061-b02', FORM, FORM+'-caption'},
+                   '03': codes | {'p071-b05'}, 'ex04': {'p036-table01'}}
+        annotations = {'Spring Controller で', 'model に格納した', 'キー名を右に。', '左は任意の変数名'}
+        count = 0
+        for name in catalog()['reviewed_chapters']:
+            _, old_nodes, old_figures, old_pages, old_config = reviewed_chapter(name)
+            folder, nodes, figures, pages, config = chapter(name)
+            old_ids, ids = set(old_nodes) | set(old_figures), set(nodes) | set(figures)
+            with self.subTest(chapter=name):
+                self.assertEqual(old_ids - ids, removed.get(name, set()))
+                self.assertEqual(ids - old_ids, added.get(name, set()))
+                self.assertEqual([p['source_page'] for p in pages], [p['source_page'] for p in old_pages])
+                for old, new in zip(old_pages, pages):
+                    self.assertEqual([i for i in old['entries'] if i not in removed.get(name, set())],
+                                     [i for i in new['entries'] if i not in added.get(name, set())])
+                for ident in old_ids & ids:
+                    if ident not in changed.get(name, set()):
+                        self.assertEqual(nodes.get(ident), old_nodes.get(ident), ident)
+                        self.assertEqual(figures.get(ident), old_figures.get(ident), ident)
+                # 変換対象の外側は、Span・字下げ属性を含むMarkdown全字を保全する。
+                previous = ROOT/'tmp/illustrations-tests/base'/REVIEW_EDITION/(name+'.md')
+                texts = [previous.read_text(encoding='utf-8'), (folder/'chapter.md').read_text(encoding='utf-8')]
+                for index, text in enumerate(texts):
+                    for ident in removed.get(name, set()) | added.get(name, set()) | changed.get(name, set()):
+                        pattern = (r'^::: \{#'+re.escape(ident)+r'\b[^\n]*\}\n.*?^:::\n\n'
+                                   r'|^!\[[^\n]*\]\([^\n]*\)\{#'+re.escape(ident)+r'\}\n\n')
+                        text = re.sub(pattern, '', text, flags=re.M | re.S)
+                    texts[index] = text
+                self.assertEqual(texts[0], texts[1], name)
+                expected = json.loads(json.dumps(old_config))
+                if name == '03':
+                    expected['illustrations'].pop(REPOSITORY)
+                    expected['illustrations'][EACH] = {'caption_id': EACH+'-caption', 'width': 280, 'max_height': 140}
+                self.assertEqual(config, expected, name)
+                if name == '02':
+                    self.assertEqual(nodes['p061-b02']['text'], 'http://localhost:8080/login3')
+                    self.assertEqual(nodes['revision-login3-instruction']['text'], '社員番号と、パスワードを入力してください。')
+                    self.assertEqual(nodes['p061-b02']['parts'], old_nodes['p061-b02']['parts'][:1])
+                    self.assertEqual(nodes['revision-login3-instruction']['parts'], old_nodes['p061-b02']['parts'][2:])
+                    self.assertEqual(nodes[FORM+'-caption']['text'],
+                        'HTMLのname属性値をFormのフィールド名と対応させ、送信された値をまとめます。')
+                    self.assertEqual(figures[FORM], old_figures[FORM])
+                if name == '03':
+                    for ident in codes:
+                        before, after = old_nodes[ident], nodes[ident]
+                        self.assertEqual({k:v for k,v in before.items() if k not in {'parts','text'}},
+                                         {k:v for k,v in after.items() if k not in {'parts','text'}}, ident)
+                        self.assertEqual([p[1] for p in before['parts']], [p[1] for p in after['parts']], ident)
+                        lines = [line for line in before['text'].splitlines()
+                                 if ident != 'p087-b04' or line.strip() not in annotations]
+                        if ident == 'p092-b03':
+                            lines = [line.replace('<!-— 省略 -->', '<!-- 省略 -->') for line in lines]
+                        normalize = lambda line: re.sub(r'^(\d+:)\s*', r'\1', line.lstrip())
+                        self.assertEqual([normalize(line) for line in lines],
+                                         [normalize(line) for line in after['text'].splitlines()], ident)
+                    rows = nodes['p071-b05']['rows']
+                    self.assertEqual(rows[0], ['設定項目', '意味'])
+                    self.assertEqual(len(rows), 5)
+                    for ident, row in zip(['p071-b05','p071-b06','p071-b07','p071-b08'], rows[1:]):
+                        self.assertEqual(''.join(old_nodes[ident]['text'].split()).replace('→',''),
+                                         ''.join(''.join(row).split()), ident)
+                    self.assertEqual(figures[EACH], 'assets/revision-ill-each-variable-key.png')
+                    self.assertEqual(nodes[EACH+'-caption']['text'],
+                        '「:」の右側はModelに格納したキー名、左側は繰り返しで使う任意の変数名です。')
+                if name == 'ex04':
+                    old_rows, new_rows = old_nodes['p036-table01']['rows'], nodes['p036-table01']['rows']
+                    self.assertEqual(new_rows[0], old_rows[0])
+                    self.assertEqual(new_rows[2:], old_rows[4:])
+                    for column in range(3):
+                        self.assertEqual(''.join(''.join(row[column] for row in old_rows[1:4]).split()),
+                                         ''.join(new_rows[1][column].split()))
+            count += len(ids)
+        self.assertEqual(count, 2940)
+        previous = edition_json('docs/textbook/illustrations.json')
+        self.assertEqual({k:v for k,v in catalog().items() if k != 'new'},
+                         {k:v for k,v in previous.items() if k != 'new'})
+        old_records = {r['figure_id']: r for r in previous['new']}
+        records = {r['figure_id']: r for r in catalog()['new']}
+        self.assertEqual(set(old_records)-set(records), {REPOSITORY})
+        self.assertEqual(set(records)-set(old_records), {EACH})
+        for ident in set(old_records) & set(records) - {FORM}:
+            expected = dict(old_records[ident])
+            if ident == 'illustration-expansion-2026-model-key-property':
+                expected['before_id'] = 'p060-b12'
+            self.assertEqual(records[ident], expected, ident)
+        for ident, source, after, before in [(FORM,54,'p054-b03','p054-b04'), (EACH,87,'p087-b07','p088-b01')]:
+            self.assertEqual([records[ident][k] for k in ('source_page','after_id','before_id')], [source,after,before])
+        paths = ['docs/textbook/chapters/'+name+'/assets' for name in catalog()['reviewed_chapters']]
+        command = ['git','-c','safe.directory='+ROOT.as_posix()]
+        changed_assets = subprocess.run(command+['diff','--name-only','--no-renames',REVIEW_EDITION,'--',*paths],
+            cwd=ROOT,check=True,capture_output=True,encoding='utf-8').stdout.splitlines()
+        new_assets = subprocess.run(command+['ls-files','--others','--exclude-standard','--',*paths],
+            cwd=ROOT,check=True,capture_output=True,encoding='utf-8').stdout.splitlines()
+        self.assertEqual(set(changed_assets+new_assets), {REMOVED_REPOSITORY_ASSET,
+            'docs/textbook/chapters/02/assets/revision-ill-form-name-binding.png',
+            'docs/textbook/chapters/03/assets/revision-ill-each-variable-key.png'})
 
 
 class IllustrationPdfTests(unittest.TestCase):

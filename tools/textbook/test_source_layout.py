@@ -85,7 +85,9 @@ class SourceLayoutTests(unittest.TestCase):
         added_figures = set()
         self.assertEqual(len(self.chapters), 19)
         for name, chapter in self.chapters.items():
-            self.assertFalse(chapter['original'].keys() - chapter['current'].keys(), name)
+            removed = ({'p060-b09','p060-b10','p060-b11'} if name=='02' else
+                       {'p071-b06','p071-b07','p071-b08'} if name=='03' else set())
+            self.assertEqual(chapter['original'].keys() - chapter['current'].keys(), removed, name)
             self.assertFalse(chapter['original_figures'].keys() - chapter['current_figures'].keys(), name)
             added_figures.update((name, ident) for ident in
                 chapter['current_figures'].keys() - chapter['original_figures'].keys())
@@ -94,7 +96,8 @@ class SourceLayoutTests(unittest.TestCase):
         messages = ('title', 'purpose', 'files', 'bundles', 'ja', 'en', 'fallback', 'settings',
                     'settings-note', 'thymeleaf', 'html', 'java', 'controller', 'locale')
         errors = ('title', 'console', 'name', 'trace-intro', 'trace', 'trace-read', 'template', 'sql', 'status')
-        expected = {('03', 'migration-03-jpa-pom'), ('03', 'revision-di-caption')}
+        expected = {('03', 'migration-03-jpa-pom'), ('03', 'revision-di-caption'),
+                    ('02','revision-login3-instruction')}
         expected.update(('04', 'revision-messages-' + name) for name in messages)
         expected.update(('appendix-b', 'revision-errors-' + name) for name in errors)
         expected_figures = {('03', 'revision-di-remote')}
@@ -241,7 +244,7 @@ class SourceLayoutTests(unittest.TestCase):
                                     for c in self.text_hit(characters, text)), text)
             jdbc = self.text_box(self.text_hit(characters, 'JDBC'))
             _, _, area = parts[0]
-            ratio = ((table['xs'][1] + table['xs'][2]) / 2 - table['xs'][0]) / (table['xs'][-1] - table['xs'][0])
+            ratio = .4375  # 要素25%、JDBC37.5%、JPA37.5%の新しい比較用レイアウト。
             self.assertAlmostEqual((jdbc.x0 + jdbc.x1) / 2, area.x0 + area.width * ratio, delta=1)
             border = (215 / 255, 221 / 255, 229 / 255)
             self.assertTrue(any(self.color_is(d['fill'], border) or self.color_is(d['color'], border)

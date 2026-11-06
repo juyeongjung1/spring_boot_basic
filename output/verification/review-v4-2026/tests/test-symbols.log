@@ -1,0 +1,7 @@
+test_native_and_flow_symbols_use_the_monochrome_font (__main__.PlainSymbolTests.test_native_and_flow_symbols_use_the_monochrome_font) ... ok
+test_only_bullet_codepoints_are_normalized (__main__.PlainSymbolTests.test_only_bullet_codepoints_are_normalized) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 6.521s
+
+OK

@@ -1,8 +1,8 @@
 # 教材へ挿入した小型イラスト
 
-小型イラストは全34点です。第1章のDI導入図を追加し、管理対象ライブラリの図を削除、Beanの図は本文と同じリモコンの比喩に作り直しました。画像本体は幅300pt・高さ140pt以内、標準幅280pt、既存DI図は260ptです。
+小型イラストは全34点です。HTMLのname属性とFormの対応図を作り直し、th:eachの左右を説明する図を追加しました。不要なRepository返り値の図は削除しています。画像本体は幅300pt・高さ140pt以内、標準幅280pt、既存DI図は260ptです。
 
-本文・コード・既存スライドは書き換えず、新しい図と短いキャプションだけを追加しています。図番号とキャプションを同じ枠内へ収め、図とキャプションを同じページに保持します。図中は短い語と色で関係を示し、詳しい説明は元の本文を使います。
+図番号とキャプションを同じ枠内へ収め、図とキャプションを同じページに保持します。図中は短い語と色で関係を示し、詳しい説明は元の本文を使います。th:each図は、コードに混入していたPPT吹き出しの説明を図として分離したものです。
 
 ## 概念の理解を補う24点
 
@@ -13,7 +13,7 @@
 | BeanはDIコンテナに準備されたリモコン本体 | 01・23p | DIコンテナを倉庫、Beanを倉庫の中のリモコン本体として識別する。 | [表示](chapters/01/assets/revision-ill-bean-auto-configuration.png) |
 | 検索のお願いと検索結果の応答 | 02・35p | リクエストとレスポンスを、教科書本文の服の検索の具体的な行動と対応付ける。 | [表示](chapters/02/assets/revision-ill-request-response-search.png) |
 | 同じURLでもGETとPOSTで担当メソッドが変わる | 02・52p | URLだけが対応付けの条件ではなく、HTTPメソッドも含めて処理が分かれることを理解する。 | [表示](chapters/02/assets/revision-ill-get-post-routing.png) |
-| 入力欄のnameとFormのフィールドを結び付ける | 02・54p | 日本語の項目名とnameの違い、複数の値が1つのFormへまとまる関係を可視化する。 | [表示](chapters/02/assets/revision-ill-form-name-binding.png) |
+| HTMLのname属性値とFormのフィールド名の対応 | 02・54p | inputのtypeとnameを区別し、name属性値からFormの同名フィールドへ値が渡る関係を示す。 | [表示](chapters/02/assets/revision-ill-form-name-binding.png) |
 | user.idをキー名とフィールド名に分けて読む | 02・60p | ModelのキーとFormのフィールドを混同せず、ドットの前後を別の段階として理解する。 | [表示](chapters/02/assets/revision-ill-model-key-property.png) |
 | Repositoryの宣言から使える実装オブジェクトが用意される | 03・78p | インターフェースを書いただけなのにfindAllやsaveを使える理由を、宣言と実体の区別で説明する。 | [表示](chapters/03/assets/revision-ill-repository-implementation.png) |
 | メソッド名と引数が検索条件になる | 03・97p | 命名ルールを暗記するだけでなく、メソッド名のプロパティと引数の値がどう条件になるかを理解する。 | [表示](chapters/03/assets/revision-ill-query-method-name.png) |
@@ -33,13 +33,13 @@
 | マージンは枠の外、パディングは枠の内 | 07・259p | mとpの違いを、コードやブラウザー色だけに頼らず同じ要素の境界で理解する。 | [表示](chapters/07/assets/revision-ill-spacing-box-model.png) |
 | container・row・colの入れ子 | 07・265p | HTMLの閉じタグが連続すると見失いやすい親子関係を、空間の包み込みとして理解する。 | [表示](chapters/07/assets/revision-ill-grid-containment.png) |
 
-## 前回の9点とDI図
+## そのほかの9点とDI図
 
 | 挿絵 | 章・元頁 | 画像 |
 | --- | --- | --- |
 | pom.xmlの指定から必要なライブラリをそろえる | 01・28p | [表示](chapters/01/assets/revision-ill-maven.png) |
 | Modelを使ったデータの受け渡し | 02・58p | [表示](chapters/02/assets/revision-ill-model.png) |
-| Repositoryの返り値はリストと0/1件で異なる | 03・90p | [表示](chapters/03/assets/revision-ill-repository.png) |
+| th:eachの変数名とModelのキー名 | 03・87p | [表示](chapters/03/assets/revision-ill-each-variable-key.png) |
 | 識別IDとサーバー側のセッション保存 | 04・142p | [表示](chapters/04/assets/revision-ill-session.png) |
 | 入力チェックの成功とエラーの分岐 | 04・148p | [表示](chapters/04/assets/revision-ill-validation.png) |
 | 共通レイアウトと画面ごとの内容を組み合わせる | 05・181p | [表示](chapters/05/assets/revision-ill-layout.png) |
@@ -50,6 +50,6 @@
 
 ## 保存と生成記録
 
-画像は組み込みimage_genで生成し、各章のassetsへ保存しています。正確な生成プロンプト、元出力パス、最終画像のSHA256、配置元頁・ID・キャプションは[カタログ](illustrations.json)に記録しています。Bean図は今回の作り直し指示により差し替え、不要となった管理対象ライブラリ図は削除しました。その他の既存画像は維持しています。
+画像は組み込みimage_genで生成し、各章のassetsへ保存しています。正確な生成プロンプト、元出力パス、最終画像のSHA256、配置元頁・ID・キャプションは[カタログ](illustrations.json)に記録しています。今回の指示でname属性図を差し替え、Repository返り値図を削除し、th:each図を追加しました。
 
 元頁は配置元の原本ページ番号です。現在のPDFの物理ページ番号は、組版後の検証記録で確認します。

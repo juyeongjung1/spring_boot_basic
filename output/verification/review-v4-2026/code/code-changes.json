@@ -1,0 +1,91 @@
+{
+  "base_commit": "ac012ddc04163641c9fa3c865b11b00b0b6307d6",
+  "chapter": "03",
+  "changed_code_blocks": [
+    {
+      "id": "p083-b04",
+      "before": "@WebServlet(\"/Sample5\")\npublic class Sample5 extends HttpServlet {\n        protected void doGet(HttpServletRequest request,\n            HttpServletResponse response)\n            throws ServletException, IOException {\n\n             //Product のDB 操作用クラスのProductDAO のオブジェクト生成\n               ProductDAO dao = new ProductDAO();\n\n               //複数行を取得するので、リスト型でデータを取得\n               List<ProductBean> list = dao.findByProductList();",
+      "after": "@WebServlet(\"/Sample5\")\npublic class Sample5 extends HttpServlet {\n    protected void doGet(HttpServletRequest request,\n        HttpServletResponse response)\n        throws ServletException, IOException {\n\n        //Product のDB 操作用クラスのProductDAO のオブジェクト生成\n        ProductDAO dao = new ProductDAO();\n\n        //複数行を取得するので、リスト型でデータを取得\n        List<ProductBean> list = dao.findByProductList();",
+      "removed_annotation_lines": [],
+      "approved_text_changes": [],
+      "non_whitespace_code_preserved": true,
+      "line_numbers_preserved": true
+    },
+    {
+      "id": "p084-b01",
+      "before": "      //取得したデータをJSP に送るため、リクエストスコープに格納\n        request.setAttribute(\"list\", list);\n\n        //list.jsp へ遷移\n        RequestDispatcher dispatcher =\n            request.getRequestDispatcher(\"/index.jsp\");\n        dispatcher.forward(request, response);\n}",
+      "after": "        //取得したデータをJSP に送るため、リクエストスコープに格納\n        request.setAttribute(\"list\", list);\n\n        //list.jsp へ遷移\n        RequestDispatcher dispatcher =\n            request.getRequestDispatcher(\"/index.jsp\");\n        dispatcher.forward(request, response);\n    }",
+      "removed_annotation_lines": [],
+      "approved_text_changes": [],
+      "non_whitespace_code_preserved": true,
+      "line_numbers_preserved": true
+    },
+    {
+      "id": "p085-b04",
+      "before": " 1:\n 2:@Controller\n 3:@RequestMapping(\"/product\")\n 4:public class ProductController {\n 5:     @Autowired\n 6: private ProductRepository prodRepo;\n 7:\n 8: @GetMapping(\"/findAll\")\n 9: public String showProductList(Model model) {\n10: List<Product> list = prodRepo.findAll();\n11: System.out.println(list);\n12: model.addAttribute(\"products\", list);\n13: return \"product/list\";\n14: }\n15:}",
+      "after": " 1:\n 2:@Controller\n 3:@RequestMapping(\"/product\")\n 4:public class ProductController {\n 5:    @Autowired\n 6:    private ProductRepository prodRepo;\n 7:\n 8:    @GetMapping(\"/findAll\")\n 9:    public String showProductList(Model model) {\n10:        List<Product> list = prodRepo.findAll();\n11:        System.out.println(list);\n12:        model.addAttribute(\"products\", list);\n13:        return \"product/list\";\n14:    }\n15:}",
+      "removed_annotation_lines": [],
+      "approved_text_changes": [],
+      "non_whitespace_code_preserved": true,
+      "line_numbers_preserved": true
+    },
+    {
+      "id": "p086-b04",
+      "before": "5:    @Autowired\n6: private ProductRepository prodRepo;",
+      "after": "5:    @Autowired\n6:    private ProductRepository prodRepo;",
+      "removed_annotation_lines": [],
+      "approved_text_changes": [],
+      "non_whitespace_code_preserved": true,
+      "line_numbers_preserved": true
+    },
+    {
+      "id": "p086-b10",
+      "before": "12: model.addAttribute(\"products\", list);\n13: return \"product/list\";",
+      "after": "12:        model.addAttribute(\"products\", list);\n13:        return \"product/list\";",
+      "removed_annotation_lines": [],
+      "approved_text_changes": [],
+      "non_whitespace_code_preserved": true,
+      "line_numbers_preserved": true
+    },
+    {
+      "id": "p087-b04",
+      "before": " 1:<h1>商品一覧</h1>\n 2: <table>\n                                              Spring Controller で\n 3: <tr>\n                                               model に格納した\n 4: <th>商品番号</th>\n                                                キー名を右に。\n 5: <th>商品名</th>\n                                              左は任意の変数名\n 6: <th>価格</th>\n 7: </tr>\n 8: <tr th:each=\"product: ${products}\">\n 9: <td th:text=\"${product.id}\"></td>\n10: <td th:text=\"${product.name}\"></td>\n11: <td th:text=\"${product.price}\"></td>\n12: </tr>\n13: </table>",
+      "after": " 1:<h1>商品一覧</h1>\n 2:<table>\n 3:    <tr>\n 4:        <th>商品番号</th>\n 5:        <th>商品名</th>\n 6:        <th>価格</th>\n 7:    </tr>\n 8:    <tr th:each=\"product: ${products}\">\n 9:        <td th:text=\"${product.id}\"></td>\n10:        <td th:text=\"${product.name}\"></td>\n11:        <td th:text=\"${product.price}\"></td>\n12:    </tr>\n13:</table>",
+      "removed_annotation_lines": [
+        "Spring Controller で",
+        "model に格納した",
+        "キー名を右に。",
+        "左は任意の変数名"
+      ],
+      "approved_text_changes": [],
+      "non_whitespace_code_preserved": true,
+      "line_numbers_preserved": true
+    },
+    {
+      "id": "p092-b03",
+      "before": "<!-— 省略 -->\n<body>\n        <h1>検索</h1>\n        <h2>ID 検索</h2>\n        <form th:action=\"@{/product/findById}\">\n               商品番号：<input type=\"text\" name=\"id\" />\n               <input type=\"submit\" value=\"検索\">\n        </form>\n</body>",
+      "after": "<!-- 省略 -->\n<body>\n    <h1>検索</h1>\n    <h2>ID 検索</h2>\n    <form th:action=\"@{/product/findById}\">\n        商品番号：<input type=\"text\" name=\"id\" />\n        <input type=\"submit\" value=\"検索\">\n    </form>\n</body>",
+      "removed_annotation_lines": [],
+      "approved_text_changes": [
+        {
+          "before": "<!-— 省略 -->",
+          "after": "<!-- 省略 -->",
+          "reason": "Word由来のダッシュ混入を通常のHTMLコメントへ戻す"
+        }
+      ],
+      "non_whitespace_code_preserved": true,
+      "line_numbers_preserved": true
+    },
+    {
+      "id": "p092-b08",
+      "before": "1://ProductController クラスのshowSearchView メソッドの下に追記\n2:\n3:@GetMapping(\"/findById\")\n4: public String showProductById(int id, Model model) {\n5: Product product = prodRepo.findById(id).orElse(null);\n6: System.out.println(product);\n7: model.addAttribute(\"product\", product);\n8: return \"product/detail\";\n9: }",
+      "after": "1://ProductController クラスのshowSearchView メソッドの下に追記\n2:\n3:@GetMapping(\"/findById\")\n 4:public String showProductById(int id, Model model) {\n 5:    Product product = prodRepo.findById(id).orElse(null);\n 6:    System.out.println(product);\n 7:    model.addAttribute(\"product\", product);\n 8:    return \"product/detail\";\n 9:}",
+      "removed_annotation_lines": [],
+      "approved_text_changes": [],
+      "non_whitespace_code_preserved": true,
+      "line_numbers_preserved": true
+    }
+  ],
+  "scope": "指定コード8ブロックだけ。インデント調整、PPT吹き出し文字4行の除去、HTMLコメントのダッシュ混入1件の修正。原本資材/普通本文/表/図は担当外。",
+  "passed": true
+}

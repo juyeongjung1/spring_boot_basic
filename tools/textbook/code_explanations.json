@@ -50,7 +50,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          105
+        ]
       },
       {
         "line_label": "10 行",
@@ -142,6 +145,9 @@
         "word_paragraph_breaks": [],
         "word_line_breaks": [
           89
+        ],
+        "editor_paragraph_breaks": [
+          89
         ]
       },
       {
@@ -228,6 +234,11 @@
         "word_paragraph_breaks": [],
         "word_line_breaks": [
           235
+        ],
+        "editor_paragraph_breaks": [
+          83,
+          235,
+          313
         ]
       }
     ],
@@ -291,7 +302,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          118
+        ]
       },
       {
         "line_label": "13 行目",
@@ -327,7 +341,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          88
+        ]
       }
     ],
     "source_texts": {
@@ -387,7 +404,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          56
+        ]
       },
       {
         "line_label": "11 行目",
@@ -423,7 +443,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          132
+        ]
       }
     ],
     "source_texts": {
@@ -546,6 +569,9 @@
         "word_paragraph_breaks": [],
         "word_line_breaks": [
           145
+        ],
+        "editor_paragraph_breaks": [
+          145
         ]
       },
       {
@@ -658,6 +684,9 @@
         ],
         "word_line_breaks": [
           38
+        ],
+        "editor_ignored_line_breaks": [
+          38
         ]
       }
     ],
@@ -732,6 +761,10 @@
           71
         ],
         "word_line_breaks": [
+          46,
+          56
+        ],
+        "editor_paragraph_breaks": [
           46,
           56
         ]
@@ -911,6 +944,9 @@
         ],
         "word_line_breaks": [
           124
+        ],
+        "editor_paragraph_breaks": [
+          124
         ]
       }
     ],
@@ -998,7 +1034,7 @@
     "rows": [
       {
         "line_label": "5-6 行目",
-        "code": "    @Autowired\n private ProductRepository prodRepo;",
+        "code": "    @Autowired\n    private ProductRepository prodRepo;",
         "meaning": "全件検索をするためには、ProductRepository から利用できる「findAll」メソッドを呼び出さない\nといけません。ProductRepository のメソッドを簡単に利用できるように、ProductRepository の\nフィールドを宣言して、@Autowired で依存性の注入をしておきましょう。\n この2 行のコードを書いておけば、 [prodRepo]を使って、findAll メソッドを呼び出せます。",
         "source_ids": [
           "p086-b03",
@@ -1016,7 +1052,7 @@
           {
             "code_id": "p086-b04",
             "line_number": 6,
-            "text": " private ProductRepository prodRepo;"
+            "text": "    private ProductRepository prodRepo;"
           }
         ],
         "source_fragments": [
@@ -1037,19 +1073,22 @@
           {
             "source_id": "p086-b04",
             "start": 0,
-            "end": 55,
+            "end": 58,
             "role": "code",
-            "text": "5:    @Autowired\n6: private ProductRepository prodRepo;"
+            "text": "5:    @Autowired\n6:    private ProductRepository prodRepo;"
           }
         ],
         "word_paragraph_breaks": [],
         "word_line_breaks": [
           162
+        ],
+        "editor_paragraph_breaks": [
+          162
         ]
       },
       {
         "line_label": "10 行目",
-        "code": " List<Product> list = prodRepo.findAll();",
+        "code": "        List<Product> list = prodRepo.findAll();",
         "meaning": "findAll メソッドを実行すると、Product テーブル内の全データを、List<Product>の形で取得でき\nます。List のImport 先は「java.util」ですので、ご注意ください。",
         "source_ids": [
           "p086-b06",
@@ -1061,7 +1100,7 @@
           {
             "code_id": "p085-b04",
             "line_number": 10,
-            "text": " List<Product> list = prodRepo.findAll();"
+            "text": "        List<Product> list = prodRepo.findAll();"
           }
         ],
         "source_fragments": [
@@ -1086,7 +1125,7 @@
     ],
     "source_texts": {
       "p086-b03": "5-6 行目",
-      "p086-b04": "5:    @Autowired\n6: private ProductRepository prodRepo;",
+      "p086-b04": "5:    @Autowired\n6:    private ProductRepository prodRepo;",
       "p086-b05": "全件検索をするためには、ProductRepository から利用できる「findAll」メソッドを呼び出さない\nといけません。ProductRepository のメソッドを簡単に利用できるように、ProductRepository の\nフィールドを宣言して、@Autowired で依存性の注入をしておきましょう。\n この2 行のコードを書いておけば、 [prodRepo]を使って、findAll メソッドを呼び出せます。",
       "p086-b06": "10 行目 List<Product> list = prodRepo.findAll();",
       "p086-b07": "findAll メソッドを実行すると、Product テーブル内の全データを、List<Product>の形で取得でき\nます。List のImport 先は「java.util」ですので、ご注意ください。"
@@ -1109,7 +1148,7 @@
     "rows": [
       {
         "line_label": "12-13 行目",
-        "code": " model.addAttribute(\"products\", list);\n return \"product/list\";",
+        "code": "        model.addAttribute(\"products\", list);\n        return \"product/list\";",
         "meaning": "最後は、データの塊である、list をView へ出力させるために、model に格納します。\nこのリストは、product が複数入っているので、キーは[products]にしました。\n遷移先は、product フォルダの、list.html を指しています。",
         "source_ids": [
           "p086-b09",
@@ -1122,12 +1161,12 @@
           {
             "code_id": "p086-b10",
             "line_number": 12,
-            "text": " model.addAttribute(\"products\", list);"
+            "text": "        model.addAttribute(\"products\", list);"
           },
           {
             "code_id": "p086-b10",
             "line_number": 13,
-            "text": " return \"product/list\";"
+            "text": "        return \"product/list\";"
           }
         ],
         "source_fragments": [
@@ -1148,21 +1187,27 @@
           {
             "source_id": "p086-b10",
             "start": 0,
-            "end": 68,
+            "end": 82,
             "role": "code",
-            "text": "12: model.addAttribute(\"products\", list);\n13: return \"product/list\";"
+            "text": "12:        model.addAttribute(\"products\", list);\n13:        return \"product/list\";"
           }
         ],
         "word_paragraph_breaks": [],
         "word_line_breaks": [
           48,
           94
+        ],
+        "editor_paragraph_breaks": [
+          94
+        ],
+        "editor_ignored_line_breaks": [
+          48
         ]
       }
     ],
     "source_texts": {
       "p086-b09": "12-13 行目",
-      "p086-b10": "12: model.addAttribute(\"products\", list);\n13: return \"product/list\";",
+      "p086-b10": "12:        model.addAttribute(\"products\", list);\n13:        return \"product/list\";",
       "p086-b11": "最後は、データの塊である、list をView へ出力させるために、model に格納します。\nこのリストは、product が複数入っているので、キーは[products]にしました。\n遷移先は、product フォルダの、list.html を指しています。"
     },
     "source_pages": [
@@ -1183,7 +1228,7 @@
     "rows": [
       {
         "line_label": "8 行目",
-        "code": " <tr th:each=\"product: ${products}\">",
+        "code": "    <tr th:each=\"product: ${products}\">",
         "meaning": "th:each は、Java の拡張for 文と似た使い方をします。指定されたコレクション（ここでは\nproducts リスト）の各要素に対して、<tr> タグ（テーブルの行）を繰り返し生成します。\n\n今回は、全部で9 個のデータがproducts リストの中に入っているので、products リストの要\n素が product 変数に9 回代入されます。:を中心にして、右はController のmodel で格納した\nキー名、左はリストの中に格納されているものを意味する変数名を使います。\n今回は、リストの中に、複数のproduct インスタンスが格納されているため、「product」としまし\nた。",
         "source_ids": [
           "p087-b05",
@@ -1196,7 +1241,7 @@
           {
             "code_id": "p087-b04",
             "line_number": 8,
-            "text": " <tr th:each=\"product: ${products}\">"
+            "text": "    <tr th:each=\"product: ${products}\">"
           }
         ],
         "source_fragments": [
@@ -1227,6 +1272,10 @@
         ],
         "word_line_breaks": [
           248
+        ],
+        "editor_paragraph_breaks": [
+          178,
+          248
         ]
       }
     ],
@@ -1252,7 +1301,7 @@
     "rows": [
       {
         "line_label": "9-11 行目",
-        "code": " <td th:text=\"${product.id}\"></td>\n <td th:text=\"${product.name}\"></td>\n <td th:text=\"${product.price}\"></td>",
+        "code": "        <td th:text=\"${product.id}\"></td>\n        <td th:text=\"${product.name}\"></td>\n        <td th:text=\"${product.price}\"></td>",
         "meaning": " product 変数に1 行～9 行までのデータが順番に格納されていますので、「product.フィー\nルド名」でデータを出力することができます。つまり、各product オブジェクトの id、name、\nprice を<td>の中に9 回出力するソースコードが生成されます。",
         "source_ids": [
           "p088-b01",
@@ -1264,17 +1313,17 @@
           {
             "code_id": "p087-b04",
             "line_number": 9,
-            "text": " <td th:text=\"${product.id}\"></td>"
+            "text": "        <td th:text=\"${product.id}\"></td>"
           },
           {
             "code_id": "p087-b04",
             "line_number": 10,
-            "text": " <td th:text=\"${product.name}\"></td>"
+            "text": "        <td th:text=\"${product.name}\"></td>"
           },
           {
             "code_id": "p087-b04",
             "line_number": 11,
-            "text": " <td th:text=\"${product.price}\"></td>"
+            "text": "        <td th:text=\"${product.price}\"></td>"
           }
         ],
         "source_fragments": [
@@ -1318,7 +1367,7 @@
     "rows": [
       {
         "line_label": "4 行目",
-        "code": " public String showProductById(int id, Model model) {",
+        "code": "public String showProductById(int id, Model model) {",
         "meaning": "View から送信される主キーのname 属性が「id」ですので、引数名を一致させることで、リクエス\nトパラメータを取得します。",
         "source_ids": [
           "p092-b09",
@@ -1330,7 +1379,7 @@
           {
             "code_id": "p092-b08",
             "line_number": 4,
-            "text": " public String showProductById(int id, Model model) {"
+            "text": "public String showProductById(int id, Model model) {"
           }
         ],
         "source_fragments": [
@@ -1378,7 +1427,7 @@
     "rows": [
       {
         "line_label": "5 行目",
-        "code": " Product product = prodRepo.findById(id).orElse(null);",
+        "code": "    Product product = prodRepo.findById(id).orElse(null);",
         "meaning": "findById メソッドは、findAll と同じく、継承したJpaRepository の親に定義されているメソッドで\nす。引数には主キーを入れて、後ろに.orElse(null)を付けることで、主キー検索による、1 行の\n結果を取得することができます。\n.findById メソッドの戻り値は「Optional」という特殊な戻り値ですので、.orElse(null)をつけない\nとデータを取得できません。ご注意ください。\n\n※.orElse(null)の代わりに、.get() というメソッドもありますが、検索結果がない場合はnull で\nはなく、例外を出してアプリケーションを強制終了されてしまうので、お勧めしません。\n\nfindAll は、全件検索だったため、複数行が取得されることの前提でした。よって\nList<Product>型で受け取りました。\n主キー検索は、必ず1 行のみ取得できるので、List での取得よりは、エンティティ単位での\n[Product product]で受け取るのが一般的です。",
         "source_ids": [
           "p093-b01",
@@ -1392,7 +1441,7 @@
           {
             "code_id": "p092-b08",
             "line_number": 5,
-            "text": " Product product = prodRepo.findById(id).orElse(null);"
+            "text": "    Product product = prodRepo.findById(id).orElse(null);"
           }
         ],
         "source_fragments": [
@@ -1432,11 +1481,17 @@
         "word_line_breaks": [
           130,
           381
+        ],
+        "editor_paragraph_breaks": [
+          130
+        ],
+        "editor_ignored_line_breaks": [
+          381
         ]
       },
       {
         "line_label": "6 行目",
-        "code": " System.out.println(product);",
+        "code": "    System.out.println(product);",
         "meaning": "検索する商品番号に「1」を入れて実行させてみると、以下のように1 行のデータを取得できて\nいるのがわかります。",
         "source_ids": [
           "p093-b05",
@@ -1448,7 +1503,7 @@
           {
             "code_id": "p092-b08",
             "line_number": 6,
-            "text": " System.out.println(product);"
+            "text": "    System.out.println(product);"
           }
         ],
         "source_fragments": [
@@ -1496,7 +1551,7 @@
     "rows": [
       {
         "line_label": "7 行目",
-        "code": " model.addAttribute(\"product\", product);",
+        "code": "    model.addAttribute(\"product\", product);",
         "meaning": "取得した1 行のデータは、Product エンティティの中に格納されているので、Viewに出力させる\nため、model に格納します。",
         "source_ids": [
           "p093-b07",
@@ -1508,7 +1563,7 @@
           {
             "code_id": "p092-b08",
             "line_number": 7,
-            "text": " model.addAttribute(\"product\", product);"
+            "text": "    model.addAttribute(\"product\", product);"
           }
         ],
         "source_fragments": [
@@ -1792,7 +1847,7 @@
     "rows": [
       {
         "line_label": "4 行目",
-        "code": " public String insertProduct(ProductForm productForm, Model model) {",
+        "code": "public String insertProduct(ProductForm productForm, Model model) {",
         "meaning": "ユーザからの複数の入力値を受け取るために、productForm クラスをメソッドの引数に入れ\nます。リクエストデータは、Form クラスのフィールドに自動でセットされます。",
         "source_ids": [
           "p109-b04",
@@ -1804,7 +1859,7 @@
           {
             "code_id": "p109-b03",
             "line_number": 4,
-            "text": " public String insertProduct(ProductForm productForm, Model model) {"
+            "text": "public String insertProduct(ProductForm productForm, Model model) {"
           }
         ],
         "source_fragments": [
@@ -1828,7 +1883,7 @@
       },
       {
         "line_label": "5 行目",
-        "code": " Product product = new Product();",
+        "code": "    Product product = new Product();",
         "meaning": " 商品の登録をするためには、予め商品1 個分をを表す、エンティティのインスタンスを生成\nする必要がありますので、new でProduct のオブジェクトを生成します。",
         "source_ids": [
           "p109-b06",
@@ -1840,7 +1895,7 @@
           {
             "code_id": "p109-b03",
             "line_number": 5,
-            "text": " Product product = new Product();"
+            "text": "    Product product = new Product();"
           }
         ],
         "source_fragments": [
@@ -1887,7 +1942,7 @@
     "rows": [
       {
         "line_label": "8 行目",
-        "code": " product = prodRepo.save(product);",
+        "code": "    product = prodRepo.save(product);",
         "meaning": " 先に説明します。Insert のSQL 文を実行させるためには、findAll と同じく、既にリポジトリに定\n義されている、[save]メソッドを実行すれば、登録処理が完了します。\n\nしかし、エンティティのインスタンスであるproduct は、5 行でオブジェクト生成はしたものの、\nデータを入れないと、空っぽの状態のままになってしまいます。ユーザからのデータを受け取\nっているのは、product ではなく、4 行のProductForm の方ですので、データをコピーする必要\nがあります。",
         "source_ids": [
           "p110-b01",
@@ -1900,7 +1955,7 @@
           {
             "code_id": "p109-b03",
             "line_number": 8,
-            "text": " product = prodRepo.save(product);"
+            "text": "    product = prodRepo.save(product);"
           }
         ],
         "source_fragments": [
@@ -1958,7 +2013,7 @@
     "rows": [
       {
         "line_label": "6～7 行目",
-        "code": " product.setName(productForm.getName());\n product.setPrice(productForm.getPrice());",
+        "code": "    product.setName(productForm.getName());\n    product.setPrice(productForm.getPrice());",
         "meaning": "save メソッドの実行前に、Form インスタンス内のデータを、product へコピーさせます。\n\nこの作業により、空っぽだったproduct にも、ユーザからのデータが格納されました。",
         "source_ids": [
           "p110-b04",
@@ -1971,12 +2026,12 @@
           {
             "code_id": "p109-b03",
             "line_number": 6,
-            "text": " product.setName(productForm.getName());"
+            "text": "    product.setName(productForm.getName());"
           },
           {
             "code_id": "p109-b03",
             "line_number": 7,
-            "text": " product.setPrice(productForm.getPrice());"
+            "text": "    product.setPrice(productForm.getPrice());"
           }
         ],
         "source_fragments": [
@@ -2009,7 +2064,7 @@
       },
       {
         "line_label": "8-9 行目",
-        "code": " product = prodRepo.save(product);\n             model.addAttribute(\"product\", product);",
+        "code": "    product = prodRepo.save(product);\n    model.addAttribute(\"product\", product);",
         "meaning": "戻り値としては、登録完了した商品情報をエンティティのインスタンスとして取得できます。ここ\nには、自動割り当てされたid も含まれます。結果画面へ表示するため、model に格納します。",
         "source_ids": [
           "p110-b07",
@@ -2021,12 +2076,12 @@
           {
             "code_id": "p109-b03",
             "line_number": 8,
-            "text": " product = prodRepo.save(product);"
+            "text": "    product = prodRepo.save(product);"
           },
           {
             "code_id": "p109-b03",
             "line_number": 9,
-            "text": "             model.addAttribute(\"product\", product);"
+            "text": "    model.addAttribute(\"product\", product);"
           }
         ],
         "source_fragments": [
@@ -2046,11 +2101,14 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          67
+        ]
       },
       {
         "line_label": "10 行目",
-        "code": " return \"/product/result\";",
+        "code": "    return \"/product/result\";",
         "meaning": "本当に登録が完了したのか確認するために、商品データを出力する結果画面を表示させま\nす。",
         "source_ids": [
           "p110-b09"
@@ -2061,7 +2119,7 @@
           {
             "code_id": "p109-b03",
             "line_number": 10,
-            "text": " return \"/product/result\";"
+            "text": "    return \"/product/result\";"
           }
         ],
         "source_fragments": [
@@ -2203,6 +2261,9 @@
         ],
         "word_paragraph_breaks": [],
         "word_line_breaks": [
+          45
+        ],
+        "editor_paragraph_breaks": [
           45
         ]
       },
@@ -2497,6 +2558,12 @@
         "word_line_breaks": [
           39,
           58
+        ],
+        "editor_paragraph_breaks": [
+          39
+        ],
+        "editor_ignored_line_breaks": [
+          58
         ]
       },
       {
@@ -2582,6 +2649,9 @@
         "word_paragraph_breaks": [],
         "word_line_breaks": [
           48
+        ],
+        "editor_ignored_line_breaks": [
+          48
         ]
       },
       {
@@ -2624,6 +2694,9 @@
         ],
         "word_paragraph_breaks": [],
         "word_line_breaks": [
+          131
+        ],
+        "editor_paragraph_breaks": [
           131
         ]
       }
@@ -2880,7 +2953,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          116
+        ]
       },
       {
         "line_label": "5 行",
@@ -2925,6 +3001,9 @@
           133
         ],
         "word_line_breaks": [
+          79
+        ],
+        "editor_paragraph_breaks": [
           79
         ]
       },
@@ -3029,7 +3108,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          76
+        ]
       },
       {
         "line_label": "13 行目",
@@ -3065,7 +3147,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          97
+        ]
       }
     ],
     "source_texts": {
@@ -3172,7 +3257,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          79
+        ]
       },
       {
         "line_label": "14-15 行",
@@ -3220,6 +3308,9 @@
         ],
         "word_paragraph_breaks": [],
         "word_line_breaks": [
+          77
+        ],
+        "editor_paragraph_breaks": [
           77
         ]
       }
@@ -3318,7 +3409,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          104
+        ]
       }
     ],
     "source_texts": {
@@ -3376,7 +3470,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          110
+        ]
       }
     ],
     "source_texts": {
@@ -3454,6 +3551,9 @@
           262
         ],
         "word_line_breaks": [
+          178
+        ],
+        "editor_ignored_line_breaks": [
           178
         ]
       }
@@ -3828,6 +3928,9 @@
         "word_paragraph_breaks": [],
         "word_line_breaks": [
           53
+        ],
+        "editor_paragraph_breaks": [
+          53
         ]
       }
     ],
@@ -3995,7 +4098,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          179
+        ]
       }
     ],
     "source_texts": {
@@ -4231,7 +4337,10 @@
           }
         ],
         "word_paragraph_breaks": [],
-        "word_line_breaks": []
+        "word_line_breaks": [],
+        "editor_paragraph_breaks": [
+          105
+        ]
       }
     ],
     "source_texts": {

@@ -1,0 +1,466 @@
+{
+  "reviewed_rows": 84,
+  "edited_rows": 32,
+  "paragraph_boundaries": 33,
+  "removed_manual_line_breaks": 6,
+  "meaning_unchanged": true,
+  "original_json_sha256": "1409430f518aedbd2b1c9b5ddef2d3a1065a3915688dd6380877d1e2557cd804",
+  "current_json_sha256": "9dcec93005a49b7a069bb608910beefef39633871e398f3f7dca11107fb5cc0c",
+  "changes": [
+    {
+      "row": 0,
+      "source_ids": [
+        "p043-b05"
+      ],
+      "paragraph_breaks": [
+        105
+      ],
+      "ignored_line_breaks": [],
+      "reason": "構文要素の定義と、Controllerの戻り値に関する運用説明を分ける。"
+    },
+    {
+      "row": 2,
+      "source_ids": [
+        "p044-b09"
+      ],
+      "paragraph_breaks": [
+        89
+      ],
+      "ignored_line_breaks": [],
+      "reason": "宣言の概要とxmlns:thの具体的な役割を分ける。"
+    },
+    {
+      "row": 4,
+      "source_ids": [
+        "p049-b05",
+        "p049-b06"
+      ],
+      "paragraph_breaks": [
+        83,
+        235,
+        313
+      ],
+      "ignored_line_breaks": [],
+      "reason": "フォーム構造、ThymeleafのURL解決、実際の送信先、HTTPメソッドを4段落に分ける。"
+    },
+    {
+      "row": 5,
+      "source_ids": [
+        "p050-b01",
+        "p050-b02"
+      ],
+      "paragraph_breaks": [
+        118
+      ],
+      "ignored_line_breaks": [],
+      "reason": "入力型の説明とnameによるデータ識別を分ける。"
+    },
+    {
+      "row": 6,
+      "source_ids": [
+        "p050-b03",
+        "p050-b04"
+      ],
+      "paragraph_breaks": [
+        88
+      ],
+      "ignored_line_breaks": [],
+      "reason": "送信ボタンの処理とvalueが決める表示文言を分ける。"
+    },
+    {
+      "row": 7,
+      "source_ids": [
+        "p051-b06",
+        "p051-b07"
+      ],
+      "paragraph_breaks": [
+        56
+      ],
+      "ignored_line_breaks": [],
+      "reason": "PostMappingの基本と同じURLをGET/POSTで呼ぶ場合の違いを分ける。"
+    },
+    {
+      "row": 8,
+      "source_ids": [
+        "p051-b08",
+        "p051-b09"
+      ],
+      "paragraph_breaks": [
+        132
+      ],
+      "ignored_line_breaks": [],
+      "reason": "仮引数とnameの一般則、今回のid/passwordの具体例を分ける。"
+    },
+    {
+      "row": 10,
+      "source_ids": [
+        "p056-b05",
+        "p056-b06"
+      ],
+      "paragraph_breaks": [
+        145
+      ],
+      "ignored_line_breaks": [],
+      "reason": "自動バインドの仕組みと、個別取得コードが不要になる結果を分ける。"
+    },
+    {
+      "row": 12,
+      "source_ids": [
+        "p058-b06",
+        "p058-b07",
+        "p058-b08"
+      ],
+      "paragraph_breaks": [],
+      "ignored_line_breaks": [
+        38
+      ],
+      "reason": "読点の途中にある物理的な手動改行は解除し、1文を自然に折り返す。"
+    },
+    {
+      "row": 13,
+      "source_ids": [
+        "p059-b01",
+        "p059-b02",
+        "p059-b03"
+      ],
+      "paragraph_breaks": [
+        46,
+        56
+      ],
+      "ignored_line_breaks": [],
+      "reason": "呼出しの説明、引数ごとの項目、呼出しの効果を分離し、引数をぶら下げ配置する。"
+    },
+    {
+      "row": 16,
+      "source_ids": [
+        "p060-b06",
+        "p060-b07",
+        "p060-b08"
+      ],
+      "paragraph_breaks": [
+        124
+      ],
+      "ignored_line_breaks": [],
+      "reason": "フィールド参照の仕組みと具体的な出力例を分ける。"
+    },
+    {
+      "row": 18,
+      "source_ids": [
+        "p086-b03",
+        "p086-b05",
+        "p086-b04"
+      ],
+      "paragraph_breaks": [
+        162
+      ],
+      "ignored_line_breaks": [],
+      "reason": "DIによる準備と、準備後の呼び出し例を分ける。"
+    },
+    {
+      "row": 20,
+      "source_ids": [
+        "p086-b09",
+        "p086-b11",
+        "p086-b10"
+      ],
+      "paragraph_breaks": [
+        94
+      ],
+      "ignored_line_breaks": [
+        48
+      ],
+      "reason": "Modelへ入れるデータとキーは1段落、遷移先は別段落にする。"
+    },
+    {
+      "row": 21,
+      "source_ids": [
+        "p087-b05",
+        "p087-b06",
+        "p087-b07"
+      ],
+      "paragraph_breaks": [
+        178,
+        248
+      ],
+      "ignored_line_breaks": [],
+      "reason": "繰返しの定義、今回の反復、コロンの左右の規則、変数名の選び方を分ける。"
+    },
+    {
+      "row": 24,
+      "source_ids": [
+        "p093-b01",
+        "p093-b02",
+        "p093-b03",
+        "p093-b04"
+      ],
+      "paragraph_breaks": [
+        130
+      ],
+      "ignored_line_breaks": [
+        381
+      ],
+      "reason": "検索結果の取得とOptionalの注意を分け、findAll/主キー検索の対比は1段落で読む。"
+    },
+    {
+      "row": 36,
+      "source_ids": [
+        "p110-b07",
+        "p110-b08"
+      ],
+      "paragraph_breaks": [
+        67
+      ],
+      "ignored_line_breaks": [],
+      "reason": "saveの戻り値と、結果画面へ渡す処理を分ける。"
+    },
+    {
+      "row": 39,
+      "source_ids": [
+        "p117-b04"
+      ],
+      "paragraph_breaks": [
+        45
+      ],
+      "ignored_line_breaks": [],
+      "reason": "動的パラメータの概要と記法を分ける。"
+    },
+    {
+      "row": 45,
+      "source_ids": [
+        "p129-b02",
+        "p129-b03",
+        "p129-b04"
+      ],
+      "paragraph_breaks": [
+        39
+      ],
+      "ignored_line_breaks": [
+        58
+      ],
+      "reason": "参照する説明と、コード連携・推奨理由を分ける。"
+    },
+    {
+      "row": 47,
+      "source_ids": [
+        "p129-b06",
+        "p129-b07"
+      ],
+      "paragraph_breaks": [],
+      "ignored_line_breaks": [
+        48
+      ],
+      "reason": "DIとコンストラクタ生成の因果関係は、手動改行せず1段落で読む。"
+    },
+    {
+      "row": 48,
+      "source_ids": [
+        "p129-b08",
+        "p129-b09"
+      ],
+      "paragraph_breaks": [
+        131
+      ],
+      "ignored_line_breaks": [],
+      "reason": "実装とオーバーライドの説明から、リモコンの補足を分ける。"
+    },
+    {
+      "row": 53,
+      "source_ids": [
+        "p140-b04"
+      ],
+      "paragraph_breaks": [
+        116
+      ],
+      "ignored_line_breaks": [],
+      "reason": "入力値で検索する処理と、最大1件という結果の受取りを分ける。"
+    },
+    {
+      "row": 54,
+      "source_ids": [
+        "p140-b05"
+      ],
+      "paragraph_breaks": [
+        79
+      ],
+      "ignored_line_breaks": [],
+      "reason": "検索失敗時の状態、ifによる戻し方、return後の制御を分ける。"
+    },
+    {
+      "row": 56,
+      "source_ids": [
+        "p144-b05",
+        "p144-b06"
+      ],
+      "paragraph_breaks": [
+        76
+      ],
+      "ignored_line_breaks": [],
+      "reason": "セッションができることと、ControllerでのHttpSession取得方法を分ける。"
+    },
+    {
+      "row": 57,
+      "source_ids": [
+        "p144-b07",
+        "p144-b08"
+      ],
+      "paragraph_breaks": [
+        97
+      ],
+      "ignored_line_breaks": [],
+      "reason": "setAttributeの指定方法と、保存後のデータの利用範囲を分ける。"
+    },
+    {
+      "row": 59,
+      "source_ids": [
+        "p150-b06",
+        "p150-b07"
+      ],
+      "paragraph_breaks": [
+        79
+      ],
+      "ignored_line_breaks": [],
+      "reason": "NotNullによるチェックとmessage属性による表示文言を分ける。"
+    },
+    {
+      "row": 60,
+      "source_ids": [
+        "p150-b08"
+      ],
+      "paragraph_breaks": [
+        77
+      ],
+      "ignored_line_breaks": [],
+      "reason": "NotBlank相当の説明とSizeの説明を別段落にする。"
+    },
+    {
+      "row": 62,
+      "source_ids": [
+        "p151-b10",
+        "p151-b11"
+      ],
+      "paragraph_breaks": [
+        104
+      ],
+      "ignored_line_breaks": [],
+      "reason": "BindingResultの役割と、引数位置に関する使用上の制約を分ける。"
+    },
+    {
+      "row": 63,
+      "source_ids": [
+        "p152-b01",
+        "p152-b02"
+      ],
+      "paragraph_breaks": [
+        110
+      ],
+      "ignored_line_breaks": [],
+      "reason": "hasErrorsの返り値と、条件分岐での使い方を分ける。"
+    },
+    {
+      "row": 64,
+      "source_ids": [
+        "p152-b06",
+        "p152-b07",
+        "p152-b08",
+        "p152-b09"
+      ],
+      "paragraph_breaks": [],
+      "ignored_line_breaks": [
+        178
+      ],
+      "reason": "「つまり」は同じ段落の言い換えなので、物理的な手動改行を解除する。"
+    },
+    {
+      "row": 71,
+      "source_ids": [
+        "p184-b06",
+        "p184-b07"
+      ],
+      "paragraph_breaks": [
+        53
+      ],
+      "ignored_line_breaks": [],
+      "reason": "置換先の説明と、fragment属性の対応付けを分ける。"
+    },
+    {
+      "row": 74,
+      "source_ids": [
+        "p185-b06",
+        "p185-b07"
+      ],
+      "paragraph_breaks": [
+        179
+      ],
+      "ignored_line_breaks": [],
+      "reason": "レイアウト合成の仕組みと、returnして表示する具体例を分ける。"
+    },
+    {
+      "row": 78,
+      "source_ids": [
+        "p267-b09",
+        "p267-b10"
+      ],
+      "paragraph_breaks": [
+        105
+      ],
+      "ignored_line_breaks": [],
+      "reason": "閉じタグとコメントの一般論、複数rowでの実際のコメント例を分ける。"
+    }
+  ],
+  "code_sync": [
+    {
+      "anchor": "p086-b03",
+      "label": "5-6 行目",
+      "before": "    @Autowired\n private ProductRepository prodRepo;",
+      "after": "    @Autowired\n    private ProductRepository prodRepo;"
+    },
+    {
+      "anchor": "p086-b03",
+      "label": "10 行目",
+      "before": " List<Product> list = prodRepo.findAll();",
+      "after": "        List<Product> list = prodRepo.findAll();"
+    },
+    {
+      "anchor": "p086-b09",
+      "label": "12-13 行目",
+      "before": " model.addAttribute(\"products\", list);\n return \"product/list\";",
+      "after": "        model.addAttribute(\"products\", list);\n        return \"product/list\";"
+    },
+    {
+      "anchor": "p087-b05",
+      "label": "8 行目",
+      "before": " <tr th:each=\"product: ${products}\">",
+      "after": "    <tr th:each=\"product: ${products}\">"
+    },
+    {
+      "anchor": "p088-b01",
+      "label": "9-11 行目",
+      "before": " <td th:text=\"${product.id}\"></td>\n <td th:text=\"${product.name}\"></td>\n <td th:text=\"${product.price}\"></td>",
+      "after": "        <td th:text=\"${product.id}\"></td>\n        <td th:text=\"${product.name}\"></td>\n        <td th:text=\"${product.price}\"></td>"
+    },
+    {
+      "anchor": "p092-b09",
+      "label": "4 行目",
+      "before": " public String showProductById(int id, Model model) {",
+      "after": "public String showProductById(int id, Model model) {"
+    },
+    {
+      "anchor": "p093-b01",
+      "label": "5 行目",
+      "before": " Product product = prodRepo.findById(id).orElse(null);",
+      "after": "    Product product = prodRepo.findById(id).orElse(null);"
+    },
+    {
+      "anchor": "p093-b01",
+      "label": "6 行目",
+      "before": " System.out.println(product);",
+      "after": "    System.out.println(product);"
+    },
+    {
+      "anchor": "p093-b07",
+      "label": "7 行目",
+      "before": " model.addAttribute(\"product\", product);",
+      "after": "    model.addAttribute(\"product\", product);"
+    }
+  ]
+}

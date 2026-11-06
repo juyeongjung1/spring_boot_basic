@@ -1,0 +1,14 @@
+test_brackets_keep_the_source_font_metrics_in_regular_and_emphasized_text (__main__.RemainingReviewTests.test_brackets_keep_the_source_font_metrics_in_regular_and_emphasized_text) ... ok
+test_explicit_emphasis_and_comments_are_visible (__main__.RemainingReviewTests.test_explicit_emphasis_and_comments_are_visible) ... ok
+test_first_code_line_has_the_same_pale_background (__main__.RemainingReviewTests.test_first_code_line_has_the_same_pale_background) ... ok
+test_instruction_picture_has_space_before_the_following_paragraph (__main__.RemainingReviewTests.test_instruction_picture_has_space_before_the_following_paragraph) ... ok
+test_manual_bracket_padding_is_removed_across_style_boundaries (__main__.RemainingReviewTests.test_manual_bracket_padding_is_removed_across_style_boundaries) ... ok
+test_named_markdown_link_and_wrapped_url_keep_their_destinations (__main__.RemainingReviewTests.test_named_markdown_link_and_wrapped_url_keep_their_destinations) ... ok
+test_table_has_space_before_the_following_paragraph (__main__.RemainingReviewTests.test_table_has_space_before_the_following_paragraph) ... ok
+test_table_lines_have_consistent_width_and_contrast (__main__.RemainingReviewTests.test_table_lines_have_consistent_width_and_contrast) ... ok
+test_url_does_not_include_surrounding_punctuation (__main__.RemainingReviewTests.test_url_does_not_include_surrounding_punctuation) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.934s
+
+OK

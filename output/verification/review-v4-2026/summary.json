@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "base_commit": "ac012ddc04163641c9fa3c865b11b00b0b6307d6",
+  "tests": 90,
+  "physical_pages": 424,
+  "pdfs": {
+    "textbook": {
+      "path": "output/pdf/textbook/textbook/flow.pdf",
+      "pages": 345,
+      "bytes": 86469728,
+      "sha256": "7d421d369dfd1ba2d98b45201e66d6dbafaf0030d94bfb4e86586b03658f0ac2"
+    },
+    "exercise": {
+      "path": "output/pdf/textbook/exercise/flow.pdf",
+      "pages": 79,
+      "bytes": 6892121,
+      "sha256": "767826cf1d4860d072ac768735ba89d3c8eb129a436b1ea566fb7b19fc21c910"
+    }
+  },
+  "audit_summary": {
+    "passed": true,
+    "chapters": 19,
+    "original_pages": 373,
+    "mapped_source_pages": 373,
+    "physical_pages": 424,
+    "blank_pages": 17,
+    "original_ids": 2853,
+    "base_ids": 2945,
+    "authorized_added_ids": 3,
+    "current_ids": 2940,
+    "explanation_cards": 46,
+    "explanation_rows": 84,
+    "header_checks": 424,
+    "uri_links": 82,
+    "login3_real_links": 1,
+    "problems": 0,
+    "problem_counts": {},
+    "authorized_removed_ids": 8,
+    "numbered_figures": 229,
+    "ppt_slides": 65,
+    "tables": 33,
+    "logical_links": 78,
+    "approved_continuations": 56,
+    "actual_shared_boundaries": 43,
+    "scaled_figures": 6
+  },
+  "visual_requested_pages": 22,
+  "visual_requested_sheets": 11,
+  "visual_explanations": 46,
+  "visual_tables": 33
+}

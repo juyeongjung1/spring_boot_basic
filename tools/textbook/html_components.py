@@ -117,38 +117,85 @@ def code_html(rows, lang, filenames, footer=''):
     return '<section class="card code-card">'+header(LABELS[lang], filenames)+'<div class="card-content">'+''.join(pieces)+'</div><footer class="card-footer">'+footer+'</footer></section>'
 
 
+def table_column_alignments(node):
+    """元Wordの単一セルのずれを引き継がず、列の値の種類で整列する。"""
+    body = node['rows'][1:] if node['has_header'] else node['rows']
+    alignments = []
+    for column in range(len(node['rows'][0])):
+        values = [row[column].strip() for row in body if row[column].strip() not in {'', '-', '－'}]
+        numeric = values and all(re.fullmatch(r'[+-]?\d[\d,.]*(?:\s*%)?', value) for value in values)
+        alignments.append('right' if numeric else 'left')
+    return alignments
+
+
+def table_cell_html(parts, layout, header_cell, preserve_breaks):
+    raw = ''.join(text for text, _, _ in parts)
+    cursor, output = 0, []
+    for text, style_id, underline in parts:
+        safe = []
+        for index, character in enumerate(text):
+            if character != '\n':
+                safe.append(escape(character.translate(SYMBOLS)))
+            elif preserve_breaks:
+                safe.append('<br>')
+            else:
+                position = cursor+index
+                before = raw[position-1] if position else ''
+                after = raw[position+1] if position+1 < len(raw) else ''
+                if before and after and before.isascii() and after.isascii() and before.isalnum() and after.isalnum():
+                    safe.append(' ')
+        cursor += len(text)
+        body = ''.join(safe)
+        if style_id:
+            style = layout['styles'][style_id]
+            weight = 700 if header_cell or style.get('stroke', 0) or 'Bold' in style['font'] or style.get('flags',0)&16 else 400
+            body = f'<span class="source-style" style="color:{style["color"]};font-weight:{weight};text-decoration:{"underline" if underline else "none"}">{body}</span>'
+        output.append(body)
+    return ''.join(output)
+
+
 def table_html(folder, layout, ident, node):
     info = layout.get('tables', {}).get(ident)
     paint = table_paint(folder, layout, info, node['rows']) if info else None
+    headings = [re.sub(r'\s+', '', value) for value in node['rows'][0]] if node['has_header'] else []
+    comparison = headings == ['要素', 'JDBC', 'SpringDataJPA']
+    property_table = node['has_header'] and len(node['rows']) > 1 and len(node['rows'][0]) == 2 and all(row[0].strip().startswith('spring.') for row in node['rows'][1:])
+    alignments = table_column_alignments(node)
     rows = []
     for i, row in enumerate(node['rows']):
         cells = []
+        header_cell = i == 0 and node['has_header']
         for j, value in enumerate(row):
-            tag = 'th' if i == 0 and node['has_header'] else 'td'
+            tag = 'th' if header_cell else 'td'
             cell = paint[i][j] if paint else None
-            body = ''
-            if cell:
-                for text, style_id, underline in cell['parts']:
-                    style = layout['styles'][style_id]
-                    weight = 700 if style.get('stroke', 0) or 'Bold' in style['font'] or style.get('flags',0)&16 else 400
-                    safe = escape(text.translate(SYMBOLS)).replace('\n','<br>')
-                    body += f'<span class="source-style" style="color:{style["color"]};font-weight:{weight};text-decoration:{"underline" if underline else "none"}">{safe}</span>'
-            else:
-                body = escape(value.translate(SYMBOLS)).replace('\n','<br>')
-            numeric = bool(re.fullmatch(r'[\d.,+%\s-]+', value.strip()))
-            declarations = [f'background:{cell["fill"]}', f'text-align:{cell["align"]}'] if cell else []
-            if numeric:
+            parts = cell['parts'] if cell else [(value, None, False)]
+            # 制約の併記や入力エラーの複数メッセージは行の対応を保つ。
+            preserve = not header_cell and (headings and (headings[j] == '制約' or '出力メッセージ' in headings))
+            body = table_cell_html(parts, layout, header_cell, preserve)
+            if comparison and j:
+                for term in ('mysql-connector-j.jar', 'application.properties', 'DriverManager.getConnection', 'SQLException', 'RuntimeException'):
+                    body = body.replace(term, '<span class="table-term">'+term+'</span>')
+            align = 'center' if comparison and header_cell and j else alignments[j]
+            declarations = [f'text-align:{align}']
+            if cell and cell['fill'].lower() not in {'#ffffff', '#fff', 'white'}:
+                declarations.append(f'background:{cell["fill"]}')
+            if align == 'right':
                 declarations.append('white-space:nowrap')
-            style = ' style="'+';'.join(declarations)+'"' if declarations else ''
-            cells.append(f'<{tag}{style}>{body}</{tag}>')
-        rows.append('<tr'+('' if i == 0 and node['has_header'] else ' data-break-row'+ids_attr([ident]))+'>'+''.join(cells)+'</tr>')
+            scope = ' scope="col"' if header_cell else ''
+            cells.append(f'<{tag}{scope} style="'+ ';'.join(declarations)+'">'+body+f'</{tag}>')
+        rows.append('<tr'+('' if header_cell else ' data-break-row'+ids_attr([ident]))+'>'+''.join(cells)+'</tr>')
     if node['has_header']:
         content = '<thead>'+rows[0]+'</thead><tbody>'+''.join(rows[1:])+'</tbody>'
     else:
         content = '<tbody>'+''.join(rows)+'</tbody>'
-    widths = [b-a for a,b in zip(info['xs'],info['xs'][1:])] if info else [1]*len(node['rows'][0])
+    widths = [25,37.5,37.5] if comparison else [43,57] if property_table else (
+        [b-a for a,b in zip(info['xs'],info['xs'][1:])] if info else [1]*len(node['rows'][0]))
+    if folder.name == '06' and ident in {'p197-table01', 'p200-table01'}:
+        widths[2] += 8
+        widths[5] -= 8
     columns = '<colgroup>'+''.join(f'<col style="width:{100*w/sum(widths):.5f}%">' for w in widths)+'</colgroup>'
-    return '<section class="card table-card">'+header('表')+'<div class="card-content"><table>'+columns+content+'</table></div></section>'
+    modifier = ' comparison-table' if comparison else ' property-table' if property_table else ''
+    return '<section class="card table-card'+modifier+'"><div class="card-content"><table>'+columns+content+'</table></div></section>'
 
 
 def explanation_label(value):
@@ -220,9 +267,15 @@ def meaning_html(row, nodes, layout):
     paragraph_breaks = set(row.get('word_paragraph_breaks', []))
     if 'word_paragraph_breaks' not in row:
         paragraph_breaks.update(match.end() for match in re.finditer(r'\n\n+', meaning))
-    line_breaks = set(row.get('word_line_breaks', []))-paragraph_breaks
+    paragraph_breaks.update(row.get('editor_paragraph_breaks', []))
+    line_breaks = (set(row.get('word_line_breaks', []))
+                   - set(row.get('editor_ignored_line_breaks', [])) - paragraph_breaks)
+    if any(not isinstance(offset, int) or not 0 < offset < len(meaning)
+           for offset in paragraph_breaks | line_breaks):
+        raise ValueError('構文解説の段落・改行位置が本文にありません: '+str(row['source_ids']))
     cuts = sorted({0, len(meaning), *paragraph_breaks, *line_breaks})
     paragraphs, body, ids = [], [], []
+    paragraph_start = 0
     for start, end in zip(cuts, cuts[1:]):
         cursor = 0
         for text, style, ident in parts:
@@ -235,8 +288,15 @@ def meaning_html(row, nodes, layout):
             body.append('<br>')
         if end in paragraph_breaks or end == len(meaning):
             if meaning[start:end].strip() or body:
-                paragraphs.append('<p class="explanation-paragraph" data-split-paragraph'+ids_attr(list(dict.fromkeys(ids)))+'>'+''.join(body)+'</p>')
+                text = meaning[paragraph_start:end].lstrip()
+                classes = 'explanation-paragraph'
+                if re.match(r'^第\s*\d+\s*引数[：:]', text):
+                    classes += ' explanation-argument-paragraph'
+                elif text.startswith('※'):
+                    classes += ' explanation-note-paragraph'
+                paragraphs.append('<p class="'+classes+'" data-split-paragraph'+ids_attr(list(dict.fromkeys(ids)))+'>'+''.join(body)+'</p>')
             body, ids = [], []
+            paragraph_start = end
     return ''.join(paragraphs)
 
 

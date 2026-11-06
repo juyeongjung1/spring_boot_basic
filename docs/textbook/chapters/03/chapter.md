@@ -412,27 +412,14 @@ spring.jpa.show-sql=true
 
 :::
 
-::: {#p071-b05 .paragraph}
+::: {#p071-b05 .table table-role="properties"}
 
-[spring.datasource.url→データベースの URL(サーバー名/データベース名が含まれます)]{.s014}
-
-:::
-
-::: {#p071-b06 .paragraph}
-
-[spring.datasource.username→データベースに接続するユーザ名]{.s014}
-
-:::
-
-::: {#p071-b07 .paragraph}
-
-[spring.datasource.password→データベースに接続するためのパスワード]{.s014}
-
-:::
-
-::: {#p071-b08 .paragraph}
-
-[spring.jpa.show-sql=true →生成したSQL 文をログで確認可能]{.s014}
+| 設定項目 | 意味 |
+| --- | --- |
+| spring.datasource.url | データベースの URL(サーバー名/データベース名が含まれます) |
+| spring.datasource.username | データベースに接続するユーザ名 |
+| spring.datasource.password | データベースに接続するためのパスワード |
+| spring.jpa.show-sql=true | 生成したSQL 文をログで確認可能 |
 
 :::
 
@@ -1259,15 +1246,15 @@ public class ProductDAO {
 ```java
 @WebServlet("/Sample5")
 public class Sample5 extends HttpServlet {
-        protected void doGet(HttpServletRequest request,
-            HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request,
+        HttpServletResponse response)
+        throws ServletException, IOException {
 
-             //Product のDB 操作用クラスのProductDAO のオブジェクト生成
-               ProductDAO dao = new ProductDAO();
+        //Product のDB 操作用クラスのProductDAO のオブジェクト生成
+        ProductDAO dao = new ProductDAO();
 
-               //複数行を取得するので、リスト型でデータを取得
-               List<ProductBean> list = dao.findByProductList();
+        //複数行を取得するので、リスト型でデータを取得
+        List<ProductBean> list = dao.findByProductList();
 ```
 
 :::
@@ -1279,14 +1266,14 @@ public class Sample5 extends HttpServlet {
 ::: {#p084-b01 .code}
 
 ```java
-      //取得したデータをJSP に送るため、リクエストスコープに格納
+        //取得したデータをJSP に送るため、リクエストスコープに格納
         request.setAttribute("list", list);
 
         //list.jsp へ遷移
         RequestDispatcher dispatcher =
             request.getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);
-}
+    }
 ```
 
 :::
@@ -1365,16 +1352,16 @@ public class Sample5 extends HttpServlet {
  2:@Controller
  3:@RequestMapping("/product")
  4:public class ProductController {
- 5:     @Autowired
- 6: private ProductRepository prodRepo;
+ 5:    @Autowired
+ 6:    private ProductRepository prodRepo;
  7:
- 8: @GetMapping("/findAll")
- 9: public String showProductList(Model model) {
-10: List<Product> list = prodRepo.findAll();
-11: System.out.println(list);
-12: model.addAttribute("products", list);
-13: return "product/list";
-14: }
+ 8:    @GetMapping("/findAll")
+ 9:    public String showProductList(Model model) {
+10:        List<Product> list = prodRepo.findAll();
+11:        System.out.println(list);
+12:        model.addAttribute("products", list);
+13:        return "product/list";
+14:    }
 15:}
 ```
 
@@ -1406,7 +1393,7 @@ public class Sample5 extends HttpServlet {
 
 ```java
 5:    @Autowired
-6: private ProductRepository prodRepo;
+6:    private ProductRepository prodRepo;
 ```
 
 :::
@@ -1453,8 +1440,8 @@ public class Sample5 extends HttpServlet {
 ::: {#p086-b10 .code}
 
 ```java
-12: model.addAttribute("products", list);
-13: return "product/list";
+12:        model.addAttribute("products", list);
+13:        return "product/list";
 ```
 
 :::
@@ -1496,22 +1483,18 @@ public class Sample5 extends HttpServlet {
 
 ```java
  1:<h1>商品一覧</h1>
- 2: <table>
-                                              Spring Controller で
- 3: <tr>
-                                               model に格納した
- 4: <th>商品番号</th>
-                                                キー名を右に。
- 5: <th>商品名</th>
-                                              左は任意の変数名
- 6: <th>価格</th>
- 7: </tr>
- 8: <tr th:each="product: ${products}">
- 9: <td th:text="${product.id}"></td>
-10: <td th:text="${product.name}"></td>
-11: <td th:text="${product.price}"></td>
-12: </tr>
-13: </table>
+ 2:<table>
+ 3:    <tr>
+ 4:        <th>商品番号</th>
+ 5:        <th>商品名</th>
+ 6:        <th>価格</th>
+ 7:    </tr>
+ 8:    <tr th:each="product: ${products}">
+ 9:        <td th:text="${product.id}"></td>
+10:        <td th:text="${product.name}"></td>
+11:        <td th:text="${product.price}"></td>
+12:    </tr>
+13:</table>
 ```
 
 :::
@@ -1536,6 +1519,14 @@ public class Sample5 extends HttpServlet {
 [キー名、左はリストの中に格納されているものを意味する変数名を使います。]{.s011}\
 [今回は、リストの中に、複数のproduct インスタンスが格納されているため、「product」としまし]{.s009}\
 [た。]{.s009}
+
+:::
+
+![th:eachの変数名とModelのキー名](assets/revision-ill-each-variable-key.png){#illustration-review-v4-each-variable-key}
+
+::: {#illustration-review-v4-each-variable-key-caption .paragraph}
+
+「:」の右側はModelに格納したキー名、左側は繰り返しで使う任意の変数名です。
 
 :::
 
@@ -1643,14 +1634,6 @@ public class Sample5 extends HttpServlet {
 
 :::
 
-![Repositoryの返り値はリストと0/1件で異なる](assets/revision-ill-repository.png){#illustration-2026-repository-results}
-
-::: {#illustration-2026-repository-results-caption .paragraph}
-
-findAll()の結果は0件以上、findById(id)の結果は0件または1件です。後者はOptionalで受け取ります。
-
-:::
-
 :::
 
 ::: {#page-91 .source-page}
@@ -1734,14 +1717,14 @@ findAll()の結果は0件以上、findById(id)の結果は0件または1件で�
 ::: {#p092-b03 .code}
 
 ```xml
-<!-— 省略 -->
+<!-- 省略 -->
 <body>
-        <h1>検索</h1>
-        <h2>ID 検索</h2>
-        <form th:action="@{/product/findById}">
-               商品番号：<input type="text" name="id" />
-               <input type="submit" value="検索">
-        </form>
+    <h1>検索</h1>
+    <h2>ID 検索</h2>
+    <form th:action="@{/product/findById}">
+        商品番号：<input type="text" name="id" />
+        <input type="submit" value="検索">
+    </form>
 </body>
 ```
 
@@ -1777,12 +1760,12 @@ findAll()の結果は0件以上、findById(id)の結果は0件または1件で�
 1://ProductController クラスのshowSearchView メソッドの下に追記
 2:
 3:@GetMapping("/findById")
-4: public String showProductById(int id, Model model) {
-5: Product product = prodRepo.findById(id).orElse(null);
-6: System.out.println(product);
-7: model.addAttribute("product", product);
-8: return "product/detail";
-9: }
+ 4:public String showProductById(int id, Model model) {
+ 5:    Product product = prodRepo.findById(id).orElse(null);
+ 6:    System.out.println(product);
+ 7:    model.addAttribute("product", product);
+ 8:    return "product/detail";
+ 9:}
 ```
 
 :::
@@ -2800,16 +2783,15 @@ Integer>{
 1://showProductInsertView()の下に追記
 2:
 3:@PostMapping("/insert")
-4: public String insertProduct(ProductForm productForm, Model model) {
-5: Product product = new Product();
-6: product.setName(productForm.getName());
-7: product.setPrice(productForm.getPrice());
-8: product = prodRepo.save(product);
-9:             model.addAttribute("product", product);
-10: return "/product/result";
-11: }
+4:public String insertProduct(ProductForm productForm, Model model) {
+5:    Product product = new Product();
+6:    product.setName(productForm.getName());
+7:    product.setPrice(productForm.getPrice());
+8:    product = prodRepo.save(product);
+9:    model.addAttribute("product", product);
+10:    return "/product/result";
+11:}
 ```
-
 :::
 
 ::: {#p109-b04 .paragraph}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "method": "最終合冊PDFから生成された指摘箇所PNGを、監査担当が独立に目視。全領域の機械検査とは分けて記録する。",
+  "textbook_sha256": "7d421d369dfd1ba2d98b45201e66d6dbafaf0030d94bfb4e86586b03658f0ac2",
+  "exercise_sha256": "767826cf1d4860d072ac768735ba89d3c8eb129a436b1ea566fb7b19fc21c910",
+  "checked_pages": [
+    {"collection":"textbook","page":53,"checked":"コード説明の全幅・段落・1字下げと、通常本文の明朝/強調のゴシック太字を確認。"},
+    {"collection":"textbook","page":70,"checked":"動作確認のURLを独立行に分離。後続の指示文と通常本文に段落の字下げを確認。"},
+    {"collection":"textbook","page":76,"checked":"表の外カード/表badgeがなく、橙色の定義表・色付き商品表を確認。8番の商品名も他の商品と同じ左寄せ。"},
+    {"collection":"textbook","page":79,"checked":"JDBC/JPA比較表の項目列・対比色・原本赤字を確認。内容はセル内に収まり、左右対比を追える。"},
+    {"collection":"textbook","page":82,"checked":"4設定を設定項目/意味の表へ統合。キーと意味の対応・行区切りを確認。"},
+    {"collection":"textbook","page":98,"checked":"ProductDAO生成コメントの7行目が1行内に収まり、コメント緑色・Java注釈赤色・字下げが明確。"},
+    {"collection":"textbook","page":104,"checked":"th:eachの説明、左右の意味を示す独立番号付き小型図、後続コード説明の分離を確認。"},
+    {"collection":"textbook","page":128,"checked":"登録処理コードの本文4字インデント、注釈赤色、右上の強調されたファイル名を確認。"},
+    {"collection":"exercise","page":36,"checked":"社員番号/注釈削除の1論理行への復元。セル内の2条件・2メッセージと原本赤字、後続黒字の対応を確認。"}
+  ],
+  "problems": []
+}

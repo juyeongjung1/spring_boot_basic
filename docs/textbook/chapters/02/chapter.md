@@ -1288,11 +1288,11 @@ initial-scale=1.0"/>
 
 :::
 
-![入力欄のnameとFormのフィールドを結び付ける](assets/revision-ill-form-name-binding.png){#illustration-expansion-2026-form-name-binding}
+![HTMLのname属性値とFormのフィールド名の対応](assets/revision-ill-form-name-binding.png){#illustration-expansion-2026-form-name-binding}
 
 ::: {#illustration-expansion-2026-form-name-binding-caption .paragraph}
 
-入力欄のnameとFormのフィールド名を対応させ、送信された値を1つのオブジェクトにまとめます。
+HTMLのname属性値をFormのフィールド名と対応させ、送信された値をまとめます。
 
 :::
 
@@ -1736,32 +1736,6 @@ ${user.id}は、Modelのキーuserが指すオブジェクトからidの値を�
 
 :::
 
-::: {#p060-b09 .heading}
-
-[【参考】 JSP でデータを表示する出力するコード]{.s012}
-
-:::
-
-::: {#p060-b10 .code}
-
-```xml
-<%
-        int id = (Integer) request.getAttribute("id");
-        String password = (String) request.getAttribute("password");
- %>
-    <p>社員番号 : <%= id %></p>
-    <p>パスワード: <%= password %></p>
-```
-
-:::
-
-::: {#p060-b11 .paragraph}
-
-[JSP では、上記のようにrequest.getAttribute の記述と、\<% %\>という複雑な書き方をする必要]{.s009}\
-[がありましたが、th:text を使うことで、それがかなり簡略化されました。]{.s009}
-
-:::
-
 ::: {#p060-b12 .paragraph}
 
 [・11 行目]{.s012}
@@ -1787,7 +1761,12 @@ ${user.id}は、Modelのキーuserが指すオブジェクトからidの値を�
 
 ::: {#p061-b02 .paragraph}
 
-[http://localhost:8080/login3]{.s026}\
+[http://localhost:8080/login3]{.s026}
+
+:::
+
+::: {#revision-login3-instruction .paragraph}
+
 [社員番号と、パスワードを入力してください。]{.s009}
 
 :::

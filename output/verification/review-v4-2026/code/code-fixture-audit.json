@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "fixture_code_cards": 8,
+  "all_single_page": true,
+  "p083_comment_line7_single_pdf_line": "        //Product のDB 操作用クラスのProductDAO のオブジェクト生成",
+  "p092_html_comment_ascii_hyphens": true,
+  "visual_review_completed": true,
+  "review_image": "all-codes.png"
+}

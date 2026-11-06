@@ -1,0 +1,140 @@
+{
+  "removed_ids": [
+    "p060-b09",
+    "p060-b10",
+    "p060-b11",
+    "p071-b06",
+    "p071-b07",
+    "p071-b08",
+    "illustration-2026-repository-results",
+    "illustration-2026-repository-results-caption"
+  ],
+  "added_ids": [
+    "revision-login3-instruction",
+    "illustration-review-v4-each-variable-key",
+    "illustration-review-v4-each-variable-key-caption"
+  ],
+  "transformed_table_id": "p071-b05",
+  "updated_form_illustration": {
+    "id": "form-name-binding",
+    "chapter": "02",
+    "source_page": 54,
+    "after_id": "p054-b03",
+    "before_id": "p054-b04",
+    "priority": "推奨",
+    "title": "HTMLのname属性値とFormのフィールド名の対応",
+    "caption": "HTMLのname属性値をFormのフィールド名と対応させ、送信された値をまとめます。",
+    "purpose": "HTMLのtypeではなくname属性値を使ってFormのフィールドへ対応付ける関係を示す。",
+    "composition": "HTMLのinputタグのname属性値id/passwordから、UserFormの同名フィールドへ色をそろえた矢印を接続する。",
+    "labels": [
+      "HTMLのname属性",
+      "UserForm",
+      "id",
+      "password",
+      "1234",
+      "abc"
+    ],
+    "accuracy_constraints": [
+      "項目の表示ラベル『社員番号』でバインドされるように描かない。",
+      "nameとフィールド名の大小文字/綴りを一致させる。",
+      "この図は教材のフォームの基本バインドで、任意の送信キーがすべて自動保存される図にしない。",
+      "フォームのpasswordは説明用のabcのみで、機密データを生成しない。"
+    ],
+    "existing_figures": [
+      "p053-f25",
+      "p053-f26",
+      "p054-f27"
+    ],
+    "difference": "既存スライドはコードと箇条書き、既存画像はEclipse操作。新図は値を持つ入力欄と同名フィールドを色で1対1対応させる。",
+    "safety": "フィールド名一致の注意を読み終わった後、ファイル名p054-b04とコードp054-b05の組を崩さずその直前に入れる。",
+    "source_evidence": [
+      "p050-b02",
+      "p053-b03",
+      "p054-b02",
+      "p054-b03",
+      "p056-b06"
+    ],
+    "width": 280,
+    "max_height": 140,
+    "figure_id": "illustration-expansion-2026-form-name-binding",
+    "caption_id": "illustration-expansion-2026-form-name-binding-caption",
+    "asset": "assets/revision-ill-form-name-binding.png",
+    "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-c611abbe-41b5-4026-8a1d-03e8860b6e92.png",
+    "prompt": "Use case: scientific-educational. Edit the reference Japanese textbook diagram. Keep the clean navy outlines, white background, two rows colored blue and orange, left-to-right arrows, and right UserForm object with id/1234 and password/abc. Replace the entire LEFT panel to make absolutely clear these are HTML input name attributes. Left panel heading exactly \"HTMLのname属性\". Upper blue row shows exactly two code lines: <input type=\"text\" then name=\"id\">. Lower orange row shows exactly two code lines: <input type=\"password\" then name=\"password\">. Use straight ASCII quotation marks and spell text, password, name, id correctly. Highlight name=\"id\" in blue and name=\"password\" in orange. Upper arrow connects the HTML name id to the right id field; lower arrow connects HTML name password to the right password field. The right header remains exactly \"UserForm\", right rows exactly \"id 1234\" and \"password abc\". No extra browser chrome or new prose. Flat matte colors, no gloss or shadows. Wide 2.4:1 composition; it will print at 100 mm wide by at most 49 mm high, so use very large clear sparse labels and code. The left code may wrap only between the type and name attributes as specified. Preserve the existing two correspondences, avoid implying that type determines binding.",
+    "asset_sha256": "f2a839313cb5876e06ffe97fedbed7abb0d56127bddb67f1e104fe8427f211ef",
+    "image_pixels": [
+      1944,
+      809
+    ],
+    "constraints": [
+      "type=\"text\"とtype=\"password\"を正確に表示する。",
+      "矢印の起点はtypeではなくname属性値にする。"
+    ],
+    "edit_prompt": "Edit this diagram with ONE precise correction only. Move the lower orange arrow so its tail begins immediately to the right of the highlighted name=\"password\"> line in the lower left HTML row (at the lower part of that row), then use a short right-angle upward bend to reach the same password field on the UserForm. Its tail must clearly originate from the name attribute, NOT from the type=\"password\" line. Match the upper blue arrow structure, which already originates from name=\"id\">. Keep ALL text, straight ASCII quotes, code, labels HTMLのname属性 and UserForm, both colored rows, all boxes, values 1234/abc, upper blue arrow, exact wide composition and colors unchanged. Do not add any text or elements. The teaching point is HTML name attributes binding to Form field names."
+  },
+  "added_illustration": {
+    "id": "each-variable-key",
+    "title": "th:eachの変数名とModelのキー名",
+    "chapter": "03",
+    "source_page": 87,
+    "after_id": "p087-b07",
+    "before_id": "p088-b01",
+    "figure_id": "illustration-review-v4-each-variable-key",
+    "caption_id": "illustration-review-v4-each-variable-key-caption",
+    "asset": "assets/revision-ill-each-variable-key.png",
+    "width": 280,
+    "max_height": 140,
+    "caption": "「:」の右側はModelに格納したキー名、左側は繰り返しで使う任意の変数名です。",
+    "purpose": "コードに混入したPPT吹き出しを取り除き、コロン左右の意味を本文の近くの図として示す。",
+    "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-5a8915cd-989f-4878-a43f-6767ea5d2cc4.png",
+    "prompt": "Use case: scientific-educational. Create one compact Japanese textbook illustration, wide landscape 2.4:1, pure white background, flat friendly editorial diagram, crisp navy outlines, soft blue/teal with a small orange accent. No gradients, glossy highlights, shadows, logos, watermark or title banner. Large sparse text readable at 100 mm print width and 49 mm maximum height. Subject: how to read the two sides of Thymeleaf th:each. Center one large clear code strip showing exactly: th:each=\"product : ${products}\". Spell every character exactly, with ASCII straight double quotes, colon, dollar sign and curly braces. Color product (left of colon) blue, products inside ${products} orange, and the colon dark navy. Below this, place two clear explanatory callouts: LEFT blue callout reads exactly \"任意の変数名\" and on a separate line \"product\"; its short pointer goes ONLY to product left of the colon. RIGHT orange callout reads exactly \"Modelのキー名\" and on a separate line \"products\"; its pointer goes ONLY to products within ${products} right of the colon. Keep left and right correspondence unambiguous, with no crossed arrows. Do not point Model to the left variable. No invented object fields, sample values, item counts or extra explanation; the surrounding textbook already explains iteration.",
+    "asset_sha256": "03ac241ae39b789e8e4ed69292d8168bedb9a5a1f7ef5e34db08d01698247f59",
+    "image_pixels": [
+      1942,
+      809
+    ]
+  },
+  "removed_illustration": {
+    "id": "repository-results",
+    "title": "Repositoryの返り値はリストと0/1件で異なる",
+    "chapter": "03",
+    "source_page": 90,
+    "after_id": "p090-b03",
+    "before_id": "p091-b01",
+    "figure_id": "illustration-2026-repository-results",
+    "caption_id": "illustration-2026-repository-results-caption",
+    "asset": "assets/revision-ill-repository.png",
+    "width": 280,
+    "max_height": 140,
+    "caption": "findAll()の結果は0件以上、findById(id)の結果は0件または1件です。後者はOptionalで受け取ります。",
+    "purpose": "Entityの1行1インスタンス図は既存のまま活用し、検索結果がない場合も含めた返り値の形を示す。",
+    "difference": "p072-f10は1行=1インスタンスを既に完全図示。p090-f23はヒット時の1行を示すため、新図は空の結果とコレクション/Optionalの形の対比に限定する。",
+    "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-c6437ceb-33b1-4fd4-ae40-4ea0f3f47972.png",
+    "prompt": "Use case: scientific-educational. One compact illustration for a Japanese Spring Boot textbook, very wide horizontal composition about 2.4:1, pure white background. Friendly flat 2D editorial drawing with crisp dark navy outlines, muted teal and blue and a small warm orange accent. No glossy surfaces, no shadows, no decorative objects, no title banner, no watermark. Very large legible labels and a sparse layout, suitable for printing at only 106 mm wide by 49 mm high. Only render exact requested labels. This must be technically accurate.\nSubject: two parallel rows comparing result cardinality of two repository methods, not a sequential workflow. Left upper: a small search tray labeled exactly \"findAll()\"; to its right an arrow to a tidy collection of three product cards labeled exactly \"0件以上\". Use identical small product silhouettes on those cards. Left lower: a single-key search tray labeled exactly \"findById(id)\"; to its right an arrow that branches very slightly to two alternatives: one product card and a dotted empty slot, collectively labeled exactly \"0件または1件\". The empty slot must clearly represent no matching record. Do not draw more than one record as a findById result. The labels describe possible counts; the upper row must not suggest that results always exist. No return-type class names, no database query code.",
+    "asset_sha256": "3d497fbe46709329443984b93d7e484ee7d43035ea01fb0c5a8f3c39fbc2c75b",
+    "image_pixels": [
+      1942,
+      809
+    ]
+  },
+  "additional_code_change": {
+    "chapter": "03",
+    "id": "p109-b03",
+    "before": "```java\n1://showProductInsertView()の下に追記\n2:\n3:@PostMapping(\"/insert\")\n4: public String insertProduct(ProductForm productForm, Model model) {\n5: Product product = new Product();\n6: product.setName(productForm.getName());\n7: product.setPrice(productForm.getPrice());\n8: product = prodRepo.save(product);\n9:             model.addAttribute(\"product\", product);\n10: return \"/product/result\";\n11: }\n```\n",
+    "after": "```java\n1://showProductInsertView()の下に追記\n2:\n3:@PostMapping(\"/insert\")\n4:public String insertProduct(ProductForm productForm, Model model) {\n5:    Product product = new Product();\n6:    product.setName(productForm.getName());\n7:    product.setPrice(productForm.getPrice());\n8:    product = prodRepo.save(product);\n9:    model.addAttribute(\"product\", product);\n10:    return \"/product/result\";\n11:}\n```",
+    "scope": "単独メソッドの先頭は字下げなし、メソッド内4字。引用8行を同期。字句・意味・枠幅・字号は不変。",
+    "non_whitespace_code_preserved": true
+  },
+  "updated_illustration_anchor": {
+    "id": "model-key-property",
+    "before": "p060-b09",
+    "after": "p060-b12"
+  },
+  "restored_table": {
+    "chapter": "ex04",
+    "id": "p036-table01",
+    "before_rows": 3,
+    "after_rows": 1,
+    "scope": "社員番号（アノテーション削除）の論理行を元PDFどおりに復元。全字句・赤字保持。"
+  }
+}

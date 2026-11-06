@@ -1,0 +1,25 @@
+{
+  "method": "挿絵2点の完成PNGを原寸表示して独立目視。PDFの実印刷寸法・同頁caption・アンカー順序は別途自動検査。",
+  "records": [
+    {
+      "figure_id": "illustration-expansion-2026-form-name-binding",
+      "asset_sha256": "f2a839313cb5876e06ffe97fedbed7abb0d56127bddb67f1e104fe8427f211ef",
+      "passed": true,
+      "checked": [
+        "左見出しはHTMLのname属性。type=textとtype=passwordを正確に表示。",
+        "矢印の起点は上下ともname=id/name=passwordの行。type行を起点にしない。",
+        "idはUserFormのid、passwordは同passwordへ対応。1234/abcの値も一致。"
+      ]
+    },
+    {
+      "figure_id": "illustration-review-v4-each-variable-key",
+      "asset_sha256": "03ac241ae39b789e8e4ed69292d8168bedb9a5a1f7ef5e34db08d01698247f59",
+      "passed": true,
+      "checked": [
+        "th:each=\"product : ${products}\"の綴り・ASCII引用符・コロン・括弧を確認。",
+        "左のproductのみ青色、任意の変数名の吹き出しは左productを指す。",
+        "右のproductsのみ橙色、Modelのキー名の吹き出しは右productsを指す。"
+      ]
+    }
+  ]
+}

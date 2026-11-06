@@ -149,7 +149,13 @@ pre.source-code {
   padding: 0;
 }
 
-.card table {
+.table-card {
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.table-card table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
@@ -157,31 +163,44 @@ pre.source-code {
   line-height: 1.5;
 }
 
-.card thead { display: table-header-group; }
-.card tbody { display: table-row-group; }
-.card tr { break-inside: avoid; }
+.table-card thead { display: table-header-group; }
+.table-card tbody { display: table-row-group; }
+.table-card tr { break-inside: avoid; }
 
-.card th,
-.card td {
-  padding: 6pt 7pt;
-  border: 0.6pt solid #d7dde5;
+.table-card th,
+.table-card td {
+  padding: 6pt 6pt;
+  border: 0;
+  border-bottom: 0.6pt solid #d7dde5;
   text-align: left;
   vertical-align: top;
   overflow-wrap: anywhere;
 }
 
-.card th {
-  background: #edf2f7;
+.table-card th {
+  border-bottom: 1.2pt solid #92aabd;
+  background: #eaf1f7;
+  color: #203b50;
+  font-family: "Meiryo", sans-serif;
+  font-size: 9pt;
   font-weight: 700;
 }
 
 .table-card table { font-size: 9.5pt; }
-.table-card th,
-.table-card td { padding: 5pt; }
 
-.card tbody tr:nth-child(even) {
+.table-card tbody tr:nth-child(even) {
   background: #f8fafc;
 }
+
+.comparison-table table { font-size: 10pt; line-height: 1.6; }
+.comparison-table td { padding: 7pt 6pt; }
+.comparison-table tbody td:first-child { background: #edf2f6; }
+.comparison-table th:nth-child(2) { background: #fff0e3; }
+.comparison-table th:nth-child(3) { background: #e5f2ee; }
+.comparison-table tbody td:nth-child(2) { background: #fffaf4; }
+.comparison-table tbody td:nth-child(3) { background: #f4faf7; }
+.comparison-table .table-term { white-space: nowrap; }
+.property-table td:first-child { color: #174b70; }
 
 .explanation-card {
   border: 0;
@@ -226,6 +245,12 @@ pre.source-code {
 .explanation-prose-line { margin: 0; text-indent: 0; }
 .explanation-prose-line.paragraph-start { text-indent: 1em; }
 .explanation-prose-line br { display: none; }
+
+/* 通常本文と同じ1字下げ。引数の折返しは値の位置、注記は行頭へそろえる。 */
+.explanation-argument-paragraph { padding-left: 6em; text-indent: -5em; }
+.explanation-argument-paragraph .explanation-prose-line.paragraph-start { text-indent: -5em; }
+.explanation-note-paragraph,
+.explanation-note-paragraph .explanation-prose-line.paragraph-start { text-indent: 0; }
 
 .card td p,
 .card th p {
@@ -301,7 +326,7 @@ body{padding:24px;background:#eef2f6}article{margin:0 auto 28px;width:max-conten
 <span class="punctuation">&lt;</span><span class="element">div</span> class<span class="operator">=</span><span class="string">&quot;col-3 bg-danger-subtle&quot;</span><span class="punctuation">&gt;</span>Column 2<span class="punctuation">&lt;</span><span class="punctuation">/</span><span class="element">div</span><span class="punctuation">&gt;</span>
 <span class="punctuation">&lt;</span><span class="element">div</span> class<span class="operator">=</span><span class="string">&quot;col-3 bg-success-subtle&quot;</span><span class="punctuation">&gt;</span>Column 3<span class="punctuation">&lt;</span><span class="punctuation">/</span><span class="element">div</span><span class="punctuation">&gt;</span></pre></div><div class="explanation-meaning"><p class="explanation-paragraph" data-split-paragraph data-source-ids="p267-b03"><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">1</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">つのrow</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">の中に、複数のカラムを配置できます。このサンプル通りだと、以下のように表示</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">されます。</span></p></div></section></div></section></div></article>
 <article><p class="preview-id">07-explanation-3</p><div style="width:426.672pt"><section class="card explanation-card"><header class="card-header"><span class="language-badge">コードの読み方</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><section class="explanation-item"><div class="explanation-code" data-break-row data-keep-next data-source-ids="p267-b09,p267-b10"><div class="line-label">6～7行目</div><pre class="source-code" spellcheck="false">    <span class="punctuation">&lt;</span><span class="punctuation">/</span><span class="element">div</span><span class="punctuation">&gt;</span> <span class="comment">&lt;!-- END row1--&gt;</span>
-<span class="punctuation">&lt;</span><span class="punctuation">/</span><span class="element">div</span><span class="punctuation">&gt;</span><span class="comment">&lt;!-- END container--&gt;</span></pre></div><div class="explanation-meaning"><p class="explanation-paragraph" data-split-paragraph data-source-ids="p267-b10"><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">グリッドシステムでは、&lt;div&gt;要素を使うことが多いので、閉じタグだけでは、どの要素の閉じ</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">タグなのか、区別がつきません。そのため、</span><span class="source-style prose-emphasis" style="font-family:&quot;MS PGothic&quot;;font-weight:700;font-size:11.04pt;color:#000000">どの要素の閉じタグなのかを明確にするため、コ</span><span class="source-style prose-emphasis" style="font-family:&quot;MS PGothic&quot;;font-weight:700;font-size:11.04pt;color:#000000">メントを記載することが多いです。</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">特に、row</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">が複数ある場合は「END</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">row1」や、「END</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">row2」と</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">かでコメントを残すことで実際の範囲も読みやすくなるので、重要です。</span></p></div></section></div></section></div></article>
+<span class="punctuation">&lt;</span><span class="punctuation">/</span><span class="element">div</span><span class="punctuation">&gt;</span><span class="comment">&lt;!-- END container--&gt;</span></pre></div><div class="explanation-meaning"><p class="explanation-paragraph" data-split-paragraph data-source-ids="p267-b10"><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">グリッドシステムでは、&lt;div&gt;要素を使うことが多いので、閉じタグだけでは、どの要素の閉じ</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">タグなのか、区別がつきません。そのため、</span><span class="source-style prose-emphasis" style="font-family:&quot;MS PGothic&quot;;font-weight:700;font-size:11.04pt;color:#000000">どの要素の閉じタグなのかを明確にするため、コ</span><span class="source-style prose-emphasis" style="font-family:&quot;MS PGothic&quot;;font-weight:700;font-size:11.04pt;color:#000000">メントを記載することが多いです。</span></p><p class="explanation-paragraph" data-split-paragraph data-source-ids="p267-b10"><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">特に、row</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">が複数ある場合は「END</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">row1」や、「END</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">row2」と</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">かでコメントを残すことで実際の範囲も読みやすくなるので、重要です。</span></p></div></section></div></section></div></article>
 <article><p class="preview-id">07-explanation-4</p><div style="width:426.672pt"><section class="card explanation-card"><header class="card-header"><span class="language-badge">コードの読み方</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><section class="explanation-item"><div class="explanation-code" data-break-row data-keep-next data-source-ids="p273-b04,p273-b05"><div class="line-label">5行目</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">div</span> class<span class="operator">=</span><span class="string">&quot;col-md-3&quot;</span><span class="punctuation">&gt;</span> <span class="comment">&lt;!-- START sidebar --&gt;</span></pre></div><div class="explanation-meaning"><p class="explanation-paragraph" data-split-paragraph data-source-ids="p273-b05"><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> フォームとは直接関係がないコードですが、横幅の3</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">割のみ占めるように、限定をさせること</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">で、左サイドバーのようなレイアウトを作ることができます。検索バーは、サイドバーに配置させ</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">ることが多いので、予めカラムを生成しました。</span></p></div></section><section class="explanation-item"><div class="explanation-code" data-break-row data-keep-next data-source-ids="p273-b06,p273-b07"><div class="line-label">8行目</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">form</span> class<span class="operator">=</span><span class="string">&quot;row&quot;</span><span class="punctuation">&gt;</span></pre></div><div class="explanation-meaning"><p class="explanation-paragraph" data-split-paragraph data-source-ids="p273-b07"><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">&lt;div&gt;ではなく、&lt;form&gt;要素をrow</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">として生成すると、フォームを別途の行として扱えることが</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">できます。</span></p></div></section><section class="explanation-item"><div class="explanation-code" data-break-row data-keep-next data-source-ids="p273-b08,p273-b09"><div class="line-label">9行目・13行目</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">div</span> class<span class="operator">=</span><span class="string">&quot;col-8&quot;</span><span class="punctuation">&gt;</span>
 <span class="punctuation">&lt;</span><span class="element">div</span> class<span class="operator">=</span><span class="string">&quot;col-4&quot;</span><span class="punctuation">&gt;</span></pre></div><div class="explanation-meaning"><p class="explanation-paragraph" data-split-paragraph data-source-ids="p273-b09"><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">入力フォームに8、ボタンに4</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">の割合でカラムを生成しています。</span></p></div></section><section class="explanation-item"><div class="explanation-code" data-break-row data-source-ids="p273-b10"><div class="line-label">10行目</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">input</span> type<span class="operator">=</span><span class="string">&quot;text&quot;</span> class<span class="operator">=</span><span class="string">&quot;form-control&quot;</span></pre></div><div class="explanation-meaning"></div></section></div></section></div></article>
 <article><p class="preview-id">07-explanation-5</p><div style="width:426.672pt"><section class="card explanation-card"><header class="card-header"><span class="language-badge">コードの読み方</span><span class="filename"></span><span class="continuation"></span></header><div class="card-content"><section class="explanation-item"><div class="explanation-code" data-break-row data-keep-next data-source-ids="p274-b01"><div class="line-label">10行目</div><pre class="source-code" spellcheck="false"><span class="punctuation">&lt;</span><span class="element">input</span> type<span class="operator">=</span><span class="string">&quot;text&quot;</span> class<span class="operator">=</span><span class="string">&quot;form-control&quot;</span></pre></div><div class="explanation-meaning"><p class="explanation-paragraph" data-split-paragraph data-source-ids="p274-b01"><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">  Bootstrap</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000"> </span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">のフォーム関連クラスの中で、一番大事なクラスです。テキストフォームにこのクラ</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">スを付与することで、</span><span class="source-style prose-emphasis" style="font-family:&quot;MS PGothic&quot;;font-weight:700;font-size:11.04pt;color:#000000">Bootstrap</span><span class="source-style prose-emphasis" style="font-family:&quot;MS PGothic&quot;;font-weight:700;font-size:11.04pt;color:#000000"> </span><span class="source-style prose-emphasis" style="font-family:&quot;MS PGothic&quot;;font-weight:700;font-size:11.04pt;color:#000000">式のテキストフォームのデザインを適用</span><span class="source-style" style="font-family:&quot;MS PMincho&quot;;font-weight:400;font-size:11.04pt;color:#000000">することができます。</span></p></div></section></div></section></div></article></body></html>

@@ -1,0 +1,218 @@
+[
+  {
+    "label": "77pの動作確認",
+    "chapter": "02",
+    "id": "p061-b02",
+    "collection": "textbook",
+    "pages": [
+      70
+    ]
+  },
+  {
+    "label": "JSP参考節削除後の続き",
+    "chapter": "02",
+    "id": "p060-b12",
+    "collection": "textbook",
+    "pages": [
+      69
+    ]
+  },
+  {
+    "label": "53pなどのコード説明",
+    "chapter": "02",
+    "id": "p049-b05",
+    "collection": "textbook",
+    "pages": [
+      53
+    ]
+  },
+  {
+    "label": "HTMLのname属性の図",
+    "chapter": "02",
+    "id": "illustration-expansion-2026-form-name-binding",
+    "collection": "textbook",
+    "pages": [
+      60
+    ]
+  },
+  {
+    "label": "83p 商品表",
+    "chapter": "03",
+    "id": "p067-table01",
+    "collection": "textbook",
+    "pages": [
+      76
+    ]
+  },
+  {
+    "label": "84p 商品名の整列",
+    "chapter": "03",
+    "id": "p067-table03",
+    "collection": "textbook",
+    "pages": [
+      76
+    ]
+  },
+  {
+    "label": "87p JDBCとJPAの比較",
+    "chapter": "03",
+    "id": "p069-table01",
+    "collection": "textbook",
+    "pages": [
+      79
+    ]
+  },
+  {
+    "label": "90p properties設定表",
+    "chapter": "03",
+    "id": "p071-b05",
+    "collection": "textbook",
+    "pages": [
+      82
+    ]
+  },
+  {
+    "label": "93p 制約列の整列",
+    "chapter": "03",
+    "id": "p073-table01",
+    "collection": "textbook",
+    "pages": [
+      85
+    ]
+  },
+  {
+    "label": "107p コメント7行目",
+    "chapter": "03",
+    "id": "p083-b04",
+    "collection": "textbook",
+    "pages": [
+      98
+    ]
+  },
+  {
+    "label": "コメントコードの続き",
+    "chapter": "03",
+    "id": "p084-b01",
+    "collection": "textbook",
+    "pages": [
+      99
+    ]
+  },
+  {
+    "label": "109p Javaインデント",
+    "chapter": "03",
+    "id": "p085-b04",
+    "collection": "textbook",
+    "pages": [
+      100
+    ]
+  },
+  {
+    "label": "110p Java引用1",
+    "chapter": "03",
+    "id": "p086-b04",
+    "collection": "textbook",
+    "pages": [
+      101
+    ]
+  },
+  {
+    "label": "110p Java引用2",
+    "chapter": "03",
+    "id": "p086-b10",
+    "collection": "textbook",
+    "pages": [
+      102
+    ]
+  },
+  {
+    "label": "111p HTMLからPPT注記を削除",
+    "chapter": "03",
+    "id": "p087-b04",
+    "collection": "textbook",
+    "pages": [
+      103
+    ]
+  },
+  {
+    "label": "112p th:each左右の図",
+    "chapter": "03",
+    "id": "illustration-review-v4-each-variable-key",
+    "collection": "textbook",
+    "pages": [
+      104
+    ]
+  },
+  {
+    "label": "116p 不要な図の削除",
+    "chapter": "03",
+    "id": "p090-b03",
+    "collection": "textbook",
+    "pages": [
+      107
+    ]
+  },
+  {
+    "label": "118p HTMLインデント",
+    "chapter": "03",
+    "id": "p092-b03",
+    "collection": "textbook",
+    "pages": [
+      109
+    ]
+  },
+  {
+    "label": "118p Javaインデント",
+    "chapter": "03",
+    "id": "p092-b08",
+    "collection": "textbook",
+    "pages": [
+      109
+    ]
+  },
+  {
+    "label": "追加確認 Javaの登録処理",
+    "chapter": "03",
+    "id": "p109-b03",
+    "collection": "textbook",
+    "pages": [
+      128
+    ]
+  },
+  {
+    "label": "追加確認 登録処理の解説引用",
+    "chapter": "03",
+    "id": "p110-b04",
+    "collection": "textbook",
+    "pages": [
+      131
+    ]
+  },
+  {
+    "label": "物理名称の折返し1",
+    "chapter": "06",
+    "id": "p197-table01",
+    "collection": "textbook",
+    "pages": [
+      234
+    ]
+  },
+  {
+    "label": "物理名称の折返し2",
+    "chapter": "06",
+    "id": "p200-table01",
+    "collection": "textbook",
+    "pages": [
+      237
+    ]
+  },
+  {
+    "label": "演習 元の論理行を復元",
+    "chapter": "ex04",
+    "id": "p036-table01",
+    "collection": "exercise",
+    "pages": [
+      36
+    ]
+  }
+]
