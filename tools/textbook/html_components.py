@@ -202,6 +202,9 @@ def table_html(folder, layout, ident, node):
                     body = body.replace(term, '<span class="table-term">'+term+'</span>')
             align = 'center' if header_cell else alignments[j]
             declarations = [f'text-align:{align}']
+            if (node.get('attrs', {}).get('highlight-row') == str(i + 1 - int(node['has_header']))
+                    or node.get('attrs', {}).get('highlight-column') == str(j + 1)):
+                declarations.append('background-color:#fff0a6')
             if re.fullmatch(r'[+-]?\d[\d,.]*(?:\s*%)?', value.strip()):
                 declarations.append('white-space:nowrap')
             scope = ' scope="col"' if header_cell else ''

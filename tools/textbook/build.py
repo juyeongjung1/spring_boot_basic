@@ -260,7 +260,7 @@ def pagination_options(config, layout, nodes, figures, order):
     protected = fixed | {figure['page'] for figure in layout['figures'] if figure.get('slide')}
     for page, reason in continuations.items():
         if (page not in pages or page-1 not in pages or page in protected or page-1 in fixed
-                or reason not in {'continued-prose', 'short-minor-heading'}):
+                or reason not in {'continued-prose', 'continued-code', 'short-minor-heading'}):
             raise ValueError(f'継続できないページ境界です: {page}')
         first = nodes.get(pages[page]['entries'][0])
         if (not first or re.match(r'^(?:演習\s*)?\d+\.\d+(?:\.\d+)?(?:[.\s]|$)', first['text'].strip())
@@ -268,6 +268,10 @@ def pagination_options(config, layout, nodes, figures, order):
             raise ValueError(f'節・項や図から始まるページは継続できません: {page}')
         if reason == 'continued-prose' and first['kind'] != 'paragraph':
             raise ValueError(f'本文の続きではありません: {page}')
+        if reason == 'continued-code':
+            previous = nodes.get(pages[page-1]['entries'][-1])
+            if first['kind'] != 'code' or not previous or previous['kind'] != 'code':
+                raise ValueError(f'コードの続きではありません: {page}')
         if reason == 'short-minor-heading' and first['kind'] not in {'heading', 'step'}:
             raise ValueError(f'小小見出しではありません: {page}')
     pairs = options.get('paragraph_continuations', [])
@@ -389,7 +393,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
     for page in layout['pages']:
         current_entries = next((p['entries'] for p in order if p['source_page'] == page['source_page']), [])
         if page['source_page'] in omitted_blank_pages:
-            if page['entries'] or current_entries:
+            if current_entries:
                 raise ValueError('空白でない元頁は省略できません: ' + str(page['source_page']))
             continue
         if page['source_page'] in config.get('native_pages',[]) or (not page['entries'] and not current_entries):
@@ -593,7 +597,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 value, style = parts[0]
                 marker = inline([(value[0], style)])
                 parts[0] = (value[1:], style)
-                return f'#bullet-paragraph({q(ident)}, [{marker}], [{inline(parts)}], continuing: {str(ident in list_with_continuation).lower()})'
+                return f'#bullet-paragraph({q(ident)}, [{marker}], [{inline(parts, keep_lines=keep_lines)}], continuing: {str(ident in list_with_continuation).lower()})'
             if ident in list_continuations:
                 return f'#list-continuation({q(ident)}, [{inline(parts)}], continuing: {str(ident in list_with_continuation).lower()})'
             is_time_list = folder.name.startswith('ex') and re.fullmatch(
@@ -698,7 +702,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if ident.startswith('__source-'):
             source_page = int(ident.rsplit('-', 1)[1])
             if source_page in omitted_blank_pages:
-                # 原本の元頁番号を記録し、白紙だけを自動組版から省く。
+                # 元頁番号を記録し、内容が空の元頁を自動組版から省く。
                 commands.append(f'#mark({q(ident)}, "source-page")')
                 i += 1
                 continue

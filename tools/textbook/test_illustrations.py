@@ -12,7 +12,7 @@ import unittest
 import pymupdf as fitz
 from PIL import Image
 
-from build import ROOT, read_markdown
+from build import ROOT, normalized, read_markdown
 
 CATALOG = ROOT / 'docs/textbook/illustrations.json'
 APPROVED_EDITION = 'f16135f3cebb2e2f9ab481e9cfead35b05bd52d4'
@@ -24,6 +24,7 @@ MODEL_EDITION = '0409a5379334731099867c078bc75a02e25a136d'
 MODEL_APPROVED_EDITION = '39f5fef6a2b47de1d5a290820bce10f65dae459b'
 REPOSITORY_APPROVED_EDITION = '851c18e02f1d9144c99fb22948791f84a3adf34e'
 SERVICE_APPROVED_EDITION = '9ccfcb292b2d261fc7e40318eaa9c506183d1805'
+SESSION_APPROVED_EDITION = '066abc50787fe3f83fd9d7fcaf33451336ecb054'
 MODEL_TRANSFER = 'illustration-2026-model-transfer'
 MODEL_UNPACK = 'illustration-2026-model-moving-unpack'
 MODEL_MOVING_PAGES = {MODEL_TRANSFER: 65, MODEL_UNPACK: 67}
@@ -671,7 +672,7 @@ class IllustrationSourceTests(unittest.TestCase):
         from html_components import source_rows
 
         _, old_nodes, old_figures, old_pages, _ = edition_chapter('03', SERVICE_APPROVED_EDITION)
-        _, nodes, figures, pages, _ = chapter('03')
+        _, nodes, figures, pages, _ = edition_chapter('03', SESSION_APPROVED_EDITION)
         expected_caption = old_nodes['revision-di-caption']['text'].split('テレビが替わっても')[0].rstrip()
         self.assertEqual(nodes['revision-di-caption']['text'], expected_caption)
         self.assertEqual({k:v for k,v in nodes.items() if k!='revision-di-caption'},
@@ -679,7 +680,7 @@ class IllustrationSourceTests(unittest.TestCase):
         self.assertEqual((figures,pages), (old_figures,old_pages))
 
         _, old_nodes, old_figures, old_pages, _ = edition_chapter('04', SERVICE_APPROVED_EDITION)
-        _, nodes, figures, pages, _ = chapter('04')
+        _, nodes, figures, pages, _ = edition_chapter('04', SESSION_APPROVED_EDITION)
         codes = {'p147-b04','p149-b05','p150-b03','p151-b03','p151-b07','p155-b08','p156-b02','p156-b04'}
         credentials = {'p141-b04','p146-b04'}
         removed = {NULL_BLANK+'-caption'} | {'revision-messages-'+name for name in
@@ -707,6 +708,78 @@ class IllustrationSourceTests(unittest.TestCase):
         order = lambda values: [(p['source_page'], [i for i in p['entries'] if i not in movable])
                                 for p in values]
         self.assertEqual(order(pages), order(old_pages))
+
+
+    def test_product_and_bootstrap_revision_preserves_other_source_content(self):
+        indents = {'05': ('p172-b01','p174-b02'), '06': ('p205-b04','p214-b05'), '07': ()}
+        line_breaks = {
+            '05': (),
+            '06': ('p204-b05','p204-b07','p215-b02','p215-b03','p225-b06','p225-b07',
+                   'p225-b08','p226-b06','p226-b07','p226-b08'),
+            '07': ('p240-b03','p240-b04','p240-b05'),
+        }
+        other_edits = {
+            '05': {'p189-b01'},
+            '06': {'p197-table01','p197-table02','p200-b04','p200-b05','p230-b01','p235-b05'},
+            '07': {'p243-b08'},
+        }
+        final_note = 'revision-product-final-note'
+        for name in indents:
+            with self.subTest(chapter=name):
+                _, old_nodes, old_figures, old_pages, old_config = edition_chapter(name, SESSION_APPROVED_EDITION)
+                _, nodes, figures, pages, config = chapter(name)
+                expected_pages, expected_config = deepcopy(old_pages), deepcopy(old_config)
+                added, removed = set(), set()
+                if name=='05':
+                    expected_config['pagination']['continue_before'].update({'177':'continued-prose','189':'continued-code'})
+                    self.assertEqual(nodes['p189-b01'],dict(old_nodes['p189-b01'],language='css'))
+                if name=='06':
+                    added = {final_note}
+                    obsolete = next(p for p in expected_pages if p['source_page']==232)
+                    removed.update(obsolete['entries'])
+                    obsolete['entries'].clear()
+                    entries = next(p['entries'] for p in expected_pages if p['source_page']==200)
+                    pos = entries.index('p200-b04')+1
+                    entries.insert(pos,final_note)
+                    expected_config['pagination']['omit_blank_pages'] = [232]
+                    self.assertIn('Integer categoryId',nodes['p200-b05']['text'])
+                    self.assertEqual(normalized(nodes['p200-b05']['text']),normalized(old_nodes['p200-b05']['text']))
+                    self.assertEqual(nodes['p230-b01']['text'],'【参考】'+old_nodes['p230-b01']['text'])
+                    self.assertEqual(nodes['p235-b05'],dict(old_nodes['p235-b05'],kind='heading'))
+                    for ident,attribute in [('p197-table01','highlight-row'),('p197-table02','highlight-column')]:
+                        attrs = {**old_nodes[ident]['attrs'],attribute:'4'}
+                        self.assertEqual(nodes[ident],dict(old_nodes[ident],attrs=attrs),ident)
+                    original_code = old_nodes['p200-b04']['text']
+                    supplemented = nodes['p200-b04']['text']
+                    self.assertTrue(supplemented.startswith(original_code+'\n'))
+                    snippet = supplemented[len(original_code):].lstrip('\n')
+                    self.assertTrue(all(line.startswith('//') for line in snippet.splitlines() if line))
+                    for value in ('@ManyToOne','insertable = false, updatable = false','private Category category;',
+                                  '@Column(name = "category_id")','private Integer categoryId;'):
+                        self.assertIn(value,snippet)
+                    self.assertIn('作業手順⑤',nodes[final_note]['text'])
+                if name=='07':
+                    old_css = 'color: white;\n        padding: 10px 20px;\n        border: none;\n        border-radius: 5px;'
+                    short_css = 'color: white; /* ほかに padding や border などを指定 */'
+                    self.assertEqual(nodes['p243-b08']['text'],old_nodes['p243-b08']['text'].replace(old_css,short_css))
+                self.assertEqual((figures,pages,config),(old_figures,expected_pages,expected_config))
+                self.assertEqual(set(nodes)-set(old_nodes),added)
+                self.assertEqual(set(old_nodes)-set(nodes),removed)
+                bullets = {i for i in old_nodes if name in ('06','07') and '•' in old_nodes[i]['text']}
+                edited = set(indents[name]) | set(line_breaks[name]) | other_edits[name] | bullets
+                self.assertEqual({i for i in set(old_nodes)&set(nodes) if nodes[i]!=old_nodes[i]},edited)
+                for ident in indents[name]:
+                    prior = old_nodes[ident]['text'].replace('prodRepo..findById','prodRepo.findById')
+                    without_indent = lambda value: [line.lstrip() for line in value.splitlines()]
+                    self.assertEqual(without_indent(nodes[ident]['text']),without_indent(prior),ident)
+                for ident in bullets | set(line_breaks[name]):
+                    text = old_nodes[ident]['text'].replace('•','●')
+                    attrs = old_nodes[ident]['attrs']
+                    if ident in line_breaks[name]:
+                        attrs = {**attrs,'keep-lines':'true'}
+                    self.assertEqual(normalized(nodes[ident]['text']),normalized(text),ident)
+                    self.assertEqual(nodes[ident]['attrs'],attrs,ident)
+                    self.assertNotIn('•',nodes[ident]['text'],ident)
 
 
 class IllustrationPdfTests(unittest.TestCase):

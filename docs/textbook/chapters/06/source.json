@@ -433,7 +433,10 @@
       "201": "continued-prose"
     },
     "paragraph_continuations": [],
-    "figure_scales": {}
+    "figure_scales": {},
+    "omit_blank_pages": [
+      232
+    ]
   },
   "typography": {
     "minor_heading_extra_space": {

@@ -301,11 +301,11 @@ th:textはタグに見える入力もエスケープして、HTMLの本文へ文
 ```xml
 </tr>
 <tr th:each="product: ${products}">
-        <td th:text="${product.id}"></td>
-        <td th:text="${product.name}"></td>
-        <td th:text="${product.price}"></td>
-        <td><img th:attr="src=@{/images/product} + ${product.id} + @{.png},
-                          alt=${product.name}, width=60, height=60" /></td>
+    <td th:text="${product.id}"></td>
+    <td th:text="${product.name}"></td>
+    <td th:text="${product.price}"></td>
+    <td><img th:attr="src=@{/images/product} + ${product.id} + @{.png},
+        alt=${product.name}, width=60, height=60" /></td>
 </tr>
 ```
 
@@ -407,9 +407,9 @@ th:textはタグに見える入力もエスケープして、HTMLの本文へ文
 ```java
 @GetMapping("/findById/{id}")
 public String showProductById(@PathVariable int id, Model model) {
-        Product product = prodRepo..findById(id).orElse(null);
-        model.addAttribute("product", product);
-        return "product/detail";
+    Product product = prodRepo.findById(id).orElse(null);
+    model.addAttribute("product", product);
+    return "product/detail";
 }
 ```
 
@@ -1290,7 +1290,7 @@ footer {
 
 ::: {#p189-b01 .code}
 
-```java
+```css
     nav {
         width: 100%;
     }

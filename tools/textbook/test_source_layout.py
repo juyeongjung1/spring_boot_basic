@@ -85,8 +85,11 @@ class SourceLayoutTests(unittest.TestCase):
         added_figures = set()
         self.assertEqual(len(self.chapters), 19)
         for name, chapter in self.chapters.items():
-            removed = ({'p060-b09','p060-b10','p060-b11'} if name=='02' else
-                       {'p071-b06','p071-b07','p071-b08','p115-b05'} if name=='03' else set())
+            removed = {
+                '02': {'p060-b09','p060-b10','p060-b11'},
+                '03': {'p071-b06','p071-b07','p071-b08','p115-b05'},
+                '06': {f'p232-b{i:02d}' for i in range(1,8)},
+            }.get(name, set())
             self.assertEqual(chapter['original'].keys() - chapter['current'].keys(), removed, name)
             self.assertFalse(chapter['original_figures'].keys() - chapter['current_figures'].keys(), name)
             added_figures.update((name, ident) for ident in
@@ -109,6 +112,7 @@ class SourceLayoutTests(unittest.TestCase):
         )
         expected.update(('03', 'revision-service-' + name) for name in service)
         expected.update(('04', 'revision-messages-' + name) for name in messages)
+        expected.add(('06', 'revision-product-final-note'))
         expected.update(('appendix-b', 'revision-errors-' + name) for name in errors)
         expected_figures = {('03', 'revision-di-remote')}
         for name, chapter in self.chapters.items():
@@ -283,6 +287,32 @@ class SourceLayoutTests(unittest.TestCase):
                  and d['rect'].y1 >= area.y0 and d['rect'].y0 <= area.y1]
         self.assertGreaterEqual(len(lines), 4)
         self.assertTrue(all(abs(d['width'] - .65) < .01 for d in lines))
+
+    def test_added_category_id_row_and_column_are_highlighted(self):
+        chapter = self.chapters['06']
+        for ident, row in [('p197-table01',True), ('p197-table02',False)]:
+            with self.subTest(ident=ident):
+                (_, position, table), = self.component_parts(chapter,ident)
+                page = chapter['pdf'][position['page']-1]
+                highlighted = [drawing['rect'] for drawing in self.page_drawings('06',position['page'])
+                               if table.contains(drawing['rect'])
+                               and self.color_is(drawing['fill'],(1,240/255,166/255))]
+                rows = chapter['current'][ident]['rows']
+                self.assertEqual(len(highlighted),len(rows[-1]) if row else len(rows))
+                for rect in highlighted:
+                    if row:
+                        self.assertAlmostEqual(rect.y0,highlighted[0].y0,delta=.02)
+                        self.assertAlmostEqual(rect.y1,highlighted[0].y1,delta=.02)
+                    else:
+                        self.assertAlmostEqual(rect.x0,highlighted[0].x0,delta=.02)
+                        self.assertAlmostEqual(rect.x1,highlighted[0].x1,delta=.02)
+                selected = fitz.Rect(highlighted[0])
+                for rect in highlighted[1:]:
+                    selected |= rect
+                lines = page.get_text(clip=selected).splitlines()
+                self.assertEqual(normalized(lines[0]),'4' if row else 'カテゴリID')
+                if row:
+                    self.assertIn('category_id',lines)
 
     def test_all_seven_operation_checks_are_pdf_headings(self):
         for name, identifiers in {'02': ('p061-b01',), '05': ('p174-b04', 'p180-b01'),

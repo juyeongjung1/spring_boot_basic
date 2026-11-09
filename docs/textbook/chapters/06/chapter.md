@@ -170,7 +170,7 @@
 
 :::
 
-::: {#p197-table01 .table has-header="true"}
+::: {#p197-table01 .table has-header="true" highlight-row="4"}
 
 | No | 論理名称 | 物理名称 | データ型 | 桁数 | 制約 | 備考 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -187,7 +187,7 @@
 
 :::
 
-::: {#p197-table02 .table has-header="true"}
+::: {#p197-table02 .table has-header="true" highlight-column="4"}
 
 | 商品番号 | 商品名 | 価格 | カテゴリID |
 | --- | --- | --- | --- |
@@ -409,15 +409,29 @@ public class Product {
        @JoinColumn(name = "category_id")
        private Category category;
 }
+
+// 完成形では、上の category の定義を次の2フィールドに置き換えます。
+// @ManyToOne
+// @JoinColumn(name = "category_id",
+//             insertable = false, updatable = false)
+// private Category category; // カテゴリオブジェクト
+//
+// @Column(name = "category_id")
+// private Integer categoryId; // カテゴリID
 ```
+
+:::
+
+::: {#revision-product-final-note .paragraph}
+
+[※コメントしている部分は、本来必要です。詳細は、【6.3. 外部参照付きのデータ登録】の作業手順⑤で説明します。]{.s009}
 
 :::
 
 ::: {#p200-b05 .paragraph}
 
 [最後のcategory フィールドにご注目ください。今まではテーブル上の列名がエンティティのフ]{.s009}\
-[ィールド名に合わせる必要がありました。よって、以下のようなテーブル構成なら、「Integer]{.s009}\
-[categoryId」と定義するべきでしょう。]{.s009}
+[ィールド名に合わせる必要がありました。よって、以下のようなテーブル構成なら、「Integer categoryId」と定義するべきでしょう。]{.s009}
 
 :::
 
@@ -628,11 +642,10 @@ public class ProductController {
 
 :::
 
-::: {#p204-b05 .paragraph}
+::: {#p204-b05 .paragraph keep-lines="true"}
 
 [■ findAll メソッドの結果]{.s010}\
-[外部参照を定義した後、findAll メソッドの実行結果には、]{.s009}[Product のデータに加えて、関連]{.s010}\
-[するCategory のデータも含まれる]{.s010}[ようになります。]{.s009}
+[外部参照を定義した後、findAll メソッドの実行結果には、]{.s009}[Product のデータに加えて、関連]{.s010}[するCategory のデータも含まれる]{.s010}[ようになります。]{.s009}
 
 :::
 
@@ -642,13 +655,10 @@ public class ProductController {
 
 :::
 
-::: {#p204-b07 .paragraph}
+::: {#p204-b07 .paragraph keep-lines="true"}
 
 [■&#32;]{.s010}[標準出力の注意点]{.s012}\
-[外部参照を持つエンティティは構造が複雑になります。特に、エンティティ間の双方向参]{.s009}\
-[照が設定されている場合、エンティティのインスタンスをSystem.out.println で出力すると、]{.s009}\
-[スタックオーバーフローエラーが発生する可能性があります。]{.s009}\
-[Product がCategory を参照し、Category がProduct を再参照するためです。]{.s009}
+[外部参照を持つエンティティは構造が複雑になります。特に、エンティティ間の双方向参]{.s009}[照が設定されている場合、エンティティのインスタンスをSystem.out.println で出力すると、]{.s009}[スタックオーバーフローエラーが発生する可能性があります。]{.s009}[Product がCategory を参照し、Category がProduct を再参照するためです。]{.s009}
 
 :::
 
@@ -681,20 +691,20 @@ public class ProductController {
 
 ```xml
 <h1>商品一覧</h1>
-        <table>
-               <tr>
-                       <th>商品番号</th>
-                       <th>商品名</th>
-                       <th>価格</th>
-                       <th>カテゴリ</th>
-               </tr>
-               <tr th:each="product: ${products}">
-                       <td th:text="${product.id}"></td>
-                       <td th:text="${product.name}"></td>
-                       <td th:text="${product.price}"></td>
-                       <td th:text="${product.category.name}"></td>
-               </tr>
-        </table>
+<table>
+    <tr>
+        <th>商品番号</th>
+        <th>商品名</th>
+        <th>価格</th>
+        <th>カテゴリ</th>
+    </tr>
+    <tr th:each="product: ${products}">
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.category.name}"></td>
+    </tr>
+</table>
 ```
 
 :::
@@ -1159,19 +1169,19 @@ product.categoryがあるときだけnameを読み、nullのときは「未設�
 
 ```xml
 <h1>商品登録</h1>
-        <form th:action = "@{/product/insert}" method = "POST">
-        <p>商品番号：(自動割り当て)</p>
-        <p>商品名 ：<input type = "text" name = "name"></p>
-        <p>商品価格：<input type = "number" name = "price"></p>
-        <p>カテゴリ：
-               <select name="categoryId" required>
-                       <option value = "">選択してください</option>
-                       <option value = "1">テレビ・モニター</option>
-                       <option value = "2">コンピュータ</option>
-                       <option value = "3">冷蔵庫</option>
-                       <option value = "4">洗濯機</option>
-               </select>
-        </p>
+<form th:action = "@{/product/insert}" method = "POST">
+    <p>商品番号：(自動割り当て)</p>
+    <p>商品名 ：<input type = "text" name = "name"></p>
+    <p>商品価格：<input type = "number" name = "price"></p>
+    <p>カテゴリ：
+        <select name="categoryId" required>
+            <option value = "">選択してください</option>
+            <option value = "1">テレビ・モニター</option>
+            <option value = "2">コンピュータ</option>
+            <option value = "3">冷蔵庫</option>
+            <option value = "4">洗濯機</option>
+        </select>
+    </p>
 ```
 
 :::
@@ -1186,14 +1196,14 @@ product.categoryがあるときだけnameを読み、nullのときは「未設�
 
 :::
 
-::: {#p215-b02 .paragraph}
+::: {#p215-b02 .paragraph keep-lines="true"}
 
 [⚫&#32;]{.s021}[新しいカテゴリの追加や既存カテゴリの修正が手間]{.s010}\
 [HTML コードを手動で変更する必要があるため、管理が煩雑になります。]{.s009}
 
 :::
 
-::: {#p215-b03 .paragraph}
+::: {#p215-b03 .paragraph keep-lines="true"}
 
 [⚫&#32;]{.s021}[データベースとの不一致]{.s010}\
 [UI とデータベースが同期しなくなる可能性があり、意図しない不具合が発生します。]{.s009}
@@ -1221,19 +1231,19 @@ product.categoryがあるときだけnameを読み、nullのときは「未設�
 
 ::: {#p215-b07 .paragraph}
 
-[•&#32;]{.s035}[商品名（name）]{.s009}
+[●&#32;]{.s035}[商品名（name）]{.s009}
 
 :::
 
 ::: {#p215-b08 .paragraph}
 
-[•&#32;]{.s035}[商品価格（price）]{.s009}
+[●&#32;]{.s035}[商品価格（price）]{.s009}
 
 :::
 
 ::: {#p215-b09 .paragraph}
 
-[•&#32;]{.s035}[カテゴリID（categoryId）]{.s009}
+[●&#32;]{.s035}[カテゴリID（categoryId）]{.s009}
 
 :::
 
@@ -1923,25 +1933,23 @@ JPQLは、テーブル名・列名ではなくエンティティ名・フィー�
 
 :::
 
-::: {#p225-b06 .paragraph}
+::: {#p225-b06 .paragraph keep-lines="true"}
 
-[•&#32;]{.s035}[エンティティモデルに基づいてクエリを記述]{.s014}\
-[データベースのテーブル構造を意識することなく、Java のオブジェクト指向に沿ったク]{.s009}\
-[エリが記述できます。]{.s009}
-
-:::
-
-::: {#p225-b07 .paragraph}
-
-[•&#32;]{.s035}[リポジトリに直接記述可能]{.s014}\
-[クエリはリポジトリインターフェースに記述しますので、以前の章で学んだ感覚のまま実]{.s009}\
-[装できます。]{.s009}
+[●&#32;]{.s035}[エンティティモデルに基づいてクエリを記述]{.s014}\
+[データベースのテーブル構造を意識することなく、Java のオブジェクト指向に沿ったク]{.s009}[エリが記述できます。]{.s009}
 
 :::
 
-::: {#p225-b08 .paragraph}
+::: {#p225-b07 .paragraph keep-lines="true"}
 
-[•&#32;]{.s035}[メソッド名の命名規則が不要]{.s014}\
+[●&#32;]{.s035}[リポジトリに直接記述可能]{.s014}\
+[クエリはリポジトリインターフェースに記述しますので、以前の章で学んだ感覚のまま実]{.s009}[装できます。]{.s009}
+
+:::
+
+::: {#p225-b08 .paragraph keep-lines="true"}
+
+[●&#32;]{.s035}[メソッド名の命名規則が不要]{.s014}\
 [JPQL を使用する場合、自由にメソッド名を設定できます。]{.s009}
 
 :::
@@ -1989,28 +1997,24 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{
 
 :::
 
-::: {#p226-b06 .paragraph}
+::: {#p226-b06 .paragraph keep-lines="true"}
 
 [⚫&#32;]{.s021}[findAllProducts]{.s010}\
-[メソッド名は自由に決められます。今回は分かりやすい名前にしています。引数と戻り値]{.s009}\
-[を開発者が決めることは、前の章と同じです。全件検索ですので、引数無しで戻り値は]{.s009}\
-[List\<Product\>で定義しています。]{.s009}
+[メソッド名は自由に決められます。今回は分かりやすい名前にしています。引数と戻り値]{.s009}[を開発者が決めることは、前の章と同じです。全件検索ですので、引数無しで戻り値は]{.s009}[List\<Product\>で定義しています。]{.s009}
 
 :::
 
-::: {#p226-b07 .paragraph}
+::: {#p226-b07 .paragraph keep-lines="true"}
 
 [⚫&#32;]{.s021}[@Query]{.s010}[&#32;アノテーションの付与]{.s009}\
 [JPQL を直接文字列として、@Query アノテーションの引数に記述できます。]{.s009}
 
 :::
 
-::: {#p226-b08 .paragraph}
+::: {#p226-b08 .paragraph keep-lines="true"}
 
 [⚫&#32;]{.s021}[SELECT p FROM Product p]{.s010}\
-[エンティティ&#32;]{.s009}[Product]{.s014}[&#32;をすべて取得するクエリです。]{.s009}[p]{.s014}[&#32;は表別名で、エンティティを簡潔に]{.s009}\
-[参照するために使用します。]{.s009}\
-[SELECT \* FROM Product&#32;]{.s014}[の代わりに、このような記述方法を使います。]{.s009}
+[エンティティ&#32;]{.s009}[Product]{.s014}[&#32;をすべて取得するクエリです。]{.s009}[p]{.s014}[&#32;は表別名で、エンティティを簡潔に]{.s009}[参照するために使用します。]{.s009}[SELECT \* FROM Product&#32;]{.s014}[の代わりに、このような記述方法を使います。]{.s009}
 
 :::
 
@@ -2307,7 +2311,7 @@ pstm.setInt(1, id);
 
 ::: {#p230-b01 .heading}
 
-[名前のLIKE 検索と価格のAND 検索の実装]{.s011}
+[【参考】名前のLIKE 検索と価格のAND 検索の実装]{.s011}
 
 :::
 
@@ -2436,67 +2440,6 @@ public String showProductListByNameAndPrice(String name, int price, Model model)
 :::
 
 ::: {#page-232 .source-page}
-
-::: {#p232-b01 .heading}
-
-[【参考】 6.4.1 の例題をJPQL で作成する例]{.s011}
-
-:::
-
-::: {#p232-b02 .paragraph}
-
-[…/repository/ProductRepository.java]{.s010}
-
-:::
-
-::: {#p232-b03 .code}
-
-```java
-//【参考】複雑な仕様の例題のサンプル➀
-        @Query("SELECT p FROM Product p LEFT JOIN p.category c " +
-                       "WHERE p.name LIKE %:keyword% " +
-                       "OR c.name LIKE %:keyword% " +
-                       "OR p.description LIKE %:keyword% " +
-                       "OR p.brand LIKE %:keyword% " +
-                       "OR p.sku LIKE %:keyword%")
-        List<Product> searchProductsByKeyword(String keyword);
-```
-
-:::
-
-::: {#p232-b04 .code}
-
-```java
-//【参考】複雑な仕様の例題のサンプル➁
-        @Query("SELECT p FROM Product p WHERE p.name LIKE %:keyword% " +
-           "OR p.category.name LIKE %:keyword% " +
-           "OR p.description LIKE %:keyword% " +
-           "OR p.brand LIKE %:keyword% " +
-           "OR p.sku LIKE %:keyword%")
-        List<Product> searchProductsByKeyword(String keyword);
-```
-
-:::
-
-::: {#p232-b05 .paragraph}
-
-[サンプル➀は、より純粋なSQL 文に近い書き方で、]{.s009}[JOIN を利用した結合を明示的に記述]{.s010}[して]{.s009}\
-[います。]{.s009}
-
-:::
-
-::: {#p232-b06 .paragraph}
-
-[サンプル➁は、]{.s009}[JOIN を利用せずに、p.category.name という書き方でエンティティの外部参照]{.s010}\
-[関係の定義を利用]{.s010}[する書き方です。]{.s009}
-
-:::
-
-::: {#p232-b07 .paragraph}
-
-[どちらも同じ結果になりますが、②の方がオブジェクト指向ですので、推奨します。]{.s009}
-
-:::
 
 :::
 
@@ -2673,7 +2616,7 @@ minSales);
 ```
 :::
 
-::: {#p235-b05 .paragraph}
+::: {#p235-b05 .heading}
 
 [■まとめ]{.s010}
 

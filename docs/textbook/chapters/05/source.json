@@ -233,7 +233,9 @@
       "180": "short-minor-heading",
       "182": "short-minor-heading",
       "169": "continued-prose",
-      "185": "continued-prose"
+      "185": "continued-prose",
+      "177": "continued-prose",
+      "189": "continued-code"
     },
     "paragraph_continuations": [],
     "figure_scales": {}

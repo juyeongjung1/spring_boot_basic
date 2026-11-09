@@ -84,6 +84,32 @@ class PaginationTests(unittest.TestCase):
         self.assertEqual(step['page'], edge('p087-f20','end')['page'])
         self.assertGreaterEqual(step['y'] - prior['y'], 18)
 
+    def test_compacted_content_and_product_note_share_a_page(self):
+        groups = {
+            '05': [
+                [('p176-b14','end'), ('p177-b01','start'), ('p177-b09','end')],
+                [('p188-b01','end'), ('p189-b01','start'), ('p189-b01','end')],
+            ],
+            '06': [
+                [('p200-b04','end'), ('revision-product-final-note','start'), ('revision-product-final-note','end')],
+                [('p235-b05','heading'), ('p235-table01','start'), ('p235-table01','end')],
+            ],
+            '07': [
+                [('p243-b08','start'), ('p243-b10','start'), ('p243-f04','end')],
+            ],
+        }
+        for chapter, anchors in groups.items():
+            path = ROOT / 'output/pdf/textbook' / ('chapter-' + chapter) / 'checks.json'
+            marks = json.loads(path.read_text(encoding='utf-8'))['flow']['block_positions']
+            for group in anchors:
+                with self.subTest(chapter=chapter, group=group):
+                    positions = []
+                    for ident, edge in group:
+                        positions.append(next((m['page'],m['y']) for m in marks
+                            if m['id']==ident and m['edge']==edge))
+                    self.assertEqual(len({page for page, _ in positions}), 1)
+                    self.assertEqual(positions, sorted(positions))
+
     def test_service_examples_and_quick_fix_stay_with_their_headings(self):
         folder = ROOT / 'docs/textbook/chapters/03'
         nodes, _, order = read_markdown(folder / 'chapter.md')
@@ -97,6 +123,31 @@ class PaginationTests(unittest.TestCase):
             self.assertEqual(len(group), 4)
             pages = {m['page'] for m in checks['flow']['block_positions'] if m['id'] in group}
             self.assertEqual(len(pages), 1, group)
+
+    def test_requested_list_leads_start_the_body_on_a_new_line(self):
+        lists = {
+            '06': ('p204-b05','p204-b07','p215-b02','p215-b03','p225-b06','p225-b07',
+                   'p225-b08','p226-b06','p226-b07','p226-b08'),
+            '07': ('p240-b03','p240-b04','p240-b05'),
+        }
+        for chapter, idents in lists.items():
+            folder = ROOT / 'output/pdf/textbook' / ('chapter-' + chapter)
+            marks = json.loads((folder/'checks.json').read_text(encoding='utf-8'))['flow']['block_positions']
+            nodes, _, _ = read_markdown(ROOT/'docs/textbook/chapters'/chapter/'chapter.md')
+            with fitz.open(folder/'chapter-flow.pdf') as pdf:
+                for ident in idents:
+                    with self.subTest(chapter=chapter, ident=ident):
+                        bounds = {m['edge']:m for m in marks if m['id']==ident}
+                        self.assertEqual(bounds['start']['page'], bounds['end']['page'])
+                        page = pdf[bounds['start']['page'] - 1]
+                        rect = fitz.Rect(0,bounds['start']['y']-2,page.rect.width,bounds['end']['y']+2)
+                        lines = [(line['bbox'][1], normalized(''.join(s['text'] for s in line['spans'])))
+                                 for block in page.get_text('dict',clip=rect)['blocks']
+                                 for line in block.get('lines',[])]
+                        lead, body = nodes[ident]['text'].split('\n',1)
+                        title, = [y for y,text in lines if text.lstrip('●■')==normalized(lead).lstrip('●■')]
+                        self.assertTrue(any(y>title and text.startswith(normalized(body)[:8]) for y,text in lines),
+                                        (lead, lines))
 
     def test_login_credentials_occupy_two_lines(self):
         folder = ROOT / 'output/pdf/textbook/chapter-04'
