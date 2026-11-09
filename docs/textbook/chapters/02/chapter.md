@@ -1535,6 +1535,27 @@ HTMLのname属性値をFormのフィールド名と対応させ、送信され�
 
 :::
 
+::: {#p059-b04 .heading}
+
+[【参考】 サーブレットでリクエストデータを格納するコード]{.s012}
+
+:::
+
+::: {#p059-b05 .code}
+
+```java
+request.setAttribute("id", id);
+request.setAttribute("password", password);
+```
+
+:::
+
+::: {#p059-b06 .paragraph}
+
+[ModelのaddAttributeは、サーブレットで使ったrequest.setAttributeと同じように、画面へ渡すデータに名前を付けて格納するためのメソッドです。]{.s009}
+
+:::
+
 ::: {#p058-b06 .paragraph}
 
 [・13 行目 doLogin(UserForm userForm,&#32;]{.s012}[Model model]{.s011}[)]{.s012}
@@ -1592,27 +1613,6 @@ HTMLのname属性値をFormのフィールド名と対応させ、送信され�
 ::: {#illustration-2026-model-transfer-caption .paragraph}
 
 箱に中身の名前を書いて渡すように、Modelに入れるデータにもキー名を付けます。
-
-:::
-
-::: {#p059-b04 .heading}
-
-[【参考】 サーブレットでリクエストデータを格納するコード]{.s012}
-
-:::
-
-::: {#p059-b05 .code}
-
-```java
-request.setAttribute("id", id);
-request.setAttribute("password", password);
-```
-
-:::
-
-::: {#p059-b06 .paragraph}
-
-[ModelのaddAttributeは、サーブレットで使ったrequest.setAttributeと同じように、画面へ渡すデータに名前を付けて格納するためのメソッドです。]{.s009}
 
 :::
 

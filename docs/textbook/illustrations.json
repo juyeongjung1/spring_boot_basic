@@ -55,7 +55,7 @@
       "id": "model-transfer",
       "title": "荷物を箱に詰めて名前を付ける",
       "source_page": 59,
-      "before_id": "p059-b04",
+      "before_id": "p059-b07",
       "figure_id": "illustration-2026-model-transfer",
       "asset": "assets/revision-ill-model.png",
       "width": 255,
@@ -1437,6 +1437,94 @@
       "image_pixels": [
         1942,
         809
+      ]
+    },
+    {
+      "id": "service-interface",
+      "chapter": "03",
+      "source_page": 127,
+      "after_id": "p127-b09",
+      "before_id": "p128-b01",
+      "title": "抽象メソッドはリモコンのボタン",
+      "caption": "抽象メソッドで、ボタンの名前と引数・戻り値の型を決めます。",
+      "purpose": "主キー検索の抽象メソッドをリモコンのボタンにたとえ、引数と戻り値の位置を示す。",
+      "width": 230,
+      "max_height": 140,
+      "figure_id": "illustration-2026-service-interface",
+      "caption_id": "illustration-2026-service-interface-caption",
+      "asset": "assets/revision-ill-service-interface.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-bdac11c1-f908-46da-be4b-9303157158c7.png",
+      "prompt": "Scientific educational illustration for a Japanese Java textbook, wide 2.6:1 white canvas, dark navy ink, muted teal and amber, flat editorial drawing, clear at 95 mm print width. Show that a Java service interface defines a remote-control button. At left a stylized navy television remote with one large teal button marked exactly \"findProductById\". At right the matching interface method declaration in a single large legible code strip, exactly \"Product findProductById(int id);\". Connect the remote button to this declaration. Under the code strip place two simple precise callouts with short labels \"戻り値\" pointing exactly to \"Product\" and \"引数\" pointing exactly to \"int id\". Use a straight short line or a small underline for each callout, keep callouts separated and easy to follow. The ending semicolon must be visible. No implementation code, no TV, no gears, no figure number, no heading or prose. Use generous whitespace around the code and keep objects large.",
+      "asset_sha256": "fb2785a8ff341d4486fd5cc045d62dcc8bb3f60e1bc8201316f8a4aea53c1d5c",
+      "image_pixels": [
+        2021,
+        778
+      ]
+    },
+    {
+      "id": "service-implementation",
+      "chapter": "03",
+      "source_page": 128,
+      "after_id": "p128-b04",
+      "before_id": "p128-b05",
+      "title": "ボタンに対応する処理を書く",
+      "caption": "ボタンに当たる抽象メソッドごとに、ProductServiceImplへ処理を書きます。",
+      "purpose": "サービスの実装を、リモコンのボタンに応じて動くテレビの仕組みを組み立てる作業にたとえる。",
+      "width": 248,
+      "max_height": 140,
+      "figure_id": "illustration-2026-service-implementation",
+      "caption_id": "illustration-2026-service-implementation-caption",
+      "asset": "assets/revision-ill-service-implementation.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-09004988-dc27-42cb-982b-406010daa7d5.png",
+      "prompt": "Scientific educational illustration, wide 2.5:1 landscape, white background, crisp dark navy outlines, subdued jade and amber accents, modern Japanese Java textbook. One clear pair of matching objects. At left a navy/jade TV remote, one large button labelled \"findProductById\", with the name \"ProductService\" in a large short label underneath the remote. On the right a recognizable television with an open view of internal gears and a blue-sleeved hand using a small wrench to assemble the gears, representing a developer writing the implementation. One subtle wireless action arc goes from the remote button to the TV, and the label \"ProductServiceImpl\" is exactly legible beneath the TV. Keep spelling and capitalization exact. Distinguish the remote button definition from a person explicitly assembling the actual mechanism in the TV, with no factory or automatic assembly on the right. Simple large objects, no unnecessary text, no code paragraphs, no shadows or gloss, no figure number.",
+      "asset_sha256": "ed5bcf0c333114722c0ca9b1fa741c8a7e85fc3a7bf6a077563bd4ba8b71316a",
+      "image_pixels": [
+        1983,
+        793
+      ]
+    },
+    {
+      "id": "service-dispatch",
+      "chapter": "03",
+      "source_page": 131,
+      "after_id": "p131-b02",
+      "before_id": "p131-f68",
+      "title": "サービス型で呼び出し、実装クラスで処理する",
+      "caption": "ProductService型を通じて呼び出したメソッドは、実体であるProductServiceImplで実行されます。",
+      "purpose": "リモコンのボタンを押すとテレビの中の仕組みが動く場面で、メソッド呼び出しと実装の関係を示す。",
+      "width": 248,
+      "max_height": 140,
+      "figure_id": "illustration-2026-service-dispatch",
+      "caption_id": "illustration-2026-service-dispatch-caption",
+      "asset": "assets/revision-ill-service-dispatch.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-02ab6882-4512-4e9f-a9e1-dc193772121b.png",
+      "prompt": "Scientific educational illustration, one compact horizontal 2.6:1 image for adult Japanese beginners about Java polymorphism. Pure white background, clean book illustration with navy outlines, teal and amber accents. Left a blue-sleeved hand presses the teal button of a compact navy remote, labelled \"ProductService\" in a large readable pill. Its single prominent button is labelled \"findProductById\". Center a simple amber wireless arc travels right. Right, a TV labelled \"ProductServiceImpl\", with one large gear visibly turning inside the television as the button is pressed. Show the remote as the named interface through which the caller makes the call, the TV as the actual device in which the method executes, one device only. The three exact labels \"ProductService\", \"findProductById\", \"ProductServiceImpl\" are sufficient. Prioritize large letters and intuitive arrows so that the relation is legible at 90 mm print width. No figure number, no prose, no extraneous technical components.",
+      "asset_sha256": "6d261d7fe2b921dd1e6f91382eb9c0f16fc7c6fa079de98f9e502706faa7861e",
+      "image_pixels": [
+        2022,
+        778
+      ]
+    },
+    {
+      "id": "service-call-chain",
+      "chapter": "03",
+      "source_page": 131,
+      "after_id": "p131-b03",
+      "before_id": "p131-b04",
+      "title": "ControllerからDBまでの呼び出し",
+      "caption": "ControllerはProductServiceを通じて呼び出し、実装はRepositoryを介してDBを操作します。",
+      "purpose": "Controllerがサービスのインターフェースを通じて実装を呼び出し、RepositoryからDBにアクセスする流れを示す。",
+      "width": 280,
+      "max_height": 140,
+      "figure_id": "illustration-2026-service-call-chain",
+      "caption_id": "illustration-2026-service-call-chain-caption",
+      "asset": "assets/revision-ill-service-call-chain.png",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-e9b7f825-490d-4a6b-8292-3484f9e35c88.png",
+      "prompt": "Scientific educational illustration, compact horizontal 2.8:1 Japanese Spring textbook. White background, crisp navy lines, restrained teal and amber, simple diagram-like editorial art, generous whitespace, very large legible exact labels. One left-to-right call path of exactly five stages, with four rightward arrows: \"Controller\" (small web page/caller icon), \"ProductService\" (navy remote with teal button, interface), \"ProductServiceImpl\" (television with a gear, implementation that runs), \"Repository\" (small data access device with an arrow), \"DB\" (database cylinder). Group only the remote and TV with one pale blue shared background, to convey the interface is the entrance to the service and the implementation actually runs the method. Keep the remote+TV distinct from the repository and DB. Place names large and centered underneath, spell exactly, make ProductServiceImpl readable. The two long names can take more width. No additional text, arrows or return path, no screenshots, no figure number or heading. Use simple icons and moderate density for approximately 100 mm print width.",
+      "asset_sha256": "e4262fd587d089569733e1b749ca2518e1c2f7f19c9f487962d40d9f6403bf5f",
+      "image_pixels": [
+        2098,
+        749
       ]
     }
   ],

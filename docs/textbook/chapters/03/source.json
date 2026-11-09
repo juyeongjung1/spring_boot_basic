@@ -871,6 +871,26 @@
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-review-v4-each-variable-key-caption"
+    },
+    "illustration-2026-service-interface": {
+      "width": 230,
+      "max_height": 140,
+      "caption_id": "illustration-2026-service-interface-caption"
+    },
+    "illustration-2026-service-implementation": {
+      "width": 248,
+      "max_height": 140,
+      "caption_id": "illustration-2026-service-implementation-caption"
+    },
+    "illustration-2026-service-dispatch": {
+      "width": 248,
+      "max_height": 140,
+      "caption_id": "illustration-2026-service-dispatch-caption"
+    },
+    "illustration-2026-service-call-chain": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-2026-service-call-chain-caption"
     }
   },
   "pagination": {
@@ -888,7 +908,9 @@
       "93": "continued-prose",
       "101": "continued-prose",
       "110": "continued-prose",
-      "131": "continued-prose"
+      "131": "continued-prose",
+      "87": "short-minor-heading",
+      "129": "continued-prose"
     },
     "paragraph_continuations": [],
     "figure_scales": {
@@ -900,16 +922,29 @@
     }
   },
   "typography": {
-    "minor_heading_extra_space": [
-      "p067-b04",
-      "p073-b04",
-      "p089-b02",
-      "p098-b01",
-      "p102-b01",
-      "p115-b04",
-      "p121-b02",
-      "p123-b05",
-      "p125-b04"
-    ]
+    "minor_heading_extra_space": {
+      "p067-b04": 18,
+      "p073-b04": 36,
+      "p089-b02": 36,
+      "p098-b01": 36,
+      "p102-b01": 36,
+      "p121-b02": 36,
+      "p123-b05": 36,
+      "p125-b04": 36,
+      "p087-b01": 18,
+      "p074-b05": 18,
+      "p075-b01": 18,
+      "p080-b03": 18,
+      "p091-b04": 18,
+      "p092-b06": 18,
+      "p093-b09": 18,
+      "p096-b06": 18,
+      "p097-b07": 18,
+      "p106-b03": 18,
+      "p109-b01": 18,
+      "p119-b01": 18,
+      "revision-service-quick-fix-title": 18,
+      "p131-b04": 18
+    }
   }
 }

@@ -1675,9 +1675,9 @@ public class Sample5 extends HttpServlet {
 //showProductList メソッドの下に追記
 
 @GetMapping("/")
-        public String showSearchView() {
-               return "product/search";
-        }
+public String showSearchView() {
+    return "product/search";
+}
 ```
 
 :::
@@ -1874,18 +1874,18 @@ public class Sample5 extends HttpServlet {
 
 ```xml
 <h1>商品詳細</h1>
-        <table>
-               <tr>
-                       <th>商品番号</th>
-                       <th>商品名</th>
-                       <th>価格</th>
-               </tr>
-               <tr>
-                       <td th:text="${product.id}"></td>
-                       <td th:text="${product.name}"></td>
-                       <td th:text="${product.price}"></td>
-               </tr>
-        </table>
+<table>
+    <tr>
+        <th>商品番号</th>
+        <th>商品名</th>
+        <th>価格</th>
+    </tr>
+    <tr>
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.price}"></td>
+    </tr>
+</table>
 ```
 
 :::
@@ -1997,10 +1997,10 @@ public class Sample5 extends HttpServlet {
 <!--ID 検索の下に追記  -->
 
 <h2>商品価格検索</h2>
-        <form th:action="@{/product/findByPrice}">
-               商品価格：<input type="text" name="price" />
-               <input type="submit" value="検索">
-        </form>
+<form th:action="@{/product/findByPrice}">
+    商品価格：<input type="text" name="price" />
+    <input type="submit" value="検索">
+</form>
 ```
 
 :::
@@ -2035,7 +2035,7 @@ public class Sample5 extends HttpServlet {
 ```java
 //Product のimport に注意してください。
 public interface ProductRepository extends JpaRepository<Product, Integer>{
-        List<Product> findByPrice(Integer price);
+    List<Product> findByPrice(Integer price);
 }
 ```
 
@@ -2126,12 +2126,12 @@ findByPrice(20000)は、Productのpriceが20000のデータを検索します。
 1://showProductById メソッドの下に追記
 2:
 3:@GetMapping("/findByPrice")
-4: public String showProductListByPrice(int price, Model model) {
-5: List<Product> list = prodRepo.findByPrice(price);
-6: System.out.println(list);
-7: model.addAttribute("products", list);
-8: return "product/list";
-9: }
+4:public String showProductListByPrice(int price, Model model) {
+5:    List<Product> list = prodRepo.findByPrice(price);
+6:    System.out.println(list);
+7:    model.addAttribute("products", list);
+8:    return "product/list";
+9:}
 ```
 
 :::
@@ -2243,11 +2243,11 @@ findByPrice(20000)は、Productのpriceが20000のデータを検索します。
 <!--商品価格検索の下に追記 -->
 
 <h2>商品名+価格の検索</h2>
-        <form th:action="@{/product/findByNameAndPrice}">
-               商品名：<input type="text" name="name" />
-               商品価格：<input type="text" name="price" />
-               <input type="submit" value="検索">
-        </form>
+<form th:action="@{/product/findByNameAndPrice}">
+    商品名：<input type="text" name="name" />
+    商品価格：<input type="text" name="price" />
+    <input type="submit" value="検索">
+</form>
 ```
 
 :::
@@ -2283,8 +2283,8 @@ findByPrice(20000)は、Productのpriceが20000のデータを検索します。
 
 ```java
 public interface ProductRepository extends JpaRepository<Product, Integer>{
-        List<Product> findByPrice(Integer price);
-        List<Product> findByNameAndPrice(String name, Integer price);
+    List<Product> findByPrice(Integer price);
+    List<Product> findByNameAndPrice(String name, Integer price);
 }
 ```
 
@@ -2351,13 +2351,13 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{
 1://showProductListByPrice メソッドの下に追記
 2:
 3:@GetMapping("/findByNameAndPrice")
-4: public String showProductListByNameAndPrice(String name, int price,
-                 Model model) {
-5: List<Product> list = prodRepo.findByNameAndPrice(name, price);
-6: System.out.println(list);
-7: model.addAttribute("products", list);
-8: return "product/list";
-9: }
+4:public String showProductListByNameAndPrice(String name,
+        int price, Model model) {
+5:    List<Product> list = prodRepo.findByNameAndPrice(name, price);
+6:    System.out.println(list);
+7:    model.addAttribute("products", list);
+8:    return "product/list";
+9:}
 ```
 
 :::
@@ -2735,9 +2735,9 @@ Integer>{
 4:
 5:@Data
 6:public class ProductForm {
-7: private Integer id; //商品番号
-8: private String name; //商品名
-9: private Integer price; //商品価格
+7:    private Integer id; //商品番号
+8:    private String name; //商品名
+9:    private Integer price; //商品価格
 10:}
 ```
 
@@ -2903,20 +2903,20 @@ Integer>{
 ::: {#p111-b02 .code}
 
 ```java
-1:<h1>商品・更新結果画面</h1>
- 2: <table>
- 3: <tr>
- 4: <th>商品番号</th>
- 5: <th>商品名</th>
- 6: <th>価格</th>
- 7: </tr>
- 8: <tr>
- 9: <td th:text="${product.id}"></td>
-10: <td th:text="${product.name}"></td>
-11: <td th:text="${product.price}"></td>
-12: </tr>
-13: </table>
-14: <a th:href="@{/product/findAll}">商品一覧へ</a>
+1:    <h1>商品・更新結果画面</h1>
+ 2:    <table>
+ 3:        <tr>
+ 4:            <th>商品番号</th>
+ 5:            <th>商品名</th>
+ 6:            <th>価格</th>
+ 7:        </tr>
+ 8:        <tr>
+ 9:            <td th:text="${product.id}"></td>
+10:            <td th:text="${product.name}"></td>
+11:            <td th:text="${product.price}"></td>
+12:        </tr>
+13:    </table>
+14:    <a th:href="@{/product/findAll}">商品一覧へ</a>
 15:</body>
 ```
 
@@ -3130,15 +3130,9 @@ public String insertProduct2(ProductForm productForm, Model model) {
 
 :::
 
-::: {#p115-b04 .heading}
+::: {#p115-b04 .paragraph}
 
-[更新処理は、他の処理とは違い、事前準備が必要だということを、是非理解した上]{.s010}
-
-:::
-
-::: {#p115-b05 .heading}
-
-[で、進んでください。]{.s010}
+[更新処理は、他の処理とは違い、事前準備が必要だということを、是非理解した上で、進んでください。]{.s011}
 
 :::
 
@@ -3230,9 +3224,9 @@ public String insertProduct2(ProductForm productForm, Model model) {
 2:
 3:@GetMapping("update/{id}")
 4:public String showUpdateInputView(@PathVariable int id, Model model) {
-5: Product product = prodRepo.findById(id).orElse(null);
-6: model.addAttribute("product", product);
-7: return "product/update_input";
+5:    Product product = prodRepo.findById(id).orElse(null);
+6:    model.addAttribute("product", product);
+7:    return "product/update_input";
 8:}
 ```
 
@@ -3358,13 +3352,13 @@ public String insertProduct2(ProductForm productForm, Model model) {
 ```java
 1:@PostMapping("/update")
 2:public String updateProduct(ProductForm productForm, Model model) {
-3: Product product = new Product();
-4: product.setId(productForm.getId());
-5: product.setName(productForm.getName());
-6: product.setPrice(productForm.getPrice());
-7: product = prodRepo.save(product);
-8:      model.addAttribute("product", product);
-9: return "/product/result";
+3:    Product product = new Product();
+4:    product.setId(productForm.getId());
+5:    product.setName(productForm.getName());
+6:    product.setPrice(productForm.getPrice());
+7:    product = prodRepo.save(product);
+8:    model.addAttribute("product", product);
+9:    return "/product/result";
 10:}
 ```
 
@@ -3805,7 +3799,7 @@ redirect:で移動先を受け取ったブラウザーが、新しいリクエ�
 ::: {#p126-b16 .paragraph}
 
 [◼&#32;]{.s046}[動作確認用のダミー: テスト環境では、ダミーのデータを返すモッククラスを使いた]{.s015}\
-[い。]{.s009}
+[い。]{.s015}
 
 :::
 
@@ -3889,6 +3883,14 @@ public interface ProductService {
 
 :::
 
+![抽象メソッドはリモコンのボタン](assets/revision-ill-service-interface.png){#illustration-2026-service-interface}
+
+::: {#illustration-2026-service-interface-caption .paragraph}
+
+抽象メソッドで、ボタンの名前と引数・戻り値の型を決めます。
+
+:::
+
 :::
 
 ::: {#page-128 .source-page}
@@ -3924,6 +3926,14 @@ public interface ProductService {
 
 :::
 
+![ボタンに対応する処理を書く](assets/revision-ill-service-implementation.png){#illustration-2026-service-implementation}
+
+::: {#illustration-2026-service-implementation-caption .paragraph}
+
+ボタンに当たる抽象メソッドごとに、ProductServiceImplへ処理を書きます。
+
+:::
+
 ::: {#p128-b05 .paragraph}
 
 […/service/ProductServiceImpl.java]{.s011}
@@ -3941,13 +3951,13 @@ public interface ProductService {
  6:@RequiredArgsConstructor
  7:public class ProductServiceImpl implements ProductService{
  8:
- 9: //@Autowired は不要
-10: private final ProductRepository prodRepo;
+ 9:    //@Autowired は不要
+10:    private final ProductRepository prodRepo;
 11:
-12: @Override
-13: public Product findProductById(int id) {
-14: return prodRepo.findById(id).orElse(null);
-15: }
+12:    @Override
+13:    public Product findProductById(int id) {
+14:        return prodRepo.findById(id).orElse(null);
+15:    }
 16:}
 ```
 
@@ -4016,6 +4026,30 @@ public interface ProductService {
 [ままreturn しています。ProductService インターフェースで定義した抽象メソッドと同じ呼び]{.s009}\
 [方をするように、オーバーライドする必要があります。]{.s009}\
 [(リモコンのボタンを押したら、このメソッドの処理が行われるイメージ)]{.s009}
+
+:::
+
+::: {#revision-service-quick-fix-title .heading keep-next="3"}
+
+[つまずくポイント　未実装のメソッドを追加する]{.s010}
+
+:::
+
+::: {#revision-service-quick-fix-1 .paragraph}
+
+[① ProductServiceImplにimplements ProductServiceを書いた段階で、まだ実装していない抽象メソッドがあると、Eclipseはクラス名に赤い下線を表示します。]{.s009}
+
+:::
+
+::: {#revision-service-quick-fix-2 .paragraph}
+
+[② これは未実装のメソッドを知らせるコンパイルエラーです。実装クラスにpublicメソッドを用意し、名前と引数の型をインターフェースの宣言に合わせます。この例では、戻り値の型はProductです。]{.s009}
+
+:::
+
+::: {#revision-service-quick-fix-3 .paragraph}
+
+[③ クラス名にカーソルを置いてCtrl+1を押し、クイック・フィックスで［実装されていないメソッドの追加］を選びます。未実装を示すエラーが解消され、@Override付きのひな形が追加されます。その中に、Repositoryから商品を取得して返す処理を書きます。]{.s009}
 
 :::
 
@@ -4124,6 +4158,14 @@ public interface ProductService {
 
 :::
 
+![サービス型で呼び出し、実装クラスで処理する](assets/revision-ill-service-dispatch.png){#illustration-2026-service-dispatch}
+
+::: {#illustration-2026-service-dispatch-caption .paragraph}
+
+ProductService型を通じて呼び出したメソッドは、実体であるProductServiceImplで実行されます。
+
+:::
+
 ![操作画面・図解](assets/p131-f68.svg){#p131-f68}
 
 ::: {#p131-b03 .paragraph}
@@ -4133,10 +4175,208 @@ public interface ProductService {
 
 :::
 
-::: {#p131-b04 .paragraph}
+![ControllerからDBまでの呼び出し](assets/revision-ill-service-call-chain.png){#illustration-2026-service-call-chain}
 
-[※その他の例は、\[ProductController2.java\]と、\[ProductService.java\]、]{.s015}\
-[\[ProductServiceImpl.java\]を参照してください。]{.s015}
+::: {#illustration-2026-service-call-chain-caption .paragraph}
+
+ControllerはProductServiceを通じて呼び出し、実装はRepositoryを介してDBを操作します。
+
+:::
+
+::: {#p131-b04 .heading}
+
+[【参考】他のパターンのソースコード]{.s010}
+
+:::
+
+::: {#revision-service-examples-intro .paragraph}
+
+[spring_answer_3の解答例から、関連するメソッドを抜粋します。各例では①でサービスのメソッドを定義し、②で処理を実装します。実行時には③でControllerがメソッドを呼び出し、②の処理が動きます。配布例のprodServiceの型はProductServiceImplです。]{.s009}
+
+:::
+
+::: {#revision-service-examples-list-title .heading keep-next="3"}
+
+[1．一覧検索]{.s010}
+
+:::
+
+::: {#revision-service-examples-list-definition .code filename="…/service/ProductService.java"}
+
+```java
+// ① 商品一覧を取得するメソッドを定義
+public List<Product> findAllProducts();
+```
+
+:::
+
+::: {#revision-service-examples-list-implementation .code filename="…/service/ProductServiceImpl.java"}
+
+```java
+// ② Repositoryから全商品を取得
+@Override
+public List<Product> findAllProducts() {
+    return prodRepo.findAll();
+}
+```
+
+:::
+
+::: {#revision-service-examples-list-controller .code filename="…/controller/ProductController2.java"}
+
+```java
+// ③ サービスを呼び出し、商品一覧を画面に渡す
+@GetMapping("/findAll")
+public String showProductList(Model model) {
+    List<Product> list = prodService.findAllProducts();
+    model.addAttribute("products", list);
+    return "product2/list";
+}
+```
+
+:::
+
+::: {#revision-service-examples-insert-title .heading keep-next="3"}
+
+[2．登録]{.s010}
+
+:::
+
+::: {#revision-service-examples-save-definition .code filename="…/service/ProductService.java"}
+
+```java
+// ① 登録と更新で共通のメソッドを定義
+public Product saveProduct(ProductForm productForm);
+```
+
+:::
+
+::: {#revision-service-examples-save-implementation .code filename="…/service/ProductServiceImpl.java"}
+
+```java
+// ② フォームの値をProductに移して保存
+@Override
+public Product saveProduct(ProductForm productForm) {
+    Product product = new Product();
+    if (productForm.getId() != null) {
+        // IDがある場合は、既存の商品として扱い、そのIDを設定
+        product.setId(productForm.getId());
+    }
+    product.setName(productForm.getName());
+    product.setPrice(productForm.getPrice());
+    //登録又は更新
+    product = prodRepo.save(product);
+    return product;
+}
+```
+
+:::
+
+::: {#revision-service-examples-insert-controller .code filename="…/controller/ProductController2.java"}
+
+```java
+// ③ 登録フォームの値をサービスに渡す。商品IDは未指定
+@PostMapping("/insert")
+public String insertProduct(ProductForm productForm,
+                            Model model) {
+    Product product = prodService.saveProduct(productForm);
+    model.addAttribute("product", product);
+    return "product2/result";
+}
+```
+
+:::
+
+::: {#revision-service-examples-update-title .heading keep-next="3"}
+
+[3．更新]{.s010}
+
+:::
+
+::: {#revision-service-examples-update-definition .code filename="…/service/ProductService.java"}
+
+```java
+// ① メソッドの定義は「2．登録」と共通
+public Product saveProduct(ProductForm productForm);
+```
+
+:::
+
+::: {#revision-service-examples-update-implementation .code filename="…/service/ProductServiceImpl.java"}
+
+```java
+// ② 「2．登録」と同じ実装のうち、IDの引き継ぎと保存を抜粋
+if (productForm.getId() != null) {
+    // IDがある場合は、既存の商品として扱い、そのIDを設定
+    product.setId(productForm.getId());
+}
+// 商品名と価格の設定は省略
+product = prodRepo.save(product);
+```
+
+:::
+
+::: {#revision-service-examples-update-controller .code filename="…/controller/ProductController2.java"}
+
+```java
+// ③ 更新画面を開くときに、既存の商品を取得
+@GetMapping("update/{id}")
+public String showUpdateInputView(@PathVariable int id,
+                                  Model model) {
+    Product product = prodService.findProductById(id);
+    model.addAttribute("product", product);
+    return "product2/update_input";
+}
+
+// ③ 更新フォームから受け取った商品IDと値を渡す
+@PostMapping("/update")
+public String updateProduct(ProductForm productForm,
+                            Model model) {
+    Product product = prodService.saveProduct(productForm);
+    model.addAttribute("product", product);
+    return "product2/result";
+}
+```
+
+:::
+
+::: {#revision-service-examples-delete-title .heading keep-next="3"}
+
+[4．削除]{.s010}
+
+:::
+
+::: {#revision-service-examples-delete-definition .code filename="…/service/ProductService.java"}
+
+```java
+// ① 商品IDを受け取る削除メソッドを定義
+public void deleteProduct(int id);
+```
+
+:::
+
+::: {#revision-service-examples-delete-implementation .code filename="…/service/ProductServiceImpl.java"}
+
+```java
+// ② Repositoryで指定されたIDの商品を削除
+@Override
+public void deleteProduct(int id) {
+    prodRepo.deleteById(id);
+}
+```
+
+:::
+
+::: {#revision-service-examples-delete-controller .code filename="…/controller/ProductController2.java"}
+
+```java
+// ③ サービスに削除を依頼し、商品一覧へ戻る
+@GetMapping("/delete/{id}")
+public String deleteProduct(@PathVariable int id) {
+    prodService.deleteProduct(id);
+    return "redirect:/product2/findAll";
+}
+```
 
 :::
 

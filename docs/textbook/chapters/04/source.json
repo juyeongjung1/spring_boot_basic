@@ -358,15 +358,16 @@
     "figure_scales": {}
   },
   "typography": {
-    "minor_heading_extra_space": [
-      "p137-b01",
-      "p138-b05",
-      "p141-b02",
-      "p144-b01",
-      "p149-b04",
-      "p151-b05",
-      "p160-b01",
-      "revision-messages-title"
-    ]
+    "minor_heading_extra_space": {
+      "p137-b01": 36,
+      "p138-b05": 36,
+      "p141-b02": 36,
+      "p144-b01": 36,
+      "p149-b04": 36,
+      "p151-b05": 36,
+      "p160-b01": 18,
+      "revision-messages-title": 18,
+      "p136-b03": 18
+    }
   }
 }

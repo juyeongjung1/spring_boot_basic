@@ -413,13 +413,15 @@
     "figure_scales": {}
   },
   "typography": {
-    "minor_heading_extra_space": [
-      "p264-b02",
-      "p266-b01",
-      "p269-b01",
-      "p272-b03",
-      "p272-b05",
-      "p279-b01"
-    ]
+    "minor_heading_extra_space": {
+      "p264-b02": 36,
+      "p266-b01": 36,
+      "p269-b01": 18,
+      "p272-b03": 18,
+      "p272-b05": 18,
+      "p279-b01": 36,
+      "p249-b02": 18,
+      "p261-b05": 18
+    }
   }
 }

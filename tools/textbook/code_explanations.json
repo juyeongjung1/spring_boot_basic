@@ -1607,7 +1607,7 @@
     "rows": [
       {
         "line_label": "5 行",
-        "code": " List<Product> list = prodRepo.findByPrice(price);",
+        "code": "    List<Product> list = prodRepo.findByPrice(price);",
         "meaning": "5 行では、リクエストパラメータprice の値を取得し、prodRepo.findByPrice メソッドを実行しま\nした。",
         "source_ids": [
           "p097-b10"
@@ -1618,7 +1618,7 @@
           {
             "code_id": "p097-b09",
             "line_number": 5,
-            "text": " List<Product> list = prodRepo.findByPrice(price);"
+            "text": "    List<Product> list = prodRepo.findByPrice(price);"
           }
         ],
         "source_fragments": [
@@ -1635,7 +1635,7 @@
       },
       {
         "line_label": "6 行以降",
-        "code": " System.out.println(list);\n model.addAttribute(\"products\", list);\n return \"product/list\";\n }",
+        "code": "    System.out.println(list);\n    model.addAttribute(\"products\", list);\n    return \"product/list\";\n}",
         "meaning": "findAll メソッドを実行した時と、出力結果は同じくList になるメソッドですので、6 行以降は\nshowProductList メソッドと全く同じです。",
         "source_ids": [
           "p097-b11"
@@ -1646,22 +1646,22 @@
           {
             "code_id": "p097-b09",
             "line_number": 6,
-            "text": " System.out.println(list);"
+            "text": "    System.out.println(list);"
           },
           {
             "code_id": "p097-b09",
             "line_number": 7,
-            "text": " model.addAttribute(\"products\", list);"
+            "text": "    model.addAttribute(\"products\", list);"
           },
           {
             "code_id": "p097-b09",
             "line_number": 8,
-            "text": " return \"product/list\";"
+            "text": "    return \"product/list\";"
           },
           {
             "code_id": "p097-b09",
             "line_number": 9,
-            "text": " }"
+            "text": "}"
           }
         ],
         "source_fragments": [
@@ -1699,7 +1699,7 @@
     "rows": [
       {
         "line_label": "5 行",
-        "code": " List<Product> list = prodRepo.findByNameAndPrice(name, price);",
+        "code": "    List<Product> list = prodRepo.findByNameAndPrice(name, price);",
         "meaning": "5 行では、リクエストパラメータname とprice の値を取得し、prodRepo. findByNameAndPrice メ\nソッドを実行しました。\n\nもし、入力値が更に増えるなら、Form クラスを使ってパラメータ取得しても良いでしょう。",
         "source_ids": [
           "p101-b06",
@@ -1711,7 +1711,7 @@
           {
             "code_id": "p101-b05",
             "line_number": 5,
-            "text": " List<Product> list = prodRepo.findByNameAndPrice(name, price);"
+            "text": "    List<Product> list = prodRepo.findByNameAndPrice(name, price);"
           }
         ],
         "source_fragments": [
@@ -1737,7 +1737,7 @@
       },
       {
         "line_label": "6 行以降",
-        "code": " System.out.println(list);\n model.addAttribute(\"products\", list);\n return \"product/list\";\n }",
+        "code": "    System.out.println(list);\n    model.addAttribute(\"products\", list);\n    return \"product/list\";\n}",
         "meaning": "6 行以降はshowProductList メソッドと全く同じです。",
         "source_ids": [
           "p101-b08"
@@ -1748,22 +1748,22 @@
           {
             "code_id": "p101-b05",
             "line_number": 6,
-            "text": " System.out.println(list);"
+            "text": "    System.out.println(list);"
           },
           {
             "code_id": "p101-b05",
             "line_number": 7,
-            "text": " model.addAttribute(\"products\", list);"
+            "text": "    model.addAttribute(\"products\", list);"
           },
           {
             "code_id": "p101-b05",
             "line_number": 8,
-            "text": " return \"product/list\";"
+            "text": "    return \"product/list\";"
           },
           {
             "code_id": "p101-b05",
             "line_number": 9,
-            "text": " }"
+            "text": "}"
           }
         ],
         "source_fragments": [
@@ -2173,7 +2173,7 @@
     "rows": [
       {
         "line_label": "9 行目",
-        "code": " <td th:text=\"${product.id}\"></td>",
+        "code": "            <td th:text=\"${product.id}\"></td>",
         "meaning": "9 行目のproduct.id に注目してください。save メソッドの戻り値には、自動採番により割り当てさ\nれたID 番号も含まれているので、表示できます。",
         "source_ids": [
           "p111-b03"
@@ -2184,7 +2184,7 @@
           {
             "code_id": "p111-b02",
             "line_number": 9,
-            "text": " <td th:text=\"${product.id}\"></td>"
+            "text": "            <td th:text=\"${product.id}\"></td>"
           }
         ],
         "source_fragments": [
@@ -2305,7 +2305,7 @@
       },
       {
         "line_label": "5 行から",
-        "code": " Product product = prodRepo.findById(id).orElse(null);\n model.addAttribute(\"product\", product);\n return \"product/update_input\";\n}",
+        "code": "    Product product = prodRepo.findById(id).orElse(null);\n    model.addAttribute(\"product\", product);\n    return \"product/update_input\";\n}",
         "meaning": "5 行からは、更新対象の既存の値をfindById メソッドで取得+Model に格納し、\nupdate_input.html へ遷移させています。",
         "source_ids": [
           "p117-b07"
@@ -2316,17 +2316,17 @@
           {
             "code_id": "p117-b03",
             "line_number": 5,
-            "text": " Product product = prodRepo.findById(id).orElse(null);"
+            "text": "    Product product = prodRepo.findById(id).orElse(null);"
           },
           {
             "code_id": "p117-b03",
             "line_number": 6,
-            "text": " model.addAttribute(\"product\", product);"
+            "text": "    model.addAttribute(\"product\", product);"
           },
           {
             "code_id": "p117-b03",
             "line_number": 7,
-            "text": " return \"product/update_input\";"
+            "text": "    return \"product/update_input\";"
           },
           {
             "code_id": "p117-b03",
@@ -2372,7 +2372,7 @@
     "rows": [
       {
         "line_label": "4 行目",
-        "code": " product.setId(productForm.getId());",
+        "code": "    product.setId(productForm.getId());",
         "meaning": " 登録の際は、主キーである「id」をProductエンティティ内にセットしていませんでしたが、更新\n処理の際は、必ず主キーのフィールドをセットさせます。",
         "source_ids": [
           "p119-b04",
@@ -2384,7 +2384,7 @@
           {
             "code_id": "p119-b03",
             "line_number": 4,
-            "text": " product.setId(productForm.getId());"
+            "text": "    product.setId(productForm.getId());"
           }
         ],
         "source_fragments": [
@@ -2408,7 +2408,7 @@
       },
       {
         "line_label": "7 行目",
-        "code": " product = prodRepo.save(product);",
+        "code": "    product = prodRepo.save(product);",
         "meaning": " save メソッドの引数に入れたエンティティのフィールドに、主キー(id)の値があったら、新しい\n値に上書きされる更新処理が実行されます。",
         "source_ids": [
           "p119-b06",
@@ -2420,7 +2420,7 @@
           {
             "code_id": "p119-b03",
             "line_number": 7,
-            "text": " product = prodRepo.save(product);"
+            "text": "    product = prodRepo.save(product);"
           }
         ],
         "source_fragments": [
@@ -2461,11 +2461,7 @@
       "p129-b02",
       "p129-b03",
       "p129-b04",
-      "p129-b05",
-      "p129-b06",
-      "p129-b07",
-      "p129-b08",
-      "p129-b09"
+      "p129-b05"
     ],
     "owner_code_ids": [
       "p128-b06"
@@ -2607,10 +2603,35 @@
         ],
         "word_paragraph_breaks": [],
         "word_line_breaks": []
-      },
+      }
+    ],
+    "source_texts": {
+      "p129-b01": "・5 行目： @Service\nサービス実装クラスには、@Service アノテーションを付けます。忘れがちですので、注意して\nください。",
+      "p129-b02": "・6 行目： @RequiredArgsConstructor",
+      "p129-b03": "3.3.1「依存性の注入」の【依存性の注入方法③】でご紹介した書き方です。",
+      "p129-b04": "9-10 行目のコードと連携します。\n単体テストのしやすさのために、サービス実装クラスではこの方法が推奨されます。",
+      "p129-b05": "・7 行目： implements ProductService\n前の手順で作成たサービスインターフェースと繋げるために、implements します。"
+    },
+    "source_pages": [
+      129
+    ]
+  },
+  {
+    "chapter": "03",
+    "anchor_id": "p129-b06",
+    "consume_ids": [
+      "p129-b06",
+      "p129-b07",
+      "p129-b08",
+      "p129-b09"
+    ],
+    "owner_code_ids": [
+      "p128-b06"
+    ],
+    "rows": [
       {
         "line_label": "9 行-10 行目",
-        "code": " //@Autowired は不要\n private final ProductRepository prodRepo;",
+        "code": "    //@Autowired は不要\n    private final ProductRepository prodRepo;",
         "meaning": "DB 処理のためProductRepository を利用したいので、依存性の注入を行います。\n6 行目と合わせて記載することで、コンストラクタを自動生成できます。",
         "source_ids": [
           "p129-b06",
@@ -2622,12 +2643,12 @@
           {
             "code_id": "p128-b06",
             "line_number": 9,
-            "text": " //@Autowired は不要"
+            "text": "    //@Autowired は不要"
           },
           {
             "code_id": "p128-b06",
             "line_number": 10,
-            "text": " private final ProductRepository prodRepo;"
+            "text": "    private final ProductRepository prodRepo;"
           }
         ],
         "source_fragments": [
@@ -2656,7 +2677,7 @@
       },
       {
         "line_label": "13 行-14 行目",
-        "code": " public Product findProductById(int id) {\n return prodRepo.findById(id).orElse(null);",
+        "code": "    public Product findProductById(int id) {\n        return prodRepo.findById(id).orElse(null);",
         "meaning": "Controller に記載していたDB 処理部分だけ分離させ、DB から取得した商品データをその\nままreturn しています。ProductService インターフェースで定義した抽象メソッドと同じ呼び\n方をするように、オーバーライドする必要があります。\n(リモコンのボタンを押したら、このメソッドの処理が行われるイメージ)",
         "source_ids": [
           "p129-b08",
@@ -2668,12 +2689,12 @@
           {
             "code_id": "p128-b06",
             "line_number": 13,
-            "text": " public Product findProductById(int id) {"
+            "text": "    public Product findProductById(int id) {"
           },
           {
             "code_id": "p128-b06",
             "line_number": 14,
-            "text": " return prodRepo.findById(id).orElse(null);"
+            "text": "        return prodRepo.findById(id).orElse(null);"
           }
         ],
         "source_fragments": [
@@ -2702,11 +2723,6 @@
       }
     ],
     "source_texts": {
-      "p129-b01": "・5 行目： @Service\nサービス実装クラスには、@Service アノテーションを付けます。忘れがちですので、注意して\nください。",
-      "p129-b02": "・6 行目： @RequiredArgsConstructor",
-      "p129-b03": "3.3.1「依存性の注入」の【依存性の注入方法③】でご紹介した書き方です。",
-      "p129-b04": "9-10 行目のコードと連携します。\n単体テストのしやすさのために、サービス実装クラスではこの方法が推奨されます。",
-      "p129-b05": "・7 行目： implements ProductService\n前の手順で作成たサービスインターフェースと繋げるために、implements します。",
       "p129-b06": "・9 行-10 行目： private final ProductRepository prodRepo;",
       "p129-b07": "DB 処理のためProductRepository を利用したいので、依存性の注入を行います。\n6 行目と合わせて記載することで、コンストラクタを自動生成できます。",
       "p129-b08": "・13 行-14 行目： return prodRepo.findById(id).orElse(null);",

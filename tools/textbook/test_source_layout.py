@@ -86,7 +86,7 @@ class SourceLayoutTests(unittest.TestCase):
         self.assertEqual(len(self.chapters), 19)
         for name, chapter in self.chapters.items():
             removed = ({'p060-b09','p060-b10','p060-b11'} if name=='02' else
-                       {'p071-b06','p071-b07','p071-b08'} if name=='03' else set())
+                       {'p071-b06','p071-b07','p071-b08','p115-b05'} if name=='03' else set())
             self.assertEqual(chapter['original'].keys() - chapter['current'].keys(), removed, name)
             self.assertFalse(chapter['original_figures'].keys() - chapter['current_figures'].keys(), name)
             added_figures.update((name, ident) for ident in
@@ -99,6 +99,15 @@ class SourceLayoutTests(unittest.TestCase):
         expected = {('03', 'migration-03-jpa-pom'), ('03', 'revision-di-caption'),
                     ('02','revision-login3-instruction'), ('02','revision-model-moving-pack'),
                     ('02','revision-model-moving-unpack')}
+        service = (
+            'quick-fix-title', 'quick-fix-1', 'quick-fix-2', 'quick-fix-3',
+            'examples-intro',
+            'examples-list-title', 'examples-list-definition', 'examples-list-implementation', 'examples-list-controller',
+            'examples-insert-title', 'examples-save-definition', 'examples-save-implementation', 'examples-insert-controller',
+            'examples-update-title', 'examples-update-definition', 'examples-update-implementation', 'examples-update-controller',
+            'examples-delete-title', 'examples-delete-definition', 'examples-delete-implementation', 'examples-delete-controller',
+        )
+        expected.update(('03', 'revision-service-' + name) for name in service)
         expected.update(('04', 'revision-messages-' + name) for name in messages)
         expected.update(('appendix-b', 'revision-errors-' + name) for name in errors)
         expected_figures = {('03', 'revision-di-remote')}

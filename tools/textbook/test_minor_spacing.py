@@ -6,9 +6,10 @@ import unittest
 import typst
 
 from build import ROOT, compile_pdf, flow_layout, read_markdown, style_header
-from test_illustrations import MODEL_EDITION, TABLE_EDITION, edition_json
+from test_illustrations import MODEL_EDITION, TABLE_EDITION, base_chapter, edition_json
 
 REVIEW = ROOT/'output/verification/table-v6-2026'
+PRIOR_EDITION = '851c18e02f1d9144c99fb22948791f84a3adf34e'
 REVIEWS = ((ROOT/'output/verification/spacing-v5-2026',TABLE_EDITION),(REVIEW,MODEL_EDITION))
 read = lambda path: json.loads(path.read_text(encoding='utf-8'))
 
@@ -33,8 +34,8 @@ class MinorSpacingTests(unittest.TestCase):
             self.assertEqual(plan(review)['extra_space_pt'],18)
             for part in plan(review)['chapters']:
                 name=part['chapter']
-                nodes,_,_,layout=chapter(name)
-                config=edition_json('docs/textbook/chapters/'+name+'/source.json',edition)
+                source='docs/textbook/chapters/'+name+'/'
+                config=edition_json(source+'source.json',edition)
                 accepted=part['accepted']
                 with self.subTest(review=review.name,chapter=name):
                     self.assertEqual(config.get('typography',{}),
@@ -42,6 +43,10 @@ class MinorSpacingTests(unittest.TestCase):
                     self.assertEqual(len(accepted),len(set(accepted)))
                     self.assertTrue(set(accepted).issubset(part['candidates']))
                     self.assertFalse(set(accepted)&{row['id'] for row in part['excluded']})
+                    if not accepted:
+                        continue
+                    nodes,_,_=base_chapter(name,edition)
+                    layout=edition_json(source+'source-layout.json',edition)
                     for ident in accepted:
                         self.assertEqual(nodes[ident]['kind'],'heading')
                         styles=[layout['styles'][(style or '').split(':')[-1]]
@@ -62,22 +67,55 @@ class MinorSpacingTests(unittest.TestCase):
                     self.assertEqual(checks['flow']['pages'],part['baseline_pages'])
                     self.assertEqual(part['pages'],part['baseline_pages'])
                     if review==REVIEW:
-                        current=read(ROOT/relative)
+                        approved=edition_json(relative,PRIOR_EDITION)
                         if name=='03':
                             # 差し替えた図の高さは変わるため、全マーカーのページを照合する。
-                            self.assertEqual(signature(current['flow']['block_positions']),signature(before))
-                            self.assertEqual(current['flow']['pages'],checks['flow']['pages'])
+                            self.assertEqual(signature(approved['flow']['block_positions']),signature(before))
+                            self.assertEqual(approved['flow']['pages'],checks['flow']['pages'])
                             continue
                         if name!='02':
-                            self.assertEqual(current,checks)
+                            self.assertEqual(approved,checks)
                             continue
                         # 追加余白の全13見出しを含む、図改訂前の範囲を照合する。
                         def through_source_58(marks):
                             index=next(i for i,m in enumerate(marks) if m['id']=='__source-page-58' and m['edge']=='source-page')
                             return marks[:index+1]
-                        prefix=through_source_58(current['flow']['block_positions'])
+                        prefix=through_source_58(approved['flow']['block_positions'])
                         self.assertEqual(signature(prefix),signature(through_source_58(before)))
                         self.assertAlmostEqual(prefix[-1]['y'],86,places=3)
+
+    def test_revised_heading_margins_preserve_other_chapter_pages(self):
+        for part in plan()['chapters']:
+            name=part['chapter']
+            if name in ('02','03'):
+                continue
+            relative='output/pdf/textbook/chapter-'+name+'/checks.json'
+            previous=edition_json(relative,PRIOR_EDITION)
+            current=read(ROOT/relative)
+            source='docs/textbook/chapters/'+name+'/source.json'
+            prior=edition_json(source,PRIOR_EDITION)
+            current_config=read(ROOT/source)
+            key='minor_heading_extra_space'
+            before=dict.fromkeys(prior.get('typography',{}).get(key,[]),18)
+            after=current_config.get('typography',{}).get(key,[])
+            with self.subTest(chapter=name):
+                if isinstance(after,list):
+                    self.assertEqual(current_config,prior)
+                    self.assertEqual(current,previous)
+                    continue
+                added={ident for ident,space in after.items() if space!=before.get(ident,0)}
+                self.assertTrue(added)
+                self.assertTrue(before.keys()<=after.keys())
+                self.assertTrue(all(after[i]-before.get(i,0)==18 for i in added))
+                previous_flow,current_flow=previous['flow'],current['flow']
+                self.assertEqual(current_flow['pages'],previous_flow['pages'])
+                self.assertEqual(current_flow['pagination'],previous_flow['pagination'])
+                marks=lambda flow:{(m['id'],m['edge']):m for m in flow['block_positions']}
+                a,b=marks(previous_flow),marks(current_flow)
+                self.assertEqual({k:v['page'] for k,v in a.items()},{k:v['page'] for k,v in b.items()})
+                for ident in added:
+                    k=(ident,'heading')
+                    self.assertGreaterEqual(b[k]['y']-a[k]['y'],17.9)
 
     def test_the_two_requested_operation_headings_follow_the_previous_page(self):
         _,pages,config,_=chapter('02')
@@ -109,12 +147,13 @@ class MinorSpacingTests(unittest.TestCase):
             geometry=[dict(id='sample',page=1,box=[85.104,0,165.104,20])] if grouped else []
             layout=dict(styles=styles,figures=geometry,blocks={},tables={},pages=[dict(pages[0],furniture=[],decoration='blank.svg')])
             positions=[]
-            for spaced in (False,True):
+            for extra in (0,18,36):
                 config=dict(first_page=1,last_page=1,chapter=99,cover_mode='none')
-                if spaced:
-                    config['typography']={'minor_heading_extra_space':['minor']}
+                if extra:
+                    spacing=['minor'] if extra==18 else {'minor':extra}
+                    config['typography']={'minor_heading_extra_space':spacing}
                 source=style_header(styles)+flow_layout(work,config,layout,nodes,figures,pages)
-                pdf,path=compile_pdf(work,label+('-extra' if spaced else '-base'),source,['C:/Windows/Fonts'])
+                pdf,path=compile_pdf(work,f'{label}-{extra}',source,['C:/Windows/Fonts'])
                 try:
                     self.assertEqual(len(pdf),1)
                     marks=json.loads(typst.query(str(path),'<book-check>',field='value',format='json',
@@ -123,9 +162,10 @@ class MinorSpacingTests(unittest.TestCase):
                 finally:
                     pdf.close()
             with self.subTest(grouped=grouped):
-                self.assertEqual(positions[0]['page'],positions[1]['page'])
-                self.assertAlmostEqual(positions[0]['x'],positions[1]['x'],places=3)
-                self.assertAlmostEqual(positions[1]['y']-positions[0]['y'],18,places=3)
+                for extra,position in zip((18,36),positions[1:]):
+                    self.assertEqual(positions[0]['page'],position['page'])
+                    self.assertAlmostEqual(positions[0]['x'],position['x'],places=3)
+                    self.assertAlmostEqual(position['y']-positions[0]['y'],extra,places=3)
 
 
 if __name__=='__main__':

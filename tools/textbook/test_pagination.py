@@ -59,6 +59,38 @@ class PaginationTests(unittest.TestCase):
         self.assertEqual(edge('p048-b07','end')['page'], edge('p049-b04','start')['page'])
         self.assertEqual(edge('p047-b04','end')['page'], edge('p048-b01','heading')['page'])
 
+        def position(ident, kind):
+            mark = edge(ident, kind)
+            return mark['page'], mark['y']
+        anchors = [
+            position('p058-b05','end'), position('p059-b04','heading'),
+            position('p059-b05','start'), position('p059-b06','end'), position('p058-b06','start'),
+        ]
+        self.assertEqual(anchors, sorted(anchors))
+        self.assertEqual(anchors[1][0], anchors[2][0])
+
+        checks = json.loads((ROOT / 'output/pdf/textbook/chapter-03/checks.json').read_text(encoding='utf-8'))
+        marks = checks['flow']['block_positions']
+        prior = edge('p086-b11','end')
+        step = edge('p087-b01','heading')
+        self.assertEqual(prior['page'], step['page'])
+        self.assertEqual(step['page'], edge('p087-f20','end')['page'])
+        self.assertGreaterEqual(step['y'] - prior['y'], 18)
+
+    def test_service_examples_and_quick_fix_stay_with_their_headings(self):
+        folder = ROOT / 'docs/textbook/chapters/03'
+        nodes, _, order = read_markdown(folder / 'chapter.md')
+        checks = json.loads((ROOT / 'output/pdf/textbook/chapter-03/checks.json').read_text(encoding='utf-8'))
+        groups = [
+            p['entries'][i:i+4] for p in order for i, ident in enumerate(p['entries'])
+            if ident.startswith('revision-service-') and nodes.get(ident, {}).get('attrs', {}).get('keep-next')=='3'
+        ]
+        self.assertEqual(len(groups), 5)
+        for group in groups:
+            self.assertEqual(len(group), 4)
+            pages = {m['page'] for m in checks['flow']['block_positions'] if m['id'] in group}
+            self.assertEqual(len(pages), 1, group)
+
     def test_section_and_subsection_page_starts_remain_protected(self):
         import re
         for folder in (ROOT/'docs/textbook/chapters').iterdir():

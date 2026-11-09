@@ -31,7 +31,7 @@ class ComponentSourceTests(unittest.TestCase):
         cls.records = json.loads((components.HERE / 'code_explanations.json').read_text(encoding='utf-8'))
 
     def test_explanation_fragments_reconstruct_every_original_character(self):
-        self.assertEqual(len(self.records), 46)
+        self.assertEqual(len(self.records), 47)
         self.assertEqual(sum(len(r['rows']) for r in self.records), 84)
         for record in self.records:
             nodes = chapter(record['chapter'])[3]

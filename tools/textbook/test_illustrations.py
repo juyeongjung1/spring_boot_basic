@@ -1,5 +1,6 @@
 """小型挿絵の寸法・caption・元頁所属、過去の原文保全と今回の許可差分を検証する。"""
 from collections import defaultdict
+from copy import deepcopy
 from functools import lru_cache
 from pathlib import Path
 import hashlib
@@ -21,10 +22,13 @@ SPACING_EDITION = '380e36fb9b1aae65f4f82405ab39f669e4c2f083'
 TABLE_EDITION = 'ee2f9a455b14bbb85cec9e97e208bd948eaff8f2'
 MODEL_EDITION = '0409a5379334731099867c078bc75a02e25a136d'
 MODEL_APPROVED_EDITION = '39f5fef6a2b47de1d5a290820bce10f65dae459b'
+REPOSITORY_APPROVED_EDITION = '851c18e02f1d9144c99fb22948791f84a3adf34e'
 MODEL_TRANSFER = 'illustration-2026-model-transfer'
 MODEL_UNPACK = 'illustration-2026-model-moving-unpack'
 MODEL_MOVING_PAGES = {MODEL_TRANSFER: 65, MODEL_UNPACK: 67}
 REPOSITORY_PAGES = {'illustration-expansion-2026-repository-implementation': 90, 'revision-di-remote': 92}
+SERVICE_FIGURES = {'illustration-2026-service-'+name for name in
+                   ('interface', 'implementation', 'dispatch', 'call-chain')}
 DI_INTRO = 'illustration-figure-cards-2026-di-remote-intro'
 MANAGED = 'illustration-expansion-2026-boot-managed-versions'
 BEAN = 'illustration-expansion-2026-bean-auto-configuration'
@@ -92,7 +96,8 @@ def image_size(record):
 class IllustrationSourceTests(unittest.TestCase):
     def test_new_assets_and_existing_di_follow_print_limits(self):
         data = catalog()
-        self.assertEqual(len(data['new']), 34)
+        self.assertEqual(len(data['new']), 34+len(SERVICE_FIGURES))
+        self.assertTrue(SERVICE_FIGURES.issubset(r['figure_id'] for r in data['new']))
         self.assertEqual(len(data['resized']), 1)
         self.assertEqual(data['resized'][0]['figure_id'], 'revision-di-remote')
         ids = [r['figure_id'] for r in data['new'] + data['resized']]
@@ -113,7 +118,8 @@ class IllustrationSourceTests(unittest.TestCase):
                         # 旧来の比率を保ち、引っ越しの2図は実寸を個別に検査する。
                         if record['figure_id'] in MODEL_MOVING_PAGES:
                             self.assertEqual(image.size, (1920, 819))
-                        elif record['figure_id'].startswith('illustration-2026-'):
+                        elif (record['figure_id'].startswith('illustration-2026-')
+                              and record['figure_id'] not in SERVICE_FIGURES):
                             self.assertAlmostEqual(image.width / image.height, 2.4, delta=.04)
                 width, height = image_size(record)
                 self.assertGreater(width, 0)
@@ -520,9 +526,9 @@ class IllustrationSourceTests(unittest.TestCase):
 
     def test_repository_revision_preserves_original_content(self):
         _,previous,old_figures,old_pages,old_config=edition_chapter('03',MODEL_APPROVED_EDITION)
-        _,nodes,figures,pages,config=chapter('03')
+        _,nodes,figures,pages,config=edition_chapter('03',REPOSITORY_APPROVED_EDITION)
         previous_catalog=edition_json('docs/textbook/illustrations.json',MODEL_APPROVED_EDITION)
-        data=catalog()
+        data=edition_json('docs/textbook/illustrations.json',REPOSITORY_APPROVED_EDITION)
         records=[r for key in ('new','resized') for r in data[key] if r['figure_id'] in REPOSITORY_PAGES]
         self.assertEqual({r['figure_id'] for r in records},set(REPOSITORY_PAGES))
         captions={r['caption_id'] for r in records}
@@ -538,13 +544,122 @@ class IllustrationSourceTests(unittest.TestCase):
         paths=['docs/textbook/chapters','docs/textbook/illustrations.json',
                'tools/textbook/code_explanations.json','tools/textbook/filename_labels.json']
         command=['git','-c','safe.directory='+ROOT.as_posix()]
-        changed=set()
-        for query in (['diff','--name-only','--no-renames',MODEL_APPROVED_EDITION],['ls-files','--others','--exclude-standard']):
-            result=subprocess.run(command+query+['--',*paths],cwd=ROOT,check=True,capture_output=True,encoding='utf-8')
-            changed.update(result.stdout.splitlines())
+        changed=subprocess.run(command+['diff','--name-only','--no-renames',MODEL_APPROVED_EDITION,
+            REPOSITORY_APPROVED_EDITION,'--',*paths],cwd=ROOT,check=True,capture_output=True,encoding='utf-8')
         prefix='docs/textbook/chapters/03/'
         allowed={prefix+'chapter.md'}|{prefix+r['asset'] for r in records}
-        self.assertEqual(changed,allowed|{'docs/textbook/illustrations.json'})
+        self.assertEqual(set(changed.stdout.splitlines()),allowed|{'docs/textbook/illustrations.json'})
+
+
+    def test_service_revision_preserves_unaffected_source_content(self):
+        indentation_ids = set(('p091-b06 p094-b02 p096-b03 p096-b08 p097-b09 p100-b03 p100-b08 '
+                               'p101-b05 p108-b04 p111-b02 p117-b03 p119-b03 p128-b06').split())
+
+        def without_indent(value, continuation=False):
+            value = re.sub(r'(?m)^[ \t]*(\d+:)?[ \t]*', lambda m: m[1] or '', value)
+            return re.sub(r'\n(?!\d+:)', ' ', value) if continuation else value
+
+        for name in ('02', '03'):
+            _, old_nodes, old_figures, old_pages, _ = edition_chapter(name, REPOSITORY_APPROVED_EDITION)
+            _, nodes, figures, pages, _ = chapter(name)
+            expected_ids = set(old_nodes) - ({'p115-b05'} if name=='03' else set())
+            self.assertEqual(set(old_nodes) & set(nodes), expected_ids)
+            for ident in expected_ids:
+                if name=='03' and ident in indentation_ids:
+                    before, after = old_nodes[ident], nodes[ident]
+                    self.assertEqual({k:v for k,v in before.items() if k not in {'text','parts'}},
+                                     {k:v for k,v in after.items() if k not in {'text','parts'}}, ident)
+                    continuation = ident=='p101-b05'
+                    self.assertEqual([(without_indent(value, continuation), style) for value,style in before['parts']],
+                                     [(without_indent(value, continuation), style) for value,style in after['parts']], ident)
+                elif name!='03' or ident not in {'p115-b04','p126-b16','p131-b04'}:
+                    self.assertEqual(nodes[ident], old_nodes[ident], ident)
+            allowed_figures = SERVICE_FIGURES if name=='03' else set()
+            self.assertEqual(set(figures) - set(old_figures), allowed_figures)
+            self.assertEqual({i: figures[i] for i in old_figures}, old_figures)
+            existing_ids = expected_ids | set(old_figures)
+            source_order = lambda order: {p['source_page']:[i for i in p['entries'] if i in existing_ids]
+                                          for p in order}
+            expected_order = source_order(old_pages)
+            if name=='02':
+                moved = ['p059-b04','p059-b05','p059-b06']
+                index = expected_order[58].index('p058-b05') + 1
+                expected_order[58][index:index] = moved
+                for ident in moved:
+                    expected_order[59].remove(ident)
+            else:
+                merged = old_nodes['p115-b04']['text']+old_nodes['p115-b05']['text']
+                self.assertEqual(re.sub(r'\s+', '', merged), re.sub(r'\s+', '', nodes['p115-b04']['text']))
+                self.assertEqual(nodes['p126-b16']['text'], old_nodes['p126-b16']['text'])
+                self.assertEqual(nodes['p131-b04']['kind'], 'heading')
+            self.assertEqual(source_order(pages), expected_order, name)
+
+        path = 'docs/textbook/illustrations.json'
+        previous = edition_json(path, REPOSITORY_APPROVED_EDITION)
+        expected_records = [dict(r, before_id='p059-b07') if r['figure_id']==MODEL_TRANSFER else r
+                            for r in previous['new']]
+        self.assertEqual({**catalog(), 'new': [r for r in catalog()['new'] if r['figure_id'] not in SERVICE_FIGURES]},
+                         {**previous, 'new': expected_records})
+
+        path = 'tools/textbook/code_explanations.json'
+
+        def without_explanation_indent(data):
+            for record in data:
+                if record['chapter']!='03':
+                    continue
+                for row in record['rows']:
+                    sources = row['code_line_sources']
+                    if any(line['code_id'] in indentation_ids for line in sources):
+                        row['code'] = without_indent(row['code'])
+                        for line in sources:
+                            if line['code_id'] in indentation_ids:
+                                line['text'] = without_indent(line['text'])
+            return data
+
+        current_explanations = json.loads((ROOT/path).read_text(encoding='utf-8'))
+        split = next(i for i,record in enumerate(current_explanations)
+                     if (record['chapter'], record['anchor_id'])==('03', 'p129-b01'))
+        first, second = current_explanations[split:split+2]
+        self.assertEqual(first['consume_ids'], [f'p129-b{i:02d}' for i in range(1,6)])
+        self.assertEqual(second['consume_ids'], [f'p129-b{i:02d}' for i in range(6,10)])
+        self.assertEqual(second['anchor_id'], 'p129-b06')
+        for key in ('chapter', 'owner_code_ids', 'source_pages'):
+            self.assertEqual(first[key], second[key], key)
+        current_explanations[split:split+2] = [dict(
+            first, consume_ids=first['consume_ids']+second['consume_ids'],
+            rows=first['rows']+second['rows'], source_texts=first['source_texts']|second['source_texts'])]
+        self.assertEqual(without_explanation_indent(current_explanations),
+                         without_explanation_indent(deepcopy(edition_json(path, REPOSITORY_APPROVED_EDITION))))
+
+        paths = ['docs/textbook/chapters','docs/textbook/illustrations.json',path,'tools/textbook/filename_labels.json']
+        command = ['git','-c','safe.directory='+ROOT.as_posix()]
+        changed = set()
+        for query in (['diff','--name-only','--no-renames',REPOSITORY_APPROVED_EDITION],
+                      ['ls-files','--others','--exclude-standard']):
+            result = subprocess.run(command+query+['--',*paths],cwd=ROOT,check=True,capture_output=True,encoding='utf-8')
+            changed.update(result.stdout.splitlines())
+        required = {'docs/textbook/chapters/'+n+'/chapter.md' for n in ('02','03')}
+        required.update('docs/textbook/chapters/03/'+r['asset'] for r in catalog()['new'] if r['figure_id'] in SERVICE_FIGURES)
+        required.update({'docs/textbook/illustrations.json',path})
+        configs = {'docs/textbook/chapters/'+n+'/source.json' for n in catalog()['reviewed_chapters']}
+        self.assertTrue(required<=changed<=required|configs, changed^required)
+
+        for relative in changed & configs:
+            current = json.loads((ROOT/relative).read_text(encoding='utf-8'))
+            previous = deepcopy(edition_json(relative, REPOSITORY_APPROVED_EDITION))
+            for settings in (current, previous):
+                typography = settings.get('typography',{})
+                typography.pop('minor_heading_extra_space',None)
+                if not typography:
+                    settings.pop('typography',None)
+            if relative == 'docs/textbook/chapters/03/source.json':
+                for ident in SERVICE_FIGURES:
+                    self.assertIn(ident, current['illustrations'])
+                    current['illustrations'].pop(ident)
+                continuations = current['pagination']['continue_before']
+                self.assertEqual(continuations.pop('87'), 'short-minor-heading')
+                self.assertIn(continuations.pop('129', None), (None, 'continued-prose'))
+            self.assertEqual(current, previous, relative)
 
 
 class IllustrationPdfTests(unittest.TestCase):
@@ -586,10 +701,16 @@ class IllustrationPdfTests(unittest.TestCase):
                     self.assertLessEqual(points[index], points[index + 1],
                         (anchors[index], points[index], anchors[index + 1], points[index + 1]))
 
+    def test_previously_approved_figures_keep_their_recorded_page_numbers(self):
+        assembly = edition_json('output/pdf/textbook/textbook/checks.json', REPOSITORY_APPROVED_EDITION)
+        chapter_starts = {p['chapter']: p['flow_pages'][0] for p in assembly['chapters']}
+        for name, expected_pages in [('02', MODEL_MOVING_PAGES), ('03', REPOSITORY_PAGES)]:
+            checks = edition_json(f'output/pdf/textbook/chapter-{name}/checks.json', REPOSITORY_APPROVED_EDITION)
+            starts = {m['id']: m['page'] for m in checks['flow']['block_positions'] if m['edge']=='start'}
+            for ident, expected in expected_pages.items():
+                self.assertEqual(chapter_starts[name]+starts[ident]-1, expected, ident)
+
     def test_image_dimensions_and_caption_are_kept_on_one_physical_page(self):
-        assembly = json.loads((ROOT/'output/pdf/textbook/textbook/checks.json').read_text(encoding='utf-8'))
-        chapter_starts = {p['chapter']:p['flow_pages'][0] for p in assembly['chapters']}
-        expected_pages = MODEL_MOVING_PAGES | REPOSITORY_PAGES
         for record in catalog()['new'] + catalog()['resized']:
             with self.subTest(figure=record['figure_id']):
                 folder = ROOT / 'output/pdf/textbook' / ('chapter-'+record['chapter'])
@@ -605,9 +726,6 @@ class IllustrationPdfTests(unittest.TestCase):
                 start = next(m for m in figure if m['edge']=='start')
                 end = next(m for m in figure if m['edge']=='end')
                 cap_start = next(m for m in caption if m['edge']=='start')
-                if record['figure_id'] in expected_pages:
-                    physical_page = chapter_starts[record['chapter']] + start['page'] - 1
-                    self.assertEqual(physical_page, expected_pages[record['figure_id']])
                 self.assertGreaterEqual(cap_start['y'], end['y'] - .1)
                 self.assertLessEqual(cap_start['y'] - end['y'], 30)
                 expected_width, expected_height = image_size(record)

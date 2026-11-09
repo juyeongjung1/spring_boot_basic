@@ -186,9 +186,10 @@
     }
   },
   "typography": {
-    "minor_heading_extra_space": [
-      "p018-b06",
-      "p025-b02"
-    ]
+    "minor_heading_extra_space": {
+      "p018-b06": 36,
+      "p025-b02": 36,
+      "p024-b05": 18
+    }
   }
 }

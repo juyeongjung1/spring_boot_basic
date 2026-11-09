@@ -198,49 +198,49 @@
         "edge": "heading",
         "page": 2,
         "x": 85.104,
-        "y": 442.46878906250004
+        "y": 460.46878906250004
       },
       {
         "id": "revision-errors-console",
         "edge": "start",
         "page": 2,
         "x": 85.104,
-        "y": 468.50878906250006
+        "y": 486.50878906250006
       },
       {
         "id": "revision-errors-console",
         "edge": "end",
         "page": 2,
         "x": 85.104,
-        "y": 515.5487890625001
+        "y": 533.5487890625
       },
       {
         "id": "revision-errors-name",
         "edge": "start",
         "page": 2,
         "x": 85.104,
-        "y": 528.5087890625
+        "y": 546.5087890625
       },
       {
         "id": "revision-errors-name",
         "edge": "end",
         "page": 2,
         "x": 85.104,
-        "y": 653.5487890625
+        "y": 671.5487890625
       },
       {
         "id": "revision-errors-trace-intro",
         "edge": "start",
         "page": 2,
         "x": 85.104,
-        "y": 666.5087890625
+        "y": 684.5087890625
       },
       {
         "id": "revision-errors-trace-intro",
         "edge": "end",
         "page": 2,
         "x": 85.104,
-        "y": 677.5487890625
+        "y": 695.5487890625
       },
       {
         "id": "appendix-b-revision-errors-trace-part1",

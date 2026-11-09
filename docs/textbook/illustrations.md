@@ -1,10 +1,10 @@
 # 教材へ挿入した小型イラスト
 
-小型イラストは全35点です。HTMLのname属性とFormの対応図を作り直し、th:eachの左右を説明する図を追加しました。不要なRepository返り値の図は削除しています。画像本体は幅300pt・高さ140pt以内、標準幅280pt、既存DI図は260ptです。
+小型イラストは全39点です。HTMLのname属性とFormの対応図を作り直し、th:eachの左右を説明する図を追加しました。不要なRepository返り値の図は削除しています。画像本体は幅300pt・高さ140pt以内、標準幅280pt、既存DI図は260ptです。
 
 図番号とキャプションを同じ枠内へ収め、図とキャプションを同じページに保持します。図中は短い語と色で関係を示し、詳しい説明は元の本文を使います。th:each図は、コードに混入していたPPT吹き出しの説明を図として分離したものです。
 
-## 概念の理解を補う25点
+## 概念の理解を補う29点
 
 | 挿絵 | 章・元頁 | 理解を補う点 | 画像 |
 | --- | --- | --- | --- |
@@ -19,6 +19,10 @@
 | リモコンのボタンに当たる検索・保存メソッド | 03・78p | テレビのリモコンに備わるボタンを、JpaRepositoryから継承するメソッドに対応させる。 | [表示](chapters/03/assets/revision-ill-repository-implementation.png) |
 | メソッド名と引数が検索条件になる | 03・97p | 命名ルールを暗記するだけでなく、メソッド名のプロパティと引数の値がどう条件になるかを理解する。 | [表示](chapters/03/assets/revision-ill-query-method-name.png) |
 | redirectはブラウザーからの新しいリクエストを生む | 03・124p | returnでController内の別メソッドを直接呼ぶことと、ブラウザーを介したredirectの違いを正しくイメージする。 | [表示](chapters/03/assets/revision-ill-redirect-new-request.png) |
+| 抽象メソッドはリモコンのボタン | 03・127p | 主キー検索の抽象メソッドをリモコンのボタンにたとえ、引数と戻り値の位置を示す。 | [表示](chapters/03/assets/revision-ill-service-interface.png) |
+| ボタンに対応する処理を書く | 03・128p | サービスの実装を、リモコンのボタンに応じて動くテレビの仕組みを組み立てる作業にたとえる。 | [表示](chapters/03/assets/revision-ill-service-implementation.png) |
+| サービス型で呼び出し、実装クラスで処理する | 03・131p | リモコンのボタンを押すとテレビの中の仕組みが動く場面で、メソッド呼び出しと実装の関係を示す。 | [表示](chapters/03/assets/revision-ill-service-dispatch.png) |
+| ControllerからDBまでの呼び出し | 03・131p | Controllerがサービスのインターフェースを通じて実装を呼び出し、RepositoryからDBにアクセスする流れを示す。 | [表示](chapters/03/assets/revision-ill-service-call-chain.png) |
 | ModelとHttpSessionではデータを渡す範囲が違う | 04・143p | 既存p143-f08は完成画面とModelコードの例。既存追加図session-separationはセッションIDと利用者ごとの分離。新図はリクエストをまたぐ保存期間だけを対比する。 | [表示](chapters/04/assets/revision-ill-model-session-lifetime.png) |
 | 入力値と入力エラーを同じ画面へ戻す | 04・153p | 既存validation-branchは成功/失敗の分岐だけ。新図はエラーで戻った画面に値とメッセージが再表示される理由を説明する。 | [表示](chapters/04/assets/revision-ill-form-error-roundtrip.png) |
 | null・空文字・空白だけの文字列は同じではない | 04・157p | p157-f18は多数のアノテーション一覧表。新図は特に誤りやすい3種類の空の状態を具体的な容器で比較する。 | [表示](chapters/04/assets/revision-ill-null-blank-constraints.png) |

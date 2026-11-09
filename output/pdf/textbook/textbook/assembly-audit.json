@@ -1,6 +1,6 @@
 {
   "collection": "textbook",
-  "flow_pages": 343,
+  "flow_pages": 347,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
@@ -8,11 +8,37 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 63,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "955b029eb8a5f49cf90cfbd2f69bc37388c7ea17b8f0a4dcdde82510a86ee268",
-  "verification": "docs/textbook/verification.md#リポジトリとdiのリモコンの挿絵",
-  "pages_with_layout_changes": [
-    90,
-    92
+  "pdf_sha256": "574e212c4d91dc797651522fb803e2791f32122fb8e11a84e6bcb82a2b089d2f",
+  "verification": "docs/textbook/verification.md#サービス節と組版の改訂",
+  "reviewed_pages": [
+    64,
+    65,
+    67,
+    100,
+    134,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157
   ],
-  "identical_rendered_pages": 341
+  "chapter_page_counts": {
+    "front": 14,
+    "01": 18,
+    "02": 37,
+    "03": 89,
+    "04": 39,
+    "05": 33,
+    "06": 49,
+    "07": 51,
+    "appendix-a": 8,
+    "appendix-b": 9
+  }
 }

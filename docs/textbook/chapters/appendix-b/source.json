@@ -75,5 +75,10 @@
       "max_height": 140,
       "caption_id": "illustration-2026-error-cause-chain-caption"
     }
+  },
+  "typography": {
+    "minor_heading_extra_space": {
+      "revision-errors-title": 18
+    }
   }
 }
