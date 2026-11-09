@@ -3241,7 +3241,7 @@
       },
       {
         "line_label": "11 行目",
-        "code": " @NotNull(message = \"社員番号を入力してください\")",
+        "code": "    @NotNull(message = \"社員番号を入力してください\")",
         "meaning": " このアノテーションを付与したフィールドに、入力値がない場合は、入力エラーだと検知して\nくれます。Integerのフィールドは、@NotNullを付与します。message属性は、出力するメッセー\nジをカスタマイズすることができます。",
         "source_ids": [
           "p150-b06",
@@ -3253,7 +3253,7 @@
           {
             "code_id": "p150-b03",
             "line_number": 11,
-            "text": " @NotNull(message = \"社員番号を入力してください\")"
+            "text": "    @NotNull(message = \"社員番号を入力してください\")"
           }
         ],
         "source_fragments": [
@@ -3280,7 +3280,7 @@
       },
       {
         "line_label": "14-15 行",
-        "code": " @NotBlank(message = \"パスワードを入力してください\")\n @Size(max = 15, message = \"15 文字以内で入力してください\")",
+        "code": "    @NotBlank(message = \"パスワードを入力してください\")\n    @Size(max = 15, message = \"15 文字以内で入力してください\")",
         "meaning": " ＠NotNull と似ていますが、こちらは文字列の入力有無チェックに特化されています。未入力\nはもちろん、空文字(“”)まで検知することができます。\n @Size は、文字列の文字数制限を設定できます。Max で最大文字数、min で最小文字数の\n設定ができます。",
         "source_ids": [
           "p150-b08"
@@ -3291,12 +3291,12 @@
           {
             "code_id": "p150-b03",
             "line_number": 14,
-            "text": " @NotBlank(message = \"パスワードを入力してください\")"
+            "text": "    @NotBlank(message = \"パスワードを入力してください\")"
           },
           {
             "code_id": "p150-b03",
             "line_number": 15,
-            "text": " @Size(max = 15, message = \"15 文字以内で入力してください\")"
+            "text": "    @Size(max = 15, message = \"15 文字以内で入力してください\")"
           }
         ],
         "source_fragments": [
@@ -3357,7 +3357,7 @@
     "rows": [
       {
         "line_label": "3 行目",
-        "code": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n",
+        "code": "public String loginValidation(@Valid UserForm userForm,\n        BindingResult bdResult) {\n",
         "meaning": " @Valid アノテーションは、対象のオブジェクト（この場合は UserForm）が持つValidation アノ\nテーション（例えば @Size、@NotNull など）に基づいて入力チェックを実行するために使用さ\nれます。",
         "source_ids": [
           "p151-b08",
@@ -3369,7 +3369,7 @@
           {
             "code_id": "p151-b07",
             "line_number": 3,
-            "text": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n"
+            "text": "public String loginValidation(@Valid UserForm userForm,\n        BindingResult bdResult) {\n"
           }
         ],
         "source_fragments": [
@@ -3393,7 +3393,7 @@
       },
       {
         "line_label": "3 行目",
-        "code": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n",
+        "code": "public String loginValidation(@Valid UserForm userForm,\n        BindingResult bdResult) {\n",
         "meaning": "BindingResult は、@Valid アノテーションによる入力チェックの結果を保持するオブジェクトで\nす。入力チェックエラーの詳細を取得するために使用されます。通常、メソッドの引数として渡\nされます。必ず、@Valid をつけた直後(ここでは、第2 引数)に記載しないといけないルールが\nありますので、ご注意ください。",
         "source_ids": [
           "p151-b10",
@@ -3405,7 +3405,7 @@
           {
             "code_id": "p151-b07",
             "line_number": 3,
-            "text": "public String loginValidation(@Valid UserForm userForm, BindingResult\nbdResult) {\n"
+            "text": "public String loginValidation(@Valid UserForm userForm,\n        BindingResult bdResult) {\n"
           }
         ],
         "source_fragments": [
@@ -3454,7 +3454,7 @@
     "rows": [
       {
         "line_label": "4 行目",
-        "code": " if (bdResult.hasErrors()) {",
+        "code": "    if (bdResult.hasErrors()) {",
         "meaning": " BindingResult の hasErrors メソッドは、入力チェック中にエラーが発生したかどうかを確認\nするために使用されます。エラーが存在する場合は true を、そうでない場合は false を返\nします。このメソッドを利用して条件分岐を行い、エラーがある場合は入力フォームに戻り、エ\nラーメッセージをユーザに表示します。",
         "source_ids": [
           "p152-b01",
@@ -3466,7 +3466,7 @@
           {
             "code_id": "p151-b07",
             "line_number": 4,
-            "text": " if (bdResult.hasErrors()) {"
+            "text": "    if (bdResult.hasErrors()) {"
           }
         ],
         "source_fragments": [
@@ -3516,7 +3516,7 @@
       {
         "line_label": "4 行目",
         "code": "<form th:action=\"@{/login4}\" method=\"post\" th:object=\"${userForm}\">",
-        "meaning": "th:object 属性は、「選択対象オブジェクト」と呼ばれ、フォームのデータをController のオブ\nジェクト（この場合は UserForm オブジェクト）にバインド（結びつけ）するために使用されま\nす。\n\nformタグに記述することで、フォームの入力フィールドの値が、UserForm オブジェクトの対応\nするプロパティに自動的に格納されます。\nつまり、Controller のメソッド内でModel にデータを格納しなくても、Form タグの中で、\nThymeleaf 上でデータを受け取れるということです。\n\nフォーム内では、*{...}という選択式を使用して、userForm オブジェクトのプロパティに簡潔にア\nクセスできます。userForm.empId ではなく、*{empId}だけでアクセスできるようになります。",
+        "meaning": "th:object=\"${userForm}\" で、フォームが参照する UserForm オブジェクトを選びます。\n\nこの例では、Controller の引数 UserForm userForm を Spring MVC が userForm の名前でモデルに用意します。フォーム送信時には、入力値が対応するプロパティに格納されます。\n\nth:field=\"*{empId}\" のような選択式は、選んだオブジェクトの中を参照します。フォーム内の *{empId} は、userForm の empId を指します。",
         "source_ids": [
           "p152-b06",
           "p152-b07",
@@ -3543,42 +3543,37 @@
           {
             "source_id": "p152-b07",
             "start": 0,
-            "end": 106,
+            "end": 57,
             "role": "meaning",
-            "text": "th:object 属性は、「選択対象オブジェクト」と呼ばれ、フォームのデータをController のオブ\nジェクト（この場合は UserForm オブジェクト）にバインド（結びつけ）するために使用されま\nす。"
+            "text": "th:object=\"${userForm}\" で、フォームが参照する UserForm オブジェクトを選びます。"
           },
           {
             "source_id": "p152-b08",
             "start": 0,
-            "end": 152,
+            "end": 108,
             "role": "meaning",
-            "text": "formタグに記述することで、フォームの入力フィールドの値が、UserForm オブジェクトの対応\nするプロパティに自動的に格納されます。\nつまり、Controller のメソッド内でModel にデータを格納しなくても、Form タグの中で、\nThymeleaf 上でデータを受け取れるということです。"
+            "text": "この例では、Controller の引数 UserForm userForm を Spring MVC が userForm の名前でモデルに用意します。フォーム送信時には、入力値が対応するプロパティに格納されます。"
           },
           {
             "source_id": "p152-b09",
             "start": 0,
-            "end": 107,
+            "end": 88,
             "role": "meaning",
-            "text": "フォーム内では、*{...}という選択式を使用して、userForm オブジェクトのプロパティに簡潔にア\nクセスできます。userForm.empId ではなく、*{empId}だけでアクセスできるようになります。"
+            "text": "th:field=\"*{empId}\" のような選択式は、選んだオブジェクトの中を参照します。フォーム内の *{empId} は、userForm の empId を指します。"
           }
         ],
         "word_paragraph_breaks": [
-          108,
-          262
+          59,
+          169
         ],
-        "word_line_breaks": [
-          178
-        ],
-        "editor_ignored_line_breaks": [
-          178
-        ]
+        "word_line_breaks": []
       }
     ],
     "source_texts": {
       "p152-b06": "・4 行目 th:object=\"${userForm}\":",
-      "p152-b07": "th:object 属性は、「選択対象オブジェクト」と呼ばれ、フォームのデータをController のオブ\nジェクト（この場合は UserForm オブジェクト）にバインド（結びつけ）するために使用されま\nす。",
-      "p152-b08": "formタグに記述することで、フォームの入力フィールドの値が、UserForm オブジェクトの対応\nするプロパティに自動的に格納されます。\nつまり、Controller のメソッド内でModel にデータを格納しなくても、Form タグの中で、\nThymeleaf 上でデータを受け取れるということです。",
-      "p152-b09": "フォーム内では、*{...}という選択式を使用して、userForm オブジェクトのプロパティに簡潔にア\nクセスできます。userForm.empId ではなく、*{empId}だけでアクセスできるようになります。"
+      "p152-b07": "th:object=\"${userForm}\" で、フォームが参照する UserForm オブジェクトを選びます。",
+      "p152-b08": "この例では、Controller の引数 UserForm userForm を Spring MVC が userForm の名前でモデルに用意します。フォーム送信時には、入力値が対応するプロパティに格納されます。",
+      "p152-b09": "th:field=\"*{empId}\" のような選択式は、選んだオブジェクトの中を参照します。フォーム内の *{empId} は、userForm の empId を指します。"
     },
     "source_pages": [
       152

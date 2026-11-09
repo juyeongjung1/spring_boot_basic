@@ -23,9 +23,9 @@
 | ボタンに対応する処理を書く | 03・128p | サービスの実装を、リモコンのボタンに応じて動くテレビの仕組みを組み立てる作業にたとえる。 | [表示](chapters/03/assets/revision-ill-service-implementation.png) |
 | サービス型で呼び出し、実装クラスで処理する | 03・131p | リモコンのボタンを押すとテレビの中の仕組みが動く場面で、メソッド呼び出しと実装の関係を示す。 | [表示](chapters/03/assets/revision-ill-service-dispatch.png) |
 | ControllerからDBまでの呼び出し | 03・131p | Controllerがサービスのインターフェースを通じて実装を呼び出し、RepositoryからDBにアクセスする流れを示す。 | [表示](chapters/03/assets/revision-ill-service-call-chain.png) |
-| ModelとHttpSessionではデータを渡す範囲が違う | 04・143p | 既存p143-f08は完成画面とModelコードの例。既存追加図session-separationはセッションIDと利用者ごとの分離。新図はリクエストをまたぐ保存期間だけを対比する。 | [表示](chapters/04/assets/revision-ill-model-session-lifetime.png) |
+| 一度使う段ボールと自分専用のロッカー | 04・143p | 引っ越しの段ボールと自分専用のロッカーを対比し、Modelとセッションでデータを使える期間を示す。 | [表示](chapters/04/assets/revision-ill-model-session-lifetime.png) |
+| フォームが参照するUserFormと入力項目 | 04・152p | th:objectで選ぶオブジェクトと、th:fieldが参照する各プロパティを対応付ける。 | [表示](chapters/04/assets/revision-ill-form-object-binding.png) |
 | 入力値と入力エラーを同じ画面へ戻す | 04・153p | 既存validation-branchは成功/失敗の分岐だけ。新図はエラーで戻った画面に値とメッセージが再表示される理由を説明する。 | [表示](chapters/04/assets/revision-ill-form-error-roundtrip.png) |
-| null・空文字・空白だけの文字列は同じではない | 04・157p | p157-f18は多数のアノテーション一覧表。新図は特に誤りやすい3種類の空の状態を具体的な容器で比較する。 | [表示](chapters/04/assets/revision-ill-null-blank-constraints.png) |
 | タグに見える入力を文字として表示する | 05・169p | p167-f02はth:textの構文とXSSへの短い言及。新図はエスケープが文字列の見え方をどう変えるかに限定する。 | [表示](chapters/05/assets/revision-ill-text-escape.png) |
 | リンクのURLに含めたIDを引数へ取り出す | 05・174p | 既存p173-f07/p174-f08は実ブラウザーとコード。新図はURL末尾の値がJava引数へ対応する1対1の関係を抽出する。 | [表示](chapters/05/assets/revision-ill-dynamic-url-id.png) |
 | プロジェクト内の保存場所とブラウザー用URLを区別する | 05・179p | p178-f11はEclipseフォルダー画面。新図は保存場所と公開URLの対応、staticをURLに付けない理由を視覚化する。 | [表示](chapters/05/assets/revision-ill-static-public-path.png) |

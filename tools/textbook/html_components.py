@@ -264,7 +264,7 @@ def meaning_span(text, style_id, layout):
     emphasized = 'strong' in effects or bool(style and (
         style.get('stroke', 0) or style.get('flags', 0)&16 or 'Bold' in style['font']))
     family = 'MS PGothic' if emphasized else 'MS PMincho'
-    declarations = [f'font-family:"{family}"', f'font-weight:{700 if emphasized else 400}']
+    declarations = [f'font-family:"{family}"', 'font-weight:400']
     if style:
         name = style['font']
         declarations += [f'font-size:{style["size"]}pt', f'color:{style["color"]}']
@@ -499,7 +499,7 @@ def _render(specs, chapter):
 
 
 def finish_prose_emphasis(doc, html):
-    """Edgeが印刷時に落とす解説の擬似太字を、単一の文字描画で仕上げる。"""
+    """解説の字送りを保ち、PDFのPゴシックに輪郭線で太さを加える。"""
     sizes = {float(value) for value in re.findall(
         r'class="source-style prose-emphasis" style="[^\"]*font-size:([\d.]+)pt', html)}
     if not sizes:

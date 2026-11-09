@@ -6,7 +6,7 @@ import unittest
 import typst
 
 from build import ROOT, compile_pdf, flow_layout, read_markdown, style_header
-from test_illustrations import MODEL_EDITION, TABLE_EDITION, base_chapter, edition_json
+from test_illustrations import MODEL_EDITION, SERVICE_APPROVED_EDITION, TABLE_EDITION, base_chapter, edition_json
 
 REVIEW = ROOT/'output/verification/table-v6-2026'
 PRIOR_EDITION = '851c18e02f1d9144c99fb22948791f84a3adf34e'
@@ -91,10 +91,10 @@ class MinorSpacingTests(unittest.TestCase):
                 continue
             relative='output/pdf/textbook/chapter-'+name+'/checks.json'
             previous=edition_json(relative,PRIOR_EDITION)
-            current=read(ROOT/relative)
+            current=edition_json(relative,SERVICE_APPROVED_EDITION)
             source='docs/textbook/chapters/'+name+'/source.json'
             prior=edition_json(source,PRIOR_EDITION)
-            current_config=read(ROOT/source)
+            current_config=edition_json(source,SERVICE_APPROVED_EDITION)
             key='minor_heading_extra_space'
             before=dict.fromkeys(prior.get('typography',{}).get(key,[]),18)
             after=current_config.get('typography',{}).get(key,[])

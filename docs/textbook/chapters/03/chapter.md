@@ -983,7 +983,7 @@ ProductRepository prodRepo;
 
 ::: {#revision-di-caption .paragraph}
 
-上段では、BクラスがnewでAのインスタンスを生成します。下段では、ControllerがDIコンテナに自動登録されたリポジトリBeanを受け取ります。テレビが替わっても同じリモコンで操作するように、同じインターフェースなら呼び出し方を保ったまま実装を差し替えられます。
+上段では、BクラスがnewでAのインスタンスを生成します。下段では、ControllerがDIコンテナに自動登録されたリポジトリBeanを受け取ります。
 
 :::
 

@@ -460,7 +460,7 @@ public interface UserRepository extends JpaRepository<User, Integer>{
 
 :::
 
-::: {#p141-b04 .paragraph}
+::: {#p141-b04 .paragraph keep-lines="true"}
 
 [社員番号：123456]{.s020}\
 [パスワード：pass1234]{.s020}
@@ -586,11 +586,11 @@ userForm.getPassword());
 
 :::
 
-![ModelとHttpSessionではデータを渡す範囲が違う](assets/revision-ill-model-session-lifetime.png){#illustration-expansion-2026-model-session-lifetime}
+![一度使う段ボールと自分専用のロッカー](assets/revision-ill-model-session-lifetime.png){#illustration-expansion-2026-model-session-lifetime}
 
 ::: {#illustration-expansion-2026-model-session-lifetime-caption .paragraph}
 
-通常のModelはその画面表示へ、HttpSessionは同じセッションの後続リクエストへデータを渡します。
+荷ほどきを終えた段ボールは回収に出します。通常のModelも、画面の表示に使ったデータを次のリクエストに引き継ぎません。セッションは自分専用のロッカーのように、有効な間は別の画面でも中身を取り出せます。
 
 :::
 
@@ -788,7 +788,7 @@ userForm.getPassword());
 
 :::
 
-::: {#p146-b04 .paragraph}
+::: {#p146-b04 .paragraph keep-lines="true"}
 
 [社員番号：123456]{.s020}\
 [パスワード：pass1234]{.s020}
@@ -849,18 +849,18 @@ userForm.getPassword());
 @SessionAttributes("userData")
 public class LoginController {
     private final UserRepository userRepo;
-              //省略
+    //省略
     @PostMapping("/login3")
     public String loginNormal(UserForm userForm, Model model) {
-          User user = userRepo.findByEmpIdAndPassword(userForm.getEmpId(),
-userForm.getPassword());
-           System.out.println(user);
-           if (user == null) {
-                   return "redirect:/3";
-           }
-           model.addAttribute("userData", user);
-           return "main_page_session";
-  }
+        User user = userRepo.findByEmpIdAndPassword(
+            userForm.getEmpId(), userForm.getPassword());
+        System.out.println(user);
+        if (user == null) {
+            return "redirect:/3";
+        }
+        model.addAttribute("userData", user);
+        return "main_page_session";
+    }
 ```
 
 :::
@@ -980,8 +980,8 @@ public String validate() {
 
 ```xml
 <dependency>
-               <groupId>org.springframework.boot</groupId>
-               <artifactId>spring-boot-starter-validation</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
 </dependency>
 ```
 
@@ -1023,14 +1023,14 @@ public String validate() {
  8:@Data
  9:public class UserForm {
 10:
-11: @NotNull(message = "社員番号を入力してください")
+11:    @NotNull(message = "社員番号を入力してください")
 12:    private Integer empId;
 13:
-14: @NotBlank(message = "パスワードを入力してください")
-15: @Size(max = 15, message = "15 文字以内で入力してください")
+14:    @NotBlank(message = "パスワードを入力してください")
+15:    @Size(max = 15, message = "15 文字以内で入力してください")
 16:    private String password;
 17:
-18: private String empName;
+18:    private String empName;
 19:}
 ```
 
@@ -1093,9 +1093,9 @@ public String validate() {
 
 ```java
 @GetMapping("/4")
-        public String showLoginView4(UserForm userForm) {
-               return "validation_login_input";
-        }
+public String showLoginView4(UserForm userForm) {
+    return "validation_login_input";
+}
 ```
 
 :::
@@ -1125,13 +1125,13 @@ public String validate() {
 ```java
 1://省略
 2:@PostMapping("/login4")
-3:public String loginValidation(@Valid UserForm userForm, BindingResult
-bdResult) {
+3:public String loginValidation(@Valid UserForm userForm,
+        BindingResult bdResult) {
 
-4: if (bdResult.hasErrors()) {
-5: return "validation_login_input";
-6:   }
-7: return "main_page";
+4:    if (bdResult.hasErrors()) {
+5:        return "validation_login_input";
+6:    }
+7:    return "main_page";
 8:}
 ```
 
@@ -1227,25 +1227,27 @@ bdResult) {
 
 ::: {#p152-b07 .paragraph}
 
-[th:object 属性は、]{.s009}[「選択対象オブジェクト」]{.s010}[と呼ばれ、フォームのデータをController のオブ]{.s009}\
-[ジェクト（この場合は UserForm オブジェクト）にバインド（結びつけ）するために使用されま]{.s009}\
-[す。]{.s009}
+[`th:object="${userForm}"` で、フォームが参照する UserForm オブジェクトを選びます。]{.s009}
 
 :::
 
 ::: {#p152-b08 .paragraph}
 
-[formタグに記述することで、フォームの入力フィールドの値が、UserForm オブジェクトの対応]{.s010}\
-[するプロパティに自動的に格納されます。]{.s010}\
-[つまり、Controller のメソッド内でModel にデータを格納しなくても、Form タグの中で、]{.s010}\
-[Thymeleaf 上でデータを受け取れるということです。]{.s010}
+[この例では、Controller の引数 UserForm userForm を Spring MVC が userForm の名前でモデルに用意します。フォーム送信時には、入力値が対応するプロパティに格納されます。]{.s009}
 
 :::
 
 ::: {#p152-b09 .paragraph}
 
-[フォーム内では、]{.s009}[\*\{...\}]{.s010}[という選択式を使用して、userForm オブジェクトのプロパティに簡潔にア]{.s009}\
-[クセスできます。]{.s009}[userForm.empId ではなく、\*\{empId\}だけでアクセスできるように]{.s010}[なります。]{.s009}
+[`th:field="*{empId}"` のような選択式は、選んだオブジェクトの中を参照します。フォーム内の `*{empId}` は、userForm の empId を指します。]{.s009}
+
+:::
+
+![フォームが参照するUserFormと入力項目](assets/revision-ill-form-object-binding.png){#illustration-2026-form-object-binding}
+
+::: {#illustration-2026-form-object-binding-caption .paragraph}
+
+th:objectでuserFormを選ぶと、フォーム内の選択式はそのオブジェクトの項目を参照します。
 
 :::
 
@@ -1407,23 +1409,26 @@ bdResult) {
 ::: {#p155-b08 .code}
 
 ```xml
-<body>
-<h1>ログイン画面</h1>
-
-<form th:action="@{/login5}" method="post" th:object="${userForm}">
-
-<p th:if="${loginError}" th:text="${loginError}"></p> <!--5.1.2 参考-->
-
-<p>社員番号 ：<input type = "text" th:field="*{empId}"/>
-                       <span th:errors="*{empId}"></span></p>
-
-<p>パスワード：<input type="password" th:field="*{password}" />
-                       <span th:errors="*{password}"></span></p>
-
-<input type="submit" value="ログイン">
-
-</form>
-</body>
+ 1:<body>
+ 2:    <h1>ログイン画面</h1>
+ 3:
+ 4:    <form th:action="@{/login5}" method="post"
+        th:object="${userForm}">
+ 5:
+ 6:        <p th:if="${loginError}" th:text="${loginError}"></p>
+        <!--5.1.2 参考-->
+ 7:
+ 8:        <p>社員番号 ：<input type = "text" th:field="*{empId}"/>
+ 9:            <span th:errors="*{empId}"></span></p>
+10:
+11:        <p>パスワード：<input type="password"
+                th:field="*{password}" />
+12:            <span th:errors="*{password}"></span></p>
+13:
+14:        <input type="submit" value="ログイン">
+15:
+16:    </form>
+17:</body>
 ```
 
 :::
@@ -1443,29 +1448,29 @@ bdResult) {
 ```java
 @GetMapping("/5")
 public String showLoginView5(UserForm userForm) {
-        return "login_input_final";
+    return "login_input_final";
 }
 
 @PostMapping("/login5")
-public String loginFinal(@Valid UserForm userForm, BindingResult bdResult,
-HttpSession session, Model model) {
-        //入力エラーチェック
-        if (bdResult.hasErrors()) {
-                 return "login_input_final";
-        }
+public String loginFinal(@Valid UserForm userForm,
+    BindingResult bdResult, HttpSession session, Model model) {
+    //入力エラーチェック
+    if (bdResult.hasErrors()) {
+        return "login_input_final";
+    }
 
-        User user = userRepo.findByEmpIdAndPassword(userForm.getEmpId(),
-userForm.getPassword());
-        //DB 照会後のID&パスワードのチェック
-        if (user == null) {
+    User user = userRepo.findByEmpIdAndPassword(
+        userForm.getEmpId(), userForm.getPassword());
+    //DB 照会後のID&パスワードのチェック
+    if (user == null) {
         model.addAttribute("loginError", "社員番号またはパスワードが誤っています。"); // エラーメッセージを追加
         return "login_input_final";
     }
 
-        //正しい入力の場合、ユーザ情報をセッションに格納
-        session.setAttribute("userData", user);
+    //正しい入力の場合、ユーザ情報をセッションに格納
+    session.setAttribute("userData", user);
 
-        return "main_page_session";
+    return "main_page_session";
 }
 ```
 :::
@@ -1480,10 +1485,10 @@ userForm.getPassword());
 
 ```xml
 <body>
-<p th:text="${session.userData.empName}" style="margin-left:90%"></p>
-<hr>
-<h1>メイン画面</h1>
-<p>ログインに成功しました。</p>
+    <p th:text="${session.userData.empName}" style="margin-left:90%"></p>
+    <hr>
+    <h1>メイン画面</h1>
+    <p>ログインに成功しました。</p>
 </body>
 ```
 
@@ -1520,14 +1525,6 @@ userForm.getPassword());
 
 [@NotNull については、String 型に適用できないわけではありませんが、@NotBlank の方が]{.s009}\
 [空文字や空白のケアができるのでより適切です。]{.s009}
-
-:::
-
-![null・空文字・空白だけの文字列は同じではない](assets/revision-ill-null-blank-constraints.png){#illustration-expansion-2026-null-blank-constraints}
-
-::: {#illustration-expansion-2026-null-blank-constraints-caption .paragraph}
-
-Stringでは、@NotNullはnullを、@NotBlankはnull・空文字・空白だけの値を入力エラーにします。
 
 :::
 
@@ -1679,13 +1676,13 @@ typeMismatch.java.util.Date=正しい日付を入力してください
 
 ::: {#revision-messages-purpose .paragraph reference-group="messages"}
 
-[見出しやボタン名をキーで集約すると、表記を統一でき、修正も一か所で済みます。]{.s009}
+[見出しやボタン名をキーで管理すると、同じキーを参照する画面の表記をまとめて変更できます。]{.s009}
 
 :::
 
 ::: {#revision-messages-files .paragraph reference-group="messages"}
 
-[次のファイルを src/main/resources へ UTF-8 で保存します。Spring Boot 4.0.2 の読み込みも既定で UTF-8 です。]{.s009}
+[`src/main/resources` の `messages.properties` に、「キー=表示する文言」の形で記入します。]{.s009}
 
 :::
 
@@ -1694,6 +1691,20 @@ typeMismatch.java.util.Date=正しい日付を入力してください
 ```properties
 screen.login=ログイン
 button.save=保存
+```
+
+:::
+
+::: {#revision-messages-thymeleaf .paragraph reference-group="messages"}
+
+[`th:text="#{screen.login}"` の `screen.login` を、プロパティファイルの = の左側と一致させます。= の右側の「ログイン」がボタンに表示されます。]{.s009}
+
+:::
+
+::: {#revision-messages-html .code reference-group="messages" filename="message.html"}
+
+```html
+<button type="submit" th:text="#{screen.login}">ログイン</button>
 ```
 
 :::
@@ -1716,53 +1727,15 @@ button.save=Save
 
 :::
 
-::: {#revision-messages-fallback .paragraph reference-group="messages"}
-
-[標準の messages.properties は、自動設定にも必要です。]{.s009}
-
-:::
-
-::: {#revision-messages-settings .paragraph reference-group="messages"}
-
-[日本語は ja（jp ではありません）、英語は en です。]{.s009}
-
-:::
-
-::: {#revision-messages-settings-note .paragraph reference-group="messages"}
-
-[韓国語は messages_ko.properties（ko）へ、同じキーを定義します。]{.s009}
-
-:::
-
-::: {#revision-messages-thymeleaf .paragraph reference-group="messages"}
-
-[Thymeleaf では、同じキーを \#{キー} で参照します。]{.s009}
-
-:::
-
-::: {#revision-messages-html .code reference-group="messages" filename="message.html"}
-
-```html
-<button type="submit" th:text="#{screen.login}">ログイン</button>
-```
-
-:::
-
-::: {#revision-messages-java .paragraph reference-group="messages"}
-
-[Java では、DI した MessageSource の getMessage(キー, null, locale) で取得します。null は、文言へ埋め込む値がない場合です。]{.s009}
-
-:::
-
-::: {#revision-messages-controller .paragraph reference-group="messages"}
-
-[Locale は言語や地域の情報です。言語別にないキーは、標準ファイルから取得します。]{.s009}
-
-:::
-
 ::: {#revision-messages-locale .paragraph reference-group="messages"}
 
-[標準では、ブラウザーの Accept-Language に従って切り替わります。未対応言語でサーバーの言語へ戻さない場合は、application.properties に spring.messages.fallback-to-system-locale=false を指定します。]{.s009}
+[標準設定では、ブラウザーの優先言語に応じて Spring が参照先を選びます。たとえば英語では `messages_en.properties` の「Log in」が表示されます。日本語用は `messages_ja.properties`、韓国語用は `messages_ko.properties` に同じキーを記入します。]{.s009}
+
+:::
+
+::: {#revision-messages-fallback .paragraph reference-group="messages"}
+
+[言語別のファイルを用意する場合も、標準の `messages.properties` を用意します。]{.s009}
 
 :::
 

@@ -93,8 +93,8 @@ class SourceLayoutTests(unittest.TestCase):
                 chapter['current_figures'].keys() - chapter['original_figures'].keys())
             for ident in chapter['current'].keys() - chapter['original'].keys():
                 added.add((name, ident))
-        messages = ('title', 'purpose', 'files', 'bundles', 'ja', 'en', 'fallback', 'settings',
-                    'settings-note', 'thymeleaf', 'html', 'java', 'controller', 'locale')
+        messages = ('title', 'purpose', 'files', 'bundles', 'ja', 'en', 'fallback',
+                    'thymeleaf', 'html', 'locale')
         errors = ('title', 'console', 'name', 'trace-intro', 'trace', 'trace-read', 'template', 'sql', 'status')
         expected = {('03', 'migration-03-jpa-pom'), ('03', 'revision-di-caption'),
                     ('02','revision-login3-instruction'), ('02','revision-model-moving-pack'),

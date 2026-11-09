@@ -328,7 +328,7 @@
       "caption_id": "illustration-2026-validation-branch-caption"
     },
     "illustration-expansion-2026-model-session-lifetime": {
-      "width": 280,
+      "width": 260,
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-model-session-lifetime-caption"
     },
@@ -337,10 +337,10 @@
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-form-error-roundtrip-caption"
     },
-    "illustration-expansion-2026-null-blank-constraints": {
-      "width": 280,
+    "illustration-2026-form-object-binding": {
+      "width": 248,
       "max_height": 140,
-      "caption_id": "illustration-expansion-2026-null-blank-constraints-caption"
+      "caption_id": "illustration-2026-form-object-binding-caption"
     }
   },
   "pagination": {
@@ -355,7 +355,10 @@
       "153": "continued-prose"
     },
     "paragraph_continuations": [],
-    "figure_scales": {}
+    "figure_scales": {},
+    "omit_blank_pages": [
+      158
+    ]
   },
   "typography": {
     "minor_heading_extra_space": {

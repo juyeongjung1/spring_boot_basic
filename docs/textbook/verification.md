@@ -71,3 +71,14 @@
 未実装の抽象メソッドに関する説明はJava SE 21の言語仕様、ひな形の作成手順はEclipse JDTの公式資料とPleiades 2025-12の翻訳辞書に照合しました。[Java SE 21言語仕様](https://docs.oracle.com/javase/specs/jls/se21/html/jls-8.html#jls-8.1.1.1)・[Eclipse JDT公式資料](https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/tips/jdt_tips.html)
 
 本文は347ページです。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
+
+
+## セッションとフォームの改訂
+
+指定ページはサービス節の追記前の版と照合しました。92ページのDI図の説明を短くし、164ページを含むコード解説28部品はPゴシックの通常の字送りで組み、PDFの輪郭線で太さを出しました。164ページのUserエンティティの説明は1行に収まっています。
+
+172ページの段ボールと専用ロッカーの図は、通常のModelとセッションでデータを使える期間を対比します。169・175ページは社員番号とパスワードを別の行にし、指定6ページに対応するコード8枠の字下げを整えました。183ページでは、`th:object` で選んだUserFormと、`th:field` の選択式が指す項目を図で対応させました。[Thymeleafのフォーム処理](https://www.thymeleaf.org/doc/tutorials/3.1/thymeleafspring.html#handling-the-command-object)
+
+旧185ページの挿絵を削除して、その次の本文を189ページへ詰めました。旧187ページに当たる原本の白紙は自動組版で省略しました。193ページの参考欄は、`#{screen.login}` と `messages.properties` の左辺を照合し、右辺の文言を表示する例を先に置いています。言語の選択はブラウザーの優先言語に基づく例に整理しました。[Thymeleafのメッセージ式](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#a-multi-language-welcome)・[Spring Bootの国際化](https://docs.spring.io/spring-boot/4.0/reference/features/internationalization.html)
+
+本文は345ページです。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)

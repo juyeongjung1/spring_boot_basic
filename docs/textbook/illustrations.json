@@ -742,22 +742,20 @@
       "source_page": 143,
       "after_id": "p143-b05",
       "before_id": "p143-b06",
-      "title": "ModelとHttpSessionではデータを渡す範囲が違う",
-      "caption": "通常のModelはその画面表示へ、HttpSessionは同じセッションの後続リクエストへデータを渡します。",
+      "title": "一度使う段ボールと自分専用のロッカー",
+      "caption": "荷ほどきを終えた段ボールは回収に出します。通常のModelも、画面の表示に使ったデータを次のリクエストに引き継ぎません。セッションは自分専用のロッカーのように、有効な間は別の画面でも中身を取り出せます。",
       "figure_id": "illustration-expansion-2026-model-session-lifetime",
       "caption_id": "illustration-expansion-2026-model-session-lifetime-caption",
       "asset": "assets/revision-ill-model-session-lifetime.png",
-      "width": 280,
+      "width": 260,
       "max_height": 140,
       "priority": 1,
       "recommended": true,
       "visual": "横長の2段対比。上段はログイン応答のModelのトレーにユーザカードがあり、次のリクエストのModelは空のトレー。下段は同じブラウザーの2つの画面から、中央のHttpSessionの同じロッカーに入ったユーザカードを参照する。横向きの時間の流れを合わせる。",
       "labels": [
         "Model",
-        "HttpSession",
-        "今回",
-        "次回",
-        "userData"
+        "お皿",
+        "HttpSession"
       ],
       "constraints": [
         "通常のModelとセッション属性を区別する。@SessionAttributesで昇格させる例外はこの図の対象外。",
@@ -777,13 +775,45 @@
         "after_text": "このコードは、ユーザが入力した従業員ID（empId）とパスワードが正しい場合、ユーザ情報\nをModel オブジェクトに格納しているコードです。Model はビューへデータを送るために使用さ\nれますが、さらに画面が変わるとそのデータは保持されません。つまり、ユーザが別の画面\nに移動すると、先ほどのユーザデータは失われてしまいます。",
         "before_text": "Model については、3 章の「findAll メソッドでの全件検索」を参照してください。"
       },
-      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-615fe25c-16e9-4646-98cd-d9b68a30a00a.png",
-      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on pure white. Clean flat editorial drawing with crisp navy outlines, pale blue and teal, restrained orange highlights. Sparse large labels readable at 100 mm print width, maximum print height 49 mm. No title, invented headings, gloss, watermark, decorative prose or logos. Only the exact specified labels. Two parallel horizontal rows compare lifetimes across two consecutive requests of the SAME browser session. Use small column labels exactly \"今回\" on left and \"次回\" on right. UPPER ROW labeled exactly \"Model\": left tray holds a data card exactly \"userData\", right tray is visibly EMPTY; a subtle dashed boundary separates requests, no data-copy arrow across the boundary. LOWER ROW labeled exactly \"HttpSession\": one continuous server-side locker extends beneath both columns and keeps one clear data card exactly \"userData\"; both request positions can refer to this SAME locker, showing it persists. Do not put the data inside a browser, no separate users, no claim every Model is automatically retained. Contrast temporary tray and persistent locker with large uncluttered icons. No extra labels.",
-      "asset_sha256": "2cb2839a1c29509203ffc5e670e0facfefd80ac603b52a94bdaa0ce409264d9c",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-3c0c2304-0b94-4be6-8a88-bc8c10cf2ba7.png",
+      "prompt": "Scientific educational illustration for a Japanese programming textbook. One compact wide landscape 2.6:1 illustration, two adjacent panels with clean white space, 2026 adult teaching editorial line art. Navy outlines, warm brown corrugated cardboard, teal and orange accents. LEFT panel labeled exactly \"Model\": a blue-shirted young adult has unpacked white plates from a brown moving box marked \"お皿\"; show the now-empty, clearly opened cardboard box placed beside a small clean cardboard collection area, with a short rightward arrow between unpacking and the empty box. The box carries the belongings to one destination, then its role is finished. RIGHT panel labeled exactly \"HttpSession\": the same blue-shirted person uses a key on one teal personal locker, with the same familiar book and/or plates visible on a shelf through the open door; neighboring locker doors remain closed. A small calendar or clock icon next to the personal locker signals that it remains available for its valid period. The visual comparison is one-use moving box versus own locker usable across visits. The stage has no literal software interface, no code and no browser screenshots. Exact labels only \"Model\", \"お皿\", \"HttpSession\". Strong silhouettes and enough negative space, simple large shapes legible at 90–100 mm wide in print. White background, calm expression, no title, no figure number, no extra text, no recycling slogans, no gloss.",
+      "asset_sha256": "52361fd8b12d3f9c9fd89a1fa108e880829f839508b3e65c28cc16e89dedbb2a",
       "image_pixels": [
-        1942,
-        809
-      ]
+        2022,
+        778
+      ],
+      "purpose": "引っ越しの段ボールと自分専用のロッカーを対比し、Modelとセッションでデータを使える期間を示す。",
+      "composition": "左は荷ほどき後の空箱を回収に出す場面、右は利用期間中に自分の鍵でロッカーを開ける場面。"
+    },
+    {
+      "id": "form-object-binding",
+      "chapter": "04",
+      "source_page": 152,
+      "after_id": "p152-b09",
+      "before_id": "p153-b01",
+      "title": "フォームが参照するUserFormと入力項目",
+      "caption": "th:objectでuserFormを選ぶと、フォーム内の選択式はそのオブジェクトの項目を参照します。",
+      "purpose": "th:objectで選ぶオブジェクトと、th:fieldが参照する各プロパティを対応付ける。",
+      "labels": [
+        "UserForm",
+        "userForm",
+        "社員番号",
+        "パスワード",
+        "*{empId}",
+        "*{password}"
+      ],
+      "width": 248,
+      "max_height": 140,
+      "figure_id": "illustration-2026-form-object-binding",
+      "caption_id": "illustration-2026-form-object-binding-caption",
+      "asset": "assets/revision-ill-form-object-binding.png",
+      "image_pixels": [
+        2021,
+        778
+      ],
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-153061b4-3eed-4ca5-b75d-b9136d3c38ca.png",
+      "prompt": "Scientific educational clean diagram for a Japanese Spring and Thymeleaf textbook. Compact white wide landscape around 2.6:1, navy outlines with subdued teal and amber, no gloss. TWO simple wide columns with aligned rows. LEFT is one small login form panel, top header exactly '<form th:object=\"${userForm}\">' in large clear monospace. Below are two separate field rows, each with its short Japanese label and exact binding expression in legible large text: \"社員番号\" next to \"*{empId}\", \"パスワード\" next to \"*{password}\". RIGHT is one object card whose top label is exactly \"UserForm\" then small short model name exactly \"userForm\", with two rows underneath named exactly \"empId\" and \"password\". A thin teal grouping connector from the left header points to the right header to show th:object chooses userForm. Two short horizontal connectors link the matching rows without crossing: *{empId} to empId and *{password} to password. Optional very small icons only if they help readability. Capitalization and punctuation exact: the dollar selection is ${userForm}; the two field expressions start with asterisk, with single braces. No explanatory prose, fake labels or figure number. Typography, connectors and meaning must remain legible at 100 mm width. Keep all labels in white or pale colored panels and surrounded by ample margins.",
+      "asset_sha256": "e04cea043db1446f321564b1f97ee887c4254f57838ba2e0185949d771136692"
     },
     {
       "id": "form-error-roundtrip",
@@ -832,58 +862,6 @@
       "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-a137cf61-2912-4743-a2e5-406404918d79.png",
       "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration. Landscape 2.4:1, white background, clean editorial icon drawing, navy outlines, soft blue/teal and orange accents. Large minimal text readable at 100 mm wide and 49 mm high. No title banner, glossy elements, logos, watermark, invented text or prose. Preserve exact technical spelling, numbers, brackets and slashes. Show redisplaying submitted values together with validation errors in ONE failed form response. Left, a form sheet labeled exactly \"入力\" shows a non-secret employee number field exactly \"社員番号 123\", and a separate blank password field. Middle, two separate server-side data cards labeled exactly \"UserForm\" and \"BindingResult\"; UserForm has value \"123\", BindingResult has an orange error symbol. Right, the returned form sheet labeled exactly \"再表示\" STILL shows exactly \"社員番号 123\", a blank password field and a red message labeled exactly \"入力エラー\". Arrows lead from input to server data, then from BOTH cards to the redisplayed form. Do not show any password value, no persistent session locker, no new user registration, no data loss of employee number.",
       "asset_sha256": "01e287137a6ea41f26b7d4cf72a1472c047492a5f10b97a31af8feca033cb01a",
-      "image_pixels": [
-        1942,
-        809
-      ]
-    },
-    {
-      "id": "null-blank-constraints",
-      "chapter": "04",
-      "source_page": 157,
-      "after_id": "p157-b04",
-      "before_id": "p157-b05",
-      "title": "null・空文字・空白だけの文字列は同じではない",
-      "caption": "Stringでは、@NotNullはnullを、@NotBlankはnull・空文字・空白だけの値を入力エラーにします。",
-      "figure_id": "illustration-expansion-2026-null-blank-constraints",
-      "caption_id": "illustration-expansion-2026-null-blank-constraints-caption",
-      "asset": "assets/revision-ill-null-blank-constraints.png",
-      "width": 280,
-      "max_height": 140,
-      "priority": 1,
-      "recommended": true,
-      "visual": "2行×4列の小型比較イラスト。列はnull（容器なし）、空文字（空の文字カード）、空白だけ（空白を枠で可視化したカード）、ABC（文字入りカード）。上段@NotNullはnullだけ赤い×、他3列は青緑のチェック。下段@NotBlankは初めの3列が×、ABCのみチェック。",
-      "labels": [
-        "null",
-        "空文字",
-        "空白だけ",
-        "ABC",
-        "@NotNull",
-        "@NotBlank"
-      ],
-      "constraints": [
-        "比較対象はString。Integerに@NotBlankを使用できるようには描かない。",
-        "空文字とnullを同じ物にしない。空白だけはASCIIスペース3個の想定。",
-        "チェック/×は平面の普通の線画記号。光沢や絵文字表現にしない。"
-      ],
-      "difference": "p157-f18は多数のアノテーション一覧表。新図は特に誤りやすい3種類の空の状態を具体的な容器で比較する。",
-      "technical_sources": [
-        "https://jakarta.ee/specifications/bean-validation/3.0/jakarta-bean-validation-spec-3.0.html"
-      ],
-      "placement_checks": {
-        "same_source_page": true,
-        "adjacent_entries": true,
-        "not_inside_explanation_component": true,
-        "after_kind": "paragraph",
-        "before_kind": "paragraph"
-      },
-      "source_context": {
-        "after_text": "@NotNull については、String 型に適用できないわけではありませんが、@NotBlank の方が\n空文字や空白のケアができるのでより適切です。",
-        "before_text": "複雑な入力条件は、@Pattern アノテーションで「正規表現」を使うことで、細かく設定できま\nすので、参考にしてください。"
-      },
-      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-f5b1a7fd-ea47-43d0-a875-ebb366657698.png",
-      "prompt": "Use case: scientific-educational. One compact Japanese textbook illustration. Landscape 2.4:1, white background, clean editorial icon drawing, navy outlines, soft blue/teal and orange accents. Large minimal text readable at 100 mm wide and 49 mm high. No title banner, glossy elements, logos, watermark, invented text or prose. Preserve exact technical spelling, numbers, brackets and slashes. An accurate sparse comparison grid, TWO annotation rows and FOUR input-value columns. Column headers exactly \"null\", \"空文字\", \"空白だけ\", \"ABC\". Use a missing-container outline icon for null, a visibly empty card for empty string, a card with three outlined space positions for whitespace-only, and a card containing ABC for valid text. Row labels exactly \"@NotNull\" and \"@NotBlank\". In @NotNull row the four marks MUST be X, check, check, check from left to right. In @NotBlank row marks MUST be X, X, X, check. Simple flat green checks and orange X marks, no emoji, no shine. Applies to String, not numbers. Do not add other constraints or prose; the distinction between null and empty/whitespace is the point. All eight marks must align clearly with their row and column.",
-      "asset_sha256": "4ea1d32d308f32c06e232cd8bad724722a8263bb96f48e553daed9ded7247402",
       "image_pixels": [
         1942,
         809
@@ -1556,7 +1534,7 @@
         "Controller"
       ],
       "title": "登録済みのリポジトリをリモコンとして受け取る",
-      "caption": "上段では、BクラスがnewでAのインスタンスを生成します。下段では、ControllerがDIコンテナに自動登録されたリポジトリBeanを受け取ります。テレビが替わっても同じリモコンで操作するように、同じインターフェースなら呼び出し方を保ったまま実装を差し替えられます。",
+      "caption": "上段では、BクラスがnewでAのインスタンスを生成します。下段では、ControllerがDIコンテナに自動登録されたリポジトリBeanを受け取ります。",
       "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-669d8bd9-770d-42a1-b5d2-e60ed8aaf6a7.png",
       "prompt": "Use case scientific-educational. Generate a fresh clean landscape illustration about Spring dependency injection for adult Japanese programming beginners, with two stacked horizontal strips in one compact 2.2:1 figure. Pure white page, dark navy ink, jade blue and modest amber accents, print-friendly vector-like editorial line art. TOP strip, occupying around 1/3 of height: two simple object cards \"Bクラス\" and \"Aクラス\". In the B card show exactly \"A a = new A();\" in large monospaced print, with a simple amber arrow pointing from B to A. The intent is B explicitly creates its own A. BOTTOM strip, occupying the other 2/3: left, a small organized shelf or open container with a preassembled navy/jade TV remote inside, tagged \"Bean\", and a clear large shelf label \"DIコンテナ\". Middle, a blue-shirted developer labeled \"Controller\" receives the ready-made remote from the shelf through a clear rightward handoff arrow, then uses its recognizable buttons. Right, wireless signal arcs from the same remote to a simple TV body; a second faint TV body behind it with a different internal gear suggests changing the implementation while keeping the same remote controls. The handoff from container to Controller must be evident: one remote ready in the container, one same-shaped remote in the person's hand, no creation step by the Controller. Use ample white space, essential large labels, no prose, no figure number, no extra text or words, no confusing arrow crossing or direct wired Controller-to-TV connection. Render \"Bクラス\", \"Aクラス\", \"A a = new A();\", \"DIコンテナ\", \"Bean\", \"Controller\" exactly and very legibly. Avoid repetitive backgrounds and glossy 3D. Visually clean enough at 260pt width in a printed textbook.",
       "asset_sha256": "3e33846a4f9e865db7418c2d1be4b47dafd7d81e0dd61908f7b120f73b8cc39f",

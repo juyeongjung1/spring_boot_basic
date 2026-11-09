@@ -35,10 +35,17 @@ class PaginationTests(unittest.TestCase):
                 expected = expected[1:]
             boundaries = [(i, int(m['id'].rsplit('-', 1)[1]), m['page']) for i, m in enumerate(marks) if m['edge'] == 'source-page']
             self.assertEqual([source for _, source, _ in boundaries], expected, folder.name)
+            omitted = set(config.get('pagination', {}).get('omit_blank_pages', []))
+            self.assertEqual({b['source_page'] for b in checks['flow']['pagination']['source_boundaries']
+                              if b['mode'] == 'omit-blank'}, omitted)
             previous_end = 1 if config.get('cover_mode', 'classic') != 'none' else 0
             for n, (start, source, page) in enumerate(boundaries):
                 stop = boundaries[n + 1][0] if n + 1 < len(boundaries) else len(marks)
                 content = marks[start + 1:stop]
+                if source in omitted:
+                    self.assertFalse(content, (folder.name, source))
+                    self.assertEqual(boundaries[n+1][2], previous_end+1, (folder.name, source))
+                    continue
                 if source in allowed:
                     self.assertGreaterEqual(page, previous_end, (folder.name, source))
                 else:
@@ -90,6 +97,23 @@ class PaginationTests(unittest.TestCase):
             self.assertEqual(len(group), 4)
             pages = {m['page'] for m in checks['flow']['block_positions'] if m['id'] in group}
             self.assertEqual(len(pages), 1, group)
+
+    def test_login_credentials_occupy_two_lines(self):
+        folder = ROOT / 'output/pdf/textbook/chapter-04'
+        checks = json.loads((folder / 'checks.json').read_text(encoding='utf-8'))
+        marks = checks['flow']['block_positions']
+        with fitz.open(folder / 'chapter-flow.pdf') as pdf:
+            for ident in ('p141-b04', 'p146-b04'):
+                with self.subTest(ident=ident):
+                    begin = next(m for m in marks if m['id']==ident and m['edge']=='start')
+                    end = next(m for m in marks if m['id']==ident and m['edge']=='end')
+                    self.assertEqual(begin['page'], end['page'])
+                    page = pdf[begin['page'] - 1]
+                    region = fitz.Rect(0, begin['y']-2, page.rect.width, end['y']+2)
+                    employee, = page.search_for('社員番号：123456', clip=region)
+                    password, = page.search_for('パスワード：pass1234', clip=region)
+                    self.assertLess(employee.y1, password.y0)
+                    self.assertAlmostEqual(employee.x0, password.x0, delta=.2)
 
     def test_section_and_subsection_page_starts_remain_protected(self):
         import re

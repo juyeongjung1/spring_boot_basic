@@ -200,9 +200,10 @@ def source_layout(folder, layout, nodes, figures, markdown):
     return "\n".join(commands)
 
 
-def typographic_parts(parts):
+def typographic_parts(parts, keep_lines=False):
     """括弧内側と段落端の手動空白だけを除き、書式の境界は保持する。"""
-    parts = [(value, style) for value, style in parts if value != '\n']
+    if not keep_lines:
+        parts = [(value, style) for value, style in parts if value != '\n']
     text = ''.join(value for value, _ in parts)
     remove = set()
     for match in re.finditer(r'(?<=[「『【（])[ \t\u3000]+|[ \t\u3000]+(?=[」』】）])|\A[ \t\u3000]+|(?<=\n\n)[ \t\u3000]+|[ \t\u3000]+\Z', text):
@@ -216,12 +217,14 @@ def typographic_parts(parts):
     return result
 
 
-def inline(parts, typography=True, heading=False):
+def inline(parts, typography=True, heading=False, keep_lines=False):
     result = []
     if typography:
-        parts = typographic_parts(parts)
+        parts = typographic_parts(parts, keep_lines=keep_lines)
     for value, style in parts:
         if value == "\n":
+            if keep_lines:
+                result.append("#linebreak()")
             continue
         if value == "\n\n":
             result.append("#parbreak()")
@@ -381,9 +384,14 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 if member in code_members and code_members[member] != owner:
                     raise ValueError('コード枠の付属要素が重複しています: ' + member)
                 code_members[member] = owner
+    omitted_blank_pages = set(config.get('pagination', {}).get('omit_blank_pages', []))
     native_page_map={}
     for page in layout['pages']:
         current_entries = next((p['entries'] for p in order if p['source_page'] == page['source_page']), [])
+        if page['source_page'] in omitted_blank_pages:
+            if page['entries'] or current_entries:
+                raise ValueError('空白でない元頁は省略できません: ' + str(page['source_page']))
+            continue
         if page['source_page'] in config.get('native_pages',[]) or (not page['entries'] and not current_entries):
             body=[f'#at(0,0,image({q("/"+(folder/page["decoration"]).relative_to(ROOT).as_posix())},width:595.32pt,height:841.92pt))']
             for ident in page['entries']:
@@ -579,7 +587,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             return f'#illustration({q(ident)}, {q(path)}, {width}, offset: {offset}pt{number})'
         node = nodes[ident]
         if node['kind'] == 'paragraph':
-            parts = typographic_parts(node['parts'])
+            keep_lines = node['attrs'].get('keep-lines') == 'true'
+            parts = typographic_parts(node['parts'], keep_lines=keep_lines)
             if parts and parts[0][0][0] in '■●•▪○・◼⚫\uf09f':
                 value, style = parts[0]
                 marker = inline([(value[0], style)])
@@ -603,6 +612,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                         body += f'#mark({q("__source-page-"+str(source_pages[following]))}, "source-page")'
                     body += f'#mark({q(following)}, "start")' + inline(nodes[following]['parts'])
                 return f'#paragraph({q(ident)}, [{body}], indent: {size}pt, end-id: {q(following)})'
+            if keep_lines:
+                return f'#paragraph({q(ident)}, [{inline(parts, keep_lines=True)}], indent: 0pt, left: {size}pt)'
             if size != 11.04:
                 return f'#paragraph({q(ident)}, [{inline(parts)}], indent: {size}pt)'
         if node['kind'] == 'step' and config['chapter'] == 'front':
@@ -686,6 +697,11 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             reference_open = True
         if ident.startswith('__source-'):
             source_page = int(ident.rsplit('-', 1)[1])
+            if source_page in omitted_blank_pages:
+                # 原本の元頁番号を記録し、白紙だけを自動組版から省く。
+                commands.append(f'#mark({q(ident)}, "source-page")')
+                i += 1
+                continue
             if source_page not in page_continuations:
                 commands.append('#pagebreak(weak: true)')
             elif page_continuations[source_page] == 'short-minor-heading':
@@ -939,10 +955,12 @@ def build(chapter="01", mode="all", markdown=None, output=None):
         report['flow']['url_links'] = url_links
         report['flow']['numbered_figures'] = {ident: dict(record) for ident, record in numbered.items()}
         continuations, paragraph_pairs, scales = pagination_options(config, layout, nodes, figures, order)
+        omitted_blank_pages = set(config.get('pagination', {}).get('omit_blank_pages', []))
         report['flow']['pagination'] = dict(
             options=config.get('pagination', {}),
             source_boundaries=[dict(source_page=int(mark['id'].rsplit('-', 1)[1]), page=mark['page'],
-                mode='continue' if int(mark['id'].rsplit('-', 1)[1]) in continuations else 'page-break',
+                mode='omit-blank' if int(mark['id'].rsplit('-', 1)[1]) in omitted_blank_pages
+                else 'continue' if int(mark['id'].rsplit('-', 1)[1]) in continuations else 'page-break',
                 reason=continuations.get(int(mark['id'].rsplit('-', 1)[1])))
                 for mark in marks if mark['edge'] == 'source-page'],
             paragraph_continuations=paragraph_pairs,

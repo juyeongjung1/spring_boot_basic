@@ -264,7 +264,10 @@ pre.source-code {
 .card td p:last-child,
 .card th p:last-child { margin-bottom: 0; }
 
-/* 解説の本文はP明朝、既存の強調はPゴシックの太字に統一する。 */
+/* プレビューの強調もPDFと同様に、字送りを保った輪郭線で表す。 */
+@media screen {
+  .prose-emphasis { -webkit-text-stroke: 0.02857em currentColor; }
+}
 .card-footer {
   padding: 7pt 10pt;
   border-top: 0.6pt solid #d7dde5;

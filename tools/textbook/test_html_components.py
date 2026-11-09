@@ -240,6 +240,12 @@ class BrowserComponentTests(unittest.TestCase):
             r for r in json.loads((components.HERE/'code_explanations.json').read_text(encoding='utf-8')) if r['anchor_id']=='p049-b05')
         cls.cards.append({'id':'form-explanation','width':426.672,
             'html':components.explanation_html(form_record,real_nodes,real_layout)})
+        entity_record = next(
+            r for r in json.loads((components.HERE / 'code_explanations.json').read_text(encoding='utf-8'))
+            if r['anchor_id'] == 'p137-b04')
+        _, _, entity_layout, entity_nodes, _, _ = chapter('04')
+        cls.cards.append({'id': 'entity-explanation', 'width': 426.672,
+            'html': components.explanation_html(entity_record, entity_nodes, entity_layout)})
         wrapped = components.code_html([{'number': 1, 'code': '// 折り返し確認', 'ids': ['wrapped-code-source']}],
             'java', [('非常に長いファイル名/授業教材/商品管理画面の入力値を確認する/MessageController.java', ['wrapped-filename-source'])])
         cls.cards.append({'id': 'wrapped-code', 'width': 240, 'html': wrapped})
@@ -321,7 +327,8 @@ class BrowserComponentTests(unittest.TestCase):
           console.log(JSON.stringify(await page.evaluate(()=>({
             filenames:[...document.querySelectorAll('.filename')].map(e=>getComputedStyle(e).fontWeight),
             originalEmphasis:[...document.querySelectorAll('.prose-emphasis')].map(e=>({
-              family:getComputedStyle(e).fontFamily,weight:getComputedStyle(e).fontWeight})),
+              family:getComputedStyle(e).fontFamily,weight:getComputedStyle(e).fontWeight,
+              stroke:parseFloat(getComputedStyle(e).webkitTextStrokeWidth)})),
             summaries:[...document.querySelectorAll('.meaning-summary')].map(e=>getComputedStyle(e).fontWeight),
             explanationWidths:[...document.querySelectorAll('.explanation-code, .explanation-paragraph')].map(e=>e.getBoundingClientRect().width)
           }))));}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1});'''
@@ -331,7 +338,7 @@ class BrowserComponentTests(unittest.TestCase):
         applied = json.loads(run.stdout)
         self.assertTrue(all(int(weight) >= 700 for weight in applied['filenames']))
         self.assertTrue(applied['originalEmphasis'])
-        self.assertTrue(all('MS PGothic' in item['family'] and int(item['weight']) >= 700
+        self.assertTrue(all('MS PGothic' in item['family'] and item['weight'] == '400' and item['stroke'] > 0
                             for item in applied['originalEmphasis']))
         self.assertEqual(applied['summaries'], [])
         self.assertTrue(all(width > 426 for width in applied['explanationWidths']))
@@ -374,6 +381,15 @@ class BrowserComponentTests(unittest.TestCase):
             self.assertEqual(pdf[0].get_text(), before['text'])
             self.assertEqual(pdf[0].get_text('words'), before['words'])
             self.assertEqual(pdf[0].get_links(), before['links'])
+
+    def test_entity_explanation_uses_natural_gothic_width_with_visible_emphasis(self):
+        phrase = 'User テーブルを利用しますので、User エンティティも新しく定義する必要があります。'
+        with fitz.open(self.results['entity-explanation'][0]['pdf']) as pdf:
+            rectangles = pdf[0].search_for(phrase)
+            self.assertEqual(len(rectangles), 1)
+            self.assertLess(rectangles[0].width, 410)
+            self.assertTrue(any(t['font'] == 'MS-PGothic' and t['type'] == 1 and t['linewidth'] > .4
+                                for t in pdf[0].get_texttrace()))
 
     def test_emphasis_finishing_keeps_link_text_and_geometry_without_duplicate_text(self):
         before = self.before_emphasis[('styled-explanation',0)]
