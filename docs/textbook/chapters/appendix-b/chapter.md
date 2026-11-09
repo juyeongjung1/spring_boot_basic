@@ -414,7 +414,7 @@ Caused by: java.sql.SQLSyntaxErrorException:
 
 ::: {#p294-b10 .paragraph}
 
-[PC¥]{.s010}[ローカル&#32;]{.s016}[ディスク]{.s016}[(C:)¥]{.s010}[ユーザ]{.s016}[¥\[]{.s010}[ユーザ名]{.s016}[\]¥.m2¥repository]{.s010}
+[PC > ローカルディスク(C:) > ユーザー > ユーザー名 > .m2 > repository]{.s016}
 
 :::
 

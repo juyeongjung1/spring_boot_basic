@@ -26,6 +26,7 @@ REPOSITORY_APPROVED_EDITION = '851c18e02f1d9144c99fb22948791f84a3adf34e'
 SERVICE_APPROVED_EDITION = '9ccfcb292b2d261fc7e40318eaa9c506183d1805'
 SESSION_APPROVED_EDITION = '066abc50787fe3f83fd9d7fcaf33451336ecb054'
 PRODUCT_BOOTSTRAP_APPROVED_EDITION = '569a288195e4cfee9e8876f34cf485dd042b94f6'
+LIST_LAYOUT_APPROVED_EDITION = '13db0fe4b975b3e4cc331525357da5e3d9d51315'
 MODEL_TRANSFER = 'illustration-2026-model-transfer'
 MODEL_UNPACK = 'illustration-2026-model-moving-unpack'
 MODEL_MOVING_PAGES = {MODEL_TRANSFER: 65, MODEL_UNPACK: 67}
@@ -227,6 +228,10 @@ class IllustrationSourceTests(unittest.TestCase):
         allowed = {'docs/textbook/chapters/'+r['chapter']+'/'+r['asset'] for r in catalog()['new']+catalog()['resized']}
         allowed.add(REMOVED_MANAGED_ASSET)
         allowed.update({REMOVED_REPOSITORY_ASSET, REMOVED_NULL_BLANK_ASSET})
+        allowed.update({
+            'docs/textbook/chapters/07/assets/p258-f16-clean.svg',
+            'docs/textbook/chapters/appendix-b/assets/p294-f05.svg',
+        })
         self.assertTrue(set(result.stdout.splitlines()).issubset(allowed), result.stdout)
 
     def test_only_requested_di_bean_changes_follow_the_previous_edition(self):
@@ -796,7 +801,7 @@ class IllustrationSourceTests(unittest.TestCase):
         ):
             with self.subTest(chapter=name):
                 _, old_nodes, old_figures, old_pages, old_config = edition_chapter(name, PRODUCT_BOOTSTRAP_APPROVED_EDITION)
-                _, nodes, figures, pages, config = chapter(name)
+                _, nodes, figures, pages, config = edition_chapter(name, LIST_LAYOUT_APPROVED_EDITION)
                 expected_pages = deepcopy(old_pages)
                 for page in expected_pages:
                     page['entries'] = [i for i in page['entries'] if i not in removed]

@@ -36,6 +36,7 @@ def figure_numbers(config, layout, nodes, figures, order):
     labels = json.loads((HERE / 'filename_labels.json').read_text(encoding='utf-8'))
     omitted = {r['figure_id'] for r in labels if r['chapter'] == chapter}
     omitted |= {ident for ch, ident in TEXT_NOTES if ch == chapter}
+    omitted.update(config.get("unnumbered_figures", []))
     attached = ({ident for geometry in code_geometries(folder, layout, nodes).values()
                  for ident in geometry.get('figure_ids', [])}
                 if any(n['kind'] == 'code' for n in nodes.values()) else set())

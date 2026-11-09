@@ -608,7 +608,6 @@ crossorigin="anonymous">
 
 ```java
 //省略
-
 @GetMapping("/7-2-1")
         public String showBootStrapSetup() {
                return "bootstrap_setup";
@@ -743,7 +742,7 @@ crossorigin="anonymous">
 
 ::: {#p250-b04 .paragraph}
 
-[●&#32;]{.s010}[Bootstrap 公式サイト]{.s032}[(https://getbootstrap.jp/)]{.s009}
+[●&#32;]{.s010}[Bootstrap 公式サイト]{.s032}[(https://getbootstrap.jp/docs/5.3)]{.s009}
 
 :::
 
@@ -768,12 +767,11 @@ crossorigin="anonymous">
 [Bootstrap では、テキストの配置を簡単に変更できます。]{.s009}\
 [⚫&#32;]{.s014}[左揃え]{.s011}[: .text-start]{.s007}\
 [⚫&#32;]{.s014}[中央揃え]{.s011}[: .text-center]{.s007}\
-[⚫&#32;]{.s014}[右揃え]{.s011}[: .text-end]{.s007}\
-[…/resources/templates/style\_sample.html]{.s015}
+[⚫&#32;]{.s014}[右揃え]{.s011}[: .text-end]{.s007}
 
 :::
 
-::: {#p251-b03 .code}
+::: {#p251-b03 .code filename="…/resources/templates/style_sample.html"}
 
 ```xml
 <h2 class="text-center">配置（Alignment）</h2>
@@ -813,7 +811,7 @@ crossorigin="anonymous">
 
 ::: {#p252-b03 .paragraph keep-lines="true"}
 
-[◼&#32;]{.s014}[テキストの色]{.s015}\
+[テキストの色]{.s015}\
 [Bootstrap]{.s007}[&#32;の色クラスは「色名」ではなく、]{.s009}[「その色がよく使われる用途」に基づいています]{.s015}[。]{.s009}
 
 :::
@@ -848,7 +846,7 @@ crossorigin="anonymous">
 
 ::: {#p253-b01 .paragraph}
 
-[◼&#32;]{.s014}[背景色]{.s015}
+[背景色]{.s015}
 
 :::
 
@@ -911,7 +909,7 @@ crossorigin="anonymous">
 
 ::: {#p254-b03 .paragraph keep-lines="true"}
 
-[◼&#32;]{.s014}[ボタンの色]{.s015}\
+[ボタンの色]{.s015}\
 [Bootstrap&#32;]{.s009}[では、]{.s009}[btn&#32;]{.s015}[クラスを基礎として、さらに色を指定するクラスを追加]{.s015}[することで、簡]{.s009}[単にさまざまな色のボタンを作成できます。]{.s009}
 
 :::
@@ -957,7 +955,7 @@ crossorigin="anonymous">
 
 ::: {#p255-b01 .paragraph keep-lines="true"}
 
-[◼&#32;]{.s014}[ボタンのサイズ]{.s015}\
+[ボタンのサイズ]{.s015}\
 [btn クラスに加えて、サイズを指定するクラスを追加することで、大きなボタンや小さなボタ]{.s009}[ンを作成できます。]{.s009}
 
 :::
@@ -982,7 +980,7 @@ crossorigin="anonymous">
 
 ::: {#p255-b04 .paragraph keep-lines="true"}
 
-[◼&#32;]{.s014}[無効化されたボタン]{.s015}\
+[無効化されたボタン]{.s015}\
 [Bootstrap では、ボタンを無効化（クリックできない状態に）するためのクラスが用意されて]{.s009}[います。条件によって、無効化・有効化を切り替えする実装の時使われます。]{.s009}
 
 :::
@@ -1069,7 +1067,7 @@ crossorigin="anonymous">
 
 ::: {#p257-b02 .paragraph keep-lines="true"}
 
-[◼&#32;]{.s014}[マージン（Margin）]{.s015}\
+[マージン（Margin）]{.s015}\
 [マージンは、要素の]{.s009}[外側の余白]{.s015}[を調整するために使用します。]{.s009}
 
 :::
@@ -1144,7 +1142,7 @@ crossorigin="anonymous">
 
 ::: {#p259-b01 .paragraph}
 
-[◼&#32;]{.s014}[パディング（Padding）]{.s015}
+[パディング（Padding）]{.s015}
 
 :::
 
@@ -1213,7 +1211,7 @@ crossorigin="anonymous">
 
 ::: {#p260-b03 .paragraph}
 
-[◼&#32;]{.s014}[高さ(Height)の調整]{.s015}
+[高さ(Height)の調整]{.s015}
 
 :::
 
@@ -1265,7 +1263,7 @@ crossorigin="anonymous">
 
 ::: {#p261-b01 .paragraph}
 
-[◼&#32;]{.s014}[横幅(Width)の調整]{.s015}
+[横幅(Width)の調整]{.s015}
 
 :::
 
@@ -1387,11 +1385,11 @@ crossorigin="anonymous">
 ::: {#p263-b02 .code}
 
 ```xml
- <h2 class="mb-4">テーブルのサンプル</h2>
+<h2 class="mb-4">テーブルのサンプル</h2>
 
 <div class="table-responsive">
-    <table class="table table-striped table-bordered table-hover table-sm
-                    text-nowrap">
+    <table class="table table-striped table-bordered
+                  table-hover table-sm text-nowrap">
         <thead class="text-center table-dark">
             <tr>
                 <th>ヘッダー1</th>
@@ -1436,7 +1434,7 @@ crossorigin="anonymous">
 
 ::: {#p264-b02 .heading}
 
-[■動作確認]{.s012}
+[動作確認]{.s012}
 
 :::
 
@@ -1736,7 +1734,7 @@ containerの中にrowを置き、rowの中にcolを並べます。
 
 ::: {#p268-b01 .heading}
 
-[■動作確認]{.s015}
+[動作確認]{.s015}
 
 :::
 
@@ -1840,30 +1838,44 @@ col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイ�
 
 ```xml
 <!-- ヘッダー -->
-<div class="container-fluid bg-primary text-white text-center py-3">
+<div class="container-fluid bg-primary text-white
+            text-center py-3">
     <h1>ヘッダー</h1>
 </div> <!-- END container1-->
 
 <!-- メインコンテンツとサイドバー -->
 <div class="container my-4">
     <div class="row">
-        <div class="col-md-3 bg-secondary text-white p-3 mb-3 mb-md-0">
+        <div class="col-md-3 bg-secondary text-white
+                    p-3 mb-3 mb-md-0">
             <h2>サイドバー</h2>
             <p>サイドバーのコンテンツ</p>
         </div> <!-- END sidebar col-->
         <div class="col-md-9 bg-light p-3">
             <h2>メインコンテンツ</h2>
             <div class="row">
-                <div class="col-6 p-2 bg-success-subtle">Column 1</div>
-                <div class="col-6 p-2 bg-warning-subtle">Column 2</div>
+                <div class="col-6 p-2 bg-success-subtle">
+                    Column 1
+                </div>
+                <div class="col-6 p-2 bg-warning-subtle">
+                    Column 2
+                </div>
             </div> <!-- END main col row1-->
             <div class="row mt-3">
-                <div class="col-4 p-2 bg-info-subtle">Column 3</div>
-                <div class="col-4 p-2 bg-danger-subtle">Column 4</div>
-                <div class="col-4 p-2 bg-success-subtle">Column 5</div>
+                <div class="col-4 p-2 bg-info-subtle">
+                    Column 3
+                </div>
+                <div class="col-4 p-2 bg-danger-subtle">
+                    Column 4
+                </div>
+                <div class="col-4 p-2 bg-success-subtle">
+                    Column 5
+                </div>
             </div> <!-- END main col row2-->
             <div class="row mt-3">
-                <div class="col-12 p-2 bg-primary-subtle">Column 6 (Full Width)</div>
+                <div class="col-12 p-2 bg-primary-subtle">
+                    Column 6 (Full Width)
+                </div>
             </div> <!-- END main col row3-->
         </div> <!-- END main col-->
     </div> <!-- END row1-->
@@ -1883,7 +1895,7 @@ col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイ�
 
 ::: {#p271-b01 .heading}
 
-[■動作確認]{.s015}
+[動作確認]{.s015}
 
 :::
 
@@ -2323,7 +2335,7 @@ col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイ�
 
 ::: {#p279-b01 .heading}
 
-[■動作確認]{.s012}
+[動作確認]{.s012}
 
 :::
 

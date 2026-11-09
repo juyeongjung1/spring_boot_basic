@@ -644,7 +644,7 @@ public class ProductController {
 
 ::: {#p204-b05 .paragraph keep-lines="true"}
 
-[■ findAll メソッドの結果]{.s010}\
+[findAll メソッドの結果]{.s010}\
 [外部参照を定義した後、findAll メソッドの実行結果には、]{.s009}[Product のデータに加えて、関連]{.s010}[するCategory のデータも含まれる]{.s010}[ようになります。]{.s009}
 
 :::
@@ -657,7 +657,7 @@ public class ProductController {
 
 ::: {#p204-b07 .paragraph keep-lines="true"}
 
-[■&#32;]{.s010}[標準出力の注意点]{.s012}\
+[標準出力の注意点]{.s012}\
 [外部参照を持つエンティティは構造が複雑になります。特に、エンティティ間の双方向参]{.s009}[照が設定されている場合、エンティティのインスタンスをSystem.out.println で出力すると、]{.s009}[スタックオーバーフローエラーが発生する可能性があります。]{.s009}[Product がCategory を参照し、Category がProduct を再参照するためです。]{.s009}
 
 :::
@@ -786,7 +786,7 @@ public class ProductController {
 
 ::: {#p206-b07 .heading}
 
-[■&#32;]{.s011}[th:if="$\{product.category \!= null\}"]{.s011}
+[th:if="$\{product.category \!= null\}"]{.s011}
 
 :::
 
@@ -799,7 +799,7 @@ public class ProductController {
 
 ::: {#p206-b09 .heading}
 
-[■&#32;]{.s011}[th:unless="$\{product.category \!= null\}"]{.s011}
+[th:unless="$\{product.category \!= null\}"]{.s011}
 
 :::
 
@@ -841,7 +841,7 @@ product.categoryがあるときだけnameを読み、nullのときは「未設�
 
 ::: {#p206-b14 .paragraph}
 
-[■&#32;]{.s014}[product.category \!= null:]{.s010}
+[product.category \!= null:]{.s010}
 
 :::
 
@@ -853,7 +853,7 @@ product.categoryがあるときだけnameを読み、nullのときは「未設�
 
 ::: {#p206-b16 .paragraph}
 
-[■&#32;]{.s014}[?（三項演算子）:]{.s010}
+[?（三項演算子）:]{.s010}
 
 :::
 
@@ -865,7 +865,7 @@ product.categoryがあるときだけnameを読み、nullのときは「未設�
 
 ::: {#p206-b18 .paragraph}
 
-[■&#32;]{.s014}[:（else 部分）:]{.s010}
+[:（else 部分）:]{.s010}
 
 :::
 
@@ -2459,7 +2459,7 @@ public String showProductListByNameAndPrice(String name, int price, Model model)
 
 ::: {#p233-b03 .paragraph}
 
-[◼&#32;]{.s039}[実装するリポジトリメソッド]{.s020}
+[実装するリポジトリメソッド]{.s020}
 
 :::
 
@@ -2502,9 +2502,9 @@ public String showProductListByNameAndPrice(String name, int price, Model model)
 
 :::
 
-::: {#p233-b09 .paragraph}
+::: {#p233-b09 .paragraph keep-next="1"}
 
-[■カテゴリごとの合計価格を受け取るDTO]{.s010}
+[カテゴリごとの合計価格を受け取るDTO]{.s010}
 
 :::
 
@@ -2536,9 +2536,9 @@ public class CategorySalesDTO {
 
 ::: {#page-234 .source-page}
 
-::: {#p234-b01 .paragraph}
+::: {#p234-b01 .paragraph keep-next="1"}
 
-[■カテゴリごとの商品数を受け取るDTO]{.s010}
+[カテゴリごとの商品数を受け取るDTO]{.s010}
 
 :::
 
@@ -2617,7 +2617,7 @@ minSales);
 
 ::: {#p235-b05 .heading}
 
-[■まとめ]{.s010}
+[まとめ]{.s010}
 
 :::
 

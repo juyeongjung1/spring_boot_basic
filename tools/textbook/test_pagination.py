@@ -104,6 +104,7 @@ class PaginationTests(unittest.TestCase):
             ],
             '07': [
                 [('p243-b08','start'), ('p243-b10','start'), ('p243-f04','end')],
+                [('p247-b09','end'), ('p247-b10','start'), ('p247-b10','end')],
                 [('p260-b04','start'), ('p260-f18','end')],
                 [('p262-b04','start'), ('p262-b05','end')],
                 [('p276-b08','start'), ('p276-b08','end'), ('p277-b01','heading')],
@@ -170,11 +171,8 @@ class PaginationTests(unittest.TestCase):
         with fitz.open(folder/'chapter-flow.pdf') as pdf:
             for ident in ('p251-b02','p257-b03','p259-b03','p260-b04','p261-b03','p262-b04'):
                 with self.subTest(ident=ident):
-                    start_id, start_edge, end_id, end_edge = ident, 'start', ident, 'end'
-                    if ident=='p251-b02':
-                        start_edge, end_id, end_edge = 'heading', 'p251-b03', 'start'
-                    begin = next(m for m in marks if m['id']==start_id and m['edge']==start_edge)
-                    end = next(m for m in marks if m['id']==end_id and m['edge']==end_edge)
+                    begin = next(m for m in marks if m['id']==ident and m['edge']=='start')
+                    end = next(m for m in marks if m['id']==ident and m['edge']=='end')
                     self.assertEqual(begin['page'],end['page'])
                     page = pdf[begin['page']-1]
                     lines = rendered_lines(page,begin['y'],end['y'])
@@ -183,6 +181,22 @@ class PaginationTests(unittest.TestCase):
                         prefix = normalized(line)[:14]
                         positions.append(next(y for _,y,text in lines if text.startswith(prefix)))
                     self.assertEqual(positions,sorted(set(positions)))
+
+    def test_bootstrap_reference_link_and_code_filename_are_in_the_pdf(self):
+        folder = ROOT / 'output/pdf/textbook/chapter-07'
+        marks = json.loads((folder/'checks.json').read_text(encoding='utf-8'))['flow']['block_positions']
+        link_page = next(m['page'] for m in marks if m['id']=='p250-b04' and m['edge']=='start')
+        code = next(m for m in marks if m['id']=='p251-b03' and m['edge']=='start')
+        url = 'https://getbootstrap.jp/docs/5.3'
+        with fitz.open(folder/'chapter-flow.pdf') as pdf:
+            link, = [item for item in pdf[link_page-1].get_links() if item.get('uri')==url]
+            self.assertIn(url, pdf[link_page-1].get_textbox(link['from']))
+            page = pdf[code['page']-1]
+            filename, = page.search_for('…/resources/templates/style_sample.html')
+            language, = [box for box in page.search_for('HTML') if box.x0<150 and box.y1<code['y']]
+            self.assertLess(language.x1,filename.x0)
+            self.assertLess(filename.y1,code['y'])
+            self.assertTrue(filename.intersects(fitz.Rect(filename.x0,language.y0,filename.x1,language.y1)))
 
     def test_login_credentials_occupy_two_lines(self):
         folder = ROOT / 'output/pdf/textbook/chapter-04'
@@ -305,6 +319,8 @@ class PaginationTests(unittest.TestCase):
                 text = text.replace('© 2024 Trainocate Japan, Ltd.', '© 2027 Trainocate Japan, Ltd.')
                 if ident == 'p285-b03':
                     text += '。'
+                if ident == 'p294-b10':
+                    text = 'PC > ローカルディスク(C:) > ユーザー > ユーザー名 > .m2 > repository'
                 corrected = {
                     'p291-b06': '5. 修正したファイルを保存し、ビルドが正常に完了していますか？Pleiades のコンソールでアプリケーションの起動完了を確認し、正しいポート番号へアクセスしてください。',
                     'p291-b07': '6. テンプレートファイルの配置は正しいですか？Thymeleaf テンプレートファイルは、通常src/main/resources/templates ディレクトリに配置します。Controller が返した名前のテンプレートが見つからない場合は、通常500 エラーになります。404 と区別して確認してください。',

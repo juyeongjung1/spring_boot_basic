@@ -35,7 +35,9 @@ class FigureNumberTests(unittest.TestCase):
             omitted = {r['figure_id'] for r in labels if r['chapter'] == chapter}
             if chapter == '03':
                 omitted |= {'p071-f08', 'p113-f50'}
-            omitted |= {f['id'] for f in layout['figures'] if f.get('slide')}
+            excluded = set(config.get('unnumbered_figures', []))
+            self.assertLessEqual(excluded, set(figures), chapter)
+            omitted |= excluded | {f['id'] for f in layout['figures'] if f.get('slide')}
             if config.get('cover_mode', 'classic') != 'none':
                 omitted |= set(order[0]['entries'])
             with self.subTest(chapter=chapter):
@@ -109,7 +111,7 @@ class FigureNumberTests(unittest.TestCase):
                     self.assertTrue(0 <= box[0] < box[2] <= 595.32)
                     self.assertTrue(0 <= box[1] < box[3] <= 841.92)
                     self.assertFalse(any(intersects(box, obstacle) for obstacle in obstacles))
-        self.assertEqual(count, 17)
+        self.assertEqual(count, 14)
 
 
 if __name__ == '__main__':
