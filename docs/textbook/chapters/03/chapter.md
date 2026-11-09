@@ -867,11 +867,11 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{ }
 
 :::
 
-![Repositoryの宣言から使える実装オブジェクトが用意される](assets/revision-ill-repository-implementation.png){#illustration-expansion-2026-repository-implementation}
+![リモコンのボタンに当たる検索・保存メソッド](assets/revision-ill-repository-implementation.png){#illustration-expansion-2026-repository-implementation}
 
 ::: {#illustration-expansion-2026-repository-implementation-caption .paragraph}
 
-宣言したRepositoryインターフェースに対し、Spring Data JPAが実装オブジェクトを用意します。
+リモコンのボタンのように、JpaRepositoryには検索や保存のメソッドが備わっています。リポジトリの実装はSpring Data JPAが実行時に生成します。
 
 :::
 
@@ -979,11 +979,11 @@ ProductRepository prodRepo;
 
 :::
 
-![リポジトリをリモコンとして受け取るイメージ](assets/revision-di-remote.png){#revision-di-remote}
+![登録済みのリポジトリをリモコンとして受け取る](assets/revision-di-remote.png){#revision-di-remote}
 
 ::: {#revision-di-caption .paragraph}
 
-**左のDIコンテナ**が用意した**リポジトリ（リモコン）**を、**中央のController**が受け取って使い、**右のDB**を操作するイメージです。テレビの操作に似た図で、依存性の注入と利用の関係を表しています。
+上段では、BクラスがnewでAのインスタンスを生成します。下段では、ControllerがDIコンテナに自動登録されたリポジトリBeanを受け取ります。テレビが替わっても同じリモコンで操作するように、同じインターフェースなら呼び出し方を保ったまま実装を差し替えられます。
 
 :::
 

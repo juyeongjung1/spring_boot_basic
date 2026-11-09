@@ -63,6 +63,11 @@ class MinorSpacingTests(unittest.TestCase):
                     self.assertEqual(part['pages'],part['baseline_pages'])
                     if review==REVIEW:
                         current=read(ROOT/relative)
+                        if name=='03':
+                            # 差し替えた図の高さは変わるため、全マーカーのページを照合する。
+                            self.assertEqual(signature(current['flow']['block_positions']),signature(before))
+                            self.assertEqual(current['flow']['pages'],checks['flow']['pages'])
+                            continue
                         if name!='02':
                             self.assertEqual(current,checks)
                             continue

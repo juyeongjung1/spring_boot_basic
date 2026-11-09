@@ -16,7 +16,7 @@
 | HTMLのname属性値とFormのフィールド名の対応 | 02・54p | inputのtypeとnameを区別し、name属性値からFormの同名フィールドへ値が渡る関係を示す。 | [表示](chapters/02/assets/revision-ill-form-name-binding.png) |
 | 箱の名前を見て荷物を取り出す | 02・60p | 箱のラベルとModelのキー名を対応させ、Thymeleafでデータを参照する流れを示す。 | [表示](chapters/02/assets/revision-ill-model-unpack.png) |
 | user.idをキー名とフィールド名に分けて読む | 02・60p | ModelのキーとFormのフィールドを混同せず、ドットの前後を別の段階として理解する。 | [表示](chapters/02/assets/revision-ill-model-key-property.png) |
-| Repositoryの宣言から使える実装オブジェクトが用意される | 03・78p | インターフェースを書いただけなのにfindAllやsaveを使える理由を、宣言と実体の区別で説明する。 | [表示](chapters/03/assets/revision-ill-repository-implementation.png) |
+| リモコンのボタンに当たる検索・保存メソッド | 03・78p | テレビのリモコンに備わるボタンを、JpaRepositoryから継承するメソッドに対応させる。 | [表示](chapters/03/assets/revision-ill-repository-implementation.png) |
 | メソッド名と引数が検索条件になる | 03・97p | 命名ルールを暗記するだけでなく、メソッド名のプロパティと引数の値がどう条件になるかを理解する。 | [表示](chapters/03/assets/revision-ill-query-method-name.png) |
 | redirectはブラウザーからの新しいリクエストを生む | 03・124p | returnでController内の別メソッドを直接呼ぶことと、ブラウザーを介したredirectの違いを正しくイメージする。 | [表示](chapters/03/assets/revision-ill-redirect-new-request.png) |
 | ModelとHttpSessionではデータを渡す範囲が違う | 04・143p | 既存p143-f08は完成画面とModelコードの例。既存追加図session-separationはセッションIDと利用者ごとの分離。新図はリクエストをまたぐ保存期間だけを対比する。 | [表示](chapters/04/assets/revision-ill-model-session-lifetime.png) |
@@ -47,7 +47,7 @@
 | DBの外部キー値とJavaのオブジェクト参照 | 06・201p | [表示](chapters/06/assets/revision-ill-foreign-key.png) |
 | 横幅によって左右配置から上下配置へ切り替わる | 07・269p | [表示](chapters/07/assets/revision-ill-responsive.png) |
 | 外側の例外から原因と自分のコードをたどる | appendix-b・291p | [表示](chapters/appendix-b/assets/revision-ill-errors.png) |
-| 依存性の注入 | 03・80p | [表示](chapters/03/assets/revision-di-remote.png) |
+| 登録済みのリポジトリをリモコンとして受け取る | 03・80p | [表示](chapters/03/assets/revision-di-remote.png) |
 
 ## 保存と生成記録
 

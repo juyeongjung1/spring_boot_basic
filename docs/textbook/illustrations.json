@@ -579,17 +579,17 @@
       "after_id": "p078-b06",
       "before_id": "p078-b07",
       "priority": "推奨",
-      "title": "Repositoryの宣言から使える実装オブジェクトが用意される",
-      "caption": "宣言したRepositoryインターフェースに対し、Spring Data JPAが実装オブジェクトを用意します。",
-      "purpose": "インターフェースを書いただけなのにfindAllやsaveを使える理由を、宣言と実体の区別で説明する。",
-      "composition": "Repositoryの宣言→Spring Data JPAが用意する実装→DBの関係。正式名はcaptionと元コードで確認し、図内は短いラベルを大きく配置。",
+      "title": "リモコンのボタンに当たる検索・保存メソッド",
+      "caption": "リモコンのボタンのように、JpaRepositoryには検索や保存のメソッドが備わっています。リポジトリの実装はSpring Data JPAが実行時に生成します。",
+      "purpose": "リモコンに備わったボタンと、JpaRepositoryから継承する検索・保存メソッドを結び付ける。",
+      "composition": "電源・チャンネル・音量のボタンを持つリモコンとテレビを、JpaRepositoryのメソッドとSpring Data JPAが裏で用意する実装に対応させる。",
       "labels": [
-        "Repository",
-        "Spring Data",
-        "JPA",
-        "実装",
+        "CH",
+        "VOL",
+        "JpaRepository",
         "findAll()",
         "save()",
+        "Spring Data JPA",
         "DB"
       ],
       "accuracy_constraints": [
@@ -601,7 +601,7 @@
         "p077-f13",
         "revision-di-remote"
       ],
-      "difference": "既存p077-f13はextendsとジェネリクスのコード、DI図は用意済みRepositoryを渡す関係。新図は宣言と実装の違い、フレームワークが実体を用意する部分に限定する。",
+      "difference": "操作方法と裏側の仕組みを、テレビとリポジトリの対比で示す。",
       "safety": "継承でメソッドが利用可能という段落の直後、ジェネリクスの型引数の説明の前。コードの枠やDI図を分断しない。",
       "source_evidence": [
         "p077-b04",
@@ -616,12 +616,12 @@
       "figure_id": "illustration-expansion-2026-repository-implementation",
       "caption_id": "illustration-expansion-2026-repository-implementation-caption",
       "asset": "assets/revision-ill-repository-implementation.png",
-      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-940943fb-6ff2-480c-a300-60ea551adb2a.png",
-      "prompt": "Use case: scientific-educational. One compact Japanese educational illustration, wide landscape 2.4:1 on pure white. Clean flat editorial drawing with crisp navy outlines, pale blue and teal, restrained orange highlights. Sparse large labels readable at 100 mm print width, maximum print height 49 mm. No title, invented headings, gloss, watermark, decorative prose or logos. Only the exact specified labels. Distinguish a Repository interface declaration from the runtime implementation prepared by Spring Data JPA. Left: one thin specification page labeled exactly \"ProductRepository\", with two operation buttons labeled exactly \"findAll()\" and \"save()\". Middle: one simple assembly machine labeled exactly \"Spring Data JPA\". Right: one solid operation panel with the same two button icons, labeled exactly \"実装オブジェクト\". A thin use connection reaches a small DB cylinder labeled exactly \"DB\". Show the declaration leading through framework preparation to a usable runtime object. No developer directly instantiates the interface, no generated .java source file, no claim each method call regenerates a class. Large text, simple separated objects.\n\n最終調整（元画像への編集指示）:\nImprove ONLY text labels and their size for 100 mm print readability. Replace the LEFT title \"ProductRepository\" with the shorter exact label \"Repository\", making it substantially larger. Set the central machine title to TWO large centered lines exactly \"Spring Data\" then \"JPA\". Replace the right long title \"実装オブジェクト\" with the short exact label \"実装\", in large type. Make existing findAll() and save() operation labels readable and large in their same buttons. Preserve method spelling, DB label, arrows, the separate specification sheet / framework machine / implementation panel / DB roles, colors, outlines and wide canvas. Do not add any text or change flow.",
-      "asset_sha256": "60de3494d576a8ef52763aee5b948c268f6cac1f9ad3ea740b36359adc203056",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-b6be8b59-ed3a-45a6-8b77-3e07edb7763c.png",
+      "prompt": "Use case scientific-educational. Generate a fresh compact horizontal full-color textbook illustration for adult Japanese beginners learning Spring Data JPA. Pure white background, landscape approx 2.5:1, clean warm editorial line art like a modern Japanese programming textbook, dark navy contours, subdued jade and amber accents. Two balanced side-by-side scenes with a small understated ≈ between them, wide objects and large clear letterforms, little wasted space. LEFT: a hand presses a large preinstalled power button on a jade/navy television remote pointed toward a recognizably physical TV; CH and VOL rocker controls are also visibly already built in; the TV screen lights up. On the edge of the TV a small tasteful cutaway of gears suggests that the machinery runs inside the TV when a button is pressed. RIGHT: a stylized matching controller/remote with exactly two large built-in buttons labeled \"findAll()\" and \"save()\" and the heading \"JpaRepository\" on the controller itself, aimed toward a DB cylinder with a very simple adjacent gear assembly labeled \"Spring Data JPA\". The controller's buttons are ready to use and clearly distinct from the mechanism behind them. Label the database \"DB\" only if necessary. For the real remote use standard recognizable power, CH and VOL markings; no other text, explanations, captions or figure numbering. Spell all requested code labels exactly. It must be clear in a small 280pt-wide figure that the familiar built-in TV remote controls are an analogy for the methods already provided by JpaRepository. Make the two scenes one visual pair, not a full-page slide. Keep print-friendly, no glow, decorative gradient, icons without meaning or cropping.",
+      "asset_sha256": "3a9f17e613091790254af2dac7a3f882f155c82c46b5536c7ec9b585eaa84640",
       "image_pixels": [
-        1944,
-        809
+        1983,
+        793
       ]
     },
     {
@@ -1449,7 +1449,33 @@
       "caption_id": "revision-di-caption",
       "asset": "assets/revision-di-remote.png",
       "width": 260,
-      "max_height": 140
+      "max_height": 140,
+      "after_id": "p080-b02",
+      "before_id": "p080-b03",
+      "purpose": "クラス内での直接生成と、用意されたリポジトリBeanを受け取る依存性の注入を比べる。",
+      "source_evidence": [
+        "p079-b04",
+        "p079-b05",
+        "p079-b06",
+        "p080-b02"
+      ],
+      "labels": [
+        "Bクラス",
+        "Aクラス",
+        "A a = new A();",
+        "DIコンテナ",
+        "Bean",
+        "Controller"
+      ],
+      "title": "登録済みのリポジトリをリモコンとして受け取る",
+      "caption": "上段では、BクラスがnewでAのインスタンスを生成します。下段では、ControllerがDIコンテナに自動登録されたリポジトリBeanを受け取ります。テレビが替わっても同じリモコンで操作するように、同じインターフェースなら呼び出し方を保ったまま実装を差し替えられます。",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-669d8bd9-770d-42a1-b5d2-e60ed8aaf6a7.png",
+      "prompt": "Use case scientific-educational. Generate a fresh clean landscape illustration about Spring dependency injection for adult Japanese programming beginners, with two stacked horizontal strips in one compact 2.2:1 figure. Pure white page, dark navy ink, jade blue and modest amber accents, print-friendly vector-like editorial line art. TOP strip, occupying around 1/3 of height: two simple object cards \"Bクラス\" and \"Aクラス\". In the B card show exactly \"A a = new A();\" in large monospaced print, with a simple amber arrow pointing from B to A. The intent is B explicitly creates its own A. BOTTOM strip, occupying the other 2/3: left, a small organized shelf or open container with a preassembled navy/jade TV remote inside, tagged \"Bean\", and a clear large shelf label \"DIコンテナ\". Middle, a blue-shirted developer labeled \"Controller\" receives the ready-made remote from the shelf through a clear rightward handoff arrow, then uses its recognizable buttons. Right, wireless signal arcs from the same remote to a simple TV body; a second faint TV body behind it with a different internal gear suggests changing the implementation while keeping the same remote controls. The handoff from container to Controller must be evident: one remote ready in the container, one same-shaped remote in the person's hand, no creation step by the Controller. Use ample white space, essential large labels, no prose, no figure number, no extra text or words, no confusing arrow crossing or direct wired Controller-to-TV connection. Render \"Bクラス\", \"Aクラス\", \"A a = new A();\", \"DIコンテナ\", \"Bean\", \"Controller\" exactly and very legibly. Avoid repetitive backgrounds and glossy 3D. Visually clean enough at 260pt width in a printed textbook.",
+      "asset_sha256": "3e33846a4f9e865db7418c2d1be4b47dafd7d81e0dd61908f7b120f73b8cc39f",
+      "image_pixels": [
+        1860,
+        846
+      ]
     }
   ],
   "sources": [

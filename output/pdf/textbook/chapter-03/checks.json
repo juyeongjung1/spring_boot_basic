@@ -2749,63 +2749,63 @@
         "edge": "end",
         "page": 21,
         "x": 85.104,
-        "y": 222.52263374485597
+        "y": 217.9717599596571
       },
       {
         "id": "illustration-expansion-2026-repository-implementation-caption",
         "edge": "start",
         "page": 21,
         "x": 85.104,
-        "y": 228.52263374485597
+        "y": 223.9717599596571
       },
       {
         "id": "illustration-expansion-2026-repository-implementation-caption",
         "edge": "end",
         "page": 21,
         "x": 85.104,
-        "y": 238.02263374485597
+        "y": 247.4717599596571
       },
       {
         "id": "figure-frame-illustration-expansion-2026-repository-implementation",
         "edge": "end",
         "page": 21,
         "x": 85.104,
-        "y": 238.02263374485597
+        "y": 247.4717599596571
       },
       {
         "id": "instruction-illustration-expansion-2026-repository-implementation",
         "edge": "end",
         "page": 21,
         "x": 79.104,
-        "y": 244.02263374485597
+        "y": 253.4717599596571
       },
       {
         "id": "p078-b07",
         "edge": "start",
         "page": 21,
         "x": 85.104,
-        "y": 256.02263374485597
+        "y": 265.47175995965705
       },
       {
         "id": "p078-b07",
         "edge": "end",
         "page": 21,
         "x": 85.104,
-        "y": 303.062633744856
+        "y": 312.51175995965707
       },
       {
         "id": "p078-b08",
         "edge": "start",
         "page": 21,
         "x": 85.104,
-        "y": 316.02263374485597
+        "y": 325.47175995965705
       },
       {
         "id": "p078-b08",
         "edge": "end",
         "page": 21,
         "x": 85.104,
-        "y": 381.062633744856
+        "y": 390.51175995965707
       },
       {
         "id": "__source-page-79",
@@ -3022,70 +3022,70 @@
         "edge": "end",
         "page": 23,
         "x": 85.104,
-        "y": 451.89443835616436
+        "y": 437.036064516129
       },
       {
         "id": "revision-di-caption",
         "edge": "start",
         "page": 23,
         "x": 85.104,
-        "y": 457.89443835616436
+        "y": 443.036064516129
       },
       {
         "id": "revision-di-caption",
         "edge": "end",
         "page": 23,
         "x": 85.104,
-        "y": 481.39443835616436
+        "y": 480.536064516129
       },
       {
         "id": "figure-frame-revision-di-remote",
         "edge": "end",
         "page": 23,
         "x": 85.104,
-        "y": 481.39443835616436
+        "y": 480.536064516129
       },
       {
         "id": "instruction-revision-di-remote",
         "edge": "end",
         "page": 23,
         "x": 79.104,
-        "y": 487.39443835616436
+        "y": 486.536064516129
       },
       {
         "id": "p080-b03",
         "edge": "heading",
         "page": 23,
         "x": 85.104,
-        "y": 505.39443835616436
+        "y": 504.536064516129
       },
       {
         "id": "p080-b04",
         "edge": "start",
         "page": 23,
         "x": 85.104,
-        "y": 528.4344383561645
+        "y": 527.5760645161291
       },
       {
         "id": "p080-b04",
         "edge": "end",
         "page": 23,
         "x": 85.104,
-        "y": 557.4744383561645
+        "y": 556.6160645161291
       },
       {
         "id": "p080-b05",
         "edge": "start",
         "page": 23,
         "x": 85.104,
-        "y": 570.4344383561645
+        "y": 569.5760645161291
       },
       {
         "id": "p080-b05",
         "edge": "end",
         "page": 23,
         "x": 85.104,
-        "y": 581.4744383561645
+        "y": 580.6160645161291
       },
       {
         "id": "p080-b06",
@@ -11288,14 +11288,14 @@
         "number": "図3.3.2",
         "kind": "compact",
         "caption_id": "illustration-expansion-2026-repository-implementation-caption",
-        "caption": "宣言したRepositoryインターフェースに対し、Spring Data JPAが実装オブジェクトを用意します。",
+        "caption": "リモコンのボタンのように、JpaRepositoryには検索や保存のメソッドが備わっています。リポジトリの実装はSpring Data JPAが実行時に生成します。",
         "title": ""
       },
       "revision-di-remote": {
         "number": "図3.3.3",
         "kind": "compact",
         "caption_id": "revision-di-caption",
-        "caption": "左のDIコンテナが用意したリポジトリ（リモコン）を、中央のControllerが受け取って使い、右のDBを操作するイメージです。テレビの操作に似た図で、依存性の注入と利用の関係を表しています。",
+        "caption": "上段では、BクラスがnewでAのインスタンスを生成します。下段では、ControllerがDIコンテナに自動登録されたリポジトリBeanを受け取ります。テレビが替わっても同じリモコンで操作するように、同じインターフェースなら呼び出し方を保ったまま実装を差し替えられます。",
         "title": ""
       },
       "p081-f16": {

@@ -20,9 +20,11 @@ REVIEW_EDITION = 'ac012ddc04163641c9fa3c865b11b00b0b6307d6'
 SPACING_EDITION = '380e36fb9b1aae65f4f82405ab39f669e4c2f083'
 TABLE_EDITION = 'ee2f9a455b14bbb85cec9e97e208bd948eaff8f2'
 MODEL_EDITION = '0409a5379334731099867c078bc75a02e25a136d'
+MODEL_APPROVED_EDITION = '39f5fef6a2b47de1d5a290820bce10f65dae459b'
 MODEL_TRANSFER = 'illustration-2026-model-transfer'
 MODEL_UNPACK = 'illustration-2026-model-moving-unpack'
 MODEL_MOVING_PAGES = {MODEL_TRANSFER: 65, MODEL_UNPACK: 67}
+REPOSITORY_PAGES = {'illustration-expansion-2026-repository-implementation': 90, 'revision-di-remote': 92}
 DI_INTRO = 'illustration-figure-cards-2026-di-remote-intro'
 MANAGED = 'illustration-expansion-2026-boot-managed-versions'
 BEAN = 'illustration-expansion-2026-bean-auto-configuration'
@@ -208,7 +210,7 @@ class IllustrationSourceTests(unittest.TestCase):
         result = subprocess.run(['git', '-c', 'safe.directory='+ROOT.as_posix(), 'diff', '--name-only',
             '--no-renames', catalog()['base_commit'], '--', *paths], cwd=ROOT, check=True,
             capture_output=True, encoding='utf-8')
-        allowed = {'docs/textbook/chapters/'+r['chapter']+'/'+r['asset'] for r in catalog()['new']}
+        allowed = {'docs/textbook/chapters/'+r['chapter']+'/'+r['asset'] for r in catalog()['new']+catalog()['resized']}
         allowed.add(REMOVED_MANAGED_ASSET)
         allowed.add(REMOVED_REPOSITORY_ASSET)
         self.assertTrue(set(result.stdout.splitlines()).issubset(allowed), result.stdout)
@@ -474,8 +476,8 @@ class IllustrationSourceTests(unittest.TestCase):
         added={row[2] for row in placements}|{MODEL_UNPACK,MODEL_UNPACK+'-caption'}
         edited_ids=moved|added
 
-        folder,old_nodes,old_figures,old_pages,old_config=edition_chapter('02',MODEL_EDITION)
-        _,nodes,figures,pages,config=chapter('02')
+        _,old_nodes,old_figures,old_pages,old_config=edition_chapter('02',MODEL_EDITION)
+        _,nodes,figures,pages,config=edition_chapter('02',MODEL_APPROVED_EDITION)
         self.assertEqual(set(nodes)|set(figures),set(old_nodes)|set(old_figures)|added)
         self.assertEqual(figures,old_figures|{MODEL_UNPACK:'assets/revision-ill-model-unpack.png'})
         self.assertEqual([dict(p,entries=[i for i in p['entries'] if i not in edited_ids]) for p in pages],
@@ -487,8 +489,9 @@ class IllustrationSourceTests(unittest.TestCase):
             self.assertEqual(nodes[intro]['kind'],'paragraph')
             self.assertTrue(nodes[intro]['text'].strip())
 
-        snapshot=ROOT/'tmp/illustrations-tests/base'/MODEL_EDITION/'02.md'
-        texts=[snapshot.read_text(encoding='utf-8'),(folder/'chapter.md').read_text(encoding='utf-8')]
+        snapshots=ROOT/'tmp/illustrations-tests/base'
+        texts=[(snapshots/edition/'02.md').read_text(encoding='utf-8')
+               for edition in (MODEL_EDITION,MODEL_APPROVED_EDITION)]
         for ident in edited_ids:
             pattern=(r'^::: \{#'+re.escape(ident)+r'[ \t][^\n]*\}\n.*?^:::\n\n'
                      r'|^!\[[^\n]*\]\([^\n]*\)\{#'+re.escape(ident)+r'\}\n\n')
@@ -500,7 +503,7 @@ class IllustrationSourceTests(unittest.TestCase):
                                                if k not in MODEL_MOVING_PAGES})
         self.assertEqual(unchanged_settings(config),unchanged_settings(old_config))
         old_catalog=edition_json('docs/textbook/illustrations.json',MODEL_EDITION)
-        data=catalog()
+        data=edition_json('docs/textbook/illustrations.json',MODEL_APPROVED_EDITION)
         self.assertEqual({k:v for k,v in data.items() if k!='new'},
                          {k:v for k,v in old_catalog.items() if k!='new'})
         self.assertEqual([r for r in data['new'] if r['figure_id'] not in MODEL_MOVING_PAGES],
@@ -509,19 +512,46 @@ class IllustrationSourceTests(unittest.TestCase):
         paths=['docs/textbook/chapters','docs/textbook/illustrations.json',
                'tools/textbook/code_explanations.json','tools/textbook/filename_labels.json']
         command=['git','-c','safe.directory='+ROOT.as_posix()]
-        changed=set()
-        for query in (['diff','--name-only','--no-renames',MODEL_EDITION],['ls-files','--others','--exclude-standard']):
-            result=subprocess.run(command+query+['--',*paths],cwd=ROOT,check=True,capture_output=True,encoding='utf-8')
-            changed.update(result.stdout.splitlines())
+        result=subprocess.run(command+['diff','--name-only','--no-renames',MODEL_EDITION,MODEL_APPROVED_EDITION,'--',*paths],
+            cwd=ROOT,check=True,capture_output=True,encoding='utf-8')
         prefix='docs/textbook/chapters/02/'
         allowed={prefix+p for p in ['chapter.md','source.json','assets/revision-ill-model.png','assets/revision-ill-model-unpack.png']}
+        self.assertEqual(set(result.stdout.splitlines()),allowed|{'docs/textbook/illustrations.json'})
+
+    def test_repository_revision_preserves_original_content(self):
+        _,previous,old_figures,old_pages,old_config=edition_chapter('03',MODEL_APPROVED_EDITION)
+        _,nodes,figures,pages,config=chapter('03')
+        previous_catalog=edition_json('docs/textbook/illustrations.json',MODEL_APPROVED_EDITION)
+        data=catalog()
+        records=[r for key in ('new','resized') for r in data[key] if r['figure_id'] in REPOSITORY_PAGES]
+        self.assertEqual({r['figure_id'] for r in records},set(REPOSITORY_PAGES))
+        captions={r['caption_id'] for r in records}
+        self.assertEqual(set(nodes),set(previous))
+        self.assertEqual({ident for ident in nodes if nodes[ident]!=previous[ident]},captions)
+        self.assertEqual((figures,pages,config),(old_figures,old_pages,old_config))
+
+        def unaffected_catalog(data):
+            return {key: [r for r in value if r['figure_id'] not in REPOSITORY_PAGES]
+                    if key in ('new','resized') else value for key,value in data.items()}
+        self.assertEqual(unaffected_catalog(data),unaffected_catalog(previous_catalog))
+
+        paths=['docs/textbook/chapters','docs/textbook/illustrations.json',
+               'tools/textbook/code_explanations.json','tools/textbook/filename_labels.json']
+        command=['git','-c','safe.directory='+ROOT.as_posix()]
+        changed=set()
+        for query in (['diff','--name-only','--no-renames',MODEL_APPROVED_EDITION],['ls-files','--others','--exclude-standard']):
+            result=subprocess.run(command+query+['--',*paths],cwd=ROOT,check=True,capture_output=True,encoding='utf-8')
+            changed.update(result.stdout.splitlines())
+        prefix='docs/textbook/chapters/03/'
+        allowed={prefix+'chapter.md'}|{prefix+r['asset'] for r in records}
         self.assertEqual(changed,allowed|{'docs/textbook/illustrations.json'})
 
 
 class IllustrationPdfTests(unittest.TestCase):
     def test_each_image_and_caption_stay_between_the_declared_pdf_anchors(self):
         contexts = {}
-        for record in catalog()['new']:
+        data = catalog()
+        for record in data['new'] + [r for r in data['resized'] if 'after_id' in r]:
             name = record['chapter']
             if name not in contexts:
                 folder = ROOT / 'output/pdf/textbook' / ('chapter-' + name)
@@ -558,7 +588,8 @@ class IllustrationPdfTests(unittest.TestCase):
 
     def test_image_dimensions_and_caption_are_kept_on_one_physical_page(self):
         assembly = json.loads((ROOT/'output/pdf/textbook/textbook/checks.json').read_text(encoding='utf-8'))
-        chapter_start = next(p['flow_pages'][0] for p in assembly['chapters'] if p['chapter']=='02')
+        chapter_starts = {p['chapter']:p['flow_pages'][0] for p in assembly['chapters']}
+        expected_pages = MODEL_MOVING_PAGES | REPOSITORY_PAGES
         for record in catalog()['new'] + catalog()['resized']:
             with self.subTest(figure=record['figure_id']):
                 folder = ROOT / 'output/pdf/textbook' / ('chapter-'+record['chapter'])
@@ -574,8 +605,9 @@ class IllustrationPdfTests(unittest.TestCase):
                 start = next(m for m in figure if m['edge']=='start')
                 end = next(m for m in figure if m['edge']=='end')
                 cap_start = next(m for m in caption if m['edge']=='start')
-                if record['figure_id'] in MODEL_MOVING_PAGES:
-                    self.assertEqual(chapter_start+start['page']-1, MODEL_MOVING_PAGES[record['figure_id']])
+                if record['figure_id'] in expected_pages:
+                    physical_page = chapter_starts[record['chapter']] + start['page'] - 1
+                    self.assertEqual(physical_page, expected_pages[record['figure_id']])
                 self.assertGreaterEqual(cap_start['y'], end['y'] - .1)
                 self.assertLessEqual(cap_start['y'] - end['y'], 30)
                 expected_width, expected_height = image_size(record)
