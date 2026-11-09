@@ -593,7 +593,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if node['kind'] == 'paragraph':
             keep_lines = node['attrs'].get('keep-lines') == 'true'
             parts = typographic_parts(node['parts'], keep_lines=keep_lines)
-            if parts and parts[0][0][0] in '■●•▪○・◼⚫\uf09f':
+            # 複数の項目をまとめた段落では、明示改行を使ってすべての丸印をそろえる。
+            multiple_bullets = keep_lines and sum(value.startswith(('●', '⚫', '•')) for value, _ in parts) > 1
+            if parts and parts[0][0][0] in '■●•▪○・◼⚫\uf09f' and not multiple_bullets:
                 value, style = parts[0]
                 marker = inline([(value[0], style)])
                 parts[0] = (value[1:], style)
@@ -774,7 +776,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 i = end + 1
                 continue
         if ident in nodes and i+1<len(entries) and entries[i+1] in nodes and nodes[entries[i+1]]['kind']=='code' and re.search(r'[/\\].*\.(?:java|html|css|xml|properties|yml|yaml)\s*$',nodes[ident]['text']):
-            commands.append(f'#code-label({q(ident)},[{inline(nodes[ident]["parts"])}])')
+            keep_lines = nodes[ident]["attrs"].get("keep-lines") == "true"
+            commands.append(f'#code-label({q(ident)},[{inline(nodes[ident]["parts"], keep_lines=keep_lines)}])')
             i+=1
             continue
         # 短いコード導入ラベルと、その直後の説明を最初のコード枠に繋げる。

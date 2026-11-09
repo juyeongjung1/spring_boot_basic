@@ -89,6 +89,7 @@ class SourceLayoutTests(unittest.TestCase):
                 '02': {'p060-b09','p060-b10','p060-b11'},
                 '03': {'p071-b06','p071-b07','p071-b08','p115-b05'},
                 '06': {f'p232-b{i:02d}' for i in range(1,8)},
+                '07': {'p242-b13'},
             }.get(name, set())
             self.assertEqual(chapter['original'].keys() - chapter['current'].keys(), removed, name)
             self.assertFalse(chapter['original_figures'].keys() - chapter['current_figures'].keys(), name)

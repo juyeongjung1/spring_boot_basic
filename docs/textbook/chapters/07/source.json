@@ -406,11 +406,14 @@
       "268": "short-minor-heading",
       "269": "short-minor-heading",
       "271": "short-minor-heading",
+      "277": "short-minor-heading",
       "279": "short-minor-heading",
       "249": "continued-prose"
     },
     "paragraph_continuations": [],
-    "figure_scales": {}
+    "figure_scales": {
+      "p260-f18": 0.95
+    }
   },
   "typography": {
     "minor_heading_extra_space": {

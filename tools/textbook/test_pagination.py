@@ -8,6 +8,13 @@ import pymupdf as fitz
 from build import ROOT, normalized, read_markdown, pagination_options
 
 
+def rendered_lines(page, top, bottom):
+    rect = fitz.Rect(0,top-2,page.rect.width,bottom+2)
+    return [(line['bbox'][0], line['bbox'][1], normalized(''.join(s['text'] for s in line['spans'])))
+            for block in page.get_text('dict',clip=rect)['blocks']
+            for line in block.get('lines',[])]
+
+
 class PaginationTests(unittest.TestCase):
     def test_code_introductions_stay_with_the_first_code_panel(self):
         path = ROOT / 'output/pdf/textbook/chapter-06/checks.json'
@@ -93,9 +100,13 @@ class PaginationTests(unittest.TestCase):
             '06': [
                 [('p200-b04','end'), ('revision-product-final-note','start'), ('revision-product-final-note','end')],
                 [('p235-b05','heading'), ('p235-table01','start'), ('p235-table01','end')],
+                [('p218-b08','end'), ('p218-b09','start'), ('p218-b09','end')],
             ],
             '07': [
                 [('p243-b08','start'), ('p243-b10','start'), ('p243-f04','end')],
+                [('p260-b04','start'), ('p260-f18','end')],
+                [('p262-b04','start'), ('p262-b05','end')],
+                [('p276-b08','start'), ('p276-b08','end'), ('p277-b01','heading')],
             ],
         }
         for chapter, anchors in groups.items():
@@ -128,7 +139,9 @@ class PaginationTests(unittest.TestCase):
         lists = {
             '06': ('p204-b05','p204-b07','p215-b02','p215-b03','p225-b06','p225-b07',
                    'p225-b08','p226-b06','p226-b07','p226-b08'),
-            '07': ('p240-b03','p240-b04','p240-b05'),
+            '07': ('p240-b03','p240-b04','p240-b05','p242-b09','p242-b10','p242-b11','p242-b12',
+                   'p252-b03','p254-b03','p255-b01','p255-b04','p257-b02','p275-b07','p275-b08',
+                   'p276-b05','p276-b06','p276-b07','p276-b08'),
         }
         for chapter, idents in lists.items():
             folder = ROOT / 'output/pdf/textbook' / ('chapter-' + chapter)
@@ -140,14 +153,36 @@ class PaginationTests(unittest.TestCase):
                         bounds = {m['edge']:m for m in marks if m['id']==ident}
                         self.assertEqual(bounds['start']['page'], bounds['end']['page'])
                         page = pdf[bounds['start']['page'] - 1]
-                        rect = fitz.Rect(0,bounds['start']['y']-2,page.rect.width,bounds['end']['y']+2)
-                        lines = [(line['bbox'][1], normalized(''.join(s['text'] for s in line['spans'])))
-                                 for block in page.get_text('dict',clip=rect)['blocks']
-                                 for line in block.get('lines',[])]
+                        lines = rendered_lines(page,bounds['start']['y'],bounds['end']['y'])
                         lead, body = nodes[ident]['text'].split('\n',1)
-                        title, = [y for y,text in lines if text.lstrip('●■')==normalized(lead).lstrip('●■')]
-                        self.assertTrue(any(y>title and text.startswith(normalized(body)[:8]) for y,text in lines),
-                                        (lead, lines))
+                        title_x, title_y = next((x,y) for x,y,text in lines
+                            if text.lstrip('●■')==normalized(lead).lstrip('●■'))
+                        body_lines = [(x,y) for x,y,text in lines
+                                      if y>title_y and text.startswith(normalized(body)[:8])]
+                        self.assertTrue(body_lines,(lead,lines))
+                        if ident.startswith('p242-'):
+                            self.assertAlmostEqual(body_lines[0][0],title_x,delta=.2)
+
+    def test_bootstrap_grouped_items_begin_on_separate_lines(self):
+        folder = ROOT / 'output/pdf/textbook/chapter-07'
+        marks = json.loads((folder/'checks.json').read_text(encoding='utf-8'))['flow']['block_positions']
+        nodes, _, _ = read_markdown(ROOT/'docs/textbook/chapters/07/chapter.md')
+        with fitz.open(folder/'chapter-flow.pdf') as pdf:
+            for ident in ('p251-b02','p257-b03','p259-b03','p260-b04','p261-b03','p262-b04'):
+                with self.subTest(ident=ident):
+                    start_id, start_edge, end_id, end_edge = ident, 'start', ident, 'end'
+                    if ident=='p251-b02':
+                        start_edge, end_id, end_edge = 'heading', 'p251-b03', 'start'
+                    begin = next(m for m in marks if m['id']==start_id and m['edge']==start_edge)
+                    end = next(m for m in marks if m['id']==end_id and m['edge']==end_edge)
+                    self.assertEqual(begin['page'],end['page'])
+                    page = pdf[begin['page']-1]
+                    lines = rendered_lines(page,begin['y'],end['y'])
+                    positions = []
+                    for line in nodes[ident]['text'].splitlines():
+                        prefix = normalized(line)[:14]
+                        positions.append(next(y for _,y,text in lines if text.startswith(prefix)))
+                    self.assertEqual(positions,sorted(set(positions)))
 
     def test_login_credentials_occupy_two_lines(self):
         folder = ROOT / 'output/pdf/textbook/chapter-04'

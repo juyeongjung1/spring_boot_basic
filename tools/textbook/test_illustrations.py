@@ -25,6 +25,7 @@ MODEL_APPROVED_EDITION = '39f5fef6a2b47de1d5a290820bce10f65dae459b'
 REPOSITORY_APPROVED_EDITION = '851c18e02f1d9144c99fb22948791f84a3adf34e'
 SERVICE_APPROVED_EDITION = '9ccfcb292b2d261fc7e40318eaa9c506183d1805'
 SESSION_APPROVED_EDITION = '066abc50787fe3f83fd9d7fcaf33451336ecb054'
+PRODUCT_BOOTSTRAP_APPROVED_EDITION = '569a288195e4cfee9e8876f34cf485dd042b94f6'
 MODEL_TRANSFER = 'illustration-2026-model-transfer'
 MODEL_UNPACK = 'illustration-2026-model-moving-unpack'
 MODEL_MOVING_PAGES = {MODEL_TRANSFER: 65, MODEL_UNPACK: 67}
@@ -727,7 +728,7 @@ class IllustrationSourceTests(unittest.TestCase):
         for name in indents:
             with self.subTest(chapter=name):
                 _, old_nodes, old_figures, old_pages, old_config = edition_chapter(name, SESSION_APPROVED_EDITION)
-                _, nodes, figures, pages, config = chapter(name)
+                _, nodes, figures, pages, config = edition_chapter(name, PRODUCT_BOOTSTRAP_APPROVED_EDITION)
                 expected_pages, expected_config = deepcopy(old_pages), deepcopy(old_config)
                 added, removed = set(), set()
                 if name=='05':
@@ -742,7 +743,7 @@ class IllustrationSourceTests(unittest.TestCase):
                     pos = entries.index('p200-b04')+1
                     entries.insert(pos,final_note)
                     expected_config['pagination']['omit_blank_pages'] = [232]
-                    self.assertIn('Integer categoryId',nodes['p200-b05']['text'])
+                    self.assertRegex(nodes['p200-b05']['text'],r'Integer[ \u00a0]categoryId')
                     self.assertEqual(normalized(nodes['p200-b05']['text']),normalized(old_nodes['p200-b05']['text']))
                     self.assertEqual(nodes['p230-b01']['text'],'【参考】'+old_nodes['p230-b01']['text'])
                     self.assertEqual(nodes['p235-b05'],dict(old_nodes['p235-b05'],kind='heading'))
@@ -780,6 +781,54 @@ class IllustrationSourceTests(unittest.TestCase):
                     self.assertEqual(normalized(nodes[ident]['text']),normalized(text),ident)
                     self.assertEqual(nodes[ident]['attrs'],attrs,ident)
                     self.assertNotIn('•',nodes[ident]['text'],ident)
+
+
+    def test_list_layout_revision_preserves_other_source_content(self):
+        numbered = {'p242-b09','p242-b10','p242-b11','p242-b12'}
+        bootstrap_breaks = {
+            'p251-b02','p252-b03','p254-b03','p255-b01','p255-b04','p257-b02','p257-b03',
+            'p259-b03','p260-b04','p261-b03','p262-b04','p275-b07','p275-b08',
+            'p276-b05','p276-b06','p276-b07','p276-b08',
+        }
+        for name, edited, removed in (
+            ('06', {'p217-b05'}, set()),
+            ('07', numbered | bootstrap_breaks | {'p242-b08'}, {'p242-b13'}),
+        ):
+            with self.subTest(chapter=name):
+                _, old_nodes, old_figures, old_pages, old_config = edition_chapter(name, PRODUCT_BOOTSTRAP_APPROVED_EDITION)
+                _, nodes, figures, pages, config = chapter(name)
+                expected_pages = deepcopy(old_pages)
+                for page in expected_pages:
+                    page['entries'] = [i for i in page['entries'] if i not in removed]
+                if name=='07':
+                    old_config = deepcopy(old_config)
+                    old_config['pagination']['continue_before']['277'] = 'short-minor-heading'
+                    old_config['pagination']['figure_scales']['p260-f18'] = .95
+                self.assertEqual((figures,pages,config),(old_figures,expected_pages,old_config))
+                self.assertEqual(set(nodes),set(old_nodes)-removed)
+                self.assertEqual({i for i in nodes if nodes[i]!=old_nodes[i]},edited)
+                for ident in edited:
+                    node, prior = nodes[ident], old_nodes[ident]
+                    self.assertEqual(node['kind'],'paragraph',ident)
+                    if name=='06':
+                        self.assertEqual(node['attrs'],prior['attrs'],ident)
+                        self.assertNotIn('\n',node['text'])
+                        self.assertLess(len(node['text']),len(prior['text']))
+                        continue
+                    if ident=='p242-b08':
+                        self.assertEqual(node['parts'],[(text,'s015') for text,_ in prior['parts']])
+                        self.assertEqual(node['attrs'],prior['attrs'])
+                        continue
+                    expected_text = prior['text']
+                    if ident in numbered:
+                        lead, _, body = prior['text'].partition('\n')
+                        if ident=='p242-b12':
+                            body = old_nodes['p242-b13']['text']
+                        expected_text = lead.rstrip(':：')+'\n'+body
+                        self.assertEqual({style for text, style in node['parts'] if text.strip()},
+                                         {'s009','s015'},ident)
+                    self.assertEqual(normalized(node['text']),normalized(expected_text),ident)
+                    self.assertEqual(node['attrs'],{**prior['attrs'],'keep-lines':'true'},ident)
 
 
 class IllustrationPdfTests(unittest.TestCase):
