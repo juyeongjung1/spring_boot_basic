@@ -97,7 +97,8 @@ class SourceLayoutTests(unittest.TestCase):
                     'settings-note', 'thymeleaf', 'html', 'java', 'controller', 'locale')
         errors = ('title', 'console', 'name', 'trace-intro', 'trace', 'trace-read', 'template', 'sql', 'status')
         expected = {('03', 'migration-03-jpa-pom'), ('03', 'revision-di-caption'),
-                    ('02','revision-login3-instruction')}
+                    ('02','revision-login3-instruction'), ('02','revision-model-moving-pack'),
+                    ('02','revision-model-moving-unpack')}
         expected.update(('04', 'revision-messages-' + name) for name in messages)
         expected.update(('appendix-b', 'revision-errors-' + name) for name in errors)
         expected_figures = {('03', 'revision-di-remote')}

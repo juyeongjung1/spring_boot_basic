@@ -6,10 +6,10 @@ import unittest
 import typst
 
 from build import ROOT, compile_pdf, flow_layout, read_markdown, style_header
-from test_illustrations import TABLE_EDITION, edition_json
+from test_illustrations import MODEL_EDITION, TABLE_EDITION, edition_json
 
 REVIEW = ROOT/'output/verification/table-v6-2026'
-REVIEWS = ((ROOT/'output/verification/spacing-v5-2026',TABLE_EDITION),(REVIEW,None))
+REVIEWS = ((ROOT/'output/verification/spacing-v5-2026',TABLE_EDITION),(REVIEW,MODEL_EDITION))
 read = lambda path: json.loads(path.read_text(encoding='utf-8'))
 
 
@@ -33,9 +33,8 @@ class MinorSpacingTests(unittest.TestCase):
             self.assertEqual(plan(review)['extra_space_pt'],18)
             for part in plan(review)['chapters']:
                 name=part['chapter']
-                nodes,_,config,layout=chapter(name)
-                if edition:
-                    config=edition_json('docs/textbook/chapters/'+name+'/source.json',edition)
+                nodes,_,_,layout=chapter(name)
+                config=edition_json('docs/textbook/chapters/'+name+'/source.json',edition)
                 accepted=part['accepted']
                 with self.subTest(review=review.name,chapter=name):
                     self.assertEqual(config.get('typography',{}),
@@ -50,18 +49,30 @@ class MinorSpacingTests(unittest.TestCase):
                         self.assertTrue(styles,ident)
                         self.assertTrue(all(abs(s['size']-12)<.1 and 'Gothic' in s['font'] for s in styles),ident)
 
-    def test_all_final_markers_keep_the_no_extra_space_page_assignments(self):
+    def test_marker_pages_match_approved_spacing_baselines(self):
         for review,edition in REVIEWS:
             for part in plan(review)['chapters']:
                 name=part['chapter']
                 before=read(review/'spacing'/name/'baseline-marks.json')
                 relative='output/pdf/textbook/chapter-'+name+'/checks.json'
-                checks=edition_json(relative,edition) if edition else read(ROOT/relative)
+                checks=edition_json(relative,edition)
                 signature=lambda marks:[(m['id'],m['edge'],m['page']) for m in marks]
                 with self.subTest(review=review.name,chapter=name):
                     self.assertEqual(signature(checks['flow']['block_positions']),signature(before))
                     self.assertEqual(checks['flow']['pages'],part['baseline_pages'])
                     self.assertEqual(part['pages'],part['baseline_pages'])
+                    if review==REVIEW:
+                        current=read(ROOT/relative)
+                        if name!='02':
+                            self.assertEqual(current,checks)
+                            continue
+                        # 追加余白の全13見出しを含む、図改訂前の範囲を照合する。
+                        def through_source_58(marks):
+                            index=next(i for i,m in enumerate(marks) if m['id']=='__source-page-58' and m['edge']=='source-page')
+                            return marks[:index+1]
+                        prefix=through_source_58(current['flow']['block_positions'])
+                        self.assertEqual(signature(prefix),signature(through_source_58(before)))
+                        self.assertAlmostEqual(prefix[-1]['y'],86,places=3)
 
     def test_the_two_requested_operation_headings_follow_the_previous_page(self):
         _,pages,config,_=chapter('02')

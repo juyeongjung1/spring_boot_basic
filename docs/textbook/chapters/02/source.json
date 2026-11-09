@@ -350,7 +350,7 @@
   "tables": [],
   "illustrations": {
     "illustration-2026-model-transfer": {
-      "width": 280,
+      "width": 255,
       "max_height": 140,
       "caption_id": "illustration-2026-model-transfer-caption"
     },
@@ -373,6 +373,11 @@
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-model-key-property-caption"
+    },
+    "illustration-2026-model-moving-unpack": {
+      "width": 185,
+      "max_height": 140,
+      "caption_id": "illustration-2026-model-moving-unpack-caption"
     }
   },
   "pagination": {

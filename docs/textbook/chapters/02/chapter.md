@@ -1495,14 +1495,6 @@ HTMLのname属性値をFormのフィールド名と対応させ、送信され�
 
 :::
 
-![Modelを使ったデータの受け渡し](assets/revision-ill-model.png){#illustration-2026-model-transfer}
-
-::: {#illustration-2026-model-transfer-caption .paragraph}
-
-ControllerがModelに入れたデータとテンプレートから、Thymeleafがサーバー側でHTMLを生成します。
-
-:::
-
 ::: {#p058-b03 .paragraph}
 
 […/controller/LoginController3.java]{.s012}
@@ -1586,6 +1578,20 @@ ControllerがModelに入れたデータとテンプレートから、Thymeleaf�
 
 [これにより、return で呼び出すlogin\_success.html でも、userForm オブジェクトのデータが使]{.s009}\
 [用可能になります。]{.s009}
+
+:::
+
+::: {#revision-model-moving-pack .paragraph}
+
+[Modelは、引っ越しに使う段ボールにたとえられます。荷物を箱に入れ、「お皿」や「本」と中身の名前を書いて業者に渡します。Modelでは、箱に書いた名前がキー名に当たります。]{.s009}
+
+:::
+
+![荷物を箱に詰めて名前を付ける](assets/revision-ill-model.png){#illustration-2026-model-transfer}
+
+::: {#illustration-2026-model-transfer-caption .paragraph}
+
+箱に中身の名前を書いて渡すように、Modelに入れるデータにもキー名を付けます。
 
 :::
 
@@ -1693,6 +1699,20 @@ request.setAttribute("password", password);
 [変数式は$\{...\}という形で記述され、スコープ内にある変数の値を参照するために使われま]{.s009}\
 [す。変数名は大文字・小文字を区別するため、Model に追加されたキー名と正確に一致する]{.s009}\
 [必要があります。]{.s009}
+
+:::
+
+::: {#revision-model-moving-unpack .paragraph}
+
+[引っ越し先では、箱に書かれた名前を見て必要な箱を選び、中身を取り出します。Thymeleafでも、箱のラベルに当たるキー名を使ってModelのデータを参照します。]{.s009}
+
+:::
+
+![箱の名前を見て荷物を取り出す](assets/revision-ill-model-unpack.png){#illustration-2026-model-moving-unpack}
+
+::: {#illustration-2026-model-moving-unpack-caption .paragraph}
+
+「お皿」の箱を選んで取り出すように、キー名を手掛かりに必要なデータを参照します。
 
 :::
 

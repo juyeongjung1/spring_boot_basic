@@ -48,3 +48,9 @@
 - [幅の調査と独立目視](../../output/verification/table-v6-2026/prose/table-visual-review.json)
 - [リンク監査](../../output/verification/table-v6-2026/final-links.md)
 - [PDFのSHA-256と概要](../../output/verification/table-v6-2026/summary.json)
+
+## Modelの引っ越しの挿絵
+
+65ページの図2.5.1は、荷物を入れた箱に名前を書いて渡す場面です。67ページの図2.5.2は、キー名の一致を説明した後に、箱の名前を見て荷物を取り出す場面を置きました。既存のユーザーIDの参照図は68ページの図2.5.3です。
+
+本文は343ページです。64〜68ページの図と本文を目視し、範囲外の338ページは直前版と描画・文字座標が一致しました。目次と元頁の改ページ位置、63件のURIリンクも照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)

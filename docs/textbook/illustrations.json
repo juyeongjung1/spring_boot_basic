@@ -53,25 +53,28 @@
     },
     {
       "id": "model-transfer",
-      "title": "Modelを使ったデータの受け渡し",
-      "chapter": "02",
-      "source_page": 58,
-      "after_id": "p058-b02",
-      "before_id": "p058-b03",
+      "title": "荷物を箱に詰めて名前を付ける",
+      "source_page": 59,
+      "before_id": "p059-b04",
       "figure_id": "illustration-2026-model-transfer",
-      "caption_id": "illustration-2026-model-transfer-caption",
       "asset": "assets/revision-ill-model.png",
-      "width": 280,
+      "width": 255,
+      "caption": "箱に中身の名前を書いて渡すように、Modelに入れるデータにもキー名を付けます。",
+      "purpose": "荷造りと箱の名前を、Modelにキー名を付けてデータを渡す操作に結び付ける。",
+      "source_evidence": [
+        "p059-b02",
+        "p059-b03"
+      ],
+      "chapter": "02",
+      "after_id": "revision-model-moving-pack",
+      "caption_id": "illustration-2026-model-transfer-caption",
       "max_height": 140,
-      "caption": "ControllerがModelに入れたデータとテンプレートから、Thymeleafがサーバー側でHTMLを生成します。",
-      "purpose": "Formで受け取ったデータを、Modelのキーを介してViewへ渡す関係を理解する。MVC全体図は再掲しない。",
-      "difference": "既存図はMVC全体の往復とAPI構文。今回は名前付きデータを渡す箱の比喩だけに限定する。",
-      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-1b15bc7e-ef57-48f5-a445-603bfe408c5a.png",
-      "prompt": "Use case: scientific-educational. One compact illustration for a Japanese Spring Boot textbook, very wide horizontal composition about 2.4:1, pure white background. Friendly flat 2D editorial drawing with crisp dark navy outlines, muted teal and blue and a small warm orange accent. No glossy surfaces, no shadows, no decorative objects, no title banner, no watermark. Very large legible labels and a sparse layout, suitable for printing at only 106 mm wide by 49 mm high. Only render exact requested labels. This must be technically accurate.\nSubject: how template rendering combines Model data and a template, explicitly not a linear chain where Model executes application logic. Arrange an upper-left Controller desk labeled exactly \"Controller\", with an orange data card being placed in a teal open basket labeled exactly \"Model\". Below it a separate white template sheet with empty rectangular placeholders, labeled exactly \"テンプレート\". An arrow from the Model basket and a separate arrow from the template sheet converge on a small central rendering gear labeled exactly \"Thymeleaf\". From the gear, one arrow leads right to a clean HTML result sheet, where the same orange card's contents now fill the placeholder; label this result exactly \"HTML\". Model is drawn as a passive container, never as a processing gear. No browser and no client-side execution.",
-      "asset_sha256": "fa23edf5a85d40aa5b04d2766d50a0cbf4096ea945086385f3c711b9c6cfadd1",
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-f0b80dab-7bfc-4bd9-9503-0569ba577a7e.png",
+      "prompt": "Use case: scientific-educational. Asset type: compact illustration printed in a Japanese Spring Boot textbook. Wide landscape composition about 2.4:1. Pure white background, clear flat 2D Japanese textbook editorial drawing, dark navy outlines, matte muted teal and blue clothing, warm light kraft cardboard, orange and teal marker accents. Sparse scene, large details legible when printed at only 95–100 mm wide. Leave modest white margins. Exactly two readable Japanese labels, written large and clearly on the forward-facing sides of the matching moving boxes: \"お皿\" in orange and \"本\" in dark teal. These are exact text, no extra text, numerals, UI, diagram labels, logos, gloss, decorative icons, shadows, or watermark.\nPrimary request: illustrate packing household belongings, labeling the boxes by contents, and handing the packed boxes to the mover. One continuous simple left-to-right scene. At left a person in a muted blue shirt packs a small stack of white dinner plates into an open kraft box labeled \"お皿\". A visible capped orange marker rests beside the label. At right a friendly teal-uniform mover takes a closed kraft box labeled \"本\" from that person, holding the box itself with both hands. Two boxes total, labels face the viewer. Draw a small stack of books peeking out of a partially open top on the \"本\" box if it helps identify the contents while maintaining a convincing handoff. Make the labels, the dishes going into the box, and the handoff immediately readable. One scene, uncluttered, simple silhouettes, no room furniture.",
+      "asset_sha256": "de6c7a5488cf29897da770d72e2166aa369dab6f7c38548564dd24fc952c158f",
       "image_pixels": [
-        1942,
-        809
+        1920,
+        819
       ]
     },
     {
@@ -496,6 +499,31 @@
         "矢印の起点はtypeではなくname属性値にする。"
       ],
       "edit_prompt": "Edit this diagram with ONE precise correction only. Move the lower orange arrow so its tail begins immediately to the right of the highlighted name=\"password\"> line in the lower left HTML row (at the lower part of that row), then use a short right-angle upward bend to reach the same password field on the UserForm. Its tail must clearly originate from the name attribute, NOT from the type=\"password\" line. Match the upper blue arrow structure, which already originates from name=\"id\">. Keep ALL text, straight ASCII quotes, code, labels HTMLのname属性 and UserForm, both colored rows, all boxes, values 1234/abc, upper blue arrow, exact wide composition and colors unchanged. Do not add any text or elements. The teaching point is HTML name attributes binding to Form field names."
+    },
+    {
+      "id": "model-moving-unpack",
+      "title": "箱の名前を見て荷物を取り出す",
+      "source_page": 60,
+      "before_id": "p060-b04",
+      "figure_id": "illustration-2026-model-moving-unpack",
+      "asset": "assets/revision-ill-model-unpack.png",
+      "width": 185,
+      "caption": "「お皿」の箱を選んで取り出すように、キー名を手掛かりに必要なデータを参照します。",
+      "purpose": "引っ越し先で箱を選ぶ場面を通して、キー名でModelのデータを参照する操作を理解する。",
+      "source_evidence": [
+        "p060-b03"
+      ],
+      "chapter": "02",
+      "after_id": "revision-model-moving-unpack",
+      "caption_id": "illustration-2026-model-moving-unpack-caption",
+      "max_height": 140,
+      "generation_source": "C:\\Users\\jungj\\.codex\\generated_images\\01a1a528-adc4-7ee1-a435-35f76c23c5e0\\exec-aa9b02ea-073a-4800-9d54-ddca7ad41674.png",
+      "prompt": "Use case: scientific-educational. Asset type: compact illustration printed in a Japanese Spring Boot textbook. Wide landscape composition about 2.4:1. Pure white background, clear flat 2D Japanese textbook editorial drawing, dark navy outlines, matte muted teal and blue clothing, warm light kraft cardboard, orange and teal marker accents. Sparse scene, large details legible when printed at only 95–100 mm wide. Leave modest white margins. Exactly two readable Japanese labels, written large and clearly on the forward-facing sides of the matching moving boxes: \"お皿\" in orange and \"本\" in dark teal. These are exact text, no extra text, numerals, UI, diagram labels, logos, gloss, decorative icons, shadows, or watermark.\nPrimary request: illustrate unpacking at the destination by using the label to choose the right moving box. Draw just two kraft moving boxes side by side, their front labels readable: left \"お皿\", right \"本\". A person wearing a muted blue shirt at the destination has opened the \"お皿\" box and lifts a small stack of white dinner plates out with both hands, looking at the chosen box. Keep the \"本\" box closed and untouched. A small unobtrusive hint of an interior doorframe is enough to suggest the new home. Put clear visual focus on reading the label and extracting the matching plates. Large labels, clear gestures and very simple surroundings.",
+      "asset_sha256": "5065eae74444c2b2992e24018673550446a3f4b9337febf63a5c93b6cf7b346c",
+      "image_pixels": [
+        1920,
+        819
+      ]
     },
     {
       "id": "model-key-property",

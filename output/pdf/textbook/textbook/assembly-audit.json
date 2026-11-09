@@ -8,6 +8,14 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 63,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "2587e2033031f38222c952c2525dba82c9dce60e008dbef4820cdd00cfec7381",
-  "verification": "output/verification/compact-pages-2026/"
+  "pdf_sha256": "b583d1cb617041f807d52efef35383b75992127768d1a7087ec822d77628d898",
+  "verification": "docs/textbook/verification.md#modelの引っ越しの挿絵",
+  "pages_with_layout_changes": [
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "identical_rendered_pages": 338
 }
