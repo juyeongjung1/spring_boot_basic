@@ -142,3 +142,14 @@
 第5章224ページに、th:fragmentとth:replaceで共通ヘッダーを取り込む短い参考例を載せました。214・218〜220ページと演習ガイド43ページの参照名は、配布版に合わせて先頭のスラッシュを省いています。[Thymeleaf公式のフラグメント解説](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#defining-and-referencing-fragments)
 
 合冊版は本文341ページ、演習ガイド79ページです。[本文の合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)・[演習ガイドの合冊監査](../../output/pdf/textbook/exercise/assembly-audit.json)
+
+
+## Thymeleafの3画面とFlexboxの補足
+
+224ページでは、Layout DialectとThymeleaf標準の違いを表にまとめ、共通枠の `layout2.html` を抜粋しました。225ページでは、登録・一覧・詳細の各画面が `th:replace` でタイトルと本文を渡す箇所と、一覧画面を返すControllerを掲載しました。[Thymeleaf公式のレイアウト継承](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#layout-inheritance)・[Layout Dialectの公式資料](https://ultraq.github.io/thymeleaf-layout-dialect/processors/decorate/)
+
+登録・一覧・詳細のサンプルは `spring_answer_5` の `templates/fragment_sample` に置きました。Java 21・Spring Boot 4.0.2のMockMvcテスト2件で、共通枠を適用した3画面の描画、既存の一覧の表示、登録後の遷移を確認しました。DBアクセスは商品サービスのモックで代替しています。
+
+旧312ページは新313ページです。通常のブロック要素、グリッドの `row`、列内の `d-flex` の順に説明し、`justify-content-between` で商品一覧の見出しと新規登録ボタンを左右に並べる例を同じページに収めました。[Bootstrap公式のグリッド](https://getbootstrap.com/docs/5.3/layout/grid/)・[Flexユーティリティ](https://getbootstrap.com/docs/5.3/utilities/flex/)
+
+合冊版は342ページです。原本に由来する図版の位置、改ページの境界、目次79件、URIリンク68件を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)

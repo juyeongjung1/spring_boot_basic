@@ -1315,25 +1315,95 @@ body > footer {
 
 ::: {#revision-standard-fragment-intro .paragraph}
 
-[Thymeleaf標準のフラグメント機能で、共通ヘッダーを取り込む例です。]{.s009}[th:fragment]{.s014}[で部品に名前を付け、]{.s009}[th:replace]{.s014}[で呼び出し側のタグをその部品に置き換えます。]{.s009}
+[Thymeleaf標準でも、]{.s009}[th:fragment]{.s014}[で部品に名前を付け、]{.s009}[th:replace]{.s014}[でその部品に置き換えられます。下のコードはlayout2.html の共通枠の抜粋です。]{.s009}
 
 :::
 
-::: {#revision-standard-fragment-definition .code filename="…/resources/templates/layout.html"}
+::: {#revision-standard-fragment-comparison .table}
+
+| 項目 | Layout Dialect | Thymeleaf標準 |
+| --- | --- | --- |
+| 追加依存 | thymeleaf-layout-dialect | Thymeleaf標準で利用 |
+| 共通枠の定義 | layout:fragment | th:fragment |
+| 各画面での指定 | layout:decorate と同名の layout:fragment | th:replace で引数を渡す |
+
+:::
+
+::: {#revision-standard-fragment-definition .code filename="…/resources/templates/layout2.html"}
 
 ```xml
-<header th:fragment="siteHeader">
-    <h1>Traino家電商品</h1>
-</header>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org"
+      th:fragment="page(title, content)">
+    <title th:replace="${title}">Traino商品</title>
+        <main th:replace="${content}"></main>
 ```
 
 :::
 
-::: {#revision-standard-fragment-call .code filename="…/resources/templates/sample.html"}
+::: {#revision-standard-fragment-screens .heading keep-next="6"}
+
+[layout2.html を3画面に適用する]{.s010}
+
+:::
+
+::: {#revision-standard-fragment-arguments .paragraph}
+
+[以下は、各画面から共通枠を呼ぶ部分の抜粋です。]{.s009}[~\{::title\}]{.s014}[と]{.s009}[~\{::main\}]{.s014}[で、その画面のtitle要素とmain要素を選び、layout2.html のpageに順番に渡します。]{.s009}
+
+:::
+
+::: {#revision-standard-fragment-call .code filename="…/templates/fragment_sample/insert2.html"}
 
 ```xml
-<header th:replace="~{layout :: siteHeader}"></header>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout2 :: page(~{::title}, ~{::main})}">
+    <title>商品登録</title>
+    <main>
+        <h1>商品登録</h1>
 ```
+
+:::
+
+::: {#revision-standard-fragment-list .code filename="…/templates/fragment_sample/list2.html"}
+
+```xml
+<html lang="ja" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout2 :: page(~{::title}, ~{::main})}">
+    <title>商品一覧</title>
+    <main>
+        <h1>商品一覧</h1>
+```
+
+:::
+
+::: {#revision-standard-fragment-detail .code filename="…/templates/fragment_sample/detail2.html"}
+
+```xml
+<html lang="ja" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout2 :: page(~{::title}, ~{::main})}">
+    <title>商品詳細</title>
+    <main>
+        <h1>商品詳細</h1>
+```
+
+:::
+
+::: {#revision-standard-fragment-controller .code filename="…/controller/ProductFragmentController.java"}
+
+```java
+@GetMapping("/list")
+public String showProductList(Model model) {
+    model.addAttribute("products",
+            productService.findAllProducts());
+    return "fragment_sample/list2";
+}
+```
+
+:::
+
+::: {#revision-standard-fragment-run .paragraph}
+
+[spring_answer_5 を起動し、]{.s009}[http://localhost:8080/product/fragment/list]{.s014}[を開きます。メニューから登録画面、商品名から詳細画面を開けます。]{.s009}
 
 :::
 

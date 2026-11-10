@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout2 :: page(~{::title}, ~{::main})}">
+<head>
+    <title>商品一覧</title>
+</head>
+<body>
+    <main>
+        <h1>商品一覧</h1>
+        <table>
+            <thead>
+                <tr><th>商品番号</th><th>商品名</th><th>価格</th><th>イメージ</th></tr>
+            </thead>
+            <tbody>
+                <tr th:each="product : ${products}">
+                    <td th:text="${product.id}"></td>
+                    <td>
+                        <a th:href="@{/product/fragment/detail/{id}(id=${product.id})}"
+                           th:text="${product.name}"></a>
+                    </td>
+                    <td th:if="${product.price > 30000}" th:text="${product.price}" style="color: red;"></td>
+                    <td th:unless="${product.price > 30000}" th:text="${product.price}"></td>
+                    <td><img th:src="@{/images/product{id}.png(id=${product.id})}" th:alt="${product.name}"
+                             width="60" height="60"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

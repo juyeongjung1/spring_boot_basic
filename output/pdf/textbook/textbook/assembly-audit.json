@@ -1,22 +1,19 @@
 {
   "collection": "textbook",
-  "flow_pages": 341,
+  "flow_pages": 342,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
   "approved_continuation_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
-  "uri_annotations_verified": 63,
+  "uri_annotations_verified": 68,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "76156b06c420c59fb102d5a7b138ae00e159df8a696f042e1fccece96573b517",
-  "verification": "docs/textbook/verification.md#グリッドの列内配置と標準フラグメント",
+  "pdf_sha256": "717eafd440beefbd4451a1788f86ead27eb9af9d8c68cba8652460285d16e51f",
+  "verification": "docs/textbook/verification.md#thymeleafの3画面とflexboxの補足",
   "reviewed_pages": [
-    214,
-    218,
-    219,
-    220,
     224,
-    312
+    225,
+    313
   ],
   "chapter_page_counts": {
     "front": 14,
@@ -24,7 +21,7 @@
     "02": 37,
     "03": 89,
     "04": 37,
-    "05": 31,
+    "05": 32,
     "06": 48,
     "07": 50,
     "appendix-a": 8,
