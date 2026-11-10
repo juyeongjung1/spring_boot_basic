@@ -299,102 +299,88 @@
         "y": 358.29699999999997
       },
       {
-        "id": "figure-number-illustration-2026-error-cause-chain",
+        "id": "illustration-2026-error-cause-chain",
         "edge": "start",
         "page": 3,
         "x": 85.104,
         "y": 358.29699999999997
       },
       {
-        "id": "figure-number-illustration-2026-error-cause-chain",
-        "edge": "end",
-        "page": 3,
-        "x": 85.104,
-        "y": 367.29699999999997
-      },
-      {
-        "id": "illustration-2026-error-cause-chain",
-        "edge": "start",
-        "page": 3,
-        "x": 85.104,
-        "y": 372.29699999999997
-      },
-      {
         "id": "illustration-2026-error-cause-chain",
         "edge": "end",
         "page": 3,
         "x": 85.104,
-        "y": 489.4089133574007
+        "y": 475.4089133574007
       },
       {
         "id": "illustration-2026-error-cause-chain-caption",
         "edge": "start",
         "page": 3,
         "x": 85.104,
-        "y": 495.4089133574007
+        "y": 481.4089133574007
       },
       {
         "id": "illustration-2026-error-cause-chain-caption",
         "edge": "end",
         "page": 3,
         "x": 85.104,
-        "y": 504.9089133574007
+        "y": 490.9089133574007
       },
       {
         "id": "figure-frame-illustration-2026-error-cause-chain",
         "edge": "end",
         "page": 3,
         "x": 85.104,
-        "y": 504.9089133574007
+        "y": 490.9089133574007
       },
       {
         "id": "instruction-illustration-2026-error-cause-chain",
         "edge": "end",
         "page": 3,
         "x": 79.104,
-        "y": 510.9089133574007
+        "y": 496.9089133574007
       },
       {
         "id": "revision-errors-template",
         "edge": "start",
         "page": 3,
         "x": 85.104,
-        "y": 522.9089133574007
+        "y": 508.9089133574007
       },
       {
         "id": "revision-errors-template",
         "edge": "end",
         "page": 3,
         "x": 85.104,
-        "y": 587.9489133574007
+        "y": 573.9489133574007
       },
       {
         "id": "revision-errors-sql",
         "edge": "start",
         "page": 3,
         "x": 85.104,
-        "y": 600.9089133574007
+        "y": 586.9089133574007
       },
       {
         "id": "revision-errors-sql",
         "edge": "end",
         "page": 3,
         "x": 85.104,
-        "y": 665.9489133574007
+        "y": 651.9489133574007
       },
       {
         "id": "revision-errors-status",
         "edge": "start",
         "page": 3,
         "x": 85.104,
-        "y": 678.9089133574007
+        "y": 664.9089133574007
       },
       {
         "id": "revision-errors-status",
         "edge": "end",
         "page": 3,
         "x": 85.104,
-        "y": 743.9489133574007
+        "y": 729.9489133574007
       },
       {
         "id": "p291-b11",
@@ -446,20 +432,6 @@
         "y": 86.0
       },
       {
-        "id": "figure-frame-p292-f01",
-        "edge": "start",
-        "page": 5,
-        "x": 91.7999984741211,
-        "y": 210.84999389648436
-      },
-      {
-        "id": "figure-frame-p292-f01",
-        "edge": "end",
-        "page": 5,
-        "x": 91.7999984741211,
-        "y": 306.84998779296876
-      },
-      {
         "id": "p292-f01",
         "edge": "start",
         "page": 5,
@@ -472,20 +444,6 @@
         "page": 5,
         "x": 95.7999984741211,
         "y": 302.84998779296876
-      },
-      {
-        "id": "figure-number-p292-f01",
-        "edge": "start",
-        "page": 5,
-        "x": 457.1000183105469,
-        "y": 219.84999389648436
-      },
-      {
-        "id": "figure-number-p292-f01",
-        "edge": "end",
-        "page": 5,
-        "x": 457.1000183105469,
-        "y": 231.59999389648436
       },
       {
         "id": "__source-page-293",
@@ -502,20 +460,6 @@
         "y": 86.0
       },
       {
-        "id": "figure-frame-p293-f02",
-        "edge": "start",
-        "page": 6,
-        "x": 91.2999984741211,
-        "y": 82.7999984741211
-      },
-      {
-        "id": "figure-frame-p293-f02",
-        "edge": "end",
-        "page": 6,
-        "x": 91.2999984741211,
-        "y": 214.79999999999998
-      },
-      {
         "id": "p293-f02",
         "edge": "start",
         "page": 6,
@@ -528,34 +472,6 @@
         "page": 6,
         "x": 95.2999984741211,
         "y": 210.79999999999998
-      },
-      {
-        "id": "figure-number-p293-f02",
-        "edge": "start",
-        "page": 6,
-        "x": 420.6000183105469,
-        "y": 91.7999984741211
-      },
-      {
-        "id": "figure-number-p293-f02",
-        "edge": "end",
-        "page": 6,
-        "x": 420.6000183105469,
-        "y": 103.5499984741211
-      },
-      {
-        "id": "figure-frame-p293-f03",
-        "edge": "start",
-        "page": 6,
-        "x": 80.2999984741211,
-        "y": 357.4999572753906
-      },
-      {
-        "id": "figure-frame-p293-f03",
-        "edge": "end",
-        "page": 6,
-        "x": 80.2999984741211,
-        "y": 410.29996948242194
       },
       {
         "id": "p293-f03",
@@ -572,34 +488,6 @@
         "y": 406.29996948242194
       },
       {
-        "id": "figure-number-p293-f03",
-        "edge": "start",
-        "page": 6,
-        "x": 517.8,
-        "y": 366.4999572753906
-      },
-      {
-        "id": "figure-number-p293-f03",
-        "edge": "end",
-        "page": 6,
-        "x": 517.8,
-        "y": 378.2499572753906
-      },
-      {
-        "id": "figure-frame-p293-f04",
-        "edge": "start",
-        "page": 6,
-        "x": 91.2999984741211,
-        "y": 551.0499755859375
-      },
-      {
-        "id": "figure-frame-p293-f04",
-        "edge": "end",
-        "page": 6,
-        "x": 91.2999984741211,
-        "y": 596.6499755859375
-      },
-      {
         "id": "p293-f04",
         "edge": "start",
         "page": 6,
@@ -612,20 +500,6 @@
         "page": 6,
         "x": 95.2999984741211,
         "y": 592.6499755859375
-      },
-      {
-        "id": "figure-number-p293-f04",
-        "edge": "start",
-        "page": 6,
-        "x": 391.8,
-        "y": 560.0499755859375
-      },
-      {
-        "id": "figure-number-p293-f04",
-        "edge": "end",
-        "page": 6,
-        "x": 391.8,
-        "y": 571.7999755859375
       },
       {
         "id": "__source-page-294",
@@ -642,20 +516,6 @@
         "y": 86.0
       },
       {
-        "id": "figure-frame-p294-f05",
-        "edge": "start",
-        "page": 7,
-        "x": 91.7999984741211,
-        "y": 516.8500244140625
-      },
-      {
-        "id": "figure-frame-p294-f05",
-        "edge": "end",
-        "page": 7,
-        "x": 91.7999984741211,
-        "y": 756.8500488281251
-      },
-      {
         "id": "p294-f05",
         "edge": "start",
         "page": 7,
@@ -668,20 +528,6 @@
         "page": 7,
         "x": 95.7999984741211,
         "y": 752.8500488281251
-      },
-      {
-        "id": "figure-number-p294-f05",
-        "edge": "start",
-        "page": 7,
-        "x": 385.1000183105469,
-        "y": 525.8500244140625
-      },
-      {
-        "id": "figure-number-p294-f05",
-        "edge": "end",
-        "page": 7,
-        "x": 385.1000183105469,
-        "y": 537.6000244140625
       },
       {
         "id": "__source-page-295",
@@ -724,110 +570,7 @@
         ]
       }
     ],
-    "numbered_figures": {
-      "illustration-2026-error-cause-chain": {
-        "number": "図B.2.1",
-        "kind": "compact",
-        "caption_id": "illustration-2026-error-cause-chain-caption",
-        "caption": "このログの例では、Caused by:から原因をたどり、ProductService.javaの26行目を確認します。",
-        "title": ""
-      },
-      "p292-f01": {
-        "number": "図B.3.1",
-        "kind": "native",
-        "caption_id": null,
-        "caption": "",
-        "title": "",
-        "frame_box": [
-          91.7999984741211,
-          210.84999389648436,
-          454.1000183105469,
-          306.84998779296876
-        ],
-        "number_box": [
-          454.1000183105469,
-          219.84999389648436,
-          502.1000183105469,
-          234.84999389648436
-        ]
-      },
-      "p293-f02": {
-        "number": "図B.3.2",
-        "kind": "native",
-        "caption_id": null,
-        "caption": "",
-        "title": "",
-        "frame_box": [
-          91.2999984741211,
-          82.7999984741211,
-          417.6000183105469,
-          214.8
-        ],
-        "number_box": [
-          417.6000183105469,
-          91.7999984741211,
-          465.6000183105469,
-          106.7999984741211
-        ]
-      },
-      "p293-f03": {
-        "number": "図B.3.3",
-        "kind": "native",
-        "caption_id": null,
-        "caption": "",
-        "title": "",
-        "frame_box": [
-          80.2999984741211,
-          357.4999572753906,
-          514.8,
-          410.2999694824219
-        ],
-        "number_box": [
-          514.8,
-          366.4999572753906,
-          562.8,
-          381.4999572753906
-        ]
-      },
-      "p293-f04": {
-        "number": "図B.3.4",
-        "kind": "native",
-        "caption_id": null,
-        "caption": "",
-        "title": "",
-        "frame_box": [
-          91.2999984741211,
-          551.0499755859375,
-          388.8,
-          596.6499755859375
-        ],
-        "number_box": [
-          388.8,
-          560.0499755859375,
-          436.8,
-          575.0499755859375
-        ]
-      },
-      "p294-f05": {
-        "number": "図B.6.1",
-        "kind": "native",
-        "caption_id": null,
-        "caption": "",
-        "title": "",
-        "frame_box": [
-          91.7999984741211,
-          516.8500244140625,
-          382.1000183105469,
-          756.850048828125
-        ],
-        "number_box": [
-          382.1000183105469,
-          525.8500244140625,
-          430.1000183105469,
-          540.8500244140625
-        ]
-      }
-    },
+    "numbered_figures": {},
     "pagination": {
       "options": {},
       "source_boundaries": [

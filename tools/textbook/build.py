@@ -581,8 +581,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 figure = compact_figures[ident]
                 path = '/' + (folder / figures[ident]).relative_to(ROOT).as_posix()
                 caption_id = figure['caption_id']
+                number = q(numbered[ident]['number']) if ident in numbered else 'none'
                 return (f'#compact-illustration({q(ident)}, {q(path)}, {figure["width"]}, {figure["height"]}, '
-                        f'{q(caption_id)}, {q(nodes[caption_id]["text"])}, {q(numbered[ident]["number"])})')
+                        f'{q(caption_id)}, {q(nodes[caption_id]["text"])}, {number})')
             fig = figure_map.get(ident, {"box": [85.104, 0, 511.776, 0]})
             path = "/" + (folder / figures[ident]).relative_to(ROOT).as_posix()
             width = (fig['box'][2] - fig['box'][0]) * figure_scales.get(ident, 1)

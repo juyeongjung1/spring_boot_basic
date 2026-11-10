@@ -27,35 +27,29 @@ def chapter_key(config):
 def figure_numbers(config, layout, nodes, figures, order):
     """現行Markdownの順序から、独立図だけの番号と表示情報を返す。"""
     chapter = chapter_key(config)
+    if chapter.startswith('appendix-'):
+        return {}
     folder = ROOT / 'docs/textbook/chapters' / chapter
-    appendix = chapter.startswith('appendix-')
-    prefix = chapter.rsplit('-', 1)[-1].upper() if appendix else str(config['chapter'])
+    prefix = str(config['chapter'])
     if config.get('kind') == 'exercise':
         prefix = 'E' + prefix
     originals = {f['id']: f for f in layout['figures']}
     labels = json.loads((HERE / 'filename_labels.json').read_text(encoding='utf-8'))
     omitted = {r['figure_id'] for r in labels if r['chapter'] == chapter}
     omitted |= {ident for ch, ident in TEXT_NOTES if ch == chapter}
-    omitted.update(config.get("unnumbered_figures", []))
     attached = ({ident for geometry in code_geometries(folder, layout, nodes).values()
                  for ident in geometry.get('figure_ids', [])}
                 if any(n['kind'] == 'code' for n in nodes.values()) else set())
     cover = set(order[0]['entries']) if config.get('cover_mode', 'classic') != 'none' else set()
     compact = config.get('illustrations', {})
-    section, appendix_section, counts, result = 1, 0, Counter(), {}
+    section, counts, result = 1, Counter(), {}
     for page in order:
         for ident in page['entries']:
             if ident in nodes and ident not in cover and nodes[ident]['kind'] == 'heading':
                 text = nodes[ident]['text'].strip()
                 match = re.match(r'(?:演習\s*)?(\d+)\s*\.\s*(\d+)(?:\s*\.|\s|$)', text)
-                if not appendix and match and int(match[1]) == int(config['chapter']):
+                if match and int(match[1]) == int(config['chapter']):
                     section = int(match[2])
-                elif appendix and not re.search(r'【\s*参考\s*】', text):
-                    styles = [layout['styles'].get((style or '').split(':')[-1], {})
-                              for value, style in nodes[ident]['parts'] if value.strip()]
-                    if any(style.get('size', 0) >= 14 for style in styles):
-                        appendix_section += 1
-                        section = appendix_section
             if ident not in figures or ident in cover or ident in omitted:
                 continue
             original = originals.get(ident, {})

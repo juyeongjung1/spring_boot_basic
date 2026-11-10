@@ -1,12 +1,13 @@
-"""独立図の採番・対象漏れと、固定ページの番号タブの干渉を検証する。"""
+"""本文の独立図の採番と、付録の図番号の省略を検証する。"""
 from functools import lru_cache
 import json
 import unittest
 
+import pymupdf as fitz
 import typst
 
 from build import ROOT, compile_pdf, q, read_markdown, style_header
-from figure_numbers import figure_numbers, native_number_box
+from figure_numbers import figure_numbers
 
 
 @lru_cache(maxsize=None)
@@ -23,10 +24,6 @@ def chapters():
     return result
 
 
-def intersects(a, b):
-    return min(a[2], b[2]) > max(a[0], b[0]) and min(a[3], b[3]) > max(a[1], b[1])
-
-
 class FigureNumberTests(unittest.TestCase):
     def test_numbered_figures_cover_all_independent_images(self):
         labels = json.loads((ROOT / 'tools/textbook/filename_labels.json').read_text(encoding='utf-8'))
@@ -35,15 +32,16 @@ class FigureNumberTests(unittest.TestCase):
             omitted = {r['figure_id'] for r in labels if r['chapter'] == chapter}
             if chapter == '03':
                 omitted |= {'p071-f08', 'p113-f50'}
-            excluded = set(config.get('unnumbered_figures', []))
-            self.assertLessEqual(excluded, set(figures), chapter)
-            omitted |= excluded | {f['id'] for f in layout['figures'] if f.get('slide')}
+            omitted |= {f['id'] for f in layout['figures'] if f.get('slide')}
             if config.get('cover_mode', 'classic') != 'none':
                 omitted |= set(order[0]['entries'])
             with self.subTest(chapter=chapter):
+                if chapter in ('appendix-a', 'appendix-b'):
+                    self.assertFalse(numbers)
+                    continue
                 self.assertEqual(set(numbers), set(figures) - omitted)
                 for record in numbers.values():
-                    self.assertRegex(record['number'], r'^図(?:E?\d+|A|B)\.\d+\.\d+$')
+                    self.assertRegex(record['number'], r'^図E?\d+\.\d+\.\d+$')
                     if record['caption_id']:
                         self.assertEqual(record['caption'], nodes[record['caption_id']]['text'])
                 all_numbers += [r['number'] for r in numbers.values()]
@@ -92,26 +90,16 @@ class FigureNumberTests(unittest.TestCase):
         self.assertTrue(number)
         self.assertGreaterEqual(min(r.x0 for r in number), 85.103)
 
-    def test_native_number_tabs_do_not_intersect_source_content(self):
-        count = 0
-        for chapter, config, layout, nodes, figures, order, numbers in chapters():
-            for ident, record in numbers.items():
-                if record['kind'] != 'native':
-                    continue
-                count += 1
-                figure = next(f for f in layout['figures'] if f['id'] == ident)
-                page = next(p for p in layout['pages'] if p['source_page'] == figure['page'])
-                box = native_number_box(ident, record['number'], page, layout)
-                obstacles = [f['box'] for f in layout['figures'] if f['page'] == figure['page']]
-                obstacles += [r['bbox'] for b in layout['blocks'].values()
-                              if b['source_page'] == figure['page'] for line in b['lines']
-                              for r in line.get('runs', []) if r.get('bbox')]
-                obstacles += [r['bbox'] for r in page['furniture'] if r.get('bbox')]
-                with self.subTest(chapter=chapter, figure=ident):
-                    self.assertTrue(0 <= box[0] < box[2] <= 595.32)
-                    self.assertTrue(0 <= box[1] < box[3] <= 841.92)
-                    self.assertFalse(any(intersects(box, obstacle) for obstacle in obstacles))
-        self.assertEqual(count, 14)
+    def test_appendix_pdfs_have_no_figure_numbers(self):
+        for chapter in ('appendix-a', 'appendix-b'):
+            with self.subTest(chapter=chapter):
+                folder = ROOT / 'output/pdf/textbook' / ('chapter-' + chapter)
+                flow = json.loads((folder / 'checks.json').read_text(encoding='utf-8'))['flow']
+                self.assertFalse(flow['numbered_figures'])
+                self.assertFalse([m for m in flow['block_positions'] if m['id'].startswith('figure-number-')])
+                with fitz.open(folder / 'chapter-flow.pdf') as pdf:
+                    for page in pdf:
+                        self.assertNotRegex(page.get_text(), r'図\s*[AB]\s*\.\s*\d')
 
 
 if __name__ == '__main__':

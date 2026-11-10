@@ -92,7 +92,7 @@
   #block(width: 100% + 6pt, inset: 6pt, fill: white,
     stroke: 0.65pt + rgb("9AAEBF"), radius: 3pt, above: 0pt, below: 0pt)[
     #mark("figure-frame-" + id, "start")
-    #figure-number(id, number)
+    #if number != none {figure-number(id, number)}
     #block(width: width * 1pt, above: 0pt, below: 6pt)[
       #mark(id, "start")#image(path, width: width * 1pt, height: height * 1pt)#mark(id, "end")
     ]
