@@ -5,7 +5,7 @@
     164,
     191
   ],
-  "blocks": 155,
+  "blocks": 156,
   "figures": 23,
   "source_coverage": [
     {
@@ -3463,43 +3463,71 @@
         "id": "revision-standard-fragment-comparison",
         "edge": "end",
         "page": 29,
-        "x": 510.646969,
-        "y": 635.974
+        "x": 406.6665,
+        "y": 594.724
+      },
+      {
+        "id": "05-revision-standard-fragment-dialect-definition-part1",
+        "edge": "html-component",
+        "page": 29,
+        "x": 85.104,
+        "y": 608.599
+      },
+      {
+        "id": "revision-standard-fragment-dialect-definition",
+        "edge": "short-code",
+        "page": 29,
+        "x": 85.854,
+        "y": 650.8685310000001
+      },
+      {
+        "id": "revision-standard-fragment-dialect-definition",
+        "edge": "start",
+        "page": 29,
+        "x": 85.854,
+        "y": 650.8685310000001
+      },
+      {
+        "id": "revision-standard-fragment-dialect-definition",
+        "edge": "end",
+        "page": 29,
+        "x": 511.021969,
+        "y": 666.3724380000001
       },
       {
         "id": "05-revision-standard-fragment-definition-part1",
         "edge": "html-component",
         "page": 29,
         "x": 85.104,
-        "y": 649.849
+        "y": 685.8730000000002
       },
       {
         "id": "revision-standard-fragment-definition",
         "edge": "short-code",
         "page": 29,
         "x": 85.854,
-        "y": 692.1185310000001
+        "y": 728.1425310000002
       },
       {
         "id": "revision-standard-fragment-definition",
         "edge": "start",
         "page": 29,
         "x": 85.854,
-        "y": 692.1185310000001
+        "y": 728.1425310000002
       },
       {
         "id": "revision-standard-fragment-definition",
         "edge": "end",
         "page": 29,
         "x": 511.021969,
-        "y": 754.1341560000001
+        "y": 743.6464380000001
       },
       {
         "id": "instruction-revision-standard-fragment-title",
         "edge": "end",
         "page": 29,
         "x": 85.104,
-        "y": 761.635
+        "y": 751.147
       },
       {
         "id": "instruction-revision-standard-fragment-screens",
@@ -3516,130 +3544,130 @@
         "y": 86.0
       },
       {
-        "id": "revision-standard-fragment-arguments",
+        "id": "revision-standard-fragment-selection",
         "edge": "start",
         "page": 30,
         "x": 85.104,
         "y": 110.0
       },
       {
-        "id": "revision-standard-fragment-arguments",
+        "id": "revision-standard-fragment-selection",
         "edge": "end",
         "page": 30,
         "x": 85.104,
         "y": 139.04000000000002
       },
       {
-        "id": "05-revision-standard-fragment-call-part1",
+        "id": "05-revision-standard-fragment-dialect-list-part1",
         "edge": "html-component",
         "page": 30,
         "x": 85.104,
         "y": 152.0
       },
       {
-        "id": "revision-standard-fragment-call",
+        "id": "revision-standard-fragment-dialect-list",
         "edge": "short-code",
         "page": 30,
         "x": 85.854,
         "y": 194.269531
       },
       {
-        "id": "revision-standard-fragment-call",
+        "id": "revision-standard-fragment-dialect-list",
         "edge": "start",
         "page": 30,
         "x": 85.854,
         "y": 194.269531
       },
       {
-        "id": "revision-standard-fragment-call",
+        "id": "revision-standard-fragment-dialect-list",
         "edge": "end",
         "page": 30,
         "x": 511.021969,
-        "y": 271.789063
+        "y": 287.292969
       },
       {
         "id": "05-revision-standard-fragment-list-part1",
         "edge": "html-component",
         "page": 30,
         "x": 85.104,
-        "y": 291.29
+        "y": 306.79299999999995
       },
       {
         "id": "revision-standard-fragment-list",
         "edge": "short-code",
         "page": 30,
         "x": 85.854,
-        "y": 333.559531
+        "y": 349.062531
       },
       {
         "id": "revision-standard-fragment-list",
         "edge": "start",
         "page": 30,
         "x": 85.854,
-        "y": 333.559531
+        "y": 349.062531
       },
       {
         "id": "revision-standard-fragment-list",
         "edge": "end",
         "page": 30,
         "x": 511.021969,
-        "y": 411.079063
+        "y": 426.582063
+      },
+      {
+        "id": "05-revision-standard-fragment-call-part1",
+        "edge": "html-component",
+        "page": 30,
+        "x": 85.104,
+        "y": 446.08299999999997
+      },
+      {
+        "id": "revision-standard-fragment-call",
+        "edge": "short-code",
+        "page": 30,
+        "x": 85.854,
+        "y": 488.35253099999994
+      },
+      {
+        "id": "revision-standard-fragment-call",
+        "edge": "start",
+        "page": 30,
+        "x": 85.854,
+        "y": 488.35253099999994
+      },
+      {
+        "id": "revision-standard-fragment-call",
+        "edge": "end",
+        "page": 30,
+        "x": 511.021969,
+        "y": 565.872063
       },
       {
         "id": "05-revision-standard-fragment-detail-part1",
         "edge": "html-component",
         "page": 30,
         "x": 85.104,
-        "y": 430.58000000000004
+        "y": 585.373
       },
       {
         "id": "revision-standard-fragment-detail",
         "edge": "short-code",
         "page": 30,
         "x": 85.854,
-        "y": 472.849531
+        "y": 627.6425310000001
       },
       {
         "id": "revision-standard-fragment-detail",
         "edge": "start",
         "page": 30,
         "x": 85.854,
-        "y": 472.849531
+        "y": 627.6425310000001
       },
       {
         "id": "revision-standard-fragment-detail",
         "edge": "end",
         "page": 30,
         "x": 511.021969,
-        "y": 550.3690630000001
-      },
-      {
-        "id": "05-revision-standard-fragment-controller-part1",
-        "edge": "html-component",
-        "page": 30,
-        "x": 85.104,
-        "y": 569.87
-      },
-      {
-        "id": "revision-standard-fragment-controller",
-        "edge": "short-code",
-        "page": 30,
-        "x": 85.854,
-        "y": 612.139531
-      },
-      {
-        "id": "revision-standard-fragment-controller",
-        "edge": "start",
-        "page": 30,
-        "x": 85.854,
-        "y": 612.139531
-      },
-      {
-        "id": "revision-standard-fragment-controller",
-        "edge": "end",
-        "page": 30,
-        "x": 511.021969,
-        "y": 705.162969
+        "y": 705.162063
       },
       {
         "id": "revision-standard-fragment-run",
@@ -3828,16 +3856,6 @@
         ]
       },
       {
-        "page": 29,
-        "uri": "http://www.thymeleaf.org",
-        "rect": [
-          278.9883728027344,
-          694.5509033203125,
-          417.5885925292969,
-          705.0509033203125
-        ]
-      },
-      {
         "page": 30,
         "uri": "http://localhost:8080/product/fragment/list",
         "rect": [
@@ -3849,12 +3867,22 @@
       },
       {
         "page": 30,
+        "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
+        "rect": [
+          244.32431030273438,
+          212.4519500732422,
+          481.0995788574219,
+          222.9519500732422
+        ]
+      },
+      {
+        "page": 30,
         "uri": "http://www.thymeleaf.org",
         "rect": [
-          278.9883728027344,
-          196.81800842285156,
-          417.5885925292969,
-          207.34530639648438
+          221.23837280273438,
+          196.7019500732422,
+          359.8384704589844,
+          207.2019500732422
         ]
       },
       {
@@ -3862,9 +3890,9 @@
         "uri": "http://www.thymeleaf.org",
         "rect": [
           278.9883728027344,
-          336.1080627441406,
+          351.6110534667969,
           417.5885925292969,
-          346.6353454589844
+          362.1383361816406
         ]
       },
       {
@@ -3872,9 +3900,19 @@
         "uri": "http://www.thymeleaf.org",
         "rect": [
           278.9883728027344,
-          475.3980407714844,
+          490.9010314941406,
           417.5885925292969,
-          485.9253234863281
+          501.4283142089844
+        ]
+      },
+      {
+        "page": 30,
+        "uri": "http://www.thymeleaf.org",
+        "rect": [
+          278.9883728027344,
+          630.1910400390625,
+          417.5885925292969,
+          640.7183227539062
         ]
       }
     ],
@@ -4492,6 +4530,20 @@
         ]
       },
       {
+        "id": "05-revision-standard-fragment-dialect-definition",
+        "kind": "code",
+        "consume_ids": [
+          "revision-standard-fragment-dialect-definition"
+        ],
+        "parts": [
+          {
+            "token": "05-revision-standard-fragment-dialect-definition-part1",
+            "width": 426.672,
+            "height": 65.274
+          }
+        ]
+      },
+      {
         "id": "05-revision-standard-fragment-definition",
         "kind": "code",
         "consume_ids": [
@@ -4501,21 +4553,21 @@
           {
             "token": "05-revision-standard-fragment-definition-part1",
             "width": 426.672,
-            "height": 111.786
+            "height": 65.274
           }
         ]
       },
       {
-        "id": "05-revision-standard-fragment-call",
+        "id": "05-revision-standard-fragment-dialect-list",
         "kind": "code",
         "consume_ids": [
-          "revision-standard-fragment-call"
+          "revision-standard-fragment-dialect-list"
         ],
         "parts": [
           {
-            "token": "05-revision-standard-fragment-call-part1",
+            "token": "05-revision-standard-fragment-dialect-list-part1",
             "width": 426.672,
-            "height": 127.29
+            "height": 142.793
           }
         ]
       },
@@ -4528,6 +4580,20 @@
         "parts": [
           {
             "token": "05-revision-standard-fragment-list-part1",
+            "width": 426.672,
+            "height": 127.29
+          }
+        ]
+      },
+      {
+        "id": "05-revision-standard-fragment-call",
+        "kind": "code",
+        "consume_ids": [
+          "revision-standard-fragment-call"
+        ],
+        "parts": [
+          {
+            "token": "05-revision-standard-fragment-call-part1",
             "width": 426.672,
             "height": 127.29
           }
@@ -4548,20 +4614,6 @@
         ]
       },
       {
-        "id": "05-revision-standard-fragment-controller",
-        "kind": "code",
-        "consume_ids": [
-          "revision-standard-fragment-controller"
-        ],
-        "parts": [
-          {
-            "token": "05-revision-standard-fragment-controller-part1",
-            "width": 426.672,
-            "height": 142.793
-          }
-        ]
-      },
-      {
         "id": "05-revision-standard-fragment-comparison",
         "kind": "table",
         "consume_ids": [
@@ -4570,8 +4622,8 @@
         "parts": [
           {
             "token": "05-revision-standard-fragment-comparison-part1",
-            "width": 426.672,
-            "height": 123.75
+            "width": 322.699,
+            "height": 82.5
           }
         ]
       },

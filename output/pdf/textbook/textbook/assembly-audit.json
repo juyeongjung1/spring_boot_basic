@@ -6,10 +6,10 @@
   "source_page_boundaries_verified": true,
   "approved_continuation_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
-  "uri_annotations_verified": 68,
+  "uri_annotations_verified": 69,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "717eafd440beefbd4451a1788f86ead27eb9af9d8c68cba8652460285d16e51f",
-  "verification": "docs/textbook/verification.md#thymeleafの3画面とflexboxの補足",
+  "pdf_sha256": "2e412c894f440c5e9d8c632b023d12a58ee47bc3d9da0011064dfe69606b6b5b",
+  "verification": "docs/textbook/verification.md#mainだけを差し替える共通レイアウトと列内配置",
   "reviewed_pages": [
     224,
     225,

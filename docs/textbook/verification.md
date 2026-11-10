@@ -153,3 +153,12 @@
 旧312ページは新313ページです。通常のブロック要素、グリッドの `row`、列内の `d-flex` の順に説明し、`justify-content-between` で商品一覧の見出しと新規登録ボタンを左右に並べる例を同じページに収めました。[Bootstrap公式のグリッド](https://getbootstrap.com/docs/5.3/layout/grid/)・[Flexユーティリティ](https://getbootstrap.com/docs/5.3/utilities/flex/)
 
 合冊版は342ページです。原本に由来する図版の位置、改ページの境界、目次79件、URIリンク68件を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
+
+
+## mainだけを差し替える共通レイアウトと列内配置
+
+224ページでは共通レイアウト側の `main` を比較し、225ページでは同じ商品一覧を表示する2方式のコードを続けて載せました。標準版は、`layout2.html` の `main` を、各画面が `th:fragment` で定義した `main_content` に差し替えます。Java 21・Spring Boot 4.0.2のMockMvcテスト2件で、共通のタイトルとヘッダー、3画面それぞれの本文、登録後の遷移を確認しました。商品サービスはモックで代替しています。[Thymeleaf公式のフラグメント式](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#fragment-specification-syntax)・[Layout Dialectの公式資料](https://ultraq.github.io/thymeleaf-layout-dialect/processors/decorate/)
+
+313ページでは、ブロック要素の通常の並び方、`row` で列が横並びになる理由、列内の `d-flex` と `justify-content` の使い方を順に説明します。挿絵の幅を約4％縮め、図とコード、動作確認の説明を同じページに収めました。[Bootstrap公式のグリッド](https://getbootstrap.com/docs/5.3/layout/grid/)・[Flexユーティリティ](https://getbootstrap.com/docs/5.3/utilities/flex/)
+
+合冊版は342ページです。本文の差分は224・225・313ページに収まり、原本に由来する図版の位置、改ページの境界、目次79件とURIリンク69件を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)

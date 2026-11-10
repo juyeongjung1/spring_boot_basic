@@ -1307,7 +1307,7 @@ body > footer {
 :::
 
 
-::: {#revision-standard-fragment-title .heading keep-next="3"}
+::: {#revision-standard-fragment-title .heading keep-next="4"}
 
 [【参考】 Thymeleaf標準のフラグメント]{.s010}
 
@@ -1315,51 +1315,56 @@ body > footer {
 
 ::: {#revision-standard-fragment-intro .paragraph}
 
-[Thymeleaf標準でも、]{.s009}[th:fragment]{.s014}[で部品に名前を付け、]{.s009}[th:replace]{.s014}[でその部品に置き換えられます。下のコードはlayout2.html の共通枠の抜粋です。]{.s009}
+[ヘッダー、メニュー、フッターは共通レイアウトに置き、]{.s009}[main]{.s014}[だけを各画面の部品に差し替えます。下のコードは、2つの方式で共通レイアウトの差し替え位置を指定する箇所です。]{.s009}
 
 :::
 
 ::: {#revision-standard-fragment-comparison .table}
 
-| 項目 | Layout Dialect | Thymeleaf標準 |
+| 各画面の指定 | Layout Dialect | Thymeleaf標準 |
 | --- | --- | --- |
-| 追加依存 | thymeleaf-layout-dialect | Thymeleaf標準で利用 |
-| 共通枠の定義 | layout:fragment | th:fragment |
-| 各画面での指定 | layout:decorate と同名の layout:fragment | th:replace で引数を渡す |
+| 共通レイアウトの指定 | layout:decorate | th:replace |
+| 各画面の main | layout:fragment | th:fragment |
+
+:::
+
+::: {#revision-standard-fragment-dialect-definition .code filename="…/resources/templates/layout.html"}
+
+```xml
+<main layout:fragment="main_content">
+```
 
 :::
 
 ::: {#revision-standard-fragment-definition .code filename="…/resources/templates/layout2.html"}
 
 ```xml
-<html lang="ja" xmlns:th="http://www.thymeleaf.org"
-      th:fragment="page(title, content)">
-    <title th:replace="${title}">Traino商品</title>
-        <main th:replace="${content}"></main>
+<main th:replace="~{::main_content}"></main>
 ```
 
 :::
 
 ::: {#revision-standard-fragment-screens .heading keep-next="6"}
 
-[layout2.html を3画面に適用する]{.s010}
+[商品一覧・登録・詳細に共通レイアウトを適用する]{.s010}
 
 :::
 
-::: {#revision-standard-fragment-arguments .paragraph}
+::: {#revision-standard-fragment-selection .paragraph}
 
-[以下は、各画面から共通枠を呼ぶ部分の抜粋です。]{.s009}[~\{::title\}]{.s014}[と]{.s009}[~\{::main\}]{.s014}[で、その画面のtitle要素とmain要素を選び、layout2.html のpageに順番に渡します。]{.s009}
+[各画面で共通レイアウトを指定し、mainをmain_contentという名前で定義します。標準版の]{.s009}[~\{::main_content\}]{.s014}[は、共通レイアウトの呼び出し元にあるmainを選びます。]{.s009}
 
 :::
 
-::: {#revision-standard-fragment-call .code filename="…/templates/fragment_sample/insert2.html"}
+::: {#revision-standard-fragment-dialect-list .code filename="…/templates/product/list.html"}
 
 ```xml
-<html lang="ja" xmlns:th="http://www.thymeleaf.org"
-      th:replace="~{layout2 :: page(~{::title}, ~{::main})}">
-    <title>商品登録</title>
-    <main>
-        <h1>商品登録</h1>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+    <!-- 中略 -->
+    <main layout:fragment="main_content">
+        <h1>商品一覧</h1>
 ```
 
 :::
@@ -1368,10 +1373,22 @@ body > footer {
 
 ```xml
 <html lang="ja" xmlns:th="http://www.thymeleaf.org"
-      th:replace="~{layout2 :: page(~{::title}, ~{::main})}">
-    <title>商品一覧</title>
-    <main>
+      th:replace="~{layout2}">
+<body>
+    <main th:fragment="main_content">
         <h1>商品一覧</h1>
+```
+
+:::
+
+::: {#revision-standard-fragment-call .code filename="…/templates/fragment_sample/insert2.html"}
+
+```xml
+<html lang="ja" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout2}">
+<body>
+    <main th:fragment="main_content">
+        <h1>商品登録</h1>
 ```
 
 :::
@@ -1380,30 +1397,17 @@ body > footer {
 
 ```xml
 <html lang="ja" xmlns:th="http://www.thymeleaf.org"
-      th:replace="~{layout2 :: page(~{::title}, ~{::main})}">
-    <title>商品詳細</title>
-    <main>
+      th:replace="~{layout2}">
+<body>
+    <main th:fragment="main_content">
         <h1>商品詳細</h1>
-```
-
-:::
-
-::: {#revision-standard-fragment-controller .code filename="…/controller/ProductFragmentController.java"}
-
-```java
-@GetMapping("/list")
-public String showProductList(Model model) {
-    model.addAttribute("products",
-            productService.findAllProducts());
-    return "fragment_sample/list2";
-}
 ```
 
 :::
 
 ::: {#revision-standard-fragment-run .paragraph}
 
-[spring_answer_5 を起動し、]{.s009}[http://localhost:8080/product/fragment/list]{.s014}[を開きます。メニューから登録画面、商品名から詳細画面を開けます。]{.s009}
+[spring_answer_5 を起動し、]{.s009}[http://localhost:8080/product/fragment/list]{.s014}[を開きます。メニューから登録画面とLayout Dialect版の一覧、商品名から詳細画面を開けます。]{.s009}
 
 :::
 

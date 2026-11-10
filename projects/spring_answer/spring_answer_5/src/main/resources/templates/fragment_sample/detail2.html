@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org"
-      th:replace="~{layout2 :: page(~{::title}, ~{::main})}">
-<head>
-    <title>商品詳細</title>
-</head>
+      th:replace="~{layout2}">
 <body>
-    <main>
+    <main th:fragment="main_content">
         <h1>商品詳細</h1>
         <table>
             <thead>

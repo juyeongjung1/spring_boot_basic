@@ -1515,7 +1515,7 @@
       "figure_id": "illustration-grid-flex-placements-2026",
       "caption_id": "illustration-grid-flex-placements-2026-caption",
       "asset": "assets/grid-flex-placements.png",
-      "width": 280,
+      "width": 268,
       "max_height": 140,
       "caption": "上は画面幅768px以上の表示例です。下では同じ3要素を使い、justify-contentの6種類の配置を比べます。",
       "purpose": "グリッドの列幅と、列の内側でのFlexboxの配置を対応させる。",
