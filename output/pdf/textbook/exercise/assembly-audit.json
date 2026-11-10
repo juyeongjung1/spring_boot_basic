@@ -1,6 +1,6 @@
 {
   "collection": "exercise",
-  "flow_pages": 81,
+  "flow_pages": 79,
   "source_pages": 77,
   "toc_entries": 45,
   "source_page_boundaries_verified": true,
@@ -8,6 +8,20 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 19,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "fd28bc370f770b374def5db5295fa18cd8f626e6e7da085db0befffa6aa8a237",
-  "verification": "output/verification/compact-pages-2026/"
+  "pdf_sha256": "768ce2b2c3823f124b466da6f51f0536400e9b2ddb423e13065c9154a4e86f4b",
+  "verification": "docs/textbook/verification.md#グリッドの列内配置と標準フラグメント",
+  "reviewed_pages": [
+    43
+  ],
+  "chapter_page_counts": {
+    "ex-front": 6,
+    "ex01": 4,
+    "ex02": 6,
+    "ex03": 12,
+    "ex04": 8,
+    "ex05": 13,
+    "ex06": 16,
+    "ex07": 13,
+    "ex-back": 1
+  }
 }

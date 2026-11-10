@@ -397,6 +397,11 @@
       "width": 280,
       "max_height": 140,
       "caption_id": "illustration-expansion-2026-cdn-local-delivery-caption"
+    },
+    "illustration-grid-flex-placements-2026": {
+      "width": 280,
+      "max_height": 140,
+      "caption_id": "illustration-grid-flex-placements-2026-caption"
     }
   },
   "pagination": {

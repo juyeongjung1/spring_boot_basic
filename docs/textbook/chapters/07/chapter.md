@@ -1915,6 +1915,53 @@ col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイ�
 
 :::
 
+
+::: {#revision-grid-flex-title .heading keep-next="2"}
+
+[【参考】グリッドの列内でd-flexを使う]{.s012}
+
+:::
+
+::: {#revision-grid-flex-intro .paragraph}
+
+[row と col-md-3、col-md-9 で、メニュー欄と商品欄の幅を決めます。画面幅が768px未満になると、列は上下に並びます。]{.s009}[row 自体がFlexboxの親要素です。]{.s015}[商品欄の中では、見出しとボタンを包む要素に]{.s009}[d-flex]{.s015}[を付けて、同じ行に並べます。]{.s009}
+
+:::
+
+![グリッドの列内の左右配置と、justify-contentの6種類の比較](assets/grid-flex-placements.png){#illustration-grid-flex-placements-2026}
+
+::: {#illustration-grid-flex-placements-2026-caption .paragraph}
+
+上は画面幅768px以上の表示例です。下では同じ3要素を使い、justify-contentの6種類の配置を比べます。
+
+:::
+
+::: {#revision-grid-flex-code .code filename="…/resources/templates/grid_sample2.html"}
+
+```xml
+<div class="row">
+    <aside class="col-md-3">メニュー</aside>
+    <div class="col-md-9">
+        <div class="d-flex justify-content-between
+                    align-items-center">
+            <h2 class="h5 mb-0">商品一覧</h2>
+            <a class="btn btn-primary"
+               th:href="@{/product/insert}">
+                新規登録
+            </a>
+        </div>
+    </div>
+</div>
+```
+
+:::
+
+::: {#revision-grid-flex-note .paragraph}
+
+[justify-content-between]{.s015}[で見出しとボタンを左右の端に置き、]{.s009}[align-items-center]{.s015}[で上下の中心をそろえます。grid_sample2.html の container 内で、between を図のほかの値に替えて試せます。]{.s009}
+
+:::
+
 :::
 
 ::: {#page-272 .source-page}

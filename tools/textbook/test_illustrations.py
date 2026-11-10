@@ -103,7 +103,7 @@ def image_size(record):
 class IllustrationSourceTests(unittest.TestCase):
     def test_new_assets_and_existing_di_follow_print_limits(self):
         data = catalog()
-        self.assertEqual(len(data['new']), 34+len(SERVICE_FIGURES))
+        self.assertEqual(len(data['new']), 35+len(SERVICE_FIGURES))
         figure_ids = {r['figure_id'] for r in data['new']}
         self.assertTrue((SERVICE_FIGURES | {FORM_OBJECT}) <= figure_ids)
         self.assertNotIn(NULL_BLANK, figure_ids)
@@ -229,6 +229,8 @@ class IllustrationSourceTests(unittest.TestCase):
         allowed.add(REMOVED_MANAGED_ASSET)
         allowed.update({REMOVED_REPOSITORY_ASSET, REMOVED_NULL_BLANK_ASSET})
         allowed.update({
+            'docs/textbook/chapters/05/assets/p181-f13-template.svg',
+            'docs/textbook/chapters/05/assets/p185-f16-template.svg',
             'docs/textbook/chapters/07/assets/p258-f16-clean.svg',
             'docs/textbook/chapters/appendix-b/assets/p294-f05.svg',
         })

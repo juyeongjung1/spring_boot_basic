@@ -133,3 +133,12 @@
 付録A・Bの全17ページで図番号を省きました。残っていた図番号15件が消え、原本画像の位置が一致することを確認しました。付録Bのエラー調査の図は、番号欄を詰め、図と説明文を同じ枠に収めています。
 
 296ページでは、開発者ツールの青い要素選択ボタンを囲む位置に赤枠を移しました。合冊版は340ページです。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
+
+
+## グリッドの列内配置と標準フラグメント
+
+7.5の動作確認の後、新312ページに「【参考】グリッドの列内でd-flexを使う」を追加しました。図7.5.7は、3対9の列内で商品一覧と新規登録ボタンを左右に並べた例と、justify-contentの6種類を示します。掲載HTMLを配布版のCSSで描画し、幅1024pxでの横並び、幅767pxでの上下配置、両方の幅での商品欄内の左右配置を確認しました。[Bootstrap公式のFlex解説](https://getbootstrap.com/docs/5.3/utilities/flex/#justify-content)
+
+第5章224ページに、th:fragmentとth:replaceで共通ヘッダーを取り込む短い参考例を載せました。214・218〜220ページと演習ガイド43ページの参照名は、配布版に合わせて先頭のスラッシュを省いています。[Thymeleaf公式のフラグメント解説](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#defining-and-referencing-fragments)
+
+合冊版は本文341ページ、演習ガイド79ページです。[本文の合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)・[演習ガイドの合冊監査](../../output/pdf/textbook/exercise/assembly-audit.json)

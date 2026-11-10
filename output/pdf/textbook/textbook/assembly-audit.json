@@ -1,6 +1,6 @@
 {
   "collection": "textbook",
-  "flow_pages": 340,
+  "flow_pages": 341,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
@@ -8,27 +8,15 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 63,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "c271c226fbe8d9b669917ff373135dd11c1b6ba5caba9165ba1df1f80209643d",
-  "verification": "docs/textbook/verification.md#付録の図番号と要素選択の赤枠",
+  "pdf_sha256": "76156b06c420c59fb102d5a7b138ae00e159df8a696f042e1fccece96573b517",
+  "verification": "docs/textbook/verification.md#グリッドの列内配置と標準フラグメント",
   "reviewed_pages": [
-    296,
-    324,
-    325,
-    326,
-    327,
-    328,
-    329,
-    330,
-    331,
-    332,
-    333,
-    334,
-    335,
-    336,
-    337,
-    338,
-    339,
-    340
+    214,
+    218,
+    219,
+    220,
+    224,
+    312
   ],
   "chapter_page_counts": {
     "front": 14,
@@ -38,7 +26,7 @@
     "04": 37,
     "05": 31,
     "06": 48,
-    "07": 49,
+    "07": 50,
     "appendix-a": 8,
     "appendix-b": 9
   }

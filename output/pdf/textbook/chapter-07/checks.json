@@ -5,8 +5,8 @@
     238,
     281
   ],
-  "blocks": 268,
-  "figures": 38,
+  "blocks": 273,
+  "figures": 39,
   "source_coverage": [
     {
       "body": 144,
@@ -499,17 +499,17 @@
     ]
   },
   "flow": {
-    "pages": 49,
+    "pages": 50,
     "native_text_complete": true,
     "heading_orphans": [],
     "split_figures": [],
     "split_short_code": [],
     "split_short_tables": [],
     "split_instructions": [],
-    "instruction_groups": 14,
+    "instruction_groups": 16,
     "fixed_pages": [
       2,
-      49
+      50
     ],
     "overflow": [],
     "block_positions": [
@@ -4966,1136 +4966,1283 @@
         "y": 662.2369616379053
       },
       {
+        "id": "instruction-revision-grid-flex-title",
+        "edge": "start",
+        "page": 38,
+        "x": 85.104,
+        "y": 86.0
+      },
+      {
+        "id": "revision-grid-flex-title",
+        "edge": "heading",
+        "page": 38,
+        "x": 85.104,
+        "y": 86.0
+      },
+      {
+        "id": "revision-grid-flex-intro",
+        "edge": "start",
+        "page": 38,
+        "x": 85.104,
+        "y": 110.0
+      },
+      {
+        "id": "revision-grid-flex-intro",
+        "edge": "end",
+        "page": 38,
+        "x": 85.104,
+        "y": 157.04000000000002
+      },
+      {
+        "id": "instruction-illustration-grid-flex-placements-2026",
+        "edge": "start",
+        "page": 38,
+        "x": 79.104,
+        "y": 170.0
+      },
+      {
+        "id": "figure-frame-illustration-grid-flex-placements-2026",
+        "edge": "start",
+        "page": 38,
+        "x": 85.104,
+        "y": 176.0
+      },
+      {
+        "id": "figure-number-illustration-grid-flex-placements-2026",
+        "edge": "start",
+        "page": 38,
+        "x": 85.104,
+        "y": 176.0
+      },
+      {
+        "id": "figure-number-illustration-grid-flex-placements-2026",
+        "edge": "end",
+        "page": 38,
+        "x": 85.104,
+        "y": 185.0
+      },
+      {
+        "id": "illustration-grid-flex-placements-2026",
+        "edge": "start",
+        "page": 38,
+        "x": 85.104,
+        "y": 190.0
+      },
+      {
+        "id": "illustration-grid-flex-placements-2026",
+        "edge": "end",
+        "page": 38,
+        "x": 85.104,
+        "y": 322.5
+      },
+      {
+        "id": "illustration-grid-flex-placements-2026-caption",
+        "edge": "start",
+        "page": 38,
+        "x": 85.104,
+        "y": 328.5
+      },
+      {
+        "id": "illustration-grid-flex-placements-2026-caption",
+        "edge": "end",
+        "page": 38,
+        "x": 85.104,
+        "y": 338.0
+      },
+      {
+        "id": "figure-frame-illustration-grid-flex-placements-2026",
+        "edge": "end",
+        "page": 38,
+        "x": 85.104,
+        "y": 338.0
+      },
+      {
+        "id": "instruction-illustration-grid-flex-placements-2026",
+        "edge": "end",
+        "page": 38,
+        "x": 79.104,
+        "y": 344.0
+      },
+      {
+        "id": "instruction-revision-grid-flex-title",
+        "edge": "end",
+        "page": 38,
+        "x": 85.104,
+        "y": 344.0
+      },
+      {
+        "id": "07-revision-grid-flex-code-part1",
+        "edge": "html-component",
+        "page": 38,
+        "x": 85.104,
+        "y": 356.0
+      },
+      {
+        "id": "revision-grid-flex-code",
+        "edge": "short-code",
+        "page": 38,
+        "x": 85.854,
+        "y": 398.269531
+      },
+      {
+        "id": "revision-grid-flex-code",
+        "edge": "start",
+        "page": 38,
+        "x": 85.854,
+        "y": 398.269531
+      },
+      {
+        "id": "revision-grid-flex-code",
+        "edge": "end",
+        "page": 38,
+        "x": 511.021969,
+        "y": 599.820313
+      },
+      {
+        "id": "revision-grid-flex-note",
+        "edge": "start",
+        "page": 38,
+        "x": 85.104,
+        "y": 619.3209999999999
+      },
+      {
+        "id": "revision-grid-flex-note",
+        "edge": "end",
+        "page": 38,
+        "x": 85.104,
+        "y": 666.361
+      },
+      {
         "id": "__source-page-272",
         "edge": "source-page",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p272-b01",
         "edge": "start",
-        "page": 38,
+        "page": 39,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "p272-b01",
         "edge": "end",
-        "page": 38,
+        "page": 39,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "p272-f27",
         "edge": "start",
-        "page": 38,
+        "page": 39,
         "x": 112.97999877929688,
         "y": 112.980029296875
       },
       {
         "id": "p272-f27",
         "edge": "end",
-        "page": 38,
+        "page": 39,
         "x": 112.97999877929688,
         "y": 389.76997070312507
       },
       {
         "id": "p272-b02",
         "edge": "start",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 436.2666015625
       },
       {
         "id": "p272-b02",
         "edge": "end",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 465.3066015625
       },
       {
         "id": "p272-b03",
         "edge": "heading",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 501.3066015625
       },
       {
         "id": "p272-b04",
         "edge": "start",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 525.3066015625
       },
       {
         "id": "p272-b04",
         "edge": "end",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 554.3466015625
       },
       {
         "id": "instruction-p272-b05",
         "edge": "start",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 590.3466015625
       },
       {
         "id": "p272-b05",
         "edge": "heading",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 590.3466015625
       },
       {
         "id": "p272-b06",
         "edge": "start",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 614.3466015625
       },
       {
         "id": "p272-b06",
         "edge": "end",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 661.3866015625
       },
       {
         "id": "figure-frame-p272-f28",
         "edge": "start",
-        "page": 38,
+        "page": 39,
         "x": 95.79999847412111,
         "y": 680.3466015625
       },
       {
         "id": "figure-number-p272-f28",
         "edge": "start",
-        "page": 38,
+        "page": 39,
         "x": 95.79999847412111,
         "y": 680.3466015625
       },
       {
         "id": "figure-number-p272-f28",
         "edge": "end",
-        "page": 38,
+        "page": 39,
         "x": 95.79999847412111,
         "y": 689.3466015625
       },
       {
         "id": "p272-f28",
         "edge": "start",
-        "page": 38,
+        "page": 39,
         "x": 95.79999847412111,
         "y": 694.3466015625
       },
       {
         "id": "p272-f28",
         "edge": "end",
-        "page": 38,
+        "page": 39,
         "x": 95.79999847412111,
         "y": 760.7465959405355
       },
       {
         "id": "figure-frame-p272-f28",
         "edge": "end",
-        "page": 38,
+        "page": 39,
         "x": 95.79999847412111,
         "y": 760.7465959405355
       },
       {
         "id": "instruction-p272-b05",
         "edge": "end",
-        "page": 38,
+        "page": 39,
         "x": 85.104,
         "y": 766.7465959405355
       },
       {
         "id": "__source-page-273",
         "edge": "source-page",
-        "page": 39,
+        "page": 40,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "07-p273-b02-part1",
         "edge": "html-component",
-        "page": 39,
+        "page": 40,
         "x": 79.464,
         "y": 86.0
       },
       {
         "id": "p273-b01",
         "edge": "heading",
-        "page": 39,
+        "page": 40,
         "x": 253.37025,
         "y": 94.742188
       },
       {
         "id": "p273-b02",
         "edge": "short-code",
-        "page": 39,
+        "page": 40,
         "x": 80.214,
         "y": 128.269531
       },
       {
         "id": "p273-b02",
         "edge": "start",
-        "page": 39,
+        "page": 40,
         "x": 80.214,
         "y": 128.269531
       },
       {
         "id": "p273-b02",
         "edge": "end",
-        "page": 39,
+        "page": 40,
         "x": 514.381969,
         "y": 453.851563
       },
       {
         "id": "p273-b03",
         "edge": "start",
-        "page": 39,
+        "page": 40,
         "x": 85.104,
         "y": 473.352
       },
       {
         "id": "p273-b03",
         "edge": "end",
-        "page": 39,
+        "page": 40,
         "x": 85.104,
         "y": 484.392
       },
       {
         "id": "07-explanation-4-part1",
         "edge": "html-component",
-        "page": 40,
+        "page": 41,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p273-b04",
         "edge": "start",
-        "page": 40,
+        "page": 41,
         "x": 85.104,
         "y": 111.78125
       },
       {
         "id": "p273-b04",
         "edge": "end",
-        "page": 40,
+        "page": 41,
         "x": 511.771969,
         "y": 160.8125
       },
       {
         "id": "p273-b05",
         "edge": "start",
-        "page": 40,
+        "page": 41,
         "x": 85.104,
         "y": 111.78125
       },
       {
         "id": "p273-b05",
         "edge": "end",
-        "page": 40,
+        "page": 41,
         "x": 511.771969,
         "y": 220.8125
       },
       {
         "id": "p273-b06",
         "edge": "start",
-        "page": 40,
+        "page": 41,
         "x": 85.104,
         "y": 232.8125
       },
       {
         "id": "p273-b06",
         "edge": "end",
-        "page": 40,
+        "page": 41,
         "x": 511.771969,
         "y": 281.84375
       },
       {
         "id": "p273-b07",
         "edge": "start",
-        "page": 40,
+        "page": 41,
         "x": 85.104,
         "y": 232.8125
       },
       {
         "id": "p273-b07",
         "edge": "end",
-        "page": 40,
+        "page": 41,
         "x": 511.771969,
         "y": 323.84375
       },
       {
         "id": "p273-b08",
         "edge": "start",
-        "page": 40,
+        "page": 41,
         "x": 85.104,
         "y": 335.84375
       },
       {
         "id": "p273-b08",
         "edge": "end",
-        "page": 40,
+        "page": 41,
         "x": 511.771969,
         "y": 400.378906
       },
       {
         "id": "p273-b09",
         "edge": "start",
-        "page": 40,
+        "page": 41,
         "x": 85.104,
         "y": 335.84375
       },
       {
         "id": "p273-b09",
         "edge": "end",
-        "page": 40,
+        "page": 41,
         "x": 511.771969,
         "y": 424.378906
       },
       {
         "id": "p273-b10",
         "edge": "start",
-        "page": 40,
+        "page": 41,
         "x": 85.104,
         "y": 436.378906
       },
       {
         "id": "p273-b10",
         "edge": "end",
-        "page": 40,
+        "page": 41,
         "x": 511.771969,
         "y": 485.410156
       },
       {
         "id": "__source-page-274",
         "edge": "source-page",
-        "page": 41,
+        "page": 42,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "07-explanation-5-part1",
         "edge": "html-component",
-        "page": 41,
+        "page": 42,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p274-b01",
         "edge": "start",
-        "page": 41,
+        "page": 42,
         "x": 85.104,
         "y": 111.78125
       },
       {
         "id": "p274-b01",
         "edge": "end",
-        "page": 41,
+        "page": 42,
         "x": 511.771969,
         "y": 220.8125
       },
       {
         "id": "figure-frame-p274-f29",
         "edge": "start",
-        "page": 41,
+        "page": 42,
         "x": 83.20000000000002,
         "y": 239.563
       },
       {
         "id": "figure-number-p274-f29",
         "edge": "start",
-        "page": 41,
+        "page": 42,
         "x": 85.104,
         "y": 239.563
       },
       {
         "id": "figure-number-p274-f29",
         "edge": "end",
-        "page": 41,
+        "page": 42,
         "x": 85.104,
         "y": 248.563
       },
       {
         "id": "p274-f29",
         "edge": "start",
-        "page": 41,
+        "page": 42,
         "x": 83.20000000000002,
         "y": 253.563
       },
       {
         "id": "p274-f29",
         "edge": "end",
-        "page": 41,
+        "page": 42,
         "x": 83.20000000000002,
         "y": 368.16298223798486
       },
       {
         "id": "figure-frame-p274-f29",
         "edge": "end",
-        "page": 41,
+        "page": 42,
         "x": 83.20000000000002,
         "y": 368.16298223798486
       },
       {
         "id": "p274-b02",
         "edge": "start",
-        "page": 41,
+        "page": 42,
         "x": 85.104,
         "y": 386.16298223798486
       },
       {
         "id": "p274-b02",
         "edge": "end",
-        "page": 41,
+        "page": 42,
         "x": 85.104,
         "y": 415.2029822379849
       },
       {
         "id": "p274-b03",
         "edge": "start",
-        "page": 41,
+        "page": 42,
         "x": 85.104,
         "y": 428.16298223798486
       },
       {
         "id": "p274-b03",
         "edge": "end",
-        "page": 41,
+        "page": 42,
         "x": 85.104,
         "y": 439.2029822379849
       },
       {
         "id": "__source-page-275",
         "edge": "source-page",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p275-b01",
         "edge": "heading",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p275-b02",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 110.0
       },
       {
         "id": "p275-b02",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 157.04000000000002
       },
       {
         "id": "instruction-p275-b03",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 175.04000000000002
       },
       {
         "id": "p275-b03",
         "edge": "heading",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 175.04000000000002
       },
       {
         "id": "figure-frame-p275-f30",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 95.79999847412111,
         "y": 204.08000000000004
       },
       {
         "id": "figure-number-p275-f30",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 95.79999847412111,
         "y": 204.08000000000004
       },
       {
         "id": "figure-number-p275-f30",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 95.79999847412111,
         "y": 213.08000000000004
       },
       {
         "id": "p275-f30",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 95.79999847412111,
         "y": 218.08000000000004
       },
       {
         "id": "p275-f30",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 95.79999847412111,
         "y": 284.4799637202752
       },
       {
         "id": "figure-frame-p275-f30",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 95.79999847412111,
         "y": 284.4799637202752
       },
       {
         "id": "instruction-p275-b03",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 290.4799637202752
       },
       {
         "id": "07-p275-b04-part1",
         "edge": "html-component",
-        "page": 42,
+        "page": 43,
         "x": 79.464,
         "y": 302.4799637202752
       },
       {
         "id": "p275-b04",
         "edge": "short-code",
-        "page": 42,
+        "page": 43,
         "x": 80.214,
         "y": 344.74949472027515
       },
       {
         "id": "p275-b04",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 80.214,
         "y": 344.74949472027515
       },
       {
         "id": "p275-b04",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 514.381969,
         "y": 391.2612137202752
       },
       {
         "id": "p275-b05",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 410.76196372027516
       },
       {
         "id": "p275-b05",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 457.8019637202752
       },
       {
         "id": "p275-b06",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 470.76196372027516
       },
       {
         "id": "p275-b06",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 85.104,
         "y": 499.8019637202752
       },
       {
         "id": "p275-b07",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 96.144,
         "y": 512.7619637202752
       },
       {
         "id": "p275-b07",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 96.144,
         "y": 559.8019637202752
       },
       {
         "id": "p275-b08",
         "edge": "start",
-        "page": 42,
+        "page": 43,
         "x": 96.144,
         "y": 572.7619637202752
       },
       {
         "id": "p275-b08",
         "edge": "end",
-        "page": 42,
+        "page": 43,
         "x": 96.144,
         "y": 619.8019637202752
       },
       {
         "id": "__source-page-276",
         "edge": "source-page",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "instruction-p276-b01",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p276-b01",
         "edge": "heading",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "figure-frame-p276-f31",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 84.75000305175783,
         "y": 115.04
       },
       {
         "id": "figure-number-p276-f31",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 115.04
       },
       {
         "id": "figure-number-p276-f31",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 124.04
       },
       {
         "id": "p276-f31",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 84.75000305175783,
         "y": 129.04000000000002
       },
       {
         "id": "p276-f31",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 84.75000305175783,
         "y": 188.2400145442124
       },
       {
         "id": "figure-frame-p276-f31",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 84.75000305175783,
         "y": 188.2400145442124
       },
       {
         "id": "instruction-p276-b01",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 194.2400145442124
       },
       {
         "id": "07-p276-b02-part1",
         "edge": "html-component",
-        "page": 43,
+        "page": 44,
         "x": 79.464,
         "y": 206.2400145442124
       },
       {
         "id": "p276-b02",
         "edge": "short-code",
-        "page": 43,
+        "page": 44,
         "x": 80.214,
         "y": 248.50954554421241
       },
       {
         "id": "p276-b02",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 80.214,
         "y": 248.50954554421241
       },
       {
         "id": "p276-b02",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 514.381969,
         "y": 481.06813954421244
       },
       {
         "id": "p276-b03",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 500.56901454421245
       },
       {
         "id": "p276-b03",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 529.6090145442124
       },
       {
         "id": "p276-b04",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 542.5690145442123
       },
       {
         "id": "p276-b04",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 85.104,
         "y": 553.6090145442124
       },
       {
         "id": "p276-b05",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 96.144,
         "y": 566.5690145442123
       },
       {
         "id": "p276-b05",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 96.144,
         "y": 613.6090145442124
       },
       {
         "id": "p276-b06",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 96.144,
         "y": 626.5690145442123
       },
       {
         "id": "p276-b06",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 96.144,
         "y": 673.6090145442124
       },
       {
         "id": "p276-b07",
         "edge": "start",
-        "page": 43,
+        "page": 44,
         "x": 96.144,
         "y": 686.5690145442123
       },
       {
         "id": "p276-b07",
         "edge": "end",
-        "page": 43,
+        "page": 44,
         "x": 96.144,
         "y": 715.6090145442124
       },
       {
         "id": "p276-b08",
         "edge": "start",
-        "page": 44,
+        "page": 45,
         "x": 96.144,
         "y": 86.0
       },
       {
         "id": "p276-b08",
         "edge": "end",
-        "page": 44,
+        "page": 45,
         "x": 96.144,
         "y": 133.04000000000002
       },
       {
         "id": "__source-page-277",
         "edge": "source-page",
-        "page": 44,
+        "page": 45,
         "x": 85.104,
         "y": 151.04000000000002
       },
       {
         "id": "instruction-p277-b01",
         "edge": "start",
-        "page": 44,
+        "page": 45,
         "x": 85.104,
         "y": 151.04000000000002
       },
       {
         "id": "p277-b01",
         "edge": "heading",
-        "page": 44,
+        "page": 45,
         "x": 85.104,
         "y": 151.04000000000002
       },
       {
         "id": "figure-frame-p277-f32",
         "edge": "start",
-        "page": 44,
+        "page": 45,
         "x": 84.75000305175783,
         "y": 180.08000000000004
       },
       {
         "id": "figure-number-p277-f32",
         "edge": "start",
-        "page": 44,
+        "page": 45,
         "x": 85.104,
         "y": 180.08000000000004
       },
       {
         "id": "figure-number-p277-f32",
         "edge": "end",
-        "page": 44,
+        "page": 45,
         "x": 85.104,
         "y": 189.08000000000004
       },
       {
         "id": "p277-f32",
         "edge": "start",
-        "page": 44,
+        "page": 45,
         "x": 84.75000305175783,
         "y": 194.08000000000004
       },
       {
         "id": "p277-f32",
         "edge": "end",
-        "page": 44,
+        "page": 45,
         "x": 84.75000305175783,
         "y": 296.47996707348625
       },
       {
         "id": "figure-frame-p277-f32",
         "edge": "end",
-        "page": 44,
+        "page": 45,
         "x": 84.75000305175783,
         "y": 296.47996707348625
       },
       {
         "id": "instruction-p277-b01",
         "edge": "end",
-        "page": 44,
+        "page": 45,
         "x": 85.104,
         "y": 302.47996707348625
       },
       {
         "id": "07-p277-b02-part1",
         "edge": "html-component",
-        "page": 44,
+        "page": 45,
         "x": 79.464,
         "y": 314.47996707348625
       },
       {
         "id": "p277-b02",
         "edge": "short-code",
-        "page": 44,
+        "page": 45,
         "x": 80.214,
         "y": 356.7494980734862
       },
       {
         "id": "p277-b02",
         "edge": "start",
-        "page": 44,
+        "page": 45,
         "x": 80.214,
         "y": 356.7494980734862
       },
       {
         "id": "p277-b02",
         "edge": "end",
-        "page": 44,
+        "page": 45,
         "x": 514.381969,
         "y": 449.7729360734863
       },
       {
         "id": "p277-b03",
         "edge": "start",
-        "page": 44,
+        "page": 45,
         "x": 85.104,
         "y": 469.27296707348626
       },
       {
         "id": "p277-b03",
         "edge": "end",
-        "page": 44,
+        "page": 45,
         "x": 85.104,
         "y": 481.27296707348626
       },
       {
         "id": "p277-b04",
         "edge": "heading",
-        "page": 45,
+        "page": 46,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "07-p277-b06-part1",
         "edge": "html-component",
-        "page": 45,
+        "page": 46,
         "x": 79.464,
         "y": 110.0
       },
       {
         "id": "p277-b05",
         "edge": "heading",
-        "page": 45,
+        "page": 46,
         "x": 246.268688,
         "y": 118.742188
       },
       {
         "id": "p277-b06",
         "edge": "short-code",
-        "page": 45,
+        "page": 46,
         "x": 80.214,
         "y": 152.269531
       },
       {
         "id": "p277-b06",
         "edge": "start",
-        "page": 45,
+        "page": 46,
         "x": 80.214,
         "y": 152.269531
       },
       {
         "id": "p277-b06",
         "edge": "end",
-        "page": 45,
+        "page": 46,
         "x": 514.381969,
         "y": 477.851563
       },
       {
         "id": "__source-page-278",
         "edge": "source-page",
-        "page": 46,
+        "page": 47,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "07-p278-b01-part1",
         "edge": "html-component",
-        "page": 46,
+        "page": 47,
         "x": 79.464,
         "y": 86.0
       },
       {
         "id": "p278-b01",
         "edge": "long-code",
-        "page": 46,
+        "page": 47,
         "x": 80.214,
         "y": 128.269531
       },
       {
         "id": "p278-b01",
         "edge": "start",
-        "page": 46,
+        "page": 47,
         "x": 80.214,
         "y": 128.269531
       },
       {
         "id": "07-p278-b01-part2",
         "edge": "html-component",
-        "page": 47,
+        "page": 48,
         "x": 79.464,
         "y": 86.0
       },
       {
         "id": "p278-b01",
         "edge": "end",
-        "page": 47,
+        "page": 48,
         "x": 514.381969,
         "y": 221.292969
       },
       {
         "id": "__source-page-279",
         "edge": "source-page",
-        "page": 47,
+        "page": 48,
         "x": 85.104,
         "y": 282.79299999999995
       },
       {
         "id": "instruction-p279-b01",
         "edge": "start",
-        "page": 47,
+        "page": 48,
         "x": 85.104,
         "y": 282.79299999999995
       },
       {
         "id": "p279-b01",
         "edge": "heading",
-        "page": 47,
+        "page": 48,
         "x": 85.104,
         "y": 282.79299999999995
       },
       {
         "id": "figure-frame-p279-f33",
         "edge": "start",
-        "page": 47,
+        "page": 48,
         "x": 84.75000305175783,
         "y": 312.79299999999995
       },
       {
         "id": "figure-number-p279-f33",
         "edge": "start",
-        "page": 47,
+        "page": 48,
         "x": 85.104,
         "y": 312.79299999999995
       },
       {
         "id": "figure-number-p279-f33",
         "edge": "end",
-        "page": 47,
+        "page": 48,
         "x": 85.104,
         "y": 321.79299999999995
       },
       {
         "id": "p279-f33",
         "edge": "start",
-        "page": 47,
+        "page": 48,
         "x": 84.75000305175783,
         "y": 326.79299999999995
       },
       {
         "id": "p279-f33",
         "edge": "end",
-        "page": 47,
+        "page": 48,
         "x": 84.75000305175783,
         "y": 616.3929845221251
       },
       {
         "id": "figure-frame-p279-f33",
         "edge": "end",
-        "page": 47,
+        "page": 48,
         "x": 84.75000305175783,
         "y": 616.3929845221251
       },
       {
         "id": "instruction-p279-b01",
         "edge": "end",
-        "page": 47,
+        "page": 48,
         "x": 85.104,
         "y": 622.3929845221251
       },
       {
         "id": "p279-b02",
         "edge": "start",
-        "page": 47,
+        "page": 48,
         "x": 96.144,
         "y": 635.352984522125
       },
       {
         "id": "p279-b02",
         "edge": "end",
-        "page": 47,
+        "page": 48,
         "x": 96.144,
         "y": 647.352984522125
       },
       {
         "id": "p279-b03",
         "edge": "start",
-        "page": 47,
+        "page": 48,
         "x": 96.144,
         "y": 660.312984522125
       },
       {
         "id": "p279-b03",
         "edge": "end",
-        "page": 47,
+        "page": 48,
         "x": 96.144,
         "y": 672.312984522125
       },
       {
         "id": "p279-b04",
         "edge": "start",
-        "page": 47,
+        "page": 48,
         "x": 96.144,
         "y": 685.272984522125
       },
       {
         "id": "p279-b04",
         "edge": "end",
-        "page": 47,
+        "page": 48,
         "x": 96.144,
         "y": 697.272984522125
       },
       {
         "id": "__source-page-280",
         "edge": "source-page",
-        "page": 48,
+        "page": 49,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p280-b01",
         "edge": "start",
-        "page": 48,
+        "page": 49,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "p280-b01",
         "edge": "end",
-        "page": 48,
+        "page": 49,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "p280-f34",
         "edge": "start",
-        "page": 48,
+        "page": 49,
         "x": 112.97999877929688,
         "y": 112.980029296875
       },
       {
         "id": "p280-f34",
         "edge": "end",
-        "page": 48,
+        "page": 49,
         "x": 112.97999877929688,
         "y": 389.76997070312507
       },
       {
         "id": "p280-b02",
         "edge": "start",
-        "page": 48,
+        "page": 49,
         "x": 85.104,
         "y": 435.913330078125
       },
       {
         "id": "p280-b02",
         "edge": "end",
-        "page": 48,
+        "page": 49,
         "x": 85.104,
         "y": 483.783486328125
       },
       {
         "id": "__source-page-281",
         "edge": "source-page",
-        "page": 49,
+        "page": 50,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-281",
         "edge": "native-page",
-        "page": 49,
+        "page": 50,
         "x": 85.104,
         "y": 86.0
       }
@@ -6302,7 +6449,7 @@
         ]
       },
       {
-        "page": 41,
+        "page": 42,
         "uri": "https://getbootstrap.jp/docs/5.3/forms/form-control/",
         "rect": [
           85.10399627685547,
@@ -6479,6 +6626,13 @@
         "kind": "flow",
         "caption_id": null,
         "caption": "",
+        "title": ""
+      },
+      "illustration-grid-flex-placements-2026": {
+        "number": "図7.5.7",
+        "kind": "compact",
+        "caption_id": "illustration-grid-flex-placements-2026-caption",
+        "caption": "上は画面幅768px以上の表示例です。下では同じ3要素を使い、justify-contentの6種類の配置を比べます。",
         "title": ""
       },
       "p272-f28": {
@@ -6743,61 +6897,61 @@
         },
         {
           "source_page": 272,
-          "page": 38,
-          "mode": "page-break",
-          "reason": null
-        },
-        {
-          "source_page": 273,
           "page": 39,
           "mode": "page-break",
           "reason": null
         },
         {
-          "source_page": 274,
-          "page": 41,
+          "source_page": 273,
+          "page": 40,
           "mode": "page-break",
           "reason": null
         },
         {
-          "source_page": 275,
+          "source_page": 274,
           "page": 42,
           "mode": "page-break",
           "reason": null
         },
         {
-          "source_page": 276,
+          "source_page": 275,
           "page": 43,
           "mode": "page-break",
           "reason": null
         },
         {
-          "source_page": 277,
+          "source_page": 276,
           "page": 44,
+          "mode": "page-break",
+          "reason": null
+        },
+        {
+          "source_page": 277,
+          "page": 45,
           "mode": "continue",
           "reason": "short-minor-heading"
         },
         {
           "source_page": 278,
-          "page": 46,
+          "page": 47,
           "mode": "page-break",
           "reason": null
         },
         {
           "source_page": 279,
-          "page": 47,
+          "page": 48,
           "mode": "continue",
           "reason": "short-minor-heading"
         },
         {
           "source_page": 280,
-          "page": 48,
+          "page": 49,
           "mode": "page-break",
           "reason": null
         },
         {
           "source_page": 281,
-          "page": 49,
+          "page": 50,
           "mode": "page-break",
           "reason": null
         }
@@ -7214,6 +7368,20 @@
             "token": "07-p270-b02-part2",
             "width": 435.676,
             "height": 235.817
+          }
+        ]
+      },
+      {
+        "id": "07-revision-grid-flex-code",
+        "kind": "code",
+        "consume_ids": [
+          "revision-grid-flex-code"
+        ],
+        "parts": [
+          {
+            "token": "07-revision-grid-flex-code-part1",
+            "width": 426.672,
+            "height": 251.321
           }
         ]
       },

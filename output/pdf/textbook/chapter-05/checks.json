@@ -5,7 +5,7 @@
     164,
     191
   ],
-  "blocks": 144,
+  "blocks": 148,
   "figures": 23,
   "source_coverage": [
     {
@@ -330,7 +330,7 @@
     "split_short_code": [],
     "split_short_tables": [],
     "split_instructions": [],
-    "instruction_groups": 9,
+    "instruction_groups": 10,
     "fixed_pages": [
       2,
       31
@@ -3107,35 +3107,35 @@
         "edge": "end",
         "page": 24,
         "x": 511.771969,
-        "y": 347.84375
+        "y": 329.84375
       },
       {
         "id": "p185-b06",
         "edge": "start",
         "page": 24,
         "x": 85.104,
-        "y": 359.84375
+        "y": 341.84375
       },
       {
         "id": "p185-b06",
         "edge": "end",
         "page": 24,
         "x": 511.771969,
-        "y": 470.890625
+        "y": 452.890625
       },
       {
         "id": "p185-b07",
         "edge": "start",
         "page": 24,
         "x": 85.104,
-        "y": 359.84375
+        "y": 341.84375
       },
       {
         "id": "p185-b07",
         "edge": "end",
         "page": 24,
         "x": 511.771969,
-        "y": 590.890625
+        "y": 572.890625
       },
       {
         "id": "figure-frame-p185-f16",
@@ -3409,6 +3409,97 @@
         "page": 29,
         "x": 514.381969,
         "y": 422.598313
+      },
+      {
+        "id": "instruction-revision-standard-fragment-title",
+        "edge": "start",
+        "page": 29,
+        "x": 85.104,
+        "y": 448.09900000000005
+      },
+      {
+        "id": "revision-standard-fragment-title",
+        "edge": "heading",
+        "page": 29,
+        "x": 85.104,
+        "y": 448.09900000000005
+      },
+      {
+        "id": "revision-standard-fragment-intro",
+        "edge": "start",
+        "page": 29,
+        "x": 85.104,
+        "y": 472.09900000000005
+      },
+      {
+        "id": "revision-standard-fragment-intro",
+        "edge": "end",
+        "page": 29,
+        "x": 85.104,
+        "y": 501.13900000000007
+      },
+      {
+        "id": "05-revision-standard-fragment-definition-part1",
+        "edge": "html-component",
+        "page": 29,
+        "x": 85.104,
+        "y": 514.099
+      },
+      {
+        "id": "revision-standard-fragment-definition",
+        "edge": "short-code",
+        "page": 29,
+        "x": 85.854,
+        "y": 556.3685310000001
+      },
+      {
+        "id": "revision-standard-fragment-definition",
+        "edge": "start",
+        "page": 29,
+        "x": 85.854,
+        "y": 556.3685310000001
+      },
+      {
+        "id": "revision-standard-fragment-definition",
+        "edge": "end",
+        "page": 29,
+        "x": 511.021969,
+        "y": 602.88025
+      },
+      {
+        "id": "05-revision-standard-fragment-call-part1",
+        "edge": "html-component",
+        "page": 29,
+        "x": 85.104,
+        "y": 622.381
+      },
+      {
+        "id": "revision-standard-fragment-call",
+        "edge": "short-code",
+        "page": 29,
+        "x": 85.854,
+        "y": 664.6505310000001
+      },
+      {
+        "id": "revision-standard-fragment-call",
+        "edge": "start",
+        "page": 29,
+        "x": 85.854,
+        "y": 664.6505310000001
+      },
+      {
+        "id": "revision-standard-fragment-call",
+        "edge": "end",
+        "page": 29,
+        "x": 511.021969,
+        "y": 680.154438
+      },
+      {
+        "id": "instruction-revision-standard-fragment-title",
+        "edge": "end",
+        "page": 29,
+        "x": 85.104,
+        "y": 687.655
       },
       {
         "id": "__source-page-190",
@@ -4190,6 +4281,34 @@
         ]
       },
       {
+        "id": "05-revision-standard-fragment-definition",
+        "kind": "code",
+        "consume_ids": [
+          "revision-standard-fragment-definition"
+        ],
+        "parts": [
+          {
+            "token": "05-revision-standard-fragment-definition-part1",
+            "width": 426.672,
+            "height": 96.282
+          }
+        ]
+      },
+      {
+        "id": "05-revision-standard-fragment-call",
+        "kind": "code",
+        "consume_ids": [
+          "revision-standard-fragment-call"
+        ],
+        "parts": [
+          {
+            "token": "05-revision-standard-fragment-call-part1",
+            "width": 426.672,
+            "height": 65.274
+          }
+        ]
+      },
+      {
         "id": "05-explanation-1",
         "kind": "explanation",
         "consume_ids": [
@@ -4241,7 +4360,7 @@
           {
             "token": "05-explanation-3-part1",
             "width": 426.672,
-            "height": 505.641
+            "height": 487.641
           }
         ]
       }

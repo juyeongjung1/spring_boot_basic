@@ -4011,47 +4011,47 @@
       },
       {
         "line_label": "4 行目",
-        "code": "       layout:decorate=\"~{/layout}\">",
-        "meaning": " <html>の属性の中にlayout:decorate 属性も追記します。この部分の属性値は、layout.html\nの場所をURL で指定すればOK です。\n\n例えば、layout がproduct フォルダ内にあるなら、”~{/product/layout}” のように記述すれば\nOK です。URL を間違えると、レイアウト機能が使えませんので、ご注意ください。",
+        "code": "       layout:decorate=\"~{layout}\">",
+        "meaning": "<html>にlayout:decorate 属性を追加します。~{layout} のlayout は、templates/layout.html を指定するテンプレート名です。\n\ntemplates/product/layout.html を指定する場合は、~{product/layout} と書きます。",
         "source_ids": [
           "p185-b03",
           "p185-b04",
           "p185-b05"
         ],
-        "original_label": "・4 行目 layout:decorate=”~{/layout}”>",
+        "original_label": "・4 行目 layout:decorate=”~{layout}”>",
         "reference_kind": "label",
         "code_line_sources": [
           {
             "code_id": "p184-b10",
             "line_number": 4,
-            "text": "       layout:decorate=\"~{/layout}\">"
+            "text": "       layout:decorate=\"~{layout}\">"
           }
         ],
         "source_fragments": [
           {
             "source_id": "p185-b03",
             "start": 0,
-            "end": 35,
+            "end": 34,
             "role": "label",
-            "text": "・4 行目 layout:decorate=”~{/layout}”>"
+            "text": "・4 行目 layout:decorate=”~{layout}”>"
           },
           {
             "source_id": "p185-b04",
             "start": 0,
-            "end": 80,
+            "end": 89,
             "role": "meaning",
-            "text": " <html>の属性の中にlayout:decorate 属性も追記します。この部分の属性値は、layout.html\nの場所をURL で指定すればOK です。"
+            "text": "<html>にlayout:decorate 属性を追加します。~{layout} のlayout は、templates/layout.html を指定するテンプレート名です。"
           },
           {
             "source_id": "p185-b05",
             "start": 0,
-            "end": 103,
+            "end": 63,
             "role": "meaning",
-            "text": "例えば、layout がproduct フォルダ内にあるなら、”~{/product/layout}” のように記述すれば\nOK です。URL を間違えると、レイアウト機能が使えませんので、ご注意ください。"
+            "text": "templates/product/layout.html を指定する場合は、~{product/layout} と書きます。"
           }
         ],
         "word_paragraph_breaks": [
-          82
+          91
         ],
         "word_line_breaks": []
       },
@@ -4118,9 +4118,9 @@
     "source_texts": {
       "p185-b01": "・3 行目 xmlns:layout=”http://www.ultraq.net.nz/thymeleaf/layout”",
       "p185-b02": " レイアウトにコピーするコンテンツ側のHTML にも、同じくレイアウト関連のルールを宣言して\nおきます。",
-      "p185-b03": "・4 行目 layout:decorate=”~{/layout}”>",
-      "p185-b04": " <html>の属性の中にlayout:decorate 属性も追記します。この部分の属性値は、layout.html\nの場所をURL で指定すればOK です。",
-      "p185-b05": "例えば、layout がproduct フォルダ内にあるなら、”~{/product/layout}” のように記述すれば\nOK です。URL を間違えると、レイアウト機能が使えませんので、ご注意ください。",
+      "p185-b03": "・4 行目 layout:decorate=”~{layout}”>",
+      "p185-b04": "<html>にlayout:decorate 属性を追加します。~{layout} のlayout は、templates/layout.html を指定するテンプレート名です。",
+      "p185-b05": "templates/product/layout.html を指定する場合は、~{product/layout} と書きます。",
       "p185-b06": "・9-13 行目 <main layout:fragment=”main_content”>",
       "p185-b07": "既存の<body>内に書いていたソースコードを、全てこの要素で囲みます。先ほどの\nlayout.html のfragment 識別名が“main_content”でしたので、同じ値を入れます。そうすること\nで、9-13 行内の全てのHTML コードが、layout.html の28 行にコピーされ、レイアウト+コンテ\nンツの新しいHTML が生成されます。insert.html へreturn して一覧画面を開くと、自動で\nlayout.html の共通部分まで生成された画面が表示されます。"
     },

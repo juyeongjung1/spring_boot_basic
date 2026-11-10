@@ -872,7 +872,7 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 :::
 
-![スライド](assets/p181-f13.svg){#p181-f13}
+![スライド](assets/p181-f13-template.svg){#p181-f13}
 
 ::: {#p181-b02 .heading}
 
@@ -1086,7 +1086,7 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
  1:<!DOCTYPE html>
  2:<html xmlns:th="http://www.thymeleaf.org"
  3: xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
- 4:       layout:decorate="~{/layout}">
+ 4:       layout:decorate="~{layout}">
  5:
  6:       <!--省略-->
  7:
@@ -1125,21 +1125,19 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 ::: {#p185-b03 .paragraph}
 
-[・4 行目 layout:decorate=”~\{/layout\}”\>]{.s014}
+[・4 行目 layout:decorate=”~\{layout\}”\>]{.s014}
 
 :::
 
 ::: {#p185-b04 .paragraph}
 
-[&#32;\<html\>の属性の中にlayout:decorate 属性も追記します。この部分の属性値は、]{.s009}[layout.html]{.s020}\
-[の場所をURL で指定]{.s020}[すればOK です。]{.s009}
+[\<html\>にlayout:decorate 属性を追加します。~\{layout\} のlayout は、]{.s009}[templates/layout.html を指定するテンプレート名]{.s020}[です。]{.s009}
 
 :::
 
 ::: {#p185-b05 .paragraph}
 
-[例えば、layout がproduct フォルダ内にあるなら、”~\{/product/layout\}” のように記述すれば]{.s009}\
-[OK です。URL を間違えると、レイアウト機能が使えませんので、ご注意ください。]{.s009}
+[templates/product/layout.html を指定する場合は、~\{product/layout\} と書きます。]{.s009}
 
 :::
 
@@ -1159,7 +1157,7 @@ document.write("<p>このテキストはJavaScript が生成しました</p>");
 
 :::
 
-![レイアウトの継承とコンテンツのコピー](assets/p185-f16.svg){#p185-f16}
+![レイアウトの継承とコンテンツのコピー](assets/p185-f16-template.svg){#p185-f16}
 
 ::: {#p185-b08 .paragraph}
 
@@ -1304,6 +1302,37 @@ footer {
 body > footer {
     flex-shrink: 0;
 }
+```
+
+:::
+
+
+::: {#revision-standard-fragment-title .heading keep-next="3"}
+
+[【参考】 Thymeleaf標準のフラグメント]{.s010}
+
+:::
+
+::: {#revision-standard-fragment-intro .paragraph}
+
+[Thymeleaf標準のフラグメント機能で、共通ヘッダーを取り込む例です。]{.s009}[th:fragment]{.s014}[で部品に名前を付け、]{.s009}[th:replace]{.s014}[で呼び出し側のタグをその部品に置き換えます。]{.s009}
+
+:::
+
+::: {#revision-standard-fragment-definition .code filename="…/resources/templates/layout.html"}
+
+```xml
+<header th:fragment="siteHeader">
+    <h1>Traino家電商品</h1>
+</header>
+```
+
+:::
+
+::: {#revision-standard-fragment-call .code filename="…/resources/templates/sample.html"}
+
+```xml
+<header th:replace="~{layout :: siteHeader}"></header>
 ```
 
 :::

@@ -1504,6 +1504,28 @@
         2098,
         749
       ]
+    },
+    {
+      "id": "grid-flex-placements",
+      "title": "グリッドの列内で見出しとボタンを左右に並べる",
+      "chapter": "07",
+      "source_page": 271,
+      "after_id": "revision-grid-flex-intro",
+      "before_id": "revision-grid-flex-code",
+      "figure_id": "illustration-grid-flex-placements-2026",
+      "caption_id": "illustration-grid-flex-placements-2026-caption",
+      "asset": "assets/grid-flex-placements.png",
+      "width": 280,
+      "max_height": 140,
+      "caption": "上は画面幅768px以上の表示例です。下では同じ3要素を使い、justify-contentの6種類の配置を比べます。",
+      "purpose": "グリッドの列幅と、列の内側でのFlexboxの配置を対応させる。",
+      "generation_source": "配布プロジェクトのBootstrap 5.3.8のCSSを使い、ブラウザーで描画。",
+      "source_url": "https://getbootstrap.com/docs/5.3/utilities/flex/#justify-content",
+      "asset_sha256": "7adf1642b8284d224e2bcfef5a9b3a66d5968d3e94d7c3cefcd4e67bca98578d",
+      "image_pixels": [
+        1680,
+        795
+      ]
     }
   ],
   "resized": [
