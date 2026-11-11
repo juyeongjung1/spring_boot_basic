@@ -1752,103 +1752,37 @@ typeMismatch.productForm.price=価格は整数で入力してください。
 
 :::
 
-::: {#revision-category-validation-show-title .heading keep-next="3"}
+::: {#revision-category-validation-insert-title .heading keep-next="4"}
 
-[登録・更新フォームを表示する]{.s010}
-
-:::
-
-::: {#revision-category-validation-show-intro .paragraph}
-
-[登録画面では空のProductFormを用意し、更新画面では商品番号で取得した商品の値をProductFormに入れます。どちらも]{.s009}[showForm]{.s010}[でカテゴリの一覧をcategoriesとしてModelに入れ、同じフォームを表示します。]{.s009}
+[登録用のController]{.s010}
 
 :::
 
-::: {#revision-category-validation-show .code filename="…/controller/ProductValidationController.java"}
+::: {#revision-category-validation-insert-intro .paragraph}
+
+[登録画面を開くときは、showInsertFormでカテゴリの一覧をModelに入れます。フォームを送信すると、insertProductの]{.s009}[@Valid]{.s010}[で入力をチェックし、その直後の]{.s009}[BindingResult]{.s010}[で結果を受け取ります。エラーがあるときはカテゴリ一覧を取り直し、登録フォームに戻ります。]{.s009}
+
+:::
+
+::: {#revision-category-validation-insert .code filename="…/controller/ProductInsertController.java"}
 
 ```java
 @GetMapping("/insert")
 public String showInsertForm(ProductForm productForm,
         Model model) {
-    return showForm(model, null);
-}
-
-@GetMapping("/update/{id}")
-public String showUpdateForm(@PathVariable int id,
-        Model model) {
-    Product product = findProduct(id);
-
-    ProductForm productForm = new ProductForm();
-    productForm.setName(product.getName());
-    productForm.setPrice(product.getPrice());
-    productForm.setCategoryId(product.getCategoryId());
-    model.addAttribute("productForm", productForm);
-    return showForm(model, id);
-}
-
-private String showForm(Model model, Integer id) {
     model.addAttribute("categories", cateRepo.findAll());
-    model.addAttribute("productId", id);
-    return "product/validation_form";
+    return "product/validation_insert";
 }
 
-private Product findProduct(int id) {
-    return prodRepo.findById(id).orElseThrow(
-            () -> new ResponseStatusException(
-                    HttpStatus.NOT_FOUND));
-}
-```
-
-:::
-
-::: {#revision-category-validation-open .paragraph}
-
-[spring_answer_6を起動し、登録画面は]{.s009}[http://localhost:8080/product/validation/insert]{.s010}[を開きます。商品番号1を更新する場合は]{.s009}[http://localhost:8080/product/validation/update/1]{.s010}[を開きます。]{.s009}
-
-:::
-
-::: {#revision-category-validation-submit-title .heading keep-next="3"}
-
-[入力チェック後に登録・更新する]{.s010}
-
-:::
-
-::: {#revision-category-validation-submit-intro .paragraph}
-
-[第4章と同じように、]{.s009}[@Valid]{.s010}[を付けたProductFormの直後に]{.s009}[BindingResult]{.s010}[を書きます。入力に問題があれば、送信されたProductFormを使って、showFormでカテゴリの選択肢を再取得します。保存はエラーがない場合に行います。]{.s009}
-
-:::
-
-::: {#revision-category-validation-submit .code filename="…/controller/ProductValidationController.java"}
-
-```java
 @PostMapping("/insert")
 public String insertProduct(@Valid ProductForm productForm,
         BindingResult result, Model model) {
-    validateCategory(productForm, result);
     if (result.hasErrors()) {
-        return showForm(model, null);
+        model.addAttribute("categories", cateRepo.findAll());
+        return "product/validation_insert";
     }
 
-    return saveProduct(new Product(), productForm);
-}
-
-@PostMapping("/update/{id}")
-public String updateProduct(@PathVariable int id,
-        @Valid ProductForm productForm, BindingResult result,
-        Model model) {
-    Product product = findProduct(id);
-    validateCategory(productForm, result);
-    if (result.hasErrors()) {
-        return showForm(model, id);
-    }
-
-    return saveProduct(product, productForm);
-}
-
-// 登録と更新で共通の保存処理
-private String saveProduct(Product product,
-        ProductForm productForm) {
+    Product product = new Product();
     product.setName(productForm.getName());
     product.setPrice(productForm.getPrice());
     product.setCategoryId(productForm.getCategoryId());
@@ -1859,34 +1793,90 @@ private String saveProduct(Product product,
 
 :::
 
-::: {#revision-category-validation-submit-note .paragraph}
+::: {#revision-category-validation-open .paragraph}
 
-[validateCategoryはカテゴリIDの存在を確認します。保存するProductは、登録時に新しく作り、更新時に商品番号で取得します。]{.s009}
+[spring_answer_6を起動し、登録は]{.s009}[http://localhost:8080/product/validation/insert]{.s010}[を開きます。商品番号1の更新は]{.s009}[http://localhost:8080/product/validation/update/1]{.s010}[を開きます。両方のControllerの共通パスは/product/validationです。]{.s009}
+
+:::
+
+::: {#revision-category-validation-check .paragraph}
+
+[どちらの画面も、カテゴリを選び、価格にabcを入れて保存すると、エラーと入力値が表示されます。価格を整数に直して保存し、商品一覧で結果を確認します。]{.s009}
+
+:::
+
+::: {#revision-category-validation-update-title .heading keep-next="2"}
+
+[更新用のController]{.s010}
+
+:::
+
+::: {#revision-category-validation-update-intro .paragraph}
+
+[showUpdateFormでは、商品番号で取得した商品の値をProductFormに入れます。更新時はフォームから届いた商品番号で商品を取得し、入力チェックを通った値で更新します。]{.s009}
+
+:::
+
+::: {#revision-category-validation-update .code filename="…/controller/ProductUpdateController.java"}
+
+```java
+@GetMapping("/update/{id}")
+public String showUpdateForm(@PathVariable int id,
+        ProductForm productForm, Model model) {
+    Product product = prodRepo.findById(id).orElse(null);
+    if (product == null) {
+        return "redirect:/product/findAll";
+    }
+    productForm.setId(product.getId());
+    productForm.setName(product.getName());
+    productForm.setPrice(product.getPrice());
+    productForm.setCategoryId(product.getCategoryId());
+    model.addAttribute("categories", cateRepo.findAll());
+    return "product/validation_update";
+}
+
+@PostMapping("/update")
+public String updateProduct(@Valid ProductForm productForm,
+        BindingResult result, Model model) {
+    if (result.hasErrors()) {
+        model.addAttribute("categories", cateRepo.findAll());
+        return "product/validation_update";
+    }
+    Integer id = productForm.getId();
+    if (id == null) {
+        return "redirect:/product/findAll";
+    }
+    Product product = prodRepo.findById(id).orElse(null);
+    if (product == null) {
+        return "redirect:/product/findAll";
+    }
+    product.setName(productForm.getName());
+    product.setPrice(productForm.getPrice());
+    product.setCategoryId(productForm.getCategoryId());
+    prodRepo.save(product);
+    return "redirect:/product/findAll";
+}
+```
 
 :::
 
 ::: {#revision-category-validation-view-title .heading keep-next="3"}
 
-[入力値とエラーメッセージを表示する]{.s010}
+[登録フォームと更新フォーム]{.s010}
 
 :::
 
 ::: {#revision-category-validation-view-intro .paragraph}
 
-[フォームの]{.s009}[th:object]{.s010}[をproductFormにし、]{.s009}[th:field]{.s010}[で各項目を結び付けます。カテゴリの選択肢はcategoriesから表示し、エラーで戻ったときも、選んだ値が一覧にあれば選択状態が残ります。]{.s009}[th:errors]{.s010}[は各入力欄のエラーを表示します。]{.s009}
+[th:action]{.s010}[でそれぞれの送信先を指定し、]{.s009}[th:errors]{.s010}[でエラーを表示します。更新フォームは商品番号までの抜粋です。続く入力欄は登録フォームと同じです。]{.s009}
 
 :::
 
-::: {#revision-category-validation-view .code filename="…/templates/product/validation_form.html"}
+::: {#revision-category-validation-insert-view .code filename="…/templates/product/validation_insert.html"}
 
 ```xml
-<form th:object="${productForm}" method="post"
-      th:action="${productId == null}
-        ? @{/product/validation/insert}
-        : @{/product/validation/update/{id}(id=${productId})}">
-    <p th:if="${productId != null}">
-        商品番号 <span th:text="${productId}"></span>
-    </p>
+<form th:action="@{/product/validation/insert}"
+      th:object="${productForm}" method="post">
     <p>
         <label for="name">商品名</label>
         <input type="text" th:field="*{name}">
@@ -1914,13 +1904,20 @@ private String saveProduct(Product product,
 
 :::
 
-::: {#revision-category-validation-check .paragraph}
+::: {#revision-category-validation-update-view .code filename="…/templates/product/validation_update.html"}
 
-[登録と更新で同じフォームを使い、th:actionで送信先を切り替えます。更新時は送信先のURLに商品番号が入ります。]{.s009}
-
-[登録・更新の両方で、カテゴリを選び、価格にabcを入れて保存します。エラーが出て入力値と選択が残り、整数に直すと一覧に反映されることを確認します。]{.s009}
+```xml
+<form th:action="@{/product/validation/update}"
+      th:object="${productForm}" method="post">
+    <p>
+        <label for="id">商品番号</label>
+        <input type="text" th:field="*{id}" readonly>
+        <span class="error" th:errors="*{id}"></span>
+    </p>
+```
 
 :::
+
 
 :::
 

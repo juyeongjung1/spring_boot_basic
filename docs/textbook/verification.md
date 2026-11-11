@@ -173,3 +173,12 @@
 Java 21・Spring Boot 4.0.2でMockMvcテスト7件を実行しました。教材の初期データを読み込んだ一時MySQLでは、エラー時の再表示と保存されないこと、正常な登録で行が増えること、更新で商品番号を維持したままカテゴリと入力値が保存されることを確認しました。
 
 合冊版は346ページです。旧313ページのd-flexの解説は317ページです。目次79件とURIリンク71件、追加した参考例の前後の改ページ、原本の図版位置を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
+
+
+## 登録用と更新用のControllerとフォーム
+
+224ページは、Layout Dialectで学んだ共通レイアウトを振り返り、Thymeleaf標準のフラグメントを紹介してから、共通レイアウトに本文を組み込む書き方を比較します。[Thymeleaf公式のフラグメント解説](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#defining-and-referencing-fragments)・[Layout Dialect公式の差し替え例](https://ultraq.github.io/thymeleaf-layout-dialect/processors/decorate/#example)
+
+259・260ページに登録用・更新用のControllerを掲載しました。各メソッドでカテゴリ一覧をModelに入れ、更新時は `findById(id).orElse(null)` で商品を取得します。261ページの登録・更新フォームはそれぞれ固定の送信先を指定し、更新フォームでは読み取り専用の欄から商品番号を送ります。入力の判定は第4章の `@Valid` と `BindingResult`、カテゴリ選択の必須チェックを使います。[Spring MVC公式のフォーム検証](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/modelattrib-method-args.html)
+
+Java 21・Spring Boot 4.0.2と教材の初期データを入れた一時MySQLで、両フォームの初期表示、入力エラー時の再表示、正常な登録と更新を確認しました。更新では同じ商品番号の行に選択したカテゴリが反映されます。合冊版346ページの目次・改ページ・リンクを照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)

@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>カテゴリ付きの商品入力</title>
+    <title>商品情報修正</title>
     <style>.error { color: #a1261e; }</style>
 </head>
 <body>
-    <h1 th:text="${productId == null ? '商品登録' : '商品情報修正'}">商品入力</h1>
+    <h1>商品情報修正</h1>
 
-    <form th:object="${productForm}" method="post"
-          th:action="${productId == null}
-            ? @{/product/validation/insert}
-            : @{/product/validation/update/{id}(id=${productId})}">
-        <p th:if="${productId != null}">
-            商品番号 <span th:text="${productId}"></span>
+    <form th:action="@{/product/validation/update}"
+          th:object="${productForm}" method="post">
+        <p>
+            <label for="id">商品番号</label>
+            <input type="text" th:field="*{id}" readonly>
+            <span class="error" th:errors="*{id}"></span>
         </p>
         <p>
             <label for="name">商品名</label>

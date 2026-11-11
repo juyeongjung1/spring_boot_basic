@@ -116,9 +116,9 @@ class SourceLayoutTests(unittest.TestCase):
         expected.add(('06', 'revision-product-final-note'))
         expected.update(('06', 'revision-category-validation-' + name)
                         for name in ('title', 'intro', 'dependency', 'rules', 'form', 'messages',
-                                     'show-title', 'show-intro', 'show', 'open',
-                                     'submit-title', 'submit-intro', 'submit', 'submit-note',
-                                     'view-title', 'view-intro', 'view', 'check'))
+                                     'insert-title', 'insert-intro', 'insert', 'open',
+                                     'update-title', 'update-intro', 'update',
+                                     'view-title', 'view-intro', 'insert-view', 'update-view', 'check'))
         expected.update(('05', 'revision-standard-fragment-' + name)
                         for name in ('title', 'intro', 'comparison', 'screens', 'selection',
                                      'dialect-list', 'list', 'call', 'detail', 'run'))

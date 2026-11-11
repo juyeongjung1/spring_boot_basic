@@ -3436,42 +3436,42 @@
         "edge": "end",
         "page": 29,
         "x": 85.104,
-        "y": 657.139
+        "y": 603.139
       },
       {
         "id": "05-revision-standard-fragment-comparison-part1",
         "edge": "html-component",
         "page": 29,
         "x": 85.104,
-        "y": 670.099
+        "y": 616.099
       },
       {
         "id": "revision-standard-fragment-comparison",
         "edge": "short-table",
         "page": 29,
         "x": 85.479,
-        "y": 696.724
+        "y": 642.724
       },
       {
         "id": "revision-standard-fragment-comparison",
         "edge": "start",
         "page": 29,
         "x": 85.479,
-        "y": 696.724
+        "y": 642.724
       },
       {
         "id": "revision-standard-fragment-comparison",
         "edge": "end",
         "page": 29,
         "x": 510.646969,
-        "y": 750.724
+        "y": 696.724
       },
       {
         "id": "instruction-revision-standard-fragment-title",
         "edge": "end",
         "page": 29,
         "x": 85.104,
-        "y": 752.599
+        "y": 698.599
       },
       {
         "id": "instruction-revision-standard-fragment-screens",
