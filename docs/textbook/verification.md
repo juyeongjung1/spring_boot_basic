@@ -162,3 +162,14 @@
 313ページでは、ブロック要素の通常の並び方、`row` で列が横並びになる理由、列内の `d-flex` と `justify-content` の使い方を順に説明します。挿絵の幅を約4％縮め、図とコード、動作確認の説明を同じページに収めました。[Bootstrap公式のグリッド](https://getbootstrap.com/docs/5.3/layout/grid/)・[Flexユーティリティ](https://getbootstrap.com/docs/5.3/utilities/flex/)
 
 合冊版は342ページです。本文の差分は224・225・313ページに収まり、原本に由来する図版の位置、改ページの境界、目次79件とURIリンク69件を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
+
+
+## フラグメントの導入とカテゴリ付きフォームの入力チェック
+
+224ページは、共通メニューを例にフラグメントの再利用と `th:fragment`・`th:replace` を説明してから、Layout Dialectのレイアウト合成と比較しています。標準機能は追加ライブラリなしで使え、画面固有のタイトルやCSSを取り込む場合は個別の指定が必要です。[Thymeleaf公式のフラグメント解説](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#including-template-fragments)・[Layout Dialect公式のhead合成](https://ultraq.github.io/thymeleaf-layout-dialect/processors/decorate/#head-element-merging)
+
+6.3節の末尾の258〜261ページに、カテゴリ付きの商品登録・更新に入力チェックを加える例を載せました。`spring_answer_6` のProductFormに、商品名の必須・30文字以内、価格の必須・0円以上、カテゴリの必須を設定し、登録・更新で共通のフォームを用意しました。エラー時は入力値を保持し、カテゴリの選択肢を取得してからフォームを表示します。[Spring MVC公式のフォーム検証](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/modelattrib-method-args.html)・[Thymeleaf公式の入力エラー表示](https://www.thymeleaf.org/doc/tutorials/3.1/thymeleafspring.html#field-errors)
+
+Java 21・Spring Boot 4.0.2でMockMvcテスト7件を実行しました。教材の初期データを読み込んだ一時MySQLでは、エラー時の再表示と保存されないこと、正常な登録で行が増えること、更新で商品番号を維持したままカテゴリと入力値が保存されることを確認しました。
+
+合冊版は346ページです。旧313ページのd-flexの解説は317ページです。目次79件とURIリンク71件、追加した参考例の前後の改ページ、原本の図版位置を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)

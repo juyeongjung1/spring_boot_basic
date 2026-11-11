@@ -1307,7 +1307,7 @@ body > footer {
 :::
 
 
-::: {#revision-standard-fragment-title .heading keep-next="4"}
+::: {#revision-standard-fragment-title .heading keep-next="2"}
 
 [【参考】 Thymeleaf標準のフラグメント]{.s010}
 
@@ -1315,32 +1315,20 @@ body > footer {
 
 ::: {#revision-standard-fragment-intro .paragraph}
 
-[ヘッダー、メニュー、フッターは共通レイアウトに置き、]{.s009}[main]{.s014}[だけを各画面の部品に差し替えます。下のコードは、2つの方式で共通レイアウトの差し替え位置を指定する箇所です。]{.s009}
+[HTMLの一部分を部品にして再利用できるのが、Thymeleafのフラグメントです。たとえば、複数の画面で共通のメニューを使うとき、メニューを1か所にまとめれば、項目の修正も1か所で済みます。]{.s009}[th:fragment]{.s014}[で部品に名前を付け、]{.s009}[th:replace]{.s014}[で指定したタグをその部品に置き換えます。]{.s009}
+
+[この章で使ったLayout Dialectは、共通レイアウトを組み立てるための追加ライブラリです。共通レイアウトを選ぶと、同じ名前の部品を対応させて本文を組み込み、head内のCSSやスクリプトもまとめます。]{.s009}
+
+[標準機能は追加のライブラリなしで使えます。共通レイアウトのmainを差し替えるには、そこで使う部品を自分で指定します。画面ごとにタイトルやCSSも変えたい場合は、本文とは別に、それぞれを組み込む指定を書く手間がかかります。]{.s009}
 
 :::
 
 ::: {#revision-standard-fragment-comparison .table}
 
-| 各画面の指定 | Layout Dialect | Thymeleaf標準 |
-| --- | --- | --- |
-| 共通レイアウトの指定 | layout:decorate | th:replace |
-| 各画面の main | layout:fragment | th:fragment |
-
-:::
-
-::: {#revision-standard-fragment-dialect-definition .code filename="…/resources/templates/layout.html"}
-
-```xml
-<main layout:fragment="main_content">
-```
-
-:::
-
-::: {#revision-standard-fragment-definition .code filename="…/resources/templates/layout2.html"}
-
-```xml
-<main th:replace="~{::main_content}"></main>
-```
+| 共通レイアウト | mainの差し替え指定 |
+| --- | --- |
+| layout.html（Layout Dialect） | layout:fragment="main_content" |
+| layout2.html（Thymeleaf標準） | th:replace="~{::main_content}" |
 
 :::
 

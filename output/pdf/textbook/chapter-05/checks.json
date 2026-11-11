@@ -5,7 +5,7 @@
     164,
     191
   ],
-  "blocks": 156,
+  "blocks": 154,
   "figures": 23,
   "source_coverage": [
     {
@@ -3436,98 +3436,42 @@
         "edge": "end",
         "page": 29,
         "x": 85.104,
-        "y": 501.13900000000007
+        "y": 657.139
       },
       {
         "id": "05-revision-standard-fragment-comparison-part1",
         "edge": "html-component",
         "page": 29,
         "x": 85.104,
-        "y": 514.099
+        "y": 670.099
       },
       {
         "id": "revision-standard-fragment-comparison",
         "edge": "short-table",
         "page": 29,
         "x": 85.479,
-        "y": 540.724
+        "y": 696.724
       },
       {
         "id": "revision-standard-fragment-comparison",
         "edge": "start",
         "page": 29,
         "x": 85.479,
-        "y": 540.724
+        "y": 696.724
       },
       {
         "id": "revision-standard-fragment-comparison",
         "edge": "end",
         "page": 29,
-        "x": 406.6665,
-        "y": 594.724
-      },
-      {
-        "id": "05-revision-standard-fragment-dialect-definition-part1",
-        "edge": "html-component",
-        "page": 29,
-        "x": 85.104,
-        "y": 608.599
-      },
-      {
-        "id": "revision-standard-fragment-dialect-definition",
-        "edge": "short-code",
-        "page": 29,
-        "x": 85.854,
-        "y": 650.8685310000001
-      },
-      {
-        "id": "revision-standard-fragment-dialect-definition",
-        "edge": "start",
-        "page": 29,
-        "x": 85.854,
-        "y": 650.8685310000001
-      },
-      {
-        "id": "revision-standard-fragment-dialect-definition",
-        "edge": "end",
-        "page": 29,
-        "x": 511.021969,
-        "y": 666.3724380000001
-      },
-      {
-        "id": "05-revision-standard-fragment-definition-part1",
-        "edge": "html-component",
-        "page": 29,
-        "x": 85.104,
-        "y": 685.8730000000002
-      },
-      {
-        "id": "revision-standard-fragment-definition",
-        "edge": "short-code",
-        "page": 29,
-        "x": 85.854,
-        "y": 728.1425310000002
-      },
-      {
-        "id": "revision-standard-fragment-definition",
-        "edge": "start",
-        "page": 29,
-        "x": 85.854,
-        "y": 728.1425310000002
-      },
-      {
-        "id": "revision-standard-fragment-definition",
-        "edge": "end",
-        "page": 29,
-        "x": 511.021969,
-        "y": 743.6464380000001
+        "x": 510.646969,
+        "y": 750.724
       },
       {
         "id": "instruction-revision-standard-fragment-title",
         "edge": "end",
         "page": 29,
         "x": 85.104,
-        "y": 751.147
+        "y": 752.599
       },
       {
         "id": "instruction-revision-standard-fragment-screens",
@@ -4530,34 +4474,6 @@
         ]
       },
       {
-        "id": "05-revision-standard-fragment-dialect-definition",
-        "kind": "code",
-        "consume_ids": [
-          "revision-standard-fragment-dialect-definition"
-        ],
-        "parts": [
-          {
-            "token": "05-revision-standard-fragment-dialect-definition-part1",
-            "width": 426.672,
-            "height": 65.274
-          }
-        ]
-      },
-      {
-        "id": "05-revision-standard-fragment-definition",
-        "kind": "code",
-        "consume_ids": [
-          "revision-standard-fragment-definition"
-        ],
-        "parts": [
-          {
-            "token": "05-revision-standard-fragment-definition-part1",
-            "width": 426.672,
-            "height": 65.274
-          }
-        ]
-      },
-      {
         "id": "05-revision-standard-fragment-dialect-list",
         "kind": "code",
         "consume_ids": [
@@ -4622,7 +4538,7 @@
         "parts": [
           {
             "token": "05-revision-standard-fragment-comparison-part1",
-            "width": 322.699,
+            "width": 426.672,
             "height": 82.5
           }
         ]

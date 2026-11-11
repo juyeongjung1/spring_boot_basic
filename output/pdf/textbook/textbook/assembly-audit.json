@@ -1,19 +1,21 @@
 {
   "collection": "textbook",
-  "flow_pages": 342,
+  "flow_pages": 346,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
   "approved_continuation_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
-  "uri_annotations_verified": 69,
+  "uri_annotations_verified": 71,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "2e412c894f440c5e9d8c632b023d12a58ee47bc3d9da0011064dfe69606b6b5b",
-  "verification": "docs/textbook/verification.md#mainだけを差し替える共通レイアウトと列内配置",
+  "pdf_sha256": "29f8107de3073587d3ecc239d53a35d88828cfa847e636758450271513d41d6e",
+  "verification": "docs/textbook/verification.md#フラグメントの導入とカテゴリ付きフォームの入力チェック",
   "reviewed_pages": [
     224,
-    225,
-    313
+    258,
+    259,
+    260,
+    261
   ],
   "chapter_page_counts": {
     "front": 14,
@@ -22,7 +24,7 @@
     "03": 89,
     "04": 37,
     "05": 32,
-    "06": 48,
+    "06": 52,
     "07": 50,
     "appendix-a": 8,
     "appendix-b": 9

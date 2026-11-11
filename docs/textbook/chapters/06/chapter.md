@@ -1689,6 +1689,239 @@ Repeated column in mapping for entity: Product column: category_id
 
 :::
 
+
+::: {#revision-category-validation-title .heading keep-next="5"}
+
+[【参考】 カテゴリ付きの商品登録・更新に入力チェックを加える]{.s010}
+
+:::
+
+::: {#revision-category-validation-intro .paragraph}
+
+[第3章では、フォームの入力値をProductにコピーして、商品を登録・更新しました。ここでは、6.3で追加したカテゴリの選択肢を使いながら、第4章と同じ方法で入力チェックを行います。]{.s009}
+
+[配布プロジェクトspring_answer_6のpom.xmlには、第4章と同じValidation用の依存関係が入っています。]{.s009}
+
+:::
+
+::: {#revision-category-validation-dependency .code filename="pom.xml"}
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+```
+
+:::
+
+::: {#revision-category-validation-rules .paragraph}
+
+[商品名は必須で30文字以内、価格は0円以上の整数、カテゴリは選択必須です。整数型の項目は]{.s009}[@NotNull]{.s010}[で空欄を検出します。価格を整数に変換できない場合のメッセージはmessages.propertiesで指定します。]{.s009}
+
+:::
+
+::: {#revision-category-validation-form .code filename="…/form/ProductForm.java"}
+
+```java
+@Data
+public class ProductForm {
+    private Integer id; // 商品番号
+
+    @NotBlank(message = "商品名を入力してください。")
+    @Size(max = 30,
+            message = "商品名は30文字以内で入力してください。")
+    private String name; // 商品名
+
+    @NotNull(message = "価格を入力してください。")
+    @Min(value = 0, message = "価格は0円以上で入力してください。")
+    private Integer price; // 商品価格
+
+    @NotNull(message = "カテゴリを選択してください。")
+    private Integer categoryId; // カテゴリID
+}
+```
+
+:::
+
+::: {#revision-category-validation-messages .code filename="…/resources/messages.properties"}
+
+```properties
+typeMismatch.productForm.price=価格は整数で入力してください。
+```
+
+:::
+
+::: {#revision-category-validation-show-title .heading keep-next="3"}
+
+[登録・更新フォームを表示する]{.s010}
+
+:::
+
+::: {#revision-category-validation-show-intro .paragraph}
+
+[登録画面では空のProductFormを用意し、更新画面では商品番号で取得した商品の値をProductFormに入れます。どちらも]{.s009}[showForm]{.s010}[でカテゴリの一覧をcategoriesとしてModelに入れ、同じフォームを表示します。]{.s009}
+
+:::
+
+::: {#revision-category-validation-show .code filename="…/controller/ProductValidationController.java"}
+
+```java
+@GetMapping("/insert")
+public String showInsertForm(ProductForm productForm,
+        Model model) {
+    return showForm(model, null);
+}
+
+@GetMapping("/update/{id}")
+public String showUpdateForm(@PathVariable int id,
+        Model model) {
+    Product product = findProduct(id);
+
+    ProductForm productForm = new ProductForm();
+    productForm.setName(product.getName());
+    productForm.setPrice(product.getPrice());
+    productForm.setCategoryId(product.getCategoryId());
+    model.addAttribute("productForm", productForm);
+    return showForm(model, id);
+}
+
+private String showForm(Model model, Integer id) {
+    model.addAttribute("categories", cateRepo.findAll());
+    model.addAttribute("productId", id);
+    return "product/validation_form";
+}
+
+private Product findProduct(int id) {
+    return prodRepo.findById(id).orElseThrow(
+            () -> new ResponseStatusException(
+                    HttpStatus.NOT_FOUND));
+}
+```
+
+:::
+
+::: {#revision-category-validation-open .paragraph}
+
+[spring_answer_6を起動し、登録画面は]{.s009}[http://localhost:8080/product/validation/insert]{.s010}[を開きます。商品番号1を更新する場合は]{.s009}[http://localhost:8080/product/validation/update/1]{.s010}[を開きます。]{.s009}
+
+:::
+
+::: {#revision-category-validation-submit-title .heading keep-next="3"}
+
+[入力チェック後に登録・更新する]{.s010}
+
+:::
+
+::: {#revision-category-validation-submit-intro .paragraph}
+
+[第4章と同じように、]{.s009}[@Valid]{.s010}[を付けたProductFormの直後に]{.s009}[BindingResult]{.s010}[を書きます。入力に問題があれば、送信されたProductFormを使って、showFormでカテゴリの選択肢を再取得します。保存はエラーがない場合に行います。]{.s009}
+
+:::
+
+::: {#revision-category-validation-submit .code filename="…/controller/ProductValidationController.java"}
+
+```java
+@PostMapping("/insert")
+public String insertProduct(@Valid ProductForm productForm,
+        BindingResult result, Model model) {
+    validateCategory(productForm, result);
+    if (result.hasErrors()) {
+        return showForm(model, null);
+    }
+
+    return saveProduct(new Product(), productForm);
+}
+
+@PostMapping("/update/{id}")
+public String updateProduct(@PathVariable int id,
+        @Valid ProductForm productForm, BindingResult result,
+        Model model) {
+    Product product = findProduct(id);
+    validateCategory(productForm, result);
+    if (result.hasErrors()) {
+        return showForm(model, id);
+    }
+
+    return saveProduct(product, productForm);
+}
+
+// 登録と更新で共通の保存処理
+private String saveProduct(Product product,
+        ProductForm productForm) {
+    product.setName(productForm.getName());
+    product.setPrice(productForm.getPrice());
+    product.setCategoryId(productForm.getCategoryId());
+    prodRepo.save(product);
+    return "redirect:/product/findAll";
+}
+```
+
+:::
+
+::: {#revision-category-validation-submit-note .paragraph}
+
+[validateCategoryはカテゴリIDの存在を確認します。保存するProductは、登録時に新しく作り、更新時に商品番号で取得します。]{.s009}
+
+:::
+
+::: {#revision-category-validation-view-title .heading keep-next="3"}
+
+[入力値とエラーメッセージを表示する]{.s010}
+
+:::
+
+::: {#revision-category-validation-view-intro .paragraph}
+
+[フォームの]{.s009}[th:object]{.s010}[をproductFormにし、]{.s009}[th:field]{.s010}[で各項目を結び付けます。カテゴリの選択肢はcategoriesから表示し、エラーで戻ったときも、選んだ値が一覧にあれば選択状態が残ります。]{.s009}[th:errors]{.s010}[は各入力欄のエラーを表示します。]{.s009}
+
+:::
+
+::: {#revision-category-validation-view .code filename="…/templates/product/validation_form.html"}
+
+```xml
+<form th:object="${productForm}" method="post"
+      th:action="${productId == null}
+        ? @{/product/validation/insert}
+        : @{/product/validation/update/{id}(id=${productId})}">
+    <p th:if="${productId != null}">
+        商品番号 <span th:text="${productId}"></span>
+    </p>
+    <p>
+        <label for="name">商品名</label>
+        <input type="text" th:field="*{name}">
+        <span class="error" th:errors="*{name}"></span>
+    </p>
+    <p>
+        <label for="price">商品価格</label>
+        <input type="text" th:field="*{price}">
+        <span class="error" th:errors="*{price}"></span>
+    </p>
+    <p>
+        <label>カテゴリ
+            <select th:field="*{categoryId}">
+                <option value="">選択してください</option>
+                <option th:each="category : ${categories}"
+                        th:value="${category.id}"
+                        th:text="${category.name}"></option>
+            </select>
+        </label>
+        <span class="error" th:errors="*{categoryId}"></span>
+    </p>
+    <button type="submit">保存</button>
+</form>
+```
+
+:::
+
+::: {#revision-category-validation-check .paragraph}
+
+[登録と更新で同じフォームを使い、th:actionで送信先を切り替えます。更新時は送信先のURLに商品番号が入ります。]{.s009}
+
+[登録・更新の両方で、カテゴリを選び、価格にabcを入れて保存します。エラーが出て入力値と選択が残り、整数に直すと一覧に反映されることを確認します。]{.s009}
+
+:::
+
 :::
 
 ::: {#page-222 .source-page}
