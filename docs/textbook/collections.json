@@ -3,6 +3,7 @@
     "title": "Spring Boot入門 本文教材",
     "pdf": "JAC0177G-T1-04(260715).pdf",
     "toc_pages": [3, 4, 5],
+    "index": "docs/textbook/index.md",
     "parts": ["front", "01", "02", "03", "04", "05", "06", "07", "appendix-a", "appendix-b"]
   },
   "exercise": {

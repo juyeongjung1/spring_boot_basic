@@ -6,6 +6,7 @@ import re
 
 import pymupdf as fitz
 from build import normalized,read_markdown
+from book_index import append_index,collect_anchor_pages
 
 ROOT=Path(__file__).resolve().parents[2]
 MARKED=re.compile(rb'(/(?:Span|Artifact)\s*<<(.*?)>>\s*BDC)(.*?)(EMC)',re.S)
@@ -90,6 +91,7 @@ def assemble(name, collection):
     reference=fitz.open();flow=fitz.open();comparison=fitz.open()
     original=fitz.open(ROOT/collection['pdf'])
     coverage=[];chapters=[];footer_pages=[];page_map={};heading_map={}
+    anchor_pages={}
     for chapter in collection['parts']:
         folder=ROOT/'docs/textbook/chapters'/chapter
         config=json.loads((folder/'source.json').read_text(encoding='utf-8'))
@@ -110,6 +112,8 @@ def assemble(name, collection):
         ref_start=len(reference)+1;flow_start=len(flow)+1
         reference.insert_pdf(part_ref);comparison.insert_pdf(part_comparison)
         flow.insert_pdf(part_flow)
+        if collection.get('index'):
+            collect_anchor_pages(chapter,checks['flow']['block_positions'],flow_start,anchor_pages)
         nodes,_,_=read_markdown(folder/'chapter.md')
         local_positions={}
         for mark in checks['flow']['block_positions']:
@@ -149,14 +153,20 @@ def assemble(name, collection):
     reference.set_metadata({'title':collection['title']+' 元位置再現版'})
     flow.set_metadata({'title':collection['title']+' 自動組版版'})
     comparison.set_metadata({'title':collection['title']+' 元PDFとの比較'})
-    flow.set_toc([[1,c['title'],c['flow_pages'][0]] for c in chapters])
+    bookmarks=[[1,c['title'],c['flow_pages'][0]] for c in chapters]
+    index=append_index(flow,ROOT/collection['index'],anchor_pages) if collection.get('index') else None
+    if index:
+        bookmarks.append([1,'索引',index['pages'][0]])
+    flow.set_toc(bookmarks)
     flow.subset_fonts()
     reference.save(out/'reference.pdf',garbage=4,deflate=True)
     flow.save(out/'flow.pdf',garbage=4,deflate=True)
     comparison.save(out/'comparison.pdf',garbage=4,deflate=True)
     report={'title':collection['title'],'source_pages':len(original),'reference_pages':len(reference),'flow_pages':len(flow),'comparison_pages':len(comparison),'complete_source_coverage':True,'continuous_footer_numbers':True,'contents':contents,'chapters':chapters}
+    if index:
+        report['index']=index
     (out/'checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
-    print(json.dumps({k:v for k,v in report.items() if k!='chapters'},ensure_ascii=False))
+    print(json.dumps({k:v for k,v in report.items() if k not in ('chapters','index')},ensure_ascii=False))
     return report
 
 
