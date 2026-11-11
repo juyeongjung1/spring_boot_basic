@@ -1,20 +1,19 @@
 {
   "collection": "textbook",
-  "flow_pages": 346,
+  "flow_pages": 345,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
   "approved_continuation_boundaries_verified": true,
   "all_chapter_to_assembly_text_pages_verified": true,
-  "uri_annotations_verified": 71,
+  "uri_annotations_verified": 65,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "ad9d775cf960fca2d0126ba6c07e1bda8ca6415bcee9cbff617c3a55719cb9a4",
-  "verification": "docs/textbook/verification.md#登録用と更新用のcontrollerとフォーム",
+  "pdf_sha256": "e47f18eb4307075fdc7a245b58b1c49adb8489e7ee835e29a6b98d0c2ec695c1",
+  "verification": "docs/textbook/verification.md#更新フォームのコード抜粋",
   "reviewed_pages": [
     224,
-    259,
-    260,
-    261
+    225,
+    260
   ],
   "chapter_page_counts": {
     "front": 14,
@@ -22,7 +21,7 @@
     "02": 37,
     "03": 89,
     "04": 37,
-    "05": 32,
+    "05": 31,
     "06": 52,
     "07": 50,
     "appendix-a": 8,

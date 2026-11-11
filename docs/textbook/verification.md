@@ -135,38 +135,30 @@
 296ページでは、開発者ツールの青い要素選択ボタンを囲む位置に赤枠を移しました。合冊版は340ページです。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
 
 
-## グリッドの列内配置と標準フラグメント
+## グリッドの列内配置
 
 7.5の動作確認の後、新312ページに「【参考】グリッドの列内でd-flexを使う」を追加しました。図7.5.7は、3対9の列内で商品一覧と新規登録ボタンを左右に並べた例と、justify-contentの6種類を示します。掲載HTMLを配布版のCSSで描画し、幅1024pxでの横並び、幅767pxでの上下配置、両方の幅での商品欄内の左右配置を確認しました。[Bootstrap公式のFlex解説](https://getbootstrap.com/docs/5.3/utilities/flex/#justify-content)
 
-第5章224ページに、th:fragmentとth:replaceで共通ヘッダーを取り込む短い参考例を載せました。214・218〜220ページと演習ガイド43ページの参照名は、配布版に合わせて先頭のスラッシュを省いています。[Thymeleaf公式のフラグメント解説](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#defining-and-referencing-fragments)
+214・218〜220ページと演習ガイド43ページの参照名は、配布版に合わせて先頭のスラッシュを省いています。
 
 合冊版は本文341ページ、演習ガイド79ページです。[本文の合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)・[演習ガイドの合冊監査](../../output/pdf/textbook/exercise/assembly-audit.json)
 
 
-## Thymeleafの3画面とFlexboxの補足
-
-224ページでは、Layout DialectとThymeleaf標準の違いを表にまとめ、共通枠の `layout2.html` を抜粋しました。225ページでは、登録・一覧・詳細の各画面が `th:replace` でタイトルと本文を渡す箇所と、一覧画面を返すControllerを掲載しました。[Thymeleaf公式のレイアウト継承](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#layout-inheritance)・[Layout Dialectの公式資料](https://ultraq.github.io/thymeleaf-layout-dialect/processors/decorate/)
-
-登録・一覧・詳細のサンプルは `spring_answer_5` の `templates/fragment_sample` に置きました。Java 21・Spring Boot 4.0.2のMockMvcテスト2件で、共通枠を適用した3画面の描画、既存の一覧の表示、登録後の遷移を確認しました。DBアクセスは商品サービスのモックで代替しています。
+## Flexboxの説明の補足
 
 旧312ページは新313ページです。通常のブロック要素、グリッドの `row`、列内の `d-flex` の順に説明し、`justify-content-between` で商品一覧の見出しと新規登録ボタンを左右に並べる例を同じページに収めました。[Bootstrap公式のグリッド](https://getbootstrap.com/docs/5.3/layout/grid/)・[Flexユーティリティ](https://getbootstrap.com/docs/5.3/utilities/flex/)
 
 合冊版は342ページです。原本に由来する図版の位置、改ページの境界、目次79件、URIリンク68件を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
 
 
-## mainだけを差し替える共通レイアウトと列内配置
-
-224ページでは共通レイアウト側の `main` を比較し、225ページでは同じ商品一覧を表示する2方式のコードを続けて載せました。標準版は、`layout2.html` の `main` を、各画面が `th:fragment` で定義した `main_content` に差し替えます。Java 21・Spring Boot 4.0.2のMockMvcテスト2件で、共通のタイトルとヘッダー、3画面それぞれの本文、登録後の遷移を確認しました。商品サービスはモックで代替しています。[Thymeleaf公式のフラグメント式](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#fragment-specification-syntax)・[Layout Dialectの公式資料](https://ultraq.github.io/thymeleaf-layout-dialect/processors/decorate/)
+## 列内のFlexboxの組版
 
 313ページでは、ブロック要素の通常の並び方、`row` で列が横並びになる理由、列内の `d-flex` と `justify-content` の使い方を順に説明します。挿絵の幅を約4％縮め、図とコード、動作確認の説明を同じページに収めました。[Bootstrap公式のグリッド](https://getbootstrap.com/docs/5.3/layout/grid/)・[Flexユーティリティ](https://getbootstrap.com/docs/5.3/utilities/flex/)
 
-合冊版は342ページです。本文の差分は224・225・313ページに収まり、原本に由来する図版の位置、改ページの境界、目次79件とURIリンク69件を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
+合冊版は342ページです。原本に由来する図版の位置、改ページの境界、目次79件とURIリンク69件を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
 
 
-## フラグメントの導入とカテゴリ付きフォームの入力チェック
-
-224ページは、共通メニューを例にフラグメントの再利用と `th:fragment`・`th:replace` を説明してから、Layout Dialectのレイアウト合成と比較しています。標準機能は追加ライブラリなしで使え、画面固有のタイトルやCSSを取り込む場合は個別の指定が必要です。[Thymeleaf公式のフラグメント解説](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#including-template-fragments)・[Layout Dialect公式のhead合成](https://ultraq.github.io/thymeleaf-layout-dialect/processors/decorate/#head-element-merging)
+## カテゴリ付きフォームの入力チェック
 
 6.3節の末尾の258〜261ページに、カテゴリ付きの商品登録・更新に入力チェックを加える例を載せました。`spring_answer_6` のProductFormに、商品名の必須・30文字以内、価格の必須・0円以上、カテゴリの必須を設定し、登録・更新で共通のフォームを用意しました。エラー時は入力値を保持し、カテゴリの選択肢を取得してからフォームを表示します。[Spring MVC公式のフォーム検証](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/modelattrib-method-args.html)・[Thymeleaf公式の入力エラー表示](https://www.thymeleaf.org/doc/tutorials/3.1/thymeleafspring.html#field-errors)
 
@@ -177,8 +169,15 @@ Java 21・Spring Boot 4.0.2でMockMvcテスト7件を実行しました。教材
 
 ## 登録用と更新用のControllerとフォーム
 
-224ページは、Layout Dialectで学んだ共通レイアウトを振り返り、Thymeleaf標準のフラグメントを紹介してから、共通レイアウトに本文を組み込む書き方を比較します。[Thymeleaf公式のフラグメント解説](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#defining-and-referencing-fragments)・[Layout Dialect公式の差し替え例](https://ultraq.github.io/thymeleaf-layout-dialect/processors/decorate/#example)
-
 259・260ページに登録用・更新用のControllerを掲載しました。各メソッドでカテゴリ一覧をModelに入れ、更新時は `findById(id).orElse(null)` で商品を取得します。261ページの登録・更新フォームはそれぞれ固定の送信先を指定し、更新フォームでは読み取り専用の欄から商品番号を送ります。入力の判定は第4章の `@Valid` と `BindingResult`、カテゴリ選択の必須チェックを使います。[Spring MVC公式のフォーム検証](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/modelattrib-method-args.html)
 
 Java 21・Spring Boot 4.0.2と教材の初期データを入れた一時MySQLで、両フォームの初期表示、入力エラー時の再表示、正常な登録と更新を確認しました。更新では同じ商品番号の行に選択したカテゴリが反映されます。合冊版346ページの目次・改ページ・リンクを照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)
+
+
+## 更新フォームのコード抜粋
+
+260ページの更新フォームでは、商品番号欄の後に `<!-- 以降は登録フォームと同じ -->` と `</form>` を掲載しました。第5章では224ページのCSS例に続けて、225ページに章のまとめを置いています。
+
+Java 21・Spring Boot 4.0.2のMockMvcテストで、商品リポジトリをモックにして、Layout Dialectを使う商品登録・一覧・詳細の表示を確認しました。
+
+合冊版は345ページです。原本の図版位置、目次79件、URIリンク65件を照合しました。[合冊監査](../../output/pdf/textbook/textbook/assembly-audit.json)

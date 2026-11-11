@@ -9,7 +9,7 @@
   "uri_annotations_verified": 19,
   "maximum_uri_coordinate_delta_pt": 0.0,
   "pdf_sha256": "768ce2b2c3823f124b466da6f51f0536400e9b2ddb423e13065c9154a4e86f4b",
-  "verification": "docs/textbook/verification.md#グリッドの列内配置と標準フラグメント",
+  "verification": "docs/textbook/verification.md#グリッドの列内配置",
   "reviewed_pages": [
     43
   ],

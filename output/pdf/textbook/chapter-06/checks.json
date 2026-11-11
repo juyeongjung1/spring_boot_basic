@@ -4509,70 +4509,70 @@
         "edge": "end",
         "page": 34,
         "x": 85.104,
-        "y": 138.08
+        "y": 120.08
       },
       {
         "id": "06-revision-category-validation-insert-view-part1",
         "edge": "html-component",
         "page": 34,
         "x": 85.104,
-        "y": 151.04000000000002
+        "y": 133.04000000000002
       },
       {
         "id": "revision-category-validation-insert-view",
         "edge": "short-code",
         "page": 34,
         "x": 85.854,
-        "y": 193.309531
+        "y": 175.309531
       },
       {
         "id": "revision-category-validation-insert-view",
         "edge": "start",
         "page": 34,
         "x": 85.854,
-        "y": 193.309531
+        "y": 175.309531
       },
       {
         "id": "revision-category-validation-insert-view",
         "edge": "end",
         "page": 34,
         "x": 511.021969,
-        "y": 580.907188
+        "y": 562.907188
       },
       {
         "id": "06-revision-category-validation-update-view-part1",
         "edge": "html-component",
         "page": 34,
         "x": 85.104,
-        "y": 600.4079999999999
+        "y": 582.4079999999999
       },
       {
         "id": "revision-category-validation-update-view",
         "edge": "short-code",
         "page": 34,
         "x": 85.854,
-        "y": 642.6775309999999
+        "y": 624.6775309999999
       },
       {
         "id": "revision-category-validation-update-view",
         "edge": "start",
         "page": 34,
         "x": 85.854,
-        "y": 642.6775309999999
+        "y": 624.6775309999999
       },
       {
         "id": "revision-category-validation-update-view",
         "edge": "end",
         "page": 34,
         "x": 511.021969,
-        "y": 751.2048749999999
+        "y": 764.212688
       },
       {
         "id": "instruction-revision-category-validation-view-title",
         "edge": "end",
         "page": 34,
         "x": 85.104,
-        "y": 758.705
+        "y": 771.7130000000001
       },
       {
         "id": "__source-page-222",
@@ -7542,7 +7542,7 @@
           {
             "token": "06-revision-category-validation-update-view-part1",
             "width": 426.672,
-            "height": 158.297
+            "height": 189.305
           }
         ]
       },

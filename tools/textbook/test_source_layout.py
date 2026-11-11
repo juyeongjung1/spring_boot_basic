@@ -119,9 +119,6 @@ class SourceLayoutTests(unittest.TestCase):
                                      'insert-title', 'insert-intro', 'insert', 'open',
                                      'update-title', 'update-intro', 'update',
                                      'view-title', 'view-intro', 'insert-view', 'update-view', 'check'))
-        expected.update(('05', 'revision-standard-fragment-' + name)
-                        for name in ('title', 'intro', 'comparison', 'screens', 'selection',
-                                     'dialect-list', 'list', 'call', 'detail', 'run'))
         expected.update(('07', 'revision-grid-flex-' + name)
                         for name in ('title', 'intro', 'code', 'note'))
         expected.update(('appendix-b', 'revision-errors-' + name) for name in errors)

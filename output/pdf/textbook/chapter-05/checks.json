@@ -5,7 +5,7 @@
     164,
     191
   ],
-  "blocks": 154,
+  "blocks": 144,
   "figures": 23,
   "source_coverage": [
     {
@@ -323,17 +323,17 @@
     ]
   },
   "flow": {
-    "pages": 32,
+    "pages": 31,
     "native_text_complete": true,
     "heading_orphans": [],
     "split_figures": [],
     "split_short_code": [],
     "split_short_tables": [],
     "split_instructions": [],
-    "instruction_groups": 11,
+    "instruction_groups": 9,
     "fixed_pages": [
       2,
-      32
+      31
     ],
     "overflow": [],
     "block_positions": [
@@ -3411,289 +3411,65 @@
         "y": 422.598313
       },
       {
-        "id": "instruction-revision-standard-fragment-title",
-        "edge": "start",
-        "page": 29,
-        "x": 85.104,
-        "y": 448.09900000000005
-      },
-      {
-        "id": "revision-standard-fragment-title",
-        "edge": "heading",
-        "page": 29,
-        "x": 85.104,
-        "y": 448.09900000000005
-      },
-      {
-        "id": "revision-standard-fragment-intro",
-        "edge": "start",
-        "page": 29,
-        "x": 85.104,
-        "y": 472.09900000000005
-      },
-      {
-        "id": "revision-standard-fragment-intro",
-        "edge": "end",
-        "page": 29,
-        "x": 85.104,
-        "y": 603.139
-      },
-      {
-        "id": "05-revision-standard-fragment-comparison-part1",
-        "edge": "html-component",
-        "page": 29,
-        "x": 85.104,
-        "y": 616.099
-      },
-      {
-        "id": "revision-standard-fragment-comparison",
-        "edge": "short-table",
-        "page": 29,
-        "x": 85.479,
-        "y": 642.724
-      },
-      {
-        "id": "revision-standard-fragment-comparison",
-        "edge": "start",
-        "page": 29,
-        "x": 85.479,
-        "y": 642.724
-      },
-      {
-        "id": "revision-standard-fragment-comparison",
-        "edge": "end",
-        "page": 29,
-        "x": 510.646969,
-        "y": 696.724
-      },
-      {
-        "id": "instruction-revision-standard-fragment-title",
-        "edge": "end",
-        "page": 29,
-        "x": 85.104,
-        "y": 698.599
-      },
-      {
-        "id": "instruction-revision-standard-fragment-screens",
-        "edge": "start",
-        "page": 30,
-        "x": 85.104,
-        "y": 86.0
-      },
-      {
-        "id": "revision-standard-fragment-screens",
-        "edge": "heading",
-        "page": 30,
-        "x": 85.104,
-        "y": 86.0
-      },
-      {
-        "id": "revision-standard-fragment-selection",
-        "edge": "start",
-        "page": 30,
-        "x": 85.104,
-        "y": 110.0
-      },
-      {
-        "id": "revision-standard-fragment-selection",
-        "edge": "end",
-        "page": 30,
-        "x": 85.104,
-        "y": 139.04000000000002
-      },
-      {
-        "id": "05-revision-standard-fragment-dialect-list-part1",
-        "edge": "html-component",
-        "page": 30,
-        "x": 85.104,
-        "y": 152.0
-      },
-      {
-        "id": "revision-standard-fragment-dialect-list",
-        "edge": "short-code",
-        "page": 30,
-        "x": 85.854,
-        "y": 194.269531
-      },
-      {
-        "id": "revision-standard-fragment-dialect-list",
-        "edge": "start",
-        "page": 30,
-        "x": 85.854,
-        "y": 194.269531
-      },
-      {
-        "id": "revision-standard-fragment-dialect-list",
-        "edge": "end",
-        "page": 30,
-        "x": 511.021969,
-        "y": 287.292969
-      },
-      {
-        "id": "05-revision-standard-fragment-list-part1",
-        "edge": "html-component",
-        "page": 30,
-        "x": 85.104,
-        "y": 306.79299999999995
-      },
-      {
-        "id": "revision-standard-fragment-list",
-        "edge": "short-code",
-        "page": 30,
-        "x": 85.854,
-        "y": 349.062531
-      },
-      {
-        "id": "revision-standard-fragment-list",
-        "edge": "start",
-        "page": 30,
-        "x": 85.854,
-        "y": 349.062531
-      },
-      {
-        "id": "revision-standard-fragment-list",
-        "edge": "end",
-        "page": 30,
-        "x": 511.021969,
-        "y": 426.582063
-      },
-      {
-        "id": "05-revision-standard-fragment-call-part1",
-        "edge": "html-component",
-        "page": 30,
-        "x": 85.104,
-        "y": 446.08299999999997
-      },
-      {
-        "id": "revision-standard-fragment-call",
-        "edge": "short-code",
-        "page": 30,
-        "x": 85.854,
-        "y": 488.35253099999994
-      },
-      {
-        "id": "revision-standard-fragment-call",
-        "edge": "start",
-        "page": 30,
-        "x": 85.854,
-        "y": 488.35253099999994
-      },
-      {
-        "id": "revision-standard-fragment-call",
-        "edge": "end",
-        "page": 30,
-        "x": 511.021969,
-        "y": 565.872063
-      },
-      {
-        "id": "05-revision-standard-fragment-detail-part1",
-        "edge": "html-component",
-        "page": 30,
-        "x": 85.104,
-        "y": 585.373
-      },
-      {
-        "id": "revision-standard-fragment-detail",
-        "edge": "short-code",
-        "page": 30,
-        "x": 85.854,
-        "y": 627.6425310000001
-      },
-      {
-        "id": "revision-standard-fragment-detail",
-        "edge": "start",
-        "page": 30,
-        "x": 85.854,
-        "y": 627.6425310000001
-      },
-      {
-        "id": "revision-standard-fragment-detail",
-        "edge": "end",
-        "page": 30,
-        "x": 511.021969,
-        "y": 705.162063
-      },
-      {
-        "id": "revision-standard-fragment-run",
-        "edge": "start",
-        "page": 30,
-        "x": 85.104,
-        "y": 724.663
-      },
-      {
-        "id": "revision-standard-fragment-run",
-        "edge": "end",
-        "page": 30,
-        "x": 85.104,
-        "y": 753.703
-      },
-      {
-        "id": "instruction-revision-standard-fragment-screens",
-        "edge": "end",
-        "page": 30,
-        "x": 85.104,
-        "y": 753.703
-      },
-      {
         "id": "__source-page-190",
         "edge": "source-page",
-        "page": 31,
+        "page": 30,
         "x": 85.104,
         "y": 86.0
       },
       {
         "id": "p190-b01",
         "edge": "start",
-        "page": 31,
+        "page": 30,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "p190-b01",
         "edge": "end",
-        "page": 31,
+        "page": 30,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "p190-f19",
         "edge": "start",
-        "page": 31,
+        "page": 30,
         "x": 112.97999877929688,
         "y": 115.7400390625
       },
       {
         "id": "p190-f19",
         "edge": "end",
-        "page": 31,
+        "page": 30,
         "x": 112.97999877929688,
         "y": 392.64997558593757
       },
       {
         "id": "p190-b02",
         "edge": "start",
-        "page": 31,
+        "page": 30,
         "x": 85.104,
         "y": 439.026611328125
       },
       {
         "id": "p190-b02",
         "edge": "end",
-        "page": 31,
+        "page": 30,
         "x": 85.104,
         "y": 504.066611328125
       },
       {
         "id": "__source-page-191",
         "edge": "source-page",
-        "page": 32,
+        "page": 31,
         "x": 0.0,
         "y": 0.0
       },
       {
         "id": "__native-page-191",
         "edge": "native-page",
-        "page": 32,
+        "page": 31,
         "x": 85.104,
         "y": 86.0
       }
@@ -3797,66 +3573,6 @@
           141.951904296875,
           411.4713439941406,
           152.451904296875
-        ]
-      },
-      {
-        "page": 30,
-        "uri": "http://localhost:8080/product/fragment/list",
-        "rect": [
-          217.75650024414062,
-          724.6630249023438,
-          421.4003601074219,
-          735.7030029296875
-        ]
-      },
-      {
-        "page": 30,
-        "uri": "http://www.ultraq.net.nz/thymeleaf/layout",
-        "rect": [
-          244.32431030273438,
-          212.4519500732422,
-          481.0995788574219,
-          222.9519500732422
-        ]
-      },
-      {
-        "page": 30,
-        "uri": "http://www.thymeleaf.org",
-        "rect": [
-          221.23837280273438,
-          196.7019500732422,
-          359.8384704589844,
-          207.2019500732422
-        ]
-      },
-      {
-        "page": 30,
-        "uri": "http://www.thymeleaf.org",
-        "rect": [
-          278.9883728027344,
-          351.6110534667969,
-          417.5885925292969,
-          362.1383361816406
-        ]
-      },
-      {
-        "page": 30,
-        "uri": "http://www.thymeleaf.org",
-        "rect": [
-          278.9883728027344,
-          490.9010314941406,
-          417.5885925292969,
-          501.4283142089844
-        ]
-      },
-      {
-        "page": 30,
-        "uri": "http://www.thymeleaf.org",
-        "rect": [
-          278.9883728027344,
-          630.1910400390625,
-          417.5885925292969,
-          640.7183227539062
         ]
       }
     ],
@@ -4133,13 +3849,13 @@
         },
         {
           "source_page": 190,
-          "page": 31,
+          "page": 30,
           "mode": "page-break",
           "reason": null
         },
         {
           "source_page": 191,
-          "page": 32,
+          "page": 31,
           "mode": "page-break",
           "reason": null
         }
@@ -4470,76 +4186,6 @@
             "token": "05-p189-b01-part1",
             "width": 435.676,
             "height": 251.321
-          }
-        ]
-      },
-      {
-        "id": "05-revision-standard-fragment-dialect-list",
-        "kind": "code",
-        "consume_ids": [
-          "revision-standard-fragment-dialect-list"
-        ],
-        "parts": [
-          {
-            "token": "05-revision-standard-fragment-dialect-list-part1",
-            "width": 426.672,
-            "height": 142.793
-          }
-        ]
-      },
-      {
-        "id": "05-revision-standard-fragment-list",
-        "kind": "code",
-        "consume_ids": [
-          "revision-standard-fragment-list"
-        ],
-        "parts": [
-          {
-            "token": "05-revision-standard-fragment-list-part1",
-            "width": 426.672,
-            "height": 127.29
-          }
-        ]
-      },
-      {
-        "id": "05-revision-standard-fragment-call",
-        "kind": "code",
-        "consume_ids": [
-          "revision-standard-fragment-call"
-        ],
-        "parts": [
-          {
-            "token": "05-revision-standard-fragment-call-part1",
-            "width": 426.672,
-            "height": 127.29
-          }
-        ]
-      },
-      {
-        "id": "05-revision-standard-fragment-detail",
-        "kind": "code",
-        "consume_ids": [
-          "revision-standard-fragment-detail"
-        ],
-        "parts": [
-          {
-            "token": "05-revision-standard-fragment-detail-part1",
-            "width": 426.672,
-            "height": 127.29
-          }
-        ]
-      },
-      {
-        "id": "05-revision-standard-fragment-comparison",
-        "kind": "table",
-        "consume_ids": [
-          "revision-standard-fragment-comparison"
-        ],
-        "parts": [
-          {
-            "token": "05-revision-standard-fragment-comparison-part1",
-            "width": 426.672,
-            "height": 82.5
           }
         ]
       },

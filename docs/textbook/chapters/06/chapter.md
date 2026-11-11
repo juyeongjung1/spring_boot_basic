@@ -1868,7 +1868,7 @@ public String updateProduct(@Valid ProductForm productForm,
 
 ::: {#revision-category-validation-view-intro .paragraph}
 
-[th:action]{.s010}[でそれぞれの送信先を指定し、]{.s009}[th:errors]{.s010}[でエラーを表示します。更新フォームは商品番号までの抜粋です。続く入力欄は登録フォームと同じです。]{.s009}
+[th:action]{.s010}[で送信先を指定し、]{.s009}[th:errors]{.s010}[でエラーを表示します。]{.s009}
 
 :::
 
@@ -1914,6 +1914,8 @@ public String updateProduct(@Valid ProductForm productForm,
         <input type="text" th:field="*{id}" readonly>
         <span class="error" th:errors="*{id}"></span>
     </p>
+    <!-- 以降は登録フォームと同じ -->
+</form>
 ```
 
 :::
