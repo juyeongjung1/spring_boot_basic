@@ -1,6 +1,6 @@
 {
   "collection": "textbook",
-  "flow_pages": 354,
+  "flow_pages": 352,
   "source_pages": 296,
   "toc_entries": 79,
   "source_page_boundaries_verified": true,
@@ -8,17 +8,13 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 65,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "3e284406634482f8011970ccc7b8a9b56dada56b508f696dce98d54cc5ea8724",
-  "verification": "docs/textbook/verification.md#印刷用のページ配置と索引の組版",
+  "pdf_sha256": "de5cd36b7a6146dcbb0574ef4aa8709f3e4008e8545bddc6f27b88bf5622c3e9",
+  "verification": "docs/textbook/verification.md#第6章直前の空白ページ",
   "reviewed_pages": [
-    70,
-    71,
-    349,
-    350,
-    351,
-    352,
-    353,
-    354
+    228,
+    229,
+    347,
+    352
   ],
   "chapter_page_counts": {
     "front": 14,
@@ -26,16 +22,16 @@
     "02": 37,
     "03": 89,
     "04": 37,
-    "05": 31,
+    "05": 30,
     "06": 52,
     "07": 50,
     "appendix-a": 8,
     "appendix-b": 8
   },
-  "body_pages_visually_verified": 345,
+  "body_pages_visually_verified": 344,
   "index_pages": [
-    349,
-    353
+    347,
+    351
   ],
   "index_entries": 219,
   "index_internal_links_verified": 483,
@@ -44,9 +40,8 @@
     "blank_pages": [
       70,
       160,
-      198,
-      230
+      198
     ],
-    "colophon_page": 354
+    "colophon_page": 352
   }
 }

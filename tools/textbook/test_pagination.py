@@ -51,7 +51,11 @@ class PaginationTests(unittest.TestCase):
                 content = marks[start + 1:stop]
                 if source in omitted:
                     self.assertFalse(content, (folder.name, source))
-                    self.assertEqual(boundaries[n+1][2], previous_end+1, (folder.name, source))
+                    if n + 1 < len(boundaries):
+                        self.assertEqual(boundaries[n+1][2], previous_end+1, (folder.name, source))
+                    else:
+                        self.assertEqual(page, previous_end, (folder.name, source))
+                        self.assertEqual(page, checks['flow']['pages'], (folder.name, source))
                     continue
                 if source in allowed:
                     self.assertGreaterEqual(page, previous_end, (folder.name, source))

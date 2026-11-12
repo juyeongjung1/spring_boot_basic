@@ -323,7 +323,7 @@
     ]
   },
   "flow": {
-    "pages": 31,
+    "pages": 30,
     "native_text_complete": true,
     "heading_orphans": [],
     "split_figures": [],
@@ -332,8 +332,7 @@
     "split_instructions": [],
     "instruction_groups": 9,
     "fixed_pages": [
-      2,
-      31
+      2
     ],
     "overflow": [],
     "block_positions": [
@@ -3462,16 +3461,9 @@
       {
         "id": "__source-page-191",
         "edge": "source-page",
-        "page": 31,
-        "x": 0.0,
-        "y": 0.0
-      },
-      {
-        "id": "__native-page-191",
-        "edge": "native-page",
-        "page": 31,
+        "page": 30,
         "x": 85.104,
-        "y": 86.0
+        "y": 504.066611328125
       }
     ],
     "url_links": [
@@ -3694,7 +3686,10 @@
           "189": "continued-code"
         },
         "paragraph_continuations": [],
-        "figure_scales": {}
+        "figure_scales": {},
+        "omit_blank_pages": [
+          191
+        ]
       },
       "source_boundaries": [
         {
@@ -3855,8 +3850,8 @@
         },
         {
           "source_page": 191,
-          "page": 31,
-          "mode": "page-break",
+          "page": 30,
+          "mode": "omit-blank",
           "reason": null
         }
       ],

@@ -238,7 +238,10 @@
       "189": "continued-code"
     },
     "paragraph_continuations": [],
-    "figure_scales": {}
+    "figure_scales": {},
+    "omit_blank_pages": [
+      191
+    ]
   },
   "typography": {
     "minor_heading_extra_space": {
