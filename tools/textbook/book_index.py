@@ -11,29 +11,20 @@ import pymupdf as fitz
 
 from build import HERE, ROOT, compile_pdf
 
-SECTION_ROWS = (
-    ("あ行", "あいうえお"),
-    ("か行", "かきくけこ"),
-    ("さ行", "さしすせそ"),
-    ("た行", "たちつてと"),
-    ("な行", "なにぬねの"),
-    ("は行", "はひふへほ"),
-    ("ま行", "まみむめも"),
-    ("や行", "やゆよ"),
-    ("ら行", "らりるれろ"),
-    ("わ行", "わをん"),
+FULLWIDTH_INITIALS = str.maketrans(
+    ".0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "．０１２３４５６７８９ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ",
 )
-KANA_ROWS = {kana: label for label, row in SECTION_ROWS for kana in row}
 SMALL_KANA = str.maketrans("ぁぃぅぇぉっゃゅょゎ", "あいうえおつやゆよわ")
 ANCHOR_EDGES = {"start", "heading", "source-page", "native-page"}
 LINK_PREFIX = "https://index.invalid/"
 
 
-def collect_anchor_pages(chapter, marks, first_page, anchor_pages):
+def collect_anchor_pages(chapter, marks, physical_pages, anchor_pages):
     for mark in marks:
         if mark["edge"] in ANCHOR_EDGES:
             anchor = f'{chapter}:{mark["id"]}'
-            page = first_page + mark["page"] - 1
+            page = physical_pages[mark["page"] - 1]
             anchor_pages[anchor] = min(anchor_pages.get(anchor, page), page)
 
 
@@ -41,13 +32,14 @@ def sort_key(term, reading):
     if reading:
         folded = unicodedata.normalize("NFD", reading).translate(SMALL_KANA)
         primary = "".join(char for char in folded if not unicodedata.combining(char))
-        if primary[0] not in KANA_ROWS:
+        if not re.fullmatch(r"[ぁ-ゖ][ぁ-ゖー]*", reading):
             raise ValueError(f"索引語の読みはひらがなで指定してください: {term}")
-        return (1, primary, reading, term), KANA_ROWS[primary[0]]
+        return (1, primary, reading, term), primary[0]
     primary = re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKC", term).lower())
     if not primary or re.search(r"[^\x20-\x7e]", term):
         raise ValueError(f"索引語に読みを指定してください: {term}")
-    return (0, primary, term), "数字" if primary[0].isdigit() else primary[0].upper()
+    initial = "." if term.startswith(".") else primary[0].upper()
+    return (0, initial, primary, term), initial.translate(FULLWIDTH_INITIALS)
 
 
 def read_index(path, anchor_pages):
@@ -90,7 +82,7 @@ def append_index(flow, index_path, anchor_pages):
         folder = Path(folder)
         fonts = folder / "fonts"
         fonts.mkdir()
-        for name in ("msmincho.ttc", "meiryo.ttc", "meiryob.ttc", "times.ttf"):
+        for name in ("msmincho.ttc", "msgothic.ttc", "times.ttf"):
             copyfile(Path("C:/Windows/Fonts") / name, fonts / name)
         data = {"first_page": first, "groups": groups}
         (folder / "index-data.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
@@ -109,8 +101,8 @@ def append_index(flow, index_path, anchor_pages):
             assert uri.startswith(LINK_PREFIX), uri
             target = int(uri.removeprefix(LINK_PREFIX))
             assert 1 <= target < first, target
-            # 数字の上下の余白を絞り、隣接行のリンク領域が重ならないようにする。
-            rect = link["from"] + (0, 0.6, 0, -0.6)
+            # 索引の文字はベースラインに置くため、数字の上下までクリック領域を広げる。
+            rect = link["from"] + (0, -9, 0, 2)
             page.insert_link({"kind": fitz.LINK_GOTO, "from": rect, "page": target - 1})
             actual[target] += 1
     assert actual == expected, "索引のページ番号とリンク先が一致しません"

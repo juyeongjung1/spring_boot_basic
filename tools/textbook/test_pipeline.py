@@ -6,7 +6,7 @@ import pymupdf as fitz
 
 from build import ROOT, build, normalized, read_markdown, source_layout
 from import_source import escape
-from assemble import remove_number_text
+from assemble import append_flow_part, remove_number_text
 
 
 class TextbookTests(unittest.TestCase):
@@ -58,6 +58,24 @@ class TextbookTests(unittest.TestCase):
         nodes, figures, _ = read_markdown(path)
         content = source_layout(self.folder, self.layout, nodes, figures, path)
         self.assertIn("#glyph(", content)
+
+    def test_print_blanks_keep_part_and_introduction_on_odd_pages(self):
+        blanks = []
+        with fitz.open() as source, fitz.open() as flow:
+            for label in ("Front", "Introduction"):
+                page = source.new_page(width=595.32, height=841.92)
+                page.insert_text((85, 98), label)
+
+            pages = append_flow_part(flow, source, blanks, odd_start=True, introduction=2)
+            self.assertEqual(pages, [1, 3])
+            self.assertEqual(flow[2].get_text().strip(), "Introduction")
+
+            pages = append_flow_part(flow, source, blanks, odd_start=True)
+            self.assertEqual(pages, [5, 6])
+            self.assertEqual(blanks, [2, 4])
+            for n in blanks:
+                self.assertFalse(flow[n-1].get_contents())
+                self.assertEqual(flow[n-1].rect, source[0].rect)
 
     def test_number_replacement_preserves_body_pixels_and_strokes(self):
         pdf=fitz.open(ROOT/'output/pdf/textbook/chapter-01/chapter-flow.pdf')

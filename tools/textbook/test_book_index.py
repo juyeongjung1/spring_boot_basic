@@ -18,12 +18,12 @@ SOURCE = """| 用語 | 読み | 原稿の参照先 |
 class BookIndexTest(unittest.TestCase):
     def test_page_numbers_follow_chapter_offsets(self):
         anchors = {}
-        collect_anchor_pages("01", [{"id": "intro", "edge": "start", "page": 1}], 2, anchors)
+        collect_anchor_pages("01", [{"id": "intro", "edge": "start", "page": 1}], [2], anchors)
         collect_anchor_pages("02", [
             {"id": "relation", "edge": "end", "page": 3},
             {"id": "relation", "edge": "heading", "page": 2},
             {"id": "caption", "edge": "start", "page": 2},
-        ], 4, anchors)
+        ], [4, 5, 6], anchors)
         with TemporaryDirectory() as folder, fitz.open() as book:
             path = Path(folder) / "index.md"
             path.write_text(SOURCE, encoding="utf-8")
@@ -42,6 +42,7 @@ class BookIndexTest(unittest.TestCase):
                 self.assertIn("索引", page.get_text())
                 links = page.get_links()
                 self.assertTrue(all(link["kind"] == fitz.LINK_GOTO for link in links))
+                self.assertTrue(all(not link["from"].is_empty for link in links))
                 self.assertEqual(sorted(link["page"] + 1 for link in links), [2, 2, 5, 5])
                 for i, link in enumerate(links):
                     self.assertTrue(all((link["from"] & other["from"]).is_empty for other in links[:i]))
