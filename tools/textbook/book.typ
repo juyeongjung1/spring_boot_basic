@@ -21,8 +21,8 @@
   }
   body
 }
-// 単字の【を行頭約物として圧縮させず、原本の指定x座標をそのまま保つ。
-#let glyph(x, y, value, style) = at(x, y, text(top-edge: 0pt, bottom-edge: 0pt)[#if value.starts-with("【") {box(width: 0pt, height: 0pt)}#styled(style, value)])
+// 固定配置の開き括弧は、行頭の圧縮を防いで原本の指定x座標を保つ。
+#let glyph(x, y, value, style) = at(x, y, text(top-edge: 0pt, bottom-edge: 0pt)[#if value.starts-with("「") or value.starts-with("【") {box(width: 0pt, height: 0pt)}#styled(style, value)])
 #let mark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), x: here().position().x / 1pt, y: here().position().y / 1pt))<book-check>]
 // 本文の行送り18ptに対し、段落境界は24ptにする。
 #let paragraph(id, body, indent: 11.04pt, end-id: none, left: 0pt) = block(

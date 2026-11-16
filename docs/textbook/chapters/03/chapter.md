@@ -829,7 +829,7 @@ private Integer price;
 
 :::
 
-![操作画面・図解](assets/p078-f14-java21.svg){#p078-f14}
+![操作画面・図解](assets/p078-f14.svg){#p078-f14}
 
 ::: {#p078-b03 .paragraph}
 

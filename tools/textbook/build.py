@@ -185,6 +185,28 @@ def updated_native_block(group, node):
     return [f'#at({line["x"]}, {line["y"]}, text(top-edge: 0pt, bottom-edge: 0pt)[{inline(node["parts"], typography=False)}])']
 
 
+def native_block(ident, group, node, updates):
+    if node['text'] == '\n'.join(line['text'] for line in group['lines']):
+        return [command for line in group['lines'] for command in native_runs(line['runs'])]
+    if ident not in updates:
+        raise ValueError('固定配置の編集は再配置確認が必要: ' + ident)
+    return updated_native_block(group, node)
+
+
+def positioned_native_text(ident, node, positions):
+    """指定位置に置く各行を、文字単位の旧座標ではなくその書体の字幅で組む。"""
+    lines = [[]]
+    for value, style in node['parts']:
+        if value == '\n':
+            lines.append([])
+        else:
+            lines[-1].append((value, style))
+    if len(lines) != len(positions) or any(not line for line in lines):
+        raise ValueError('固定配置の行数と座標が一致しません: ' + ident)
+    return [f'#at({x}, {y}, text(top-edge: 0pt, bottom-edge: 0pt)[{inline(line, typography=False)}])'
+            for line, (x, y) in zip(lines, positions)]
+
+
 def source_layout(folder, layout, nodes, figures, markdown):
     if hashlib.sha256(markdown.read_text(encoding="utf-8").encode("utf-8")).hexdigest() != layout["markdown_sha256"]:
         raise ValueError("Markdownの変更を検出しました。編集後は--mode flowを使用してください。元位置版の座標を無断で流用しません。")
@@ -324,6 +346,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
 #counter(page).update({config["first_page"]})''']
     cover_page = order[0]
     cover_nodes = [(ident, nodes[ident]["text"]) for ident in cover_page["entries"] if ident in nodes]
+    native_updates = set(config.get('native_text_updates', []))
+    native_positions = config.get('native_text_positions', {})
     if config.get('cover_mode','classic')=='classic':
         number = next(value.strip() for _, value in cover_nodes if value.strip().isdigit())
         title = next(value for _, value in cover_nodes if value.startswith("第"))
@@ -335,10 +359,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         body=[f'#at(0,0,image({q("/"+(folder/p["decoration"]).relative_to(ROOT).as_posix())},width:595.32pt,height:841.92pt))']
         for ident in p['entries']:
             if ident in layout['blocks']:
-                group=layout['blocks'][ident]
-                original='\n'.join(l['text'] for l in group['lines'])
-                if nodes[ident]['text']!=original:raise ValueError('扉の編集は専用の再配置確認が必要です: '+ident)
-                for line in group['lines']:body+=native_runs(line['runs'])
+                body += native_block(ident, layout['blocks'][ident], nodes[ident], native_updates)
             elif ident in figures:
                 f=next(f for f in layout['figures'] if f['id']==ident);x0,y0,x1,y1=f['box']
                 body.append(f'#at({x0},{y0},image({q("/"+(folder/figures[ident]).relative_to(ROOT).as_posix())},width:{x1-x0}pt,height:{y1-y0}pt))')
@@ -409,8 +430,16 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             continue
         if page['source_page'] in config.get('native_pages',[]) or (not page['entries'] and not current_entries):
             body=[f'#at(0,0,image({q("/"+(folder/page["decoration"]).relative_to(ROOT).as_posix())},width:595.32pt,height:841.92pt))']
-            for ident in page['entries']:
-                if ident in layout['blocks']:
+            entries = page['entries']
+            additions = set(current_entries) - set(entries)
+            if additions & native_positions.keys():
+                if additions - native_positions.keys() or [ident for ident in current_entries if ident not in additions] != entries:
+                    raise ValueError('固定ページの既存要素と追加位置を確認してください: ' + str(page['source_page']))
+                entries = current_entries
+            for ident in entries:
+                if ident in native_positions:
+                    body += positioned_native_text(ident, nodes[ident], native_positions[ident])
+                elif ident in layout['blocks']:
                     group=layout['blocks'][ident]
                     toc_source = config.get('native_toc_rows', {}).get(ident)
                     if toc_source:
@@ -420,12 +449,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                             dict(run, y=run['y'] + target_y - original['y'])
                             for run in original['runs']
                         ])]}
-                    if nodes[ident]['text']!='\n'.join(l['text'] for l in group['lines']):
-                        if ident not in config.get('native_text_updates', []):
-                            raise ValueError('固定ページの編集は再配置確認が必要: '+ident)
-                        body += updated_native_block(group, nodes[ident])
-                    else:
-                        for line in group['lines']:body+=native_runs(line['runs'])
+                    body += native_block(ident, group, nodes[ident], native_updates)
                 elif ident in layout.get('tables',{}):body+=native_runs(layout['tables'][ident]['runs'])
                 elif ident in figures:
                     fig=figure_map[ident];x0,y0,x1,y1=fig['box']

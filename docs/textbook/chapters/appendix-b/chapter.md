@@ -274,7 +274,8 @@ Caused by: java.sql.SQLSyntaxErrorException:
 
 ::: {#p292-b13 .step}
 
-[1\.&#32;]{.s004}[Window]{.s004}[&#32;キーを入力し、]{.s007}[\[cmd\]]{.s004}[と入力してコマンドプロンプトを起動します。]{.s007}
+[1\.]{.s004}\
+[Windows]{.s004}[&#32;キーを押し、]{.s007}[\[cmd\]]{.s004}[と入力してコマンドプロンプトを起動します。]{.s007}
 
 :::
 
@@ -469,6 +470,14 @@ Caused by: java.sql.SQLSyntaxErrorException:
 
 :::
 
+::: {#p296-edition-5 .paragraph}
+
+[2026年11月16日]{.s019}\
+[第5版]{.s019}\
+[改訂]{.s019}
+
+:::
+
 ::: {#p296-b03 .paragraph}
 
 [http://www.trainocate.co.jp/]{.s019}
@@ -478,7 +487,7 @@ Caused by: java.sql.SQLSyntaxErrorException:
 ::: {#p296-b04 .paragraph}
 
 [落丁本、乱丁本はお取り替えいたします。]{.s019}\
-[JAC0177G-T1-04]{.s019}\
+[JAC0177G-T1-05]{.s019}\
 [© 2027 Trainocate Japan, Ltd.]{.s019}
 
 :::

@@ -67,13 +67,16 @@
     296
   ],
   "native_text_updates": [
-    "p292-b13",
     "p294-b05",
     "p294-b06",
     "p294-b07",
     "p294-b10",
     "p296-b04"
   ],
+  "native_text_positions": {
+    "p292-b13": [[96.144, 664.90], [118.10, 664.90]],
+    "p296-edition-5": [[72.144, 640.06], [198.89, 640.06], [239.57, 640.06]]
+  },
   "illustrations": {
     "illustration-2026-error-cause-chain": {
       "width": 280,

@@ -122,6 +122,13 @@ class SourceLayoutTests(unittest.TestCase):
         expected.update(('07', 'revision-grid-flex-' + name)
                         for name in ('title', 'intro', 'code', 'note'))
         expected.update(('appendix-b', 'revision-errors-' + name) for name in errors)
+        expected.add(('appendix-b', 'p296-edition-5'))
+        # 配布前レビューで、演習の既存箇条書きを項目ごとの段落に分けた。
+        expected.update({
+            ('ex03', 'p018-b09-item-2'), ('ex03', 'p018-b09-item-3'), ('ex03', 'p018-b09-item-4'),
+            ('ex04', 'p030-b07-item-2'), ('ex04', 'p030-b07-item-3'),
+            ('ex05', 'p038-b07-item-2'), ('ex05', 'p038-b07-item-3'),
+        })
         expected_figures = {('03', 'revision-di-remote')}
         for name, chapter in self.chapters.items():
             for ident, spec in chapter['config'].get('illustrations', {}).items():

@@ -8,13 +8,10 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 19,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "6a3c055203bc8b9054405075407c429901e108adc3097e58cbc2b186b777ea13",
-  "verification": "docs/textbook/verification.md#配布前レビューの反映",
+  "pdf_sha256": "7d81e13f21e695deb0d40317117780d28242aba48146934de09a421ce5a16cd9",
+  "verification": "docs/textbook/verification.md#第5版の表記と開きかぎ括弧",
   "reviewed_pages": [
-    3,
-    18,
-    30,
-    38
+    4
   ],
   "chapter_page_counts": {
     "ex-front": 6,
@@ -28,14 +25,17 @@
     "ex-back": 1
   },
   "page_comparison": {
-    "base_commit": "587a857",
+    "base_commit": "65ecdea",
     "changed_pages": [
-      3,
-      18,
-      30,
-      38
+      4
     ],
-    "identical_pages": 75,
+    "identical_pages": 78,
     "section_start_pages_match": true
+  },
+  "opening_quotes": {
+    "checked": 79,
+    "corrected_by_page": {
+      "4": 1
+    }
   }
 }

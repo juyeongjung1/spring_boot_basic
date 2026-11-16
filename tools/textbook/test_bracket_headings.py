@@ -27,13 +27,15 @@ class BracketHeadingTests(unittest.TestCase):
             'regular': {'font': 'MS-PGothic', 'size': 9.96, 'color': '#000000', 'flags': 0, 'stroke': 0},
             'outlined': {'font': 'MS-PGothic', 'size': 9.96, 'color': '#000000', 'flags': 0, 'stroke': .28457},
             'bold': cls.layout['styles']['s004'],
+            'mincho': {'font': 'MS-PMincho', 'size': 11.04, 'color': '#000000', 'flags': 4, 'stroke': 0},
         }
         source = style_header(styles) + '''
 #set page(width: 180pt, height: 160pt, margin: 0pt)
 #set text(lang: "ja", overhang: false, cjk-latin-spacing: none, kerning: false)
 '''
-        cls.native_positions = list(zip('【参考】サ', (24, 31.0621, 45.1021, 59.0157, 66.0779)))
-        for y, style in ((30, 'regular'), (70, 'outlined'), (110, 'bold')):
+        cls.native_text = '【参考】サ「春」'
+        cls.native_positions = list(zip(cls.native_text, (24, 31.0621, 45.1021, 59.0157, 66.0779, 80.1, 87.1, 101.14)))
+        for y, style in ((30, 'regular'), (70, 'outlined'), (110, 'bold'), (130, 'mincho')):
             for char, x in cls.native_positions:
                 source += f'#glyph({x}, {y}, "{char}", "{style}")\n'
         cls.native_pdf, _ = compile_pdf(cls.work, 'native-brackets', source, ['C:/Windows/Fonts'])
@@ -87,9 +89,9 @@ class BracketHeadingTests(unittest.TestCase):
 
     def test_native_brackets_and_neighboring_characters_keep_the_exact_source_coordinates(self):
         traces = self.native_pdf[0].get_texttrace()
-        for y in (30, 70, 110):
+        for y in (30, 70, 110, 130):
             chars = [c for t in traces if t['type'] == 0 for c in t['chars'] if abs(c[2][1] - y) < .01]
-            self.assertEqual(''.join(chr(c[0]) for c in chars), '【参考】サ')
+            self.assertEqual(''.join(chr(c[0]) for c in chars), self.native_text)
             for char, (expected_char, expected_x) in zip(chars, self.native_positions):
                 self.assertEqual(chr(char[0]), expected_char)
                 self.assertAlmostEqual(char[2][0], expected_x, places=3)

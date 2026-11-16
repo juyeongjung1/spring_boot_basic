@@ -380,7 +380,7 @@ DIコンテナから渡されたリモコンを使い、AクラスがBクラス�
 
 :::
 
-![Mavenの依存ライブラリ画面](assets/p022-f06-dependencies.svg){#p022-f06}
+![Mavenの依存ライブラリ画面](assets/p022-f06.svg){#p022-f06}
 
 :::
 

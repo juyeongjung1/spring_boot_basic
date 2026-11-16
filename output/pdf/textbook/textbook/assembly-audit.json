@@ -8,34 +8,20 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 65,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "2f47142eaf91fc1bf51a62cd570d8674c93298ddea5dc02bc9793ad8b95476b3",
-  "verification": "docs/textbook/verification.md#配布前レビューの反映",
+  "pdf_sha256": "c81173dd2e3d66f43681a2a13e473f82d3069a449032a190c366b86bbc1d0643",
+  "verification": "docs/textbook/verification.md#第5版の表記と開きかぎ括弧",
   "reviewed_pages": [
+    1,
     24,
-    28,
-    29,
     41,
-    67,
-    88,
     90,
-    100,
-    108,
-    130,
-    131,
-    132,
-    239,
-    264,
-    319,
-    327,
-    328,
     332,
+    334,
+    335,
     336,
-    337,
     338,
     343,
-    344,
-    345,
-    349
+    352
   ],
   "chapter_page_counts": {
     "front": 14,
@@ -65,35 +51,31 @@
     "colophon_page": 352
   },
   "page_comparison": {
-    "base_commit": "587a857",
+    "base_commit": "65ecdea",
     "changed_pages": [
+      1,
       24,
-      28,
-      29,
       41,
-      67,
-      88,
       90,
-      100,
-      108,
-      130,
-      131,
-      132,
-      239,
-      264,
-      319,
-      327,
-      328,
       332,
+      334,
+      335,
       336,
-      337,
       338,
       343,
-      344,
-      345,
-      349
+      352
     ],
-    "identical_pages": 327,
+    "identical_pages": 341,
     "section_start_pages_match": true
+  },
+  "opening_quotes": {
+    "checked": 217,
+    "corrected_by_page": {
+      "332": 1,
+      "334": 1,
+      "335": 2,
+      "336": 1,
+      "338": 1
+    }
   }
 }

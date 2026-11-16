@@ -302,6 +302,7 @@ class PaginationTests(unittest.TestCase):
             after, current_figures, _ = read_markdown(folder / 'chapter.md')
             allowed_additions = {'revision-errors-' + suffix for suffix in (
                 'title', 'console', 'name', 'trace-intro', 'trace', 'trace-read', 'template', 'sql', 'status')}
+            allowed_additions.add('p296-edition-5')
             config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
             illustration_ids = {ident for ident in config.get('illustrations', {}) if ident not in original_figures}
             allowed_additions.update(config['illustrations'][ident]['caption_id'] for ident in illustration_ids)
@@ -327,7 +328,9 @@ class PaginationTests(unittest.TestCase):
                 if ident == 'p294-b10':
                     text = 'PC > ローカルディスク(C:) > ユーザー > ユーザー名 > .m2 > repository'
                 if ident == 'p292-b13':
-                    text = text.replace('[cod]', '[cmd]')
+                    text = '1.\nWindows キーを押し、[cmd]と入力してコマンドプロンプトを起動します。'
+                if ident == 'p296-b04':
+                    text = text.replace('JAC0177G-T1-04', 'JAC0177G-T1-05')
                 if ident == 'p294-b05':
                     text = '\n'.join(f'{n}: {line.split(". ", 1)[1]}' for n, line in enumerate(text.splitlines(), 1))
                 if ident in ('p294-b06', 'p294-b07'):
