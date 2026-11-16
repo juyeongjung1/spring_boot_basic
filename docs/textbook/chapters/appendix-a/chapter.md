@@ -42,7 +42,7 @@
 
 :::
 
-![操作画面・図解](assets/p283-f01.svg){#p283-f01}
+![操作画面・図解](assets/p283-f01-eclipse2024.svg){#p283-f01}
 
 ![操作画面・図解](assets/p283-f02.svg){#p283-f02}
 
@@ -211,13 +211,13 @@
 
 ::: {#p287-b02 .step}
 
-[1\.&#32;]{.s008}[2020 年以降のEclipse(pleiades) 又は、Spring Tool Suite を起動します。]{.s008}
+[1\.&#32;]{.s008}[Eclipse 2024-12（Pleiades）を起動します。]{.s008}
 
 :::
 
 ::: {#p287-b03 .paragraph}
 
-[※本書では、Pleiades 2025を使用します。]{.s008}
+[※Java 21を使用します。]{.s008}
 
 :::
 
@@ -227,7 +227,7 @@
 
 :::
 
-![操作画面・図解](assets/p287-f09-versions-2025.svg){#p287-f09}
+![操作画面・図解](assets/p287-f09-versions-2024.svg){#p287-f09}
 
 ::: {#p287-b05 .step}
 
@@ -236,7 +236,7 @@
 
 :::
 
-![操作画面・図解](assets/p287-f10-versions-2025.svg){#p287-f10}
+![操作画面・図解](assets/p287-f10-versions-2024.svg){#p287-f10}
 
 ::: {#p287-b06 .step}
 
@@ -264,7 +264,7 @@
 
 ::: {#page-288 .source-page}
 
-![操作画面・図解](assets/p288-f11-versions-2025.svg){#p288-f11}
+![操作画面・図解](assets/p288-f11-versions-2024.svg){#p288-f11}
 
 ::: {#p288-b01 .step}
 
@@ -288,7 +288,7 @@
 
 :::
 
-![操作画面・図解](assets/p288-f13-versions-2025.svg){#p288-f13}
+![操作画面・図解](assets/p288-f13-versions-2024.svg){#p288-f13}
 
 :::
 
@@ -296,7 +296,7 @@
 
 ::: {#p289-b01 .paragraph}
 
-[「ADD DEPENDENCIES」をクリックし、]{.s008}
+[「Maven」と「Java 21」を選び、「ADD DEPENDENCIES」をクリックします。]{.s008}
 
 :::
 

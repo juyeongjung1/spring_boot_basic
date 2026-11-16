@@ -309,7 +309,8 @@ class PaginationTests(unittest.TestCase):
             self.assertEqual(set(after) - set(before), allowed_additions if chapter == 'appendix-b' else set(), chapter)
             self.assertFalse(set(original_figures) - set(current_figures), chapter)
             self.assertEqual(set(current_figures) - set(original_figures), illustration_ids, chapter)
-            allowed = {'p285-f07', 'p287-f09', 'p287-f10', 'p288-f11', 'p288-f13'}
+            allowed = {'p283-f01', 'p285-f07', 'p287-f09', 'p287-f10', 'p288-f11', 'p288-f13',
+                       'p293-f03', 'p293-f04'}
             for ident, old_path in original_figures.items():
                 new_path = current_figures[ident]
                 if old_path != new_path:
@@ -319,12 +320,23 @@ class PaginationTests(unittest.TestCase):
                     for attribute in ('width', 'height', 'viewBox'):
                         self.assertEqual(old.get(attribute), new.get(attribute), ident)
             for ident, node in before.items():
-                text = node['text'].replace('Eclipse 2022(pleiades)', 'Pleiades 2025').replace('Java 17', 'Java 21').replace('Java17', 'Java21').replace('3.1.5', '4.0.2')
+                text = node['text'].replace('Java 17', 'Java 21').replace('Java17', 'Java21').replace('3.1.5', '4.0.2')
                 text = text.replace('© 2024 Trainocate Japan, Ltd.', '© 2027 Trainocate Japan, Ltd.')
                 if ident == 'p285-b03':
                     text += '。'
                 if ident == 'p294-b10':
                     text = 'PC > ローカルディスク(C:) > ユーザー > ユーザー名 > .m2 > repository'
+                if ident == 'p292-b13':
+                    text = text.replace('[cod]', '[cmd]')
+                if ident == 'p294-b05':
+                    text = '\n'.join(f'{n}: {line.split(". ", 1)[1]}' for n, line in enumerate(text.splitlines(), 1))
+                if ident in ('p294-b06', 'p294-b07'):
+                    text = ('4. ' if ident == 'p294-b06' else '5. ') + text.split('. ', 1)[1]
+                text = {
+                    'p287-b02': '1. Eclipse 2024-12（Pleiades）を起動します。',
+                    'p287-b03': '※Java 21を使用します。',
+                    'p289-b01': '「Maven」と「Java 21」を選び、「ADD DEPENDENCIES」をクリックします。',
+                }.get(ident, text)
                 corrected = {
                     'p291-b06': '5. 修正したファイルを保存し、ビルドが正常に完了していますか？Pleiades のコンソールでアプリケーションの起動完了を確認し、正しいポート番号へアクセスしてください。',
                     'p291-b07': '6. テンプレートファイルの配置は正しいですか？Thymeleaf テンプレートファイルは、通常src/main/resources/templates ディレクトリに配置します。Controller が返した名前のテンプレートが見つからない場合は、通常500 エラーになります。404 と区別して確認してください。',

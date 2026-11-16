@@ -1,4 +1,4 @@
-<!-- 元PDF 1〜14ページ。Java 21・Spring Boot 4.0.2・Pleiades 2025向け改訂。 -->
+<!-- 元PDF 1〜14ページ。Java 21・Spring Boot 4.0.2・Eclipse 2024-12（Pleiades）向け改訂。 -->
 
 ::: {#page-1 .source-page}
 

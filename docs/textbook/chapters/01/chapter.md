@@ -380,7 +380,7 @@ DIコンテナから渡されたリモコンを使い、AクラスがBクラス�
 
 :::
 
-![Mavenの依存ライブラリ画面](assets/p022-f06.svg){#p022-f06}
+![Mavenの依存ライブラリ画面](assets/p022-f06-dependencies.svg){#p022-f06}
 
 :::
 
@@ -599,7 +599,7 @@ public class AppConfig {
 
 :::
 
-![Eclipseのプロジェクト画面](assets/p026-f11.svg){#p026-f11}
+![Eclipseのプロジェクト画面](assets/p026-f11-java21.svg){#p026-f11}
 
 ::: {#p026-b04 .step}
 
@@ -641,7 +641,7 @@ public class AppConfig {
 
 :::
 
-![ビルド成功の画面](assets/p027-f14.svg){#p027-f14}
+![ビルド成功の画面](assets/p027-f14-java21.svg){#p027-f14}
 
 :::
 

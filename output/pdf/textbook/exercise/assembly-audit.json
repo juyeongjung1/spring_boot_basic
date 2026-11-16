@@ -8,10 +8,13 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 19,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "768ce2b2c3823f124b466da6f51f0536400e9b2ddb423e13065c9154a4e86f4b",
-  "verification": "docs/textbook/verification.md#グリッドの列内配置",
+  "pdf_sha256": "6a3c055203bc8b9054405075407c429901e108adc3097e58cbc2b186b777ea13",
+  "verification": "docs/textbook/verification.md#配布前レビューの反映",
   "reviewed_pages": [
-    43
+    3,
+    18,
+    30,
+    38
   ],
   "chapter_page_counts": {
     "ex-front": 6,
@@ -23,5 +26,16 @@
     "ex06": 16,
     "ex07": 13,
     "ex-back": 1
+  },
+  "page_comparison": {
+    "base_commit": "587a857",
+    "changed_pages": [
+      3,
+      18,
+      30,
+      38
+    ],
+    "identical_pages": 75,
+    "section_start_pages_match": true
   }
 }

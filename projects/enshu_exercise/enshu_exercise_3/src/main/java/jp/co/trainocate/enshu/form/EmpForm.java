@@ -2,7 +2,7 @@ package jp.co.trainocate.enshu.form;
 
 import lombok.Data;
 
-//演習3.5
+//演習3.6
 //c. Formクラスにも、@Dataアノテーションを付けることで、
 //Getter&Setterメソッドを自動生成できます。
 @Data

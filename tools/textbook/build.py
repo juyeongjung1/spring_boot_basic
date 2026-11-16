@@ -168,6 +168,17 @@ def updated_native_block(group, node):
                 commands += native_runs([dict(run, text=value[offset:end])])
                 offset = end
         return commands
+    if len(lines) > 1 and len(lines) == len(group['lines']) and all(
+        value.endswith(''.join(run['text'] for run in old['runs'][1:]))
+        and len(value) <= len(old['text']) for value, old in zip(lines, group['lines'])
+    ):
+        commands = []
+        for value, old in zip(lines, group['lines']):
+            first, *rest = old['runs']
+            suffix = ''.join(run['text'] for run in rest)
+            prefix = value[:len(value) - len(suffix)]
+            commands += native_runs([dict(first, text=prefix, positions=first['positions'][:len(prefix)]), *rest])
+        return commands
     if len(group['lines']) != 1 or len(lines) != 1:
         raise ValueError('固定配置の変更が元の行に収まりません')
     line = group['lines'][0]
@@ -401,6 +412,14 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             for ident in page['entries']:
                 if ident in layout['blocks']:
                     group=layout['blocks'][ident]
+                    toc_source = config.get('native_toc_rows', {}).get(ident)
+                    if toc_source:
+                        original = layout['blocks'][toc_source]['lines'][0]
+                        target_y = group['lines'][0]['y']
+                        group = {'lines': [dict(original, y=target_y, runs=[
+                            dict(run, y=run['y'] + target_y - original['y'])
+                            for run in original['runs']
+                        ])]}
                     if nodes[ident]['text']!='\n'.join(l['text'] for l in group['lines']):
                         if ident not in config.get('native_text_updates', []):
                             raise ValueError('固定ページの編集は再配置確認が必要: '+ident)

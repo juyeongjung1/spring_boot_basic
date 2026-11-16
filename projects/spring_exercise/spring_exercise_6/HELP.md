@@ -1,4 +1,4 @@
-Java 21・Spring Boot 4.0.2向けの教材プロジェクトです。Pleiades 2025ではJDK 21を選択し、既存のMavenプロジェクトとして取り込んでください。下記の公式リファレンスは4.0系です。
+Java 21・Spring Boot 4.0.2向けの教材プロジェクトです。Eclipse 2024-12（Pleiades）ではJDK 21を選択し、既存のMavenプロジェクトとして取り込んでください。下記の公式リファレンスは4.0系です。
 
 # Getting Started
 

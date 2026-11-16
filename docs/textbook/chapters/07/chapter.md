@@ -1976,7 +1976,7 @@ col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイ�
 
 :::
 
-![スライド](assets/p272-f27.svg){#p272-f27}
+![スライド](assets/p272-f27-form-select.svg){#p272-f27}
 
 ::: {#p272-b02 .paragraph}
 
@@ -2337,7 +2337,7 @@ col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイ�
 
 ::: {#page-278 .source-page}
 
-::: {#p278-b01 .code}
+::: {#p278-b01 .code filename="…/resources/templates/form_sample2.html"}
 
 ```xml
             </div>
@@ -2358,7 +2358,8 @@ col-md-3／col-md-9では、幅768px以上は横並び、それ未満はサイ�
             </div>
             <div class="mb-3"> <!--チェックボックス-->
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input"
+                    <input type="checkbox"
+                        class="form-check-input"
                         id="subscribeNewsletter">
                     <label for="subscribeNewsletter"
                        class="form-check-label">ニュースレターを購読する</label>

@@ -728,7 +728,7 @@ private Integer price;
 
 ::: {#page-76 .source-page}
 
-::: {#p076-b01 .code}
+::: {#p076-b01 .code filename="…/entity/Product.java"}
 
 ```java
 14:public class Product {
@@ -829,7 +829,7 @@ private Integer price;
 
 :::
 
-![操作画面・図解](assets/p078-f14.svg){#p078-f14}
+![操作画面・図解](assets/p078-f14-java21.svg){#p078-f14}
 
 ::: {#p078-b03 .paragraph}
 
@@ -1419,7 +1419,7 @@ public class Sample5 extends HttpServlet {
 
 :::
 
-![操作画面・図解](assets/p086-f19.svg){#p086-f19}
+![操作画面・図解](assets/p086-f19-java21.svg){#p086-f19}
 
 ::: {#p086-b08 .paragraph}
 
@@ -1831,7 +1831,7 @@ public String showSearchView() {
 
 :::
 
-![操作画面・図解](assets/p093-f26.svg){#p093-f26}
+![操作画面・図解](assets/p093-f26-java21.svg){#p093-f26}
 
 ::: {#p093-b07 .paragraph}
 
@@ -2929,7 +2929,7 @@ Integer>{
 
 :::
 
-::: {#p111-b04 .heading}
+::: {#p111-b04 .heading keep-next="3"}
 
 [動作確認]{.s010}
 
@@ -2945,7 +2945,7 @@ Integer>{
 
 ::: {#p111-b06 .paragraph}
 
-[任意の値を入力し、\[登録\]ボタンをクリックすると、登録後の全件検索結果が表示されます。]{.s009}
+[任意の値を入力し、\[登録\]ボタンをクリックすると、登録した商品1件の結果が表示されます。]{.s009}
 
 :::
 
@@ -2957,7 +2957,7 @@ Integer>{
 
 ::: {#p112-b01 .paragraph}
 
-[「商品一覧」をクリックすると、一覧画面に遷移します。]{.s009}
+[「商品一覧へ」をクリックすると、全件一覧に遷移します。]{.s009}
 
 :::
 

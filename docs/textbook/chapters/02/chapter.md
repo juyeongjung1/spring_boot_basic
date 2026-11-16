@@ -389,7 +389,7 @@
 
 :::
 
-![操作画面・図解](assets/p039-f07.svg){#p039-f07}
+![操作画面・図解](assets/p039-f07-java21.svg){#p039-f07}
 
 :::
 
@@ -1675,7 +1675,7 @@ request.setAttribute("password", password);
 
 ::: {#page-60 .source-page}
 
-::: {#p060-b01 .code}
+::: {#p060-b01 .code filename="…/resources/templates/login_success.html"}
 
 ```java
  9:    <h1>ログイン成功</h1>

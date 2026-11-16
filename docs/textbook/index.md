@@ -98,7 +98,7 @@
 | @Param |  | 06:p235-b04 |
 | @PathVariable |  | 03:p117-b05 03:p123-b07 06:revision-category-validation-update |
 | @Pattern |  | 04:p157-b05 |
-| Pleiades 2025 |  | appendix-a:__native-page-287 appendix-b:revision-errors-trace-read |
+| Pleiades |  | appendix-a:__native-page-287 appendix-b:revision-errors-trace-read |
 | pom.xml |  | 01:p026-b03 04:p149-b04 05:p182-b03 06:revision-category-validation-intro |
 | POST |  | 02:p049-b05 02:p051-b04 |
 | @PostMapping |  | 02:p051-b04 02:p051-b06 |

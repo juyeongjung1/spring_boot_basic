@@ -83,12 +83,12 @@
       "flow_page": 24
     },
     {
-      "title": "演習3.5. 社員データ登録機能の実装",
+      "title": "演習3.5. 【オプション】 名前検索機能の実装",
       "source_page": 26,
       "flow_page": 26
     },
     {
-      "title": "演習3.6. 【オプション】 名前検索機能の実装",
+      "title": "演習3.6. 社員データ登録機能の実装",
       "source_page": 26,
       "flow_page": 26
     },
@@ -306,7 +306,7 @@
         17,
         28
       ],
-      "blocks": 129,
+      "blocks": 132,
       "figures": 6,
       "table_count": 3
     },
@@ -325,7 +325,7 @@
         29,
         36
       ],
-      "blocks": 102,
+      "blocks": 104,
       "figures": 5,
       "table_count": 2
     },
@@ -344,7 +344,7 @@
         37,
         49
       ],
-      "blocks": 77,
+      "blocks": 79,
       "figures": 9,
       "table_count": 0
     },

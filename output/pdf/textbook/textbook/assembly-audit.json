@@ -8,13 +8,34 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 65,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "de5cd36b7a6146dcbb0574ef4aa8709f3e4008e8545bddc6f27b88bf5622c3e9",
-  "verification": "docs/textbook/verification.md#第6章直前の空白ページ",
+  "pdf_sha256": "2f47142eaf91fc1bf51a62cd570d8674c93298ddea5dc02bc9793ad8b95476b3",
+  "verification": "docs/textbook/verification.md#配布前レビューの反映",
   "reviewed_pages": [
-    228,
-    229,
-    347,
-    352
+    24,
+    28,
+    29,
+    41,
+    67,
+    88,
+    90,
+    100,
+    108,
+    130,
+    131,
+    132,
+    239,
+    264,
+    319,
+    327,
+    328,
+    332,
+    336,
+    337,
+    338,
+    343,
+    344,
+    345,
+    349
   ],
   "chapter_page_counts": {
     "front": 14,
@@ -28,7 +49,6 @@
     "appendix-a": 8,
     "appendix-b": 8
   },
-  "body_pages_visually_verified": 344,
   "index_pages": [
     347,
     351
@@ -43,5 +63,37 @@
       198
     ],
     "colophon_page": 352
+  },
+  "page_comparison": {
+    "base_commit": "587a857",
+    "changed_pages": [
+      24,
+      28,
+      29,
+      41,
+      67,
+      88,
+      90,
+      100,
+      108,
+      130,
+      131,
+      132,
+      239,
+      264,
+      319,
+      327,
+      328,
+      332,
+      336,
+      337,
+      338,
+      343,
+      344,
+      345,
+      349
+    ],
+    "identical_pages": 327,
+    "section_start_pages_match": true
   }
 }

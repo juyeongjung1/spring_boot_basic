@@ -13,7 +13,7 @@
 
 ## 前提
 
-- Pleiades 2025のJava版（Full Editionには開発用JDKが同梱）
+- Eclipse 2024-12（Pleiades）のJava版（Full Editionには開発用JDKが同梱）
 - アプリのコンパイル・実行・Maven実行にJDK 21
 - Spring Boot 4.0.2（各アプリの親POMで固定）
 - Bootstrap 5.3.8（第7章のCSS・JavaScriptを同梱）
@@ -22,10 +22,10 @@
 
 Boot管理の依存関係を使用します。4.0.2ではHibernate 7.2.1.Final、MySQL Connector/J 9.5.0、Lombok 1.18.42、Thymeleaf Layout Dialect 3.4.0です。Java 21対応のためModelMapperは3.2.6へ更新しています。Web MVCは `spring-boot-starter-webmvc`、MVCテストは対応する `spring-boot-starter-webmvc-test` です。
 
-## Pleiades 2025へインポート
+## Eclipse 2024-12（Pleiades）へインポート
 
 1. 新しい学習用ワークスペースを開きます。
-2. [ウィンドウ]→[設定]→[Java]→[インストール済みのJRE]でJDK 21を選択します。Full Editionの例は `C:/pleiades/2025-12/java/21` です。
+2. [ウィンドウ]→[設定]→[Java]→[インストール済みのJRE]でJDK 21を選択します。Full Editionの例は `C:/pleiades/2024-12/java/21` です。
 3. [Java]→[インストール済みのJRE]→[実行環境]でJavaSE-21を同じJDKに対応付けます。
 4. [ファイル]→[インポート]→[Maven]→[既存Mavenプロジェクト]で、この `projects` フォルダーを選びます。
 5. プロジェクトの読み込み後、[Maven]→[プロジェクトの更新]（Alt+F5）を実行します。
@@ -59,7 +59,7 @@ Eclipseを起動するJDKと、開発・実行するアプリのJDKは別の設�
 例として、本文第2章の完成サンプルを起動します。
 
 ```powershell
-$env:JAVA_HOME = 'C:/pleiades/2025-12/java/21'
+$env:JAVA_HOME = 'C:/pleiades/2024-12/java/21'
 $env:Path = "$env:JAVA_HOME/bin;$env:Path"
 cd spring_answer/spring_answer_2
 .\mvnw.cmd spring-boot:run
@@ -88,4 +88,4 @@ Spring Initializrのバージョン一覧は時期によって変わります。
 - [Spring Boot 4.0.2リリース](https://spring.io/blog/2026/01/22/spring-boot-4-0-2-available-now/)
 - [4.0.2の依存管理POM](https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/4.0.2/spring-boot-dependencies-4.0.2.pom)
 - [Spring Boot 4移行ガイド](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide)
-- [Pleiades 2025公式配布・JDK設定](https://willbrains.jp/pleiades_distros2025.html)
+- [Eclipse 2024-12（Pleiades）公式配布・JDK設定](https://willbrains.jp/pleiades_distros2024.html)

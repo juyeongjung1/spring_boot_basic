@@ -274,7 +274,7 @@ Caused by: java.sql.SQLSyntaxErrorException:
 
 ::: {#p292-b13 .step}
 
-[1\.&#32;]{.s004}[Window]{.s004}[&#32;キーを入力し、]{.s007}[\[cod\]]{.s004}[と入力してコマンドプロンプトを起動します。]{.s007}
+[1\.&#32;]{.s004}[Window]{.s004}[&#32;キーを入力し、]{.s007}[\[cmd\]]{.s004}[と入力してコマンドプロンプトを起動します。]{.s007}
 
 :::
 
@@ -303,7 +303,7 @@ Caused by: java.sql.SQLSyntaxErrorException:
 
 :::
 
-![操作画面・図解](assets/p293-f03.svg){#p293-f03}
+![操作画面・図解](assets/p293-f03-example.svg){#p293-f03}
 
 ::: {#p293-b04 .step}
 
@@ -324,7 +324,7 @@ Caused by: java.sql.SQLSyntaxErrorException:
 
 :::
 
-![操作画面・図解](assets/p293-f04.svg){#p293-f04}
+![操作画面・図解](assets/p293-f04-example.svg){#p293-f04}
 
 ::: {#p293-b07 .heading}
 
@@ -376,27 +376,27 @@ Caused by: java.sql.SQLSyntaxErrorException:
 
 ::: {#p294-b05 .code}
 
-```java
-4. <dependency>
-5. <groupId>org.springframework.boot</groupId>
-6. <artifactId>spring-boot-devtools</artifactId>
-7. <scope>runtime</scope>
-8. <optional>true</optional>
-9. </dependency>
+```xml
+1: <dependency>
+2: <groupId>org.springframework.boot</groupId>
+3: <artifactId>spring-boot-devtools</artifactId>
+4: <scope>runtime</scope>
+5: <optional>true</optional>
+6: </dependency>
 ```
 
 :::
 
 ::: {#p294-b06 .step}
 
-[10\.&#32;]{.s004}[キャッシュが残っていたりしませんか？]{.s007}\
+[4\.&#32;]{.s004}[キャッシュが残っていたりしませんか？]{.s007}\
 [この場合、キャッシュの削除、または異なるブラウザで実行してください。]{.s007}
 
 :::
 
 ::: {#p294-b07 .step}
 
-[11\.&#32;]{.s004}[JavaScript]{.s004}[&#32;にエラーはないのか、開発者モードのコンソール上で確認しましたか？]{.s007}
+[5\.&#32;]{.s004}[JavaScript]{.s004}[&#32;にエラーはないのか、開発者モードのコンソール上で確認しましたか？]{.s007}
 
 :::
 

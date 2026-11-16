@@ -8,6 +8,8 @@
   "last_page": 6,
   "figures": [],
   "cover_mode": "native",
+  "native_toc_rows": {"p003-b17": "p003-b18", "p003-b18": "p003-b17"},
+  "native_text_updates": ["p003-b17", "p003-b18"],
   "tables": [],
   "native_pages": [
     2,

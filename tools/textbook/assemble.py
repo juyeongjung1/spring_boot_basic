@@ -65,6 +65,7 @@ def update_contents(original,flow,collection,page_map,heading_map):
                 match=re.search(r'^(.*?)\.{2,}\s*(\d+)\s*$',text)
                 if not match:continue
                 label=match[1].strip();old=int(match[2])
+                label=collection.get('toc_title_updates', {}).get(label, label)
                 key=normalized(label).rstrip('：:')
                 target=heading_map.get((old,key),page_map[old])
                 digits=chars[match.start(2):match.end(2)]
