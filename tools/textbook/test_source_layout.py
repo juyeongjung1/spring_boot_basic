@@ -123,6 +123,7 @@ class SourceLayoutTests(unittest.TestCase):
                         for name in ('title', 'intro', 'code', 'note'))
         expected.update(('appendix-b', 'revision-errors-' + name) for name in errors)
         expected.add(('appendix-b', 'p296-edition-5'))
+        expected.add(('ex-back', 'p077-edition-5'))
         # 配布前レビューで、演習の既存箇条書きを項目ごとの段落に分けた。
         expected.update({
             ('ex03', 'p018-b09-item-2'), ('ex03', 'p018-b09-item-3'), ('ex03', 'p018-b09-item-4'),

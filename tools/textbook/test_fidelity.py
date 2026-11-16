@@ -3,6 +3,7 @@ import json
 import unittest
 from collections import Counter
 
+import pymupdf as fitz
 import typst
 
 from build import (ROOT, compile_pdf, flow_layout, inline, native_runs, read_markdown,
@@ -76,15 +77,42 @@ class FidelityTests(unittest.TestCase):
         self.assertAlmostEqual(self.pdf[0].search_for('※注記は左揃えです。')[0].x0, 24, places=2)
         self.assertAlmostEqual(self.pdf[0].search_for('大きい本文も全角一文字下げます。')[0].x0, 38.04, places=2)
 
-    def test_exercise_body_uses_its_font_size_but_time_lists_keep_left_alignment(self):
+    def test_exercise_intro_uses_eleven_points_but_time_lists_keep_left_alignment(self):
         folder = ROOT / 'docs/textbook/chapters/ex01'
         nodes, figures, order = read_markdown(folder / 'chapter.md')
         config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
         layout = json.loads((folder / 'source-layout.json').read_text(encoding='utf-8'))
         source = flow_layout(folder, config, layout, nodes, figures, order)
         lines = source.splitlines()
-        self.assertIn('indent: 14.04pt)', next(line for line in lines if line.startswith('#paragraph("p008-b06"')))
-        self.assertIn('indent: 0pt)', next(line for line in lines if line.startswith('#paragraph("p008-b08"')))
+        overview = next(line for line in lines if line.startswith('#paragraph("p008-b06"'))
+        duration = next(line for line in lines if line.startswith('#paragraph("p008-b08"'))
+        self.assertIn('size: 11pt', overview)
+        self.assertIn('indent: 11pt)', overview)
+        self.assertIn('size: 11pt', duration)
+        self.assertIn('indent: 0pt)', duration)
+
+    def test_exercise_steps_align_and_hints_keep_their_separate_items(self):
+        output = ROOT / 'output/pdf/textbook'
+        with fitz.open(output / 'chapter-ex02/chapter-flow.pdf') as pdf:
+            page = pdf[2]
+            first, = page.search_for('a.')
+            second, = page.search_for('b.')
+            self.assertAlmostEqual(first.x0, second.x0, places=2)
+            self.assertGreater(second.y0 - first.y0, 45)
+            body = page.search_for('BMIController')
+            self.assertEqual(len(body), 2)
+            self.assertAlmostEqual(body[0].x0, body[1].x0, places=2)
+        with fitz.open(output / 'chapter-ex06/chapter-flow.pdf') as pdf:
+            page = pdf[5]
+            hints = page.search_for('【ヒント】')
+            self.assertEqual(len(hints), 2)
+            items = [page.search_for(phrase)[0] for phrase in
+                     ('テキスト6.1', '1 つの勤務地に複数の社員', 'リスト型はjava.util.List')]
+            self.assertTrue(all(a.y1 < b.y0 for a, b in zip(items, items[1:])))
+            panels = [shape['rect'] for shape in page.get_drawings() if shape.get('fill')
+                      and all(abs(x-y/255) < .005 for x, y in zip(shape['fill'], (243,246,248)))]
+            self.assertEqual(len(panels), 2)
+            self.assertTrue(all(panels[0].intersects(item) for item in items))
 
     def test_confirmed_source_fragments_share_a_paragraph_and_keep_each_boundary_once(self):
         self.assertEqual(len(self.pdf[0].search_for('プログラム')), 1)

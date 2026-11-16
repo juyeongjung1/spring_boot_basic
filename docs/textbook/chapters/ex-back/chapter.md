@@ -27,6 +27,14 @@
 
 :::
 
+::: {#p077-edition-5 .paragraph}
+
+[2026 年11 月16 日]{.s002}\
+[第5 版]{.s002}\
+[改訂]{.s002}
+
+:::
+
 ::: {#p077-b03 .paragraph}
 
 [https://www.trainocate.co.jp/]{.s002}
@@ -36,7 +44,7 @@
 ::: {#p077-b04 .paragraph}
 
 [落丁本、乱丁本はお取り替えいたします。]{.s002}\
-[JAC0177G-L1-04]{.s002}\
+[JAC0177G-L1-05]{.s002}\
 [© 2027 Trainocate Japan, Ltd.]{.s002}
 
 :::

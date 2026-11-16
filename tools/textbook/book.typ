@@ -3,11 +3,11 @@
 #show regex("[■●•▪○]"): it => text(font: "MS Gothic", fallback: false,
   weight: "regular", style: "normal", stroke: none, it.text)
 #let at(x, y, body) = place(top + left, dx: x * 1pt, dy: y * 1pt, body)
-#let styled(style, body, emphasis: false, heading: false) = {
+#let styled(style, body, emphasis: false, heading: false, size: none) = {
   let s = styles.at(style)
   let heading-emphasis = heading and s.font == "MS PGothic" and s.size <= 12 and s.weight == "regular" and s.stroke == 0
   let outline = if emphasis or heading-emphasis {calc.max(s.stroke, s.size / 35)} else {s.stroke}
-  text(font: if emphasis {"MS PGothic"} else {s.font}, size: s.size * 1pt,
+  text(font: if emphasis {"MS PGothic"} else {s.font}, size: if size == none {s.size * 1pt} else {size},
     weight: s.weight, style: s.slant, fill: rgb(s.color),
     stroke: if outline > 0 {outline * 1pt + rgb(s.color)} else {none}, body)
 }
@@ -34,8 +34,8 @@
   above: 12.96pt, below: if continuing {6.96pt} else {12.96pt}, inset: (left: 11.04pt))[
   #mark(id, "start")#grid(columns: (12pt, 1fr), column-gutter: 6pt, marker, body)#mark(id, "end")
 ]
-#let list-continuation(id, body, continuing: false) = block(
-  above: 0pt, below: if continuing {6.96pt} else {12.96pt}, inset: (left: 29.04pt))[
+#let list-continuation(id, body, continuing: false, left: 29.04pt) = block(
+  above: 0pt, below: if continuing {6.96pt} else {12.96pt}, inset: (left: left))[
   #mark(id, "start")#body#mark(id, "end")
 ]
 #let section-heading(id, body, above: 18pt) = block(sticky: true, above: above, below: 12pt)[

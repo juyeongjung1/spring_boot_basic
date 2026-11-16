@@ -14,6 +14,7 @@ import pymupdf as fitz
 import typst
 from PIL import Image, ImageChops, ImageStat
 from links import add_url_links
+import exercise_layout
 from code_geometry import code_geometries
 from figure_numbers import figure_numbers, native_number_box
 from table_styles import table_paint, table_geometry
@@ -250,7 +251,7 @@ def typographic_parts(parts, keep_lines=False):
     return result
 
 
-def inline(parts, typography=True, heading=False, keep_lines=False):
+def inline(parts, typography=True, heading=False, keep_lines=False, size=None):
     result = []
     if typography:
         parts = typographic_parts(parts, keep_lines=keep_lines)
@@ -266,7 +267,8 @@ def inline(parts, typography=True, heading=False, keep_lines=False):
         value=plain_symbols(value)
         emphasis = ', emphasis: true' if 'strong' in fields[:-1] else ''
         heading_option = ', heading: true' if heading else ''
-        content = f'#styled({q(fields[-1])}, {q(value)}{emphasis}{heading_option})' if fields[-1] else f'#text({q(value)})'
+        size_option = f', size: {size}pt' if size is not None else ''
+        content = f'#styled({q(fields[-1])}, {q(value)}{emphasis}{heading_option}{size_option})' if fields[-1] else f'#text({q(value)}{size_option})'
         for modifier in reversed(fields[:-1]):
             if modifier.startswith('link%'):
                 content = f'#link({q(unquote(modifier[5:]))})[{content}]'
@@ -323,7 +325,7 @@ def pagination_options(config, layout, nodes, figures, order):
     return continuations, pairs, scales
 
 
-def flow_layout(folder, config, layout, nodes, figures, order, modern=None):
+def flow_layout(folder, config, layout, nodes, figures, order, modern=None, exercise_markers=None):
     page_continuations, paragraph_pairs, figure_scales = pagination_options(config, layout, nodes, figures, order)
     heading_spacing = config.get('typography', {}).get('minor_heading_extra_space', {})
     if isinstance(heading_spacing, list):
@@ -333,6 +335,9 @@ def flow_layout(folder, config, layout, nodes, figures, order, modern=None):
     numbered = figure_numbers(config, layout, nodes, figures, order)
     has_cover=config.get('cover_mode','classic')!='none'
     furniture_condition='here().page() > 1' if has_cover else 'true'
+    exercise = config.get('kind') == 'exercise'
+    intro, exercise_continuations = exercise_layout.layout_info(nodes, order) if exercise else (set(), {})
+    leading = 7.96 if exercise else 6.96
     running_title = next((''.join(run['text'] for run in page['furniture'] if run['bbox'][1] < 80).strip()
                           for page in layout['pages'] if page['entries'] and page['source_page'] not in config.get('native_pages', [])
                           and (not has_cover or page['source_page'] != config['first_page'])
@@ -341,9 +346,11 @@ def flow_layout(folder, config, layout, nodes, figures, order, modern=None):
 header: context if {furniture_condition} {{stack(spacing: 3pt, align(center, text(font: "Meiryo UI", size: 9.96pt, {q(running_title)})), line(length: 100%, stroke: 0.48pt))}},
 footer: context if {furniture_condition} {{align(center, text(font: "Times New Roman", size: 11.04pt, counter(page).display()))}})
 #set text(font: "MS PMincho", size: 11.04pt, lang: "ja", cjk-latin-spacing: none, kerning: false, overhang: false, top-edge: "ascender", bottom-edge: "descender")
-#set par(leading: 6.96pt, spacing: 12.96pt)
+#set par(leading: {leading}pt, spacing: 12.96pt)
 #show strong: it => text(font: "MS PGothic", stroke: 0.31543pt, it.body)
 #counter(page).update({config["first_page"]})''']
+    if exercise:
+        commands.insert(0, (HERE / 'exercise.typ').read_text(encoding='utf-8'))
     cover_page = order[0]
     cover_nodes = [(ident, nodes[ident]["text"]) for ident in cover_page["entries"] if ident in nodes]
     native_updates = set(config.get('native_text_updates', []))
@@ -382,6 +389,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             raise ValueError('本文の続き断片が隣接していません: ' + following)
         joined_paragraphs[first] = following
     joined_continuations = set(joined_paragraphs.values())
+    joined_continuations.update(exercise_continuations.values())
     for first, following in paragraph_pairs:
         joined_paragraphs[first] = following
     joined_continuations.update(following for _, following in paragraph_pairs)
@@ -616,7 +624,35 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 f'overlay: [{chr(10).join(overlay)}], tail: {tail}pt, above: {above}pt, '
                 f'font-size: {font_size}pt, leading: {max(0,pitch-font_size)}pt{content_option})')
 
-    def render(ident):
+    def exercise_list(ident, parts, continuation='', in_hint=False):
+        items = exercise_layout.items(parts)
+        if not any(marker for marker, _ in items):
+            return None
+        rows = []
+        changes = []
+        size = 11 if ident in intro else None
+        for index, (marker, values) in enumerate(items):
+            body = inline(values, size=size)
+            if index == len(items) - 1:
+                body += continuation
+            if not marker:
+                rows.append(f'#block(above: 0pt, below: 8pt)[{body}]')
+                continue
+            level = 2 if marker == '▪' else int(marker in ('o', '○'))
+            label = '■' if marker in ('■', '◼') else marker if marker.endswith(')') else '–'
+            if not values and not continuation:
+                changes.append((marker, ''))
+                continue
+            changes.append((marker, label))
+            left = (0 if in_hint else 11) + 12 * level
+            above = 5 if index == 0 and not in_hint else 3
+            below = 6 if in_hint else 11 if ident in intro else 9
+            rows.append(f'#exercise-item({q(label)}, [{body}], left: {left}pt, above: {above}pt, below: {below}pt)')
+        if exercise_markers is not None:
+            exercise_markers[ident] = changes
+        return '\n'.join([f'#mark({q(ident)}, "start")', *rows, f'#mark({q(ident)}, "end")'])
+
+    def render(ident, in_hint=False):
         if ident in joined_continuations:
             return ''
         if ident in figures:
@@ -634,6 +670,36 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             number = f', number: {q(numbered[ident]["number"])}' if ident in numbered else ''
             return f'#illustration({q(ident)}, {q(path)}, {width}, offset: {offset}pt{number})'
         node = nodes[ident]
+        size_override = 11 if ident in intro else None
+        if exercise and node['kind'] in ('paragraph', 'heading', 'step'):
+            raw = node['text'].lstrip()
+            parts = node['parts']
+            continuation = ''
+            if ident in exercise_continuations:
+                following = exercise_continuations[ident]
+                continuation = (f'#mark({q(following)}, "start")' +
+                                inline(nodes[following]['parts'], size=size_override) +
+                                f'#mark({q(following)}, "end")')
+            step = exercise_layout.STEP.match(raw)
+            if step:
+                label = raw[:2]
+                words = exercise_layout.trim_prefix(parts, len(node['text']) - len(raw) + step.end())
+                body = inline(words, size=11.04) + continuation
+                above = 22 + heading_spacing.get(ident, 0)
+                return f'#exercise-step({q(ident)}, [#text(font: "MS PGothic", weight: "bold", {q(label)})], [{body}], above: {above}pt)'
+            if exercise_layout.CHECK.match(raw):
+                first, rest = exercise_layout.first_line(parts)
+                if raw[0] in '■◼':
+                    first = exercise_layout.trim_prefix(first, len(node['text']) - len(raw) + 1)
+                    if exercise_markers is not None:
+                        exercise_markers[ident] = [(raw[0], '')]
+                body = inline(first) + ('#linebreak()' + inline(rest) if rest else '')
+                return f'#exercise-check({q(ident)}, [{body}])'
+            listed = exercise_list(ident, parts, continuation, in_hint)
+            if listed is not None:
+                return listed
+            if in_hint:
+                return f'#paragraph({q(ident)}, [{inline(parts)}], indent: 0pt)'
         if node['kind'] == 'paragraph':
             keep_lines = node['attrs'].get('keep-lines') == 'true'
             parts = typographic_parts(node['parts'], keep_lines=keep_lines)
@@ -645,27 +711,28 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 parts[0] = (value[1:], style)
                 return f'#bullet-paragraph({q(ident)}, [{marker}], [{inline(parts, keep_lines=keep_lines)}], continuing: {str(ident in list_with_continuation).lower()})'
             if ident in list_continuations:
-                return f'#list-continuation({q(ident)}, [{inline(parts)}], continuing: {str(ident in list_with_continuation).lower()})'
+                inset = ', left: 24pt' if exercise else ''
+                return f'#list-continuation({q(ident)}, [{inline(parts, size=size_override)}], continuing: {str(ident in list_with_continuation).lower()}{inset})'
             is_time_list = folder.name.startswith('ex') and re.fullmatch(
                 r'(?:演習\s*\d+\.\d+.*\d+\s*分|\d+\s*分)', node['text'].strip(), re.S)
             if node['text'].lstrip().startswith(('※', 'http://', 'https://')) or is_time_list or node['text'].strip() == 'ヒント':
-                return f'#paragraph({q(ident)}, [{inline(parts)}], indent: 0pt)'
+                return f'#paragraph({q(ident)}, [{inline(parts, size=size_override)}], indent: 0pt)'
             first_style = next((style for value, style in parts if value.strip()), None)
-            size = layout['styles'].get((first_style or '').split(':')[-1], {}).get('size', 11.04)
+            size = size_override or layout['styles'].get((first_style or '').split(':')[-1], {}).get('size', 11.04)
             if ident in joined_paragraphs:
                 following = ident
-                body = inline(parts)
+                body = inline(parts, size=size_override)
                 while following in joined_paragraphs:
                     previous, following = following, joined_paragraphs[following]
                     body += f'#mark({q(previous)}, "end")'
                     if source_pages[following] != source_pages[previous]:
                         body += f'#mark({q("__source-page-"+str(source_pages[following]))}, "source-page")'
-                    body += f'#mark({q(following)}, "start")' + inline(nodes[following]['parts'])
+                    body += f'#mark({q(following)}, "start")' + inline(nodes[following]['parts'], size=size_override)
                 return f'#paragraph({q(ident)}, [{body}], indent: {size}pt, end-id: {q(following)})'
             if keep_lines:
-                return f'#paragraph({q(ident)}, [{inline(parts, keep_lines=True)}], indent: 0pt, left: {size}pt)'
+                return f'#paragraph({q(ident)}, [{inline(parts, keep_lines=True, size=size_override)}], indent: 0pt, left: {size}pt)'
             if size != 11.04:
-                return f'#paragraph({q(ident)}, [{inline(parts)}], indent: {size}pt)'
+                return f'#paragraph({q(ident)}, [{inline(parts, size=size_override)}], indent: {size}pt)'
         if node['kind'] == 'step' and config['chapter'] == 'front':
             return f'#list-item({q(ident)}, [{inline(node["parts"])}])'
         if node['kind']=='table':
@@ -778,6 +845,24 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if ident in illustration_captions or ident in joined_continuations:
             i += 1
             continue
+        if exercise and exercise_layout.HINT.match(nodes.get(ident, {}).get('text', '').lstrip()):
+            title, remaining = exercise_layout.first_line(nodes[ident]['parts'])
+            label = ''.join(value for value, _ in title).strip()
+            content = []
+            if remaining:
+                content.append(exercise_list(ident, remaining, in_hint=True) or inline(remaining))
+            end = i + 1
+            while end < len(entries):
+                following = nodes.get(entries[end], {})
+                raw = following.get('text', '').lstrip()
+                if (following.get('kind') != 'paragraph' or modern and entries[end] in modern['consume']
+                        or any(pattern.match(raw) for pattern in (exercise_layout.HINT, exercise_layout.STEP, exercise_layout.CHECK))):
+                    break
+                content.append(render(entries[end], in_hint=True))
+                end += 1
+            commands.append(f'#exercise-hint({q(ident)}, {q(label)}, [{chr(10).join(content)}])')
+            i = end
+            continue
         # 続き本文の後に節・項が登場した場合は、その見出しから新頁にする。
         if (source_pages.get(ident) in page_continuations and ident in nodes
                 and nodes[ident]['kind']=='heading'
@@ -809,6 +894,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if ident in nodes and nodes[ident]["kind"] in ('step','heading'):
             end = i + 1
             while end < len(entries) and entries[end] not in code_members and (not modern or entries[end] not in modern['consume']) and entries[end] in nodes and nodes[entries[end]]["kind"] == "paragraph":
+                if exercise and any(pattern.match(nodes[entries[end]]['text'].lstrip())
+                                    for pattern in (exercise_layout.HINT, exercise_layout.STEP, exercise_layout.CHECK)):
+                    break
                 end += 1
             if end < len(entries) and entries[end] in figures and entries[end] not in compact_figures and entries[end] not in code_members and (not modern or entries[end] not in modern['consume']):
                 body = "\n".join(render(e) for e in entries[i:end + 1])
@@ -920,7 +1008,9 @@ def build(chapter="01", mode="all", markdown=None, output=None):
     if mode in ("all", "flow"):
         modern = html_components.prepare(folder, config, layout, nodes, figures, order)
         numbered = figure_numbers(config, layout, nodes, figures, order)
-        pdf, source = compile_pdf(work, "flow", header + flow_layout(folder, config, layout, nodes, figures, order, modern=modern), font_paths)
+        exercise_markers = {}
+        pdf, source = compile_pdf(work, "flow", header + flow_layout(
+            folder, config, layout, nodes, figures, order, modern=modern, exercise_markers=exercise_markers), font_paths)
         marks = json.loads(typst.query(str(source), "<book-check>", field="value", format="json", root=str(ROOT), font_paths=font_paths, ignore_system_fonts=True))
         boundaries = [mark for mark in marks if mark['edge']=='source-page']
         source_order = order[1:] if config.get('cover_mode','classic')!='none' else order
@@ -987,6 +1077,10 @@ def build(chapter="01", mode="all", markdown=None, output=None):
                     if x0 < left_limit or x1 > right_limit or y1 > 778:
                         overflow.append({"page": index + 1, "bbox": list(line["bbox"])})
         expected = Counter(normalized("".join(n["text"] for ident,n in nodes.items() if ident not in modern['consume']) + modern['expected_text']))
+        for pairs in exercise_markers.values():
+            for before, after in pairs:
+                expected.subtract(normalized(before))
+                expected.update(normalized(after))
         expected += Counter(normalized(''.join(record['number'] for ident, record in numbered.items()
                                                 if ident not in modern['consume'])))
         # 新しい設定図のSVGには、輪郭ではなく文字として残したラベルもある。
