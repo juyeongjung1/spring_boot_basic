@@ -5,7 +5,8 @@ import unicodedata
 STEP = re.compile(r'^[a-z]\.\s+')
 HINT = re.compile(r'^(?:【ヒント】|ヒント)(?:\s|$)')
 CHECK = re.compile(r'^[■◼]?\s*動作確認(?:[：:]|\s|$)')
-ITEM = re.compile(r'^([■◼●⚫•\uf09f▪○]|[o・](?=\s)|[a-z]\)|[0-9０-９]+[.．](?![0-9０-９]))\s*')
+CHECK_NUMBER = re.compile(r'^[➀-➉]')
+ITEM = re.compile(r'^([■◼●⚫•\uf09f▪○➀-➉]|[o・](?=\s)|[a-z]\)|[0-9０-９]+[.．](?![0-9０-９]))\s*')
 SECTION = re.compile(r'^演習\s*\d+\.\d+(?:[.\s]|$)')
 TOC_ENTRY = re.compile(r'(演習.*?)\s*(\.{2,})\s*(\d+)\s*$')
 MINOR_HEADING = re.compile(r'^(?:演習の目標|演習の概要|予想所要時間|(?:追加)?データベース情報|事前準備.*|問題構成|[＜<].*[＞>])$')
@@ -25,6 +26,8 @@ def list_label(marker, goal=False):
         return '○', 1
     if marker == '▪':
         return '▪', 2
+    if CHECK_NUMBER.fullmatch(marker):
+        return marker, 0
     if marker.endswith((')', '.', '．')):
         return unicodedata.normalize('NFKC', marker), 0
     return '–', 0

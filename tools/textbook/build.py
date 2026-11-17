@@ -550,7 +550,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             if not node or node['kind'] != 'paragraph':
                 in_list = False
                 continue
-            if re.match(r'^[■●•▪○・]', plain_symbols(node['text']).lstrip()):
+            raw = plain_symbols(node['text']).lstrip()
+            if re.match(r'^[■●•▪○・]', raw) or exercise and exercise_layout.CHECK_NUMBER.match(raw):
                 in_list = True
             elif in_list and ident in layout['blocks'] and layout['blocks'][ident]['lines'][0]['x'] >= 113:
                 list_continuations.add(ident)
@@ -648,7 +649,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 f'overlay: [{chr(10).join(overlay)}], tail: {tail}pt, above: {above}pt, '
                 f'font-size: {font_size}pt, leading: {max(0,pitch-font_size)}pt{content_option})')
 
-    def exercise_list(ident, parts, continuation='', in_hint=False):
+    def exercise_list(ident, parts, continuation='', in_hint=False, include_marks=True):
         keep_lines = nodes[ident]['attrs'].get('keep-lines') == 'true'
         items = exercise_layout.items(parts, keep_lines=keep_lines)
         if not any(marker for marker, _ in items):
@@ -674,7 +675,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             rows.append(f'#exercise-item({q(label)}, [{body}], left: {left}pt, above: {above}pt, below: {below}pt)')
         if exercise_markers is not None:
             exercise_markers[ident] = changes
-        return '\n'.join([f'#mark({q(ident)}, "start")', *rows, f'#mark({q(ident)}, "end")'])
+        if include_marks:
+            rows = [f'#mark({q(ident)}, "start")', *rows, f'#mark({q(ident)}, "end")']
+        return '\n'.join(rows)
 
     def render(ident, in_hint=False):
         if ident in joined_continuations:
@@ -700,8 +703,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             raw = node['text'].lstrip()
             parts = node['parts']
             if node['attrs'].get('exercise-warning') == 'true':
-                body = '#linebreak()'.join(f'#text({q(line)})' for line in raw.splitlines())
-                return f'#exercise-warning({q(ident)}, [{body}])'
+                label, _, explanation = raw.partition('　')
+                body = '#linebreak()'.join(f'#text({q(line)})' for line in explanation.splitlines())
+                return f'#exercise-warning({q(ident)}, {q(label)}, [{body}])'
             heading = raw.lstrip('■◼ ')
             if node['kind'] == 'heading' and exercise_layout.MINOR_HEADING.fullmatch(heading):
                 if raw != heading and exercise_markers is not None:
@@ -729,9 +733,12 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 first, rest = exercise_layout.first_line(parts)
                 if raw[0] in '■◼':
                     first = exercise_layout.trim_prefix(first, len(node['text']) - len(raw) + 1)
-                    if exercise_markers is not None:
-                        exercise_markers[ident] = [(raw[0], '')]
-                body = inline(first) + ('#linebreak()' + inline(rest, keep_lines=keep_lines) if rest else '')
+                body = inline(first)
+                if rest:
+                    listed = exercise_list(ident, rest, include_marks=False)
+                    body += '\n' + listed if listed is not None else '#linebreak()' + inline(rest, keep_lines=keep_lines)
+                if raw[0] in '■◼' and exercise_markers is not None:
+                    exercise_markers.setdefault(ident, []).append((raw[0], ''))
                 return f'#exercise-check({q(ident)}, [{body}])'
             listed = exercise_list(ident, parts, continuation, in_hint)
             if listed is not None:

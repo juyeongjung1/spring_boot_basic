@@ -120,7 +120,7 @@ class FidelityTests(unittest.TestCase):
         with fitz.open(folder / 'flow.pdf') as pdf:
             for chapter, local, texts in [
                 ('ex04', 4, ('社員番号：1001', 'パスワード：password', '上記を入力し、')),
-                ('ex04', 7, ('社員番号：【空欄】', 'パスワード：【空欄】', '上記の状態で', '→ ログインに失敗')),
+                ('ex04', 7, ('社員番号：【空欄】', 'パスワード：【空欄】', '上記の状態で', 'ログインに失敗')),
                 ('ex06', 13, ('http://localhost:8080/', 'リンクをクリックします。',
                       '任意のデータを入れ、登録します。', '正しく登録されるのかを確認してください。')),
                 ('ex06', 14, ('以下のようになります。', 'SELECT *', 'FROM employee e JOIN location l',
@@ -130,6 +130,18 @@ class FidelityTests(unittest.TestCase):
                 with self.subTest(page=page):
                     boxes = [pdf[page - 1].search_for(text)[0] for text in texts]
                     self.assertTrue(all(a.y1 < b.y0 for a, b in zip(boxes, boxes[1:])), boxes)
+
+    def test_exercise_check_numbers_align_with_their_steps(self):
+        with fitz.open(ROOT / 'output/pdf/textbook/chapter-ex03/chapter-flow.pdf') as pdf:
+            page = pdf[7]
+            steps = ('「社員番号で検索」フォームに「1001」と入力します。',
+                     '[検索]ボタンをクリックします。', '正しく社員情報ページが表示されるか確認してください。')
+            markers = [page.search_for(number)[0] for number in '➀➁➂']
+            lines = [page.search_for(step.lstrip('「['))[0] for step in steps]
+            self.assertTrue(all(a.y1 < b.y0 for a, b in zip(lines, lines[1:])))
+            for marker, line in zip(markers, lines):
+                self.assertLess(marker.x1, line.x0)
+                self.assertLess(max(marker.y0, line.y0), min(marker.y1, line.y1))
 
     def test_confirmed_source_fragments_share_a_paragraph_and_keep_each_boundary_once(self):
         self.assertEqual(len(self.pdf[0].search_for('プログラム')), 1)

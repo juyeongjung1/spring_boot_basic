@@ -17,8 +17,10 @@
 #let exercise-item(label, body, left: 11pt, above: 4pt, below: 9pt) = block(
   above: above, below: below, inset: (left: left),
 )[
-  #grid(columns: (9pt, 1fr), gutter: 4pt,
-    text(font: "MS Gothic", size: 9pt, fill: black, label), body)
+  #let numbered = "➀➁➂➃➄➅➆➇➈➉".contains(label)
+  #grid(columns: (if numbered {11pt} else {9pt}, 1fr), gutter: if numbered {2pt} else {4pt},
+    text(font: if numbered {"Segoe UI Symbol"} else {"MS Gothic"},
+      size: if numbered {10.5pt} else {9pt}, fill: black, label), body)
 ]
 #let exercise-hint(id, body) = block(width: 100%, breakable: false,
   above: 11pt, below: 11pt, inset: (left: 11pt),
@@ -31,9 +33,13 @@
     #if body != [] {v(4pt); body}
   ]
 ]
-#let exercise-warning(id, body) = block(inset: (left: 11pt), above: 8pt, below: 9pt)[
+#let exercise-warning(id, label, body) = block(inset: (left: 11pt), above: 8pt, below: 9pt)[
   #mark(id, "start")
-  #text(fill: rgb("9D2F25"), underline(evade: false, exercise-title(body, size: 16pt)))
+  #set par(leading: 5pt)
+  #set text(fill: rgb("FF0000"))
+  #grid(columns: (auto, 1fr), gutter: 6pt,
+    underline(evade: false, exercise-title(label, size: 16pt)),
+    underline(evade: false, exercise-title(body, size: 16pt)))
   #mark(id, "end")
 ]
 #let exercise-check(id, body) = block(sticky: true, above: 30.96pt, below: 7pt)[
