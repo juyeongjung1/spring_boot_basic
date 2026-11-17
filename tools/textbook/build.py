@@ -208,6 +208,18 @@ def positioned_native_text(ident, node, positions):
             for line, (x, y) in zip(lines, positions)]
 
 
+def exercise_contents_row(entry, group, styles):
+    label, _, number = entry.groups()
+    line, = group['lines']
+    last = line['runs'][-1]
+    digits = re.search(r'\d+\s*$', last['text'])
+    assert digits and digits[0].strip() == number, entry[0]
+    x = last['positions'][digits.start()]
+    size = styles[line['runs'][0]['style']]['size']
+    heading = f'#exercise-toc-title({line["x"]}pt, {line["y"]}pt, {x}pt, {q(exercise_layout.title(label))}, {size}pt)'
+    return [heading, *native_runs([dict(last, text=digits[0], positions=last['positions'][digits.start():])])]
+
+
 def source_layout(folder, layout, nodes, figures, markdown):
     if hashlib.sha256(markdown.read_text(encoding="utf-8").encode("utf-8")).hexdigest() != layout["markdown_sha256"]:
         raise ValueError("Markdownの変更を検出しました。編集後は--mode flowを使用してください。元位置版の座標を無断で流用しません。")
@@ -251,7 +263,7 @@ def typographic_parts(parts, keep_lines=False):
     return result
 
 
-def inline(parts, typography=True, heading=False, keep_lines=False, size=None):
+def inline(parts, typography=True, heading=False, keep_lines=False, size=None, exercise_heading=False):
     result = []
     if typography:
         parts = typographic_parts(parts, keep_lines=keep_lines)
@@ -268,7 +280,10 @@ def inline(parts, typography=True, heading=False, keep_lines=False, size=None):
         emphasis = ', emphasis: true' if 'strong' in fields[:-1] else ''
         heading_option = ', heading: true' if heading else ''
         size_option = f', size: {size}pt' if size is not None else ''
-        content = f'#styled({q(fields[-1])}, {q(value)}{emphasis}{heading_option}{size_option})' if fields[-1] else f'#text({q(value)}{size_option})'
+        if exercise_heading:
+            content = f'#exercise-title({q(value)}{size_option})'
+        else:
+            content = f'#styled({q(fields[-1])}, {q(value)}{emphasis}{heading_option}{size_option})' if fields[-1] else f'#text({q(value)}{size_option})'
         for modifier in reversed(fields[:-1]):
             if modifier.startswith('link%'):
                 content = f'#link({q(unquote(modifier[5:]))})[{content}]'
@@ -336,12 +351,16 @@ def flow_layout(folder, config, layout, nodes, figures, order, modern=None, exer
     has_cover=config.get('cover_mode','classic')!='none'
     furniture_condition='here().page() > 1' if has_cover else 'true'
     exercise = config.get('kind') == 'exercise'
-    intro, exercise_continuations = exercise_layout.layout_info(nodes, order) if exercise else (set(), {})
+    exercise_toc = config.get('exercise_toc', False)
+    intro, goals, exercise_continuations = exercise_layout.layout_info(nodes, order) if exercise else (set(), set(), {})
+    section_above = 32
     leading = 7.96 if exercise else 6.96
     running_title = next((''.join(run['text'] for run in page['furniture'] if run['bbox'][1] < 80).strip()
                           for page in layout['pages'] if page['entries'] and page['source_page'] not in config.get('native_pages', [])
                           and (not has_cover or page['source_page'] != config['first_page'])
                           and any(run['bbox'][1] < 80 and run['text'].strip() for run in page['furniture'])), '')
+    if exercise:
+        running_title = exercise_layout.title(running_title)
     commands = [f'''#set page(width: 595.32pt, height: 841.92pt, margin: (left: 85.104pt, right: 83.664pt, top: 86pt, bottom: 68pt),
 header: context if {furniture_condition} {{stack(spacing: 3pt, align(center, text(font: "Meiryo UI", size: 9.96pt, {q(running_title)})), line(length: 100%, stroke: 0.48pt))}},
 footer: context if {furniture_condition} {{align(center, text(font: "Times New Roman", size: 11.04pt, counter(page).display()))}})
@@ -349,7 +368,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
 #set par(leading: {leading}pt, spacing: 12.96pt)
 #show strong: it => text(font: "MS PGothic", stroke: 0.31543pt, it.body)
 #counter(page).update({config["first_page"]})''']
-    if exercise:
+    if exercise or exercise_toc:
         commands.insert(0, (HERE / 'exercise.typ').read_text(encoding='utf-8'))
     cover_page = order[0]
     cover_nodes = [(ident, nodes[ident]["text"]) for ident in cover_page["entries"] if ident in nodes]
@@ -366,7 +385,14 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         body=[f'#at(0,0,image({q("/"+(folder/p["decoration"]).relative_to(ROOT).as_posix())},width:595.32pt,height:841.92pt))']
         for ident in p['entries']:
             if ident in layout['blocks']:
-                body += native_block(ident, layout['blocks'][ident], nodes[ident], native_updates)
+                group = layout['blocks'][ident]
+                raw = nodes[ident]['text'].strip()
+                if exercise and re.match(r'^演習\s*\d+\s', raw):
+                    line, = group['lines']
+                    title = q(exercise_layout.title(raw))
+                    body.append(f'#at(85.104, {line["y"]}, text(top-edge: 0pt, bottom-edge: 0pt)[#box(width: 426.672pt)[#align(center, exercise-title({title}, size: 24pt))]])')
+                else:
+                    body += native_block(ident, group, nodes[ident], native_updates)
             elif ident in figures:
                 f=next(f for f in layout['figures'] if f['id']==ident);x0,y0,x1,y1=f['box']
                 body.append(f'#at({x0},{y0},image({q("/"+(folder/figures[ident]).relative_to(ROOT).as_posix())},width:{x1-x0}pt,height:{y1-y0}pt))')
@@ -449,14 +475,12 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                     body += positioned_native_text(ident, nodes[ident], native_positions[ident])
                 elif ident in layout['blocks']:
                     group=layout['blocks'][ident]
-                    toc_source = config.get('native_toc_rows', {}).get(ident)
-                    if toc_source:
-                        original = layout['blocks'][toc_source]['lines'][0]
-                        target_y = group['lines'][0]['y']
-                        group = {'lines': [dict(original, y=target_y, runs=[
-                            dict(run, y=run['y'] + target_y - original['y'])
-                            for run in original['runs']
-                        ])]}
+                    entry = exercise_layout.TOC_ENTRY.fullmatch(nodes[ident]['text']) if exercise_toc else None
+                    if entry:
+                        body += exercise_contents_row(entry, group, layout['styles'])
+                        if exercise_markers is not None:
+                            exercise_markers[ident] = [(entry[2], '')]
+                        continue
                     body += native_block(ident, group, nodes[ident], native_updates)
                 elif ident in layout.get('tables',{}):body+=native_runs(layout['tables'][ident]['runs'])
                 elif ident in figures:
@@ -639,8 +663,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             if not marker:
                 rows.append(f'#block(above: 0pt, below: 8pt)[{body}]')
                 continue
-            level = 2 if marker == '▪' else int(marker in ('o', '○'))
-            label = '■' if marker in ('■', '◼') else marker if marker.endswith(')') else '–'
+            label, level = exercise_layout.list_label(marker, ident in goals)
             if not values and not continuation:
                 changes.append((marker, ''))
                 continue
@@ -676,17 +699,30 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
         if exercise and node['kind'] in ('paragraph', 'heading', 'step'):
             raw = node['text'].lstrip()
             parts = node['parts']
+            if node['attrs'].get('exercise-warning') == 'true':
+                body = '#linebreak()'.join(f'#text({q(line)})' for line in raw.splitlines())
+                return f'#exercise-warning({q(ident)}, [{body}])'
+            heading = raw.lstrip('■◼ ')
+            if node['kind'] == 'heading' and exercise_layout.MINOR_HEADING.fullmatch(heading):
+                if raw != heading and exercise_markers is not None:
+                    exercise_markers[ident] = [(raw[:len(raw) - len(heading)], '')]
+                size = 15 if heading in ('演習の目標', '演習の概要', '予想所要時間') else 11.5
+                above = 18 + heading_spacing.get(ident, 0)
+                return f'#section-heading({q(ident)}, [#exercise-title({q(heading)}, size: {size}pt)], above: {above}pt)'
+            if node['kind'] == 'heading' and exercise_layout.SECTION.match(raw):
+                return f'#section-heading({q(ident)}, [#exercise-title({q(exercise_layout.title(raw))})], above: {section_above}pt)'
             continuation = ''
+            step = exercise_layout.STEP.match(raw)
             if ident in exercise_continuations:
                 following = exercise_continuations[ident]
                 continuation = (f'#mark({q(following)}, "start")' +
-                                inline(nodes[following]['parts'], size=size_override) +
+                                inline(nodes[following]['parts'], size=11.04 if step else size_override,
+                                       exercise_heading=bool(step)) +
                                 f'#mark({q(following)}, "end")')
-            step = exercise_layout.STEP.match(raw)
             if step:
                 label = raw[:2]
                 words = exercise_layout.trim_prefix(parts, len(node['text']) - len(raw) + step.end())
-                body = inline(words, size=11.04, keep_lines=keep_lines) + continuation
+                body = inline(words, size=11.04, keep_lines=keep_lines, exercise_heading=True) + continuation
                 above = 22 + heading_spacing.get(ident, 0)
                 return f'#exercise-step({q(ident)}, [#text(font: "MS PGothic", weight: "bold", {q(label)})], [{body}], above: {above}pt)'
             if exercise_layout.CHECK.match(raw):
@@ -719,7 +755,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 r'(?:演習\s*\d+\.\d+.*\d+\s*分|\d+\s*分)', node['text'].strip(), re.S)
             if node['text'].lstrip().startswith(('※', 'http://', 'https://')) or is_time_list or node['text'].strip() == 'ヒント':
                 body = inline(parts, size=size_override, keep_lines=exercise and keep_lines)
-                return f'#paragraph({q(ident)}, [{body}], indent: 0pt)'
+                indent = 11 if exercise and is_time_list else 0
+                return f'#paragraph({q(ident)}, [{body}], indent: {indent}pt)'
             first_style = next((style for value, style in parts if value.strip()), None)
             size = size_override or layout['styles'].get((first_style or '').split(':')[-1], {}).get('size', 11.04)
             if ident in joined_paragraphs:
@@ -871,7 +908,9 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                     break
                 content.append(render(next_id, in_hint=True))
                 end += 1
-            commands.append(f'#exercise-hint({q(ident)}, {q(label)}, [{chr(10).join(content)}])')
+            if exercise_markers is not None and label != 'ヒント':
+                exercise_markers.setdefault(ident, []).append((label, 'ヒント'))
+            commands.append(f'#exercise-hint({q(ident)}, [{chr(10).join(content)}])')
             i = end
             continue
         # 続き本文の後に節・項や指定した区切りがあれば、そこから新頁にする。
@@ -879,7 +918,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             following = nodes[ident]
             section = following['kind'] == 'heading' and re.match(
                 r'^(?:演習\s*)?\d+\.\d+(?:\.\d+)?(?:[.\s]|$)', following['text'].strip())
-            if section or exercise and following['attrs'].get('page-break-before') == 'true':
+            starts_page = section and not (exercise and following['attrs'].get('stay-on-page') == 'true')
+            if starts_page or exercise and following['attrs'].get('page-break-before') == 'true':
                 commands.append('#pagebreak(weak: true)')
         # 手順の説明や一例分のコードを見出しと同じページに保つ。
         keep_next = int(nodes.get(ident, {}).get('attrs', {}).get('keep-next', 0))
@@ -915,6 +955,8 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 body = "\n".join(render(e) for e in entries[i:end + 1])
                 # 枠の先頭にある子見出しの上余白は相殺されるため、外側で確保する。
                 above = 0 if ident in slide_body_first else (18 if nodes[ident]['kind'] == 'heading' else 8)
+                if exercise and exercise_layout.SECTION.match(nodes[ident]['text'].strip()):
+                    above = section_above
                 if ident not in slide_body_first:
                     above += heading_spacing.get(ident, 0)
                 commands.append(f'#instruction({q("instruction-" + ident)}, above: {above}pt)[{body}]')

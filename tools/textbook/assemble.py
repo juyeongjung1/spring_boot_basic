@@ -7,6 +7,7 @@ import re
 import pymupdf as fitz
 from build import normalized,read_markdown
 from book_index import ANCHOR_EDGES,append_index,collect_anchor_pages
+from exercise_layout import title as exercise_title
 
 ROOT=Path(__file__).resolve().parents[2]
 MARKED=re.compile(rb'(/(?:Span|Artifact)\s*<<(.*?)>>\s*BDC)(.*?)(EMC)',re.S)
@@ -66,6 +67,8 @@ def update_contents(original,flow,collection,page_map,heading_map):
                 if not match:continue
                 label=match[1].strip();old=int(match[2])
                 label=collection.get('toc_title_updates', {}).get(label, label)
+                if collection.get('exercise_toc'):
+                    label=exercise_title(label)
                 key=normalized(label).rstrip('：:')
                 target=heading_map.get((old,key),page_map[old])
                 digits=chars[match.start(2):match.end(2)]
@@ -88,6 +91,8 @@ def update_contents(original,flow,collection,page_map,heading_map):
 
 def print_anchor(chapter, marks, reference):
     """印刷用に位置を指定した節の、章内ページ番号を求める。"""
+    if reference is None:
+        return None
     part, ident = reference.split(':', 1)
     if part != chapter:
         return None
@@ -127,11 +132,12 @@ def assemble(name, collection):
     original=fitz.open(ROOT/collection['pdf'])
     coverage=[];chapters=[];footer_pages=[];page_map={};heading_map={}
     anchor_pages={}
-    print_layout=collection.get('print_layout')
+    print_layout=collection.get('print_layout', {})
     blanks=[]
     introduction_page=None
     colophon=fitz.open() if print_layout else None
     colophon_source=None
+    colophon_page=None
     for chapter in collection['parts']:
         folder=ROOT/'docs/textbook/chapters'/chapter
         config=json.loads((folder/'source.json').read_text(encoding='utf-8'))
@@ -152,16 +158,25 @@ def assemble(name, collection):
         ref_start=len(reference)+1
         reference.insert_pdf(part_ref);comparison.insert_pdf(part_comparison)
         marks=checks['flow']['block_positions']
-        intro_local=print_anchor(chapter,marks,print_layout['introduction']) if print_layout else None
-        colophon_local=print_anchor(chapter,marks,print_layout['colophon']) if print_layout else None
+        intro_local=print_anchor(chapter,marks,print_layout.get('introduction'))
+        colophon_local=print_anchor(chapter,marks,print_layout.get('colophon'))
+        standalone_colophon = colophon_local is not None and len(part_flow) == 1
         if colophon_local is not None:
-            assert chapter==collection['parts'][-1] and colophon_local==len(part_flow)>1, '奥付は最後の原稿ページに置いてください'
-            colophon_source=expected[-1]
-            colophon.insert_pdf(part_flow,from_page=colophon_local-1,to_page=colophon_local-1)
-            part_flow.delete_page(colophon_local-1)
-            marks=[mark for mark in marks if mark['page']<colophon_local]
-        part_pages=append_flow_part(flow,part_flow,blanks,odd_start=bool(print_layout),introduction=intro_local)
+            assert chapter==collection['parts'][-1] and colophon_local==len(part_flow), '奥付は最後の原稿ページに置いてください'
+            if standalone_colophon:
+                if len(flow) % 2 == 0:
+                    blanks.append(insert_blank(flow))
+            else:
+                colophon_source=expected[-1]
+                colophon.insert_pdf(part_flow,from_page=colophon_local-1,to_page=colophon_local-1)
+                part_flow.delete_page(colophon_local-1)
+                marks=[mark for mark in marks if mark['page']<colophon_local]
+        part_pages=append_flow_part(flow,part_flow,blanks,
+                                    odd_start=bool(print_layout) and not standalone_colophon,
+                                    introduction=intro_local)
         flow_start=part_pages[0]
+        if standalone_colophon:
+            colophon_page=flow_start
         if intro_local is not None:
             introduction_page=part_pages[intro_local-1]
         if collection.get('index'):
@@ -188,7 +203,8 @@ def assemble(name, collection):
                 source_info=next(p for p in layout['pages'] if p['source_page']==source_number)
                 if not any(r['text'].strip().isdigit() and r['bbox'][1]>784 for r in source_info['furniture']):continue
             footer_pages.append(n)
-        chapters.append({'chapter':chapter,'title':config['title'],'source_pages':[expected[0],expected[-1]],'reference_pages':[ref_start,len(reference)],'flow_pages':[flow_start,len(flow)],'blocks':checks['blocks'],'figures':checks['figures'],'table_count':len(layout.get('tables',{}))})
+        title = exercise_title(config['title']) if config.get('kind') == 'exercise' else config['title']
+        chapters.append({'chapter':chapter,'title':title,'source_pages':[expected[0],expected[-1]],'reference_pages':[ref_start,len(reference)],'flow_pages':[flow_start,len(flow)],'blocks':checks['blocks'],'figures':checks['figures'],'table_count':len(layout.get('tables',{}))})
     assert coverage==list(range(1,len(original)+1)),f'{name}: 出典ページの欠落または重複'
     bookmarks=[[1,c['title'],c['flow_pages'][0]] for c in chapters]
     index=None
@@ -197,13 +213,18 @@ def assemble(name, collection):
             pad_before_odd_start(flow,blanks)
         index=append_index(flow,ROOT/collection['index'],anchor_pages)
         bookmarks.append([1,'索引',index['pages'][0]])
-    if print_layout:
-        assert introduction_page and introduction_page%2==1 and len(colophon)==1, 'はじめに、または奥付の配置を確認してください'
+    if print_layout.get('introduction'):
+        assert introduction_page and introduction_page%2==1, 'はじめには奇数ページに配置してください'
+    if colophon_source is not None:
+        assert len(colophon)==1
         # 奥付が最終の偶数ページになるよう、必要な空白はその手前に入れる。
         if len(flow)%2==0:
             blanks.append(insert_blank(flow))
         flow.insert_pdf(colophon)
         page_map[colophon_source]=len(flow)
+        colophon_page=len(flow)
+    if print_layout:
+        assert colophon_page==len(flow) and colophon_page%2==0, '奥付は最終の偶数ページに配置してください'
     contents=update_contents(original,flow,collection,page_map,heading_map)
     for n in footer_pages:
         page=flow[n-1]
@@ -228,7 +249,9 @@ def assemble(name, collection):
     if index:
         report['index']=index
     if print_layout:
-        report['print_layout']={'introduction_page':introduction_page,'blank_pages':blanks,'colophon_page':len(flow)}
+        report['print_layout']={'blank_pages':blanks,'colophon_page':colophon_page}
+        if introduction_page is not None:
+            report['print_layout']['introduction_page']=introduction_page
     (out/'checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(json.dumps({k:v for k,v in report.items() if k not in ('chapters','index')},ensure_ascii=False))
     return report

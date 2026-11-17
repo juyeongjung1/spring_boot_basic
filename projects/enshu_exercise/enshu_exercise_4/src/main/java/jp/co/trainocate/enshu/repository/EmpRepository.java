@@ -12,6 +12,7 @@ public interface EmpRepository extends JpaRepository<Employee, Integer>{
 	
 //演習4.1
 //b. idとpasswordのAnd検索を行う抽象メソッドを追加してください。	
+//社員番号のプロパティ名は id です。検索メソッド名の条件には Id を使ってください。
 	
 	
 	

@@ -77,7 +77,7 @@ class FidelityTests(unittest.TestCase):
         self.assertAlmostEqual(self.pdf[0].search_for('※注記は左揃えです。')[0].x0, 24, places=2)
         self.assertAlmostEqual(self.pdf[0].search_for('大きい本文も全角一文字下げます。')[0].x0, 38.04, places=2)
 
-    def test_exercise_intro_uses_eleven_points_but_time_lists_keep_left_alignment(self):
+    def test_exercise_intro_and_time_lists_share_the_eleven_point_indent(self):
         folder = ROOT / 'docs/textbook/chapters/ex01'
         nodes, figures, order = read_markdown(folder / 'chapter.md')
         config = json.loads((folder / 'source.json').read_text(encoding='utf-8'))
@@ -89,7 +89,7 @@ class FidelityTests(unittest.TestCase):
         self.assertIn('size: 11pt', overview)
         self.assertIn('indent: 11pt)', overview)
         self.assertIn('size: 11pt', duration)
-        self.assertIn('indent: 0pt)', duration)
+        self.assertIn('indent: 11pt)', duration)
 
     def test_exercise_steps_align_and_hints_keep_their_separate_items(self):
         output = ROOT / 'output/pdf/textbook'
@@ -109,19 +109,24 @@ class FidelityTests(unittest.TestCase):
                      page.search_for('リスト型はjava.util.List')[0]]
             self.assertTrue(all(a.y1 < b.y0 for a, b in zip(items, items[1:])))
             panels = [shape['rect'] for shape in page.get_drawings() if shape.get('fill')
-                      and all(abs(x-y/255) < .005 for x, y in zip(shape['fill'], (243,246,248)))]
-            self.assertTrue(any(all(panel.intersects(item) for item in items) for panel in panels))
+                      and all(abs(x-y/255) < .005 for x, y in zip(shape['fill'], (243,246,250)))]
+            panel, = [panel for panel in panels if all(panel.intersects(item) for item in items)]
+            self.assertAlmostEqual(panel.x0, 96.104, places=2)
 
     def test_exercise_check_and_sql_lines_stay_separate(self):
-        path = ROOT / 'output/pdf/textbook/exercise/flow.pdf'
-        with fitz.open(path) as pdf:
-            for page, texts in [
-                (32, ('社員番号：1001', 'パスワード：password')),
-                (62, ('http://localhost:8080/', 'リンクをクリックします。',
+        folder = ROOT / 'output/pdf/textbook/exercise'
+        chapters = json.loads((folder / 'checks.json').read_text(encoding='utf-8'))['chapters']
+        starts = {chapter['chapter']: chapter['flow_pages'][0] for chapter in chapters}
+        with fitz.open(folder / 'flow.pdf') as pdf:
+            for chapter, local, texts in [
+                ('ex04', 4, ('社員番号：1001', 'パスワード：password', '上記を入力し、')),
+                ('ex04', 7, ('社員番号：【空欄】', 'パスワード：【空欄】', '上記の状態で', '→ ログインに失敗')),
+                ('ex06', 13, ('http://localhost:8080/', 'リンクをクリックします。',
                       '任意のデータを入れ、登録します。', '正しく登録されるのかを確認してください。')),
-                (63, ('以下のようになります。', 'SELECT *', 'FROM employee e JOIN location l',
+                ('ex06', 14, ('以下のようになります。', 'SELECT *', 'FROM employee e JOIN location l',
                       'ON e.location_id = l.id', 'WHERE e.salary >= ? AND l.name = ?')),
             ]:
+                page = starts[chapter] + local - 1
                 with self.subTest(page=page):
                     boxes = [pdf[page - 1].search_for(text)[0] for text in texts]
                     self.assertTrue(all(a.y1 < b.y0 for a, b in zip(boxes, boxes[1:])), boxes)

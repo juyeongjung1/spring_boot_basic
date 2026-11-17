@@ -1,6 +1,6 @@
 {
   "collection": "exercise",
-  "flow_pages": 79,
+  "flow_pages": 78,
   "source_pages": 77,
   "toc_entries": 45,
   "source_page_boundaries_verified": true,
@@ -8,38 +8,84 @@
   "all_chapter_to_assembly_text_pages_verified": true,
   "uri_annotations_verified": 19,
   "maximum_uri_coordinate_delta_pt": 0.0,
-  "pdf_sha256": "4612ad4b21157bd773ffc9d3bdcac234ee31fbdab59d0de36e9fb22edb48d737",
-  "verification": "docs/textbook/verification.md#演習ガイドの改行と改ページ",
+  "pdf_sha256": "7a3fdc7671c3270337457afc247278fcbff493cd92a84e2fb1e84c441c8af1b5",
+  "verification": "docs/textbook/verification.md#演習ガイドの見出しと印刷ページ",
   "reviewed_pages": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
     14,
     15,
     16,
+    17,
+    18,
     19,
+    20,
     21,
     22,
+    23,
     24,
     25,
     26,
     27,
+    28,
+    29,
+    30,
+    31,
     32,
     33,
+    34,
     35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
     51,
     52,
+    53,
     54,
     55,
     56,
     57,
+    58,
     59,
+    60,
     61,
     62,
     63,
     64,
     65,
+    66,
     67,
     68,
+    69,
     70,
-    73
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78
   ],
   "chapter_page_counts": {
     "ex-front": 6,
@@ -47,125 +93,338 @@
     "ex02": 6,
     "ex03": 12,
     "ex04": 8,
-    "ex05": 13,
+    "ex05": 11,
     "ex06": 16,
     "ex07": 13,
     "ex-back": 1
   },
   "page_comparison": {
-    "base_commit": "0362eb0",
+    "base_commit": "5154031",
+    "previous_pages": 79,
     "changed_pages": [
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
       14,
       15,
       16,
+      17,
+      18,
       19,
+      20,
       21,
       22,
+      23,
       24,
       25,
       26,
       27,
+      28,
+      29,
+      30,
+      31,
       32,
       33,
+      34,
       35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
       51,
       52,
+      53,
       54,
       55,
       56,
       57,
+      58,
       59,
+      60,
       61,
       62,
       63,
       64,
       65,
+      66,
       67,
       68,
+      69,
       70,
-      73
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78
     ],
-    "identical_pages": 50,
-    "section_start_pages_match": true,
+    "identical_pages": 3,
+    "section_start_pages_match": false,
+    "previous_page_to_current": [
+      {
+        "previous": 26,
+        "current": [
+          26,
+          27
+        ]
+      },
+      {
+        "previous": 48,
+        "current": [
+          47
+        ]
+      },
+      {
+        "previous": 49,
+        "current": [
+          47
+        ]
+      },
+      {
+        "previous": 50,
+        "current": [
+          49
+        ]
+      },
+      {
+        "previous": 51,
+        "current": [
+          50
+        ]
+      },
+      {
+        "previous": 52,
+        "current": [
+          51
+        ]
+      },
+      {
+        "previous": 53,
+        "current": [
+          52
+        ]
+      },
+      {
+        "previous": 54,
+        "current": [
+          53
+        ]
+      },
+      {
+        "previous": 55,
+        "current": [
+          54
+        ]
+      },
+      {
+        "previous": 56,
+        "current": [
+          55
+        ]
+      },
+      {
+        "previous": 57,
+        "current": [
+          56
+        ]
+      },
+      {
+        "previous": 58,
+        "current": [
+          57
+        ]
+      },
+      {
+        "previous": 59,
+        "current": [
+          58
+        ]
+      },
+      {
+        "previous": 60,
+        "current": [
+          59
+        ]
+      },
+      {
+        "previous": 61,
+        "current": [
+          60
+        ]
+      },
+      {
+        "previous": 62,
+        "current": [
+          61
+        ]
+      },
+      {
+        "previous": 63,
+        "current": [
+          62
+        ]
+      },
+      {
+        "previous": 64,
+        "current": [
+          63
+        ]
+      },
+      {
+        "previous": 65,
+        "current": [
+          64
+        ]
+      },
+      {
+        "previous": 66,
+        "current": [
+          65
+        ]
+      },
+      {
+        "previous": 67,
+        "current": [
+          66
+        ]
+      },
+      {
+        "previous": 68,
+        "current": [
+          67
+        ]
+      },
+      {
+        "previous": 69,
+        "current": [
+          68
+        ]
+      },
+      {
+        "previous": 70,
+        "current": [
+          69
+        ]
+      },
+      {
+        "previous": 71,
+        "current": [
+          69,
+          70
+        ]
+      },
+      {
+        "previous": 72,
+        "current": [
+          71
+        ]
+      },
+      {
+        "previous": 73,
+        "current": [
+          72
+        ]
+      },
+      {
+        "previous": 74,
+        "current": [
+          73
+        ]
+      },
+      {
+        "previous": 75,
+        "current": [
+          74
+        ]
+      },
+      {
+        "previous": 76,
+        "current": [
+          75
+        ]
+      },
+      {
+        "previous": 77,
+        "current": [
+          76
+        ]
+      },
+      {
+        "previous": 78,
+        "current": [
+          77
+        ]
+      },
+      {
+        "previous": 79,
+        "current": [
+          78
+        ]
+      }
+    ],
     "moved_content": [
       {
         "chapter": "ex03",
         "block": "p027-b01",
-        "before": 27,
-        "after": 26
+        "before": 26,
+        "after": 27
       },
       {
-        "chapter": "ex06",
-        "block": "p052-b01",
-        "before": 55,
-        "after": 54
+        "chapter": "ex05",
+        "block": "p046-b05",
+        "before": 48,
+        "after": 47
       },
       {
-        "chapter": "ex06",
-        "block": "p052-b02",
-        "before": 55,
-        "after": 54
+        "chapter": "ex05",
+        "block": "p046-b06",
+        "before": 48,
+        "after": 47
       },
       {
-        "chapter": "ex06",
-        "block": "p052-b03",
-        "before": 55,
-        "after": 54
+        "chapter": "ex05",
+        "block": "p046-b07",
+        "before": 49,
+        "after": 47
       },
       {
-        "chapter": "ex06",
-        "block": "p054-b01",
-        "before": 57,
-        "after": 56
-      },
-      {
-        "chapter": "ex06",
-        "block": "p054-b02",
-        "before": 57,
-        "after": 56
-      },
-      {
-        "chapter": "ex06",
-        "block": "p054-b03",
-        "before": 57,
-        "after": 56
-      },
-      {
-        "chapter": "ex06",
-        "block": "p062-b01",
-        "before": 65,
-        "after": 64
+        "chapter": "ex05",
+        "block": "p046-b08",
+        "before": 49,
+        "after": 47
       },
       {
         "chapter": "ex07",
-        "block": "p065-b01",
-        "before": 68,
-        "after": 67
-      },
-      {
-        "chapter": "ex07",
-        "block": "p065-b02",
-        "before": 68,
-        "after": 67
-      },
-      {
-        "chapter": "ex07",
-        "block": "p065-b03",
-        "before": 68,
-        "after": 67
-      },
-      {
-        "chapter": "ex07",
-        "block": "p065-b04",
-        "before": 68,
-        "after": 67
-      },
-      {
-        "chapter": "ex07",
-        "block": "p065-b05",
-        "before": 68,
-        "after": 67
+        "block": "p068-b14",
+        "before": 71,
+        "after": 69
       }
     ]
+  },
+  "print_layout": {
+    "blank_pages": [
+      48
+    ],
+    "colophon_page": 78
   }
 }

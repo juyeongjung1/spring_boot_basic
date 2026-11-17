@@ -210,7 +210,7 @@
 
 ::: {#page-50 .source-page}
 
-::: {#p050-table01 .table has-header="false"}
+::: {#p050-table01 .table has-header="false" highlight-row="2"}
 
 |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -225,7 +225,7 @@
 
 :::
 
-::: {#p050-table02 .table has-header="true"}
+::: {#p050-table02 .table has-header="true" highlight-column="5"}
 
 | ID | password | name | salary | location\_id |
 | --- | --- | --- | --- | --- |
@@ -924,7 +924,7 @@
 
 ::: {#p061-b02 .paragraph}
 
-[&#32;&#32;１．演習6.5 と同様に、検索画面の表示のためにも勤務地リストの取得が必要です。]{.s022}
+[•&#32;]{.s009}[演習6.5 と同様に、検索画面の表示のためにも勤務地リストの取得が必要です。]{.s019}
 
 :::
 

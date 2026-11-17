@@ -17,15 +17,33 @@ def rendered_lines(page, top, bottom):
 
 class PaginationTests(unittest.TestCase):
     def test_exercise_overview_follows_its_own_list_and_keeps_the_next_section_page(self):
-        with fitz.open(ROOT / 'output/pdf/textbook/exercise/flow.pdf') as pdf:
-            self.assertEqual(len(pdf), 79)
-            overview, durations = pdf[66], pdf[67]
+        directory = ROOT / 'output/pdf/textbook/exercise'
+        report = json.loads((directory / 'checks.json').read_text(encoding='utf-8'))
+        first = next(ch['flow_pages'][0] for ch in report['chapters'] if ch['chapter'] == 'ex07')
+        with fitz.open(directory / 'flow.pdf') as pdf:
+            overview, durations = pdf[first], pdf[first + 1]
             for phrase in ('導入前後の画面の変化', 'グリッドシステムを活用し',
                            'ヘッダーやサイドバーをすべての画面で共通化'):
                 self.assertTrue(overview.search_for(phrase), phrase)
             self.assertTrue(durations.search_for('予想所要時間'))
             self.assertFalse(durations.search_for('グリッドシステムを活用し'))
-            self.assertTrue(pdf[68].search_for('Bootstrap 導入前後の変化を確認'))
+            self.assertTrue(pdf[first + 2].search_for('導入前後の変化を確認'))
+
+    def test_exercise_print_layout_has_odd_chapter_starts_and_an_even_colophon(self):
+        directory = ROOT / 'output/pdf/textbook/exercise'
+        report = json.loads((directory / 'checks.json').read_text(encoding='utf-8'))
+        chapters = [part for part in report['chapters'] if part['chapter'] in {f'ex0{i}' for i in range(1, 8)}]
+        self.assertEqual(len(chapters), 7)
+        self.assertTrue(all(ch['flow_pages'][0] % 2 == 1 for ch in chapters))
+        pages = {item['title'].split()[0]: item['flow_page'] for item in report['contents']}
+        self.assertEqual(pages['演習5.5.'], pages['演習5.6.'])
+        with fitz.open(directory / 'flow.pdf') as pdf:
+            self.assertEqual(report['print_layout']['colophon_page'], len(pdf))
+            self.assertEqual(len(pdf) % 2, 0)
+            self.assertIn('第5版', normalized(pdf[-1].get_text()))
+            for blank in report['print_layout']['blank_pages']:
+                self.assertFalse(pdf[blank - 1].get_text().strip())
+                self.assertFalse(pdf[blank - 1].get_drawings())
 
     def test_code_introductions_stay_with_the_first_code_panel(self):
         path = ROOT / 'output/pdf/textbook/chapter-06/checks.json'

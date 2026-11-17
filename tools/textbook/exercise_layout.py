@@ -1,10 +1,33 @@
 """演習の手順・箇条書き・補足を、原稿の文字と改行から区別する。"""
 import re
+import unicodedata
 
 STEP = re.compile(r'^[a-z]\.\s+')
 HINT = re.compile(r'^(?:【ヒント】|ヒント)(?:\s|$)')
 CHECK = re.compile(r'^[■◼]?\s*動作確認(?:[：:]|\s|$)')
-ITEM = re.compile(r'^([■◼●⚫•\uf09f▪○]|[o・](?=\s)|[a-z]\))\s*')
+ITEM = re.compile(r'^([■◼●⚫•\uf09f▪○]|[o・](?=\s)|[a-z]\)|[0-9０-９]+[.．](?![0-9０-９]))\s*')
+SECTION = re.compile(r'^演習\s*\d+\.\d+(?:[.\s]|$)')
+TOC_ENTRY = re.compile(r'(演習.*?)\s*(\.{2,})\s*(\d+)\s*$')
+MINOR_HEADING = re.compile(r'^(?:演習の目標|演習の概要|予想所要時間|(?:追加)?データベース情報|事前準備.*|問題構成|[＜<].*[＞>])$')
+
+
+def title(value):
+    """章・節の番号に続く空白をそろえる。"""
+    value = ' '.join(value.split())
+    value = re.sub(r'^演習\s*(\d+(?:\.\d+)*\.?)\s*', r'演習\1 ', value)
+    return re.sub(r'(?<=[a-zA-Z]) (?=[ぁ-龯])|(?<=[ぁ-龯]) (?=[a-zA-Z])', '', value)
+
+
+def list_label(marker, goal=False):
+    if marker in ('■', '◼') and goal:
+        return '■', 0
+    if marker in ('o', '○'):
+        return '○', 1
+    if marker == '▪':
+        return '▪', 2
+    if marker.endswith((')', '.', '．')):
+        return unicodedata.normalize('NFKC', marker), 0
+    return '–', 0
 
 
 def first_line(parts):
@@ -52,12 +75,20 @@ def items(parts, keep_lines=False):
 
 def layout_info(nodes, order):
     intro = set()
+    goals = set()
     continuation = {}
     for page in order:
         entries = page['entries']
         if any(nodes.get(ident, {}).get('text', '').strip() in ('演習の目標', '予想所要時間')
                for ident in entries):
             intro.update(entries)
+        in_goals = False
+        for ident in entries:
+            raw = nodes.get(ident, {}).get('text', '').strip()
+            if raw in ('演習の目標', '演習の概要', '予想所要時間'):
+                in_goals = raw == '演習の目標'
+            elif in_goals:
+                goals.add(ident)
         for previous, following in zip(entries, entries[1:]):
             a = nodes.get(previous, {}).get('text', '').strip()
             b = nodes.get(following, {})
@@ -68,4 +99,4 @@ def layout_info(nodes, order):
                     and not re.match(r'^(?:演習|予想所要時間|[a-z]\.|[■◼●⚫•▪○\uf09f【<＜])', next_text)
                     and not HINT.match(next_text) and not CHECK.match(next_text)):
                 continuation[previous] = following
-    return intro, continuation
+    return intro, goals, continuation
