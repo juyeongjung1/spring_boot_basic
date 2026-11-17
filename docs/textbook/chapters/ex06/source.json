@@ -297,6 +297,13 @@
       "page": 62
     }
   ],
+  "pagination": {
+    "continue_before": {
+      "52": "continued-prose",
+      "54": "continued-prose",
+      "62": "continued-prose"
+    }
+  },
   "typography": {
     "minor_heading_extra_space": [
       "p049-b08",

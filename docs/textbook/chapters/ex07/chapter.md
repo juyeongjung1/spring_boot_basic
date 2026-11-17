@@ -30,7 +30,7 @@
 
 :::
 
-::: {#p064-b03 .paragraph}
+::: {#p064-b03 .paragraph join-previous="true"}
 
 [後の画面の変化を体感できる]{.s008}
 
@@ -42,7 +42,7 @@
 
 :::
 
-::: {#p064-b05 .paragraph}
+::: {#p064-b05 .paragraph join-previous="true"}
 
 [フォーム）を適切に使い、Web ページの外観を整えられる]{.s008}
 
@@ -54,7 +54,7 @@
 
 :::
 
-::: {#p064-b07 .paragraph}
+::: {#p064-b07 .paragraph join-previous="true"}
 
 [画面）の構成を柔軟に設計できる]{.s008}
 
@@ -66,7 +66,7 @@
 
 :::
 
-::: {#p064-b09 .paragraph}
+::: {#p064-b09 .paragraph join-previous="true"}
 
 [性・保守性を向上できる]{.s008}
 
@@ -96,7 +96,7 @@
 
 :::
 
-::: {#p064-b14 .paragraph}
+::: {#p064-b14 .paragraph join-previous="true"}
 
 [状態を比較]{.s009}
 
@@ -108,7 +108,7 @@
 
 :::
 
-::: {#p064-b16 .paragraph}
+::: {#p064-b16 .paragraph join-previous="true"}
 
 [ォームやテーブルに適用]{.s009}
 
@@ -118,7 +118,7 @@
 
 ::: {#page-65 .source-page}
 
-::: {#p065-b01 .heading}
+::: {#p065-b01 .paragraph}
 
 [•&#32;]{.s010}[グリッドシステムを活用し、メニューとメインコンテンツを左右に分け]{.s009}
 
@@ -148,7 +148,7 @@
 
 :::
 
-::: {#p065-b06 .heading}
+::: {#p065-b06 .heading page-break-before="true"}
 
 [予想所要時間]{.s006}
 
@@ -200,7 +200,7 @@
 
 :::
 
-::: {#p066-b02 .paragraph}
+::: {#p066-b02 .paragraph keep-lines="true"}
 
 [次のフォルダに Bootstrap の CSS / JS ファイルが事前に格納されています。]{.s013}\
 [特にファイルをダウンロードしたり、CDN を使って読み込んだりする必要はありません。]{.s013}
@@ -349,7 +349,7 @@
 
 :::
 
-::: {#p068-b05 .paragraph}
+::: {#p068-b05 .paragraph keep-lines="true"}
 
 [以下の指示に従って、既存のHTML にクラスを追加・修正してください。]{.s021}\
 [（※クラスの追加のみで構いません。HTML の構造は変えなくてOK です）]{.s021}

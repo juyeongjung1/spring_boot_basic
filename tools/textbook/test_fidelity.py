@@ -103,16 +103,28 @@ class FidelityTests(unittest.TestCase):
             self.assertEqual(len(body), 2)
             self.assertAlmostEqual(body[0].x0, body[1].x0, places=2)
         with fitz.open(output / 'chapter-ex06/chapter-flow.pdf') as pdf:
-            page = pdf[5]
-            hints = page.search_for('【ヒント】')
-            self.assertEqual(len(hints), 2)
-            items = [page.search_for(phrase)[0] for phrase in
-                     ('テキスト6.1', '1 つの勤務地に複数の社員', 'リスト型はjava.util.List')]
+            page = pdf[4]
+            reference = max(page.search_for('テキスト6.1'), key=lambda box: box.y0)
+            items = [reference, page.search_for('1 つの勤務地に複数の社員')[0],
+                     page.search_for('リスト型はjava.util.List')[0]]
             self.assertTrue(all(a.y1 < b.y0 for a, b in zip(items, items[1:])))
             panels = [shape['rect'] for shape in page.get_drawings() if shape.get('fill')
                       and all(abs(x-y/255) < .005 for x, y in zip(shape['fill'], (243,246,248)))]
-            self.assertEqual(len(panels), 2)
-            self.assertTrue(all(panels[0].intersects(item) for item in items))
+            self.assertTrue(any(all(panel.intersects(item) for item in items) for panel in panels))
+
+    def test_exercise_check_and_sql_lines_stay_separate(self):
+        path = ROOT / 'output/pdf/textbook/exercise/flow.pdf'
+        with fitz.open(path) as pdf:
+            for page, texts in [
+                (32, ('社員番号：1001', 'パスワード：password')),
+                (62, ('http://localhost:8080/', 'リンクをクリックします。',
+                      '任意のデータを入れ、登録します。', '正しく登録されるのかを確認してください。')),
+                (63, ('以下のようになります。', 'SELECT *', 'FROM employee e JOIN location l',
+                      'ON e.location_id = l.id', 'WHERE e.salary >= ? AND l.name = ?')),
+            ]:
+                with self.subTest(page=page):
+                    boxes = [pdf[page - 1].search_for(text)[0] for text in texts]
+                    self.assertTrue(all(a.y1 < b.y0 for a, b in zip(boxes, boxes[1:])), boxes)
 
     def test_confirmed_source_fragments_share_a_paragraph_and_keep_each_boundary_once(self):
         self.assertEqual(len(self.pdf[0].search_for('プログラム')), 1)

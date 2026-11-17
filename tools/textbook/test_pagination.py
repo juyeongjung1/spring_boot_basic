@@ -1,4 +1,4 @@
-"""原本の教材単位を、改訂後も前ページへ繰り上げないことを検証する。"""
+"""原本の教材単位と確認済みの継続・改ページを検証する。"""
 import json
 import unittest
 import xml.etree.ElementTree as ET
@@ -16,6 +16,17 @@ def rendered_lines(page, top, bottom):
 
 
 class PaginationTests(unittest.TestCase):
+    def test_exercise_overview_follows_its_own_list_and_keeps_the_next_section_page(self):
+        with fitz.open(ROOT / 'output/pdf/textbook/exercise/flow.pdf') as pdf:
+            self.assertEqual(len(pdf), 79)
+            overview, durations = pdf[66], pdf[67]
+            for phrase in ('導入前後の画面の変化', 'グリッドシステムを活用し',
+                           'ヘッダーやサイドバーをすべての画面で共通化'):
+                self.assertTrue(overview.search_for(phrase), phrase)
+            self.assertTrue(durations.search_for('予想所要時間'))
+            self.assertFalse(durations.search_for('グリッドシステムを活用し'))
+            self.assertTrue(pdf[68].search_for('Bootstrap 導入前後の変化を確認'))
+
     def test_code_introductions_stay_with_the_first_code_panel(self):
         path = ROOT / 'output/pdf/textbook/chapter-06/checks.json'
         marks = json.loads(path.read_text(encoding='utf-8'))['flow']['block_positions']

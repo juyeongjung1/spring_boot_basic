@@ -625,14 +625,15 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 f'font-size: {font_size}pt, leading: {max(0,pitch-font_size)}pt{content_option})')
 
     def exercise_list(ident, parts, continuation='', in_hint=False):
-        items = exercise_layout.items(parts)
+        keep_lines = nodes[ident]['attrs'].get('keep-lines') == 'true'
+        items = exercise_layout.items(parts, keep_lines=keep_lines)
         if not any(marker for marker, _ in items):
             return None
         rows = []
         changes = []
         size = 11 if ident in intro else None
         for index, (marker, values) in enumerate(items):
-            body = inline(values, size=size)
+            body = inline(values, size=size, keep_lines=keep_lines)
             if index == len(items) - 1:
                 body += continuation
             if not marker:
@@ -671,6 +672,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             return f'#illustration({q(ident)}, {q(path)}, {width}, offset: {offset}pt{number})'
         node = nodes[ident]
         size_override = 11 if ident in intro else None
+        keep_lines = node['attrs'].get('keep-lines') == 'true'
         if exercise and node['kind'] in ('paragraph', 'heading', 'step'):
             raw = node['text'].lstrip()
             parts = node['parts']
@@ -684,7 +686,7 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
             if step:
                 label = raw[:2]
                 words = exercise_layout.trim_prefix(parts, len(node['text']) - len(raw) + step.end())
-                body = inline(words, size=11.04) + continuation
+                body = inline(words, size=11.04, keep_lines=keep_lines) + continuation
                 above = 22 + heading_spacing.get(ident, 0)
                 return f'#exercise-step({q(ident)}, [#text(font: "MS PGothic", weight: "bold", {q(label)})], [{body}], above: {above}pt)'
             if exercise_layout.CHECK.match(raw):
@@ -693,15 +695,14 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                     first = exercise_layout.trim_prefix(first, len(node['text']) - len(raw) + 1)
                     if exercise_markers is not None:
                         exercise_markers[ident] = [(raw[0], '')]
-                body = inline(first) + ('#linebreak()' + inline(rest) if rest else '')
+                body = inline(first) + ('#linebreak()' + inline(rest, keep_lines=keep_lines) if rest else '')
                 return f'#exercise-check({q(ident)}, [{body}])'
             listed = exercise_list(ident, parts, continuation, in_hint)
             if listed is not None:
                 return listed
             if in_hint:
-                return f'#paragraph({q(ident)}, [{inline(parts)}], indent: 0pt)'
+                return f'#paragraph({q(ident)}, [{inline(parts, keep_lines=keep_lines)}], indent: 0pt)'
         if node['kind'] == 'paragraph':
-            keep_lines = node['attrs'].get('keep-lines') == 'true'
             parts = typographic_parts(node['parts'], keep_lines=keep_lines)
             # 複数の項目をまとめた段落では、明示改行を使ってすべての丸印をそろえる。
             multiple_bullets = keep_lines and sum(value.startswith(('●', '⚫', '•')) for value, _ in parts) > 1
@@ -712,11 +713,13 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 return f'#bullet-paragraph({q(ident)}, [{marker}], [{inline(parts, keep_lines=keep_lines)}], continuing: {str(ident in list_with_continuation).lower()})'
             if ident in list_continuations:
                 inset = ', left: 24pt' if exercise else ''
-                return f'#list-continuation({q(ident)}, [{inline(parts, size=size_override)}], continuing: {str(ident in list_with_continuation).lower()}{inset})'
+                body = inline(parts, size=size_override, keep_lines=exercise and keep_lines)
+                return f'#list-continuation({q(ident)}, [{body}], continuing: {str(ident in list_with_continuation).lower()}{inset})'
             is_time_list = folder.name.startswith('ex') and re.fullmatch(
                 r'(?:演習\s*\d+\.\d+.*\d+\s*分|\d+\s*分)', node['text'].strip(), re.S)
             if node['text'].lstrip().startswith(('※', 'http://', 'https://')) or is_time_list or node['text'].strip() == 'ヒント':
-                return f'#paragraph({q(ident)}, [{inline(parts, size=size_override)}], indent: 0pt)'
+                body = inline(parts, size=size_override, keep_lines=exercise and keep_lines)
+                return f'#paragraph({q(ident)}, [{body}], indent: 0pt)'
             first_style = next((style for value, style in parts if value.strip()), None)
             size = size_override or layout['styles'].get((first_style or '').split(':')[-1], {}).get('size', 11.04)
             if ident in joined_paragraphs:
@@ -853,21 +856,31 @@ footer: context if {furniture_condition} {{align(center, text(font: "Times New R
                 content.append(exercise_list(ident, remaining, in_hint=True) or inline(remaining))
             end = i + 1
             while end < len(entries):
-                following = nodes.get(entries[end], {})
+                next_id = entries[end]
+                if next_id.startswith('__source-') and end + 1 < len(entries):
+                    page = int(next_id.rsplit('-', 1)[1])
+                    next_text = nodes.get(entries[end + 1], {}).get('text', '').lstrip()
+                    if page_continuations.get(page) == 'continued-prose' and exercise_layout.ITEM.match(next_text):
+                        content.append(f'#mark({q(next_id)}, "source-page")')
+                        end += 1
+                        continue
+                following = nodes.get(next_id, {})
                 raw = following.get('text', '').lstrip()
-                if (following.get('kind') != 'paragraph' or modern and entries[end] in modern['consume']
+                if (following.get('kind') != 'paragraph' or modern and next_id in modern['consume']
                         or any(pattern.match(raw) for pattern in (exercise_layout.HINT, exercise_layout.STEP, exercise_layout.CHECK))):
                     break
-                content.append(render(entries[end], in_hint=True))
+                content.append(render(next_id, in_hint=True))
                 end += 1
             commands.append(f'#exercise-hint({q(ident)}, {q(label)}, [{chr(10).join(content)}])')
             i = end
             continue
-        # 続き本文の後に節・項が登場した場合は、その見出しから新頁にする。
-        if (source_pages.get(ident) in page_continuations and ident in nodes
-                and nodes[ident]['kind']=='heading'
-                and re.match(r'^(?:演習\s*)?\d+\.\d+(?:\.\d+)?(?:[.\s]|$)', nodes[ident]['text'].strip())):
-            commands.append('#pagebreak(weak: true)')
+        # 続き本文の後に節・項や指定した区切りがあれば、そこから新頁にする。
+        if source_pages.get(ident) in page_continuations and ident in nodes:
+            following = nodes[ident]
+            section = following['kind'] == 'heading' and re.match(
+                r'^(?:演習\s*)?\d+\.\d+(?:\.\d+)?(?:[.\s]|$)', following['text'].strip())
+            if section or exercise and following['attrs'].get('page-break-before') == 'true':
+                commands.append('#pagebreak(weak: true)')
         # 手順の説明や一例分のコードを見出しと同じページに保つ。
         keep_next = int(nodes.get(ident, {}).get('attrs', {}).get('keep-next', 0))
         if keep_next:

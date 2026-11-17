@@ -138,6 +138,7 @@
   ],
   "pagination": {
     "continue_before": {
+      "65": "continued-prose",
       "66": "short-minor-heading",
       "69": "short-minor-heading",
       "71": "continued-prose",

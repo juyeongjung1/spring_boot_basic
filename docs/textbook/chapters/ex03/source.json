@@ -149,5 +149,10 @@
       "has_header": true,
       "page": 19
     }
-  ]
+  ],
+  "pagination": {
+    "continue_before": {
+      "27": "continued-prose"
+    }
+  }
 }

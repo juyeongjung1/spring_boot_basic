@@ -22,7 +22,7 @@ def trim_prefix(parts, length):
     return rest
 
 
-def items(parts):
+def items(parts, keep_lines=False):
     """項目内の折り返しと、次の箇条書きへ移る改行を区別する。"""
     rows = []
     current = []
@@ -41,6 +41,8 @@ def items(parts):
             marker = match[1]
             current = trim_prefix(line, len(raw) - len(stripped) + match.end())
         elif line:
+            if keep_lines and current:
+                current.append(('\n', None))
             current.extend(line)
         line = []
     if current or marker:
@@ -60,8 +62,9 @@ def layout_info(nodes, order):
             a = nodes.get(previous, {}).get('text', '').strip()
             b = nodes.get(following, {})
             next_text = b.get('text', '').strip()
+            joined = b.get('attrs', {}).get('join-previous') == 'true'
             if (a and (STEP.match(a) or ITEM.match(a)) and not a.endswith(('。', '！', '？', '：', '!', '?', ':'))
-                    and b.get('kind') == 'heading'
+                    and (b.get('kind') == 'heading' or joined)
                     and not re.match(r'^(?:演習|予想所要時間|[a-z]\.|[■◼●⚫•▪○\uf09f【<＜])', next_text)
                     and not HINT.match(next_text) and not CHECK.match(next_text)):
                 continuation[previous] = following
